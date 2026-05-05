@@ -33,7 +33,7 @@ related_vendors: []
 
 싱가포르 최대 은행 DBS Bank는 인사 전 영역에 AI를 내재화한 아시아 금융권 선도 사례다. ✅ **Fact** 핵심 세 가지: (1) AI 채용 플랫폼 JIM(Jobs Intelligence Maestro) — 이력서 스크리닝·면접 일정·초기 평가 자동화로 채용 소요시간을 32일→8일 단축, (2) 이탈 예측 모델 — 학습·보상·휴가 패턴 등 다변수 분석으로 이탈 징후 조기 감지, (3) iGrow 커리어 어드바이저 — 10,000개 이상 내부 과정 기반 개인화 커리어 경로 추천. [[sources/emerj-dbs-ai-cases.md]] [[sources/adriantan-dbs-ai-recruiting.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 DBS는 디지털 전환과 함께 대규모 기술 인재 채용과 기존 직원 역량 전환을 동시에 추진해야 했다. 채용 소요시간 단축, 고성과자 이탈 예방, 직원 커리어 개발 기회 확대가 핵심 과제였다. McKinsey 케이스에 따르면 DBS는 "기술 회사로서 은행 면허를 보유"하는 정체성 전환을 추진했다. [[sources/mckinsey-dbs-ai-transformation.md]]
 

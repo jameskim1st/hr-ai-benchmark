@@ -33,7 +33,7 @@ related_vendors: []
 
 Accenture가 2022-11~2025-FY 사이 **30명 → 550,000+ 직원** GenAI 교육. AI/data 전문 인력은 **40,000(2023) → 77,000(2025)** 증가. 연간 ~$1B L&D 투자. CEO Julie Sweet (2026-03 발언): "AI를 사용하지 못하면 승진·고용이 위험" + "non-adaptable 직원은 compression timeline으로 exit". 가장 강력한 mass reskilling reference.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 770K+ 글로벌 컨설팅 인력 — 직원 AI 역량 분포 편차 큰
 - **Pain point**: 컨설팅 비즈니스 자체가 AI를 사용·판매·구현해야 함 → 직원 AI literacy가 직접 매출 영향
@@ -41,7 +41,7 @@ Accenture가 2022-11~2025-FY 사이 **30명 → 550,000+ 직원** GenAI 교육. 
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: AI 교육은 데이터 사이언티스트 등 specific 직군에 한정
 - **After**:
@@ -59,7 +59,7 @@ Accenture가 2022-11~2025-FY 사이 **30명 → 550,000+ 직원** GenAI 교육. 
 - 데이터: 직원 학습 이력·AI 사용 metric
 - 오너십: Accenture HR (CHRO) + 사업부 P&L 책임자
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart LR
@@ -70,7 +70,7 @@ flowchart LR
     Spend[$1B/yr L&D] --> Mass
 ```
 
-### B. System & Infrastructure (Agent research, 2026-05)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS / 기반 시스템**: _미공개_ (Accenture는 SAP SuccessFactors 사용 알려졌으나 LearnVantage와 직접 통합 명시 없음)
 - **AI 시스템 배치**: ✅ **Accenture LearnVantage** 자체 학습 플랫폼 (2024-03 launch, Udacity 인수 통합)
@@ -81,7 +81,7 @@ flowchart LR
 
 > Source: [Accenture LearnVantage newsroom 2024-03](https://newsroom.accenture.com/news/2024/accenture-launches-accenture-learnvantage-to-help-clients-and-their-people-gain-essential-skills-and-achieve-greater-business-value-in-the-ai-economy)
 
-### C. Data (Agent research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ⚠️ 벤더 주장: AI recommendation engine이 직원 role + 회사 business strategy 기반 스킬 surface; 구체 데이터 항목 _미공개_
 - **데이터 규모**: ✅ 550,000+ trained 직원 (CEO Sweet 발언, ⚠️ 자사 보고)
@@ -90,7 +90,7 @@ flowchart LR
 - **데이터 거버넌스**: _미공개_
 - **민감정보 처리**: _미공개_
 
-### D. Model (Agent research)
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ (LearnVantage "always-on skills assistant" base model 비공개)
 - **모델 유형**: ✅ recommendation engine + skills assistant
@@ -100,7 +100,7 @@ flowchart LR
 - **평가·가드레일**: _미공개_
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 3년 만에 30명 → 550,000+ trained = **>18,300x 확장**. AI/data 인력 +93%. 컨설팅 시장에서 AI 매출 비중 가속.

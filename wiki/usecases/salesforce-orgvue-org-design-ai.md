@@ -30,7 +30,7 @@ related_vendors: []
 
 Salesforce의 Organizational Strategy & Effectiveness 팀이 Orgvue의 Henshaw AI(직무 클러스터링 AI)를 통해 8,000개 직위를 83개 클러스터로 자동 분류했다. OD·SWP 타임라인을 "최소 6개월" 단축했다고 자사 보고. Orgvue Henshaw AI는 2025년 12월 정식 출시. 직무체계 구축 시간 6개월 → 6일 단축은 Orgvue의 일반 고객 사례로도 인용.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 대규모 테크 기업의 직무 아키텍처 및 조직설계는 수작업 데이터 분류에 수개월 소요
 - AI 도입에 따른 역할 재정의·조직 재설계 요구가 급증 → 분석 속도가 의사결정 병목

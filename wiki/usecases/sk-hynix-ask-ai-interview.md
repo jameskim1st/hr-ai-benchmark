@@ -32,7 +32,7 @@ related_vendors: []
 
 SK하이닉스가 2025 하반기 신입 채용에 **'A!SK' (AI Interview with SK Hynix)** 전형 신설. AI가 직무별 특화 문제를 출제하면 지원자가 영상 녹화 답변 제출. 자기소개서로 파악 어려운 **커뮤니케이션·팀워크·상황 대처** 능력을 종합 검증. 제출 영상은 **미래 동료 구성원이 직접 평가**하는 **hybrid 모델**. AI single decision 회피 — bias mitigation + 한국 채용절차법 fit.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: SK하이닉스 신입 채용은 자기소개서 + 인적성 + 면접 — 직무 적합 soft skill (커뮤니케이션·팀워크) 측정 어려움
 - **Pain point**: 반도체 기술사무직 신입 채용 volume 크지만 면접관 시간 한정 + soft skill 평가 표준화 어려움
@@ -69,7 +69,7 @@ SK하이닉스가 2025 하반기 신입 채용에 **'A!SK' (AI Interview with SK
 
 - SK하이닉스 인사 + 미래 동료 (현업) + AI/IT
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: SK하이닉스 사내 채용 (구체 _미공개_)
 - **AI 시스템 배치**: ✅ A!SK 영상면접 platform — 자체 또는 vendor 여부 _미공개_
@@ -78,7 +78,7 @@ SK하이닉스가 2025 하반기 신입 채용에 **'A!SK' (AI Interview with SK
 - **사용자 접점**: 지원자 영상 녹화 web/모바일 + 미래 동료 peer review interface + HR/면접관 종합 Report dashboard
 - **인증·권한**: ✅ 사내 SSO (peer·HR·면접관 RBAC) + 지원자 별도 인증
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ 자기소개서, SKCT 결과, AI 면접 영상, JD-역량 매칭, (고도화) 석박사 Lab·논문 + LinkedIn 코멘트 자동 크롤링
 - **데이터 규모**: _미공개_ — 2025 하반기 신입 응시자 비공개
@@ -87,7 +87,7 @@ SK하이닉스가 2025 하반기 신입 채용에 **'A!SK' (AI Interview with SK
 - **데이터 거버넌스**: ✅ AI single decision 회피 (peer + HR + 면접관 hybrid) — KR AI 기본법 인적감독 best practice
 - **민감정보 처리**: ⚠️ AI 영상 분석의 표정·억양·외모 신호 사용 여부 _미공개_
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ — 자체 LLM 또는 그룹 표준 (A.X 가능성) 미명시
 - **모델 유형**: ✅ generative (Report 자동 생성·맞춤 질문) + classifier (역량-JD 매칭율) + STT (향후)
@@ -97,7 +97,7 @@ SK하이닉스가 2025 하반기 신입 채용에 **'A!SK' (AI Interview with SK
 - **평가·가드레일**: ✅ peer + HR + 면접관 hybrid (AI single decision 회피). 표정·외모 신호 transparency 부족 risk
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 AI single decision 회피 + 미래 동료 평가 hybrid + 7-phase AI Report 통합으로 평가 깊이는 Big Tech 수준 + 비용은 대폭 절감. 한국 채용절차법 + AI 기본법 (2026-01-22) 인적감독 의무 자동 충족 model.

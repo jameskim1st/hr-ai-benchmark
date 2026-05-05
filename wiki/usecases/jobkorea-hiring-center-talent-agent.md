@@ -33,7 +33,7 @@ related_vendors: []
 
 잡코리아 운영사 **웍스피어**가 출시한 **통합 채용 솔루션 '하이어링 센터'** (2026-03 일부 기업 오픈). 자연어 대화로 채용 담당자 의도를 이해하고 공고 맥락 분석 후 후보자 제안하는 **'탤런트 에이전트'** 탑재. 잡코리아 자체 설문 — 채용 담당자 1,286명 중 **65%가 AI 채용 에이전트 도입 또는 검토 중** (적극 검토 13.6% + 검토 48.8%).
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 잡코리아 채용 담당자는 공고 작성·후보자 search·매칭을 별도 도구·매뉴얼 process
 - **Pain point**: 한국 채용 시장 vendor 경쟁 (사람인·잡코리아·원티드) — 차별화 압박
@@ -41,7 +41,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 채용 담당자가 잡코리아에 공고 게시 → 지원자 manual review → 후보자 추천 받음
 - **After**:
@@ -58,7 +58,7 @@ related_vendors: []
 - 잡코리아 데이터베이스 + 자체 LLM 또는 외부 API
 - 한국어 specialized
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: ✅ 잡코리아 ATS '하이어링 센터' (웍스피어 자체)
 - **AI 시스템 배치**: '탤런트 에이전트' — 하이어링 센터 내장 conversational agent
@@ -67,7 +67,7 @@ related_vendors: []
 - **사용자 접점**: 채용 담당자 web UI — 자연어 chat
 - **인증·권한**: 잡코리아 기업회원 계정
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ 잡코리아 후보자 DB, 공고 텍스트, 채용 담당자 의도
 - **데이터 규모**: _미공개_ — 잡코리아 누적 회원 비공개
@@ -76,7 +76,7 @@ related_vendors: []
 - **데이터 거버넌스**: ⚠️ KR PIPA — 후보자 동의 (잡코리아 약관 의존)
 - **민감정보 처리**: ⚠️ 차별 표현 자동 필터 _미검증_ — explainability 미공개
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ — 자체 LLM 또는 외부 API (OpenAI·Hyperclova X) 추정
 - **모델 유형**: LLM (conversational matching) + recommendation
@@ -86,7 +86,7 @@ related_vendors: []
 - **평가·가드레일**: _미공개_
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 한국 ATS·채용 vendor 경쟁의 AI agent 차별화 + 시장 데이터 (65% 도입·검토)로 KR 채용 vendor 시장 기회 입증.

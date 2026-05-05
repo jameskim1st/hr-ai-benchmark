@@ -34,13 +34,13 @@ related_vendors:
 
 Workday가 2025년 9월 Rising에서 **Illuminate Performance Review Agent**를 발표. 다양한 시스템의 데이터를 종합해 매니저에게 **성과 리뷰 초안(first draft)**을 자동 생성. 2026년 GA 예정. 기존 Illuminate 에이전트에서는 계약 실행 시간 **65% 단축**, 스태핑 변경 **최대 90% 감소**, 감사 증거 수집 **연 900시간 절약**, 급여 컴플라이언스 **4배 빠름** 등의 성과를 공유. [[sources/workday-illuminate-pr-2025-09.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 매니저가 성과 리뷰를 작성하는 데 **직원당 수시간** 소요 — 다수 시스템에서 데이터 수집 필요
 - 리뷰 품질의 **불일관성** — 매니저별 역량·시간 투입 편차
 - Workday Rising 2025에서 발표된 7개 신규 에이전트 중 하나로, **HRMS 내장 AI agent** 트렌드의 핵심 [[sources/workday-illuminate-pr-2025-09.md]]
 
-## Solution Architecture (요약)
+## Solution Architecture
 
 ### A. Process (프로세스)
 
@@ -58,27 +58,27 @@ flowchart LR
     E --> F[최종 리뷰 제출]
 ```
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: Workday HCM
 - **AI 시스템**: Workday Illuminate — Workday 내장 AI 플랫폼 [[sources/workday-illuminate-pr-2025-09.md]]
 - **Workday Data Cloud**: 통합 데이터 레이어 (2025 Rising에서 동시 발표) [[sources/workday-illuminate-pr-2025-09.md]]
 - 타 시스템 연동 상세: _미공개 (not disclosed)_
 
-### C. Data
+### C. Data (데이터)
 
 - **입력**: Workday HCM 내 성과·피드백 데이터 + "다른 시스템" 데이터 (구체 명시 없음) [[sources/workday-illuminate-pr-2025-09.md]]
 - 나머지: _미공개 (not disclosed)_
 
-### D. Model
+### D. Model (모델)
 
 - _미공개 (not disclosed)_ — Workday Illuminate는 자체 AI 플랫폼이나 구체 모델명 미공개
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - _미공개 (not disclosed)_
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 

@@ -36,7 +36,7 @@ related_vendors: []
 
 IBM의 **HiRo**는 watsonx Orchestrate 기반 **분기 승진 관리 specialist agent (digital worker)**. AskHR 생태계 (2.1M conversations/년·80+ HR tasks 자동화) 내 promotion 영역 자동화. ⚠️ 자사 보고: 분기 승진 cycle을 10주 → 자동화로 단축, **HR Business Partner (HRBP) 시간 분기당 85% 절감**. 매니저 10,000명에 promotion criteria + eligible employees 리스트 자동 배포. IBM CHRO Nickle LaMoreaux가 HR Executive of the Year 2024 인터뷰·myHRfuture 팟캐스트·IBM 공식 case study에서 일관 언급.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before (2023 이전)**: IBM 글로벌 280K 직원 분기 승진 cycle은 **HR Business Partner 수작업 spreadsheet** — 부서별 eligible employees 식별·매니저별 promotion criteria 안내·결정 후 compensation/title/org 시스템 수동 갱신
 - **Pain point**:
@@ -47,7 +47,7 @@ IBM의 **HiRo**는 watsonx Orchestrate 기반 **분기 승진 관리 specialist 
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: HRBP가 spreadsheet로 (1) eligible employees 추출 → (2) 매니저에 정책·criteria 이메일 → (3) 매니저 결정 수집 → (4) compensation/title/org 시스템 수동 입력
 - **After (HiRo agentic)**:
@@ -60,14 +60,14 @@ IBM의 **HiRo**는 watsonx Orchestrate 기반 **분기 승진 관리 specialist 
 - **Frequency**: 분기 (annual에 가까운 주기)
 - **Scope of autonomy**: prepare + execute (eligible 추출·자동 갱신은 자율, 결정은 매니저)
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core**: IBM watsonx Orchestrate platform (자사 LLM·orchestration)
 - **AI 시스템 배치**: AskHR 생태계 specialist agent로 운영 (사용자 접점은 매니저용 web/Teams + HRBP dashboard)
 - **연동**: IBM HR systems (HRMS·comp·org chart·평가) — IBM 자체 internal stack
 - **인증**: IBM internal IdP, role-based access (HRBP·매니저·직원 권한 분리)
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터**:
   - HRMS (역할·근속·직급·이력)
@@ -77,18 +77,18 @@ IBM의 **HiRo**는 watsonx Orchestrate 기반 **분기 승진 관리 specialist 
 - **모델 구조**: LLM (자연어 criteria 생성·매니저용 설명) + classification (eligibility 판정) + RPA (시스템 갱신)
 - **Data governance**: IBM internal HR data (직원 PII), GDPR (EU 직원), ISO 27001
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: IBM watsonx (Granite 모델 자체 제품) — 구체 model variant·버전 _부분 미공개_
 - **Customization**: IBM HR 도메인 prompt + RAG (정책 문서) + agentic orchestration (watsonx Orchestrate framework)
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: IBM CHRO 직속 (Nickle LaMoreaux) + IBM People Tech 팀 + watsonx product 팀
 - **참여 역할**: HRBP (운영·escalation), 매니저 (승진 결정), watsonx 엔지니어 (agent 개발·운영), legal (compensation compliance)
 - **거버넌스**: IBM AI Ethics Board, AskHR governance framework (6년 운영 누적)
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

@@ -44,7 +44,7 @@ PwC Korea가 SK하이닉스에 제안한 **5-Agent agentic retention prediction 
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: HR이 분기·연간 attrition 보고서 작성 → 매니저 면담 → 사후 대응
 - **After (제안 architecture, 검증 사례 0건)**:

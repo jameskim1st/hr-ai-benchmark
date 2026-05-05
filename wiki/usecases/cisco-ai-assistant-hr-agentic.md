@@ -33,7 +33,7 @@ related_vendors: []
 
 Cisco의 사내 AI HR Assistant — HR 정책 Q&A를 넘어 **agentic** 수준으로 진화. 직원 PTO 잔여 조회 + 매니저에게 보낼 **time-off notification 메시지 자동 작성**까지. HR case 열지 않고 처리. broader Cisco "AI agents + nudges" cut-bureaucracy 이니셔티브 일부. 35,000+ Cisco 직원이 2025-06까지 AI-upskilled (+121% YoY).
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: HR Q&A 챗봇은 정보 조회까지만 — "내 매니저에게 휴가 알리는 메시지 어떻게 쓰지" 같은 outbound 작업은 수동
 - **Pain point**: HR 챗봇이 Q&A에 머물러 ROI 한계 — agentic 수준 도약 필요
@@ -41,7 +41,7 @@ Cisco의 사내 AI HR Assistant — HR 정책 Q&A를 넘어 **agentic** 수준�
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 1) 직원이 HR 포털에서 PTO 잔여 조회 / 2) 직원이 직접 매니저에게 메시지 작성 / 3) HR 케이스 필요 시 별도 ticketing
 - **After**:
@@ -60,7 +60,7 @@ Cisco의 사내 AI HR Assistant — HR 정책 Q&A를 넘어 **agentic** 수준�
 - 모델: 자체 + 외부 API 혼합 추정
 - 오너십: Cisco HR + IT/AI Plat
 
-### B. System & Infrastructure (Agent research, 2026-05)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS / 기반 시스템**: _미공개_ (Cisco는 Workday customer로 알려져 있으나 HR Assistant의 직접 integration target 명시 없음)
 - **AI 시스템 배치**: ✅ Cisco IT 자체 구축 "internal AI assistant — purpose-built with security"
@@ -71,7 +71,7 @@ Cisco의 사내 AI HR Assistant — HR 정책 Q&A를 넘어 **agentic** 수준�
 
 > Source: [Cisco "Transforming work with our internal AI assistant"](https://blogs.cisco.com/cisco-on-cisco/cisco-secure-internal-ai-assistant)
 
-### C. Data (Agent research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ HR data (PTO·401k 등 직원 self-service domain); 정책 문서 RAG 추정
 - **데이터 규모**: ⚠️ 자사 보고: 100,000+ 직원 사용 (broader internal AI assistant); HR domain standalone 수치 _미공개_
@@ -80,7 +80,7 @@ Cisco의 사내 AI HR Assistant — HR 정책 Q&A를 넘어 **agentic** 수준�
 - **데이터 거버넌스**: ✅ "purpose-built with security" 강조; 세부 _미공개_
 - **민감정보 처리**: _미공개_
 
-### D. Model (Agent research)
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ (외부 API + 자체 혼합 가능성)
 - **모델 유형**: ✅ Generative AI (LLM-based agentic assistant)
@@ -90,7 +90,7 @@ Cisco의 사내 AI HR Assistant — HR 정책 Q&A를 넘어 **agentic** 수준�
 - **평가·가드레일**: ⚠️ 자사 보고: 73% 사용자 productivity 증가, 주당 5h 절감
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 HR Q&A 챗봇의 agentic 진화 — Q&A를 넘어 outbound 메시지 drafting까지 수행하는 KR Ask-HR RFP의 mature reference.

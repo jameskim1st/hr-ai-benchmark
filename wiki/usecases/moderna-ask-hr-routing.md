@@ -38,7 +38,7 @@ related_companies:
 
 Moderna는 OpenAI ChatGPT Enterprise 위에 **"Ask HR"이라는 centralized 커스텀 GPT**를 구축해, 직원의 HR 문의를 **performance·career·benefits** 영역의 specialized GPT들로 분기(routing)시킨다. HR 도메인 전체에서 "front door" 역할을 수행. 이는 전사 3,000+ 커스텀 GPT 생태계 중 HR 특화 허브에 해당하며, 2025년 Moderna의 HR+IT 부서 병합(단일 리더 Tracey Franklin CPDO)과 **조직 구조 변화와 함께** 전개된 사례라는 점에서 특히 주목된다.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before (baseline)**: Moderna는 5,000명 규모의 바이오텍이지만 급성장기 동안 HR 인력만으로 늘어나는 직원 문의를 처리하기 어려워짐. ❓ **구체 before 수치(월간 HR 티켓 수·평균 응답 시간·HR 인력 대비 직원 비율) 미공개** — 이 baseline 부재가 이 use case의 최대 약점
 - Franklin의 프레이밍: 기존의 "workforce planning"(HR 독립)과 "technology planning"(IT 독립)이 **"work의 흐름 자체를 설계"**하지 못했다. 개별 HR 프로세스 개선이 아니라 **업무·정보·의사결정 흐름 전체 재설계**가 목적 — [[unleash-moderna-hr-it-merger-2025-06]]

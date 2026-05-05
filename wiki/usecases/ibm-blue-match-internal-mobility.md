@@ -33,7 +33,7 @@ related_vendors: []
 
 IBM이 2015년 MVP로 시작한 **사내 talent marketplace**. opt-in 직원 280K+에게 AI로 추론한 스킬·경력·성과·근무지·디지털 footprint(블로그·코드·포럼 게시물) 기반 personalized 내부 직무 추천. peer 이동 패턴 continuous learning — A→B 이동이 5건 누적되면 유사 프로파일에게 동일 패턴 추천. ⚠️ 자사 보고: 40% 내부 채용 충원 증가, 1,000+ 측정 가능 placement.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: IBM 내부 이동은 직원 본인 search에 의존 → silo·visibility 격차로 매칭 비효율
 - **Pain point**: 280K 글로벌 조직에서 internal posting 게시판은 잘 작동 안 함 — 직원이 본인 옆 부서 외 기회를 모름
@@ -41,7 +41,7 @@ IBM이 2015년 MVP로 시작한 **사내 talent marketplace**. opt-in 직원 280
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before (As-is)**: 1) 매니저가 internal posting 게시 / 2) 직원이 게시판 검색 / 3) 직원이 지원 / 4) 매니저 검토
 - **After (To-be)**:
@@ -54,7 +54,7 @@ IBM이 2015년 MVP로 시작한 **사내 talent marketplace**. opt-in 직원 280
 - **Trigger & Frequency**: 신규 posting 발생 시 매칭 (continuous), 주간 digest 추정
 - **Scope of autonomy**: recommend-only
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: IBM 내부 HCM (Workday 사용 추정 — IBM은 Workday customer)
 - **AI 시스템 배치**: IBM 자체 구축 (watsonx 이전 세대)
@@ -63,7 +63,7 @@ IBM이 2015년 MVP로 시작한 **사내 talent marketplace**. opt-in 직원 280
 - **사용자 접점**: 사내 web/intranet (Bluepages 통합 추정)
 - **인증·권한**: IBM SSO
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터 소스**: HCM 마스터, 성과 데이터, 학습 이력, 사내 블로그·코드·forum 게시물
 - **데이터 규모**: 280K+ 직원 대상, opt-in ~15% = ~42K 활성 사용자
@@ -72,7 +72,7 @@ IBM이 2015년 MVP로 시작한 **사내 talent marketplace**. opt-in 직원 280
 - **데이터 거버넌스**: 직원 opt-in 동의 기반 — privacy-by-design
 - **민감정보 처리**: 디지털 footprint 분석은 회사 자산만 사용 (외부 SNS 불포함 추정)
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: 자체 ML (LLM 이전 세대), 2024-25 watsonx Orchestrate 통합 진행 추정
 - **Model 유형**: 매칭 ML (collaborative filtering + content-based hybrid)
@@ -80,13 +80,13 @@ IBM이 2015년 MVP로 시작한 **사내 talent marketplace**. opt-in 직원 280
 - **커스터마이징**: 자체 학습 (opt-in 직원 데이터)
 - **평가·가드레일**: bias 감사 _미공개_
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: IBM HR + IBM Research (AI)
 - **참여 역할**: HRBP·data scientist·ML engineer·privacy/legal
 - **변화관리**: opt-in 캠페인 — "당신의 다음 기회를 AI가 찾아드립니다"
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart LR

@@ -31,7 +31,7 @@ related_vendors: []
 
 삼성화재가 2026년 임직원용 RAG 기반 AI 챗봇 도입 추진 (2025-11 발표). 보험 약관·특약은 물론 **사내 규정 질의응답**까지 커버 → 타 부서 문의 절감 목표. 삼성생명 중심 그룹 AI센터 126명이 인접 인프라 제공. 한국 손보사 중 최초 사례.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 보험사 직원이 약관·특약·사내 규정 search 시 sharepoint·시니어 문의 의존
 - **Pain point**: 보험 약관·특약 양 거대 + 빈번한 변경 → 신입·경력 모두 학습 부담
@@ -39,7 +39,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 약관·규정 sharepoint search → 시니어 문의 escalation
 - **After (추진 중)**:
@@ -54,7 +54,7 @@ related_vendors: []
 - 삼성생명 그룹 AI센터 (126명) 인프라 활용
 - vendor·모델 _미공개_
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 한국 손보사 중 최초 임직원 RAG 챗봇 — HR Q&A는 부수 workload, 보험 도메인이 main.

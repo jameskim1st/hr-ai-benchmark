@@ -34,7 +34,7 @@ related_vendors:
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 매장 매니저가 종이/이메일로 지원 처리, 지원 시간 10분, 시간 부족으로 채용 누수
 - **After**:

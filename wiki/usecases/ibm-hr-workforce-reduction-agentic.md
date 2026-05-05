@@ -33,7 +33,7 @@ related_vendors: []
 
 2025-05 IBM CEO Arvind Krishna 발언 — AI agents (AskHR + watsonx Orchestrate stack)가 **"a couple hundred HR roles"** 대체. 전사 8,000명 layoff (~3% workforce). HR operating budget 4년간 40% 감소 (LaMoreaux). **단, 순 headcount는 증가** — 절감액을 엔지니어·영업·마케팅 채용에 재투자. "감원"이 아닌 "재배치 + 직무 전환" 패러다임의 canonical reference.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 270K 직원 IBM의 HR 운영 비용 baseline (CHRO LaMoreaux pre-AI era)
 - **Pain point**: HR 백오피스 transactional 업무가 budget 흡수, 전략 HR에 투자 여력 부족
@@ -43,7 +43,7 @@ related_vendors: []
 
 > 본 페이지는 *조직 outcome*. AI 도구 자체는 [[ibm-askhr-watsonx]], [[ibm-charlie-learning-ops-agent]], [[ibm-watsonx-orchestrate-ta-agent]] 등 separate page.
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before (As-is, pre-2025)**: HR ops 직원이 정책 Q&A·티켓·learning ops·screening·comp·attrition 분석 manual 수행
 - **After (post-2025)**:
@@ -61,7 +61,7 @@ related_vendors: []
 - 데이터: HR 운영 KPI · budget · headcount snapshot
 - 오너십: Krishna(CEO) + LaMoreaux(CHRO) 공동 거버넌스
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB
@@ -74,7 +74,7 @@ flowchart TB
     Reinvest --> NetGrowth[순 headcount 증가]
 ```
 
-### B. System & Infrastructure (Agent research expanded)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS / 기반 시스템**: ✅ IBM 내부 HR (legacy + Workday 통합 가능성)
 - **AI 시스템 배치**: ✅ Stack 누적: AskHR + cHaRlie + Watson Recruitment + Predictive Attrition + watsonx Orchestrate TA Agent 모두 watsonx Orchestrate 기반
@@ -83,7 +83,7 @@ flowchart TB
 - **사용자 접점**: ✅ AskHR은 직원 self-service portal/채팅; cHaRlie는 admin tool
 - **인증·권한**: _미공개_
 
-### C. Data (Agent research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ HR 정책 docs, employee master data, payroll·benefits·career·skills domain (AskHR이 4개 도메인 routing)
 - **데이터 규모**: ✅ AskHR 11.5M+ 인터랙션 in 2024
@@ -92,7 +92,7 @@ flowchart TB
 - **데이터 거버넌스**: ✅ "highly compliant LLMs" (벤더 주장)
 - **민감정보 처리**: _미공개_
 
-### D. Model (Agent research)
+### D. Model (모델)
 
 - **Foundation model**: ✅ IBM Granite (watsonx Orchestrate 기본) + fine-tuned foundation models (orchestrator agent 기능, 2025)
 - **모델 유형**: ✅ Agentic LLM (Granite + fine-tuned variants) + classifier (prompt routing) + RPA/automation
@@ -102,7 +102,7 @@ flowchart TB
 - **평가·가드레일**: ⚠️ 자사 보고: AskHR 94% autonomous resolution, NPS -35 → +74
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 HR ops 자동화로 200 HR roles 폐지 + 4년간 HR budget 40% 감소 + 순 headcount 증가 (재투자). KR HR 임원이 가장 자주 묻는 "AI 도입 후 인력 줄일 수 있나" 질문의 canonical reference.

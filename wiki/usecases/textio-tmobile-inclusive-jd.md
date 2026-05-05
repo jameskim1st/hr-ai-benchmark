@@ -34,7 +34,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 채용 매니저가 JD를 자유 작성, gendered language·전형적 표현으로 다양성 후보 풀 제한
 - **After**:

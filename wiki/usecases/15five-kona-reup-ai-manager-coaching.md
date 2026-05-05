@@ -34,14 +34,14 @@ related_companies:
 
 15Five가 2025년 5월 출시한 **Kona**는 AI 기반 매니저 효과성 코치로, 1:1 미팅에 자동 참여해 대화를 전사(transcribe)하고 요약·액션 아이템을 생성하며, 성과 리뷰·engagement 설문·이전 미팅 맥락을 통합 분석해 실시간 코칭 팁을 제공한다. **ReUp Education**이 초기 도입 고객으로 파일럿 → 전사 매니저 롤아웃을 완료했다. [[sources/15five-kona-launch-2025-05.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 신임 매니저에게 코칭을 제공하고 싶지만 **전문 코치 비용이 높아 스케일 불가**
 - 매니저의 1:1 미팅이 형식적으로 흐르기 쉬움 — **구조화된 피드백·후속 조치 부재**
 - HR 팀이 매니저 효과성을 측정할 수 있는 **행동 변화 데이터 부족**
 - ReUp Education은 빠르게 성장하는 조직에서 **신임 매니저 지원**이 시급했음 [[sources/15five-kona-launch-2025-05.md]]
 
-## Solution Architecture (요약)
+## Solution Architecture
 
 ### A. Process (프로세스)
 
@@ -62,7 +62,7 @@ flowchart LR
     G --> H[HR 대시보드 모니터링]
 ```
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core 플랫폼**: 15Five (performance management SaaS)
 - **AI 시스템**: Kona — 15Five 플랫폼 내장 AI 에이전트
@@ -70,24 +70,24 @@ flowchart LR
 - **사용자 접점**: 미팅 내 실시간 + Slack + 15Five 웹
 - 나머지 상세 (배포 환경, 인증 등): _미공개 (not disclosed)_
 
-### C. Data
+### C. Data (데이터)
 
 - **입력**: engagement 설문, 성과 리뷰, 이전 1:1 대화 기록, 비즈니스 시스템 데이터 [[sources/15five-kona-launch-2025-05.md]]
 - **전처리**: _미공개 (not disclosed)_
 - **학습 vs RAG**: _미공개 (not disclosed)_
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: _미공개 (not disclosed)_
 - **Model 유형**: LLM (대화 분석·요약·코칭 생성) + 행동 패턴 분석
 - 나머지: _미공개 (not disclosed)_
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **ReUp Education 도입**: 파일럿 → 전사 매니저 롤아웃. ⚠️ 벤더 주장: "기술 설정 수분 내 완료, 변화관리가 심플" [[sources/15five-kona-launch-2025-05.md]]
 - 팀 규모·기간: _미공개 (not disclosed)_
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 

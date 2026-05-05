@@ -34,9 +34,9 @@ related_vendors: []
 
 ServiceNow의 **Now Assist**는 HRSD(HR Service Delivery) 모듈에 통합된 GenAI 기능. HR 케이스 요약·해결 노트 생성·직원 셀프서비스 자동 응답을 제공. ⚠️ 벤더 주장: 54% helpfulness rate. Now Assist **ACV $600M** 달성 (2025년 말), QoQ 150%+ 딜 성장. HR 영역에서는 **티켓 분류·라우팅·지식베이스 자동 유지**에 특화 — [[moderna-ask-hr-routing]]의 "routing" 기능과 유사하지만 ITSM DNA를 가진 접근법.
 
-## Solution Architecture (요약)
+## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: HR 케이스가 분류·라우팅·해결까지 다단계 manual ticket 처리
 - **After**:

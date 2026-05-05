@@ -36,7 +36,7 @@ related_vendors: []
 
 Diligent (글로벌 GRC/board management leader)가 2025년 5월 **Vault Platform (UK)을 인수** — AI-powered ethics·compliance speak-up + investigation. **EthicsChat AI** (대화형 ethical guidance), **VaultTalk·GoTogether** (집단 신고 — 한국 직장 내 괴롭힘 환경에 매칭), AI pattern recognition·predictive analytics로 misconduct 조기 감지. **조사 timeline 최대 80% 단축** (벤더 주장). GDPR·ISO 27001·SOC 2 인증.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 사내 윤리·컴플라이언스 신고는 hotline (NAVEX·Convercent) 또는 자체 portal — 익명 신고 단발 처리, 패턴 분석·예측 기능 부족, 글로벌 GRC 통합 부재
 - **Pain point**:
@@ -48,7 +48,7 @@ Diligent (글로벌 GRC/board management leader)가 2025년 5월 **Vault Platfor
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 직원 익명 신고 → HR/legal 1건씩 조사 → 사후 trend 보고서 (분기·연간)
 - **After (Active Integrity 통합 architecture)**:
@@ -62,7 +62,7 @@ Diligent (글로벌 GRC/board management leader)가 2025년 5월 **Vault Platfor
 - **Frequency**: 24/7 익명 신고 + daily case 처리 + 분기·연간 board reporting
 - **Scope of autonomy**: assist (AI는 분석·문서화·predictive)
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core platform**: Diligent platform (글로벌 GRC SaaS)
 - **AI 시스템 배치**: Vault Platform (Speak-Up + Investigation) + EthicsChat AI 모듈
@@ -70,7 +70,7 @@ Diligent (글로벌 GRC/board management leader)가 2025년 5월 **Vault Platfor
 - **사용자 접점**: web portal, mobile, 익명 hotline, EthicsChat 인터페이스
 - **인증**: 익명 + RBAC + role-based case visibility
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터**:
   - 익명·신원 신고 내용
@@ -83,18 +83,18 @@ Diligent (글로벌 GRC/board management leader)가 2025년 5월 **Vault Platfor
   - EU Whistleblower Directive 준수
   - 익명 보호 + retaliation 방지 mechanism
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: _구체 LLM provider 미공개_ (Diligent enterprise stack)
 - **Customization**: ethics·compliance 도메인 fine-tuning + GRC 통합
 - **Predictive analytics**: pattern recognition으로 misconduct 조기 감지
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: Diligent (인수 후 통합) + 기존 Vault Platform 팀
 - **거버넌스**: 글로벌 GRC platform 통합 → C-suite·board 가시성
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

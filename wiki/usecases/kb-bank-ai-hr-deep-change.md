@@ -34,7 +34,7 @@ related_vendors: []
 
 KB국민은행 **HR Deep Change** — 2020년 하반기 1,100여 명 영업점 직원 이동 배치를 AI 알고리즘으로 단행. 출퇴근 거리·자격증·업무 경력·**육아 고충** 등 수십 가지 정량/정성 데이터를 머신러닝으로 분석. 한국 KR 대기업 인사이동 AI 도입의 가장 잘 문서화된 reference. 2025 상반기 PB·RM 등 상담 직원 대상 AI 활용 확대 — **적용 직원의 57%가 두 달 만에 실제 사용**.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: KB국민은행 영업점 직원 인사이동은 매년 manual 조정 — 수천 직원 개인 사정 (출퇴근·육아·자격) 종합 어려움
 - **Pain point**: 17,000+ KB 직원 base, 영업점 1,000+ 곳 — manual 인사 운영 한계 + 직원 만족도 격차
@@ -42,7 +42,7 @@ KB국민은행 **HR Deep Change** — 2020년 하반기 1,100여 명 영업점 �
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: HR이 manual로 직원 개인 사정·점포 수요 매칭 — 수개월 소요
 - **After**:
@@ -70,7 +70,7 @@ KB국민은행 **HR Deep Change** — 2020년 하반기 1,100여 명 영업점 �
 
 - KB국민은행 HR + IT/AI 본부
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 1,100여 명 영업점 직원 인사이동 자동화 — 한국 KR 대기업 인사 AI 도입의 canonical case + 2025 상담 직원 확장 정착.

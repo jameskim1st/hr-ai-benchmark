@@ -35,7 +35,7 @@ related_vendors: []
 
 # Walmart — Ask Sam + AI Interview Coach + Workforce Reskilling
 
-> ⭐ **리테일 HR AI 최대 규모**: 2.3M 직원, 10,500 매장, **Ask Sam 900k 사용자가 주 3M+ 질문**. IBM AskHR(270k)을 규모에서 3배 이상 초과하는 **세계 최대 HR AI 배포 사례**. **SHRM**(Tier 2)이 "Walmart's AI Revolution: People-Led, Tech-Powered" 독립 기사로 분석 ([[shrm-walmart-ai-revolution-2025]]). **HR Dive**(Tier 2)도 My Assistant GenAI 도구 보도 ([[hrdive-walmart-my-assistant-genai-2024]]).
+> ★ **리테일 HR AI 최대 규모**: 2.3M 직원, 10,500 매장, **Ask Sam 900k 사용자가 주 3M+ 질문**. IBM AskHR(270k)을 규모에서 3배 이상 초과하는 **세계 최대 HR AI 배포 사례**. **SHRM**(Tier 2)이 "Walmart's AI Revolution: People-Led, Tech-Powered" 독립 기사로 분석 ([[shrm-walmart-ai-revolution-2025]]). **HR Dive**(Tier 2)도 My Assistant GenAI 도구 보도 ([[hrdive-walmart-my-assistant-genai-2024]]).
 
 ## Summary
 

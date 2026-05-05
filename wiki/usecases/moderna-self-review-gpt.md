@@ -37,7 +37,7 @@ related_companies:
 
 Moderna가 OpenAI Custom GPT 기반으로 구축한 HR 내부 도구. **직원 본인의 연말 성과 리뷰를 요약**해주는 기능. Moderna 내부 통계(2025년 3~4월)에서 **HR GPT 중 메시지·사용자 수 1위** (⚠️ 자사 보고, VP 발표 기준). HR Brew가 WorldatWork Total Rewards 컨퍼런스에서 취재. 단일 Tier 2 소스 기반이므로 stub 경계.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 연말 성과 리뷰는 작성 부담이 큰 반복 업무 (특히 성과 data·1:1 노트·프로젝트 결과 등 여러 입력을 종합해야 함)
 - Moderna의 "work의 흐름 설계" 철학 맥락에서, 직원이 리뷰 bookkeeping보다 **실제 reflection에 집중**하도록 AI가 요약 초안을 제공
@@ -105,7 +105,7 @@ _범례: 녹색 = HR Brew 소스 확인. 점선 = 세부 단계 미확인 (구�
 - **변화관리**: _미공개_
 - **파트너**: _미공개_
 
-### F. Diagrams
+### F. Diagrams (도식)
 - Process flowchart 1개 작성 (A 섹션). 나머지 도식은 근거 부족으로 생략.
 
 ---

@@ -35,13 +35,13 @@ related_vendors:
 
 2025-09-16 Workday press release에서 공개된 Illuminate HR 에이전트 6종 중 하나. **⚠️ 벤더 주장**: "Continuously analyzing employee feedback to provide insights and take action at scale" — 그 이상의 구체 정보는 공개된 바 없음.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 **이 use case에 국한된 problem 진술은 소스에 없다.** Workday가 Employee Sentiment Agent에 대해 공식적으로 제시한 problem 프레이밍은 확인되지 않음. 이 섹션은 의도적으로 비어 있다 — 추후 Tier 1·2 소스에서 problem 진술이 확인되면 채운다.
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: engagement 설문 결과를 People 팀이 quarterly로 분석·매니저에게 PPT 배포, action 지연
 - **After**:
@@ -88,7 +88,7 @@ related_vendors:
 - **도입 기업 측**: _미공개 (고객명 자체가 없음)_
 - **거버넌스 체계**: _미공개_
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 작성하지 않음. 근거 있는 노드가 부족 — 억지로 그리면 [[CLAUDE|CLAUDE.md]] §3 규정 위반.
 

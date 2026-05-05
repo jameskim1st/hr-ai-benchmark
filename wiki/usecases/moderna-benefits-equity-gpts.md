@@ -44,7 +44,7 @@ Moderna가 OpenAI Custom GPT로 구축한 **Total Rewards 영역 직원 self-ser
 
 두 GPT 모두 전형적인 **HR case deflection** 패턴 — 직원 자가 해결률을 높여 HR 팀 부담을 낮춤.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 대기업의 Total Rewards(의료·치과·401k·생명보험·stock/equity) 정책은 복잡하고, 직원이 개인 상황에 맞게 선택하려면 HR 담당자에게 묻는 경우가 많음
 - Equity compensation은 **용어(vesting·RSU·ESPP·exercise)만으로도 진입장벽이 커서** 직원 이해도가 낮은 영역 — Moderna VP 발언이 이를 명시적으로 지적
@@ -76,7 +76,7 @@ flowchart LR
 ```
 _범례: 녹색 = HR Brew 소스 확인. 점선 = escalation 경로 미확인._
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: _미공개_
 - **AI 시스템 배치**: OpenAI ChatGPT Enterprise의 Custom GPT ([[moderna-blog-openai-2024-04]])
@@ -107,7 +107,7 @@ _범례: 녹색 = HR Brew 소스 확인. 점선 = escalation 경로 미확인._
 - **참여 역할**: _미공개_
 - **거버넌스 체계**: _미공개_
 
-### F. Diagrams
+### F. Diagrams (도식)
 - Process flowchart 1개 (A 섹션). 나머지 미공개 영역은 생략.
 
 ---

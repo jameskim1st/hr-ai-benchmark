@@ -40,7 +40,7 @@ LG AI연구원이 자체 LLM **EXAONE** 기반 'ChatEXAONE' 정식 서비스 출
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 직원이 sharepoint/이메일/시니어 문의로 정보 search → 시간 소요·정확도 변동
 - **After**:
@@ -53,7 +53,7 @@ LG AI연구원이 자체 LLM **EXAONE** 기반 'ChatEXAONE' 정식 서비스 출
 - **Frequency**: daily (사무직 65% 활용률)
 - **Scope**: assistive — Q&A·요약·생성, 결정 권한 없음
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: 각 LG 계열사 HRIS (Workday·SAP 혼재) — 별도, ChatEXAONE은 horizontal 플랫폼
 - **AI 시스템 배치**: LG AI연구원이 운영, 계열사에 share
@@ -62,7 +62,7 @@ LG AI연구원이 자체 LLM **EXAONE** 기반 'ChatEXAONE' 정식 서비스 출
 - **사용자 접점**: Web + 모바일 + IDE plugin (코드 지원)
 - **인증·권한**: LG 그룹 SSO
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터 소스**: 사내 규정·프로젝트 자료·기술 문서·매뉴얼 (RAG 코퍼스)
 - **데이터 규모**: 5만+ 직원 활용, 사무직 65% 재방문률 (베타 검증)
@@ -71,7 +71,7 @@ LG AI연구원이 자체 LLM **EXAONE** 기반 'ChatEXAONE' 정식 서비스 출
 - **데이터 거버넌스**: LG 계열사별 격리 + 그룹 공통 정책
 - **민감정보 처리**: 한국 개인정보보호법 + 영업비밀 — 사내 LLM이라 데이터 주권 우위
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: ✅ **EXAONE** (LG AI연구원 자체 개발 LLM)
 - **모델 유형**: LLM (생성·요약·multi-modal·코드)

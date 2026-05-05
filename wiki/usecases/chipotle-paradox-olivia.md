@@ -41,7 +41,7 @@ related_companies:
 
 Chipotle Mexican Grill(3,500+ 레스토랑, 110,000+ 직원)이 2024년 10월 22일 공식 발표한 AI 채용 플랫폼. Paradox의 **대화형 AI 어시스턴트 Olivia** 기반이며, Chipotle는 이를 **"Ava Cado"**라는 자사 브랜딩으로 배포. North America + Europe 전 매장 대상으로 영·스·불·독 4개 언어 지원. **CHRO Ilene Eskenazi**가 press release에서 직접 quote 제공. ⚠️ 벤더+회사 공동 주장: **time-to-hire 75% 감소**.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 매장 기반 고회전 인력 채용(식음료·retail)은 **지원자 수가 많고 매장별 분산**돼 있어, 전통적 ATS + 매장 매니저 수동 스크리닝이 병목
 - 지원자의 단순 반복 질문(근무시간·시급·위치·교대)에 매니저가 시간 소비
@@ -78,7 +78,7 @@ flowchart LR
 ```
 _범례: 녹색 = Chipotle 공식 press release ([[chipotle-newsroom-ava-cado-2024-10]])에서 확인된 사실. 이제는 벤더 일반 플로우 추정이 아니라 회사 공식 프로세스._
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: _미공개_ — Chipotle이 Workday/Oracle/자체 구축 중 어느 것인지 공개 없음
 - **AI 시스템 배치**: **Paradox 플랫폼** (별도 SaaS, HRMS 별도 layer)
@@ -114,7 +114,7 @@ _범례: 녹색 = Chipotle 공식 press release ([[chipotle-newsroom-ava-cado-20
 - **변화관리 (매장 매니저 교육·수용)**: 암묵적으로 General Manager가 "operations and guest hospitality" 에 더 집중하도록 재설계됐다는 narrative — 구체 교육·이전 프로세스 미공개
 - **Rollout 규모 및 일정**: ✅ **3,500+ restaurants (North America + Europe), 2024년 10월 완료 목표** ([[chipotle-newsroom-ava-cado-2024-10]])
 
-### F. Diagrams
+### F. Diagrams (도식)
 - Process flowchart 1개 (A 섹션, 일반 Paradox 플로우에서 유추). 다른 도식은 Chipotle-specific 정보 부재로 생략.
 
 ---

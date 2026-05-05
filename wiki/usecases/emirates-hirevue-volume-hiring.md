@@ -33,7 +33,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: Pandemic 후 1만 명 cabin crew 재채용 필요, 전통 face-to-face 채용으로는 timeline 불가
 - **After**:

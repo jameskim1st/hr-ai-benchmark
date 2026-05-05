@@ -31,13 +31,13 @@ related_vendors: []
 
 # IBM — AskHR 에이전트
 
-> ⭐ **엔터프라이즈 HR AI 최대 scale 사례**: 270,000명 IBM 직원 대상, 연 210만 대화, 80+ HR 태스크 자동화. Moderna Ask HR의 "routing GPT" 수준을 넘어 **compensation guidance·recognition 생성·expense 처리까지 agentic 수준**으로 진화한 사례.
+> ★ **엔터프라이즈 HR AI 최대 scale 사례**: 270,000명 IBM 직원 대상, 연 210만 대화, 80+ HR 태스크 자동화. Moderna Ask HR의 "routing GPT" 수준을 넘어 **compensation guidance·recognition 생성·expense 처리까지 agentic 수준**으로 진화한 사례.
 
 ## Summary
 
 IBM의 내부 HR 가상 에이전트 **AskHR**은 270,000 IBM 직원에게 HR 정책·보상·복리후생 등 전반적 질문에 답하는 AI 서비스. 초기 rule-based 챗봇에서 시작해, 2025년에 **IBM watsonx Orchestrate**를 통합하며 **agentic automation 수준**으로 진화. ⚠️ 자사 보고: 80+ HR 태스크 자동화, 연간 2.1M 대화 처리. IBM CEO Arvind Krishna가 "a couple hundred HR workers의 업무가 AI로 대체됐고 프로그래머·영업 채용이 증가"했다고 공개 발언.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - IBM은 **270,000명** 규모의 글로벌 기업 — HR service center로의 문의 볼륨이 방대
 - 기존 AskHR는 FAQ 수준의 단순 응답 → "진짜 업무를 수행하는" agentic 수준으로 진화 필요
@@ -75,7 +75,7 @@ flowchart LR
     class Human unknown
 ```
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: IBM 내부 시스템 (자체 구축 추정, 세부 _미공개_)
 - **AI 시스템 배치**: **IBM watsonx Orchestrate** (2025년 통합)

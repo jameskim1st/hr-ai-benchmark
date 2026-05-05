@@ -31,7 +31,7 @@ related_vendors: []
 
 IBM watsonx Orchestrate의 **Talent Acquisition Agent** — 2024-25 generation recruiter copilot. JD 템플릿 생성·hiring manager 공유·후보자 매칭·자격자 alert·intro 메시지·면접 일정·feedback 수집까지 multi-step 워크플로 자동화. ThisWay Global 통합으로 8,500+ diverse community sourcing. Knockri 파트너십(2025-04)으로 면접 설계 워크플로 통합. ⚠️ 자사 보고: AskHR이 약 500K transactions 처리 (JD 생성 포함).
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: recruiter가 JD 작성·후보자 search·일정 조율·feedback 수집을 manual·다중 시스템 hop으로 처리
 - **Pain point**: high-volume 채용에서 recruiter productivity 한계 + diverse sourcing 가시성 부족
@@ -39,7 +39,7 @@ IBM watsonx Orchestrate의 **Talent Acquisition Agent** — 2024-25 generation r
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: hiring manager → recruiter 요청 → JD 작성(반나절) → ATS 게시 → manual screening → 일정 조율 → feedback 수집
 - **After**:
@@ -52,7 +52,7 @@ IBM watsonx Orchestrate의 **Talent Acquisition Agent** — 2024-25 generation r
 - **HITL**: hiring manager가 JD 승인 + 최종 후보자 선택. recruiter가 escalation 케이스 처리
 - **Scope of autonomy**: agent가 multi-step workflow 자율 실행, 사람은 결정 노드만
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: IBM 내부 HCM (Workday 추정)
 - **AI 시스템**: IBM watsonx Orchestrate
@@ -69,7 +69,7 @@ IBM watsonx Orchestrate의 **Talent Acquisition Agent** — 2024-25 generation r
 
 - IBM HR + IBM Research + Knockri/ThisWay 파트너 팀
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 recruiter productivity 향상으로 multi-step TA 워크플로 자동화. ⚠️ 자사 보고 매니저 HR transaction 75% 더 빠름 (broader AskHR 수치, 일부 적용).

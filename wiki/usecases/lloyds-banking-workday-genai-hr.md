@@ -34,7 +34,7 @@ related_vendors:
 
 Lloyds Banking Group(67,000명)은 2018년 Workday HCM 도입, 2020년 Workday Skills Cloud를 추가 배포한 후, 2024년부터 HR 정책 Q&A에 특화된 생성형 AI 파일럿을 운영 중이다. ✅ **Fact** 2025년 GenAI가 약 £50M 가치를 창출했으며, 2026년 £100M 이상을 목표로 GenAI·Agentic AI 확대를 추진 중이다. 2026년 1월에는 67,000명 전 직원 대상 AI Academy를 론칭했다. [[sources/ffnews-lloyds-100m-ai-2026.md]] [[sources/itpro-lloyds-ai-academy-2026.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 영국 금융서비스 업계 디지털 전환 압력과 함께, 67,000명 규모의 HR 정책 관련 문의(휴가·복리후생 등)가 HR 팀 리소스를 과도하게 소모하고 있었다. 또한 AI 시대의 스킬 격차를 조직 전체가 선제적으로 해결하는 것이 전략적 과제였다.
 

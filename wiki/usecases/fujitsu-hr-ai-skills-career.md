@@ -31,7 +31,7 @@ related_vendors: []
 
 Fujitsu는 73,000명(일본 기준)의 직원에 대한 스킬 기반 HR 전환을 추진하며, 내부 개발 AI 플랫폼 Kozuchi를 전사 배포했다. ✅ **Fact** Kozuchi는 월 69,000명 이상의 활성 사용자와 하루 약 380,000건의 사용량을 기록하고 있다. FY2020~FY2022 기간에 일본 직원의 약 25%(약 20,000명)가 자발적으로 내부 공모직에 지원했다. ⚠️ **자사 보고** [[sources/diginomica-fujitsu-hcm-ai-2025.md]] [[sources/unleash-fujitsu-chro-ai-2025.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 Fujitsu는 글로벌 IT 서비스 시장 변화 속에서 기존 직무 중심 HR 관리 시스템으로는 스킬 기반의 유연한 인력 배치가 불가능하다는 문제를 인식했다. 또한 일본의 경직된 노동 시장에서 자발적 경력 개발과 내부 이동성을 높이는 것이 과제였다.
 

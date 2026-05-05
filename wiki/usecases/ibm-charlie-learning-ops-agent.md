@@ -34,7 +34,7 @@ related_vendors: []
 
 IBM이 2023년 launch한 **cHaRlie** (Cognitive HR Learning EM Assistant) — Enterprise Learning Operations & Administration 팀을 위한 watsonx Orchestrate 기반 백오피스 에이전트. 학습 enrollment 모니터링·저조 alert·event 홍보·pre-event comms·virtual class 출석 자동 로깅. ⚠️ 자사 보고: learner NPS 15% 상승, 출석 캡처 100% 정확도, 출석부 turnaround 91% 단축, onboarding time 25% 감소.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: L&D operations 팀이 enrollment 추적·홍보·출석 캡처·event 운영을 manual로 처리 — 270K 직원 규모에서 병목
 - **Pain point**: 직원 facing AI(tutor·content)는 ROI 모호, 학습 ops 백오피스는 ROI 명확하지만 자동화 후순위
@@ -42,7 +42,7 @@ IBM이 2023년 launch한 **cHaRlie** (Cognitive HR Learning EM Assistant) — En
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 1) L&D admin이 enrollment dashboard 수동 점검 / 2) 저조 코스에 manual outreach / 3) virtual class 끝나면 출석 명단 수동 export·집계 / 4) 다음 event 조율
 - **After**:
@@ -61,7 +61,7 @@ IBM이 2023년 launch한 **cHaRlie** (Cognitive HR Learning EM Assistant) — En
 - 모델: watsonx Granite + agent orchestration
 - 오너십: Enterprise Learning Operations & Administration 팀
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart LR
@@ -73,7 +73,7 @@ flowchart LR
     Admin -->|escalation·전략| Strategy[학습 전략 조정]
 ```
 
-### B. System & Infrastructure (Agent research, 2026-05)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS / 기반 시스템**: ✅ IBM 내부 Learning Management System (이름 미공개)
 - **AI 시스템 배치**: ✅ IBM watsonx Orchestrate 기반 (production)
@@ -82,7 +82,7 @@ flowchart LR
 - **사용자 접점**: _미공개_ (L&D admin facing)
 - **인증·권한**: _미공개_ (IBM SSO 추정)
 
-### C. Data (Agent research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ Enrollment data, virtual class attendance, event metadata, learner roster
 - **데이터 규모**: _미공개_ (IBM 270K 직원 규모이나 cHaRlie 처리량 standalone 수치 미공개)
@@ -91,7 +91,7 @@ flowchart LR
 - **데이터 거버넌스**: _미공개_
 - **민감정보 처리**: _미공개_ (직원 attendance가 personal data)
 
-### D. Model (Agent research)
+### D. Model (모델)
 
 - **Foundation model**: ✅ IBM Granite (watsonx Orchestrate 기본 model)
 - **모델 유형**: ✅ Agentic LLM (Granite decoder 아키텍처) + automation/RPA 통합
@@ -101,7 +101,7 @@ flowchart LR
 - **평가·가드레일**: ⚠️ 자사 보고: 출석 캡처 100% 정확도, NPS +15%, turnaround 91% 단축, onboarding -25%
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 L&D 백오피스 자동화로 운영 부담 대폭 경감 + 직원 학습 경험 NPS 향상.

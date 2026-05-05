@@ -31,7 +31,7 @@ related_vendors: []
 
 Mercy(미국 5대 가톨릭 의료 시스템, 40개 병원)는 AI 기반 유연 인력 모델을 도입하여 계약직 간호사(Agency) 비중을 25%에서 8%로 줄이고, 2023년 $30M 비용 절감을 달성했다. ✅ **Fact** 핵심 전략은 AI 주도 스케줄링과 내부 유연 인력풀(Float Pool) 확대를 결합한 "혼합 인력 모델(Blended Workforce)"이다. [[sources/healthcareitnews-mercy-30m-2023.md]] [[sources/beckershospitalreview-mercy-2024.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 COVID-19 이후 간호사 부족과 계약직(Travel Nurse·Agency) 비용 급등이 미국 병원 시스템의 최대 비용 위협이었다. Mercy도 인력의 25%를 비싼 계약직에 의존했으며, 번아웃과 이직률 상승으로 악순환이 지속되었다.
 

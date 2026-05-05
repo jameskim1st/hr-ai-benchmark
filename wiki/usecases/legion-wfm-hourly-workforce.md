@@ -37,7 +37,7 @@ Legion Technologies (2016년 설립, Bay Area)는 **AI-native WFM (workforce man
 >
 > ⚠️ **Mercy Health $30M misattribution**: "Mercy Health 연 $30M travel nurse 절감" 사례는 **Works/Trusted Health**의 결과이지 Legion 아님. PwC 자료에 잘못 인용 — wiki 등재 거부.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 시급직 매니저가 매주 spreadsheet로 직원 shift 작성 — 수요 예측 부재, 노동 시간 over/under, 결근 1회당 대체 인력 찾기 30~60분 소요
 - **Pain point**:
@@ -48,7 +48,7 @@ Legion Technologies (2016년 설립, Bay Area)는 **AI-native WFM (workforce man
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 매니저 spreadsheet → 직원 game·휴가 신청 → 매니저 수동 조정 → 결근 시 매니저가 전화로 대체 인력 찾기
 - **After (벤더 발표 architecture)**:
@@ -62,14 +62,14 @@ Legion Technologies (2016년 설립, Bay Area)는 **AI-native WFM (workforce man
 - **Frequency**: daily (스케줄·결근 alert) + 주간 (수요예측 갱신)
 - **Scope of autonomy**: recommend (스케줄·대체 인력) + auto-execute (직원 self-service shift swap, 매니저 정책 범위 내)
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core**: Legion WFM SaaS (cloud-hosted, _구체 hyperscaler 미공개_)
 - **사용자 접점**: 매니저 web/desktop, 직원 mobile app, 매니저 mobile alert
 - **연동**: POS (Toast·Square·Oracle MICROS), payroll (ADP·UKG·Paychex·Workday), HRIS, 출퇴근 시스템 (timeclock·biometric)
 - **인증**: SSO via employer IdP
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터**:
   - POS 트랜잭션·시간대별 매출
@@ -80,19 +80,19 @@ Legion Technologies (2016년 설립, Bay Area)는 **AI-native WFM (workforce man
 - **모델 구조**: 수요 예측 (시계열 ML) + 스케줄 최적화 (constraint optimization) + 결근 예측 (분류) + LLM (직원·매니저 자연어 인터페이스)
 - **Data governance**: SOC2 Type II, _구체 retention 미공개_
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: _구체 LLM provider·버전 미공개_ (Agentic features는 LLM-기반 — 자사 발표)
 - **수요 예측 모델**: 자체 시계열 ML (95% accuracy — Forrester 2021 검증)
 - **Customization**: 매장·산업별 도메인 fine-tuning (벤더 주장)
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: Legion 벤더 — 고객사가 SaaS 구매
 - **참여 역할**: Legion 구현 컨설팅 + 고객 매장 운영팀·HR·payroll·IT
 - **Funding stage**: 2021 Series C $50M, 2024 Riverwood growth $50M + SVB debt $50M (누적 ~$195M, **단일 Series C 아님**)
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

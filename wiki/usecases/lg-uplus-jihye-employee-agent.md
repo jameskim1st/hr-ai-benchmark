@@ -31,7 +31,7 @@ related_vendors: []
 
 LG U+의 사내 전용 AI 에이전트 **'지혜(Wisdom)'** (2025-05 파일럿). 이메일 번역·파일 요약·코드리뷰·내부 코드 분석/오류 사전 탐지. CIO 정성권: "2025년이 AI 에이전트 사용 확산 원년". 한국 통신사 중 사내 AI 에이전트 첫 공개 사례.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: LG U+ 직원이 이메일·문서·코드를 manual 처리
 - **Pain point**: 통신사 코드 base 거대 + glob·다국적 파트너 이메일 다언어
@@ -39,7 +39,7 @@ LG U+의 사내 전용 AI 에이전트 **'지혜(Wisdom)'** (2025-05 파일럿).
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **After (파일럿)**:
   1. 이메일 자동 번역
@@ -56,7 +56,7 @@ LG U+의 사내 전용 AI 에이전트 **'지혜(Wisdom)'** (2025-05 파일럿).
 
 - LG U+ CIO 직속 (정성권 CIO)
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 한국 통신 3사 중 사내 AI 에이전트 첫 공개 사례. HR 특화 비중은 _미공개_ — 일반 productivity copilot에 가깝.

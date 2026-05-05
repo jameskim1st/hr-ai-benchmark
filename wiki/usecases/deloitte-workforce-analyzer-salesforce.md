@@ -52,7 +52,7 @@ Deloitte가 2025-06-24에 발표한 **Human Capital AI 솔루션 suite**: **Work
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 역할별 AI 영향도를 수기 워크숍·인터뷰로 6~12개월에 걸쳐 평가
 - **After**:

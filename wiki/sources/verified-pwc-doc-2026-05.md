@@ -38,7 +38,7 @@ PwC가 모듈별로 정리한 "글로벌 대기업 HR AI Use Case" 자료(9개 H
 ### Case 4 — Eightfold AI at Mastercard
 - ✅ Mastercard Eightfold 도입 사실 — [Mastercard 2025 AI culture story](https://www.mastercard.com/us/en/news-and-trends/stories/2025/ai-culture-adoption-experimentation.html) (Tier 4 자사 보고)
 - ✅ ⚠️ 자사 보고 metric: 직원 93% 등록·월 42% engagement·1M project hours·인터뷰 24h 내 스케줄링
-- ❌ "$20M 외부 컨트랙터 절감" 출처 미확인 — Mastercard 공개 metric은 engagement·hours 위주
+- 🚫 "$20M 외부 컨트랙터 절감" 출처 미확인 — Mastercard 공개 metric은 engagement·hours 위주
 - 🚨 **결정적 오류**: PwC 자료의 "Digital Twin = Eightfold 2025 신규 기능" 잘못된 귀속. 실제로는 Eightfold 공동창업자 Ashutosh Garg·Varun Kacholia가 분사 창업한 **별도 회사 Viven AI** (2025-10-15 stealth 탈출, $35M seed) — [TechCrunch](https://techcrunch.com/2025/10/15/eightfold-co-founders-raise-35m-for-viven-an-ai-digital-twin-startup-for-querying-unavailable-coworkers/) (Tier 2)
 - Eightfold 자체는 [Cultivate 2025에서 Agentic AI 발표](https://www.prnewswire.com/news-releases/talent-intelligence-to-talent-advantage-eightfold-ai-revolutionizes-hr-through-agentic-ai-302449233.html) (Tier 3)
 
@@ -48,7 +48,7 @@ PwC가 모듈별로 정리한 "글로벌 대기업 HR AI Use Case" 자료(9개 H
 - 창업자 신뢰도 (Eightfold 공동창업자 분사) → 시장 반응 우호적
 
 ### Case 9 — 5-Agent Retention System (Structura/Cognita/Chronos/Sentio/Agora)
-- ❌ 공개 1차 출처 (논문·벤더·컨설팅 백서·블로그) 0건 발견
+- 🚫 공개 1차 출처 (논문·벤더·컨설팅 백서·블로그) 0건 발견
 - 모든 5개 이름이 HR/이직예측 외 다른 회사·논문에만 존재
 - ✅ 사용자 확인: **PwC Korea 내부 자료 + SK하이닉스 추진 계획** — 공개 vendor 제품 아닌 컨설팅 제안 architecture
 - 등재 시 stage: announced, confidence < 0.30, 공식 출처 부재 명시 필수

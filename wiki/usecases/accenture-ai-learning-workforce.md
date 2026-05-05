@@ -52,9 +52,9 @@ Accenture(733,000+ 직원, 글로벌 최대 컨설팅·IT 서비스 기업)가 �
 | 교육 시간 단축 | **50%** | Everest Group | ⚠️ 자사 보고 |
 | 전체 직원 | **733,000+** | 공개 정보 | ✅ Fact |
 
-## Solution Architecture (요약)
+## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 분절된 LMS·외부 partner 콘텐츠가 개인화 없이 카탈로그형으로 제공
 - **After**:

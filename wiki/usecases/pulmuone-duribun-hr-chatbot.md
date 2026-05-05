@@ -41,7 +41,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 직원이 HR 정책 문의 → HR 팀 전화·이메일·sharepoint search → 응답 1~2일
 - **After**:
@@ -54,7 +54,7 @@ related_vendors: []
 - **Frequency**: daily
 - **Scope**: assistive — Q&A only, 결정 없음
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: 풀무원 자체 HR 시스템
 - **AI 시스템 배치**: 두리번 chatbot (vendor _미공개_, 한국 vendor 추정)
@@ -63,7 +63,7 @@ related_vendors: []
 - **사용자 접점**: PC web, 모바일 (확장)
 - **인증·권한**: 풀무원 SSO
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터 소스**: 인사 정책 문서 (6개 HR 영역) RAG 코퍼스
 - **데이터 규모**: ~7K 직원 cover
@@ -72,7 +72,7 @@ related_vendors: []
 - **데이터 거버넌스**: PIPA 준수
 - **민감정보 처리**: HR 데이터 RBAC
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ (한국 자체 LLM 또는 외부 LLM)
 - **모델 유형**: LLM + RAG

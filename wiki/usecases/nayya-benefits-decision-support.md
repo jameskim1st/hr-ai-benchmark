@@ -35,7 +35,7 @@ Nayya는 2019년 설립 미국 startup, **AI 기반 복리후생 의사결정 �
 
 > ⚠️ **Funding 정정 필수**: 일부 자료(PwC 컨설팅 문서 포함)에서 "$55M Series B (2022)"로 기술되나, 실제로는 **$55M Series C (2022-03)** + **$37M Series B (2021-06)**. 컨설팅 deck에 인용 시 정정.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 미국 직원이 OE 시즌에 plan 선택 — 평균 17분 소요, 의료 plan만 5~10개 옵션, voluntary benefit (accident·hospital·critical illness·disability)은 추가 5~15개. 정보 비대칭으로 직원이 "안전하게" 비싼 PPO 선택 → 본인부담 over-pay
 - **Pain point**: 직원당 plan mismatch로 연 평균 $750~$1,500 over-pay (Nayya 자사 조사). voluntary benefit 가입율 낮음 (직원 정보 부족)
@@ -43,7 +43,7 @@ Nayya는 2019년 설립 미국 startup, **AI 기반 복리후생 의사결정 �
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: HR이 plan 비교 PDF 배포 → 직원이 1년에 1번 30분 안에 선택 → 1년 후 청구 후 후회
 - **After (벤더 발표 architecture)**:
@@ -57,14 +57,14 @@ Nayya는 2019년 설립 미국 startup, **AI 기반 복리후생 의사결정 �
 - **Frequency**: annual (OE 시즌) + 청구 시점 (수시)
 - **Scope of autonomy**: recommend-only
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core**: Nayya SaaS platform (cloud-hosted, _구체 hyperscaler 미공개_)
 - **사용자 접점**: web portal, mobile app, embedded in MetLife portal·bswift enrollment platform
 - **연동**: MetLife channel partner, bswift (enrollment), Mercer (broker), ADP·Workday (HRIS)
 - **인증**: SSO via employer IdP
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터**:
   - 직원 청구 이력 (carrier integration)
@@ -74,19 +74,19 @@ Nayya는 2019년 설립 미국 startup, **AI 기반 복리후생 의사결정 �
 - **모델 구조**: 추천 모델 (collaborative filtering + cost prediction) + LLM (자연어 설명)
 - **Data governance**: HIPAA 준수, _구체 retention 정책 미공개_
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: _구체 LLM provider·버전 미공개_
 - **추천 모델**: cost prediction + collaborative filtering 조합 (_구체 architecture 미공개_)
 - **Customization**: domain-specific (US 의료 plan 구조)
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: Nayya 벤더 — employer/broker가 SaaS 구매
 - **파트너 채널**: MetLife (2023-10 전략적 파트너), bswift (enrollment), Mercer (broker), ADP·Workday Ventures (투자자)
 - **참여 역할**: Nayya AI 팀 + 고객 HR/Benefits 팀 + broker (Mercer 등)
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

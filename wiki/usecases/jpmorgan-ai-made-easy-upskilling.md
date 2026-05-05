@@ -32,7 +32,7 @@ related_vendors: []
 
 JPMorgan **AI Made Easy** — 230K 직원 대상 전사 AI 교육 프로그램. AI fundamentals + prompt engineering + 컴플라이언스 + 직무별 use case curriculum. Asset & Wealth Management 신입 분석가에게 **prompt engineering 필수**. LLM Suite 200K+ 8개월 onboarding의 교육 backbone.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 230K 직원 중 AI literacy 분포 편차 큰 — 데이터 사이언티스트는 풍부, 운영·영업·고객서비스 직원은 baseline
 - **Pain point**: 회사 LLM Suite를 도입해도 사용 모르면 ROI 없음
@@ -40,7 +40,7 @@ JPMorgan **AI Made Easy** — 230K 직원 대상 전사 AI 교육 프로그램. 
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 직원 AI 교육은 자율·신청 기반
 - **After**:
@@ -58,7 +58,7 @@ JPMorgan **AI Made Easy** — 230K 직원 대상 전사 AI 교육 프로그램. 
 - 사업부별 curriculum customization
 - 오너십: HR + IT/AI Plat팀 + 사업부 SME
 
-### B. System & Infrastructure (Agent research expanded)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS / 기반 시스템**: _미공개_ (JPM HRIS 명시 없음)
 - **AI 시스템 배치**: ✅ AI Made Easy 교육 sessions + LLM Suite hands-on 플랫폼 통합
@@ -67,7 +67,7 @@ JPMorgan **AI Made Easy** — 230K 직원 대상 전사 AI 교육 프로그램. 
 - **사용자 접점**: ✅ AI Made Easy = 인터랙티브 sessions (live + 직무별 모듈); LLM Suite portal 직접 hands-on
 - **인증·권한**: _미공개_ (JPM internal SSO 추정)
 
-### C. Data (Agent research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ 교육 콘텐츠 = AI fundamentals + prompt engineering + compliance + 직무별 use case curriculum
 - **데이터 규모**: ✅ Q1 alone **30,000+ 직원 attended AI Made Easy sessions** (신규 fact); 230K+ in scope; 250K LLM Suite rollout (branch·call center 제외, 약 절반 daily 사용)
@@ -76,7 +76,7 @@ JPMorgan **AI Made Easy** — 230K 직원 대상 전사 AI 교육 프로그램. 
 - **데이터 거버넌스**: ✅ Compliance 모듈 별도 (금융정보·고객정보 처리 가이드)
 - **민감정보 처리**: ✅ Compliance 모듈에서 다룸
 
-### D. Model (Agent research expanded)
+### D. Model (모델)
 
 - **Foundation model**: N/A (training program 자체)
 - **모델 유형**: N/A — 단, hands-on 학습 대상 LLM Suite는 ✅ **OpenAI + Anthropic 양사** (multi-vendor, 신규 발견)
@@ -86,7 +86,7 @@ JPMorgan **AI Made Easy** — 230K 직원 대상 전사 AI 교육 프로그램. 
 - **평가·가드레일**: ⚠️ 자사 보고: 직원당 3-6h/week saved (LLM Suite 결합 효과)
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 대규모 단일 교육으로 LLM Suite 200K+ 8개월 onboarding 가능 + 신입 prompt engineering baseline 확립.

@@ -37,7 +37,7 @@ Nestlé(275,000+ 직원, 글로��� 최대 식품기업)가 Paradox의 conv
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 후보자가 career site에서 긴 지원 form 작성, 리크루터가 수동 스크리닝/스케줄링
 - **After**:

@@ -47,7 +47,7 @@ related_vendors: []
 
 > 본 페이지는 "use case"가 아닌 "규제·컴플라이언스 framework"를 다룬다. Solution Architecture는 *기업이 의무를 이행하는 운영 구조* 관점으로 작성.
 
-### A. Process (의무 이행 프로세스)
+### A. Process (프로세스)
 
 - **Before (As-is)**: HR AI 도입 시 자체 윤리 가이드라인·DPIA(GDPR)만 적용, 한국 법적 의무 명시 부재
 - **After (To-be)**:
@@ -61,7 +61,7 @@ related_vendors: []
 - **Trigger & Frequency**: 신규 AI 도입(adhoc) + 분기/연 정기 영향평가 + bias 모니터링 (continuous)
 - **Scope of autonomy**: 고영향 AI는 **autonomous decision 금지** — 항상 사람의 승인 필요
 
-### B. System & Infrastructure (의무 이행 인프라)
+### B. System & Infrastructure (시스템·인프라)
 
 - **거버넌스 시스템**: AI 자산 인벤토리 + 영향평가 도큐먼트 관리 + 감사 로그
 - **추천 솔루션 카테고리**: Workday ASOR 등 [[workday-agent-system-of-record-asor]], 자체 GRC tool
@@ -69,7 +69,7 @@ related_vendors: []
 - **사용자 접점**: HRBP·legal·DPO·AI 위원회 (사람), 지원자/직원에게는 채용·평가 process 내 AI 고지
 - **인증·권한**: AI 운영자·감사자·HRBP 권한 분리
 
-### C. Data (의무 데이터 관리)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: AI 모델 학습·운영 데이터, 의사결정 로그, 영향평가 결과, 이의제기 처리 기록
 - **데이터 규모**: 기업별 상이
@@ -78,7 +78,7 @@ related_vendors: []
 - **데이터 거버넌스**: PIPA 보존기간 + AI 기본법 감사 로그 보존 (시행령 가이드)
 - **민감정보 처리**: 채용·평가에 사용되는 개인정보는 PIPA + AI 기본법 dual 적용
 
-### D. Model (의무 대상 모델 분류)
+### D. Model (모델)
 
 - **고영향 AI (high-impact AI) — 채용·HR 관련 명시**:
   - 채용 의사결정 AI (마이다스 inAIR·SK AICT·원티드 AI Agent·Workday·SAP·Eightfold·Paradox 등 KR 운영분)
@@ -87,14 +87,14 @@ related_vendors: []
 - **저위험 AI**: HR Service Agent (정책 Q&A 챗봇), 학습 콘텐츠 추천 등 (단, 결과가 평가·승진에 연결되면 재분류)
 - **분류 경계**: SAP Joule Career Agent의 "후계자 추천"·Workday Illuminate Performance Review Agent → 인적감독 강화 필요 (의무 분류 모니터링)
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: HR + Legal + DPO + IT/AI 위원회 — cross-functional governance board 권장
 - **참여 역할**: HRBP·legal counsel·DPO·AI ethics officer·CISO
 - **거버넌스 체계**: AI 윤리위원회 + 영향평가 review board + 외부 감사 (필요 시)
 - **변화관리**: HR 임직원 교육 (고영향 AI 정의·이행 의무·이의제기 절차)
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

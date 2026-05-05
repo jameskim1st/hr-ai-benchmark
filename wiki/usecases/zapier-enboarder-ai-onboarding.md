@@ -30,7 +30,7 @@ related_vendors: []
 
 Zapier (워크플로 자동화 SaaS, 100% 원격, 30개국 ~800명)은 Enboarder 플랫폼으로 온보딩 자동화를 구현해 수작업 온보딩 태스크 206,000분(86 근무 주) 절감, 채용 관리자 참여율 +10%, 신규 입사자의 온보딩 최우수 평가 가능성 2.5배 향상을 달성했다. 2022년 케이스 스터디; Enboarder는 이후 2025년 SmartRecruiters와 통합 파트너십을 맺고 AI 네이티브 온보딩 플랫폼으로 확장. Deloitte, KPMG, ING, T-Mobile, Cisco도 Enboarder 고객으로 확인.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 100% 원격·30개국 분산 구조 → 일관된 온보딩 경험 전달 불가
 - 채용 관리자 참여 없이 HR만으로 온보딩 → 신규 입사자 경험 단절

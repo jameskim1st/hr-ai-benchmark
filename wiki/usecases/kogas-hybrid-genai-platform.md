@@ -32,7 +32,7 @@ related_vendors: []
 
 한국가스공사가 에너지 공공기관 최초 **하이브리드 생성형 AI 플랫폼** 도입 (2025-09 발주, 2026 구축). **사내 전용 LLM (보안 민감 영역) + 상용 초거대 LLM (전문지식)** 라우팅. 임직원 문서 초안·규정 검토·단순 행정 자동화. **제논(GenON) 구축 사업 수주**. 한국 공공기관 보안 vs 성능 trade-off 해법 표준 패턴.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 가스공사 ~3K 직원이 문서 초안·규정 검토를 manual
 - **Pain point**: 공공기관 보안 민감 영역 (에너지 인프라) + 성능 우수한 상용 LLM 활용 동시 필요
@@ -40,7 +40,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 문서 초안·규정 검토 manual
 - **After**:
@@ -65,7 +65,7 @@ related_vendors: []
 
 - 가스공사 IT + GenON 파트너 (수주)
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 한국 공공기관 보안 + 성능 trade-off 해법 — 사내 + 상용 LLM 라우팅 표준 패턴.

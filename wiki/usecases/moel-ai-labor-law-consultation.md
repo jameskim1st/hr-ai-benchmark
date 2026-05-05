@@ -33,7 +33,7 @@ related_vendors: []
 
 대한민국 고용노동부가 **2024년 11월 시범 출시**한 **AI 노동법 상담 챗봇** (ai.moel.go.kr) — 노동자·사용자가 24/7 무료 노동법 상담. ✅ Fact: **2025년 누적 117,000회 사용**, **노동법 상담 시간 87.5% 단축** (정부 자체 측정), 야간·주말 사용 비중 37.7%, **32개 언어 지원** (외국인 노동자 대응). 공인노무사회와 MOU 체결 — 노동약자 보호 AI 혁신 협업. 한국 정부가 직접 운영하는 **노무 AI 표준 사례** — 한국 대기업 사내 ER 챗봇 reference.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 한국 노동자·사용자가 노동법 (근로기준법·최저임금법·산업안전보건법·직장 내 괴롭힘 금지법 등) 관련 질문 시 — (a) 고용노동부 콜센터 (1350, 평일 업무시간) (b) 공인노무사 유료 상담 (c) 인터넷 검색 (정확도 낮음)
 - **Pain point**:
@@ -45,7 +45,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 노동자 → 콜센터 1350 (평일만) 또는 노무사 유료 → 답변 며칠 소요
 - **After**:
@@ -61,7 +61,7 @@ related_vendors: []
 - **Frequency**: 24/7 daily (야간·주말 비중 37.7%)
 - **Scope of autonomy**: assist (정보 제공) — 결정·신고는 사람
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core platform**: 정부 ai.moel.go.kr (자체 host)
 - **AI 시스템 배치**: 자체 구축 LLM 기반 챗봇 + 노동법 RAG
@@ -69,7 +69,7 @@ related_vendors: []
 - **인증**: 익명 사용 (노동약자 진입 장벽 낮춤)
 - **Multilingual**: 32개 언어 (한국어·영어·중국어·베트남어·태국어·필리핀어·인도네시아어·캄보디아어·미얀마어 등 외국인 노동자 비중 높은 언어)
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터**:
   - 노동법 전체 조문 (근로기준법·최저임금법·산업안전보건법·노동조합법·직장 내 괴롭힘 금지법 등)
@@ -79,19 +79,19 @@ related_vendors: []
 - **모델 구조**: RAG (노동법 corpus) + LLM (자연어 응답·다국어) + classification (질문 유형·연계 필요성 판단)
 - **Data governance**: 정부 PIPA 준수, 익명 사용·anonymized 로그, 사용 트렌드만 정책 input
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: _구체 LLM provider 미공개_ — 한국 정부 보안 정책상 비공개. 추정: 국내 LLM (네이버 HyperCLOVA·삼성 Gauss·SKT 또는 글로벌)
 - **Customization**: 노동법 도메인 fine-tuning + 32개 언어 자료 학습
 - **Guardrails**: 정부 운영 → 보수적 답변·법률 자문이 아닌 "정보 제공" 명시
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: 고용노동부 + 한국고용정보원 (운영) + **공인노무사회 (MOU 자문)**
 - **참여 역할**: 노동법 전문가·공인노무사·LLM 엔지니어·다국어 검증
 - **거버넌스**: 정부 부처 직접 운영, 정기 답변 정확도 audit
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

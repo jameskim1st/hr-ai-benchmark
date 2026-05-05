@@ -29,7 +29,7 @@ related_vendors: []
 
 Arca Continental Coca-Cola Southwest Beverages (AC-CCSWB, 미국 최대 코카콜라 보틀러 중 하나, 9,000+ 직원)이 Perceptyx Activate의 AI Intelligent Nudges를 통해 리더들에게 참여도 조사 결과 기반의 개인화 코칭 프롬프트를 제공했다. 2020~2025년 5년간 리더십 지수가 65% → 89.3%로 상승하고, 2024 연간 설문 주기에서 93%의 리더가 1,191개 액션 플랜을 생성했다. 2025 Perceptyx EX Impact Award 수상 + 2025 Coca-Cola Candler Cup(글로벌 보틀러 최우수상) 수상.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 매장·물류 현장 관리자들이 데이터를 해석하는 데 시간이 부족 → 참여도 데이터가 행동으로 연결되지 않음
 - 참여도 조사의 3대 개선 드라이버 확인: 정기 피드백, 명확한 커뮤니케이션, 경력 성장

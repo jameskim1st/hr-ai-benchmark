@@ -33,7 +33,7 @@ related_vendors: []
 
 JPMorgan **LLM Suite** — 2024 여름 launch, model-agnostic gateway (OpenAI + Anthropic), ~230K 직원 대상 8개월 만에 200K+ 온보딩 (~2/3 workforce). ⚠️ 자사 보고: 30-40% efficiency, 직원당 3-6h/week saved, $1.5B/yr 추정 가치. **핵심 distinct feature**: 직원이 LLM Suite로 **annual performance review 초안 drafting** 가능. 동시에 Dimon Feb 2026: 백오피스/operations -4%/-2%, 클라이언트직 +4% — 총 318,512명 거의 flat 유지하며 AI 재배치. AI specialist 1,500 → 2,500 (+67%).
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 230K 직원 대규모 finance enterprise, 정보보안·규제 제약으로 외부 LLM(ChatGPT) 직접 사용 불가
 - **Pain point**: gen AI 효익 vs 금융정보보호·고객정보·내부거래 정보 제약
@@ -41,7 +41,7 @@ JPMorgan **LLM Suite** — 2024 여름 launch, model-agnostic gateway (OpenAI + 
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 직원이 외부 ChatGPT·Claude 등 사용 금지 (보안 정책). 내부 분석·보고서 작성 manual
 - **After**:
@@ -57,7 +57,7 @@ JPMorgan **LLM Suite** — 2024 여름 launch, model-agnostic gateway (OpenAI + 
 - **HITL**: 모든 산출물 사람 검토·승인. 매니저가 performance review 최종 결정
 - **Frequency**: daily 사용
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core**: JPMorgan 자체 구축 LLM Suite (private cloud, 추정 AWS·Azure 혼합)
 - **AI 시스템**: model-agnostic gateway architecture
@@ -76,7 +76,7 @@ JPMorgan **LLM Suite** — 2024 여름 launch, model-agnostic gateway (OpenAI + 
 - JPMorgan AI Research + IT Plat팀 + HR (review drafting use case 협업)
 - AI specialist: 1,500 → 2,500 (+67%, Dimon)
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB
@@ -91,7 +91,7 @@ flowchart TB
     Reinvest -->|+67% AI specialist| Spec[AI 인력 1,500→2,500]
 ```
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 private gateway로 보안 유지하며 230K 직원 gen AI 활용 + AI 재배치로 백오피스 축소·클라이언트직 확대 (총 headcount flat 유지).

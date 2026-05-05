@@ -39,7 +39,7 @@ related_companies:
 
 Unilever는 2019년부터 **Gloat**와 파트너십으로 **"FLEX Experiences"**라는 사내 AI 기반 talent marketplace를 운영. 직원 프로필(스킬·관심·purpose)을 기반으로 내부 프로젝트·역할 기회를 추천 매칭. **매니저 승인 불필요** 원칙이 특징 (본업 유지 전제). Internal mobility / project staffing / redeployment 영역의 대표 레퍼런스.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - Unilever는 190개국·128,000명 규모로 운영되며, 사일로·지역 간 인력 활용 비효율이 큼
 - 직원은 현재 부서 외의 기회를 보기 어렵고, 매니저는 본인 팀 인력을 "잃지 않으려" 함 → **정적 탤런트 배치**의 한계
@@ -75,7 +75,7 @@ flowchart LR
 ```
 _범례: 모든 노드 = i4cp 2019-12 기사 확인 사실._
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: _미공개_ — Unilever가 어떤 HCM을 쓰는지 이 기사엔 없음 (다른 소스에선 Workday/SAP 등 언급되나 본 wiki 미검증)
 - **AI 시스템 배치**: **Gloat 플랫폼** (별도 SaaS, HRMS에 통합된 별도 layer)
@@ -112,7 +112,7 @@ _범례: 모든 노드 = i4cp 2019-12 기사 확인 사실._
 - **변화관리**: **매니저 허가 불필요** 원칙이 가장 큰 변화관리 tempo 포인트. 이게 HR·매니저 측 pushback에 어떻게 대응했는지 세부는 ❓ 미공개
 - **파트너**: [[gloat]] (단일 플랫폼 파트너)
 
-### F. Diagrams
+### F. Diagrams (도식)
 - Process flowchart 1개 (A 섹션). 시스템·data 도식은 근거 부족으로 생략.
 
 ---

@@ -34,13 +34,13 @@ related_companies:
 
 **삼성 멀티캠퍼스**의 **CIC(Corporate Innovation Campus)** 플랫폼은 삼성전자 사내 직원 대상 e-러닝 서비스로, **부서·직급·직무·관심 키워드·수강 이력**을 분석해 **맞춤형 교육 콘텐츠를 추천**하는 AI 기능을 운영한다. 멀티캠퍼스는 별도로 외부 기업 대상 AI 직무 역량 교육 프로그램과 IT 업스킬링·리스킬링 서비스를 제공하며, 2025년 삼성청년SW·AI아카데미(SSAFY) 커리큘럼에서도 AI 역량 강화를 확대했다. [[sources/clap-blog-hr-ai-trend-2026.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 삼성전자 규모(10만+ 직원)에서 **개인별 교육 니즈가 극도로 다양** — 부서·직급·직무·관심사 조합 수천 가지
 - 전통 LMS의 **일률적 과정 목록**은 직원 engagement 저하
 - AI·디지털 리스킬링 수요 폭증 → **맞춤형 추천 없이는 학습 효율 저하**
 
-## Solution Architecture (요약)
+## Solution Architecture
 
 ### A. Process (프로세스)
 
@@ -49,13 +49,13 @@ related_companies:
 - **HITL 지점**: 추천은 자동 — 직원이 최종 수강 결정
 - **Scope of autonomy**: Recommend
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core 플랫폼**: 삼성U 멀티캠퍼스 (모바일 앱 + 웹) — 삼성전자 사내 전용 [[sources/clap-blog-hr-ai-trend-2026.md]]
 - **운영사**: 멀티캠퍼스 (삼성 계열 기업교육 전문사)
 - 연동·배포 상세: _미공개 (not disclosed)_
 
-### C. Data
+### C. Data (데이터)
 
 - **입력**: 부서, 직급, 직무, 관심 키워드, 수강 신청 이력 [[sources/clap-blog-hr-ai-trend-2026.md]]
 - 나머지: _미공개 (not disclosed)_
@@ -64,7 +64,7 @@ related_companies:
 
 - _미공개 (not disclosed)_
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 

@@ -33,13 +33,13 @@ related_companies:
 
 **General Mills**가 전통 EAP(Employee Assistance Program)의 **1% 이용률** 문제를 해결하기 위해 **Spring Health**의 AI 기반 정밀 정신건강 플랫폼을 도입. 14개월 내 **28% 직원 등록, 이용률 26%** (기존 대비 26배), **우울증 58% 증상 개선**(평균 2.46 세션), **불안 49% 개선**(1.4 세션), 전체 **67% 개선**을 보고. Spring Health는 AI를 활용해 직원-치료사 매칭·초기 평가·치료 경로 최적화를 수행하며, 2026년 기준 50M+ lives 지원. [[sources/spring-health-general-mills-case.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 전통 EAP 이용률이 **산업 평균 2~5%**, General Mills는 **1%**에 불과 → 직원 정신건강 지원이 형식적
 - 정신건강 문제 → 생산성 저하·결근·이직 — 그러나 기존 EAP는 **접근성·품질이 낮아** 실질 효과 미미
 - General Mills는 **정신건강에 대한 사내 문화 자체를 바꾸고 싶었음** — 단순 서비스 교체가 아닌 **문화 변화** 목적 [[sources/spring-health-general-mills-case.md]]
 
-## Solution Architecture (요약)
+## Solution Architecture
 
 ### A. Process (프로세스)
 
@@ -61,31 +61,31 @@ flowchart LR
     G -->|개선| H[지속 관리]
 ```
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core 플랫폼**: Spring Health (정밀 정신건강 SaaS)
 - **AI 시스템**: 직원-치료사 매칭 AI, 정신건강 평가 AI, 치료 경로 최적화 [[sources/spring-health-general-mills-case.md]]
 - **사용자 접점**: 모바일 앱 + 웹 포털
 - 배포 환경·연동 상세: _미공개 (not disclosed)_
 
-### C. Data
+### C. Data (데이터)
 
 - **입력**: 직원 자기보고 평가(wellness assessment), 치료사 프로필, 임상 결과 데이터 [[sources/spring-health-general-mills-case.md]]
 - **데이터 규모**: ⚠️ 벤더 주장: 별도 연구에서 53,000 환자·500+ 고용주 데이터 분석 [[sources/spring-health-general-mills-case.md]]
 - **민감정보**: 정신건강 데이터는 HIPAA 대상 — Spring Health의 구체 준수 방식은 _미공개_
 
-### D. Model
+### D. Model (모델)
 
 - **AI 유형**: 정밀 매칭 알고리즘 (치료사-직원), 임상 결과 예측 모델
 - **Foundation model**: _미공개 (not disclosed)_
 - **평가**: ⚠️ 벤더 주장: 2025년 연구에서 95% 만족, 70% "기분 나아짐", zero major safety concerns [[sources/spring-health-general-mills-case.md]]
 - **Peer-reviewed**: 53,000 환자 연구 — 92.3% reliable improvement/recovery, 61.7% remission (DOI _미공개_) [[sources/spring-health-general-mills-case.md]]
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - _미공개 (not disclosed)_
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 

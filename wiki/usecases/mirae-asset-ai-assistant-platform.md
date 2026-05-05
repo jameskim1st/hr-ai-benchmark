@@ -32,7 +32,7 @@ related_vendors: []
 
 미래에셋증권이 네이버클라우드 협업 — 전용 LLM **'하이퍼클로바X 대시'** 위에 구축한 **사내 AI 어시스턴트 플랫폼** (2024-09 production). 직원·부서가 본인 업무 매뉴얼·노하우 문서를 업로드해 학습시킨 후 **전용 챗봇을 자체 생성** — AI 비전문가도 활용 가능한 **No-code 빌더**. 한국 자체 LLM (네이버 Hyperclova X) 기반 — 데이터 주권·금융 규제 대응이 driver.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 미래에셋증권 직원이 사내 매뉴얼·노하우 문서 search 시 sharepoint·이메일 산발 — 정보 접근 비효율
 - **Pain point**: 부서별 specific knowledge가 사내 walking encyclopedia (시니어)에 의존 — 시니어 퇴직·부재 시 손실
@@ -40,7 +40,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 직원이 sharepoint·이메일·시니어 문의로 정보 search
 - **After**:
@@ -52,7 +52,7 @@ related_vendors: []
 - **HITL**: 부서 owner가 챗봇 콘텐츠·답변 quality 모니터링
 - **Frequency**: daily
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: 미래에셋증권 사내 시스템 (구체 _미공개_)
 - **AI 시스템 배치**: ✅ 자체 AI Assistant 플랫폼 (네이버클라우드 협업)
@@ -61,7 +61,7 @@ related_vendors: []
 - **사용자 접점**: ✅ web 기반 No-code 챗봇 빌더 + 직원 자연어 query
 - **인증·권한**: ✅ 사내 SSO + 부서별 RBAC
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ 부서별 업무 매뉴얼·노하우 문서 (직원·부서 직접 upload)
 - **데이터 규모**: _미공개_ — 챗봇 수·인덱스 크기 비공개
@@ -70,7 +70,7 @@ related_vendors: []
 - **데이터 거버넌스**: ✅ 부서별 RAG 격리. No-code 빌더 quality governance 세부 _미공개_
 - **민감정보 처리**: ✅ 한국 자체 LLM (Hyperclova X) → 데이터 주권. 전자금융감독규정 fit
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: ✅ 네이버 **하이퍼클로바X 대시 (HyperCLOVA X Dash)** — 한국어 specialized
 - **모델 유형**: LLM (요약·QA)
@@ -80,7 +80,7 @@ related_vendors: []
 - **평가·가드레일**: ⚠️ No-code 빌더 챗봇의 prompt injection·hallucination 통제 부족 가능 — 모니터링 필요. 공식 framework _미공개_
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 한국 자체 LLM 활용으로 데이터 주권 + 금융 규제 fit + No-code로 부서별 자율 챗봇 확산.

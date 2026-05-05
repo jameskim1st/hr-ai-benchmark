@@ -44,7 +44,7 @@ Deloitte 2026 Global Human Capital Trends는 89개국·9,000명 임원 서베이
 
 > Deloitte의 분석 framework이 곧 "solution"의 framework. 실제 솔루션이 아닌 **사고 framework** 차원에서 정리.
 
-### A. Process (Deloitte의 trend 분석 framework)
+### A. Process (프로세스)
 
 - **3축 긴장 → tipping points** 프레임:
   1. Workforce 차원: 사람-에이전트 통합 → "agent governance"
@@ -52,30 +52,30 @@ Deloitte 2026 Global Human Capital Trends는 89개국·9,000명 임원 서베이
   3. Worker 차원: 개인 motivation vs 조직 capability → "intentional work redesign"
 - 각 축에서 "tension"이 "tipping point"로 변환되는 임계점 분석
 
-### B. System & Infrastructure (지지 데이터)
+### B. System & Infrastructure (시스템·인프라)
 
 - 89개국·9,000명 임원 서베이 (Tier 1 표본)
 - 매년 발행되는 capstone 리포트 (2010~ 누적 데이터)
 - HR Executive·HR Brew·SHRM 등 Tier 2 매체에서 광범위 인용
 
-### C. Data (핵심 발견 수치)
+### C. Data (데이터)
 
 - **60% vs 5% 갭**: 임원 60%가 AI를 의사결정에 사용 — 그러나 5%만 거버넌스가 잘 됨
 - **2배 ROI 격차**: "intentional work redesign" 조직이 AI ROI 기대치 초과 확률 2배
 - **Investor disclosure 압력**: SEC·EU CSRD 인적자본 공시 의무 가속화
 - **HR의 "agent governance" 역할 신규 부상**: Workday ASOR 등 상용 인프라와 부합
 
-### D. Model (분석 frameworks)
+### D. Model (모델)
 
 - Deloitte 자체 longitudinal 분석 + 외부 academic·analyst 인용
 - "Tensions to tipping points" 프레임 (2026 신규)
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - Deloitte Global Human Capital Practice (수천명 컨설턴트)
 - 한국 Deloitte Anjin도 KR-specific 보고서 별도 발간
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart LR

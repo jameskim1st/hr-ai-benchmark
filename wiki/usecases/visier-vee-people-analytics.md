@@ -33,9 +33,9 @@ related_vendors: []
 
 Visier는 **People Analytics 전문 AI 플랫폼**. 주력 AI 제품 **Vee**는 자연어로 workforce 데이터에 질문하면 즉시 인사이트를 제공하는 디지털 어시스턴트. 2025년 HR Tech에서 **Visier Org Design** 출시 — AI 기반 조직 설계 + workforce planning 통합. 고객 **Providence (헬스케어)**는 Visier로 **2,000+ 간호사(caregiver) proactive onboarding + vacancy forecasting** 달성.
 
-## Solution Architecture (요약)
+## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: HRBP·매니저가 People analytics 질문에 데이터 팀 ticket 의존, 답변 수일 소요
 - **After**:

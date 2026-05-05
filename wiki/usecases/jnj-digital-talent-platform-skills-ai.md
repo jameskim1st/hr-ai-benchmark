@@ -17,7 +17,7 @@ stage: production
 frequency: daily
 first_seen: 2020
 last_confirmed: 2025
-confidence: 0.60               # ⭐ Tier 1 MIT CISR(+0.35) + Tier 1 학술지 IS Journal(+0.35) - 중복 학술 소스 보정 = 0.60
+confidence: 0.60               # ★ Tier 1 MIT CISR(+0.35) + Tier 1 학술지 IS Journal(+0.35) - 중복 학술 소스 보정 = 0.60
 consulting_angle_status: filled
 sources:
   - "MIT CISR Working Paper 2024 https://cisr.mit.edu/publication/MIT_CISRwp461_JohnsonandJohnsonAIDrivenSkills_VanderMeulenTonaSomehWixomLeidner"
@@ -31,7 +31,7 @@ related_vendors: []
 
 # Johnson & Johnson — Digital Talent Platform (AI 스킬 추론)
 
-> ⭐⭐ **Wiki 최고 수준 학술 검증 사례**: MIT CISR + peer-reviewed *Information Systems Journal* 에 발표된 연구로, AI가 직원 스킬의 60~70%를 자동 추론하고, 내부 배치 8%↑·자발적 이탈 3.2%↓·학습 참여 20%↑를 달성�� 것이 **독립 학술 연구로 확인**됨. 마이다스아이티 Nature 논문(채용 예측)과 함께 wiki의 **양대 ���술 검증 사례**.
+> ★★ **Wiki 최고 수준 학술 검증 사례**: MIT CISR + peer-reviewed *Information Systems Journal* 에 발표된 연구로, AI가 직원 스킬의 60~70%를 자동 추론하고, 내부 배치 8%↑·자발적 이탈 3.2%↓·학습 참여 20%↑를 달성�� 것이 **독립 학술 연구로 확인**됨. 마이다스아이티 Nature 논문(채용 예측)과 함께 wiki의 **양대 ���술 검증 사례**.
 
 ## Summary
 
@@ -44,7 +44,7 @@ AI가 직원 스킬의 60~70%를 자동 추론(Tier 1 학술 검증), J&J Learn 
 
 | 지표 | 값 | 출처 | 성격 |
 |---|---|---|---|
-| AI 스킬 추론 비율 | **60~70%** (나머지는 직원 자기보고) | MIT CISR + IS Journal | ✅ **Fact (Tier 1 학술)** ⭐ |
+| AI 스킬 추론 비율 | **60~70%** (나머지는 직원 자기보고) | MIT CISR + IS Journal | ✅ **Fact (Tier 1 학술)** ★ |
 | J&J Learn 접근율 | **90%+** (Technology 직원, 2024-03 기준) | MIT CISR | ✅ **Fact (Tier 1 학술)** |
 | 자발적 학습 참여 | 스킬 추론 도입 후 **20%↑** | IS Journal 2025 | ✅ **Fact (학술)** |
 | 내부 배치 | 2023 대비 **8%↑** (2024) | IS Journal 2025 | ✅ **Fact (학술)** |
@@ -54,9 +54,9 @@ AI가 직원 스킬의 60~70%를 자동 추론(Tier 1 학술 검증), J&J Learn 
 
 **★ 핵심**: 이 metric들은 모두 **MIT CISR 연구 + IS Journal peer review**를 거쳤으므로 wiki의 다른 어떤 metric보다도 독립 검증 수준이 높음.
 
-## Solution Architecture (학술 논문 기반)
+## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 130k+ 직원 스킬 보유 현황은 자가 신고·이력서 기반 단편적이며, 매니저는 후보자 스킬을 일일이 확인해 internal mobility 후보 search. 스킬 갭 진단은 부서별 수기·연 1회 수준
 - **After**:

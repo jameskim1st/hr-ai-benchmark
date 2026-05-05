@@ -35,14 +35,14 @@ related_companies:
 
 UKG가 AI 기반 워크포스 스케줄링·인텔리전스 솔루션을 확대하며, 미국 최대 헬스케어 시스템의 **90% 가까이**가 UKG를 사용한다고 발표(2026-02). 대표 고객 사례로 **KC CARE Health Center**가 리텐션 **92% 개선**·효율성 **60% 향상**, **Jetro Restaurant Depot**이 UKG Rapid Hire로 연간 소싱·온보딩 비용 **$1.8M 절감**(2025), 연 **$2.2M 절감** 전망. 2025년 11월 **Workforce Intelligence Hub** 출시 — AI 기반 스케줄·타임·채용·성과·급여 데이터를 실시간 통합 뷰로 제공. [[sources/ukg-healthcare-scheduling-2026-02.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 프론트라인(의료·소매·외식) 인력의 **교대 스케줄링 복잡성** — 자격증·컴플라이언스·선호도·공정근무법 등 다중 제약
 - 높은 이직률 → **채용·온보딩 비용 반복 발생**
 - 스케줄·타임·급여 데이터가 **사일로화** → 실시간 의사결정 불가
 - 프론트라인 직원의 **번아웃** — 비효율 스케줄링이 주 원인 중 하나
 
-## Solution Architecture (요약)
+## Solution Architecture
 
 ### A. Process (프로세스)
 
@@ -64,28 +64,28 @@ flowchart LR
     H[타임·급여 데이터] --> F
 ```
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core 플랫폼**: UKG Pro / UKG Ready (HCM + Workforce Management)
 - **AI 시스템**: Bryte AI (UKG 내장 AI 에이전트) — 급여 인사이트·복리후생 모델링·셀프서비스·Great Place To Work Hub 연동 [[sources/ukg-healthcare-scheduling-2026-02.md]]
 - **Workforce Intelligence Hub**: 2025-11 출시 — 스케줄·타임·채용·성과·급여·산업 트렌드 실시간 통합 [[sources/ukg-healthcare-scheduling-2026-02.md]]
 - **데이터 규모**: ⚠️ 벤더 주장: 12B+ 스케줄 생성, 10B 출퇴근 기록, 750M+ 지원자 처리 [[sources/ukg-healthcare-scheduling-2026-02.md]]
 
-### C. Data
+### C. Data (데이터)
 
 - **입력**: 근태·스케줄·채용·급여·성과 데이터 + 자격증·규제·직원 선호도 + Great Place To Work 설문 [[sources/ukg-healthcare-scheduling-2026-02.md]]
 - **One View**: 150+ 국가, $14.6B 급여 처리, >99% 정확도, 84% touchless payroll [[sources/ukg-healthcare-scheduling-2026-02.md]]
 - 학습/RAG 방식: _미공개 (not disclosed)_
 
-### D. Model
+### D. Model (모델)
 
 - _미공개 (not disclosed)_
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - _미공개 (not disclosed)_
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 

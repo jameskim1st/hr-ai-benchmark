@@ -35,7 +35,7 @@ related_vendors:
 
 Commonwealth Bank of Australia(CBA)는 OpenAI ChatGPT Enterprise를 50,000명 직원에게 배포하고, Microsoft 365 Copilot을 17,500명에게 제공하며 AI 역량 구축을 전사적으로 추진하고 있다. ✅ **Fact** 2026년 2월에는 $90M(호주 달러) 3개년 "Future Workforce Program"을 발표하여 직원 스킬 개발과 커리어 전환 지원을 목표로 한다. 다만 AI 챗봇으로 45명 고객 서비스 직원을 대체하려다 노조 압박으로 결정을 번복한 사례도 주목된다. [[sources/openai-cba-case-study.md]] [[sources/cba-future-workforce-90m-2026.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 CBA는 오세아니아 최대 은행으로서 AI를 통한 운영 효율화와 동시에 대규모 AI 역량 구축이 필요했다. AI가 일부 업무를 자동화함에 따라 직원들의 역할 전환을 지원하고 AI 시대 경쟁력을 유지하는 것이 전략적 과제다.
 

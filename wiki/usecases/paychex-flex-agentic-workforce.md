@@ -32,14 +32,14 @@ related_vendors:
 
 Paychex가 2026년 2월 **Paycor** 및 **Paychex Flex** 플랫폼에 에이전틱 AI 솔루션을 발표. **Paycor Agentic Timesheet Approvals**(타임카드 자동 스코어링·이상만 사람 검토), **Paycor Auto-Shifts**(근무시간 제한·휴식·공정근무법 기반 최적 교대 생성), **Paychex Flex AI-Powered Time-Off**(PTO 패턴 분석·반복 가용성 AI). **800,000 고객** 규모. Nucleus Research: 워크포스 관리 자동화 평균 ROI **$12.24/달러**. [[sources/paychex-agentic-workforce-2026-02.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 매니저가 타임시트를 **수동으로 하나씩 검토·승인** → 시간 낭비 + 오류 발생
 - 교대 스케줄을 **수동 작성** → 노동법(공정근무법·52시간) 위반 리스크
 - PTO 관리가 반응적 → **피크 기간 인력 부족** 사전 예측 불가
 - SMB(중소기업)는 HR 전담 인력이 적어 **자동화 수요 특히 높음**
 
-## Solution Architecture (요약)
+## Solution Architecture
 
 ### A. Process (프로세스)
 
@@ -60,7 +60,7 @@ flowchart LR
     J --> K[피크 기간 예측·알림]
 ```
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core 플랫폼**: Paychex Flex + Paycor (HCM + Payroll + WFM)
 - **AI**: 에이전틱 AI — Paycor 및 Flex 플랫폼 내장 [[sources/paychex-agentic-workforce-2026-02.md]]
@@ -71,7 +71,7 @@ flowchart LR
 
 - _미공개 (not disclosed)_
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 

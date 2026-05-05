@@ -31,7 +31,7 @@ related_vendors: []
 
 국민연금공단이 2025-09 **'AI·혁신 추진단'** 출범 — 기획이사 단장, **CAIO(Chief AI Officer) 신설**. 4개 분과 (연금·복지·기금운용·기관운영·시스템). **AI 사원** 활용 상담·홍보, **AI 규정비서**, **AI 수어 영상안내** 운영 중. 한국 공공기관·연기금 CAIO 도입 + AI 거버넌스 추진단 패턴의 표준 사례.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 국민연금공단 ~7K 직원, 5,000만+ 국민 가입자 — 상담·규정 응대 부담 거대
 - **Pain point**: 공공기관 디지털 전환 + 정부 AI 정책 (한국 AI 기본법 2026-01) 대응
@@ -60,7 +60,7 @@ related_vendors: []
 - 기획이사 (단장) + CAIO (신설) + 4개 분과장
 - 2025-09-18 공식 출범
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: 국민연금공단 자체 (구체 _미공개_)
 - **AI 시스템 배치**: ✅ 다중 — AI 사원·AI 규정비서·AI 수어 영상안내
@@ -69,7 +69,7 @@ related_vendors: []
 - **사용자 접점**: ✅ 대고객 web/앱 (AI 사원·수어) + 사내 (AI 규정비서)
 - **인증·권한**: ✅ 공공기관 보안 표준 + PIPA strict
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ 연금·복지·규정 문서, 가입자 상담 이력, 수어 영상 콘텐츠
 - **데이터 규모**: ✅ 직원 ~7K, 가입자 5,000만+
@@ -78,7 +78,7 @@ related_vendors: []
 - **데이터 거버넌스**: ✅ CAIO 신설 + AI·혁신 추진단 4개 분과
 - **민감정보 처리**: ✅ 5,000만+ 국민 — PIPA strict, KR AI 기본법 (2026-01) 고영향 AI 분류 가능
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ — 다중 vendor 추정 (수어는 별도)
 - **모델 유형**: generative (요약·QA) + multimodal (수어 영상 — sign language video synthesis)
@@ -88,7 +88,7 @@ related_vendors: []
 - **평가·가드레일**: ⚠️ KR AI 기본법 인적감독 의무 — 연금 의사결정 영향 시
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 공공기관 CAIO 신설 + AI 거버넌스 추진단 운영 — 한국 공공기관 표준 패턴.

@@ -33,11 +33,11 @@ Gloat의 공식 Unilever customer story 업데이트. 2019년 i4cp 기사 이후
 - **Upskilling 경로** 제공 (발전된 내용)
 
 ## 미공개 / 검증 필요
-- ❌ 41% 생산성 개선의 **측정 방법** (what changed how much)
-- ❌ 매칭 정확도·품질 metric
-- ❌ 편향·DEI 감사 결과 (다른 소스에서 "2/3 기회 → 여성" 언급 있으나 이 소스는 미확인)
-- ❌ Tier 1·2 독립 검증 (본 wiki 기준 여전히 없음)
-- ❌ 구체 ROI·cost 분석
+- 🚫 41% 생산성 개선의 **측정 방법** (what changed how much)
+- 🚫 매칭 정확도·품질 metric
+- 🚫 편향·DEI 감사 결과 (다른 소스에서 "2/3 기회 → 여성" 언급 있으나 이 소스는 미확인)
+- 🚫 Tier 1·2 독립 검증 (본 wiki 기준 여전히 없음)
+- 🚫 구체 ROI·cost 분석
 
 ## 관련 페이지
 - Company: [[unilever]]

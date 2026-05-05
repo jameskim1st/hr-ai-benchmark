@@ -43,7 +43,7 @@ related_vendors:
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 14만 직원 대상 내부공모는 manager 추천·비공식 네트워크 의존, 글로벌 가시성 부재
 - **After**:

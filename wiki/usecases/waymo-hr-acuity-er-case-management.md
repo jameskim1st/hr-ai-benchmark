@@ -33,7 +33,7 @@ Waymo (Alphabet 자율주행 자회사, ~3,000명)는 HR Acuity로 ER case manag
 
 > 📌 **HR Acuity case study 단일 출처** — Tier 1·2 독립 정량 검증 0건. 92% 수치는 ⚠️ 자사 보고로 인용 시 명시 필수.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: Waymo는 ServiceNow 같은 범용 ITSM/HR ticketing 도구로 ER case 처리 — grievance·discipline·investigation도 일반 ticket으로 처리
 - **Pain point**:
@@ -45,7 +45,7 @@ Waymo (Alphabet 자율주행 자회사, ~3,000명)는 HR Acuity로 ER case manag
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 직원이 ServiceNow ticket으로 ER 신고 → HR이 일반 ticket workflow로 처리 → audit·reporting 수작업
 - **After**:
@@ -58,28 +58,28 @@ Waymo (Alphabet 자율주행 자회사, ~3,000명)는 HR Acuity로 ER case manag
 - **Frequency**: daily case 처리 + 분기 trend
 - **Scope of autonomy**: assist + automate (분류·audit·reporting 자율, 결정·인터뷰는 사람)
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core platform**: HR Acuity SaaS (Waymo 도입)
 - **AI 시스템 배치**: HR Acuity 전체 (olivER AI 사용 여부는 case study에 명시 없음)
 - **연동**: HRIS·SSO (구체 미공개)
 - **Migration**: ServiceNow → HR Acuity (ER case 전용 분리)
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터**: 직원 신고·인사 정보·과거 case (Migration된 ServiceNow case 일부 가능성)
 - **Data governance**: role-based access·security 강화
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: HR Acuity stack (구체 모델 미공개)
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: Waymo People Relations team (Bruce Berrol Head of People Relations)
 - **거버넌스**: ER 전용 도구 도입 → audit trail·legal hold 컴플라이언스 강화
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

@@ -47,7 +47,7 @@ Spire Inc.는 미주리주 St. Louis 기반 미국 5위 천연가스 utility (1.
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 노조 grievance 신고 → HR이 spreadsheet에 기록 → 매니저 이메일 협업 → 별도 시스템에서 근태·LMS·comp 데이터 수집 → audit log 분산
 - **After**:
@@ -61,7 +61,7 @@ Spire Inc.는 미주리주 St. Louis 기반 미국 5위 천연가스 utility (1.
 - **Frequency**: daily (신고·진행) + 분기별 trend report
 - **Scope of autonomy**: assist + execute (자동 데이터 통합·분류는 자율, 결정·교섭은 사람)
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: SAP SuccessFactors (Spire는 SAP HCM 베이스)
 - **AI 시스템 배치**: SAP Industry Cloud Solutions Portfolio 내 endorsed app (SAP App Center 등재)
@@ -70,7 +70,7 @@ Spire Inc.는 미주리주 St. Louis 기반 미국 5위 천연가스 utility (1.
 - **인증**: RBAC (HR·매니저·직원·노조 representative 권한 분리)
 - **AI 안전성**: SAP Business AI guardrails 활용 (벤더 주장)
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터**:
   - Employee Central (역할·근속·노조 소속·과거 disciplinary)
@@ -82,18 +82,18 @@ Spire Inc.는 미주리주 St. Louis 기반 미국 5위 천연가스 utility (1.
 - **모델 구조**: AI summarization (case 요약) + classification (grievance type·노조 식별) + RPA (시스템 자동 갱신)
 - **Data governance**: SAP enterprise governance, audit trail, _구체 retention 미공개_
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: SAP Business AI (구체 LLM provider _부분 미공개_)
 - **Customization**: domain-specific (US labor relations + 다중 노조 CBA 처리)
 - **Orchestration**: Sodales 자체 workflow engine + SAP Joule (가능성)
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: Spire HR + Sodales customer success + SAP partner ecosystem
 - **참여 역할**: HR business partner (운영) + 노조 representative (CBA 협의) + IT (SAP 통합)
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

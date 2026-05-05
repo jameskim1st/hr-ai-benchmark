@@ -36,7 +36,7 @@ Docebo는 **AI-native LMS/LXP** (3,900+ 고객, 70개국, 30M+ 사용자). **Jos
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: La-Z-Boy (10k+ 글로벌 직원, 가구 제조·소매)가 15년 된 LMS 사용. 잦은 crash·낮은 engagement, 신상품·VOC 트레이닝 콘텐츠 제작에 instructional designer 수개월 소요
 - **After**:
@@ -48,7 +48,7 @@ Docebo는 **AI-native LMS/LXP** (3,900+ 고객, 70개국, 30M+ 사용자). **Jos
 - **HITL**: SME가 AI 생성 콘텐츠 검토·승인, L&D 매니저가 카탈로그 큐레이션
 - **Frequency**: 학습 = daily, 콘텐츠 generation = adhoc, KPI 리뷰 = monthly
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: La-Z-Boy 측 _미공개_ — Docebo는 stand-alone LMS/LXP
 - **AI 시스템 배치**: ✅ Docebo Learning Suite SaaS (AI-native 전환 중)
@@ -57,7 +57,7 @@ Docebo는 **AI-native LMS/LXP** (3,900+ 고객, 70개국, 30M+ 사용자). **Jos
 - **사용자 접점**: ✅ Docebo web·모바일 — 학습자·instructor·L&D 매니저 dashboard
 - **인증·권한**: 기업 SSO + RBAC
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ 기존 콘텐츠·정책 문서 (생성 학습용), 직무·완료 이력 (recommendation), VOC·신상품 자료 (La-Z-Boy)
 - **데이터 규모**: ✅ Docebo 30M+ 사용자, 3,900+ 고객 / La-Z-Boy 10K+ 글로벌
@@ -66,7 +66,7 @@ Docebo는 **AI-native LMS/LXP** (3,900+ 고객, 70개국, 30M+ 사용자). **Jos
 - **데이터 거버넌스**: _미공개_
 - **민감정보 처리**: _미공개_
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ — Docebo AI 핵심 underlying model 비공개
 - **모델 유형**: ✅ generative (content·virtual coach) + embedding (neural search) + recommendation
@@ -81,7 +81,7 @@ Docebo는 **AI-native LMS/LXP** (3,900+ 고객, 70개국, 30M+ 사용자). **Jos
 ### 기대효과 요약
 La-Z-Boy 기준 활성 LMS 사용자 179% YoY 증가, 과정 완료율 85% 증가 (벤더 주장). Disguise는 활성 learner 4배 증가.
 
-### La-Z-Boy (가구 제조·리테일) ⭐
+### La-Z-Boy (가구 제조·리테일) ★
 
 | 지표 | 값 | 출처 | 성격 |
 |---|---|---|---|
@@ -103,7 +103,7 @@ La-Z-Boy 기준 활성 LMS 사용자 179% YoY 증가, 과정 완료율 85% 증�
 |---|---|
 | Training time·cost | **20% 절감** |
 
-## Solution Architecture (요약)
+## Solution Architecture
 
 ### Docebo AI 핵심 기능 (2025)
 - **Dynamic content generation** — AI가 자동 학습 콘텐츠 생성

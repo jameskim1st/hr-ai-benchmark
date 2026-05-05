@@ -30,7 +30,7 @@ related_vendors: []
 
 Tampa General Hospital (12,000 FTE, 대형 미국 의료시스템)이 Visier 인력 분석 플랫폼을 활용해 공석율·이직 원인을 데이터로 분석하고 에이전시 노동(파견 간호사) 의존도를 70% 줄였다. 절감 재원 $50M+를 직원 보상에 재투자해 공석율 10% 미만을 달성했다. Visier Outsmart 2025 컨퍼런스에서 Business Performance Impact Vizzie Award 수상. Visier 고객 컨퍼런스 발표 기반으로 자사 보고 성격이 있으나, 독립 HIMSS Stage 7 인증(2025-06)이 병원의 분석 성숙도를 간접 검증.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 입원 환자 파견 간호사(travel nurse) 과의존 → 고비용 구조
 - 인력 공석 원인 파악 데이터 부재 → 임시방편적 충원 반복

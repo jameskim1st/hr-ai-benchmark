@@ -33,14 +33,14 @@ related_vendors:
 
 SAP SuccessFactors의 첫 번째 HR Joule Agent인 **Performance & Goals Agent**가 2025년 하반기 GA. 매니저에게 맞춤 인사이트·목표 진척 업데이트·개인화된 대화 포인트를 제공해 성과 대화의 질을 높인다. Josh Bersin(Tier 1)은 이를 "one of the most impressive array of enterprise-class AI announcements"로 평가. 2026년 상반기 Career & Talent Development Agent, HR Service Agent, People Intelligence Agent, Payroll Agent 등 4개 추가 에이전트 GA 예정. [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 매니저가 성과 대화를 준비하는 데 **시간이 많이 소요** — 여러 시스템에서 데이터를 수집해야 함
 - 목표 진척도를 실시간으로 파악하기 어려움 → **형식적 리뷰**로 전락
 - 대규모 SuccessFactors 고객(SAP ERP 기반 대기업)에서 **HRIS 내장 AI**에 대한 수요 증가
 - Bersin: IBM, Disney 등이 Workday → SuccessFactors로 전환하는 사례 증가 — SAP 에코시스템 통합이 동인 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
 
-## Solution Architecture (요약)
+## Solution Architecture
 
 ### A. Process (프로세스)
 
@@ -63,7 +63,7 @@ flowchart LR
     G --> H[성과 대화 실행]
 ```
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: SAP SuccessFactors
 - **AI 시스템**: Joule (SAP의 AI copilot/agent 플랫폼) — SuccessFactors 내장 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
@@ -71,24 +71,24 @@ flowchart LR
 - **사용자 접점**: SuccessFactors UI 내 Joule 대화형 인터페이스 + Microsoft Teams/Outlook 연동 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
 - 배포 환경: SAP BTP (Business Technology Platform) 기반 — _상세 미공개_
 
-### C. Data
+### C. Data (데이터)
 
 - **입력**: SuccessFactors 내 목표·성과·피드백·학습 데이터 + SAP Business Data Cloud + Datasphere [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
 - **데이터 규모**: _미공개 (not disclosed)_
 - **학습 vs RAG**: _미공개 (not disclosed)_
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ — Joule이 40개 AI 엔진을 통합하므로 다중 모델 오케스트레이션 추정 가능하나 구체 모델명 미공개 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
 - **Orchestration**: a2a/MCP 프로토콜 기반 에이전트 간 통신 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
 - 나머지: _미공개 (not disclosed)_
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - IBM, Disney 등이 Workday → SuccessFactors 전환 (Bersin 언급, 구체 수치 없음) [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
 - 거버넌스·팀 구조: _미공개 (not disclosed)_
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 

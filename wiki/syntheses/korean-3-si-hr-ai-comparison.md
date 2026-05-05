@@ -26,12 +26,12 @@ consulting_priority: high
 | **주력 제품** | Brity Copilot (범용 AI 어시스턴트) | 에이전틱 AI HR (채용 특화) | AI 채용 서비스 + AICT |
 | **HR 특화도** | 낮음 (범용 협업 도구에 HR 기능 포함) | **높음** (채용·인사 특화 서비스) | **매우 높음** (채용 전 과정 전용) |
 | **핵심 기능** | 메일·메신저·문서 요약·협업 | **자기소개서 분석 + 면접 질문 자동 생성** | **AICT (AI 활용 능력 평가) + 1차 면접 100% 자동화** |
-| **아키텍처 공개** | ❌ | ✅ **Knowledge Lake → Hub → Refiner → Router** | ❌ |
+| **아키텍처 공개** | 🚫 | ✅ **Knowledge Lake → Hub → Refiner → Router** | 🚫 |
 | **자사 도입** | 삼성 관계사 17곳, 18만+ 사용자 | LG 그룹 (추정, 공식 확인 제한) | SK C&C·SKT·SK브로드밴드 3개 계열사 |
 | **외부 고객** | 대외 고객 있음 | _미공개_ | 2025 SaaS 대외 확산 추진 중 |
 | **파트너** | OpenAI 공식 파트너 | 자체 개발 (foundation model _미공개_) | SKT (합작), A.X LLM 추정 |
 | **성과 metric** | 18만+ 사용자 (전사 범용) | **26% 생산성 개선** (HR 특화) | **100배 빠름, 시간당 1,000명** |
-| **학술 검증** | ❌ | ❌ | ❌ |
+| **학술 검증** | 🚫 | 🚫 | 🚫 |
 | **wiki confidence** | (use case 미생성) | 0.25 | 0.25 |
 | **출처** | LG 미디어, ZDNet | LG 공식 보도 | SK AX 공식·인사이트 |
 
@@ -60,11 +60,11 @@ quadrantChart
 |---|---|---|---|---|
 | **영역** | 채용 평가 (TA) | 채용 매칭 (TA) | 급여·세무 (TR) | 올인원 HR SaaS |
 | **주력 제품** | inAIR (AI 역량검사) | 채용 에이전트 | ONE AI 연말정산 | flex 플랫폼 |
-| **핵심 차별점** | ⭐ **Nature 논문 검증** | LLM 자연어 검색 | 한국 세법 특화 | SaaS, 빠른 성장 |
+| **핵심 차별점** | ★ **Nature 논문 검증** | LLM 자연어 검색 | 한국 세법 특화 | SaaS, 빠른 성장 |
 | **도입 기업** | **10+ 대기업 + 공공** | 3.5만 기업 (플랫폼) | 1000+ 기업 (연말정산) | 다수 스타트업·중견 |
-| **독립 검증** | ✅ KAIST+Nature | ✅ AI타임스 (Tier 2) | ✅ 택스워치 (Tier 2) | ❌ (블로그만) |
+| **독립 검증** | ✅ KAIST+Nature | ✅ AI타임스 (Tier 2) | ✅ 택스워치 (Tier 2) | 🚫 (블로그만) |
 | **타겟** | 대기업·공공 | 채용 담당자 B2B | 중소·중견 HR | 스타트업~중견 |
-| **wiki confidence** | **0.50** ⭐ | 0.20 | 0.20 | (stub) |
+| **wiki confidence** | **0.50** ★ | 0.20 | 0.20 | (stub) |
 
 ---
 
@@ -124,7 +124,7 @@ quadrantChart
 ## 6. 관련 wiki 페이지
 
 ### Use cases
-- ��🇷 [[midas-inair-ai-assessment-korea]] — ⭐ wiki 2위 confidence
+- ��🇷 [[midas-inair-ai-assessment-korea]] — ★ wiki 2위 confidence
 - 🇰🇷 [[sk-group-aict-ai-recruitment]]
 - ��🇷 [[lgcns-agentic-ai-hr]]
 - 🇰🇷 [[wantedlab-ai-recruiting-agent]]

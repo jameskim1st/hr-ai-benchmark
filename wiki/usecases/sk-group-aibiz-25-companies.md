@@ -33,7 +33,7 @@ related_vendors: []
 
 SK 그룹이 SKT-SK AX 합작 'A.Biz'를 **그룹 단일 표준**으로 25개 멤버사·**약 8만 명**에 배포 (2025 하반기 rollout). SK디스커버리 등 7개사 시작 → 2025년 말까지 **SK하이닉스·SK이노베이션** 포함 25개 멤버사 확산. HR 정책·절차 문의 응대용 AI 에이전트를 IT 전문 지식 없이 HR 담당자가 **agent builder로 자체 구축** 가능. **국가핵심기술 보유사** (SK하이닉스·SK온·SK실트론)에는 자체 LLM **'A.X'** + SK AX **산업특화 AI** 적용으로 보안 보장.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: SK 그룹 25개 멤버사가 각각 별도 HR 시스템·챗봇 운영 — 그룹 표준 부재
 - **Pain point**: 그룹 차원 AI 거버넌스·비용·표준 보안 통제 어려움 + 멤버사별 중복 투자
@@ -41,7 +41,7 @@ SK 그룹이 SKT-SK AX 합작 'A.Biz'를 **그룹 단일 표준**으로 25개 �
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 각 멤버사가 별도 HR 시스템·챗봇·AI 도구 도입
 - **After**:
@@ -70,7 +70,7 @@ SK 그룹이 SKT-SK AX 합작 'A.Biz'를 **그룹 단일 표준**으로 25개 �
 
 - SKT A.Biz 본부 + SK AX + 25개 멤버사 HR 담당
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB
@@ -84,7 +84,7 @@ flowchart TB
     Standard --> Discovery[SK디스커버리 외 22개사]
 ```
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 SK 그룹 25개사 8만 명에 단일 AI 표준 배포 — **한국에서 유일하게 그룹 표준화 사례 확인된 conglomerate** (삼성·LG·현대 어느 그룹도 이 정도 그룹 표준화 비공개 확인).

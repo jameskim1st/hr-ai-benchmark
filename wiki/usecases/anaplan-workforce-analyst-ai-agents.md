@@ -41,7 +41,7 @@ Anaplan이 2025-12-09 GA로 발표한 **Role-Based AI Agents** 제품군 중 **W
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: HR·재무 분리 데이터 → Excel 수작업 통합 → 시나리오별 재계산 (수일~수주) → 보고서 PPT
 - **After**:
@@ -54,7 +54,7 @@ Anaplan이 2025-12-09 GA로 발표한 **Role-Based AI Agents** 제품군 중 **W
 - **HITL**: AI agent는 분석·권고만, 최종 결정은 HR·CFO. 2026 H1부터 autonomous 실행 옵션
 - **Frequency**: monthly cycle + ad-hoc 시나리오 query
 
-### B. System & Infrastructure (Agent research, 2026-05 expanded)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS / 기반 시스템**: ✅ HCM (Workday/SAP) + ERP + finance system을 Anaplan platform에 connector로 통합
 - **AI 시스템 배치**: ✅ Anaplan cloud platform 내장 (Role-Based AI Agents, 2025-12-09 GA)
@@ -63,7 +63,7 @@ Anaplan이 2025-12-09 GA로 발표한 **Role-Based AI Agents** 제품군 중 **W
 - **사용자 접점**: ✅ Anaplan web app + 자연어 query interface (conversational UI)
 - **인증·권한**: ✅ Anaplan tenant 격리 (multi-tenant SaaS); 세부 RBAC 모델 _미공개_
 
-### C. Data (Agent research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ HCM 마스터 데이터 + ERP 트랜잭션 + finance ledger (실시간 통합)
 - **데이터 규모**: _미공개_ (Polaris Calculation Engine은 "massive sparse datasets" 처리 가능 — 벤더 주장)
@@ -72,7 +72,7 @@ Anaplan이 2025-12-09 GA로 발표한 **Role-Based AI Agents** 제품군 중 **W
 - **데이터 거버넌스**: ✅ Agent Studio가 "full governance and control" 제공 (벤더 주장)
 - **민감정보 처리**: _미공개_
 
-### D. Model (Agent research)
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ (구체 base LLM 비공개; "leverages LLMs" 표현만)
 - **모델 유형**: ✅ LLM (conversational/reasoning) + ML (predictive) + deterministic planning engine 혼합
@@ -87,7 +87,7 @@ Anaplan이 2025-12-09 GA로 발표한 **Role-Based AI Agents** 제품군 중 **W
 ### 기대효과 요약
 HR-finance data 단절 해소 + 시나리오 분석 수주 → 즉시 + 인건비 절감 8~9자리 수치 (대형 고객 사례).
 
-- ✅ 검증된 고객 metric (Anaplan 공식 customer story, ⚠️ 자사 + 자기 보고):
+- ✅ Fact된 고객 metric (Anaplan 공식 customer story, ⚠️ 자사 + 자기 보고):
   - **Healthcare provider**: $21M 연 인건비 절감 + time-to-market 20% 단축
   - **Cinemark**: workforce planning ROI 8자리 수 (Anaplan Connect)
   - **Fresenius Medical Care**: planning time 30%+ 단축

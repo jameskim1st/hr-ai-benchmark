@@ -25,13 +25,13 @@ consulting_priority: high
 |---|---|---|---|---|---|---|
 | **접근법** | 대화형 AI (지원자 대면) | Skills intelligence (매칭) | 시뮬레이션 역량 예측 | AI 활용 능력 평가 | 서류 분석+면접 질문 생성 | LLM 인재 검색 |
 | **핵심 기능** | Chat screening, 스케줄링, 오퍼 | AI Interviewer, Digital Twin, skills matching | 성향파악·전략게임·영상면접 | AICT 필기 + AI 1차 면접 | 자기소개서·인적성 분석 → 추천·질문 | 자연어 검색, 추천 사유 제시 |
-| **대표 고객** | **Chipotle** (3,500매장), GM, 7-Eleven | Deloitte 제휴, Gartner 4.6/5 | ⭐ **기아·KB증권·신한·CJ** 등 10+ | **SK C&C·SKT·SK브로드밴드** | **LG 그룹 (추정)** | 3.5만 기업 (채용 플랫폼) |
-| **핵심 metric** | ⚠ 75% time-to-hire↓ | ⚠ 90% time-to-first-interview↓ | ⭐ **Nature 논문: 면접관보다 정확** | ⚠ 100배 빠름, 1,000명/시간 | ⚠ 26% 생산성↑ | (신제품, metric 없음) |
-| **학술 검증** | ❌ | ❌ | ⭐ **✅ KAIST + Nature** | ❌ | ❌ | ❌ |
+| **대표 고객** | **Chipotle** (3,500매장), GM, 7-Eleven | Deloitte 제휴, Gartner 4.6/5 | ★ **기아·KB증권·신한·CJ** 등 10+ | **SK C&C·SKT·SK브로드밴드** | **LG 그룹 (추정)** | 3.5만 기업 (채용 플랫폼) |
+| **핵심 metric** | ⚠ 75% time-to-hire↓ | ⚠ 90% time-to-first-interview↓ | ★ **Nature 논문: 면접관보다 정확** | ⚠ 100배 빠름, 1,000명/시간 | ⚠ 26% 생산성↑ | (신제품, metric 없음) |
+| **학술 검증** | 🚫 | 🚫 | ★ **✅ KAIST + Nature** | 🚫 | 🚫 | 🚫 |
 | **주력 산업** | 식음료·소매·hospitality | 전 산업 (enterprise) | 전 산업 (대기업·공공) | IT·통신 (SK 그룹) | IT·서비스 (LG 그룹) | 전 산업 (SMB~mid) |
 | **HITL 수준** | Screening 자동, 채용결정 사람 | Recommend-only | **평가는 AI, 결정은 사람** | **1차 면접까지 AI 100%** | Recommend-only | Recommend-only |
-| **한국 대응** | ❌ (한국어 미확인) | ❌ (한국 ref 없음) | ✅ 한국 특화 | ✅ 한국 특화 | ✅ 한국 특화 | ✅ 한국 특화 |
-| **wiki confidence** | 0.35 | 0.20 | **0.50** ⭐ | 0.25 | 0.25 | 0.20 |
+| **한국 대응** | 🚫 (한국어 미확인) | 🚫 (한국 ref 없음) | ✅ 한국 특화 | ✅ 한국 특화 | ✅ 한국 특화 | ✅ 한국 특화 |
+| **wiki confidence** | 0.35 | 0.20 | **0.50** ★ | 0.25 | 0.25 | 0.20 |
 
 ---
 

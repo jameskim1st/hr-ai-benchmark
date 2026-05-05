@@ -33,7 +33,7 @@ related_vendors: []
 
 Yelp (소비자 리뷰 플랫폼)가 HR Acuity ER case management 도입. ⚠️ 자사 보고 (HR Acuity case study 단일 출처): 도입 동기는 **single source of truth in documentation** + advanced analytics + case 분류 단순화. Rachel Greer (Head of Employee Relations) 인용. Greer는 HR Acuity의 **empowER™ Community Award 수상** (HR Acuity 커뮤니티 활동가). 정량 metric 미공개, AI 기능 (olivER) 사용 여부 명시 안 됨.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: Yelp의 ER documentation 분산 — case 기록·investigation note·resolution이 여러 도구·spreadsheet에 흩어짐
 - **Pain point**:
@@ -44,7 +44,7 @@ Yelp (소비자 리뷰 플랫폼)가 HR Acuity ER case management 도입. ⚠️
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: ER case가 spreadsheet·이메일·일반 ticketing에 분산 → documentation 단편화
 - **After**:
@@ -56,28 +56,28 @@ Yelp (소비자 리뷰 플랫폼)가 HR Acuity ER case management 도입. ⚠️
 - **Frequency**: daily case 처리 + 분기 trend
 - **Scope of autonomy**: assist (documentation·analytics)
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core platform**: HR Acuity SaaS (Yelp 도입)
 - **AI 시스템 배치**: HR Acuity 전체 (olivER AI 사용 여부는 case study에 명시 없음)
 - **연동**: HRIS·SSO (구체 미공개)
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터**: ER case (grievance·discipline·investigation), 인사 정보
 - **Data governance**: single source of truth → audit trail 통합
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: HR Acuity stack (구체 모델 미공개)
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: Yelp Employee Relations team (Rachel Greer Head of ER)
 - **거버넌스**: HR Acuity empowER™ Community Award 수상 (Greer) — HR Acuity ecosystem 활동
 - **참여**: ER 전용 team
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

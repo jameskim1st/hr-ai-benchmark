@@ -31,7 +31,7 @@ related_vendors: []
 
 현대제철의 사내 AI 플랫폼 **'HIP(Hyundai-steel Intelligence Platform)'** — 2024-05 사내문서검색 + 경영지원챗봇 형태로 launch. 2025-10 임직원 AI·로봇 역량 강화 프로그램으로 확장. 철강산업 DX 전환의 일환. 중후장대 산업의 **"지식정보 플랫폼 + HR 챗봇"** 결합 사례.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 현대제철 ~12K 직원이 매뉴얼·기술 문서·경영지원 정책을 분산 search
 - **Pain point**: 철강 제조 도메인 매뉴얼 양 거대 + 신입 학습 곡선 길음
@@ -39,7 +39,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 매뉴얼·정책 문서 sharepoint search → 응답 시간 변동
 - **After**:
@@ -59,7 +59,7 @@ related_vendors: []
 
 - 현대제철 IT + HR + 경영지원
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: 현대제철 사내 HR·경영지원 (구체 _미공개_)
 - **AI 시스템 배치**: ✅ HIP — 사내문서검색 + 경영지원챗봇 (자체 구축)
@@ -68,7 +68,7 @@ related_vendors: []
 - **사용자 접점**: 사내 web/앱 챗봇 — 직원 자율
 - **인증·권한**: 현대제철 사내 SSO
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ 매뉴얼·기술 문서·HR·재무·총무 정책
 - **데이터 규모**: ✅ 현대제철 ~12K 직원 — 인덱스 크기 _미공개_
@@ -77,7 +77,7 @@ related_vendors: []
 - **데이터 거버넌스**: ⚠️ vendor·모델 _미공개_ — 데이터 주권 검증 필요
 - **민감정보 처리**: _미공개_
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ — KR 자체 LLM (Hyperclova X·EXAONE·A.X) 또는 외부 API 추정
 - **모델 유형**: LLM (요약·QA·정보 추출)
@@ -87,7 +87,7 @@ related_vendors: []
 - **평가·가드레일**: ⚠️ 1년+ 운영 후 effect metric 부재 — quality 모니터링 framework 미공개
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 중후장대 철강 제조의 사내 AI 플랫폼 reference — 매뉴얼·도면·정책 통합 검색.

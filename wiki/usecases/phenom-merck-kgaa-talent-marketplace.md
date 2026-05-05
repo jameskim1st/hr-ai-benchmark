@@ -48,9 +48,9 @@ Merck KGaA(독일 다름슈타트, 60,000+ 직원, 제약·화학·생명과학)
 | 멘토십 | **1,000+** | Phenom 2025 Award | ⚠️ 벤더 주장 |
 | 전체 직원 | ~60,000 | 공개 정보 | ✅ Fact |
 
-## Solution Architecture (요약)
+## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 내부 후보자가 지원해도 결과 통보 없이 발표로 알게 되는 등 candidate experience 미흡
 - **After**:

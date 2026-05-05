@@ -40,7 +40,7 @@ HR Acuity는 **미국 최대 ER 전용 case management 플랫폼**. 2024년 **ol
 
 > 📌 **PwC ER deck 정정**: PwC 자료의 "LiKHR AI Companion"은 본 olivER로 추정 (이름·기능 일치). PwC 자료의 Waymo·Yelp는 모두 HR Acuity 고객.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 미국 기업의 ER (employee relations) 처리는 ServiceNow·Jira 같은 **범용 ticketing tool** 또는 spreadsheet — case 분류·문서화 일관성 부재, audit trail 약함, 다국어 intake 한계
 - **Pain point**:
@@ -52,7 +52,7 @@ HR Acuity는 **미국 최대 ER 전용 case management 플랫폼**. 2024년 **ol
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 직원 신고 → ServiceNow/이메일 ticket → HR이 수작업 분류·인터뷰 질문 작성·case 기록 → 분기별 spreadsheet 트렌드 분석
 - **After (olivER + Speakfully 통합 architecture)**:
@@ -76,7 +76,7 @@ HR Acuity는 **미국 최대 ER 전용 case management 플랫폼**. 2024년 **ol
 - **Frequency**: daily (case 처리·신고 접수) + 분기 trend report
 - **Scope of autonomy**: assist + automate (분류·요약·timeline 자율, 결정·교섭·결론은 사람)
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core platform**: HR Acuity SaaS (cloud-hosted)
 - **AI 시스템 배치**: olivER AI 모듈 + Speakfully AI hotline (모두 platform 내장)
@@ -84,7 +84,7 @@ HR Acuity는 **미국 최대 ER 전용 case management 플랫폼**. 2024년 **ol
 - **사용자 접점**: web portal, mobile app, embedded chat, 익명 hotline (전화·web·SMS·다국어)
 - **인증**: RBAC + role-based case visibility (HR·legal·매니저 권한 분리)
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터**:
   - Case intake notes (직원 자유 입력 + structured form)
@@ -98,19 +98,19 @@ HR Acuity는 **미국 최대 ER 전용 case management 플랫폼**. 2024년 **ol
   - SOC 2 Type II, GDPR, EU Whistleblower Directive 대응
   - PII 분리 + 익명화 옵션 (Speakfully)
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: _구체 LLM provider 일부 미공개_ (벤더는 "enterprise-grade LLM" 표현)
 - **Customization**: ER 도메인 fine-tuning (case type·investigation 템플릿)
 - **Guardrails**: ⚠️ 벤더 주장 — 결론 도출 금지 원칙·사람 검토 강제·고객 데이터 학습 안 함
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: HR Acuity 벤더 — 고객은 ER team·HR·legal·compliance 부서가 사용
 - **Workday partnership**: Workday Innovation Partner — Workday Help의 ER case가 자동으로 HR Acuity로 routing
 - **거버넌스**: Brandon Hall Group 2025 Gold Award (Best Ethical AI) — 외부 거버넌스 인정
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

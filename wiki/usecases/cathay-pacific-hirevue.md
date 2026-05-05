@@ -33,7 +33,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 졸업생 trainee 채용에 3개월 소요, in-person 면접 no-show율 높음
 - **After**:

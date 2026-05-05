@@ -31,7 +31,7 @@ related_vendors: []
 
 IBM Watson Recruitment — 2018 productized 후보자 매칭 AI. 정형·비정형 데이터 + soft trait으로 requisition 대비 score 산출. **gender·race·age·ethnicity 억제** bias mitigation 내장. requisition 복잡도와 ideal-match profile flag. ⚠️ 벤더 주장: 84% success prediction 정확도, 35% time-to-fill 감소, 50% turnover 감소, 30% recruitment efficiency 향상, 미국 underrepresented minority 채용 3년간 20% 증가.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: recruiter 수동 screening 시 무의식적 bias + volume 한계
 - **Pain point**: high-volume 채용에서 quality·diversity·speed 동시 달성 어려움
@@ -39,7 +39,7 @@ IBM Watson Recruitment — 2018 productized 후보자 매칭 AI. 정형·비정�
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: recruiter가 이력서 manual review → shortlist → 매니저 검토
 - **After**:
@@ -62,7 +62,7 @@ IBM Watson Recruitment — 2018 productized 후보자 매칭 AI. 정형·비정�
 
 - IBM Talent Group + Watson Recruitment 제품 팀
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: ✅ IBM Watson Talent suite의 일부 — IBM 자체 HRIS 또는 외부 ATS와 연동
 - **AI 시스템 배치**: ✅ IBM 외부 productized SaaS (다수 IBM 고객 도입)
@@ -71,7 +71,7 @@ IBM Watson Recruitment — 2018 productized 후보자 매칭 AI. 정형·비정�
 - **사용자 접점**: recruiter web UI — ranked shortlist + supporting factor
 - **인증·권한**: 기업 SSO + RBAC
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ 정형 (이력서·JD·과거 outcome) + 비정형 (LinkedIn·소셜) + soft trait
 - **데이터 규모**: _미공개_ (IBM + 고객사별)
@@ -80,7 +80,7 @@ IBM Watson Recruitment — 2018 productized 후보자 매칭 AI. 정형·비정�
 - **데이터 거버넌스**: ✅ protected attribute 억제 design — 미국 EEOC·NYC LL144 우선
 - **민감정보 처리**: ✅ 디자인 단계부터 보호변수 분리
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: ✅ IBM Watson NLP + ML classifier (2018 — pre-LLM era)
 - **모델 유형**: ✅ predictive (success prediction·ranking) + classifier (적합도)
@@ -90,7 +90,7 @@ IBM Watson Recruitment — 2018 productized 후보자 매칭 AI. 정형·비정�
 - **평가·가드레일**: ✅ protected attribute 억제. ⚠️ 모델 age (2018) — LLM 시대 후 fit 약화. ⚠️ "soft trait" explainability 부족
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 bias-mitigated screening으로 채용 효율·다양성 동시 향상 (벤더 주장).

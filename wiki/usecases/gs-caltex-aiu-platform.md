@@ -31,7 +31,7 @@ related_vendors: []
 
 GS칼텍스 임직원 전용 생성형 AI 통합 플랫폼 **'AIU'** 오픈 (2025). 안전·편리한 실무 활용 환경 구축이 도입 명분. 정유·에너지 기업 사내 AI 플랫폼 사례.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: GS칼텍스 ~3K 직원이 정유·안전 매뉴얼·정책을 manual search
 - **Pain point**: 정유 산업 안전 critical + 매뉴얼 양 거대
@@ -39,7 +39,7 @@ GS칼텍스 임직원 전용 생성형 AI 통합 플랫폼 **'AIU'** 오픈 (202
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **After**: AIU 플랫폼 → 직원 자연어 query → 안전·실무 정보 응답
 - **HITL**: 직원 자율
@@ -49,7 +49,7 @@ GS칼텍스 임직원 전용 생성형 AI 통합 플랫폼 **'AIU'** 오픈 (202
 
 - vendor·모델 _미공개_ (자사 보고만)
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 GS칼텍스 임직원 AI 플랫폼 — HR 비중·standalone metric _미공개_.

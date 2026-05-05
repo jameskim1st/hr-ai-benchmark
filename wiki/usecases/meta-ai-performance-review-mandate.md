@@ -41,7 +41,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: Meta 연 1회 PSC 성과리뷰는 individual impact·peer review 기반. AI 도구 사용은 권장사항이며 평가 항목 아님. 2025년 review에서는 AI 사용을 self-review에 자율 기재만 가능
 - **After**:
@@ -54,7 +54,7 @@ related_vendors: []
 - **Frequency**: annual (PSC 사이클), monthly (engineering KPI tracking)
 - ⚠️ rubric 세부 측정 방식은 _미공개_ — Zuckerberg/Gale 메모만 공개됨
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: Meta 사내 PSC (Performance Summary Cycle) — 자체 (구체 _미공개_)
 - **AI 시스템 배치**: ✅ **Metamate** (사내 코딩·업무 어시스턴트) — Llama + GPT-4 hybrid (Fortune 2024-12)
@@ -63,7 +63,7 @@ related_vendors: []
 - **사용자 접점**: Metamate IDE plugin·web·내부 도구
 - **인증·권한**: Meta 사내 SSO
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ 코드 commit history (agent-assisted 비율), 자기 평가·peer review 텍스트, AI 사용 로그
 - **데이터 규모**: ✅ Meta 전사 ~70K+ 엔지니어·기술사무직 (정확 인원 미공개)
@@ -72,7 +72,7 @@ related_vendors: []
 - **데이터 거버넌스**: ⚠️ rubric 세부 측정 _미공개_ — Zuckerberg/Gale 메모만 공개
 - **민감정보 처리**: _미공개_
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: ✅ **Metamate** — Llama (Meta 자체) + GPT-4 (OpenAI) hybrid
 - **모델 유형**: LLM (코딩 어시스턴트·업무 자동화)

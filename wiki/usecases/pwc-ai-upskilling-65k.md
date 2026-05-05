@@ -36,7 +36,7 @@ PwC가 **65,000명 미국 직원**에게 GenAI(ChatGPT급) 업스킬링을 3년 
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 컨설턴트가 ad-hoc 외부 강의·자율학습으로 AI 역량 습득, 일관성·실무 적용 부족
 - **After**:

@@ -43,7 +43,7 @@ Workday가 2021-02 인수 (~$700M)한 **Peakon Employee Voice** — 지속적 pu
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: annual 서베이 → 외부 vendor 또는 manual 분석 → 수주~수개월 후 PPT 보고
 - **After**:
@@ -56,7 +56,7 @@ Workday가 2021-02 인수 (~$700M)한 **Peakon Employee Voice** — 지속적 pu
 - **HITL**: HRBP·매니저가 insight 검토·action 결정
 - **Frequency**: continuous (정기 pulse) + ad-hoc
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: Workday HCM (Peakon은 Workday 통합 모듈)
 - **AI 시스템**: Workday Illuminate 통합 (2024-12 발표 시 기존 Peakon 모델 + Illuminate LLM 결합)

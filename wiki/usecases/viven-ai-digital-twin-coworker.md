@@ -41,7 +41,7 @@ Viven AI — Eightfold 공동창업자 Ashutosh Garg·Varun Kacholia가 분사 �
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 동료 부재 시 다른 동료에게 위임 또는 search → 시차·답변 지연
 - **After** (제품 개념 — 실제 deployment 검증 0건):
@@ -70,7 +70,7 @@ Viven AI — Eightfold 공동창업자 Ashutosh Garg·Varun Kacholia가 분사 �
 ### 기대효과 요약
 글로벌 비동기 협업의 "동료 부재 지식 단절" 해소 시도 — stealth 직후로 customer adoption 0건, ROI 검증 불가.
 
-- ✅ 검증 사실: 2025-10-15 stealth exit, $35M seed, Eightfold 공동창업자 분사
+- ✅ Fact 사실: 2025-10-15 stealth exit, $35M seed, Eightfold 공동창업자 분사
 - ⚠️ Customer deployment·KPI _공개 미공개_
 - 시장 평가: Khosla Ventures 베팅 + 창업자 신뢰도로 우호적 평가
 

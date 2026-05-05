@@ -39,7 +39,7 @@ Mastercard는 2022년 Gloat을 도입해 internal talent marketplace **"Unlocked
 
 > ⚠️ **PwC 컨설팅 자료 정정**: PwC 자료의 "$20M 절감"은 **$21M의 오기/반올림** (Gloat 공식 case study 기준). "360,000 hours"는 **Schneider Electric Open Talent Market** 메트릭과 혼동된 것 — Mastercard는 100K → 1M project hours.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: Mastercard는 2019년부터 "Project Possible"이라는 **수동 internal gig 프로그램** 운영 — HR이 spreadsheet로 직원 ↔ gig 매칭, scale 한계
 - **Pain point**:
@@ -50,7 +50,7 @@ Mastercard는 2022년 Gloat을 도입해 internal talent marketplace **"Unlocked
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before (Project Possible 시대)**: 직원이 gig 신청 → HR 수동 검토 → 매니저가 후보자 1~2명 추천 → 1:1 인터뷰
 - **After (Unlocked / Gloat 도입 후)**:
@@ -64,14 +64,14 @@ Mastercard는 2022년 Gloat을 도입해 internal talent marketplace **"Unlocked
 - **Frequency**: daily (기회 등록·매칭) + 분기별 dashboard 리뷰
 - **Scope of autonomy**: recommend-only
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core**: Gloat Talent Marketplace SaaS (cloud-hosted, _구체 hyperscaler 미공개_)
 - **사용자 접점**: web portal, mobile app, embedded in Workday SSO (추정 — Mastercard 핵심 HRIS)
 - **연동**: HRIS (직원 마스터), LinkedIn Learning (스킬 추론), 사내 communication (Teams)
 - **인증**: SSO via Mastercard IdP
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터**:
   - 직원 자기입력 스킬·career goal·preferences
@@ -81,19 +81,19 @@ Mastercard는 2022년 Gloat을 도입해 internal talent marketplace **"Unlocked
 - **모델 구조**: skill-based matching (collaborative filtering + ontology) + LLM (자연어 매칭 설명·career path 생성)
 - **Data governance**: GDPR (EU 직원), Mastercard 자체 privacy policy, _구체 retention 미공개_
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: _구체 LLM provider·버전 미공개_ (Gloat 자체 ML stack)
 - **추천 모델**: skills ontology + collaborative filtering + career path simulation
 - **Customization**: Mastercard 직무 체계·산업 특화
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: Mastercard People & Capability 팀 + Gloat customer success
 - **참여 역할**: HR business partner (deployment) + IT (HRIS 연동) + 매니저 community
 - **거버넌스**: 직원 자발 참여 모델 (강제 등록 아님 — 단 93% 자발 등록률)
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

@@ -32,7 +32,7 @@ related_vendors: []
 
 Microsoft **People Skills** + **Skills Agent** — M365 Copilot/Viva 데이터 레이어. OpenAI 모델로 직원 이메일·문서·미팅에서 **스킬을 자동 추론**해 dynamic 스킬 프로파일 생성. LinkedIn 공동 개발 16,000-skill taxonomy 기반. Skills Agent는 매니저에게 internal talent 매칭·workforce planning insight 제공. 2025 GA. 2026-03 Skills Agent → Learning + Workforce Insights agents로 분리.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 한국·글로벌 대기업 모두 직원 self-update profile에 의존 — outdated·incomplete
 - **Pain point**: 스킬 inventory 부정확하면 internal mobility·workforce planning·learning 추천 모두 약화
@@ -40,7 +40,7 @@ Microsoft **People Skills** + **Skills Agent** — M365 Copilot/Viva 데이터 �
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 직원이 HR 시스템에 직접 스킬 입력 (drop-out high, drift fast)
 - **After**:
@@ -63,7 +63,7 @@ Microsoft **People Skills** + **Skills Agent** — M365 Copilot/Viva 데이터 �
 
 - Microsoft Viva + LinkedIn 협업 + 고객사 HR
 
-### B. System & Infrastructure (Agent research, 2026-05)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS / 기반 시스템**: _미공개_ (People Skills는 HRMS overlay — Workday/SAP/SuccessFactors와 통합 가능하나 specific connector 명시 없음)
 - **AI 시스템 배치**: ✅ M365 Copilot 데이터 레이어 (Microsoft Graph 기반)
@@ -72,7 +72,7 @@ Microsoft **People Skills** + **Skills Agent** — M365 Copilot/Viva 데이터 �
 - **사용자 접점**: ✅ Copilot Chat, Microsoft 365 apps, Viva services
 - **인증·권한**: ✅ Microsoft 365 IAM (Entra ID/Azure AD); admin이 People Skills setup
 
-### C. Data (Agent research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ M365 profile + activity signals via Microsoft Graph: 문서·이메일·chat·미팅
 - **데이터 규모**: ✅ 16,000+ skills taxonomy (LinkedIn 공동 개발, customizable)
@@ -81,7 +81,7 @@ Microsoft **People Skills** + **Skills Agent** — M365 Copilot/Viva 데이터 �
 - **데이터 거버넌스**: ✅ M365 tenant boundary; admin governance (setup·permissions)
 - **민감정보 처리**: ⚠️ 직원 활동 telemetry 기반 — opt-out 옵션 명시 (admin level)
 
-### D. Model (Agent research expanded)
+### D. Model (모델)
 
 - **Foundation model**: ✅ "Latest OpenAI LLM models"; 구체 GPT 버전 _미공개_
 - **모델 유형**: ✅ LLM (inference) + skills classifier; multi-agent inferencing
@@ -91,7 +91,7 @@ Microsoft **People Skills** + **Skills Agent** — M365 Copilot/Viva 데이터 �
 - **평가·가드레일**: ⚠️ Everest Group 평가: "step forward but not yet complete" — 독립 검증 일부 존재
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 직원 self-update 부담 없이 스킬 ontology 자동 갱신 — Eightfold·Gloat 외부 vendor 대비 M365 native option.

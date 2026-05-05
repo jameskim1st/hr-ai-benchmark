@@ -200,7 +200,7 @@ _Bersin 2019 + SHRM 2025에서 Oracle Fusion/Taleo/Cornerstone 통합 확인_
 
 # ━━━ 3. Learning & Development (교육·역량) ━━━
 
-## 3-1. J&J — Digital Talent Platform, MIT CISR ⭐⭐ (conf 0.60)
+## 3-1. J&J — Digital Talent Platform, MIT CISR ★★ (conf 0.60)
 
 ### 도입 배경
 디지털 역량 인력의 이탈이 높고, 직원 스킬 가시성이 부족해 내부 이동·학습 추천이 어려움
@@ -234,7 +234,7 @@ flowchart TB
 ```
 _범례: 전체 녹색 = MIT CISR + IS Journal 학술 검증. 이 도식의 모든 노드가 Tier 1 학술 소스에서 확인됨._
 
-### 📊 기대효과 (전부 학술 검증 ⭐)
+### 📊 기대효과 (전부 학술 검증 ★)
 
 | 지표 | Before | After | 변화 | 검증 |
 |---|---|---|---|---|
@@ -333,7 +333,7 @@ flowchart LR
 
 # ━━━ 6. Employee Experience & HR Ops ━━━
 
-## 6-1. Moderna — Ask HR Routing ⭐⭐ (conf 0.70, wiki 최고)
+## 6-1. Moderna — Ask HR Routing ★★ (conf 0.70, wiki 최고)
 
 ### 🔵 Process Flow (routing)
 
@@ -500,26 +500,26 @@ _**글로벌 벤더(Workday·SAP)가 구조적으로 들어올 수 없는 한국
 
 | 기업 | 1.TA | 2.Onb | 3.L&D | 4.Perf | 5.TR | 6.EX | 7.Gov |
 |---|---|---|---|---|---|---|---|
-| **Moderna** | | | | ★ | ★ | ⭐⭐ | |
-| **Walmart** | | | ★ | | | ⭐ | |
-| **IBM** | | | | | | ⭐ | |
+| **Moderna** | | | | ★ | ★ | ★★ | |
+| **Walmart** | | | ★ | | | ★ | |
+| **IBM** | | | | | | ★ | |
 | **JPMorgan** | ★ | | | | | ★ | |
-| **Siemens** | | | ⭐ | | | ★ | |
-| **Chipotle** | ⭐ | | | | | | |
-| **Schneider** | | ⭐ | | | | | |
-| **J&J** | | | ⭐⭐ | | | | |
+| **Siemens** | | | ★ | | | ★ | |
+| **Chipotle** | ★ | | | | | | |
+| **Schneider** | | ★ | | | | | |
+| **J&J** | | | ★★ | | | | |
 | **HSBC** | ★ | ★ | | | | | |
-| **Meta** | | | | ⭐ | | | |
-| **Amazon** | | | | | | | ⭐ |
+| **Meta** | | | | ★ | | | |
+| **Amazon** | | | | | | | ★ |
 | **Deloitte** | | | | | | ★ | ★ |
-| 🇰🇷 **SK Group** | ⭐ | | | | | | |
-| 🇰🇷 **마이다스아이티** | ⭐ | | | | | | |
+| 🇰🇷 **SK Group** | ★ | | | | | | |
+| 🇰🇷 **마이다스아이티** | ★ | | | | | | |
 | 🇰🇷 **더존비즈온** | | | | | ★ | | |
 | 🇰🇷 **LG CNS** | ★ | | | | | | |
-| **BetterUp** | | | | ⭐ | | | |
+| **BetterUp** | | | | ★ | | | |
 | **Spring Health** | | | | | ★ | | |
 
-범례: ⭐⭐ = 최고 검증, ⭐ = 대표 사례, ★ = 추가 사례
+범례: ★★ = 최고 검증, ★ = 대표 사례, ★ = 추가 사례
 
 ---
 

@@ -25,7 +25,7 @@ Josh Bersin이 SAP SuccessFactors의 2024년 10월 release (2H 2024)를 분석�
 - ★ **"Explain Pay Slip" AI feature**: **HR service center 문의의 ~70% 해결** — 급여 변경 설명 자동화
   - 이는 [[moderna-ask-hr-routing]] 과 매우 유사한 case deflection 패턴의 **다른 벤더 버전**
 
-### 3. Open Skills Architecture ⭐
+### 3. Open Skills Architecture ★
 SAP가 Talent Intelligence Hub를 **3rd party skills 벤더에게 개방**:
 - Lightcast, Korn Ferry, Degreed, Techwolf 통합 가능
 - 새로운 **Career and Talent Development** 제품 출시 (succession planning + internal marketplace 통합)

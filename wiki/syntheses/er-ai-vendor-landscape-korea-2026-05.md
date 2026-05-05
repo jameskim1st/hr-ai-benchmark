@@ -44,10 +44,10 @@ flowchart LR
 
 | 벤더 | 출시·인수 | Confidence | 핵심 차별화 | 한국 적용 우선순위 |
 |---|---|---|---|---|
-| **HR Acuity** [[hr-acuity-oliver-er-companion]] | olivER 2024 | **0.80** | G2 #1, Brandon Hall Gold 2025, Forrester TEI 520% ROI, Workday Innovation Partner. ER case management 성숙도 최고 | ⭐⭐⭐ 1차 검토 |
-| **AllVoices** [[allvoices-vera-ai-er-copilot]] | Vera AI 2024 | 0.65 | AI-native, 200+ 언어, 익명 신고 + ER 통합. HR Acuity 직접 경쟁자 | ⭐⭐ AI-native 선호 시 |
-| **Diligent Vault** [[diligent-vault-active-integrity-speakup]] | 2025-05 인수 | 0.65 | GRC 통합 + EthicsChat + 집단 신고 (GoTogether). board governance 시너지 | ⭐⭐ ESG·SOX 연계 |
-| **NAVEX EthicsPoint + NCA** [[navex-ethicspoint-nca-compliance]] | NCA 2025-12 | 0.65 | 13K+ 조직, 글로벌 whistleblowing 표준. 보수적 SOX·EU Directive | ⭐⭐ 보수적 선택 |
+| **HR Acuity** [[hr-acuity-oliver-er-companion]] | olivER 2024 | **0.80** | G2 #1, Brandon Hall Gold 2025, Forrester TEI 520% ROI, Workday Innovation Partner. ER case management 성숙도 최고 | ★★★ 1차 검토 |
+| **AllVoices** [[allvoices-vera-ai-er-copilot]] | Vera AI 2024 | 0.65 | AI-native, 200+ 언어, 익명 신고 + ER 통합. HR Acuity 직접 경쟁자 | ★★ AI-native 선호 시 |
+| **Diligent Vault** [[diligent-vault-active-integrity-speakup]] | 2025-05 인수 | 0.65 | GRC 통합 + EthicsChat + 집단 신고 (GoTogether). board governance 시너지 | ★★ ESG·SOX 연계 |
+| **NAVEX EthicsPoint + NCA** [[navex-ethicspoint-nca-compliance]] | NCA 2025-12 | 0.65 | 13K+ 조직, 글로벌 whistleblowing 표준. 보수적 SOX·EU Directive | ★★ 보수적 선택 |
 
 ### 한국 도입 시 selection guide
 

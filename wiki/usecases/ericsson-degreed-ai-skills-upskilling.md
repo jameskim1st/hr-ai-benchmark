@@ -30,14 +30,14 @@ related_vendors: []
 
 Ericsson (통신 인프라·장비, 스웨덴/글로벌)은 Degreed의 LXP 플랫폼을 활용한 스킬 퍼스트 전략으로 **30,000명 이상의 직원이 AI 역량을 갖추게 됐다**고 공개했다. Degreed LENS 2025(2025-04-15) 컨퍼런스의 고객 사례로 소개. 구체적 학습 프로그램 구성·완료율·기간은 미공개. Degreed Maestro 조기 접근 고객 중 하나.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 통신 장비·솔루션 기업으로서 AI 기반 제품·서비스 비중이 급증 → 전사 AI 역량 부재가 사업 리스크
 - 30,000명+ 규모의 AI 업스킬링을 중앙화된 커리큘럼으로 처리하기 어려움 → 분산·자율 학습 모델 필요
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 5년 전 300명 과학자 한정 LMS, role-기반 정적 커리큘럼
 - **After**:

@@ -34,10 +34,10 @@ Ava Cado 수행 범위:
 - 이 수치는 **Paradox 벤더 주장과 동일** — Chipotle가 독립적으로 측정·검증했다는 증거는 press release에 없음
 
 ## 빠진 것 (critical gaps)
-- ❌ **Bias audit / EEOC 언급 전무** — 미국 채용 AI 규제(NYC LL144, Colorado AI Act) 대응 여부 불명
-- ❌ 기술 스택 세부
-- ❌ Before/After 정량 데이터 (어디에서 75%가 왔는지 분리 불가)
-- ❌ HITL 설계
+- 🚫 **Bias audit / EEOC 언급 전무** — 미국 채용 AI 규제(NYC LL144, Colorado AI Act) 대응 여부 불명
+- 🚫 기술 스택 세부
+- 🚫 Before/After 정량 데이터 (어디에서 75%가 왔는지 분리 불가)
+- 🚫 HITL 설계
 
 ## 관련 페이지
 - Company: [[chipotle]]

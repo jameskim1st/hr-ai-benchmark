@@ -37,7 +37,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 정적 직무 기술서·수동 skills 매핑 (4~6개월 소요), 부서별 분절된 skills 데이터
 - **After**:

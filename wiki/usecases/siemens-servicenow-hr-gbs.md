@@ -32,7 +32,7 @@ related_vendors:
 
 Siemens GBS(Global Business Services)는 360,000명 이상의 직원을 지원하는 HR·재무·구매 서비스를 통합 관리하기 위해 ServiceNow AI 플랫폼 기반의 "My Services" 포털을 구축했다. ✅ **Fact** 이 포털은 월 110,000건의 방문을 처리하며, 기존 100개 이상의 이메일 사서함을 단일 진입점으로 통합했다. 사용자 만족도 8.8/10, 직원의 87%가 업무를 즐기고 있다고 응답했다. [[sources/servicenow-siemens-case-study.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 Siemens GBS는 HR, 재무, 구매 지원 서비스가 지나치게 복잡하고 고객이 탐색하기 어렵다는 문제를 안고 있었다. 수백 개의 별도 이메일 사서함으로 요청이 분산되어 처리 효율이 낮았고, 레거시 시스템 다수가 병존했다.
 

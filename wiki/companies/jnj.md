@@ -27,7 +27,7 @@ WHERE contains(company, "Johnson") OR contains(company, "J&J")
 SORT confidence DESC
 ```
 
-## 핵심 — 학술 검증 ⭐
+## 핵심 — 학술 검증 ★
 
 | 지표 | 값 | 검증 |
 |---|---|---|

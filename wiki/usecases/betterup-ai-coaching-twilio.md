@@ -36,7 +36,7 @@ related_vendors: []
 
 BetterUp은 **AI 기반 리더십·매니저 코칭** 플랫폼. 2025년 **BetterUp Grow** (AI-only 코칭 제품) 출시로 전통 human coaching 대비 **비용 70% 절감 + 95% 사용자 만족**을 주장. 가장 강력한 레퍼런스는 **Twilio (8,000+ 직원)**:  코칭 받은 직원은 **고성과 평가 32% 더 높고, 이탈 5배 낮음**. 다수 고객에서 ROI 수치가 구체적으로 공개돼 wiki의 Performance 카테고리 **가장 fact-rich 사례**. **Josh Bersin**(Tier 1, 단 BetterUp advisor)이 BetterUp Manage를 "pioneering AI-powered platform for leaders"로 독립 분석 ([[bersin-betterup-manage-ai-coaching-2024-04]]). **HR Executive**(Tier 2)도 Bersin의 코칭 시장 분석을 보도 ([[hrexecutive-bersin-coaching-disruptions-2024]]).
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 리더십·매니저 코칭은 효과가 있지만 **전통 human coaching은 비용이 높아 소수 임원에게만 제공** 가능
 - 중간 관리자·일반 직원까지 코칭을 확장하려면 **비용 절감 + 스케일** 필요
@@ -44,7 +44,7 @@ BetterUp은 **AI 기반 리더십·매니저 코칭** 플랫폼. 2025년 **Bette
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: Twilio는 double-digit 성장 속에 매니저 effectiveness 70% 수준. Manager 역량개발은 이벤트성 워크숍·LMS 과정 위주로 1:1 코칭은 임원에 한정
 - **After**:
@@ -56,7 +56,7 @@ BetterUp은 **AI 기반 리더십·매니저 코칭** 플랫폼. 2025년 **Bette
 - **HITL**: Human coach가 1:1 세션, HR/CHRO가 cohort·ROI 검토
 - **Frequency**: weekly micro-intervention, monthly 1:1 coaching, quarterly 리포팅
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: Twilio 측 _미공개_ — BetterUp은 stand-alone SaaS, SSO·SCIM 연동
 - **AI 시스템 배치**: ✅ BetterUp Manage (hybrid) + BetterUp Grow (AI-only) SaaS
@@ -65,7 +65,7 @@ BetterUp은 **AI 기반 리더십·매니저 코칭** 플랫폼. 2025년 **Bette
 - **사용자 접점**: BetterUp web·모바일 — assessment·1:1 영상 코칭·micro-intervention·VR (Grow)
 - **인증·권한**: 기업 SSO + RBAC (manager·HR dashboard 분리)
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ Whole Person Assessment (resilience·growth mindset 등), 코칭 세션, behavior change tracker, 비즈니스 KPI
 - **데이터 규모**: Twilio 8K+ 직원 cohort
@@ -74,7 +74,7 @@ BetterUp은 **AI 기반 리더십·매니저 코칭** 플랫폼. 2025년 **Bette
 - **데이터 거버넌스**: ⚠️ BetterUp 표준: 코칭 세션은 employer에 disaggregated form만 (자사 정책)
 - **민감정보 처리**: _미공개_ — 멘탈헬스 인접 — HIPAA·GDPR 별도 명시 없음
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ — Grow LLM 기반이나 모델·버전 비공개
 - **모델 유형**: LLM (conversational coaching) + assessment scoring + recommendation
@@ -89,7 +89,7 @@ BetterUp은 **AI 기반 리더십·매니저 코칭** 플랫폼. 2025년 **Bette
 ### 기대효과 요약
 AI 코칭 수혜 직원의 고성과 평가 확률 32% 향상, 이탈률 5배 감소 (벤더 주장 기반, Twilio 사례).
 
-### Twilio (8,000+ 직원, named customer) ⭐
+### Twilio (8,000+ 직원, named customer) ★
 
 | 지표 | 값 | 출처 | 성격 |
 |---|---|---|---|

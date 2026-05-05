@@ -36,14 +36,14 @@ related_companies:
 
 Culture Amp이 2025년 Q3부터 **AI Coach**를 전 플랫폼에 확장 배포. Engage(설문 분석) + Perform(성과 리뷰)에 과학 기반 대화형 AI 코칭을 제공하며, **6,800+ 기업·25M 직원** 기반에 추가 비용 없이 제공. **Asana** Head of People Analytics가 "AI Coach puts an expert coach in every manager's pocket"으로 평가. 2026년 3월 Performance Culture Quadrant(PCQ) 발표 — 1,800개 기업 데이터에서 문화-성과 연결 기업이 시장가치 47% 프리미엄을 보인다는 자체 연구 공개. [[sources/cultureamp-ai-coach-expansion-2025-10.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 매니저가 성과 리뷰 작성 시 **빈 페이지 앞에서 막힘** — 과거 피드백·동료 리뷰를 직접 종합해야 하는 부담
 - engagement 설문 결과를 받아도 **구체적 액션 플랜 수립이 어려움**
 - 전문 코칭을 모든 매니저에게 확장하기엔 **비용·시간 제약**
 - C-suite 96%가 AI의 생산성 향상을 기대하나, 직원 77%는 AI가 업무량을 늘렸다고 보고 — **AI 도입 기대-현실 갭** [[sources/cultureamp-ai-coach-expansion-2025-10.md]]
 
-## Solution Architecture (요약)
+## Solution Architecture
 
 ### A. Process (프로세스)
 
@@ -64,31 +64,31 @@ flowchart LR
     F --> G[성과 리뷰 제출]
 ```
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core 플랫폼**: Culture Amp (Employee Experience + Performance Management SaaS)
 - **AI Coach**: Culture Amp 플랫폼 내장, 추가 비용 없음 [[sources/cultureamp-ai-coach-expansion-2025-10.md]]
 - **데이터 기반**: 15년간 축적된 People Science 연구 + 1.5B 직원 응답 데이터셋 [[sources/cultureamp-ai-coach-expansion-2025-10.md]]
 - 배포 환경, 연동 상세: _미공개 (not disclosed)_
 
-### C. Data
+### C. Data (데이터)
 
 - **입력**: engagement 설문 응답, 성과 리뷰, 동료 피드백, 회사 프로필 데이터 [[sources/cultureamp-ai-coach-expansion-2025-10.md]]
 - **데이터 규모**: ⚠️ 벤더 주장: 1.5B 직원 응답 데이터 기반 People Science [[sources/cultureamp-ai-coach-expansion-2025-10.md]]
 - **학습 vs RAG**: _미공개 (not disclosed)_
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: _미공개 (not disclosed)_
 - **커스터마이징**: People Science 프레임워크 기반 코칭 로직 내장
 - 나머지: _미공개 (not disclosed)_
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - Asana: John Joseph (Head of People Analytics) — AI Coach 도입 [[sources/cultureamp-ai-coach-expansion-2025-10.md]]
 - 나머지 도입 기업(Canva, McDonald's, Nasdaq 등)의 구체 조직·팀 정보: _미공개 (not disclosed)_
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 

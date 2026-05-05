@@ -36,7 +36,7 @@ Microsoft HR이 **자사 제품 Viva + Microsoft 365 Copilot**을 자체 HR 운�
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 직원이 HR/IT 문의 시 다중 portal·ticket 시스템을 거치며 응답 지연
 - **After**:

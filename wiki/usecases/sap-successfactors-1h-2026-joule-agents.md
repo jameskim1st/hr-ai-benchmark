@@ -43,7 +43,7 @@ SAP가 2026-04에 발표한 SuccessFactors 1H 2026 Release에서 **4개 신규 J
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **5개 Joule Agent별 process 차이**:
   1. **Performance & Goals Agent** (기존, GA): 매니저에게 팀 성과 인사이트·목표 진척·1:1 대화 포인트 제공 → 상세는 [[sap-joule-performance-goals-agent]]
@@ -57,7 +57,7 @@ SAP가 2026-04에 발표한 SuccessFactors 1H 2026 Release에서 **4개 신규 J
 - **HITL**: HR Service는 escalation 케이스에서 사람 개입. Career Agent는 매니저 검토. Payroll Agent는 단순 Q&A만 자율, 정정·계산 변경은 payroll team
 - **Trigger & Frequency**: 직원 셀프서비스(daily) + 매니저 분석(주/월) + 페이롤 Q&A(monthly 정기 + adhoc)
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: SAP SuccessFactors (전 모듈 — Performance, Compensation, Learning, Recruiting, EC Payroll)
 - **AI 시스템 배치**: Joule이 SuccessFactors 코어에 내장. 통합 LLM 오케스트레이터.
@@ -66,7 +66,7 @@ SAP가 2026-04에 발표한 SuccessFactors 1H 2026 Release에서 **4개 신규 J
 - **사용자 접점**: SuccessFactors web/mobile + Microsoft Teams + a2a 경유 외부 channel
 - **인증·권한**: SAP IAM (전사 SSO 통합)
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터 소스**: 직원 프로필, 정책 문서, 성과 데이터, 페이롤 데이터, 학습 이력, 스킬 매핑
 - **데이터 규모**: _미공개_
@@ -75,7 +75,7 @@ SAP가 2026-04에 발표한 SuccessFactors 1H 2026 Release에서 **4개 신규 J
 - **데이터 거버넌스**: SAP 표준 (GDPR 인증, EU 데이터 거주)
 - **민감정보 처리**: 페이롤 데이터는 강한 격리, RBAC 적용
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: SAP 자체 호스팅 + 외부 API 혼합. 구체 base model 지속 evolving
 - **Model 유형**: LLM (생성·대화) + agentic (tool-use, MCP)
@@ -84,14 +84,14 @@ SAP가 2026-04에 발표한 SuccessFactors 1H 2026 Release에서 **4개 신규 J
 - **Orchestration 프레임워크**: SAP 자체 구축
 - **평가·가드레일**: SAP 표준 content filter + GDPR/EU AI Act 대응 모니터링
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: HR 부서 + IT/CIO (SAP 관계사 협업)
 - **참여 역할**: HRBP·HR Tech PM·SAP CoE·IT
 - **거버넌스 체계**: SAP의 자체 AI Ethics 정책 + 고객사 별도 AI 위원회
 - **변화관리**: HR ops 직무 재설계, 매니저 self-service 확장 교육
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart LR

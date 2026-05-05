@@ -32,7 +32,7 @@ related_vendors:
 
 인도 3대 IT 서비스 기업 TCS·Infosys·Wipro는 AI 시대 전환에 맞춰 수십만에서 100만 명 이상 규모의 AI 리스킬링을 추진 중이다. ✅ **Fact** TCS는 275,000명이 "Ideate and Build with AI" 이니셔티브에 참여했고, Infosys는 AI 전환 프로그램에서 275,000명을 교육했으며, Wipro는 단 1분기 만에 180,000명에게 GenAI 기초 교육을 완료했다. 3사 합산 FY26 Q1 기준 AI 교육 인원은 약 100만 명에 달한다. [[sources/aibase-india-it-ai-reskilling-2025.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 AI가 기존 IT 서비스(코딩·QA·BPO)의 핵심 업무를 자동화하면서, 인도 IT 서비스 대기업들은 인력 구성 재편이라는 구조적 압박에 직면했다. TCS는 12,000명 감원과 동시에 40,000명 신규 채용을 진행하는 역설적 상황이며, Infosys는 역으로 20,000명 신입을 채용하며 AI 역량 기반 전환을 추진하고 있다.
 

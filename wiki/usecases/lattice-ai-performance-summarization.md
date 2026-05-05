@@ -34,13 +34,13 @@ related_companies:
 
 Lattice는 성과관리·engagement·보상 통합 SaaS로, **AI Performance Summarization** (리뷰 주기 중 받은 피드백·리뷰를 자동 요약해 핵심 트렌드 도출), **Goals AI Assistance** (자연어로 목표 쿼리·요약·분석), **AI Agent** (Slack/Teams 내장, 개인별 이탈 리스크 탐지)를 제공한다. **Ruggable** VP of People이 "Lattice AI for engagement로 비즈니스의 다른 영역에서도 AI 필요성을 입증했다"고 평가. 2026년 상반기 AI Agent가 Slack/Teams 내 작동하는 업데이트 발표.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 매니저가 리뷰 주기마다 다수 직원의 **360도 피드백을 수동 종합**하는 데 시간 소요
 - 목표 진척을 대시보드에서 수동 추적 → **실시간 파악 어려움**
 - 이탈 리스크를 **사후적으로만** 파악 — 사전 개입 불가
 
-## Solution Architecture (요약)
+## Solution Architecture
 
 ### A. Process (프로세스)
 
@@ -62,29 +62,29 @@ flowchart LR
     I --> J
 ```
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core 플랫폼**: Lattice (Performance Management + Engagement + Compensation SaaS)
 - **AI Agent**: Slack, Microsoft Teams 내장 예정 (2026 상반기)
 - **연동**: Google Workspace, HRIS 시스템 통합
 - 배포 환경 상세: _미공개 (not disclosed)_
 
-### C. Data
+### C. Data (데이터)
 
 - **입력**: 성과 리뷰, 동료 피드백, 목표 데이터, engagement 설문, 매니저 변경·팀 안정성 신호
 - **이탈 리스크 분석**: 팀 안정성, sentiment, 피드백 패턴, 매니저 변경 등 신호 분석
 - 학습/RAG 방식: _미공개 (not disclosed)_
 
-### D. Model
+### D. Model (모델)
 
 - _미공개 (not disclosed)_
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - Ruggable: Abby Wilson (VP of People) — engagement AI 도입
 - 나머지: _미공개 (not disclosed)_
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 

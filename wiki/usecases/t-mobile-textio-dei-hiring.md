@@ -30,7 +30,7 @@ related_vendors: []
 
 T-Mobile은 Textio의 AI 기반 포용적 언어 플랫폼을 ~125명 리크루터 + 9,000명+ 채용 관리자에게 배포해, 성 중립적 어조 편집 시 여성 지원자 +17%, Textio Score 90+ 달성 시 채용 소요 기간 5일 단축을 확인했다. Workday ATS에 Textio를 직접 통합해 JD 작성 시 실시간 AI 제안을 받는 구조다. 기업 합병 통합 과정 중에 도입했으며, 2025년 3월 HR Brew가 Textio의 스킬 기반 면접 도구 출시를 별도 보도.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - T-Mobile 합병(T-Mobile + Sprint) 이후 채용 브랜딩·JD 언어 비일관성
 - 다양성 채용 목표 달성을 위한 JD·이메일 언어의 시스템적 개선 필요

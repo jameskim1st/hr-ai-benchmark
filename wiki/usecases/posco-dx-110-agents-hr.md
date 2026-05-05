@@ -32,7 +32,7 @@ related_vendors: []
 
 포스코DX가 2026 그룹 조직개편과 함께 **인사·구매·경영분석 사무 업무 영역 ~110개 AI 에이전트** 개발 중. 2026 그룹DX전략실장(임치현 UNIST 교수 영입), AI·로봇 융합 연구소장(윤일용) 신설로 그룹 차원 AI 거버넌스 강화. 우리은행 175 에이전트 [[woori-bank-175-ai-agents]]와 함께 KR 기업 **AI 에이전트 portfolio 규모** 트렌드의 제조업 reference.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 포스코 그룹 ~30K 직원 사무 영역 (인사·구매·경영분석)에 단순 반복 업무 다수
 - **Pain point**: 철강 산업 DX 전환 + 그룹 차원 AI 통합 부재 (계열사별 분산)
@@ -40,7 +40,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 인사·구매·경영분석 업무가 각 계열사별 산발 처리
 - **After (개발 중, 2026 launch 예정)**:
@@ -62,7 +62,7 @@ related_vendors: []
 - 포스코DX (개발) + 그룹DX전략실 + AI·로봇 융합 연구소
 - 임치현 (UNIST 영입) + 윤일용 (AI·로봇 융합 연구소장)
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: 포스코 그룹 사내 HRIS (구체 _미공개_)
 - **AI 시스템 배치**: ✅ 포스코DX 자체 — ~110개 AI 에이전트 portfolio
@@ -71,7 +71,7 @@ related_vendors: []
 - **사용자 접점**: _미공개_ (계열사 사업부 web/desktop 추정)
 - **인증·권한**: 그룹 SSO 추정
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ 인사·구매·경영분석 도메인 데이터
 - **데이터 규모**: ✅ 포스코 그룹 ~30K 직원 사무 영역
@@ -80,7 +80,7 @@ related_vendors: []
 - **데이터 거버넌스**: ✅ 그룹DX전략실 + AI·로봇 융합 연구소 cross-functional (2026 조직개편)
 - **민감정보 처리**: ⚠️ 인사 영역 KR AI 기본법 고영향 AI 분류 가능
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ — 자체·외부 혼합 추정
 - **모델 유형**: generative + automation (RPA) + classifier
@@ -90,7 +90,7 @@ related_vendors: []
 - **평가·가드레일**: ⚠️ "개발 중" (announced) — production 후 검증 필요
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 한국 제조 그룹의 AI 에이전트 portfolio 첫 사례 + 그룹 차원 거버넌스 — 우리은행 금융권 사례와 paired reference.

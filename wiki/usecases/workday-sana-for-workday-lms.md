@@ -43,7 +43,7 @@ Workday가 2025-11에 $1.1B로 인수한 스웨덴 AI-native LMS 회사 Sana를 
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before (As-is)**: 1) HRD가 외주 ID·콘텐츠 벤더에 코스 발주 / 2) 4~6개월 제작 / 3) Workday Learning에 업로드·할당 / 4) 직원이 self-paced로 수강 (avg 완료율 낮음)
 - **After (To-be)**:
@@ -56,7 +56,7 @@ Workday가 2025-11에 $1.1B로 인수한 스웨덴 AI-native LMS 회사 Sana를 
 - **Trigger & Frequency**: 신규 코스 요청(adhoc) + 학습 활동(daily)
 - **Scope of autonomy**: 코스 초안은 AI 생성·HRD 승인. 직원 수강은 Sana Learn agent와 대화형 autonomous 진행
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: Workday HCM + Workday Learning (Sana for Workday가 신규 UI front door)
 - **AI 시스템 배치**: Sana 기술 스택 통합 (Workday cloud로 마이그레이션 진행)
@@ -65,7 +65,7 @@ Workday가 2025-11에 $1.1B로 인수한 스웨덴 AI-native LMS 회사 Sana를 
 - **사용자 접점**: 대화형 UI (web + mobile) — Sana 기존 UX 차용
 - **인증·권한**: Workday IAM + ASOR 에이전트 정책
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터 소스**: 학습 콘텐츠 코퍼스, 직무·스킬 매핑, 학습 이력, 직원 프로필
 - **데이터 규모**: _미공개_
@@ -75,7 +75,7 @@ Workday가 2025-11에 $1.1B로 인수한 스웨덴 AI-native LMS 회사 Sana를 
 - **민감정보 처리**: 학습 이력은 PII 범주 — Workday RBAC 적용
 - **데이터 출처의 오너십**: 회사 보유 콘텐츠 + Sana 기본 템플릿
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: Sana 자체 model + 외부 API 혼합 추정 (구체 모델 _미공개_)
 - **Model 유형**: LLM (생성) + multi-modal + agentic (학습 대화)
@@ -84,14 +84,14 @@ Workday가 2025-11에 $1.1B로 인수한 스웨덴 AI-native LMS 회사 Sana를 
 - **Orchestration 프레임워크**: Sana 자체 구축
 - **평가·가드레일**: ASOR 거버넌스 적용 + Workday 기본 content filter
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: HRD/L&D 부서 (콘텐츠 오너십 유지) + Workday/Sana 통합 팀(Workday 인수 후 통합 진행 중)
 - **참여 역할**: HRD·콘텐츠 디자이너·번역 담당·legal·보안
 - **거버넌스 체계**: ASOR + Workday 기본 거버넌스
 - **변화관리**: 외주 콘텐츠 벤더 의존도 축소 → HRD 직무 재설계 ("콘텐츠 발주자"에서 "AI prompt designer + curator"로)
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart LR

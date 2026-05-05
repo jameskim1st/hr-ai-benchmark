@@ -41,7 +41,7 @@ LinkedIn Learning이 **Premium·Enterprise tier**에 통합한 **AI-Powered Coac
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 직원이 LMS 비디오 강의 시청 → 실제 적용 어려움 (피드백 부재)
 - **After**:
@@ -65,7 +65,7 @@ LinkedIn Learning이 **Premium·Enterprise tier**에 통합한 **AI-Powered Coac
 
 - LinkedIn (Microsoft 자회사) + 고객사 HRD/L&D 팀
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: _미공개_ (LinkedIn Learning은 stand-alone LXP, SCIM/SSO 가능)
 - **AI 시스템 배치**: ⚠️ 벤더 주장: Premium·Enterprise tier 내장 SaaS
@@ -74,7 +74,7 @@ LinkedIn Learning이 **Premium·Enterprise tier**에 통합한 **AI-Powered Coac
 - **사용자 접점**: LinkedIn Learning 웹·모바일 — conversational UI
 - **인증·권한**: LinkedIn 계정 + 기업 SSO (SAML)
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: 학습 이력·skill profile·career goal·강의 콘텐츠
 - **데이터 규모**: ⚠️ 벤더 주장: 16,000+ skills taxonomy
@@ -83,7 +83,7 @@ LinkedIn Learning이 **Premium·Enterprise tier**에 통합한 **AI-Powered Coac
 - **데이터 거버넌스**: _미공개_ (Microsoft enterprise privacy 정책 추정)
 - **민감정보 처리**: _미공개_ — KR PIPA cross-border data transfer 검증 필요
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ (GPT 계열 추정, 공식 발표 없음)
 - **모델 유형**: LLM (생성·대화형 코칭)
@@ -93,7 +93,7 @@ LinkedIn Learning이 **Premium·Enterprise tier**에 통합한 **AI-Powered Coac
 - **평가·가드레일**: _미공개_ — soft skill 코칭 quality control governance 미공개
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 대규모 mass coaching의 ROI 입증 어려운 영역에서 LMS 기존 기능 대비 학습자 engagement·soft skill 적용도 향상 기대.

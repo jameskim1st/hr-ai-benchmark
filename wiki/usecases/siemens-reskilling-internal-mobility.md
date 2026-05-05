@@ -42,7 +42,7 @@ Siemens는 **Future Skills Initiative**를 통해 300,000 직원 대상으로 �
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: Siemens가 디지털 전환을 추진하나 data analytics·digital twin·automation 인력은 외부 채용 의존, 기존 직원 reskilling은 부서별 단발 교육
 - **After**:
@@ -55,7 +55,7 @@ Siemens는 **Future Skills Initiative**를 통해 300,000 직원 대상으로 �
 - **Frequency**: 교육 등록 = monthly, mobility 매칭 = adhoc/quarterly
 - ⚠️ AI 활용 구체 process(어떤 알고리즘이 매칭하는지)는 _미공개_ — reskilling 자체는 fact, AI 의존도는 미명시
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: _미공개_ (Workday 사용 여부 미확인) + ✅ ServiceNow (Siemens GBS — ServiceNow case study Tier 3)
 - **AI 시스템 배치**: ✅ My Learning World (사내 LXP, 100K+ 학습) + 별도 AI 채용·이동 포탈
@@ -64,7 +64,7 @@ Siemens는 **Future Skills Initiative**를 통해 300,000 직원 대상으로 �
 - **사용자 접점**: My Learning World web·모바일, internal mobility portal
 - **인증·권한**: Siemens 사내 SSO
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ 직원 skill profile, 학습 이력, 41 capability, role·position
 - **데이터 규모**: ⚠️ 자사 보고: 300K 직원, 100K+ 학습 기회
@@ -73,7 +73,7 @@ Siemens는 **Future Skills Initiative**를 통해 300,000 직원 대상으로 �
 - **데이터 거버넌스**: _미공개_ — EU GDPR (Siemens HQ 독일)
 - **민감정보 처리**: _미공개_
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ — AI 채용·이동 포탈 모델 미공개
 - **모델 유형**: predictive (recommendation·ranking)

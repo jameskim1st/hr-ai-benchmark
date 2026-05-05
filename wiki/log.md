@@ -681,3 +681,37 @@ Format: `## [YYYY-MM-DD] <operation> | <one-line description>`
 ### 사용자 액션 권장
 - PwC 자료 그대로 클라이언트 인용 시 **벤더 식별 오류 risk** — wiki의 정정 자료 활용
 - 한국 대기업 ER AI 컨설팅 deck에 **4-vendor 비교 + Sodales SAP fit + 고용노동부 사례** 3-tier 구조 권장
+
+## [2026-05-06] refactor | tone & format normalization (153 files) — section headers·markers 표준화 | touched: 153 files
+
+### 사용자 피드백
+"이 output 자료들의 전반적인 톤앤매너가 좀 상이한데 표준화시켜줘."
+
+### 변경 (auto via scripts/normalize_tone.py)
+**Section headers — CLAUDE.md spec 준수**:
+- `## Problem / Why` → `## Problem / Why (도입 배경)` (95 file)
+- `## Solution Architecture (요약)` → `## Solution Architecture` (18 → 0)
+- `## Impact / Metrics` → `## Impact / Metrics (기대효과)` (42 file)
+- `### A. Process (anything)` → `### A. Process (프로세스)`
+- `### B. System & Infrastructure (R9 research·Agent research·...)` → `### B. System & Infrastructure (시스템·인프라)` (Claude session artifact paren 제거)
+- `### C. Data` → `### C. Data (데이터)`
+- `### D. Model` → `### D. Model (모델)`
+- `### E. Organization & Team` → `### E. Organization & Team (조직·팀 구조)`
+- `### F. Diagrams` → `### F. Diagrams (도식)`
+
+**Markers — 일관성 통일**:
+- ⭐ → ★ (24 occurrences across 19+5 files)
+- ❌ → 🚫 (11+ occurrences)
+- ✅ 검증 → ✅ Fact (2 files)
+- ✅ Verified → ✅ Fact
+
+**유지 (의도적 다양성)**:
+- 🚨 (alert) — 의도적 강조
+- ` — descriptor` 형식 section header (4 file: korea-electric-power, nps, sk-hynix-ask-ai, walmart) — 부가 정보 유지
+- Korean ending style 한다/이다/함/됨 mix — 개조식 bullet vs prose 자연스러운 차이
+
+### 검증
+- 138/140 use case + 15 syntheses/sources/companies/vendors = 총 **153 files** changed
+- Total changes: **529** (512 use cases + 17 기타)
+- Re-audit: A.~F. 헤더 일관성 100%, ⭐/❌/✅검증 잔여 0
+- Build: HTML 636KB, Excel 251KB, JSON 656KB

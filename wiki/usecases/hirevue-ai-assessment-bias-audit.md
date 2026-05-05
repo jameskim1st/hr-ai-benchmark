@@ -40,7 +40,7 @@ HireVue는 **AI 비디오 면접 + 게임 기반 역량 평가** 플랫폼. 주�
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: AI 채용 알고리즘이 inference time에 학습되거나 bias 점검 없이 운영
 - **After**:

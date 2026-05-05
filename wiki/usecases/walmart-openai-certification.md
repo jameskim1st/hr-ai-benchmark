@@ -34,7 +34,7 @@ related_vendors: []
 
 Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무 직원에게 **OpenAI Certification 무료 access** (2026 launch 시). 다층 (basics → prompt engineering). Walmart의 **$1B 교육 commitment** (2026까지)의 일부. ~50,000 직원이 AI/automation roles로 reskilling 진행. 740K frontline에게 **Me@Walmart** 디바이스 (Samsung Galaxy XCover Pro) 배포로 학습 access 인프라 마련.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 1.6M Walmart frontline 직원의 AI literacy baseline 매우 편차 큰
 - **Pain point**: AI 도입 가속 vs frontline workforce 변화 압박 — reskilling 없으면 mass 해고 사태
@@ -42,7 +42,7 @@ Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무 직원에게 **O
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: AI 교육은 사무직 자율·온라인 — frontline은 access 부재
 - **After**:
@@ -59,7 +59,7 @@ Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무 직원에게 **O
 - OpenAI 콘텐츠 + Walmart 자체 운영
 - 오너십: Walmart Academy + OpenAI 파트너 팀
 
-### B. System & Infrastructure (Agent research expanded)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS / 기반 시스템**: _미공개_ (Walmart는 Workday customer로 알려져 있으나 본 certification 프로그램과의 직접 통합 명시 없음)
 - **AI 시스템 배치**: ✅ Walmart Academy (LMS 자체 운영) + OpenAI Academy 플랫폼 통합
@@ -68,7 +68,7 @@ Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무 직원에게 **O
 - **사용자 접점**: ✅ Samsung Galaxy XCover Pro (740K frontline 디바이스), Me@Walmart 앱 (geofencing, push-to-talk, ML/AR/camera vision); 사무직은 ChatGPT Enterprise web/desktop
 - **인증·권한**: ✅ Me@Walmart 앱은 work features = on-clock 접근 제한; Walmart는 personal data access 없음 (벤더 주장)
 
-### C. Data (Agent research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ OpenAI Academy 콘텐츠 (basics → prompt engineering 다층); Walmart Academy 자체 콘텐츠
 - **데이터 규모**: ✅ 2.1M 직원 in scope (전사 training 목표); 740K frontline 디바이스; ~50,000 직원 AI/automation roles 재배치
@@ -77,7 +77,7 @@ Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무 직원에게 **O
 - **데이터 거버넌스**: _미공개_
 - **민감정보 처리**: ✅ Me@Walmart는 personal/work 분리 (Walmart corporate)
 
-### D. Model (Agent research expanded)
+### D. Model (모델)
 
 - **Foundation model**: ✅ OpenAI ChatGPT Enterprise (구체 GPT-4/4o/5 _미공개_); ✅ **Google Gemini도 별도 인증 파트너** (multi-vendor, 신규 발견)
 - **모델 유형**: ✅ Generative LLM (ChatGPT Enterprise) — 직원 hands-on 사용
@@ -87,7 +87,7 @@ Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무 직원에게 **O
 - **평가·가드레일**: ✅ OpenAI Certifications (자체 평가 체계)
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 frontline retail 1.6M 직원에게 mass AI upskilling — KR retail (이마트·롯데·CJ대한통운·쿠팡) frontline reskilling 모범.

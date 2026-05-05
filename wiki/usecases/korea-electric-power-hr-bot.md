@@ -32,7 +32,7 @@ related_vendors: []
 
 한국전력의 **HR-Bot** (솔트룩스 기반) — 24/7 채용 상담·단순 반복 채용업무 자동화. 별도 **AI 인사추천 시스템**은 직원 역량·업무 이력 분석으로 적재적소 배치 지원 — **공공기관 최초** 사례. 2024년 한전 경영평가에서 **인사혁신 부문 가점**. 2025년 12월~2026년 3월 사내 규정·법규·문서 작성용 생성형 AI 시스템 전 직원 개방 예정.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 한전 23,000+ 직원, 공공기관 특성상 인사이동·채용 manual + 정량 자료 의존
 - **Pain point**: 공공기관 인사이동의 표준화 어려움 + 채용 상담 volume 大
@@ -68,7 +68,7 @@ related_vendors: []
 
 - 한전 HR + 솔트룩스 파트너 + 2025-Q4 디지털혁신 본부
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: 한전 자체 HR (구체 _미공개_)
 - **AI 시스템 배치**: ✅ HR-Bot (솔트룩스 챗봇) + 별도 AI 인사추천
@@ -77,7 +77,7 @@ related_vendors: []
 - **사용자 접점**: 채용 챗봇 web/앱 + 사내 인사추천 dashboard
 - **인증·권한**: ✅ 한전 SSO + 공공기관 보안 표준
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ 채용 FAQ·일정, 직원 역량(자격증·경력), 업무 이력(성과·전배)
 - **데이터 규모**: ✅ 한전 23K+ 직원
@@ -86,7 +86,7 @@ related_vendors: []
 - **데이터 거버넌스**: ⚠️ 공공기관 인사이동 AI 추천의 노조·직원 투명성 process _미공개_
 - **민감정보 처리**: ✅ KR PIPA strict — 공공기관 추가 가이드라인
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ — 솔트룩스 자체 NLP + 2025-Q4 GenAI (모델 미공개)
 - **모델 유형**: 챗봇 NLP + recommendation
@@ -96,7 +96,7 @@ related_vendors: []
 - **평가·가드레일**: ⚠️ KR AI 기본법 (2026-01) 고영향 AI — 인적감독 의무 자동 충족 검증 _미공개_
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 공공기관 최초 AI 인사추천 + HR-Bot 채용 자동화 — 2024 경영평가 인사혁신 부문 가점.

@@ -30,7 +30,7 @@ related_vendors: []
 
 # Deloitte — Anthropic Claude 470,000 직원 배포
 
-> ⭐ **Anthropic 역대 최대 엔터프라이즈 배포**: Deloitte(470,000 직원, 150개국)가 Claude를 전 직원에게 배포 — Anthropic의 가장 큰 엔터프라이즈 고객. ⚠️ 자사 보고: Claude Center of Excellence 설립, 15,000명 전문 인증 계획. 회계사·소프트웨어 개발자용 특화 Claude 버전 개발.
+> ★ **Anthropic 역대 최대 엔터프라이즈 배포**: Deloitte(470,000 직원, 150개국)가 Claude를 전 직원에게 배포 — Anthropic의 가장 큰 엔터프라이즈 고객. ⚠️ 자사 보고: Claude Center of Excellence 설립, 15,000명 전문 인증 계획. 회계사·소프트웨어 개발자용 특화 Claude 버전 개발.
 
 ## Problem / Why (도입 배경)
 
@@ -40,7 +40,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: Deloitte 470k 직원이 audit·tax·consulting 산출물을 수기·MS Office·기존 internal KM으로 작성. 사내 GenAI 사용은 부서별 파일럿 단위
 - **After**:
@@ -52,7 +52,7 @@ related_vendors: []
 - **HITL**: 모든 클라이언트 산출물은 파트너·매니저 검토 후 외부 release
 - **Frequency**: daily (개별 사용), quarterly (CoE governance review)
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: _미공개_ (Deloitte 사내 — Workday 사용 여부 공식 미확인)
 - **AI 시스템 배치**: ✅ Anthropic Claude Enterprise 470K 글로벌 SSO 프로비저닝
@@ -61,7 +61,7 @@ related_vendors: []
 - **사용자 접점**: ⚠️ 자사 보고: 회계사·개발자용 특화 Claude 버전 + 일반 web/desktop
 - **인증·권한**: 글로벌 SSO (구체 IdP _미공개_)
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ⚠️ 자사 보고: 클라이언트 자료·문서·코드 — use case별 상이
 - **데이터 규모**: ✅ 470K 직원, 150개국
@@ -70,7 +70,7 @@ related_vendors: []
 - **데이터 거버넌스**: ⚠️ 자사 보고: Trustworthy AI framework, governance dashboard, Claude CoE
 - **민감정보 처리**: _미공개_ — 클라이언트 confidential 처리 정책 미발표
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: ✅ Anthropic Claude (버전 미명시)
 - **모델 유형**: LLM (생성·요약·코드)

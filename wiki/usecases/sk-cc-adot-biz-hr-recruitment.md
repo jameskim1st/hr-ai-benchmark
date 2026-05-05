@@ -33,7 +33,7 @@ related_vendors: []
 
 SK C&C가 SKT·SK AX 합작 'A.Biz' B2B AI 솔루션의 첫 제품 **'에이닷 비즈 HR'**을 2025년 신입·주니어 채용에 전면 적용. 자기소개서에서 **경력·핵심 역량 키워드 추출** + **직무 적합성·리스크 요인 판정**. AI 면접 + 맞춤 면접 질문 자동 생성. ⚠️ 자사 보고: 수천 건 지원서를 4시간 내 분석 (이전 약 1주 소요 → **약 90% 단축**).
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: SK C&C 신입·주니어 채용 시 수천 건 지원서 review에 HR + 사업부 SME 다수 인력 1주 투입
 - **Pain point**: 한국 대졸 정기공채 (3월·9월) 시즌 압박 + 직무 적합성 판단 표준화 어려움
@@ -41,7 +41,7 @@ SK C&C가 SKT·SK AX 합작 'A.Biz' B2B AI 솔루션의 첫 제품 **'에이닷 
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 1) 수천 건 자기소개서 manual review (1주) / 2) 적합성 판정 reviewer 별 편차 / 3) 면접 질문 면접관 별 ad-hoc
 - **After**:
@@ -64,7 +64,7 @@ SK C&C가 SKT·SK AX 합작 'A.Biz' B2B AI 솔루션의 첫 제품 **'에이닷 
 
 - SK C&C 인사 + SKT A.Biz 팀 + SK AX
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: SK C&C 사내 ATS (구체 _미공개_)
 - **AI 시스템 배치**: ✅ SKT-SK AX 합작 'A.Biz' B2B AI — 'A.Biz HR'
@@ -73,7 +73,7 @@ SK C&C가 SKT·SK AX 합작 'A.Biz' B2B AI 솔루션의 첫 제품 **'에이닷 
 - **사용자 접점**: HR·사업부 SME web UI — 자기소개서 분석·맞춤 면접 질문 review
 - **인증·권한**: SK C&C 사내 SSO
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ 자기소개서 텍스트, JD 텍스트, AI 면접 영상 응답
 - **데이터 규모**: ✅ 수천 건 자기소개서 / 신입 공채 cycle
@@ -82,7 +82,7 @@ SK C&C가 SKT·SK AX 합작 'A.Biz' B2B AI 솔루션의 첫 제품 **'에이닷 
 - **데이터 거버넌스**: _미공개_ — 채용절차공정화법 + AI 기본법 (2026-01) fit 검증 필요
 - **민감정보 처리**: ⚠️ 영상면접 표정·억양·외모 신호 사용 여부 _미공개_
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: SKT 자체 LLM **A.X** 추정 (공식 _미공개_)
 - **모델 유형**: ✅ LLM (자기소개서 추출·요약) + classifier (직무 적합성·리스크) + 영상 분석 (멀티모달)
@@ -92,7 +92,7 @@ SK C&C가 SKT·SK AX 합작 'A.Biz' B2B AI 솔루션의 첫 제품 **'에이닷 
 - **평가·가드레일**: ⚠️ "리스크 요인" explainability·차별 표현 자동 필터 _미검증·미공개_
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 자기소개서 분석 1주 → 4시간 (90% 단축, ⚠️ 자사 보고). 한국 대졸 공채 시즌 HR 부담 대폭 경감 reference.

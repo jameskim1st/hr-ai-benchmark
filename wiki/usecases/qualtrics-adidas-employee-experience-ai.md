@@ -36,7 +36,7 @@ adidas가 Qualtrics XM AI를 도입해 ⚠️ 벤더 주장: **수동 분석 95%
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 분기/연간 engagement 설문 후 manager가 보고서 수기 분석 (160+ hours/cycle)
 - **After**:

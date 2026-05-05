@@ -36,7 +36,7 @@ related_vendors:
 
 Schneider Electric(글로벌 에너지 관리·자동화 기업, 135,000+ 직원)은 Gloat 기반 **"Open Talent Market"**을 2020-04에 전사 big bang launch. 직원의 스킬·관심을 AI가 분석해 **gig work·career transitions·mentorship** 기회를 매칭. ⚠️ 벤더 주장: **360,000+ 시간 unlocked, $15M+ 생산성 향상 + 채용 비용 절감**. Unilever FLEX와 함께 Gloat의 양대 레퍼런스. **Josh Bersin**(Tier 1)이 2019년 독립 분석에서 "가장 영리한 비즈니스 리더" CHRO Olivier Blum의 전략으로 소개 ([[bersin-schneider-unilever-talent-marketplace-2019-07]]). **SHRM**(Tier 2)이 2025년 현 CHRO Charise Le의 비전통적 인재 전략으로 재조명 ([[shrm-schneider-electric-chro-nontraditional-2025]]).
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - ⚠️ 자사 보고: **직원의 50%가 "내부 성장 기회 부족"을 퇴직 주요 사유로 꼽음** — 이 데이터가 Open Talent Market 구축의 직접적 트리거
 - 135,000명 규모에서 부서·지역 간 인력 가시성 부족 → 외부 채용에 의존
@@ -44,7 +44,7 @@ Schneider Electric(글로벌 에너지 관리·자동화 기업, 135,000+ 직원
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before (As-is)**: 직원이 내부 성장 기회를 인식하지 못함 → 50% 퇴직 사유
 - **After (To-be)**:
@@ -67,7 +67,7 @@ flowchart LR
 
 ### B~E. 시스템·데이터·모델·조직 — 세부 대부분 _미공개_ (Unilever FLEX와 동일 패턴)
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: ✅ Oracle Fusion HCM, Taleo (ATS), Cornerstone (LMS) 통합 — Bersin 2019 독립 확인
 - **AI 시스템 배치**: Gloat Workforce Agility Platform — SaaS, Schneider 사내 SSO
@@ -76,7 +76,7 @@ flowchart LR
 - **사용자 접점**: Gloat web·모바일 — 직원 프로필·기회 매칭 dashboard
 - **인증·권한**: 사내 SSO (구체 IdP _미공개_)
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: 직원 프로필 (스킬·관심·포부), 조직 내 기회 (gig·career·mentorship)
 - **데이터 규모**: ⚠️ 자사 보고: 135K+ 직원, 등록률 89% (NA 92%), gig 13,400건, mentor 27,500건
@@ -85,7 +85,7 @@ flowchart LR
 - **데이터 거버넌스**: _미공개_ — 직원 자율 입력 + 매칭 활용 동의
 - **민감정보 처리**: _미공개_ — EU GDPR (Schneider HQ 프랑스)
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ — Gloat 자체 ML/skills inference, LLM 도입 여부 (2024+) 별도 발표 미확인
 - **모델 유형**: predictive (recommendation·ranking) + skills inference

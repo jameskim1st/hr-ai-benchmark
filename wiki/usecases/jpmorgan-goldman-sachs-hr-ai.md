@@ -42,7 +42,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: JPM·GS의 knowledge worker(합산 300k+)가 이메일·메모·리서치·피치덱·코드를 수기 작성. 사내 데이터 검색은 분절된 KM 시스템 의존, AI 도구는 보안 정책상 외부 ChatGPT 차단
 - **After**:
@@ -55,7 +55,7 @@ related_vendors: []
 - **Frequency**: daily (개별 사용), quarterly (모델 교체·governance 리뷰)
 - ⚠️ HR 한정 use case는 일반 productivity tool에 가까움 — HR-specific 모듈 별도 발표 _미공개_
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: 양사 _미공개_ (JPM·GS 사내 HRIS 비공개)
 - **AI 시스템 배치**: ✅ JPM **LLM Suite** (200K+), GS **AI Assistant** (46.5K knowledge worker, 2025-06 firm-wide)
@@ -64,7 +64,7 @@ related_vendors: []
 - **사용자 접점**: ✅ 양사 web portal — JPM 8회 메이저 업그레이드, GS Developer Copilot·Banker Copilot
 - **인증·권한**: 사내 SSO + RBAC + audit log
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ 이메일·메모·리서치·피치덱·코드 (knowledge worker 산출물), 사내 정책
 - **데이터 규모**: ✅ JPM 200K+, GS 46.5K (10K → 2025-06 전사) + 12K 개발자 GitHub Copilot
@@ -73,7 +73,7 @@ related_vendors: []
 - **데이터 거버넌스**: ✅ prompt·response audit trail, 컴플라이언스 모니터링, 모델 swap 시 재학습 불필요
 - **민감정보 처리**: ✅ firewall 내 — 외부 LLM 차단
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: ✅ JPM = OpenAI 백엔드 (private gateway). GS = **GPT/Gemini/Claude/OSS 사용자 선택**
 - **모델 유형**: LLM (요약·초안·번역·코드)

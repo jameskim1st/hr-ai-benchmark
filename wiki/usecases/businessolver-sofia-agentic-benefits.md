@@ -33,7 +33,7 @@ related_vendors: []
 
 Businessolver는 **US 복리후생 어드민 SaaS 벤더**로, 자체 AI 엔진 **Sofia**를 2010년대 후반부터 운영해왔으며 2025년 7월 **agentic framework**로 확장. 3개 specialist agent (**Intake / Answer / Insights**) 구조로 **문서 자동 검증·24/7 직원 Q&A·HR 운영 인사이트**를 동시 처리. ⚠️ 자사 보고: 2024년 OE(Open Enrollment) 기준 document 자동 검증 62%·chat 당일 해결 92%·콜타임 7M minutes 절감·만족도 4.25/5. 2025년 마감 기준 client NPS 83·retention 97% (벤더 자사 발표).
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 미국 employer의 OE(연 1회 plan 선택)는 직원 stress 최고점 — 정책 복잡(의료·치과·생명·FSA·HSA·HDHP), 문서 검증(QLE: qualifying life event — 결혼·출산·이혼시 plan 변경)·승인 워크플로 수작업
 - **Pain point**: HR/벤처사 콜센터에 OE 시즌 콜 급증, 직원당 평균 통화 시간 길고 같은 질문 반복, document 검증은 사람 reviewer가 1건씩 처리
@@ -42,7 +42,7 @@ Businessolver는 **US 복리후생 어드민 SaaS 벤더**로, 자체 AI 엔진 
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 직원이 전화·이메일·portal로 문의 → HR/벤처사 상담원이 plan 비교 설명 → QLE 시 직원이 증빙 PDF 업로드 → 사람이 1건씩 검증·승인 → plan 변경 반영
 - **After (벤더 발표 architecture)**:
@@ -59,7 +59,7 @@ Businessolver는 **US 복리후생 어드민 SaaS 벤더**로, 자체 AI 엔진 
 - **Frequency**: daily (chat·document) + OE 시즌 spike (10~12월 미국)
 - **Scope of autonomy**: recommend + execute (chat 답변·document 자동 승인), HR plan design은 recommend-only
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core platform**: Businessolver Benefitsolver SaaS (Cloud-hosted) — _구체 hyperscaler 미공개_
 - **AI 시스템 배치**: Benefitsolver platform 내장 + 외부 employer HRIS 연동 (Workday, ADP, UKG 등 — 구체 매트릭스 _미공개_)
@@ -67,7 +67,7 @@ Businessolver는 **US 복리후생 어드민 SaaS 벤더**로, 자체 AI 엔진 
 - **인증**: SSO (employer IdP), RBAC
 - **AI 안전성**: Businessolver AI Policy 페이지가 단일 출처 — guardrail 27개·SHAP explainability·평가 50ms latency·hallucination 모니터링 명시 (⚠️ 벤더 주장)
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터**:
   - Employer plan documents (SPD·SBC) → RAG 인덱스
@@ -77,20 +77,20 @@ Businessolver는 **US 복리후생 어드민 SaaS 벤더**로, 자체 AI 엔진 
 - **모델 구조**: RAG (plan documents) + 분류기 (document 유형) + LLM (자연어 응답·요약) + classification 모델 (Insights Agent 패턴 인식)
 - **Data governance**: HIPAA 준수 (US 의료 정보), SOC2, _구체 retention·crossborder 정책 미공개_
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: _구체 모델·버전 미공개_ (Businessolver는 "proprietary AI engine Sofia"로만 표현, underlying LLM provider 비공개)
 - **Customization**: domain-specific RAG (US benefits 정책 corpus) + 자체 fine-tuning (벤더 주장)
 - **Guardrails**: ⚠️ 벤더 주장 — 27개 safeguard, SHAP-based explainability, real-time hallucination check (50ms eval)
 - **Orchestration**: 자체 agentic framework (Intake/Answer/Insights specialist 분할)
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: Businessolver 벤더 — 고객사(employer)는 SaaS 구독자
 - **참여 역할**: Businessolver AI 팀 (Sofia 개발·운영) + 고객 HR/Benefits 팀 (plan design·OE 캠페인) + 고객 IT (HRIS 연동)
 - **거버넌스**: Businessolver AI Policy (자사 발표) — 외부 governance 인증 _미공개_
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

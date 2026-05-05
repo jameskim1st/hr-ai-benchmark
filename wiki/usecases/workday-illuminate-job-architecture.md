@@ -33,7 +33,7 @@ related_vendors:
 ## Summary
 Workday HCM 플랫폼에 내장된 AI 기능으로, **조직의 직무 체계(job architecture)를 분석·생성·관리**한다. Bersin의 2024-09 분석에서는 "skill gap·직무 통합 기회·역할 부적합 식별"(분석형)로, 2025-09 Workday press release에서는 "직무 사다리(job ladder)의 생성·관리 자동화"(구성형)로 묘사된다. 두 설명은 상호 모순은 아니며, 2024-09 이후 기능이 확장되었거나 측면이 다른 것으로 보이나 **공식 확인은 없다**.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 대기업 HR에서 직무 체계 관리는 정기 업데이트 주기가 느리고(연 1회 수준), 실제 업무 변화·스킬 변화와 격차가 벌어지기 쉽다. 이 격차가 직무 통합·재배치·보상 설계 오류로 이어진다. 이 use case는 Workday HCM 위에서 해당 bookkeeping을 AI가 보조하려는 시도.
 
 ## Solution Architecture

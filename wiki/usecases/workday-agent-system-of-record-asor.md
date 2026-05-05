@@ -54,7 +54,7 @@ Workday가 2026-02-18에 GA 발표한 **Agent System of Record (ASOR)**는 AI �
 - **Trigger & Frequency**: 신규 에이전트 등록(adhoc) + daily 활동 모니터링
 - **Scope of autonomy**: 거버넌스 자체는 사람 정책 결정. 에이전트는 정책 범위 내 autonomous 실행
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: Workday HCM
 - **AI 시스템 배치**: ASOR은 Workday 코어에 내장된 거버넌스 레이어 (별도 SaaS 아님)
@@ -79,14 +79,14 @@ Workday가 2026-02-18에 GA 발표한 **Agent System of Record (ASOR)**는 AI �
   - 3rd-party: GPT-4/5, Claude, Gemini 등 호출 가능
 - _Workday Illuminate base 모델 상세 미공개_
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: HR이 "agent owner of record" — Deloitte 2026 HC Trends가 신규 부상 역할로 명시
 - **참여 역할**: HRBP·HR Tech PM·legal·보안·IT/AI plat팀 협업
 - **거버넌스 체계**: ASOR 자체가 거버넌스 인프라 — 정책 위원회·AI ethics board는 기업별 별도 구성
 - **변화관리**: HR 직무 재설계 — "사람 매니징"에서 "사람+에이전트 매니징"으로
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

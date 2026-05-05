@@ -37,7 +37,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 내부이동이 매니저 referral·HR 큐레이션에 의존, 직원 가시성·career path 불투명
 - **After**:

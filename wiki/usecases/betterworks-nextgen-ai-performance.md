@@ -36,7 +36,7 @@ related_companies:
 
 Betterworks가 2026년 1월 **NextGen** AI-native 성과관리 플랫폼을 출시. **400+** 고객 우선순위 기능을 반영, **Goal Intelligence** (역할·팀·회사 우선순위 기반 SMART 목표 자동 추천), AI 기반 평가 편향 감소·일관성 향상, 부서·지역별 AI 기능 단계적 활성화를 지원. **Colgate-Palmolive, Intuit, ATB Financial, Kuehne+Nagel** 등이 고객. 2026 State of Performance 보고서에서 임원 vs 직원의 AI 성과관리 준비도 인식 **6배 차이**를 발견. [[sources/betterworks-nextgen-2026-01.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 전통 성과 관리가 연 1~2회 이벤트에 그침 → **연속 피드백·목표 관리** 수요 증가
 - 목표 설정 시 매니저·직원이 SMART 기준에 맞추기 어려움 → **비구체적·비측정 목표 남발**
@@ -44,7 +44,7 @@ Betterworks가 2026년 1월 **NextGen** AI-native 성과관리 플랫폼을 출�
 - 글로벌 기업에서 지역별 규제(EU AI Act, GDPR 등)에 맞춰 **AI 기능 차별 적용** 필요
 - 임원은 AI 성과관리 준비됐다고 보지만 직원은 6배 덜 준비됐다고 인식 [[sources/betterworks-nextgen-2026-01.md]]
 
-## Solution Architecture (요약)
+## Solution Architecture
 
 ### A. Process (프로세스)
 
@@ -64,30 +64,30 @@ flowchart LR
     G --> H[최종 평가 제출]
 ```
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core 플랫폼**: Betterworks (Performance Enablement SaaS)
 - **AI**: NextGen AI-native 플랫폼 — Betterworks 내장 [[sources/betterworks-nextgen-2026-01.md]]
 - **거버넌스 기능**: 부서·지역별 AI 기능 활성화/비활성화 토글 → 규제 컴플라이언스 대응 [[sources/betterworks-nextgen-2026-01.md]]
 - 연동·배포 상세: _미공개 (not disclosed)_
 
-### C. Data
+### C. Data (데이터)
 
 - **입력**: 역할 정보, 팀 구조, 회사 전략·우선순위, 과거 목표·성과 데이터 [[sources/betterworks-nextgen-2026-01.md]]
 - 나머지: _미공개 (not disclosed)_
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: _미공개 (not disclosed)_
 - **커스터마이징**: Goal Intelligence — 역할·팀·회사 맥락 기반 추천 로직 [[sources/betterworks-nextgen-2026-01.md]]
 - 나머지: _미공개 (not disclosed)_
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - 고객: Colgate-Palmolive, Intuit, ATB Financial, Ferrer, University of Phoenix, Kuehne+Nagel (19개 플랫폼 평가 후 선택) [[sources/betterworks-nextgen-2026-01.md]]
 - 구체 조직·팀 구조: _미공개 (not disclosed)_
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 

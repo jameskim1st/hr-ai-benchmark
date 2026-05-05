@@ -30,7 +30,7 @@ related_vendors: []
 
 ADP는 Innovation Day 2025(2025-09-03)에서 ADP Assist의 새로운 AI 기능을 발표했다: ① 급여 이상 탐지 및 자동 수정 제안, ② 대화형 GenAI 분석(자연어 질문 → 즉시 차트/인사이트), ③ 규정 준수 자동화. 조기 도입 기업들이 급여 사이클당 최대 30분 절감을 보고했다(자사 보고). TechTarget(Tier 2)이 독립 보도. 플랫폼: Workforce Now, Global Payroll, Lyric HCM.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 급여 담당자가 수작업으로 급여 데이터 이상 감지 → 오류 감지 누락 시 수정 비용 발생
 - 급여 분석 리포트 생성 시 복잡한 쿼리·수작업 → 경영진 보고 지연

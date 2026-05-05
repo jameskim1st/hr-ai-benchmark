@@ -49,7 +49,7 @@ Bersin이 2025-06 follow-up에서 제시한 3-way 비교:
 
 → 출처: [[bersin-ld-revolution-2025-06]]
 
-## Problem / Why (Bersin 주장)
+## Problem / Why (도입 배경)
 
 Bersin 기사가 제시하는 문제 진술:
 - **$360 billion** 글로벌 training 산업 규모이지만 **68%가 "administrative" 지출** (consultative·creative 가치 생산 못 함)
@@ -85,7 +85,7 @@ flowchart LR
 ```
 _범례: 노랑 = 벤더 주장 (제품 설명에서 직접 읽힘). 실증 customer 사례가 없으므로 실행 여부는 미검증._
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: N/A (별도 SaaS, HRIS 의존 낮음)
 - **AI 시스템 배치**: Galileo agent의 일부 (plugin/integration)
@@ -122,7 +122,7 @@ _범례: 노랑 = 벤더 주장 (제품 설명에서 직접 읽힘). 실증 cust
 - **Josh Bersin 본인의 역할**: 제품 홍보·"AI Josh" persona의 인물 모델
 - **외부 customer 조직 사례**: ✅ **Workday internal leadership academy** (Bersin 2025-06 follow-up에서 확인). 그 외 공개 고객은 현재까지 0건.
 
-### F. Diagrams
+### F. Diagrams (도식)
 - 기능 플로우 1개 (A 섹션). 실증 deployment 부재로 시스템·org 도식 생략.
 
 ---

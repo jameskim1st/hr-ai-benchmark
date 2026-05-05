@@ -34,7 +34,7 @@ related_vendors:
 
 Walmart은 2025년 6월 1.5M 직원 대상의 AI 도구 모음을 공개하고, 2025년 9월 OpenAI와 AI 인증 교육 프로그램 파트너십을 발표했다. ✅ **Fact** "People-led, Tech-powered" 원칙 하에 AI를 인력 대체가 아닌 역할 전환(드론 기술자·로봇 감독관 등)의 도구로 활용하고 있다. Workday HCM을 전사 단일 HR 시스템으로 운영하며, Paradox의 대화형 ATS로 고볼륨 프론트라인 채용을 자동화했다. [[sources/walmart-corporate-ai-tools-2025-06.md]] [[sources/hrdive-walmart-openai-2025-09.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 Walmart는 2.3M명 이상의 글로벌 인력을 보유하고 있으며, 10,500개 매장에서 프론트라인 인력 관리, 고볼륨 채용, AI 시대 직원 역량 전환이 최우선 과제다. 계절적 채용 급증(수십만 명 단기 채용), 복잡한 교대 스케줄 관리, 자동화로 인한 역할 재설계가 동시에 필요하다.
 

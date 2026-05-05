@@ -26,7 +26,7 @@ tags: [deliverable, mock-up, consulting-deck, dual-view]
 
 ### 대표 사례 3선
 
-#### Chipotle — "Ava Cado" 대화형 채용 ⭐ (0.55)
+#### Chipotle — "Ava Cado" 대화형 채용 ★ (0.55)
 | 항목        | 내용                                                                   |
 | --------- | -------------------------------------------------------------------- |
 | **도입 배경** | 3,500+ 매장에서 고볼륨 시급직 채용. 매장 매니저가 채용 행정에 시간 과다 소모                      |
@@ -36,7 +36,7 @@ tags: [deliverable, mock-up, consulting-deck, dual-view]
 | **교훈**    | "Ava Cado"라는 자체 브랜딩이 직원·지원자 수용도를 높임. CHRO Ilene Eskenazi 직접 quote 확보 |
 | → 기업 뷰    | [[#Chipotle]]                                                        |
 
-#### 🇰🇷 마이다스아이티 inAIR — Nature 논문 검증 ⭐ (0.50)
+#### 🇰🇷 마이다스아이티 inAIR — Nature 논문 검증 ★ (0.50)
 | 항목 | 내용 |
 |---|---|
 | **도입 배경** | 한국 대기업·공공기관 채용에서 면접관 편향·인적성검사 한계 |
@@ -73,7 +73,7 @@ tags: [deliverable, mock-up, consulting-deck, dual-view]
 
 ### 대표 사례 2선
 
-#### Schneider Electric — Open Talent Market, $15M 절감 ⭐ (0.50)
+#### Schneider Electric — Open Talent Market, $15M 절감 ★ (0.50)
 | 항목 | 내용 |
 |---|---|
 | **도입 배경** | **직원 50%가 "내부 성장 기회 부족"을 퇴직 사유로 꼽음** — wiki 전체에서 가장 강력한 Before 데이터 |
@@ -95,13 +95,13 @@ tags: [deliverable, mock-up, consulting-deck, dual-view]
 
 ### 대표 사례 2선
 
-#### J&J — Digital Talent Platform, MIT CISR 학술 검증 ⭐⭐ (0.60)
+#### J&J — Digital Talent Platform, MIT CISR 학술 검증 ★★ (0.60)
 | 항목 | 내용 |
 |---|---|
 | **도입 배경** | 디지털 역량 인력 확보·유지가 경쟁력 핵심. 직원 스킬 가시성 부족 |
 | **솔루션** | 자체 구축 Digital Talent Platform — HRIS·채용DB·LMS·프로젝트 데이터에서 **스킬 60~70% AI 자동 추론** |
 | **기대효과** | 학습 참여 **20%↑**, 내부 배치 **8%↑**, 디지털 역할 이탈 **3.2%↓** |
-| **신뢰도** | ⭐ **MIT CISR + peer-reviewed IS Journal** (wiki 최고 학술 검증) |
+| **신뢰도** | ★ **MIT CISR + peer-reviewed IS Journal** (wiki 최고 학술 검증) |
 | **교훈** | 4,000명→전사 확장의 단계적 전개. "스킬 추론"이 L&D·TA·성과관리를 연결하는 핵심 인프라 |
 | → 기업 뷰 | [[#Johnson & Johnson]] |
 
@@ -115,7 +115,7 @@ tags: [deliverable, mock-up, consulting-deck, dual-view]
 
 ---
 
-## A4. ⭐ Performance & Talent Management (평가·인재)
+## A4. ★ Performance & Talent Management (평가·인재)
 
 ### 대표 사례 2선
 
@@ -163,7 +163,7 @@ tags: [deliverable, mock-up, consulting-deck, dual-view]
 
 ### 대표 사례 3선
 
-#### Moderna — Ask HR Routing ⭐⭐ (0.70, wiki 최고)
+#### Moderna — Ask HR Routing ★★ (0.70, wiki 최고)
 | 항목 | 내용 |
 |---|---|
 | **도입 배경** | HR+IT 부서 병합(Franklin CPDO). "work planning" 통합 필요. GPT 남발 → HR 전용 "front door" 필요 |
@@ -180,7 +180,7 @@ tags: [deliverable, mock-up, consulting-deck, dual-view]
 | **기대효과** | 연 **2.1M 대화**, **80+ 태스크** 자동화. "couple hundred" HR 업무 대체 → 프로그래머·영업 채용 증가 |
 | → 기업 뷰 | [[#IBM]] |
 
-#### Walmart — Ask Sam 900k 사용자, 주 3M 질문 ⭐ (0.55)
+#### Walmart — Ask Sam 900k 사용자, 주 3M 질문 ★ (0.55)
 | 항목 | 내용 |
 |---|---|
 | **도입 배경** | 2.3M 직원, 10,500 매장. 매장 운영·HR 정책 질문 볼륨 방대 |
@@ -199,7 +199,7 @@ tags: [deliverable, mock-up, consulting-deck, dual-view]
 |---|---|
 | **도입 배경** | $100B AI 투자, 모든 프로세스에 AI 주입 방침 → HR도 예외 없음 |
 | **기대효과** | PXT 10,000명 중 최대 **15% 감축**. 동시에 250,000명 계절직 채용 |
-| **교훈** | **"HR이 AI의 대상이 된다"** — wiki의 유일한 HR 조직 축소 사례. 반면교사 ⭐ |
+| **교훈** | **"HR이 AI의 대상이 된다"** — wiki의 유일한 HR 조직 축소 사례. 반면교사 ★ |
 | → 기업 뷰 | [[#Amazon]] |
 
 #### Deloitte — Workforce Analyzer + Salesforce (0.35)
@@ -227,7 +227,7 @@ HR 카테고리 커버: ███░░░░  3/7
 
 | 카테고리 | Use case | 핵심 metric | 신뢰도 |
 |---|---|---|---|
-| **6. EX & HR Ops** | Ask HR Routing | 주 120 대화/사용자, 40% GPT 직접 제작 | ⭐ 0.70 |
+| **6. EX & HR Ops** | Ask HR Routing | 주 120 대화/사용자, 40% GPT 직접 제작 | ★ 0.70 |
 | **4. Performance** | Self-Review GPT | HR GPT 사용량 1위 (자사 보고) | 0.40 |
 | **5. Total Rewards** | Benefits + Equity GPT | Equity 티켓 "huge decrease" (수치 미공개) | 0.40 |
 
@@ -321,7 +321,7 @@ HR 카테고리 커버: █░░░░░░  1/7
 
 | 카테고리 | Use case | 핵심 metric | 신뢰도 |
 |---|---|---|---|
-| **3. L&D** | Digital Talent Platform | 스킬 **60~70% AI 추론**, 학습 참여 **20%↑**, 내부 배치 **8%↑**, 이탈 **3.2%↓** | ⭐ 0.60 |
+| **3. L&D** | Digital Talent Platform | 스킬 **60~70% AI 추론**, 학습 참여 **20%↑**, 내부 배치 **8%↑**, 이탈 **3.2%↓** | ★ 0.60 |
 
 **기업 수준 교훈**: MIT CISR + IS Journal **독립 학술 검증**. 마이다스아이티와 함께 wiki의 **양대 학술 사례**.
 
@@ -352,7 +352,7 @@ HR 카테고리 커버: █░░░░░░  1/7
 |---|---|---|---|
 | **7. Strategic** | PXT **15% 감축** | 10,000명 중 ~1,500명, **$100B AI 투자**, 동시에 250k 계절직 | 0.45 |
 
-**반면교사 ⭐**: "AI 도입을 HR이 주도하지 않으면, HR 자체가 대상이 된다."
+**반면교사 ★**: "AI 도입을 HR이 주도하지 않으면, HR 자체가 대상이 된다."
 
 ---
 
@@ -364,26 +364,26 @@ HR 카테고리 커버: █░░░░░░  1/7
 
 | 기업 | 1.TA | 2.Onb | 3.L&D | 4.Perf | 5.TR | 6.EX | 7.Gov |
 |---|---|---|---|---|---|---|---|
-| **Moderna** | | | | ★ Self-review | ★ Benefits/Equity | ⭐ **Ask HR** | |
-| **Walmart** | | | ★ Frontline AI | | | ⭐ **Ask Sam** | |
-| **IBM** | | | | | | ⭐ **AskHR** | |
+| **Moderna** | | | | ★ Self-review | ★ Benefits/Equity | ★ **Ask HR** | |
+| **Walmart** | | | ★ Frontline AI | | | ★ **Ask Sam** | |
+| **IBM** | | | | | | ★ **AskHR** | |
 | **JPMorgan** | ★ ML 채용 | | | | | ★ LLM Suite | |
-| **Siemens** | | | ⭐ **300k 리스킬링** | | | ★ ServiceNow | |
-| **Chipotle** | ⭐ **Ava Cado** | | | | | | |
-| **Schneider** | | ⭐ **$15M 절감** | | | | | |
-| **J&J** | | | ⭐ **MIT CISR** | | | | |
+| **Siemens** | | | ★ **300k 리스킬링** | | | ★ ServiceNow | |
+| **Chipotle** | ★ **Ava Cado** | | | | | | |
+| **Schneider** | | ★ **$15M 절감** | | | | | |
+| **J&J** | | | ★ **MIT CISR** | | | | |
 | **HSBC** | ★ Eightfold | ★ Gloat | | | | | |
-| **Meta** | | | | ⭐ **AI=평가기준** | | | |
-| **Amazon** | | | | | | | ⭐ **15%감축** |
+| **Meta** | | | | ★ **AI=평가기준** | | | |
+| **Amazon** | | | | | | | ★ **15%감축** |
 | **Deloitte** | | | | | | ★ Claude 470k | ★ WF Analyzer |
-| 🇰🇷 **SK Group** | ⭐ **AICT** | | | | | | |
-| 🇰🇷 **마이다스아이티** | ⭐ **Nature** | | | | | | |
+| 🇰🇷 **SK Group** | ★ **AICT** | | | | | | |
+| 🇰🇷 **마이다스아이티** | ★ **Nature** | | | | | | |
 | 🇰🇷 **더존비즈온** | | | | | ★ 연말정산 | | |
-| **BetterUp** | | | | ⭐ **Twilio 5x** | | | |
+| **BetterUp** | | | | ★ **Twilio 5x** | | | |
 | **Novartis** | | ★ 132%↑ | | | | | |
 | **Spring Health** | | | | | ★ **1%→26%** | | |
 
-범례: ⭐ = 대표 사례 (높은 신뢰도·임팩트) / ★ = 추가 사례
+범례: ★ = 대표 사례 (높은 신뢰도·임팩트) / ★ = 추가 사례
 
 ---
 

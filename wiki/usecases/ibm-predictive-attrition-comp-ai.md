@@ -31,7 +31,7 @@ related_vendors: []
 
 IBM이 2019년 공개한 **Predictive Attrition Program** — Watson 기반 patented ML 모델이 34+ 변수(overtime·salary·역할·성과·통근거리)를 분석해 6개월 flight risk를 예측. ⚠️ 자사 보고: 95% 정확도, $300M 누적 retention saving (2023까지). 동일 인프라가 **AI Compensation Recommendation**으로 확장 — 매니저별 per-employee salary 추천 + 이유 설명. 매니저가 권고 무시 시 팀 attrition 2배.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 270K 직원 대상 retention 관리는 사후 exit interview 의존 — 떠난 후에야 원인 파악
 - **Pain point**: 핵심인재 이탈 비용 (replacement cost 연봉의 1~3배) + 외부 채용 시장 경쟁 격화
@@ -39,7 +39,7 @@ IBM이 2019년 공개한 **Predictive Attrition Program** — Watson 기반 pate
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: exit interview·서베이 사후 분석
 - **After**:
@@ -51,20 +51,20 @@ IBM이 2019년 공개한 **Predictive Attrition Program** — Watson 기반 pate
 - **Frequency**: monthly score, comp planning은 annual cycle
 - **Scope of autonomy**: recommend-only
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: IBM 내부 (Workday)
 - **AI 시스템**: IBM Watson 기반 (자체)
 - **연동·통합**: HCM·payroll·performance·learning data 통합 데이터 레이크
 - **사용자 접점**: 매니저 dashboard (Bluepages 통합 추정)
 
-### C. Data
+### C. Data (데이터)
 
 - **입력**: 34+ 변수 — overtime·salary·역할·성과·통근거리·승진 이력·학습·매니저 변경 등
 - **데이터 규모**: 270K 직원 monthly snapshot
 - **거버넌스**: IBM 내부, RBAC
 
-### D. Model
+### D. Model (모델)
 
 - patented ML (LLM 이전) — feature engineering + supervised classifier
 - ⚠️ 벤더 주장: 95% 정확도 (out-of-sample 검증 방법 _미공개_)
@@ -74,7 +74,7 @@ IBM이 2019년 공개한 **Predictive Attrition Program** — Watson 기반 pate
 
 - IBM HR Analytics + IBM Research
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart LR

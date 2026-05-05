@@ -33,7 +33,7 @@ related_vendors: []
 
 Cisco가 anchor한 다자 컨소시엄 (Microsoft·Google·IBM·SAP·Accenture·Eightfold 등). 2025 보고서: **78% ICT 직무가 AI 기술 스킬 포함**, top 10 fastest-growing ICT 직무 중 7개가 AI 관련. AI Workforce Playbook + 2025 AI Skills Glossary + 200+ curated learning recommendations 발간. multi-vendor 방법론 — Tier 1-equivalent 신뢰도.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: ICT 직무·스킬 evolution 정량 데이터는 LinkedIn·Indeed·BLS 산발 — 글로벌 컨소시엄 합의 부재
 - **Pain point**: HR·workforce planning 임원이 "AI가 우리 직무에 얼마나 영향을 주나"에 정량 답 부재
@@ -41,7 +41,7 @@ Cisco가 anchor한 다자 컨소시엄 (Microsoft·Google·IBM·SAP·Accenture·
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 산발 데이터, 컨설팅사·analyst별 다른 framework
 - **After**:
@@ -59,7 +59,7 @@ Cisco가 anchor한 다자 컨소시엄 (Microsoft·Google·IBM·SAP·Accenture·
 - 데이터: 참여 vendor의 anonymized job posting + skills demand
 - 오너십: Cisco anchor + Microsoft/Google/IBM/SAP/Accenture/Eightfold 협업
 
-### B. System & Infrastructure (Agent research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS / 기반 시스템**: N/A (consortium 자체가 시스템 — research output 발간)
 - **AI 시스템 배치**: ✅ Multi-stakeholder research consortium (Cisco anchor + Microsoft·Google·IBM·SAP·Accenture·Eightfold·Indeed·Intel)
@@ -68,7 +68,7 @@ Cisco가 anchor한 다자 컨소시엄 (Microsoft·Google·IBM·SAP·Accenture·
 - **사용자 접점**: ✅ Cisco.com 공개 PDF 보고서 + AI Workforce Playbook + AI Skills Glossary + 200+ curated learning resources
 - **인증·권한**: N/A (공개 자료)
 
-### C. Data (Agent research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ G7 국가 50개 직무 (40 ICT + 10 specialized) job posting volume; 12개월 비교 (Jul 2024–Jun 2025 vs Jul 2023–Jun 2024)
 - **데이터 규모**: ✅ 50개 직무 G7 cross-country; 구체 posting count _미공개_
@@ -77,7 +77,7 @@ Cisco가 anchor한 다자 컨소시엄 (Microsoft·Google·IBM·SAP·Accenture·
 - **데이터 거버넌스**: ✅ Multi-stakeholder consortium governance (참여사 협의)
 - **민감정보 처리**: N/A (aggregate job market data)
 
-### D. Model (Agent research)
+### D. Model (모델)
 
 - **Foundation model**: N/A (research methodology, deployed AI 아님)
 - **모델 유형**: ✅ Labor market analysis methodology (job posting NLP 추정 — 명시 없음)
@@ -87,7 +87,7 @@ Cisco가 anchor한 다자 컨소시엄 (Microsoft·Google·IBM·SAP·Accenture·
 - **평가·가드레일**: ✅ Multi-vendor 협업 자체가 single-vendor bias 완화
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 ICT 직무 AI 스킬 78% 포함 + AI 직무 top 10 fastest-growing 7개 — KR 대기업 workforce planning deck "burning platform" 데이터 pillar.

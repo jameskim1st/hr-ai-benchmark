@@ -33,14 +33,14 @@ related_companies:
 
 **플렉스(flex)**는 한국 올인원 HR SaaS 플랫폼으로, **6만+ 기업** 가입·**ARR 300억원** 돌파, 기업가치 **5,000억원** 평가. 인사·급여·채용·성과관리·전자계약·비용관리를 단일 플랫폼에 통합. 2025년 **OCR 기반 수기 근무표 자동변환** + **노동법·세법 AI 에이전트 상담** 기능의 순차 도입을 발표하며, "SaaS → Service as a Software" 패러다임 전환을 선언. [[sources/flex-korea-hr-saas-2025.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - 한국 중소·중견기업의 HR 업무가 **엑셀·수기 관리**에 의존 — 특히 급여·근태
 - 노동법·세법이 복잡하고 빈번히 변경 → **전문 인력 없는 기업이 컴플라이언스 위험** 노출
 - 수기 근무표 → 디지털 전환 시 **입력 오류·시간 낭비**
 - 국내 HR SaaS 시장에서 AI 기능은 아직 초기 단계
 
-## Solution Architecture (요약)
+## Solution Architecture
 
 ### A. Process (프로세스)
 
@@ -59,7 +59,7 @@ flowchart LR
     F --> G{HR 담당자 검토}
 ```
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core 플랫폼**: flex (자체 개발 SaaS) — 웹 + 모바일 앱 [[sources/flex-korea-hr-saas-2025.md]]
 - **AI 기능**: OCR (근무표 변환) + AI 에이전트 (노동법·세법 상담) — 순차 도입 중 [[sources/flex-korea-hr-saas-2025.md]]
@@ -70,7 +70,7 @@ flowchart LR
 
 - _미공개 (not disclosed)_
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 

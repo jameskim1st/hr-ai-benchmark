@@ -33,7 +33,7 @@ related_vendors: []
 
 AllVoices는 **AI-native employee relations platform**. 2024년 **Vera AI Copilot** 출시 — 회사 handbook·로컬 정책으로 학습된 **ER 전용 AI assistant**. 200+ 언어 익명 신고 → AI 자동 intake·investigation 지원·precedent (유사사례) 표면화. G2에서 **Employee Engagement·HR Case Management·Whistleblowing 카테고리 leader**. **HR Acuity 직접 경쟁자**. Title IX, SB 553, Joint Commission 등 컴플라이언스 표준 준수. Zero Data Retention (Enterprise OpenAI).
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 사내 익명 신고는 (a) 외부 hotline 위탁 (NAVEX·Convercent 등) (b) 자체 portal — case management는 별도 도구. AI 분석·precedent 검색은 사람이 수작업
 - **Pain point**:
@@ -45,7 +45,7 @@ AllVoices는 **AI-native employee relations platform**. 2024년 **Vera AI Copilo
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 직원 익명 신고 (hotline) → HR이 ER tool로 옮겨 처리 → 과거 case 수작업 검색 → 인터뷰 질문·요약 수작업 작성
 - **After (Vera AI 통합 architecture)**:
@@ -58,7 +58,7 @@ AllVoices는 **AI-native employee relations platform**. 2024년 **Vera AI Copilo
 - **Frequency**: 24/7 익명 신고 + daily case 처리
 - **Scope of autonomy**: assist + automate (분류·요약·precedent·드래프트 자율, 결정·인터뷰는 사람)
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core platform**: AllVoices SaaS (cloud-hosted)
 - **AI 시스템 배치**: Vera AI Copilot 모듈 + 익명 신고 intake (모두 platform 내장)
@@ -66,7 +66,7 @@ AllVoices는 **AI-native employee relations platform**. 2024년 **Vera AI Copilo
 - **사용자 접점**: web portal, mobile app, Slack/Teams bot, 익명 hotline
 - **인증**: 익명 + RBAC + role-based case visibility
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터**:
   - 익명 신고 내용 (200+ 언어)
@@ -79,18 +79,18 @@ AllVoices는 **AI-native employee relations platform**. 2024년 **Vera AI Copilo
   - SOC 2 Type II, GDPR, EU Whistleblower Directive
   - Title IX, California SB 553 (workplace violence prevention) 준수
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: Enterprise OpenAI (Zero Data Retention)
 - **Customization**: 고객사 handbook·정책 fine-tuning + 200+ 언어
 - **Guardrails**: ⚠️ 벤더 주장 — 결정 도출 금지·HITL 강제·고객 데이터 학습 안 함
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: AllVoices 벤더 — 고객은 ER·HR·compliance·legal 부서가 사용
 - **거버넌스**: G2 카테고리 leader (Employee Engagement·HR Case Management·Whistleblowing) — 시장 검증
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

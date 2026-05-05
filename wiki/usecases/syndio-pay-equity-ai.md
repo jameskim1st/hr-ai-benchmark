@@ -34,9 +34,9 @@ related_vendors: []
 
 Syndio는 **보상 공정성(pay equity)** 전문 AI 플랫폼. 2025년 3월 **Syndi**라는 expert AI를 출시해 급여 보고 규제(EU Pay Transparency Directive·미국 주별 법률 등) 준수를 자동화. ⚠️ 벤더 주장: 300+ 고객, Fortune Most Admired 30%. "10페이지 법률 메모를 단일 actionable 답변으로" 대체한 사례 보고. **EU AI Act 대응**을 최전선에 내세운 벤더.
 
-## Solution Architecture (요약)
+## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 보상 결정 시 매니저·HR이 spreadsheet·외부 market data로 ad-hoc 판단, equity 위반 사후 발견
 - **After**:

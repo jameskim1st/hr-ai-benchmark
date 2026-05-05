@@ -33,7 +33,7 @@ related_vendors: []
 
 Deloitte의 **Zora AI** — agentic AI 플랫폼 (NVIDIA AI · Llama Nemotron · AI-Q Blueprint 기반). finance·**human capital**·supply chain·procurement·sales/marketing·customer service ready-to-deploy agents. 동시 launch한 **Human Capital AI Solution Suite** (2025-06): Workforce Analyzer (AI 워크포스 영향평가) + Workforce Planner+ + **300+ HR workflows reimagined library**. Deloitte 13,000+ leader 서베이 기반 HR AI maturity model 동반.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 컨설팅사가 HR AI 컨설팅을 "case-by-case" 진행 — 표준화·재사용 자산 부족
 - **Pain point**: HR transformation 프로젝트마다 workflow 재설계 압도적 — 300+ workflow library가 필요
@@ -41,7 +41,7 @@ Deloitte의 **Zora AI** — agentic AI 플랫폼 (NVIDIA AI · Llama Nemotron ·
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 컨설팅 프로젝트마다 workflow 신규 설계
 - **After**:
@@ -53,7 +53,7 @@ Deloitte의 **Zora AI** — agentic AI 플랫폼 (NVIDIA AI · Llama Nemotron ·
   6. agent 배포·운영
 - **HITL**: Deloitte 컨설턴트 + 클라이언트 HR
 
-### B. System & Infrastructure (Agent research expanded, 2026-05)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS / 기반 시스템**: _미공개_ (Zora는 클라이언트 HCM 위 overlay agentic 플랫폼)
 - **AI 시스템 배치**: ✅ Cloud subscription 모델 (Deloitte SaaS); pre-built integrations로 "deploy rapidly on existing technologies"
@@ -62,7 +62,7 @@ Deloitte의 **Zora AI** — agentic AI 플랫폼 (NVIDIA AI · Llama Nemotron ·
 - **사용자 접점**: _미공개_ (web/conversational 추정)
 - **인증·권한**: ✅ "Trustworthy AI principles — security, transparency, reliability" (벤더 주장)
 
-### C. Data (Agent research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ Workforce 데이터 (Workforce Analyzer); 클라이언트 HR 시스템에서 수집 — 구체 항목 _미공개_; ✅ Deloitte 13,000+ leader survey (HR AI maturity 모델 baseline)
 - **데이터 규모**: ✅ 1,000+ 사용자 by end-2025 (finance pilot); HR 사용자 수 _미공개_
@@ -71,7 +71,7 @@ Deloitte의 **Zora AI** — agentic AI 플랫폼 (NVIDIA AI · Llama Nemotron ·
 - **데이터 거버넌스**: ✅ Human feedback loop 포함 (HITL)
 - **민감정보 처리**: _미공개_
 
-### D. Model (Agent research)
+### D. Model (모델)
 
 - **Foundation model**: ✅ NVIDIA Llama Nemotron (reasoning models)
 - **모델 유형**: ✅ Agentic LLM (reasoning + generative + predictive) — finance·human capital·supply chain·procurement·sales·customer service agents
@@ -81,7 +81,7 @@ Deloitte의 **Zora AI** — agentic AI 플랫폼 (NVIDIA AI · Llama Nemotron ·
 - **평가·가드레일**: ✅ Trustworthy AI 프레임워크 (Deloitte 자체) + human feedback loop
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 Big-4 컨설팅의 agentic HR transformation 표준화 — 300+ workflow library는 KR HR consulting 자산 reference의 새 baseline.

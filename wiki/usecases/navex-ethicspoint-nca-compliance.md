@@ -34,7 +34,7 @@ related_vendors: []
 
 NAVEX Global은 **글로벌 whistleblowing·compliance 시장 표준** — 13,000+ 조직 사용 (Fortune 100 다수). 2025년 12월 **NAVEX One Compliance Assistant (NCA)** 메이저 AI 확장 발표 — 대화형 compliance 자문 + 기계 번역 + microlearning + AI training content 통합. EthicsPoint Professional은 SOX·EU Whistleblower Protection Directive·다국어 신고 표준. AI 분류·우선순위·라우팅·요약 자동화로 case 처리 가속. HR Acuity·Vault Platform과 함께 ER/whistleblowing AI 4-vendor 비교군.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: NAVEX EthicsPoint은 1990년대부터 hotline service의 사실상 표준 — 2024년까지는 신고 intake·case 분류는 사람이 처리, AI 분석·자동 번역 부분적
 - **Pain point**:
@@ -46,7 +46,7 @@ NAVEX Global은 **글로벌 whistleblowing·compliance 시장 표준** — 13,00
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 직원 hotline 신고 → 사람 번역 → HR/legal 분류 → case 처리 → 분기 trend 보고서. Compliance training material 수작업 갱신
 - **After (NCA + EthicsPoint AI architecture)**:
@@ -61,7 +61,7 @@ NAVEX Global은 **글로벌 whistleblowing·compliance 시장 표준** — 13,00
 - **Frequency**: 24/7 익명 신고 + daily case 처리 + 분기 SOX/regulatory audit
 - **Scope of autonomy**: assist + automate (분류·번역·라우팅·content 자율, 결정·조치는 사람)
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core platform**: NAVEX One (글로벌 GRC SaaS)
 - **AI 시스템 배치**: NCA (Compliance Assistant) + EthicsPoint AI (intake·routing) — 모두 platform 내장
@@ -69,7 +69,7 @@ NAVEX Global은 **글로벌 whistleblowing·compliance 시장 표준** — 13,00
 - **사용자 접점**: hotline 전화·web·mobile·SMS·이메일 (다국어), 컴플라이언스 담당자 dashboard
 - **인증**: 익명 + RBAC + SOC 2
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터**:
   - Hotline 신고 내용 (30+ 언어)
@@ -82,18 +82,18 @@ NAVEX Global은 **글로벌 whistleblowing·compliance 시장 표준** — 13,00
   - 익명 보호·anti-retaliation
   - SOX·HIPAA 등 산업별 표준 대응
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: _구체 LLM provider 미공개_ (NAVEX enterprise stack)
 - **Customization**: ethics·compliance·SOX 도메인 fine-tuning + 30+ 언어
 - **Guardrails**: 결정 도출 금지·사람 검토 강제 (whistleblowing 표준)
 
-### E. Organization & Team
+### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: NAVEX Global 벤더 — 고객은 13K+ 조직 (Fortune 100 다수)
 - **거버넌스**: 1990년대부터 hotline 표준 → 글로벌 enterprise 신뢰 base. SOX·EU Directive 컴플라이언스 이력
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

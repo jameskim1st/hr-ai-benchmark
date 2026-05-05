@@ -46,7 +46,7 @@ Amazon의 HR 부서 **PXT (People eXperience and Technology)** 조직이 AI 도�
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: Amazon PXT (People eXperience & Technology) 1만+명이 채용·HR ops·learning·comp을 다층 매니저 구조로 운영. 14k 코퍼레이트 layer가 의사결정·승인 병목
 - **After** (공식 process detail _미공개_, 공개 사실 기반 추정):
@@ -59,7 +59,7 @@ Amazon의 HR 부서 **PXT (People eXperience and Technology)** 조직이 AI 도�
 - **Frequency**: restructuring 이벤트 = adhoc, AI 운영 = daily
 - ⚠️ **공개 미흡 caveat**: 어떤 HR task가 어떤 모델로 자동화되는지 공식 발표 없음 (CNBC·Fortune·HR Grapevine 모두 restructuring 사실만 보도)
 
-### B. System & Infrastructure (R9 research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: Amazon 자체 (구체 _미공개_) — Workday/SAP 도입 여부 공식 확인 안 됨
 - **AI 시스템 배치**: ⚠️ 자사 보고: PXT 조직이 internal AI 시스템(CS·warehouse 자동화에 사용 중)을 talent management·recruiting·employee engagement에 통합
@@ -68,7 +68,7 @@ Amazon의 HR 부서 **PXT (People eXperience and Technology)** 조직이 AI 도�
 - **사용자 접점**: _미공개_ (HRBP·매니저 internal tool 추정)
 - **인증·권한**: Amazon 사내 IAM
 
-### C. Data (R9 research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: _미공개_ — 채용 지원서·티켓·정책·성과 추정
 - **데이터 규모**: ✅ 영향받는 PXT 인력 ~1,500명 (10K+ 중 15%), 250K 계절직 채용
@@ -77,7 +77,7 @@ Amazon의 HR 부서 **PXT (People eXperience and Technology)** 조직이 AI 도�
 - **데이터 거버넌스**: _미공개_
 - **민감정보 처리**: _미공개_
 
-### D. Model (R9 research)
+### D. Model (모델)
 
 - **Foundation model**: _미공개_ — Amazon Bedrock 또는 자체 추정
 - **모델 유형**: ✅ generative + predictive + automation (RPA) — Recruiting screening·티켓·정책 Q&A

@@ -34,7 +34,7 @@ related_vendors:
 
 Bosch는 창업자 Robert Bosch의 이름을 딴 HR AI 디지털 어시스턴트 "ROB"를 25개국에 배포했다. ✅ **Fact** Cognigy.AI 플랫폼과 GPT 기반으로 구동되며, Microsoft Teams를 통해 직원에게 제공된다. 은행 계좌 정보 업데이트, 커리어 개발 정보 탐색, 회사 정책 안내, HR 셀프서비스 프로세스 안내 등을 처리하며, 감성 지능(emotional intelligence)을 활용해 추가 인간 지원이 필요한 시점을 식별한다. [[sources/cognigy-bosch-case-study.md]] [[sources/hrgrapevine-bosch-rob-2025-01.md]]
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 Bosch는 글로벌 360,000명 이상의 직원이 다양한 국가별 HR 정책과 셀프서비스 프로세스를 쉽게 탐색할 수 없는 문제를 안고 있었다. HR 팀으로의 인바운드 문의가 과도했으며, 특히 다국어 환경에서 일관된 서비스 제공이 어려웠다.
 

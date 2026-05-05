@@ -35,7 +35,7 @@ related_vendors: []
 
 SK하이닉스 **One Resume + AI 구성원 검색** 시스템. 직원 1인당 분산된 데이터 (HRMS·평가·교육·프로젝트·자격·관심사·skill)를 **단일 통합 프로필 (One Resume)**로 구성하고, 매니저가 자연어로 사내 talent를 검색·추천 받는 **AI talent search** 기능을 결합. 직원 self-service career path 시각화·내부 기회 추천 포함. **2026-05 시점: 내부 운영 중, 외부 공개 metric 미공개**.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: SK하이닉스 38K 직원의 인사 데이터가 **HRMS·평가·교육·프로젝트·자격증·외부 교육 등 다수 시스템에 분산**. 매니저가 internal mobility·project staffing·후계자 후보 검색 시 여러 시스템 + 인적 네트워크 의존
 - **Pain point**:
@@ -46,7 +46,7 @@ SK하이닉스 **One Resume + AI 구성원 검색** 시스템. 직원 1인당 �
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: HR이 인사·평가·교육·프로젝트 데이터를 매번 수작업으로 조합해 매니저에 talent list 제공. 직원 본인 정보도 부서·기능별 시스템 분산
 - **After**:

@@ -33,7 +33,7 @@ related_vendors: []
 
 신한은행 **AI ONE** — 기존 'A.I 몰리' 시스템을 통합 개편한 직원용 멀티-AI 허브 (2024-09 production). AI-STUDIO·AI-OCR·R비서 등 **40여 개 업무비서** 기능을 단일 인터페이스에 통합. **Speech-to-AI**로 모바일/태블릿 음성 지시 지원. ⚠️ 자사 보고: 직원 1인당 일 30분 이상 절감 기대, 향후 상담→전산처리 종결 업무의 **80%까지 자동화 목표**.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 신한은행 직원이 다수의 산발 AI 도구 (A.I 몰리·OCR·R비서) 별도 사용 — UX 분산
 - **Pain point**: 14,000+ 직원 base에서 AI 도구 fragmentation으로 ROI 약화
@@ -41,7 +41,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: A.I 몰리 + AI-OCR + R비서 등 산발 사용
 - **After**:
@@ -69,7 +69,7 @@ related_vendors: []
 
 - 신한은행 디지털혁신단 + IT/AI Plat팀 + 사업부 SME
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 40+ AI 통합 단일 허브로 직원 daily 30분 절감 + 상담→전산처리 80% 자동화 목표.

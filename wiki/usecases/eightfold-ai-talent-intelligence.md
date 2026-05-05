@@ -38,9 +38,9 @@ Eightfold AI는 **skills-based talent intelligence** 플랫폼으로, 채용·�
 
 벤더 제품이므로 특정 기업의 도입 배경은 고객별 상이. 일반적 pain point: skills-based hiring 전환 필요성, 기존 keyword 매칭의 한계, time-to-hire 병목.
 
-## Solution Architecture (요약)
+## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 채용·내부이동·후계 별도 시스템, 정적 직무 기술서·resume keyword 매칭
 - **After**:

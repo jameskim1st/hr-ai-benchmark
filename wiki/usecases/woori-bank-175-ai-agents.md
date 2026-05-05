@@ -41,7 +41,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: 부서별 AI PoC 산발 → ROI 검증 어려움 + 거버넌스 부재
 - **After (portfolio management 패턴)**:
@@ -55,7 +55,7 @@ related_vendors: []
 - **Frequency**: portfolio review = annual; 개별 에이전트 = daily 운영
 - **Scope**: portfolio governance — 어떤 업무에 AI 에이전트를 배치할지 의사결정 framework
 
-### B. System & Infrastructure
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: 우리은행 자체 HR 시스템 (Workday 또는 자체 — _미공개_)
 - **AI 시스템 배치**: 삼성SDS 구축 (Brity Copilot 또는 별도 platform — _미공개_)
@@ -64,7 +64,7 @@ related_vendors: []
 - **사용자 접점**: 직원 portal + 업무 시스템 임베드
 - **인증·권한**: 우리은행 SSO + 금융정보보호 강화
 
-### C. Data
+### C. Data (데이터)
 
 - **입력 데이터 소스**: 5대 영역 (고객관계관리·자산관리·내부통제·고객상담·업무자동화) 데이터
 - **데이터 규모**: 13K 직원·175개 에이전트 운영 — 정확 transaction 수 _미공개_
@@ -73,7 +73,7 @@ related_vendors: []
 - **데이터 거버넌스**: 우리은행 + 삼성SDS 공동 governance
 - **민감정보 처리**: 금융정보보호법 + PIPA dual compliance
 
-### D. Model
+### D. Model (모델)
 
 - **Foundation model**: 삼성SDS Brity 또는 외부 LLM 혼합 추정 — _미공개_
 - **모델 유형**: agentic LLM + classifier + automation
@@ -87,7 +87,7 @@ related_vendors: []
 - 우리은행 디지털혁신 + 5대 영역 사업부장 + 삼성SDS 파트너 팀
 - 2026-04-07 우선협상대상자 선정 후 본격 구축
 
-### F. Diagrams
+### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB

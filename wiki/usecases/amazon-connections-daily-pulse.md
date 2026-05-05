@@ -32,7 +32,7 @@ related_vendors: []
 
 Amazon **Connections** — 1.5M 직원에게 매일 로그인 시 1개 질문 pulse. 연 300M+ 응답이 People Science 팀의 ML 모델 입력 — 행동·태도 변화로 attrition·engagement 예측. ⚠️ 자사 보고: 97% voluntary adoption (산업 평균 ~25%). Andie Baker (전 principal scientist)가 구축. 단 Fortune Jun 2024 critical coverage — anonymity skepticism 보고.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: annual·biannual 서베이로는 1.5M frontline 직원의 daily 변화 포착 불가
 - **Pain point**: high-turnover frontline (creator·warehouse·delivery)의 sentiment·attrition 신호를 연 1~2회로 잡으면 늦음
@@ -40,7 +40,7 @@ Amazon **Connections** — 1.5M 직원에게 매일 로그인 시 1개 질문 pu
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: annual 서베이 + exit interview 사후 분석
 - **After**:
@@ -64,7 +64,7 @@ Amazon **Connections** — 1.5M 직원에게 매일 로그인 시 1개 질문 pu
 
 - Amazon People Science 팀 (Andie Baker former principal)
 
-### B. System & Infrastructure (Agent research)
+### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS / 기반 시스템**: _미공개_ (Amazon 내부 HR 시스템 — 자체 구축 추정)
 - **AI 시스템 배치**: ✅ Amazon 자체 구축 (proprietary, People Science 팀 운영)
@@ -73,7 +73,7 @@ Amazon **Connections** — 1.5M 직원에게 매일 로그인 시 1개 질문 pu
 - **사용자 접점**: ✅ 직원 로그인 시 자동 popup (web app — A-to-Z 직원 포털)
 - **인증·권한**: ✅ Amazon employee credential SSO
 
-### C. Data (Agent research)
+### C. Data (데이터)
 
 - **입력 데이터 소스**: ✅ Daily 1-question response (1-5 scale 또는 텍스트), non-response signal, 시간 경과 변화
 - **데이터 규모**: ✅ 1.5M+ 직원 cover (55 countries), 연 300M+ 응답 (자사 보고)
@@ -82,7 +82,7 @@ Amazon **Connections** — 1.5M 직원에게 매일 로그인 시 1개 질문 pu
 - **데이터 거버넌스**: ⚠️ Fortune Jun 2024 critical: anonymity 회의론 보고; 매니저별 area aggregation 가능
 - **민감정보 처리**: ⚠️ "Confidential responses" 자사 주장 — Fortune 비판 보도
 
-### D. Model (Agent research)
+### D. Model (모델)
 
 - **Foundation model**: N/A (LLM 이전 세대 — 2014 시작)
 - **모델 유형**: ✅ ML + NLP (behavior·sentiment prediction, attrition·engagement 예측)
@@ -92,7 +92,7 @@ Amazon **Connections** — 1.5M 직원에게 매일 로그인 시 1개 질문 pu
 - **평가·가드레일**: ⚠️ Fortune 비판: 응답 이후 manager-level 압력 가능성; 익명성 실효성 의문
 
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 high-frequency listening + ML 예측으로 frontline attrition·engagement 사전 신호 — KR 제조·유통·물류 대기업 적용 reference.

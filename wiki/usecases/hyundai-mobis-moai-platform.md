@@ -32,7 +32,7 @@ related_vendors: []
 
 현대모비스가 2025-10-21 본격 운영하는 사내 전용 GenAI 플랫폼 **'MoAI(Mobis one AI)'**. 온프레미스 배포로 **1,000만 건 사내문서 RAG** 기반 검색·요약. R&D·IT·품질·영업·생산 등 **7개 업무**에 적용. 2025년 내 **법무·경영지원(HR 포함)으로 확장 계획**. 변화관리로 프롬프트 템플릿 사전 탑재. 한국 제조 대기업의 **"온프레미스 + 변화관리"** 정석 사례.
 
-## Problem / Why
+## Problem / Why (도입 배경)
 
 - **Before**: 자동차 부품사 33K 직원 — 매뉴얼·도면·기술 문서 fragmented. 보안 민감 (R&D 영업비밀)
 - **Pain point**: 글로벌 commercial LLM 사용은 영업비밀·도면 leakage risk → 사내 LLM 필요
@@ -40,7 +40,7 @@ related_vendors: []
 
 ## Solution Architecture
 
-### A. Process
+### A. Process (프로세스)
 
 - **Before**: R&D·IT·품질·영업·생산 직원이 매뉴얼·도면·기술 문서를 sharepoint·서버 search → 시간 소요
 - **After**:
@@ -72,7 +72,7 @@ related_vendors: []
 
 - 현대모비스 IT + R&D + HR (확장 계획)
 
-## Impact / Metrics
+## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 온프레미스 사내 GenAI로 1,000만 건 문서 검색·요약 — 한국 제조 대기업 보안 민감 환경의 표준 패턴.
