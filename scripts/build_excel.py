@@ -119,9 +119,10 @@ TAB_COLOR = {
 
 
 # ── Utility ──
-def strip_html(s, max_len=None):
+def strip_html(s, max_len=None, prettify=True, target_line_len=80):
     """HTML 태그 제거 → plain text. <br>·</li>는 줄바꿈으로, 다중 공백 collapse.
-    em-dash도 제거 (사용자 요청). max_len은 절대 한도 (Excel 32k 안전판) — 기본 잘림 비활성."""
+    em-dash도 제거 (사용자 요청). max_len은 절대 한도 (Excel 32k 안전판) — 기본 잘림 비활성.
+    prettify=True 시 문장·절 경계에 \n 자동 삽입 (Excel wrap_text 가독성 보강)."""
     if not s:
         return ""
     # <br>·</li>·</p> → 줄바꿈
@@ -149,6 +150,9 @@ def strip_html(s, max_len=None):
     # max_len은 명시적으로 지정한 경우에만 잘림 적용 (기본은 잘림 X)
     if max_len and len(s) > max_len:
         s = s[: max_len - 1] + "…"
+    # prettify: 긴 문장에 자동 \n 삽입 (Excel 가독성)
+    if prettify:
+        s = prettify_for_excel(s, target_line_len=target_line_len)
     return s
 
 
@@ -159,6 +163,65 @@ def _remove_emdash_line(line):
     line = line.replace('—', ' ')
     line = re.sub(r'  +', ' ', line)
     return line.strip()
+
+
+def prettify_for_excel(s, target_line_len=80):
+    """Excel cell 가독성: 긴 paragraph에 자동 \n 삽입.
+    - 기존 \n 보존
+    - 줄이 target_line_len보다 길면 문장 종결(. ! ? 。) → 콜론(:) → 쉼표(, ·) 순으로 분할
+    - 분할 못 하면 hard wrap (80자 단위)
+    - wrap_text=True는 컬럼 폭 기준 wrap만 가능 → \n으로 logical break 부여."""
+    if not s:
+        return s
+    out_lines = []
+    for line in s.split('\n'):
+        line = line.rstrip()
+        if len(line) <= target_line_len:
+            out_lines.append(line)
+            continue
+        # 1) 문장 종결 split (마침표·물음표·느낌표 + 공백)
+        parts = re.split(r'(?<=[\.\!\?。])\s+', line)
+        if len(parts) > 1:
+            for p in parts:
+                if len(p) <= target_line_len:
+                    out_lines.append(p)
+                else:
+                    # 재귀 분할
+                    out_lines.extend(_split_long(p, target_line_len))
+            continue
+        # 2) 단일 긴 문장 → 콜론·쉼표·중점 split
+        out_lines.extend(_split_long(line, target_line_len))
+    return '\n'.join(out_lines)
+
+
+def _split_long(line, target_line_len):
+    """단일 긴 line을 부드럽게 분할."""
+    # 콜론(:) 뒤
+    parts = re.split(r'(?<=[:：])\s+', line)
+    if len(parts) > 1 and all(len(p) <= target_line_len * 1.5 for p in parts):
+        return parts
+    # 쉼표·중점·세미콜론 뒤
+    parts = re.split(r'(?<=[,;·])\s+', line)
+    if len(parts) > 1 and all(len(p) <= target_line_len * 1.5 for p in parts):
+        return parts
+    # → 화살표 뒤
+    parts = re.split(r'(?<=→)\s+', line)
+    if len(parts) > 1 and all(len(p) <= target_line_len * 1.5 for p in parts):
+        return parts
+    # 마지막 수단: hard wrap (단어 경계 유지)
+    out = []
+    cur = ''
+    for word in line.split(' '):
+        if not cur:
+            cur = word
+        elif len(cur) + 1 + len(word) <= target_line_len:
+            cur += ' ' + word
+        else:
+            out.append(cur)
+            cur = word
+    if cur:
+        out.append(cur)
+    return out
 
 
 def join_kr(items, mapping=None, sep=", "):
@@ -172,11 +235,23 @@ def join_kr(items, mapping=None, sep=", "):
     return sep.join(str(x) for x in items)
 
 
-def join_dict_kr(d):
-    """{key: value} dict → 'key: value' 줄바꿈 join."""
+def join_dict_kr(d, target_line_len=40):
+    """{key: value} dict → 'key: value' 줄바꿈 join. value도 prettify로 줄바꿈 보강."""
     if not d:
         return ""
-    return "\n".join(f"• {k}: {v}" for k, v in d.items())
+    items = []
+    for k, v in d.items():
+        # value에서 HTML strip + prettify
+        v_clean = strip_html(str(v), prettify=True, target_line_len=target_line_len)
+        # bullet item — 첫 줄은 "• key: value"; 이후 줄은 들여쓰기
+        v_lines = v_clean.split('\n')
+        if len(v_lines) <= 1:
+            items.append(f"• {k}: {v_clean}")
+        else:
+            first = f"• {k}: {v_lines[0]}"
+            rest = "\n".join(f"  {ln}" for ln in v_lines[1:])
+            items.append(first + "\n" + rest)
+    return "\n".join(items)
 
 
 def join_steps(steps):
@@ -421,22 +496,32 @@ def has_type(u, type_id):
     return type_id in (u.get("ai_tech_type") or [])
 
 
-def build_process_flow(u):
+def build_process_flow(u, target_line_len=75):
     """Process Before → After를 단일 셀로 결합."""
-    before = strip_html(u.get("process_before"))
+    before = strip_html(u.get("process_before"), prettify=True, target_line_len=target_line_len)
     after_steps = u.get("process_steps") or []
     parts = []
     if before:
         parts.append(f"[Before]\n{before}")
     if after_steps:
-        after_text = "\n".join(f"{i+1}. {s}" for i, s in enumerate(after_steps))
-        parts.append(f"[After]\n{after_text}")
+        # 각 step도 길면 prettify
+        steps_lines = []
+        for i, s in enumerate(after_steps):
+            s_pretty = prettify_for_excel(s, target_line_len=target_line_len)
+            s_lines = s_pretty.split('\n')
+            if len(s_lines) <= 1:
+                steps_lines.append(f"{i+1}. {s_pretty}")
+            else:
+                steps_lines.append(f"{i+1}. {s_lines[0]}")
+                for ln in s_lines[1:]:
+                    steps_lines.append(f"   {ln}")
+        parts.append("[After]\n" + "\n".join(steps_lines))
     return "\n\n".join(parts) if parts else ""
 
 
-def build_impact(u):
+def build_impact(u, target_line_len=60):
     """Impact 요약 — impact_summary 위주."""
-    return strip_html(u.get("impact_summary"))
+    return strip_html(u.get("impact_summary"), prettify=True, target_line_len=target_line_len)
 
 
 def build_usecases_sheet(wb, ucs):
@@ -503,16 +588,17 @@ def build_usecases_sheet(wb, ucs):
         is_zebra = (row_idx % 2 == 1)
         zebra_fill = ZEBRA_FILL if is_zebra else None
 
-        # MAIN columns (사용자 spec 순서) — 잘림 없이 full text (Excel 32k 한도까지)
-        summary_txt = strip_html(u.get("summary"))
-        problem_txt = strip_html(u.get("problem"))
-        process_txt = build_process_flow(u)
-        system_txt = join_dict_kr(u.get("system"))
-        input_txt = join_dict_kr(u.get("data"))
-        output_txt = strip_html(u.get("output"))
-        model_txt = join_dict_kr(u.get("model"))
-        impact_txt = build_impact(u)
-        consulting_txt = strip_html(u.get("consulting"))
+        # MAIN columns (사용자 spec 순서) — 잘림 없이 full text + prettify로 자동 \n 삽입
+        # target_line_len = 컬럼 폭 매칭 (한글 1.7 chars/cell)
+        summary_txt = strip_html(u.get("summary"), prettify=True, target_line_len=70)
+        problem_txt = strip_html(u.get("problem"), prettify=True, target_line_len=55)
+        process_txt = build_process_flow(u, target_line_len=75)
+        system_txt = join_dict_kr(u.get("system"), target_line_len=38)
+        input_txt = join_dict_kr(u.get("data"), target_line_len=38)
+        output_txt = strip_html(u.get("output"), prettify=True, target_line_len=45)
+        model_txt = join_dict_kr(u.get("model"), target_line_len=38)
+        impact_txt = build_impact(u, target_line_len=60)
+        consulting_txt = strip_html(u.get("consulting"), prettify=True, target_line_len=70)
 
         main_values = [
             row_idx - 1,
