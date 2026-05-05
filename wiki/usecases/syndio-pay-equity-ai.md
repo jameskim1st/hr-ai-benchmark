@@ -69,6 +69,10 @@ Syndio는 **보상 공정성(pay equity)** 전문 AI 플랫폼. 2025년 3월 **S
 | 고객 수 | **300+** | Syndio 공식 | ⚠️ 벤더 주장 |
 | Fortune Most Admired 중 | **30%** | Syndio 공식 | ⚠️ 벤더 주장 |
 | "10-page legal memo → single answer" | 1건 사례 | Syndio 공식 | ⚠️ 벤더 주장 |
+| **Salesforce 관리 규모** | **28개국 56,000명** | Syndio Case Study (PwC 자료 인용) | ⚠️ 자사 보고 |
+| **Salesforce 성과** | **Fortune 100 Best Companies 2위** | Syndio Case Study (PwC 자료 인용) | ⚠️ 자사 보고 |
+| **Model N 분석 시간 단축** | **12주 → 온디맨드** | Syndio Case Study (PwC 자료 인용) | ⚠️ 자사 보고 |
+| **Payscale 프로세스 시간** | **80%+ 단축** | GlobeNewswire 2025 (PwC 자료 인용) | ⚠️ 벤더 주장 |
 
 ## Consulting Angle
 

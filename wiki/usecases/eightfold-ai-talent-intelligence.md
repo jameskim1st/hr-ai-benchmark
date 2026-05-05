@@ -77,10 +77,21 @@ Before: _미공개 (기존 first interview 소요 시간)_ → After: ⚠️ 벤
 | Time to first interview 감소 | **90%** | Eightfold 공식 | ⚠️ 벤더 주장 |
 | AI Interviewer 처리 후보자 | **3,000+** (자사 채용) | Eightfold 공식 | ⚠️ 자사 보고 |
 | 독립 검증 | Gartner Peer Insights에 리뷰 존재 (4.6/5) | Gartner | ✅ Fact |
+| **Mastercard 직원 등록률** | **93%** (Eightfold platform 활성 사용) | [Mastercard 2025 AI culture story](https://www.mastercard.com/us/en/news-and-trends/stories/2025/ai-culture-adoption-experimentation.html) | ⚠️ 자사 보고 |
+| **Mastercard 월간 engagement** | **42%** | Mastercard 2025 자사 보고 | ⚠️ 자사 보고 |
+| **Mastercard 인터뷰 스케줄링** | **24h 내 완료** | Mastercard 2025 자사 보고 | ⚠️ 자사 보고 |
+| **Mastercard 누적 project hours** | **1M hours** | Mastercard 2025 자사 보고 | ⚠️ 자사 보고 |
+| 🚫 "$20M 외부 컨트랙터 절감" | **출처 미확인** | PwC 자료 인용했으나 Mastercard 공개 자료에서 확인 불가 | wiki 등재 거부 |
 
 ## Consulting Angle
 
 - **vs SAP SuccessFactors Talent Intelligence Hub**: SAP는 Eightfold을 "대체 대상"으로 지목 (Delta/Pepsi 사례, [[bersin-successfactors-leapfrog-2024-10]]). 이 경쟁 구도가 컨설팅 vendor selection에서 핵심 질문
+- **Mastercard customer reference (검증)**:
+  - 93% 등록률·42% 월 engagement는 KR 대기업 internal mobility 도입 시 강력한 adoption 데이터 reference
+  - 단 모든 metric ⚠️ 자사 보고 — 외부 인용 시 출처 명시
+- **🚫 PwC 자료의 "Digital Twin = Eightfold" 오귀속 경고**:
+  - "Digital Twin"은 Eightfold 본체 제품이 아니라 공동창업자 분사 회사 **Viven AI** ([[viven-ai-digital-twin-coworker]], 2025-10 stealth exit, $35M seed)
+  - Eightfold 본체는 [Cultivate 2025에서 Agentic AI](https://www.prnewswire.com/news-releases/talent-intelligence-to-talent-advantage-eightfold-ai-revolutionizes-hr-through-agentic-ai-302449233.html) 발표 — Digital Twin과 별개
+  - 클라이언트 발표 시 "Eightfold Digital Twin"으로 인용하면 사실 오류 → 신뢰도 손상
 - **Deloitte 제휴**는 대형 컨설팅 프로젝트에서 implementation partner가 확보됐다는 의미
-- **Digital Twin concept**은 아직 초기 — "모든 직원의 LLM"이라는 비전은 데이터 프라이버시·거버넌스 측면에서 매우 도전적
 - **한국 진출**: 현재 한국 reference _미공개_. 국내 도입 시 한국어 skills ontology·직무 체계 fit이 과제

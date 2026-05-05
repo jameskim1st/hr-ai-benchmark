@@ -39,19 +39,24 @@ SK하이닉스가 2025 하반기 신입 채용에 **'A!SK' (AI Interview with SK
 
 ## Solution Architecture
 
-### A. Process
+### A. Process — 7-Phase 통합 채용 플로우 (PwC 자료 기반)
 
-- **Before**: 자기소개서 → 인적성 → 면접관 in-person 면접
-- **After**:
-  1. AI가 직무별 특화 문제 자동 출제
-  2. 지원자가 영상 녹화 답변 제출 (시간·장소 자율)
-  3. 영상 → AI 1차 분석 (응답 내용 위주, 표정·외모 신호 사용 여부 _미공개_)
-  4. **미래 동료 구성원이 영상 직접 평가** (peer review)
-  5. AI score + peer evaluation → HR 종합 판단
-  6. 다음 단계 (in-person 면접) 진행
-- **HITL**: 미래 동료가 영상 평가 + HR 종합 판단 — AI single decision 회피
-- **Frequency**: annual (신입 공채)
-- **Scope**: AI screening + peer evaluation hybrid
+- **Before**: 자기소개서 → 인적성 → 면접관 in-person 면접 (1시간×2회). 평가 깊이 한계 + 평가자 주관 편차 + 이천 출장 비용
+- **After (7 phases)**:
+  1. **서류 + AI 종합 역량 Report (Phase 1)**: 학력·전공·직무 연관성 검토 → AI가 정량·정성 역량 점수화 + 직무역량-JD 매칭율 → 면접관 참고 Report 자동 생성
+  2. **SKCT (인적성 검사)**: 온라인 역량 검사
+  3. **A!SK 전형 (AI 화상 면접)**:
+     - AI 인프라 기반 화상 면접 — 문제은행식 직무별 맞춤 출제
+     - 지원자가 원하는 시간·장소에서 영상 녹화 제출
+     - AI 면접 학습 데이터 수집 → 대면 면접 결과와 교차 검증으로 정합성 향상
+     - (향후 고도화) AI 상호작용 적응형 질문 + STT 기반 실시간 평가 요약
+  4. **다면 평가 (O/I 고도화)**: 업로드 영상을 **현업 미래 동료 구성원**이 평가 — 평가자 규모 확대 → 다차수 면접 효과 (1시간 → Big Tech 수준 2시간+ 평가 깊이)
+  5. **AI 종합 역량 Report 완성 (Phase 2)**: 전 단계 결과 통합 (서류 + SKCT + AI 면접) + 석·박사 대상 Lab·논문 분석 + LinkedIn 코멘트 자동 크롤링 (고도화) → 대면 면접관 종합 Report
+  6. **최종 대면 면접**: AI 종합 역량 Report 기반 심층 면접
+  7. **최종 합격**
+- **HITL**: 미래 동료가 영상 평가 + HR 종합 판단 + 대면 면접관 최종 결정 — AI single decision 회피
+- **Frequency**: annual (신입 공채 — 2025 하반기 launch)
+- **Scope**: AI screening + peer evaluation + AI Report support → 사람 결정
 
 ### B/C/D. System
 
@@ -66,10 +71,18 @@ SK하이닉스가 2025 하반기 신입 채용에 **'A!SK' (AI Interview with SK
 ## Impact / Metrics
 
 ### 기대효과 요약
-AI single decision 회피 + 미래 동료 평가로 bias mitigation. 한국 채용절차법 + AI 기본법 (2026-01-22) 인적감독 의무 자동 충족 model.
+AI single decision 회피 + 미래 동료 평가 hybrid + 7-phase AI Report 통합으로 평가 깊이는 Big Tech 수준 + 비용은 대폭 절감. 한국 채용절차법 + AI 기본법 (2026-01-22) 인적감독 의무 자동 충족 model.
+
+| 구분 | 기대효과 (PwC 자료) |
+|---|---|
+| 비용 절감 | ⚠️ 자사 보고: 지원자 인당 **3시간 + 19만원 절감** (이천 왕복·대면 면접 비용 기준) |
+| 평가 심층화 | 다차수 면접 효과 — 1시간×2회 → Big Tech 수준 2시간+ 평가 깊이 |
+| 평가 공정성 | 정량·정성 통합 AI Report → 평가자 주관 배제 |
+| 지원자 편의 | 시공간 제약 없이 원하는 시간·장소 면접 응시 |
+| 평가 연속성 | 서류→SKCT→AI 면접 전 단계 통합 Report를 대면 면접관에게 제공 |
 
 - 2025 하반기 신입 채용 launch
-- ⚠️ 자사 보고: standalone metric _미공개_ (launch 직후)
+- 출처: SK하이닉스 내부 자료, EBN뉴스 2025-09, 세계일보 2025-09, PwC HR AI Use Case 자료 2026-05
 
 ## Governance & Risk
 

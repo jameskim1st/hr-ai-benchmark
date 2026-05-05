@@ -247,6 +247,125 @@
     ]
   },
   {
+    "slug": "workday-peakon-illuminate-employee-voice",
+    "title": "Workday Peakon Employee Voice — Illuminate AI (1B+ 응답·60+ 언어, Workday 사내 +35% 만족도)",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "Listening & Engagement",
+    "company": "_다수 (Workday Peakon 고객, Workday 자사 도입 포함)_",
+    "industry": [
+      "all"
+    ],
+    "region": [
+      "global"
+    ],
+    "vendor": [
+      "Workday"
+    ],
+    "vendor_type": [
+      "hrms",
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification"
+    ],
+    "confidence": 0.7,
+    "stage": "production",
+    "tags": [
+      "workday",
+      "peakon",
+      "illuminate",
+      "employee-voice",
+      "sentiment-analysis",
+      "continuous-listening",
+      "multilingual",
+      "theme-extraction",
+      "engagement"
+    ],
+    "summary": "Workday가 2021-02 인수 (~$700M)한 <strong>Peakon Employee Voice</strong> — 지속적 pulse 서베이 + AI 감정·테마 분석. 2024-12-11에 <strong>Illuminate AI</strong> 기능 발표 — open-end comment 자동 요약·테마 추출·driver 식별. ⚠️ 벤더 주장: 1B+ 응답 + 200M+ 텍스트 피드백 학습, 60+ 언어, 160개국 운영. ⚠️ 자사 보고: Workday 사내 활용 결과 직원 성장·커리어 만족도 <strong>+35%</strong>.",
+    "headline": "Workday가 2021-02 인수 (~$700M)한 Peakon Employee Voice — 지속적 pulse 서베이 + AI 감정·테마 분석.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 5만~10만 직원 KR 대기업 annual 조직문화 진단의 open-end 코멘트 코딩에 HRBP 팀 수주 투입 — insight 도출 지연</li>\n<li><strong>Pain point</strong>: 글로벌 organization은 60+ 언어 응답 통합 분석 어려움 + theme·sentiment를 매니저별 actionable insight로 변환 어려움</li>\n<li><strong>Trigger</strong>: Workday 2021-02 Peakon 인수 → 2024-12 Illuminate AI 통합 (Workday Illuminate 시리즈 일환)</li>\n</ul>",
+    "impact_summary": "글로벌 60+ 언어 통합 sentiment 분석 + Workday HCM native — KR 대기업 annual 조직문화 진단의 cycle time을 수주 → 즉시로 단축 가능.",
+    "consulting": "<ul>\n<li><strong>KR engagement survey vendor 비교 reference (Top 3)</strong>:</li>\n<li>Workday Peakon (Workday HCM 도입사 우선) vs Microsoft Glint Copilot microsoft-viva-glint-copilot-sentiment (M365 도입사) vs Qualtrics qualtrics-adidas-employee-experience-ai (standalone EX)</li>\n<li>Amazon Connections amazon-connections-daily-pulse (frontline daily pulse)와 cadence 비교</li>\n<li><strong>2026 Q3-Q4 KR 컨설팅 deck</strong>:</li>\n</ul>",
+    "system": {
+      "Core HRIS": "Workday HCM (Peakon은 Workday 통합 모듈)",
+      "배포 환경": "Workday cloud",
+      "연동·통합": "Workday HCM 마스터 + 매니저 dashboard"
+    },
+    "data": {},
+    "model": {},
+    "process_before": "5만~10만 직원 KR 대기업 annual 조직문화 진단의 open-end 코멘트 코딩에 HRBP 팀 수주 투입 — insight 도출 지연 / Pain point: 글로벌 organization은 60+ 언어 응답 통합 분석 어려움 + theme·sentiment를 매니저별 actionable insight로 변환 어려움 / Trigger: Workday 2021-02 Peakon 인수 → 2024-12 Illuminate AI 통합 (Workday Illuminate 시리즈 일환)",
+    "process_steps": [
+      "직원이 정기·수시 pulse 서베이 응답 (closed-end + open-end)",
+      "Peakon Illuminate가 60+ 언어로 자연어 처리",
+      "자동 테마·sentiment·driver 추출 (1B+ 응답 학습 모델 기반)",
+      "매니저·HRBP에게 부서별 dashboard 제공 — 강점·기회·이슈 자동 highlight",
+      "매니저가 추천 action 실행, 다음 cycle에서 효과 측정",
+      "이상 신호 (이탈 risk·번아웃·문화 이슈) 선제적 alert"
+    ]
+  },
+  {
+    "slug": "anaplan-workforce-analyst-ai-agents",
+    "title": "Anaplan Workforce Analyst — Role-Based AI Agents (2025-12 GA, healthcare $21M, Fresenius·Canada Goose 30~60% cycle 단축)",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "Workforce Planning",
+    "company": "_다수 (Anaplan 고객 — Fresenius·Canada Goose·Cinemark·healthcare provider 등)_",
+    "industry": [
+      "all"
+    ],
+    "region": [
+      "global"
+    ],
+    "vendor": [
+      "Anaplan"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "prediction"
+    ],
+    "confidence": 0.65,
+    "stage": "production",
+    "tags": [
+      "anaplan",
+      "workforce-analyst",
+      "role-based-ai-agent",
+      "scenario-planning",
+      "hr-finance-integration",
+      "fresenius",
+      "canada-goose",
+      "natural-language-query",
+      "fp-and-a"
+    ],
+    "summary": "Anaplan이 2025-12-09 GA로 발표한 <strong>Role-Based AI Agents</strong> 제품군 중 <strong>Workforce Analyst</strong>. HR-finance 데이터 통합 + 자연어 query + 시나리오 시뮬레이션으로 인력 의사결정 가속. 검증된 고객 사례: healthcare provider $21M 연 절감 + time-to-market 20% 단축, Fresenius Medical Care planning time <strong>30%+ 단축</strong>, Canada Goose planning cycle <strong>60% 단축</strong>. 2026 H1에 autonomous AI 에이전트 (자율 이상 감지·워크플로 실행) 추가 예정.",
+    "headline": "Anaplan이 2025-12-09 GA로 발표한 Role-Based AI Agents 제품군 중 Workforce Analyst.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 90%+ 기업이 여전히 Excel 기반 인력 계획 (Anaplan 조사) — HR과 finance 시스템 단절, 시나리오 분석 수주~수개월 소요, 예측 오차 10%+</li>\n<li><strong>Pain point</strong>: \"채용 동결·조직 개편·M&A·인력 재배치 시나리오의 재무 영향이 즉시 분석 안 됨\" — CFO·CHRO 의사결정 지연</li>\n<li><strong>Trigger</strong>: 2025-12 Anaplan Role-Based AI Agents GA — HR·Finance·Sales·Supply Chain별 specialist agent 동시 launch</li>\n</ul>",
+    "impact_summary": "HR-finance data 단절 해소 + 시나리오 분석 수주 → 즉시 + 인건비 절감 8~9자리 수치 (대형 고객 사례).",
+    "consulting": "<ul>\n<li><strong>KR 대기업 인사기획·재무 통합 reference (Top 3)</strong>:</li>\n<li>Anaplan Workforce Analyst (HR-finance native 통합) + Deloitte Workforce Analyzer deloitte-workforce-analyzer-salesforce (컨설팅 기반 진단) + Workday ASOR workday-agent-system-of-record-asor (AI agent 거버넌스)</li>\n<li>90% 기업이 Excel 기반 — KR 대기업도 동일 갭, 가장 강력한 hook</li>\n<li><strong>시나리오 시뮬레이션 슬라이드</strong>: KR 그룹사 임원에게 \"M&A·구조조정·정년 연장·지역 분산 시 인건비 영향 즉시 분석\" 가치 제안</li>\n</ul>",
+    "system": {},
+    "data": {},
+    "model": {},
+    "process_before": "90%+ 기업이 여전히 Excel 기반 인력 계획 (Anaplan 조사) — HR과 finance 시스템 단절, 시나리오 분석 수주~수개월 소요, 예측 오차 10%+ / Pain point: \"채용 동결·조직 개편·M&A·인력 재배치 시나리오의 재무 영향이 즉시 분석 안 됨\" — CFO·CHRO 의사결정 지연 / Trigger: 2025-12 Anaplan Role-Based AI Agents GA — HR·Finance·Sales·Supply Chain별 specialist agent 동시 launch",
+    "process_steps": [
+      "HCM (Workday/SAP) + ERP + finance 시스템을 Anaplan 플랫폼에 연동",
+      "HR·CFO·CHRO가 자연어로 query (예: \"지역별 이직률 추이는?\", \"보류 중인 채용 건은?\", \"headcount 5% 감축 시 인건비 영향?\")",
+      "AI agent가 실시간 데이터 분석 → 숨겨진 패턴·리스크 감지",
+      "시나리오 시뮬레이션: 채용 동결·조직 개편·재배치의 재무 영향 즉시 산출",
+      "AI 권고안 검토 → 인간 승인 → 워크플로 자동 실행 (2026 H1 autonomous mode 예정)",
+      "Position-level 정밀 인건비 계획 수립"
+    ]
+  },
+  {
     "slug": "cisco-ai-assistant-hr-agentic",
     "title": "Cisco — AI Assistant for HR (PTO Q&A → 매니저 outbound 메시지 자동 작성, agentic)",
     "primary_category": "Employee Experience & HR Ops",
@@ -1190,6 +1309,60 @@
       "후보 배치안 생성 → HR 검토·조정",
       "매니저·직원 통보",
       "(2025 확장) PB·RM 등 상담 직원 AI 활용으로 확장 — 57% 두 달 만에 사용"
+    ]
+  },
+  {
+    "slug": "linkedin-learning-ai-coaching",
+    "title": "LinkedIn Learning — AI-Powered Coaching (Premium·Enterprise, role-play scenario)",
+    "primary_category": "Learning & Development",
+    "subcategory": "Skills & Capabilities",
+    "company": "_다수 (LinkedIn Learning Premium·Enterprise 고객)_",
+    "industry": [
+      "all"
+    ],
+    "region": [
+      "global"
+    ],
+    "vendor": [
+      "LinkedIn",
+      "Microsoft"
+    ],
+    "vendor_type": [
+      "lxp"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
+    "confidence": 0.55,
+    "stage": "production",
+    "tags": [
+      "linkedin-learning",
+      "ai-coaching",
+      "role-play",
+      "premium",
+      "enterprise",
+      "skills-graph",
+      "ai-tutor",
+      "conversational-learning"
+    ],
+    "summary": "LinkedIn Learning이 <strong>Premium·Enterprise tier</strong>에 통합한 <strong>AI-Powered Coaching</strong> 기능. 2024 글로벌 출시 후 2025에 <strong>role-play scenario coaching</strong>으로 확장 — 학습자가 AI coach와 가상 대화 (피드백 주고받기·어려운 대화 연습·인터뷰 모의 등)로 soft skill 학습. LinkedIn 16K+ skills taxonomy 위에서 작동. ⚠️ 정량 metric은 LinkedIn 공식 KPI로 미공개 — 시장에 자주 인용되는 \"90% 만족·160% 학습시간 증가\" 수치는 별도의 [MS-LinkedIn 2024 Work Trend Index](https://blogs.microsoft.com/blog/2024/05/08/microsoft-and-linkedin-release-the-2024-work-trend-index-on-the-state-of-ai-at-work/) 일반 통계 — AI Coaching 자체 metric 아니므로 인용 시 주의.",
+    "headline": "LinkedIn Learning이 Premium·Enterprise tier에 통합한 AI-Powered Coaching 기능.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 기업 LMS·LXP의 AI coaching은 generic feedback 위주. 1:1 코칭은 임원 한정 (비용 ~$200~500/h)</li>\n<li><strong>Pain point</strong>: 중간 관리자·일반 직원 soft skill (어려운 대화·feedback·negotiation) 학습 기회 부족 → role-play 환경 부재</li>\n<li><strong>Trigger</strong>: 2024 LinkedIn Learning AI Coaching launch → 2025 Microsoft Copilot 통합 가속</li>\n</ul>",
+    "impact_summary": "대규모 mass coaching의 ROI 입증 어려운 영역에서 LMS 기존 기능 대비 학습자 engagement·soft skill 적용도 향상 기대.",
+    "consulting": "<ul>\n<li><strong>KR L&D 컨설팅 reference</strong>:</li>\n<li>LinkedIn Premium·Enterprise 기존 도입 KR 대기업 (대부분 매출 1조+) — AI Coaching 추가 활성화 즉시 가능</li>\n<li>Microsoft 365 도입사와 cross-sell — Microsoft People Skills microsoft-people-skills-inferred-ontology 통합</li>\n<li><strong>Soft skill 학습 카테고리 reference</strong>:</li>\n</ul>",
+    "system": {},
+    "data": {},
+    "model": {},
+    "process_before": "기업 LMS·LXP의 AI coaching은 generic feedback 위주. 1:1 코칭은 임원 한정 (비용 ~$200~500/h) / Pain point: 중간 관리자·일반 직원 soft skill (어려운 대화·feedback·negotiation) 학습 기회 부족 → role-play 환경 부재 / Trigger: 2024 LinkedIn Learning AI Coaching launch → 2025 Microsoft Copilot 통합 가속",
+    "process_steps": [
+      "학습자가 LinkedIn Learning Premium·Enterprise tier 구독",
+      "강의 중 AI Coach와 대화형 Q&A·요약·심화 질문 가능",
+      "2025 확장: role-play scenario — feedback 대화·면접·negotiation을 AI character와 모의",
+      "AI가 응답 평가·improvement 제안",
+      "LinkedIn 16K+ skills taxonomy와 연계 — 학습 진척이 직원 profile 자동 갱신"
     ]
   },
   {
@@ -2915,20 +3088,13 @@
     "summary": "SK하이닉스가 2025 하반기 신입 채용에 <strong>'A!SK' (AI Interview with SK Hynix)</strong> 전형 신설. AI가 직무별 특화 문제를 출제하면 지원자가 영상 녹화 답변 제출. 자기소개서로 파악 어려운 <strong>커뮤니케이션·팀워크·상황 대처</strong> 능력을 종합 검증. 제출 영상은 <strong>미래 동료 구성원이 직접 평가</strong>하는 <strong>hybrid 모델</strong>. AI single decision 회피 — bias mitigation + 한국 채용절차법 fit.",
     "headline": "SK하이닉스가 2025 하반기 신입 채용에 **'A!",
     "problem": "<ul>\n<li><strong>Before</strong>: SK하이닉스 신입 채용은 자기소개서 + 인적성 + 면접 — 직무 적합 soft skill (커뮤니케이션·팀워크) 측정 어려움</li>\n<li><strong>Pain point</strong>: 반도체 기술사무직 신입 채용 volume 크지만 면접관 시간 한정 + soft skill 평가 표준화 어려움</li>\n<li><strong>Trigger</strong>: 2025 하반기 신입 공채 — A!SK 전형 신설 (마이다스 inAIR 차별 논란 후 자체 hybrid 설계)</li>\n</ul>",
-    "impact_summary": "AI single decision 회피 + 미래 동료 평가로 bias mitigation. 한국 채용절차법 + AI 기본법 (2026-01-22) 인적감독 의무 자동 충족 model.",
+    "impact_summary": "AI single decision 회피 + 미래 동료 평가 hybrid + 7-phase AI Report 통합으로 평가 깊이는 Big Tech 수준 + 비용은 대폭 절감. 한국 채용절차법 + AI 기본법 (2026-01-22) 인적감독 의무 자동 충족 model.",
     "consulting": "<ul>\n<li><strong>KR 대기업 채용 AI hybrid model reference (1순위)</strong>:</li>\n<li>마이다스 inAIR (vendor single AI) vs SK C&C sk-cc-adot-biz-hr-recruitment (자체 single AI) vs SK하이닉스 (자체 hybrid AI + peer)</li>\n<li><strong>hybrid model이 한국 AI 기본법 + 채용절차법 fit 가장 우수</strong></li>\n<li><strong>2026 Q3-Q4 KR 채용 컨설팅 deck</strong>:</li>\n</ul>",
     "system": {},
     "data": {},
     "model": {},
     "process_before": "SK하이닉스 신입 채용은 자기소개서 + 인적성 + 면접 — 직무 적합 soft skill (커뮤니케이션·팀워크) 측정 어려움 / Pain point: 반도체 기술사무직 신입 채용 volume 크지만 면접관 시간 한정 + soft skill 평가 표준화 어려움 / Trigger: 2025 하반기 신입 공채 — A!SK 전형 신설 (마이다스 inAIR 차별 논란 후 자체 hybrid 설계)",
-    "process_steps": [
-      "AI가 직무별 특화 문제 자동 출제",
-      "지원자가 영상 녹화 답변 제출 (시간·장소 자율)",
-      "영상 → AI 1차 분석 (응답 내용 위주, 표정·외모 신호 사용 여부 _미공개_)",
-      "(peer review)",
-      "AI score + peer evaluation → HR 종합 판단",
-      "다음 단계 (in-person 면접) 진행"
-    ]
+    "process_steps": []
   },
   {
     "slug": "tcs-infosys-ai-reskilling-india",
@@ -4948,6 +5114,60 @@
     ]
   },
   {
+    "slug": "viven-ai-digital-twin-coworker",
+    "title": "Viven AI — Digital Twin of Coworkers (Eightfold 분사, $35M seed 2025-10)",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "Knowledge Capture & Sharing",
+    "company": "_N/A (vendor product, stealth exit 직후 customer 0건)_",
+    "industry": [
+      "tech"
+    ],
+    "region": [
+      "global"
+    ],
+    "vendor": [
+      "Viven AI"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "information-extraction"
+    ],
+    "confidence": 0.3,
+    "stage": "announced",
+    "tags": [
+      "viven-ai",
+      "digital-twin",
+      "eightfold-spinoff",
+      "coworker-knowledge",
+      "seed-funding",
+      "knowledge-management",
+      "ai-agent",
+      "async-collaboration"
+    ],
+    "summary": "Viven AI — Eightfold 공동창업자 Ashutosh Garg·Varun Kacholia가 분사 창업한 신생 회사. 2025-10-15 stealth 탈출과 함께 Khosla Ventures·Foundation Capital 등으로부터 <strong>$35M seed funding</strong> 확보. 핵심 컨셉: <strong>\"Digital Twin of unavailable coworkers\"</strong> — 부재중·휴직·시차 동료의 지식·전문성·맥락을 LLM 기반으로 재현해 다른 직원이 query 가능. 비동기 협업의 \"동료 부재 시 지식 단절\" 문제 해결 시도.\n> 📌 <strong>중요</strong>: PwC 자료에서 \"Eightfold Digital Twin (2025)\"으로 표기된 기능은 실제로는 본 분사 회사 Viven AI 제품. Eightfold 본체와 별개. Mastercard·다른 Eightfold 고객사에 deploy됐다는 증거 없음.",
+    "headline": "Viven AI — Eightfold 공동창업자 Ashutosh Garg·Varun Kacholia가 분사 창업한 신생 회사.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 글로벌 enterprise에서 시차·휴가·휴직·퇴사 동료의 contextual knowledge 단절 — Slack search·Confluence·이메일 검색에 의존</li>\n<li><strong>Pain point</strong>: knowledge worker 1명 평균 19% 시간을 \"정보 search\"에 투입 (McKinsey Digital). 부재 동료의 \"왜 이렇게 결정했나\"·\"이 고객은 어떻게 대응?\" 같은 contextual Q&A 답 부재</li>\n<li><strong>Trigger</strong>: Eightfold 공동창업자가 Talent Intelligence 영역에서 Knowledge Twin으로 영역 확장 (2025-10 stealth exit + $35M Khosla seed)</li>\n</ul>",
+    "impact_summary": "글로벌 비동기 협업의 \"동료 부재 지식 단절\" 해소 시도 — stealth 직후로 customer adoption 0건, ROI 검증 불가.",
+    "consulting": "<ul>\n<li><strong>KR 컨설팅에서의 위치 — \"watch list\" reference</strong>:</li>\n<li>2025-10 stealth exit 직후 — 2026 customer adoption 시작 시점</li>\n<li>KR 글로벌 자회사 (삼성·LG·SK·현대 글로벌 본사) \"비동기 협업 + 시차\" 페인 직접 fit</li>\n<li>단, 검증 0건이라 KR client 즉시 도입 권고 어려움 — 2026 Q3 이후 reference customer 출시 후 재평가</li>\n</ul>",
+    "system": {},
+    "data": {},
+    "model": {},
+    "process_before": "글로벌 enterprise에서 시차·휴가·휴직·퇴사 동료의 contextual knowledge 단절 — Slack search·Confluence·이메일 검색에 의존 / Pain point: knowledge worker 1명 평균 19% 시간을 \"정보 search\"에 투입 (McKinsey Digital). 부재 동료의 \"왜 이렇게 결정했나\"·\"이 고객은 어떻게 대응?\" 같은 contextual Q&A 답 부재 / Trigger: Eightfold 공동창업자가 Talent Intelligence 영역에서 Knowledge Twin으로 영역 확장 (2025-10 stealth exit + $35M Khosla seed)",
+    "process_steps": [
+      "직원이 자기 활동 (이메일·문서·미팅·decision log)을 Viven AI에 학습 동의 (opt-in)",
+      "AI가 직원별 \"Digital Twin\" 지식 모델 구축 — RAG + agentic",
+      "다른 동료가 \"X에게 물어보고 싶었던 것\"을 Twin에게 query",
+      "Twin이 X의 과거 발언·결정·전문성 기반 답변 (출처 표시)",
+      "X 복귀 시 Twin이 처리한 case 요약 보고"
+    ]
+  },
+  {
     "slug": "zapier-enboarder-ai-onboarding",
     "title": "Zapier — Enboarder AI 온보딩 자동화 (206,000분 절감, 2.5배 온보딩 만족도)",
     "primary_category": "Onboarding & Transitions",
@@ -5979,7 +6199,7 @@
     "headline": "Eightfold AI는 skills-based talent intelligence 플랫폼으로, 채용·내부 이동·스킬 관리를 AI로 통합.",
     "problem": "벤더 제품이므로 특정 기업의 도입 배경은 고객별 상이. 일반적 pain point: skills-based hiring 전환 필요성, 기존 keyword 매칭의 한계, time-to-hire 병목.",
     "impact_summary": "Before: _미공개 (기존 first interview 소요 시간)_ → After: ⚠️ 벤더 주장 time to first interview 90% 감소, 3,000+ 후보자 AI 면접 처리 (자사 채용). Gartner Peer Insights 4.6/5 평점(Fact).",
-    "consulting": "<ul>\n<li><strong>vs SAP SuccessFactors Talent Intelligence Hub</strong>: SAP는 Eightfold을 \"대체 대상\"으로 지목 (Delta/Pepsi 사례, bersin-successfactors-leapfrog-2024-10). 이 경쟁 구도가 컨설팅 vendor selection에서 핵심 질문</li>\n<li><strong>Deloitte 제휴</strong>는 대형 컨설팅 프로젝트에서 implementation partner가 확보됐다는 의미</li>\n<li><strong>Digital Twin concept</strong>은 아직 초기 — \"모든 직원의 LLM\"이라는 비전은 데이터 프라이버시·거버넌스 측면에서 매우 도전적</li>\n<li><strong>한국 진출</strong>: 현재 한국 reference _미공개_. 국내 도입 시 한국어 skills ontology·직무 체계 fit이 과제</li>\n</ul>",
+    "consulting": "<ul>\n<li><strong>vs SAP SuccessFactors Talent Intelligence Hub</strong>: SAP는 Eightfold을 \"대체 대상\"으로 지목 (Delta/Pepsi 사례, bersin-successfactors-leapfrog-2024-10). 이 경쟁 구도가 컨설팅 vendor selection에서 핵심 질문</li>\n<li><strong>Mastercard customer reference (검증)</strong>:</li>\n<li>93% 등록률·42% 월 engagement는 KR 대기업 internal mobility 도입 시 강력한 adoption 데이터 reference</li>\n<li>단 모든 metric ⚠️ 자사 보고 — 외부 인용 시 출처 명시</li>\n</ul>",
     "system": {},
     "data": {},
     "model": {},
@@ -6252,6 +6472,62 @@
     "process_steps": [
       "md]]"
     ]
+  },
+  {
+    "slug": "sk-hynix-pwc-5agent-retention",
+    "title": "SK하이닉스 — PwC 제안 5-Agent Agentic Retention 시스템 (추진 계획, Structura·Cognita·Chronos·Sentio·Agora)",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "People Analytics",
+    "company": "SK하이닉스",
+    "industry": [
+      "semiconductor"
+    ],
+    "region": [
+      "kr"
+    ],
+    "vendor": [
+      "PwC",
+      "SK하이닉스 internal"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "predictive",
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "prediction",
+      "clustering-classification",
+      "summarization-qa",
+      "recommendation-ranking"
+    ],
+    "confidence": 0.2,
+    "stage": "announced",
+    "tags": [
+      "sk-hynix",
+      "pwc",
+      "retention",
+      "multi-agent",
+      "agentic",
+      "ahp",
+      "bayesian-optimization",
+      "xai",
+      "korean-conglomerate",
+      "korea",
+      "planned-deployment",
+      "semiconductor"
+    ],
+    "summary": "PwC Korea가 SK하이닉스에 제안한 <strong>5-Agent agentic retention prediction 시스템</strong>. 5개 specialist 에이전트가 각기 다른 데이터 영역을 분석하고 hybrid 가중치 (AHP + Bayesian) + LLM·XAI 기반 explainability로 통합. 각 에이전트는 라틴어/그리스어 어원 명명 — Structura(정형) · Cognita(관계) · Chronos(시계열) · Sentio(텍스트) · Agora(외부 시장). 결과는 3-tier 위험 등급 (Green/Yellow/Red) + 개인화 개입 권고. <strong>2026-05 추진 계획, 실제 deployment·production metric 미공개</strong>.",
+    "headline": "PwC Korea가 SK하이닉스에 제안한 5-Agent agentic retention prediction 시스템.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 핵심 인재 이탈은 사후 면담 + 단편적 정형 데이터(근속·평가) 위주 분석. 미묘한 행동 변화·외부 시장 신호·관계 패턴 unintegrated. 매니저 \"감\"에 의존</li>\n<li><strong>Pain point</strong>: SK하이닉스 38K 직원 중 반도체 핵심 인재 (R&D·tech 전문가) 이탈 비용 거대. 사후 대응으론 retention 불가</li>\n<li><strong>Trigger</strong>: 2024-25 SK 그룹 차원 AI 적극 도입 + PwC Korea 컨설팅 제안</li>\n</ul>",
+    "impact_summary": "이탈 예측을 단편적 사후 분석에서 <strong>5개 데이터 차원 통합 + 선제적 개입</strong>으로 전환 시도. 단, 추진 계획 단계로 actual production metric 0건.",
+    "consulting": "<ul>\n<li><strong>KR 컨설팅에서의 위치 — \"검증 후보 + 비교 reference\"</strong>:</li>\n<li>만약 SK하이닉스 deployment 성공 시 KR 반도체·이차전지·바이오 그룹사 retention 컨설팅의 reference architecture</li>\n<li>PwC Korea가 제안 — 글로벌 PwC vs Deloitte Anjin (Zora AI deloitte-zora-ai-hc-suite) vs McKinsey/BCG의 KR retention 컨설팅 시장 경쟁 신호</li>\n<li><strong>글로벌 비교</strong>:</li>\n</ul>",
+    "system": {},
+    "data": {},
+    "model": {},
+    "process_before": "핵심 인재 이탈은 사후 면담 + 단편적 정형 데이터(근속·평가) 위주 분석. 미묘한 행동 변화·외부 시장 신호·관계 패턴 unintegrated. 매니저 \"감\"에 의존 / Pain point: SK하이닉스 38K 직원 중 반도체 핵심 인재 (R&D·tech 전문가) 이탈 비용 거대. 사후 대응으론 retention 불가 / Trigger: 2024-25 SK 그룹 차원 AI 적극 도입 + PwC Korea 컨설팅 제안",
+    "process_steps": []
   },
   {
     "slug": "syndio-pay-equity-ai",

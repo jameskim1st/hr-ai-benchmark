@@ -93,6 +93,10 @@ flowchart LR
 |---|---|---|---|
 | 리뷰 시간 절감 | "hours per employee" 절감 (구체 수치 미공개) | Lattice 공식 | ⚠️ 벤더 주장 |
 | Ruggable AI 활용 확대 | engagement → 타 비즈니스 영역 | HR Brew (2024) | ⚠️ 자사 보고 |
+| **LivePerson 리뷰 시간 50~75% 감소** | 동종 카테고리 reference | Betterworks Case Study (PwC 자료) | ⚠️ Lattice 사례 아님, 비교 reference |
+| 15Five 도입사 직원 유지율 94% | 동종 vendor reference | 15Five Press Release 2025 | ⚠️ 벤더 주장 |
+| 15Five 도입사 이직률 40% → 32% | 동종 vendor reference | 15Five Blog | ⚠️ 벤더 주장 |
+| HBR — 매니저 1인당 연 ~210h 리뷰 작성 | 시장 baseline (PwC 자료 인용) | HBR 일반 통계 | ✅ Tier 1 일반 baseline |
 
 ## Governance & Risk
 
