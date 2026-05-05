@@ -77,18 +77,45 @@ KR_REGION = {
 
 # ── Styles ──
 HEADER_FILL = PatternFill("solid", fgColor="2F4858")
-HEADER_FONT = Font(name="맑은 고딕", size=11, bold=True, color="FFFFFF")
+HEADER_FONT = Font(name="맑은 고딕", size=12, bold=True, color="FFFFFF")
 HEADER_ALIGN = Alignment(horizontal="center", vertical="center", wrap_text=True)
-BODY_FONT = Font(name="맑은 고딕", size=10)
+BODY_FONT = Font(name="맑은 고딕", size=11)
 BODY_ALIGN = Alignment(horizontal="left", vertical="top", wrap_text=True)
 BORDER_THIN = Border(
-    left=Side(style="thin", color="DDDDDD"),
-    right=Side(style="thin", color="DDDDDD"),
-    top=Side(style="thin", color="DDDDDD"),
-    bottom=Side(style="thin", color="DDDDDD"),
+    left=Side(style="thin", color="E5E5E5"),
+    right=Side(style="thin", color="E5E5E5"),
+    top=Side(style="thin", color="E5E5E5"),
+    bottom=Side(style="thin", color="E5E5E5"),
 )
-COVER_TITLE_FONT = Font(name="맑은 고딕", size=18, bold=True, color="2F4858")
+COVER_TITLE_FONT = Font(name="맑은 고딕", size=20, bold=True, color="2F4858")
 COVER_SECTION_FONT = Font(name="맑은 고딕", size=12, bold=True, color="2F4858")
+
+# 가독성 보조 fill
+ZEBRA_FILL = PatternFill("solid", fgColor="F8F9FA")  # 짝수 row 옅은 회색
+NO_FILL = PatternFill(fill_type=None)
+
+# HR 카테고리별 색상 (7개) — 파스텔 톤, 시각 부담 적음
+CATEGORY_FILL = {
+    "Talent Acquisition":              PatternFill("solid", fgColor="DBE9F4"),  # 옅은 파랑
+    "Onboarding & Transitions":        PatternFill("solid", fgColor="D4EDE0"),  # 옅은 청록
+    "Learning & Development":          PatternFill("solid", fgColor="E5DAF0"),  # 옅은 보라
+    "Performance & Talent Management": PatternFill("solid", fgColor="FCE4CB"),  # 옅은 주황
+    "Total Rewards":                   PatternFill("solid", fgColor="DCEFC8"),  # 옅은 녹
+    "Employee Experience & HR Ops":    PatternFill("solid", fgColor="DDDCF1"),  # 옅은 인디고
+    "Strategic Workforce & Governance":PatternFill("solid", fgColor="F4D5DB"),  # 옅은 핑크
+}
+# AI 기술 체크 표시 (✓ 대신 ●) + 강조 fill
+TECH_PARENT_CHECK_FILL = PatternFill("solid", fgColor="C5B5DB")  # 보라
+TECH_SUB_CHECK_FILL = PatternFill("solid", fgColor="DDD3EC")     # 옅은 보라
+CHECK_MARK = "●"
+
+# 시트 탭 색
+TAB_COLOR = {
+    "개요":       "2F4858",
+    "Use Cases": "1B6E3E",
+    "AI 기술 분포": "5B3A8C",
+    "Companies": "C2562D",
+}
 
 
 # ── Utility ──
@@ -230,17 +257,32 @@ def build_cover_sheet(wb, ucs, cos):
     ws.cell(row=1, column=1).font = COVER_TITLE_FONT
     ws.merge_cells("A1:B1")
     ws.cell(row=1, column=1).alignment = Alignment(horizontal="left", vertical="center")
-    ws.row_dimensions[1].height = 32
+    ws.row_dimensions[1].height = 36
 
-    # 섹션 헤더 굵게
+    # 섹션 헤더 굵게 + 옅은 배경
+    section_fill = PatternFill("solid", fgColor="EEF2F6")
     for r, (col_a, _) in enumerate(rows, start=1):
         if col_a.startswith("【"):
             ws.cell(row=r, column=1).font = COVER_SECTION_FONT
+            ws.cell(row=r, column=1).fill = section_fill
+            ws.cell(row=r, column=2).fill = section_fill
+            ws.row_dimensions[r].height = 24
 
-    # body 정렬
+    # body 정렬 + font 11
+    body_font_cover = Font(name="맑은 고딕", size=11)
     for row in ws.iter_rows(min_row=2):
         for cell in row:
-            cell.alignment = Alignment(horizontal="left", vertical="top", wrap_text=True)
+            cell.alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
+            if not cell.font.bold:  # 섹션 header 제외
+                cell.font = body_font_cover
+
+    # 일반 row 높이 살짝 (가독성)
+    for r in range(2, len(rows) + 1):
+        if ws.row_dimensions[r].height is None:
+            ws.row_dimensions[r].height = 20
+
+    # 시트 탭 색
+    ws.sheet_properties.tabColor = TAB_COLOR.get("개요", "2F4858")
 
 
 # ── Sheet 2: Use Cases ──
@@ -432,41 +474,64 @@ def build_usecases_sheet(wb, ucs):
         cell.font = HEADER_FONT
         cell.alignment = HEADER_ALIGN
         cell.border = BORDER_THIN
-    ws.row_dimensions[1].height = 36
+    ws.row_dimensions[1].height = 44
 
     # 정렬: confidence 내림차순
     ucs_sorted = sorted(ucs, key=lambda u: -u.get("confidence", 0))
 
     # Body
+    # HR 모듈 column index (1-based) — main의 2번째
+    hr_module_col_idx = 2
+    # 신뢰도 column index (aux의 8번째)
+    confidence_col_idx_local = aux_start + 7
+
+    # 동적 row 높이 계산용
+    row_heights = []
+
     for row_idx, u in enumerate(ucs_sorted, start=2):
         region_kr = ", ".join(KR_REGION.get(r, r) for r in (u.get("region") or []))
         company = u.get("company", "") if isinstance(u.get("company"), str) else ""
-        cat_kr = KR_CATEGORY.get(u.get("primary_category", ""), u.get("primary_category", ""))
+        primary_cat_en = u.get("primary_category", "")
+        cat_kr = KR_CATEGORY.get(primary_cat_en, primary_cat_en)
+        cat_fill = CATEGORY_FILL.get(primary_cat_en)
+        # zebra: 짝수 data row (data row 2,4,6.. = row_idx 3,5,7..)
+        is_zebra = (row_idx % 2 == 1)
+        zebra_fill = ZEBRA_FILL if is_zebra else None
 
         # MAIN columns (사용자 spec 순서)
+        summary_txt = strip_html(u.get("summary"), 1500)
+        problem_txt = strip_html(u.get("problem"), 400)
+        process_txt = build_process_flow(u)
+        system_txt = join_dict_kr(u.get("system"))
+        input_txt = join_dict_kr(u.get("data"))
+        output_txt = strip_html(u.get("output"), 350)
+        model_txt = join_dict_kr(u.get("model"))
+        impact_txt = build_impact(u)
+        consulting_txt = strip_html(u.get("consulting"), 500)
+
         main_values = [
             row_idx - 1,
             cat_kr,
             u.get("title", ""),
             company,
-            strip_html(u.get("summary"), 1500),  # 개요 = 전체 Summary (bullet/줄바꿈 보존)
-            strip_html(u.get("problem"), 350),
-            build_process_flow(u),
-            join_dict_kr(u.get("system")),
-            join_dict_kr(u.get("data")),                 # Input = data dict
-            strip_html(u.get("output"), 300),            # NEW Output
-            join_dict_kr(u.get("model")),
-            build_impact(u),
+            summary_txt,
+            problem_txt,
+            process_txt,
+            system_txt,
+            input_txt,
+            output_txt,
+            model_txt,
+            impact_txt,
         ]
-        # AI 기술 5 대분류 체크박스
+        # AI 기술 5 대분류 체크박스 (● 사용)
         tech_parent_values = [
-            "✓" if has_type(u, type_id) else "" for type_id, _ in TECH_PARENT_COLS
+            CHECK_MARK if has_type(u, type_id) else "" for type_id, _ in TECH_PARENT_COLS
         ]
         # AI 기술 13 소분류 체크박스
         tech_sub_values = [
-            "✓" if has_subtype(u, sub_id) else "" for sub_id, _ in TECH_SUB_COLS
+            CHECK_MARK if has_subtype(u, sub_id) else "" for sub_id, _ in TECH_SUB_COLS
         ]
-        # 출처 1~3 — 외부 URL만 추출 (wiki internal 제외)
+        # 출처 1~3
         parsed_sources = select_external_sources(u.get("sources"), max_n=3)
 
         # AUX columns
@@ -479,44 +544,89 @@ def build_usecases_sheet(wb, ucs):
             KR_STAGE.get(u.get("stage", ""), u.get("stage", "")),
             KR_FREQUENCY.get(u.get("frequency", ""), u.get("frequency", "")),
             float(u.get("confidence", 0)),
-            strip_html(u.get("consulting"), 500),
+            consulting_txt,
             join_kr(u.get("tags")),
-            parsed_sources[0][0],  # 출처1 display text
-            parsed_sources[1][0],  # 출처2 display text
-            parsed_sources[2][0],  # 출처3 display text
+            parsed_sources[0][0],
+            parsed_sources[1][0],
+            parsed_sources[2][0],
             u.get("slug", ""),
         ]
 
         all_values = main_values + tech_parent_values + tech_sub_values + aux_values
 
-        # 출처 column 인덱스: aux의 11~13번째 (0-index 10·11·12) → 시트 column = aux_start + 10·11·12
         src_col_indices = [aux_start + 10, aux_start + 11, aux_start + 12]
 
         for col_idx, v in enumerate(all_values, start=1):
-            # 모든 string value에 em-dash 제거 적용 (사용자 요청)
+            # em-dash 제거
             if isinstance(v, str):
                 v = '\n'.join(_remove_emdash_line(l) for l in v.split('\n'))
             cell = ws.cell(row=row_idx, column=col_idx, value=v)
             cell.font = BODY_FONT
-            # AI 기술 체크박스 영역은 가운데 정렬
-            if parent_start <= col_idx <= sub_end:
-                cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=False)
-                if v == "✓":
-                    if col_idx <= parent_end:
-                        cell.fill = PatternFill("solid", fgColor="E0DAEF")  # 옅은 보라 강조
-                    else:
-                        cell.fill = PatternFill("solid", fgColor="EDE8F4")
-            else:
-                cell.alignment = BODY_ALIGN
             cell.border = BORDER_THIN
 
-        # 출처 hyperlink 추가 (parsed_sources의 url 사용)
+            # AI 기술 체크박스 영역
+            if parent_start <= col_idx <= sub_end:
+                cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=False)
+                if v == CHECK_MARK:
+                    if col_idx <= parent_end:
+                        cell.fill = TECH_PARENT_CHECK_FILL
+                        cell.font = Font(name="맑은 고딕", size=12, bold=True, color="3F2A6E")
+                    else:
+                        cell.fill = TECH_SUB_CHECK_FILL
+                        cell.font = Font(name="맑은 고딕", size=11, bold=True, color="5B3A8C")
+                else:
+                    if zebra_fill:
+                        cell.fill = zebra_fill
+            # HR 모듈 column — 카테고리별 색상 + bold
+            elif col_idx == hr_module_col_idx:
+                cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+                cell.font = Font(name="맑은 고딕", size=11, bold=True, color="2F4858")
+                if cat_fill:
+                    cell.fill = cat_fill
+            # 번호 column — 가운데 + 회색
+            elif col_idx == 1:
+                cell.alignment = Alignment(horizontal="center", vertical="center")
+                cell.font = Font(name="맑은 고딕", size=10, color="999999")
+                if zebra_fill:
+                    cell.fill = zebra_fill
+            # 신뢰도 column — 우측 정렬 + 굵게 + 숫자 포맷
+            elif col_idx == confidence_col_idx_local:
+                cell.alignment = Alignment(horizontal="center", vertical="center")
+                cell.font = Font(name="맑은 고딕", size=11, bold=True)
+                cell.number_format = "0.00"
+                # 신뢰도 conditional formatting이 fill 덮어씀 — zebra 적용 X
+            # 일반 텍스트 column
+            else:
+                cell.alignment = BODY_ALIGN
+                if zebra_fill:
+                    cell.fill = zebra_fill
+
+        # 출처 hyperlink
         for i, col_idx in enumerate(src_col_indices):
             url = parsed_sources[i][1]
             if url:
                 cell = ws.cell(row=row_idx, column=col_idx)
                 cell.hyperlink = url
                 cell.font = Font(name="맑은 고딕", size=10, color="0563C1", underline="single")
+
+        # 동적 row 높이 — 가장 긴 셀의 line count + wrap 추정
+        max_lines = 1
+        for txt, col_w in [
+            (summary_txt, 70), (problem_txt, 55), (process_txt, 75),
+            (system_txt, 38), (input_txt, 38), (output_txt, 45),
+            (model_txt, 38), (impact_txt, 60), (consulting_txt, 70),
+        ]:
+            if not txt:
+                continue
+            # 명시적 줄바꿈 + 컬럼 폭 기준 wrap 추정 (한글 1.7字/col_w 가정)
+            for line in txt.split('\n'):
+                wrapped = max(1, int(len(line) / (col_w * 1.7)) + (1 if line else 0))
+                max_lines += wrapped
+            # \n 자체도 1줄
+            max_lines += txt.count('\n')
+        # 최소 80, 최대 360 pt (extreme 안전판)
+        height = max(80, min(360, max_lines * 14))
+        row_heights.append(height)
 
     # Column widths
     for i, (_, w) in enumerate(all_cols, start=1):
@@ -560,9 +670,12 @@ def build_usecases_sheet(wb, ucs):
                     fill=PatternFill("solid", fgColor="FFF8DC")),
     )
 
-    # Row height — 개요 full summary (bullet/줄바꿈) 수용 → 140pt
-    for r in range(2, last_row + 1):
-        ws.row_dimensions[r].height = 140
+    # Row height — 동적 (content 길이 기반)
+    for i, h in enumerate(row_heights):
+        ws.row_dimensions[i + 2].height = h
+
+    # 시트 탭 색
+    ws.sheet_properties.tabColor = TAB_COLOR.get("Use Cases", "1B6E3E")
 
 
 # ── Sheet 3: AI 기술 분포 (long-format) ──
@@ -587,7 +700,10 @@ def build_tech_long_sheet(wb, ucs):
         cell.font = HEADER_FONT
         cell.alignment = HEADER_ALIGN
         cell.border = BORDER_THIN
-    ws.row_dimensions[1].height = 28
+    ws.row_dimensions[1].height = 36
+
+    # 시트 탭 색
+    ws.sheet_properties.tabColor = TAB_COLOR.get("AI 기술 분포", "5B3A8C")
 
     # SUB → parent type mapping for long-format
     SUB_PARENT = {
@@ -637,11 +753,20 @@ def build_tech_long_sheet(wb, ucs):
     rows_data.sort(key=lambda r: (r[3], r[4], -r[5]))
 
     for row_idx, vals in enumerate(rows_data, start=2):
+        is_zebra = (row_idx % 2 == 1)
         for col_idx, v in enumerate(vals, start=1):
             cell = ws.cell(row=row_idx, column=col_idx, value=v)
             cell.font = BODY_FONT
             cell.alignment = Alignment(horizontal="left", vertical="center", wrap_text=True)
             cell.border = BORDER_THIN
+            # 신뢰도 column (6)은 conditional formatting이 fill 덮어씀 — zebra X
+            if is_zebra and col_idx != 6:
+                cell.fill = ZEBRA_FILL
+            # 신뢰도 column 우측 정렬·숫자 포맷
+            if col_idx == 6:
+                cell.alignment = Alignment(horizontal="center", vertical="center")
+                cell.font = Font(name="맑은 고딕", size=11, bold=True)
+                cell.number_format = "0.00"
 
     # Column widths
     for i, (_, w) in enumerate(TECH_LONG_COLS, start=1):
@@ -685,7 +810,10 @@ def build_companies_sheet(wb, ucs, cos):
         cell.font = HEADER_FONT
         cell.alignment = HEADER_ALIGN
         cell.border = BORDER_THIN
-    ws.row_dimensions[1].height = 28
+    ws.row_dimensions[1].height = 36
+
+    # 시트 탭 색
+    ws.sheet_properties.tabColor = TAB_COLOR.get("Companies", "C2562D")
 
     # Compute use case count + avg confidence per company (slug 매칭)
     uc_by_company_name = defaultdict(list)
@@ -723,11 +851,29 @@ def build_companies_sheet(wb, ucs, cos):
             strip_html(strategy_clean, 600),
             strip_html(c.get("consulting"), 600),
         ]
+        is_zebra = (row_idx % 2 == 1)
         for col_idx, v in enumerate(values, start=1):
             cell = ws.cell(row=row_idx, column=col_idx, value=v)
             cell.font = BODY_FONT
             cell.alignment = BODY_ALIGN
             cell.border = BORDER_THIN
+            # 평균 신뢰도 column (6)은 conditional formatting이 fill 덮어씀 — zebra X
+            if is_zebra and col_idx != 6:
+                cell.fill = ZEBRA_FILL
+            # 기업명 (1) — bold + 약간 더 큰 font
+            if col_idx == 1:
+                cell.font = Font(name="맑은 고딕", size=12, bold=True, color="2F4858")
+                cell.alignment = Alignment(horizontal="left", vertical="top", wrap_text=True)
+            # Use Case 수 (5) — 가운데 정렬
+            elif col_idx == 5:
+                cell.alignment = Alignment(horizontal="center", vertical="center")
+                cell.font = Font(name="맑은 고딕", size=12, bold=True, color="2F4858")
+            # 평균 신뢰도 (6)
+            elif col_idx == 6:
+                cell.alignment = Alignment(horizontal="center", vertical="center")
+                cell.font = Font(name="맑은 고딕", size=11, bold=True)
+                if isinstance(v, (int, float)):
+                    cell.number_format = "0.00"
 
     # Column widths
     for i, (_, w) in enumerate(COMPANY_COLS, start=1):
