@@ -1130,6 +1130,82 @@
     ]
   },
   {
+    "slug": "businessolver-sofia-agentic-benefits",
+    "title": "Businessolver — Sofia Agentic AI 복리후생 어드민 (Intake/Answer/Insights 멀티 에이전트)",
+    "primary_category": "Total Rewards",
+    "subcategory": "Benefits & Wellbeing",
+    "company": "_다수 (Businessolver 고객 — Fortune 1000 다수, 구체 명단 일부 비공개)_",
+    "industry": [
+      "all"
+    ],
+    "region": [
+      "na"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "Businessolver"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "information-extraction",
+      "clustering-classification"
+    ],
+    "confidence": 0.65,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-07-17",
+    "last_confirmed": "2026-01-20",
+    "output": "직원 혜택 질문 자연어 답변 (Answer Agent) + Document 자동 검증·승인 (Intake Agent — 출생증명서·결혼증명서·QLE 증빙) + HR 운영 인사이트 리포트 (Insights Agent — 콜·티켓 패턴, 행동 트렌드)",
+    "tags": [
+      "benefits-administration",
+      "agentic-ai",
+      "multi-agent",
+      "sofia",
+      "businessolver",
+      "document-validation",
+      "chat-deflection",
+      "us-benefits"
+    ],
+    "sources": [
+      "sources/businessolver-sofia-agentic-2025-07.md",
+      "sources/businessolver-ae-2024-highlights.md",
+      "sources/businessolver-2025-results-2026-01.md"
+    ],
+    "summary": "Businessolver는 <strong>US 복리후생 어드민 SaaS 벤더</strong>로, 자체 AI 엔진 <strong>Sofia</strong>를 2010년대 후반부터 운영해왔으며 2025년 7월 <strong>agentic framework</strong>로 확장. 3개 specialist agent (<strong>Intake / Answer / Insights</strong>) 구조로 <strong>문서 자동 검증·24/7 직원 Q&A·HR 운영 인사이트</strong>를 동시 처리. ⚠️ 자사 보고: 2024년 OE(Open Enrollment) 기준 document 자동 검증 62%·chat 당일 해결 92%·콜타임 7M minutes 절감·만족도 4.25/5. 2025년 마감 기준 client NPS 83·retention 97% (벤더 자사 발표).",
+    "headline": "Businessolver는 US 복리후생 어드민 SaaS 벤더로, 자체 AI 엔진 Sofia를 2010년대 후반부터 운영해왔으며 2025년 7월 agentic framework로 확장. 3개 specialist agent (Intake / Answer / Insights) 구조로 문서 자동 검증·24/7 직원 Q&A·HR 운영 인사이트를 동시 처리. ⚠️ 자사 보고: 2024년 OE(Open Enrollment) 기준 document 자동 검증 62%·chat 당일 해결 92%·콜타임 7M minutes 절감·만족도 4.25/5.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 미국 employer의 OE(연 1회 plan 선택)는 직원 stress 최고점 — 정책 복잡(의료·치과·생명·FSA·HSA·HDHP), 문서 검증(QLE: qualifying life event — 결혼·출산·이혼시 plan 변경)·승인 워크플로 수작업</li>\n<li><strong>Pain point</strong>: HR/벤처사 콜센터에 OE 시즌 콜 급증, 직원당 평균 통화 시간 길고 같은 질문 반복, document 검증은 사람 reviewer가 1건씩 처리</li>\n<li><strong>Trigger</strong>: GenAI 등장으로 chat·문서 처리 자동화 가능. Businessolver 1998년 설립 이후 축적된 25년+ 도메인 데이터 + Sofia AI 엔진을 agentic으로 재구성</li>\n<li>비교 reference: moderna-benefits-equity-gpts는 single-tenant Custom GPT, Sofia는 multi-tenant SaaS</li>\n</ul>",
+    "impact_summary": "복리후생 어드민의 <strong>3축 자동화</strong> (chat 답변·document 검증·HR 인사이트). ⚠️ 모든 metric은 Businessolver 자사 발표 — Forrester·Gartner 등 Tier 1 독립 검증 0건.",
+    "consulting": "<ul>\n<li><strong>복리후생 admin AI 대표 reference</strong>: Sofia는 <strong>단일 chatbot이 아닌 3-agent specialist 분할</strong> — 한국 대기업의 EX·HR운영 카테고리에서 \"ask HR 챗봇 단일 모델 vs specialist agent 분할\" 논의 시 reference</li>\n<li><strong>Vs Moderna moderna-benefits-equity-gpts</strong>: Moderna는 단일 GPT (Custom GPT × 2종), Sofia는 specialist agent 멀티. SaaS 벤더와 self-build의 차이</li>\n<li><strong>Vs Nayya nayya-benefits-decision-support</strong>: Nayya는 <strong>decision support</strong> (어느 plan을 선택할지 추천), Sofia는 <strong>operations</strong> (선택 후 admin·문서 처리·Q&A) — 보완적 포지션</li>\n<li><strong>한국 적용</strong>: 복지포인트 관리·flex benefit·연말정산 자료 검증 등 한국 EX·HR운영 도메인에 <strong>3-agent pattern</strong> 적용 가능 (Intake = 증빙 OCR/검증, Answer = 정책 Q&A, Insights = 사용 패턴)</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "Benefitsolver platform 내장 + 외부 employer HRIS 연동 (Workday, ADP, UKG 등 — 구체 매트릭스 _미공개_)",
+      "사용자 접점": "web portal, mobile app, embedded chat widget, voice (자사 IVR 통합), HR 관리자 dashboard"
+    },
+    "data": {},
+    "model": {
+      "Orchestration": "자체 agentic framework (Intake/Answer/Insights specialist 분할)"
+    },
+    "process_before": "미국 employer의 OE(연 1회 plan 선택)는 직원 stress 최고점 — 정책 복잡(의료·치과·생명·FSA·HSA·HDHP), 문서 검증(QLE: qualifying life event — 결혼·출산·이혼시 plan 변경)·승인 워크플로 수작업 / Pain point: HR/벤처사 콜센터에 OE 시즌 콜 급증, 직원당 평균 통화 시간 길고 같은 질문 반복, document 검증은 사람 reviewer가 1건씩 처리 / Trigger: GenAI 등장으로 chat·문서 처리 자동화 가능. Businessolver 1998년 설립 이후 축적된 25년+ 도메인 데이터 + Sofia AI 엔진을 agentic으로 재구성 / 비교 reference: [[moderna-benefits-equity-gpts]",
+    "process_steps": [
+      "직원",
+      "Sofia Agentic Layer",
+      "Answer Agent: Q&A",
+      "Intake Agent: 문서 검증",
+      "Insights Agent: HR dashboard",
+      "Human HR Agent",
+      "Human Reviewer",
+      "HR Admin Dashboard"
+    ]
+  },
+  {
     "slug": "deloitte-zora-ai-hc-suite",
     "title": "Deloitte — Zora AI agentic platform + Human Capital AI Solution Suite (Workforce Analyzer + Planner+, 300+ HR workflows)",
     "primary_category": "Strategic Workforce & Governance",
@@ -1368,6 +1444,82 @@
       "후보 배치안 생성 → HR 검토·조정",
       "매니저·직원 통보",
       "(2025 확장) PB·RM 등 상담 직원 AI 활용으로 확장 — 57% 두 달 만에 사용"
+    ]
+  },
+  {
+    "slug": "mastercard-unlocked-gloat-talent-marketplace",
+    "title": "Mastercard — Unlocked Internal Talent Marketplace (Gloat 기반, 2022~ Project Possible 후속)",
+    "primary_category": "Onboarding & Transitions",
+    "subcategory": "Internal Mobility",
+    "company": "Mastercard",
+    "industry": [
+      "finance",
+      "payments"
+    ],
+    "region": [
+      "global"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "Gloat"
+    ],
+    "vendor_type": [
+      "talent-marketplace"
+    ],
+    "ai_tech_type": [
+      "predictive",
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "recommendation-ranking",
+      "prediction",
+      "summarization-qa"
+    ],
+    "confidence": 0.65,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-09-10",
+    "last_confirmed": "2026-01-15",
+    "output": "직원 ↔ internal job/gig/project/멘토십 매칭 추천 (skill·경험·관심사 기반) + 매니저용 talent search (스킬 inventory) + 직원 career path 시각화 + 통합 dashboard (참여율·매칭·project hours)",
+    "tags": [
+      "internal-mobility",
+      "talent-marketplace",
+      "gloat",
+      "gig-economy",
+      "mastercard",
+      "ai-matching",
+      "cross-functional",
+      "cross-regional"
+    ],
+    "sources": [
+      "sources/gloat-mastercard-case-study-2023.md",
+      "sources/mastercard-ai-culture-story-2025.md",
+      "sources/bersin-schneider-unilever-talent-marketplace-2019-07.md"
+    ],
+    "summary": "Mastercard는 2022년 Gloat을 도입해 internal talent marketplace <strong>\"Unlocked\"</strong>를 출시 — 이전 수동 운영하던 \"Project Possible\"의 AI 후속. ⚠️ 자사 보고 (Gloat case study + Mastercard 2025 AI culture story 종합):\n<ul>\n<li>2022 시점: $21M productivity 절감 (첫 1년), 24,000+ 직원 매칭, 62% 등록률, 100,000+ unlocked capacity hours, 3,000+ role/멘토십 매칭 — cross-functional 62%·cross-regional 52%</li>\n<li>2025 시점: <strong>93% 등록률, 42% 월간 engagement, 1M project hours 누적, 24h 내 인터뷰 스케줄링</strong></li>\n</ul>\n> ⚠️ <strong>PwC 컨설팅 자료 정정</strong>: PwC 자료의 \"$20M 절감\"은 <strong>$21M의 오기/반올림</strong> (Gloat 공식 case study 기준). \"360,000 hours\"는 <strong>Schneider Electric Open Talent Market</strong> 메트릭과 혼동된 것 — Mastercard는 100K → 1M project hours.",
+    "headline": "Mastercard는 2022년 Gloat을 도입해 internal talent marketplace \"Unlocked\"를 출시 — 이전 수동 운영하던 \"Project Possible\"의 AI 후속.",
+    "problem": "<ul>\n<li><strong>Before</strong>: Mastercard는 2019년부터 \"Project Possible\"이라는 <strong>수동 internal gig 프로그램</strong> 운영 — HR이 spreadsheet로 직원 ↔ gig 매칭, scale 한계</li>\n<li><strong>Pain point</strong>:</li>\n<li>30,000+ global 직원의 <strong>스킬 inventory invisible</strong> — 어느 부서에 어떤 스킬을 가진 직원이 있는지 매니저도 모름</li>\n<li>직원이 internal mobility 경로 모름 → external offer로 이탈</li>\n<li>cross-functional·cross-regional collaboration 기회 손실</li>\n<li><strong>Trigger</strong>: Project Possible의 success → AI 자동 매칭으로 scale up 결정. Gloat 도입 (2022)</li>\n</ul>",
+    "impact_summary": "<strong>internal mobility</strong> 자동화로 30K+ 글로벌 직원 스킬 visibility·cross-functional·cross-regional collaboration 활성화. 2022~2025 메트릭 모두 ⚠️ 자사 보고 (Gloat case study + Mastercard newsroom). Tier 1 독립 검증은 Josh Bersin 블로그 부분만.",
+    "consulting": "<ul>\n<li><strong>Internal mobility AI의 대표 customer reference</strong>: Mastercard·Schneider Electric·Unilever 3사가 Gloat 글로벌 reference Top 3. 한국 대기업 internal talent marketplace 도입 시 가장 자주 인용</li>\n<li><strong>vs Schneider Electric schneider-electric-gloat-talent-marketplace</strong>:</li>\n<li>Schneider: 360,000+ hours unlocked, $15M+ 절감 (Gloat reference)</li>\n<li>Mastercard: 100K → 1M hours (3년간 10배 성장), $21M 절감 (첫 1년)</li>\n</ul>",
+    "system": {
+      "사용자 접점": "web portal, mobile app, embedded in Workday SSO (추정 — Mastercard 핵심 HRIS)"
+    },
+    "data": {},
+    "model": {
+      "Foundation model": "_구체 LLM provider·버전 미공개_ (Gloat 자체 ML stack)"
+    },
+    "process_before": "Mastercard는 2019년부터 \"Project Possible\"이라는 수동 internal gig 프로그램 운영 — HR이 spreadsheet로 직원 ↔ gig 매칭, scale 한계 / Pain point: / 30,000+ global 직원의 스킬 inventory invisible — 어느 부서에 어떤 스킬을 가진 직원이 있는지 매니저도 모름 / 직원이 internal mobility 경로 모름 → external offer로 이탈 / cross-functional·cross-regional collaboration 기회 손실 / Trigger: Project Possible의 success → AI 자동 매칭으로 scale up 결정. Gloat 도입 (2022)",
+    "process_steps": [
+      "직원 30K+",
+      "Gloat AI Engine",
+      "(HRIS·역할·이력)",
+      "(LinkedIn Learning 활동)",
+      "매니저",
+      "AI 매칭 추천",
+      "매니저 검토 → 24h 인터뷰 스케줄",
+      "gig·project·mentor 시작 or internal transfer"
     ]
   },
   {
@@ -1655,6 +1807,82 @@
     ]
   },
   {
+    "slug": "ibm-hiro-promotion-agent",
+    "title": "IBM — HiRo (분기 승진 관리 watsonx Digital Worker, AskHR 생태계 내 Specialist Agent)",
+    "primary_category": "Performance & Talent Management",
+    "subcategory": "Succession & Leadership",
+    "company": "IBM",
+    "industry": [
+      "tech"
+    ],
+    "region": [
+      "global"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "IBM watsonx Orchestrate"
+    ],
+    "vendor_type": [
+      "hrms",
+      "foundation-model"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "automation",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "rpa",
+      "prediction"
+    ],
+    "confidence": 0.55,
+    "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2025-10-12",
+    "last_confirmed": "2026-01-20",
+    "output": "분기 승진 cycle 자동화 — 매니저별 promotion criteria + eligible employees 리스트 자동 발송 + HRBP에 분석 dashboard + 승진 결정 후 자동 처리 (compensation·title·org chart 갱신)",
+    "tags": [
+      "promotion-management",
+      "agentic-ai",
+      "watsonx",
+      "hiro",
+      "ibm",
+      "askhr-ecosystem",
+      "hr-business-partner"
+    ],
+    "sources": [
+      "sources/ibm-askhr-case-study-2025.md",
+      "sources/ibm-watsonx-orchestrate-hr-agents.md",
+      "sources/hrexecutive-ibm-2024-of-the-year.md"
+    ],
+    "summary": "IBM의 <strong>HiRo</strong>는 watsonx Orchestrate 기반 <strong>분기 승진 관리 specialist agent (digital worker)</strong>. AskHR 생태계 (2.1M conversations/년·80+ HR tasks 자동화) 내 promotion 영역 자동화. ⚠️ 자사 보고: 분기 승진 cycle을 10주 → 자동화로 단축, <strong>HR Business Partner (HRBP) 시간 분기당 85% 절감</strong>. 매니저 10,000명에 promotion criteria + eligible employees 리스트 자동 배포. IBM CHRO Nickle LaMoreaux가 HR Executive of the Year 2024 인터뷰·myHRfuture 팟캐스트·IBM 공식 case study에서 일관 언급.",
+    "headline": "IBM의 HiRo는 watsonx Orchestrate 기반 분기 승진 관리 specialist agent (digital worker). AskHR 생태계 (2.1M conversations/년·80+ HR tasks 자동화) 내 promotion 영역 자동화. ⚠️ 자사 보고: 분기 승진 cycle을 10주 → 자동화로 단축, HR Business Partner (HRBP) 시간 분기당 85% 절감. 매니저 10,000명에 promotion criteria + eligible employees 리스트 자동 배포.",
+    "problem": "<ul>\n<li><strong>Before (2023 이전)</strong>: IBM 글로벌 280K 직원 분기 승진 cycle은 <strong>HR Business Partner 수작업 spreadsheet</strong> — 부서별 eligible employees 식별·매니저별 promotion criteria 안내·결정 후 compensation/title/org 시스템 수동 갱신</li>\n<li><strong>Pain point</strong>:</li>\n<li>분기당 10주 소요 — HRBP 시간의 상당 비중</li>\n<li>매니저 10,000명 × 부서·지역 별 승진 정책 차이 → 일관성 결여, 매니저 confusion</li>\n<li>승진 결정 후 compensation·org chart·title 갱신을 여러 시스템에 수동 입력</li>\n<li><strong>Trigger</strong>: IBM 자체 AI/agentic transformation (AskHR 6년 운영 후 specialist agent 확장 단계)</li>\n</ul>",
+    "impact_summary": "분기 승진 cycle을 <strong>HRBP 수작업 → 자동화</strong>로 전환. ⚠️ 모든 metric은 IBM CHRO 자사 발표 (HR Executive·myHRfuture 인터뷰·IBM case study). 외부 고객 도입 사례는 _미공개_ (IBM 내부 도입만).",
+    "consulting": "<ul>\n<li><strong>Promotion management AI 글로벌 reference</strong>: 한국 대기업 (삼성·LG·SK·현대차) 분기 승진·연 승진 cycle automation 컨설팅에서 <strong>유일한 production reference</strong> (외부 공개 기준)</li>\n<li><strong>AskHR 생태계 specialist agent 패턴 사례</strong>: 단일 chatbot이 아닌 <strong>HR 영역별 specialist agent (HiRo·Charlie·Blue Match·watsonx Orchestrate TA)</strong> 분리 운영 — Workday Illuminate, ServiceNow HR과 비교 reference</li>\n<li><strong>vs Workday Illuminate Sentiment/Skills Agent</strong>: Workday는 multi-tenant SaaS의 cross-customer agent, IBM HiRo는 <strong>single-tenant 내부 도입</strong> — 거버넌스·정책 customization 자유도 차이</li>\n<li><strong>반면교사 / 검증 한계</strong>:</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "AskHR 생태계 specialist agent로 운영 (사용자 접점은 매니저용 web/Teams + HRBP dashboard)"
+    },
+    "data": {},
+    "model": {
+      "Foundation model": "IBM watsonx (Granite 모델 자체 제품) — 구체 model variant·버전 _부분 미공개_"
+    },
+    "process_before": "HRBP가 spreadsheet로 (1) eligible employees 추출 → (2) 매니저에 정책·criteria 이메일 → (3) 매니저 결정 수집 → (4) compensation/title/org 시스템 수동 입력 /",
+    "process_steps": [
+      "분기 시작 trigger",
+      "HiRo Specialist Agent watsonx Orchestrate",
+      "(HRMS·역할·근속)",
+      "(성과 평가)",
+      "(Compensation·시장 benchmark)",
+      "(승진 정책·부서별)",
+      "매니저별 criteria 자동 생성 + eligible list",
+      "매니저 10,000명"
+    ]
+  },
+  {
     "slug": "jpmorgan-llm-suite-employee-productivity",
     "title": "JPMorgan Chase — LLM Suite 직원 생산성 플랫폼 (140,000+ 직원)",
     "primary_category": "Employee Experience & HR Ops",
@@ -1725,6 +1953,86 @@
     "process_before": "직원이 개별적으로 외부 AI 도구 또는 전통적 검색·작성 도구를 사용. 성과 리뷰는 관리자가 수동으로 직접 작성. /",
     "process_steps": [
       "md]]"
+    ]
+  },
+  {
+    "slug": "legion-wfm-hourly-workforce",
+    "title": "Legion Technologies — AI-native WFM (시급직 스케줄링·수요예측·Agentic 자동화)",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "Time, Attendance & Absence",
+    "company": "_다수 (Dollar General, Cinemark, Five Below 등 시급직 다수 산업)_",
+    "industry": [
+      "retail",
+      "hospitality",
+      "restaurants"
+    ],
+    "region": [
+      "na"
+    ],
+    "employee_class": [
+      "전임직",
+      "계약직"
+    ],
+    "vendor": [
+      "Legion Technologies"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "predictive",
+      "generative",
+      "decision-optimization"
+    ],
+    "ai_tech_subtype": [
+      "prediction",
+      "optimization",
+      "summarization-qa"
+    ],
+    "confidence": 0.55,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-08-12",
+    "last_confirmed": "2026-01-15",
+    "output": "AI 기반 직원 스케줄 (수요예측 → labor demand → 매장별 shift 자동 생성) + 직원 모바일 self-service (shift 교체·휴가·기프트 swap) + 매니저 dashboard (잔업·생산성·결근 예측) + 결근/지각 alert",
+    "tags": [
+      "wfm",
+      "workforce-management",
+      "scheduling",
+      "demand-forecasting",
+      "hourly-workers",
+      "retail",
+      "hospitality",
+      "legion",
+      "agentic-ai"
+    ],
+    "sources": [
+      "sources/legion-forrester-tei-2021-09.md",
+      "sources/legion-techcrunch-2024-05.md",
+      "sources/legion-2024-svb-financing.md"
+    ],
+    "summary": "Legion Technologies (2016년 설립, Bay Area)는 <strong>AI-native WFM (workforce management)</strong> 벤더 — 시급직 (retail·hospitality·restaurant·healthcare) 스케줄링·수요예측·노동 컴플라이언스 자동화. <strong>Forrester TEI 1,345% ROI / $13.35M NPV</strong> (2021-09 study, 9,000명·500개 매장 사례). 2022~2025 <strong>AI Breakthrough Awards \"AI-based WFM Solution of the Year\" 4년 연속</strong>. 2026년 1월 <strong>Agentic AI 90+ features</strong> 출시 발표 (벤더). 고객사: Dollar General·Cinemark·Five Below 등.\n> ⚠️ <strong>Funding 정정 필수</strong>: 일부 자료(PwC 컨설팅 문서 포함)에서 \"$195M Series C in 2024\"로 기술되나, 실제로는 <strong>누적 funding 합계</strong>. 2024년 라운드는 (a) <strong>$50M growth round (Riverwood Capital, 2024-05)</strong> + (b) <strong>$50M debt financing (SVB, 2024-12)</strong>. Series C는 2021년 5월 $50M이 별건. 컨설팅 deck 인용 시 정정.\n>\n> ⚠️ <strong>Mercy Health $30M misattribution</strong>: \"Mercy Health 연 $30M travel nurse 절감\" 사례는 <strong>Works/Trusted Health</strong>의 결과이지 Legion 아님. PwC 자료에 잘못 인용 — wiki 등재 거부.",
+    "headline": "Legion Technologies (2016년 설립, Bay Area)는 AI-native WFM (workforce management) 벤더 — 시급직 (retail·hospitality·restaurant·healthcare) 스케줄링·수요예측·노동 컴플라이언스 자동화. Forrester TEI 1,345% ROI / $13.35M NPV (2021-09 study, 9,000명·500개 매장 사례). 2022~2025 AI Breakthrough Awards \"AI-based WFM Solution of the Year\" 4년 연속.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 시급직 매니저가 매주 spreadsheet로 직원 shift 작성 — 수요 예측 부재, 노동 시간 over/under, 결근 1회당 대체 인력 찾기 30~60분 소요</li>\n<li><strong>Pain point</strong>:</li>\n<li><strong>매니저 시간 over-burden</strong>: 매장 매니저가 주 8~15시간을 스케줄 작성·조정에 사용 → 매장 운영·고객 서비스 시간 감소</li>\n<li><strong>시급직 turnover 60~150%/년 (US retail 평균)</strong> — schedule 불만이 turnover 1대 사유</li>\n<li><strong>labor cost over/under</strong>: 수요 예측 없으면 trafic 낮은 시간대에도 인력 배치 → 비용 over-spend</li>\n<li><strong>Trigger</strong>: 미국 retail의 hourly worker 부족 + Schedule Fairness 법규 강화 (NYC·SF·Seattle Predictive Scheduling Act) → AI WFM 수요 급증</li>\n</ul>",
+    "impact_summary": "시급직 스케줄링의 <strong>AI 자동화</strong> — 매니저 시간 절감 + 인건비 최적화 + 직원 turnover 감소 + 노동법 컴플라이언스 자동화. 코어 ROI는 Forrester TEI 검증 (단 2021년 study).",
+    "consulting": "<ul>\n<li><strong>시급직 WFM AI 대표 reference</strong>: 한국 retail·F&B·물류·콜센터 시급직 스케줄 자동화 컨설팅에서 <strong>AI-native WFM</strong> 패턴 reference</li>\n<li><strong>vs Workday Illuminate / SAP / UKG</strong>: Legion은 <strong>point-solution</strong> (시급직 특화), 종합 HCM이 아님 — best-of-breed 전략 사례</li>\n<li><strong>반면교사</strong>:</li>\n<li>PwC 컨설팅 문서가 (a) Mercy Health misattribution + (b) funding 라운드 오기 — 자료 작성자가 1차 검증 안 함. <strong>컨설팅 deck 작성 전 Forrester TEI 연도·funding 라운드는 1차 출처 (TechCrunch·Crunchbase·BusinessWire) 확인 필수</strong></li>\n</ul>",
+    "system": {
+      "사용자 접점": "매니저 web/desktop, 직원 mobile app, 매니저 mobile alert"
+    },
+    "data": {},
+    "model": {
+      "Foundation model": "_구체 LLM provider·버전 미공개_ (Agentic features는 LLM-기반 — 자사 발표)"
+    },
+    "process_before": "시급직 매니저가 매주 spreadsheet로 직원 shift 작성 — 수요 예측 부재, 노동 시간 over/under, 결근 1회당 대체 인력 찾기 30~60분 소요 / Pain point: / 매니저 시간 over-burden: 매장 매니저가 주 8~15시간을 스케줄 작성·조정에 사용 → 매장 운영·고객 서비스 시간 감소 / 시급직 turnover 60~150%/년 (US retail 평균) — schedule 불만이 turnover 1대 사유 / labor cost over/under: 수요 예측 없으면 trafic 낮은 시간대에도 인력 배치 → 비용 over-spend / Trigger: 미국 retail의 hourly worker 부족 + Schedule Fairness 법규 강화 (NYC·SF·Se",
+    "process_steps": [
+      "(POS·매출 데이터)",
+      "AI 수요 예측 95% accuracy ✅ Forrester 2021",
+      "(외부: 날씨·이벤트)",
+      "(직원 마스터·skill·preferences)",
+      "스케줄 최적화 엔진",
+      "(노동법 제약·NYC Fair Workweek 등)",
+      "매니저 승인",
+      "직원 Mobile App"
     ]
   },
   {
@@ -2723,6 +3031,80 @@
       "(AI 분석)",
       "AI가 3개 과제 종합해 성과역량 예측 점수 산출",
       "HR 담당자가 점수 참고해 면접·합격 결정"
+    ]
+  },
+  {
+    "slug": "nayya-benefits-decision-support",
+    "title": "Nayya — AI 복리후생 의사결정 지원 (MetLife 파트너 + bswift·Mercer 통합)",
+    "primary_category": "Total Rewards",
+    "subcategory": "Benefits & Wellbeing",
+    "company": "_다수 (MetLife 1,000+ employer 채널 + Just Global 등 직접 고객)_",
+    "industry": [
+      "all"
+    ],
+    "region": [
+      "na"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "Nayya"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "predictive",
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "recommendation-ranking",
+      "prediction",
+      "summarization-qa"
+    ],
+    "confidence": 0.5,
+    "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2025-09-15",
+    "last_confirmed": "2026-01-10",
+    "output": "직원 개인 상황·청구이력·소득·가족 구성 기반 의료/치과/생명/disability/voluntary plan 개인화 추천 + 예상 본인부담·세제 절감 시뮬레이션 + 청구 시점 자동 reimbursement 추적",
+    "tags": [
+      "benefits-decision-support",
+      "recommendation",
+      "nayya",
+      "metlife",
+      "voluntary-benefits",
+      "us-benefits",
+      "fsa-hsa"
+    ],
+    "sources": [
+      "sources/nayya-techcrunch-series-c-2022-03.md",
+      "sources/nayya-metlife-partnership-2023-10.md",
+      "sources/nayya-fiercehealthcare-2022-03.md"
+    ],
+    "summary": "Nayya는 2019년 설립 미국 startup, <strong>AI 기반 복리후생 의사결정 지원 platform</strong>. 직원이 OE(Open Enrollment) 시점에 의료·치과·생명·voluntary plan을 선택할 때 <strong>개인 청구이력·소득·가족 구성을 분석해 plan별 예상 본인부담을 시뮬레이션</strong>, 최적 plan 추천. 2023년 10월 <strong>MetLife 전략적 파트너십</strong> — MetLife가 1,000+ employer에 Nayya solution을 exclusive 채널로 제공. 2024년 ADP·Workday Ventures 추가 strategic 라운드. ⚠️ 자사 보고: 평균 직원 $1,200 연간 절감.\n> ⚠️ <strong>Funding 정정 필수</strong>: 일부 자료(PwC 컨설팅 문서 포함)에서 \"$55M Series B (2022)\"로 기술되나, 실제로는 <strong>$55M Series C (2022-03)</strong> + <strong>$37M Series B (2021-06)</strong>. 컨설팅 deck에 인용 시 정정.",
+    "headline": "Nayya는 2019년 설립 미국 startup, AI 기반 복리후생 의사결정 지원 platform. 직원이 OE(Open Enrollment) 시점에 의료·치과·생명·voluntary plan을 선택할 때 개인 청구이력·소득·가족 구성을 분석해 plan별 예상 본인부담을 시뮬레이션, 최적 plan 추천. 2023년 10월 MetLife 전략적 파트너십 — MetLife가 1,000+ employer에 Nayya solution을 exclusive 채널로 제공.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 미국 직원이 OE 시즌에 plan 선택 — 평균 17분 소요, 의료 plan만 5~10개 옵션, voluntary benefit (accident·hospital·critical illness·disability)은 추가 5~15개. 정보 비대칭으로 직원이 \"안전하게\" 비싼 PPO 선택 → 본인부담 over-pay</li>\n<li><strong>Pain point</strong>: 직원당 plan mismatch로 연 평균 $750~$1,500 over-pay (Nayya 자사 조사). voluntary benefit 가입율 낮음 (직원 정보 부족)</li>\n<li><strong>Trigger</strong>: 미국 의료비 인플레이션 + HDHP/HSA 채택 증가 → 직원이 \"올바른 선택\"하기 어려운 환경 → AI 추천 수요</li>\n</ul>",
+    "impact_summary": "복리후생 plan 선택을 <strong>추천 시스템화</strong> — 직원 stress 감소·본인부담 최적화·voluntary benefit 가입율 증가 효과 주장. ⚠️ 모든 metric은 Nayya 자사 또는 고객 자사 보고.",
+    "consulting": "<ul>\n<li><strong>복리후생 decision support 대표 reference</strong>: Nayya는 admin (Businessolver Sofia businessolver-sofia-agentic-benefits)이 아닌 <strong>선택 단계 추천</strong>. 보완 포지션</li>\n<li><strong>MetLife 채널 전략 사례</strong>: 보험사가 vendor를 자사 portal에 embed → 채널 락인. 한국 보험사 (삼성생명·교보·한화) HR 시장 진출 전략 reference</li>\n<li><strong>벤처 투자 시그널</strong>: ADP Ventures + Workday Ventures 동시 strategic 투자 → US HR tech 거인들이 Nayya를 \"보완 자산\"으로 인식</li>\n<li><strong>반면교사</strong>:</li>\n</ul>",
+    "system": {
+      "사용자 접점": "web portal, mobile app, embedded in MetLife portal·bswift enrollment platform"
+    },
+    "data": {},
+    "model": {
+      "Foundation model": "_구체 LLM provider·버전 미공개_"
+    },
+    "process_before": "미국 직원이 OE 시즌에 plan 선택 — 평균 17분 소요, 의료 plan만 5~10개 옵션, voluntary benefit (accident·hospital·critical illness·disability)은 추가 5~15개. 정보 비대칭으로 직원이 \"안전하게\" 비싼 PPO 선택 → 본인부담 over-pay / Pain point: 직원당 plan mismatch로 연 평균 $750~$1,500 over-pay (Nayya 자사 조사). voluntary benefit 가입율 낮음 (직원 정보 부족) / Trigger: 미국 의료비 인플레이션 + HDHP/HSA 채택 증가 → 직원이 \"올바른 선택\"하기 어려운 환경 → AI 추천 수요",
+    "process_steps": [
+      "직원",
+      "Nayya AI Engine",
+      "(HRIS: 인사 데이터)",
+      "(보험사: 청구 이력)",
+      "(외부: 의료 비용 데이터 ⚠️ 벤더 주장 30B+ datapoints)",
+      "(Plan SPDs)",
+      "Plan 추천 + Cost 시뮬레이션",
+      "직원 선택"
     ]
   },
   {
@@ -8605,7 +8987,7 @@
     "headline": "Eightfold AI는 skills-based talent intelligence 플랫폼으로, 채용·내부 이동·스킬 관리를 AI로 통합. 2025년 AI Interviewer (자동 1차 면접)과 Digital Twin (직원의 지식·스킬·경험을 캡처하는 개인화 LLM) 발표. ⚠️ 벤더 주장: AI Interviewer로 time to first interview 90% 감소, 3,000명 이상 후보자를 AI로 면접 처리. Deloitte 전략적 제휴 확인.",
     "problem": "벤더 제품이므로 특정 기업의 도입 배경은 고객별 상이. 일반적 pain point: skills-based hiring 전환 필요성, 기존 keyword 매칭의 한계, time-to-hire 병목.",
     "impact_summary": "Before: _미공개 (기존 first interview 소요 시간)_ → After: ⚠️ 벤더 주장 time to first interview 90% 감소, 3,000+ 후보자 AI 면접 처리 (자사 채용). Gartner Peer Insights 4.6/5 평점(Fact).",
-    "consulting": "<ul>\n<li><strong>vs SAP SuccessFactors Talent Intelligence Hub</strong>: SAP는 Eightfold을 \"대체 대상\"으로 지목 (Delta/Pepsi 사례, bersin-successfactors-leapfrog-2024-10). 이 경쟁 구도가 컨설팅 vendor selection에서 핵심 질문</li>\n<li><strong>Mastercard customer reference (검증)</strong>:</li>\n<li>93% 등록률·42% 월 engagement는 KR 대기업 internal mobility 도입 시 강력한 adoption 데이터 reference</li>\n<li>단 모든 metric ⚠️ 자사 보고 — 외부 인용 시 출처 명시</li>\n</ul>",
+    "consulting": "<ul>\n<li><strong>vs SAP SuccessFactors Talent Intelligence Hub</strong>: SAP는 Eightfold을 \"대체 대상\"으로 지목 (Delta/Pepsi 사례, bersin-successfactors-leapfrog-2024-10). 이 경쟁 구도가 컨설팅 vendor selection에서 핵심 질문</li>\n<li><strong>🚫 Mastercard customer reference 정정 (2026-05-06)</strong>:</li>\n<li><strong>Mastercard의 \"Unlocked\" talent marketplace = Gloat-기반</strong> (Eightfold 아님). 신규 mastercard-unlocked-gloat-talent-marketplace 참조</li>\n<li>이전에 본 페이지에 등재했던 Mastercard 4개 메트릭 (93·42·1M·24h)은 Gloat 사례로 이관됨</li>\n</ul>",
     "system": {},
     "data": {},
     "model": {},
@@ -9140,6 +9522,70 @@
       "AI가 역량·경험 판단 + 추천 사유 제시",
       "담당자가 최종 판단 및 컨택"
     ]
+  },
+  {
+    "slug": "sk-hynix-pwc-one-resume-employee-search",
+    "title": "SK하이닉스 — PwC 제안 One Resume + AI 구성원 검색 (통합 직원 프로필·내부 talent search, 추진 계획)",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "Core HR & Employee Records",
+    "company": "SK하이닉스",
+    "industry": [
+      "semiconductor"
+    ],
+    "region": [
+      "kr"
+    ],
+    "employee_class": [
+      "기술사무직",
+      "전임직"
+    ],
+    "vendor": [
+      "PwC",
+      "SK하이닉스 internal"
+    ],
+    "vendor_type": [
+      "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "information-extraction",
+      "recommendation-ranking"
+    ],
+    "confidence": 0.18,
+    "stage": "announced",
+    "frequency": "monthly",
+    "first_seen": "2026-05-01",
+    "last_confirmed": "2026-05-06",
+    "output": "직원 1인당 단일 통합 프로필 (One Resume — 인사·평가·교육·프로젝트·자격·관심사·skill 통합) + 매니저용 자연어 talent search (예: '머신러닝 + 양산공정 경험 5년+ 한국어/영어 가능' 검색) + 직원 본인의 career path 시각화",
+    "tags": [
+      "sk-hynix",
+      "pwc",
+      "one-resume",
+      "employee-search",
+      "talent-profile",
+      "korean-conglomerate",
+      "korea",
+      "planned-deployment",
+      "semiconductor",
+      "internal-build"
+    ],
+    "sources": [
+      "sources/verified-pwc-doc-2026-05.md"
+    ],
+    "summary": "PwC Korea가 SK하이닉스에 제안한 <strong>One Resume + AI 구성원 검색</strong> 시스템. 직원 1인당 분산된 데이터 (HRMS·평가·교육·프로젝트·자격·관심사·skill)를 <strong>단일 통합 프로필 (One Resume)</strong>로 구성하고, 매니저가 자연어로 사내 talent를 검색·추천 받는 <strong>AI talent search</strong> 기능을 결합. 동일한 PwC Korea 제안인 sk-hynix-pwc-5agent-retention과 같은 SK하이닉스 추진 묶음. <strong>2026-05 시점: 제안·검토 단계, 실제 deployment·production metric 미공개</strong>.",
+    "headline": "PwC Korea가 SK하이닉스에 제안한 One Resume + AI 구성원 검색 시스템. 직원 1인당 분산된 데이터 (HRMS·평가·교육·프로젝트·자격·관심사·skill)를 단일 통합 프로필 (One Resume)로 구성하고, 매니저가 자연어로 사내 talent를 검색·추천 받는 AI talent search 기능을 결합. 동일한 PwC Korea 제안인 과 같은 SK하이닉스 추진 묶음. 2026-05 시점: 제안·검토 단계, 실제 deployment·production metric 미공개.",
+    "problem": "<ul>\n<li><strong>Before</strong>: SK하이닉스 38K 직원의 인사 데이터가 <strong>HRMS·평가·교육·프로젝트·자격증·외부 교육 등 다수 시스템에 분산</strong>. 매니저가 internal mobility·project staffing·후계자 후보 검색 시 여러 시스템 + 인적 네트워크 의존</li>\n<li><strong>Pain point</strong>:</li>\n<li>사내 talent visibility 부족 — 매니저가 \"양산공정 + 머신러닝 경험 5년+ 영어 가능자\"를 사내에서 찾기 어려움</li>\n<li>직원 본인도 자기 career path·내부 기회 잘 모름</li>\n<li>핵심 인재 retention·project staffing·후계자 풀 식별 모두 동일한 root cause (skill·경력 visibility 부재)</li>\n<li><strong>Trigger</strong>: 2024-25 SK 그룹 차원 AI 적극 도입 + PwC Korea 컨설팅 제안 (5-agent retention 시스템과 동일 묶음)</li>\n</ul>",
+    "impact_summary": "직원 데이터를 <strong>분산 → 통합</strong> + 매니저 검색을 <strong>수동 → AI 자연어</strong>로 전환 시도. 단, 추진 계획 단계로 actual production metric 0건.",
+    "consulting": "<ul>\n<li><strong>KR talent profile/search 컨설팅에서의 위치 — \"검증 후보 + 비교 reference\"</strong>:</li>\n<li>만약 SK하이닉스 deployment 성공 시 KR 반도체·이차전지·바이오 그룹사 talent profile 컨설팅의 reference architecture</li>\n<li>PwC Korea 제안 → 글로벌 PwC vs Deloitte Anjin (Zora AI) vs McKinsey/BCG의 KR talent search 컨설팅 시장 경쟁 신호</li>\n<li><strong>글로벌 비교</strong>:</li>\n</ul>",
+    "system": {},
+    "data": {},
+    "model": {},
+    "process_before": "SK하이닉스 38K 직원의 인사 데이터가 HRMS·평가·교육·프로젝트·자격증·외부 교육 등 다수 시스템에 분산. 매니저가 internal mobility·project staffing·후계자 후보 검색 시 여러 시스템 + 인적 네트워크 의존 / Pain point: / 사내 talent visibility 부족 — 매니저가 \"양산공정 + 머신러닝 경험 5년+ 영어 가능자\"를 사내에서 찾기 어려움 / 직원 본인도 자기 career path·내부 기회 잘 모름 / 핵심 인재 retention·project staffing·후계자 풀 식별 모두 동일한 root cause (skill·경력 visibility 부재) / Trigger: 2024-25 SK 그룹 차원 AI 적극 도입 + PwC Korea 컨설팅 제안",
+    "process_steps": []
   },
   {
     "slug": "workday-illuminate-employee-sentiment",

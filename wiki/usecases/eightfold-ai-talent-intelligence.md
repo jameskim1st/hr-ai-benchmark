@@ -78,18 +78,20 @@ Before: _미공개 (기존 first interview 소요 시간)_ → After: ⚠️ 벤
 | Time to first interview 감소 | **90%** | Eightfold 공식 | ⚠️ 벤더 주장 |
 | AI Interviewer 처리 후보자 | **3,000+** (자사 채용) | Eightfold 공식 | ⚠️ 자사 보고 |
 | 독립 검증 | Gartner Peer Insights에 리뷰 존재 (4.6/5) | Gartner | ✅ Fact |
-| **Mastercard 직원 등록률** | **93%** (Eightfold platform 활성 사용) | [Mastercard 2025 AI culture story](https://www.mastercard.com/us/en/news-and-trends/stories/2025/ai-culture-adoption-experimentation.html) | ⚠️ 자사 보고 |
-| **Mastercard 월간 engagement** | **42%** | Mastercard 2025 자사 보고 | ⚠️ 자사 보고 |
-| **Mastercard 인터뷰 스케줄링** | **24h 내 완료** | Mastercard 2025 자사 보고 | ⚠️ 자사 보고 |
-| **Mastercard 누적 project hours** | **1M hours** | Mastercard 2025 자사 보고 | ⚠️ 자사 보고 |
-| 🚫 "$20M 외부 컨트랙터 절감" | **출처 미확인** | PwC 자료 인용했으나 Mastercard 공개 자료에서 확인 불가 | wiki 등재 거부 |
+
+> [!contradiction] 2026-05-06 — Mastercard 메트릭 misattribution 정정
+> - **이전 주장**: Mastercard 93% 등록률 / 42% 월 engagement / 1M project hours / 24h 인터뷰 스케줄링 = Eightfold 사용 사례 (자사 보고)
+> - **신규 검증** (2026-05-06): Mastercard의 internal talent marketplace 프로그램 명칭 "Unlocked"는 **Gloat 도입 사례** (2022~). Mastercard 2025 AI culture story 기사 본문은 벤더명을 명시하지 않음. Gloat 공식 case study (2022·2023)와 Josh Bersin 블로그 (2019)가 "Unlocked = Gloat"로 일관 보고
+> - **결론**: 위 4개 메트릭 (93·42·1M·24h)은 본 페이지에서 삭제하고 신규 [[mastercard-unlocked-gloat-talent-marketplace]] 페이지에서 Gloat-기반으로 기술
+> - **상태**: resolved (삭제·신규 페이지 분리)
 
 ## Consulting Angle
 
 - **vs SAP SuccessFactors Talent Intelligence Hub**: SAP는 Eightfold을 "대체 대상"으로 지목 (Delta/Pepsi 사례, [[bersin-successfactors-leapfrog-2024-10]]). 이 경쟁 구도가 컨설팅 vendor selection에서 핵심 질문
-- **Mastercard customer reference (검증)**:
-  - 93% 등록률·42% 월 engagement는 KR 대기업 internal mobility 도입 시 강력한 adoption 데이터 reference
-  - 단 모든 metric ⚠️ 자사 보고 — 외부 인용 시 출처 명시
+- **🚫 Mastercard customer reference 정정 (2026-05-06)**:
+  - **Mastercard의 "Unlocked" talent marketplace = Gloat-기반** (Eightfold 아님). 신규 [[mastercard-unlocked-gloat-talent-marketplace]] 참조
+  - 이전에 본 페이지에 등재했던 Mastercard 4개 메트릭 (93·42·1M·24h)은 Gloat 사례로 이관됨
+  - 클라이언트 deck 작성 시 Mastercard 사례를 Eightfold reference로 인용 금지
 - **🚫 PwC 자료의 "Digital Twin = Eightfold" 오귀속 경고**:
   - "Digital Twin"은 Eightfold 본체 제품이 아니라 공동창업자 분사 회사 **Viven AI** ([[viven-ai-digital-twin-coworker]], 2025-10 stealth exit, $35M seed)
   - Eightfold 본체는 [Cultivate 2025에서 Agentic AI](https://www.prnewswire.com/news-releases/talent-intelligence-to-talent-advantage-eightfold-ai-revolutionizes-hr-through-agentic-ai-302449233.html) 발표 — Digital Twin과 별개

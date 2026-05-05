@@ -502,3 +502,55 @@ Format: `## [YYYY-MM-DD] <operation> | <one-line description>`
 - Use case: [[moderna-ask-hr-routing]] — confidence 0.65 (최초 0.4 이상 케이스), Mermaid 3개(process/system/org), A·E 섹션 fact-rich, C·D 섹션 대부분 미공개
 - Quality report: 자사 self-report를 분석가가 전달한 성격임을 명시, "⚠️ 자사 보고" 마커 도입, Franklin caveat을 Consulting Angle에 반영
 - 대비 확인: Workday stub case(0.10) vs Moderna case(0.65) — 가드레일이 fact 풍부도에 따라 confidence를 자연스럽게 반영
+
+## [2026-05-06] ingest | PwC Korea HR AI 추가 자료 fact-check + 6 신규 use case + 1 misattribution 정정 | touched: 8 pages | new: 6 usecases | contradictions: 1 resolved
+
+### 컨텍스트
+사용자가 PwC Korea HR AI 컨설팅 문서 추가 분량 (sections 2.10 근태·2.11 복리후생·2.12 급여 + Anaplan/Workday/Mastercard/Businessolver 확장) 제출. fact-check 후 통합.
+
+### 검증 절차
+2개 background research agent 병렬 실행:
+- Agent 1: Legion·Nayya·Businessolver Sofia·Silver 4 벤더 검증
+- Agent 2: Mastercard Unlocked 벤더 귀속 (Gloat vs Eightfold) + IBM HiRo + SK하이닉스 One Resume 검증
+
+### 검증 결과 — 주요 발견
+
+1. **🚨 Mastercard "Unlocked" 벤더 misattribution (CRITICAL)**:
+   - **이전 wiki 상태**: [[eightfold-ai-talent-intelligence]]에 Mastercard 4개 metric (93%·42%·1M·24h)이 Eightfold reference로 등재
+   - **검증 결과**: Unlocked = **Gloat 도입** (2022~ Project Possible 후속). Gloat 공식 case study + Mastercard 2025 newsroom + Josh Bersin 블로그 3출처 교차 확인
+   - **PwC 자료가 정확** (벤더는 Gloat). 기존 wiki의 추론 오류
+   - **조치**: Eightfold 페이지에서 4 metric 행 삭제 + [!contradiction] 콜아웃 추가 + 신규 [[mastercard-unlocked-gloat-talent-marketplace]] 페이지로 분리
+
+2. **PwC 자료 디테일 오류 2건 정정**:
+   - "Mastercard $20M" → 실제 $21M (Gloat 공식, PwC 반올림 오기)
+   - "Mastercard 360,000 hours" → Schneider Electric 메트릭과 혼동, 실제 100K (2022) → 1M (2025)
+   - "Legion Mercy Health $30M" → **Misattribution**, 실제 Works/Trusted Health 사례 (Legion 아님)
+   - "Legion $195M Series C 2024" → 누적 funding 합계, 단일 라운드 아님 (2021 Series C $50M + 2024 Riverwood $50M + 2024 SVB debt $50M)
+   - "Nayya $55M Series B 2022" → 실제 Series C, Series B는 $37M (2021)
+
+3. **신규 use case 6건**:
+   | Use case | Vendor | Confidence | 신규성 |
+   |---|---|---|---|
+   | [[businessolver-sofia-agentic-benefits]] | Businessolver | 0.65 | ✅ 가장 깨끗한 검증 — 모든 metric이 자사 발표와 일치 |
+   | [[nayya-benefits-decision-support]] | Nayya | 0.50 | ⚠️ funding 라운드 정정 caveat 명시 |
+   | [[legion-wfm-hourly-workforce]] | Legion Technologies | 0.55 | ⚠️ Mercy misattribution + funding 누적 caveat 명시 |
+   | [[mastercard-unlocked-gloat-talent-marketplace]] | Gloat | 0.65 | 🚨 기존 Eightfold 등재 정정으로 분리 |
+   | [[ibm-hiro-promotion-agent]] | IBM watsonx Orchestrate | 0.55 | IBM AskHR 생태계 specialist agent |
+   | [[sk-hynix-pwc-one-resume-employee-search]] | PwC + SK internal | 0.18 | 공개 출처 0건, 5-agent retention과 동일 묶음 처리 |
+
+4. **검토 후 wiki 등재 거부**:
+   - Silver (FSA/HSA AI Claim Agent): 회사 규모 매우 작음, Tier 1·2 미디어 0건, FSA/HSA는 미국 IRS 세제 특화 → 한국 적용성 0
+
+### 영향
+- use case: 126 → 132 (신규 6)
+- 카테고리 분포: Total Rewards +2, Onboarding +1, Performance +1, EX +2
+- contradictions: 1 unresolved → 0 (Mastercard Eightfold→Gloat 정정 완료)
+- confidence 분포: 신규 6건 평균 0.51 (production·stub 혼합)
+
+### Quality report
+- ✅ 가장 깨끗: Businessolver Sofia (모든 metric 자사 발표와 일치)
+- ⚠️ caveat 다수: Legion (Mercy misattribution + funding), Nayya (funding 라운드)
+- 🚨 critical 정정: Mastercard Unlocked (Eightfold → Gloat)
+
+### 사용자 액션 권장
+- PwC 컨설팅 자료 수정 의견 전달 권장: Mercy Health $30M misattribution + funding 라운드 오기 + Mastercard "$20M / 360K hours" 디테일
