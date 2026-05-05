@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Accenture (internal build)]
 vendor_type: [internal-build]
+output: "직원별 개인화 learning journey + Stanford·Udacity·Accenture 콘텐츠 큐레이션 + Nanodegree/academy 추천 + 일상 워크플로 내 AI coaching·real-time feedback + skill 인증"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production

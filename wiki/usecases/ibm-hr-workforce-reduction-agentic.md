@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [IBM]
 vendor_type: [internal-build]
+output: "HR 운영 KPI 자율 처리 결과 (AskHR 80+ 태스크, learning ops 자동화, screening·comp·attrition 분석) + 200명 HR transactional role 폐지·재배치 결정 근거. 절감 budget을 엔지니어·영업 신규 채용에 재투자"
 ai_tech_type: [generative, predictive, automation]
 ai_tech_subtype: [summarization-qa, prediction, clustering-classification, rpa]
 stage: production

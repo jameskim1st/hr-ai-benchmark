@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Workday, Sana]
 vendor_type: [hrms, lxp]
+output: "HRD 입력 4일 내 멀티모달 코스 초안 (텍스트·비디오·음성, 30+ 언어) + 학습자 conversational 수강 답변·요약·실습 (Workday HCM 마스터 데이터 통합)"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [text-generation, multimodal, summarization-qa, recommendation-ranking]
 stage: production

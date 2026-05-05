@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Viven AI]
 vendor_type: [point-solution]
+output: "부재 동료의 Digital Twin이 query에 대해 과거 발언·결정·전문성 기반 답변 + 출처 표시 + 동료 복귀 시 처리 case 요약 보고 (stealth 직후, customer deployment 0건)"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, information-extraction]
 stage: announced

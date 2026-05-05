@@ -10,6 +10,7 @@ region: [na, apac, eu]
 employee_class: [all]
 vendor: [Ema]
 vendor_type: [point-solution]
+output: "신입 IT 계정·200+ 시스템 자동 프로비저닝 (ServiceNow·Jira·Okta·Teams·Google Chat) + 개인화 온보딩 콘텐츠 + 20+ HR 유스케이스 1차 응답 + 복잡 케이스 HR 에스컬레이션"
 ai_tech_type: [generative, automation]
 ai_tech_subtype: [summarization-qa, rpa]
 stage: production

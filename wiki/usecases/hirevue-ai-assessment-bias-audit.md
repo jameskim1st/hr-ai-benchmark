@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [HireVue]
 vendor_type: [point-solution]
+output: "후보자 비디오 면접·게임 평가의 competency 점수 (시각 단서 미사용) + 알고리즘 disparate impact 분석 보고서 (인종·성별·교차 ~300건, DCI Consulting 외부 감사) + AI Explainability Statement"
 ai_tech_type: [predictive]
 ai_tech_subtype: [clustering-classification, prediction]
 stage: production

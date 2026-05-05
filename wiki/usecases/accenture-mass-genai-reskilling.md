@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Accenture internal]
 vendor_type: [internal-build]
+output: "직원별 GenAI 학습 이수 기록 + AI literacy 인증 등급 + 사업부 AI 역량 dashboard. CEO Sweet 거버넌스로 미이수자 exit timeline 산정의 input"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

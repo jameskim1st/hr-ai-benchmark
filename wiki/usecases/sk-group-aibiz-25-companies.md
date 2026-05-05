@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [all]
 vendor: [SKT, SK AX]
 vendor_type: [internal-build]
+output: "SK 그룹 25개 멤버사·약 8만 명에게 A.Biz platform 표준 LLM 응답 (HR 정책 Q&A + 자동화 워크플로) + HR 담당자가 no-code agent builder로 자체 구축한 챗봇. 국가핵심기술 보유사는 자체 LLM 'A.X' 격리"
 ai_tech_type: [generative, automation]
 ai_tech_subtype: [summarization-qa, rpa]
 stage: production

@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [ServiceNow]
 vendor_type: [hrms]
+output: "HR 케이스 맥락 자동 요약 + 직원 셀프서비스 KB 답변 (case deflection) + 케이스 라우팅 결정 + AI 작성 resolution note 초안 + Schedule Interview/Job Requisition 에이전트 conversational 처리"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production

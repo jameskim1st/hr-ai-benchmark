@@ -10,6 +10,7 @@ region: [na, global]
 employee_class: [all]
 vendor: [Orgvue]
 vendor_type: [point-solution]
+output: "8,000개 직위를 83개 역할 클러스터로 자동 분류한 결과 + 조직설계·SWP·리스킬링 의사결정용 클러스터 인사이트 (분 단위 산출)"
 ai_tech_type: [predictive]
 ai_tech_subtype: [clustering-classification]
 stage: production

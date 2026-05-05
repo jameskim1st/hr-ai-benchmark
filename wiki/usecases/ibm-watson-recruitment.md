@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [IBM]
 vendor_type: [internal-build]
+output: "후보자별 requisition 대비 success score (gender·race·age·ethnicity 억제) + recruiter용 ranked shortlist + supporting factor 설명 (84% prediction 정확도 벤더 주장)"
 ai_tech_type: [predictive]
 ai_tech_subtype: [clustering-classification, recommendation-ranking, prediction]
 stage: production

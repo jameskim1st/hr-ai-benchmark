@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Gloat]
 vendor_type: [talent-marketplace]
+output: "135,000+ 직원에게 스킬·관심 기반 Open Talent Market 매칭 — gig work, career transitions, mentorship 추천. ⚠️ 벤더 주장: 360K+ 시간 unlocked, $15M+ 절감"
 ai_tech_type: [predictive]
 ai_tech_subtype: [recommendation-ranking]
 stage: production

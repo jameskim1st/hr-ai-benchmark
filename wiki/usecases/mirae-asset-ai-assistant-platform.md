@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [전임직, 기술사무직]
 vendor: [Naver Cloud]
 vendor_type: [foundation-model, hrms]
+output: "직원 자연어 query에 대한 부서별 매뉴얼·노하우 RAG 답변 + 출처 + 부서·직원이 No-code로 자체 생성한 전용 챗봇 인스턴스 (HyperCLOVA X Dash 기반)"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: [Textio]
 vendor_type: [point-solution]
+output: "실시간 단어·구문 편향·가독성 분석 Textio Score + 대안 표현 제안 + 90+ 점수 도달 시 ATS 자동 게시 (T-Mobile 여성 지원 +17%, J&J +90K 여성 지원자)"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production

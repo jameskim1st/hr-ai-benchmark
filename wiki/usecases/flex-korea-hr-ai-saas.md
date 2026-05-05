@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [기술사무직, 전임직, 계약직]
 vendor: []
 vendor_type: [internal-build]
+output: "수기 근무표 OCR 변환 결과 (디지털 스케줄·연장/야간/휴일 가산임금 자동 산출액) + 노동법·세법 질의 AI 에이전트 상담 답변"
 ai_tech_type: [generative, recognition]
 ai_tech_subtype: [summarization-qa, ocr]
 stage: pilot

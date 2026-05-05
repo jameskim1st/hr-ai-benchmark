@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Eightfold AI]
 vendor_type: [talent-marketplace]
+output: "직원/후보 Capabilities Matrix 기반 채용·내부이동·후계 통합 매칭 점수 + AI Interviewer 1차 비동기 면접 결과 + Job Intelligence Engine의 자동 생성 role 정의·job architecture"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production

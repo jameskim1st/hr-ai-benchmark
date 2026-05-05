@@ -10,6 +10,7 @@ region: [na, global]
 employee_class: [기술사무직]
 vendor: [internal build]
 vendor_type: [internal-build]
+output: "knowledge worker용 LLM portal 산출물 — 문서 요약·이메일 초안·Excel/data 분석·번역·코드 (모델 선택형, audit trail) + JPM ML 채용 도구의 후보자 confidence score"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, text-generation, prediction, recommendation-ranking]
 stage: production

@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [기술사무직, 전임직]
 vendor: [현대제철 internal]
 vendor_type: [internal-build]
+output: "사내 매뉴얼·기술·HR·재무·총무 정책 RAG 검색 답변 + 출처 표시 (12K 직원 사내 챗봇)"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, information-extraction]
 stage: production

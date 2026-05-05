@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [전임직, 기술사무직]
 vendor: [솔트룩스]
 vendor_type: [point-solution]
+output: "지원자 채용 상담 24/7 챗봇 응답·일정 안내 + 직원 역량·업무 이력 기반 적재적소 인사 배치 추천 (HR·부서장 검토용) + 2025-Q4부터 사내 규정·법규·문서 작성 GenAI 산출물"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production

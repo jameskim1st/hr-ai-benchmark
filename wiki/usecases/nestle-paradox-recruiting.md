@@ -10,6 +10,7 @@ region: [eu, global]
 employee_class: [all]
 vendor: [Paradox]
 vendor_type: [point-solution]
+output: "Olivia 챗봇의 후보자 conversational 스크리닝 결과 + FAQ 응답 + 채용 매니저 캘린더 동기 인터뷰 자동 예약·리마인더 + offer letter·I9 대화형 처리"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production

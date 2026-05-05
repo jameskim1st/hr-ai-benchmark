@@ -10,6 +10,7 @@ region: [apac]
 employee_class: [all]
 vendor: [Microsoft]
 vendor_type: [foundation-model, internal-build]
+output: "직원 AI 역량 인증·proficiency tag (NVIDIA AI Enterprise·Azure OpenAI 커리큘럼 수료) + 인증된 인력 풀의 클라이언트 RFP staffing 매칭"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

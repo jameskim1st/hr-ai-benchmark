@@ -10,6 +10,7 @@ region: [na]
 employee_class: [전임직, all]
 vendor: [UKG]
 vendor_type: [hrms]
+output: "AI 최적 교대 스케줄 추천 (자격증·노동법·선호도 반영) + Workforce Intelligence Hub 통합 뷰 (스케줄·타임·채용·급여·성과) + Bryte AI 급여 인사이트·복리후생 모델링·셀프서비스 응답"
 ai_tech_type: [decision-optimization, predictive, generative]
 ai_tech_subtype: [optimization, recommendation-ranking, summarization-qa]
 stage: production

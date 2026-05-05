@@ -10,6 +10,7 @@ region: [global]
 employee_class: [기술사무직]
 vendor: [J&J (internal build)]
 vendor_type: [internal-build]
+output: "130K+ 직원별 inferred 스킬 그래프 (HRIS·채용DB·LMS·프로젝트에서 60~70% 자동 추론, 0~5 proficiency) + MySkills 플랫폼의 본인 스킬 갭·추천 학습/이동 + 임원 dashboard region·BU별 capability heatmap"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [information-extraction, clustering-classification, recommendation-ranking]
 stage: production

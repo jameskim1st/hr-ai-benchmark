@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [all]
 vendor: [_규제 — 벤더 X_]
 vendor_type: [_규제_]
+output: "_N/A_ (규제 framework, AI 시스템 자체 없음 — HR 영역 AI 도입 기업이 준수해야 할 컴플라이언스 가이드 문서)"
 ai_tech_type: []
 ai_tech_subtype: []
 stage: production

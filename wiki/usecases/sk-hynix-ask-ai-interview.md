@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [기술사무직, 신입]
 vendor: [SK하이닉스 internal]
 vendor_type: [internal-build]
+output: "직무별 AI 영상면접 질문 출제 + 지원자 영상 답변 평가 + 정량·정성 통합 AI 종합 역량 Report (서류·SKCT·면접·논문·LinkedIn 크롤 통합) — 미래 동료 peer + 면접관용"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [text-generation, clustering-classification]
 stage: production

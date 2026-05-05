@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Culture Amp]
 vendor_type: [point-solution]
+output: "매니저용 구조화 성과 리뷰 가이드 (과거 피드백·동료 리뷰 통합) + engagement 결과 기반 개인화 액션 플랜 + 대화형 코칭 응답 (People Science 1.5B 응답 데이터 기반)"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production

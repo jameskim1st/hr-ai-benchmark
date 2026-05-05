@@ -10,6 +10,7 @@ region: [na, global]
 employee_class: [all]
 vendor: [JPMorgan internal, OpenAI, Anthropic]
 vendor_type: [internal-build, foundation-model]
+output: "직원의 자연어 요청에 대한 LLM 응답 (분석·보고서 초안, 회의 요약, 이메일·코드 생성) + annual performance review 초안. 모두 직원·매니저 검토 후 사용"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

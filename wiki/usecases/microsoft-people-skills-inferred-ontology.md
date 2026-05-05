@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Microsoft]
 vendor_type: [foundation-model, hrms]
+output: "직원별 dynamic 스킬 프로파일 (이메일·문서·미팅 텔레메트리 자동 추론, LinkedIn 16K taxonomy 매핑) + 매니저용 Skills Agent의 internal talent 매칭 + Workforce Insights agent의 workforce planning insight"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [information-extraction, clustering-classification, recommendation-ranking]
 stage: production

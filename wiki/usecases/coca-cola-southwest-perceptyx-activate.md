@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: [Perceptyx]
 vendor_type: [point-solution]
+output: "리더별 개인화 Intelligent Nudge (팀별 설문 결과 + 리더십 원칙 기반) + 액션 플랜 자동 추적 + HR 집계 dashboard (1,191 플랜·1,871 활동)"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production

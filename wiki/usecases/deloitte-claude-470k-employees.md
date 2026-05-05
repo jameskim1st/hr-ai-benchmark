@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Anthropic]
 vendor_type: [foundation-model]
+output: "회계·감사·컨설팅 직무별 문서 합성·코드 생성·클라이언트 자료 분석 결과물 + 회계사·개발자 특화 Claude 응답 (Trustworthy AI framework 검증 통과)"
 ai_tech_type: [generative]
 ai_tech_subtype: [text-generation, summarization-qa]
 stage: production

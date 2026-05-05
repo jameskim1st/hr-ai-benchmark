@@ -10,6 +10,7 @@ region: [eu, global]
 employee_class: [all]
 vendor: [ServiceNow]
 vendor_type: [hrms, point-solution]
+output: "360K 직원의 HR·재무·구매 요청에 대한 단일 \"My Services\" 포털 응답 (월 110,000건) + AI 에이전트 자동 인테이크·라우팅·해결 + 복잡 케이스 담당자 라우팅"
 ai_tech_type: [generative, predictive, automation]
 ai_tech_subtype: [summarization-qa, clustering-classification, rpa]
 stage: production

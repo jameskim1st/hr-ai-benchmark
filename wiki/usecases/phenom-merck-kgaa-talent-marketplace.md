@@ -10,6 +10,7 @@ region: [eu]
 employee_class: [all]
 vendor: [Phenom]
 vendor_type: [talent-marketplace]
+output: "직원별 inferred skills 매칭 추천 — 내부 jobs·gigs·learning (29K+ 콘텐츠)·mentor (1K+) + candidate 자동 통지 + 200,000+ 스킬 ontology"
 ai_tech_type: [predictive, generative]
 ai_tech_subtype: [recommendation-ranking, information-extraction]
 stage: production

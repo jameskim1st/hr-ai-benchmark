@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [기술사무직, 전임직]
 vendor: [멀티캠퍼스]
 vendor_type: [internal-build]
+output: "직원 부서·직급·직무·관심 키워드·수강 이력 기반 맞춤형 사내 교육 콘텐츠 추천 목록 (삼성U 멀티캠퍼스 모바일·웹)"
 ai_tech_type: [predictive]
 ai_tech_subtype: [recommendation-ranking]
 stage: production

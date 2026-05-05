@@ -10,6 +10,7 @@ region: [global, na]
 employee_class: [all]
 vendor: [Enboarder]
 vendor_type: [point-solution]
+output: "입사 확정 이벤트 기반 자동화 온보딩 여정 — 신규 입사자에게 단계별 콘텐츠 (기대치·리소스·관계·커뮤니케이션) + 채용 관리자에게 개인화 액션 nudge·체크인 + HR dashboard 완료율·Time-to-productivity"
 ai_tech_type: [generative, automation]
 ai_tech_subtype: [summarization-qa, rpa]
 stage: production

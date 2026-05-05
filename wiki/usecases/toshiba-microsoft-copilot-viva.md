@@ -10,6 +10,7 @@ region: [apac]
 employee_class: [기술사무직]
 vendor: [Microsoft]
 vendor_type: [hrms]
+output: "회의 트랜스크립트 요약 + 이메일·회의 따라잡기 응답 + PPT 초안 + 개인 활동 패턴 기반 Copilot 사용 자동 추천 (Viva Insights 분석) — 1인당 월 5.6시간 절감"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, text-generation, recommendation-ranking]
 stage: production

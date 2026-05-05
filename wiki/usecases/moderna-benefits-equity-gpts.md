@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: [OpenAI]
 vendor_type: [foundation-model]
+output: "직원 혜택·equity 질문에 대한 자연어 답변 (Benefits Assistant GPT — 의료/401k 가이드, Equity Comp GPT — vesting·RSU·ESPP 용어 설명)"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

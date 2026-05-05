@@ -10,6 +10,7 @@ region: [eu]
 employee_class: [all]
 vendor: [Qualtrics]
 vendor_type: [point-solution]
+output: "engagement 설문의 sentiment·테마 분석 + 매니저별 personalized insight + dashboard에 팀 specific feedback·action recommendation + at-risk 직원 retention 예측 + xFlow 자동 alert"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification, prediction, recommendation-ranking]
 stage: production

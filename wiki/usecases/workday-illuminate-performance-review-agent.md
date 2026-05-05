@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Workday]
 vendor_type: [hrms]
+output: "매니저용 직원별 성과 리뷰 first draft (Workday HCM + 타 시스템 데이터 자동 통합) — 매니저 검토·수정 후 제출"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, text-generation]
 stage: announced

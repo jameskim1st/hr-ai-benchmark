@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [기술사무직, 전임직]
 vendor: [현대모비스 internal]
 vendor_type: [internal-build]
+output: "사내 1,000만 건 매뉴얼·도면·기술문서 RAG 검색 답변 + 출처 표시 (R&D·IT·품질·영업·생산 영역, HR Q&A는 2025+ 확장 예정)"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, information-extraction]
 stage: production

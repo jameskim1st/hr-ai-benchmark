@@ -172,6 +172,7 @@ def process_uc(fp):
         'frequency': fm.get('frequency', ''),
         'first_seen': str(fm.get('first_seen', '')),
         'last_confirmed': str(fm.get('last_confirmed', '')),
+        'output': fm.get('output', ''),
         'tags': fm.get('tags', []),
     }
     for f in ['industry','region','employee_class','vendor','vendor_type','ai_tech_type','ai_tech_subtype','tags']:

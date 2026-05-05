@@ -10,6 +10,7 @@ region: [eu, global]
 employee_class: [all]
 vendor: [Siemens (internal build), ServiceNow]
 vendor_type: [internal-build]
+output: "My Learning World 학습자별 적응형 학습 경로 추천 (100,000+ 학습 기회·41 capability) + AI 채용·이동 포탈의 후보자-역할 매칭 점수"
 ai_tech_type: [predictive]
 ai_tech_subtype: [recommendation-ranking]
 stage: production

@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [기술사무직, 전임직]
 vendor: []
 vendor_type: [point-solution]
+output: "주관식 평가 코멘트 자동 요약·정제 + AI 피드백 텍스트 + 원온원 미팅 요약 + 서술형 리뷰 초안 + 직원별 AI 성장 리포트 (한국 중견기업용 SaaS)"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, text-generation]
 stage: production

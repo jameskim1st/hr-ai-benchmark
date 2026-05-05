@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [all]
 vendor: [삼성SDS, 네이버클라우드]
 vendor_type: [internal-build, foundation-model]
+output: "공무원용 보고서·민원 답변·보도자료 초안 (망분리 환경 내 삼성SDS·네이버클라우드 LLM + 법령·지침·민원 RAG) — 공무원 최종 검토·결재"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, text-generation]
 stage: pilot

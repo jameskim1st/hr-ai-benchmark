@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [전임직, 기술사무직]
 vendor: [_미공개_]
 vendor_type: [point-solution]
+output: "직원 query에 대한 보험 약관·특약·사내 규정 RAG 답변 + 출처 표시 (2026 추진)"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: announced

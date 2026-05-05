@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [IBM]
 vendor_type: [hrms, foundation-model]
+output: "JD 초안 자동 생성 + 후보자 매칭 리스트 (사내 + ThisWay 8,500+ community) + hiring manager 자격자 alert + 자동 intro 메시지·면접 일정 + Knockri 면접 design·feedback"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking, clustering-classification]
 stage: production

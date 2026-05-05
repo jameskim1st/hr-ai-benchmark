@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [기술사무직]
 vendor: [마이다스아이티]
 vendor_type: [point-solution]
+output: "지원자별 3개 과제(성향파악·전략게임·영상면접) 종합 성과역량 예측 점수 + HR 담당자 면접·합격 결정용 참고 리포트. KAIST가 Scientific Reports에 검증한 채용 1년 후 업무 성과 예측"
 ai_tech_type: [predictive, recognition, generative]
 ai_tech_subtype: [prediction, speech-recognition, multimodal]
 stage: production

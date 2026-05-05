@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [IBM]
 vendor_type: [internal-build]
+output: "270K 직원 monthly flight risk 점수 (34+ 변수 6개월 예측, ⚠️ 자사 보고 95% 정확도) + 매니저용 권장 action menu (raise/promotion/training/mentoring) + per-employee salary 인상 추천액 + supporting factors. 매니저 권고 무시 시 attrition 2배"
 ai_tech_type: [predictive]
 ai_tech_subtype: [prediction, recommendation-ranking]
 stage: production

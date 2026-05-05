@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [전임직, 기술사무직]
 vendor: [GenON]
 vendor_type: [point-solution]
+output: "직원 query에 대한 보안 민감도 자동 분류 + 사내 LLM 응답 (보안 영역) 또는 상용 LLM 응답 (전문지식) 통합 답변 — 문서 초안·규정 검토·단순 행정"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: announced

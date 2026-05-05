@@ -10,6 +10,7 @@ region: [apac, global]
 employee_class: [all]
 vendor: []
 vendor_type: [internal-build, point-solution]
+output: "직원 정책·복리후생 문의에 대한 사업부·국가·역할별 개인화 답변 + IT 서비스 티켓 자동 생성·휴가 요청 자동 처리 + 복잡 케이스 HR 에스컬레이션"
 ai_tech_type: [generative, automation]
 ai_tech_subtype: [summarization-qa, rpa]
 stage: production

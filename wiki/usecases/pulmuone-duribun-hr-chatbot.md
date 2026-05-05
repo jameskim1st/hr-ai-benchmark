@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [전임직, 기술사무직]
 vendor: [_미공개_]
 vendor_type: [point-solution]
+output: "7K 직원 HR 6개 영역 (근태·복리후생·학습·평가·승진·보상) 자연어 질문에 대한 24/365 RAG 답변 (출처 표시, hallucination 최소화) + 복잡 case는 HR 팀 escalation"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

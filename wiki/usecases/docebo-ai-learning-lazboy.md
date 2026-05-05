@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: [Docebo]
 vendor_type: [lxp]
+output: "AI 자동 생성 신규 과정 outline·퀴즈·요약 + 직무·이력 기반 adaptive 다음 과정 추천 + AI virtual coach 대화 답변 + L&D dashboard KPI (active learner·completion)"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [text-generation, summarization-qa, recommendation-ranking]
 stage: production

@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [IBM]
 vendor_type: [internal-build]
+output: "직원 자연어 요청에 대한 80+ HR 태스크 처리 — 정책 Q&A 답변 + 매니저용 salary budget 배분 제안 + recognition 메시지 자동 생성·포인트 부여 + expense 자동 처리"
 ai_tech_type: [generative, predictive, automation]
 ai_tech_subtype: [summarization-qa, text-generation, clustering-classification, rpa]
 stage: production

@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [all]
 vendor: []
 vendor_type: [ats, point-solution]
+output: "AI 후보자 매칭 추천 리스트 + 인재풀 분류·관리 + 면접 일정 자동 조율 + 채용 데이터 분석 dashboard (한국 중소기업 ATS, 채용 소요 65% 단축)"
 ai_tech_type: [predictive, automation]
 ai_tech_subtype: [recommendation-ranking, clustering-classification]
 stage: production

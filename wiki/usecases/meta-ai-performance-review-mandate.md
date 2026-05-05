@@ -10,6 +10,7 @@ region: [global]
 employee_class: [기술사무직]
 vendor: [Meta (internal build), OpenAI, Meta AI]
 vendor_type: [internal-build]
+output: "매니저용 직원별 PSC 평가 rubric 점수 (AI-driven impact 항목) + 부서별 AI adoption 분포 리포트 + Metamate가 작성한 코드 commit (agent-assisted 비율 라벨)"
 ai_tech_type: [generative]
 ai_tech_subtype: [text-generation, summarization-qa]
 stage: production

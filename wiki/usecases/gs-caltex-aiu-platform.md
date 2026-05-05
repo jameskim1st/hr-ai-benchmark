@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [전임직, 기술사무직]
 vendor: [GS칼텍스 internal]
 vendor_type: [internal-build]
+output: "사내 정유·안전 매뉴얼·정책 자연어 질의에 대한 GenAI 응답 (사내 RAG 기반 실무 정보)"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

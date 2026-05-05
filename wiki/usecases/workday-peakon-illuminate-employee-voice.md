@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Workday]
 vendor_type: [hrms, point-solution]
+output: "60+ 언어 pulse 서베이의 자동 테마·sentiment·driver 추출 + 부서별 매니저 dashboard (강점·기회·이슈 highlight) + 이탈/번아웃 risk 선제 alert"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production

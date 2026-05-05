@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [all]
 vendor: [잡코리아, 웍스피어]
 vendor_type: [ats, point-solution]
+output: "채용 담당자 자연어 의도 입력에 대한 후보자 매칭 추천 리스트 + 추천 사유 (잡코리아 후보자 DB·공고 맥락 기반)"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production

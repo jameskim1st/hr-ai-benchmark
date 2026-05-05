@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: [Walmart, OpenAI]
 vendor_type: [internal-build, foundation-model]
+output: "740K frontline 직원에게 OpenAI Certification 다층 모듈 (basics → prompt engineering) 무료 access + Me@Walmart 디바이스 학습 콘텐츠 + 50,000명 reskilling 대상자에게 드론 기술자·로봇 수퍼바이저 전환용 인증서"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

@@ -10,6 +10,7 @@ region: [na, global]
 employee_class: [all]
 vendor: [Holistic AI]
 vendor_type: [point-solution]
+output: "전사 AI 시스템 인벤토리 (500~600개 등록) + 시스템별 리스크 분류·완화 전략 레지스트리 + NYC LL144 바이어스 감사 리포트 (고객사 컴플라이언스 대시보드)"
 ai_tech_type: [predictive]
 ai_tech_subtype: [clustering-classification]
 stage: production

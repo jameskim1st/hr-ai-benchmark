@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [all]
 vendor: [Wanted Lab]
 vendor_type: [ats]
+output: "자연어 쿼리 기반 후보자 검색 결과 (기본 탐색 풀 + 자기소개서·프로젝트 정성 분석 고급 탐색) + 후보별 역량·경험 판단 + 추천 사유 reasoning"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, information-extraction, recommendation-ranking]
 stage: pilot                     # 2025-10 런칭, customer 확인 0건

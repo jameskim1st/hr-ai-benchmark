@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Gloat]
 vendor_type: [talent-marketplace]
+output: "직원 스킬·purpose 프로필 기반 사내 프로젝트·역할·gig 추천 매칭 (매니저 승인 불필요) + 미매칭 직원 대상 develop할 스킬 갭 추천"
 ai_tech_type: [predictive]
 ai_tech_subtype: [recommendation-ranking]
 stage: production

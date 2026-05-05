@@ -229,47 +229,131 @@ def build_cover_sheet(wb, ucs, cos):
 
 
 # ── Sheet 2: Use Cases ──
-USECASE_COLS = [
+# 사용자 spec: HR 모듈·사례명·기업명·개요·Pain Point·Process Flow·System·Input·Output·Model·Impact + AI 기술 분류 18 체크박스
+# AI 기술 분류 column 순서 (parent_id, kr_label) — 5 대분류
+TECH_PARENT_COLS = [
+    ("generative", "생성형"),
+    ("predictive", "판별·예측"),
+    ("recognition", "인식"),
+    ("decision-optimization", "의사결정·최적화"),
+    ("automation", "자동화"),
+]
+# 13 소분류
+TECH_SUB_COLS = [
+    ("text-generation", "텍스트 생성"),
+    ("summarization-qa", "요약·재작성·QA"),
+    ("multimodal", "멀티모달"),
+    ("information-extraction", "정보 추출"),
+    ("prediction", "예측"),
+    ("clustering-classification", "군집·분류"),
+    ("recommendation-ranking", "추천·랭킹"),
+    ("ocr", "OCR"),
+    ("speech-recognition", "음성 인식"),
+    ("optimization", "최적화"),
+    ("rpa", "RPA"),
+]
+
+# 메인 본문 column (필수, 사용자 spec 순서)
+USECASE_MAIN_COLS = [
     ("번호", 5),
-    ("slug", 35),
-    ("사례명", 50),
-    ("기업", 25),
-    ("산업", 20),
-    ("지역", 14),
-    ("HR 대분류", 18),
-    ("HR 중분류", 25),
-    ("AI 기술 (대)", 22),
-    ("AI 기술 (소)", 28),
-    ("벤더", 25),
-    ("벤더 유형", 18),
-    ("단계", 12),
+    ("HR 모듈", 22),                  # primary_category KR
+    ("사례명", 50),                    # title
+    ("기업명", 25),                    # company
+    ("개요", 55),                      # headline
+    ("Pain Point", 55),                # problem
+    ("Process Flow", 75),              # before → after combined
+    ("System", 38),                    # system dict
+    ("Input", 38),                     # data dict (input data sources)
+    ("Output", 45),                    # NEW frontmatter field
+    ("Model", 38),                     # model dict
+    ("📊 Impact (Before → After)", 60), # impact_summary + before/after
+]
+
+# 보조 column (사용자 추천 + recommended)
+USECASE_AUX_COLS = [
+    ("HR 중분류", 22),
+    ("벤더", 22),
+    ("벤더 유형", 16),
+    ("산업", 18),
+    ("지역", 12),
+    ("단계", 10),
     ("빈도", 8),
     ("신뢰도", 8),
-    ("한 줄 요약", 50),
-    ("Pain Point", 60),
-    ("기대효과 요약", 60),
-    ("Process Before", 50),
-    ("Process After", 80),
-    ("System", 40),
-    ("Data", 40),
-    ("Model", 40),
-    ("Consulting Angle", 80),
-    ("태그", 30),
+    ("Consulting Angle", 70),
+    ("태그", 28),
+    ("slug", 32),
 ]
+
+
+def has_subtype(u, sub_id):
+    """Use case가 특정 subtype을 사용하는지."""
+    return sub_id in (u.get("ai_tech_subtype") or [])
+
+
+def has_type(u, type_id):
+    """Use case가 특정 type을 사용하는지."""
+    return type_id in (u.get("ai_tech_type") or [])
+
+
+def build_process_flow(u):
+    """Process Before → After를 단일 셀로 결합."""
+    before = strip_html(u.get("process_before"), 200)
+    after_steps = u.get("process_steps") or []
+    parts = []
+    if before:
+        parts.append(f"[Before]\n{before}")
+    if after_steps:
+        after_text = "\n".join(f"{i+1}. {s}" for i, s in enumerate(after_steps))
+        parts.append(f"[After]\n{after_text}")
+    return "\n\n".join(parts) if parts else ""
+
+
+def build_impact(u):
+    """Impact 요약 — impact_summary 위주."""
+    return strip_html(u.get("impact_summary"), 400)
 
 
 def build_usecases_sheet(wb, ucs):
     ws = wb.create_sheet("Use Cases")
 
+    # 전체 column 구성: MAIN + AI 기술 18개 + AUX
+    all_cols = list(USECASE_MAIN_COLS)
+    # AI 기술 5 대분류 (체크박스, 폭 11)
+    for type_id, kr in TECH_PARENT_COLS:
+        all_cols.append((kr, 11))
+    # AI 기술 13 소분류 (체크박스, 폭 12)
+    for sub_id, kr in TECH_SUB_COLS:
+        all_cols.append((f"  · {kr}", 12))
+    # 보조 column
+    all_cols.extend(USECASE_AUX_COLS)
+
+    # AI tech 부분 시작·끝 컬럼 인덱스 (조건부 서식·헤더 색상용)
+    n_main = len(USECASE_MAIN_COLS)
+    n_parent = len(TECH_PARENT_COLS)
+    n_sub = len(TECH_SUB_COLS)
+    parent_start = n_main + 1
+    parent_end = n_main + n_parent
+    sub_start = parent_end + 1
+    sub_end = parent_end + n_sub
+    aux_start = sub_end + 1
+
     # Header
-    headers = [c[0] for c in USECASE_COLS]
+    headers = [c[0] for c in all_cols]
+    tech_parent_fill = PatternFill("solid", fgColor="6B5B95")  # 보라
+    tech_sub_fill = PatternFill("solid", fgColor="9B8AB8")     # 옅은 보라
     for i, h in enumerate(headers, start=1):
         cell = ws.cell(row=1, column=i, value=h)
-        cell.fill = HEADER_FILL
+        # AI 기술 영역은 별도 색
+        if parent_start <= i <= parent_end:
+            cell.fill = tech_parent_fill
+        elif sub_start <= i <= sub_end:
+            cell.fill = tech_sub_fill
+        else:
+            cell.fill = HEADER_FILL
         cell.font = HEADER_FONT
         cell.alignment = HEADER_ALIGN
         cell.border = BORDER_THIN
-    ws.row_dimensions[1].height = 30
+    ws.row_dimensions[1].height = 36
 
     # 정렬: confidence 내림차순
     ucs_sorted = sorted(ucs, key=lambda u: -u.get("confidence", 0))
@@ -277,53 +361,79 @@ def build_usecases_sheet(wb, ucs):
     # Body
     for row_idx, u in enumerate(ucs_sorted, start=2):
         region_kr = ", ".join(KR_REGION.get(r, r) for r in (u.get("region") or []))
-        values = [
+        company = u.get("company", "") if isinstance(u.get("company"), str) else ""
+        cat_kr = KR_CATEGORY.get(u.get("primary_category", ""), u.get("primary_category", ""))
+
+        # MAIN columns (사용자 spec 순서)
+        main_values = [
             row_idx - 1,
-            u.get("slug", ""),
+            cat_kr,
             u.get("title", ""),
-            u.get("company", "") if isinstance(u.get("company"), str) else "",
-            join_kr(u.get("industry")),
-            region_kr,
-            KR_CATEGORY.get(u.get("primary_category", ""), u.get("primary_category", "")),
+            company,
+            strip_html(u.get("headline"), 250),
+            strip_html(u.get("problem"), 350),
+            build_process_flow(u),
+            join_dict_kr(u.get("system")),
+            join_dict_kr(u.get("data")),                 # Input = data dict
+            strip_html(u.get("output"), 300),            # NEW Output
+            join_dict_kr(u.get("model")),
+            build_impact(u),
+        ]
+        # AI 기술 5 대분류 체크박스
+        tech_parent_values = [
+            "✓" if has_type(u, type_id) else "" for type_id, _ in TECH_PARENT_COLS
+        ]
+        # AI 기술 13 소분류 체크박스
+        tech_sub_values = [
+            "✓" if has_subtype(u, sub_id) else "" for sub_id, _ in TECH_SUB_COLS
+        ]
+        # AUX columns
+        aux_values = [
             u.get("subcategory", ""),
-            join_kr(u.get("ai_tech_type"), TECH_LABEL),
-            join_kr(u.get("ai_tech_subtype"), SUB_LABEL),
             join_kr(u.get("vendor")),
             join_kr(u.get("vendor_type")),
+            join_kr(u.get("industry")),
+            region_kr,
             KR_STAGE.get(u.get("stage", ""), u.get("stage", "")),
             KR_FREQUENCY.get(u.get("frequency", ""), u.get("frequency", "")),
             float(u.get("confidence", 0)),
-            strip_html(u.get("headline"), 200),
-            strip_html(u.get("problem"), 300),
-            strip_html(u.get("impact_summary"), 300),
-            strip_html(u.get("process_before"), 300),
-            join_steps(u.get("process_steps")),
-            join_dict_kr(u.get("system")),
-            join_dict_kr(u.get("data")),
-            join_dict_kr(u.get("model")),
             strip_html(u.get("consulting"), 500),
             join_kr(u.get("tags")),
+            u.get("slug", ""),
         ]
-        for col_idx, v in enumerate(values, start=1):
+
+        all_values = main_values + tech_parent_values + tech_sub_values + aux_values
+
+        for col_idx, v in enumerate(all_values, start=1):
             cell = ws.cell(row=row_idx, column=col_idx, value=v)
             cell.font = BODY_FONT
-            cell.alignment = BODY_ALIGN
+            # AI 기술 체크박스 영역은 가운데 정렬
+            if parent_start <= col_idx <= sub_end:
+                cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=False)
+                if v == "✓":
+                    if col_idx <= parent_end:
+                        cell.fill = PatternFill("solid", fgColor="E0DAEF")  # 옅은 보라 강조
+                    else:
+                        cell.fill = PatternFill("solid", fgColor="EDE8F4")
+            else:
+                cell.alignment = BODY_ALIGN
             cell.border = BORDER_THIN
 
     # Column widths
-    for i, (_, w) in enumerate(USECASE_COLS, start=1):
+    for i, (_, w) in enumerate(all_cols, start=1):
         ws.column_dimensions[get_column_letter(i)].width = w
 
-    # Freeze 1행 + B열까지 (번호+slug 좌측 고정)
-    ws.freeze_panes = "C2"
+    # Freeze: 1행 + 사례명까지 좌측 고정 (번호·HR모듈·사례명까지 = D2)
+    ws.freeze_panes = "D2"
 
     # AutoFilter
-    last_col = get_column_letter(len(USECASE_COLS))
+    last_col = get_column_letter(len(all_cols))
     last_row = len(ucs_sorted) + 1
     ws.auto_filter.ref = f"A1:{last_col}{last_row}"
 
-    # Conditional formatting: 신뢰도 (15번째 컬럼 = O열)
-    conf_col = get_column_letter(15)
+    # Conditional formatting: 신뢰도 (AUX의 8번째 = aux_start + 7)
+    conf_col_idx = aux_start + 7
+    conf_col = get_column_letter(conf_col_idx)
     conf_range = f"{conf_col}2:{conf_col}{last_row}"
     ws.conditional_formatting.add(
         conf_range,
@@ -341,8 +451,9 @@ def build_usecases_sheet(wb, ucs):
                    fill=PatternFill("solid", fgColor="FFC7CE")),
     )
 
-    # 지역 column에 KR 포함 시 옅은 노란 배경 (6번째 컬럼 = F열)
-    region_col = get_column_letter(6)
+    # 지역 column에 KR 포함 시 옅은 노란 배경 (AUX의 5번째 = aux_start + 4)
+    region_col_idx = aux_start + 4
+    region_col = get_column_letter(region_col_idx)
     region_range = f"{region_col}2:{region_col}{last_row}"
     ws.conditional_formatting.add(
         region_range,
@@ -350,9 +461,9 @@ def build_usecases_sheet(wb, ucs):
                     fill=PatternFill("solid", fgColor="FFF8DC")),
     )
 
-    # Row height — 내용 가변 (Excel auto-fit 한계로 고정 60pt)
+    # Row height — 신규 column 多 → 90pt
     for r in range(2, last_row + 1):
-        ws.row_dimensions[r].height = 80
+        ws.row_dimensions[r].height = 90
 
 
 # ── Sheet 3: AI 기술 분포 (long-format) ──

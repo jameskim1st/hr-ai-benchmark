@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Cisco, _다수_]
 vendor_type: [internal-build]
+output: "ICT 직무·AI 스킬 evolution 정량 보고서 (78% AI 포함, top 10 fastest-growing 중 7개 AI) + AI Skills Glossary 표준 + AI Workforce Playbook + 200+ curated learning recommendation 리스트 (PDF 발간물)"
 ai_tech_type: [predictive]
 ai_tech_subtype: [clustering-classification]
 stage: production

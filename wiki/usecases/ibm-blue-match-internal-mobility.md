@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [IBM]
 vendor_type: [internal-build]
+output: "opt-in 직원 ~42K에게 personalized 내부 직무 추천 리스트 (스킬·경력·성과·근무지·블로그/코드/forum footprint 기반) + peer 이동 패턴 학습으로 신규 posting 시 매칭 직원 알림"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [information-extraction, recommendation-ranking, clustering-classification]
 stage: production

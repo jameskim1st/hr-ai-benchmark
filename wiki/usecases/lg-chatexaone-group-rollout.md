@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [기술사무직, 전임직]
 vendor: [LG AI Research]
 vendor_type: [foundation-model, internal-build]
+output: "LG 그룹 5만+ 임직원 자연어 query에 대한 사내 RAG 응답 (사내 규정·프로젝트·기술 문서, 출처 표시) + multi-format 이해 (PPTX·PDF·CSV·도표·수식) + SQL 생성 + 22개 언어 코드"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, text-generation, information-extraction]
 stage: production

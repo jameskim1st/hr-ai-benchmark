@@ -10,6 +10,7 @@ region: [na, global]
 employee_class: [all]
 vendor: [OpenAI, Anthropic]
 vendor_type: [foundation-model, internal-build]
+output: "200K+ 직원 자연어 요청에 대한 LLM 답변 (문서 요약·이메일/보고서 초안·아이디어·코드) + 성과 리뷰 초안. 직원 검토·편집 후 사용"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

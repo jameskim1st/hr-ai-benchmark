@@ -10,6 +10,7 @@ region: [na, eu]
 employee_class: [all]
 vendor: [Paychex]
 vendor_type: [hrms]
+output: "타임카드 자동 스코어링·승인 결과 (이상 케이스만 매니저 플래그) + 노동법·휴식·공정근무법 준수 최적 교대표 자동 생성 + PTO 패턴 분석·피크 기간 인력부족 예측 알림"
 ai_tech_type: [predictive]
 ai_tech_subtype: [prediction, clustering-classification]
 stage: announced

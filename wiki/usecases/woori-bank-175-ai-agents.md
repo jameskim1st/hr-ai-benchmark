@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [전임직, 기술사무직]
 vendor: [Samsung SDS]
 vendor_type: [point-solution, internal-build]
+output: "5대 영역 (고객관계·자산·내부통제·고객상담·업무자동화) 29개 업무에서 175개 에이전트별 산출물 — 코어뱅킹·CRM·콜센터·내부통제 시스템 임베드 액션. ⚠️ 자사 보고: 업무처리 속도 30% 향상 기대"
 ai_tech_type: [generative, automation, predictive]
 ai_tech_subtype: [summarization-qa, rpa, clustering-classification, recommendation-ranking]
 stage: announced

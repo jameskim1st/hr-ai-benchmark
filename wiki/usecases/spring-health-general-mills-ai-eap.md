@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: [Spring Health]
 vendor_type: [point-solution]
+output: "직원 wellness assessment 결과 + 최적 치료 경로 추천 (therapy/coaching/자가관리) + 정밀 직원-치료사 매칭 + 증상 추적·재평가 (이용률 1%→26%, 우울증 58% 개선)"
 ai_tech_type: [predictive]
 ai_tech_subtype: [recommendation-ranking, prediction, clustering-classification]
 stage: production

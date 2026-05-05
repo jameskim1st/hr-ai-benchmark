@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: [15Five]
 vendor_type: [point-solution]
+output: "1:1 미팅 자동 전사·요약·액션 아이템 + 매니저 대상 실시간 코칭 팁 + HR 대시보드용 매니저 행동 변화 추적 지표"
 ai_tech_type: [generative, recognition]
 ai_tech_subtype: [summarization-qa, speech-recognition]
 stage: production

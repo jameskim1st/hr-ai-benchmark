@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [IBM]
 vendor_type: [internal-build]
+output: "학습 enrollment 모니터링 alert (저조 코스) + event 홍보 메시지 자동 생성·배포 + virtual class 출석부 자동 캡처 (100% 정확도) + pre-event comms 자동 발송. L&D admin 대상 백오피스 자동화 산출물"
 ai_tech_type: [generative, predictive, automation]
 ai_tech_subtype: [summarization-qa, clustering-classification, rpa]
 stage: production

@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Anaplan]
 vendor_type: [point-solution]
+output: "자연어 query에 대한 narrative 답변 (지역별 이직률·보류 채용 등) + 시나리오별 재무 영향 시뮬레이션 결과 (채용 동결·조직 개편·재배치) + position-level 정밀 인건비 계획 + AI 권고안"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, prediction]
 stage: production

@@ -10,6 +10,7 @@ region: [eu, global]
 employee_class: [all]
 vendor: [Cognigy, OpenAI]
 vendor_type: [point-solution, foundation-model]
+output: "360,000 직원의 HR 셀프서비스 응답 (계좌 정보 업데이트, 회사 정책, 커리어 정보) + 감성 지능 기반 escalation 신호 (복잡·민감 문의 시 HR 담당자). MS Teams 채널, 25개국 다국어"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production

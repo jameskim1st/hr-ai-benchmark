@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: [OpenAI]
 vendor_type: [foundation-model]
+output: "직원 본인의 성과 data·프로젝트·목표 입력에 대한 연말 self-review 초안 요약문 (직원 검토·편집 후 제출)"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

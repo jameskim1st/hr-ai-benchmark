@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: []
 vendor_type: [internal-build, point-solution]
+output: "일별 간호사 교대 스케줄 최적화안 (코어 69%·내부 유연 23%·계약직 8% 인력 소스별 배정) + 관리자 승인용 권고안 + Dragon Copilot AI 임상 문서화 (정확도 30→90%)"
 ai_tech_type: [generative, predictive, recognition, decision-optimization]
 ai_tech_subtype: [summarization-qa, prediction, speech-recognition, optimization]
 stage: production

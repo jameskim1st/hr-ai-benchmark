@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Amazon (internal build)]
 vendor_type: [internal-build]
+output: "HR 부서 자동화 산출물 — 채용 screening·티켓 라우팅·정책 Q&A·분석 리포트 자동 생성 + HR 인력 15% 감축 의사결정 입력 (구체 산출물 형태 미공개)"
 ai_tech_type: [generative, predictive, automation]
 ai_tech_subtype: [summarization-qa, clustering-classification, rpa]
 stage: production

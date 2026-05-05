@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Betterworks]
 vendor_type: [point-solution]
+output: "역할·팀·회사 우선순위 기반 SMART 목표 추천안 + 평가 편향 (recency·halo) 탐지 알림 + 매니저용 일관성 보정된 리뷰 초안"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production

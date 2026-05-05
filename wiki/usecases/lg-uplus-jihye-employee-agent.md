@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [기술사무직]
 vendor: [LG U+ internal]
 vendor_type: [internal-build]
+output: "이메일 자동 번역 + PDF/Word 파일 요약 + 코드 리뷰·오류 사전 탐지 결과 + 사내 코드 분석 (LG U+ 통신사 기술사무직 파일럿)"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, text-generation]
 stage: pilot

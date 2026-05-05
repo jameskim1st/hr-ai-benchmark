@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [all]
 vendor: [신한은행 internal]
 vendor_type: [internal-build]
+output: "14,000+ 직원의 단일 AI ONE 인터페이스 출력 — 40+ 업무비서 task 결과 (AI-STUDIO·AI-OCR·R비서) + Speech-to-AI 음성 응답. ⚠️ 자사 보고: 1인당 일 30분+ 절감, 향후 상담→전산처리 80% 자동화 목표"
 ai_tech_type: [generative, recognition]
 ai_tech_subtype: [summarization-qa, ocr, speech-recognition]
 stage: production

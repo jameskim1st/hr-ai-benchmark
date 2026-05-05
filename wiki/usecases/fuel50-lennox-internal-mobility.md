@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: [Fuel50]
 vendor_type: [talent-marketplace]
+output: "직원 Talent DNA 기반 gig·project·mentorship·lateral move 추천 매칭 + 매니저용 applicant 풀·project talent pool + 직원 career path·mentor 매칭"
 ai_tech_type: [predictive]
 ai_tech_subtype: [recommendation-ranking]
 stage: production

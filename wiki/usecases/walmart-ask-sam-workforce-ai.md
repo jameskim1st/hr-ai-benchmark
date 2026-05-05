@@ -10,6 +10,7 @@ region: [na, global]
 employee_class: [all]
 vendor: [Walmart (internal build)]
 vendor_type: [internal-build]
+output: "매장 associate 음성 query에 대한 음성·텍스트 답변 (가격·재고·통로·정책) + 매장 지도 overlay + WFM 시스템 연동 schedule 조회·교대 요청 액션 + GenAI 정책 step-by-step 가이드. 90만 associate, 주 300만+ query"
 ai_tech_type: [generative, predictive, recognition]
 ai_tech_subtype: [summarization-qa, clustering-classification, speech-recognition]
 stage: production

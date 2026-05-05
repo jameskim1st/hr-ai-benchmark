@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Deloitte]
 vendor_type: [point-solution]
+output: "역할별 AI disruption 영향도 점수 + task automation/증강 가능성 시나리오 + 인력 수급 시뮬레이션 + reskilling 우선순위 로드맵 + 300+ agentic HR 워크플로 라이브러리"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification, prediction]
 stage: production

@@ -10,6 +10,7 @@ region: [eu, global]
 employee_class: [all]
 vendor: [Gloat]
 vendor_type: [talent-marketplace]
+output: "직원별 개인화 추천 — 잡 기회·프로젝트/기그·멘토십·러닝 콘텐츠 (스킬 온톨로지 + 비즈니스 우선순위 결합)"
 ai_tech_type: [predictive, generative]
 ai_tech_subtype: [recommendation-ranking, information-extraction]
 stage: production

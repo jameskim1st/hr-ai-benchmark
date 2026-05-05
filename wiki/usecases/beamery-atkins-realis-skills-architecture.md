@@ -10,6 +10,7 @@ region: [global]
 employee_class: [기술사무직]
 vendor: [Beamery]
 vendor_type: [talent-marketplace]
+output: "Skills Inference 엔진의 role별 핵심 skill 추출 (90% 적합도) + Dynamic Job Architecture (role/family/proficiency) + Workday/SAP 동기화용 skills taxonomy (1,200 JD → 40 역할 통합)"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [information-extraction, clustering-classification, recommendation-ranking]
 stage: production

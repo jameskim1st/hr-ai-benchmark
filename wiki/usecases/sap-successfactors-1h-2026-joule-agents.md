@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [SAP]
 vendor_type: [hrms]
+output: "5개 Joule Agent별 산출물 — Performance & Goals: 매니저용 1:1 대화 포인트, Career: 학습/이동/멘토 추천 + 후계자 후보, HR Service: 정책 Q&A (60% deflection 벤더 주장), People Intelligence: 매니저 dashboard, Payroll: pay Q&A"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking, clustering-classification]
 stage: production

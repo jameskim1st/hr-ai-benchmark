@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Josh Bersin Co., Sana Labs]
 vendor_type: [point-solution]
+output: "기존 콘텐츠 (PDF·영상·SCORM)에서 자동 변환된 코스·assessment·simulation·polls + Galileo 사이드 패널 agent의 대화형 튜터 응답 (\"AI Josh\" persona)"
 ai_tech_type: [generative]
 ai_tech_subtype: [text-generation, summarization-qa, multimodal]
 stage: pilot                       # 런칭 + 자사 deployment만 있는 상태

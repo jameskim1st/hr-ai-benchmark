@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: [OpenAI]
 vendor_type: [foundation-model]
+output: "65,000명 GenAI 업스킬링 인증·시간 추적 (자발적 360,000+ 시간) + Super User 워크숍 산출물 + ChatPwC playground 결과물 + 클라이언트 프로젝트로 승격된 우수 use case"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, text-generation]
 stage: production

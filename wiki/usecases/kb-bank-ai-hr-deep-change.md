@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [전임직, 기술사무직]
 vendor: [KB국민은행 internal]
 vendor_type: [internal-build]
+output: "1,100+ 영업점 직원 인사 배치안 (출퇴근·자격증·업무 경력·육아 고충 등 수십 변수 다변량 최적화). HR 검토·조정 후 매니저·직원 통보. 2025 PB·RM 상담 직원에게는 AI 활용 추천"
 ai_tech_type: [decision-optimization, predictive]
 ai_tech_subtype: [optimization, clustering-classification]
 stage: production

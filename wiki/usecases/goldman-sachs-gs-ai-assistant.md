@@ -10,6 +10,7 @@ region: [na, global]
 employee_class: [all]
 vendor: [OpenAI, Google, Anthropic]
 vendor_type: [foundation-model, internal-build]
+output: "지식노동자 자연어 요청에 대한 LLM 멀티모델 답변 (GPT-4o/o3-mini, Gemini 2.0, Claude 3.7 라우팅) — 문서 요약·리서치 노트·규제 문서 분석·코드·다국어 번역. 사내 방화벽 격리"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

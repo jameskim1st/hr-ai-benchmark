@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [기술사무직]
 vendor: [SK AX, SKT]
 vendor_type: [point-solution, internal-build]
+output: "지원자 서류 AI 스크리닝 결과 + AICT 점수 (프롬프트·문제 해결·결과물 평가) + 1차 AI 면접 평가 보고서 + 합격/불합격 자동 고지 + OT 안내 (시간당 1,000명 처리)"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification, text-generation]
 stage: production

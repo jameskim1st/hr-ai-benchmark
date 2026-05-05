@@ -10,6 +10,7 @@ region: [apac]
 employee_class: [all]
 vendor: [HireVue]
 vendor_type: [point-solution]
+output: "영어 평가 점수 (15분 객관식) + situational video 응답 채점 결과 (verbal/written, 벤더 주장 non-verbal cues 포함) + assessment day 진출 후보 shortlist"
 ai_tech_type: [predictive, recognition]
 ai_tech_subtype: [clustering-classification, speech-recognition]
 stage: production

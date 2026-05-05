@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Amazon internal]
 vendor_type: [internal-build]
+output: "1.5M 직원에 대한 attrition·engagement 예측 점수 + 행동 (non-response trend)·태도 (응답 sentiment) 변화 신호 + 매니저·HR risk alert. 사람 action은 별도"
 ai_tech_type: [predictive]
 ai_tech_subtype: [prediction, clustering-classification]
 stage: production

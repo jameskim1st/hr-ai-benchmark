@@ -10,6 +10,7 @@ region: [eu, global]
 employee_class: [all]
 vendor: [Degreed]
 vendor_type: [lxp]
+output: "직원 스킬 프로필 기반 personalized learning path 추천 + Career Hub 내부 gig·mobility 매칭 + Maestro AI 코치/시뮬레이션 응답 (월 64% 재방문)"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production

@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Workday]
 vendor_type: [hrms]
+output: "AI 에이전트의 거버넌스 메타데이터 (owner·purpose·scope·권한) + Workday admin console dashboard (1st-party + 3rd-party 에이전트 통합 관리) + 활동 로그·outcome 분석·감사 추적. AI 추론 산출물 아닌 거버넌스 자체가 output"
 ai_tech_type: []
 ai_tech_subtype: []
 stage: production

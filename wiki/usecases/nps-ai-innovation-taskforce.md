@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [전임직, 기술사무직]
 vendor: [_미공개_]
 vendor_type: [point-solution, internal-build]
+output: "다중 산출물 — AI 사원의 가입자 상담·홍보 자동 응답 + AI 규정비서의 사내 임직원 규정 Q&A + AI 수어 영상 (청각장애 가입자용 multimodal 안내)"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, multimodal]
 stage: production

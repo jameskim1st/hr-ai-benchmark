@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Workday]
 vendor_type: [hrms]
+output: "직원 피드백 데이터의 continuous 분석 결과 (팀·코호트별 sentiment trend·driver·이상 신호) + 매니저 워크플로 내 proactive insight 푸시 + 추천 action (1:1·recognition·career conversation)"
 ai_tech_type: [predictive]
 ai_tech_subtype: [clustering-classification]
 stage: stub                    # 공개 정보 부족으로 stub 처리

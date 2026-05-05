@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [기술사무직, 전임직]
 vendor: [POSCO DX internal]
 vendor_type: [internal-build]
+output: "인사·구매·경영분석 사무 영역 110개 에이전트의 도메인별 자동화 산출물 (계열사 공통 활용, 2026 launch 예정 — 구체 산출물 형태 미공개)"
 ai_tech_type: [generative, automation, predictive]
 ai_tech_subtype: [summarization-qa, rpa, clustering-classification]
 stage: announced

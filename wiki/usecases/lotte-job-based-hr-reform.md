@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [기술사무직, 전임직]
 vendor: []
 vendor_type: [internal-build]
+output: "_N/A_ (전통 HR 개혁, AI 미공개)"
 ai_tech_type: []
 ai_tech_subtype: []
 stage: production

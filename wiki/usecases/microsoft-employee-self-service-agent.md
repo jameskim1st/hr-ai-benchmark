@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Microsoft]
 vendor_type: [hrms]
+output: "직원 HR/IT 문의에 대한 authoritative 답변 또는 action form (휴가·급여·복리후생·장비) + 배후 시스템 워크플로 트리거 + 미해결 시 자동 ticket 생성·HR 라우팅"
 ai_tech_type: [generative, automation]
 ai_tech_subtype: [summarization-qa, rpa]
 stage: production

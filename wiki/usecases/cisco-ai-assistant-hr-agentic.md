@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Cisco internal]
 vendor_type: [internal-build]
+output: "직원 PTO·정책 Q&A 응답 + 매니저용 time-off notification 메시지 자동 작성 (drafting + outbound action). HR case 열지 않고 처리"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

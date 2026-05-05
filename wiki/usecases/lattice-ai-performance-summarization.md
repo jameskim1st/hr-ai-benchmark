@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: [Lattice]
 vendor_type: [point-solution]
+output: "360도 피드백·리뷰 자동 요약 + 핵심 트렌드 도출 + 자연어 목표 진척 분석 + Slack/Teams 내 개인별 이탈 리스크 알림"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, prediction]
 stage: production

@@ -10,6 +10,7 @@ region: [na, global]
 employee_class: [all]
 vendor: [ADP]
 vendor_type: [hrms]
+output: "급여 데이터 이상 플래그 + 자동 수정 제안 + 자연어 분석 query에 대한 차트·인사이트 + 규정 변경 자동 모니터링·컴플라이언스 태스크 (급여 사이클당 30분 절감)"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification, prediction]
 stage: production

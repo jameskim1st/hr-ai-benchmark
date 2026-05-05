@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [기술사무직, 전임직]
 vendor: [PwC, SK하이닉스 internal]
 vendor_type: [point-solution]
+output: "퇴사 위험 등급 (Green/Yellow/Red) + 위험 요인 Summary (LLM+XAI) + 5개 에이전트 (Structura/Cognita/Chronos/Sentio/Agora)별 상세 분석 + 등급별 맞춤 retention action 권고 (면담·보상·경력 개발)"
 ai_tech_type: [predictive, generative]
 ai_tech_subtype: [prediction, clustering-classification, summarization-qa, recommendation-ranking]
 stage: announced

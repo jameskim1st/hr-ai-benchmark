@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Syndio]
 vendor_type: [point-solution]
+output: "protected class별 pay gap 분석 결과 + offer/raise/promotion 시점의 internal equity·budget·market 균형 추천 + 국가별 pay transparency 규제 컴플라이언스 가이드·법률 메모 답변"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production

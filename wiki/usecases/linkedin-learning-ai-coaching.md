@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [LinkedIn, Microsoft]
 vendor_type: [lxp]
+output: "학습자별 AI Coach와의 대화형 Q&A·요약·심화 답변 + role-play scenario (피드백·면접·negotiation 모의) feedback 텍스트 + LinkedIn 16K skills profile 자동 갱신"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

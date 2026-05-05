@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [all]
 vendor: [Douzone Bizon]
 vendor_type: [hrms]
+output: "연말정산 대상자 자동 식별 리스트 + 국세청 간소화 PDF 자동 다운로드·반영 + 세액 예측 결과·직원 안내문 + 홈택스 자동신고·지급명세서 + HR용 총괄현황판"
 ai_tech_type: [generative, predictive, automation]
 ai_tech_subtype: [summarization-qa, information-extraction, clustering-classification, rpa]
 stage: production

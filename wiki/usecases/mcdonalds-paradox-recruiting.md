@@ -10,6 +10,7 @@ region: [global]
 employee_class: [계약직]
 vendor: [Paradox]
 vendor_type: [point-solution]
+output: "Olivia의 후보자 conversational 스크리닝 (work history·shift) 결과 + 매장 매니저 캘린더 기반 면접 slot 자동 제시 + McHire ATS 통합 hiring funnel 기록"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production

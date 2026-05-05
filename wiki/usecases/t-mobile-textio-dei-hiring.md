@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: [Textio]
 vendor_type: [point-solution]
+output: "JD 작성 시 실시간 Textio Score (0~100) + 성 중립적 언어 개선 제안 + 기준 미달 시 게시 차단 (Workday ATS 인라인 통합)"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production

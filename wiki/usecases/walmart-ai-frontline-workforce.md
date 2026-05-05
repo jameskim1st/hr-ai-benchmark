@@ -10,6 +10,7 @@ region: [na, global]
 employee_class: [all]
 vendor: [OpenAI, Workday, Paradox]
 vendor_type: [foundation-model, hrms, ats]
+output: "2.3M 직원 HR 단일 통합 (Workday) + Paradox Olivia 프론트라인 채용 자동 screening·일정 (60→18일) + 1.5M 직원용 AI 도구 응답 + Manager Academy 이수 기록 + 50K 리스킬링 매칭"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production

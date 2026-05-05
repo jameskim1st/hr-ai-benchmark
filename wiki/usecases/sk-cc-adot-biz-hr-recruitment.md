@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [기술사무직, 신입]
 vendor: [SKT, SK AX]
 vendor_type: [internal-build]
+output: "자기소개서별 경력·핵심 역량 키워드 추출 + 직무 적합성·리스크 요인 점수 + AI 면접 (영상 응답 분석) + 후보자 맞춤 면접 질문 자동 생성. ⚠️ 자사 보고: 수천 건 4시간 (90% 단축)"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [information-extraction, summarization-qa, clustering-classification]
 stage: production

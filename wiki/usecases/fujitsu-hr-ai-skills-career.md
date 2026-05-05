@@ -10,6 +10,7 @@ region: [apac, global]
 employee_class: [all]
 vendor: []
 vendor_type: [internal-build]
+output: "직원별 스킬 갭 분석 + 내부 공모 매칭 추천 + Fujitsu Learning Experience 자율 학습 경로 + Kozuchi AI 일상 업무 보조 응답 (월 69K 활성·일 380K 사용)"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production

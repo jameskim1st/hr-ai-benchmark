@@ -10,6 +10,7 @@ region: [na, global]
 employee_class: [all]
 vendor: [JPMorgan internal]
 vendor_type: [internal-build]
+output: "직원별 AI fundamentals·prompt engineering·컴플라이언스 모듈 이수 기록 + 직무별 use case 인증서. 신입 분석가는 prompt engineering 필수 수료증"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

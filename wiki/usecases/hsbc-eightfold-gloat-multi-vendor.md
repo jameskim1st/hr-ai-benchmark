@@ -10,6 +10,7 @@ region: [eu, global]
 employee_class: [all]
 vendor: [Eightfold AI, Gloat, SAP SuccessFactors, Accenture]
 vendor_type: [talent-marketplace, hrms]
+output: "Eightfold의 1.6B+ profile 기반 skills inference + Gloat marketplace의 직원-기회 매칭 점수 + career path 추천 + 매니저용 internal candidate 리스트 (140K 직원 enrolled)"
 ai_tech_type: [predictive, generative]
 ai_tech_subtype: [recommendation-ranking, information-extraction, clustering-classification]
 stage: production

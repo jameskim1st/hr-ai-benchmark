@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [SAP]
 vendor_type: [hrms]
+output: "매니저용 직원별 성과 대화 자료 — 맞춤 인사이트 + 목표 진척 업데이트 + 개인화 대화 포인트 (SuccessFactors + SAP Business Data Cloud 데이터 통합)"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production

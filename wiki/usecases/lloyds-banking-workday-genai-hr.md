@@ -10,6 +10,7 @@ region: [eu]
 employee_class: [all]
 vendor: [Workday, ServiceNow]
 vendor_type: [hrms, point-solution]
+output: "67,000명 직원 HR 정책 Q&A 응답 (휴가·복리후생 등 고볼륨 정책 — 파일럿에서 12-15% 자동 응답) + 복잡 문의는 HR 담당자 라우팅. AI Academy 학습 콘텐츠도 산출"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

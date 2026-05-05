@@ -10,6 +10,7 @@ region: [apac]
 employee_class: [all]
 vendor: [HireVue]
 vendor_type: [point-solution]
+output: "후보자 on-demand video 응답 점수 (언어/콜로키얼 평가 포함) + 채용팀 검토용 shortlist + in-person 최종평가 진출자 결정"
 ai_tech_type: [generative, predictive, recognition]
 ai_tech_subtype: [summarization-qa, clustering-classification, speech-recognition]
 stage: production

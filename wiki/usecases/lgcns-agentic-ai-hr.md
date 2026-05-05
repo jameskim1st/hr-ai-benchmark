@@ -10,6 +10,7 @@ region: [kr]
 employee_class: [기술사무직]
 vendor: [LG CNS]
 vendor_type: [internal-build]
+output: "수만 건 자기소개서·인적성 분석 결과 적합 인재 추천 리스트 + 지원자별 맞춤 면접 질문 자동 생성 (Knowledge Lake → Hub → Refiner → Router 4컴포넌트)"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, information-extraction, recommendation-ranking]
 stage: production

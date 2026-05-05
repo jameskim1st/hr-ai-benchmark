@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: [OpenAI]
 vendor_type: [foundation-model]
+output: "직원 자연어 HR 질문에 대한 도메인 분류 라우팅 (performance·career·benefits 등 specialized GPT 분기) + 해당 specialized GPT가 생성한 정책·복리후생·커리어 Q&A 응답"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production

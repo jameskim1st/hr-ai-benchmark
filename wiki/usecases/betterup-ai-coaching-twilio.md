@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: [BetterUp]
 vendor_type: [point-solution]
+output: "매니저별 Whole Person Assessment 점수 + 개인화 6개월 learning path + AI coach 대화형 nudge·micro-intervention + behavior change → 비즈니스 KPI(retention·promotion) 매핑 dashboard"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production

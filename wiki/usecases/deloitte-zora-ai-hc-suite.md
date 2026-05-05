@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Deloitte, NVIDIA]
 vendor_type: [internal-build, foundation-model]
+output: "클라이언트 workforce 세그먼트별 AI 영향평가 리포트 (Workforce Analyzer) + 시나리오 기반 인력 재배치 계획 (Workforce Planner+) + 300+ HR workflow library + HR AI maturity 진단 점수 + ready-to-deploy agents"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production

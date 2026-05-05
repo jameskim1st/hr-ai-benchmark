@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Workday]
 vendor_type: [hrms]
+output: "HR 매니저 대시보드용 skill gap·직무 통합 기회·역할 부적합 직원 식별 결과 + job ladder 자동 생성·관리 추천"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production              # Bersin 2024-09은 "released" 맥락, PR 2025-09은 "expanded" 맥락

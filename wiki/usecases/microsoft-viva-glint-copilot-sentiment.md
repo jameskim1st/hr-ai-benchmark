@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Microsoft]
 vendor_type: [hrms]
+output: "engagement 서베이 open-end 코멘트 자동 합성 + 반복 테마 탐지 + 속성별 (부서·재임기간·매니저) sentiment slice + 산업/규모 benchmark 비교 + Team/Executive 리포트 \"Copilot Highlights\" 섹션"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production

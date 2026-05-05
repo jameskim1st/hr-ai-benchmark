@@ -10,6 +10,7 @@ region: [apac]
 employee_class: [all]
 vendor: [Microsoft, OpenAI]
 vendor_type: [foundation-model, point-solution]
+output: "50K ChatGPT Enterprise 응답 + 17.5K M365 Copilot 응답 + ChatIT (Teams 기반 IT 지원) 응답 + Future Workforce Program 스킬 개발·커리어 전환 매칭 ($90M AUD 3개년)"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

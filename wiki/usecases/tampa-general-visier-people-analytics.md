@@ -10,6 +10,7 @@ region: [na]
 employee_class: [all]
 vendor: [Visier]
 vendor_type: [point-solution]
+output: "공석율·이직 패턴·에이전시 비용 통합 분석 dashboard + 인력 투자 우선순위 인사이트 (HR + Finance) + Visier Vee 자연어 Q&A 응답 (12K FTE 기반)"
 ai_tech_type: [predictive, generative]
 ai_tech_subtype: [prediction, summarization-qa]
 stage: production

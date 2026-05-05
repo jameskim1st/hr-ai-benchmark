@@ -10,6 +10,7 @@ region: [na, global]
 employee_class: [all]
 vendor: [Visier]
 vendor_type: [point-solution]
+output: "자연어 workforce 질의에 대한 narrative 답변 + 자동 생성 chart·요약·대시보드 + Org Design 변경 영향 narrative 설명 (Teams/웹 인터페이스)"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production

@@ -10,6 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [Deloitte]
 vendor_type: [_분석가_]
+output: "_N/A_ (분석 리포트 — 13,000+ leader 서베이 기반 HR 트렌드·AI maturity 모델·예측 분석 PDF. AI 추론 시스템 없음)"
 ai_tech_type: []
 ai_tech_subtype: []
 stage: production
