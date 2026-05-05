@@ -4,7 +4,10 @@
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
       "Bash(git push *)",
-      "Bash(python -c ' *)"
+      "Bash(python -c ' *)",
+      "Bash(python scripts/extract_v3.py)",
+      "Bash(python scripts/build_html_v6.py)",
+      "Bash(python scripts/build_excel.py)"
     ]
   }
 }

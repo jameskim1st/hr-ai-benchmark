@@ -51,6 +51,34 @@ related_vendors: []
 - **HITL**: 모든 클라이언트 산출물은 파트너·매니저 검토 후 외부 release
 - **Frequency**: daily (개별 사용), quarterly (CoE governance review)
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: _미공개_ (Deloitte 사내 — Workday 사용 여부 공식 미확인)
+- **AI 시스템 배치**: ✅ Anthropic Claude Enterprise 470K 글로벌 SSO 프로비저닝
+- **배포 환경**: _미공개_ — AWS Bedrock 또는 Anthropic 직접 호스팅 추정
+- **연동·통합**: ⚠️ 자사 보고: Trustworthy AI framework 산출물 검증, governance dashboard prompt·사용 로그
+- **사용자 접점**: ⚠️ 자사 보고: 회계사·개발자용 특화 Claude 버전 + 일반 web/desktop
+- **인증·권한**: 글로벌 SSO (구체 IdP _미공개_)
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: ⚠️ 자사 보고: 클라이언트 자료·문서·코드 — use case별 상이
+- **데이터 규모**: ✅ 470K 직원, 150개국
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: _미공개_ — 회계사·개발자 특화 = fine-tuning vs system prompt 미공개
+- **데이터 거버넌스**: ⚠️ 자사 보고: Trustworthy AI framework, governance dashboard, Claude CoE
+- **민감정보 처리**: _미공개_ — 클라이언트 confidential 처리 정책 미발표
+
+### D. Model (R9 research)
+
+- **Foundation model**: ✅ Anthropic Claude (버전 미명시)
+- **모델 유형**: LLM (생성·요약·코드)
+- **제공 방식**: ✅ Anthropic Claude Enterprise (commercial API)
+- **커스터마이징 기법**: ⚠️ 자사 보고: 회계사·개발자 특화 버전, 규제 산업 industry pack 공동 개발
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: ⚠️ 자사 보고: Trustworthy AI framework + 파트너 검토
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

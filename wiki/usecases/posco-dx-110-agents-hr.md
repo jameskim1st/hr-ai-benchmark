@@ -61,6 +61,34 @@ related_vendors: []
 - 포스코DX (개발) + 그룹DX전략실 + AI·로봇 융합 연구소
 - 임치현 (UNIST 영입) + 윤일용 (AI·로봇 융합 연구소장)
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: 포스코 그룹 사내 HRIS (구체 _미공개_)
+- **AI 시스템 배치**: ✅ 포스코DX 자체 — ~110개 AI 에이전트 portfolio
+- **배포 환경**: _미공개_ — 포스코 그룹 자체 클라우드 추정
+- **연동·통합**: ✅ 계열사 (포스코·홀딩스·이앤씨 등) 공통 활용 설계, 그룹DX전략실 portfolio 거버넌스
+- **사용자 접점**: _미공개_ (계열사 사업부 web/desktop 추정)
+- **인증·권한**: 그룹 SSO 추정
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: ✅ 인사·구매·경영분석 도메인 데이터
+- **데이터 규모**: ✅ 포스코 그룹 ~30K 직원 사무 영역
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: _미공개_
+- **데이터 거버넌스**: ✅ 그룹DX전략실 + AI·로봇 융합 연구소 cross-functional (2026 조직개편)
+- **민감정보 처리**: ⚠️ 인사 영역 KR AI 기본법 고영향 AI 분류 가능
+
+### D. Model (R9 research)
+
+- **Foundation model**: _미공개_ — 자체·외부 혼합 추정
+- **모델 유형**: generative + automation (RPA) + classifier
+- **제공 방식**: ✅ 포스코DX internal build
+- **커스터마이징 기법**: _미공개_
+- **Orchestration 프레임워크**: _미공개_ — 110개 quality·일관성 governance framework 미공개
+- **평가·가드레일**: ⚠️ "개발 중" (announced) — production 후 검증 필요
+
+
 ## Impact / Metrics
 
 ### 기대효과 요약

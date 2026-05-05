@@ -59,6 +59,34 @@ related_vendors: []
 - 기획이사 (단장) + CAIO (신설) + 4개 분과장
 - 2025-09-18 공식 출범
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: 국민연금공단 자체 (구체 _미공개_)
+- **AI 시스템 배치**: ✅ 다중 — AI 사원·AI 규정비서·AI 수어 영상안내
+- **배포 환경**: _미공개_ — 망분리상 정부 클라우드 또는 on-prem 추정
+- **연동·통합**: _미공개_ — 4개 분과 cross-functional
+- **사용자 접점**: ✅ 대고객 web/앱 (AI 사원·수어) + 사내 (AI 규정비서)
+- **인증·권한**: ✅ 공공기관 보안 표준 + PIPA strict
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: ✅ 연금·복지·규정 문서, 가입자 상담 이력, 수어 영상 콘텐츠
+- **데이터 규모**: ✅ 직원 ~7K, 가입자 5,000만+
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: _미공개_ — AI 규정비서 RAG 추정 (공식 미명시)
+- **데이터 거버넌스**: ✅ CAIO 신설 + AI·혁신 추진단 4개 분과
+- **민감정보 처리**: ✅ 5,000만+ 국민 — PIPA strict, KR AI 기본법 (2026-01) 고영향 AI 분류 가능
+
+### D. Model (R9 research)
+
+- **Foundation model**: _미공개_ — 다중 vendor 추정 (수어는 별도)
+- **모델 유형**: generative (요약·QA) + multimodal (수어 영상 — sign language video synthesis)
+- **제공 방식**: _미공개_
+- **커스터마이징 기법**: _미공개_
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: ⚠️ KR AI 기본법 인적감독 의무 — 연금 의사결정 영향 시
+
+
 ## Impact / Metrics
 
 ### 기대효과 요약

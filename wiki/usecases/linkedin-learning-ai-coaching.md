@@ -64,6 +64,34 @@ LinkedIn Learning이 **Premium·Enterprise tier**에 통합한 **AI-Powered Coac
 
 - LinkedIn (Microsoft 자회사) + 고객사 HRD/L&D 팀
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: _미공개_ (LinkedIn Learning은 stand-alone LXP, SCIM/SSO 가능)
+- **AI 시스템 배치**: ⚠️ 벤더 주장: Premium·Enterprise tier 내장 SaaS
+- **배포 환경**: _미공개_ (Microsoft Azure 추정, 공식 미확인)
+- **연동·통합**: ⚠️ 벤더 주장: M365 Copilot 통합 (2025), LinkedIn Skills Graph
+- **사용자 접점**: LinkedIn Learning 웹·모바일 — conversational UI
+- **인증·권한**: LinkedIn 계정 + 기업 SSO (SAML)
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: 학습 이력·skill profile·career goal·강의 콘텐츠
+- **데이터 규모**: ⚠️ 벤더 주장: 16,000+ skills taxonomy
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: _미공개_ (강의 콘텐츠 grounding 추정)
+- **데이터 거버넌스**: _미공개_ (Microsoft enterprise privacy 정책 추정)
+- **민감정보 처리**: _미공개_ — KR PIPA cross-border data transfer 검증 필요
+
+### D. Model (R9 research)
+
+- **Foundation model**: _미공개_ (GPT 계열 추정, 공식 발표 없음)
+- **모델 유형**: LLM (생성·대화형 코칭)
+- **제공 방식**: _미공개_ (LinkedIn 자체 호스팅 추정)
+- **커스터마이징 기법**: _미공개_ (role-play scenario prompt template 추정)
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: _미공개_ — soft skill 코칭 quality control governance 미공개
+
+
 ## Impact / Metrics
 
 ### 기대효과 요약

@@ -61,6 +61,34 @@ IBM Watson Recruitment — 2018 productized 후보자 매칭 AI. 정형·비정�
 
 - IBM Talent Group + Watson Recruitment 제품 팀
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: ✅ IBM Watson Talent suite의 일부 — IBM 자체 HRIS 또는 외부 ATS와 연동
+- **AI 시스템 배치**: ✅ IBM 외부 productized SaaS (다수 IBM 고객 도입)
+- **배포 환경**: ✅ IBM Cloud (당시 Watson 표준 인프라)
+- **연동·통합**: 외부 ATS·HRIS와 API/feed (구체 고객별 상이)
+- **사용자 접점**: recruiter web UI — ranked shortlist + supporting factor
+- **인증·권한**: 기업 SSO + RBAC
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: ✅ 정형 (이력서·JD·과거 outcome) + 비정형 (LinkedIn·소셜) + soft trait
+- **데이터 규모**: _미공개_ (IBM + 고객사별)
+- **전처리·정제**: ✅ gender·race·age·ethnicity 억제 (bias mitigation 내장)
+- **학습 vs RAG vs In-context**: ML supervised (과거 채용 outcome 라벨)
+- **데이터 거버넌스**: ✅ protected attribute 억제 design — 미국 EEOC·NYC LL144 우선
+- **민감정보 처리**: ✅ 디자인 단계부터 보호변수 분리
+
+### D. Model (R9 research)
+
+- **Foundation model**: ✅ IBM Watson NLP + ML classifier (2018 — pre-LLM era)
+- **모델 유형**: ✅ predictive (success prediction·ranking) + classifier (적합도)
+- **제공 방식**: ✅ IBM 자체 호스팅 (Watson Cloud)
+- **커스터마이징 기법**: 과거 채용 데이터 학습, requisition 복잡도 분석
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: ✅ protected attribute 억제. ⚠️ 모델 age (2018) — LLM 시대 후 fit 약화. ⚠️ "soft trait" explainability 부족
+
+
 ## Impact / Metrics
 
 ### 기대효과 요약

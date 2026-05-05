@@ -68,6 +68,34 @@ SK하이닉스가 2025 하반기 신입 채용에 **'A!SK' (AI Interview with SK
 
 - SK하이닉스 인사 + 미래 동료 (현업) + AI/IT
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: SK하이닉스 사내 채용 (구체 _미공개_)
+- **AI 시스템 배치**: ✅ A!SK 영상면접 platform — 자체 또는 vendor 여부 _미공개_
+- **배포 환경**: _미공개_ — SK 그룹 클라우드 추정
+- **연동·통합**: ✅ 7-phase 채용 플로우 — 서류·SKCT·A!SK·peer review·종합 Report·대면 통합
+- **사용자 접점**: 지원자 영상 녹화 web/모바일 + 미래 동료 peer review interface + HR/면접관 종합 Report dashboard
+- **인증·권한**: ✅ 사내 SSO (peer·HR·면접관 RBAC) + 지원자 별도 인증
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: ✅ 자기소개서, SKCT 결과, AI 면접 영상, JD-역량 매칭, (고도화) 석박사 Lab·논문 + LinkedIn 코멘트 자동 크롤링
+- **데이터 규모**: _미공개_ — 2025 하반기 신입 응시자 비공개
+- **전처리·정제**: _미공개_ — 영상 STT 기반 실시간 평가 (향후 고도화)
+- **학습 vs RAG vs In-context**: _미공개_ — AI 종합 역량 Report 생성은 LLM 기반 추정
+- **데이터 거버넌스**: ✅ AI single decision 회피 (peer + HR + 면접관 hybrid) — KR AI 기본법 인적감독 best practice
+- **민감정보 처리**: ⚠️ AI 영상 분석의 표정·억양·외모 신호 사용 여부 _미공개_
+
+### D. Model (R9 research)
+
+- **Foundation model**: _미공개_ — 자체 LLM 또는 그룹 표준 (A.X 가능성) 미명시
+- **모델 유형**: ✅ generative (Report 자동 생성·맞춤 질문) + classifier (역량-JD 매칭율) + STT (향후)
+- **제공 방식**: ✅ SK하이닉스 internal build
+- **커스터마이징 기법**: ✅ 직무별 문제은행, JD-역량 매칭 rule, AI 면접 + 대면 면접 결과 교차 검증
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: ✅ peer + HR + 면접관 hybrid (AI single decision 회피). 표정·외모 신호 transparency 부족 risk
+
+
 ## Impact / Metrics
 
 ### 기대효과 요약

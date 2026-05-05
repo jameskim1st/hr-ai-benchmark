@@ -54,6 +54,34 @@ Siemens는 **Future Skills Initiative**를 통해 300,000 직원 대상으로 �
 - **Frequency**: 교육 등록 = monthly, mobility 매칭 = adhoc/quarterly
 - ⚠️ AI 활용 구체 process(어떤 알고리즘이 매칭하는지)는 _미공개_ — reskilling 자체는 fact, AI 의존도는 미명시
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: _미공개_ (Workday 사용 여부 미확인) + ✅ ServiceNow (Siemens GBS — ServiceNow case study Tier 3)
+- **AI 시스템 배치**: ✅ My Learning World (사내 LXP, 100K+ 학습) + 별도 AI 채용·이동 포탈
+- **배포 환경**: _미공개_
+- **연동·통합**: ✅ ServiceNow HR Service Delivery (GBS), Siemens HRIS와 mobility 매칭 sync
+- **사용자 접점**: My Learning World web·모바일, internal mobility portal
+- **인증·권한**: Siemens 사내 SSO
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: ✅ 직원 skill profile, 학습 이력, 41 capability, role·position
+- **데이터 규모**: ⚠️ 자사 보고: 300K 직원, 100K+ 학습 기회
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: _미공개_ — 매칭 알고리즘 공식 미명시 (AIHR caveat)
+- **데이터 거버넌스**: _미공개_ — EU GDPR (Siemens HQ 독일)
+- **민감정보 처리**: _미공개_
+
+### D. Model (R9 research)
+
+- **Foundation model**: _미공개_ — AI 채용·이동 포탈 모델 미공개
+- **모델 유형**: predictive (recommendation·ranking)
+- **제공 방식**: ✅ 일부 ServiceNow (GBS), 일부 Siemens 자체
+- **커스터마이징 기법**: ✅ 41 capability 자체 정의 → matching engine 주입
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: _미공개_
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

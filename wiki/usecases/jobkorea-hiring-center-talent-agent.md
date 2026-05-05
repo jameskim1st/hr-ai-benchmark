@@ -57,6 +57,34 @@ related_vendors: []
 - 잡코리아 데이터베이스 + 자체 LLM 또는 외부 API
 - 한국어 specialized
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: ✅ 잡코리아 ATS '하이어링 센터' (웍스피어 자체)
+- **AI 시스템 배치**: '탤런트 에이전트' — 하이어링 센터 내장 conversational agent
+- **배포 환경**: _미공개_ — 한국 데이터센터 추정
+- **연동·통합**: 잡코리아 후보자 DB, 공고 데이터, 지원·이력 history
+- **사용자 접점**: 채용 담당자 web UI — 자연어 chat
+- **인증·권한**: 잡코리아 기업회원 계정
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: ✅ 잡코리아 후보자 DB, 공고 텍스트, 채용 담당자 의도
+- **데이터 규모**: _미공개_ — 잡코리아 누적 회원 비공개
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: _미공개_ — 매칭 retrieval + LLM ranking 추정
+- **데이터 거버넌스**: ⚠️ KR PIPA — 후보자 동의 (잡코리아 약관 의존)
+- **민감정보 처리**: ⚠️ 차별 표현 자동 필터 _미검증_ — explainability 미공개
+
+### D. Model (R9 research)
+
+- **Foundation model**: _미공개_ — 자체 LLM 또는 외부 API (OpenAI·Hyperclova X) 추정
+- **모델 유형**: LLM (conversational matching) + recommendation
+- **제공 방식**: _미공개_
+- **커스터마이징 기법**: ⚠️ 자사 보고: 한국어 specialized
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: _미공개_
+
+
 ## Impact / Metrics
 
 ### 기대효과 요약

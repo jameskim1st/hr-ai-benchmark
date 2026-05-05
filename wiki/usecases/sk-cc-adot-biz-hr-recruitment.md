@@ -63,6 +63,34 @@ SK C&C가 SKT·SK AX 합작 'A.Biz' B2B AI 솔루션의 첫 제품 **'에이닷 
 
 - SK C&C 인사 + SKT A.Biz 팀 + SK AX
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: SK C&C 사내 ATS (구체 _미공개_)
+- **AI 시스템 배치**: ✅ SKT-SK AX 합작 'A.Biz' B2B AI — 'A.Biz HR'
+- **배포 환경**: _미공개_ — SK Cloud 추정
+- **연동·통합**: SK C&C 사내 ATS + 신입 공채 시즌 batch
+- **사용자 접점**: HR·사업부 SME web UI — 자기소개서 분석·맞춤 면접 질문 review
+- **인증·권한**: SK C&C 사내 SSO
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: ✅ 자기소개서 텍스트, JD 텍스트, AI 면접 영상 응답
+- **데이터 규모**: ✅ 수천 건 자기소개서 / 신입 공채 cycle
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: ⚠️ 자사 추정: 자체 LLM + RAG (직무·SK culture 코퍼스) — 공식 architecture 발표 없음
+- **데이터 거버넌스**: _미공개_ — 채용절차공정화법 + AI 기본법 (2026-01) fit 검증 필요
+- **민감정보 처리**: ⚠️ 영상면접 표정·억양·외모 신호 사용 여부 _미공개_
+
+### D. Model (R9 research)
+
+- **Foundation model**: SKT 자체 LLM **A.X** 추정 (공식 _미공개_)
+- **모델 유형**: ✅ LLM (자기소개서 추출·요약) + classifier (직무 적합성·리스크) + 영상 분석 (멀티모달)
+- **제공 방식**: SK 그룹 자체 (A.Biz)
+- **커스터마이징 기법**: _미공개_ — 직무·SK culture domain prompt/RAG
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: ⚠️ "리스크 요인" explainability·차별 표현 자동 필터 _미검증·미공개_
+
+
 ## Impact / Metrics
 
 ### 기대효과 요약

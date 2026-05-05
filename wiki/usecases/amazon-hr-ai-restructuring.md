@@ -58,6 +58,34 @@ Amazon의 HR 부서 **PXT (People eXperience and Technology)** 조직이 AI 도�
 - **Frequency**: restructuring 이벤트 = adhoc, AI 운영 = daily
 - ⚠️ **공개 미흡 caveat**: 어떤 HR task가 어떤 모델로 자동화되는지 공식 발표 없음 (CNBC·Fortune·HR Grapevine 모두 restructuring 사실만 보도)
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: Amazon 자체 (구체 _미공개_) — Workday/SAP 도입 여부 공식 확인 안 됨
+- **AI 시스템 배치**: ⚠️ 자사 보고: PXT 조직이 internal AI 시스템(CS·warehouse 자동화에 사용 중)을 talent management·recruiting·employee engagement에 통합
+- **배포 환경**: AWS (자사 클라우드)
+- **연동·통합**: _미공개_ — 어떤 HR task가 어떤 AI에 연결되는지 공식 발표 없음
+- **사용자 접점**: _미공개_ (HRBP·매니저 internal tool 추정)
+- **인증·권한**: Amazon 사내 IAM
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: _미공개_ — 채용 지원서·티켓·정책·성과 추정
+- **데이터 규모**: ✅ 영향받는 PXT 인력 ~1,500명 (10K+ 중 15%), 250K 계절직 채용
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: _미공개_
+- **데이터 거버넌스**: _미공개_
+- **민감정보 처리**: _미공개_
+
+### D. Model (R9 research)
+
+- **Foundation model**: _미공개_ — Amazon Bedrock 또는 자체 추정
+- **모델 유형**: ✅ generative + predictive + automation (RPA) — Recruiting screening·티켓·정책 Q&A
+- **제공 방식**: ⚠️ 자사 보고: Amazon internal build
+- **커스터마이징 기법**: _미공개_
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: _미공개_ — HR 자동화 의사결정 HITL 설계 미공개
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

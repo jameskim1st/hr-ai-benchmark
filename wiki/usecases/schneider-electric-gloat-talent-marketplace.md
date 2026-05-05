@@ -66,6 +66,34 @@ flowchart LR
 
 ### B~E. 시스템·데이터·모델·조직 — 세부 대부분 _미공개_ (Unilever FLEX와 동일 패턴)
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: ✅ Oracle Fusion HCM, Taleo (ATS), Cornerstone (LMS) 통합 — Bersin 2019 독립 확인
+- **AI 시스템 배치**: Gloat Workforce Agility Platform — SaaS, Schneider 사내 SSO
+- **배포 환경**: _미공개_ (Gloat AWS multi-tenant SaaS 추정)
+- **연동·통합**: ✅ Oracle Fusion·Taleo·Cornerstone과 데이터 sync (skill·position·learning)
+- **사용자 접점**: Gloat web·모바일 — 직원 프로필·기회 매칭 dashboard
+- **인증·권한**: 사내 SSO (구체 IdP _미공개_)
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: 직원 프로필 (스킬·관심·포부), 조직 내 기회 (gig·career·mentorship)
+- **데이터 규모**: ⚠️ 자사 보고: 135K+ 직원, 등록률 89% (NA 92%), gig 13,400건, mentor 27,500건
+- **전처리·정제**: _미공개_ — Gloat skill ontology 기반 inference 추정
+- **학습 vs RAG vs In-context**: matching engine = skills graph + ML recommendation
+- **데이터 거버넌스**: _미공개_ — 직원 자율 입력 + 매칭 활용 동의
+- **민감정보 처리**: _미공개_ — EU GDPR (Schneider HQ 프랑스)
+
+### D. Model (R9 research)
+
+- **Foundation model**: _미공개_ — Gloat 자체 ML/skills inference, LLM 도입 여부 (2024+) 별도 발표 미확인
+- **모델 유형**: predictive (recommendation·ranking) + skills inference
+- **제공 방식**: Gloat SaaS (자체 호스팅)
+- **커스터마이징 기법**: ✅ Schneider 41 capability·career path 자체 정의를 Gloat에 주입
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: _미공개_ — bias audit·explainability 결과 공식 발표 없음
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

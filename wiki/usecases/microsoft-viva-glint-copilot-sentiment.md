@@ -60,6 +60,34 @@ Microsoft Viva Glint에 Copilot 임베드 — engagement 서베이 open-end 코�
 
 - Microsoft HR (자체 사용) + 고객사 HRBP·People Science 팀
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: Microsoft Viva (M365 ecosystem) — Glint이 LinkedIn → MS Viva 통합
+- **AI 시스템 배치**: ✅ Viva Glint 내장 Copilot
+- **배포 환경**: Microsoft Azure cloud (M365 표준)
+- **연동·통합**: M365 (Outlook·Teams·Power BI), Viva Insights, LinkedIn Glint 데이터
+- **사용자 접점**: Viva Glint 관리자 web portal — "Copilot Highlights" 섹션
+- **인증·권한**: Entra ID (Azure AD) RBAC — HRBP·매니저·executive 역할별
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: engagement survey 응답 (open-end + Likert), 직원 메타 (부서·재임·매니저 hierarchy)
+- **데이터 규모**: _미공개_ (Microsoft 자체 twice-yearly Employee Signals — 인원 비공개)
+- **전처리·정제**: _미공개_ — anonymization·small-group 임계값 적용 추정
+- **학습 vs RAG vs In-context**: In-context summarization (서베이 응답 합성)
+- **데이터 거버넌스**: ⚠️ Microsoft 표준 enterprise — Glint 응답은 customer tenant 격리
+- **민감정보 처리**: ⚠️ 자사 보고: anonymity threshold 적용 — 속성별 slice 시 small group re-identification 위험 잔존
+
+### D. Model (R9 research)
+
+- **Foundation model**: _미공개_ (Azure OpenAI GPT-4 계열 추정)
+- **모델 유형**: LLM (open-end 합성·summarization) + classifier (sentiment·테마)
+- **제공 방식**: Azure OpenAI service via Microsoft Copilot
+- **커스터마이징 기법**: _미공개_ — survey domain prompt engineering 추정
+- **Orchestration 프레임워크**: Microsoft Copilot stack (자체)
+- **평가·가드레일**: ⚠️ 자사 보고: Copilot Highlights는 자동 합성·HRBP 검토 — explainable. bias·hallucination 테스트 결과 미공개
+
+
 ## Impact / Metrics
 
 ### 기대효과 요약

@@ -55,16 +55,33 @@ BetterUp은 **AI 기반 리더십·매니저 코칭** 플랫폼. 2025년 **Bette
 - **HITL**: Human coach가 1:1 세션, HR/CHRO가 cohort·ROI 검토
 - **Frequency**: weekly micro-intervention, monthly 1:1 coaching, quarterly 리포팅
 
-### B. BetterUp Grow (AI-only 코칭)
-- 실시간, 역할별 맞춤형 AI 코칭 (기존 human coach를 보조 또는 대체)
-- ⚠️ 벤더 주장: **95% user satisfaction**
-- ⚠️ 벤더 주장: **비용 70% 절감** (traditional coaching 대비)
-- 2025년 기준 11개 기업 도입, 50+ pipeline (Inc.com 보도)
-- VR 시뮬레이션 + talent intelligence dashboard
+### B. System & Infrastructure (R9 research)
 
-### Human + AI Hybrid (기존 모델)
-- BetterUp의 원래 모델: 인간 코치 + AI 보조 (데이터 수집·인사이트 제공)
-- Twilio 등 초기 고객은 이 hybrid 모델 사용
+- **Core HRIS**: Twilio 측 _미공개_ — BetterUp은 stand-alone SaaS, SSO·SCIM 연동
+- **AI 시스템 배치**: ✅ BetterUp Manage (hybrid) + BetterUp Grow (AI-only) SaaS
+- **배포 환경**: _미공개_ (BetterUp cloud)
+- **연동·통합**: HRIS SSO, calendar (1:1), 학습 dashboard
+- **사용자 접점**: BetterUp web·모바일 — assessment·1:1 영상 코칭·micro-intervention·VR (Grow)
+- **인증·권한**: 기업 SSO + RBAC (manager·HR dashboard 분리)
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: ✅ Whole Person Assessment (resilience·growth mindset 등), 코칭 세션, behavior change tracker, 비즈니스 KPI
+- **데이터 규모**: Twilio 8K+ 직원 cohort
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: _미공개_ — Grow AI 코치 LLM 기반 추정
+- **데이터 거버넌스**: ⚠️ BetterUp 표준: 코칭 세션은 employer에 disaggregated form만 (자사 정책)
+- **민감정보 처리**: _미공개_ — 멘탈헬스 인접 — HIPAA·GDPR 별도 명시 없음
+
+### D. Model (R9 research)
+
+- **Foundation model**: _미공개_ — Grow LLM 기반이나 모델·버전 비공개
+- **모델 유형**: LLM (conversational coaching) + assessment scoring + recommendation
+- **제공 방식**: _미공개_
+- **커스터마이징 기법**: ⚠️ 벤더 주장: BetterUp 코칭 IP·과학 자문 (Martin Seligman 등) prompt·rubric
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: ⚠️ 벤더 주장: 95% user satisfaction (Inc.com, BetterUp 자체 측정) — 독립 검증 부재
+
 
 ## Impact / Metrics (기대효과)
 

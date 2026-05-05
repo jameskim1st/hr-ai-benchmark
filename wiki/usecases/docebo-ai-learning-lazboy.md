@@ -47,6 +47,34 @@ Docebo는 **AI-native LMS/LXP** (3,900+ 고객, 70개국, 30M+ 사용자). **Jos
 - **HITL**: SME가 AI 생성 콘텐츠 검토·승인, L&D 매니저가 카탈로그 큐레이션
 - **Frequency**: 학습 = daily, 콘텐츠 generation = adhoc, KPI 리뷰 = monthly
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: La-Z-Boy 측 _미공개_ — Docebo는 stand-alone LMS/LXP
+- **AI 시스템 배치**: ✅ Docebo Learning Suite SaaS (AI-native 전환 중)
+- **배포 환경**: _미공개_ — Docebo AWS multi-tenant SaaS 일반
+- **연동·통합**: SCORM·xAPI 표준, HRIS SSO, 글로벌 dealer·corporate 통합 카탈로그
+- **사용자 접점**: ✅ Docebo web·모바일 — 학습자·instructor·L&D 매니저 dashboard
+- **인증·권한**: 기업 SSO + RBAC
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: ✅ 기존 콘텐츠·정책 문서 (생성 학습용), 직무·완료 이력 (recommendation), VOC·신상품 자료 (La-Z-Boy)
+- **데이터 규모**: ✅ Docebo 30M+ 사용자, 3,900+ 고객 / La-Z-Boy 10K+ 글로벌
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: ✅ Project Harmony (neural search — embedding). Dynamic content generation은 LLM (구체 _미공개_)
+- **데이터 거버넌스**: _미공개_
+- **민감정보 처리**: _미공개_
+
+### D. Model (R9 research)
+
+- **Foundation model**: _미공개_ — Docebo AI 핵심 underlying model 비공개
+- **모델 유형**: ✅ generative (content·virtual coach) + embedding (neural search) + recommendation
+- **제공 방식**: Docebo 자체 통합 (SaaS)
+- **커스터마이징 기법**: ✅ Use-case instructional templates, Collaborative content design (AI 보조)
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: ⚠️ SME가 AI 생성 콘텐츠 검토·승인 (HITL) — 자동 quality scoring 미공개
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

@@ -51,26 +51,33 @@ related_vendors: []
 - **HITL**: 부서 owner가 챗봇 콘텐츠·답변 quality 모니터링
 - **Frequency**: daily
 
-### B. System
+### B. System & Infrastructure (R9 research)
 
-- **Foundation model**: 네이버 클라우드 **하이퍼클로바X 대시** (한국 자체 LLM)
-- 네이버클라우드 Plat 위 deployed
-- 미래에셋 사내 SSO
+- **Core HRIS**: 미래에셋증권 사내 시스템 (구체 _미공개_)
+- **AI 시스템 배치**: ✅ 자체 AI Assistant 플랫폼 (네이버클라우드 협업)
+- **배포 환경**: ✅ 네이버클라우드 (NCP) — 한국 데이터 주권 driver
+- **연동·통합**: ✅ 사내 SSO + 부서별 매뉴얼·노하우 문서 upload
+- **사용자 접점**: ✅ web 기반 No-code 챗봇 빌더 + 직원 자연어 query
+- **인증·권한**: ✅ 사내 SSO + 부서별 RBAC
 
-### C. Data
+### C. Data (R9 research)
 
-- 부서별 매뉴얼·노하우 문서 (RAG 코퍼스)
-- 격리 — 부서별 챗봇은 부서 데이터만 access (RBAC)
+- **입력 데이터 소스**: ✅ 부서별 업무 매뉴얼·노하우 문서 (직원·부서 직접 upload)
+- **데이터 규모**: _미공개_ — 챗봇 수·인덱스 크기 비공개
+- **전처리·정제**: ✅ RAG indexing (구체 chunking·임베딩 _미공개_)
+- **학습 vs RAG vs In-context**: ✅ RAG (No-code 빌더로 부서별 RAG)
+- **데이터 거버넌스**: ✅ 부서별 RAG 격리. No-code 빌더 quality governance 세부 _미공개_
+- **민감정보 처리**: ✅ 한국 자체 LLM (Hyperclova X) → 데이터 주권. 전자금융감독규정 fit
 
-### D. Model
+### D. Model (R9 research)
 
-- 네이버 Hyperclova X (한국어 specialized) — Dash 버전
-- RAG architecture
-- No-code 빌더로 customization
+- **Foundation model**: ✅ 네이버 **하이퍼클로바X 대시 (HyperCLOVA X Dash)** — 한국어 specialized
+- **모델 유형**: LLM (요약·QA)
+- **제공 방식**: ✅ Naver Cloud Platform via 협업
+- **커스터마이징 기법**: ✅ RAG + No-code 빌더 (부서별)
+- **Orchestration 프레임워크**: _미공개_ — 네이버클라우드 stack 추정
+- **평가·가드레일**: ⚠️ No-code 빌더 챗봇의 prompt injection·hallucination 통제 부족 가능 — 모니터링 필요. 공식 framework _미공개_
 
-### E. Organization
-
-- 미래에셋증권 디지털혁신 + 네이버클라우드 파트너 + 사업부 SME
 
 ## Impact / Metrics
 

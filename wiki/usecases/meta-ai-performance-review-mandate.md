@@ -53,6 +53,34 @@ related_vendors: []
 - **Frequency**: annual (PSC 사이클), monthly (engineering KPI tracking)
 - ⚠️ rubric 세부 측정 방식은 _미공개_ — Zuckerberg/Gale 메모만 공개됨
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: Meta 사내 PSC (Performance Summary Cycle) — 자체 (구체 _미공개_)
+- **AI 시스템 배치**: ✅ **Metamate** (사내 코딩·업무 어시스턴트) — Llama + GPT-4 hybrid (Fortune 2024-12)
+- **배포 환경**: _미공개_ — Meta 자체 인프라 (PyTorch·자체 GPU cluster) 추정
+- **연동·통합**: ✅ 코드 commit 시스템 (engineering KPI tracking — agent-assisted % 측정), PSC rubric, People Analytics dashboard
+- **사용자 접점**: Metamate IDE plugin·web·내부 도구
+- **인증·권한**: Meta 사내 SSO
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: ✅ 코드 commit history (agent-assisted 비율), 자기 평가·peer review 텍스트, AI 사용 로그
+- **데이터 규모**: ✅ Meta 전사 ~70K+ 엔지니어·기술사무직 (정확 인원 미공개)
+- **전처리·정제**: _미공개_ — agent-assisted commit 라벨링 방식 미공개
+- **학습 vs RAG vs In-context**: _미공개_ — Metamate 내부 architecture 비공개
+- **데이터 거버넌스**: ⚠️ rubric 세부 측정 _미공개_ — Zuckerberg/Gale 메모만 공개
+- **민감정보 처리**: _미공개_
+
+### D. Model (R9 research)
+
+- **Foundation model**: ✅ **Metamate** — Llama (Meta 자체) + GPT-4 (OpenAI) hybrid
+- **모델 유형**: LLM (코딩 어시스턴트·업무 자동화)
+- **제공 방식**: ✅ 자체 호스팅 (Llama) + 외부 API (GPT-4)
+- **커스터마이징 기법**: _미공개_ — Metamate Meta codebase 학습/RAG 사용 여부 미공개
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: ⚠️ Metamate "at least as good as an intern" (Fortune, 자사 보고)
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

@@ -54,6 +54,34 @@ related_vendors: []
 - **Frequency**: daily (개별 사용), quarterly (모델 교체·governance 리뷰)
 - ⚠️ HR 한정 use case는 일반 productivity tool에 가까움 — HR-specific 모듈 별도 발표 _미공개_
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: 양사 _미공개_ (JPM·GS 사내 HRIS 비공개)
+- **AI 시스템 배치**: ✅ JPM **LLM Suite** (200K+), GS **AI Assistant** (46.5K knowledge worker, 2025-06 firm-wide)
+- **배포 환경**: ✅ 양사 firewall 내 사내 portal — 외부 ChatGPT 차단, 사내 audit trail
+- **연동·통합**: ⚠️ 자사 보고: 사내 KM·문서·Excel/data 시스템 연결, prompt·response audit trail
+- **사용자 접점**: ✅ 양사 web portal — JPM 8회 메이저 업그레이드, GS Developer Copilot·Banker Copilot
+- **인증·권한**: 사내 SSO + RBAC + audit log
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: ✅ 이메일·메모·리서치·피치덱·코드 (knowledge worker 산출물), 사내 정책
+- **데이터 규모**: ✅ JPM 200K+, GS 46.5K (10K → 2025-06 전사) + 12K 개발자 GitHub Copilot
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: _미공개_ — 사내 RAG 추정, architecture 미공개
+- **데이터 거버넌스**: ✅ prompt·response audit trail, 컴플라이언스 모니터링, 모델 swap 시 재학습 불필요
+- **민감정보 처리**: ✅ firewall 내 — 외부 LLM 차단
+
+### D. Model (R9 research)
+
+- **Foundation model**: ✅ JPM = OpenAI 백엔드 (private gateway). GS = **GPT/Gemini/Claude/OSS 사용자 선택**
+- **모델 유형**: LLM (요약·초안·번역·코드)
+- **제공 방식**: ✅ 양사 commercial API + private gateway (Azure OpenAI 또는 동등)
+- **커스터마이징 기법**: ✅ JPM custom assistant (8회 업그레이드), GS Developer·Banker Copilot domain-specific
+- **Orchestration 프레임워크**: _미공개_ — 양사 자체 portal 추상화
+- **평가·가드레일**: ✅ 컴플라이언스 audit log + senior reviewer
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

@@ -58,6 +58,34 @@ related_vendors: []
 
 - 현대제철 IT + HR + 경영지원
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: 현대제철 사내 HR·경영지원 (구체 _미공개_)
+- **AI 시스템 배치**: ✅ HIP — 사내문서검색 + 경영지원챗봇 (자체 구축)
+- **배포 환경**: _미공개_ — 현대제철 자체 클라우드 또는 on-prem
+- **연동·통합**: ✅ 사내 매뉴얼·기술·경영 문서 코퍼스 통합
+- **사용자 접점**: 사내 web/앱 챗봇 — 직원 자율
+- **인증·권한**: 현대제철 사내 SSO
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: ✅ 매뉴얼·기술 문서·HR·재무·총무 정책
+- **데이터 규모**: ✅ 현대제철 ~12K 직원 — 인덱스 크기 _미공개_
+- **전처리·정제**: ✅ RAG indexing (chunking·임베딩 _미공개_)
+- **학습 vs RAG vs In-context**: ✅ RAG (사내문서 검색·경영지원 Q&A)
+- **데이터 거버넌스**: ⚠️ vendor·모델 _미공개_ — 데이터 주권 검증 필요
+- **민감정보 처리**: _미공개_
+
+### D. Model (R9 research)
+
+- **Foundation model**: _미공개_ — KR 자체 LLM (Hyperclova X·EXAONE·A.X) 또는 외부 API 추정
+- **모델 유형**: LLM (요약·QA·정보 추출)
+- **제공 방식**: _미공개_
+- **커스터마이징 기법**: ✅ 사내문서 RAG (도메인 특화)
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: ⚠️ 1년+ 운영 후 effect metric 부재 — quality 모니터링 framework 미공개
+
+
 ## Impact / Metrics
 
 ### 기대효과 요약

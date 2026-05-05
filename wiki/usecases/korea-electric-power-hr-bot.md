@@ -67,6 +67,34 @@ related_vendors: []
 
 - 한전 HR + 솔트룩스 파트너 + 2025-Q4 디지털혁신 본부
 
+### B. System & Infrastructure (R9 research)
+
+- **Core HRIS**: 한전 자체 HR (구체 _미공개_)
+- **AI 시스템 배치**: ✅ HR-Bot (솔트룩스 챗봇) + 별도 AI 인사추천
+- **배포 환경**: _미공개_ — 망분리상 정부 클라우드 또는 on-prem 추정
+- **연동·통합**: ✅ 한전 사내 HR 통합, 2025-12~2026-03 전 직원 사내 규정·법규·문서 작성용 GenAI 추가 개방
+- **사용자 접점**: 채용 챗봇 web/앱 + 사내 인사추천 dashboard
+- **인증·권한**: ✅ 한전 SSO + 공공기관 보안 표준
+
+### C. Data (R9 research)
+
+- **입력 데이터 소스**: ✅ 채용 FAQ·일정, 직원 역량(자격증·경력), 업무 이력(성과·전배)
+- **데이터 규모**: ✅ 한전 23K+ 직원
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: _미공개_ — 솔트룩스 NLP 표준 RAG·intent classifier 조합 추정
+- **데이터 거버넌스**: ⚠️ 공공기관 인사이동 AI 추천의 노조·직원 투명성 process _미공개_
+- **민감정보 처리**: ✅ KR PIPA strict — 공공기관 추가 가이드라인
+
+### D. Model (R9 research)
+
+- **Foundation model**: _미공개_ — 솔트룩스 자체 NLP + 2025-Q4 GenAI (모델 미공개)
+- **모델 유형**: 챗봇 NLP + recommendation
+- **제공 방식**: ✅ 솔트룩스 vendor (한국 NLP) — single vendor lock-in risk
+- **커스터마이징 기법**: _미공개_
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: ⚠️ KR AI 기본법 (2026-01) 고영향 AI — 인적감독 의무 자동 충족 검증 _미공개_
+
+
 ## Impact / Metrics
 
 ### 기대효과 요약
