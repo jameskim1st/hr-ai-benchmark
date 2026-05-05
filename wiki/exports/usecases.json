@@ -8791,6 +8791,73 @@
     ]
   },
   {
+    "slug": "sk-hynix-one-resume-employee-search",
+    "title": "SK하이닉스 — One Resume + AI 구성원 검색 (통합 직원 프로필·내부 talent search)",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "Core HR & Employee Records",
+    "company": "SK하이닉스",
+    "industry": [
+      "semiconductor"
+    ],
+    "region": [
+      "kr"
+    ],
+    "employee_class": [
+      "기술사무직",
+      "전임직"
+    ],
+    "vendor": [
+      "SK하이닉스 internal"
+    ],
+    "vendor_type": [
+      "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "information-extraction",
+      "recommendation-ranking"
+    ],
+    "confidence": 0.22,
+    "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2026-05-01",
+    "last_confirmed": "2026-05-06",
+    "output": "직원 1인당 단일 통합 프로필 (One Resume — 인사·평가·교육·프로젝트·자격·관심사·skill 통합) + 매니저용 자연어 talent search (예: '머신러닝 + 양산공정 경험 5년+ 한국어/영어 가능' 검색) + 직원 본인의 career path 시각화",
+    "tags": [
+      "sk-hynix",
+      "one-resume",
+      "employee-search",
+      "talent-profile",
+      "korean-conglomerate",
+      "korea",
+      "semiconductor",
+      "internal-build"
+    ],
+    "sources": [
+      "sources/verified-pwc-doc-2026-05.md"
+    ],
+    "summary": "SK하이닉스 <strong>One Resume + AI 구성원 검색</strong> 시스템. 직원 1인당 분산된 데이터 (HRMS·평가·교육·프로젝트·자격·관심사·skill)를 <strong>단일 통합 프로필 (One Resume)</strong>로 구성하고, 매니저가 자연어로 사내 talent를 검색·추천 받는 <strong>AI talent search</strong> 기능을 결합. 직원 self-service career path 시각화·내부 기회 추천 포함. <strong>2026-05 시점: 내부 운영 중, 외부 공개 metric 미공개</strong>.",
+    "headline": "SK하이닉스 One Resume + AI 구성원 검색 시스템. 직원 1인당 분산된 데이터 (HRMS·평가·교육·프로젝트·자격·관심사·skill)를 단일 통합 프로필 (One Resume)로 구성하고, 매니저가 자연어로 사내 talent를 검색·추천 받는 AI talent search 기능을 결합. 직원 self-service career path 시각화·내부 기회 추천 포함. 2026-05 시점: 내부 운영 중, 외부 공개 metric 미공개.",
+    "problem": "<ul>\n<li><strong>Before</strong>: SK하이닉스 38K 직원의 인사 데이터가 <strong>HRMS·평가·교육·프로젝트·자격증·외부 교육 등 다수 시스템에 분산</strong>. 매니저가 internal mobility·project staffing·후계자 후보 검색 시 여러 시스템 + 인적 네트워크 의존</li>\n<li><strong>Pain point</strong>:</li>\n<li>사내 talent visibility 부족 — 매니저가 \"양산공정 + 머신러닝 경험 5년+ 영어 가능자\"를 사내에서 찾기 어려움</li>\n<li>직원 본인도 자기 career path·내부 기회 잘 모름</li>\n<li>핵심 인재 retention·project staffing·후계자 풀 식별 모두 동일한 root cause (skill·경력 visibility 부재)</li>\n<li><strong>Trigger</strong>: 2024-25 SK 그룹 차원 AI 적극 도입 흐름</li>\n</ul>",
+    "impact_summary": "직원 데이터를 <strong>분산 → 통합</strong> + 매니저 검색을 <strong>수동 → AI 자연어</strong>로 전환. <strong>외부 공개 production metric 0건</strong> — 내부 운영 효과 _미공개_.",
+    "consulting": "<ul>\n<li><strong>KR talent profile/search 컨설팅에서의 위치 — \"한국형 자체 구축 reference\"</strong>:</li>\n<li>SK하이닉스가 글로벌 SaaS 벤더 (Gloat·Eightfold) 대신 <strong>자체 구축</strong>으로 talent profile/search를 운영 — 한국 반도체·이차전지·바이오 그룹사 talent profile 컨설팅의 자체 구축 reference</li>\n<li>단 외부 공개 metric 0건 → \"SK하이닉스 사례\"로 인용 시 출처 한계 명시 필수</li>\n<li><strong>글로벌 비교</strong>:</li>\n</ul>",
+    "system": {},
+    "data": {},
+    "model": {},
+    "process_before": "SK하이닉스 38K 직원의 인사 데이터가 HRMS·평가·교육·프로젝트·자격증·외부 교육 등 다수 시스템에 분산. 매니저가 internal mobility·project staffing·후계자 후보 검색 시 여러 시스템 + 인적 네트워크 의존 / Pain point: / 사내 talent visibility 부족 — 매니저가 \"양산공정 + 머신러닝 경험 5년+ 영어 가능자\"를 사내에서 찾기 어려움 / 직원 본인도 자기 career path·내부 기회 잘 모름 / 핵심 인재 retention·project staffing·후계자 풀 식별 모두 동일한 root cause (skill·경력 visibility 부재) / Trigger: 2024-25 SK 그룹 차원 AI 적극 도입 흐름",
+    "process_steps": [
+      ": HRMS·평가·교육 LMS·프로젝트 시스템·자격 DB·외부 교육 이력 등에서 직원별 데이터 자동 수집 → ETL → 단일 직원 프로필",
+      ":",
+      ":",
+      ": 본인 One Resume 검토·수정·career path 시각화·내부 기회 추천 받기",
+      "HR·리더 분석 dashboard: skill gap·talent inventory·후계자 풀 분석"
+    ]
+  },
+  {
     "slug": "cathay-pacific-hirevue",
     "title": "Cathay Pacific — HireVue AI 면접 (time-to-hire 90%↓, 3개월→2~3주)",
     "primary_category": "Talent Acquisition",
@@ -9522,70 +9589,6 @@
       "AI가 역량·경험 판단 + 추천 사유 제시",
       "담당자가 최종 판단 및 컨택"
     ]
-  },
-  {
-    "slug": "sk-hynix-pwc-one-resume-employee-search",
-    "title": "SK하이닉스 — PwC 제안 One Resume + AI 구성원 검색 (통합 직원 프로필·내부 talent search, 추진 계획)",
-    "primary_category": "Employee Experience & HR Ops",
-    "subcategory": "Core HR & Employee Records",
-    "company": "SK하이닉스",
-    "industry": [
-      "semiconductor"
-    ],
-    "region": [
-      "kr"
-    ],
-    "employee_class": [
-      "기술사무직",
-      "전임직"
-    ],
-    "vendor": [
-      "PwC",
-      "SK하이닉스 internal"
-    ],
-    "vendor_type": [
-      "internal-build"
-    ],
-    "ai_tech_type": [
-      "generative",
-      "predictive"
-    ],
-    "ai_tech_subtype": [
-      "summarization-qa",
-      "information-extraction",
-      "recommendation-ranking"
-    ],
-    "confidence": 0.18,
-    "stage": "announced",
-    "frequency": "monthly",
-    "first_seen": "2026-05-01",
-    "last_confirmed": "2026-05-06",
-    "output": "직원 1인당 단일 통합 프로필 (One Resume — 인사·평가·교육·프로젝트·자격·관심사·skill 통합) + 매니저용 자연어 talent search (예: '머신러닝 + 양산공정 경험 5년+ 한국어/영어 가능' 검색) + 직원 본인의 career path 시각화",
-    "tags": [
-      "sk-hynix",
-      "pwc",
-      "one-resume",
-      "employee-search",
-      "talent-profile",
-      "korean-conglomerate",
-      "korea",
-      "planned-deployment",
-      "semiconductor",
-      "internal-build"
-    ],
-    "sources": [
-      "sources/verified-pwc-doc-2026-05.md"
-    ],
-    "summary": "PwC Korea가 SK하이닉스에 제안한 <strong>One Resume + AI 구성원 검색</strong> 시스템. 직원 1인당 분산된 데이터 (HRMS·평가·교육·프로젝트·자격·관심사·skill)를 <strong>단일 통합 프로필 (One Resume)</strong>로 구성하고, 매니저가 자연어로 사내 talent를 검색·추천 받는 <strong>AI talent search</strong> 기능을 결합. 동일한 PwC Korea 제안인 sk-hynix-pwc-5agent-retention과 같은 SK하이닉스 추진 묶음. <strong>2026-05 시점: 제안·검토 단계, 실제 deployment·production metric 미공개</strong>.",
-    "headline": "PwC Korea가 SK하이닉스에 제안한 One Resume + AI 구성원 검색 시스템. 직원 1인당 분산된 데이터 (HRMS·평가·교육·프로젝트·자격·관심사·skill)를 단일 통합 프로필 (One Resume)로 구성하고, 매니저가 자연어로 사내 talent를 검색·추천 받는 AI talent search 기능을 결합. 동일한 PwC Korea 제안인 과 같은 SK하이닉스 추진 묶음. 2026-05 시점: 제안·검토 단계, 실제 deployment·production metric 미공개.",
-    "problem": "<ul>\n<li><strong>Before</strong>: SK하이닉스 38K 직원의 인사 데이터가 <strong>HRMS·평가·교육·프로젝트·자격증·외부 교육 등 다수 시스템에 분산</strong>. 매니저가 internal mobility·project staffing·후계자 후보 검색 시 여러 시스템 + 인적 네트워크 의존</li>\n<li><strong>Pain point</strong>:</li>\n<li>사내 talent visibility 부족 — 매니저가 \"양산공정 + 머신러닝 경험 5년+ 영어 가능자\"를 사내에서 찾기 어려움</li>\n<li>직원 본인도 자기 career path·내부 기회 잘 모름</li>\n<li>핵심 인재 retention·project staffing·후계자 풀 식별 모두 동일한 root cause (skill·경력 visibility 부재)</li>\n<li><strong>Trigger</strong>: 2024-25 SK 그룹 차원 AI 적극 도입 + PwC Korea 컨설팅 제안 (5-agent retention 시스템과 동일 묶음)</li>\n</ul>",
-    "impact_summary": "직원 데이터를 <strong>분산 → 통합</strong> + 매니저 검색을 <strong>수동 → AI 자연어</strong>로 전환 시도. 단, 추진 계획 단계로 actual production metric 0건.",
-    "consulting": "<ul>\n<li><strong>KR talent profile/search 컨설팅에서의 위치 — \"검증 후보 + 비교 reference\"</strong>:</li>\n<li>만약 SK하이닉스 deployment 성공 시 KR 반도체·이차전지·바이오 그룹사 talent profile 컨설팅의 reference architecture</li>\n<li>PwC Korea 제안 → 글로벌 PwC vs Deloitte Anjin (Zora AI) vs McKinsey/BCG의 KR talent search 컨설팅 시장 경쟁 신호</li>\n<li><strong>글로벌 비교</strong>:</li>\n</ul>",
-    "system": {},
-    "data": {},
-    "model": {},
-    "process_before": "SK하이닉스 38K 직원의 인사 데이터가 HRMS·평가·교육·프로젝트·자격증·외부 교육 등 다수 시스템에 분산. 매니저가 internal mobility·project staffing·후계자 후보 검색 시 여러 시스템 + 인적 네트워크 의존 / Pain point: / 사내 talent visibility 부족 — 매니저가 \"양산공정 + 머신러닝 경험 5년+ 영어 가능자\"를 사내에서 찾기 어려움 / 직원 본인도 자기 career path·내부 기회 잘 모름 / 핵심 인재 retention·project staffing·후계자 풀 식별 모두 동일한 root cause (skill·경력 visibility 부재) / Trigger: 2024-25 SK 그룹 차원 AI 적극 도입 + PwC Korea 컨설팅 제안",
-    "process_steps": []
   },
   {
     "slug": "workday-illuminate-employee-sentiment",

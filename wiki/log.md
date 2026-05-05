@@ -554,3 +554,18 @@ Format: `## [YYYY-MM-DD] <operation> | <one-line description>`
 
 ### 사용자 액션 권장
 - PwC 컨설팅 자료 수정 의견 전달 권장: Mercy Health $30M misattribution + funding 라운드 오기 + Mastercard "$20M / 360K hours" 디테일
+
+## [2026-05-06] manual-edit | SK하이닉스 One Resume page 정정 — PwC 제안 framing 제거 (사용자 피드백) | touched: 1 page
+
+### 사용자 피드백
+"'One Resume + AI 구성원 검색'은 PwC 제안이라는 표현은 빼자. 그리고 구현 이미 된거니까 추진계획이라는 표현도 없애고."
+
+### 변경
+- 파일명 rename: `sk-hynix-pwc-one-resume-employee-search.md` → `sk-hynix-one-resume-employee-search.md`
+- title: "PwC 제안 ... 추진 계획" 제거
+- vendor: [PwC, SK하이닉스 internal] → [SK하이닉스 internal]
+- tags: pwc·planned-deployment 제거
+- stage: announced → production
+- confidence: 0.18 → 0.22 (외부 공개는 여전히 0건이나 internal production 운영 fact 반영)
+- 본문: "PwC Korea가 제안한", "추진 계획 단계", "검증 사례 0건" 등 framing 전면 삭제. "공개 1차 출처 0건" caveat은 유지 (factually 여전히 true)
+- Consulting Angle: "PwC Korea 제안" → "SK하이닉스 자체 구축" framing으로 재작성
