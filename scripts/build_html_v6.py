@@ -11,10 +11,36 @@ UC_PATH = os.path.join(SCRIPT_DIR, '..', 'wiki', 'exports', 'usecases.json')
 CO_PATH = os.path.join(SCRIPT_DIR, '..', 'wiki', 'exports', 'companies.json')
 OUT_PATH = os.path.join(SCRIPT_DIR, '..', 'wiki', 'exports', 'hr-ai-usecase-collection.html')
 
+import re as _re
+
+def _strip_emdash(s):
+    """em-dash 제거 (사용자 요청). ': '·':' 등으로 치환."""
+    if not isinstance(s, str):
+        return s
+    s = _re.sub(r' +— +', ': ', s)
+    s = _re.sub(r' —|— ', ':', s)
+    s = s.replace('—', ' ')
+    s = _re.sub(r'  +', ' ', s)
+    return s
+
+def _clean_dict(d):
+    """dict의 모든 string value에 em-dash 제거 적용."""
+    if isinstance(d, dict):
+        return {k: _clean_dict(v) for k, v in d.items()}
+    if isinstance(d, list):
+        return [_clean_dict(x) for x in d]
+    if isinstance(d, str):
+        return _strip_emdash(d)
+    return d
+
 with open(UC_PATH, 'r', encoding='utf-8') as f:
     uc_data = json.load(f)
 with open(CO_PATH, 'r', encoding='utf-8') as f:
     co_data = json.load(f)
+
+# em-dash 제거 (전 항목 일괄)
+uc_data = _clean_dict(uc_data)
+co_data = _clean_dict(co_data)
 
 uc_js = json.dumps(uc_data, ensure_ascii=False, separators=(',', ':'))
 co_js = json.dumps(co_data, ensure_ascii=False, separators=(',', ':'))
@@ -75,7 +101,7 @@ h1{font-size:1.25rem;font-weight:700;letter-spacing:-.025em}
 .uc-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
 .uc-co{font-size:.82rem;font-weight:600;flex:1}
 .uc-conf{font-size:.72rem;font-weight:700;font-variant-numeric:tabular-nums;flex-shrink:0}
-.uc-hl{font-size:.78rem;font-weight:500;color:var(--text);line-height:1.45;margin-top:5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.uc-hl{font-size:.78rem;font-weight:500;color:var(--text);line-height:1.5;margin-top:5px;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
 .uc-tags{display:flex;gap:4px;margin-top:6px;flex-wrap:wrap}
 .tg{font-size:.6rem;padding:1px 6px;border-radius:3px;background:var(--bg3);color:var(--text3)}
 .tg.kr{background:#fef3c7;color:#92400e}.dark .tg.kr{background:#422006;color:#fbbf24}

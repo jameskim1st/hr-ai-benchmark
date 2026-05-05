@@ -125,18 +125,29 @@ def extract_process(body):
     return before, after_steps[:8]
 
 def headline(summary):
-    """Summary에서 첫 문장을 headline으로 추출"""
+    """Summary에서 use case가 어떤 서비스/과제인지 이해하기 쉽도록
+    2~3 문장 (최대 400자) 추출. 잘린 문장 회피."""
     if not summary:
         return ''
-    # 첫 문장 (마침표·느낌표·물음표까지)
-    m = re.match(r'(.+?[.!?。])', summary.replace('\n', ' '))
-    if m:
-        h = m.group(1).strip()
-        # 마크다운 제거
-        h = re.sub(r'\*\*(.+?)\*\*', r'\1', h)
-        h = re.sub(r'\[\[.*?\]\]', '', h)
-        return h[:150]
-    return summary.split('\n')[0][:150]
+    text = summary.replace('\n', ' ')
+    # 마크다운 제거
+    text = re.sub(r'\*\*(.+?)\*\*', r'\1', text)
+    text = re.sub(r'\[\[.*?\]\]', '', text)
+    text = re.sub(r'\s+', ' ', text).strip()
+    # 문장 단위로 분할 — 마침표는 뒤에 공백 또는 줄끝일 때만 (1.5B·A.I 등 보호)
+    sentences = re.findall(r'.+?(?:[.!?。](?=\s|$)|[!?。])', text)
+    if not sentences:
+        return text[:400]
+    # 2~3 문장 누적, 400자 한도
+    out = ''
+    for s in sentences[:4]:
+        candidate = (out + ' ' + s.strip()).strip() if out else s.strip()
+        if len(candidate) > 400 and out:
+            break
+        out = candidate
+        if len(out) >= 250:
+            break
+    return out[:400]
 
 # ── Use Case 처리 ──
 def process_uc(fp):

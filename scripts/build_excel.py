@@ -93,7 +93,8 @@ COVER_SECTION_FONT = Font(name="맑은 고딕", size=12, bold=True, color="2F485
 
 # ── Utility ──
 def strip_html(s, max_len=None):
-    """HTML 태그 제거 → plain text. <br>·</li>는 줄바꿈으로, 다중 공백 collapse."""
+    """HTML 태그 제거 → plain text. <br>·</li>는 줄바꿈으로, 다중 공백 collapse.
+    em-dash도 제거 (사용자 요청)."""
     if not s:
         return ""
     # <br>·</li>·</p> → 줄바꿈
@@ -109,9 +110,23 @@ def strip_html(s, max_len=None):
     s = re.sub(r"[ \t]+", " ", s)
     s = re.sub(r"\n[ \t]*\n[ \t]*\n+", "\n\n", s)
     s = s.strip()
+    # em-dash 제거 (사용자 요청)
+    # 줄별로 처리 (\n 보존)
+    lines = s.split('\n')
+    lines = [_remove_emdash_line(l) for l in lines]
+    s = '\n'.join(lines)
     if max_len and len(s) > max_len:
         s = s[: max_len - 1] + "…"
     return s
+
+
+def _remove_emdash_line(line):
+    """단일 line에서 em-dash 제거 (build_excel.remove_emdash와 동일)."""
+    line = re.sub(r' +— +', ': ', line)
+    line = re.sub(r' —|— ', ':', line)
+    line = line.replace('—', ' ')
+    line = re.sub(r'  +', ' ', line)
+    return line.strip()
 
 
 def join_kr(items, mapping=None, sep=", "):
@@ -291,14 +306,35 @@ USECASE_AUX_COLS = [
 GITHUB_BASE = "https://github.com/jameskim1st/hr-ai-benchmark/blob/main"
 
 
+def remove_emdash(s):
+    """em-dash 제거 — 사용자 요청. ': '·' '·'' 등으로 치환.
+    한국어 문맥상 콜론·쉼표·공백 적절 매핑."""
+    if not s:
+        return s
+    # " — " (전후 공백) → ": " (가장 흔한 패턴)
+    s = re.sub(r' +— +', ': ', s)
+    # " —" 또는 "— " → ":"
+    s = re.sub(r' —|— ', ':', s)
+    # 단독 "—" → " "
+    s = s.replace('—', ' ')
+    # 다중 공백 정리
+    s = re.sub(r'  +', ' ', s)
+    # ":: " 같은 중복 정리
+    s = re.sub(r': :', ':', s)
+    return s.strip()
+
+
 def parse_source(src_str):
     """Source 문자열 파싱 → (display_text, url).
+    외부 URL만 반환. 'sources/<slug>.md' (wiki internal)은 제외 (빈 tuple).
     예: 'McKinsey: JPM... https://www.mckinsey.com/...' → ('McKinsey: JPM...', 'https://...')
-        'sources/foo.md' → ('foo (wiki)', GITHUB_BASE + '/wiki/sources/foo.md')
     """
     if not src_str:
         return ("", "")
     s = src_str.strip()
+    # 'sources/<slug>.md' wiki internal — skip
+    if re.match(r"sources/[\w-]+(?:\.md)?\s*$", s):
+        return ("", "")
     # URL 추출 (http:// 또는 https://)
     m = re.search(r"(https?://[^\s\)]+)", s)
     if m:
@@ -307,15 +343,25 @@ def parse_source(src_str):
         text_part = s.replace(url, "").strip().rstrip("(").strip()
         if not text_part:
             text_part = url
-        return (text_part[:80], url)
-    # sources/<slug>.md 패턴
-    m = re.match(r"sources/([\w-]+)(?:\.md)?", s)
-    if m:
-        slug = m.group(1)
-        url = f"{GITHUB_BASE}/wiki/sources/{slug}.md"
-        return (f"{slug} (wiki)", url)
-    # 기타 — plain text
-    return (s[:80], "")
+        return (remove_emdash(text_part)[:80], url)
+    # 기타 (URL 없는 plain citation) — display only, no link
+    return (remove_emdash(s)[:80], "")
+
+
+def select_external_sources(sources_list, max_n=3):
+    """sources list에서 외부 URL을 가진 것만 골라 max_n개 반환.
+    URL 없는 것도 backfill (display text만)."""
+    parsed = []
+    for s in (sources_list or []):
+        text, url = parse_source(s)
+        if not text and not url:
+            continue  # wiki internal — skip
+        parsed.append((text, url))
+        if len(parsed) >= max_n:
+            break
+    while len(parsed) < max_n:
+        parsed.append(("", ""))
+    return parsed
 
 
 def has_subtype(u, sub_id):
@@ -420,12 +466,8 @@ def build_usecases_sheet(wb, ucs):
         tech_sub_values = [
             "✓" if has_subtype(u, sub_id) else "" for sub_id, _ in TECH_SUB_COLS
         ]
-        # 출처 1~3 파싱
-        sources_raw = u.get("sources") or []
-        parsed_sources = [parse_source(s) for s in sources_raw[:3]]
-        # 빈 슬롯 채우기
-        while len(parsed_sources) < 3:
-            parsed_sources.append(("", ""))
+        # 출처 1~3 — 외부 URL만 추출 (wiki internal 제외)
+        parsed_sources = select_external_sources(u.get("sources"), max_n=3)
 
         # AUX columns
         aux_values = [
@@ -451,6 +493,9 @@ def build_usecases_sheet(wb, ucs):
         src_col_indices = [aux_start + 10, aux_start + 11, aux_start + 12]
 
         for col_idx, v in enumerate(all_values, start=1):
+            # 모든 string value에 em-dash 제거 적용 (사용자 요청)
+            if isinstance(v, str):
+                v = '\n'.join(_remove_emdash_line(l) for l in v.split('\n'))
             cell = ws.cell(row=row_idx, column=col_idx, value=v)
             cell.font = BODY_FONT
             # AI 기술 체크박스 영역은 가운데 정렬
