@@ -29,6 +29,23 @@ related_vendors:
 
 ⚠️ 벤더 주장: time-to-hire **21일→3일 미만** (86%↓). Paradox ecosystem에서 Chipotle·Nestlé·7-Eleven에 이은 4번째 글로벌 식음료 거대 고객. NBC News(Tier 1)가 AI recruiter 사용을 확인.
 
+## Solution Architecture
+
+### A. Process
+
+- **Before**: 매장 매니저가 종이/이메일로 지원 처리, 지원 시간 10분, 시간 부족으로 채용 누수
+- **After**:
+  1. 후보자가 매장 sign·광고·Alexa/Google Assistant (Apply Thru)로 시작
+  2. 텍스트 번호 발송 → Olivia가 즉시 conversational 스크리닝 시작
+  3. 기본 work history·available shift 질문 (지원 시간 10분→2분)
+  4. 통과 후보에게 매장 매니저 캘린더 기반 interview slot 제시
+  5. COVID 기간엔 video로 추가 질문 응답
+  6. 매장 매니저가 in-person 인터뷰에서 hire 결정 (McHire 플랫폼 통합)
+- **HITL**: 매장 매니저가 in-person interview·hire 결정
+- **Frequency**: continuous (대량 시간제 채용)
+- **Source**: Paradox McHire launch press release
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

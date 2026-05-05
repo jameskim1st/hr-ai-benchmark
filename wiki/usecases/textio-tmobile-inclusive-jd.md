@@ -29,6 +29,23 @@ related_vendors: []
 
 > **DEI 카테고리 최초 사례**: Textio는 AI로 채용 공고(JD)의 **편향 언어를 감지·수정**해 지원자 다양성을 높이�� 도구. T-Mobile은 **여성 지원 17%↑**, J&J는 **여성 지원 90,000명 추가**, Nvidia는 **충원 2배 빠름**. Harvard Business School Digital Initiative가 연구 커버.
 
+## Solution Architecture
+
+### A. Process
+
+- **Before**: 채용 매니저가 JD를 자유 작성, gendered language·전형적 표현으로 다양성 후보 풀 제한
+- **After**:
+  1. 채용 매니저/리크루터가 Workday ATS에서 JD 작성 시작
+  2. Textio 플러그인이 실시간으로 단어·구문 분석 (수백만 hiring docs 학습)
+  3. 편향·가독성 기반 Textio Score 산출 + 대안 표현 제안
+  4. 작성자가 제안 수용/거절하며 점수 ≥90 목표
+  5. 90+ 점수 도달 시 ATS에 자동 게시
+  6. 응답률·다양성 지표로 ROI 추적 (T-Mobile: 여성 후보 +17%, time-to-fill -5일)
+- **HITL**: 채용 매니저가 모든 제안에 대해 accept/reject
+- **Frequency**: event-driven (모든 JD 작성 시)
+- **Source**: T-Mobile case study (Textio)
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

@@ -37,6 +37,21 @@ related_vendors: []
 - **Pain point**: (1) AI 역량 인력 확보 경쟁 치열, (2) 기존 HR 프로세스(채용·온보딩·분석)에 과도한 인력 투입, (3) 데이터 보안·규제 준수 하에서 AI 도입이 다른 산업보다 복잡
 - **Trigger**: 2024~2025 금융 산업 전반에서 "**AI 도입을 안 하면 경쟁에서 뒤처진다**"는 공감대 형성. JPMorgan CEO Dimon의 "모든 프로세스에 AI 주입" 방침이 HR에도 적용
 
+## Solution Architecture
+
+### A. Process
+
+- **Before**: JPM·GS의 knowledge worker(합산 300k+)가 이메일·메모·리서치·피치덱·코드를 수기 작성. 사내 데이터 검색은 분절된 KM 시스템 의존, AI 도구는 보안 정책상 외부 ChatGPT 차단
+- **After**:
+  1. JPM은 LLM Suite (OpenAI 백엔드) 포털을 200k+ 직원에 배포, GS는 GS AI Assistant를 46.5k knowledge worker에 firm-wide 배포 (10k 파일럿 → 2025-06 전사)
+  2. 사용자는 portal 내에서 모델 선택 (GS는 GPT/Gemini/Claude/OSS 중) → 문서 요약·이메일 초안·Excel/data 분석·번역 요청
+  3. 모든 prompt·response는 firewall 내 audit trail에 기록, 모델 swap 시 재학습 불필요
+  4. JPM은 8회 메이저 업그레이드로 custom assistant·문서 분석·시각화·모바일·접근성 기능 추가; GS는 Developer Copilot·Banker Copilot으로 확장
+  5. HR 활용: 정책 Q&A, 성과 리뷰 초안, JD 작성, learning 콘텐츠 합성
+- **HITL**: 클라이언트 산출물·코드는 senior 검토, 컴플라이언스 팀이 audit log 모니터링
+- **Frequency**: daily (개별 사용), quarterly (모델 교체·governance 리뷰)
+- ⚠️ HR 한정 use case는 일반 productivity tool에 가까움 — HR-specific 모듈 별도 발표 _미공개_
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

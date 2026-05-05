@@ -39,26 +39,20 @@ AI가 기존 IT 서비스(코딩·QA·BPO)의 핵심 업무를 자동화하면�
 
 ### A. Process (프로세스)
 
-#### TCS
-- ✅ **Fact** "Ideate and Build with AI" 이니셔티브 — 275,000명 직원 참여. [[sources/aibase-india-it-ai-reskilling-2025.md]]
-- ✅ **Fact** Azure OpenAI 도구 교육 대상 25,000명 엔지니어 (Microsoft 파트너십). [[sources/poniaktimes-india-it-ai-2025.md]]
-- ✅ **Fact** AI CoE(AI Centre of Excellence) 하이데라바드 설립. [[sources/poniaktimes-india-it-ai-2025.md]]
-- ✅ **Fact** AI·서비스 전환 전담 사업부 신설 (2024-09-01 발효, Amit Kapur 수장). [[sources/poniaktimes-india-it-ai-2025.md]]
-- ✅ **Fact** 620개 AI 고객 인게이지먼트 운영 (2025-06-12 기준). [[sources/poniaktimes-india-it-ai-2025.md]]
+- **Before**: TCS·Infosys·Wipro·Tech Mahindra 합산 200만+ IT 인력이 manual testing·infra 운영·기본 코딩 중심. AI 역량은 small subset에 한정, 클라이언트의 GenAI 프로젝트 수요 대응 곤란
+- **After**:
+  1. NVIDIA와 4사 파트너십 체결 → NVIDIA AI Enterprise·Omniverse 기반 커리큘럼 표준화
+  2. 직원이 사내 LMS (Infosys Springboard·TCS iEvolve 등)에서 AI 기초·Agent·Physical AI 단계별 수강
+  3. TCS는 25k 엔지니어를 Microsoft Azure OpenAI 별도 트랙, 150k+에 GenAI 기초 완료 후 AI Experience Zone 실습 제공
+  4. Cohort별 인증·proficiency tagging → talent supply 시스템 반영
+  5. 클라이언트 RFP 수주 시 인증된 인력 풀에서 staffing → 신규 AI 프로젝트 배치
+- **HITL**: 인증 시험 채점, staffing 배정은 BU 리더
+- **Frequency**: 등록·수강 = daily, 인증 cohort = monthly, NVIDIA 커리큘럼 갱신 = quarterly
 
-#### Infosys
-- ✅ **Fact** GenAI Academy 운영 — 275,000명 교육. [[sources/aibase-india-it-ai-reskilling-2025.md]]
-- ✅ **Fact** 460개 생성형 AI 이니셔티브 운영. [[sources/poniaktimes-india-it-ai-2025.md]]
-- ✅ **Fact** 100개 이상 GenAI 에이전트 개발 중. [[sources/poniaktimes-india-it-ai-2025.md]]
-- ✅ **Fact** 2025-26 회계연도 신입 20,000명 채용 (AI 역량 우선). [[sources/theregister-india-it-2026-01.md]]
-
-#### Wipro
-- ✅ **Fact** 단 1분기에 180,000명에게 GenAI 기초 교육 완료. [[sources/aibase-india-it-ai-reskilling-2025.md]]
-- ✅ **Fact** "AI Practice" 전담 조직 운영. [[sources/poniaktimes-india-it-ai-2025.md]]
-
-- **Human-in-the-loop**: 리스킬링 프로그램 설계·커리큘럼 결정은 HR 주도.
-- **Trigger & Frequency**: 학습 프로그램은 수시(온디맨드) + 특정 기간 집중 교육.
-- **Scope of autonomy**: 학습 추천(recommend) 수준.
+**기업별 핵심 fact**:
+- **TCS**: 275K "Ideate and Build with AI" 참여, 25K Azure OpenAI 엔지니어, AI CoE 하이데라바드, 620개 AI 고객 engagement (2025-06)
+- **Infosys**: GenAI Academy 275K 교육, 460개 GenAI 이니셔티브, 100+ GenAI 에이전트 개발, 2025-26 신입 20K (AI 우선)
+- **Wipro**: 1분기 180K GenAI 기초 교육 완료, "AI Practice" 전담 조직
 
 ### B. System & Infrastructure (시스템·인프라)
 

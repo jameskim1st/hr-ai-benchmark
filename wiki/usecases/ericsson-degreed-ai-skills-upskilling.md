@@ -34,13 +34,19 @@ Ericsson (통신 인프라·장비, 스웨덴/글로벌)은 Degreed의 LXP 플�
 
 ## Solution Architecture
 
-### A. Process (프로세스)
+### A. Process
 
-- **Before (As-is)**: _미공개 (not disclosed)_ — 전통적 집합 교육 또는 개별 외부 학습 추정 (불확인)
-- **After (To-be)**: Degreed 플랫폼 기반 스킬 퍼스트 전략 — 역할별 AI 스킬 갭 식별 → 큐레이션된 학습 패스 → AI 역량 자기신고·트래킹
-- **Human-in-the-loop**: L&D 팀이 패스 설계 및 완료 현황 모니터링
-- **Trigger & Frequency**: 상시(daily) — 직원 자기주도 학습
-- **Scope of autonomy**: recommend (Degreed AI가 학습 콘텐츠 추천)
+- **Before**: 5년 전 300명 과학자 한정 LMS, role-기반 정적 커리큘럼
+- **After**:
+  1. 직원이 Degreed에서 skill profile·proficiency 입력 (97% 활성화)
+  2. AI가 role·proficiency 기반 personalized learning path 추천
+  3. 직원이 micro-learning·course·role-play·coaching 소비 (월 64% 재방문)
+  4. Career Hub talent marketplace가 skill 매칭으로 internal mobility/gig 제공
+  5. AI nudge·real-time coaching이 일상 워크플로에 embed
+  6. Skill acquisition을 job ad·career path와 연동하여 30,000명 AI 업스킬링
+- **HITL**: 매니저가 development plan 검토, L&D팀이 priority skill 정의
+- **Frequency**: daily
+- **Source**: Degreed Ericsson case study
 
 ### B. System & Infrastructure (시스템·인프라)
 

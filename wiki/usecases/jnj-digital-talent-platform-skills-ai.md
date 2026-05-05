@@ -54,11 +54,17 @@ AI가 직원 스킬의 60~70%를 자동 추론(Tier 1 학술 검증), J&J Learn 
 ## Solution Architecture (학술 논문 기반)
 
 ### A. Process
-1. HRIS·채용DB·LMS·프로젝트 관리 시스템에서 직원 데이터 추출
-2. AI가 **60~70%의 스킬을 자동 추론** (NLP + ML)
-3. 나머지 30~40%는 직원이 자기 보고로 보충
-4. 추론된 스킬 기반으로 **내부 기회 매칭 + 학습 경로 추천**
-5. 결과: 학습 참여↑, 내부 이동↑, 이탈↓
+
+- **Before**: 130k+ 직원 스킬 보유 현황은 자가 신고·이력서 기반 단편적이며, 매니저는 후보자 스킬을 일일이 확인해 internal mobility 후보 search. 스킬 갭 진단은 부서별 수기·연 1회 수준
+- **After**:
+  1. HR이 41개 future-ready skills · 11개 capability를 정의해 taxonomy 등록
+  2. LLM(skills inference)이 직원 프로필·learning 이력·과제 이력을 읽어 skill별 0~5 proficiency 자동 산출 (60~70% 추론)
+  3. MySkills 플랫폼이 직원에게 본인 스킬 그래프·갭·추천 학습/이동 기회 제시
+  4. J&J Learn이 skill gap 기반 과정·growth assignment·멘토링 매칭
+  5. 임원은 dashboard에서 region·BU별 capability heatmap 조회 → 채용·재배치·후계 의사결정
+  6. 내부 이동 발생 시 last_confirmed 스킬 갱신 → 모델 재추론
+- **HITL**: 직원이 inferred score 검토·수정, 매니저가 calibration, HR이 taxonomy·dashboard governance
+- **Frequency**: 추론 = 수시(이벤트), dashboard 검토 = monthly, taxonomy review = quarterly
 
 ### B. Data Sources (학술 논문에서 명시)
 - HRIS (인사 기본 정보)

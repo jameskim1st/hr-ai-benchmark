@@ -32,6 +32,23 @@ related_vendors:
 
 Nestlé(275,000+ 직원, 글로��� 최대 식품기업)가 Paradox의 conversational AI **Olivia**를 채용에 도입. ⚠️ 벤더 주장: **인터뷰 스케줄링 600% 증가**. Chipotle(restaurant) + Nestlé(FMCG) + 7-Eleven(retail) → Paradox의 **식품·소비재·리테일 수직 시장 지배력**이 wiki 데이터로 더 명확해짐.
 
+## Solution Architecture
+
+### A. Process
+
+- **Before**: 후보자가 career site에서 긴 지원 form 작성, 리크루터가 수동 스크리닝/스케줄링
+- **After**:
+  1. 후보자가 career site/모바일에서 Olivia chatbot과 대화 시작
+  2. Olivia가 knockout 질문 (자격·근무가능시간·work auth)으로 스크리닝
+  3. 통과 후보에게 FAQ (급여·복지·문화 — 500+ Q&A) 응답 + interview slot 제안
+  4. 채용 매니저 캘린더와 동기화하여 interview 자동 예약
+  5. 리마인더·재스케줄링·offer letter·I9·start date 모두 conversational
+  6. 결과가 ATS로 자동 통합되어 hiring funnel에 반영
+- **HITL**: 채용 매니저가 인터뷰·offer 결정
+- **Frequency**: continuous (모든 지원)
+- **Source**: Paradox Nestlé case study
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

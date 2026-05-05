@@ -47,6 +47,23 @@ Deloitte가 2025-06-24에 발표한 **Human Capital AI 솔루션 suite**: **Work
 - **300+ HR 워크플로**를 agentic AI 기반으로 재설계한 라이브러리
 - HR AI 성숙��� 진단 도구 + 가속화 toolkit
 
+## Solution Architecture
+
+### A. Process
+
+- **Before**: 역할별 AI 영향도를 수기 워크숍·인터뷰로 6~12개월에 걸쳐 평가
+- **After**:
+  1. 조직의 job catalog·task inventory를 Workforce Analyzer에 로드
+  2. GenAI 엔진이 role별 task 분해·AI 자동화/증강 가능성 점수화
+  3. 시나리오 모델링 — task automation 비율·재배치 영향·skills gap 시뮬레이션
+  4. Workforce Planner+ 모듈이 우선순위·도입 로드맵 추천
+  5. HR·전략·재무 리더가 시나리오 비교·승인
+  6. Salesforce 사례에서는 skills data와 결합해 reskilling 결정에 활용
+- **HITL**: 비즈니스 리더가 AI 영향 시나리오를 검토·전략 결정
+- **Frequency**: adhoc (전사 AI 전략 수립 시)
+- **Source**: Deloitte HC AI Suite press release
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

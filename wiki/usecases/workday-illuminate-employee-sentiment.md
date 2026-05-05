@@ -38,15 +38,19 @@ related_vendors:
 
 ## Solution Architecture
 
-### A. Process (프로세스)
+### A. Process
 
-- **Before (As-is)**: _미공개_
-- **After (To-be)**: **⚠️ 벤더 주장**: "continuously analyzing employee feedback ... take action at scale" — 구체 단계 미공개
-- **Human-in-the-loop 지점**: _미공개. "take action" 표현이 자율 실행인지 제안만인지 불명확_
-- **Trigger & Frequency**: _미공개. "continuously"라는 표현만 있음 — 실시간 스트리밍인지 배치인지 불명_
-- **Scope of autonomy**: _미공개_
-
-> **도식 생략**: Process 단계가 벤더 marketing 한 줄 외에 공개된 것이 없으므로 flowchart 작성 시 추측이 불가피해 [[CLAUDE|CLAUDE.md]] §3 규칙에 따라 생략.
+- **Before**: engagement 설문 결과를 People 팀이 quarterly로 분석·매니저에게 PPT 배포, action 지연
+- **After**:
+  1. Workday HCM 내 engagement·pulse·feedback·exit data가 Illuminate에 자동 공급
+  2. Employee Sentiment Agent가 feedback 데이터를 continuous 분석
+  3. 팀·코호트별 sentiment trend·driver·이상 신호 추출
+  4. 매니저 Workday 워크플로에 proactive insight 푸시
+  5. 매니저가 추천 action (1:1·recognition·career conversation) 실행
+  6. 결과 데이터가 다시 agent learning loop에 반영
+- **HITL**: 매니저가 sentiment insight 검토·action 결정
+- **Frequency**: continuous (real-time monitoring)
+- **Source**: Workday Illuminate Expansion announcement
 
 ### B. System & Infrastructure (시스템·인프라)
 

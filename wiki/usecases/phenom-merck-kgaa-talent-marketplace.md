@@ -47,6 +47,20 @@ Merck KGaA(독일 다름슈타트, 60,000+ 직원, 제약·화학·생명과학)
 
 ## Solution Architecture (요약)
 
+### A. Process
+
+- **Before**: 내부 후보자가 지원해도 결과 통보 없이 발표로 알게 되는 등 candidate experience 미흡
+- **After**:
+  1. 직원이 MyGrowth 포털에서 profile 생성·skills 입력 (200,000+ skills)
+  2. Phenom AI가 inferred skills로 jobs·gigs·learning·mentor 매칭
+  3. 개인 dashboard에서 추천 기회·learning(29,000+ 콘텐츠)·mentor 1,000+ 표시
+  4. 직원이 gig/job/mentor 신청 → 매니저·HR에 routing
+  5. 채용 매니저가 internal candidate 검토·피드백
+  6. 결과·진행상황을 candidate에게 자동 통지
+- **HITL**: 매니저가 internal candidate 평가·결정
+- **Frequency**: continuous
+- **Source**: Phenom 2025 Talent Experience Award Winners
+
 ### Phenom platform의 통합 범위
 - **Internal mobility**: 직원 스킬 → 내부 기회 매칭
 - **Skills ontology**: 200,000+ 스킬이 조직 수준에서 관리됨

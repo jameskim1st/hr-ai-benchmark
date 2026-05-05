@@ -35,6 +35,20 @@ related_vendors: []
 - **Pain point**: 경쟁 컨설팅사(Accenture·PwC·McKinsey)가 각각 AI를 전사 배포하는 상황에서 **"consulting firms의 AI 군비 경쟁"**이 Deloitte의 채택 가속화 요인
 - **Trigger**: Anthropic Claude가 엔터프라이즈 보안·규정 준수를 충족하면서도 **"회계사·개발자별 특화 버전"**을 제공할 수 있다는 판단 → 역대 최대 엔터프라이즈 배포 결정
 
+## Solution Architecture
+
+### A. Process
+
+- **Before**: Deloitte 470k 직원이 audit·tax·consulting 산출물을 수기·MS Office·기존 internal KM으로 작성. 사내 GenAI 사용은 부서별 파일럿 단위
+- **After**:
+  1. Deloitte가 Anthropic Claude Enterprise를 글로벌 SSO로 470k 계정에 프로비저닝
+  2. Claude Center of Excellence가 부서별 use case·implementation framework 제공, 15,000명 certification 프로그램 운영
+  3. 직원이 Claude로 문서 합성·코드 생성·클라이언트 자료 분석 수행, 산출물은 Trustworthy AI framework로 검증
+  4. 규제 산업 (financial services·healthcare·public)용 industry pack을 Anthropic과 공동 개발해 클라이언트에 재판매
+  5. 사용 로그·prompt가 governance dashboard로 수집되어 risk·품질 모니터링
+- **HITL**: 모든 클라이언트 산출물은 파트너·매니저 검토 후 외부 release
+- **Frequency**: daily (개별 사용), quarterly (CoE governance review)
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

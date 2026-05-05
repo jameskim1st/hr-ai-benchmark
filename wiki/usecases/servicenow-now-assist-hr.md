@@ -33,6 +33,20 @@ ServiceNow의 **Now Assist**는 HRSD(HR Service Delivery) 모듈에 통합된 Ge
 
 ## Solution Architecture (요약)
 
+### A. Process
+
+- **Before**: HR 케이스가 분류·라우팅·해결까지 다단계 manual ticket 처리
+- **After**:
+  1. 직원이 ServiceNow employee portal/Teams에서 HR 요청 제출
+  2. Now Assist가 case 내용 분석 → criticality 분류 (non-critical/critical)
+  3. Non-critical case는 HR knowledge base·catalog 조회하여 자동 해결
+  4. Hiring 영역에서는 Schedule Interview agent·Create Job Requisition agent가 conversational 처리
+  5. Critical/판단 필요 케이스는 HR agent에 라우팅하며 context summary 제공
+  6. HR agent가 검토·해결, 결과로 KB 업데이트
+- **HITL**: critical case·judgment-required 단계에서 HR agent 개입
+- **Frequency**: daily (case 발생 시 즉시)
+- **Source**: ServiceNow Agentic AI for HRSD
+
 ### Now Assist for HRSD
 - **케이스 요약**: HR 티켓의 맥락·이력을 GenAI가 자동 요약 (에이전트 시간 절감)
 - **해결 노트 생성**: 케이스 종료 시 resolution note를 AI가 초안 작성

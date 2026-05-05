@@ -48,10 +48,15 @@ Walmart(2.3M 직원, 10,500 매장)은 세 가지 HR AI 이니셔티브를 병�
 
 ### A. Process — Ask Sam
 
-- 매장 직원이 **음성으로 질문** (매장 내 모바일 디바이스)
-- Ask Sam이 **즉시 답변** (HR 정책·재고 위치·가격·작업 절차 등)
-- **900,000명** 사용자가 **주 3,000,000+ 질문** 실행
-- HITL: 답변 자동, 복잡 케이스만 매장 매니저에게 에스컬레이션 (추정)
+- **Before**: 매장 associate가 가격·재고·통로 위치·근무 schedule을 종이 매뉴얼·Telxon 단말기·매니저 호출로 확인. 신규 정책·프로모션은 매장별 매니저가 구두 전달
+- **After**:
+  1. associate가 회사 지급 모바일 단말로 Ask Sam 앱을 음성 호출 ("What aisle is hand soap?")
+  2. 음성→텍스트 변환 후 Walmart 내부 KB(상품·매장·정책·schedule)에서 답변 검색
+  3. 결과를 음성·텍스트로 반환, 위치는 매장 지도 overlay
+  4. 본인 schedule 조회·교대 요청은 WFM 시스템 연동, 정책 Q&A는 GenAI 기반 step-by-step 가이드 (2025-Q3 업그레이드)
+  5. 모든 query는 store-level operational signal로 수집되어 매장·본사가 friction point 분석
+- **HITL**: schedule 변경 승인은 매니저, 정책 답변 부정확 시 associate가 매니저 escalation
+- **Frequency**: daily — ⚠️ 자사 보고 주 300만+ query, 90만 associate (Walmart corporate 2025-06-24)
 
 ### B. System
 

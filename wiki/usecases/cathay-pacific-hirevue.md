@@ -28,6 +28,23 @@ related_vendors: []
 
 ⚠️ 벤더 주장: time-to-hire **3개월→2~3주 (90%+↓)**, no-show **30%↓**, 인터뷰 참석 **30%↑**. 아시아 태평양 첫 항공 HR AI 사례. APAC region 첫 use case.
 
+## Solution Architecture
+
+### A. Process
+
+- **Before**: 졸업생 trainee 채용에 3개월 소요, in-person 면접 no-show율 높음
+- **After**:
+  1. 지원자가 온라인 지원 → ATS에서 HireVue 초대 발송
+  2. 후보자가 mobile/web으로 on-demand video 인터뷰 녹화 (graduate 90% 응답률)
+  3. HireVue가 응답·언어 사용 (콜로키얼/슬랭 포함) 평가하여 점수 산출
+  4. 채용팀이 score·video 검토 후 최종 라운드 후보 shortlist
+  5. 통과 후보만 in-person 최종 평가에 초대
+  6. Cathay 채용 매니저의 인사말 영상으로 employer branding 강화
+- **HITL**: 채용팀이 HireVue score 검토, 최종 면접관이 합격 결정
+- **Frequency**: event-driven (graduate/cabin crew intake)
+- **Source**: HireVue Cathay Pacific case study
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

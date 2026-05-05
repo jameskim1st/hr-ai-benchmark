@@ -35,6 +35,23 @@ related_vendors: []
 
 HireVue는 **AI 비디오 면접 + 게임 기반 역량 평가** 플랫폼. 주요 성과: ⚠️ 벤더 주장 — time-to-hire **60~89% 단축**, 만족도 **17~25% 향상**. **Forrester TEI** 연구에서 major financial institution 대상 **134% ROI** 보고. ★ **2020년 facial analysis 제거** (AI 윤리 논란 후 자발적 결정). **DCI Consulting, ORCAA, Landers Workforce Science** 등 외부 독��� 감사 기관에 알고리즘 bias audit 의뢰.
 
+## Solution Architecture
+
+### A. Process
+
+- **Before**: AI 채용 알고리즘이 inference time에 학습되거나 bias 점검 없이 운영
+- **After**:
+  1. HireVue의 competency·game-based 알고리즘은 lab에서 학습·테스트 후 lock (static·deterministic)
+  2. 외부 감사기관(DCI Consulting Group)이 인종·성별·교차 카테고리별 disparate impact 분석
+  3. NYC Local Law 144 등 규제 요건에 맞춰 bias audit table 생성 (~300건)
+  4. 결과 공개·AI Explainability Statement 게시
+  5. 알고리즘 업데이트는 명시적 재학습·재감사 절차 거쳐야만 가능
+  6. 고객사는 자사 사용 결과로 추가 fairness monitoring 수행
+- **HITL**: 외부 감사인이 알고리즘 결과 검증, HR/legal team이 사용 가능 여부 결정
+- **Frequency**: annual + 알고리즘 변경 시
+- **Source**: HireVue press release on DCI bias audit
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

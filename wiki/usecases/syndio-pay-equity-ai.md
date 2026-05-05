@@ -33,6 +33,20 @@ Syndio는 **보상 공정성(pay equity)** 전문 AI 플랫폼. 2025년 3월 **S
 
 ## Solution Architecture (요약)
 
+### A. Process
+
+- **Before**: 보상 결정 시 매니저·HR이 spreadsheet·외부 market data로 ad-hoc 판단, equity 위반 사후 발견
+- **After**:
+  1. 회사가 compensation·workforce·HRIS data를 Syndio에 연결
+  2. PayEQ가 protected class 그룹별 pay gap 분석·통계적 검증
+  3. 매니저가 Teams/Slack/ATS에서 offer·raise 결정 시 Syndi 호출
+  4. Syndi agentic AI가 internal equity·budget·market 균형 추천 + 설명 제공
+  5. 매니저가 추천 채택/divergence 결정 (이유 캡처 → decision intelligence)
+  6. Expertise on Demand AI가 pay gap 보고·규제 컴플라이언스 가이드
+- **HITL**: 매니저·comp 팀이 모든 pay 결정 검토·실행
+- **Frequency**: event-driven (offer·raise·promotion) + 정기 audit
+- **Source**: Syndio Syndi launch press release
+
 ### Syndi Expert AI (2025-03 출시)
 - **Global Pay Reports (GPR)**에 통합
 - 급여 보고 규정 관련 **실시간 전문가 AI 답변**

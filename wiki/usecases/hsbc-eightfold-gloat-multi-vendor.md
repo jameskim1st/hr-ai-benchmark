@@ -38,6 +38,23 @@ related_vendors:
 - **Pain point**: 글로벌 은행의 **skills transformation 압박** — 디지털·AI 역량 인력 확보가 시급하지만 기존 채용 방식으로는 속도·품질 부족. ⚠️ Fortune Europe 보도: HSBC가 다른 유럽 은행보다 **30% 더 많은 AI 채용 공고**를 게시 (인력 전환 가속화 필요 반증)
 - **Trigger**: SAP SuccessFactors(Core HRIS)만으로는 skills-based hiring + internal mobility 모두를 커버하기 어렵다는 판단 → Eightfold(TA) + Gloat(TM) + Accenture(구현) 멀티벤더 결정
 
+## Solution Architecture
+
+### A. Process
+
+- **Before**: 14만 직원 대상 내부공모는 manager 추천·비공식 네트워크 의존, 글로벌 가시성 부재
+- **After**:
+  1. HSBC middleware가 HRIS·ATS·LMS·skills 데이터를 통합
+  2. Eightfold이 1.6B+ profile 기반 skills inferencing 수행 (기반 skill graph)
+  3. Gloat marketplace에 inferred skills로 직원·기회 매칭
+  4. 직원이 project·gig·job·mentorship 검색·지원 (인도 tech팀 우선 → 14만 확장)
+  5. AI가 매칭 점수·career path 추천
+  6. 매니저·HR이 매칭 결과 검토·승인
+- **HITL**: 매니저가 internal candidate 인터뷰·승인
+- **Frequency**: continuous (rolling marketplace)
+- **Source**: Gloat HSBC case study
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

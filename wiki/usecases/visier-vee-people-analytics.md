@@ -32,6 +32,20 @@ Visier는 **People Analytics 전문 AI 플랫폼**. 주력 AI 제품 **Vee**는 
 
 ## Solution Architecture (요약)
 
+### A. Process
+
+- **Before**: HRBP·매니저가 People analytics 질문에 데이터 팀 ticket 의존, 답변 수일 소요
+- **After**:
+  1. 사용자가 Visier People 또는 Microsoft Teams에서 Vee와 자연어로 채팅
+  2. Vee가 자연어 질문을 Visier query로 변환
+  3. 조직의 people data로 query 실행 (proprietary customer data는 LLM 학습 미사용)
+  4. narrative 답변·차트·요약·자동 보고서 생성
+  5. 사용자가 chart·data point 기반으로 후속 질문 가능
+  6. 응답에 Visier governance·permission 모델 적용
+- **HITL**: 사용자가 답변 검토·해석·의사결정
+- **Frequency**: daily (ad-hoc 질의)
+- **Source**: Visier Vee product page
+
 ### Vee AI Digital Assistant
 - **자연어 쿼리** → workforce 데이터 인사이트 (text-to-insight)
 - 성과 추적, 이직 예측, workforce gap 분석

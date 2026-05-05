@@ -31,6 +31,20 @@ related_vendors: []
 
 Docebo는 **AI-native LMS/LXP** (3,900+ 고객, 70개국, 30M+ 사용자). **Josh Bersin**(Tier 1)의 2025-06 독립 분석에서 "traditional → AI-native 전환 중"으로 분류된 학습 플랫폼 ([[bersin-ld-revolution-2025-06]]). Bersin이 Project Harmony(neural search), dynamic content generation, virtual coaching 등 AI 기능을 독립적으로 확인. 가장 구체적 고객 사례는 **La-Z-Boy**: ⚠️ 벤더 주장 — **활성 LMS 사용자 179% YoY 증가, 과정 완료율 85% 증가**. Disguise는 활성 learner 4x 증가, 학습 수익 45% 증가. Brooks Automation은 교육 시간·비용 20% 절감.
 
+## Solution Architecture
+
+### A. Process
+
+- **Before**: La-Z-Boy (10k+ 글로벌 직원, 가구 제조·소매)가 15년 된 LMS 사용. 잦은 crash·낮은 engagement, 신상품·VOC 트레이닝 콘텐츠 제작에 instructional designer 수개월 소요
+- **After**:
+  1. L&D 팀이 Docebo Learning Suite로 마이그레이션, 글로벌 dealer·corporate 대상 통합 카탈로그 구성
+  2. Docebo AI가 기존 콘텐츠·정책 문서 학습해 신규 과정 outline·퀴즈·요약 자동 생성
+  3. AI virtual coach (beta)가 학습자 질문에 답변, use case template로 instructor 콘텐츠 제작 가속
+  4. Adaptive recommendation이 직무·완료 이력 기반 다음 과정 제시
+  5. L&D 관리자는 dashboard에서 active learner·completion·engagement KPI 추적
+- **HITL**: SME가 AI 생성 콘텐츠 검토·승인, L&D 매니저가 카탈로그 큐레이션
+- **Frequency**: 학습 = daily, 콘텐츠 generation = adhoc, KPI 리뷰 = monthly
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

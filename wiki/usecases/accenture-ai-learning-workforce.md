@@ -51,6 +51,20 @@ Accenture(733,000+ 직원, 글로벌 최대 컨설팅·IT 서비스 기업)가 �
 
 ## Solution Architecture (요약)
 
+### A. Process
+
+- **Before**: 분절된 LMS·외부 partner 콘텐츠가 개인화 없이 카탈로그형으로 제공
+- **After**:
+  1. 직원 skills profile·role·우선순위 영역을 LearnVantage에 입력
+  2. AI recommendation 엔진이 Accenture·Stanford Online·Udacity 등 콘텐츠 큐레이션
+  3. 개인화된 learning journey + Nanodegree/academy track 추천
+  4. 일상 워크플로 내 AI coaching·real-time feedback 제공
+  5. 진척도/완료/지연 모듈 추적, ecosystem partner별 필터링
+  6. 완료 인증서·skill 인증이 직원 profile에 반영
+- **HITL**: L&D 팀이 priority skill area 정의, manager가 학습 시간 승인
+- **Frequency**: daily (in-flow learning)
+- **Source**: Accenture LearnVantage product page
+
 - **AI-powered learning platform** (자체 구축)
 - 전통 학습 방식 대비 completion rate·time 모두 개선
 - 구체 기술 스택 _미공개_

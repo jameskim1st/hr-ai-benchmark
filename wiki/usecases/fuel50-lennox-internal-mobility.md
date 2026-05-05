@@ -32,6 +32,23 @@ related_vendors: []
 
 직원 이탈 시 기관 지식 손실이 핵심 pain point. 내부 이동으로 retention 개선 목표.
 
+## Solution Architecture
+
+### A. Process
+
+- **Before**: 내부이동이 매니저 referral·HR 큐레이션에 의존, 직원 가시성·career path 불투명
+- **After**:
+  1. 직원이 Fuel50에서 Talent DNA (Talents/Skills/Values/Agility/Fit) 작성
+  2. AI가 ethically-enhanced 매칭으로 gigs·projects·mentorships·lateral moves 추천
+  3. 직원이 즉시 검색·지원 가능, 매니저 추천 불필요
+  4. 매니저는 gig 게시·applicant 풀 관리·프로젝트 talent pool 구축
+  5. Career path·coaching·mentor 매칭으로 retention 강화
+  6. Lennox: 4,800건 internal move, 평균 +5개월 tenure
+- **HITL**: 매니저가 gig applicant 선발·승인
+- **Frequency**: continuous
+- **Source**: Fuel50 Talent Marketplace product page
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

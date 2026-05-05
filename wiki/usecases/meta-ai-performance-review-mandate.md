@@ -36,6 +36,21 @@ related_vendors: []
 - **Pain point**: Moderna(모든 직원에게 ChatGPT Enterprise 배포)·Deloitte(470k Claude)·PwC(65k upskilling) 등 경쟁사가 전사 AI 배포를 가속화하는 상황에서, Meta가 "AI-first 기업"이라는 포지셔닝을 유지하려면 **채택을 기대가 아닌 의무**로 전환 필요
 - **Trigger**: 내부 데이터에서 AI 도구 활용 직원의 생산성이 높다는 신호 → "AI 채택을 성과 평가에 공식 반영"이라는 **가장 과감한 정책 결정**
 
+## Solution Architecture
+
+### A. Process
+
+- **Before**: Meta 연 1회 PSC 성과리뷰는 individual impact·peer review 기반. AI 도구 사용은 권장사항이며 평가 항목 아님. 2025년 review에서는 AI 사용을 self-review에 자율 기재만 가능
+- **After**:
+  1. CHRO Janelle Gale 메모(2025-11)로 2026 review 사이클부터 "AI-driven impact"를 모든 직급·직군의 core expectation으로 공식화
+  2. 직원이 자기 평가에 AI를 활용한 productivity·dev cycle·team performance 기여 사례 명시
+  3. 매니저가 AI usage·outcome을 PSC rubric에 반영해 평가, exceptional individual/team에 reward
+  4. Engineering 조직은 별도 KPI(예: creation org는 H1 2026까지 65% 엔지니어가 commit code의 75%+를 AI assistance로 작성) 부여
+  5. People Analytics가 부서별 AI adoption·impact 분포를 leadership에 리포트
+- **HITL**: 매니저가 평가, calibration 위원회가 부서간 형평성 검토, HR이 rubric governance
+- **Frequency**: annual (PSC 사이클), monthly (engineering KPI tracking)
+- ⚠️ rubric 세부 측정 방식은 _미공개_ — Zuckerberg/Gale 메모만 공개됨
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

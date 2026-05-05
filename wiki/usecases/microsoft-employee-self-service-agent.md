@@ -35,12 +35,17 @@ Microsoft HR이 **자사 제품 Viva + Microsoft 365 Copilot**을 자체 HR 운�
 
 ### A. Process
 
-- **Employee Self-Service Agent**: 직원 HR 질문에 자동 응답하는 AI 에이전트
-  - **글로벌 phased rollout**: UK → Canada → India → US → rest of world
-  - 전사 deployment 완료 (세부 timeline _미공개_)
-- **Viva Glint 연동**: 반기별(biannual) 조직 설문으로 Copilot 도입 후 AI 사용과 "employee thriving" 상관 측정
-- **변화관리**: Viva를 promotion·awareness·skilling·reinforcement 채널로 활용
-  - Senior BPM 인용: "Using Viva for our... process is tremendously useful... it captures many more people than instructor-led trainings"
+- **Before**: 직원이 HR/IT 문의 시 다중 portal·ticket 시스템을 거치며 응답 지연
+- **After**:
+  1. 직원이 M365 Copilot 비즈니스 채팅에서 "Employee Self-Service" 선택
+  2. 자연어로 질문 입력 (휴가 신청·급여·복리후생·장비 요청 등)
+  3. Agent가 SharePoint 정책 KB·Workday/SAP/ServiceNow connector 조회
+  4. authoritative 응답 또는 action form 제시 (휴가신청·transfer 요청 등)
+  5. 직원이 form 제출 → 배후 시스템 워크플로 트리거
+  6. 미해결 시 Agent가 자동으로 ticket 생성·HR 담당자에 라우팅
+- **HITL**: 복잡 case는 HR agent에게 escalate, manager는 transfer/profile 변경 승인
+- **Frequency**: daily (일상 self-service)
+- **Source**: Microsoft Adoption — Employee Self-Service Agent product page
 
 ### B. System
 - **Core**: Microsoft 365 + Viva suite + Copilot

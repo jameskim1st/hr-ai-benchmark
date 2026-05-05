@@ -31,6 +31,23 @@ related_vendors: []
 
 adidas가 Qualtrics XM AI를 도입해 ⚠️ 벤더 주장: **수동 분석 95%↓**, **매니저의 개인화 행동 계획 작성 70%↑**. Dr. Sebastian Projahn (Sr. Director People Intelligence, adidas): *"We leveraged Qualtrics AI to democratize insights, reduce bias, and save time"* — 특히 매장·물류센터 매니저에게 즉시 인사이트 제공.
 
+## Solution Architecture
+
+### A. Process
+
+- **Before**: 분기/연간 engagement 설문 후 manager가 보고서 수기 분석 (160+ hours/cycle)
+- **After**:
+  1. 직원이 Continuous Listening 설문 응답 — Qualtrics가 conversational AI로 follow-up 질문
+  2. Qualtrics Assist for EX가 sentiment·테마 분석, manager별 personalized insight 생성
+  3. 매니저별 dashboard에 팀 specific feedback + action recommendation 제시
+  4. xFlow workflow가 HRIS·ticketing 시스템과 연동해 자동 alert·action
+  5. Predictive retention 분석으로 at-risk 직원 식별
+  6. 매니저가 추천 action 실행, 다음 cycle에서 효과 측정
+- **HITL**: 매니저가 AI action recommendation 채택·실행
+- **Frequency**: continuous + cycle-based
+- **Source**: Adidas/Allstate Qualtrics (Benefit News)
+
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

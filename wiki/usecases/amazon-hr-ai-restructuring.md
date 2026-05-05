@@ -41,6 +41,21 @@ Amazon의 HR 부서 **PXT (People eXperience and Technology)** 조직이 AI 도�
 - **Trigger**: CEO Andy Jassy의 "**모든 client experience·employee process·backend operation에 AI를 주입**"하라는 전사 방침 → HR 조직도 예외 없음
 - **⚠️ 핵심 갈등**: 동시에 **250,000명 계절직 warehouse 채용**은 여전히 사람이 필요 → "white-collar 자동화 + blue-collar 대량 채용"의 구조적 이중성
 
+## Solution Architecture
+
+### A. Process
+
+- **Before**: Amazon PXT (People eXperience & Technology) 1만+명이 채용·HR ops·learning·comp을 다층 매니저 구조로 운영. 14k 코퍼레이트 layer가 의사결정·승인 병목
+- **After** (공식 process detail _미공개_, 공개 사실 기반 추정):
+  1. PXT가 internal AI 시스템 (이미 CS·warehouse 자동화에 사용 중)을 talent management·recruiting·employee engagement 플랫폼에 통합
+  2. Recruiting screening·티켓 라우팅·정책 Q&A·성과 데이터 합성 등 반복 업무 자동화
+  3. AI로 처리되는 영역에서 매니저·HRBP 역할 축소 → 14k 포지션 redundant 판정
+  4. Beth Galetti (Amazon CHRO) 발표 후 영향받는 직원에 alert, 사내 이동·severance 협상
+  5. 절감 리소스를 프로그래머·영업·AI 엔지니어 채용에 재투자
+- **HITL**: layoff 의사결정·이동 배치는 leadership, AI 산출물 검토는 HRBP
+- **Frequency**: restructuring 이벤트 = adhoc, AI 운영 = daily
+- ⚠️ **공개 미흡 caveat**: 어떤 HR task가 어떤 모델로 자동화되는지 공식 발표 없음 (CNBC·Fortune·HR Grapevine 모두 restructuring 사실만 보도)
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

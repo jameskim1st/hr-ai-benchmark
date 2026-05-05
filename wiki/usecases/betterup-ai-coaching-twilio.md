@@ -39,9 +39,21 @@ BetterUp은 **AI 기반 리더십·매니저 코칭** 플랫폼. 2025년 **Bette
 - 중간 관리자·일반 직원까지 코칭을 확장하려면 **비용 절감 + 스케일** 필요
 - 코칭 효과의 **ROI 정량 측정**이 어려워 HR budget에서 정당화 곤란
 
-## Solution Architecture (요약)
+## Solution Architecture
 
-### BetterUp Grow (AI-only 코칭)
+### A. Process
+
+- **Before**: Twilio는 double-digit 성장 속에 매니저 effectiveness 70% 수준. Manager 역량개발은 이벤트성 워크숍·LMS 과정 위주로 1:1 코칭은 임원에 한정
+- **After**:
+  1. 매니저가 BetterUp Manage 플랫폼에서 Whole Person Assessment 수행 (resilience·growth mindset·risk tolerance 등)
+  2. 시스템이 strengths·focus area 식별 → AI가 scenario 질문(예: "low-performer 대화") 통해 맥락 수집
+  3. 6개월 단위 personalized learning path + 전담 human coach + AI coach 조합 제공
+  4. 주별 micro-intervention (영상·assessment·1:1) 자동 발송, AI coach가 in-the-flow nudge
+  5. 분석 dashboard가 behavior change → 비즈니스 지표(retention·engagement·promotion) 매핑
+- **HITL**: Human coach가 1:1 세션, HR/CHRO가 cohort·ROI 검토
+- **Frequency**: weekly micro-intervention, monthly 1:1 coaching, quarterly 리포팅
+
+### B. BetterUp Grow (AI-only 코칭)
 - 실시간, 역할별 맞춤형 AI 코칭 (기존 human coach를 보조 또는 대체)
 - ⚠️ 벤더 주장: **95% user satisfaction**
 - ⚠️ 벤더 주장: **비용 70% 절감** (traditional coaching 대비)

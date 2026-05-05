@@ -37,6 +37,21 @@ related_vendors: []
 
 Siemens는 **Future Skills Initiative**를 통해 300,000 직원 대상으로 데이터 분석·디지털 트윈·자동화 역량 리스킬링을 추진. AI 기반 학습 플랫폼 **My Learning World**는 100,000+ 학습 기회를 제공하며, 개인화된 학습 경로를 적응형으로 제공. ⚠️ 자사 보고: 내부 이동 **20% 증가**, AI 기반 채용·내부 이동 포탈이 후보자 매칭·스킬 추천을 최적화.
 
+## Solution Architecture
+
+### A. Process
+
+- **Before**: Siemens가 디지털 전환을 추진하나 data analytics·digital twin·automation 인력은 외부 채용 의존, 기존 직원 reskilling은 부서별 단발 교육
+- **After**:
+  1. Siemens가 Future Skills Initiative 발표 (300k 직원 대상, 41개 capability 영역 정의)
+  2. Germany Qualification Opportunities Act 활용해 정부 25% 비용 분담, 외부 파트너와 cost-sharing
+  3. 직원·파트너에게 vocational training (digitalization·sustainability) 콘텐츠 제공
+  4. Reskilled 직원을 internal mobility 플랫폼 통해 신규 디지털 role로 재배치
+  5. 결과 KPI(internal mobility +20%) tracking, 외부 채용 의존도 축소
+- **HITL**: 매니저가 reskilling 후보 nominate, HR이 재배치 매칭 승인
+- **Frequency**: 교육 등록 = monthly, mobility 매칭 = adhoc/quarterly
+- ⚠️ AI 활용 구체 process(어떤 알고리즘이 매칭하는지)는 _미공개_ — reskilling 자체는 fact, AI 의존도는 미명시
+
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약

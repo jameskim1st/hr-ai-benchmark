@@ -37,6 +37,20 @@ Eightfold AI는 **skills-based talent intelligence** 플랫폼으로, 채용·�
 
 ## Solution Architecture (요약)
 
+### A. Process
+
+- **Before**: 채용·내부이동·후계 별도 시스템, 정적 직무 기술서·resume keyword 매칭
+- **After**:
+  1. 회사 HRIS·ATS·LMS 데이터를 Eightfold에 연결
+  2. Capabilities Matrix가 직원 skill·capability·aspiration·work pattern 모델링 (1.6B+ profile 기반)
+  3. Job Intelligence Engine이 role 정의·job architecture 자동 생성·refresh
+  4. 채용·internal mobility·succession·career에 unified 매칭 점수 제공
+  5. Agentic AI가 sourcing·screening·interview scheduling 등 워크플로 자율 실행
+  6. 결과/feedback이 self-learning engine에 반영되어 매칭 정확도 개선
+- **HITL**: 리크루터·매니저가 매칭 후보 검토·결정, 단계별 checkpoint
+- **Frequency**: continuous
+- **Source**: Eightfold Talent Intelligence Platform product page
+
 ### AI Interviewer
 - 자동 1차 면접 진행 (비동기)
 - ⚠️ 벤더 주장: time to first interview 90% 감소
