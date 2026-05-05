@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [기술사무직, 신입]
 vendor: [SK하이닉스 internal]
 vendor_type: [internal-build]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [text-generation, clustering-classification]
 stage: production
 frequency: annual
 first_seen: 2025-09-16

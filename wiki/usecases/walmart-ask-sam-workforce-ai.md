@@ -10,6 +10,8 @@ region: [na, global]
 employee_class: [all]
 vendor: [Walmart (internal build)]
 vendor_type: [internal-build]
+ai_tech_type: [generative, predictive, recognition]
+ai_tech_subtype: [summarization-qa, clustering-classification, speech-recognition]
 stage: production
 frequency: daily
 first_seen: 2025

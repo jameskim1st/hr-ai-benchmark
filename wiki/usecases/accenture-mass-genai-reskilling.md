@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Accenture internal]
 vendor_type: [internal-build]
+ai_tech_type: [generative]
+ai_tech_subtype: [summarization-qa]
 stage: production
 frequency: annual
 first_seen: 2022-11-01

@@ -10,6 +10,8 @@ region: [na, eu]
 employee_class: [all]
 vendor: [Paychex]
 vendor_type: [hrms]
+ai_tech_type: [predictive]
+ai_tech_subtype: [prediction, clustering-classification]
 stage: announced
 frequency: daily
 first_seen: 2026-02-26

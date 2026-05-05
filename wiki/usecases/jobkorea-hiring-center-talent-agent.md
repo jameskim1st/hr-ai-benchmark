@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [all]
 vendor: [잡코리아, 웍스피어]
 vendor_type: [ats, point-solution]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
 frequency: daily
 first_seen: 2026-03-31

@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [all]
 vendor: [신한은행 internal]
 vendor_type: [internal-build]
+ai_tech_type: [generative, recognition]
+ai_tech_subtype: [summarization-qa, ocr, speech-recognition]
 stage: production
 frequency: daily
 first_seen: 2024-09-24

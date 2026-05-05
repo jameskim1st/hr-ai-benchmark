@@ -10,6 +10,8 @@ region: [na, global]
 employee_class: [all]
 vendor: [JPMorgan internal, OpenAI, Anthropic]
 vendor_type: [internal-build, foundation-model]
+ai_tech_type: [generative]
+ai_tech_subtype: [summarization-qa]
 stage: production
 frequency: daily
 first_seen: 2024-08-01

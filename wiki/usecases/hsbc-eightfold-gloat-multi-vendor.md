@@ -10,6 +10,8 @@ region: [eu, global]
 employee_class: [all]
 vendor: [Eightfold AI, Gloat, SAP SuccessFactors, Accenture]
 vendor_type: [talent-marketplace, hrms]
+ai_tech_type: [predictive, generative]
+ai_tech_subtype: [recommendation-ranking, information-extraction, clustering-classification]
 stage: production
 frequency: daily
 first_seen: 2025

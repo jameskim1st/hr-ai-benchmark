@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [기술사무직, 신입]
 vendor: [SKT, SK AX]
 vendor_type: [internal-build]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [information-extraction, summarization-qa, clustering-classification]
 stage: production
 frequency: annual
 first_seen: 2025-02-20

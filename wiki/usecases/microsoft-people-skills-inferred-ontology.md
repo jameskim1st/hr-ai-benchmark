@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Microsoft]
 vendor_type: [foundation-model, hrms]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [information-extraction, clustering-classification, recommendation-ranking]
 stage: production
 frequency: daily
 first_seen: 2025-04-01

@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [all]
 vendor: []
 vendor_type: [ats, point-solution]
+ai_tech_type: [predictive, automation]
+ai_tech_subtype: [recommendation-ranking, clustering-classification]
 stage: production
 frequency: daily
 first_seen: 2025-01-01

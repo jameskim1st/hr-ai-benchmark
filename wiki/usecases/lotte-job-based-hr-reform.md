@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [기술사무직, 전임직]
 vendor: []
 vendor_type: [internal-build]
+ai_tech_type: []
+ai_tech_subtype: []
 stage: production
 frequency: annual
 first_seen: 2025-04-22

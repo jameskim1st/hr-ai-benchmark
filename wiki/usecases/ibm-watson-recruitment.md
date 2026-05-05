@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [IBM]
 vendor_type: [internal-build]
+ai_tech_type: [predictive]
+ai_tech_subtype: [clustering-classification, recommendation-ranking, prediction]
 stage: production
 frequency: daily
 first_seen: 2018-01-01

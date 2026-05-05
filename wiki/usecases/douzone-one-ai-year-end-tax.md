@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [all]
 vendor: [Douzone Bizon]
 vendor_type: [hrms]
+ai_tech_type: [generative, predictive, automation]
+ai_tech_subtype: [summarization-qa, information-extraction, clustering-classification, rpa]
 stage: production
 frequency: annual              # 연 1회 연말정산
 first_seen: 2024-12-10

@@ -10,6 +10,8 @@ region: [global]
 employee_class: [기술사무직]
 vendor: [Beamery]
 vendor_type: [talent-marketplace]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [information-extraction, clustering-classification, recommendation-ranking]
 stage: production
 frequency: monthly
 first_seen: 2025

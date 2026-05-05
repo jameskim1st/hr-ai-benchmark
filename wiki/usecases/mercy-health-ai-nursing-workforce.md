@@ -10,6 +10,8 @@ region: [na]
 employee_class: [all]
 vendor: []
 vendor_type: [internal-build, point-solution]
+ai_tech_type: [generative, predictive, recognition, decision-optimization]
+ai_tech_subtype: [summarization-qa, prediction, speech-recognition, optimization]
 stage: production
 frequency: daily
 first_seen: 2023-01-01

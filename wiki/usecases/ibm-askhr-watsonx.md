@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [IBM]
 vendor_type: [internal-build]
+ai_tech_type: [generative, predictive, automation]
+ai_tech_subtype: [summarization-qa, text-generation, clustering-classification, rpa]
 stage: production
 frequency: daily
 first_seen: 2025-06-12

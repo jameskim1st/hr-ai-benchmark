@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Workday]
 vendor_type: [hrms]
+ai_tech_type: [predictive]
+ai_tech_subtype: [clustering-classification]
 stage: stub                    # 공개 정보 부족으로 stub 처리
 frequency: adhoc               # 미공개
 first_seen: 2025-09-16

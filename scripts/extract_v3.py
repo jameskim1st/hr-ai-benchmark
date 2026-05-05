@@ -164,11 +164,13 @@ def process_uc(fp):
         'region': fm.get('region', []),
         'vendor': fm.get('vendor', []),
         'vendor_type': fm.get('vendor_type', []),
+        'ai_tech_type': fm.get('ai_tech_type', []),
+        'ai_tech_subtype': fm.get('ai_tech_subtype', []),
         'confidence': 0.0,
         'stage': fm.get('stage', ''),
         'tags': fm.get('tags', []),
     }
-    for f in ['industry','region','vendor','vendor_type','tags']:
+    for f in ['industry','region','vendor','vendor_type','ai_tech_type','ai_tech_subtype','tags']:
         if isinstance(d[f], str): d[f] = [d[f]]
         elif not isinstance(d[f], list): d[f] = []
     try: d['confidence'] = float(fm.get('confidence', 0))
@@ -285,8 +287,11 @@ def main():
     has_data = sum(1 for u in ucs if u.get('data'))
     has_model = sum(1 for u in ucs if u.get('model'))
     has_steps = sum(1 for u in ucs if u.get('process_steps'))
+    has_tech = sum(1 for u in ucs if u.get('ai_tech_type'))
+    has_subtype = sum(1 for u in ucs if u.get('ai_tech_subtype'))
     has_co_str = sum(1 for c in cos if c.get('strategy'))
     print(f"Headlines: {has_hl}, System: {has_sys}, Data: {has_data}, Model: {has_model}, Steps: {has_steps}")
+    print(f"AI tech type: {has_tech}/{len(ucs)}, subtype: {has_subtype}/{len(ucs)}")
     print(f"Companies with strategy: {has_co_str}/{len(cos)}")
 
 if __name__ == '__main__':

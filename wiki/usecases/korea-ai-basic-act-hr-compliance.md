@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [all]
 vendor: [_규제 — 벤더 X_]
 vendor_type: [_규제_]
+ai_tech_type: []
+ai_tech_subtype: []
 stage: production
 frequency: adhoc
 first_seen: 2026-01-22

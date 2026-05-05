@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Amazon internal]
 vendor_type: [internal-build]
+ai_tech_type: [predictive]
+ai_tech_subtype: [prediction, clustering-classification]
 stage: production
 frequency: daily
 first_seen: 2014-01-01

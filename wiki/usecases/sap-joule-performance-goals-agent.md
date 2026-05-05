@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [SAP]
 vendor_type: [hrms]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
 frequency: monthly
 first_seen: 2025-10-01

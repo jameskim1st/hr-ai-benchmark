@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Workday]
 vendor_type: [hrms]
+ai_tech_type: []
+ai_tech_subtype: []
 stage: production
 frequency: daily
 first_seen: 2025-09-01

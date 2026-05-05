@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Workday]
 vendor_type: [hrms]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [summarization-qa, text-generation]
 stage: announced
 frequency: annual
 first_seen: 2025-09-16

@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [전임직, 기술사무직]
 vendor: [Naver Cloud]
 vendor_type: [foundation-model, hrms]
+ai_tech_type: [generative]
+ai_tech_subtype: [summarization-qa]
 stage: production
 frequency: daily
 first_seen: 2024-09-01

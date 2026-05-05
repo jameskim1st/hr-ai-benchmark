@@ -174,6 +174,61 @@ WHERE contains(file.content, "[!contradiction]") AND contains(file.content, "unr
 
 ---
 
+## 🧠 AI 기술 유형 분포 (5 대분류 axis, 2026-05-05 신규)
+
+```dataview
+TABLE WITHOUT ID
+  ai_tech_type AS "AI 기술 (top-level)",
+  length(rows) AS "건수"
+FROM "wiki/usecases"
+WHERE ai_tech_type
+FLATTEN ai_tech_type
+GROUP BY ai_tech_type
+SORT length(rows) DESC
+```
+
+### 생성형 (Generative) 사례 — Top 20 by confidence
+
+```dataview
+TABLE WITHOUT ID
+  file.link AS "Use Case",
+  primary_category AS "HR 카테고리",
+  ai_tech_subtype AS "소분류",
+  confidence AS "신뢰도"
+FROM "wiki/usecases"
+WHERE contains(ai_tech_type, "generative")
+SORT confidence DESC
+LIMIT 20
+```
+
+### 자동화 (Automation) — RPA 사례
+
+```dataview
+TABLE WITHOUT ID
+  file.link AS "Use Case",
+  primary_category AS "HR 카테고리",
+  company AS "기업",
+  confidence AS "신뢰도"
+FROM "wiki/usecases"
+WHERE contains(ai_tech_type, "automation")
+SORT confidence DESC
+```
+
+### 의사결정·최적화 (Optimization) 사례
+
+```dataview
+TABLE WITHOUT ID
+  file.link AS "Use Case",
+  primary_category AS "HR 카테고리",
+  company AS "기업",
+  confidence AS "신뢰도"
+FROM "wiki/usecases"
+WHERE contains(ai_tech_type, "decision-optimization")
+SORT confidence DESC
+```
+
+---
+
 ## 📋 Schema Reference
 
 | 필드 | 값 종류 |
@@ -183,6 +238,8 @@ WHERE contains(file.content, "[!contradiction]") AND contains(file.content, "unr
 | `frequency` | daily · monthly · annual · adhoc |
 | `region` | na · eu · apac · kr · global |
 | `vendor_type` | hrms · ats · lxp · talent-marketplace · point-solution · foundation-model · internal-build |
+| `ai_tech_type` | generative · predictive · recognition · decision-optimization · automation (5 대분류, [[CLAUDE#10 Tag 관리|CLAUDE.md §10]]) |
+| `ai_tech_subtype` | text-generation · summarization-qa · multimodal · information-extraction · prediction · clustering-classification · recommendation-ranking · ocr · speech-recognition · optimization · rpa (13 소분류) |
 | `tier` (sources) | 1 (분석기관) · 2 (HR 미디어) · 3 (벤더) · 4 (실사례 신호) |
 
 상세: [[CLAUDE#2 HR Taxonomy 대 중 소 그룹|CLAUDE.md §2]]

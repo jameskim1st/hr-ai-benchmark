@@ -10,6 +10,8 @@ region: [na]
 employee_class: [all]
 vendor: [OpenAI]
 vendor_type: [foundation-model]
+ai_tech_type: [generative]
+ai_tech_subtype: [summarization-qa]
 stage: production
 frequency: daily               # 상시 사용
 first_seen: 2025-05-22

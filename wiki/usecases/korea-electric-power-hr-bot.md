@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [전임직, 기술사무직]
 vendor: [솔트룩스]
 vendor_type: [point-solution]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
 frequency: monthly
 first_seen: 2024-01-01

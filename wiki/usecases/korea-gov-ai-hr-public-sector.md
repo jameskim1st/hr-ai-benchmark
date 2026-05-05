@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [all]
 vendor: [삼성SDS, 네이버클라우드]
 vendor_type: [internal-build, foundation-model]
+ai_tech_type: [generative]
+ai_tech_subtype: [summarization-qa, text-generation]
 stage: pilot
 frequency: adhoc
 first_seen: 2025-03-18

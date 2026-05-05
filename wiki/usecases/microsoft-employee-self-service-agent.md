@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Microsoft]
 vendor_type: [hrms]
+ai_tech_type: [generative, automation]
+ai_tech_subtype: [summarization-qa, rpa]
 stage: production
 frequency: daily
 first_seen: 2025

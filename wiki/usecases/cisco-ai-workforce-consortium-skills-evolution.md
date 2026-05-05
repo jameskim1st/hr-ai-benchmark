@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Cisco, _다수_]
 vendor_type: [internal-build]
+ai_tech_type: [predictive]
+ai_tech_subtype: [clustering-classification]
 stage: production
 frequency: annual
 first_seen: 2024-01-01

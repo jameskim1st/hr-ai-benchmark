@@ -10,6 +10,8 @@ region: [eu, global]
 employee_class: [all]
 vendor: [Siemens (internal build), ServiceNow]
 vendor_type: [internal-build]
+ai_tech_type: [predictive]
+ai_tech_subtype: [recommendation-ranking]
 stage: production
 frequency: daily
 first_seen: 2025

@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Deloitte]
 vendor_type: [_분석가_]
+ai_tech_type: []
+ai_tech_subtype: []
 stage: production
 frequency: annual
 first_seen: 2026-03-01

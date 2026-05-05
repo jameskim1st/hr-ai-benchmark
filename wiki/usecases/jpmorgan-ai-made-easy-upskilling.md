@@ -10,6 +10,8 @@ region: [na, global]
 employee_class: [all]
 vendor: [JPMorgan internal]
 vendor_type: [internal-build]
+ai_tech_type: [generative]
+ai_tech_subtype: [summarization-qa]
 stage: production
 frequency: annual
 first_seen: 2024-08-01

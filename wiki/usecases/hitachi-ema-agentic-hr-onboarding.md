@@ -10,6 +10,8 @@ region: [na, apac, eu]
 employee_class: [all]
 vendor: [Ema]
 vendor_type: [point-solution]
+ai_tech_type: [generative, automation]
+ai_tech_subtype: [summarization-qa, rpa]
 stage: production
 frequency: daily
 first_seen: 2025-01-01

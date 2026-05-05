@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Eightfold AI]
 vendor_type: [talent-marketplace]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
 frequency: daily
 first_seen: 2025

@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [all]
 vendor: [Wanted Lab]
 vendor_type: [ats]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [summarization-qa, information-extraction, recommendation-ranking]
 stage: pilot                     # 2025-10 런칭, customer 확인 0건
 frequency: daily
 first_seen: 2025-10-21

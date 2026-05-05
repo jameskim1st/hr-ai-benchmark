@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Microsoft]
 vendor_type: [hrms]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
 frequency: monthly
 first_seen: 2024-09-01

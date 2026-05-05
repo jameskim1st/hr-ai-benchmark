@@ -10,6 +10,8 @@ region: [na]
 employee_class: [all]
 vendor: [Walmart, OpenAI]
 vendor_type: [internal-build, foundation-model]
+ai_tech_type: [generative]
+ai_tech_subtype: [summarization-qa]
 stage: production
 frequency: annual
 first_seen: 2025-09-01

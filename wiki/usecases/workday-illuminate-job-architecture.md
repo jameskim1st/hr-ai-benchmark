@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Workday]
 vendor_type: [hrms]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production              # Bersin 2024-09은 "released" 맥락, PR 2025-09은 "expanded" 맥락
 frequency: adhoc               # 실행 주기 미공개
 first_seen: 2024-09-17

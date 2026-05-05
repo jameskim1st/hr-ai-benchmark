@@ -10,6 +10,8 @@ region: [na]
 employee_class: [all]
 vendor: [BetterUp]
 vendor_type: [point-solution]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
 frequency: monthly
 first_seen: 2025

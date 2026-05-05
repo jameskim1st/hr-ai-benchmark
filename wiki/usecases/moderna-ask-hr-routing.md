@@ -10,6 +10,8 @@ region: [na]
 employee_class: [all]
 vendor: [OpenAI]
 vendor_type: [foundation-model]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
 frequency: daily
 first_seen: 2024-04-24

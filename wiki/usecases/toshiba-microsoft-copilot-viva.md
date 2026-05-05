@@ -10,6 +10,8 @@ region: [apac]
 employee_class: [기술사무직]
 vendor: [Microsoft]
 vendor_type: [hrms]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [summarization-qa, text-generation, recommendation-ranking]
 stage: production
 frequency: daily
 first_seen: 2024-05-01

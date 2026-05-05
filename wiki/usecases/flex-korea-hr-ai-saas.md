@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [기술사무직, 전임직, 계약직]
 vendor: []
 vendor_type: [internal-build]
+ai_tech_type: [generative, recognition]
+ai_tech_subtype: [summarization-qa, ocr]
 stage: pilot
 frequency: daily
 first_seen: 2025-01-13

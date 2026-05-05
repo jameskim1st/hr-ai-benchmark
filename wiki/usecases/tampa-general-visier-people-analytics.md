@@ -10,6 +10,8 @@ region: [na]
 employee_class: [all]
 vendor: [Visier]
 vendor_type: [point-solution]
+ai_tech_type: [predictive, generative]
+ai_tech_subtype: [prediction, summarization-qa]
 stage: production
 frequency: daily
 first_seen: 2025-03-01

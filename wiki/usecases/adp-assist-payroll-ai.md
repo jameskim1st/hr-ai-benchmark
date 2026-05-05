@@ -10,6 +10,8 @@ region: [na, global]
 employee_class: [all]
 vendor: [ADP]
 vendor_type: [hrms]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [summarization-qa, clustering-classification, prediction]
 stage: production
 frequency: monthly
 first_seen: 2025-09-03

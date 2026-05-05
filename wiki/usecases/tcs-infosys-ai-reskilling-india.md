@@ -10,6 +10,8 @@ region: [apac]
 employee_class: [all]
 vendor: [Microsoft]
 vendor_type: [foundation-model, internal-build]
+ai_tech_type: [generative]
+ai_tech_subtype: [summarization-qa]
 stage: production
 frequency: adhoc
 first_seen: 2024-01-01

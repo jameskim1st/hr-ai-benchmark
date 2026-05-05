@@ -10,6 +10,8 @@ region: [na]
 employee_class: [all]
 vendor: [15Five]
 vendor_type: [point-solution]
+ai_tech_type: [generative, recognition]
+ai_tech_subtype: [summarization-qa, speech-recognition]
 stage: production
 frequency: daily
 first_seen: 2025-05-20

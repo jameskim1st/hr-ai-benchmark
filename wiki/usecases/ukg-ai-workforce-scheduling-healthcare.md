@@ -10,6 +10,8 @@ region: [na]
 employee_class: [전임직, all]
 vendor: [UKG]
 vendor_type: [hrms]
+ai_tech_type: [decision-optimization, predictive, generative]
+ai_tech_subtype: [optimization, recommendation-ranking, summarization-qa]
 stage: production
 frequency: daily
 first_seen: 2025-06-01

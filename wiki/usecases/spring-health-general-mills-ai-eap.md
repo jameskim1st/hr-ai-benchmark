@@ -10,6 +10,8 @@ region: [na]
 employee_class: [all]
 vendor: [Spring Health]
 vendor_type: [point-solution]
+ai_tech_type: [predictive]
+ai_tech_subtype: [recommendation-ranking, prediction, clustering-classification]
 stage: production
 frequency: daily
 first_seen: 2024-01-01

@@ -10,6 +10,8 @@ region: [na, global]
 employee_class: [all]
 vendor: [Orgvue]
 vendor_type: [point-solution]
+ai_tech_type: [predictive]
+ai_tech_subtype: [clustering-classification]
 stage: production
 frequency: adhoc
 first_seen: 2025-12-01

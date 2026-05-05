@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Workday, Sana]
 vendor_type: [hrms, lxp]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [text-generation, multimodal, summarization-qa, recommendation-ranking]
 stage: production
 frequency: daily
 first_seen: 2025-11-01

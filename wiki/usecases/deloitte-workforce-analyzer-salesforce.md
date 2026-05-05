@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Deloitte]
 vendor_type: [point-solution]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [summarization-qa, clustering-classification, prediction]
 stage: production
 frequency: adhoc
 first_seen: 2025-06-24

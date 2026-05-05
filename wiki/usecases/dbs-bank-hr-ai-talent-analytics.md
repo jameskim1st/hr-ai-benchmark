@@ -10,6 +10,8 @@ region: [apac]
 employee_class: [all]
 vendor: []
 vendor_type: [internal-build]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [information-extraction, prediction, recommendation-ranking, clustering-classification]
 stage: production
 frequency: daily
 first_seen: 2022-01-01

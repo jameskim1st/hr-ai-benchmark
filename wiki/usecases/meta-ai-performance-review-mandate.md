@@ -10,6 +10,8 @@ region: [global]
 employee_class: [기술사무직]
 vendor: [Meta (internal build), OpenAI, Meta AI]
 vendor_type: [internal-build]
+ai_tech_type: [generative]
+ai_tech_subtype: [text-generation, summarization-qa]
 stage: production
 frequency: annual
 first_seen: 2025-11

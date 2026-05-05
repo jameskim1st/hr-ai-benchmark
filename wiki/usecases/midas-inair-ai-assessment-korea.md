@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [기술사무직]
 vendor: [마이다스아이티]
 vendor_type: [point-solution]
+ai_tech_type: [predictive, recognition, generative]
+ai_tech_subtype: [prediction, speech-recognition, multimodal]
 stage: production
 frequency: annual
 first_seen: 2025-07

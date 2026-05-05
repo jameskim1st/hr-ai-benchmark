@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [HireVue]
 vendor_type: [point-solution]
+ai_tech_type: [predictive]
+ai_tech_subtype: [clustering-classification, prediction]
 stage: production
 frequency: daily
 first_seen: 2025

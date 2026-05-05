@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [all]
 vendor: [SKT, SK AX]
 vendor_type: [internal-build]
+ai_tech_type: [generative, automation]
+ai_tech_subtype: [summarization-qa, rpa]
 stage: production
 frequency: daily
 first_seen: 2025-09-01

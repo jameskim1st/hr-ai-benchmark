@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [기술사무직, 전임직]
 vendor: []
 vendor_type: [point-solution]
+ai_tech_type: [generative]
+ai_tech_subtype: [summarization-qa, text-generation]
 stage: production
 frequency: monthly
 first_seen: 2024-01-01

@@ -10,6 +10,8 @@ region: [eu, global]
 employee_class: [all]
 vendor: [Gloat]
 vendor_type: [talent-marketplace]
+ai_tech_type: [predictive, generative]
+ai_tech_subtype: [recommendation-ranking, information-extraction]
 stage: production
 frequency: daily
 first_seen: 2022-01-01

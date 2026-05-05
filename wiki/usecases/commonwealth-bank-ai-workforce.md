@@ -10,6 +10,8 @@ region: [apac]
 employee_class: [all]
 vendor: [Microsoft, OpenAI]
 vendor_type: [foundation-model, point-solution]
+ai_tech_type: [generative]
+ai_tech_subtype: [summarization-qa]
 stage: production
 frequency: daily
 first_seen: 2025-07-01

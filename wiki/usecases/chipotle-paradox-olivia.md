@@ -10,6 +10,8 @@ region: [na]
 employee_class: [기술사무직, 계약직]   # 매장 직원 = 시급직, 미국 맥락에서
 vendor: [Paradox]
 vendor_type: [point-solution]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
 frequency: daily
 first_seen: 2024-10-22         # Chipotle 공식 PR 기준

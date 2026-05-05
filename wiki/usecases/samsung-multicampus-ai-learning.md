@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [기술사무직, 전임직]
 vendor: [멀티캠퍼스]
 vendor_type: [internal-build]
+ai_tech_type: [predictive]
+ai_tech_subtype: [recommendation-ranking]
 stage: production
 frequency: daily
 first_seen: 2025-01-01

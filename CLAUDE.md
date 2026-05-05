@@ -142,6 +142,8 @@ region: [na]                       # na | eu | apac | kr | global
 employee_class: [all]              # 기술사무직 | 전임직 | 계약직 | all
 vendor: [OpenAI]
 vendor_type: [foundation-model]    # hrms | ats | lxp | talent-marketplace | point-solution | foundation-model | internal-build
+ai_tech_type: [generative, automation]   # 5 대분류 — §10 ai_tech_type 표 참조
+ai_tech_subtype: [summarization-qa, rpa] # 13 소분류 — §10 표 참조 (subtype은 type의 자식이어야 함)
 stage: production                  # announced | pilot | production | sunset
 frequency: daily                   # daily | monthly | annual | adhoc
 first_seen: 2025-07-12
@@ -490,6 +492,35 @@ operation 값: `ingest` | `query` | `lint` | `digest` | `refactor` | `manual-edi
 - `frequency`: daily, monthly, annual, adhoc (프로세스 실행 주기 — AI ROI 판단에 활용)
 - `stage`: announced, pilot, production, sunset
 - `vendor_type`: hrms, ats, lxp, talent-marketplace, point-solution, foundation-model, internal-build
+- `ai_tech_type`: 사용된 AI 기술 5 대분류 (use case 1건이 다수 type 가능)
+- `ai_tech_subtype`: 13 소분류 (subtype은 반드시 자기 부모 type과 함께 표기)
+
+### `ai_tech_type` / `ai_tech_subtype` taxonomy (PwC 양식)
+
+분류 기준·실수 사례·실전 매핑은 **`기타/ai_technology_categories.md`**를 ground truth로 사용. 신규 use case 작성·기존 use case 갱신 시 모두 이 reference doc의 정의를 따른다.
+
+| 대분류 (top-level) | ID | 소분류 (subtype) | ID |
+|---|---|---|---|
+| ① 생성형 (Generative) | `generative` | 텍스트 생성 | `text-generation` |
+| | | 요약·재작성·질의응답 ⭐ | `summarization-qa` |
+| | | 멀티모달 생성·이해 | `multimodal` |
+| | | 정보 추출 | `information-extraction` |
+| ② 판별·예측 (Predictive) | `predictive` | 예측 | `prediction` |
+| | | 군집·분류 | `clustering-classification` |
+| | | 추천·랭킹 | `recommendation-ranking` |
+| ③ 인식 (Recognition) | `recognition` | OCR | `ocr` |
+| | | 음성 인식 | `speech-recognition` |
+| ④ 의사결정·최적화 (Decision·Optimization) | `decision-optimization` | 최적화 | `optimization` |
+| ⑤ 자동화 (Automation) | `automation` | RPA | `rpa` |
+
+**핵심 분류 원칙** (reference doc 발췌 — 자주 혼동되는 지점):
+
+1. **요약·재작성·질의응답이 압도적 다수** — chatbot·정책 Q&A·메일/보고서 작성은 거의 모두 `summarization-qa`. `text-generation`은 자유 창작에만.
+2. **예측 vs 군집·분류** — 미래 확률적 ML 추론(이탈·매출 예측)만 `prediction`. 규칙 기반 binary 판정은 `clustering-classification`.
+3. **최적화** — LP·휴리스틱·강화학습 등 알고리즘이 들어가야 `optimization`. 단순 판정은 분류.
+4. **RPA** — 봇이 화면·시스템 조작하는 경우만. AI agent의 텍스트 자동 작성은 RPA 아님.
+5. **멀티모달** — 텍스트+이미지/음성/영상 동시. PDF→텍스트만 뽑는 건 `information-extraction`.
+6. **정보 추출** — 비정형 텍스트(이력서·메일)에서 구조화 필드 추출 (NER 류).
 
 Dataview 쿼리로 어떤 축으로든 재조합 가능하게 유지하는 것이 목적.
 

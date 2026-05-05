@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Amazon (internal build)]
 vendor_type: [internal-build]
+ai_tech_type: [generative, predictive, automation]
+ai_tech_subtype: [summarization-qa, clustering-classification, rpa]
 stage: production
 frequency: adhoc
 first_seen: 2025-10

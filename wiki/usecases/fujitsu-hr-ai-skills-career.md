@@ -10,6 +10,8 @@ region: [apac, global]
 employee_class: [all]
 vendor: []
 vendor_type: [internal-build]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
 frequency: daily
 first_seen: 2024-01-01

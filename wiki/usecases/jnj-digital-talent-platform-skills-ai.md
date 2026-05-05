@@ -10,6 +10,8 @@ region: [global]
 employee_class: [기술사무직]
 vendor: [J&J (internal build)]
 vendor_type: [internal-build]
+ai_tech_type: [generative, predictive]
+ai_tech_subtype: [information-extraction, clustering-classification, recommendation-ranking]
 stage: production
 frequency: daily
 first_seen: 2020

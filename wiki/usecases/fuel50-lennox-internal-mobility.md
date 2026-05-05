@@ -10,6 +10,8 @@ region: [na]
 employee_class: [all]
 vendor: [Fuel50]
 vendor_type: [talent-marketplace]
+ai_tech_type: [predictive]
+ai_tech_subtype: [recommendation-ranking]
 stage: production
 frequency: monthly
 first_seen: 2025

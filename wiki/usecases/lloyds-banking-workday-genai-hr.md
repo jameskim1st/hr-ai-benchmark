@@ -10,6 +10,8 @@ region: [eu]
 employee_class: [all]
 vendor: [Workday, ServiceNow]
 vendor_type: [hrms, point-solution]
+ai_tech_type: [generative]
+ai_tech_subtype: [summarization-qa]
 stage: production
 frequency: daily
 first_seen: 2024-11-07

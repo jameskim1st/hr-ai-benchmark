@@ -32,6 +32,8 @@ CSS = r"""
   --r:10px;
   --cat-ta:#2563eb;--cat-ob:#0d9488;--cat-ld:#7c3aed;
   --cat-pm:#ea580c;--cat-tr:#16a34a;--cat-ex:#4f46e5;--cat-sw:#e11d48;
+  --tech-gen:#a855f7;--tech-pred:#f59e0b;--tech-rec:#06b6d4;
+  --tech-dec:#64748b;--tech-auto:#ec4899;
 }
 .dark{
   --bg:#09090b;--bg2:#18181b;--bg3:#27272a;
@@ -77,6 +79,11 @@ h1{font-size:1.25rem;font-weight:700;letter-spacing:-.025em}
 .uc-tags{display:flex;gap:4px;margin-top:6px;flex-wrap:wrap}
 .tg{font-size:.6rem;padding:1px 6px;border-radius:3px;background:var(--bg3);color:var(--text3)}
 .tg.kr{background:#fef3c7;color:#92400e}.dark .tg.kr{background:#422006;color:#fbbf24}
+.tg.tech-gen{background:color-mix(in srgb,var(--tech-gen) 15%,transparent);color:var(--tech-gen)}
+.tg.tech-pred{background:color-mix(in srgb,var(--tech-pred) 15%,transparent);color:var(--tech-pred)}
+.tg.tech-rec{background:color-mix(in srgb,var(--tech-rec) 15%,transparent);color:var(--tech-rec)}
+.tg.tech-dec{background:color-mix(in srgb,var(--tech-dec) 15%,transparent);color:var(--tech-dec)}
+.tg.tech-auto{background:color-mix(in srgb,var(--tech-auto) 15%,transparent);color:var(--tech-auto)}
 .uc-imp{font-size:.7rem;color:var(--text3);margin-top:5px;line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 
 /* Detail */
@@ -190,23 +197,31 @@ const esc=s=>s?(s+'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&
 // For fields already containing HTML tags — pass through safely (strips dangerous tags)
 const htm=s=>s||'';
 const nd='<span style="color:var(--text3);font-size:.68rem">Not disclosed</span>';
+
+// AI 기술 분류 라벨·CSS class 매핑
+const TECH_LABEL={generative:'생성형',predictive:'판별·예측',recognition:'인식','decision-optimization':'의사결정·최적화',automation:'자동화'};
+const TECH_CLASS={generative:'tech-gen',predictive:'tech-pred',recognition:'tech-rec','decision-optimization':'tech-dec',automation:'tech-auto'};
+const SUB_LABEL={'text-generation':'텍스트 생성','summarization-qa':'요약·재작성·QA','multimodal':'멀티모달','information-extraction':'정보 추출','prediction':'예측','clustering-classification':'군집·분류','recommendation-ranking':'추천·랭킹','ocr':'OCR','speech-recognition':'음성 인식','optimization':'최적화','rpa':'RPA'};
+const SUB_PARENT={'text-generation':'generative','summarization-qa':'generative','multimodal':'generative','information-extraction':'generative','prediction':'predictive','clustering-classification':'predictive','recommendation-ranking':'predictive','ocr':'recognition','speech-recognition':'recognition','optimization':'decision-optimization','rpa':'automation'};
 let dk=0,kr=0,ct='cat',F=[...D];
 
 function tDk(){dk=!dk;document.documentElement.classList.toggle('dark',dk)}
 function tKR(){kr=!kr;document.getElementById('kb').classList.toggle('on',kr);af()}
 function sT(t){ct=t;document.querySelectorAll('.tab').forEach(e=>e.classList.toggle('on',e.dataset.t===t));['cat','co','mx'].forEach(v=>document.getElementById('v'+v).style.display=v===t?'':'none');ren()}
-function cF(){document.getElementById('fI').value='';document.getElementById('fR').value='';document.getElementById('fC').value='0';document.getElementById('q').value='';kr=0;document.getElementById('kb').classList.remove('on');af()}
+function cF(){document.getElementById('fI').value='';document.getElementById('fR').value='';document.getElementById('fT').value='';document.getElementById('fC').value='0';document.getElementById('q').value='';kr=0;document.getElementById('kb').classList.remove('on');af()}
 
 function af(){
   const q=document.getElementById('q').value.toLowerCase(),
     i=document.getElementById('fI').value,
     r=document.getElementById('fR').value,
+    t=document.getElementById('fT').value,
     c=parseFloat(document.getElementById('fC').value)||0;
   F=D.filter(u=>{
     if(kr&&!(u.region||[]).includes('kr'))return 0;
     if(q&&!JSON.stringify(u).toLowerCase().includes(q))return 0;
     if(i&&!(u.industry||[]).includes(i))return 0;
     if(r&&!(u.region||[]).includes(r))return 0;
+    if(t&&!(u.ai_tech_type||[]).includes(t))return 0;
     return u.confidence>=c;
   });
   document.getElementById('cA').style.display=(q||i||r||c>0||kr)?'':'none';
@@ -284,7 +299,9 @@ function card(u,idx){
     h+='<div class="uc-hl">'+htm(u.headline)+'</div>';
   }
   // Row 3: Tags
-  h+='<div class="uc-tags">'+tags.map(t=>'<span class="tg'+(t==='KR'?' kr':'')+'">'+esc(t)+'</span>').join('')+'</div>';
+  h+='<div class="uc-tags">'+tags.map(t=>'<span class="tg'+(t==='KR'?' kr':'')+'">'+esc(t)+'</span>').join('')
+    +(u.ai_tech_type||[]).map(t=>'<span class="tg '+(TECH_CLASS[t]||'')+'">'+esc(TECH_LABEL[t]||t)+'</span>').join('')
+    +'</div>';
   // Row 4: Impact summary (muted, truncated)
   if(u.impact_summary){
     h+='<div class="uc-imp">'+htm(u.impact_summary)+'</div>';
@@ -310,6 +327,16 @@ function card(u,idx){
 
   // 4. Impact Before→After
   h+='<div class="tpl-sec"><div class="tpl-hd"><i>\ud83d\udcca</i> Impact (Before \u2192 After)</div><div class="tpl-bd">'+renderBA(u)+'</div></div>';
+
+  // 4.5. AI \uae30\uc220 \ubd84\ub958
+  if((u.ai_tech_type||[]).length){
+    const typeChips=(u.ai_tech_type||[]).map(t=>'<span class="tg '+(TECH_CLASS[t]||'')+'">'+esc(TECH_LABEL[t]||t)+'</span>').join(' ');
+    const subBy={};
+    (u.ai_tech_subtype||[]).forEach(s=>{const p=SUB_PARENT[s]||'';(subBy[p]=subBy[p]||[]).push(SUB_LABEL[s]||s)});
+    let subText='';
+    (u.ai_tech_type||[]).forEach(t=>{if(subBy[t])subText+='<div style="font-size:.68rem;color:var(--text2);margin-top:3px"><strong>'+esc(TECH_LABEL[t])+'</strong>: '+subBy[t].map(esc).join(' / ')+'</div>'});
+    h+='<div class="tpl-sec"><div class="tpl-hd"><i>\ud83e\udde0</i> AI \uae30\uc220 \ubd84\ub958</div><div class="tpl-bd"><div style="display:flex;gap:4px;flex-wrap:wrap">'+typeChips+'</div>'+subText+'</div></div>';
+  }
 
   // 5. Consulting
   if(u.consulting){h+='<div class="cbox">\ud83d\udca1 '+htm(u.consulting)+'</div>'}
@@ -540,6 +567,7 @@ BODY = f"""
   <div class="fl">
     <select class="fs" id="fI" onchange="af()"><option value="">Industry</option></select>
     <select class="fs" id="fR" onchange="af()"><option value="">Region</option><option value="kr">Korea</option><option value="na">N. America</option><option value="eu">Europe</option><option value="apac">APAC</option><option value="global">Global</option></select>
+    <select class="fs" id="fT" onchange="af()"><option value="">AI 기술</option><option value="generative">생성형</option><option value="predictive">판별·예측</option><option value="recognition">인식</option><option value="decision-optimization">의사결정·최적화</option><option value="automation">자동화</option></select>
     <select class="fs" id="fC" onchange="af()"><option value="0">Confidence</option><option value="0.5">&ge;0.50</option><option value="0.4">&ge;0.40</option><option value="0.3">&ge;0.30</option></select>
     <span class="fx" id="cA" style="display:none" onclick="cF()">Clear</span>
     <span class="fc" id="fn"></span>

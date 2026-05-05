@@ -18,6 +18,12 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
     "confidence": 0.75,
     "stage": "production",
     "tags": [
@@ -67,6 +73,12 @@
     ],
     "vendor_type": [
       "internal-build"
+    ],
+    "ai_tech_type": [
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "clustering-classification"
     ],
     "confidence": 0.7,
     "stage": "production",
@@ -125,6 +137,12 @@
       "internal-build",
       "foundation-model"
     ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
     "confidence": 0.7,
     "stage": "production",
     "tags": [
@@ -180,6 +198,14 @@
     ],
     "vendor_type": [
       "foundation-model"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification"
     ],
     "confidence": 0.7,
     "stage": "production",
@@ -239,6 +265,12 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
     "confidence": 0.65,
     "stage": "production",
     "tags": [
@@ -286,6 +318,14 @@
     "vendor_type": [
       "internal-build",
       "foundation-model"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification"
     ],
     "confidence": 0.65,
     "stage": "production",
@@ -339,6 +379,16 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification",
+      "rpa"
+    ],
     "confidence": 0.65,
     "stage": "production",
     "tags": [
@@ -386,6 +436,17 @@
     ],
     "vendor_type": [
       "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "prediction",
+      "clustering-classification",
+      "rpa"
     ],
     "confidence": 0.65,
     "stage": "production",
@@ -439,6 +500,8 @@
     "vendor_type": [
       "_규제_"
     ],
+    "ai_tech_type": [],
+    "ai_tech_subtype": [],
     "confidence": 0.65,
     "stage": "production",
     "tags": [
@@ -500,6 +563,15 @@
       "foundation-model",
       "hrms"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "information-extraction",
+      "clustering-classification",
+      "recommendation-ranking"
+    ],
     "confidence": 0.65,
     "stage": "production",
     "tags": [
@@ -551,6 +623,12 @@
       "internal-build",
       "foundation-model"
     ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
     "confidence": 0.65,
     "stage": "production",
     "tags": [
@@ -598,6 +676,13 @@
     ],
     "vendor_type": [
       "internal-build"
+    ],
+    "ai_tech_type": [
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "prediction",
+      "clustering-classification"
     ],
     "confidence": 0.6,
     "stage": "production",
@@ -648,6 +733,15 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "information-extraction",
+      "clustering-classification",
+      "recommendation-ranking"
+    ],
     "confidence": 0.6,
     "stage": "production",
     "tags": [
@@ -696,6 +790,12 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
     "confidence": 0.6,
     "stage": "production",
     "tags": [
@@ -742,6 +842,14 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification"
     ],
     "confidence": 0.55,
     "stage": "production",
@@ -803,6 +911,12 @@
       "foundation-model",
       "point-solution"
     ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
     "confidence": 0.55,
     "stage": "production",
     "tags": [
@@ -854,6 +968,8 @@
     "vendor_type": [
       "_분석가_"
     ],
+    "ai_tech_type": [],
+    "ai_tech_subtype": [],
     "confidence": 0.55,
     "stage": "production",
     "tags": [
@@ -904,6 +1020,15 @@
     ],
     "vendor_type": [
       "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "information-extraction",
+      "recommendation-ranking",
+      "clustering-classification"
     ],
     "confidence": 0.55,
     "stage": "production",
@@ -971,6 +1096,12 @@
       "foundation-model",
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
     "confidence": 0.55,
     "stage": "production",
     "tags": [
@@ -1021,6 +1152,14 @@
     ],
     "vendor_type": [
       "internal-build"
+    ],
+    "ai_tech_type": [
+      "decision-optimization",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "optimization",
+      "clustering-classification"
     ],
     "confidence": 0.55,
     "stage": "production",
@@ -1074,6 +1213,12 @@
       "hrms",
       "point-solution"
     ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
     "confidence": 0.55,
     "stage": "production",
     "tags": [
@@ -1123,6 +1268,18 @@
       "internal-build",
       "point-solution"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive",
+      "recognition",
+      "decision-optimization"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "prediction",
+      "speech-recognition",
+      "optimization"
+    ],
     "confidence": 0.55,
     "stage": "production",
     "tags": [
@@ -1170,6 +1327,14 @@
     ],
     "vendor_type": [
       "hrms"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification"
     ],
     "confidence": 0.55,
     "stage": "production",
@@ -1220,6 +1385,16 @@
     "vendor_type": [
       "hrms",
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification",
+      "rpa"
     ],
     "confidence": 0.55,
     "stage": "production",
@@ -1275,6 +1450,14 @@
       "foundation-model",
       "hrms",
       "ats"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification"
     ],
     "confidence": 0.55,
     "stage": "production",
@@ -1333,6 +1516,16 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive",
+      "recognition"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification",
+      "speech-recognition"
+    ],
     "confidence": 0.55,
     "stage": "production",
     "tags": [
@@ -1382,6 +1575,14 @@
     "vendor_type": [
       "point-solution",
       "foundation-model"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification"
     ],
     "confidence": 0.5,
     "stage": "production",
@@ -1438,6 +1639,16 @@
     "vendor": [],
     "vendor_type": [
       "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "information-extraction",
+      "prediction",
+      "recommendation-ranking",
+      "clustering-classification"
     ],
     "confidence": 0.5,
     "stage": "production",
@@ -1497,6 +1708,12 @@
       "foundation-model",
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
     "confidence": 0.5,
     "stage": "production",
     "tags": [
@@ -1545,6 +1762,13 @@
     ],
     "vendor_type": [
       "internal-build"
+    ],
+    "ai_tech_type": [
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "prediction",
+      "recommendation-ranking"
     ],
     "confidence": 0.5,
     "stage": "production",
@@ -1603,6 +1827,16 @@
     "vendor_type": [
       "point-solution"
     ],
+    "ai_tech_type": [
+      "predictive",
+      "recognition",
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "prediction",
+      "speech-recognition",
+      "multimodal"
+    ],
     "confidence": 0.5,
     "stage": "production",
     "tags": [
@@ -1647,6 +1881,15 @@
     ],
     "vendor_type": [
       "hrms"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "recommendation-ranking",
+      "clustering-classification"
     ],
     "confidence": 0.5,
     "stage": "production",
@@ -1718,6 +1961,12 @@
     "vendor_type": [
       "talent-marketplace"
     ],
+    "ai_tech_type": [
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "recommendation-ranking"
+    ],
     "confidence": 0.5,
     "stage": "production",
     "tags": [
@@ -1762,6 +2011,15 @@
     ],
     "vendor_type": [
       "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "recognition"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "ocr",
+      "speech-recognition"
     ],
     "confidence": 0.5,
     "stage": "production",
@@ -1815,6 +2073,15 @@
     ],
     "vendor_type": [
       "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "information-extraction",
+      "summarization-qa",
+      "clustering-classification"
     ],
     "confidence": 0.5,
     "stage": "production",
@@ -1870,6 +2137,14 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "rpa"
+    ],
     "confidence": 0.5,
     "stage": "production",
     "tags": [
@@ -1922,6 +2197,8 @@
     "vendor_type": [
       "hrms"
     ],
+    "ai_tech_type": [],
+    "ai_tech_subtype": [],
     "confidence": 0.5,
     "stage": "production",
     "tags": [
@@ -1980,6 +2257,16 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification",
+      "rpa"
+    ],
     "confidence": 0.45,
     "stage": "production",
     "tags": [
@@ -2024,6 +2311,14 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "recommendation-ranking"
     ],
     "confidence": 0.45,
     "stage": "production",
@@ -2072,6 +2367,13 @@
     "vendor_type": [
       "foundation-model"
     ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "text-generation",
+      "summarization-qa"
+    ],
     "confidence": 0.45,
     "stage": "production",
     "tags": [
@@ -2116,6 +2418,17 @@
     ],
     "vendor_type": [
       "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "text-generation",
+      "clustering-classification",
+      "rpa"
     ],
     "confidence": 0.45,
     "stage": "production",
@@ -2168,6 +2481,15 @@
     "vendor_type": [
       "hrms",
       "foundation-model"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "recommendation-ranking",
+      "clustering-classification"
     ],
     "confidence": 0.45,
     "stage": "production",
@@ -2229,6 +2551,14 @@
       "ats",
       "point-solution"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "recommendation-ranking"
+    ],
     "confidence": 0.45,
     "stage": "production",
     "tags": [
@@ -2277,6 +2607,14 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "recommendation-ranking"
     ],
     "confidence": 0.45,
     "stage": "production",
@@ -2327,6 +2665,12 @@
     "vendor_type": [
       "foundation-model",
       "hrms"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
     ],
     "confidence": 0.45,
     "stage": "production",
@@ -2379,6 +2723,14 @@
     "vendor_type": [
       "talent-marketplace"
     ],
+    "ai_tech_type": [
+      "predictive",
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "recommendation-ranking",
+      "information-extraction"
+    ],
     "confidence": 0.45,
     "stage": "production",
     "tags": [
@@ -2427,6 +2779,14 @@
     ],
     "vendor_type": [
       "hrms"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "recommendation-ranking"
     ],
     "confidence": 0.45,
     "stage": "production",
@@ -2480,6 +2840,12 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "recommendation-ranking"
+    ],
     "confidence": 0.45,
     "stage": "production",
     "tags": [
@@ -2524,6 +2890,14 @@
     ],
     "vendor_type": [
       "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "text-generation",
+      "clustering-classification"
     ],
     "confidence": 0.45,
     "stage": "production",
@@ -2575,6 +2949,12 @@
     "vendor_type": [
       "foundation-model",
       "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
     ],
     "confidence": 0.45,
     "stage": "production",
@@ -2628,6 +3008,16 @@
     "vendor_type": [
       "hrms",
       "lxp"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "text-generation",
+      "multimodal",
+      "summarization-qa",
+      "recommendation-ranking"
     ],
     "confidence": 0.45,
     "stage": "production",
@@ -2695,6 +3085,15 @@
     "vendor_type": [
       "lxp"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "text-generation",
+      "summarization-qa",
+      "recommendation-ranking"
+    ],
     "confidence": 0.4,
     "stage": "production",
     "tags": [
@@ -2739,6 +3138,14 @@
     "vendor": [],
     "vendor_type": [
       "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "recommendation-ranking"
     ],
     "confidence": 0.4,
     "stage": "production",
@@ -2786,6 +3193,14 @@
     "vendor_type": [
       "internal-build",
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "rpa"
     ],
     "confidence": 0.4,
     "stage": "production",
@@ -2836,6 +3251,14 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "clustering-classification",
+      "recommendation-ranking",
+      "prediction"
+    ],
     "confidence": 0.4,
     "stage": "production",
     "tags": [
@@ -2883,6 +3306,16 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "text-generation",
+      "prediction",
+      "recommendation-ranking"
+    ],
     "confidence": 0.4,
     "stage": "production",
     "tags": [
@@ -2928,6 +3361,13 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "text-generation",
+      "summarization-qa"
+    ],
     "confidence": 0.4,
     "stage": "production",
     "tags": [
@@ -2970,6 +3410,12 @@
     ],
     "vendor_type": [
       "foundation-model"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
     ],
     "confidence": 0.4,
     "stage": "production",
@@ -3023,6 +3469,12 @@
     ],
     "vendor_type": [
       "foundation-model"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
     ],
     "confidence": 0.4,
     "stage": "production",
@@ -3081,6 +3533,15 @@
       "point-solution",
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification",
+      "text-generation"
+    ],
     "confidence": 0.4,
     "stage": "production",
     "tags": [
@@ -3136,6 +3597,14 @@
     "vendor_type": [
       "point-solution"
     ],
+    "ai_tech_type": [
+      "predictive",
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "prediction",
+      "summarization-qa"
+    ],
     "confidence": 0.4,
     "stage": "production",
     "tags": [
@@ -3187,6 +3656,14 @@
     "vendor_type": [
       "hrms"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "text-generation"
+    ],
     "confidence": 0.4,
     "stage": "announced",
     "tags": [
@@ -3231,6 +3708,15 @@
     ],
     "vendor_type": [
       "talent-marketplace"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "information-extraction",
+      "clustering-classification",
+      "recommendation-ranking"
     ],
     "confidence": 0.35,
     "stage": "production",
@@ -3277,6 +3763,14 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "recommendation-ranking"
     ],
     "confidence": 0.35,
     "stage": "production",
@@ -3330,6 +3824,15 @@
     "vendor_type": [
       "point-solution"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification",
+      "prediction"
+    ],
     "confidence": 0.35,
     "stage": "production",
     "tags": [
@@ -3375,6 +3878,13 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "clustering-classification",
+      "prediction"
     ],
     "confidence": 0.35,
     "stage": "production",
@@ -3424,6 +3934,14 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "rpa"
     ],
     "confidence": 0.35,
     "stage": "production",
@@ -3478,6 +3996,13 @@
       "internal-build",
       "foundation-model"
     ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "text-generation"
+    ],
     "confidence": 0.35,
     "stage": "pilot",
     "tags": [
@@ -3529,6 +4054,8 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [],
+    "ai_tech_subtype": [],
     "confidence": 0.35,
     "stage": "production",
     "tags": [
@@ -3571,6 +4098,14 @@
     ],
     "vendor_type": [
       "hrms"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "rpa"
     ],
     "confidence": 0.35,
     "stage": "production",
@@ -3621,6 +4156,13 @@
     "vendor_type": [
       "foundation-model"
     ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "text-generation"
+    ],
     "confidence": 0.35,
     "stage": "production",
     "tags": [
@@ -3666,6 +4208,14 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification"
     ],
     "confidence": 0.35,
     "stage": "production",
@@ -3722,6 +4272,14 @@
     "vendor_type": [
       "point-solution"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification"
+    ],
     "confidence": 0.35,
     "stage": "production",
     "tags": [
@@ -3768,6 +4326,15 @@
     ],
     "vendor_type": [
       "hrms"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "text-generation",
+      "recommendation-ranking"
     ],
     "confidence": 0.35,
     "stage": "production",
@@ -3824,6 +4391,14 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "recommendation-ranking"
+    ],
     "confidence": 0.3,
     "stage": "production",
     "tags": [
@@ -3870,6 +4445,15 @@
     ],
     "vendor_type": [
       "hrms"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification",
+      "prediction"
     ],
     "confidence": 0.3,
     "stage": "production",
@@ -3924,6 +4508,13 @@
     "vendor_type": [
       "point-solution"
     ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "text-generation"
+    ],
     "confidence": 0.3,
     "stage": "production",
     "tags": [
@@ -3976,6 +4567,14 @@
     "vendor_type": [
       "point-solution"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "recommendation-ranking"
+    ],
     "confidence": 0.3,
     "stage": "production",
     "tags": [
@@ -4017,6 +4616,14 @@
     "vendor_type": [
       "ats",
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "predictive",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "recommendation-ranking",
+      "clustering-classification"
     ],
     "confidence": 0.3,
     "stage": "production",
@@ -4072,6 +4679,15 @@
       "talent-marketplace",
       "hrms"
     ],
+    "ai_tech_type": [
+      "predictive",
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "recommendation-ranking",
+      "information-extraction",
+      "clustering-classification"
+    ],
     "confidence": 0.3,
     "stage": "production",
     "tags": [
@@ -4119,6 +4735,14 @@
     ],
     "vendor_type": [
       "talent-marketplace"
+    ],
+    "ai_tech_type": [
+      "predictive",
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "recommendation-ranking",
+      "information-extraction"
     ],
     "confidence": 0.3,
     "stage": "production",
@@ -4168,6 +4792,16 @@
     "vendor_type": [
       "point-solution"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification",
+      "prediction",
+      "recommendation-ranking"
+    ],
     "confidence": 0.3,
     "stage": "production",
     "tags": [
@@ -4214,6 +4848,14 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "recommendation-ranking",
+      "prediction",
+      "clustering-classification"
     ],
     "confidence": 0.3,
     "stage": "production",
@@ -4270,6 +4912,16 @@
     "vendor_type": [
       "hrms"
     ],
+    "ai_tech_type": [
+      "decision-optimization",
+      "predictive",
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "optimization",
+      "recommendation-ranking",
+      "summarization-qa"
+    ],
     "confidence": 0.3,
     "stage": "production",
     "tags": [
@@ -4313,6 +4965,14 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "rpa"
     ],
     "confidence": 0.3,
     "stage": "production",
@@ -4366,6 +5026,14 @@
     "vendor_type": [
       "point-solution"
     ],
+    "ai_tech_type": [
+      "generative",
+      "recognition"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "speech-recognition"
+    ],
     "confidence": 0.25,
     "stage": "production",
     "tags": [
@@ -4410,6 +5078,12 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "clustering-classification"
     ],
     "confidence": 0.25,
     "stage": "production",
@@ -4464,6 +5138,14 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "text-generation",
+      "summarization-qa",
+      "multimodal"
     ],
     "confidence": 0.25,
     "stage": "pilot",
@@ -4525,6 +5207,14 @@
     "vendor_type": [
       "point-solution"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification"
+    ],
     "confidence": 0.25,
     "stage": "production",
     "tags": [
@@ -4567,6 +5257,14 @@
     ],
     "vendor_type": [
       "lxp"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "recommendation-ranking"
     ],
     "confidence": 0.25,
     "stage": "production",
@@ -4619,6 +5317,14 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative",
+      "recognition"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "ocr"
+    ],
     "confidence": 0.25,
     "stage": "pilot",
     "tags": [
@@ -4668,6 +5374,14 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "prediction"
     ],
     "confidence": 0.25,
     "stage": "production",
@@ -4719,6 +5433,15 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "information-extraction",
+      "recommendation-ranking"
+    ],
     "confidence": 0.25,
     "stage": "production",
     "tags": [
@@ -4766,6 +5489,14 @@
     "vendor_type": [
       "point-solution"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification"
+    ],
     "confidence": 0.25,
     "stage": "production",
     "tags": [
@@ -4812,6 +5543,12 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "clustering-classification"
     ],
     "confidence": 0.25,
     "stage": "production",
@@ -4862,6 +5599,14 @@
     "vendor_type": [
       "hrms"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification"
+    ],
     "confidence": 0.25,
     "stage": "production",
     "tags": [
@@ -4907,6 +5652,12 @@
     ],
     "vendor_type": [
       "talent-marketplace"
+    ],
+    "ai_tech_type": [
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "recommendation-ranking"
     ],
     "confidence": 0.25,
     "stage": "production",
@@ -4966,6 +5717,12 @@
     "vendor_type": [
       "point-solution"
     ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
     "confidence": 0.25,
     "stage": "production",
     "tags": [
@@ -5011,6 +5768,14 @@
     ],
     "vendor_type": [
       "hrms"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification"
     ],
     "confidence": 0.25,
     "stage": "production",
@@ -5067,6 +5832,16 @@
     "vendor_type": [
       "point-solution"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive",
+      "recognition"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification",
+      "speech-recognition"
+    ],
     "confidence": 0.2,
     "stage": "production",
     "tags": [
@@ -5111,6 +5886,17 @@
     ],
     "vendor_type": [
       "hrms"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "information-extraction",
+      "clustering-classification",
+      "rpa"
     ],
     "confidence": 0.2,
     "stage": "production",
@@ -5172,6 +5958,14 @@
     "vendor_type": [
       "talent-marketplace"
     ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "recommendation-ranking"
+    ],
     "confidence": 0.2,
     "stage": "production",
     "tags": [
@@ -5217,6 +6011,14 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "predictive",
+      "recognition"
+    ],
+    "ai_tech_subtype": [
+      "clustering-classification",
+      "speech-recognition"
     ],
     "confidence": 0.2,
     "stage": "production",
@@ -5264,6 +6066,12 @@
     "vendor_type": [
       "talent-marketplace"
     ],
+    "ai_tech_type": [
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "recommendation-ranking"
+    ],
     "confidence": 0.2,
     "stage": "production",
     "tags": [
@@ -5309,6 +6117,14 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification"
     ],
     "confidence": 0.2,
     "stage": "production",
@@ -5356,6 +6172,13 @@
     "vendor_type": [
       "hrms"
     ],
+    "ai_tech_type": [
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "prediction",
+      "clustering-classification"
+    ],
     "confidence": 0.2,
     "stage": "announced",
     "tags": [
@@ -5400,6 +6223,12 @@
     "vendor_type": [
       "internal-build"
     ],
+    "ai_tech_type": [
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "recommendation-ranking"
+    ],
     "confidence": 0.2,
     "stage": "production",
     "tags": [
@@ -5441,6 +6270,14 @@
     ],
     "vendor_type": [
       "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "recommendation-ranking"
     ],
     "confidence": 0.2,
     "stage": "production",
@@ -5487,6 +6324,15 @@
     ],
     "vendor_type": [
       "ats"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "information-extraction",
+      "recommendation-ranking"
     ],
     "confidence": 0.2,
     "stage": "pilot",
@@ -5547,6 +6393,12 @@
     ],
     "vendor_type": [
       "hrms"
+    ],
+    "ai_tech_type": [
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "clustering-classification"
     ],
     "confidence": 0.1,
     "stage": "stub",

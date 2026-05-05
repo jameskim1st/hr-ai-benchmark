@@ -10,6 +10,8 @@ region: [global]
 employee_class: [all]
 vendor: [Josh Bersin Co., Sana Labs]
 vendor_type: [point-solution]
+ai_tech_type: [generative]
+ai_tech_subtype: [text-generation, summarization-qa, multimodal]
 stage: pilot                       # 런칭 + 자사 deployment만 있는 상태
 frequency: daily
 first_seen: 2025-05-21

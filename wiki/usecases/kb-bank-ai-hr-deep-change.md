@@ -10,6 +10,8 @@ region: [kr]
 employee_class: [전임직, 기술사무직]
 vendor: [KB국민은행 internal]
 vendor_type: [internal-build]
+ai_tech_type: [decision-optimization, predictive]
+ai_tech_subtype: [optimization, clustering-classification]
 stage: production
 frequency: monthly
 first_seen: 2020-07-15

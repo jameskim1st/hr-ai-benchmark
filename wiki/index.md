@@ -1,6 +1,6 @@
 # HR AI Benchmark — Index
 
-이 페이지는 wiki 전체의 **카탈로그**입니다. **110건 use case · 59건 source · 20개 company · 13개 vendor · 7개 카테고리 100% 커버 · 10개 synthesis** (2026-05-05 라운드 6 갱신, 기업별 depth 보강).
+이 페이지는 wiki 전체의 **카탈로그**입니다. **110건 use case · 59건 source · 20개 company · 13개 vendor · 7개 카테고리 100% 커버 · 10개 synthesis · 5×13 AI 기술 유형 axis** (2026-05-05 라운드 7 갱신, AI 기술 분류 추가).
 세부 스키마와 규칙은 [[CLAUDE|CLAUDE.md]] 참조.
 
 ## 🧭 주요 진입점
