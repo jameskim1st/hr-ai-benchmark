@@ -715,3 +715,49 @@ Format: `## [YYYY-MM-DD] <operation> | <one-line description>`
 - Total changes: **529** (512 use cases + 17 기타)
 - Re-audit: A.~F. 헤더 일관성 100%, ⭐/❌/✅검증 잔여 0
 - Build: HTML 636KB, Excel 251KB, JSON 656KB
+
+## [2026-05-06] refresh | 3 stale pages refresh — IBM Blue Match + Gloat + Unilever | touched: 3 pages
+
+### 사용자 피드백
+"2024년 이전 자료가 있는지 전반적으로 점검해줘." → Option B (active refresh).
+
+### 검증
+2개 background research agent로 2024-2026 데이터 발굴.
+
+### 갱신 1: ibm-blue-match-internal-mobility (last_confirmed 2023-12 → 2026-04-07)
+- confidence 0.65 → 0.55 (Tier 1·2 독립 분석가 커버리지 0건)
+- Brand surface 약화 추세 — IBM 메시지가 "Blue 프로그램(50% 내부 충원) + Career Advisor + watsonx HR Agents" 3-tier로 이동
+- 2025 IBM AskHR을 watsonx Orchestrate 마이그레이션, Career Development agent 등장 (Blue Match 기능 일부 흡수 가능성)
+- 직원 규모 갱신: 280K → 300K+ across 175 countries
+- Stale metric 경고 추가: "1,000+ placements" anchor는 2018 stale, "40% 증가"(2018-2020) vs "50% 비율"(2024-2025) 지표 다름
+- 신규 sources 7건 (HR Brew·HR Executive·Fortune·SHRM·IBM Think·Fuel50·watsonx Orchestrate)
+
+### 갱신 2: wiki/vendors/gloat.md (last_confirmed 2019-12 → 2026-05-06)
+- 큰 변화 (대전환):
+  - 2025-03 "Agile Workforce OS 2.0" — talent marketplace → workforce OS 재포지셔닝
+  - 신제품: Mosaic·Ascend·Signal + Loomra Workforce Context Engine
+  - 2026-03 "Gloat Agentic HR" — Workday/Oracle/SF 위 5개 사전 구축 agent (Bersin Tier 1 보도)
+- 신규 고객 6사: Nestlé·HSBC·Standard Chartered·MetLife·ABInBev·Seagate
+- 펀딩: 누적 $192M (Series D 2022 $90M, Generation Investment Management)
+- vendor_type 확장: [talent-marketplace, agentic-ai-platform, workforce-os]
+
+### 갱신 3: wiki/companies/unilever.md (last_confirmed 2019-12 → 2026-05-06)
+- CEO 갱신: Hein Schumacher (2023-07~)
+- FLEX 메트릭 갱신: 30K → 90K+ 직원, 누적 700K+ hours unlock
+- 무게중심 이동 (가장 큰 변화):
+  - 2024-09 Accenture-GenWizard 파트너십 확대
+  - 23K 직원 GenAI 트레이닝, 500+ AI 프로젝트(330+ 라이브)
+  - 자체 AI 연구센터 Horizon3 Labs
+  - Vector Institute (2025) + Google Cloud agentic AI (2025-2026)
+- HireVue/Pymetrics 채용 AI 유지 + 2025 GenAI 피드백 추가
+
+### 시사점
+- IBM Blue Match: Tier 1·2 분석가 커버리지 부재 — reference 가치 약화 신호
+- Gloat: "talent marketplace" 단일 태그로 분류 부적절, agentic platform으로 재분류 필요
+- Unilever: "talent marketplace 단독은 종착점 아님, 전사 GenAI와 결합 필수" 메시지
+
+### 신규 candidate use case (Unilever, 추후 작성)
+- unilever-accenture-genwizard-genai (23K 트레이닝)
+- unilever-hirevue-pymetrics-recruitment (2025 GenAI 피드백 추가)
+- unilever-horizon3-labs-ai-rd
+- unilever-google-cloud-agentic-ai

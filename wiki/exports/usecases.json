@@ -1618,90 +1618,6 @@
     ]
   },
   {
-    "slug": "ibm-blue-match-internal-mobility",
-    "title": "IBM — Blue Match",
-    "primary_category": "Onboarding & Transitions",
-    "subcategory": "Internal Mobility",
-    "company": "IBM",
-    "industry": [
-      "tech",
-      "it-services"
-    ],
-    "region": [
-      "global"
-    ],
-    "employee_class": [
-      "all"
-    ],
-    "vendor": [
-      "IBM"
-    ],
-    "vendor_type": [
-      "internal-build"
-    ],
-    "ai_tech_type": [
-      "generative",
-      "predictive"
-    ],
-    "ai_tech_subtype": [
-      "information-extraction",
-      "recommendation-ranking",
-      "clustering-classification"
-    ],
-    "confidence": 0.65,
-    "stage": "production",
-    "frequency": "daily",
-    "first_seen": "2015-01-01",
-    "last_confirmed": "2023-12-01",
-    "output": "opt-in 직원 ~42K에게 personalized 내부 직무 추천 리스트 (스킬·경력·성과·근무지·블로그/코드/forum footprint 기반) + peer 이동 패턴 학습으로 신규 posting 시 매칭 직원 알림",
-    "tags": [
-      "talent-marketplace",
-      "internal-mobility",
-      "ibm",
-      "blue-match",
-      "opt-in",
-      "skill-inference",
-      "peer-pattern-learning"
-    ],
-    "sources": [
-      "sources/ibm-hr-ai-portfolio-2025-2026.md",
-      "Bersin (Tier 1, 2020-12): The Evolving Role of IBM in HR Marketplace — Blue Matching analysis (stale caveat) https://joshbersin.com/2020/12/the-evolving-role-of-ibm-in-the-hr-marketplace/"
-    ],
-    "summary": "IBM이 2015년 MVP로 시작한 <strong>사내 talent marketplace</strong>. opt-in 직원 280K+에게 AI로 추론한 스킬·경력·성과·근무지·디지털 footprint(블로그·코드·포럼 게시물) 기반 personalized 내부 직무 추천. peer 이동 패턴 continuous learning — A→B 이동이 5건 누적되면 유사 프로파일에게 동일 패턴 추천. ⚠️ 자사 보고: 40% 내부 채용 충원 증가, 1,000+ 측정 가능 placement.",
-    "headline": "IBM이 2015년 MVP로 시작한 사내 talent marketplace. opt-in 직원 280K+에게 AI로 추론한 스킬·경력·성과·근무지·디지털 footprint(블로그·코드·포럼 게시물) 기반 personalized 내부 직무 추천. peer 이동 패턴 continuous learning — A→B 이동이 5건 누적되면 유사 프로파일에게 동일 패턴 추천. ⚠️ 자사 보고: 40% 내부 채용 충원 증가, 1,000+ 측정 가능 placement.",
-    "summary_clean": "IBM이 2015년 MVP로 시작한 사내 talent marketplace. opt-in 직원 280K+에게 AI로 추론한 스킬·경력·성과·근무지·디지털 footprint(블로그·코드·포럼 게시물) 기반 personalized 내부 직무 추천. peer 이동 패턴 continuous learning — A→B 이동이 5건 누적되면 유사 프로파일에게 동일 패턴 추천.",
-    "problem": "<ul>\n<li><strong>Before</strong>: IBM 내부 이동은 직원 본인 search에 의존 → silo·visibility 격차로 매칭 비효율</li>\n<li><strong>Pain point</strong>: 280K 글로벌 조직에서 internal posting 게시판은 잘 작동 안 함 — 직원이 본인 옆 부서 외 기회를 모름</li>\n<li><strong>Trigger</strong>: 핵심 인재 retention 위기 + 외부 talent marketplace 시장 형성 (Gloat·Eightfold) 전 자체 구축</li>\n</ul>",
-    "impact_summary": "사내 인재 visibility 향상으로 내부 채용 충원 40% 증가 + 핵심 인재 retention 보강.",
-    "consulting": "<ul>\n<li><strong>KR 적용 1순위</strong>: 삼성전자 사내공모/Career Mosaic, 현대차 internal posting, LG 횡적 이동 — 모두 division silo로 고전. Blue Match의 opt-in + peer pattern learning은 \"강제 프로파일 유지 부담 없는\" reference architecture</li>\n<li><strong>2026 Q3-Q4 talent marketplace 제안 deck</strong>: Gloat (Schneider·Unilever) + Eightfold + Blue Match 3-way 비교. Blue Match는 \"자체 구축으로 시작 가능\" 옵션</li>\n<li><strong>반면교사 포인트</strong>: peer pattern learning이 stereotyping 강화 가능성 — 한국 대기업 도입 시 \"성별·학력·출신 학교\" 등 protected attribute filter 명시 권장</li>\n<li><strong>Stage 검증 필요</strong>: 2024-25에 watsonx Orchestrate로 통합 진행 추정 — 현재 운영 status 재확인 필수</li>\n</ul>",
-    "system": {
-      "Core HRIS": "IBM 내부 HCM (Workday 사용 추정 — IBM은 Workday customer)",
-      "AI 시스템 배치": "IBM 자체 구축 (watsonx 이전 세대)",
-      "배포 환경": "IBM Cloud 추정",
-      "연동·통합": "HCM, internal posting 시스템, 직원 디지털 footprint 소스(블로그·code·forum)",
-      "사용자 접점": "사내 web/intranet (Bluepages 통합 추정)",
-      "인증·권한": "IBM SSO"
-    },
-    "data": {
-      "입력 데이터 소스": "HCM 마스터, 성과 데이터, 학습 이력, 사내 블로그·코드·forum 게시물",
-      "데이터 규모": "280K+ 직원 대상, opt-in ~15% = ~42K 활성 사용자",
-      "전처리·정제": "디지털 footprint NLP 처리로 implicit 스킬 추론",
-      "데이터 거버넌스": "직원 opt-in 동의 기반 — privacy-by-design",
-      "민감정보 처리": "디지털 footprint 분석은 회사 자산만 사용 (외부 SNS 불포함 추정)"
-    },
-    "model": {
-      "Foundation model": "자체 ML (LLM 이전 세대), 2024-25 watsonx Orchestrate 통합 진행 추정",
-      "제공 방식": "IBM internal"
-    },
-    "process_before": "IBM 내부 이동은 직원 본인 search에 의존 → silo·visibility 격차로 매칭 비효율 / Pain point: 280K 글로벌 조직에서 internal posting 게시판은 잘 작동 안 함 — 직원이 본인 옆 부서 외 기회를 모름 / Trigger: 핵심 인재 retention 위기 + 외부 talent marketplace 시장 형성 (Gloat·Eightfold) 전 자체 구축",
-    "process_steps": [
-      "직원이 opt-in (~15% 참여)",
-      "AI가 스킬·경력·성과·근무지·digital footprint 분석 → 개인 프로파일 생성",
-      "신규 internal posting 발생 시 매칭 직원에게 personalized 추천",
-      "peer 이동 패턴 학습 (A→B 5건 누적 시 유사 프로파일에 동일 추천)",
-      "직원 지원 → 매니저 검토 (기존 절차)"
-    ]
-  },
-  {
     "slug": "kb-bank-ai-hr-deep-change",
     "title": "KB국민은행 — 'HR Deep Change' AI 영업점 인사이동",
     "primary_category": "Strategic Workforce & Governance",
@@ -2291,6 +2207,98 @@
       "Fact Skye가 정책 문서를 추론하여 사업부·국가·역할에 맞게 개인화된 응답 제공.",
       "Fact IT 서비스 티켓 생성, 휴가 요청 처리 등 지능적 액션 수행.",
       "Fact 채용·온보딩·리텐션 영역의 유스케이스 개발 진행 중."
+    ]
+  },
+  {
+    "slug": "ibm-blue-match-internal-mobility",
+    "title": "IBM — Blue Match",
+    "primary_category": "Onboarding & Transitions",
+    "subcategory": "Internal Mobility",
+    "company": "IBM",
+    "industry": [
+      "tech",
+      "it-services"
+    ],
+    "region": [
+      "global"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "IBM"
+    ],
+    "vendor_type": [
+      "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "information-extraction",
+      "recommendation-ranking",
+      "clustering-classification"
+    ],
+    "confidence": 0.55,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2015-01-01",
+    "last_confirmed": "2026-04-07",
+    "output": "opt-in 직원에게 personalized 내부 직무 추천 리스트 (스킬·경력·성과·근무지·블로그/코드/forum footprint 기반) + peer 이동 패턴 학습으로 신규 posting 시 매칭 직원 알림 + AskHR/watsonx Orchestrate Career Development agent 통합 진행 중",
+    "tags": [
+      "talent-marketplace",
+      "internal-mobility",
+      "ibm",
+      "blue-match",
+      "opt-in",
+      "skill-inference",
+      "peer-pattern-learning",
+      "watsonx-orchestrate"
+    ],
+    "sources": [
+      "sources/ibm-hr-ai-portfolio-2025-2026.md",
+      "Bersin (Tier 1, 2020-12): The Evolving Role of IBM in HR Marketplace — Blue Matching analysis (stale caveat) https://joshbersin.com/2020/12/the-evolving-role-of-ibm-in-the-hr-marketplace/",
+      "HR Brew (Tier 2, 2026-02-12): IBM CHRO Nickle LaMoreaux on AI talent strategy https://www.hr-brew.com/stories/2026/02/12/ibm-chro-nickle-lamoreaux-skills-strategy",
+      "Fortune (Tier 1-2, 2026-04-07): AI is transforming work, talent strategy must keep up https://fortune.com/2026/04/07/ai-transformation-talent-strategy-chro-ibm-future-of-work/",
+      "HR Executive (Tier 2, 2025): IBM CHRO: AI is giving HR its 'time in the sun' https://hrexecutive.com/ibm-chro-ai-is-giving-hr-its-time-in-the-sun/",
+      "IBM Think (Tier 3, 2025): Embracing the future of HR by becoming an AI-first enterprise https://www.ibm.com/think/insights/embracing-future-of-hr-ai-first-enterprise",
+      "SHRM (Tier 2, 2025): IBM Transforms Its Approach to HR with AI https://www.shrm.org/topics-tools/news/technology/ibm-transforms-approach-to-human-resources-ai",
+      "Fuel50 (Tier 3, 2024-10): Internal Mobility — IBM Blue 50% 인용 https://fuel50.com/2024/10/what-is-internal-mobility/",
+      "IBM watsonx Orchestrate HR Agents (Tier 3) https://www.ibm.com/products/watsonx-orchestrate/ai-agent-for-hr"
+    ],
+    "summary": "IBM이 2015년 MVP로 시작한 <strong>사내 talent marketplace</strong>. opt-in 직원에게 AI로 추론한 스킬·경력·성과·근무지·디지털 footprint(블로그·코드·포럼 게시물) 기반 personalized 내부 직무 추천 + peer 이동 패턴 continuous learning. 2024-2026 IBM의 internal mobility 공식 메시지는 <strong>\"Blue 프로그램(개방 포지션의 50% 내부 충원)\" + \"My Career Advisor / Watson Career Coach\" + \"AskHR/watsonx Orchestrate Career Development agent\"</strong>의 3-tier 통합 narrative로 진화 — Blue Match의 brand surface는 약화 (단독 product 페이지 노출 줄어듦) 하나 기능은 IBM HR 자사 메시지에 지속 등장. ⚠️ 자사 보고: 40% 내부 채용 충원 증가(2018-2020 anchor) / 50% 내부 충원 비율(2024-2025 anchor — 지표 정의 다름, 혼동 주의).",
+    "headline": "IBM이 2015년 MVP로 시작한 사내 talent marketplace. opt-in 직원에게 AI로 추론한 스킬·경력·성과·근무지·디지털 footprint(블로그·코드·포럼 게시물) 기반 personalized 내부 직무 추천 + peer 이동 패턴 continuous learning.",
+    "summary_clean": "IBM이 2015년 MVP로 시작한 사내 talent marketplace. opt-in 직원에게 AI로 추론한 스킬·경력·성과·근무지·디지털 footprint(블로그·코드·포럼 게시물) 기반 personalized 내부 직무 추천 + peer 이동 패턴 continuous learning.",
+    "problem": "<ul>\n<li><strong>Before</strong>: IBM 내부 이동은 직원 본인 search에 의존 → silo·visibility 격차로 매칭 비효율</li>\n<li><strong>Pain point</strong>: 280K 글로벌 조직에서 internal posting 게시판은 잘 작동 안 함 — 직원이 본인 옆 부서 외 기회를 모름</li>\n<li><strong>Trigger</strong>: 핵심 인재 retention 위기 + 외부 talent marketplace 시장 형성 (Gloat·Eightfold) 전 자체 구축</li>\n</ul>",
+    "impact_summary": "사내 인재 visibility 향상으로 내부 채용 충원 강화 + 핵심 인재 retention 보강.",
+    "consulting": "<ul>\n<li><strong>KR 적용 1순위</strong>: 삼성전자 사내공모/Career Mosaic, 현대차 internal posting, LG 횡적 이동 — 모두 division silo로 고전. Blue Match의 opt-in + peer pattern learning은 \"강제 프로파일 유지 부담 없는\" reference architecture</li>\n<li><strong>2026 Q3-Q4 talent marketplace 제안 deck</strong>: Gloat (Mastercard·Schneider·Unilever) + Eightfold + Blue Match 3-way 비교. Blue Match는 \"자체 구축으로 시작 가능\" 옵션</li>\n<li><strong>반면교사 포인트</strong>: peer pattern learning이 stereotyping 강화 가능성 — 한국 대기업 도입 시 \"성별·학력·출신 학교\" 등 protected attribute filter 명시 권장</li>\n<li><strong>2026 추적 포인트</strong> (신규):</li>\n</ul>",
+    "system": {
+      "Core HRIS": "IBM 내부 HCM (Workday 사용 추정 — IBM은 Workday customer)",
+      "AI 시스템 배치": "IBM 자체 구축 (LLM 이전 세대)",
+      "배포 환경": "IBM Cloud 추정",
+      "연동·통합": "HCM, internal posting 시스템, 직원 디지털 footprint 소스(블로그·code·forum)",
+      "사용자 접점": "사내 web/intranet (Bluepages 통합 추정)",
+      "인증·권한": "IBM SSO"
+    },
+    "data": {
+      "입력 데이터 소스": "HCM 마스터, 성과 데이터, 학습 이력, 사내 블로그·코드·forum 게시물",
+      "데이터 규모": "300K+ 직원 across 175 countries (2024-2026 LaMoreaux 공개 발언), opt-in ~15% 가정 시 ~45K 활성 사용자",
+      "전처리·정제": "디지털 footprint NLP 처리로 implicit 스킬 추론",
+      "데이터 거버넌스": "직원 opt-in 동의 기반 — privacy-by-design",
+      "민감정보 처리": "디지털 footprint 분석은 회사 자산만 사용 (외부 SNS 불포함 추정)"
+    },
+    "model": {
+      "Foundation model": "자체 ML (LLM 이전 세대), 2024-25 watsonx Orchestrate 통합 진행 추정",
+      "제공 방식": "IBM internal"
+    },
+    "process_before": "IBM 내부 이동은 직원 본인 search에 의존 → silo·visibility 격차로 매칭 비효율 / Pain point: 280K 글로벌 조직에서 internal posting 게시판은 잘 작동 안 함 — 직원이 본인 옆 부서 외 기회를 모름 / Trigger: 핵심 인재 retention 위기 + 외부 talent marketplace 시장 형성 (Gloat·Eightfold) 전 자체 구축",
+    "process_steps": [
+      "직원이 opt-in (~15% 참여)",
+      "AI가 스킬·경력·성과·근무지·digital footprint 분석 → 개인 프로파일 생성",
+      "신규 internal posting 발생 시 매칭 직원에게 personalized 추천",
+      "peer 이동 패턴 학습 (A→B 5건 누적 시 유사 프로파일에 동일 추천)",
+      "직원 지원 → 매니저 검토 (기존 절차)"
     ]
   },
   {
