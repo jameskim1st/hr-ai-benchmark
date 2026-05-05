@@ -1,5 +1,161 @@
 [
   {
+    "slug": "moel-ai-labor-law-consultation",
+    "title": "고용노동부 — AI 노동법 상담 챗봇",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "Compliance & Risk",
+    "company": "고용노동부 (대한민국 정부)",
+    "industry": [
+      "public",
+      "government"
+    ],
+    "region": [
+      "kr"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "고용노동부 internal",
+      "공인노무사회 협업"
+    ],
+    "vendor_type": [
+      "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "information-extraction"
+    ],
+    "confidence": 0.85,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-11-01",
+    "last_confirmed": "2026-05-06",
+    "output": "노동법 자연어 질문에 대한 24/7 AI 상담 답변 + 32개 언어 지원 (외국인 노동자 대응) + 공인노무사 추천 연계 + 노동법 조문·판례·고시 인용",
+    "tags": [
+      "labor-law",
+      "ai-chatbot",
+      "kr-government",
+      "public-sector",
+      "compliance",
+      "foreign-workers",
+      "korean-labor-law",
+      "er",
+      "moel",
+      "multilingual"
+    ],
+    "sources": [
+      "sources/moel-ai-portal-2024-11.md",
+      "sources/korea-kr-policy-news-moel-2025.md",
+      "sources/moel-newsroom-117k-usage-2025.md"
+    ],
+    "summary": "대한민국 고용노동부가 <strong>2024년 11월 시범 출시</strong>한 <strong>AI 노동법 상담 챗봇</strong> (ai.moel.go.kr) — 노동자·사용자가 24/7 무료 노동법 상담. ✅ Fact: <strong>2025년 누적 117,000회 사용</strong>, <strong>노동법 상담 시간 87.5% 단축</strong> (정부 자체 측정), 야간·주말 사용 비중 37.7%, <strong>32개 언어 지원</strong> (외국인 노동자 대응). 공인노무사회와 MOU 체결 — 노동약자 보호 AI 혁신 협업. 한국 정부가 직접 운영하는 <strong>노무 AI 표준 사례</strong> — 한국 대기업 사내 ER 챗봇 reference.",
+    "headline": "대한민국 고용노동부가 2024년 11월 시범 출시한 AI 노동법 상담 챗봇 (ai.moel.go.kr) — 노동자·사용자가 24/7 무료 노동법 상담. ✅ Fact: 2025년 누적 117,000회 사용, 노동법 상담 시간 87.5% 단축 (정부 자체 측정), 야간·주말 사용 비중 37.7%, 32개 언어 지원 (외국인 노동자 대응). 공인노무사회와 MOU 체결 — 노동약자 보호 AI 혁신 협업. 한국 정부가 직접 운영하는 노무 AI 표준 사례 — 한국 대기업 사내 ER 챗봇 reference.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 한국 노동자·사용자가 노동법 (근로기준법·최저임금법·산업안전보건법·직장 내 괴롭힘 금지법 등) 관련 질문 시 — (a) 고용노동부 콜센터 (1350, 평일 업무시간) (b) 공인노무사 유료 상담 (c) 인터넷 검색 (정확도 낮음)</li>\n<li><strong>Pain point</strong>:</li>\n<li><strong>시간·접근성 한계</strong>: 콜센터 평일 업무시간만 → 야간·주말 근로자·외국인 노동자 접근 어려움</li>\n<li><strong>언어 장벽</strong>: 외국인 노동자 (이주노동자 100만+)는 한국어 상담 어려움</li>\n<li><strong>유료 상담 부담</strong>: 공인노무사 1건 30분 상담료 ~5만원 → 저소득 노동자 부담</li>\n<li><strong>노동법 복잡성</strong>: 변수 다수 (근로계약 형태·근속·임금구조·교대제 등) → 자가 검색 정확도 낮음</li>\n</ul>",
+    "impact_summary": "<strong>한국 정부 직접 운영 노무 AI 표준 사례</strong>. ✅ 정부 공식 통계 + 다수 언론 보도. 한국 대기업 사내 ER/노무 챗봇 도입 시 <strong>반드시 인용</strong>.",
+    "consulting": "<ul>\n<li><strong>한국 대기업 사내 ER/노무 AI 챗봇 도입 시 #1 reference</strong>:</li>\n<li>\"정부도 한다\" 카드 — CHRO·법무·노무팀 보수성 극복에 효과적</li>\n<li>정부 사례 정량 metric (117K 사용, 87.5% 단축, 37.7% 야간) — 한국 대기업 사내 챗봇 ROI 시뮬레이션 base</li>\n<li><strong>vs HR Acuity</strong> hr-acuity-oliver-er-companion / Sodales sodales-spire-energy-labor-relations:</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "자체 구축 LLM 기반 챗봇 + 노동법 RAG",
+      "사용자 접점": "web portal (ai.moel.go.kr) + mobile-friendly UI"
+    },
+    "data": {},
+    "model": {
+      "Foundation model": "_구체 LLM provider 미공개_ — 한국 정부 보안 정책상 비공개. 추정: 국내 LLM (네이버 HyperCLOVA·삼성 Gauss·SKT 또는 글로벌)"
+    },
+    "process_before": "한국 노동자·사용자가 노동법 (근로기준법·최저임금법·산업안전보건법·직장 내 괴롭힘 금지법 등) 관련 질문 시 — (a) 고용노동부 콜센터 (1350, 평일 업무시간) (b) 공인노무사 유료 상담 (c) 인터넷 검색 (정확도 낮음) / Pain point: / 시간·접근성 한계: 콜센터 평일 업무시간만 → 야간·주말 근로자·외국인 노동자 접근 어려움 / 언어 장벽: 외국인 노동자 (이주노동자 100만+)는 한국어 상담 어려움 / 유료 상담 부담: 공인노무사 1건 30분 상담료 ~5만원 → 저소득 노동자 부담 / 노동법 복잡성: 변수 다수 (근로계약 형태·근속·임금구조·교대제 등) → 자가 검색 정확도 낮음 / Trigger: 윤석열 정부 노동약자 보호 정책 + GenAI 등장 + 32개 언어 LLM 가능성 +",
+    "process_steps": [
+      "노동자·사용자가 ai.moel.go.kr 접속 (24/7, 무료, 32개 언어)",
+      "자연어 질문 입력 (예: \"주 52시간 위반 신고는 어떻게?\", \"최저임금 미지급 시 대응 방법?\")",
+      "AI가 노동법 조문·판례·고시 기반 답변 생성 + 출처 인용",
+      "복잡 case는 공인노무사 추천 연계 (공인노무사회 MOU)",
+      "사용 데이터 anonymized → 노동법 trend 분석·정부 정책 input"
+    ]
+  },
+  {
+    "slug": "hr-acuity-oliver-ai-er-companion",
+    "title": "HR Acuity — olivER AI Companion + Speakfully AI Hotline",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "Employee Relations & Labor",
+    "company": "_다수 (LinkedIn, Lyft, Adobe, Verizon, General Mills, Workday, Akamai, Equinox, Waymo, Yelp 등)_",
+    "industry": [
+      "all"
+    ],
+    "region": [
+      "na",
+      "global"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "HR Acuity"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "information-extraction",
+      "clustering-classification",
+      "prediction"
+    ],
+    "confidence": 0.8,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-09-01",
+    "last_confirmed": "2026-05-06",
+    "output": "ER 케이스 intake notes → 구조화된 investigation plan + AI 인터뷰 질문 자동 생성 + case timeline·executive summary 자동 작성 + 트렌드/risk signal/hotspot dashboard + 익명 신고 hotline (Speakfully) 다국어 intake",
+    "tags": [
+      "employee-relations",
+      "er-case-management",
+      "grievance",
+      "investigation",
+      "hr-acuity",
+      "oliver",
+      "speakfully",
+      "whistleblowing",
+      "brandon-hall-2025",
+      "forrester-tei"
+    ],
+    "sources": [
+      "sources/hr-acuity-oliver-product-page.md",
+      "sources/hr-acuity-brandon-hall-2025.md",
+      "sources/hr-acuity-forrester-tei.md",
+      "sources/hr-acuity-2025-growth-prnewswire.md",
+      "sources/gartner-peer-insights-whistleblowing.md",
+      "sources/pwc-er-ai-deck-2026-05.md"
+    ],
+    "summary": "HR Acuity는 <strong>미국 최대 ER 전용 case management 플랫폼</strong>. 2024년 <strong>olivER™ AI Companion</strong> 출시 (2025년 본격화) — ER 케이스의 intake → investigation → documentation → trend analysis 전 단계 자동화. <strong>G2 Spring 2025 Enterprise HR Case Management 1위</strong> + <strong>Fall 2025 Enterprise Investigation Management 1위</strong>, <strong>Brandon Hall Group 2025 Gold Award (Best Ethical AI & Responsible Technology)</strong>, <strong>Forrester TEI 520% ROI</strong> (벤더 commission), <strong>Workday Innovation Partner</strong>. 고객사: LinkedIn, Lyft, Adobe, Verizon, General Mills, Workday, Akamai, Equinox, Waymo, Yelp 등.\n> 📌 <strong>PwC ER deck 정정</strong>: PwC 자료의 \"LiKHR AI Companion\"은 본 olivER로 추정 (이름·기능 일치). PwC 자료의 Waymo·Yelp는 모두 HR Acuity 고객.",
+    "headline": "HR Acuity는 미국 최대 ER 전용 case management 플랫폼. 2024년 olivER™ AI Companion 출시 (2025년 본격화) — ER 케이스의 intake → investigation → documentation → trend analysis 전 단계 자동화.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 미국 기업의 ER (employee relations) 처리는 ServiceNow·Jira 같은 <strong>범용 ticketing tool</strong> 또는 spreadsheet — case 분류·문서화 일관성 부재, audit trail 약함, 다국어 intake 한계</li>\n<li><strong>Pain point</strong>:</li>\n<li><strong>ER 전문성 부재 도구</strong>: 일반 ticketing은 grievance·discipline·investigation 도메인 모름 → 변호사·노무사가 수작업 분류·요약</li>\n<li><strong>Case 처리 시간</strong>: 1건당 intake → investigation plan 작성 시간 over-burden</li>\n<li><strong>익명 신고·다국어</strong>: 글로벌 기업은 다국어 + 익명 hotline 필요. 자체 구축 시 PII·legal hold 복잡</li>\n<li><strong>트렌드·hotspot 식별 어려움</strong>: 부서·매니저별 패턴 분석 수작업</li>\n</ul>",
+    "impact_summary": "ER 케이스 처리의 <strong>intake → investigation → documentation 전 단계 자동화</strong>. ⚠️ 일부 metric은 벤더 commissioned Forrester TEI + 자사 발표.",
+    "consulting": "<ul>\n<li><strong>글로벌 ER AI 카테고리 leader</strong>: 한국 대기업의 ER AI 도입 검토 시 <strong>HR Acuity = 1차 reference</strong>. G2/Brandon Hall/Forrester 3중 검증 + 다수 Fortune 100 customer</li>\n<li><strong>vs 경쟁사</strong>:</li>\n<li><strong>vs AllVoices</strong> allvoices-vera-ai-er-copilot: Vera AI는 후발주자. olivER가 더 성숙</li>\n<li><strong>vs NAVEX EthicsPoint</strong>: NAVEX는 13K+ 조직, whistleblowing focus. HR Acuity는 ER 전반</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "olivER AI 모듈 + Speakfully AI hotline (모두 platform 내장)",
+      "사용자 접점": "web portal, mobile app, embedded chat, 익명 hotline (전화·web·SMS·다국어)"
+    },
+    "data": {},
+    "model": {
+      "Foundation model": "_구체 LLM provider 일부 미공개_ (벤더는 \"enterprise-grade LLM\" 표현)"
+    },
+    "process_before": "미국 기업의 ER (employee relations) 처리는 ServiceNow·Jira 같은 범용 ticketing tool 또는 spreadsheet — case 분류·문서화 일관성 부재, audit trail 약함, 다국어 intake 한계 / Pain point: / ER 전문성 부재 도구: 일반 ticketing은 grievance·discipline·investigation 도메인 모름 → 변호사·노무사가 수작업 분류·요약 / Case 처리 시간: 1건당 intake → investigation plan 작성 시간 over-burden / 익명 신고·다국어: 글로벌 기업은 다국어 + 익명 hotline 필요. 자체 구축 시 PII·legal hold 복잡 / 트렌드·hotspot 식별 어려움:",
+    "process_steps": [
+      "Case intake: 직원이 HR Acuity portal·Speakfully 익명 hotline·Workday Help integration으로 신고",
+      "Investigation 지원: olivER가 case type 기반 AI 인터뷰 질문 자동 생성 (grievance·harassment·discipline 별 템플릿)",
+      "Compliance Q&A: (대화형)",
+      "Documentation: olivER가 case 종료 시 executive summary 자동 생성 — 사실·조치·결론 분리",
+      "Trend analysis: 실시간 risk signal·hotspot 감지 (부서·매니저·case type별)"
+    ]
+  },
+  {
     "slug": "jpmorgan-llm-suite-redeployment",
     "title": "JPMorgan — LLM Suite + AI 재배치",
     "primary_category": "Strategic Workforce & Governance",
@@ -1045,6 +1201,81 @@
     ]
   },
   {
+    "slug": "allvoices-vera-ai-er-copilot",
+    "title": "AllVoices — Vera AI ER Copilot (익명 신고 + AI 조사 지원)",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "Employee Relations & Labor",
+    "company": "_다수 (AllVoices 고객 — Fortune·SMB 혼합, 구체 명단 부분 비공개)_",
+    "industry": [
+      "all"
+    ],
+    "region": [
+      "na",
+      "global"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "AllVoices"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "information-extraction",
+      "recommendation-ranking",
+      "clustering-classification"
+    ],
+    "confidence": 0.65,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-09-01",
+    "last_confirmed": "2026-05-06",
+    "output": "익명 신고 intake (200+ 언어) + AI 인터뷰 요약·메시지 초안·case timeline 자동 생성 + 유사 precedent (과거 case) 자동 표면화 + 위험 신호 dashboard",
+    "tags": [
+      "employee-relations",
+      "anonymous-reporting",
+      "allvoices",
+      "vera-ai",
+      "whistleblowing",
+      "investigation",
+      "precedent-search",
+      "er",
+      "ai-copilot"
+    ],
+    "sources": [
+      "sources/allvoices-vera-ai-product.md",
+      "sources/g2-allvoices-reviews-2025.md"
+    ],
+    "summary": "AllVoices는 <strong>AI-native employee relations platform</strong>. 2024년 <strong>Vera AI Copilot</strong> 출시 — 회사 handbook·로컬 정책으로 학습된 <strong>ER 전용 AI assistant</strong>. 200+ 언어 익명 신고 → AI 자동 intake·investigation 지원·precedent (유사사례) 표면화. G2에서 <strong>Employee Engagement·HR Case Management·Whistleblowing 카테고리 leader</strong>. <strong>HR Acuity 직접 경쟁자</strong>. Title IX, SB 553, Joint Commission 등 컴플라이언스 표준 준수. Zero Data Retention (Enterprise OpenAI).",
+    "headline": "AllVoices는 AI-native employee relations platform. 2024년 Vera AI Copilot 출시 — 회사 handbook·로컬 정책으로 학습된 ER 전용 AI assistant. 200+ 언어 익명 신고 → AI 자동 intake·investigation 지원·precedent (유사사례) 표면화. G2에서 Employee Engagement·HR Case Management·Whistleblowing 카테고리 leader.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 사내 익명 신고는 (a) 외부 hotline 위탁 (NAVEX·Convercent 등) (b) 자체 portal — case management는 별도 도구. AI 분석·precedent 검색은 사람이 수작업</li>\n<li><strong>Pain point</strong>:</li>\n<li><strong>익명 신고 → ER case 단절</strong>: hotline은 신고만 받고, ER team이 별도 시스템에 옮겨 처리 → 정보 분산</li>\n<li><strong>다국어 지원 한계</strong>: 글로벌 기업의 200+ 언어 신고 자동 번역 없으면 처리 지연</li>\n<li><strong>유사사례 (precedent) 검색</strong>: 과거 case 검색 수작업 → 일관성 결여 + investigation 시간 over-burden</li>\n<li><strong>AI 안전성</strong>: ER 데이터는 PII + legal hold + GDPR 영역 → 일반 LLM 사용 불가</li>\n</ul>",
+    "impact_summary": "<strong>AI-native ER platform</strong> — HR Acuity 직접 경쟁자, 200+ 언어 + Vera AI 통합 architecture로 차별화. ⚠️ 모든 customer outcome metric은 AllVoices 자사 발표 + G2 reviews.",
+    "consulting": "<ul>\n<li><strong>HR Acuity 대안</strong>: 한국 대기업 ER AI 도입 검토 시 HR Acuity vs AllVoices 양자 비교 — AllVoices가 더 AI-native + 다국어 + 익명 신고 통합. HR Acuity가 더 성숙·G2 1위·Brandon Hall Gold</li>\n<li><strong>익명 신고 + ER case 통합</strong>:</li>\n<li>한국 대기업의 직장 내 괴롭힘 신고 (직장 내 괴롭힘 금지법 의무) → 외부 hotline 위탁 + 사내 ER case 분리 운영이 일반적</li>\n<li>AllVoices는 <strong>익명 hotline + ER case + AI 분석을 단일 platform</strong>으로 통합 → 한국 시장에 차별화 가치</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "Vera AI Copilot 모듈 + 익명 신고 intake (모두 platform 내장)",
+      "사용자 접점": "web portal, mobile app, Slack/Teams bot, 익명 hotline"
+    },
+    "data": {},
+    "model": {
+      "Foundation model": "Enterprise OpenAI (Zero Data Retention)"
+    },
+    "process_before": "사내 익명 신고는 (a) 외부 hotline 위탁 (NAVEX·Convercent 등) (b) 자체 portal — case management는 별도 도구. AI 분석·precedent 검색은 사람이 수작업 / Pain point: / 익명 신고 → ER case 단절: hotline은 신고만 받고, ER team이 별도 시스템에 옮겨 처리 → 정보 분산 / 다국어 지원 한계: 글로벌 기업의 200+ 언어 신고 자동 번역 없으면 처리 지연 / 유사사례 (precedent) 검색: 과거 case 검색 수작업 → 일관성 결여 + investigation 시간 over-burden / AI 안전성: ER 데이터는 PII + legal hold + GDPR 영역 → 일반 LLM 사용 불가 / Trigger: Ge",
+    "process_steps": [
+      "직원이 AllVoices portal·Slack·Teams·이메일 익명 신고 (200+ 언어 자동 인식)",
+      "Intake: Vera가 신고 내용 구조화 + 유사 precedent 자동 검색 표면화",
+      "Investigation 지원: 인터뷰 질문 자동 생성 + 메시지 초안 작성 + case timeline 자동 작성",
+      "Insight: 부서·매니저별 trend·hotspot dashboard + 위험 신호 alert",
+      "ER team이 case 진행·결정 (Vera는 분석·문서화·precedent만)"
+    ]
+  },
+  {
     "slug": "amazon-connections-daily-pulse",
     "title": "Amazon Connections — daily 1-question 직원 pulse",
     "primary_category": "Employee Experience & HR Ops",
@@ -1289,6 +1520,84 @@
     ]
   },
   {
+    "slug": "diligent-vault-active-integrity-speakup",
+    "title": "Diligent Vault — Active Integrity Speak-Up + EthicsChat AI",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "Compliance & Risk",
+    "company": "_다수 (Diligent + Vault Platform 고객 — 글로벌 enterprise 비중 높음)_",
+    "industry": [
+      "all"
+    ],
+    "region": [
+      "na",
+      "eu",
+      "global"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "Diligent (Vault Platform 인수)"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "prediction",
+      "clustering-classification"
+    ],
+    "confidence": 0.65,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-05-22",
+    "last_confirmed": "2026-05-06",
+    "output": "익명 신고 intake (VaultTalk·GoTogether 집단 신고) + EthicsChat AI 윤리 자문 + AI 패턴 인식·predictive analytics misconduct 조기 감지 + 조사 timeline 자동 생성 + GDPR·SOC 2·ISO 27001 audit trail",
+    "tags": [
+      "ethics-compliance",
+      "anonymous-reporting",
+      "vault-platform",
+      "diligent",
+      "ethicschat",
+      "speak-up",
+      "misconduct-prediction",
+      "gdpr",
+      "iso-27001",
+      "er"
+    ],
+    "sources": [
+      "sources/diligent-acquires-vault-2025-05.md",
+      "sources/businesswire-diligent-vault-2025-05.md",
+      "sources/vault-platform-product-page.md"
+    ],
+    "summary": "Diligent (글로벌 GRC/board management leader)가 2025년 5월 <strong>Vault Platform (UK)을 인수</strong> — AI-powered ethics·compliance speak-up + investigation. <strong>EthicsChat AI</strong> (대화형 ethical guidance), <strong>VaultTalk·GoTogether</strong> (집단 신고 — 한국 직장 내 괴롭힘 환경에 매칭), AI pattern recognition·predictive analytics로 misconduct 조기 감지. <strong>조사 timeline 최대 80% 단축</strong> (벤더 주장). GDPR·ISO 27001·SOC 2 인증.",
+    "headline": "Diligent (글로벌 GRC/board management leader)가 2025년 5월 Vault Platform (UK)을 인수 — AI-powered ethics·compliance speak-up + investigation. EthicsChat AI (대화형 ethical guidance), VaultTalk·GoTogether (집단 신고 — 한국 직장 내 괴롭힘 환경에 매칭), AI pattern recognition·predictive analytics로 misconduct 조기 감지.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 사내 윤리·컴플라이언스 신고는 hotline (NAVEX·Convercent) 또는 자체 portal — 익명 신고 단발 처리, 패턴 분석·예측 기능 부족, 글로벌 GRC 통합 부재</li>\n<li><strong>Pain point</strong>:</li>\n<li><strong>익명 신고 단발 처리</strong>: 1건씩 처리 → 패턴·systemic risk 식별 어려움</li>\n<li><strong>EU Whistleblower Directive (2023~)</strong>: EU 50인+ 기업 의무 — 신고 mechanism 구축 + 조치 timeline 의무</li>\n<li><strong>집단 신고 mechanism 부재</strong>: 1인 신고는 retaliation risk → 다수 직원이 함께 신고하는 mechanism 필요</li>\n<li><strong>GRC 통합</strong>: ESG·board governance·내부감사와 연결 안 됨 → C-suite 가시성 부족</li>\n</ul>",
+    "impact_summary": "<strong>GRC 통합 ethics·compliance</strong> — Diligent C-suite 가시성 + Vault AI-native speak-up. ⚠️ 모든 customer outcome metric은 Vault·Diligent 자사 발표.",
+    "consulting": "<ul>\n<li><strong>GRC 통합 ethics·compliance 대표 reference</strong>: 한국 대기업의 ESG·SOX·내부감사·ER 통합 거버넌스 검토 시 Diligent platform 전체 reference</li>\n<li><strong>vs HR Acuity</strong> hr-acuity-oliver-er-companion:</li>\n<li>HR Acuity: ER 전용·case management 성숙 (G2 #1, Brandon Hall Gold)</li>\n<li>Diligent Vault: GRC 통합 + ethics focus + 익명 집단 신고</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "Vault Platform (Speak-Up + Investigation) + EthicsChat AI 모듈",
+      "사용자 접점": "web portal, mobile, 익명 hotline, EthicsChat 인터페이스"
+    },
+    "data": {},
+    "model": {
+      "Foundation model": "_구체 LLM provider 미공개_ (Diligent enterprise stack)"
+    },
+    "process_before": "사내 윤리·컴플라이언스 신고는 hotline (NAVEX·Convercent) 또는 자체 portal — 익명 신고 단발 처리, 패턴 분석·예측 기능 부족, 글로벌 GRC 통합 부재 / Pain point: / 익명 신고 단발 처리: 1건씩 처리 → 패턴·systemic risk 식별 어려움 / EU Whistleblower Directive (2023~): EU 50인+ 기업 의무 — 신고 mechanism 구축 + 조치 timeline 의무 / 집단 신고 mechanism 부재: 1인 신고는 retaliation risk → 다수 직원이 함께 신고하는 mechanism 필요 / GRC 통합: ESG·board governance·내부감사와 연결 안 됨 → C-suite 가시성 부족 / Trigger: D",
+    "process_steps": [
+      "직원이 Vault portal·VaultTalk·GoTogether 익명 신고 (1인 또는 집단)",
+      "EthicsChat AI: 신고 전 AI 자문 — \"이게 신고 대상인가?\", \"어떤 채널?\", \"어떤 증거?\" 가이드",
+      "AI pattern recognition: 신고 내용 분석 + 과거 case·부서·매니저 패턴 결합 → misconduct predictive risk score",
+      "ER·legal·internal audit이 case 진행 → 조사 timeline 자동 생성 (벤더 주장 80% 단축)",
+      "Diligent GRC platform 통합: case → board reporting·ESG·SOX audit trail 자동 연계",
+      "익명 → 신원 공개 신고로 escalation 가능 (사용자 동의 시)"
+    ]
+  },
+  {
     "slug": "ibm-blue-match-internal-mobility",
     "title": "IBM — Blue Match",
     "primary_category": "Onboarding & Transitions",
@@ -1514,6 +1823,88 @@
       "직원이 관심 표시 → 매니저 검토 → 24h 내 인터뷰 스케줄 (벤더 발표 평균)",
       "매칭 성공 시 직원이 본업과 병행 (gig·part-time) 또는 internal transfer",
       "Dashboard: 매니저는 skill inventory 검색·talent pool 관리, HR는 참여율·matching outcome 추적"
+    ]
+  },
+  {
+    "slug": "navex-ethicspoint-nca-compliance",
+    "title": "NAVEX — EthicsPoint Professional + NAVEX One Compliance Assistant (NCA)",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "Compliance & Risk",
+    "company": "_다수 (NAVEX 13,000+ 조직 — Fortune 100 다수)_",
+    "industry": [
+      "all"
+    ],
+    "region": [
+      "na",
+      "eu",
+      "global"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "NAVEX Global"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification",
+      "recommendation-ranking",
+      "information-extraction"
+    ],
+    "confidence": 0.65,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-12-01",
+    "last_confirmed": "2026-05-06",
+    "output": "익명 신고 intake (다국어 자동 번역) + AI 분류·우선순위·라우팅·summary 자동화 + NAVEX One Compliance Assistant (NCA) 대화형 자문 + AI training content 생성 + microlearning 통합",
+    "tags": [
+      "ethics-compliance",
+      "whistleblowing",
+      "navex",
+      "ethicspoint",
+      "nca",
+      "compliance-assistant",
+      "machine-translation",
+      "microlearning",
+      "sox",
+      "eu-whistleblower-directive",
+      "er"
+    ],
+    "sources": [
+      "sources/navex-one-compliance-assistant-2025-12.md",
+      "sources/navex-ethicspoint-product-page.md",
+      "sources/mondaq-navex-ai-expansion-2025-12.md"
+    ],
+    "summary": "NAVEX Global은 <strong>글로벌 whistleblowing·compliance 시장 표준</strong> — 13,000+ 조직 사용 (Fortune 100 다수). 2025년 12월 <strong>NAVEX One Compliance Assistant (NCA)</strong> 메이저 AI 확장 발표 — 대화형 compliance 자문 + 기계 번역 + microlearning + AI training content 통합. EthicsPoint Professional은 SOX·EU Whistleblower Protection Directive·다국어 신고 표준. AI 분류·우선순위·라우팅·요약 자동화로 case 처리 가속. HR Acuity·Vault Platform과 함께 ER/whistleblowing AI 4-vendor 비교군.",
+    "headline": "NAVEX Global은 글로벌 whistleblowing·compliance 시장 표준 — 13,000+ 조직 사용 (Fortune 100 다수). 2025년 12월 NAVEX One Compliance Assistant (NCA) 메이저 AI 확장 발표 — 대화형 compliance 자문 + 기계 번역 + microlearning + AI training content 통합. EthicsPoint Professional은 SOX·EU Whistleblower Protection Directive·다국어 신고 표준.",
+    "problem": "<ul>\n<li><strong>Before</strong>: NAVEX EthicsPoint은 1990년대부터 hotline service의 사실상 표준 — 2024년까지는 신고 intake·case 분류는 사람이 처리, AI 분석·자동 번역 부분적</li>\n<li><strong>Pain point</strong>:</li>\n<li><strong>다국어 신고 처리 시간</strong>: 글로벌 enterprise 30+ 언어 신고 → 사람 번역사 처리 시간 over-burden</li>\n<li><strong>Case 분류·라우팅 지연</strong>: 1건씩 사람이 분류 → 우선순위 case 누락 risk</li>\n<li><strong>컴플라이언스 training content 노화</strong>: 정책 변경 시 training material 갱신 수작업</li>\n<li><strong>대화형 자문 부재</strong>: 컴플라이언스 담당자가 정책 question 시 검색 수작업</li>\n</ul>",
+    "impact_summary": "<strong>13K+ 조직 사용 글로벌 표준</strong> — SOX·EU Whistleblower Directive·다국어 신고의 사실상 default. 2025-12 NCA 발표로 AI-native 시대 대응. ⚠️ customer outcome metric은 NAVEX 자사 발표.",
+    "consulting": "<ul>\n<li><strong>글로벌 whistleblowing 표준</strong> — 한국 대기업 SOX 대응·EU 진출 시 default option. \"13K+ 조직이 사용한다\" — 보수적 CHRO에게 가장 안정적 선택</li>\n<li><strong>vs 4-vendor 비교</strong>:</li>\n<li><strong>HR Acuity</strong> hr-acuity-oliver-er-companion: ER case management 전문 (G2 #1, Brandon Hall Gold)</li>\n<li><strong>AllVoices</strong> allvoices-vera-ai-er-copilot: AI-native, 200+ 언어, Vera AI copilot</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "NCA (Compliance Assistant) + EthicsPoint AI (intake·routing) — 모두 platform 내장",
+      "사용자 접점": "hotline 전화·web·mobile·SMS·이메일 (다국어), 컴플라이언스 담당자 dashboard"
+    },
+    "data": {},
+    "model": {
+      "Foundation model": "_구체 LLM provider 미공개_ (NAVEX enterprise stack)"
+    },
+    "process_before": "NAVEX EthicsPoint은 1990년대부터 hotline service의 사실상 표준 — 2024년까지는 신고 intake·case 분류는 사람이 처리, AI 분석·자동 번역 부분적 / Pain point: / 다국어 신고 처리 시간: 글로벌 enterprise 30+ 언어 신고 → 사람 번역사 처리 시간 over-burden / Case 분류·라우팅 지연: 1건씩 사람이 분류 → 우선순위 case 누락 risk / 컴플라이언스 training content 노화: 정책 변경 시 training material 갱신 수작업 / 대화형 자문 부재: 컴플라이언스 담당자가 정책 question 시 검색 수작업 / Trigger: GenAI 시대 + HR Acuity·AllVoices·Vault 등 AI-n",
+    "process_steps": [
+      "직원이 EthicsPoint hotline (전화·web·SMS) 익명 신고 — 30+ 언어",
+      "AI 자동 번역 → 영어·통합 언어로 normalize",
+      "AI classification: case type (harassment·fraud·SOX·safety) + severity + urgency 자동 분류",
+      "AI routing: case를 적절한 ER·legal·internal audit 담당자에 자동 라우팅 + summary 제공",
+      "NAVEX One Compliance Assistant (NCA): 컴플라이언스 담당자가 자연어로 정책 query → AI 답변 (회사 handbook + 산업 규제 + NAVEX 표준 corpus)",
+      "AI가 microlearning content + training material 자동 생성·갱신 (정책 변경 시)",
+      "Trend·hotspot dashboard + SOX·EU Directive 컴플라이언스 audit trail"
     ]
   },
   {
@@ -1798,6 +2189,79 @@
       "Agent Governance — HR 신규 역할",
       "Engineered Ambiguity",
       "Intentional Work Redesign"
+    ]
+  },
+  {
+    "slug": "hitachi-skye-hr-ai-assistant",
+    "title": "Hitachi — Skye HR AI 어시스턴트",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "Employee Self-service",
+    "company": "Hitachi",
+    "industry": [
+      "manufacturing",
+      "tech"
+    ],
+    "region": [
+      "apac",
+      "global"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "Ema"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "rpa"
+    ],
+    "confidence": 0.55,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-01-01",
+    "last_confirmed": "2026-05-06",
+    "output": "직원 정책·복리후생 문의에 대한 사업부·국가·역할별 개인화 답변 + IT 서비스 티켓 자동 생성·휴가 요청 자동 처리 + 복잡 케이스 HR 에스컬레이션 (ServiceNow·Jira·Okta 통합·MS Teams·Google Chat 양방향)",
+    "tags": [
+      "hr-chatbot",
+      "employee-self-service",
+      "policy-qa",
+      "document-reasoning",
+      "change-management",
+      "japan",
+      "global",
+      "ema-platform",
+      "agentic-ai"
+    ],
+    "sources": [
+      "sources/hrexecutive-hitachi-skye-2025.md",
+      "sources/ema-hitachi-customer-story-2025.md",
+      "sources/constellation-hitachi-harc-agents-2025.md",
+      "sources/unleash-hitachi-digital-2025.md"
+    ],
+    "summary": "Hitachi는 2025년 <strong>Ema 플랫폼 기반 HR AI 어시스턴트 \"Skye\"</strong>를 도입. ✅ Fact: 8주 만에 deploy, <strong>3개 BU·20개 시스템·28 use case·40,000명 직원</strong> 대상. ServiceNow·Jira·Okta 통합 + MS Teams·Google Chat 양방향. 사업부·국가·역할에 따라 문서 추론·개인화 응답 + IT 서비스 티켓 생성·휴가 요청 처리 등 인텔리전트 액션. ⚠️ 벤더 주장 (Ema): <strong>70% HR operational efficiency 향상</strong>. Hitachi 차별화: <strong>문화 설계</strong> — Skye에 이름·개성 부여 → \"AI = 도구\"가 아닌 \"AI = 동료\" 마인드셋 전환. sources/hrexecutive-hitachi-skye-2025.md",
+    "headline": "Hitachi는 2025년 Ema 플랫폼 기반 HR AI 어시스턴트 \"Skye\"를 도입. ✅ Fact: 8주 만에 deploy, 3개 BU·20개 시스템·28 use case·40,000명 직원 대상. ServiceNow·Jira·Okta 통합 + MS Teams·Google Chat 양방향. 사업부·국가·역할에 따라 문서 추론·개인화 응답 + IT 서비스 티켓 생성·휴가 요청 처리 등 인텔리전트 액션.",
+    "problem": "<ul>\n<li><strong>Before (baseline)</strong>: Hitachi는 <strong>다수의 사업부(BU)와 다국가 운영</strong> 환경에서 HR 정책·복리후생·시스템이 BU·국가별로 상이. 직원이 자기에게 맞는 정책을 찾으려면 <strong>어느 문서를, 어떤 버전으로, 어느 부서에 물어야 하는지</strong> 파악이 어려움. ❓ <strong>구체 수치(월간 HR 문의 건수·평균 해결 시간) 미공개</strong></li>\n<li><strong>Pain point</strong>: (1) <strong>정책 탐색의 복잡성</strong> — BU·국가·역할별로 적용되는 정책이 다르기 때문에 \"하나의 답\"이 없음 → 직원 불만·프로세스 지연. (2) <strong>HR 팀에 반복 문의 집중</strong> — 같은 유형의 질문(복리후생·휴가·IT 요청)이 반복적으로 HR에 유입 → HR의 전략적 업무 시간 잠식</li>\n<li><strong>Trigger</strong>: Hitachi가 \"<strong>문화 설계</strong>\" 관점에서 AI를 도입하기로 결정 — 단순 챗봇이 아니라 <strong>이름(Skye)과 개성을 부여한 \"동료 AI\"</strong>로 설계해 직원 수용도를 높이겠다는 차별화 전략</li>\n</ul>",
+    "impact_summary": "HR 문의 부담이 Skye로 이전되어 직원들의 빠른 답변 확보 보고되나, 구체 수치 미공개 (자사 보고 기반).",
+    "consulting": "<ul>\n<li><strong>\"AI 동료 vs AI 도구\" 설계 철학</strong>: Hitachi의 Skye와 Bosch의 ROB 모두 이름·개성을 부여한 HR AI 어시스턴트. 이는 직원 채택률을 높이는 UX 설계 패턴으로, 국내 기업 HR AI 도입 시 \"도구처럼 만들지 말고 동료처럼 만들라\"는 설계 원칙으로 제시 가능.</li>\n<li><strong>일본 제조업 HR AI 선도 사례</strong>: 일본의 낮은 AI 도입률(2024 기준 조직 24%만 AI 도입) 대비 Hitachi는 선도적 사례. 일본 사업 클라이언트(한국 기업의 일본 법인 등) 대상 참고 가능.</li>\n<li><strong>문서 추론 기반 개인화</strong>: 사업부·국가·역할별 정책이 다른 글로벌 기업에서 단일 AI가 개인화 응답을 생성하는 패턴 — 복잡한 지주회사 구조의 국내 대기업(삼성·현대·LG 계열사)에 특히 적합한 아키텍처 방향.</li>\n<li><strong>데이터 부족</strong>: HR Executive 단일 소스이며 수치·기술 스택 미공개 — stub 에 가까운 수준. 추가 검증 소스 필요.</li>\n</ul>",
+    "system": {
+      "연동·통합": "Fact IT 서비스 시스템 연동 (티켓 생성)."
+    },
+    "data": {
+      "입력 데이터 소스": "HR 정책 문서, 복리후생 문서. 사업부·국가·역할별 개인화 데이터."
+    },
+    "model": {},
+    "process_before": "Hitachi는 다수의 사업부(BU)와 다국가 운영 환경에서 HR 정책·복리후생·시스템이 BU·국가별로 상이. 직원이 자기에게 맞는 정책을 찾으려면 어느 문서를, 어떤 버전으로, 어느 부서에 물어야 하는지 파악이 어려움. ❓ 구체 수치(월간 HR 문의 건수·평균 해결 시간) 미공개 / Pain point: (1) 정책 탐색의 복잡성 — BU·국가·역할별로 적용되는 정책이 다르기 때문에 \"하나의 답\"이 없음 → 직원 불만·프로세스 지연. (2) HR 팀에 반복 문의 집중 — 같은 유형의 질문(복리후생·휴가·IT 요청)이 반복적으로 HR에 유입 → HR의 전략적 업무 시간 잠식 / Trigger: Hitachi가 \"문화 설계\" 관점에서 AI를 도입하기로 결정 — 단순 챗봇이 아니라 이름(Skye)과 개성을 부여",
+    "process_steps": [
+      "Fact Skye가 정책 문서를 추론하여 사업부·국가·역할에 맞게 개인화된 응답 제공.",
+      "Fact IT 서비스 티켓 생성, 휴가 요청 처리 등 지능적 액션 수행.",
+      "Fact 채용·온보딩·리텐션 영역의 유스케이스 개발 진행 중."
     ]
   },
   {
@@ -2491,6 +2955,89 @@
     ]
   },
   {
+    "slug": "sodales-spire-energy-labor-relations",
+    "title": "Spire Energy — Sodales Labour Relations Management (SAP SuccessFactors 통합)",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "Employee Relations & Labor",
+    "company": "Spire Inc.",
+    "industry": [
+      "energy",
+      "utilities"
+    ],
+    "region": [
+      "na"
+    ],
+    "employee_class": [
+      "전임직",
+      "기술사무직"
+    ],
+    "vendor": [
+      "Sodales Solutions",
+      "SAP SuccessFactors"
+    ],
+    "vendor_type": [
+      "point-solution",
+      "hrms"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "automation",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "rpa",
+      "information-extraction"
+    ],
+    "confidence": 0.55,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2018-10-01",
+    "last_confirmed": "2026-05-06",
+    "output": "직원·매니저용 grievance/incident/discipline/appeals 자동 신고·추적 + 다중 노조별 케이스 분리 관리 + CBA(단체협약) 문서·증거 중앙 저장 + 노조 규칙·timeline 기반 워크플로우 자동화 + AI 챗봇 자가 자문",
+    "tags": [
+      "labor-relations",
+      "union-grievance",
+      "collective-bargaining",
+      "sodales",
+      "spire-energy",
+      "sap-successfactors",
+      "multi-union",
+      "utility",
+      "er"
+    ],
+    "sources": [
+      "sources/sodales-sap-app-center.md",
+      "sources/sap-store-spire-energy-success-story.md",
+      "sources/sodales-labour-relations-product.md",
+      "sources/pwc-er-ai-deck-2026-05.md"
+    ],
+    "summary": "Spire Inc.는 미주리주 St. Louis 기반 미국 5위 천연가스 utility (1.7M 고객, 3개 주, <strong>10+ 노조 운영</strong>) — 미국 최대급 단일 unionized utility. <strong>Sodales Labour Relations Management</strong> (SAP SuccessFactors 통합 endorsed app)을 도입해 incident·grievance·discipline·appeals를 실시간 추적하고 다중 노조별 case 관리·CBA(단체협약) 중앙화·노조 규칙 기반 워크플로우 자동화를 운영. Sodales는 SAP의 <strong>Industry Cloud Solutions Portfolio premium-certified Endorsed App</strong> + SAP Business AI를 활용한 <strong>첫 번째 endorsed app</strong>.",
+    "headline": "Spire Inc.는 미주리주 St. Louis 기반 미국 5위 천연가스 utility (1.7M 고객, 3개 주, 10+ 노조 운영) — 미국 최대급 단일 unionized utility. Sodales Labour Relations Management (SAP SuccessFactors 통합 endorsed app)을 도입해 incident·grievance·discipline·appeals를 실시간 추적하고 다중 노조별 case 관리·CBA(단체협약) 중앙화·노조 규칙 기반 워크플로우 자동화를 운영.",
+    "problem": "<ul>\n<li><strong>Before</strong>: Spire는 10+ 노조와 동시 운영 — 각 노조별 단체협약(CBA)·grievance procedure·timeline·escalation 절차가 모두 상이. 매니저·HR이 spreadsheet·이메일로 1건씩 처리, <strong>노조별 일관성 부재 + audit trail 약함</strong></li>\n<li><strong>Pain point</strong>:</li>\n<li><strong>다중 노조 복잡성</strong>: 10+ CBA 문서 manual 검색 → grievance 처리 시 잘못된 절차 적용 risk</li>\n<li><strong>근태·LMS·comp 데이터 silo</strong>: 각 시스템에서 case 정보 수집 시간 over-burden</li>\n<li><strong>컴플라이언스 audit 추적 어려움</strong>: 사건 처리 이력 분산 → 외부 audit·노조 측 조회 시 bottleneck</li>\n<li><strong>Trigger</strong>: SAP SuccessFactors 도입 + Sodales의 SAP-native 노사관계 SaaS 솔루션 등장 (2018)</li>\n</ul>",
+    "impact_summary": "<strong>다중 노조 utility의 grievance 디지털화</strong> — Spire는 10+ 노조 운영 환경에서 case 처리 일관성·audit trail·CBA 활용 자동화. 단 ⚠️ Tier 1·2 독립 검증 0건, Sodales/SAP 자사 자료가 1차 출처.",
+    "consulting": "<ul>\n<li><strong>다중 노조 환경 reference</strong>: 한국 SK·LG·현대차·금융지주 등 복수노조 보유 그룹사의 노사 case 처리 디지털화 검토 시 <strong>유일한 글로벌 다중 노조 utility reference</strong> (10+ 노조)</li>\n<li><strong>SAP HCM 베이스 한국 대기업 fit</strong>: 삼성·LG·SK는 SAP HCM 비중이 큰 그룹 — Sodales는 SAP-native이므로 추가 ETL 부담 적음</li>\n<li><strong>vs HR Acuity</strong> hr-acuity-oliver-er-companion:</li>\n<li>HR Acuity: 미국 ER market leader, AI Companion (olivER), 5,000+ 고객</li>\n</ul>",
+    "system": {
+      "Core HRIS": "SAP SuccessFactors (Spire는 SAP HCM 베이스)",
+      "AI 시스템 배치": "SAP Industry Cloud Solutions Portfolio 내 endorsed app (SAP App Center 등재)",
+      "사용자 접점": "Sodales web/mobile portal + conversational AI 챗봇 + SSO (SAP IdP)"
+    },
+    "data": {},
+    "model": {
+      "Foundation model": "SAP Business AI (구체 LLM provider _부분 미공개_)",
+      "Orchestration": "Sodales 자체 workflow engine + SAP Joule (가능성)"
+    },
+    "process_before": "Spire는 10+ 노조와 동시 운영 — 각 노조별 단체협약(CBA)·grievance procedure·timeline·escalation 절차가 모두 상이. 매니저·HR이 spreadsheet·이메일로 1건씩 처리, 노조별 일관성 부재 + audit trail 약함 / Pain point: / 다중 노조 복잡성: 10+ CBA 문서 manual 검색 → grievance 처리 시 잘못된 절차 적용 risk / 근태·LMS·comp 데이터 silo: 각 시스템에서 case 정보 수집 시간 over-burden / 컴플라이언스 audit 추적 어려움: 사건 처리 이력 분산 → 외부 audit·노조 측 조회 시 bottleneck / Trigger: SAP SuccessFactors 도입 + Sodales의",
+    "process_steps": [
+      "직원·매니저가 conversational AI 챗봇으로 grievance/incident/disciplinary report 신고",
+      "Sodales가 자동으로 SAP Employee Central·LMS·근태에서 관련 데이터 auto-populate",
+      "AI가 case 자동 요약 + 조사 추천 (grievance type·노조 식별·timeline 생성)",
+      "다중 노조별 grievance 트래킹 — 노조별 CBA·timeline·escalation 프로토콜 내장",
+      "Regulatory-compliant 화상 조사 + 증거 중앙 저장",
+      "Resolution 후 자동 audit trail 기록 + 트렌드 dashboard"
+    ]
+  },
+  {
     "slug": "walmart-ai-frontline-workforce",
     "title": "Walmart — AI 프론트라인 인력 관리",
     "primary_category": "Learning & Development",
@@ -2643,6 +3190,77 @@
       "결과를 음성·텍스트로 반환, 위치는 매장 지도 overlay",
       "본인 schedule 조회·교대 요청은 WFM 시스템 연동, 정책 Q&A는 GenAI 기반 step-by-step 가이드 (2025-Q3 업그레이드)",
       "모든 query는 store-level operational signal로 수집되어 매장·본사가 friction point 분석"
+    ]
+  },
+  {
+    "slug": "waymo-hr-acuity-er-case-management",
+    "title": "Waymo — HR Acuity ER Case Management 도입 (Reporting time -92%)",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "Employee Relations & Labor",
+    "company": "Waymo",
+    "industry": [
+      "tech",
+      "autonomous-vehicles"
+    ],
+    "region": [
+      "na"
+    ],
+    "employee_class": [
+      "기술사무직",
+      "전임직"
+    ],
+    "vendor": [
+      "HR Acuity"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "information-extraction"
+    ],
+    "confidence": 0.55,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-01-01",
+    "last_confirmed": "2026-05-06",
+    "output": "ER case (grievance·discipline·investigation) intake → structured case + role-based 접근 통제 + 자동 audit trail + ServiceNow 같은 범용 도구 대비 단축된 case 처리",
+    "tags": [
+      "waymo",
+      "hr-acuity",
+      "employee-relations",
+      "case-management",
+      "role-based-access",
+      "autonomous-driving",
+      "servicenow-replacement",
+      "er"
+    ],
+    "sources": [
+      "sources/hr-acuity-waymo-case-study.md"
+    ],
+    "summary": "Waymo (Alphabet 자율주행 자회사, ~3,000명)는 HR Acuity로 ER case management를 운영. ⚠️ 자사 보고: ServiceNow 같은 범용 도구 → HR Acuity 전용 도구 전환으로 <strong>reporting time 92% 감소</strong>. Bruce Berrol (Head of People Relations) 인용: 일반 ticketing 도구는 ER 도메인 (grievance·discipline·investigation)을 제대로 모름 → 전용 도구 선택. Role-based access·security 강화 동기.\n> 📌 <strong>HR Acuity case study 단일 출처</strong> — Tier 1·2 독립 정량 검증 0건. 92% 수치는 ⚠️ 자사 보고로 인용 시 명시 필수.",
+    "headline": "Waymo (Alphabet 자율주행 자회사, ~3,000명)는 HR Acuity로 ER case management를 운영. ⚠️ 자사 보고: ServiceNow 같은 범용 도구 → HR Acuity 전용 도구 전환으로 reporting time 92% 감소. Bruce Berrol (Head of People Relations) 인용: 일반 ticketing 도구는 ER 도메인 (grievance·discipline·investigation)을 제대로 모름 → 전용 도구 선택.",
+    "problem": "<ul>\n<li><strong>Before</strong>: Waymo는 ServiceNow 같은 범용 ITSM/HR ticketing 도구로 ER case 처리 — grievance·discipline·investigation도 일반 ticket으로 처리</li>\n<li><strong>Pain point</strong>:</li>\n<li><strong>ER 도메인 부재</strong>: ServiceNow는 ER (grievance·investigation·legal hold·noncompete) 도메인 모름 — case 분류·workflow가 일반 IT ticket과 동일</li>\n<li><strong>Role-based access 한계</strong>: ER case는 매니저·HR·legal 권한 분리 필요. 일반 ticket은 해당 분리 약함</li>\n<li><strong>Audit trail 부족</strong>: ER case는 SOX·legal hold·investigation 이력 필요 → 일반 ticket의 audit trail 부족</li>\n<li><strong>Reporting 수작업</strong>: trend·risk·hotspot 보고서 수작업 작성</li>\n</ul>",
+    "impact_summary": "ServiceNow 같은 범용 도구 → HR Acuity 전용 도구 전환으로 reporting time 대폭 단축. ⚠️ HR Acuity case study 단일 출처 (자사 보고).",
+    "consulting": "<ul>\n<li><strong>HR Acuity 정량 reference 사례</strong>: 한국 대기업 ER AI 도입 검토 시 \"92% reporting time 감소\" 인용 가능 (단 ⚠️ 자사 보고 명시)</li>\n<li><strong>ServiceNow → 전용 도구 migration pattern</strong>:</li>\n<li>한국 대기업도 ServiceNow·자체 ticket 시스템으로 ER 처리 중인 곳 다수</li>\n<li>Waymo 사례 = \"범용 도구의 한계 + 전용 ER 도구 전환의 가치\" 명확한 reference</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "HR Acuity 전체 (olivER AI 사용 여부는 case study에 명시 없음)"
+    },
+    "data": {},
+    "model": {
+      "Foundation model": "HR Acuity stack (구체 모델 미공개)"
+    },
+    "process_before": "Waymo는 ServiceNow 같은 범용 ITSM/HR ticketing 도구로 ER case 처리 — grievance·discipline·investigation도 일반 ticket으로 처리 / Pain point: / ER 도메인 부재: ServiceNow는 ER (grievance·investigation·legal hold·noncompete) 도메인 모름 — case 분류·workflow가 일반 IT ticket과 동일 / Role-based access 한계: ER case는 매니저·HR·legal 권한 분리 필요. 일반 ticket은 해당 분리 약함 / Audit trail 부족: ER case는 SOX·legal hold·investigation 이력 필요 → 일반 ticket의 audit",
+    "process_steps": [
+      "직원이 HR Acuity portal로 ER case 신고 — case type 자동 분류",
+      "HR/People Relations team이 ER 전용 workflow로 처리 — investigation plan·인터뷰 질문 등 ER 템플릿",
+      "Role-based access — 매니저·HR·legal 권한 분리",
+      "자동 audit trail (SOX·legal hold 대응)",
+      "Trend·risk·hotspot dashboard 자동 생성"
     ]
   },
   {
@@ -5072,73 +5690,6 @@
     ]
   },
   {
-    "slug": "hitachi-skye-hr-ai-assistant",
-    "title": "Hitachi — Skye HR AI 어시스턴트",
-    "primary_category": "Employee Experience & HR Ops",
-    "subcategory": "Employee Self-service",
-    "company": "Hitachi",
-    "industry": [
-      "manufacturing",
-      "tech"
-    ],
-    "region": [
-      "apac",
-      "global"
-    ],
-    "employee_class": [
-      "all"
-    ],
-    "vendor": [],
-    "vendor_type": [
-      "internal-build",
-      "point-solution"
-    ],
-    "ai_tech_type": [
-      "generative",
-      "automation"
-    ],
-    "ai_tech_subtype": [
-      "summarization-qa",
-      "rpa"
-    ],
-    "confidence": 0.4,
-    "stage": "production",
-    "frequency": "daily",
-    "first_seen": "2025-01-01",
-    "last_confirmed": "2025-06-01",
-    "output": "직원 정책·복리후생 문의에 대한 사업부·국가·역할별 개인화 답변 + IT 서비스 티켓 자동 생성·휴가 요청 자동 처리 + 복잡 케이스 HR 에스컬레이션",
-    "tags": [
-      "hr-chatbot",
-      "employee-self-service",
-      "policy-qa",
-      "document-reasoning",
-      "change-management",
-      "japan",
-      "global"
-    ],
-    "sources": [
-      "sources/hrexecutive-hitachi-skye-2025.md"
-    ],
-    "summary": "Hitachi는 2025년 초 HR AI 어시스턴트 \"Skye\"를 도입했다. ✅ <strong>Fact</strong> Skye는 사업부·국가·역할에 따라 문서를 추론하고 응답을 개인화하며, IT 서비스 티켓 생성·휴가 요청 처리 등 인텔리전트 액션도 수행한다. Hitachi의 접근이 특별한 이유는 <strong>문화 설계</strong>에 있다: Skye에 이름과 개성을 부여하여 직원들이 \"또 다른 챗봇\"이 아닌 \"동료 AI\"로 인식하도록 설계했다. sources/hrexecutive-hitachi-skye-2025.md",
-    "headline": "Hitachi는 2025년 초 HR AI 어시스턴트 \"Skye\"를 도입했다. ✅ Fact Skye는 사업부·국가·역할에 따라 문서를 추론하고 응답을 개인화하며, IT 서비스 티켓 생성·휴가 요청 처리 등 인텔리전트 액션도 수행한다. Hitachi의 접근이 특별한 이유는 문화 설계에 있다: Skye에 이름과 개성을 부여하여 직원들이 \"또 다른 챗봇\"이 아닌 \"동료 AI\"로 인식하도록 설계했다.",
-    "problem": "<ul>\n<li><strong>Before (baseline)</strong>: Hitachi는 <strong>다수의 사업부(BU)와 다국가 운영</strong> 환경에서 HR 정책·복리후생·시스템이 BU·국가별로 상이. 직원이 자기에게 맞는 정책을 찾으려면 <strong>어느 문서를, 어떤 버전으로, 어느 부서에 물어야 하는지</strong> 파악이 어려움. ❓ <strong>구체 수치(월간 HR 문의 건수·평균 해결 시간) 미공개</strong></li>\n<li><strong>Pain point</strong>: (1) <strong>정책 탐색의 복잡성</strong> — BU·국가·역할별로 적용되는 정책이 다르기 때문에 \"하나의 답\"이 없음 → 직원 불만·프로세스 지연. (2) <strong>HR 팀에 반복 문의 집중</strong> — 같은 유형의 질문(복리후생·휴가·IT 요청)이 반복적으로 HR에 유입 → HR의 전략적 업무 시간 잠식</li>\n<li><strong>Trigger</strong>: Hitachi가 \"<strong>문화 설계</strong>\" 관점에서 AI를 도입하기로 결정 — 단순 챗봇이 아니라 <strong>이름(Skye)과 개성을 부여한 \"동료 AI\"</strong>로 설계해 직원 수용도를 높이겠다는 차별화 전략</li>\n</ul>",
-    "impact_summary": "HR 문의 부담이 Skye로 이전되어 직원들의 빠른 답변 확보 보고되나, 구체 수치 미공개 (자사 보고 기반).",
-    "consulting": "<ul>\n<li><strong>\"AI 동료 vs AI 도구\" 설계 철학</strong>: Hitachi의 Skye와 Bosch의 ROB 모두 이름·개성을 부여한 HR AI 어시스턴트. 이는 직원 채택률을 높이는 UX 설계 패턴으로, 국내 기업 HR AI 도입 시 \"도구처럼 만들지 말고 동료처럼 만들라\"는 설계 원칙으로 제시 가능.</li>\n<li><strong>일본 제조업 HR AI 선도 사례</strong>: 일본의 낮은 AI 도입률(2024 기준 조직 24%만 AI 도입) 대비 Hitachi는 선도적 사례. 일본 사업 클라이언트(한국 기업의 일본 법인 등) 대상 참고 가능.</li>\n<li><strong>문서 추론 기반 개인화</strong>: 사업부·국가·역할별 정책이 다른 글로벌 기업에서 단일 AI가 개인화 응답을 생성하는 패턴 — 복잡한 지주회사 구조의 국내 대기업(삼성·현대·LG 계열사)에 특히 적합한 아키텍처 방향.</li>\n<li><strong>데이터 부족</strong>: HR Executive 단일 소스이며 수치·기술 스택 미공개 — stub 에 가까운 수준. 추가 검증 소스 필요.</li>\n</ul>",
-    "system": {
-      "연동·통합": "Fact IT 서비스 시스템 연동 (티켓 생성)."
-    },
-    "data": {
-      "입력 데이터 소스": "HR 정책 문서, 복리후생 문서. 사업부·국가·역할별 개인화 데이터."
-    },
-    "model": {},
-    "process_before": "Hitachi는 다수의 사업부(BU)와 다국가 운영 환경에서 HR 정책·복리후생·시스템이 BU·국가별로 상이. 직원이 자기에게 맞는 정책을 찾으려면 어느 문서를, 어떤 버전으로, 어느 부서에 물어야 하는지 파악이 어려움. ❓ 구체 수치(월간 HR 문의 건수·평균 해결 시간) 미공개 / Pain point: (1) 정책 탐색의 복잡성 — BU·국가·역할별로 적용되는 정책이 다르기 때문에 \"하나의 답\"이 없음 → 직원 불만·프로세스 지연. (2) HR 팀에 반복 문의 집중 — 같은 유형의 질문(복리후생·휴가·IT 요청)이 반복적으로 HR에 유입 → HR의 전략적 업무 시간 잠식 / Trigger: Hitachi가 \"문화 설계\" 관점에서 AI를 도입하기로 결정 — 단순 챗봇이 아니라 이름(Skye)과 개성을 부여",
-    "process_steps": [
-      "Fact Skye가 정책 문서를 추론하여 사업부·국가·역할에 맞게 개인화된 응답 제공.",
-      "Fact IT 서비스 티켓 생성, 휴가 요청 처리 등 지능적 액션 수행.",
-      "Fact 채용·온보딩·리텐션 영역의 유스케이스 개발 진행 중."
-    ]
-  },
-  {
     "slug": "hyundai-steel-hip-platform",
     "title": "현대제철 — 'HIP' 사내 GenAI 경영지원 챗봇",
     "primary_category": "Employee Experience & HR Ops",
@@ -5975,6 +6526,75 @@
       "Performance Review Agent가 타 시스템 데이터를 자동 수집",
       "리뷰 초안 자동 생성",
       "매니저가 검토·수정·확정"
+    ]
+  },
+  {
+    "slug": "yelp-hr-acuity-er-documentation",
+    "title": "Yelp — HR Acuity ER Documentation 통합 (single source of truth)",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "Employee Relations & Labor",
+    "company": "Yelp",
+    "industry": [
+      "tech",
+      "internet-services"
+    ],
+    "region": [
+      "na"
+    ],
+    "employee_class": [
+      "기술사무직",
+      "전임직"
+    ],
+    "vendor": [
+      "HR Acuity"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "information-extraction"
+    ],
+    "confidence": 0.4,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-01-01",
+    "last_confirmed": "2026-05-06",
+    "output": "ER case 단일 source of truth (documentation 통합) + advanced analytics + case classification 단순화 + Rachel Greer Head of ER 운영",
+    "tags": [
+      "yelp",
+      "hr-acuity",
+      "employee-relations",
+      "documentation",
+      "single-source-of-truth",
+      "advanced-analytics",
+      "case-classification",
+      "er"
+    ],
+    "sources": [
+      "sources/hr-acuity-yelp-case-study.md"
+    ],
+    "summary": "Yelp (소비자 리뷰 플랫폼)가 HR Acuity ER case management 도입. ⚠️ 자사 보고 (HR Acuity case study 단일 출처): 도입 동기는 <strong>single source of truth in documentation</strong> + advanced analytics + case 분류 단순화. Rachel Greer (Head of Employee Relations) 인용. Greer는 HR Acuity의 <strong>empowER™ Community Award 수상</strong> (HR Acuity 커뮤니티 활동가). 정량 metric 미공개, AI 기능 (olivER) 사용 여부 명시 안 됨.",
+    "headline": "Yelp (소비자 리뷰 플랫폼)가 HR Acuity ER case management 도입. ⚠️ 자사 보고 (HR Acuity case study 단일 출처): 도입 동기는 single source of truth in documentation + advanced analytics + case 분류 단순화. Rachel Greer (Head of Employee Relations) 인용. Greer는 HR Acuity의 empowER™ Community Award 수상 (HR Acuity 커뮤니티 활동가).",
+    "problem": "<ul>\n<li><strong>Before</strong>: Yelp의 ER documentation 분산 — case 기록·investigation note·resolution이 여러 도구·spreadsheet에 흩어짐</li>\n<li><strong>Pain point</strong>:</li>\n<li><strong>Documentation 분산</strong>: ER team이 case 검색·trend 분석 시 1건씩 수작업</li>\n<li><strong>Case 분류 복잡성</strong>: grievance type 분류 기준 일관성 없음 → analytics 부정확</li>\n<li><strong>Advanced analytics 부재</strong>: 부서·매니저별 trend dashboard 부재</li>\n<li><strong>Trigger</strong>: ER team 성장 + case management 전문 도구 필요성. HR Acuity가 ER 전용 leader로 등장</li>\n</ul>",
+    "impact_summary": "정성 사례 — single source of truth in documentation + advanced analytics. ⚠️ 정량 metric 미공개.",
+    "consulting": "<ul>\n<li><strong>정성 사례 reference</strong>: 한국 대기업의 ER documentation 통합 검토 시 Yelp의 \"single source of truth\" 도입 동기 인용 가능</li>\n<li><strong>vs Waymo</strong> waymo-hr-acuity-er-case-management:</li>\n<li>Waymo: 정량 (92% reporting time 단축)</li>\n<li>Yelp: 정성 (documentation 통합·analytics)</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "HR Acuity 전체 (olivER AI 사용 여부는 case study에 명시 없음)"
+    },
+    "data": {},
+    "model": {
+      "Foundation model": "HR Acuity stack (구체 모델 미공개)"
+    },
+    "process_before": "Yelp의 ER documentation 분산 — case 기록·investigation note·resolution이 여러 도구·spreadsheet에 흩어짐 / Pain point: / Documentation 분산: ER team이 case 검색·trend 분석 시 1건씩 수작업 / Case 분류 복잡성: grievance type 분류 기준 일관성 없음 → analytics 부정확 / Advanced analytics 부재: 부서·매니저별 trend dashboard 부재 / Trigger: ER team 성장 + case management 전문 도구 필요성. HR Acuity가 ER 전용 leader로 등장",
+    "process_steps": [
+      "ER team이 HR Acuity portal로 모든 case 단일 기록",
+      "Case 분류·investigation note·resolution 통합 documentation",
+      "Advanced analytics — 부서·매니저·case type별 dashboard",
+      "Rachel Greer Head of ER team이 운영 + HR Acuity 커뮤니티 활동"
     ]
   },
   {

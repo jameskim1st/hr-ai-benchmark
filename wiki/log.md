@@ -611,3 +611,73 @@ Format: `## [YYYY-MM-DD] <operation> | <one-line description>`
 
 ### 산출물
 - HTML 595KB, Excel 236KB, JSON 609KB
+
+## [2026-05-06] ingest | PwC ER (Employee Relations·노무) AI 자료 fact-check + 8 신규 use case + 1 synthesis | touched: 11 pages
+
+### 컨텍스트
+사용자 요청: raw/etc/ 폴더 PwC Korea ER AI 컨설팅 자료 6 슬라이드 분석 + 최신 ER AI use case 리서치 + wiki 자료 종합 갱신.
+
+### 분석 자료
+- PwC 6 슬라이드 (raw/etc/1000023757-762.jpg) — ER 4단계 Value Chain + 집단노사·준법지원 영역별 AI 도입 현황
+- 인용 vendor: Spire (집단노사 ×2), Cisco Webex Saakaroon, Adept Solid Solutions, Waymo, Yelp, Hitachi Skye (2022 case), LiKHR Companion
+
+### 검증 결과 (2개 background research agent 병렬 가동)
+
+**Agent A (HR Acuity·Waymo·Yelp·Hitachi Skye ER 검증)**:
+- ✅ HR Acuity = 카테고리 leader (G2 #1, Brandon Hall Gold 2025, Forrester TEI 520% ROI, Workday Innovation Partner). olivER AI 2024 출시
+- ✅ Waymo = HR Acuity 고객, 92% reporting time 감소 (자사 보고)
+- ✅ Yelp = HR Acuity 고객 (정량 metric 미공개, stub 수준)
+- ⚠️ Hitachi Skye = PwC 주장과 불일치 (a) 2025년 출시 (2022 X) (b) Ema 플랫폼 기반 (자체 빌드 X) (c) 공개 28 use case는 일반 HR 자가서비스 (ER 명시 X)
+
+**Agent B (Spire·Cisco Webex Saakaroon·Adept Solid Solutions·LiKHR + Korean 검증)**:
+- ✅ "Spire" = 고객사 (벤더 아님). 실제 벤더는 **Sodales Solutions** (SAP-native premium endorsed app). Spire Energy = 미국 5위 천연가스 utility, 10+ 노조 운영
+- ❌ Cisco Webex Saakaroon = 0 hits (PwC OCR 의심)
+- ❌ Adept Solid Solutions = 0 hits (Adept AI는 별개 회사)
+- ❌ LiKHR = 0 hits (HR Acuity olivER가 가장 유사 → 그것으로 처리)
+
+**보너스 발굴 (PwC 누락 vendor)**:
+- AllVoices Vera AI Copilot — AI-native ER, 200+ 언어
+- Diligent Vault Active Integrity — 2025-05 인수, GRC 통합, EthicsChat AI
+- NAVEX EthicsPoint + NCA — 2025-12 AI 확장, 13K+ 조직
+- 고용노동부 AI 노동법 상담 — 한국 정부 (2024-11 출시, 117K 사용, 87.5% 단축, 32개 언어)
+
+### 신규 use case 8건
+| Slug | Vendor | Confidence | 비고 |
+|---|---|---|---|
+| [[hr-acuity-oliver-ai-er-companion]] | HR Acuity | 0.80 | G2 #1 + Brandon Hall Gold + Forrester TEI |
+| [[moel-ai-labor-law-consultation]] | 고용노동부 internal | **0.85** | 한국 정부 표준 사례, 117K 사용, 87.5% 단축 |
+| [[allvoices-vera-ai-er-copilot]] | AllVoices | 0.65 | AI-native, 200+ 언어 |
+| [[diligent-vault-active-integrity-speakup]] | Diligent | 0.65 | 2025-05 Vault 인수, GRC 통합 |
+| [[navex-ethicspoint-nca-compliance]] | NAVEX Global | 0.65 | 13K+ 조직, NCA 2025-12 |
+| [[sodales-spire-energy-labor-relations]] | Sodales Solutions | 0.55 | SAP-native, 10+ 노조 utility |
+| [[waymo-hr-acuity-er-case-management]] | HR Acuity | 0.55 | 92% reporting time 단축 (자사 보고) |
+| [[yelp-hr-acuity-er-documentation]] | HR Acuity | 0.40 | 정성 사례 (stub) |
+
+### 기존 페이지 갱신 1건
+- [[hitachi-skye-hr-ai-assistant]]:
+  - vendor: [] → [Ema] 추가
+  - confidence: 0.40 → 0.55
+  - Summary 보강 (8주 deploy·40K 직원·28 use case·70% efficiency)
+  - 신규 sources 3건 (Ema customer story·Constellation·Unleash)
+  - **[!contradiction] callout 추가** — PwC가 Skye를 ER 사례로 분류한 것 부정확 (2025 출시, Ema 기반, ER 명시 없음)
+
+### 신규 synthesis 1건
+- [[er-ai-vendor-landscape-korea-2026-05]] — ER AI 벤더 4-vendor 비교 + 한국 적용 selection guide + PwC 자료 정정 종합
+
+### 신규 source 1건
+- [[pwc-er-ai-deck-2026-05]] — PwC Korea 자료 메타 정리
+
+### 영향
+- use case: 132 → 140 (신규 8)
+- 카테고리 분포: Strategic Workforce & Governance +8 (Employee Relations & Labor +5, Compliance & Risk +3)
+- syntheses: 12 → 13
+- sources: 70+ → 71+
+
+### Quality report
+- ✅ 가장 깨끗: HR Acuity (Tier 1·2 다수 검증)
+- ✅ 한국 컨설팅 valuable: 고용노동부 AI (정부 reference) + Sodales (SAP fit)
+- ⚠️ Hitachi Skye contradiction 처리 (PwC 분류 정정)
+
+### 사용자 액션 권장
+- PwC 자료 그대로 클라이언트 인용 시 **벤더 식별 오류 risk** — wiki의 정정 자료 활용
+- 한국 대기업 ER AI 컨설팅 deck에 **4-vendor 비교 + Sodales SAP fit + 고용노동부 사례** 3-tier 구조 권장

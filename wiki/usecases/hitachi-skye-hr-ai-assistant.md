@@ -3,32 +3,40 @@ title: "Hitachi — Skye HR AI 어시스턴트"
 slug: hitachi-skye-hr-ai-assistant
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service
-tags: [hr-chatbot, employee-self-service, policy-qa, document-reasoning, change-management, japan, global]
+tags: [hr-chatbot, employee-self-service, policy-qa, document-reasoning, change-management, japan, global, ema-platform, agentic-ai]
 company: Hitachi
 industry: [manufacturing, tech]
 region: [apac, global]
 employee_class: [all]
-vendor: []
-vendor_type: [internal-build, point-solution]
-output: "직원 정책·복리후생 문의에 대한 사업부·국가·역할별 개인화 답변 + IT 서비스 티켓 자동 생성·휴가 요청 자동 처리 + 복잡 케이스 HR 에스컬레이션"
+vendor: [Ema]
+vendor_type: [point-solution]
+output: "직원 정책·복리후생 문의에 대한 사업부·국가·역할별 개인화 답변 + IT 서비스 티켓 자동 생성·휴가 요청 자동 처리 + 복잡 케이스 HR 에스컬레이션 (ServiceNow·Jira·Okta 통합·MS Teams·Google Chat 양방향)"
 ai_tech_type: [generative, automation]
 ai_tech_subtype: [summarization-qa, rpa]
 stage: production
 frequency: daily
 first_seen: 2025-01-01
-last_confirmed: 2025-06-01
-confidence: 0.40
+last_confirmed: 2026-05-06
+confidence: 0.55
 sources:
   - sources/hrexecutive-hitachi-skye-2025.md
+  - sources/ema-hitachi-customer-story-2025.md
+  - sources/constellation-hitachi-harc-agents-2025.md
+  - sources/unleash-hitachi-digital-2025.md
 related_usecases:
   - bosch-rob-hr-ai-assistant
   - ibm-askhr-watsonx
 related_vendors: []
 ---
 
+> [!contradiction] 2026-05-06 — PwC ER deck 분류 정정
+> - **PwC 자료 주장 (2026-05)**: Hitachi AI HR Companion "Skye" Case (2022)를 **준법지원 (compliance·ER)** 영역의 통합 DB·후속 조치 reference로 분류
+> - **공개 자료 검증 (2026-05-06)**: (a) Skye는 **2025년 출시** (2022년 아님, 출처: Ema customer story·HR Executive 기사·Constellation Research 모두 2025년) (b) Skye는 Hitachi 자체 빌드 아닌 **Ema 플랫폼 기반** (c) 공개 28 use case는 **온보딩·교육·성장·복리후생·오프보딩** 영역 — ER·노사·징계·고충처리 **명시되지 않음**
+> - **결론**: Skye는 일반 HR 자가서비스 + onboarding/benefits 도구 — ER reference로 분류 부적합. PwC 자료의 출처 재확인 필요. Hitachi 별도 compliance hotline (50개 언어 글로벌)이 존재하나 Skye와 연동 여부 _미공개_
+
 ## Summary
 
-Hitachi는 2025년 초 HR AI 어시스턴트 "Skye"를 도입했다. ✅ **Fact** Skye는 사업부·국가·역할에 따라 문서를 추론하고 응답을 개인화하며, IT 서비스 티켓 생성·휴가 요청 처리 등 인텔리전트 액션도 수행한다. Hitachi의 접근이 특별한 이유는 **문화 설계**에 있다: Skye에 이름과 개성을 부여하여 직원들이 "또 다른 챗봇"이 아닌 "동료 AI"로 인식하도록 설계했다. [[sources/hrexecutive-hitachi-skye-2025.md]]
+Hitachi는 2025년 **Ema 플랫폼 기반 HR AI 어시스턴트 "Skye"**를 도입. ✅ Fact: 8주 만에 deploy, **3개 BU·20개 시스템·28 use case·40,000명 직원** 대상. ServiceNow·Jira·Okta 통합 + MS Teams·Google Chat 양방향. 사업부·국가·역할에 따라 문서 추론·개인화 응답 + IT 서비스 티켓 생성·휴가 요청 처리 등 인텔리전트 액션. ⚠️ 벤더 주장 (Ema): **70% HR operational efficiency 향상**. Hitachi 차별화: **문화 설계** — Skye에 이름·개성 부여 → "AI = 도구"가 아닌 "AI = 동료" 마인드셋 전환. [[sources/hrexecutive-hitachi-skye-2025.md]]
 
 ## Problem / Why (도입 배경)
 
