@@ -14,13 +14,18 @@ OUT_PATH = os.path.join(SCRIPT_DIR, '..', 'wiki', 'exports', 'hr-ai-usecase-coll
 import re as _re
 
 def _strip_emdash(s):
-    """em-dash 제거 (사용자 요청). ': '·':' 등으로 치환."""
+    """em-dash 제거 (사용자 요청). ': '·':' 등으로 치환.
+    period·comma·closing paren 직후 ` — `는 콜론 대신 공백으로 (예: 'Co. — Galileo' → 'Co. Galileo')."""
     if not isinstance(s, str):
         return s
+    # period·comma·closing paren 직후 ` — ` → ` ` (어색한 `Co.:` 방지)
+    s = _re.sub(r'(?<=[.,)])\s+—\s+', ' ', s)
     s = _re.sub(r' +— +', ': ', s)
     s = _re.sub(r' —|— ', ':', s)
     s = s.replace('—', ' ')
     s = _re.sub(r'  +', ' ', s)
+    # `::` 또는 `: :` → `:`
+    s = _re.sub(r':\s*:', ':', s)
     return s
 
 def _clean_dict(d):

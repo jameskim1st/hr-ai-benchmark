@@ -157,11 +157,19 @@ def strip_html(s, max_len=None, prettify=True, target_line_len=80):
 
 
 def _remove_emdash_line(line):
-    """단일 line에서 em-dash 제거 (build_excel.remove_emdash와 동일)."""
+    """단일 line에서 em-dash 제거 — `:`/`::` 충돌 처리.
+    period·comma 직후의 ` — `는 콜론 대신 공백으로 (예: 'Co. — Galileo' → 'Co. Galileo')."""
+    # period·comma·closing paren 직후 ` — ` → ` ` (어색한 `Co.:` 방지)
+    line = re.sub(r'(?<=[.,)])\s+—\s+', ' ', line)
+    # 일반 ` — ` → `: `
     line = re.sub(r' +— +', ': ', line)
     line = re.sub(r' —|— ', ':', line)
     line = line.replace('—', ' ')
     line = re.sub(r'  +', ' ', line)
+    # `::` (콜론 연속) 또는 `: :` (콜론-공백-콜론) → 단일 `:`
+    line = re.sub(r':\s*:', ':', line)
+    # `): :` 같은 paren-after 케이스 → `): `
+    line = re.sub(r'\)\s*:\s*:', '): ', line)
     return line.strip()
 
 
@@ -497,26 +505,21 @@ def has_type(u, type_id):
 
 
 def build_process_flow(u, target_line_len=75):
-    """Process Before → After를 단일 셀로 결합."""
-    before = strip_html(u.get("process_before"), prettify=True, target_line_len=target_line_len)
+    """Process Flow — After steps만 (Before는 Pain Point와 중복되어 제외)."""
     after_steps = u.get("process_steps") or []
-    parts = []
-    if before:
-        parts.append(f"[Before]\n{before}")
-    if after_steps:
-        # 각 step도 길면 prettify
-        steps_lines = []
-        for i, s in enumerate(after_steps):
-            s_pretty = prettify_for_excel(s, target_line_len=target_line_len)
-            s_lines = s_pretty.split('\n')
-            if len(s_lines) <= 1:
-                steps_lines.append(f"{i+1}. {s_pretty}")
-            else:
-                steps_lines.append(f"{i+1}. {s_lines[0]}")
-                for ln in s_lines[1:]:
-                    steps_lines.append(f"   {ln}")
-        parts.append("[After]\n" + "\n".join(steps_lines))
-    return "\n\n".join(parts) if parts else ""
+    if not after_steps:
+        return ""
+    steps_lines = []
+    for i, s in enumerate(after_steps):
+        s_pretty = prettify_for_excel(s, target_line_len=target_line_len)
+        s_lines = s_pretty.split('\n')
+        if len(s_lines) <= 1:
+            steps_lines.append(f"{i+1}. {s_pretty}")
+        else:
+            steps_lines.append(f"{i+1}. {s_lines[0]}")
+            for ln in s_lines[1:]:
+                steps_lines.append(f"   {ln}")
+    return "\n".join(steps_lines)
 
 
 def build_impact(u, target_line_len=60):

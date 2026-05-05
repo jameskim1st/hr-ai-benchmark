@@ -147,6 +147,8 @@ def extract_process(body):
         if steps:
             for bold, text in steps[:8]:
                 first_line = (text or '').strip().split('\n')[0].strip()
+                # 본문 leading em-dash·dash 제거 (bold label 결합 시 ':' 와 충돌 방지)
+                first_line = re.sub(r'^[\s—–\-:：]+', '', first_line).strip()
                 # 본문 첫 줄이 비어있으면(콜론·줄바꿈만) bold label로 fallback
                 if not first_line and bold:
                     first_line = bold.strip('*: \t')
