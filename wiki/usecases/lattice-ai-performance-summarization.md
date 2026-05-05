@@ -1,5 +1,5 @@
 ---
-title: "Lattice — AI Performance Summarization & AI Agent (매니저 리뷰 시간 절감)"
+title: "Lattice — AI Performance Summarization & AI Agent"
 slug: lattice-ai-performance-summarization
 primary_category: Performance & Talent Management
 subcategory: Goal & Performance

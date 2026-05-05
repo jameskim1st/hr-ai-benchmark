@@ -569,3 +569,45 @@ Format: `## [YYYY-MM-DD] <operation> | <one-line description>`
 - confidence: 0.18 → 0.22 (외부 공개는 여전히 0건이나 internal production 운영 fact 반영)
 - 본문: "PwC Korea가 제안한", "추진 계획 단계", "검증 사례 0건" 등 framing 전면 삭제. "공개 1차 출처 0건" caveat은 유지 (factually 여전히 true)
 - Consulting Angle: "PwC Korea 제안" → "SK하이닉스 자체 구축" framing으로 재작성
+
+## [2026-05-06] manual-edit | 4 가지 가독성 종합 정비 (titles · process flow · Excel truncation · row height) | touched: 132 use cases + 2 scripts
+
+### 사용자 피드백
+"시간이 들더라도 아래내용 전수점검 및 개선 필요함 (엑셀 및 html 모두)
+1. 엑셀에 개요가 여전히 bullet point + 줄바꿈이 적용이 안되어있어.
+2. '…'라며 잘린게 다른 column들에도 존재.
+3. process flow가 이 use case의 서비스/과제 flow가 나와야하는데 그러지 않는 use case가 꽤 있음. 전수점검 필요.
+4. 사례명에는 깔끔하게 사례명만 넣고 (즉, 직관적인 use case 이름) 적용 효과같은 건 넣지 말자."
+
+### 변경
+
+**Issue 4 — Title 정리 (122 / 132 case 수정)**:
+- 117개 frontmatter title에서 `(...)` 괄호 자동 제거 (적용 효과·고객 명단·timeline 등)
+- 추가 9개 metric-heavy title 수동 cleanup (Cisco/Microsoft/IBM/Amazon/Deloitte/Siemens/PwC/Accenture)
+- 결과: 132/132 title이 "Vendor — Service Name" 깔끔한 형식
+
+**Issue 1+2 — Excel truncation 제거 + bullet 가독성**:
+- `strip_html()`의 max_len 인자 모두 제거 (1500/400/350/500자 cap → 32k 한도까지 full)
+- 개요 cell이 이제 Summary 전체 (bullet `•` 마커·줄바꿈 보존)
+- Row height 동적 계산 알고리즘 보강: cell당 line 수 기반, 최소 60 → 최대 600pt (잘림 방지 우선)
+- `<ul>·<ol>` opening tag도 strip 처리 (잔여 마크업 방지)
+
+**Issue 3 — Process flow 100% coverage (8 no-step → 0)**:
+- `extract_v3.py`에 5단계 fallback 추가:
+  1. Numbered list (`1. ... 2. ...`)
+  2. Top-level bullet (`- item`) — numbered 없을 때
+  3. Arrow narrative (`X → Y → Z`) — single line
+  4. Mermaid 노드 (subgraph 라벨 제외 + `\n`/`<br>` 정리)
+  5. Process 섹션의 `- **Label**: desc` 형태 bold label
+- `**After (anything)**` 패턴도 매칭 (이전엔 `(To-be)`만 매칭) — `(7 phases)` `(파일럿)` `(추진 중)` `(제안 architecture)` 등 모두 처리
+- `_clean_step()` 강화: leading `:` 제거 (bold prefix strip 후 잔존), trailing `:` `-` 제거, dash-only 본문 시 label만 사용, sub-bullet leak `:` `- sub` → `: sub` 정리
+- Bold label + 본문 결합 ("Bold: 본문" 형식) — 정보 보존
+
+### 검증
+- Title parentheticals: 132/132 → 0
+- Process_steps coverage: 100% (132/132)
+- Excel `…` truncation: 0건 (1건 detected는 신문 헤드라인 ellipsis — 진짜 truncation 아님)
+- Mastercard 개요 cell: 595 chars, 6 줄바꿈, 2 bullets, row height 216pt — 잘림 없음
+
+### 산출물
+- HTML 595KB, Excel 236KB, JSON 609KB

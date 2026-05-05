@@ -1,5 +1,5 @@
 ---
-title: "Nayya — AI 복리후생 의사결정 지원 (MetLife 파트너 + bswift·Mercer 통합)"
+title: "Nayya — AI 복리후생 의사결정 지원"
 slug: nayya-benefits-decision-support
 primary_category: Total Rewards
 subcategory: Benefits & Wellbeing

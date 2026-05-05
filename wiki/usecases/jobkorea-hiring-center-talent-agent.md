@@ -1,5 +1,5 @@
 ---
-title: "잡코리아 — '하이어링 센터' 통합 채용 솔루션 + 탤런트 에이전트 (2026-03 launch, 채용담당 65% AI agent 검토)"
+title: "잡코리아 — '하이어링 센터' 통합 채용 솔루션 + 탤런트 에이전트"
 slug: jobkorea-hiring-center-talent-agent
 primary_category: Talent Acquisition
 subcategory: Sourcing & Attraction

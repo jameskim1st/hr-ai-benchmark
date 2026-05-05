@@ -1,5 +1,5 @@
 ---
-title: "SAP SuccessFactors — Joule Performance & Goals Agent (매니저 성과 대화 지원)"
+title: "SAP SuccessFactors — Joule Performance & Goals Agent"
 slug: sap-joule-performance-goals-agent
 primary_category: Performance & Talent Management
 subcategory: Goal & Performance

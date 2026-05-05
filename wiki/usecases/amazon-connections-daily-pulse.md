@@ -1,5 +1,5 @@
 ---
-title: "Amazon Connections — 1.5M 직원 daily 1-question pulse (300M annual responses, 97% adoption)"
+title: "Amazon Connections — daily 1-question 직원 pulse"
 slug: amazon-connections-daily-pulse
 primary_category: Employee Experience & HR Ops
 subcategory: Listening & Engagement

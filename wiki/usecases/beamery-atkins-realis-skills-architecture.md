@@ -1,5 +1,5 @@
 ---
-title: "AtkinsRéalis — Beamery 기반 Skills Architecture (89% 스킬매핑 시간↓, Forrester 467% ROI)"
+title: "AtkinsRéalis — Beamery 기반 Skills Architecture"
 slug: beamery-atkins-realis-skills-architecture
 primary_category: Strategic Workforce & Governance
 subcategory: Workforce Planning

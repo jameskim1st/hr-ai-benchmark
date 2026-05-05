@@ -1,5 +1,5 @@
 ---
-title: "Arca Continental Coca-Cola Southwest Beverages — Perceptyx Activate AI 코칭 넛지 (리더십 지수 +24pp)"
+title: "Arca Continental Coca-Cola Southwest Beverages — Perceptyx Activate AI 코칭 넛지"
 slug: coca-cola-southwest-perceptyx-activate
 primary_category: Employee Experience & HR Ops
 subcategory: Listening & Engagement

@@ -88,44 +88,143 @@ def extract_bullets(body, heading, keys):
                 result[key] = val[:250]
     return result
 
+def _clean_step(s):
+    """Step 문자열 정제 — bold·wikilink·이모지·연속 공백·leading colon/bullet 제거.
+    너무 짧거나(<3) 너무 길면(>120) None.
+    'Label: -' 처럼 본문이 빈 dash인 경우 Label만 사용."""
+    s = s.strip()
+    s = re.sub(r'\[\[.*?\]\]', '', s)
+    s = re.sub(r'\*\*(.+?)\*\*', r'\1', s)
+    s = re.sub(r'[✅⚠️❓🚫🔴📌]', '', s)
+    # sub-bullet leak: 'Label: - sub' → 'Label: sub' (leading '- ' 후속에서 stripped)
+    s = re.sub(r':\s*[-*•]\s*', ': ', s)
+    s = re.sub(r'\s+', ' ', s).strip()
+    s = re.sub(r'^[-*•]\s*', '', s)
+    s = re.sub(r'^[:：]\s*', '', s)
+    s = re.sub(r'\s*[:：]\s*$', '', s)
+    # trailing dangling dash/punctuation
+    s = re.sub(r'\s*[-—–]\s*$', '', s).strip()
+    # 'Label: -' 같이 본문이 빈 케이스 → Label만 사용
+    if re.search(r':\s*[-—–]?\s*$', s):
+        s = re.sub(r'\s*[:：]\s*[-—–]?\s*$', '', s).strip()
+    if not s or len(s) < 3 or len(s) > 120:
+        return None
+    # 의미 없는 단순 punctuation·dash·digit-only 케이스
+    if re.match(r'^[\s\-—–:_.\d]+$', s):
+        return None
+    return s
+
+
 def extract_process(body):
     before = ''
     after_steps = []
-    # Before — match both "**Before**" and "**Before (As-is)**"
-    m = re.search(r'\*\*Before(?:\s*\(As-is\))?\*\*[:\s]*(.+?)(?=\*\*After|\n\*\*|\n###|\n##)', body, re.DOTALL | re.IGNORECASE)
+    # Before — `**Before**` 또는 `**Before (any)**`
+    m = re.search(
+        r'\*\*Before(?:\s*\([^)]*\))?\*\*[:\s]*(.+?)(?=\*\*After|\n\*\*|\n###|\n##)',
+        body, re.DOTALL | re.IGNORECASE
+    )
     if m:
         before = m.group(1).strip()
-        # wikilinks 먼저 제거 (URL 안의 ".md" 등이 후속 regex에 걸리지 않도록)
         before = re.sub(r'\[\[.*?\]\]', '', before)
         before = re.sub(r'\n\s*[-*]\s*', ' / ', before)
         before = re.sub(r'\*\*(.+?)\*\*', r'\1', before)
         before = before[:400]
-    # After steps — match both "**After**" and "**After (To-be)**"
-    m = re.search(r'\*\*After(?:\s*\(To-be\))?\*\*[:\s]*(.+?)(?=\*\*Human|\*\*Trigger|\*\*Scope|\*\*HITL|\*\*Frequency|\n###|\n##)', body, re.DOTALL | re.IGNORECASE)
+
+    # After — `**After**` 또는 `**After (anything: To-be / 7 phases / 파일럿 / 추진 중 / 제안 architecture 등)**`
+    m = re.search(
+        r'\*\*After(?:\s*\([^)]*\))?\*\*[:\s]*(.+?)(?=\*\*Human|\*\*Trigger|\*\*Scope|\*\*HITL|\*\*Frequency|\n###|\n##)',
+        body, re.DOTALL | re.IGNORECASE
+    )
     if m:
         at = m.group(1).strip()
-        # wikilinks 먼저 제거 — `[[sources/...2026-01.md]]` 안의 "01." 이 numbered-step regex에 잘못 매칭되는 버그 방지
-        at = re.sub(r'\[\[.*?\]\]', '', at)
-        # numbered step은 줄 시작에 있어야 함 (^ 앵커 + MULTILINE)
-        steps = re.findall(r'^\s*\d+\.\s*(?:\*\*[^*]+\*\*\s*)?(.+?)(?=\n\s*\d+\.|\n\*\*|\n###|\n##|$)', at, re.DOTALL | re.MULTILINE)
+        at = re.sub(r'\[\[.*?\]\]', '', at)  # wikilink의 "01." 같은 가짜 step 매칭 방지
+
+        # Pattern 1: numbered list (1. ... 2. ...) — bold label과 본문 모두 캡처
+        steps = re.findall(
+            r'^\s*\d+\.\s*(\*\*[^*]+\*\*)?\s*[:：]?\s*(.*?)(?=\n\s*\d+\.|\n\*\*[A-Z가-힣]|\n###|\n##|$)',
+            at, re.DOTALL | re.MULTILINE
+        )
         if steps:
-            for s in steps[:8]:
-                step = s.strip().split('\n')[0]
-                step = re.sub(r'\*\*(.+?)\*\*', r'\1', step)
-                step = re.sub(r'[✅⚠️❓]', '', step).strip()
-                if step and len(step) < 100:
-                    after_steps.append(step)
-    # Mermaid fallback
+            for bold, text in steps[:8]:
+                first_line = (text or '').strip().split('\n')[0].strip()
+                # 본문 첫 줄이 비어있으면(콜론·줄바꿈만) bold label로 fallback
+                if not first_line and bold:
+                    first_line = bold.strip('*: \t')
+                # bold + 본문 둘 다 있으면 "Bold: 본문" 형태로 결합 (의미 보존)
+                elif first_line and bold:
+                    label = bold.strip('*: \t')
+                    if label and label.lower() not in first_line.lower():
+                        first_line = f'{label}: {first_line}'
+                cleaned = _clean_step(first_line)
+                if cleaned:
+                    after_steps.append(cleaned)
+
+        # Pattern 2: top-level bullets (`- item`) — numbered 없을 때만
+        if not after_steps:
+            for line in at.split('\n'):
+                stripped = line.lstrip()
+                # top-level bullet only (no leading whitespace)
+                if line == stripped and re.match(r'^[-*]\s+', stripped):
+                    item = re.sub(r'^[-*]\s+', '', stripped)
+                    cleaned = _clean_step(item.split('\n')[0])
+                    if cleaned:
+                        after_steps.append(cleaned)
+                if len(after_steps) >= 8:
+                    break
+
+        # Pattern 3: arrow-separated narrative ("X → Y → Z")
+        if not after_steps and ('→' in at or '->' in at):
+            # 첫 줄만 사용 (narrative 가정)
+            first_line = at.split('\n')[0].strip()
+            parts = re.split(r'\s*[→]\s*|\s*->\s*', first_line)
+            for p in parts[:8]:
+                cleaned = _clean_step(p)
+                if cleaned:
+                    after_steps.append(cleaned)
+
+    # Pattern 4: Mermaid fallback
     if not after_steps:
         mermaids = re.findall(r'```mermaid\s*\n(.*?)```', body, re.DOTALL)
         for mc in mermaids[:1]:
-            for mm in re.finditer(r'\[([^\]"]+)\]|\["([^"]+)"\]', mc):
-                txt = mm.group(1) or mm.group(2)
-                txt = re.sub(r'<br/?>', ' ', txt).strip()
-                if txt and len(txt) < 80:
-                    after_steps.append(txt)
+            seen = set()
+            # subgraph 라벨 제외하기 위해 라인 단위로 처리, subgraph 라인은 skip
+            for line in mc.split('\n'):
+                if re.match(r'\s*subgraph\b', line) or re.match(r'\s*end\s*$', line):
+                    continue
+                for mm in re.finditer(r'\[([^\]"]+)\]|\["([^"]+)"\]', line):
+                    txt = mm.group(1) or mm.group(2)
+                    # mermaid 내 줄바꿈 표기 (\n 리터럴 + <br/>) → 공백
+                    txt = re.sub(r'<br\s*/?>', ' ', txt)
+                    txt = txt.replace('\\n', ' ').replace('\n', ' ')
+                    txt = re.sub(r'\s+', ' ', txt).strip()
+                    cleaned = _clean_step(txt)
+                    if cleaned and cleaned not in seen:
+                        seen.add(cleaned)
+                        after_steps.append(cleaned)
             if after_steps:
                 break
+
+    # Pattern 5: top-level bullets in Process section (Before/After 없는 케이스)
+    # Solution Architecture 또는 ## Process 섹션에서 first-level bullet 추출
+    if not after_steps:
+        for sec_name in ['Process', 'Solution Architecture']:
+            sec = section_text(body, sec_name, max_lines=30)
+            if not sec:
+                continue
+            for line in sec.split('\n'):
+                stripped = line.lstrip()
+                if line == stripped and re.match(r'^[-*]\s+\*\*', stripped):
+                    # `- **Label**: desc` 형태 — Label만 사용
+                    m2 = re.match(r'^[-*]\s+\*\*([^*]+)\*\*[:\s]', stripped)
+                    if m2:
+                        cleaned = _clean_step(m2.group(1))
+                        if cleaned and cleaned.lower() not in {'before', 'after', 'hitl', 'frequency', 'scope of autonomy', 'trigger', 'human-in-the-loop'}:
+                            after_steps.append(cleaned)
+                if len(after_steps) >= 8:
+                    break
+            if after_steps:
+                break
+
     return before, after_steps[:8]
 
 def headline(summary):

@@ -1,5 +1,5 @@
 ---
-title: "adidas — Qualtrics XM AI (수동 분석 95%↓, 매니저 행동 계획 70%↑)"
+title: "adidas — Qualtrics XM AI"
 slug: qualtrics-adidas-employee-experience-ai
 primary_category: Employee Experience & HR Ops
 subcategory: Listening & Engagement

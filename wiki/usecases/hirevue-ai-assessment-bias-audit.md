@@ -1,5 +1,5 @@
 ---
-title: "HireVue — AI 비디오 면접 + 게임 기반 평가 (134% ROI, NYC LL144 bias audit)"
+title: "HireVue — AI 비디오 면접 + 게임 기반 평가"
 slug: hirevue-ai-assessment-bias-audit
 primary_category: Talent Acquisition
 subcategory: Interview & Selection

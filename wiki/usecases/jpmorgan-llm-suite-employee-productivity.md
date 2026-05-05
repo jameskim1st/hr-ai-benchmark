@@ -1,5 +1,5 @@
 ---
-title: "JPMorgan Chase — LLM Suite 직원 생산성 플랫폼 (140,000+ 직원)"
+title: "JPMorgan Chase — LLM Suite 직원 생산성 플랫폼"
 slug: jpmorgan-llm-suite-employee-productivity
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

@@ -1,5 +1,5 @@
 ---
-title: "Deloitte — Workforce Analyzer + Planner+ AI Suite (Salesforce 도입, 300+ HR 워크플로)"
+title: "Deloitte — Workforce Analyzer + Planner+ AI Suite"
 slug: deloitte-workforce-analyzer-salesforce
 primary_category: Strategic Workforce & Governance
 subcategory: Workforce Planning

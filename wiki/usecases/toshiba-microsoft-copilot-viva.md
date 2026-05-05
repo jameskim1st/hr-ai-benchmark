@@ -1,5 +1,5 @@
 ---
-title: "Toshiba — Microsoft 365 Copilot + Viva Insights (10,000명, 월 5.6시간 절감)"
+title: "Toshiba — Microsoft 365 Copilot + Viva Insights"
 slug: toshiba-microsoft-copilot-viva
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

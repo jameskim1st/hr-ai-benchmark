@@ -1,5 +1,5 @@
 ---
-title: "한국전력 — HR-Bot 채용 챗봇 + AI 인사추천 시스템 (공공기관 최초, 2024 인사혁신 가점)"
+title: "한국전력 — HR-Bot 채용 챗봇 + AI 인사추천 시스템"
 slug: korea-electric-power-hr-bot
 primary_category: Strategic Workforce & Governance
 subcategory: Workforce Planning

@@ -1,5 +1,5 @@
 ---
-title: "Deloitte 2026 Global Human Capital Trends — From tensions to tipping points (capstone reference)"
+title: "Deloitte 2026 Global Human Capital Trends — From tensions to tipping points"
 slug: deloitte-2026-human-capital-trends-meta
 primary_category: Strategic Workforce & Governance
 subcategory: HR Tech Governance

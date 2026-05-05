@@ -1,5 +1,5 @@
 ---
-title: "PwC — 65,000명 AI 업스킬링 + 75,000명 Agentic AI 파일럿"
+title: "PwC — 전사 AI 업스킬링 + Agentic AI 도입"
 slug: pwc-ai-upskilling-65k
 primary_category: Learning & Development
 subcategory: Content & Delivery

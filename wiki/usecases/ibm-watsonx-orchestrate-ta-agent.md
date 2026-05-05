@@ -1,5 +1,5 @@
 ---
-title: "IBM — watsonx Orchestrate Talent Acquisition Agent + AI JD 생성 (recruiter copilot)"
+title: "IBM — watsonx Orchestrate Talent Acquisition Agent + AI JD 생성"
 slug: ibm-watsonx-orchestrate-ta-agent
 primary_category: Talent Acquisition
 subcategory: Sourcing & Attraction

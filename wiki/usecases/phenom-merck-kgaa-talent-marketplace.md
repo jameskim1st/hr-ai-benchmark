@@ -1,5 +1,5 @@
 ---
-title: "Merck KGaA — Phenom 기반 내부 인재 플랫폼 (36k 직원, 200k 스킬, 1k 멘토십)"
+title: "Merck KGaA — Phenom 기반 내부 인재 플랫폼"
 slug: phenom-merck-kgaa-talent-marketplace
 primary_category: Onboarding & Transitions
 subcategory: Internal Mobility

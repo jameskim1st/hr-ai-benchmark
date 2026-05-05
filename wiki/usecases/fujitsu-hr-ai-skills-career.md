@@ -1,5 +1,5 @@
 ---
-title: "Fujitsu — AI 기반 HR 전환 (Kozuchi AI·스킬 기반 내부 공모·학습 플랫폼)"
+title: "Fujitsu — AI 기반 HR 전환"
 slug: fujitsu-hr-ai-skills-career
 primary_category: Learning & Development
 subcategory: Skills & Capabilities

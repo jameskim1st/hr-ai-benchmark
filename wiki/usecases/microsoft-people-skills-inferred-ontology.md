@@ -1,5 +1,5 @@
 ---
-title: "Microsoft People Skills + Skills Agent — 직원 활동 기반 16K 스킬 ontology 자동 추론"
+title: "Microsoft People Skills + Skills Agent — 직원 활동 기반 스킬 ontology 자동 추론"
 slug: microsoft-people-skills-inferred-ontology
 primary_category: Learning & Development
 subcategory: Skills & Capabilities

@@ -1,5 +1,5 @@
 ---
-title: "Unilever — FLEX Experiences (Gloat AI Talent Marketplace)"
+title: "Unilever — FLEX Experiences"
 slug: unilever-flex-gloat-talent-marketplace
 primary_category: Onboarding & Transitions
 subcategory: Internal Mobility

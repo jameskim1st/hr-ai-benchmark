@@ -1,5 +1,5 @@
 ---
-title: "그리팅 — 국내 1위 AI ATS (채용 소요시간 65% 단축, 중소기업 도입률 158%↑)"
+title: "그리팅 — 국내 1위 AI ATS"
 slug: greetinghr-ats-ai-korea
 primary_category: Talent Acquisition
 subcategory: Screening & Assessment

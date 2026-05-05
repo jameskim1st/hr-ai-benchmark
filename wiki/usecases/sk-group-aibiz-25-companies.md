@@ -1,5 +1,5 @@
 ---
-title: "SK 그룹 25개사 — 'A.Biz' 단일 표준 확산 (8만 명, 자체 LLM 'A.X' + 산업특화 AI)"
+title: "SK 그룹 25개사 — 'A.Biz' 단일 표준 확산"
 slug: sk-group-aibiz-25-companies
 primary_category: Strategic Workforce & Governance
 subcategory: HR Tech Governance

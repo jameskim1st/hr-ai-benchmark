@@ -1,5 +1,5 @@
 ---
-title: "Hitachi — Skye 에이전틱 AI HR 컴패니언 (Ema 플랫폼, 온보딩 4일 단축)"
+title: "Hitachi — Skye 에이전틱 AI HR 컴패니언"
 slug: hitachi-ema-agentic-hr-onboarding
 primary_category: Onboarding & Transitions
 subcategory: New-hire Onboarding

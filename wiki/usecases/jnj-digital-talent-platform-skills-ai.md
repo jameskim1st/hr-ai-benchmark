@@ -1,5 +1,5 @@
 ---
-title: "Johnson & Johnson — Digital Talent Platform (AI 스킬 추론, MIT CISR 학술 검증)"
+title: "Johnson & Johnson — Digital Talent Platform"
 slug: jnj-digital-talent-platform-skills-ai
 primary_category: Learning & Development
 subcategory: Skills & Capabilities

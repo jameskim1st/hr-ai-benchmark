@@ -1,5 +1,5 @@
 ---
-title: "Culture Amp — AI Coach (Asana·Canva·McDonald's: 6,800+ 기업 매니저 코칭)"
+title: "Culture Amp — AI Coach"
 slug: cultureamp-ai-coach-asana
 primary_category: Performance & Talent Management
 subcategory: Coaching

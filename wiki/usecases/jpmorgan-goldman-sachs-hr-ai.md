@@ -1,5 +1,5 @@
 ---
-title: "JPMorgan Chase + Goldman Sachs — 금융권 HR AI (ML 채용, GS AI 10k 직원, 인력 재편)"
+title: "JPMorgan Chase + Goldman Sachs — 금융권 HR AI"
 slug: jpmorgan-goldman-sachs-hr-ai
 primary_category: Talent Acquisition
 subcategory: Sourcing & Attraction

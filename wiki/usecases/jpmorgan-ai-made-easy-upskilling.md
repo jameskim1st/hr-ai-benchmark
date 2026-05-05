@@ -1,5 +1,5 @@
 ---
-title: "JPMorgan — 'AI Made Easy' 전사 AI 교육 (230K 직원, 신입 분석가 prompt engineering 의무)"
+title: "JPMorgan — 'AI Made Easy' 전사 AI 교육"
 slug: jpmorgan-ai-made-easy-upskilling
 primary_category: Learning & Development
 subcategory: Skills & Capabilities

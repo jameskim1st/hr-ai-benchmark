@@ -1,5 +1,5 @@
 ---
-title: "BetterUp — AI Coaching Platform (Twilio: 32% 성과↑, 5x 이탈↓)"
+title: "BetterUp — AI Coaching Platform"
 slug: betterup-ai-coaching-twilio
 primary_category: Performance & Talent Management
 subcategory: Coaching

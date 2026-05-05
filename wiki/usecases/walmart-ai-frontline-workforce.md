@@ -1,5 +1,5 @@
 ---
-title: "Walmart — AI 프론트라인 인력 관리 (1.5M 직원 AI 도구·OpenAI 교육)"
+title: "Walmart — AI 프론트라인 인력 관리"
 slug: walmart-ai-frontline-workforce
 primary_category: Learning & Development
 subcategory: Content & Delivery

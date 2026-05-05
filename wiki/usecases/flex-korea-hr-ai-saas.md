@@ -1,5 +1,5 @@
 ---
-title: "플렉스(flex) — 한국 올인원 HR SaaS (6만 기업, AI 에이전트 도입 계획)"
+title: "플렉스 — 한국 올인원 HR SaaS"
 slug: flex-korea-hr-ai-saas
 primary_category: Employee Experience & HR Ops
 subcategory: Core HR & Employee Records

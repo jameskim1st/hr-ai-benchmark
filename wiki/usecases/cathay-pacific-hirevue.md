@@ -1,5 +1,5 @@
 ---
-title: "Cathay Pacific — HireVue AI 면접 (time-to-hire 90%↓, 3개월→2~3주)"
+title: "Cathay Pacific — HireVue AI 면접"
 slug: cathay-pacific-hirevue
 primary_category: Talent Acquisition
 subcategory: Interview & Selection

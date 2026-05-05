@@ -1,5 +1,5 @@
 ---
-title: "한국가스공사 — 하이브리드 GenAI 플랫폼 (사내 LLM + 상용 LLM, GenON 구축)"
+title: "한국가스공사 — 하이브리드 GenAI 플랫폼"
 slug: kogas-hybrid-genai-platform
 primary_category: Employee Experience & HR Ops
 subcategory: HR Service Delivery

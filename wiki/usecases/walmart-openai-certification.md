@@ -1,5 +1,5 @@
 ---
-title: "Walmart × OpenAI Certification — frontline + 사무 직원 무료 OpenAI 인증 ($1B 교육)"
+title: "Walmart × OpenAI Certification — frontline + 사무 직원 무료 OpenAI 인증"
 slug: walmart-openai-certification
 primary_category: Learning & Development
 subcategory: Skills & Capabilities

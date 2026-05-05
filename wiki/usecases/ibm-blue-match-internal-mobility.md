@@ -1,5 +1,5 @@
 ---
-title: "IBM — Blue Match (사내 talent marketplace, 280K 직원, 40% 내부 채용 충원 증가)"
+title: "IBM — Blue Match"
 slug: ibm-blue-match-internal-mobility
 primary_category: Onboarding & Transitions
 subcategory: Internal Mobility

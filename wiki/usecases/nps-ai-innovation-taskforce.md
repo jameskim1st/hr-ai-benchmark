@@ -1,5 +1,5 @@
 ---
-title: "국민연금공단 — AI·혁신 추진단 + AI사원·AI 규정비서·AI 수어 영상 (CAIO 신설)"
+title: "국민연금공단 — AI·혁신 추진단 + AI사원·AI 규정비서·AI 수어 영상"
 slug: nps-ai-innovation-taskforce
 primary_category: Strategic Workforce & Governance
 subcategory: HR Tech Governance

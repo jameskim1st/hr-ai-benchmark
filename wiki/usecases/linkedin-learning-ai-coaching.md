@@ -1,5 +1,5 @@
 ---
-title: "LinkedIn Learning — AI-Powered Coaching (Premium·Enterprise, role-play scenario)"
+title: "LinkedIn Learning — AI-Powered Coaching"
 slug: linkedin-learning-ai-coaching
 primary_category: Learning & Development
 subcategory: Skills & Capabilities

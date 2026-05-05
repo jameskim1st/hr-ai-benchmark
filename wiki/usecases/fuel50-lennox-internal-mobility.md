@@ -1,5 +1,5 @@
 ---
-title: "Lennox — Fuel50 내부 이동 AI (4,800건 이동, 이동당 +5개월 근속)"
+title: "Lennox — Fuel50 내부 이동 AI"
 slug: fuel50-lennox-internal-mobility
 primary_category: Onboarding & Transitions
 subcategory: Internal Mobility

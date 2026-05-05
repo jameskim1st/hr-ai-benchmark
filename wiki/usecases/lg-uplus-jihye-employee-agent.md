@@ -1,5 +1,5 @@
 ---
-title: "LG U+ — '지혜(Wisdom)' 임직원 AI 에이전트 (이메일·코드·요약, 2025-05 파일럿)"
+title: "LG U+ — '지혜 ' 임직원 AI 에이전트"
 slug: lg-uplus-jihye-employee-agent
 primary_category: Employee Experience & HR Ops
 subcategory: Workflow-embedded copilot

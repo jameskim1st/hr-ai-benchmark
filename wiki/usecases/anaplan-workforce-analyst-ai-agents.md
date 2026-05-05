@@ -1,5 +1,5 @@
 ---
-title: "Anaplan Workforce Analyst — Role-Based AI Agents (2025-12 GA, healthcare $21M, Fresenius·Canada Goose 30~60% cycle 단축)"
+title: "Anaplan Workforce Analyst — Role-Based AI Agents"
 slug: anaplan-workforce-analyst-ai-agents
 primary_category: Strategic Workforce & Governance
 subcategory: Workforce Planning

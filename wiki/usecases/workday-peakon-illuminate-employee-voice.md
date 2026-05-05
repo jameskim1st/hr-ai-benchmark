@@ -1,5 +1,5 @@
 ---
-title: "Workday Peakon Employee Voice — Illuminate AI (1B+ 응답·60+ 언어, Workday 사내 +35% 만족도)"
+title: "Workday Peakon Employee Voice — Illuminate AI"
 slug: workday-peakon-illuminate-employee-voice
 primary_category: Employee Experience & HR Ops
 subcategory: Listening & Engagement

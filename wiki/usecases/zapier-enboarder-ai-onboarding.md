@@ -1,5 +1,5 @@
 ---
-title: "Zapier — Enboarder AI 온보딩 자동화 (206,000분 절감, 2.5배 온보딩 만족도)"
+title: "Zapier — Enboarder AI 온보딩 자동화"
 slug: zapier-enboarder-ai-onboarding
 primary_category: Onboarding & Transitions
 subcategory: New-hire Onboarding

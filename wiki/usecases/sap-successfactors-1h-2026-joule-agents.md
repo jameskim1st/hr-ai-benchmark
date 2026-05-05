@@ -1,5 +1,5 @@
 ---
-title: "SAP SuccessFactors 1H 2026 Release — 4개 신규 Joule Agent (Career·HR Service·People Intelligence·Payroll)"
+title: "SAP SuccessFactors 1H 2026 Release — 4개 신규 Joule Agent"
 slug: sap-successfactors-1h-2026-joule-agents
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

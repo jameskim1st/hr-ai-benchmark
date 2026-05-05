@@ -1,5 +1,5 @@
 ---
-title: "Salesforce — Orgvue Henshaw AI 조직설계 (8,000개 직무 83개 클러스터, 6개월 → 6일)"
+title: "Salesforce — Orgvue Henshaw AI 조직설계"
 slug: salesforce-orgvue-org-design-ai
 primary_category: Strategic Workforce & Governance
 subcategory: Org Design

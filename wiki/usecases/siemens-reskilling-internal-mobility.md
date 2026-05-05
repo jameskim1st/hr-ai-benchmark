@@ -1,5 +1,5 @@
 ---
-title: "Siemens — 300k 직원 리스킬링 + 20% 내부 이동 증가 + My Learning World"
+title: "Siemens My Learning World — AI 기반 리스킬링·내부 이동"
 slug: siemens-reskilling-internal-mobility
 primary_category: Learning & Development
 subcategory: Skills & Capabilities

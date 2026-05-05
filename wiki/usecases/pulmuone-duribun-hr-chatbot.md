@@ -1,5 +1,5 @@
 ---
-title: "풀무원 — '두리번' HR 특화 AI 챗봇 (6개 영역 24/365, RAG hallucination 최소화)"
+title: "풀무원 — '두리번' HR 특화 AI 챗봇"
 slug: pulmuone-duribun-hr-chatbot
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

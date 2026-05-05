@@ -1,5 +1,5 @@
 ---
-title: "Workday Agent System of Record (ASOR) — AI 에이전트 거버넌스 플랫폼"
+title: "Workday Agent System of Record — AI 에이전트 거버넌스 플랫폼"
 slug: workday-agent-system-of-record-asor
 primary_category: Strategic Workforce & Governance
 subcategory: HR Tech Governance

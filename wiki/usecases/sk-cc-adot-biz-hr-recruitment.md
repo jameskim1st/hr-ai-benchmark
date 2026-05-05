@@ -1,5 +1,5 @@
 ---
-title: "SK C&C — '에이닷 비즈 HR' 전사 채용 도입 (자기소개서 분석 1주→4시간, ⚠️ 자사 보고 90% 단축)"
+title: "SK C&C — '에이닷 비즈 HR' 전사 채용 도입"
 slug: sk-cc-adot-biz-hr-recruitment
 primary_category: Talent Acquisition
 subcategory: Screening & Assessment

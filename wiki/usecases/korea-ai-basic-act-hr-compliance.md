@@ -1,5 +1,5 @@
 ---
-title: "한국 AI 기본법 — HR AI 컴플라이언스 의무 (2026-01-22 시행)"
+title: "한국 AI 기본법 — HR AI 컴플라이언스 의무"
 slug: korea-ai-basic-act-hr-compliance
 primary_category: Strategic Workforce & Governance
 subcategory: Compliance & Risk

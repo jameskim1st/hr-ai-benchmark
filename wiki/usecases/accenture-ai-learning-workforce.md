@@ -1,5 +1,5 @@
 ---
-title: "Accenture — AI 기반 학습 플랫폼 (32% 과정 완료↑, 50% 교육 시간↓) + 인력 전략"
+title: "Accenture — AI 기반 학습 플랫폼 + 인력 전략"
 slug: accenture-ai-learning-workforce
 primary_category: Learning & Development
 subcategory: Content & Delivery

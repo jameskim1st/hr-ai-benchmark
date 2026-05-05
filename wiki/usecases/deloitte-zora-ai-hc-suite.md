@@ -1,5 +1,5 @@
 ---
-title: "Deloitte — Zora AI agentic platform + Human Capital AI Solution Suite (Workforce Analyzer + Planner+, 300+ HR workflows)"
+title: "Deloitte — Zora AI agentic platform + Human Capital AI Solution Suite"
 slug: deloitte-zora-ai-hc-suite
 primary_category: Strategic Workforce & Governance
 subcategory: Workforce Planning

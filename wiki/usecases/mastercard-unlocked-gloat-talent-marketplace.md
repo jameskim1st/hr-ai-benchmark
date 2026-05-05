@@ -1,5 +1,5 @@
 ---
-title: "Mastercard — Unlocked Internal Talent Marketplace (Gloat 기반, 2022~ Project Possible 후속)"
+title: "Mastercard — Unlocked Internal Talent Marketplace"
 slug: mastercard-unlocked-gloat-talent-marketplace
 primary_category: Onboarding & Transitions
 subcategory: Internal Mobility

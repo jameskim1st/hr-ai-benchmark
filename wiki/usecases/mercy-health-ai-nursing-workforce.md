@@ -1,5 +1,5 @@
 ---
-title: "Mercy Health — AI 기반 간호 인력 관리 (계약직 비중 25%→8% 절감)"
+title: "Mercy Health — AI 기반 간호 인력 관리"
 slug: mercy-health-ai-nursing-workforce
 primary_category: Strategic Workforce & Governance
 subcategory: Workforce Planning

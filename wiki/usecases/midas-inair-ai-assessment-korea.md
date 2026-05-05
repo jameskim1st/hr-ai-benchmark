@@ -1,5 +1,5 @@
 ---
-title: "마이다스아이티 inAIR — AI 역량검사 (Nature 논문 검증, 10+ 한국 대기업 도입)"
+title: "마이다스아이티 inAIR — AI 역량검사"
 slug: midas-inair-ai-assessment-korea
 primary_category: Talent Acquisition
 subcategory: Screening & Assessment

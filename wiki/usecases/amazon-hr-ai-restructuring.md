@@ -1,5 +1,5 @@
 ---
-title: "Amazon — HR 부서 15% 감축 (AI 대체), PXT 조직 10,000명 영향"
+title: "Amazon — AI 기반 HR·PXT 조직 재편"
 slug: amazon-hr-ai-restructuring
 primary_category: Strategic Workforce & Governance
 subcategory: Workforce Planning

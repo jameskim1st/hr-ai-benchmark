@@ -1,5 +1,5 @@
 ---
-title: "SK하이닉스 — A!SK (AI Interview with SK Hynix) AI 영상면접 + 미래 동료 평가 hybrid (2025 신규)"
+title: "SK하이닉스 — A!SK AI 영상면접 + 미래 동료 평가 hybrid"
 slug: sk-hynix-ask-ai-interview
 primary_category: Talent Acquisition
 subcategory: Interview & Selection

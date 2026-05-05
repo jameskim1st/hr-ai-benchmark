@@ -1,5 +1,5 @@
 ---
-title: "TCS·Infosys·Wipro — 인도 IT 서비스 대기업 AI 리스킬링 (100만 명+ 교육)"
+title: "TCS·Infosys·Wipro — 인도 IT 서비스 대기업 AI 리스킬링"
 slug: tcs-infosys-ai-reskilling-india
 primary_category: Learning & Development
 subcategory: Skills & Capabilities

@@ -1,5 +1,5 @@
 ---
-title: "HSBC — Eightfold AI + Gloat + SAP SF 멀티벤더 HR AI (140k 직원)"
+title: "HSBC — Eightfold AI + Gloat + SAP SF 멀티벤더 HR AI"
 slug: hsbc-eightfold-gloat-multi-vendor
 primary_category: Talent Acquisition
 subcategory: Screening & Assessment

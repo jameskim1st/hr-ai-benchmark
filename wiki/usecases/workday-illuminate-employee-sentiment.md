@@ -1,5 +1,5 @@
 ---
-title: "Workday Illuminate — Employee Sentiment Agent (STUB)"
+title: "Workday Illuminate — Employee Sentiment Agent"
 slug: workday-illuminate-employee-sentiment
 primary_category: Employee Experience & HR Ops
 subcategory: Listening & Engagement

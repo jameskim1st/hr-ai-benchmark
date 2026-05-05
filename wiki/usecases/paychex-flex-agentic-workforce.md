@@ -1,5 +1,5 @@
 ---
-title: "Paychex/Paycor — Agentic Workforce Management (타임시트 자동승인·Auto-Shifts, 800K 고객)"
+title: "Paychex/Paycor — Agentic Workforce Management"
 slug: paychex-flex-agentic-workforce
 primary_category: Total Rewards
 subcategory: Payroll Operations

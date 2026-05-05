@@ -1,5 +1,5 @@
 ---
-title: "롯데그룹 — 직무 기반 HR 인사제도 전면 개편 (직무급제 계열사 확대)"
+title: "롯데그룹 — 직무 기반 HR 인사제도 전면 개편"
 slug: lotte-job-based-hr-reform
 primary_category: Total Rewards
 subcategory: Compensation

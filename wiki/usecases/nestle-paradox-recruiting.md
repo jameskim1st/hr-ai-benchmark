@@ -1,5 +1,5 @@
 ---
-title: "Nestlé — Paradox Olivia 기반 채용 자동화 (인터뷰 600% 증가)"
+title: "Nestlé — Paradox Olivia 기반 채용 자동화"
 slug: nestle-paradox-recruiting
 primary_category: Talent Acquisition
 subcategory: Screening & Assessment

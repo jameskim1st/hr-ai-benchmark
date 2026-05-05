@@ -1,5 +1,5 @@
 ---
-title: "미래에셋증권 — 'AI Assistant 플랫폼' (네이버클라우드 하이퍼클로바X 대시, No-code 직원 챗봇 빌더)"
+title: "미래에셋증권 — 'AI Assistant 플랫폼'"
 slug: mirae-asset-ai-assistant-platform
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

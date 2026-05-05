@@ -1,5 +1,5 @@
 ---
-title: "Lloyds Banking Group — Workday + GenAI HR (정책 Q&A·Skills Cloud·AI Academy)"
+title: "Lloyds Banking Group — Workday + GenAI HR"
 slug: lloyds-banking-workday-genai-hr
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

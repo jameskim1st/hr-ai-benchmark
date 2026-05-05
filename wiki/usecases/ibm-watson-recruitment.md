@@ -1,5 +1,5 @@
 ---
-title: "IBM Watson Recruitment — bias-mitigated candidate matching (84% prediction accuracy 벤더 주장)"
+title: "IBM Watson Recruitment — bias-mitigated candidate matching"
 slug: ibm-watson-recruitment
 primary_category: Talent Acquisition
 subcategory: Screening & Assessment

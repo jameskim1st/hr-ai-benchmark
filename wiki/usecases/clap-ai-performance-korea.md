@@ -1,5 +1,5 @@
 ---
-title: "CLAP(클랩) — AI 기반 성과관리 SaaS (AI 피드백·평가 요약·원온원)"
+title: "CLAP — AI 기반 성과관리 SaaS"
 slug: clap-ai-performance-korea
 primary_category: Performance & Talent Management
 subcategory: Goal & Performance

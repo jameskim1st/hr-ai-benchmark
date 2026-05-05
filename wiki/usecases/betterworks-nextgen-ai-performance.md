@@ -1,5 +1,5 @@
 ---
-title: "Betterworks NextGen — AI-Native 성과관리 (Colgate-Palmolive·Intuit·Kuehne+Nagel)"
+title: "Betterworks NextGen — AI-Native 성과관리"
 slug: betterworks-nextgen-ai-performance
 primary_category: Performance & Talent Management
 subcategory: Goal & Performance

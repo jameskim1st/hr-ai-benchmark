@@ -1,5 +1,5 @@
 ---
-title: "SK하이닉스 — One Resume + AI 구성원 검색 (통합 직원 프로필·내부 talent search)"
+title: "SK하이닉스 — One Resume + AI 구성원 검색"
 slug: sk-hynix-one-resume-employee-search
 primary_category: Employee Experience & HR Ops
 subcategory: Core HR & Employee Records

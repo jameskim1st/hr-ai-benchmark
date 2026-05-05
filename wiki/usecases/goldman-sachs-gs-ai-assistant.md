@@ -1,5 +1,5 @@
 ---
-title: "Goldman Sachs — GS AI Assistant 전사 배포 (지식노동자 생산성)"
+title: "Goldman Sachs — GS AI Assistant 전사 배포"
 slug: goldman-sachs-gs-ai-assistant
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

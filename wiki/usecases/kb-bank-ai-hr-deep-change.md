@@ -1,5 +1,5 @@
 ---
-title: "KB국민은행 — 'HR Deep Change' AI 영업점 인사이동 (2020 launch, 2025 PB·RM 확장 57% 두 달 사용)"
+title: "KB국민은행 — 'HR Deep Change' AI 영업점 인사이동"
 slug: kb-bank-ai-hr-deep-change
 primary_category: Strategic Workforce & Governance
 subcategory: Workforce Planning

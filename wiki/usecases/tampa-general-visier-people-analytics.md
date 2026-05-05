@@ -1,5 +1,5 @@
 ---
-title: "Tampa General Hospital — Visier People Analytics (Agency Spend 70% 절감, $50M+ 재투자)"
+title: "Tampa General Hospital — Visier People Analytics"
 slug: tampa-general-visier-people-analytics
 primary_category: Strategic Workforce & Governance
 subcategory: People Analytics

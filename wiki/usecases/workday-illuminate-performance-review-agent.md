@@ -1,5 +1,5 @@
 ---
-title: "Workday — Illuminate Performance Review Agent (매니저 리뷰 초안 자동 생성)"
+title: "Workday — Illuminate Performance Review Agent"
 slug: workday-illuminate-performance-review-agent
 primary_category: Performance & Talent Management
 subcategory: Goal & Performance

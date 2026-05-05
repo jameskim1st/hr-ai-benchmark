@@ -1,5 +1,5 @@
 ---
-title: "Hitachi — Skye HR AI 어시스턴트 (문서 추론·셀프서비스·문화 설계)"
+title: "Hitachi — Skye HR AI 어시스턴트"
 slug: hitachi-skye-hr-ai-assistant
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

@@ -1,5 +1,5 @@
 ---
-title: "GS칼텍스 — 'AIU' 사내 GenAI 통합 플랫폼 (정유·에너지)"
+title: "GS칼텍스 — 'AIU' 사내 GenAI 통합 플랫폼"
 slug: gs-caltex-aiu-platform
 primary_category: Employee Experience & HR Ops
 subcategory: Performance Support

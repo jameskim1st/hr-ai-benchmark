@@ -1,5 +1,5 @@
 ---
-title: "삼성 멀티캠퍼스 — CIC AI 맞춤 교육 추천 (삼성전자 사내 교육)"
+title: "삼성 멀티캠퍼스 — CIC AI 맞춤 교육 추천"
 slug: samsung-multicampus-ai-learning
 primary_category: Learning & Development
 subcategory: Content & Delivery

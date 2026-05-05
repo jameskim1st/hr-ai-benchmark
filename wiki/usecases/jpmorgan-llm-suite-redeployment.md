@@ -1,5 +1,5 @@
 ---
-title: "JPMorgan — LLM Suite (200K 직원) + AI 재배치 (총 318K, 백오피스↓ 클라이언트직↑)"
+title: "JPMorgan — LLM Suite + AI 재배치"
 slug: jpmorgan-llm-suite-redeployment
 primary_category: Strategic Workforce & Governance
 subcategory: Workforce Planning

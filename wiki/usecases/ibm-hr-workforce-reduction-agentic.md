@@ -1,5 +1,5 @@
 ---
-title: "IBM — HR 인력 200명·전사 8,000명 AI 대체 + 순 headcount 증가 (2025)"
+title: "IBM — Agentic AI 기반 HR·전사 인력 재배치"
 slug: ibm-hr-workforce-reduction-agentic
 primary_category: Strategic Workforce & Governance
 subcategory: Workforce Planning

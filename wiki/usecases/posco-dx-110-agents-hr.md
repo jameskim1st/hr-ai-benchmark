@@ -1,5 +1,5 @@
 ---
-title: "포스코DX — 인사·구매·경영분석 110 AI 에이전트 + 그룹 AI 거버넌스 (2026 조직개편)"
+title: "포스코DX — 인사·구매·경영분석 110 AI 에이전트 + 그룹 AI 거버넌스"
 slug: posco-dx-110-agents-hr
 primary_category: Strategic Workforce & Governance
 subcategory: HR Tech Governance

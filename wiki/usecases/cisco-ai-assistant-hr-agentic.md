@@ -1,5 +1,5 @@
 ---
-title: "Cisco — AI Assistant for HR (PTO Q&A → 매니저 outbound 메시지 자동 작성, agentic)"
+title: "Cisco — AI Assistant for HR"
 slug: cisco-ai-assistant-hr-agentic
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

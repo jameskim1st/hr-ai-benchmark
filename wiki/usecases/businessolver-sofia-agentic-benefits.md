@@ -1,5 +1,5 @@
 ---
-title: "Businessolver — Sofia Agentic AI 복리후생 어드민 (Intake/Answer/Insights 멀티 에이전트)"
+title: "Businessolver — Sofia Agentic AI 복리후생 어드민"
 slug: businessolver-sofia-agentic-benefits
 primary_category: Total Rewards
 subcategory: Benefits & Wellbeing

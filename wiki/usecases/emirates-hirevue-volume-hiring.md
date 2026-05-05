@@ -1,5 +1,5 @@
 ---
-title: "Emirates — HireVue AI (60일→7일, 8k시간 절약, $500k 절감)"
+title: "Emirates — HireVue AI"
 slug: emirates-hirevue-volume-hiring
 primary_category: Talent Acquisition
 subcategory: Interview & Selection

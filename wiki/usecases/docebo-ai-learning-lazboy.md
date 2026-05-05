@@ -1,5 +1,5 @@
 ---
-title: "Docebo AI Learning — La-Z-Boy (179% 활성 사용자↑, 85% 과정 완료↑)"
+title: "Docebo AI Learning — La-Z-Boy"
 slug: docebo-ai-learning-lazboy
 primary_category: Learning & Development
 subcategory: Content & Delivery

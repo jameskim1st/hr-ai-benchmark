@@ -1,5 +1,5 @@
 ---
-title: "Moderna — Self-Review GPT (연말 성과 리뷰 요약)"
+title: "Moderna — Self-Review GPT"
 slug: moderna-self-review-gpt
 primary_category: Performance & Talent Management
 subcategory: Goal & Performance

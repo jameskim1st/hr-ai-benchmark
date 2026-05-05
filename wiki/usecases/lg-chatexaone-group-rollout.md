@@ -1,5 +1,5 @@
 ---
-title: "LG AI연구원 — ChatEXAONE 그룹 정식 서비스 (LG전자·이노텍·디스플레이 5만+ 임직원, 자체 EXAONE)"
+title: "LG AI연구원 — ChatEXAONE 그룹 정식 서비스"
 slug: lg-chatexaone-group-rollout
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

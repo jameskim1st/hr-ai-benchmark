@@ -1,5 +1,5 @@
 ---
-title: "IBM — Predictive Attrition Program (95% 정확도) + AI 보상 추천 ($300M 누적 saving)"
+title: "IBM — Predictive Attrition Program + AI 보상 추천"
 slug: ibm-predictive-attrition-comp-ai
 primary_category: Strategic Workforce & Governance
 subcategory: People Analytics

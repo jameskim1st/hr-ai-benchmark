@@ -1,5 +1,5 @@
 ---
-title: "Allegis Group — Holistic AI 거버넌스 플랫폼 (500+ AI 시스템 가시화, HR AI 감사)"
+title: "Allegis Group — Holistic AI 거버넌스 플랫폼"
 slug: allegis-group-holistic-ai-governance
 primary_category: Strategic Workforce & Governance
 subcategory: HR Tech Governance

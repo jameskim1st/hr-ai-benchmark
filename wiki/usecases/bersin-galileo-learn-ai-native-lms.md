@@ -1,5 +1,5 @@
 ---
-title: "Josh Bersin Co. — Galileo Learn (AI-native 기업 학습 플랫폼)"
+title: "Josh Bersin Co. — Galileo Learn"
 slug: bersin-galileo-learn-ai-native-lms
 primary_category: Learning & Development
 subcategory: Content & Delivery

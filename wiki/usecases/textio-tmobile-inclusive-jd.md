@@ -1,5 +1,5 @@
 ---
-title: "T-Mobile — Textio AI 기반 포용적 JD 작성 (여성 지원 17%↑, 5일 빠른 충원)"
+title: "T-Mobile — Textio AI 기반 포용적 JD 작성"
 slug: textio-tmobile-inclusive-jd
 primary_category: Talent Acquisition
 subcategory: Sourcing & Attraction

@@ -1,5 +1,5 @@
 ---
-title: "Bosch — ROB HR AI 디지털 어시스턴트 (25개국, GPT + Cognigy)"
+title: "Bosch — ROB HR AI 디지털 어시스턴트"
 slug: bosch-rob-hr-ai-assistant
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

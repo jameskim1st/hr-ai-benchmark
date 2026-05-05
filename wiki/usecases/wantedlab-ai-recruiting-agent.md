@@ -1,5 +1,5 @@
 ---
-title: "원티드랩 — AI 채용 에이전트 (LLM 기반 자연어 인재 검색)"
+title: "원티드랩 — AI 채용 에이전트"
 slug: wantedlab-ai-recruiting-agent
 primary_category: Talent Acquisition
 subcategory: Sourcing & Attraction

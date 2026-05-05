@@ -1,5 +1,5 @@
 ---
-title: "Siemens — ServiceNow HR My Services 포털 (360,000명 글로벌 HR 통합)"
+title: "Siemens — ServiceNow HR My Services 포털"
 slug: siemens-servicenow-hr-gbs
 primary_category: Employee Experience & HR Ops
 subcategory: HR Service Delivery

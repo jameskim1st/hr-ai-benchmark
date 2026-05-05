@@ -1,5 +1,5 @@
 ---
-title: "Microsoft — Employee Self-Service Agent + Viva Copilot HR (내부 배포)"
+title: "Microsoft — Employee Self-Service Agent + Viva Copilot HR"
 slug: microsoft-employee-self-service-agent
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

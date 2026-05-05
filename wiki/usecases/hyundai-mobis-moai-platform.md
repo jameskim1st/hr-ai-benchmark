@@ -1,5 +1,5 @@
 ---
-title: "현대모비스 — 'MoAI' 사내 전용 GenAI (1,000만 건 RAG, 7개 업무·HR 확장 예정)"
+title: "현대모비스 — 'MoAI' 사내 전용 GenAI"
 slug: hyundai-mobis-moai-platform
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

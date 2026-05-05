@@ -1,5 +1,5 @@
 ---
-title: "신한은행 — 'AI ONE' 직원 업무비서 플랫폼 (40+ AI 통합, ⚠️ 자사 보고 일 30분 절감)"
+title: "신한은행 — 'AI ONE' 직원 업무비서 플랫폼"
 slug: shinhan-bank-ai-one-platform
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

@@ -1,5 +1,5 @@
 ---
-title: "삼성화재 — 임직원 RAG 챗봇 (보험 약관 + 사내 규정 통합, 2026 추진)"
+title: "삼성화재 — 임직원 RAG 챗봇"
 slug: samsung-fire-employee-rag-chatbot
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

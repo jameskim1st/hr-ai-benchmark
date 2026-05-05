@@ -1,5 +1,5 @@
 ---
-title: "DBS Bank — HR AI 종합 (JIM 채용·이탈예측·iGrow 커리어)"
+title: "DBS Bank — HR AI 종합"
 slug: dbs-bank-hr-ai-talent-analytics
 primary_category: Strategic Workforce & Governance
 subcategory: People Analytics

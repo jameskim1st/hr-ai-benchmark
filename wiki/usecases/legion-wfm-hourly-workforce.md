@@ -1,5 +1,5 @@
 ---
-title: "Legion Technologies — AI-native WFM (시급직 스케줄링·수요예측·Agentic 자동화)"
+title: "Legion Technologies — AI-native WFM"
 slug: legion-wfm-hourly-workforce
 primary_category: Employee Experience & HR Ops
 subcategory: Time, Attendance & Absence

@@ -1,5 +1,5 @@
 ---
-title: "15Five Kona — AI 매니저 코칭 에이전트 (ReUp Education 도입)"
+title: "15Five Kona — AI 매니저 코칭 에이전트"
 slug: 15five-kona-reup-ai-manager-coaching
 primary_category: Performance & Talent Management
 subcategory: Coaching

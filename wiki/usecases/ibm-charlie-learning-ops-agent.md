@@ -1,5 +1,5 @@
 ---
-title: "IBM cHaRlie — Cognitive HR Learning EM Assistant (watsonx Orchestrate, learner NPS +15%)"
+title: "IBM cHaRlie — Cognitive HR Learning EM Assistant"
 slug: ibm-charlie-learning-ops-agent
 primary_category: Learning & Development
 subcategory: Content & Delivery

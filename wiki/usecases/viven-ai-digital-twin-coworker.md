@@ -1,5 +1,5 @@
 ---
-title: "Viven AI — Digital Twin of Coworkers (Eightfold 분사, $35M seed 2025-10)"
+title: "Viven AI — Digital Twin of Coworkers"
 slug: viven-ai-digital-twin-coworker
 primary_category: Employee Experience & HR Ops
 subcategory: Knowledge Capture & Sharing

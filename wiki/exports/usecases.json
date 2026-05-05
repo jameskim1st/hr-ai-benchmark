@@ -1,7 +1,7 @@
 [
   {
     "slug": "jpmorgan-llm-suite-redeployment",
-    "title": "JPMorgan — LLM Suite (200K 직원) + AI 재배치 (총 318K, 백오피스↓ 클라이언트직↑)",
+    "title": "JPMorgan — LLM Suite + AI 재배치",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "Workforce Planning",
     "company": "JPMorgan Chase",
@@ -72,13 +72,13 @@
       "직원이 LLM Suite (private gateway) 접속",
       "모델 선택 (OpenAI GPT-4 / Anthropic Claude — agnostic)",
       "내부 데이터 활용 가능 (RAG with 회사 정책·문서)",
-      "사용 사례:",
+      "사용 사례",
       "동시에 Dimon은 AI 효율을 redeployment 명분으로 활용 — 백오피스 폐지·클라이언트직 신설"
     ]
   },
   {
     "slug": "workday-peakon-illuminate-employee-voice",
-    "title": "Workday Peakon Employee Voice — Illuminate AI (1B+ 응답·60+ 언어, Workday 사내 +35% 만족도)",
+    "title": "Workday Peakon Employee Voice — Illuminate AI",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Listening & Engagement",
     "company": "_다수 (Workday Peakon 고객, Workday 자사 도입 포함)_",
@@ -151,7 +151,7 @@
   },
   {
     "slug": "accenture-mass-genai-reskilling",
-    "title": "Accenture — 30 → 550,000+ 직원 GenAI 교육 (3년, AI/data 인력 40K → 77K)",
+    "title": "Accenture — 전사 GenAI 재스킬링",
     "primary_category": "Learning & Development",
     "subcategory": "Skills & Capabilities",
     "company": "Accenture",
@@ -226,7 +226,7 @@
   },
   {
     "slug": "cisco-ai-workforce-consortium-skills-evolution",
-    "title": "Cisco AI Workforce Consortium — 78% ICT 직무 AI 스킬 + Top 10 fastest-growing 7 AI-related",
+    "title": "Cisco AI Workforce Consortium — ICT 직무 AI 스킬 표준화",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "People Analytics",
     "company": "_Cisco-led consortium (Microsoft·Google·IBM·SAP·Accenture·Eightfold 등)_",
@@ -315,7 +315,7 @@
   },
   {
     "slug": "ibm-hr-workforce-reduction-agentic",
-    "title": "IBM — HR 인력 200명·전사 8,000명 AI 대체 + 순 headcount 증가 (2025)",
+    "title": "IBM — Agentic AI 기반 HR·전사 인력 재배치",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "Workforce Planning",
     "company": "IBM",
@@ -393,19 +393,17 @@
     },
     "process_before": "270K 직원 IBM의 HR 운영 비용 baseline (CHRO LaMoreaux pre-AI era) / Pain point: HR 백오피스 transactional 업무가 budget 흡수, 전략 HR에 투자 여력 부족 / Trigger: AskHR·watsonx Orchestrate·cHaRlie·Predictive Attrition 누적 효과 (2018~2025) → 임계 도달",
     "process_steps": [
-      "AskHR Agent",
-      "HR transactional 200명 폐지",
-      "cHaRlie L&D Agent",
-      "Watson Recruitment + watsonx TA",
-      "Predictive Attrition + AI Comp",
-      "전사 8,000명 layoff",
-      "엔지니어·영업·마케팅 채용",
-      "순 headcount 증가"
+      "AskHR이 HR 정책 Q&A·comp guidance·recognition·expense 80+ 태스크 자동 처리",
+      "cHaRlie가 learning ops 백오피스 자율 처리",
+      "Watson Recruitment·Predictive Attrition·watsonx Orchestrate TA Agent가 채용·retention·comp 워크플로 자율화",
+      "200명 HR 직원의 transactional role 폐지·재배치",
+      "8,000명 broader cuts (백오피스·중복 layer)",
+      "절감 budget을 엔지니어·영업·마케팅 신규 채용에 재투자"
     ]
   },
   {
     "slug": "korea-ai-basic-act-hr-compliance",
-    "title": "한국 AI 기본법 — HR AI 컴플라이언스 의무 (2026-01-22 시행)",
+    "title": "한국 AI 기본법 — HR AI 컴플라이언스 의무",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "Compliance & Risk",
     "company": "_전체 (한국 사업장 운영 모든 기업 대상)_",
@@ -466,19 +464,19 @@
       "민감정보 처리": "채용·평가에 사용되는 개인정보는 PIPA + AI 기본법 dual 적용"
     },
     "model": {},
-    "process_before": "HR AI 도입 시 자체 윤리 가이드라인·DPIA(GDPR)만 적용, 한국 법적 의무 명시 부재 /",
+    "process_before": "한국은 AI 거버넌스를 개인정보보호법(PIPA) 자동화된 결정 조항·차별금지법 등으로 산발 규율. HR AI 도입사도 자체 가이드라인에 의존 (ex. SK·삼성). / Pain point: 채용 AI(마이다스 inAIR·SK AICT·원티드 AI Agent) 도입 가속화에도 불구하고 \"이 AI가 합법인지\", \"지원자 권리는 어떻게 보장되는지\", \"차별 발생 시 책임은 누구인지\" 가 회색 지대. / Trigger: EU AI Act 발효(2024) + OECD AI 원칙 + 국내 마이다스 AI 면접 차별 논란(2020~) → 한국 정부가 2024년 입법 → 2025-01-21 공포 → 2026-01-22 시행.",
     "process_steps": [
-      ": 고영향 AI 분류 판정 (채용·인사평가·승진·해고 → 자동 분류)",
-      ": 차별·편향·정확도 등 사전 평가 — 시행령 가이드라인 (2026 상반기 추가 고시 예정)",
-      ": 지원자·직원에게 \"AI가 의사결정에 사용됨\" 명시",
-      ": 최종 결정에 사람의 검토·승인 단계 필수",
-      ": 결과 설명 요청권, 이의제기권",
-      ": bias drift·정확도 변화 정기 점검"
+      "AI 도입 전: 고영향 AI 분류 판정 (채용·인사평가·승진·해고 → 자동 분류)",
+      "영향평가 (impact assessment): 차별·편향·정확도 등 사전 평가 — 시행령 가이드라인 (2026 상반기 추가 고시 예정)",
+      "이용자 고지: 지원자·직원에게 \"AI가 의사결정에 사용됨\" 명시",
+      "인적 감독 (human oversight): 최종 결정에 사람의 검토·승인 단계 필수",
+      "이용자 권리 보장: 결과 설명 요청권, 이의제기권",
+      "운영 모니터링: bias drift·정확도 변화 정기 점검"
     ]
   },
   {
     "slug": "walmart-openai-certification",
-    "title": "Walmart × OpenAI Certification — frontline + 사무 직원 무료 OpenAI 인증 ($1B 교육)",
+    "title": "Walmart × OpenAI Certification — frontline + 사무 직원 무료 OpenAI 인증",
     "primary_category": "Learning & Development",
     "subcategory": "Skills & Capabilities",
     "company": "Walmart",
@@ -560,7 +558,7 @@
   },
   {
     "slug": "anaplan-workforce-analyst-ai-agents",
-    "title": "Anaplan Workforce Analyst — Role-Based AI Agents (2025-12 GA, healthcare $21M, Fresenius·Canada Goose 30~60% cycle 단축)",
+    "title": "Anaplan Workforce Analyst — Role-Based AI Agents",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "Workforce Planning",
     "company": "_다수 (Anaplan 고객 — Fresenius·Canada Goose·Cinemark·healthcare provider 등)_",
@@ -642,7 +640,7 @@
   },
   {
     "slug": "cisco-ai-assistant-hr-agentic",
-    "title": "Cisco — AI Assistant for HR (PTO Q&A → 매니저 outbound 메시지 자동 작성, agentic)",
+    "title": "Cisco — AI Assistant for HR",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "Cisco",
@@ -717,7 +715,7 @@
   },
   {
     "slug": "ibm-charlie-learning-ops-agent",
-    "title": "IBM cHaRlie — Cognitive HR Learning EM Assistant (watsonx Orchestrate, learner NPS +15%)",
+    "title": "IBM cHaRlie — Cognitive HR Learning EM Assistant",
     "primary_category": "Learning & Development",
     "subcategory": "Content & Delivery",
     "company": "IBM",
@@ -798,7 +796,7 @@
   },
   {
     "slug": "jpmorgan-ai-made-easy-upskilling",
-    "title": "JPMorgan — 'AI Made Easy' 전사 AI 교육 (230K 직원, 신입 분석가 prompt engineering 의무)",
+    "title": "JPMorgan — 'AI Made Easy' 전사 AI 교육",
     "primary_category": "Learning & Development",
     "subcategory": "Skills & Capabilities",
     "company": "JPMorgan Chase",
@@ -880,7 +878,7 @@
   },
   {
     "slug": "microsoft-people-skills-inferred-ontology",
-    "title": "Microsoft People Skills + Skills Agent — 직원 활동 기반 16K 스킬 ontology 자동 추론",
+    "title": "Microsoft People Skills + Skills Agent — 직원 활동 기반 스킬 ontology 자동 추론",
     "primary_category": "Learning & Development",
     "subcategory": "Skills & Capabilities",
     "company": "Microsoft",
@@ -969,7 +967,7 @@
   },
   {
     "slug": "moderna-ask-hr-routing",
-    "title": "Moderna — Ask HR 중앙 GPT routing (performance·career·benefits)",
+    "title": "Moderna — Ask HR 중앙 GPT routing",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "Moderna",
@@ -1037,18 +1035,18 @@
       "제공 방식": "OpenAI 상용 SaaS (ChatGPT Enterprise + Custom GPT 기능)",
       "커스터마이징 기법": "Custom GPT 기능 활용 — prompt + 지식파일 + (선택적) Action 조합. Fine-tuning 사용 여부  미공개."
     },
-    "process_before": "_미공개. 기존 HR 티켓/셀프서비스 시스템의 구체 프로세스는 공개 소스에 없음._ /",
+    "process_before": "Moderna는 5,000명 규모의 바이오텍이지만 급성장기 동안 HR 인력만으로 늘어나는 직원 문의를 처리하기 어려워짐. ❓ 구체 before 수치(월간 HR 티켓 수·평균 응답 시간·HR 인력 대비 직원 비율) 미공개 — 이 baseline 부재가 이 use case의 최대 약점 / Franklin의 프레이밍: 기존의 \"workforce planning\"(HR 독립)과 \"technology planning\"(IT 독립)이 \"work의 흐름 자체를 설계\"하지 못했다. 개별 HR 프로세스 개선이 아니라 업무·정보·의사결정 흐름 전체 재설계가 목적 —  / 기술적으로는, 전사 ChatGPT Enterprise 위에 각 부서가 GPT를 남발할 경우 HR 도메인 질문이 품질 낮은 일반 GPT로 향할 위험 → HR",
     "process_steps": [
       "직원이 \"Ask HR\" 중앙 GPT에 자연어 질문 입력",
       "Ask HR GPT가 질문 도메인 분류 — performance, career, benefits 등",
       "해당 영역의 specialized GPT로 routing",
       "Specialized GPT가 답변 제공",
-      "Franklin 인용 목적: *\"minimizes wait times and maximizes response quality\"*"
+      "Franklin 인용 목적: \"minimizes wait times and maximizes response quality\"*"
     ]
   },
   {
     "slug": "amazon-connections-daily-pulse",
-    "title": "Amazon Connections — 1.5M 직원 daily 1-question pulse (300M annual responses, 97% adoption)",
+    "title": "Amazon Connections — daily 1-question 직원 pulse",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Listening & Engagement",
     "company": "Amazon",
@@ -1131,7 +1129,7 @@
   },
   {
     "slug": "businessolver-sofia-agentic-benefits",
-    "title": "Businessolver — Sofia Agentic AI 복리후생 어드민 (Intake/Answer/Insights 멀티 에이전트)",
+    "title": "Businessolver — Sofia Agentic AI 복리후생 어드민",
     "primary_category": "Total Rewards",
     "subcategory": "Benefits & Wellbeing",
     "company": "_다수 (Businessolver 고객 — Fortune 1000 다수, 구체 명단 일부 비공개)_",
@@ -1195,19 +1193,17 @@
     },
     "process_before": "미국 employer의 OE(연 1회 plan 선택)는 직원 stress 최고점 — 정책 복잡(의료·치과·생명·FSA·HSA·HDHP), 문서 검증(QLE: qualifying life event — 결혼·출산·이혼시 plan 변경)·승인 워크플로 수작업 / Pain point: HR/벤처사 콜센터에 OE 시즌 콜 급증, 직원당 평균 통화 시간 길고 같은 질문 반복, document 검증은 사람 reviewer가 1건씩 처리 / Trigger: GenAI 등장으로 chat·문서 처리 자동화 가능. Businessolver 1998년 설립 이후 축적된 25년+ 도메인 데이터 + Sofia AI 엔진을 agentic으로 재구성 / 비교 reference: 는 single-tenant Custom GPT, Sof",
     "process_steps": [
-      "직원",
-      "Sofia Agentic Layer",
-      "Answer Agent: Q&A",
-      "Intake Agent: 문서 검증",
-      "Insights Agent: HR dashboard",
-      "Human HR Agent",
-      "Human Reviewer",
-      "HR Admin Dashboard"
+      "직원이 chat·portal·전화로 문의",
+      "Answer Agent: 자연어 질문 (의료 plan 비교·HSA 적격성·deductible 계산 등) 즉시 답변 — 세션 내 multi-turn",
+      "직원이 QLE 증빙 (출생증명서·결혼증명서·이혼판결문 등) 업로드",
+      "Intake Agent: 문서 OCR·정보 추출·정책 매칭·정합성 자동 검증 → 승인 또는 사람 escalation",
+      "Insights Agent: 콜·티켓·document 처리 패턴을 HR 관리자에게 dashboard로 제공 — 어느 plan에 대한 문의가 급증하는가, 어떤 demographic이 어느 결정으로 가는가",
+      "HR 관리자가 OE 캠페인·교육 자료·plan design을 인사이트 기반으로 조정"
     ]
   },
   {
     "slug": "deloitte-zora-ai-hc-suite",
-    "title": "Deloitte — Zora AI agentic platform + Human Capital AI Solution Suite (Workforce Analyzer + Planner+, 300+ HR workflows)",
+    "title": "Deloitte — Zora AI agentic platform + Human Capital AI Solution Suite",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "Workforce Planning",
     "company": "Deloitte",
@@ -1294,7 +1290,7 @@
   },
   {
     "slug": "ibm-blue-match-internal-mobility",
-    "title": "IBM — Blue Match (사내 talent marketplace, 280K 직원, 40% 내부 채용 충원 증가)",
+    "title": "IBM — Blue Match",
     "primary_category": "Onboarding & Transitions",
     "subcategory": "Internal Mobility",
     "company": "IBM",
@@ -1377,7 +1373,7 @@
   },
   {
     "slug": "kb-bank-ai-hr-deep-change",
-    "title": "KB국민은행 — 'HR Deep Change' AI 영업점 인사이동 (2020 launch, 2025 PB·RM 확장 57% 두 달 사용)",
+    "title": "KB국민은행 — 'HR Deep Change' AI 영업점 인사이동",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "Workforce Planning",
     "company": "KB국민은행",
@@ -1448,7 +1444,7 @@
   },
   {
     "slug": "mastercard-unlocked-gloat-talent-marketplace",
-    "title": "Mastercard — Unlocked Internal Talent Marketplace (Gloat 기반, 2022~ Project Possible 후속)",
+    "title": "Mastercard — Unlocked Internal Talent Marketplace",
     "primary_category": "Onboarding & Transitions",
     "subcategory": "Internal Mobility",
     "company": "Mastercard",
@@ -1512,19 +1508,17 @@
     },
     "process_before": "Mastercard는 2019년부터 \"Project Possible\"이라는 수동 internal gig 프로그램 운영 — HR이 spreadsheet로 직원 ↔ gig 매칭, scale 한계 / Pain point: / 30,000+ global 직원의 스킬 inventory invisible — 어느 부서에 어떤 스킬을 가진 직원이 있는지 매니저도 모름 / 직원이 internal mobility 경로 모름 → external offer로 이탈 / cross-functional·cross-regional collaboration 기회 손실 / Trigger: Project Possible의 success → AI 자동 매칭으로 scale up 결정. Gloat 도입 (2022)",
     "process_steps": [
-      "직원 30K+",
-      "Gloat AI Engine",
-      "(HRIS·역할·이력)",
-      "(LinkedIn Learning 활동)",
-      "매니저",
-      "AI 매칭 추천",
-      "매니저 검토 → 24h 인터뷰 스케줄",
-      "gig·project·mentor 시작 or internal transfer"
+      "직원 onboarding: 자기 스킬·관심사·career goal 입력 (또는 LinkedIn/자체 데이터에서 자동 추출)",
+      "매니저가 internal job/gig/project/mentor 요청: 등록 (필요 스킬·기간·시간 commitment)",
+      "AI 매칭 엔진: 직원 ↔ opportunity 자동 추천 (스킬 fit·career fit·가용성)",
+      "직원이 관심 표시 → 매니저 검토 → 24h 내 인터뷰 스케줄 (벤더 발표 평균)",
+      "매칭 성공 시 직원이 본업과 병행 (gig·part-time) 또는 internal transfer",
+      "Dashboard: 매니저는 skill inventory 검색·talent pool 관리, HR는 참여율·matching outcome 추적"
     ]
   },
   {
     "slug": "jnj-digital-talent-platform-skills-ai",
-    "title": "Johnson & Johnson — Digital Talent Platform (AI 스킬 추론, MIT CISR 학술 검증)",
+    "title": "Johnson & Johnson — Digital Talent Platform",
     "primary_category": "Learning & Development",
     "subcategory": "Skills & Capabilities",
     "company": "Johnson & Johnson",
@@ -1667,12 +1661,12 @@
       "Ava Cado가 Candidate screening + applicant 정보 수집",
       "Ava Cado가 인터뷰 스케줄링 (매장 매니저와 연동)",
       "매장 General Manager가 인터뷰 진행 + 채용 결정",
-      "(offer letter 자동 발송)"
+      "Ava Cado가 채용 오퍼 전달: (offer letter 자동 발송)"
     ]
   },
   {
     "slug": "commonwealth-bank-ai-workforce",
-    "title": "Commonwealth Bank Australia — AI 역량 구축 ($90M 프로그램·Copilot 50,000명)",
+    "title": "Commonwealth Bank Australia — AI 역량 구축",
     "primary_category": "Learning & Development",
     "subcategory": "Skills & Capabilities",
     "company": "Commonwealth Bank of Australia",
@@ -1745,7 +1739,7 @@
   },
   {
     "slug": "deloitte-2026-human-capital-trends-meta",
-    "title": "Deloitte 2026 Global Human Capital Trends — From tensions to tipping points (capstone reference)",
+    "title": "Deloitte 2026 Global Human Capital Trends — From tensions to tipping points",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "HR Tech Governance",
     "company": "_글로벌 9,000명 임원 서베이 (89개국)_",
@@ -1808,7 +1802,7 @@
   },
   {
     "slug": "ibm-hiro-promotion-agent",
-    "title": "IBM — HiRo (분기 승진 관리 watsonx Digital Worker, AskHR 생태계 내 Specialist Agent)",
+    "title": "IBM — HiRo",
     "primary_category": "Performance & Talent Management",
     "subcategory": "Succession & Leadership",
     "company": "IBM",
@@ -1870,21 +1864,18 @@
     "model": {
       "Foundation model": "IBM watsonx (Granite 모델 자체 제품) — 구체 model variant·버전 _부분 미공개_"
     },
-    "process_before": "HRBP가 spreadsheet로 (1) eligible employees 추출 → (2) 매니저에 정책·criteria 이메일 → (3) 매니저 결정 수집 → (4) compensation/title/org 시스템 수동 입력 /",
+    "process_before": "IBM 글로벌 280K 직원 분기 승진 cycle은 HR Business Partner 수작업 spreadsheet — 부서별 eligible employees 식별·매니저별 promotion criteria 안내·결정 후 compensation/title/org 시스템 수동 갱신 / Pain point: / 분기당 10주 소요 — HRBP 시간의 상당 비중 / 매니저 10,000명 × 부서·지역 별 승진 정책 차이 → 일관성 결여, 매니저 confusion / 승진 결정 후 compensation·org chart·title 갱신을 여러 시스템에 수동 입력 / Trigger: IBM 자체 AI/agentic transformation (AskHR 6년 운영 후 specialist agent 확장 단계)",
     "process_steps": [
-      "분기 시작 trigger",
-      "HiRo Specialist Agent watsonx Orchestrate",
-      "(HRMS·역할·근속)",
-      "(성과 평가)",
-      "(Compensation·시장 benchmark)",
-      "(승진 정책·부서별)",
-      "매니저별 criteria 자동 생성 + eligible list",
-      "매니저 10,000명"
+      "HiRo가 분기 시작 시 자동으로 HR 시스템들 (HRMS·평가·comp)에서 eligible employees 데이터 통합",
+      "매니저별·부서별 promotion criteria 맞춤 작성 (LLM 기반)",
+      "10,000명 매니저에게 자동 발송 + 매니저용 simplified UI (criteria + eligible list + 승진 추천 데이터)",
+      "매니저가 결정 → HiRo가 compensation/title/org chart 자동 갱신",
+      "HRBP는 dashboard로 진행 status·예외·escalation만 관리"
     ]
   },
   {
     "slug": "jpmorgan-llm-suite-employee-productivity",
-    "title": "JPMorgan Chase — LLM Suite 직원 생산성 플랫폼 (140,000+ 직원)",
+    "title": "JPMorgan Chase — LLM Suite 직원 생산성 플랫폼",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "JPMorgan Chase",
@@ -1952,8 +1943,8 @@
     },
     "process_before": "직원이 개별적으로 외부 AI 도구 또는 전통적 검색·작성 도구를 사용. 성과 리뷰는 관리자가 수동으로 직접 작성. /",
     "process_steps": [
-      "직원 요청\\n문서 요약·이메일·리뷰 초안 등",
-      "LLM Suite\\n내부 보안 포털",
+      "직원 요청 문서 요약·이메일·리뷰 초안 등",
+      "LLM Suite 내부 보안 포털",
       "AI 응답 생성",
       "직원 검토·편집",
       "최종 산출물 사용"
@@ -1961,7 +1952,7 @@
   },
   {
     "slug": "legion-wfm-hourly-workforce",
-    "title": "Legion Technologies — AI-native WFM (시급직 스케줄링·수요예측·Agentic 자동화)",
+    "title": "Legion Technologies — AI-native WFM",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Time, Attendance & Absence",
     "company": "_다수 (Dollar General, Cinemark, Five Below 등 시급직 다수 산업)_",
@@ -2029,19 +2020,17 @@
     },
     "process_before": "시급직 매니저가 매주 spreadsheet로 직원 shift 작성 — 수요 예측 부재, 노동 시간 over/under, 결근 1회당 대체 인력 찾기 30~60분 소요 / Pain point: / 매니저 시간 over-burden: 매장 매니저가 주 8~15시간을 스케줄 작성·조정에 사용 → 매장 운영·고객 서비스 시간 감소 / 시급직 turnover 60~150%/년 (US retail 평균) — schedule 불만이 turnover 1대 사유 / labor cost over/under: 수요 예측 없으면 trafic 낮은 시간대에도 인력 배치 → 비용 over-spend / Trigger: 미국 retail의 hourly worker 부족 + Schedule Fairness 법규 강화 (NYC·SF·Se",
     "process_steps": [
-      "(POS·매출 데이터)",
-      "AI 수요 예측 95% accuracy ✅ Forrester 2021",
-      "(외부: 날씨·이벤트)",
-      "(직원 마스터·skill·preferences)",
-      "스케줄 최적화 엔진",
-      "(노동법 제약·NYC Fair Workweek 등)",
-      "매니저 승인",
-      "직원 Mobile App"
+      "수요 예측: POS·트래픽·날씨·이벤트 데이터 → AI가 시간대별 labor demand 예측 (95% accuracy — Forrester study에서 검증)",
+      "자동 스케줄 생성: demand × 직원 가용성·skill·preferences·labor law 제약 → 매장별 shift 최적화",
+      "직원 모바일: shift 확인·교체·gig swap·휴가 신청 self-service",
+      "결근/지각 예측: 패턴 분석 → 사전 alert + 자동 대체 인력 후보 추천",
+      "매니저 dashboard: 인건비·생산성·컴플라이언스 status real-time",
+      "Agentic AI (2026.1 신규): 90+ features — 채용·온보딩·스케줄·payroll까지 cross-workflow 자동화 (벤더 발표)"
     ]
   },
   {
     "slug": "lg-chatexaone-group-rollout",
-    "title": "LG AI연구원 — ChatEXAONE 그룹 정식 서비스 (LG전자·이노텍·디스플레이 5만+ 임직원, 자체 EXAONE)",
+    "title": "LG AI연구원 — ChatEXAONE 그룹 정식 서비스",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "LG (LG전자·LG이노텍·LG디스플레이 등 그룹 5만+)",
@@ -2132,7 +2121,7 @@
   },
   {
     "slug": "linkedin-learning-ai-coaching",
-    "title": "LinkedIn Learning — AI-Powered Coaching (Premium·Enterprise, role-play scenario)",
+    "title": "LinkedIn Learning — AI-Powered Coaching",
     "primary_category": "Learning & Development",
     "subcategory": "Skills & Capabilities",
     "company": "_다수 (LinkedIn Learning Premium·Enterprise 고객)_",
@@ -2206,7 +2195,7 @@
   },
   {
     "slug": "lloyds-banking-workday-genai-hr",
-    "title": "Lloyds Banking Group — Workday + GenAI HR (정책 Q&A·Skills Cloud·AI Academy)",
+    "title": "Lloyds Banking Group — Workday + GenAI HR",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "Lloyds Banking Group",
@@ -2278,7 +2267,7 @@
   },
   {
     "slug": "mercy-health-ai-nursing-workforce",
-    "title": "Mercy Health — AI 기반 간호 인력 관리 (계약직 비중 25%→8% 절감)",
+    "title": "Mercy Health — AI 기반 간호 인력 관리",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "Workforce Planning",
     "company": "Mercy Health",
@@ -2348,7 +2337,7 @@
   },
   {
     "slug": "microsoft-viva-glint-copilot-sentiment",
-    "title": "Microsoft Viva Glint Copilot — engagement 서베이 open-end NLP 자동 합성 (2026-03 default ON)",
+    "title": "Microsoft Viva Glint Copilot — engagement 서베이 open-end NLP 자동 합성",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Listening & Engagement",
     "company": "Microsoft",
@@ -2430,7 +2419,7 @@
   },
   {
     "slug": "siemens-servicenow-hr-gbs",
-    "title": "Siemens — ServiceNow HR My Services 포털 (360,000명 글로벌 HR 통합)",
+    "title": "Siemens — ServiceNow HR My Services 포털",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "HR Service Delivery",
     "company": "Siemens",
@@ -2503,7 +2492,7 @@
   },
   {
     "slug": "walmart-ai-frontline-workforce",
-    "title": "Walmart — AI 프론트라인 인력 관리 (1.5M 직원 AI 도구·OpenAI 교육)",
+    "title": "Walmart — AI 프론트라인 인력 관리",
     "primary_category": "Learning & Development",
     "subcategory": "Content & Delivery",
     "company": "Walmart",
@@ -2585,7 +2574,7 @@
   },
   {
     "slug": "walmart-ask-sam-workforce-ai",
-    "title": "Walmart — Ask Sam AI 어시스턴트 (900k 직원, 주 3M 질문) + AI Interview Coach + 50k 리스킬링",
+    "title": "Walmart — Ask Sam AI 어시스턴트 + AI Interview Coach + 50k 리스킬링",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "Walmart",
@@ -2658,7 +2647,7 @@
   },
   {
     "slug": "bosch-rob-hr-ai-assistant",
-    "title": "Bosch — ROB HR AI 디지털 어시스턴트 (25개국, GPT + Cognigy)",
+    "title": "Bosch — ROB HR AI 디지털 어시스턴트",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "Bosch",
@@ -2739,7 +2728,7 @@
   },
   {
     "slug": "dbs-bank-hr-ai-talent-analytics",
-    "title": "DBS Bank — HR AI 종합 (JIM 채용·이탈예측·iGrow 커리어)",
+    "title": "DBS Bank — HR AI 종합",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "People Analytics",
     "company": "DBS Bank",
@@ -2802,19 +2791,19 @@
     "model": {},
     "process_before": "채용 담당자가 수동으로 이력서 검토·면접 일정 조율·초기 평가 진행. 32일 소요. /",
     "process_steps": [
-      "Talent Acquisition",
       "지원자",
-      "JIM AI 채용\\n이력서·일정·평가",
+      "JIM AI 채용 이력서·일정·평가",
       "면접 진행",
-      "채용 결정\\n인간",
-      "People Analytics",
-      "직원 데이터\\n교육·보상·휴가",
-      "이탈 예측 모델"
+      "채용 결정 인간",
+      "직원 데이터 교육·보상·휴가",
+      "이탈 예측 모델",
+      "HRBP 조기 개입",
+      "직원 스킬·포부"
     ]
   },
   {
     "slug": "goldman-sachs-gs-ai-assistant",
-    "title": "Goldman Sachs — GS AI Assistant 전사 배포 (지식노동자 생산성)",
+    "title": "Goldman Sachs — GS AI Assistant 전사 배포",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "Goldman Sachs",
@@ -2880,16 +2869,15 @@
     },
     "process_before": "지식노동자가 직접 문서 작성, 수동 검색, 개별 도구 사용. /",
     "process_steps": [
-      "직원 입력\\n텍스트·문서",
-      "GS AI Assistant\\n사내 방화벽 내",
+      "직원 입력 텍스트·문서",
+      "GS AI Assistant 사내 방화벽 내",
       "AI 응답 생성",
-      "직원 검토",
-      "사용"
+      "직원 검토"
     ]
   },
   {
     "slug": "ibm-predictive-attrition-comp-ai",
-    "title": "IBM — Predictive Attrition Program (95% 정확도) + AI 보상 추천 ($300M 누적 saving)",
+    "title": "IBM — Predictive Attrition Program + AI 보상 추천",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "People Analytics",
     "company": "IBM",
@@ -2959,7 +2947,7 @@
   },
   {
     "slug": "midas-inair-ai-assessment-korea",
-    "title": "마이다스아이티 inAIR — AI 역량검사 (Nature 논문 검증, 10+ 한국 대기업 도입)",
+    "title": "마이다스아이티 inAIR — AI 역량검사",
     "primary_category": "Talent Acquisition",
     "subcategory": "Screening & Assessment",
     "company": "_다수 (기아, KB증권, 신한은행, CJ, LIG넥스원, GS리테일 등)_",
@@ -3035,15 +3023,15 @@
     "process_before": "서류 → 인적성(SSAT 류) → 면접관 면접 → 합격 (한국 대기업 전형) /",
     "process_steps": [
       "지원자가 성향파악 과제 수행 (행동 성향 분석)",
-      "수행 (시뮬레이션 기반 문제 해결 능력)",
-      "(AI 분석)",
+      "전략게임: 수행 (시뮬레이션 기반 문제 해결 능력)",
+      "영상면접: (AI 분석)",
       "AI가 3개 과제 종합해 성과역량 예측 점수 산출",
       "HR 담당자가 점수 참고해 면접·합격 결정"
     ]
   },
   {
     "slug": "nayya-benefits-decision-support",
-    "title": "Nayya — AI 복리후생 의사결정 지원 (MetLife 파트너 + bswift·Mercer 통합)",
+    "title": "Nayya — AI 복리후생 의사결정 지원",
     "primary_category": "Total Rewards",
     "subcategory": "Benefits & Wellbeing",
     "company": "_다수 (MetLife 1,000+ employer 채널 + Just Global 등 직접 고객)_",
@@ -3105,19 +3093,17 @@
     },
     "process_before": "미국 직원이 OE 시즌에 plan 선택 — 평균 17분 소요, 의료 plan만 5~10개 옵션, voluntary benefit (accident·hospital·critical illness·disability)은 추가 5~15개. 정보 비대칭으로 직원이 \"안전하게\" 비싼 PPO 선택 → 본인부담 over-pay / Pain point: 직원당 plan mismatch로 연 평균 $750~$1,500 over-pay (Nayya 자사 조사). voluntary benefit 가입율 낮음 (직원 정보 부족) / Trigger: 미국 의료비 인플레이션 + HDHP/HSA 채택 증가 → 직원이 \"올바른 선택\"하기 어려운 환경 → AI 추천 수요",
     "process_steps": [
-      "직원",
-      "Nayya AI Engine",
-      "(HRIS: 인사 데이터)",
-      "(보험사: 청구 이력)",
-      "(외부: 의료 비용 데이터 ⚠️ 벤더 주장 30B+ datapoints)",
-      "(Plan SPDs)",
-      "Plan 추천 + Cost 시뮬레이션",
-      "직원 선택"
+      "직원이 Nayya portal·MetLife channel 로그인",
+      "데이터 통합: 직원이 본인 정보 (가족 구성·예상 의료 사용·소득) + Nayya가 보유한 외부 데이터 (지역 의료 비용·청구 패턴) 결합",
+      "AI engine이 plan별 expected total cost (premium + deductible + copay + 본인부담) 시뮬레이션",
+      "의료·치과·생명·voluntary plan별 개인화 추천 ranking + 추천 이유 자연어 설명",
+      "직원이 선택 → bswift 등 enrollment platform으로 자동 push",
+      "1년 후 청구 시점 → Nayya가 청구 자동 추적·HSA·FSA reimbursement 추천"
     ]
   },
   {
     "slug": "pulmuone-duribun-hr-chatbot",
-    "title": "풀무원 — '두리번' HR 특화 AI 챗봇 (6개 영역 24/365, RAG hallucination 최소화)",
+    "title": "풀무원 — '두리번' HR 특화 AI 챗봇",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "풀무원",
@@ -3202,7 +3188,7 @@
   },
   {
     "slug": "sap-successfactors-1h-2026-joule-agents",
-    "title": "SAP SuccessFactors 1H 2026 Release — 4개 신규 Joule Agent (Career·HR Service·People Intelligence·Payroll)",
+    "title": "SAP SuccessFactors 1H 2026 Release — 4개 신규 Joule Agent",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "_다수 (SAP SuccessFactors 고객)_",
@@ -3276,7 +3262,7 @@
       "커스터마이징 기법": "RAG (정책·문서) + few-shot (페이롤 룰) + agent orchestration",
       "평가·가드레일": "SAP 표준 content filter + GDPR/EU AI Act 대응 모니터링"
     },
-    "process_before": "",
+    "process_before": "SAP SuccessFactors는 conventional HCM 위주, AI 기능은 모듈별 산발 (Joule 초기 release). Workday Illuminate에 비해 agentic 카테고리 catch-up 필요. / Pain point: 대규모 SAP HCM 고객(IBM·Disney·한국 제조 대기업)이 AI 에이전트 carve-out을 별도 벤더로 가는 것을 막아야 함. SAP suite 안에 native agent 생태계 형성이 시급. / Trigger: Workday Illuminate (2024~2025), Workday × Sana 인수, Workday ASOR(2026-02) 등 경쟁 압박. SAP가 Joule 통합 가속화로 대응.",
     "process_steps": [
       "직원/매니저",
       "Joule Orchestrator",
@@ -3290,7 +3276,7 @@
   },
   {
     "slug": "schneider-electric-gloat-talent-marketplace",
-    "title": "Schneider Electric — Open Talent Market (Gloat AI, $15M+ 절감)",
+    "title": "Schneider Electric — Open Talent Market",
     "primary_category": "Onboarding & Transitions",
     "subcategory": "Internal Mobility",
     "company": "Schneider Electric",
@@ -3368,7 +3354,7 @@
   },
   {
     "slug": "shinhan-bank-ai-one-platform",
-    "title": "신한은행 — 'AI ONE' 직원 업무비서 플랫폼 (40+ AI 통합, ⚠️ 자사 보고 일 30분 절감)",
+    "title": "신한은행 — 'AI ONE' 직원 업무비서 플랫폼",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "신한은행",
@@ -3439,7 +3425,7 @@
   },
   {
     "slug": "sk-cc-adot-biz-hr-recruitment",
-    "title": "SK C&C — '에이닷 비즈 HR' 전사 채용 도입 (자기소개서 분석 1주→4시간, ⚠️ 자사 보고 90% 단축)",
+    "title": "SK C&C — '에이닷 비즈 HR' 전사 채용 도입",
     "primary_category": "Talent Acquisition",
     "subcategory": "Screening & Assessment",
     "company": "SK C&C",
@@ -3525,7 +3511,7 @@
   },
   {
     "slug": "sk-group-aibiz-25-companies",
-    "title": "SK 그룹 25개사 — 'A.Biz' 단일 표준 확산 (8만 명, 자체 LLM 'A.X' + 산업특화 AI)",
+    "title": "SK 그룹 25개사 — 'A.Biz' 단일 표준 확산",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "HR Tech Governance",
     "company": "SK 그룹 (25개 멤버사)",
@@ -3600,7 +3586,7 @@
   },
   {
     "slug": "woori-bank-175-ai-agents",
-    "title": "우리은행 — 금융권 최초 전사 AI 에이전트 175개 (5대 영역 29개 업무, 삼성SDS 구축)",
+    "title": "우리은행 — 금융권 최초 전사 AI 에이전트 175개",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "HR Tech Governance",
     "company": "우리은행",
@@ -3682,18 +3668,17 @@
     },
     "process_before": "우리은행 ~13K 직원이 다수 산발 시스템 (코어뱅킹·CRM·콜센터·내부통제) 사용. AI 도입은 부서별 산발 PoC / Pain point: KB국민은행  (인사이동 AI), 신한 AI ONE  등 경쟁 은행 AI 가속 → 우리은행 차별화 시급 / Trigger: 2026 신년 신경 그룹장 발표 — 금융권 최초 전사 AI 에이전트 도입 결단",
     "process_steps": [
-      "575개 후보 사업부 nominate",
-      "5대 영역 29개 업무 175개 에이전트",
-      "삼성SDS Brity 기반",
-      "97개 에이전트 production",
-      "78개 에이전트 추가",
-      "운영 KPI tracking",
-      "Portfolio rebalancing"
+      "575개 사업부 nominate: 된 AI 에이전트 후보 수집",
+      "평가 기준 적용: — 업무 적합성·ROI·실행 가능성·리스크 (구체 framework _미공개_)",
+      "5대 영역 29개 업무 → 175개 에이전트 선정: (체계적 portfolio prune)",
+      "삼성SDS 우선협상대상자 (2026-04-07) → 구축 계약",
+      "2026-12 1차 97개 production, 2026 초 78개 추가",
+      "운영 후 KPI tracking → portfolio rebalancing (annual cycle)"
     ]
   },
   {
     "slug": "workday-agent-system-of-record-asor",
-    "title": "Workday Agent System of Record (ASOR) — AI 에이전트 거버넌스 플랫폼",
+    "title": "Workday Agent System of Record — AI 에이전트 거버넌스 플랫폼",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "HR Tech Governance",
     "company": "_다수 (Workday HCM 고객)_",
@@ -3752,7 +3737,7 @@
       "민감정보 처리": "에이전트가 접근하는 HR 데이터는 기존 Workday RBAC 따름"
     },
     "model": {},
-    "process_before": "1) AI 에이전트가 부서별·벤더별 별도 도구에서 생성·관리 / 2) HR/IT가 에이전트 존재·권한·활동 가시성 부재 / 3) 직원-에이전트 간 책임 경계 불명확 / 4) 감사·컴플라이언스 사후 대응 /",
+    "process_before": "엔터프라이즈가 AI 에이전트를 부서별·도구별로 산발 도입. 누가 만들었는지, 어떤 권한을 갖는지, 누가 책임지는지가 불투명. shadow AI 리스크 누적. / Pain point: AI 에이전트가 빠르게 늘어나는데 거버넌스·감사·권한 통제가 부재. Deloitte 2026 HC Trends에 따르면 임원 60%가 AI를 의사결정에 사용하지만 5%만 잘 관리 중. / Trigger: 2026-Q1 EU AI Act high-risk 의무 발효 임박 + 한국 AI 기본법(2026-01-22 시행) 등 글로벌 규제 압력. 엔터프라이즈가 \"AI 거버넌스\" 카테고리 솔루션 시급히 요구.",
     "process_steps": [
       "신규 AI 에이전트 등록 시 ASOR에 owner·purpose·scope 명시",
       "ASOR이 권한·조직도·스킬 매핑 자동 적용 (Workday IAM 연계)",
@@ -3762,7 +3747,7 @@
   },
   {
     "slug": "amazon-hr-ai-restructuring",
-    "title": "Amazon — HR 부서 15% 감축 (AI 대체), PXT 조직 10,000명 영향",
+    "title": "Amazon — AI 기반 HR·PXT 조직 재편",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "Workforce Planning",
     "company": "Amazon",
@@ -3832,6 +3817,7 @@
     },
     "process_before": "Amazon PXT(People eXperience and Technology) 조직은 10,000+ HR 전문 인력이 채용·HR 운영·기술·분석 업무를 수행. 1.5M+ 매장 직원 + 수십만 기업 직원의 HR 서비스 수요를 사람이 직접 처리 / Pain point: $100B+ AI 투자를 진행하면서 HR 기능도 자동화 가능 영역으로 식별됨. 채용 심사·정책 질의·분석 리포팅 등이 AI copilot으로 대체 가능하다는 판단 / Trigger: CEO Andy Jassy의 \"모든 client experience·employee process·backend operation에 AI를 주입\"하라는 전사 방침 → HR 조직도 예외 없음 / ⚠️ 핵심 갈등: 동시에 250,000명 계절직 warehouse 채용은",
     "process_steps": [
+      "PXT가 internal AI 시스템 (이미 CS·warehouse 자동화에 사용 중)을 talent management·recruiting·employee engagement 플랫폼에 통합",
       "Recruiting screening·티켓 라우팅·정책 Q&A·성과 데이터 합성 등 반복 업무 자동화",
       "AI로 처리되는 영역에서 매니저·HRBP 역할 축소 → 14k 포지션 redundant 판정",
       "Beth Galetti (Amazon CHRO) 발표 후 영향받는 직원에 alert, 사내 이동·severance 협상",
@@ -3840,7 +3826,7 @@
   },
   {
     "slug": "betterup-ai-coaching-twilio",
-    "title": "BetterUp — AI Coaching Platform (Twilio: 32% 성과↑, 5x 이탈↓)",
+    "title": "BetterUp — AI Coaching Platform",
     "primary_category": "Performance & Talent Management",
     "subcategory": "Coaching",
     "company": "Twilio",
@@ -3922,7 +3908,7 @@
   },
   {
     "slug": "deloitte-claude-470k-employees",
-    "title": "Deloitte — Anthropic Claude 470,000 직원 배포 (역대 최대 엔터프라이즈 AI)",
+    "title": "Deloitte — Anthropic Claude 전직원 배포",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "HR Service Delivery",
     "company": "Deloitte",
@@ -3993,6 +3979,7 @@
     "process_before": "Deloitte 470,000 직원이 150개국에서 회계·감사·컨설팅·세무 업무 수행. 각 직무별 AI 도구가 파편화돼 있거나 부재. 지식 검색·문서 초안·분석에 사람의 반복 작업 시간이 과도 / Pain point: 경쟁 컨설팅사(Accenture·PwC·McKinsey)가 각각 AI를 전사 배포하는 상황에서 \"consulting firms의 AI 군비 경쟁\"이 Deloitte의 채택 가속화 요인 / Trigger: Anthropic Claude가 엔터프라이즈 보안·규정 준수를 충족하면서도 \"회계사·개발자별 특화 버전\"을 제공할 수 있다는 판단 → 역대 최대 엔터프라이즈 배포 결정",
     "process_steps": [
       "Deloitte가 Anthropic Claude Enterprise를 글로벌 SSO로 470k 계정에 프로비저닝",
+      "Claude Center of Excellence가 부서별 use case·implementation framework 제공, 15,000명 certification 프로그램 운영",
       "직원이 Claude로 문서 합성·코드 생성·클라이언트 자료 분석 수행, 산출물은 Trustworthy AI framework로 검증",
       "규제 산업 (financial services·healthcare·public)용 industry pack을 Anthropic과 공동 개발해 클라이언트에 재판매",
       "사용 로그·prompt가 governance dashboard로 수집되어 risk·품질 모니터링"
@@ -4000,7 +3987,7 @@
   },
   {
     "slug": "hyundai-mobis-moai-platform",
-    "title": "현대모비스 — 'MoAI' 사내 전용 GenAI (1,000만 건 RAG, 7개 업무·HR 확장 예정)",
+    "title": "현대모비스 — 'MoAI' 사내 전용 GenAI",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "현대모비스",
@@ -4076,7 +4063,7 @@
   },
   {
     "slug": "ibm-askhr-watsonx",
-    "title": "IBM — AskHR 에이전트 (270,000 직원, watsonx Orchestrate 기반)",
+    "title": "IBM — AskHR 에이전트",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "IBM",
@@ -4144,13 +4131,13 @@
     "process_steps": [
       "IBM 직원이 AskHR에 자연어 질문/요청 입력",
       "AskHR이 80+ 자동화된 HR 태스크 중 해당 작업 식별",
-      "처리 유형에 따라:",
+      "처리 유형에 따라",
       "해결 안 되면 human HR specialist에 에스컬레이션"
     ]
   },
   {
     "slug": "ibm-watsonx-orchestrate-ta-agent",
-    "title": "IBM — watsonx Orchestrate Talent Acquisition Agent + AI JD 생성 (recruiter copilot)",
+    "title": "IBM — watsonx Orchestrate Talent Acquisition Agent + AI JD 생성",
     "primary_category": "Talent Acquisition",
     "subcategory": "Sourcing & Attraction",
     "company": "IBM",
@@ -4228,7 +4215,7 @@
   },
   {
     "slug": "jobkorea-hiring-center-talent-agent",
-    "title": "잡코리아 — '하이어링 센터' 통합 채용 솔루션 + 탤런트 에이전트 (2026-03 launch, 채용담당 65% AI agent 검토)",
+    "title": "잡코리아 — '하이어링 센터' 통합 채용 솔루션 + 탤런트 에이전트",
     "primary_category": "Talent Acquisition",
     "subcategory": "Sourcing & Attraction",
     "company": "잡코리아 (웍스피어)",
@@ -4310,7 +4297,7 @@
   },
   {
     "slug": "korea-electric-power-hr-bot",
-    "title": "한국전력 — HR-Bot 채용 챗봇 + AI 인사추천 시스템 (공공기관 최초, 2024 인사혁신 가점)",
+    "title": "한국전력 — HR-Bot 채용 챗봇 + AI 인사추천 시스템",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "Workforce Planning",
     "company": "한국전력",
@@ -4393,7 +4380,7 @@
   },
   {
     "slug": "mirae-asset-ai-assistant-platform",
-    "title": "미래에셋증권 — 'AI Assistant 플랫폼' (네이버클라우드 하이퍼클로바X 대시, No-code 직원 챗봇 빌더)",
+    "title": "미래에셋증권 — 'AI Assistant 플랫폼'",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "미래에셋증권",
@@ -4472,7 +4459,7 @@
     "process_steps": [
       "직원·부서가 본인 업무 매뉴얼·노하우 문서 업로드",
       "AI Assistant 플랫폼이 RAG indexing",
-      "로 부서·직원 전용 챗봇 자체 생성",
+      "No-code 빌더: 로 부서·직원 전용 챗봇 자체 생성",
       "직원·부서원이 자연어로 챗봇 query",
       "답변 + 출처 제공"
     ]
@@ -4550,7 +4537,7 @@
   },
   {
     "slug": "sap-joule-performance-goals-agent",
-    "title": "SAP SuccessFactors — Joule Performance & Goals Agent (매니저 성과 대화 지원)",
+    "title": "SAP SuccessFactors — Joule Performance & Goals Agent",
     "primary_category": "Performance & Talent Management",
     "subcategory": "Goal & Performance",
     "company": "_다수 (SAP SuccessFactors 고객)_",
@@ -4611,18 +4598,14 @@
     },
     "process_before": "매니저가 SuccessFactors에서 직원별 목표·피드백·리뷰 데이터를 개별 조회 → 수동으로 대화 포인트 준비 /",
     "process_steps": [
-      "SuccessFactors 목표 데이터",
-      "Joule Performance Agent",
-      "피드백·리뷰 히스토리",
-      "맞춤 인사이트",
-      "목표 진척 업데이트",
-      "대화 포인트",
-      "성과 대화 실행"
+      "Joule Performance & Goals Agent가 목표 진척·피드백 데이터를 자동 통합",
+      "맞춤 인사이트·대화 포인트 생성",
+      "매니저가 리뷰"
     ]
   },
   {
     "slug": "siemens-reskilling-internal-mobility",
-    "title": "Siemens — 300k 직원 리스킬링 + 20% 내부 이동 증가 + My Learning World",
+    "title": "Siemens My Learning World — AI 기반 리스킬링·내부 이동",
     "primary_category": "Learning & Development",
     "subcategory": "Skills & Capabilities",
     "company": "Siemens",
@@ -4703,7 +4686,7 @@
   },
   {
     "slug": "sk-hynix-ask-ai-interview",
-    "title": "SK하이닉스 — A!SK (AI Interview with SK Hynix) AI 영상면접 + 미래 동료 평가 hybrid (2025 신규)",
+    "title": "SK하이닉스 — A!SK AI 영상면접 + 미래 동료 평가 hybrid",
     "primary_category": "Talent Acquisition",
     "subcategory": "Interview & Selection",
     "company": "SK하이닉스",
@@ -4775,11 +4758,18 @@
       "평가·가드레일": "peer + HR + 면접관 hybrid (AI single decision 회피). 표정·외모 신호 transparency 부족 risk"
     },
     "process_before": "SK하이닉스 신입 채용은 자기소개서 + 인적성 + 면접 — 직무 적합 soft skill (커뮤니케이션·팀워크) 측정 어려움 / Pain point: 반도체 기술사무직 신입 채용 volume 크지만 면접관 시간 한정 + soft skill 평가 표준화 어려움 / Trigger: 2025 하반기 신입 공채 — A!SK 전형 신설 (마이다스 inAIR 차별 논란 후 자체 hybrid 설계)",
-    "process_steps": []
+    "process_steps": [
+      "서류 + AI 종합 역량 Report (Phase 1): 학력·전공·직무 연관성 검토 → AI가 정량·정성 역량 점수화 + 직무역량-JD 매칭율 → 면접관 참고 Report 자동 생성",
+      "SKCT (인적성 검사): 온라인 역량 검사",
+      "A!SK 전형 (AI 화상 면접): AI 인프라 기반 화상 면접 — 문제은행식 직무별 맞춤 출제",
+      "다면 평가 (O/I 고도화): 업로드 영상을 현업 미래 동료 구성원이 평가 — 평가자 규모 확대 → 다차수 면접 효과 (1시간 → Big Tech 수준 2시간+ 평가 깊이)",
+      "최종 대면 면접: AI 종합 역량 Report 기반 심층 면접",
+      "최종 합격"
+    ]
   },
   {
     "slug": "tcs-infosys-ai-reskilling-india",
-    "title": "TCS·Infosys·Wipro — 인도 IT 서비스 대기업 AI 리스킬링 (100만 명+ 교육)",
+    "title": "TCS·Infosys·Wipro — 인도 IT 서비스 대기업 AI 리스킬링",
     "primary_category": "Learning & Development",
     "subcategory": "Skills & Capabilities",
     "company": "TCS",
@@ -4926,7 +4916,7 @@
       "커스터마이징 기법": "RAG (회사 콘텐츠) + prompt engineering (코스 템플릿)",
       "평가·가드레일": "ASOR 거버넌스 적용 + Workday 기본 content filter"
     },
-    "process_before": "1) HRD가 외주 ID·콘텐츠 벤더에 코스 발주 / 2) 4~6개월 제작 / 3) Workday Learning에 업로드·할당 / 4) 직원이 self-paced로 수강 (avg 완료율 낮음) /",
+    "process_before": "Workday Learning은 기존 LMS 카테고리에 속해 conventional course management 위주. AI-native 경쟁자(Sana·Bersin Galileo·Docebo Shape) 대비 콘텐츠 생성·개인화·대화형 UX 격차 누적. / Pain point: 기업 학습 콘텐츠 제작 비용·시간이 ROI를 짓누르는 구조 (코스 1개당 수개월·수천만원). 직원 engagement도 낮음 (LMS 평균 완료율 30~50%). / Trigger: Bersin이 발표한 \"AI Transforms $400B of Corporate Learning\" 보고서 + Sana의 빠른 시장 침투 (Klarna 등). Workday가 자체 개발 대신 acquisition으로 catch-up.",
     "process_steps": [
       "HRD가 Sana for Workday 대화창에 학습 목적·대상 입력",
       "벤더 주장: AI가 4일 내 멀티모달 코스 초안 생성 (텍스트·비디오·음성)",
@@ -4937,7 +4927,7 @@
   },
   {
     "slug": "docebo-ai-learning-lazboy",
-    "title": "Docebo AI Learning — La-Z-Boy (179% 활성 사용자↑, 85% 과정 완료↑)",
+    "title": "Docebo AI Learning — La-Z-Boy",
     "primary_category": "Learning & Development",
     "subcategory": "Content & Delivery",
     "company": "La-Z-Boy",
@@ -5018,7 +5008,7 @@
   },
   {
     "slug": "fujitsu-hr-ai-skills-career",
-    "title": "Fujitsu — AI 기반 HR 전환 (Kozuchi AI·스킬 기반 내부 공모·학습 플랫폼)",
+    "title": "Fujitsu — AI 기반 HR 전환",
     "primary_category": "Learning & Development",
     "subcategory": "Skills & Capabilities",
     "company": "Fujitsu",
@@ -5083,7 +5073,7 @@
   },
   {
     "slug": "hitachi-skye-hr-ai-assistant",
-    "title": "Hitachi — Skye HR AI 어시스턴트 (문서 추론·셀프서비스·문화 설계)",
+    "title": "Hitachi — Skye HR AI 어시스턴트",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "Hitachi",
@@ -5141,7 +5131,7 @@
       "입력 데이터 소스": "HR 정책 문서, 복리후생 문서. 사업부·국가·역할별 개인화 데이터."
     },
     "model": {},
-    "process_before": "직원이 복잡한 HR 정책·복리후생·시스템을 탐색하다 막히면 HR 팀에 문의. /",
+    "process_before": "Hitachi는 다수의 사업부(BU)와 다국가 운영 환경에서 HR 정책·복리후생·시스템이 BU·국가별로 상이. 직원이 자기에게 맞는 정책을 찾으려면 어느 문서를, 어떤 버전으로, 어느 부서에 물어야 하는지 파악이 어려움. ❓ 구체 수치(월간 HR 문의 건수·평균 해결 시간) 미공개 / Pain point: (1) 정책 탐색의 복잡성 — BU·국가·역할별로 적용되는 정책이 다르기 때문에 \"하나의 답\"이 없음 → 직원 불만·프로세스 지연. (2) HR 팀에 반복 문의 집중 — 같은 유형의 질문(복리후생·휴가·IT 요청)이 반복적으로 HR에 유입 → HR의 전략적 업무 시간 잠식 / Trigger: Hitachi가 \"문화 설계\" 관점에서 AI를 도입하기로 결정 — 단순 챗봇이 아니라 이름(Skye)과 개성을 부여",
     "process_steps": [
       "Fact Skye가 정책 문서를 추론하여 사업부·국가·역할에 맞게 개인화된 응답 제공.",
       "Fact IT 서비스 티켓 생성, 휴가 요청 처리 등 지능적 액션 수행.",
@@ -5150,7 +5140,7 @@
   },
   {
     "slug": "hyundai-steel-hip-platform",
-    "title": "현대제철 — 'HIP' 사내 GenAI 경영지원 챗봇 (2024-05 → 2025-10 AI·로봇 역량 확장)",
+    "title": "현대제철 — 'HIP' 사내 GenAI 경영지원 챗봇",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "HR Service Delivery",
     "company": "현대제철",
@@ -5228,7 +5218,7 @@
   },
   {
     "slug": "ibm-watson-recruitment",
-    "title": "IBM Watson Recruitment — bias-mitigated candidate matching (84% prediction accuracy 벤더 주장)",
+    "title": "IBM Watson Recruitment — bias-mitigated candidate matching",
     "primary_category": "Talent Acquisition",
     "subcategory": "Screening & Assessment",
     "company": "IBM",
@@ -5310,7 +5300,7 @@
   },
   {
     "slug": "jpmorgan-goldman-sachs-hr-ai",
-    "title": "JPMorgan Chase + Goldman Sachs — 금융권 HR AI (ML 채용, GS AI 10k 직원, 인력 재편)",
+    "title": "JPMorgan Chase + Goldman Sachs — 금융권 HR AI",
     "primary_category": "Talent Acquisition",
     "subcategory": "Sourcing & Attraction",
     "company": "JPMorgan Chase, Goldman Sachs",
@@ -5388,12 +5378,13 @@
     "process_steps": [
       "사용자는 portal 내에서 모델 선택 (GS는 GPT/Gemini/Claude/OSS 중) → 문서 요약·이메일 초안·Excel/data 분석·번역 요청",
       "모든 prompt·response는 firewall 내 audit trail에 기록, 모델 swap 시 재학습 불필요",
+      "JPM은 8회 메이저 업그레이드로 custom assistant·문서 분석·시각화·모바일·접근성 기능 추가; GS는 Developer Copilot·Banker Copilot으로 확장",
       "HR 활용: 정책 Q&A, 성과 리뷰 초안, JD 작성, learning 콘텐츠 합성"
     ]
   },
   {
     "slug": "meta-ai-performance-review-mandate",
-    "title": "Meta — AI 채택을 성과 평가 기준으로 의무화 (2026~)",
+    "title": "Meta — AI 채택을 성과 평가 기준으로 의무화",
     "primary_category": "Performance & Talent Management",
     "subcategory": "Goal & Performance",
     "company": "Meta",
@@ -5465,8 +5456,10 @@
     },
     "process_before": "Meta 직원들의 AI 도구 채택률이 불균형 — 일부 엔지니어만 적극 활용, 나머지는 기존 방식 유지. 자발적 채택만으로는 전사 AI transformation 속도가 부족 / Pain point: Moderna(모든 직원에게 ChatGPT Enterprise 배포)·Deloitte(470k Claude)·PwC(65k upskilling) 등 경쟁사가 전사 AI 배포를 가속화하는 상황에서, Meta가 \"AI-first 기업\"이라는 포지셔닝을 유지하려면 채택을 기대가 아닌 의무로 전환 필요 / Trigger: 내부 데이터에서 AI 도구 활용 직원의 생산성이 높다는 신호 → \"AI 채택을 성과 평가에 공식 반영\"이라는 가장 과감한 정책 결정",
     "process_steps": [
+      "CHRO Janelle Gale 메모(2025-11)로 2026 review 사이클부터 \"AI-driven impact\"를 모든 직급·직군의 core expectation으로 공식화",
       "직원이 자기 평가에 AI를 활용한 productivity·dev cycle·team performance 기여 사례 명시",
       "매니저가 AI usage·outcome을 PSC rubric에 반영해 평가, exceptional individual/team에 reward",
+      "Engineering 조직은 별도 KPI(예: creation org는 H1 2026까지 65% 엔지니어가 commit code의 75%+를 AI assistance로 작성) 부여",
       "People Analytics가 부서별 AI adoption·impact 분포를 leadership에 리포트"
     ]
   },
@@ -5534,15 +5527,14 @@
     },
     "process_before": "_미공개_ — 아마 HR 팀 직접 문의, 또는 기존 benefits portal의 FAQ 수준. 이 전제는 소스에 없음, 추측 금지 — 단순히 \"미공개\" /",
     "process_steps": [
-      "직원",
-      "Benefits Assistant GPT",
-      "Equity Comp GPT",
-      "HR 팀"
+      "직원이 혜택·equity 관련 질문을 GPT에 입력",
+      "GPT가 정책·FAQ·개인 상황 반영하여 답변",
+      "해결되지 않으면 HR로 escalate (이 escalation 경로는 미공개)"
     ]
   },
   {
     "slug": "moderna-self-review-gpt",
-    "title": "Moderna — Self-Review GPT (연말 성과 리뷰 요약)",
+    "title": "Moderna — Self-Review GPT",
     "primary_category": "Performance & Talent Management",
     "subcategory": "Goal & Performance",
     "company": "Moderna",
@@ -5604,15 +5596,14 @@
     },
     "process_before": "_미공개_ /",
     "process_steps": [
-      "직원",
-      "Self-Review GPT",
-      "요약 Draft",
-      "연말 Performance Review"
+      "직원이 본인의 성과 data·프로젝트·목표 달성을 GPT에 입력/연결",
+      "GPT가 연말 리뷰 초안 요약",
+      "직원이 검토·편집 후 제출 (추정 흐름 아님, 소스에 구체 단계 미공개 — 위 흐름은 \"self-review 요약\"이라는 기능 정의에서 직접 읽히는 부분만)"
     ]
   },
   {
     "slug": "nps-ai-innovation-taskforce",
-    "title": "국민연금공단 — AI·혁신 추진단 + AI사원·AI 규정비서·AI 수어 영상 (CAIO 신설)",
+    "title": "국민연금공단 — AI·혁신 추진단 + AI사원·AI 규정비서·AI 수어 영상",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "HR Tech Governance",
     "company": "국민연금공단",
@@ -5684,11 +5675,16 @@
       "평가·가드레일": "KR AI 기본법 인적감독 의무 — 연금 의사결정 영향 시"
     },
     "process_before": "국민연금공단 ~7K 직원, 5,000만+ 국민 가입자 — 상담·규정 응대 부담 거대 / Pain point: 공공기관 디지털 전환 + 정부 AI 정책 (한국 AI 기본법 2026-01) 대응 / Trigger: 2025-09 AI·혁신 추진단 출범 — 기관 차원 AI 거버넌스 강화",
-    "process_steps": []
+    "process_steps": [
+      "AI 사원",
+      "AI 규정비서",
+      "AI 수어 영상안내",
+      "AI·혁신 추진단"
+    ]
   },
   {
     "slug": "posco-dx-110-agents-hr",
-    "title": "포스코DX — 인사·구매·경영분석 110 AI 에이전트 + 그룹 AI 거버넌스 (2026 조직개편)",
+    "title": "포스코DX — 인사·구매·경영분석 110 AI 에이전트 + 그룹 AI 거버넌스",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "HR Tech Governance",
     "company": "포스코DX (포스코 그룹)",
@@ -5762,7 +5758,12 @@
       "평가·가드레일": "\"개발 중\" (announced) — production 후 검증 필요"
     },
     "process_before": "포스코 그룹 ~30K 직원 사무 영역 (인사·구매·경영분석)에 단순 반복 업무 다수 / Pain point: 철강 산업 DX 전환 + 그룹 차원 AI 통합 부재 (계열사별 분산) / Trigger: 2026 그룹 조직개편 — 그룹DX전략실 + AI·로봇 융합 연구소 신설로 거버넌스 강화",
-    "process_steps": []
+    "process_steps": [
+      "110개 AI 에이전트가 인사·구매·경영분석 사무 업무 자동화",
+      "그룹DX전략실 (임치현 실장)이 portfolio 거버넌스",
+      "AI·로봇 융합 연구소 (윤일용 소장)이 R&D 연계",
+      "계열사 (포스코·포스코홀딩스·포스코이앤씨 등) 공통 활용"
+    ]
   },
   {
     "slug": "sk-group-aict-ai-recruitment",
@@ -5837,17 +5838,17 @@
     },
     "process_before": "_미공개_. 일반적으로 알려진 한국 대기업 공채 플로우 (서류→인적성→코딩/필기→면접→합격 통보)는 일반 지식이며 SK 특정 프로세스는 소스에 세부 없음 /",
     "process_steps": [
-      "— 지원자가 온라인 지원",
-      "— 생성형 AI 자동 스크리닝 (LLM 기반, 시간당 1,000명)",
-      "— 생성형 AI 활용 능력 평가:",
-      "— ★ AI 100% 자동화 (진행·평가·결과 보고서 작성 모두 AI)",
-      "6. 합격/불합격 고지 — AI 자동",
-      "— AI 자동"
+      "서류 지원: — 지원자가 온라인 지원",
+      "서류 심사: — 생성형 AI 자동 스크리닝 (LLM 기반, 시간당 1,000명)",
+      "필기 시험 (AICT): — 생성형 AI 활용 능력 평가",
+      "1차 면접: — ★ AI 100% 자동화 (진행·평가·결과 보고서 작성 모두 AI)",
+      "(후속 면접은 사람 또는 혼합 — 소스에 명시 없음): 6. 합격/불합격 고지 — AI 자동",
+      "OT 안내: — AI 자동"
     ]
   },
   {
     "slug": "tampa-general-visier-people-analytics",
-    "title": "Tampa General Hospital — Visier People Analytics (Agency Spend 70% 절감, $50M+ 재투자)",
+    "title": "Tampa General Hospital — Visier People Analytics",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "People Analytics",
     "company": "Tampa General Hospital",
@@ -5906,17 +5907,14 @@
     "model": {},
     "process_before": "에이전시 노동에 의존, 공석 원인 분석 없이 임시 충원 반복 /",
     "process_steps": [
-      "HRIS 인력 데이터\\n공석·이직·에이전시 비용",
-      "Visier 인력 분석",
-      "재무 데이터",
-      "대시보드·인사이트",
-      "보상 재투자\\n$50M+",
-      "공석율 < 10%\\n에이전시 의존 70% ↓"
+      "Visier로 공석율·이직 패턴·에이전시 비용 연동 분석",
+      "인력 투자 우선순위 결정",
+      "보상 재투자로 내부 충원율 제고"
     ]
   },
   {
     "slug": "workday-illuminate-performance-review-agent",
-    "title": "Workday — Illuminate Performance Review Agent (매니저 리뷰 초안 자동 생성)",
+    "title": "Workday — Illuminate Performance Review Agent",
     "primary_category": "Performance & Talent Management",
     "subcategory": "Goal & Performance",
     "company": "_다수 (Workday 고객)_",
@@ -5974,16 +5972,14 @@
     "model": {},
     "process_before": "매니저가 직원별로 여러 시스템(HRIS·프로젝트 관리·피드백 도구)에서 데이터 수집 → 수동으로 리뷰 작성 /",
     "process_steps": [
-      "Workday HRIS 데이터",
-      "Performance Review Agent",
-      "타 시스템 데이터",
-      "리뷰 초안 생성",
-      "최종 리뷰 제출"
+      "Performance Review Agent가 타 시스템 데이터를 자동 수집",
+      "리뷰 초안 자동 생성",
+      "매니저가 검토·수정·확정"
     ]
   },
   {
     "slug": "beamery-atkins-realis-skills-architecture",
-    "title": "AtkinsRéalis — Beamery 기반 Skills Architecture (89% 스킬매핑 시간↓, Forrester 467% ROI)",
+    "title": "AtkinsRéalis — Beamery 기반 Skills Architecture",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "Workforce Planning",
     "company": "AtkinsRéalis",
@@ -6050,7 +6046,7 @@
   },
   {
     "slug": "coca-cola-southwest-perceptyx-activate",
-    "title": "Arca Continental Coca-Cola Southwest Beverages — Perceptyx Activate AI 코칭 넛지 (리더십 지수 +24pp)",
+    "title": "Arca Continental Coca-Cola Southwest Beverages — Perceptyx Activate AI 코칭 넛지",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Listening & Engagement",
     "company": "Arca Continental Coca-Cola Southwest Beverages",
@@ -6120,7 +6116,7 @@
   },
   {
     "slug": "deloitte-workforce-analyzer-salesforce",
-    "title": "Deloitte — Workforce Analyzer + Planner+ AI Suite (Salesforce 도입, 300+ HR 워크플로)",
+    "title": "Deloitte — Workforce Analyzer + Planner+ AI Suite",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "Workforce Planning",
     "company": "Salesforce (named customer)",
@@ -6187,7 +6183,7 @@
   },
   {
     "slug": "hirevue-ai-assessment-bias-audit",
-    "title": "HireVue — AI 비디오 면접 + 게임 기반 평가 (134% ROI, NYC LL144 bias audit)",
+    "title": "HireVue — AI 비디오 면접 + 게임 기반 평가",
     "primary_category": "Talent Acquisition",
     "subcategory": "Interview & Selection",
     "company": "_다수 (major financial institution 등)_",
@@ -6252,7 +6248,7 @@
   },
   {
     "slug": "hitachi-ema-agentic-hr-onboarding",
-    "title": "Hitachi — Skye 에이전틱 AI HR 컴패니언 (Ema 플랫폼, 온보딩 4일 단축)",
+    "title": "Hitachi — Skye 에이전틱 AI HR 컴패니언",
     "primary_category": "Onboarding & Transitions",
     "subcategory": "New-hire Onboarding",
     "company": "Hitachi",
@@ -6324,7 +6320,7 @@
   },
   {
     "slug": "kogas-hybrid-genai-platform",
-    "title": "한국가스공사 — 하이브리드 GenAI 플랫폼 (사내 LLM + 상용 LLM, GenON 구축)",
+    "title": "한국가스공사 — 하이브리드 GenAI 플랫폼",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "HR Service Delivery",
     "company": "한국가스공사",
@@ -6457,16 +6453,16 @@
     "process_before": "공무원이 생성형 AI를 개인적·비공식적으로 사용하거나 외부 서비스 접근. /",
     "process_steps": [
       "공무원",
-      "범정부 AI 공통기반\\n내부망 보안 환경",
+      "범정부 AI 공통기반 내부망 보안 환경",
       "삼성SDS·네이버클라우드 LLM",
-      "법령·지침·민원 RAG\\n행정 문서 연계",
+      "법령·지침·민원 RAG 행정 문서 연계",
       "AI 응답 생성",
       "공무원 검토·결재"
     ]
   },
   {
     "slug": "lotte-job-based-hr-reform",
-    "title": "롯데그룹 — 직무 기반 HR 인사제도 전면 개편 (직무급제 계열사 확대)",
+    "title": "롯데그룹 — 직무 기반 HR 인사제도 전면 개편",
     "primary_category": "Total Rewards",
     "subcategory": "Compensation",
     "company": "롯데그룹",
@@ -6523,7 +6519,7 @@
   },
   {
     "slug": "microsoft-employee-self-service-agent",
-    "title": "Microsoft — Employee Self-Service Agent + Viva Copilot HR (내부 배포)",
+    "title": "Microsoft — Employee Self-Service Agent + Viva Copilot HR",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "Microsoft",
@@ -6590,7 +6586,7 @@
   },
   {
     "slug": "pwc-ai-upskilling-65k",
-    "title": "PwC — 65,000명 AI 업스킬링 + 75,000명 Agentic AI 파일럿",
+    "title": "PwC — 전사 AI 업스킬링 + Agentic AI 도입",
     "primary_category": "Learning & Development",
     "subcategory": "Content & Delivery",
     "company": "PwC",
@@ -6654,7 +6650,7 @@
   },
   {
     "slug": "t-mobile-textio-dei-hiring",
-    "title": "T-Mobile — Textio AI 포용적 채용 언어 (여성 지원자 +17%, 채용 소요 5일 단축)",
+    "title": "T-Mobile — Textio AI 포용적 채용 언어",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "DEI",
     "company": "T-Mobile",
@@ -6728,7 +6724,7 @@
   },
   {
     "slug": "textio-tmobile-inclusive-jd",
-    "title": "T-Mobile — Textio AI 기반 포용적 JD 작성 (여성 지원 17%↑, 5일 빠른 충원)",
+    "title": "T-Mobile — Textio AI 기반 포용적 JD 작성",
     "primary_category": "Talent Acquisition",
     "subcategory": "Sourcing & Attraction",
     "company": "T-Mobile",
@@ -6793,7 +6789,7 @@
   },
   {
     "slug": "toshiba-microsoft-copilot-viva",
-    "title": "Toshiba — Microsoft 365 Copilot + Viva Insights (10,000명, 월 5.6시간 절감)",
+    "title": "Toshiba — Microsoft 365 Copilot + Viva Insights",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "Toshiba",
@@ -6867,7 +6863,7 @@
   },
   {
     "slug": "accenture-ai-learning-workforce",
-    "title": "Accenture — AI 기반 학습 플랫폼 (32% 과정 완료↑, 50% 교육 시간↓) + 인력 전략",
+    "title": "Accenture — AI 기반 학습 플랫폼 + 인력 전략",
     "primary_category": "Learning & Development",
     "subcategory": "Content & Delivery",
     "company": "Accenture",
@@ -6932,7 +6928,7 @@
   },
   {
     "slug": "adp-assist-payroll-ai",
-    "title": "ADP Assist — AI 급여 이상 탐지 + GenAI 인사 분석 (Innovation Day 2025)",
+    "title": "ADP Assist — AI 급여 이상 탐지 + GenAI 인사 분석",
     "primary_category": "Total Rewards",
     "subcategory": "Payroll Operations",
     "company": "ADP",
@@ -7008,7 +7004,7 @@
   },
   {
     "slug": "clap-ai-performance-korea",
-    "title": "CLAP(클랩) — AI 기반 성과관리 SaaS (AI 피드백·평가 요약·원온원)",
+    "title": "CLAP — AI 기반 성과관리 SaaS",
     "primary_category": "Performance & Talent Management",
     "subcategory": "Goal & Performance",
     "company": "디웨일 (CLAP)",
@@ -7066,7 +7062,7 @@
       "입력 데이터 소스": "주관식 평가 텍스트, 원온원 노트, 직원 성과 데이터."
     },
     "model": {},
-    "process_before": "관리자가 수동으로 주관식 평가 작성. 원온원 노트 수동 기록. /",
+    "process_before": "국내 중견·대기업의 성과 평가 시즌(월별·분기·연간)마다 관리자가 수동으로 주관식 평가 코멘트 작성 + HR이 수백~수천 건의 평가 내용을 수동 취합·정리. 원온원 미팅 노트도 수기 기록. ❓ 구체 시간/비용 baseline 미공개 (관리자당 평가 작성 시간, HR 취합 소요 시간 등) / Pain point: (1) 형식적·부정확한 평가 코멘트 — 관리자가 시간 압박으로 \"복붙\"하거나 피상적으로 작성 → 직원 개발에 도움 안 됨. (2) HR 행정 부담 — 평가 시즌에 HR 인력이 취합·정리에 과도 투입. (3) 원온원 미팅 내용이 기록되지 않거나 비체계적 → 지속적 성과 관리 연결 부족 / Trigger: 국내 중견기업(인지그룹 등)이 SaaS 기반 성과관리 도구를 탐색하면서 \"AI가 코멘트를 자동 요약",
     "process_steps": [
       "Fact 주관식 평가 코멘트 AI 자동 요약·정제 + 비속어·불필요 표현 필터링.",
       "Fact AI 피드백 생성.",
@@ -7077,7 +7073,7 @@
   },
   {
     "slug": "cultureamp-ai-coach-asana",
-    "title": "Culture Amp — AI Coach (Asana·Canva·McDonald's: 6,800+ 기업 매니저 코칭)",
+    "title": "Culture Amp — AI Coach",
     "primary_category": "Performance & Talent Management",
     "subcategory": "Coaching",
     "company": "Asana",
@@ -7134,17 +7130,15 @@
     "model": {},
     "process_before": "매니저가 성과 리뷰를 빈 페이지에서 시작 → engagement 결과를 수동 해석 → 액션 플랜 없이 방치 /",
     "process_steps": [
-      "Engagement 설문 결과",
-      "AI Coach 분석",
-      "과거 피드백·동료 리뷰",
-      "개인화 액션 플랜",
-      "구조화 리뷰 가이드",
-      "성과 리뷰 제출"
+      "AI Coach가 과거 피드백·동료 리뷰를 자동 통합",
+      "구조화된 리뷰 가이드 제공",
+      "engagement 결과 기반 개인화 액션 플랜",
+      "매니저에게 대화형 코칭"
     ]
   },
   {
     "slug": "greetinghr-ats-ai-korea",
-    "title": "그리팅 — 국내 1위 AI ATS (채용 소요시간 65% 단축, 중소기업 도입률 158%↑)",
+    "title": "그리팅 — 국내 1위 AI ATS",
     "primary_category": "Talent Acquisition",
     "subcategory": "Screening & Assessment",
     "company": "그리팅 (Greeting HR)",
@@ -7210,7 +7204,7 @@
   },
   {
     "slug": "hsbc-eightfold-gloat-multi-vendor",
-    "title": "HSBC — Eightfold AI + Gloat + SAP SF 멀티벤더 HR AI (140k 직원)",
+    "title": "HSBC — Eightfold AI + Gloat + SAP SF 멀티벤더 HR AI",
     "primary_category": "Talent Acquisition",
     "subcategory": "Screening & Assessment",
     "company": "HSBC",
@@ -7284,7 +7278,7 @@
   },
   {
     "slug": "lg-uplus-jihye-employee-agent",
-    "title": "LG U+ — '지혜(Wisdom)' 임직원 AI 에이전트 (이메일·코드·요약, 2025-05 파일럿)",
+    "title": "LG U+ — '지혜 ' 임직원 AI 에이전트",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Workflow-embedded copilot",
     "company": "LG U+",
@@ -7338,11 +7332,16 @@
     "data": {},
     "model": {},
     "process_before": "LG U+ 직원이 이메일·문서·코드를 manual 처리 / Pain point: 통신사 코드 base 거대 + glob·다국적 파트너 이메일 다언어 / Trigger: 2025 한국 통신사 사내 AI 가속",
-    "process_steps": []
+    "process_steps": [
+      "이메일 자동 번역",
+      "파일 요약 (PDF·Word 등)",
+      "코드 리뷰 + 오류 사전 탐지",
+      "사내 코드 분석"
+    ]
   },
   {
     "slug": "phenom-merck-kgaa-talent-marketplace",
-    "title": "Merck KGaA — Phenom 기반 내부 인재 플랫폼 (36k 직원, 200k 스킬, 1k 멘토십)",
+    "title": "Merck KGaA — Phenom 기반 내부 인재 플랫폼",
     "primary_category": "Onboarding & Transitions",
     "subcategory": "Internal Mobility",
     "company": "Merck KGaA",
@@ -7408,7 +7407,7 @@
   },
   {
     "slug": "qualtrics-adidas-employee-experience-ai",
-    "title": "adidas — Qualtrics XM AI (수동 분석 95%↓, 매니저 행동 계획 70%↑)",
+    "title": "adidas — Qualtrics XM AI",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Listening & Engagement",
     "company": "adidas",
@@ -7477,7 +7476,7 @@
   },
   {
     "slug": "samsung-fire-employee-rag-chatbot",
-    "title": "삼성화재 — 임직원 RAG 챗봇 (보험 약관 + 사내 규정 통합, 2026 추진)",
+    "title": "삼성화재 — 임직원 RAG 챗봇",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Employee Self-service",
     "company": "삼성화재",
@@ -7533,11 +7532,15 @@
     "data": {},
     "model": {},
     "process_before": "보험사 직원이 약관·특약·사내 규정 search 시 sharepoint·시니어 문의 의존 / Pain point: 보험 약관·특약 양 거대 + 빈번한 변경 → 신입·경력 모두 학습 부담 / Trigger: 2026 삼성생명 중심 그룹 AI센터 (126명) 인접 인프라 활용",
-    "process_steps": []
+    "process_steps": [
+      "직원이 RAG 챗봇 query",
+      "보험 약관·특약·사내 규정 RAG 검색",
+      "답변 + 출처 표시"
+    ]
   },
   {
     "slug": "spring-health-general-mills-ai-eap",
-    "title": "Spring Health — General Mills AI 정신건강 EAP (이용률 1%→26%, 우울증 58% 개선)",
+    "title": "Spring Health — General Mills AI 정신건강 EAP",
     "primary_category": "Total Rewards",
     "subcategory": "Benefits & Wellbeing",
     "company": "General Mills",
@@ -7598,18 +7601,15 @@
     "model": {},
     "process_before": "전통 EAP → 직원이 전화로 접수 → 치료사 무작위 배정 → 이용률 1% /",
     "process_steps": [
-      "직원 앱/웹 접근",
-      "AI 정신건강 평가",
-      "치료 경로 추천",
-      "치료사 정밀 매칭",
-      "치료·코칭 세션",
-      "증상 추적·재평가",
-      "지속 관리"
+      "Spring Health 앱/웹에서 AI 기반 정신건강 평가(wellness assessment) 완료",
+      "AI가 최적 치료 경로(therapy/coaching/자가관리) 추천",
+      "정밀 매칭으로 치료사 배정",
+      "이용률 26%"
     ]
   },
   {
     "slug": "ukg-ai-workforce-scheduling-healthcare",
-    "title": "UKG — AI Workforce Scheduling & Intelligence Hub (KC CARE 92%↑, Jetro $2.2M 절감)",
+    "title": "UKG — AI Workforce Scheduling & Intelligence Hub",
     "primary_category": "Total Rewards",
     "subcategory": "Benefits & Wellbeing",
     "company": "KC CARE Health Center",
@@ -7670,18 +7670,14 @@
     "model": {},
     "process_before": "매니저가 수동으로 교대표 작성 → 자격증·컴플라이언스·선호도 수동 확인 → 채용도 개별 프로세스 /",
     "process_steps": [
-      "자격증·규제·선호도 데이터",
-      "AI 스케줄링 엔진",
-      "최적 교대표 추천",
-      "스케줄 배포",
-      "Workforce Intelligence Hub",
-      "실시간 통합 뷰",
-      "타임·급여 데이터"
+      "AI가 자격증·규제·선호도·노동법 제약을 반영한 최적 스케줄 자동 생성",
+      "Workforce Intelligence Hub에서 스케줄·타임·채용·급여 데이터 실시간 통합 뷰",
+      "UKG Rapid Hire로 AI-first 채용"
     ]
   },
   {
     "slug": "viven-ai-digital-twin-coworker",
-    "title": "Viven AI — Digital Twin of Coworkers (Eightfold 분사, $35M seed 2025-10)",
+    "title": "Viven AI — Digital Twin of Coworkers",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Knowledge Capture & Sharing",
     "company": "_N/A (vendor product, stealth exit 직후 customer 0건)_",
@@ -7745,7 +7741,7 @@
   },
   {
     "slug": "zapier-enboarder-ai-onboarding",
-    "title": "Zapier — Enboarder AI 온보딩 자동화 (206,000분 절감, 2.5배 온보딩 만족도)",
+    "title": "Zapier — Enboarder AI 온보딩 자동화",
     "primary_category": "Onboarding & Transitions",
     "subcategory": "New-hire Onboarding",
     "company": "Zapier",
@@ -7815,7 +7811,7 @@
   },
   {
     "slug": "15five-kona-reup-ai-manager-coaching",
-    "title": "15Five Kona — AI 매니저 코칭 에이전트 (ReUp Education 도입)",
+    "title": "15Five Kona — AI 매니저 코칭 에이전트",
     "primary_category": "Performance & Talent Management",
     "subcategory": "Coaching",
     "company": "ReUp Education",
@@ -7872,18 +7868,15 @@
     "model": {},
     "process_before": "매니저가 1:1 미팅을 자유 형식으로 진행 → 노트 수동 작성 → 후속 조치 누락 빈번 → HR이 매니저 효과성 파악 어려움 /",
     "process_steps": [
-      "1:1 미팅 시작",
-      "Kona 자동 참여·전사",
-      "요약·액션 아이템 생성",
-      "engagement·성과 데이터 분석",
-      "실시간 코칭 팁 전달",
-      "행동 변화 자동 추적",
-      "HR 대시보드 모니터링"
+      "Kona가 1:1 미팅에 자동 참여",
+      "대화 전사·요약·액션 아이템 생성",
+      "engagement·성과 데이터 기반 실시간 코칭 팁 전달",
+      "매니저 행동 변화 자동 추적"
     ]
   },
   {
     "slug": "allegis-group-holistic-ai-governance",
-    "title": "Allegis Group — Holistic AI 거버넌스 플랫폼 (500+ AI 시스템 가시화, HR AI 감사)",
+    "title": "Allegis Group — Holistic AI 거버넌스 플랫폼",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "HR Tech Governance",
     "company": "Allegis Group",
@@ -7954,7 +7947,7 @@
   },
   {
     "slug": "bersin-galileo-learn-ai-native-lms",
-    "title": "Josh Bersin Co. — Galileo Learn (AI-native 기업 학습 플랫폼)",
+    "title": "Josh Bersin Co. — Galileo Learn",
     "primary_category": "Learning & Development",
     "subcategory": "Content & Delivery",
     "company": "_N/A (product, single known deployment = vendor itself)_",
@@ -8031,7 +8024,7 @@
   },
   {
     "slug": "betterworks-nextgen-ai-performance",
-    "title": "Betterworks NextGen — AI-Native 성과관리 (Colgate-Palmolive·Intuit·Kuehne+Nagel)",
+    "title": "Betterworks NextGen — AI-Native 성과관리",
     "primary_category": "Performance & Talent Management",
     "subcategory": "Goal & Performance",
     "company": "Colgate-Palmolive",
@@ -8088,12 +8081,10 @@
     "model": {},
     "process_before": "연 1~2회 목표 설정 → 수동 리뷰 작성 → 편향 보정 없음 /",
     "process_steps": [
-      "역할·팀·회사 우선순위",
-      "Goal Intelligence",
-      "SMART 목표 추천",
+      "Goal Intelligence가 역할·팀·회사 맥락 기반 SMART 목표 추천",
       "연속 피드백 수집",
-      "AI 리뷰 편향 탐지",
-      "최종 평가 제출"
+      "AI가 리뷰 편향 탐지·일관성 향상",
+      "부서·지역별 단계적 AI 활성화"
     ]
   },
   {
@@ -8170,7 +8161,7 @@
   },
   {
     "slug": "flex-korea-hr-ai-saas",
-    "title": "플렉스(flex) — 한국 올인원 HR SaaS (6만 기업, AI 에이전트 도입 계획)",
+    "title": "플렉스 — 한국 올인원 HR SaaS",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Core HR & Employee Records",
     "company": "플렉스팀",
@@ -8228,17 +8219,14 @@
     "model": {},
     "process_before": "수기 근무표 → 엑셀 입력 → 급여 수동 계산 → 노동법 변경 시 수동 반영 /",
     "process_steps": [
-      "수기 근무표",
-      "OCR 변환",
-      "디지털 스케줄",
-      "연장·야간·휴일 가산임금 자동 산출",
-      "노동법·세법 질의",
-      "AI 에이전트 상담"
+      "OCR이 수기 근무표를 앱 내 스케줄로 자동 변환",
+      "AI 에이전트가 노동법·세법 이슈 상담",
+      "근태 데이터 기반 연장·야간·휴일 가산임금 자동 산출"
     ]
   },
   {
     "slug": "gs-caltex-aiu-platform",
-    "title": "GS칼텍스 — 'AIU' 사내 GenAI 통합 플랫폼 (정유·에너지)",
+    "title": "GS칼텍스 — 'AIU' 사내 GenAI 통합 플랫폼",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Performance Support",
     "company": "GS칼텍스 (GS 그룹)",
@@ -8291,11 +8279,15 @@
     "data": {},
     "model": {},
     "process_before": "GS칼텍스 ~3K 직원이 정유·안전 매뉴얼·정책을 manual search / Pain point: 정유 산업 안전 critical + 매뉴얼 양 거대 / Trigger: 2025 한국 기업 사내 AI 플랫폼 가속",
-    "process_steps": []
+    "process_steps": [
+      "AIU 플랫폼",
+      "직원 자연어 query",
+      "안전·실무 정보 응답"
+    ]
   },
   {
     "slug": "lattice-ai-performance-summarization",
-    "title": "Lattice — AI Performance Summarization & AI Agent (매니저 리뷰 시간 절감)",
+    "title": "Lattice — AI Performance Summarization & AI Agent",
     "primary_category": "Performance & Talent Management",
     "subcategory": "Goal & Performance",
     "company": "Ruggable",
@@ -8351,19 +8343,15 @@
     "model": {},
     "process_before": "매니저가 직원별 피드백·리뷰를 수동으로 읽고 종합 → 목표 대시보드 수동 확인 /",
     "process_steps": [
-      "360도 피드백·리뷰",
-      "AI Performance Summarization",
-      "핵심 트렌드 요약",
-      "목표 데이터",
-      "Goals AI",
-      "자연어 목표 분석",
-      "팀 안정성·sentiment·피드백",
-      "AI Agent"
+      "AI Performance Summarization이 현 주기 피드백·리뷰를 자동 요약",
+      "핵심 트렌드 도출",
+      "Goals AI가 자연어 쿼리로 목표 진척 분석",
+      "AI Agent가 이탈 리스크 신호 탐지"
     ]
   },
   {
     "slug": "lgcns-agentic-ai-hr",
-    "title": "LG CNS — 에이전틱 AI 기반 HR 채용·인사 시스템 (26% 생산성↑)",
+    "title": "LG CNS — 에이전틱 AI 기반 HR 채용·인사 시스템",
     "primary_category": "Talent Acquisition",
     "subcategory": "Screening & Assessment",
     "company": "LG CNS (자사 + 고객사)",
@@ -8428,7 +8416,7 @@
   },
   {
     "slug": "nestle-paradox-recruiting",
-    "title": "Nestlé — Paradox Olivia 기반 채용 자동화 (인터뷰 600% 증가)",
+    "title": "Nestlé — Paradox Olivia 기반 채용 자동화",
     "primary_category": "Talent Acquisition",
     "subcategory": "Screening & Assessment",
     "company": "Nestlé",
@@ -8495,7 +8483,7 @@
   },
   {
     "slug": "salesforce-orgvue-org-design-ai",
-    "title": "Salesforce — Orgvue Henshaw AI 조직설계 (8,000개 직무 83개 클러스터, 6개월 → 6일)",
+    "title": "Salesforce — Orgvue Henshaw AI 조직설계",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "Org Design",
     "company": "Salesforce",
@@ -8625,7 +8613,7 @@
   },
   {
     "slug": "unilever-flex-gloat-talent-marketplace",
-    "title": "Unilever — FLEX Experiences (Gloat AI Talent Marketplace)",
+    "title": "Unilever — FLEX Experiences",
     "primary_category": "Onboarding & Transitions",
     "subcategory": "Internal Mobility",
     "company": "Unilever",
@@ -8693,13 +8681,13 @@
       "직원이 professional profile + purpose statement (관심·포부) 작성",
       "Gloat AI가 직원 스킬과 등록된 프로젝트·역할 기회를 매칭",
       "직원에게 기회 추천 (단기 프로젝트·장기 역할 모두)",
-      "(본업 수행 전제)",
+      "매니저 허가 불필요: (본업 수행 전제)",
       "미매칭 직원에겐 \"develop할 스킬\" 추천"
     ]
   },
   {
     "slug": "visier-vee-people-analytics",
-    "title": "Visier — Vee AI Digital Assistant + Org Design (People Analytics)",
+    "title": "Visier — Vee AI Digital Assistant + Org Design",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "People Analytics",
     "company": "Providence (healthcare, 주요 고객)",
@@ -8829,15 +8817,12 @@
     },
     "process_before": "_미공개. Bersin·PR 모두 기존 workflow를 기술하지 않음_ /",
     "process_steps": [
-      "Workday 내 직무·역할·스킬 데이터",
-      "Job Architecture Agent",
-      "HR 매니저 대시보드",
-      "직무 체계 업데이트"
+      "After (To-be) (PR 기준): 에이전트가 \"job ladder의 생성과 관리를 자동화\" (구체 단계 미공개)"
     ]
   },
   {
     "slug": "sk-hynix-one-resume-employee-search",
-    "title": "SK하이닉스 — One Resume + AI 구성원 검색 (통합 직원 프로필·내부 talent search)",
+    "title": "SK하이닉스 — One Resume + AI 구성원 검색",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Core HR & Employee Records",
     "company": "SK하이닉스",
@@ -8895,16 +8880,16 @@
     "model": {},
     "process_before": "SK하이닉스 38K 직원의 인사 데이터가 HRMS·평가·교육·프로젝트·자격증·외부 교육 등 다수 시스템에 분산. 매니저가 internal mobility·project staffing·후계자 후보 검색 시 여러 시스템 + 인적 네트워크 의존 / Pain point: / 사내 talent visibility 부족 — 매니저가 \"양산공정 + 머신러닝 경험 5년+ 영어 가능자\"를 사내에서 찾기 어려움 / 직원 본인도 자기 career path·내부 기회 잘 모름 / 핵심 인재 retention·project staffing·후계자 풀 식별 모두 동일한 root cause (skill·경력 visibility 부재) / Trigger: 2024-25 SK 그룹 차원 AI 적극 도입 흐름",
     "process_steps": [
-      ": HRMS·평가·교육 LMS·프로젝트 시스템·자격 DB·외부 교육 이력 등에서 직원별 데이터 자동 수집 → ETL → 단일 직원 프로필",
-      ":",
-      ":",
-      ": 본인 One Resume 검토·수정·career path 시각화·내부 기회 추천 받기",
+      "데이터 통합 layer: HRMS·평가·교육 LMS·프로젝트 시스템·자격 DB·외부 교육 이력 등에서 직원별 데이터 자동 수집 → ETL → 단일 직원 프로필",
+      "One Resume 생성: 정형 데이터 (인사 기본·역할·근속·평가·교육) + 비정형 데이터 (프로젝트 기여·자격·관심사) 결합",
+      "AI 구성원 검색 (talent search): 매니저가 자연어 query 입력 (예: \"머신러닝 + 양산공정 경험 5년+ 한국어/영어 가능\")",
+      "직원 self-service: 본인 One Resume 검토·수정·career path 시각화·내부 기회 추천 받기",
       "HR·리더 분석 dashboard: skill gap·talent inventory·후계자 풀 분석"
     ]
   },
   {
     "slug": "cathay-pacific-hirevue",
-    "title": "Cathay Pacific — HireVue AI 면접 (time-to-hire 90%↓, 3개월→2~3주)",
+    "title": "Cathay Pacific — HireVue AI 면접",
     "primary_category": "Talent Acquisition",
     "subcategory": "Interview & Selection",
     "company": "Cathay Pacific",
@@ -9039,14 +9024,14 @@
     },
     "process_before": "_미공개 (기업별 상이)_. 일반적 한국 기업의 기존 연말정산 플로우는 HR 담당자가 직원별로 국세청 간소화 자료 수집·입력·검증하는 수작업이나, 소스에 기업별 구체 기술은 없음 (🚫 일반 지식) /",
     "process_steps": [
-      "— ONE AI가 직원 DB에서 연말정산 대상자 자동 식별",
-      "— 대상자에게 일정·필요 자료 자동 고지",
-      "— 국세청 간소화 서비스에서 PDF 자동 다운로드, 시스템에 반영",
-      "— 연말정산 데이터 검증 + 세액 예측",
-      "— 원챔버 연동으로 직원이 추가 증빙 업로드",
-      "— 세액 계산 결과를 직원·HR에 자동 통보",
-      "— 홈택스 자동신고 + 요약보고서·지급명세서 자동 작성·신고",
-      "— 총괄현황판으로 전사 진행상황 실시간 관리"
+      "대상자 선정: — ONE AI가 직원 DB에서 연말정산 대상자 자동 식별",
+      "안내: — 대상자에게 일정·필요 자료 자동 고지",
+      "자료 입력: — 국세청 간소화 서비스에서 PDF 자동 다운로드, 시스템에 반영",
+      "검토: — 연말정산 데이터 검증 + 세액 예측",
+      "추가 증빙 수집: — 원챔버 연동으로 직원이 추가 증빙 업로드",
+      "결과 안내: — 세액 계산 결과를 직원·HR에 자동 통보",
+      "신고 처리: — 홈택스 자동신고 + 요약보고서·지급명세서 자동 작성·신고",
+      "HR 모니터링: — 총괄현황판으로 전사 진행상황 실시간 관리"
     ]
   },
   {
@@ -9115,7 +9100,7 @@
   },
   {
     "slug": "emirates-hirevue-volume-hiring",
-    "title": "Emirates — HireVue AI (60일→7일, 8k시간 절약, $500k 절감)",
+    "title": "Emirates — HireVue AI",
     "primary_category": "Talent Acquisition",
     "subcategory": "Interview & Selection",
     "company": "Emirates",
@@ -9179,7 +9164,7 @@
   },
   {
     "slug": "fuel50-lennox-internal-mobility",
-    "title": "Lennox — Fuel50 내부 이동 AI (4,800건 이동, 이동당 +5개월 근속)",
+    "title": "Lennox — Fuel50 내부 이동 AI",
     "primary_category": "Onboarding & Transitions",
     "subcategory": "Internal Mobility",
     "company": "Lennox",
@@ -9241,7 +9226,7 @@
   },
   {
     "slug": "mcdonalds-paradox-recruiting",
-    "title": "McDonald's — Paradox AI 채용 (21일→3일 미만 time-to-hire)",
+    "title": "McDonald's — Paradox AI 채용",
     "primary_category": "Talent Acquisition",
     "subcategory": "Screening & Assessment",
     "company": "McDonald's",
@@ -9305,7 +9290,7 @@
   },
   {
     "slug": "paychex-flex-agentic-workforce",
-    "title": "Paychex/Paycor — Agentic Workforce Management (타임시트 자동승인·Auto-Shifts, 800K 고객)",
+    "title": "Paychex/Paycor — Agentic Workforce Management",
     "primary_category": "Total Rewards",
     "subcategory": "Payroll Operations",
     "company": "_다수 (800K 고객)_",
@@ -9361,19 +9346,15 @@
     "model": {},
     "process_before": "매니저가 타임카드 수동 검토 → 교대표 수동 작성 → PTO 개별 승인 /",
     "process_steps": [
-      "타임카드 제출",
-      "Agentic Timesheet 스코어링",
-      "자동 승인",
-      "승인/수정",
-      "규칙: 근무시간·휴식·법규",
-      "Auto-Shifts",
-      "최적 교대표",
-      "과거 PTO 데이터"
+      "Agentic Timesheet Approvals가 타임카드를 임계값 기반 자동 스코어링",
+      "정상은 자동 승인, 이상만 사람에게 플래그",
+      "Auto-Shifts가 규칙(근무시간·휴식·공정근무) 기반 최적 교대 생성",
+      "AI Time-Off가 과거 PTO 패턴 분석·피크 예측"
     ]
   },
   {
     "slug": "samsung-multicampus-ai-learning",
-    "title": "삼성 멀티캠퍼스 — CIC AI 맞춤 교육 추천 (삼성전자 사내 교육)",
+    "title": "삼성 멀티캠퍼스 — CIC AI 맞춤 교육 추천",
     "primary_category": "Learning & Development",
     "subcategory": "Content & Delivery",
     "company": "삼성전자",
@@ -9427,11 +9408,14 @@
     "data": {},
     "model": {},
     "process_before": "LMS에서 직원이 과정 목록을 수동 탐색 → 관련성 낮은 과정 수강 → 학습 효율 저하 /",
-    "process_steps": []
+    "process_steps": [
+      "CIC가 부서·직급·직무·관심 키워드·수강 이력을 분석",
+      "맞춤형 교육 콘텐츠 자동 추천"
+    ]
   },
   {
     "slug": "sk-hynix-pwc-5agent-retention",
-    "title": "SK하이닉스 — PwC 제안 5-Agent Agentic Retention 시스템 (추진 계획, Structura·Cognita·Chronos·Sentio·Agora)",
+    "title": "SK하이닉스 — PwC 제안 5-Agent Agentic Retention 시스템",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "People Analytics",
     "company": "SK하이닉스",
@@ -9494,11 +9478,18 @@
     "data": {},
     "model": {},
     "process_before": "핵심 인재 이탈은 사후 면담 + 단편적 정형 데이터(근속·평가) 위주 분석. 미묘한 행동 변화·외부 시장 신호·관계 패턴 unintegrated. 매니저 \"감\"에 의존 / Pain point: SK하이닉스 38K 직원 중 반도체 핵심 인재 (R&D·tech 전문가) 이탈 비용 거대. 사후 대응으론 retention 불가 / Trigger: 2024-25 SK 그룹 차원 AI 적극 도입 + PwC Korea 컨설팅 제안",
-    "process_steps": []
+    "process_steps": [
+      "5개 specialist 에이전트가 각자 영역 데이터 분석",
+      "각 에이전트가 개별 퇴사 확률값 산출 → 이진 분류 (퇴사·재직)",
+      "Hybrid 가중치 엔진: AHP (분석적 계층 과정): HR 전문가 도메인 지식 정량화",
+      "위험 등급 산출: Green / Yellow / Red",
+      "Actionable 리포트 (LLM + XAI 기반)",
+      "HR·리더 의사결정 지원 → 개인화 retention action (면담·보상·경력 개발 기회)"
+    ]
   },
   {
     "slug": "syndio-pay-equity-ai",
-    "title": "Syndio — Syndi Expert AI (보상 공정성 + EU AI Act 준수)",
+    "title": "Syndio — Syndi Expert AI",
     "primary_category": "Total Rewards",
     "subcategory": "Compensation",
     "company": "_다수 (300+ 고객, 30% Fortune Most Admired)_",
@@ -9563,7 +9554,7 @@
   },
   {
     "slug": "wantedlab-ai-recruiting-agent",
-    "title": "원티드랩 — AI 채용 에이전트 (LLM 기반 자연어 인재 검색)",
+    "title": "원티드랩 — AI 채용 에이전트",
     "primary_category": "Talent Acquisition",
     "subcategory": "Sourcing & Attraction",
     "company": "_N/A (product, no specific customer deployment yet)_",
@@ -9634,15 +9625,15 @@
     "process_before": "채용 담당자가 키워드·필터로 후보자를 검색, 검색 결과를 수동으로 검토 /",
     "process_steps": [
       "채용 담당자가 자연어로 원하는 후보자 프로필 입력 (예: \"AI 스타트업 경험 있는 백엔드 5년차 이상\")",
-      ": 조건에 맞는 후보자를 빠르고 넓게 추출",
-      ": AI 에이전트가 각 후보의 자기소개서·프로젝트 경험 등 정성 데이터 분석",
+      "기본 탐색: 조건에 맞는 후보자를 빠르고 넓게 추출",
+      "고급 탐색: AI 에이전트가 각 후보의 자기소개서·프로젝트 경험 등 정성 데이터 분석",
       "AI가 역량·경험 판단 + 추천 사유 제시",
       "담당자가 최종 판단 및 컨택"
     ]
   },
   {
     "slug": "workday-illuminate-employee-sentiment",
-    "title": "Workday Illuminate — Employee Sentiment Agent (STUB)",
+    "title": "Workday Illuminate — Employee Sentiment Agent",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Listening & Engagement",
     "company": "_N/A_",

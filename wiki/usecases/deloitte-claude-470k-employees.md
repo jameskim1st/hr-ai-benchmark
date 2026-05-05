@@ -1,5 +1,5 @@
 ---
-title: "Deloitte — Anthropic Claude 470,000 직원 배포 (역대 최대 엔터프라이즈 AI)"
+title: "Deloitte — Anthropic Claude 전직원 배포"
 slug: deloitte-claude-470k-employees
 primary_category: Employee Experience & HR Ops
 subcategory: HR Service Delivery

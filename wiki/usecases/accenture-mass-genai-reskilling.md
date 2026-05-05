@@ -1,5 +1,5 @@
 ---
-title: "Accenture — 30 → 550,000+ 직원 GenAI 교육 (3년, AI/data 인력 40K → 77K)"
+title: "Accenture — 전사 GenAI 재스킬링"
 slug: accenture-mass-genai-reskilling
 primary_category: Learning & Development
 subcategory: Skills & Capabilities

@@ -1,5 +1,5 @@
 ---
-title: "IBM — AskHR 에이전트 (270,000 직원, watsonx Orchestrate 기반)"
+title: "IBM — AskHR 에이전트"
 slug: ibm-askhr-watsonx
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

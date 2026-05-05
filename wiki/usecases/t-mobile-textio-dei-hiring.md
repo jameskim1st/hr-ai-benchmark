@@ -1,5 +1,5 @@
 ---
-title: "T-Mobile — Textio AI 포용적 채용 언어 (여성 지원자 +17%, 채용 소요 5일 단축)"
+title: "T-Mobile — Textio AI 포용적 채용 언어"
 slug: t-mobile-textio-dei-hiring
 primary_category: Strategic Workforce & Governance
 subcategory: DEI

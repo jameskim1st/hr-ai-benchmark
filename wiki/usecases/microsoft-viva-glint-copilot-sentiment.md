@@ -1,5 +1,5 @@
 ---
-title: "Microsoft Viva Glint Copilot — engagement 서베이 open-end NLP 자동 합성 (2026-03 default ON)"
+title: "Microsoft Viva Glint Copilot — engagement 서베이 open-end NLP 자동 합성"
 slug: microsoft-viva-glint-copilot-sentiment
 primary_category: Employee Experience & HR Ops
 subcategory: Listening & Engagement

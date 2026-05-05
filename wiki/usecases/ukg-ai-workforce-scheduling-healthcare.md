@@ -1,5 +1,5 @@
 ---
-title: "UKG — AI Workforce Scheduling & Intelligence Hub (KC CARE 92%↑, Jetro $2.2M 절감)"
+title: "UKG — AI Workforce Scheduling & Intelligence Hub"
 slug: ukg-ai-workforce-scheduling-healthcare
 primary_category: Total Rewards
 subcategory: Benefits & Wellbeing

@@ -1,5 +1,5 @@
 ---
-title: "Cisco AI Workforce Consortium — 78% ICT 직무 AI 스킬 + Top 10 fastest-growing 7 AI-related"
+title: "Cisco AI Workforce Consortium — ICT 직무 AI 스킬 표준화"
 slug: cisco-ai-workforce-consortium-skills-evolution
 primary_category: Strategic Workforce & Governance
 subcategory: People Analytics

@@ -1,5 +1,5 @@
 ---
-title: "Walmart — Ask Sam AI 어시스턴트 (900k 직원, 주 3M 질문) + AI Interview Coach + 50k 리스킬링"
+title: "Walmart — Ask Sam AI 어시스턴트 + AI Interview Coach + 50k 리스킬링"
 slug: walmart-ask-sam-workforce-ai
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

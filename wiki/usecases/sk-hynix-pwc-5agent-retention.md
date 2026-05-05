@@ -1,5 +1,5 @@
 ---
-title: "SK하이닉스 — PwC 제안 5-Agent Agentic Retention 시스템 (추진 계획, Structura·Cognita·Chronos·Sentio·Agora)"
+title: "SK하이닉스 — PwC 제안 5-Agent Agentic Retention 시스템"
 slug: sk-hynix-pwc-5agent-retention
 primary_category: Strategic Workforce & Governance
 subcategory: People Analytics

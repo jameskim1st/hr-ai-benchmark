@@ -1,5 +1,5 @@
 ---
-title: "ADP Assist — AI 급여 이상 탐지 + GenAI 인사 분석 (Innovation Day 2025)"
+title: "ADP Assist — AI 급여 이상 탐지 + GenAI 인사 분석"
 slug: adp-assist-payroll-ai
 primary_category: Total Rewards
 subcategory: Payroll Operations

@@ -121,7 +121,7 @@ TAB_COLOR = {
 # ── Utility ──
 def strip_html(s, max_len=None):
     """HTML 태그 제거 → plain text. <br>·</li>는 줄바꿈으로, 다중 공백 collapse.
-    em-dash도 제거 (사용자 요청)."""
+    em-dash도 제거 (사용자 요청). max_len은 절대 한도 (Excel 32k 안전판) — 기본 잘림 비활성."""
     if not s:
         return ""
     # <br>·</li>·</p> → 줄바꿈
@@ -129,6 +129,11 @@ def strip_html(s, max_len=None):
     s = re.sub(r"</li>", "\n", s, flags=re.IGNORECASE)
     s = re.sub(r"</p>", "\n", s, flags=re.IGNORECASE)
     s = re.sub(r"<li>", "• ", s, flags=re.IGNORECASE)
+    # <ul>/<ol> opening tags → 빈 줄 (bullet 그룹 시작 시각화)
+    s = re.sub(r"<ul[^>]*>", "", s, flags=re.IGNORECASE)
+    s = re.sub(r"<ol[^>]*>", "", s, flags=re.IGNORECASE)
+    s = re.sub(r"</ul>", "", s, flags=re.IGNORECASE)
+    s = re.sub(r"</ol>", "", s, flags=re.IGNORECASE)
     # 나머지 태그 제거
     s = re.sub(r"<[^>]+>", "", s)
     # HTML entity
@@ -137,11 +142,11 @@ def strip_html(s, max_len=None):
     s = re.sub(r"[ \t]+", " ", s)
     s = re.sub(r"\n[ \t]*\n[ \t]*\n+", "\n\n", s)
     s = s.strip()
-    # em-dash 제거 (사용자 요청)
-    # 줄별로 처리 (\n 보존)
+    # em-dash 제거 (사용자 요청), 줄별로 처리 (\n 보존)
     lines = s.split('\n')
     lines = [_remove_emdash_line(l) for l in lines]
     s = '\n'.join(lines)
+    # max_len은 명시적으로 지정한 경우에만 잘림 적용 (기본은 잘림 X)
     if max_len and len(s) > max_len:
         s = s[: max_len - 1] + "…"
     return s
@@ -418,7 +423,7 @@ def has_type(u, type_id):
 
 def build_process_flow(u):
     """Process Before → After를 단일 셀로 결합."""
-    before = strip_html(u.get("process_before"), 200)
+    before = strip_html(u.get("process_before"))
     after_steps = u.get("process_steps") or []
     parts = []
     if before:
@@ -431,7 +436,7 @@ def build_process_flow(u):
 
 def build_impact(u):
     """Impact 요약 — impact_summary 위주."""
-    return strip_html(u.get("impact_summary"), 400)
+    return strip_html(u.get("impact_summary"))
 
 
 def build_usecases_sheet(wb, ucs):
@@ -498,16 +503,16 @@ def build_usecases_sheet(wb, ucs):
         is_zebra = (row_idx % 2 == 1)
         zebra_fill = ZEBRA_FILL if is_zebra else None
 
-        # MAIN columns (사용자 spec 순서)
-        summary_txt = strip_html(u.get("summary"), 1500)
-        problem_txt = strip_html(u.get("problem"), 400)
+        # MAIN columns (사용자 spec 순서) — 잘림 없이 full text (Excel 32k 한도까지)
+        summary_txt = strip_html(u.get("summary"))
+        problem_txt = strip_html(u.get("problem"))
         process_txt = build_process_flow(u)
         system_txt = join_dict_kr(u.get("system"))
         input_txt = join_dict_kr(u.get("data"))
-        output_txt = strip_html(u.get("output"), 350)
+        output_txt = strip_html(u.get("output"))
         model_txt = join_dict_kr(u.get("model"))
         impact_txt = build_impact(u)
-        consulting_txt = strip_html(u.get("consulting"), 500)
+        consulting_txt = strip_html(u.get("consulting"))
 
         main_values = [
             row_idx - 1,
@@ -610,7 +615,8 @@ def build_usecases_sheet(wb, ucs):
                 cell.font = Font(name="맑은 고딕", size=10, color="0563C1", underline="single")
 
         # 동적 row 높이 — 가장 긴 셀의 line count + wrap 추정
-        max_lines = 1
+        # 각 셀의 실제 표시 line 수를 측정하여 최댓값 사용
+        cell_max_lines = 1
         for txt, col_w in [
             (summary_txt, 70), (problem_txt, 55), (process_txt, 75),
             (system_txt, 38), (input_txt, 38), (output_txt, 45),
@@ -618,14 +624,17 @@ def build_usecases_sheet(wb, ucs):
         ]:
             if not txt:
                 continue
-            # 명시적 줄바꿈 + 컬럼 폭 기준 wrap 추정 (한글 1.7字/col_w 가정)
+            # 이 셀이 차지하는 line 수 = 줄별 wrap line 합
+            cell_lines = 0
             for line in txt.split('\n'):
-                wrapped = max(1, int(len(line) / (col_w * 1.7)) + (1 if line else 0))
-                max_lines += wrapped
-            # \n 자체도 1줄
-            max_lines += txt.count('\n')
-        # 최소 80, 최대 360 pt (extreme 안전판)
-        height = max(80, min(360, max_lines * 14))
+                if not line.strip():
+                    cell_lines += 1
+                    continue
+                # 한글 평균 1.7 chars/cell-width, +0.7 안전 buffer
+                cell_lines += max(1, int(len(line) / (col_w * 1.6)) + 1)
+            cell_max_lines = max(cell_max_lines, cell_lines)
+        # line 당 ~16pt + 8pt padding. 최소 60, 최대 600pt (잘림 방지 우선)
+        height = max(60, min(600, cell_max_lines * 16 + 8))
         row_heights.append(height)
 
     # Column widths

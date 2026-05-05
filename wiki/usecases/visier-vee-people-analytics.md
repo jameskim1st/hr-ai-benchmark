@@ -1,5 +1,5 @@
 ---
-title: "Visier — Vee AI Digital Assistant + Org Design (People Analytics)"
+title: "Visier — Vee AI Digital Assistant + Org Design"
 slug: visier-vee-people-analytics
 primary_category: Strategic Workforce & Governance
 subcategory: People Analytics

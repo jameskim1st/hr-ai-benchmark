@@ -1,5 +1,5 @@
 ---
-title: "Meta — AI 채택을 성과 평가 기준으로 의무화 (2026~)"
+title: "Meta — AI 채택을 성과 평가 기준으로 의무화"
 slug: meta-ai-performance-review-mandate
 primary_category: Performance & Talent Management
 subcategory: Goal & Performance

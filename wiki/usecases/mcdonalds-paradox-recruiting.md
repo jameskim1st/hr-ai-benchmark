@@ -1,5 +1,5 @@
 ---
-title: "McDonald's — Paradox AI 채용 (21일→3일 미만 time-to-hire)"
+title: "McDonald's — Paradox AI 채용"
 slug: mcdonalds-paradox-recruiting
 primary_category: Talent Acquisition
 subcategory: Screening & Assessment

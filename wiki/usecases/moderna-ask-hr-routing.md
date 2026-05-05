@@ -1,5 +1,5 @@
 ---
-title: "Moderna — Ask HR 중앙 GPT routing (performance·career·benefits)"
+title: "Moderna — Ask HR 중앙 GPT routing"
 slug: moderna-ask-hr-routing
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service

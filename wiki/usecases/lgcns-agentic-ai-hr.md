@@ -1,5 +1,5 @@
 ---
-title: "LG CNS — 에이전틱 AI 기반 HR 채용·인사 시스템 (26% 생산성↑)"
+title: "LG CNS — 에이전틱 AI 기반 HR 채용·인사 시스템"
 slug: lgcns-agentic-ai-hr
 primary_category: Talent Acquisition
 subcategory: Screening & Assessment

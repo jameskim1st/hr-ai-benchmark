@@ -1,5 +1,5 @@
 ---
-title: "Commonwealth Bank Australia — AI 역량 구축 ($90M 프로그램·Copilot 50,000명)"
+title: "Commonwealth Bank Australia — AI 역량 구축"
 slug: commonwealth-bank-ai-workforce
 primary_category: Learning & Development
 subcategory: Skills & Capabilities

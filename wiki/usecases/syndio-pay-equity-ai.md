@@ -1,5 +1,5 @@
 ---
-title: "Syndio — Syndi Expert AI (보상 공정성 + EU AI Act 준수)"
+title: "Syndio — Syndi Expert AI"
 slug: syndio-pay-equity-ai
 primary_category: Total Rewards
 subcategory: Compensation

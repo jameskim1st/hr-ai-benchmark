@@ -1,5 +1,5 @@
 ---
-title: "현대제철 — 'HIP' 사내 GenAI 경영지원 챗봇 (2024-05 → 2025-10 AI·로봇 역량 확장)"
+title: "현대제철 — 'HIP' 사내 GenAI 경영지원 챗봇"
 slug: hyundai-steel-hip-platform
 primary_category: Employee Experience & HR Ops
 subcategory: HR Service Delivery

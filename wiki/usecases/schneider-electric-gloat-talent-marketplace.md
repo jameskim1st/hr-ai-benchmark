@@ -1,5 +1,5 @@
 ---
-title: "Schneider Electric — Open Talent Market (Gloat AI, $15M+ 절감)"
+title: "Schneider Electric — Open Talent Market"
 slug: schneider-electric-gloat-talent-marketplace
 primary_category: Onboarding & Transitions
 subcategory: Internal Mobility

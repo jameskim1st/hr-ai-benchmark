@@ -1,5 +1,5 @@
 ---
-title: "우리은행 — 금융권 최초 전사 AI 에이전트 175개 (5대 영역 29개 업무, 삼성SDS 구축)"
+title: "우리은행 — 금융권 최초 전사 AI 에이전트 175개"
 slug: woori-bank-175-ai-agents
 primary_category: Strategic Workforce & Governance
 subcategory: HR Tech Governance

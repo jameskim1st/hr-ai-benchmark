@@ -1,5 +1,5 @@
 ---
-title: "Spring Health — General Mills AI 정신건강 EAP (이용률 1%→26%, 우울증 58% 개선)"
+title: "Spring Health — General Mills AI 정신건강 EAP"
 slug: spring-health-general-mills-ai-eap
 primary_category: Total Rewards
 subcategory: Benefits & Wellbeing

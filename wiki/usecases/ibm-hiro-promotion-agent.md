@@ -1,5 +1,5 @@
 ---
-title: "IBM — HiRo (분기 승진 관리 watsonx Digital Worker, AskHR 생태계 내 Specialist Agent)"
+title: "IBM — HiRo"
 slug: ibm-hiro-promotion-agent
 primary_category: Performance & Talent Management
 subcategory: Succession & Leadership
