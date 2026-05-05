@@ -1,34 +1,42 @@
 ---
-title: "Interactive HTML 산출물 생성 가이드"
+title: "산출물 생성 가이드 (HTML + Excel)"
 created_at: 2026-04-13
-purpose: wiki의 81건 use case를 클라이언트 CHRO/임원에게 공유할 수 있는 단일 HTML 파일로 변환하는 방법
+updated_at: 2026-05-05
+purpose: wiki의 115건 use case를 클라이언트 CHRO/임원에게 공유할 수 있는 단일 HTML + Excel 파일로 변환하는 방법
 ---
 
-# Interactive HTML 산출물 생성 가이드
+# 산출물 생성 가이드 (HTML + Excel)
 
 ## 1. 이 산출물이 뭔가
 
-wiki에 축적된 HR AI use case 81건을 **단일 HTML 파일**(~250KB)로 변환해서, 클라이언트 CHRO나 임원이 **브라우저에서 바로 열어볼 수 있는 인터랙티브 자료**를 만드는 것입니다.
+wiki에 축적된 HR AI use case 115건을 **두 종류의 단일 파일**로 변환:
 
-- 별도 서버 불필요 (file:// 프로토콜로 작동)
+| 산출물 | 크기 | 용도 |
+|---|---|---|
+| **HTML** (`hr-ai-usecase-collection.html`) | ~410KB | 클라이언트 CHRO·임원의 **열람·발표** (브라우저에서 검색·필터·다크모드, 인터랙티브) |
+| **Excel** (`hr-ai-usecase-collection.xlsx`) | ~165KB | 컨설턴트·실무진의 **작업·분석** (필터·정렬·피벗·셀 copy/paste·보고서 가공) |
+
+- 별도 서버 불필요 (file:// 프로토콜·로컬 Excel)
 - 이메일 첨부·USB 전달 가능
-- 검색·필터·다크모드 지원
-- 카테고리별 / 기업별 / 매트릭스 3가지 뷰
+- HTML: 검색·필터·다크모드 + Category/Company/Matrix 3개 뷰
+- Excel: 4 sheet (개요 / Use Cases / AI 기술 분포 / Companies) + AutoFilter + Pivot 가능
 
 ## 2. 파일 구조
 
 ```
 scripts/
   extract_v3.py          ← wiki/*.md → JSON 추출 (Step 1)
-  build_html_v6.py       ← JSON → HTML 변환 (Step 2)
+  build_html_v6.py       ← JSON → HTML 변환 (Step 2a)
+  build_excel.py         ← JSON → Excel 변환 (Step 2b, 2026-05 추가)
 
 wiki/exports/
-  usecases.json          ← 81건 use case 데이터 (Step 1 산출)
-  companies.json         ← 14개 기업 데이터 (Step 1 산출)
-  hr-ai-usecase-collection.html  ← 최종 산출물 (Step 2 산출)
+  usecases.json          ← 115건 use case 데이터 (Step 1 산출)
+  companies.json         ← 20개 기업 데이터 (Step 1 산출)
+  hr-ai-usecase-collection.html  ← HTML 산출물 (Step 2a)
+  hr-ai-usecase-collection.xlsx  ← Excel 산출물 (Step 2b)
 ```
 
-## 3. 생성 방법 (2단계)
+## 3. 생성 방법 (3단계)
 
 ### Step 1: 데이터 추출
 
@@ -62,7 +70,7 @@ python scripts/extract_v3.py
 - `[[wikilink]]` → 텍스트만 추출
 - `\n` → `<br>`
 
-### Step 2: HTML 생성
+### Step 2a: HTML 생성
 
 JSON 데이터를 HTML 파일 안에 JavaScript 변수로 임베딩하고, 인터랙티브 UI를 생성합니다.
 
@@ -75,17 +83,46 @@ python scripts/build_html_v6.py
 - Mermaid.js 없음 — 모든 도식은 HTML/CSS로 직접 렌더
 - 다크/라이트 모드
 - 3개 탭 뷰 (Category / Company / Matrix)
+- AI 기술 5색 칩 (생성형·판별예측·인식·의사결정최적화·자동화)
+- 5×13 AI 기술 axis 필터
+
+### Step 2b: Excel 생성 (2026-05 추가)
+
+동일한 JSON 데이터로 Excel 워크북을 생성합니다 (openpyxl 필요).
+
+```bash
+python scripts/build_excel.py
+```
+
+**4개 시트 구조:**
+
+| 시트 | 행 | 컬럼 | 용도 |
+|---|---|---|---|
+| **개요** | ~62 | 2 | README + schema reference + 사용법 안내 |
+| **Use Cases** | 115 | 25 | 메인 데이터 — AutoFilter, Freeze C2, 신뢰도 conditional formatting |
+| **AI 기술 분포** | ~242 | 7 | long-format (use_case × subtype) — Pivot Table 즉시 가능 |
+| **Companies** | 20 | 9 | 기업별 holistic view + use case 수·평균 신뢰도 자동 계산 |
+
+**Excel 활용법:**
+- **필터**: Use Cases 시트 → 헤더 dropdown (산업·지역·AI 기술 등 즉시 필터)
+- **정렬**: 헤더 우클릭 → 정렬 (신뢰도 내림차순 권장)
+- **피벗 heatmap**: AI 기술 분포 시트 → Insert → PivotTable → 행=AI 기술 (소), 열=HR 대분류, 값=COUNT
+- **신뢰도 색상**: 자동 (녹 ≥0.50 / 노 0.30~0.49 / 빨 <0.30)
+- **한국 사례**: 지역 컬럼에 🇰🇷 KR + 옅은 노란 배경 자동 highlight
 
 ## 4. 업데이트 방법
 
-wiki에 use case를 추가·수정한 후 HTML을 재생성하려면:
+wiki에 use case를 추가·수정한 후 HTML+Excel을 재생성하려면:
 
 ```bash
 # 1) JSON 재추출 (wiki 변경사항 반영)
 python scripts/extract_v3.py
 
-# 2) HTML 재생성
+# 2a) HTML 재생성
 python scripts/build_html_v6.py
+
+# 2b) Excel 재생성
+python scripts/build_excel.py
 ```
 
 이 2줄이면 끝. 새 use case가 추가됐거나 기존 페이지가 수정됐으면 자동으로 반영됩니다.

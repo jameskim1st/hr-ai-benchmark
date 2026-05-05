@@ -162,15 +162,19 @@ def process_uc(fp):
         'company': fm.get('company', ''),
         'industry': fm.get('industry', []),
         'region': fm.get('region', []),
+        'employee_class': fm.get('employee_class', []),
         'vendor': fm.get('vendor', []),
         'vendor_type': fm.get('vendor_type', []),
         'ai_tech_type': fm.get('ai_tech_type', []),
         'ai_tech_subtype': fm.get('ai_tech_subtype', []),
         'confidence': 0.0,
         'stage': fm.get('stage', ''),
+        'frequency': fm.get('frequency', ''),
+        'first_seen': str(fm.get('first_seen', '')),
+        'last_confirmed': str(fm.get('last_confirmed', '')),
         'tags': fm.get('tags', []),
     }
-    for f in ['industry','region','vendor','vendor_type','ai_tech_type','ai_tech_subtype','tags']:
+    for f in ['industry','region','employee_class','vendor','vendor_type','ai_tech_type','ai_tech_subtype','tags']:
         if isinstance(d[f], str): d[f] = [d[f]]
         elif not isinstance(d[f], list): d[f] = []
     try: d['confidence'] = float(fm.get('confidence', 0))

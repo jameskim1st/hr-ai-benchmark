@@ -12,6 +12,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Accenture internal"
     ],
@@ -26,6 +29,9 @@
     ],
     "confidence": 0.75,
     "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2022-11-01",
+    "last_confirmed": "2026-03-01",
     "tags": [
       "accenture",
       "mass-reskilling",
@@ -67,6 +73,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Cisco",
       "_다수_"
@@ -82,6 +91,9 @@
     ],
     "confidence": 0.7,
     "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2024-01-01",
+    "last_confirmed": "2025-12-01",
     "tags": [
       "cisco",
       "workforce-consortium",
@@ -128,6 +140,9 @@
       "na",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "JPMorgan internal",
       "OpenAI",
@@ -145,6 +160,9 @@
     ],
     "confidence": 0.7,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-08-01",
+    "last_confirmed": "2026-02-25",
     "tags": [
       "llm-suite",
       "jpmorgan",
@@ -193,6 +211,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "OpenAI"
     ],
@@ -209,6 +230,9 @@
     ],
     "confidence": 0.7,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-04-24",
+    "last_confirmed": "2025-06-27",
     "tags": [
       "ask-hr",
       "chatbot",
@@ -258,6 +282,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Workday"
     ],
@@ -275,6 +302,9 @@
     ],
     "confidence": 0.7,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2021-02-01",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "workday",
       "peakon",
@@ -320,6 +350,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Anaplan"
     ],
@@ -336,6 +369,9 @@
     ],
     "confidence": 0.65,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2025-12-09",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "anaplan",
       "workforce-analyst",
@@ -378,6 +414,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Cisco internal"
     ],
@@ -392,6 +431,9 @@
     ],
     "confidence": 0.65,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-06-01",
+    "last_confirmed": "2025-11-01",
     "tags": [
       "cisco",
       "ai-assistant",
@@ -430,6 +472,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Deloitte",
       "NVIDIA"
@@ -448,6 +493,9 @@
     ],
     "confidence": 0.65,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-06-01",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "deloitte",
       "zora-ai",
@@ -492,6 +540,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "IBM"
     ],
@@ -510,6 +561,9 @@
     ],
     "confidence": 0.65,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2023-01-01",
+    "last_confirmed": "2025-12-01",
     "tags": [
       "charlie",
       "learning-ops",
@@ -550,6 +604,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "IBM"
     ],
@@ -569,6 +626,9 @@
     ],
     "confidence": 0.65,
     "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2025-05-01",
+    "last_confirmed": "2026-02-12",
     "tags": [
       "workforce-reduction",
       "redeployment",
@@ -613,6 +673,9 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "_규제 — 벤더 X_"
     ],
@@ -623,6 +686,9 @@
     "ai_tech_subtype": [],
     "confidence": 0.65,
     "stage": "production",
+    "frequency": "adhoc",
+    "first_seen": "2026-01-22",
+    "last_confirmed": "2026-04-30",
     "tags": [
       "korea-ai-act",
       "regulation",
@@ -675,6 +741,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Microsoft"
     ],
@@ -693,6 +762,9 @@
     ],
     "confidence": 0.65,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-04-01",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "microsoft",
       "people-skills",
@@ -734,6 +806,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Walmart",
       "OpenAI"
@@ -750,6 +825,9 @@
     ],
     "confidence": 0.65,
     "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2025-09-01",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "walmart",
       "openai",
@@ -790,6 +868,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Amazon internal"
     ],
@@ -805,6 +886,9 @@
     ],
     "confidence": 0.6,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2014-01-01",
+    "last_confirmed": "2024-06-01",
     "tags": [
       "amazon",
       "connections",
@@ -846,6 +930,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "기술사무직"
+    ],
     "vendor": [
       "J&J (internal build)"
     ],
@@ -863,6 +950,9 @@
     ],
     "confidence": 0.6,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2020",
+    "last_confirmed": "2025",
     "tags": [
       "skills-inference",
       "internal-mobility",
@@ -903,6 +993,9 @@
       "na",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "JPMorgan internal"
     ],
@@ -917,6 +1010,9 @@
     ],
     "confidence": 0.6,
     "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2024-08-01",
+    "last_confirmed": "2026-02-12",
     "tags": [
       "ai-made-easy",
       "jpmorgan",
@@ -956,6 +1052,10 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "기술사무직",
+      "계약직"
+    ],
     "vendor": [
       "Paradox"
     ],
@@ -972,6 +1072,9 @@
     ],
     "confidence": 0.55,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-10-22",
+    "last_confirmed": "2025-07-28",
     "tags": [
       "conversational-ai",
       "recruiting",
@@ -1022,6 +1125,9 @@
     "region": [
       "apac"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Microsoft",
       "OpenAI"
@@ -1038,6 +1144,9 @@
     ],
     "confidence": 0.55,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-07-01",
+    "last_confirmed": "2026-02-01",
     "tags": [
       "microsoft-copilot",
       "ai-upskilling",
@@ -1081,6 +1190,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Deloitte"
     ],
@@ -1091,6 +1203,9 @@
     "ai_tech_subtype": [],
     "confidence": 0.55,
     "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2026-03-01",
+    "last_confirmed": "2026-04-15",
     "tags": [
       "deloitte",
       "human-capital-trends",
@@ -1134,6 +1249,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "IBM"
     ],
@@ -1151,6 +1269,9 @@
     ],
     "confidence": 0.55,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2015-01-01",
+    "last_confirmed": "2023-12-01",
     "tags": [
       "talent-marketplace",
       "internal-mobility",
@@ -1207,6 +1328,9 @@
       "na",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "OpenAI",
       "Anthropic"
@@ -1223,6 +1347,9 @@
     ],
     "confidence": 0.55,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-07-31",
+    "last_confirmed": "2025-09-01",
     "tags": [
       "llm-suite",
       "employee-productivity",
@@ -1266,6 +1393,10 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "전임직",
+      "기술사무직"
+    ],
     "vendor": [
       "KB국민은행 internal"
     ],
@@ -1282,6 +1413,9 @@
     ],
     "confidence": 0.55,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2020-07-15",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "kb-bank",
       "hr-deep-change",
@@ -1323,6 +1457,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "LinkedIn",
       "Microsoft"
@@ -1338,6 +1475,9 @@
     ],
     "confidence": 0.55,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-04-01",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "linkedin-learning",
       "ai-coaching",
@@ -1378,6 +1518,9 @@
     "region": [
       "eu"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Workday",
       "ServiceNow"
@@ -1394,6 +1537,9 @@
     ],
     "confidence": 0.55,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-11-07",
+    "last_confirmed": "2026-01-01",
     "tags": [
       "workday",
       "skills-cloud",
@@ -1436,6 +1582,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [],
     "vendor_type": [
       "internal-build",
@@ -1455,6 +1604,9 @@
     ],
     "confidence": 0.55,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2023-01-01",
+    "last_confirmed": "2025-02-01",
     "tags": [
       "healthcare",
       "nursing",
@@ -1495,6 +1647,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Microsoft"
     ],
@@ -1511,6 +1666,9 @@
     ],
     "confidence": 0.55,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2024-09-01",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "microsoft",
       "viva",
@@ -1552,6 +1710,9 @@
       "eu",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "ServiceNow"
     ],
@@ -1571,6 +1732,9 @@
     ],
     "confidence": 0.55,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-01-01",
+    "last_confirmed": "2025-09-01",
     "tags": [
       "servicenow",
       "hr-service-delivery",
@@ -1614,6 +1778,9 @@
       "na",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "OpenAI",
       "Workday",
@@ -1634,6 +1801,9 @@
     ],
     "confidence": 0.55,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-06-24",
+    "last_confirmed": "2026-02-19",
     "tags": [
       "frontline-workers",
       "reskilling",
@@ -1683,6 +1853,9 @@
       "na",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Walmart (internal build)"
     ],
@@ -1701,6 +1874,9 @@
     ],
     "confidence": 0.55,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025",
+    "last_confirmed": "2025-10-02",
     "tags": [
       "ask-sam",
       "voice-assistant",
@@ -1741,6 +1917,9 @@
       "eu",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Cognigy",
       "OpenAI"
@@ -1759,6 +1938,9 @@
     ],
     "confidence": 0.5,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-01-08",
+    "last_confirmed": "2025-06-01",
     "tags": [
       "hr-chatbot",
       "employee-self-service",
@@ -1809,6 +1991,9 @@
     "region": [
       "apac"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [],
     "vendor_type": [
       "internal-build"
@@ -1825,6 +2010,9 @@
     ],
     "confidence": 0.5,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2022-01-01",
+    "last_confirmed": "2025-06-01",
     "tags": [
       "attrition-prediction",
       "ai-recruitment",
@@ -1872,6 +2060,9 @@
       "na",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "OpenAI",
       "Google",
@@ -1889,6 +2080,9 @@
     ],
     "confidence": 0.5,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-01-21",
+    "last_confirmed": "2025-06-24",
     "tags": [
       "gs-ai-assistant",
       "employee-productivity",
@@ -1930,6 +2124,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "IBM"
     ],
@@ -1945,6 +2142,9 @@
     ],
     "confidence": 0.5,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2019-01-01",
+    "last_confirmed": "2026-02-12",
     "tags": [
       "predictive-attrition",
       "retention",
@@ -1994,6 +2194,9 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "기술사무직"
+    ],
     "vendor": [
       "마이다스아이티"
     ],
@@ -2012,6 +2215,9 @@
     ],
     "confidence": 0.5,
     "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2025-07",
+    "last_confirmed": "2025-09-16",
     "tags": [
       "ai-assessment",
       "video-interview",
@@ -2049,6 +2255,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "SAP"
     ],
@@ -2066,6 +2275,9 @@
     ],
     "confidence": 0.5,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-10-01",
+    "last_confirmed": "2026-04-15",
     "tags": [
       "joule",
       "sap",
@@ -2128,6 +2340,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Gloat"
     ],
@@ -2142,6 +2357,9 @@
     ],
     "confidence": 0.5,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2020-04",
+    "last_confirmed": "2025-03",
     "tags": [
       "talent-marketplace",
       "internal-mobility",
@@ -2179,6 +2397,9 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "신한은행 internal"
     ],
@@ -2196,6 +2417,9 @@
     ],
     "confidence": 0.5,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-09-24",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "shinhan-bank",
       "ai-one",
@@ -2240,6 +2464,10 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "기술사무직",
+      "신입"
+    ],
     "vendor": [
       "SKT",
       "SK AX"
@@ -2258,6 +2486,9 @@
     ],
     "confidence": 0.5,
     "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2025-02-20",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "sk-cc",
       "adot-biz",
@@ -2303,6 +2534,9 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "SKT",
       "SK AX"
@@ -2320,6 +2554,9 @@
     ],
     "confidence": 0.5,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-09-01",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "sk-group",
       "adot-biz",
@@ -2364,6 +2601,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Workday"
     ],
@@ -2374,6 +2614,9 @@
     "ai_tech_subtype": [],
     "confidence": 0.5,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-09-01",
+    "last_confirmed": "2026-04-15",
     "tags": [
       "agent-governance",
       "workday",
@@ -2424,6 +2667,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Amazon (internal build)"
     ],
@@ -2442,6 +2688,9 @@
     ],
     "confidence": 0.45,
     "stage": "production",
+    "frequency": "adhoc",
+    "first_seen": "2025-10",
+    "last_confirmed": "2025-10-16",
     "tags": [
       "workforce-restructuring",
       "hr-reduction",
@@ -2479,6 +2728,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "BetterUp"
     ],
@@ -2495,6 +2747,9 @@
     ],
     "confidence": 0.45,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2025",
+    "last_confirmed": "2025",
     "tags": [
       "ai-coaching",
       "leadership",
@@ -2534,6 +2789,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Anthropic"
     ],
@@ -2549,6 +2807,9 @@
     ],
     "confidence": 0.45,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-10-06",
+    "last_confirmed": "2025-10-06",
     "tags": [
       "claude",
       "anthropic",
@@ -2586,6 +2847,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "IBM"
     ],
@@ -2605,6 +2869,9 @@
     ],
     "confidence": 0.45,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-06-12",
+    "last_confirmed": "2025-10-24",
     "tags": [
       "askhr",
       "chatbot",
@@ -2648,6 +2915,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "IBM"
     ],
@@ -2666,6 +2936,9 @@
     ],
     "confidence": 0.45,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-09-01",
+    "last_confirmed": "2026-02-12",
     "tags": [
       "watsonx-orchestrate",
       "talent-acquisition",
@@ -2716,6 +2989,9 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "잡코리아",
       "웍스피어"
@@ -2734,6 +3010,9 @@
     ],
     "confidence": 0.45,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2026-03-31",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "jobkorea",
       "workspher",
@@ -2775,6 +3054,10 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "전임직",
+      "기술사무직"
+    ],
     "vendor": [
       "솔트룩스"
     ],
@@ -2791,6 +3074,9 @@
     ],
     "confidence": 0.45,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2024-01-01",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "korea-electric-power",
       "kepco",
@@ -2832,6 +3118,10 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "전임직",
+      "기술사무직"
+    ],
     "vendor": [
       "Naver Cloud"
     ],
@@ -2847,6 +3137,9 @@
     ],
     "confidence": 0.45,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-09-01",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "mirae-asset",
       "securities",
@@ -2890,6 +3183,9 @@
       "eu",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Gloat"
     ],
@@ -2906,6 +3202,9 @@
     ],
     "confidence": 0.45,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2022-01-01",
+    "last_confirmed": "2024-06-27",
     "tags": [
       "talent-marketplace",
       "skills-based-organization",
@@ -2947,6 +3246,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "SAP"
     ],
@@ -2963,6 +3265,9 @@
     ],
     "confidence": 0.45,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2025-10-01",
+    "last_confirmed": "2026-01-01",
     "tags": [
       "joule",
       "sap",
@@ -3006,6 +3311,9 @@
       "eu",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Siemens (internal build)",
       "ServiceNow"
@@ -3021,6 +3329,9 @@
     ],
     "confidence": 0.45,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025",
+    "last_confirmed": "2025",
     "tags": [
       "reskilling",
       "internal-mobility",
@@ -3058,6 +3369,10 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "기술사무직",
+      "신입"
+    ],
     "vendor": [
       "SK하이닉스 internal"
     ],
@@ -3074,6 +3389,9 @@
     ],
     "confidence": 0.45,
     "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2025-09-16",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "sk-hynix",
       "ask-ai-interview",
@@ -3109,6 +3427,9 @@
     "region": [
       "apac"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Microsoft"
     ],
@@ -3124,6 +3445,9 @@
     ],
     "confidence": 0.45,
     "stage": "production",
+    "frequency": "adhoc",
+    "first_seen": "2024-01-01",
+    "last_confirmed": "2025-12-01",
     "tags": [
       "reskilling",
       "upskilling",
@@ -3167,6 +3491,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Workday",
       "Sana"
@@ -3187,6 +3514,9 @@
     ],
     "confidence": 0.45,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-11-01",
+    "last_confirmed": "2026-04-15",
     "tags": [
       "sana",
       "workday",
@@ -3245,6 +3575,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Docebo"
     ],
@@ -3262,6 +3595,9 @@
     ],
     "confidence": 0.4,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025",
+    "last_confirmed": "2025",
     "tags": [
       "lms",
       "ai-native",
@@ -3301,6 +3637,9 @@
       "apac",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [],
     "vendor_type": [
       "internal-build"
@@ -3315,6 +3654,9 @@
     ],
     "confidence": 0.4,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-01-01",
+    "last_confirmed": "2025-12-01",
     "tags": [
       "skills-based-organization",
       "internal-mobility",
@@ -3355,6 +3697,9 @@
       "apac",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [],
     "vendor_type": [
       "internal-build",
@@ -3370,6 +3715,9 @@
     ],
     "confidence": 0.4,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-01-01",
+    "last_confirmed": "2025-06-01",
     "tags": [
       "hr-chatbot",
       "employee-self-service",
@@ -3411,6 +3759,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "IBM"
     ],
@@ -3427,6 +3778,9 @@
     ],
     "confidence": 0.4,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2018-01-01",
+    "last_confirmed": "2025-12-01",
     "tags": [
       "watson-recruitment",
       "candidate-matching",
@@ -3466,6 +3820,9 @@
       "na",
       "global"
     ],
+    "employee_class": [
+      "기술사무직"
+    ],
     "vendor": [
       "internal build"
     ],
@@ -3484,6 +3841,9 @@
     ],
     "confidence": 0.4,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-10",
+    "last_confirmed": "2025-10-15",
     "tags": [
       "banking",
       "finance",
@@ -3519,6 +3879,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "기술사무직"
+    ],
     "vendor": [
       "Meta (internal build)",
       "OpenAI",
@@ -3536,6 +3899,9 @@
     ],
     "confidence": 0.4,
     "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2025-11",
+    "last_confirmed": "2025-11-17",
     "tags": [
       "ai-adoption-mandate",
       "performance-review",
@@ -3571,6 +3937,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "OpenAI"
     ],
@@ -3585,6 +3954,9 @@
     ],
     "confidence": 0.4,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-05-22",
+    "last_confirmed": "2025-06-12",
     "tags": [
       "custom-gpt",
       "benefits",
@@ -3630,6 +4002,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "OpenAI"
     ],
@@ -3644,6 +4019,9 @@
     ],
     "confidence": 0.4,
     "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2025-05-22",
+    "last_confirmed": "2025-06-12",
     "tags": [
       "custom-gpt",
       "self-review",
@@ -3691,6 +4069,9 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "기술사무직"
+    ],
     "vendor": [
       "SK AX",
       "SKT"
@@ -3710,6 +4091,9 @@
     ],
     "confidence": 0.4,
     "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2024-10",
+    "last_confirmed": "2025-02-20",
     "tags": [
       "aict",
       "ai-competency-test",
@@ -3757,6 +4141,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Visier"
     ],
@@ -3773,6 +4160,9 @@
     ],
     "confidence": 0.4,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-03-01",
+    "last_confirmed": "2025-03-01",
     "tags": [
       "people-analytics",
       "retention-management",
@@ -3816,6 +4206,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Workday"
     ],
@@ -3832,6 +4225,9 @@
     ],
     "confidence": 0.4,
     "stage": "announced",
+    "frequency": "annual",
+    "first_seen": "2025-09-16",
+    "last_confirmed": "2025-09-16",
     "tags": [
       "workday",
       "illuminate",
@@ -3869,6 +4265,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "기술사무직"
+    ],
     "vendor": [
       "Beamery"
     ],
@@ -3886,6 +4285,9 @@
     ],
     "confidence": 0.35,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2025",
+    "last_confirmed": "2025",
     "tags": [
       "skills-mapping",
       "job-architecture",
@@ -3924,6 +4326,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Perceptyx"
     ],
@@ -3940,6 +4345,9 @@
     ],
     "confidence": 0.35,
     "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2025-01-01",
+    "last_confirmed": "2025-12-31",
     "tags": [
       "employee-listening",
       "engagement",
@@ -3984,6 +4392,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Deloitte"
     ],
@@ -4001,6 +4412,9 @@
     ],
     "confidence": 0.35,
     "stage": "production",
+    "frequency": "adhoc",
+    "first_seen": "2025-06-24",
+    "last_confirmed": "2025-06-24",
     "tags": [
       "workforce-planning",
       "ai-impact-assessment",
@@ -4039,6 +4453,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "HireVue"
     ],
@@ -4054,6 +4471,9 @@
     ],
     "confidence": 0.35,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025",
+    "last_confirmed": "2025",
     "tags": [
       "video-interview",
       "game-based-assessment",
@@ -4095,6 +4515,9 @@
       "apac",
       "eu"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Ema"
     ],
@@ -4111,6 +4534,9 @@
     ],
     "confidence": 0.35,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-01-01",
+    "last_confirmed": "2025-12-01",
     "tags": [
       "onboarding",
       "agentic-ai",
@@ -4154,6 +4580,9 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "삼성SDS",
       "네이버클라우드"
@@ -4171,6 +4600,9 @@
     ],
     "confidence": 0.35,
     "stage": "pilot",
+    "frequency": "adhoc",
+    "first_seen": "2025-03-18",
+    "last_confirmed": "2025-11-01",
     "tags": [
       "public-sector",
       "government",
@@ -4216,6 +4648,10 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "기술사무직",
+      "전임직"
+    ],
     "vendor": [],
     "vendor_type": [
       "internal-build"
@@ -4224,6 +4660,9 @@
     "ai_tech_subtype": [],
     "confidence": 0.35,
     "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2025-04-22",
+    "last_confirmed": "2025-09-01",
     "tags": [
       "job-based-hr",
       "compensation-reform",
@@ -4259,6 +4698,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Microsoft"
     ],
@@ -4275,6 +4717,9 @@
     ],
     "confidence": 0.35,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025",
+    "last_confirmed": "2025",
     "tags": [
       "employee-self-service",
       "viva",
@@ -4316,6 +4761,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "OpenAI"
     ],
@@ -4331,6 +4779,9 @@
     ],
     "confidence": 0.35,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025",
+    "last_confirmed": "2025",
     "tags": [
       "upskilling",
       "chatgpt",
@@ -4369,6 +4820,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Textio"
     ],
@@ -4385,6 +4839,9 @@
     ],
     "confidence": 0.35,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2022-12-01",
+    "last_confirmed": "2025-03-21",
     "tags": [
       "dei",
       "inclusive-hiring",
@@ -4432,6 +4889,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Textio"
     ],
@@ -4448,6 +4908,9 @@
     ],
     "confidence": 0.35,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2023",
+    "last_confirmed": "2025",
     "tags": [
       "inclusive-language",
       "jd-writing",
@@ -4487,6 +4950,9 @@
     "region": [
       "apac"
     ],
+    "employee_class": [
+      "기술사무직"
+    ],
     "vendor": [
       "Microsoft"
     ],
@@ -4504,6 +4970,9 @@
     ],
     "confidence": 0.35,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-05-01",
+    "last_confirmed": "2025-10-01",
     "tags": [
       "copilot",
       "viva-insights",
@@ -4551,6 +5020,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Accenture (internal build)"
     ],
@@ -4567,6 +5039,9 @@
     ],
     "confidence": 0.3,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025",
+    "last_confirmed": "2025-10-02",
     "tags": [
       "learning",
       "reskilling",
@@ -4606,6 +5081,9 @@
       "na",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "ADP"
     ],
@@ -4623,6 +5101,9 @@
     ],
     "confidence": 0.3,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2025-09-03",
+    "last_confirmed": "2025-09-03",
     "tags": [
       "payroll-execution",
       "anomaly-detection",
@@ -4670,6 +5151,10 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "기술사무직",
+      "전임직"
+    ],
     "vendor": [],
     "vendor_type": [
       "point-solution"
@@ -4683,6 +5168,9 @@
     ],
     "confidence": 0.3,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2024-01-01",
+    "last_confirmed": "2025-10-01",
     "tags": [
       "performance-management",
       "ai-feedback",
@@ -4727,6 +5215,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Culture Amp"
     ],
@@ -4743,6 +5234,9 @@
     ],
     "confidence": 0.3,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2025-07-01",
+    "last_confirmed": "2026-03-24",
     "tags": [
       "ai-coaching",
       "manager-effectiveness",
@@ -4778,6 +5272,9 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [],
     "vendor_type": [
       "ats",
@@ -4793,6 +5290,9 @@
     ],
     "confidence": 0.3,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-01-01",
+    "last_confirmed": "2025-09-01",
     "tags": [
       "ats",
       "ai-screening",
@@ -4835,6 +5335,9 @@
       "eu",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Eightfold AI",
       "Gloat",
@@ -4856,6 +5359,9 @@
     ],
     "confidence": 0.3,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025",
+    "last_confirmed": "2025",
     "tags": [
       "multi-vendor",
       "skills-based-hiring",
@@ -4896,6 +5402,9 @@
     "region": [
       "eu"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Phenom"
     ],
@@ -4912,6 +5421,9 @@
     ],
     "confidence": 0.3,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-03",
+    "last_confirmed": "2025-03-12",
     "tags": [
       "talent-marketplace",
       "skills",
@@ -4952,6 +5464,9 @@
     "region": [
       "eu"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Qualtrics"
     ],
@@ -4970,6 +5485,9 @@
     ],
     "confidence": 0.3,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2025-10",
+    "last_confirmed": "2025-10",
     "tags": [
       "employee-listening",
       "engagement",
@@ -5009,6 +5527,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Spring Health"
     ],
@@ -5025,6 +5546,9 @@
     ],
     "confidence": 0.3,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-01-01",
+    "last_confirmed": "2026-01-01",
     "tags": [
       "mental-health",
       "eap",
@@ -5072,6 +5596,10 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "전임직",
+      "all"
+    ],
     "vendor": [
       "UKG"
     ],
@@ -5090,6 +5618,9 @@
     ],
     "confidence": 0.3,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-06-01",
+    "last_confirmed": "2026-02-17",
     "tags": [
       "workforce-scheduling",
       "shift-optimization",
@@ -5125,6 +5656,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Viven AI"
     ],
@@ -5140,6 +5674,9 @@
     ],
     "confidence": 0.3,
     "stage": "announced",
+    "frequency": "daily",
+    "first_seen": "2025-10-15",
+    "last_confirmed": "2026-04-01",
     "tags": [
       "viven-ai",
       "digital-twin",
@@ -5180,6 +5717,9 @@
       "global",
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Enboarder"
     ],
@@ -5196,6 +5736,9 @@
     ],
     "confidence": 0.3,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2022-11-20",
+    "last_confirmed": "2025-09-16",
     "tags": [
       "onboarding",
       "automation",
@@ -5240,6 +5783,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "15Five"
     ],
@@ -5256,6 +5802,9 @@
     ],
     "confidence": 0.25,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-05-20",
+    "last_confirmed": "2025-05-20",
     "tags": [
       "ai-coaching",
       "manager-effectiveness",
@@ -5293,6 +5842,9 @@
       "na",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Holistic AI"
     ],
@@ -5307,6 +5859,9 @@
     ],
     "confidence": 0.25,
     "stage": "production",
+    "frequency": "adhoc",
+    "first_seen": "2025-06-26",
+    "last_confirmed": "2025-06-26",
     "tags": [
       "ai-governance",
       "bias-audit",
@@ -5352,6 +5907,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Josh Bersin Co.",
       "Sana Labs"
@@ -5369,6 +5927,9 @@
     ],
     "confidence": 0.25,
     "stage": "pilot",
+    "frequency": "daily",
+    "first_seen": "2025-05-21",
+    "last_confirmed": "2025-06-01",
     "tags": [
       "ai-native-lms",
       "lxp",
@@ -5421,6 +5982,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Betterworks"
     ],
@@ -5437,6 +6001,9 @@
     ],
     "confidence": 0.25,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2026-01-01",
+    "last_confirmed": "2026-03-03",
     "tags": [
       "performance-management",
       "okr",
@@ -5472,6 +6039,9 @@
       "eu",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Degreed"
     ],
@@ -5488,6 +6058,9 @@
     ],
     "confidence": 0.25,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-04-15",
+    "last_confirmed": "2025-04-15",
     "tags": [
       "skills-ontology",
       "ai-upskilling",
@@ -5533,6 +6106,11 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "기술사무직",
+      "전임직",
+      "계약직"
+    ],
     "vendor": [],
     "vendor_type": [
       "internal-build"
@@ -5547,6 +6125,9 @@
     ],
     "confidence": 0.25,
     "stage": "pilot",
+    "frequency": "daily",
+    "first_seen": "2025-01-13",
+    "last_confirmed": "2025-08-01",
     "tags": [
       "korea",
       "hr-saas",
@@ -5589,6 +6170,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Lattice"
     ],
@@ -5605,6 +6189,9 @@
     ],
     "confidence": 0.25,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2024-05-01",
+    "last_confirmed": "2026-06-01",
     "tags": [
       "performance-review",
       "ai-summarization",
@@ -5647,6 +6234,9 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "기술사무직"
+    ],
     "vendor": [
       "LG CNS"
     ],
@@ -5664,6 +6254,9 @@
     ],
     "confidence": 0.25,
     "stage": "production",
+    "frequency": "adhoc",
+    "first_seen": "2025",
+    "last_confirmed": "2025",
     "tags": [
       "agentic-ai",
       "recruiting",
@@ -5703,6 +6296,9 @@
       "eu",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Paradox"
     ],
@@ -5719,6 +6315,9 @@
     ],
     "confidence": 0.25,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025",
+    "last_confirmed": "2025",
     "tags": [
       "paradox",
       "olivia",
@@ -5758,6 +6357,9 @@
       "na",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Orgvue"
     ],
@@ -5772,6 +6374,9 @@
     ],
     "confidence": 0.25,
     "stage": "production",
+    "frequency": "adhoc",
+    "first_seen": "2025-12-01",
+    "last_confirmed": "2025-12-01",
     "tags": [
       "org-design",
       "job-architecture",
@@ -5813,6 +6418,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "ServiceNow"
     ],
@@ -5829,6 +6437,9 @@
     ],
     "confidence": 0.25,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024",
+    "last_confirmed": "2025",
     "tags": [
       "now-assist",
       "hr-service-delivery",
@@ -5867,6 +6478,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Gloat"
     ],
@@ -5881,6 +6495,9 @@
     ],
     "confidence": 0.25,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2019-12-17",
+    "last_confirmed": "2024",
     "tags": [
       "talent-marketplace",
       "internal-mobility",
@@ -5931,6 +6548,9 @@
       "na",
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Visier"
     ],
@@ -5945,6 +6565,9 @@
     ],
     "confidence": 0.25,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025",
+    "last_confirmed": "2025",
     "tags": [
       "people-analytics",
       "vee",
@@ -5983,6 +6606,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Workday"
     ],
@@ -5999,6 +6625,9 @@
     ],
     "confidence": 0.25,
     "stage": "production",
+    "frequency": "adhoc",
+    "first_seen": "2024-09-17",
+    "last_confirmed": "2025-09-16",
     "tags": [
       "job-architecture",
       "skills-gap",
@@ -6046,6 +6675,9 @@
     "region": [
       "apac"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "HireVue"
     ],
@@ -6064,6 +6696,9 @@
     ],
     "confidence": 0.2,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025",
+    "last_confirmed": "2025",
     "tags": [
       "hirevue",
       "video-interview",
@@ -6101,6 +6736,9 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Douzone Bizon"
     ],
@@ -6120,6 +6758,9 @@
     ],
     "confidence": 0.2,
     "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2024-12-10",
+    "last_confirmed": "2024-12-10",
     "tags": [
       "year-end-tax",
       "korean-payroll",
@@ -6172,6 +6813,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Eightfold AI"
     ],
@@ -6188,6 +6832,9 @@
     ],
     "confidence": 0.2,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025",
+    "last_confirmed": "2025",
     "tags": [
       "talent-intelligence",
       "skills-based-hiring",
@@ -6226,6 +6873,9 @@
     "region": [
       "apac"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "HireVue"
     ],
@@ -6242,6 +6892,9 @@
     ],
     "confidence": 0.2,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025",
+    "last_confirmed": "2025",
     "tags": [
       "hirevue",
       "video-interview",
@@ -6280,6 +6933,9 @@
     "region": [
       "na"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Fuel50"
     ],
@@ -6294,6 +6950,9 @@
     ],
     "confidence": 0.2,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2025",
+    "last_confirmed": "2025",
     "tags": [
       "career-pathing",
       "internal-mobility",
@@ -6332,6 +6991,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "계약직"
+    ],
     "vendor": [
       "Paradox"
     ],
@@ -6348,6 +7010,9 @@
     ],
     "confidence": 0.2,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2021",
+    "last_confirmed": "2025",
     "tags": [
       "paradox",
       "conversational-ai",
@@ -6386,6 +7051,9 @@
       "na",
       "eu"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Paychex"
     ],
@@ -6401,6 +7069,9 @@
     ],
     "confidence": 0.2,
     "stage": "announced",
+    "frequency": "daily",
+    "first_seen": "2026-02-26",
+    "last_confirmed": "2026-02-26",
     "tags": [
       "payroll",
       "timesheet",
@@ -6437,6 +7108,10 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "기술사무직",
+      "전임직"
+    ],
     "vendor": [
       "멀티캠퍼스"
     ],
@@ -6451,6 +7126,9 @@
     ],
     "confidence": 0.2,
     "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-01-01",
+    "last_confirmed": "2025-04-01",
     "tags": [
       "korea",
       "samsung",
@@ -6485,6 +7163,10 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "기술사무직",
+      "전임직"
+    ],
     "vendor": [
       "PwC",
       "SK하이닉스 internal"
@@ -6504,6 +7186,9 @@
     ],
     "confidence": 0.2,
     "stage": "announced",
+    "frequency": "monthly",
+    "first_seen": "2026-05-01",
+    "last_confirmed": "2026-05-05",
     "tags": [
       "sk-hynix",
       "pwc",
@@ -6541,6 +7226,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Syndio"
     ],
@@ -6557,6 +7245,9 @@
     ],
     "confidence": 0.2,
     "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2025-03",
+    "last_confirmed": "2025-03",
     "tags": [
       "pay-equity",
       "compliance",
@@ -6595,6 +7286,9 @@
     "region": [
       "kr"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Wanted Lab"
     ],
@@ -6612,6 +7306,9 @@
     ],
     "confidence": 0.2,
     "stage": "pilot",
+    "frequency": "daily",
+    "first_seen": "2025-10-21",
+    "last_confirmed": "2025-10-21",
     "tags": [
       "ai-agent",
       "llm",
@@ -6664,6 +7361,9 @@
     "region": [
       "global"
     ],
+    "employee_class": [
+      "all"
+    ],
     "vendor": [
       "Workday"
     ],
@@ -6678,6 +7378,9 @@
     ],
     "confidence": 0.1,
     "stage": "stub",
+    "frequency": "adhoc",
+    "first_seen": "2025-09-16",
+    "last_confirmed": "2025-09-16",
     "tags": [
       "employee-sentiment",
       "listening",
