@@ -16,10 +16,11 @@ stage: production
 frequency: daily
 first_seen: 2024-06-01
 last_confirmed: 2025-11-01
-confidence: 0.65
+confidence: 0.70
 consulting_angle_status: filled
 sources:
   - sources/us-large-enterprise-hr-ai-2025-2026.md
+  - "Cisco engineering blog — Internal AI assistant 45M+ interactions https://blogs.cisco.com/cisco-on-cisco/cisco-secure-internal-ai-assistant"
 related_usecases:
   - moderna-ask-hr-routing
   - ibm-askhr-watsonx
@@ -57,6 +58,36 @@ Cisco의 사내 AI HR Assistant — HR 정책 Q&A를 넘어 **agentic** 수준�
 - HRMS 통합 (Workday 추정 — Cisco는 Workday customer)
 - 모델: 자체 + 외부 API 혼합 추정
 - 오너십: Cisco HR + IT/AI Plat
+
+### B. System & Infrastructure (Agent research, 2026-05)
+
+- **Core HRIS / 기반 시스템**: _미공개_ (Cisco는 Workday customer로 알려져 있으나 HR Assistant의 직접 integration target 명시 없음)
+- **AI 시스템 배치**: ✅ Cisco IT 자체 구축 "internal AI assistant — purpose-built with security"
+- **배포 환경**: _미공개_
+- **연동·통합**: ✅ HR tools (PTO 입력, 401k 조회 등) 통합; 구체 시스템명 _미공개_
+- **사용자 접점**: _미공개_ (Webex 통합 추정 가능하나 공식 확인 없음)
+- **인증·권한**: ✅ "purpose-built with security" (벤더 주장) — 구체 모델 _미공개_
+
+> Source: [Cisco "Transforming work with our internal AI assistant"](https://blogs.cisco.com/cisco-on-cisco/cisco-secure-internal-ai-assistant)
+
+### C. Data (Agent research)
+
+- **입력 데이터 소스**: ✅ HR data (PTO·401k 등 직원 self-service domain); 정책 문서 RAG 추정
+- **데이터 규모**: ⚠️ 자사 보고: 100,000+ 직원 사용 (broader internal AI assistant); HR domain standalone 수치 _미공개_
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: _미공개_
+- **데이터 거버넌스**: ✅ "purpose-built with security" 강조; 세부 _미공개_
+- **민감정보 처리**: _미공개_
+
+### D. Model (Agent research)
+
+- **Foundation model**: _미공개_ (외부 API + 자체 혼합 가능성)
+- **모델 유형**: ✅ Generative AI (LLM-based agentic assistant)
+- **제공 방식**: _미공개_
+- **커스터마이징 기법**: _미공개_
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: ⚠️ 자사 보고: 73% 사용자 productivity 증가, 주당 5h 절감
+
 
 ## Impact / Metrics
 

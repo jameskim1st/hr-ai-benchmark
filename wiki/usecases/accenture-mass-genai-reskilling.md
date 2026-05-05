@@ -20,6 +20,7 @@ confidence: 0.75
 consulting_angle_status: filled
 sources:
   - sources/us-large-enterprise-hr-ai-2025-2026.md
+  - "Accenture Reinvention Report (Gartner methodology) https://www.accenture.com/content/dam/accenture/final/accenture-com/document-2/Accenture-Reinvention-in-the-age-of-generative-AI-Report.pdf"
 related_usecases:
   - accenture-ai-learning-workforce
   - jpmorgan-ai-made-easy-upskilling
@@ -67,6 +68,36 @@ flowchart LR
     Sweet[Sweet 2026-03] -->|exit timeline| NonAdapt[non-adaptable 직원]
     Spend[$1B/yr L&D] --> Mass
 ```
+
+### B. System & Infrastructure (Agent research, 2026-05)
+
+- **Core HRIS / 기반 시스템**: _미공개_ (Accenture는 SAP SuccessFactors 사용 알려졌으나 LearnVantage와 직접 통합 명시 없음)
+- **AI 시스템 배치**: ✅ **Accenture LearnVantage** 자체 학습 플랫폼 (2024-03 launch, Udacity 인수 통합)
+- **배포 환경**: _미공개_ (LearnVantage 호스팅 인프라 비공개. AWS·Google Cloud·Microsoft 파트너십은 콘텐츠 차원)
+- **연동·통합**: ✅ Stanford Online (Generative AI Scholars Program), Pluralsight·Coursera·Workera·Skillsoft (콘텐츠), AWS·Google Cloud·Microsoft (인증)
+- **사용자 접점**: ✅ LearnVantage web platform (self-paced, 40h+ Stanford courses)
+- **인증·권한**: _미공개_
+
+> Source: [Accenture LearnVantage newsroom 2024-03](https://newsroom.accenture.com/news/2024/accenture-launches-accenture-learnvantage-to-help-clients-and-their-people-gain-essential-skills-and-achieve-greater-business-value-in-the-ai-economy)
+
+### C. Data (Agent research)
+
+- **입력 데이터 소스**: ⚠️ 벤더 주장: AI recommendation engine이 직원 role + 회사 business strategy 기반 스킬 surface; 구체 데이터 항목 _미공개_
+- **데이터 규모**: ✅ 550,000+ trained 직원 (CEO Sweet 발언, ⚠️ 자사 보고)
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: _미공개_
+- **데이터 거버넌스**: _미공개_
+- **민감정보 처리**: _미공개_
+
+### D. Model (Agent research)
+
+- **Foundation model**: _미공개_ (LearnVantage "always-on skills assistant" base model 비공개)
+- **모델 유형**: ✅ recommendation engine + skills assistant
+- **제공 방식**: _미공개_
+- **커스터마이징 기법**: _미공개_
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: _미공개_
+
 
 ## Impact / Metrics
 

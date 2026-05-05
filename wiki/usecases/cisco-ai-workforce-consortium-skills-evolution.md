@@ -16,10 +16,11 @@ stage: production
 frequency: annual
 first_seen: 2024-01-01
 last_confirmed: 2025-12-01
-confidence: 0.70
+confidence: 0.75
 consulting_angle_status: filled
 sources:
   - sources/us-large-enterprise-hr-ai-2025-2026.md
+  - "Cisco AI Workforce Consortium Full Report 2025 https://www.cisco.com/content/dam/cisco-cdc/site/m/ai-workforce-consortium/documents/2025-ai-workforce-consortium-full-report.pdf"
 related_usecases:
   - cisco-ai-assistant-hr-agentic
   - accenture-mass-genai-reskilling
@@ -56,6 +57,34 @@ Cisco가 anchor한 다자 컨소시엄 (Microsoft·Google·IBM·SAP·Accenture·
 - 컨소시엄 자체가 "system" — vendor-neutral multi-stakeholder
 - 데이터: 참여 vendor의 anonymized job posting + skills demand
 - 오너십: Cisco anchor + Microsoft/Google/IBM/SAP/Accenture/Eightfold 협업
+
+### B. System & Infrastructure (Agent research)
+
+- **Core HRIS / 기반 시스템**: N/A (consortium 자체가 시스템 — research output 발간)
+- **AI 시스템 배치**: ✅ Multi-stakeholder research consortium (Cisco anchor + Microsoft·Google·IBM·SAP·Accenture·Eightfold·Indeed·Intel)
+- **배포 환경**: N/A (보고서·playbook·glossary 발간물 형태)
+- **연동·통합**: ✅ Indeed (job posting data), 참여사 internal job architecture, BLS/O*NET (역할 mapping baseline)
+- **사용자 접점**: ✅ Cisco.com 공개 PDF 보고서 + AI Workforce Playbook + AI Skills Glossary + 200+ curated learning resources
+- **인증·권한**: N/A (공개 자료)
+
+### C. Data (Agent research)
+
+- **입력 데이터 소스**: ✅ G7 국가 50개 직무 (40 ICT + 10 specialized) job posting volume; 12개월 비교 (Jul 2024–Jun 2025 vs Jul 2023–Jun 2024)
+- **데이터 규모**: ✅ 50개 직무 G7 cross-country; 구체 posting count _미공개_
+- **전처리·정제**: ✅ "AI Skills Integration" = job posting 중 AI-related skill 포함 비율 측정
+- **학습 vs RAG vs In-context**: N/A (research analysis)
+- **데이터 거버넌스**: ✅ Multi-stakeholder consortium governance (참여사 협의)
+- **민감정보 처리**: N/A (aggregate job market data)
+
+### D. Model (Agent research)
+
+- **Foundation model**: N/A (research methodology, deployed AI 아님)
+- **모델 유형**: ✅ Labor market analysis methodology (job posting NLP 추정 — 명시 없음)
+- **제공 방식**: N/A
+- **커스터마이징 기법**: N/A
+- **Orchestration 프레임워크**: N/A
+- **평가·가드레일**: ✅ Multi-vendor 협업 자체가 single-vendor bias 완화
+
 
 ## Impact / Metrics
 

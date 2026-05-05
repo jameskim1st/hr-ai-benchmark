@@ -16,10 +16,11 @@ stage: production
 frequency: daily
 first_seen: 2014-01-01
 last_confirmed: 2024-06-01
-confidence: 0.60
+confidence: 0.65
 consulting_angle_status: filled
 sources:
   - sources/us-large-enterprise-hr-ai-2025-2026.md
+  - "CNBC 2018: Amazon employee reaction to Connections + Forte (anonymity skepticism) https://www.cnbc.com/2018/03/30/amazon-employee-reaction-to-hr-programs-connections-forte.html"
 related_usecases:
   - microsoft-viva-glint-copilot-sentiment
   - amazon-hr-ai-restructuring
@@ -61,6 +62,34 @@ Amazon **Connections** — 1.5M 직원에게 매일 로그인 시 1개 질문 pu
 ### E. Organization
 
 - Amazon People Science 팀 (Andie Baker former principal)
+
+### B. System & Infrastructure (Agent research)
+
+- **Core HRIS / 기반 시스템**: _미공개_ (Amazon 내부 HR 시스템 — 자체 구축 추정)
+- **AI 시스템 배치**: ✅ Amazon 자체 구축 (proprietary, People Science 팀 운영)
+- **배포 환경**: _미공개_ (Amazon 내부 AWS 추정)
+- **연동·통합**: ✅ 직원 login 시스템 (Amazon SSO/A-to-Z 포털); 응답 데이터 → Seattle 본사 People Science team 집계
+- **사용자 접점**: ✅ 직원 로그인 시 자동 popup (web app — A-to-Z 직원 포털)
+- **인증·권한**: ✅ Amazon employee credential SSO
+
+### C. Data (Agent research)
+
+- **입력 데이터 소스**: ✅ Daily 1-question response (1-5 scale 또는 텍스트), non-response signal, 시간 경과 변화
+- **데이터 규모**: ✅ 1.5M+ 직원 cover (55 countries), 연 300M+ 응답 (자사 보고)
+- **전처리·정제**: ✅ Aggregation by area/manager (Seattle 팀); confidential 응답 처리 (자사 주장)
+- **학습 vs RAG vs In-context**: N/A (predictive ML, LLM 이전 세대)
+- **데이터 거버넌스**: ⚠️ Fortune Jun 2024 critical: anonymity 회의론 보고; 매니저별 area aggregation 가능
+- **민감정보 처리**: ⚠️ "Confidential responses" 자사 주장 — Fortune 비판 보도
+
+### D. Model (Agent research)
+
+- **Foundation model**: N/A (LLM 이전 세대 — 2014 시작)
+- **모델 유형**: ✅ ML + NLP (behavior·sentiment prediction, attrition·engagement 예측)
+- **제공 방식**: ✅ Self-hosted (Amazon 내부 proprietary)
+- **커스터마이징 기법**: _미공개_ (자체 모델 학습 추정)
+- **Orchestration 프레임워크**: N/A
+- **평가·가드레일**: ⚠️ Fortune 비판: 응답 이후 manager-level 압력 가능성; 익명성 실효성 의문
+
 
 ## Impact / Metrics
 

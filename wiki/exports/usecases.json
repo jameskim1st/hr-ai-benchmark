@@ -1,5 +1,145 @@
 [
   {
+    "slug": "jpmorgan-llm-suite-redeployment",
+    "title": "JPMorgan — LLM Suite (200K 직원) + AI 재배치 (총 318K, 백오피스↓ 클라이언트직↑)",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "Workforce Planning",
+    "company": "JPMorgan Chase",
+    "industry": [
+      "finance",
+      "banking"
+    ],
+    "region": [
+      "na",
+      "global"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "JPMorgan internal",
+      "OpenAI",
+      "Anthropic"
+    ],
+    "vendor_type": [
+      "internal-build",
+      "foundation-model"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
+    "confidence": 0.8,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-08-01",
+    "last_confirmed": "2026-02-25",
+    "tags": [
+      "llm-suite",
+      "jpmorgan",
+      "redeployment",
+      "gen-ai",
+      "internal-build",
+      "model-agnostic",
+      "performance-review-drafting",
+      "retention-by-redeployment",
+      "dimon",
+      "finance",
+      "ai-made-easy"
+    ],
+    "summary": "JPMorgan <strong>LLM Suite</strong> — 2024 여름 launch, model-agnostic gateway (OpenAI + Anthropic), ~230K 직원 대상 8개월 만에 200K+ 온보딩 (~2/3 workforce). ⚠️ 자사 보고: 30-40% efficiency, 직원당 3-6h/week saved, $1.5B/yr 추정 가치. <strong>핵심 distinct feature</strong>: 직원이 LLM Suite로 <strong>annual performance review 초안 drafting</strong> 가능. 동시에 Dimon Feb 2026: 백오피스/operations -4%/-2%, 클라이언트직 +4% — 총 318,512명 거의 flat 유지하며 AI 재배치. AI specialist 1,500 → 2,500 (+67%).",
+    "headline": "JPMorgan LLM Suite — 2024 여름 launch, model-agnostic gateway (OpenAI + Anthropic), ~230K 직원 대상 8개월 만에 200K+ 온보딩 (~2/3 workforce).",
+    "problem": "<ul>\n<li><strong>Before</strong>: 230K 직원 대규모 finance enterprise, 정보보안·규제 제약으로 외부 LLM(ChatGPT) 직접 사용 불가</li>\n<li><strong>Pain point</strong>: gen AI 효익 vs 금융정보보호·고객정보·내부거래 정보 제약</li>\n<li><strong>Trigger</strong>: 2023-24 ChatGPT 시장 도입 + 경쟁사(Goldman·Morgan Stanley) AI 배포 압박</li>\n</ul>",
+    "impact_summary": "private gateway로 보안 유지하며 230K 직원 gen AI 활용 + AI 재배치로 백오피스 축소·클라이언트직 확대 (총 headcount flat 유지).",
+    "consulting": "<ul>\n<li><strong>KR 금융권 직격 reference (1순위)</strong>:</li>\n<li>KB·신한·우리·하나금융 모두 자체 LLM 플랫폼 구축 중 (신한 AI ONE, 하나 지식챗봇, 미래에셋 AI Assistant) — JPMorgan LLM Suite의 <strong>model-agnostic gateway 아키텍처</strong>가 직접 reference</li>\n<li>230K 직원 onboarding 8개월 모델 — 한국 대형 은행(KB 17K·신한 14K) 적용 시 6개월 미만 완료 가능성</li>\n<li><strong>AI 재배치 패러다임 (KR 핵심 어젠다)</strong>:</li>\n</ul>",
+    "system": {
+      "연동·통합": "내부 데이터·정책 RAG, 직원 ID·권한 SSO",
+      "사용자 접점": "web app (사내 인증)"
+    },
+    "data": {},
+    "model": {
+      "Foundation model": "OpenAI GPT-4 + Anthropic Claude (선택 가능)"
+    },
+    "process_before": "230K 직원 대규모 finance enterprise, 정보보안·규제 제약으로 외부 LLM(ChatGPT) 직접 사용 불가 / Pain point: gen AI 효익 vs 금융정보보호·고객정보·내부거래 정보 제약 / Trigger: 2023-24 ChatGPT 시장 도입 + 경쟁사(Goldman·Morgan Stanley) AI 배포 압박",
+    "process_steps": [
+      "직원이 LLM Suite (private gateway) 접속",
+      "모델 선택 (OpenAI GPT-4 / Anthropic Claude — agnostic)",
+      "내부 데이터 활용 가능 (RAG with 회사 정책·문서)",
+      "사용 사례:",
+      "동시에 Dimon은 AI 효율을 redeployment 명분으로 활용 — 백오피스 폐지·클라이언트직 신설"
+    ]
+  },
+  {
+    "slug": "workday-peakon-illuminate-employee-voice",
+    "title": "Workday Peakon Employee Voice — Illuminate AI (1B+ 응답·60+ 언어, Workday 사내 +35% 만족도)",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "Listening & Engagement",
+    "company": "_다수 (Workday Peakon 고객, Workday 자사 도입 포함)_",
+    "industry": [
+      "all"
+    ],
+    "region": [
+      "global"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "Workday"
+    ],
+    "vendor_type": [
+      "hrms",
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification"
+    ],
+    "confidence": 0.8,
+    "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2021-02-01",
+    "last_confirmed": "2026-04-01",
+    "tags": [
+      "workday",
+      "peakon",
+      "illuminate",
+      "employee-voice",
+      "sentiment-analysis",
+      "continuous-listening",
+      "multilingual",
+      "theme-extraction",
+      "engagement"
+    ],
+    "summary": "Workday가 2021-02 인수 (~$700M)한 <strong>Peakon Employee Voice</strong> — 지속적 pulse 서베이 + AI 감정·테마 분석. 2024-12-11에 <strong>Illuminate AI</strong> 기능 발표 — open-end comment 자동 요약·테마 추출·driver 식별. ⚠️ 벤더 주장: 1B+ 응답 + 200M+ 텍스트 피드백 학습, 60+ 언어, 160개국 운영. ⚠️ 자사 보고: Workday 사내 활용 결과 직원 성장·커리어 만족도 <strong>+35%</strong>.",
+    "headline": "Workday가 2021-02 인수 (~$700M)한 Peakon Employee Voice — 지속적 pulse 서베이 + AI 감정·테마 분석.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 5만~10만 직원 KR 대기업 annual 조직문화 진단의 open-end 코멘트 코딩에 HRBP 팀 수주 투입 — insight 도출 지연</li>\n<li><strong>Pain point</strong>: 글로벌 organization은 60+ 언어 응답 통합 분석 어려움 + theme·sentiment를 매니저별 actionable insight로 변환 어려움</li>\n<li><strong>Trigger</strong>: Workday 2021-02 Peakon 인수 → 2024-12 Illuminate AI 통합 (Workday Illuminate 시리즈 일환)</li>\n</ul>",
+    "impact_summary": "글로벌 60+ 언어 통합 sentiment 분석 + Workday HCM native — KR 대기업 annual 조직문화 진단의 cycle time을 수주 → 즉시로 단축 가능.",
+    "consulting": "<ul>\n<li><strong>KR engagement survey vendor 비교 reference (Top 3)</strong>:</li>\n<li>Workday Peakon (Workday HCM 도입사 우선) vs Microsoft Glint Copilot microsoft-viva-glint-copilot-sentiment (M365 도입사) vs Qualtrics qualtrics-adidas-employee-experience-ai (standalone EX)</li>\n<li>Amazon Connections amazon-connections-daily-pulse (frontline daily pulse)와 cadence 비교</li>\n<li><strong>2026 Q3-Q4 KR 컨설팅 deck</strong>:</li>\n</ul>",
+    "system": {
+      "Core HRIS": "Workday HCM (Peakon은 Workday 통합 모듈)",
+      "배포 환경": "Workday cloud",
+      "연동·통합": "Workday HCM 마스터 + 매니저 dashboard"
+    },
+    "data": {},
+    "model": {},
+    "process_before": "5만~10만 직원 KR 대기업 annual 조직문화 진단의 open-end 코멘트 코딩에 HRBP 팀 수주 투입 — insight 도출 지연 / Pain point: 글로벌 organization은 60+ 언어 응답 통합 분석 어려움 + theme·sentiment를 매니저별 actionable insight로 변환 어려움 / Trigger: Workday 2021-02 Peakon 인수 → 2024-12 Illuminate AI 통합 (Workday Illuminate 시리즈 일환)",
+    "process_steps": [
+      "직원이 정기·수시 pulse 서베이 응답 (closed-end + open-end)",
+      "Peakon Illuminate가 60+ 언어로 자연어 처리",
+      "자동 테마·sentiment·driver 추출 (1B+ 응답 학습 모델 기반)",
+      "매니저·HRBP에게 부서별 dashboard 제공 — 강점·기회·이슈 자동 highlight",
+      "매니저가 추천 action 실행, 다음 cycle에서 효과 측정",
+      "이상 신호 (이탈 risk·번아웃·문화 이슈) 선제적 alert"
+    ]
+  },
+  {
     "slug": "accenture-mass-genai-reskilling",
     "title": "Accenture — 30 → 550,000+ 직원 GenAI 교육 (3년, AI/data 인력 40K → 77K)",
     "primary_category": "Learning & Development",
@@ -47,9 +187,18 @@
     "problem": "<ul>\n<li><strong>Before</strong>: 770K+ 글로벌 컨설팅 인력 — 직원 AI 역량 분포 편차 큰</li>\n<li><strong>Pain point</strong>: 컨설팅 비즈니스 자체가 AI를 사용·판매·구현해야 함 → 직원 AI literacy가 직접 매출 영향</li>\n<li><strong>Trigger</strong>: ChatGPT 출시 직후 (2022-11) Sweet CEO가 즉각 mass reskilling 결단</li>\n</ul>",
     "impact_summary": "3년 만에 30명 → 550,000+ trained = <strong>>18,300x 확장</strong>. AI/data 인력 +93%. 컨설팅 시장에서 AI 매출 비중 가속.",
     "consulting": "<ul>\n<li><strong>KR 컨설팅 핵심 reference (Top 5)</strong>:</li>\n<li>한국 대기업 AI 전사 교육 ROI 논쟁의 <strong>canonical benchmark</strong> — 550K·$1B·3년 timeline</li>\n<li>SK·LG·CJ·신세계 등 그룹 HRD 센터 RFP 대응 시 Accenture를 \"글로벌 모범\"으로 reference</li>\n<li><strong>2026 Q3-Q4 임원 발표 핵심 슬라이드</strong>:</li>\n</ul>",
-    "system": {},
-    "data": {},
-    "model": {},
+    "system": {
+      "AI 시스템 배치": "Accenture LearnVantage 자체 학습 플랫폼 (2024-03 launch, Udacity 인수 통합)",
+      "연동·통합": "Stanford Online (Generative AI Scholars Program), Pluralsight·Coursera·Workera·Skillsoft (콘텐츠), AWS·Google Cloud·Microsoft (인증)",
+      "사용자 접점": "LearnVantage web platform (self-paced, 40h+ Stanford courses)"
+    },
+    "data": {
+      "입력 데이터 소스": "벤더 주장: AI recommendation engine이 직원 role + 회사 business strategy 기반 스킬 surface; 구체 데이터 항목 _미공개_",
+      "데이터 규모": "550,000+ trained 직원 (CEO Sweet 발언,  자사 보고)"
+    },
+    "model": {
+      "모델 유형": "recommendation engine + skills assistant"
+    },
     "process_before": "770K+ 글로벌 컨설팅 인력 — 직원 AI 역량 분포 편차 큰 / Pain point: 컨설팅 비즈니스 자체가 AI를 사용·판매·구현해야 함 → 직원 AI literacy가 직접 매출 영향 / Trigger: ChatGPT 출시 직후 (2022-11) Sweet CEO가 즉각 mass reskilling 결단",
     "process_steps": [
       "2022-11 시점 GenAI trained 직원 = 30명",
@@ -89,7 +238,7 @@
     "ai_tech_subtype": [
       "clustering-classification"
     ],
-    "confidence": 0.7,
+    "confidence": 0.75,
     "stage": "production",
     "frequency": "annual",
     "first_seen": "2024-01-01",
@@ -113,9 +262,27 @@
     "problem": "<ul>\n<li><strong>Before</strong>: ICT 직무·스킬 evolution 정량 데이터는 LinkedIn·Indeed·BLS 산발 — 글로벌 컨소시엄 합의 부재</li>\n<li><strong>Pain point</strong>: HR·workforce planning 임원이 \"AI가 우리 직무에 얼마나 영향을 주나\"에 정량 답 부재</li>\n<li><strong>Trigger</strong>: 2024 multi-vendor 협업 출범 — Cisco가 anchor</li>\n</ul>",
     "impact_summary": "ICT 직무 AI 스킬 78% 포함 + AI 직무 top 10 fastest-growing 7개 — KR 대기업 workforce planning deck \"burning platform\" 데이터 pillar.",
     "consulting": "<ul>\n<li><strong>KR workforce planning deck 핵심 데이터 source</strong>:</li>\n<li>\"78% ICT 직무 AI 스킬\" 데이터는 KR 대기업(삼성전자·LG전자·SK하이닉스·LG CNS·삼성SDS) AI 인력 전략 deck 첫 슬라이드</li>\n<li>\"top 10 중 7 AI-related\" — KR IT 인재 채용·reskilling 우선순위 재편 명분</li>\n<li><strong>AI Skills Glossary</strong>: KR HR 직무 dictionary 갱신 시 vendor-neutral reference 활용 가능</li>\n</ul>",
-    "system": {},
-    "data": {},
-    "model": {},
+    "system": {
+      "AI 시스템 배치": "Multi-stakeholder research consortium (Cisco anchor + Microsoft·Google·IBM·SAP·Accenture·Eightfold·Indeed·Intel)",
+      "배포 환경": "N/A (보고서·playbook·glossary 발간물 형태)",
+      "연동·통합": "Indeed (job posting data), 참여사 internal job architecture, BLS/O*NET (역할 mapping baseline)",
+      "사용자 접점": "Cisco.com 공개 PDF 보고서 + AI Workforce Playbook + AI Skills Glossary + 200+ curated learning resources",
+      "인증·권한": "N/A (공개 자료)"
+    },
+    "data": {
+      "입력 데이터 소스": "G7 국가 50개 직무 (40 ICT + 10 specialized) job posting volume; 12개월 비교 (Jul 2024–Jun 2025 vs Jul 2023–Jun 2024)",
+      "데이터 규모": "50개 직무 G7 cross-country; 구체 posting count _미공개_",
+      "전처리·정제": "\"AI Skills Integration\" = job posting 중 AI-related skill 포함 비율 측정",
+      "데이터 거버넌스": "Multi-stakeholder consortium governance (참여사 협의)",
+      "민감정보 처리": "N/A (aggregate job market data)"
+    },
+    "model": {
+      "Foundation model": "N/A (research methodology, deployed AI 아님)",
+      "모델 유형": "Labor market analysis methodology (job posting NLP 추정 — 명시 없음)",
+      "제공 방식": "N/A",
+      "커스터마이징 기법": "N/A",
+      "평가·가드레일": "Multi-vendor 협업 자체가 single-vendor bias 완화"
+    },
     "process_before": "ICT 직무·스킬 evolution 정량 데이터는 LinkedIn·Indeed·BLS 산발 — 글로벌 컨소시엄 합의 부재 / Pain point: HR·workforce planning 임원이 \"AI가 우리 직무에 얼마나 영향을 주나\"에 정량 답 부재 / Trigger: 2024 multi-vendor 협업 출범 — Cisco가 anchor",
     "process_steps": [
       "6+ tech 대기업 협업 데이터 pooling",
@@ -127,10 +294,460 @@
     ]
   },
   {
-    "slug": "jpmorgan-llm-suite-redeployment",
-    "title": "JPMorgan — LLM Suite (200K 직원) + AI 재배치 (총 318K, 백오피스↓ 클라이언트직↑)",
+    "slug": "ibm-hr-workforce-reduction-agentic",
+    "title": "IBM — HR 인력 200명·전사 8,000명 AI 대체 + 순 headcount 증가 (2025)",
     "primary_category": "Strategic Workforce & Governance",
     "subcategory": "Workforce Planning",
+    "company": "IBM",
+    "industry": [
+      "tech",
+      "it-services"
+    ],
+    "region": [
+      "global"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "IBM"
+    ],
+    "vendor_type": [
+      "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "prediction",
+      "clustering-classification",
+      "rpa"
+    ],
+    "confidence": 0.75,
+    "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2025-05-01",
+    "last_confirmed": "2026-02-12",
+    "tags": [
+      "workforce-reduction",
+      "redeployment",
+      "hr-tech-governance",
+      "ibm",
+      "agentic",
+      "layoffs",
+      "role-displacement",
+      "krishna",
+      "lamoreaux",
+      "hr-budget-reduction"
+    ],
+    "summary": "2025-05 IBM CEO Arvind Krishna 발언 — AI agents (AskHR + watsonx Orchestrate stack)가 <strong>\"a couple hundred HR roles\"</strong> 대체. 전사 8,000명 layoff (~3% workforce). HR operating budget 4년간 40% 감소 (LaMoreaux). <strong>단, 순 headcount는 증가</strong> — 절감액을 엔지니어·영업·마케팅 채용에 재투자. \"감원\"이 아닌 \"재배치 + 직무 전환\" 패러다임의 canonical reference.",
+    "headline": "2025-05 IBM CEO Arvind Krishna 발언 — AI agents (AskHR + watsonx Orchestrate stack)가 \"a couple hundred HR roles\" 대체.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 270K 직원 IBM의 HR 운영 비용 baseline (CHRO LaMoreaux pre-AI era)</li>\n<li><strong>Pain point</strong>: HR 백오피스 transactional 업무가 budget 흡수, 전략 HR에 투자 여력 부족</li>\n<li><strong>Trigger</strong>: AskHR·watsonx Orchestrate·cHaRlie·Predictive Attrition 누적 효과 (2018~2025) → 임계 도달</li>\n</ul>",
+    "impact_summary": "HR ops 자동화로 200 HR roles 폐지 + 4년간 HR budget 40% 감소 + 순 headcount 증가 (재투자). KR HR 임원이 가장 자주 묻는 \"AI 도입 후 인력 줄일 수 있나\" 질문의 canonical reference.",
+    "consulting": "<ul>\n<li><strong>KR 컨설팅 핵심 reference — \"AI로 인력 줄일 수 있나\" 질문의 정답</strong>:</li>\n<li>단순 cut 아닌 \"재배치 + 재투자\" frame이 핵심</li>\n<li>한국 노동법·노조·평판 컨텍스트에서 \"감원\"보다 \"직무 전환·reskilling\"으로 포지셔닝</li>\n<li>200/270K = 0.07% HR ops cut으로 40% budget 절감 — 임팩트 비율 시사점</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "Stack 누적: AskHR + cHaRlie + Watson Recruitment + Predictive Attrition + watsonx Orchestrate TA Agent 모두 watsonx Orchestrate 기반",
+      "배포 환경": "watsonx Orchestrate on IBM Cloud + AWS 옵션",
+      "연동·통합": "AskHR → Workday/Salesforce/Coupa 등 통합 (2025 IBM 발표)",
+      "사용자 접점": "AskHR은 직원 self-service portal/채팅; cHaRlie는 admin tool"
+    },
+    "data": {
+      "입력 데이터 소스": "HR 정책 docs, employee master data, payroll·benefits·career·skills domain (AskHR이 4개 도메인 routing)",
+      "데이터 규모": "AskHR 11.5M+ 인터랙션 in 2024",
+      "데이터 거버넌스": "\"highly compliant LLMs\" (벤더 주장)"
+    },
+    "model": {
+      "Foundation model": "IBM Granite (watsonx Orchestrate 기본) + fine-tuned foundation models (orchestrator agent 기능, 2025)",
+      "모델 유형": "Agentic LLM (Granite + fine-tuned variants) + classifier (prompt routing) + RPA/automation",
+      "제공 방식": "Self-hosted on watsonx (proprietary)",
+      "커스터마이징 기법": "Fine-tuned Granite + agentic architecture for autonomous reasoning (TechXchange 2025)",
+      "평가·가드레일": "자사 보고: AskHR 94% autonomous resolution, NPS -35 → +74"
+    },
+    "process_before": "270K 직원 IBM의 HR 운영 비용 baseline (CHRO LaMoreaux pre-AI era) / Pain point: HR 백오피스 transactional 업무가 budget 흡수, 전략 HR에 투자 여력 부족 / Trigger: AskHR·watsonx Orchestrate·cHaRlie·Predictive Attrition 누적 효과 (2018~2025) → 임계 도달",
+    "process_steps": [
+      "AskHR Agent",
+      "HR transactional 200명 폐지",
+      "cHaRlie L&D Agent",
+      "Watson Recruitment + watsonx TA",
+      "Predictive Attrition + AI Comp",
+      "전사 8,000명 layoff",
+      "엔지니어·영업·마케팅 채용",
+      "순 headcount 증가"
+    ]
+  },
+  {
+    "slug": "korea-ai-basic-act-hr-compliance",
+    "title": "한국 AI 기본법 — HR AI 컴플라이언스 의무 (2026-01-22 시행)",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "Compliance & Risk",
+    "company": "_전체 (한국 사업장 운영 모든 기업 대상)_",
+    "industry": [
+      "all"
+    ],
+    "region": [
+      "kr"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "_규제 — 벤더 X_"
+    ],
+    "vendor_type": [
+      "_규제_"
+    ],
+    "ai_tech_type": [],
+    "ai_tech_subtype": [],
+    "confidence": 0.75,
+    "stage": "production",
+    "frequency": "adhoc",
+    "first_seen": "2026-01-22",
+    "last_confirmed": "2026-04-30",
+    "tags": [
+      "korea-ai-act",
+      "regulation",
+      "compliance",
+      "high-impact-ai",
+      "hr-tech-governance",
+      "recruitment-ai",
+      "performance-evaluation",
+      "eu-ai-act-comparison",
+      "dual-compliance"
+    ],
+    "summary": "「인공지능 발전·신뢰 기반 조성 등에 관한 기본법」(통칭 'AI 기본법')이 <strong>2026-01-22 본격 시행</strong>. EU AI Act에 이은 세계 2번째 포괄규제. <strong>고영향 AI(high-impact AI)</strong> 카테고리에 채용·인사평가·승진·해고 의사결정 AI가 명시적으로 포함됨. 영향평가·투명성 고지·인적 감독·이용자 권리 보장 의무. 모든 KR HR AI 프로젝트의 legal foundation. 2026-08 EU AI Act high-risk 의무 발효와 결합되면 글로벌 KR 대기업은 dual compliance 운영 부담.",
+    "headline": "「인공지능 발전·신뢰 기반 조성 등에 관한 기본법」(통칭 'AI 기본법')이 2026-01-22 본격 시행.",
+    "problem": "<ul>\n<li><strong>Before (baseline)</strong>: 한국은 AI 거버넌스를 개인정보보호법(PIPA) 자동화된 결정 조항·차별금지법 등으로 산발 규율. HR AI 도입사도 자체 가이드라인에 의존 (ex. SK·삼성).</li>\n<li><strong>Pain point</strong>: 채용 AI(마이다스 inAIR·SK AICT·원티드 AI Agent) 도입 가속화에도 불구하고 \"이 AI가 합법인지\", \"지원자 권리는 어떻게 보장되는지\", \"차별 발생 시 책임은 누구인지\" 가 회색 지대.</li>\n<li><strong>Trigger</strong>: EU AI Act 발효(2024) + OECD AI 원칙 + 국내 마이다스 AI 면접 차별 논란(2020~) → 한국 정부가 2024년 입법 → 2025-01-21 공포 → <strong>2026-01-22 시행</strong>.</li>\n</ul>",
+    "impact_summary": "한국 HR AI 시장 전반의 합법 운영 baseline 형성. EU AI Act와 결합 시 글로벌 KR 대기업은 dual compliance 인프라 의무화.",
+    "consulting": "<ul>\n<li><strong>모든 KR HR AI 프로젝트의 legal foundation 슬라이드 필수</strong>: 채용·평가·승진·해고 AI 도입 제안 시 첫 페이지에 의무 list 명시</li>\n<li><strong>dual compliance 어젠다 (2026-08 EU AI Act 발효 동반)</strong>: 글로벌 KR 대기업(삼성·현대·LG·SK)은 EU·KR 동시 대응 인프라 필요 — Workday ASOR 등 거버넌스 솔루션 도입 명분</li>\n<li><strong>신규 컨설팅 메뉴 — \"HR AI Compliance Diagnostic\"</strong>:</li>\n</ul>\n1. 현행 HR AI 자산 인벤토리 (어떤 AI가 어디에 쓰이나)",
+    "system": {
+      "연동·통합": "ATS·HRIS·LMS 등 모든 HR 시스템에서 AI 사용 부분 추적",
+      "사용자 접점": "HRBP·legal·DPO·AI 위원회 (사람), 지원자/직원에게는 채용·평가 process 내 AI 고지",
+      "인증·권한": "AI 운영자·감사자·HRBP 권한 분리"
+    },
+    "data": {
+      "입력 데이터 소스": "AI 모델 학습·운영 데이터, 의사결정 로그, 영향평가 결과, 이의제기 처리 기록",
+      "데이터 규모": "기업별 상이",
+      "전처리·정제": "PII 마스킹, bias 검사용 demographic parity 측정 데이터",
+      "데이터 거버넌스": "PIPA 보존기간 + AI 기본법 감사 로그 보존 (시행령 가이드)",
+      "민감정보 처리": "채용·평가에 사용되는 개인정보는 PIPA + AI 기본법 dual 적용"
+    },
+    "model": {},
+    "process_before": "HR AI 도입 시 자체 윤리 가이드라인·DPIA(GDPR)만 적용, 한국 법적 의무 명시 부재 /",
+    "process_steps": [
+      ": 고영향 AI 분류 판정 (채용·인사평가·승진·해고 → 자동 분류)",
+      ": 차별·편향·정확도 등 사전 평가 — 시행령 가이드라인 (2026 상반기 추가 고시 예정)",
+      ": 지원자·직원에게 \"AI가 의사결정에 사용됨\" 명시",
+      ": 최종 결정에 사람의 검토·승인 단계 필수",
+      ": 결과 설명 요청권, 이의제기권",
+      ": bias drift·정확도 변화 정기 점검"
+    ]
+  },
+  {
+    "slug": "walmart-openai-certification",
+    "title": "Walmart × OpenAI Certification — frontline + 사무 직원 무료 OpenAI 인증 ($1B 교육)",
+    "primary_category": "Learning & Development",
+    "subcategory": "Skills & Capabilities",
+    "company": "Walmart",
+    "industry": [
+      "retail"
+    ],
+    "region": [
+      "na"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "Walmart",
+      "OpenAI"
+    ],
+    "vendor_type": [
+      "internal-build",
+      "foundation-model"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
+    "confidence": 0.75,
+    "stage": "production",
+    "frequency": "annual",
+    "first_seen": "2025-09-01",
+    "last_confirmed": "2026-04-01",
+    "tags": [
+      "walmart",
+      "openai",
+      "certification",
+      "frontline-ai-training",
+      "mass-upskilling",
+      "1b-investment",
+      "retail",
+      "50k-upskilled"
+    ],
+    "summary": "Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무 직원에게 <strong>OpenAI Certification 무료 access</strong> (2026 launch 시). 다층 (basics → prompt engineering). Walmart의 <strong>$1B 교육 commitment</strong> (2026까지)의 일부. ~50,000 직원이 AI/automation roles로 reskilling 진행. 740K frontline에게 <strong>Me@Walmart</strong> 디바이스 (Samsung Galaxy XCover Pro) 배포로 학습 access 인프라 마련.",
+    "headline": "Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무 직원에게 OpenAI Certification 무료 access (2026 launch 시).",
+    "problem": "<ul>\n<li><strong>Before</strong>: 1.6M Walmart frontline 직원의 AI literacy baseline 매우 편차 큰</li>\n<li><strong>Pain point</strong>: AI 도입 가속 vs frontline workforce 변화 압박 — reskilling 없으면 mass 해고 사태</li>\n<li><strong>Trigger</strong>: OpenAI Certification (2026 GA) launch 동시 vendor 파트너십 결단</li>\n</ul>",
+    "impact_summary": "frontline retail 1.6M 직원에게 mass AI upskilling — KR retail (이마트·롯데·CJ대한통운·쿠팡) frontline reskilling 모범.",
+    "consulting": "<ul>\n<li><strong>KR retail/유통 frontline reskilling reference (1순위)</strong>:</li>\n<li>이마트(이마트24·트레이더스 합산 ~10만)·롯데마트(~3만)·CJ대한통운(~2만)·쿠팡 fulfilment(~5만+) — 모두 Walmart 모델 fit</li>\n<li>디바이스 + AI Certification + 배치 시나리오 통합 패키지</li>\n<li><strong>벤더 파트너십 패턴</strong>: KR retail이 OpenAI/Anthropic/Naver Hyperclova X 중 누구와 파트너십 할지 결정 시 Walmart 사례 reference</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "Walmart Academy (LMS 자체 운영) + OpenAI Academy 플랫폼 통합",
+      "배포 환경": "ChatGPT Enterprise rollout (Walmart 전사) — Walmart-OpenAI 2025-10 partnership",
+      "연동·통합": "Me@Walmart 앱 (frontline access 인프라, Walmart Global Tech 자체 빌드, 2021 launch); OpenAI Academy + Walmart Academy 통합",
+      "사용자 접점": "Samsung Galaxy XCover Pro (740K frontline 디바이스), Me@Walmart 앱 (geofencing, push-to-talk, ML/AR/camera vision); 사무직은 ChatGPT Enterprise web/desktop",
+      "인증·권한": "Me@Walmart 앱은 work features = on-clock 접근 제한; Walmart는 personal data access 없음 (벤더 주장)"
+    },
+    "data": {
+      "입력 데이터 소스": "OpenAI Academy 콘텐츠 (basics → prompt engineering 다층); Walmart Academy 자체 콘텐츠",
+      "데이터 규모": "2.1M 직원 in scope (전사 training 목표); 740K frontline 디바이스; ~50,000 직원 AI/automation roles 재배치",
+      "전처리·정제": "N/A (training content, 직원 데이터 처리 시스템 아님)",
+      "민감정보 처리": "Me@Walmart는 personal/work 분리 (Walmart corporate)"
+    },
+    "model": {
+      "Foundation model": "OpenAI ChatGPT Enterprise (구체 GPT-4/4o/5 _미공개_);  Google Gemini도 별도 인증 파트너 (multi-vendor, 신규 발견)",
+      "모델 유형": "Generative LLM (ChatGPT Enterprise) — 직원 hands-on 사용",
+      "제공 방식": "상용 API (OpenAI ChatGPT Enterprise, Google Gemini) — multi-vendor",
+      "평가·가드레일": "OpenAI Certifications (자체 평가 체계)"
+    },
+    "process_before": "1.6M Walmart frontline 직원의 AI literacy baseline 매우 편차 큰 / Pain point: AI 도입 가속 vs frontline workforce 변화 압박 — reskilling 없으면 mass 해고 사태 / Trigger: OpenAI Certification (2026 GA) launch 동시 vendor 파트너십 결단",
+    "process_steps": [
+      "Me@Walmart 디바이스 (Samsung Galaxy XCover Pro) 740K frontline 배포 → 학습 access 인프라",
+      "OpenAI Certification 다층 모듈 (basics → prompt engineering) — 무료 access",
+      "~50,000 직원이 AI/automation roles 재배치",
+      "$1B 교육 commitment (2026까지)의 일부로 통합 운영"
+    ]
+  },
+  {
+    "slug": "anaplan-workforce-analyst-ai-agents",
+    "title": "Anaplan Workforce Analyst — Role-Based AI Agents (2025-12 GA, healthcare $21M, Fresenius·Canada Goose 30~60% cycle 단축)",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "Workforce Planning",
+    "company": "_다수 (Anaplan 고객 — Fresenius·Canada Goose·Cinemark·healthcare provider 등)_",
+    "industry": [
+      "all"
+    ],
+    "region": [
+      "global"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "Anaplan"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "prediction"
+    ],
+    "confidence": 0.7,
+    "stage": "production",
+    "frequency": "monthly",
+    "first_seen": "2025-12-09",
+    "last_confirmed": "2026-04-01",
+    "tags": [
+      "anaplan",
+      "workforce-analyst",
+      "role-based-ai-agent",
+      "scenario-planning",
+      "hr-finance-integration",
+      "fresenius",
+      "canada-goose",
+      "natural-language-query",
+      "fp-and-a"
+    ],
+    "summary": "Anaplan이 2025-12-09 GA로 발표한 <strong>Role-Based AI Agents</strong> 제품군 중 <strong>Workforce Analyst</strong>. HR-finance 데이터 통합 + 자연어 query + 시나리오 시뮬레이션으로 인력 의사결정 가속. 검증된 고객 사례: healthcare provider $21M 연 절감 + time-to-market 20% 단축, Fresenius Medical Care planning time <strong>30%+ 단축</strong>, Canada Goose planning cycle <strong>60% 단축</strong>. 2026 H1에 autonomous AI 에이전트 (자율 이상 감지·워크플로 실행) 추가 예정.",
+    "headline": "Anaplan이 2025-12-09 GA로 발표한 Role-Based AI Agents 제품군 중 Workforce Analyst.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 90%+ 기업이 여전히 Excel 기반 인력 계획 (Anaplan 조사) — HR과 finance 시스템 단절, 시나리오 분석 수주~수개월 소요, 예측 오차 10%+</li>\n<li><strong>Pain point</strong>: \"채용 동결·조직 개편·M&A·인력 재배치 시나리오의 재무 영향이 즉시 분석 안 됨\" — CFO·CHRO 의사결정 지연</li>\n<li><strong>Trigger</strong>: 2025-12 Anaplan Role-Based AI Agents GA — HR·Finance·Sales·Supply Chain별 specialist agent 동시 launch</li>\n</ul>",
+    "impact_summary": "HR-finance data 단절 해소 + 시나리오 분석 수주 → 즉시 + 인건비 절감 8~9자리 수치 (대형 고객 사례).",
+    "consulting": "<ul>\n<li><strong>KR 대기업 인사기획·재무 통합 reference (Top 3)</strong>:</li>\n<li>Anaplan Workforce Analyst (HR-finance native 통합) + Deloitte Workforce Analyzer deloitte-workforce-analyzer-salesforce (컨설팅 기반 진단) + Workday ASOR workday-agent-system-of-record-asor (AI agent 거버넌스)</li>\n<li>90% 기업이 Excel 기반 — KR 대기업도 동일 갭, 가장 강력한 hook</li>\n<li><strong>시나리오 시뮬레이션 슬라이드</strong>: KR 그룹사 임원에게 \"M&A·구조조정·정년 연장·지역 분산 시 인건비 영향 즉시 분석\" 가치 제안</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "Anaplan cloud platform 내장 (Role-Based AI Agents, 2025-12-09 GA)",
+      "배포 환경": "Cloud-native (Anaplan SaaS — multi-tenant); 구체 클라우드 provider _미공개_",
+      "연동·통합": "HCM·ERP·finance system connectors;  벤더 주장: pre-built integration",
+      "사용자 접점": "Anaplan web app + 자연어 query interface (conversational UI)",
+      "인증·권한": "Anaplan tenant 격리 (multi-tenant SaaS); 세부 RBAC 모델 _미공개_"
+    },
+    "data": {
+      "입력 데이터 소스": "HCM 마스터 데이터 + ERP 트랜잭션 + finance ledger (실시간 통합)",
+      "전처리·정제": "Polaris Calculation Engine (sparse data 최적화)",
+      "데이터 거버넌스": "Agent Studio가 \"full governance and control\" 제공 (벤더 주장)"
+    },
+    "model": {
+      "모델 유형": "LLM (conversational/reasoning) + ML (predictive) + deterministic planning engine 혼합",
+      "커스터마이징 기법": "Agent Studio toolkit으로 customer가 custom AI assistant 배포 가능",
+      "평가·가드레일": "벤더 주장: \"accurate, traceable, auditable calculations\" — eval set·red-team 구체 _미공개_"
+    },
+    "process_before": "90%+ 기업이 여전히 Excel 기반 인력 계획 (Anaplan 조사) — HR과 finance 시스템 단절, 시나리오 분석 수주~수개월 소요, 예측 오차 10%+ / Pain point: \"채용 동결·조직 개편·M&A·인력 재배치 시나리오의 재무 영향이 즉시 분석 안 됨\" — CFO·CHRO 의사결정 지연 / Trigger: 2025-12 Anaplan Role-Based AI Agents GA — HR·Finance·Sales·Supply Chain별 specialist agent 동시 launch",
+    "process_steps": [
+      "HCM (Workday/SAP) + ERP + finance 시스템을 Anaplan 플랫폼에 연동",
+      "HR·CFO·CHRO가 자연어로 query (예: \"지역별 이직률 추이는?\", \"보류 중인 채용 건은?\", \"headcount 5% 감축 시 인건비 영향?\")",
+      "AI agent가 실시간 데이터 분석 → 숨겨진 패턴·리스크 감지",
+      "시나리오 시뮬레이션: 채용 동결·조직 개편·재배치의 재무 영향 즉시 산출",
+      "AI 권고안 검토 → 인간 승인 → 워크플로 자동 실행 (2026 H1 autonomous mode 예정)",
+      "Position-level 정밀 인건비 계획 수립"
+    ]
+  },
+  {
+    "slug": "cisco-ai-assistant-hr-agentic",
+    "title": "Cisco — AI Assistant for HR (PTO Q&A → 매니저 outbound 메시지 자동 작성, agentic)",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "Employee Self-service",
+    "company": "Cisco",
+    "industry": [
+      "tech",
+      "networking"
+    ],
+    "region": [
+      "global"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "Cisco internal"
+    ],
+    "vendor_type": [
+      "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
+    "confidence": 0.7,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-06-01",
+    "last_confirmed": "2025-11-01",
+    "tags": [
+      "cisco",
+      "ai-assistant",
+      "hr-agentic",
+      "pto",
+      "time-off",
+      "beyond-q-and-a",
+      "outbound-message",
+      "35k-upskilled"
+    ],
+    "summary": "Cisco의 사내 AI HR Assistant — HR 정책 Q&A를 넘어 <strong>agentic</strong> 수준으로 진화. 직원 PTO 잔여 조회 + 매니저에게 보낼 <strong>time-off notification 메시지 자동 작성</strong>까지. HR case 열지 않고 처리. broader Cisco \"AI agents + nudges\" cut-bureaucracy 이니셔티브 일부. 35,000+ Cisco 직원이 2025-06까지 AI-upskilled (+121% YoY).",
+    "headline": "Cisco의 사내 AI HR Assistant — HR 정책 Q&A를 넘어 agentic 수준으로 진화.",
+    "problem": "<ul>\n<li><strong>Before</strong>: HR Q&A 챗봇은 정보 조회까지만 — \"내 매니저에게 휴가 알리는 메시지 어떻게 쓰지\" 같은 outbound 작업은 수동</li>\n<li><strong>Pain point</strong>: HR 챗봇이 Q&A에 머물러 ROI 한계 — agentic 수준 도약 필요</li>\n<li><strong>Trigger</strong>: Cisco의 \"AI agents + nudges\" 전사 bureaucracy 감소 이니셔티브 (Jeetu Patel 주도)</li>\n</ul>",
+    "impact_summary": "HR Q&A 챗봇의 agentic 진화 — Q&A를 넘어 outbound 메시지 drafting까지 수행하는 KR Ask-HR RFP의 mature reference.",
+    "consulting": "<ul>\n<li><strong>KR Ask-HR RFP의 mature reference (1순위)</strong>:</li>\n<li>한국 대기업 사내 챗봇은 대부분 Q&A 단계 (LG CNS·삼성SDS·SK C&C·신한 AI ONE·하나 지식챗봇)</li>\n<li>Cisco의 \"Q&A → drafting + action\" agentic 진화는 KR 차세대 챗봇 RFP의 standard</li>\n<li><strong>2026 Q3-Q4 KR 컨설팅 deck</strong>: Moderna Ask HR (routing) + IBM AskHR (80+ 태스크) + Cisco AI Assistant (agentic outbound) — 3-tier maturity ladder</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "Cisco IT 자체 구축 \"internal AI assistant — purpose-built with security\"",
+      "연동·통합": "HR tools (PTO 입력, 401k 조회 등) 통합; 구체 시스템명 _미공개_",
+      "인증·권한": "\"purpose-built with security\" (벤더 주장) — 구체 모델 _미공개_"
+    },
+    "data": {
+      "입력 데이터 소스": "HR data (PTO·401k 등 직원 self-service domain); 정책 문서 RAG 추정",
+      "데이터 규모": "자사 보고: 100,000+ 직원 사용 (broader internal AI assistant); HR domain standalone 수치 _미공개_",
+      "데이터 거버넌스": "\"purpose-built with security\" 강조; 세부 _미공개_"
+    },
+    "model": {
+      "모델 유형": "Generative AI (LLM-based agentic assistant)",
+      "평가·가드레일": "자사 보고: 73% 사용자 productivity 증가, 주당 5h 절감"
+    },
+    "process_before": "HR Q&A 챗봇은 정보 조회까지만 — \"내 매니저에게 휴가 알리는 메시지 어떻게 쓰지\" 같은 outbound 작업은 수동 / Pain point: HR 챗봇이 Q&A에 머물러 ROI 한계 — agentic 수준 도약 필요 / Trigger: Cisco의 \"AI agents + nudges\" 전사 bureaucracy 감소 이니셔티브 (Jeetu Patel 주도)",
+    "process_steps": [
+      "직원이 AI Assistant에 \"다음주 휴가 가능한지 + 매니저에게 알려줘\" 한 번에 요청",
+      "Assistant가 PTO 잔여 + 부서 calendar 조회",
+      "매니저용 time-off notification 메시지 자동 작성 (직원 검토·전송)",
+      "HR 정책 위배 시 alert + 사람 escalation"
+    ]
+  },
+  {
+    "slug": "ibm-charlie-learning-ops-agent",
+    "title": "IBM cHaRlie — Cognitive HR Learning EM Assistant (watsonx Orchestrate, learner NPS +15%)",
+    "primary_category": "Learning & Development",
+    "subcategory": "Content & Delivery",
+    "company": "IBM",
+    "industry": [
+      "tech",
+      "it-services"
+    ],
+    "region": [
+      "global"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "IBM"
+    ],
+    "vendor_type": [
+      "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive",
+      "automation"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "clustering-classification",
+      "rpa"
+    ],
+    "confidence": 0.7,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2023-01-01",
+    "last_confirmed": "2025-12-01",
+    "tags": [
+      "charlie",
+      "learning-ops",
+      "watsonx-orchestrate",
+      "ibm",
+      "attendance",
+      "enrollment",
+      "l-and-d-back-office",
+      "agent"
+    ],
+    "summary": "IBM이 2023년 launch한 <strong>cHaRlie</strong> (Cognitive HR Learning EM Assistant) — Enterprise Learning Operations & Administration 팀을 위한 watsonx Orchestrate 기반 백오피스 에이전트. 학습 enrollment 모니터링·저조 alert·event 홍보·pre-event comms·virtual class 출석 자동 로깅. ⚠️ 자사 보고: learner NPS 15% 상승, 출석 캡처 100% 정확도, 출석부 turnaround 91% 단축, onboarding time 25% 감소.",
+    "headline": "IBM이 2023년 launch한 cHaRlie (Cognitive HR Learning EM Assistant) — Enterprise Learning Operations & Administration 팀을 위한 watsonx Orchestrate 기반 백오피스 에이",
+    "problem": "<ul>\n<li><strong>Before</strong>: L&D operations 팀이 enrollment 추적·홍보·출석 캡처·event 운영을 manual로 처리 — 270K 직원 규모에서 병목</li>\n<li><strong>Pain point</strong>: 직원 facing AI(tutor·content)는 ROI 모호, 학습 ops 백오피스는 ROI 명확하지만 자동화 후순위</li>\n<li><strong>Trigger</strong>: watsonx Orchestrate dogfooding + L&D 운영 효율 압박</li>\n</ul>",
+    "impact_summary": "L&D 백오피스 자동화로 운영 부담 대폭 경감 + 직원 학습 경험 NPS 향상.",
+    "consulting": "<ul>\n<li><strong>KR 적용 1순위 — \"사내대학·연수원\" reference</strong>: 삼성인력개발원·현대인재개발원·LG Aspire·SK mySUNI 모두 manual L&D ops 부담 큼. cHaRlie는 학습자 facing AI(tutor)보다 <strong>ROI 명확한 백오피스 agent template</strong></li>\n<li><strong>2026 Q3-Q4 L&D AI 제안</strong>: \"직원 facing AI\"는 ROI 입증 어려우니 백오피스부터 시작 — cHaRlie 패턴 인용</li>\n<li><strong>KR 그룹 HRD 센터 직무 재설계</strong>: L&D admin → \"학습 전략 strategist + AI orchestrator\"로 전환 명분</li>\n<li><strong>반면교사</strong>: 출석 자동 캡처가 직원에게 \"감시 도구\"로 인식되지 않도록 자율 opt-in or 익명 통계 처리 권장</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "IBM watsonx Orchestrate 기반 (production)",
+      "배포 환경": "watsonx Orchestrate (IBM Cloud + AWS 옵션); cHaRlie 자체 배포 환경 _미공개_",
+      "연동·통합": "IBM 내부 LMS (enrollment, attendance, event metadata); virtual class 시스템 (Webex/Zoom 추정)"
+    },
+    "data": {
+      "입력 데이터 소스": "Enrollment data, virtual class attendance, event metadata, learner roster"
+    },
+    "model": {
+      "Foundation model": "IBM Granite (watsonx Orchestrate 기본 model)",
+      "모델 유형": "Agentic LLM (Granite decoder 아키텍처) + automation/RPA 통합",
+      "제공 방식": "IBM watsonx Orchestrate (proprietary platform)",
+      "평가·가드레일": "자사 보고: 출석 캡처 100% 정확도, NPS +15%, turnaround 91% 단축, onboarding -25%"
+    },
+    "process_before": "L&D operations 팀이 enrollment 추적·홍보·출석 캡처·event 운영을 manual로 처리 — 270K 직원 규모에서 병목 / Pain point: 직원 facing AI(tutor·content)는 ROI 모호, 학습 ops 백오피스는 ROI 명확하지만 자동화 후순위 / Trigger: watsonx Orchestrate dogfooding + L&D 운영 효율 압박",
+    "process_steps": [
+      "cHaRlie가 enrollment 모니터링 → 저조 시 admin alert",
+      "event 홍보 메시지 자동 생성·배포",
+      "virtual class 출석 자동 캡처 (100% 정확도)",
+      "pre-event comms 자동 발송",
+      "admin은 escalation·전략 결정만 처리"
+    ]
+  },
+  {
+    "slug": "jpmorgan-ai-made-easy-upskilling",
+    "title": "JPMorgan — 'AI Made Easy' 전사 AI 교육 (230K 직원, 신입 분석가 prompt engineering 의무)",
+    "primary_category": "Learning & Development",
+    "subcategory": "Skills & Capabilities",
     "company": "JPMorgan Chase",
     "industry": [
       "finance",
@@ -144,13 +761,10 @@
       "all"
     ],
     "vendor": [
-      "JPMorgan internal",
-      "OpenAI",
-      "Anthropic"
+      "JPMorgan internal"
     ],
     "vendor_type": [
-      "internal-build",
-      "foundation-model"
+      "internal-build"
     ],
     "ai_tech_type": [
       "generative"
@@ -160,42 +774,134 @@
     ],
     "confidence": 0.7,
     "stage": "production",
-    "frequency": "daily",
+    "frequency": "annual",
     "first_seen": "2024-08-01",
-    "last_confirmed": "2026-02-25",
+    "last_confirmed": "2026-02-12",
     "tags": [
-      "llm-suite",
+      "ai-made-easy",
       "jpmorgan",
-      "redeployment",
-      "gen-ai",
-      "internal-build",
-      "model-agnostic",
-      "performance-review-drafting",
-      "retention-by-redeployment",
-      "dimon",
+      "upskilling",
+      "prompt-engineering",
+      "mass-training",
       "finance",
-      "ai-made-easy"
+      "role-specific-curriculum"
     ],
-    "summary": "JPMorgan <strong>LLM Suite</strong> — 2024 여름 launch, model-agnostic gateway (OpenAI + Anthropic), ~230K 직원 대상 8개월 만에 200K+ 온보딩 (~2/3 workforce). ⚠️ 자사 보고: 30-40% efficiency, 직원당 3-6h/week saved, $1.5B/yr 추정 가치. <strong>핵심 distinct feature</strong>: 직원이 LLM Suite로 <strong>annual performance review 초안 drafting</strong> 가능. 동시에 Dimon Feb 2026: 백오피스/operations -4%/-2%, 클라이언트직 +4% — 총 318,512명 거의 flat 유지하며 AI 재배치. AI specialist 1,500 → 2,500 (+67%).",
-    "headline": "JPMorgan LLM Suite — 2024 여름 launch, model-agnostic gateway (OpenAI + Anthropic), ~230K 직원 대상 8개월 만에 200K+ 온보딩 (~2/3 workforce).",
-    "problem": "<ul>\n<li><strong>Before</strong>: 230K 직원 대규모 finance enterprise, 정보보안·규제 제약으로 외부 LLM(ChatGPT) 직접 사용 불가</li>\n<li><strong>Pain point</strong>: gen AI 효익 vs 금융정보보호·고객정보·내부거래 정보 제약</li>\n<li><strong>Trigger</strong>: 2023-24 ChatGPT 시장 도입 + 경쟁사(Goldman·Morgan Stanley) AI 배포 압박</li>\n</ul>",
-    "impact_summary": "private gateway로 보안 유지하며 230K 직원 gen AI 활용 + AI 재배치로 백오피스 축소·클라이언트직 확대 (총 headcount flat 유지).",
-    "consulting": "<ul>\n<li><strong>KR 금융권 직격 reference (1순위)</strong>:</li>\n<li>KB·신한·우리·하나금융 모두 자체 LLM 플랫폼 구축 중 (신한 AI ONE, 하나 지식챗봇, 미래에셋 AI Assistant) — JPMorgan LLM Suite의 <strong>model-agnostic gateway 아키텍처</strong>가 직접 reference</li>\n<li>230K 직원 onboarding 8개월 모델 — 한국 대형 은행(KB 17K·신한 14K) 적용 시 6개월 미만 완료 가능성</li>\n<li><strong>AI 재배치 패러다임 (KR 핵심 어젠다)</strong>:</li>\n</ul>",
+    "summary": "JPMorgan <strong>AI Made Easy</strong> — 230K 직원 대상 전사 AI 교육 프로그램. AI fundamentals + prompt engineering + 컴플라이언스 + 직무별 use case curriculum. Asset & Wealth Management 신입 분석가에게 <strong>prompt engineering 필수</strong>. LLM Suite 200K+ 8개월 onboarding의 교육 backbone.",
+    "headline": "JPMorgan AI Made Easy — 230K 직원 대상 전사 AI 교육 프로그램.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 230K 직원 중 AI literacy 분포 편차 큰 — 데이터 사이언티스트는 풍부, 운영·영업·고객서비스 직원은 baseline</li>\n<li><strong>Pain point</strong>: 회사 LLM Suite를 도입해도 사용 모르면 ROI 없음</li>\n<li><strong>Trigger</strong>: LLM Suite launch 동시 추진 (2024-08)</li>\n</ul>",
+    "impact_summary": "대규모 단일 교육으로 LLM Suite 200K+ 8개월 onboarding 가능 + 신입 prompt engineering baseline 확립.",
+    "consulting": "<ul>\n<li><strong>KR 그룹 HRD 센터 직접 reference</strong>: 삼성인력개발원·LG Aspire·SK mySUNI·현대인재개발원 모두 AI 교육 curriculum 기획 중. JPMorgan 구조 (foundational + role-specific + 신입 의무) 직접 차용 가능</li>\n<li><strong>금융권 fit 우수</strong>: KB·신한·우리·하나·미래에셋 모두 자체 LLM 플랫폼 도입 중 → 동반 교육 프로그램 reference (위 jpmorgan-llm-suite-redeployment와 pair)</li>\n<li><strong>신입 prompt engineering 의무</strong>: KR 대기업 신입 공채 후 OJT/연수원 과정에 모듈 통합 — 2026 신입 입사자부터 적용 가능</li>\n<li><strong>2026 Q3-Q4 KR 컨설팅 deck</strong>: \"AI 도입 = 도구 + 교육의 시간차 0\" — JPMorgan의 동시 launch 전략이 모범</li>\n</ul>",
     "system": {
-      "연동·통합": "내부 데이터·정책 RAG, 직원 ID·권한 SSO",
-      "사용자 접점": "web app (사내 인증)"
+      "AI 시스템 배치": "AI Made Easy 교육 sessions + LLM Suite hands-on 플랫폼 통합",
+      "배포 환경": "LLM Suite는 JPMorgan 자체 portal (proprietary); 교육 LMS 명시 없음",
+      "연동·통합": "LLM Suite는 8주마다 internal database·software apps 추가 통합",
+      "사용자 접점": "AI Made Easy = 인터랙티브 sessions (live + 직무별 모듈); LLM Suite portal 직접 hands-on"
     },
-    "data": {},
+    "data": {
+      "입력 데이터 소스": "교육 콘텐츠 = AI fundamentals + prompt engineering + compliance + 직무별 use case curriculum",
+      "데이터 규모": "Q1 alone 30,000+ 직원 attended AI Made Easy sessions (신규 fact); 230K+ in scope; 250K LLM Suite rollout (branch·call center 제외, 약 절반 daily 사용)",
+      "전처리·정제": "N/A (training program)",
+      "데이터 거버넌스": "Compliance 모듈 별도 (금융정보·고객정보 처리 가이드)",
+      "민감정보 처리": "Compliance 모듈에서 다룸"
+    },
     "model": {
-      "Foundation model": "OpenAI GPT-4 + Anthropic Claude (선택 가능)"
+      "Foundation model": "N/A (training program 자체)",
+      "모델 유형": "N/A — 단, hands-on 학습 대상 LLM Suite는  OpenAI + Anthropic 양사 (multi-vendor, 신규 발견)",
+      "제공 방식": "N/A",
+      "커스터마이징 기법": "\"Learn by doing\" — LLM Suite 직접 사용 통합",
+      "평가·가드레일": "자사 보고: 직원당 3-6h/week saved (LLM Suite 결합 효과)"
     },
-    "process_before": "230K 직원 대규모 finance enterprise, 정보보안·규제 제약으로 외부 LLM(ChatGPT) 직접 사용 불가 / Pain point: gen AI 효익 vs 금융정보보호·고객정보·내부거래 정보 제약 / Trigger: 2023-24 ChatGPT 시장 도입 + 경쟁사(Goldman·Morgan Stanley) AI 배포 압박",
+    "process_before": "230K 직원 중 AI literacy 분포 편차 큰 — 데이터 사이언티스트는 풍부, 운영·영업·고객서비스 직원은 baseline / Pain point: 회사 LLM Suite를 도입해도 사용 모르면 ROI 없음 / Trigger: LLM Suite launch 동시 추진 (2024-08)",
     "process_steps": [
-      "직원이 LLM Suite (private gateway) 접속",
-      "모델 선택 (OpenAI GPT-4 / Anthropic Claude — agnostic)",
-      "내부 데이터 활용 가능 (RAG with 회사 정책·문서)",
-      "사용 사례:",
-      "동시에 Dimon은 AI 효율을 redeployment 명분으로 활용 — 백오피스 폐지·클라이언트직 신설"
+      "전 직원 baseline AI fundamentals 모듈 의무",
+      "Prompt engineering 모듈 (LLM Suite 활용 직군 의무)",
+      "컴플라이언스 모듈 (금융정보·고객정보 처리 가이드)",
+      "직무별 use case curriculum (analyst·trader·banker·HR·legal·ops 별)",
+      "신입 분석가 (Asset & Wealth Management): prompt engineering 의무 수료"
+    ]
+  },
+  {
+    "slug": "microsoft-people-skills-inferred-ontology",
+    "title": "Microsoft People Skills + Skills Agent — 직원 활동 기반 16K 스킬 ontology 자동 추론",
+    "primary_category": "Learning & Development",
+    "subcategory": "Skills & Capabilities",
+    "company": "Microsoft",
+    "industry": [
+      "tech",
+      "cloud"
+    ],
+    "region": [
+      "global"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "Microsoft"
+    ],
+    "vendor_type": [
+      "foundation-model",
+      "hrms"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "information-extraction",
+      "clustering-classification",
+      "recommendation-ranking"
+    ],
+    "confidence": 0.7,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-04-01",
+    "last_confirmed": "2026-04-01",
+    "tags": [
+      "microsoft",
+      "people-skills",
+      "skills-agent",
+      "viva",
+      "copilot",
+      "skills-inference",
+      "linkedin-taxonomy",
+      "16k-skills",
+      "m365",
+      "workforce-insights"
+    ],
+    "summary": "Microsoft <strong>People Skills</strong> + <strong>Skills Agent</strong> — M365 Copilot/Viva 데이터 레이어. OpenAI 모델로 직원 이메일·문서·미팅에서 <strong>스킬을 자동 추론</strong>해 dynamic 스킬 프로파일 생성. LinkedIn 공동 개발 16,000-skill taxonomy 기반. Skills Agent는 매니저에게 internal talent 매칭·workforce planning insight 제공. 2025 GA. 2026-03 Skills Agent → Learning + Workforce Insights agents로 분리.",
+    "headline": "Microsoft People Skills + Skills Agent — M365 Copilot/Viva 데이터 레이어.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 한국·글로벌 대기업 모두 직원 self-update profile에 의존 — outdated·incomplete</li>\n<li><strong>Pain point</strong>: 스킬 inventory 부정확하면 internal mobility·workforce planning·learning 추천 모두 약화</li>\n<li><strong>Trigger</strong>: Microsoft가 M365 Copilot 위에 People Skills 출시 (2025-04, Bersin \"HR tech market 변경\"으로 평가)</li>\n</ul>",
+    "impact_summary": "직원 self-update 부담 없이 스킬 ontology 자동 갱신 — Eightfold·Gloat 외부 vendor 대비 M365 native option.",
+    "consulting": "<ul>\n<li><strong>KR HRMS RFP 시장 game-changer</strong>:</li>\n<li>기존 Eightfold·Gloat·Beamery 외부 vendor 대비 <strong>M365 native option</strong> 등장</li>\n<li>이미 Microsoft 365 도입 KR 대기업 (대부분) → people skills 추가 도입 비용·통합 부담 적음</li>\n<li>2026 Q3-Q4 People Skills 도입 vs Eightfold 도입 비교 RFP 필수 슬라이드</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "M365 Copilot 데이터 레이어 (Microsoft Graph 기반)",
+      "배포 환경": "Microsoft Azure (M365 cloud)",
+      "연동·통합": "Microsoft Graph (이메일·문서·미팅·chat), LinkedIn (16K skill taxonomy 매핑), Viva Suite, M365 Copilot Chat",
+      "사용자 접점": "Copilot Chat, Microsoft 365 apps, Viva services",
+      "인증·권한": "Microsoft 365 IAM (Entra ID/Azure AD); admin이 People Skills setup"
+    },
+    "data": {
+      "입력 데이터 소스": "M365 profile + activity signals via Microsoft Graph: 문서·이메일·chat·미팅",
+      "데이터 규모": "16,000+ skills taxonomy (LinkedIn 공동 개발, customizable)",
+      "전처리·정제": "Multi-directional inference runs across Microsoft Graph data (proprietary inferencing)",
+      "데이터 거버넌스": "M365 tenant boundary; admin governance (setup·permissions)",
+      "민감정보 처리": "직원 활동 telemetry 기반 — opt-out 옵션 명시 (admin level)"
+    },
+    "model": {
+      "Foundation model": "\"Latest OpenAI LLM models\"; 구체 GPT 버전 _미공개_",
+      "모델 유형": "LLM (inference) + skills classifier; multi-agent inferencing",
+      "제공 방식": "Hybrid — Microsoft (Azure OpenAI 추정) + 자체 inferencing layer",
+      "커스터마이징 기법": "\"Proprietary inferencing approach based on game theory and multi-agent frameworks\" — multi-directional inference runs (Microsoft 공식 표현, 신규 발견)",
+      "평가·가드레일": "Everest Group 평가: \"step forward but not yet complete\" — 독립 검증 일부 존재"
+    },
+    "process_before": "한국·글로벌 대기업 모두 직원 self-update profile에 의존 — outdated·incomplete / Pain point: 스킬 inventory 부정확하면 internal mobility·workforce planning·learning 추천 모두 약화 / Trigger: Microsoft가 M365 Copilot 위에 People Skills 출시 (2025-04, Bersin \"HR tech market 변경\"으로 평가)",
+    "process_steps": [
+      "M365 Copilot이 일상 활동 (이메일·문서·미팅) 텔레메트리 수집",
+      "OpenAI 모델로 LinkedIn 16K taxonomy 매핑 → 추론 스킬 프로파일 자동 생성",
+      "직원 검토·승인 (HITL — 추론 결과 거부·수정 가능)",
+      "매니저 Skills Agent 활용 — \"이 프로젝트에 맞는 사내 talent\" search",
+      "Workforce Insights agent — workforce planning insight"
     ]
   },
   {
@@ -271,13 +977,15 @@
     ]
   },
   {
-    "slug": "workday-peakon-illuminate-employee-voice",
-    "title": "Workday Peakon Employee Voice — Illuminate AI (1B+ 응답·60+ 언어, Workday 사내 +35% 만족도)",
+    "slug": "amazon-connections-daily-pulse",
+    "title": "Amazon Connections — 1.5M 직원 daily 1-question pulse (300M annual responses, 97% adoption)",
     "primary_category": "Employee Experience & HR Ops",
     "subcategory": "Listening & Engagement",
-    "company": "_다수 (Workday Peakon 고객, Workday 자사 도입 포함)_",
+    "company": "Amazon",
     "industry": [
-      "all"
+      "retail",
+      "logistics",
+      "tech"
     ],
     "region": [
       "global"
@@ -286,178 +994,64 @@
       "all"
     ],
     "vendor": [
-      "Workday"
-    ],
-    "vendor_type": [
-      "hrms",
-      "point-solution"
-    ],
-    "ai_tech_type": [
-      "generative",
-      "predictive"
-    ],
-    "ai_tech_subtype": [
-      "summarization-qa",
-      "clustering-classification"
-    ],
-    "confidence": 0.7,
-    "stage": "production",
-    "frequency": "monthly",
-    "first_seen": "2021-02-01",
-    "last_confirmed": "2026-04-01",
-    "tags": [
-      "workday",
-      "peakon",
-      "illuminate",
-      "employee-voice",
-      "sentiment-analysis",
-      "continuous-listening",
-      "multilingual",
-      "theme-extraction",
-      "engagement"
-    ],
-    "summary": "Workday가 2021-02 인수 (~$700M)한 <strong>Peakon Employee Voice</strong> — 지속적 pulse 서베이 + AI 감정·테마 분석. 2024-12-11에 <strong>Illuminate AI</strong> 기능 발표 — open-end comment 자동 요약·테마 추출·driver 식별. ⚠️ 벤더 주장: 1B+ 응답 + 200M+ 텍스트 피드백 학습, 60+ 언어, 160개국 운영. ⚠️ 자사 보고: Workday 사내 활용 결과 직원 성장·커리어 만족도 <strong>+35%</strong>.",
-    "headline": "Workday가 2021-02 인수 (~$700M)한 Peakon Employee Voice — 지속적 pulse 서베이 + AI 감정·테마 분석.",
-    "problem": "<ul>\n<li><strong>Before</strong>: 5만~10만 직원 KR 대기업 annual 조직문화 진단의 open-end 코멘트 코딩에 HRBP 팀 수주 투입 — insight 도출 지연</li>\n<li><strong>Pain point</strong>: 글로벌 organization은 60+ 언어 응답 통합 분석 어려움 + theme·sentiment를 매니저별 actionable insight로 변환 어려움</li>\n<li><strong>Trigger</strong>: Workday 2021-02 Peakon 인수 → 2024-12 Illuminate AI 통합 (Workday Illuminate 시리즈 일환)</li>\n</ul>",
-    "impact_summary": "글로벌 60+ 언어 통합 sentiment 분석 + Workday HCM native — KR 대기업 annual 조직문화 진단의 cycle time을 수주 → 즉시로 단축 가능.",
-    "consulting": "<ul>\n<li><strong>KR engagement survey vendor 비교 reference (Top 3)</strong>:</li>\n<li>Workday Peakon (Workday HCM 도입사 우선) vs Microsoft Glint Copilot microsoft-viva-glint-copilot-sentiment (M365 도입사) vs Qualtrics qualtrics-adidas-employee-experience-ai (standalone EX)</li>\n<li>Amazon Connections amazon-connections-daily-pulse (frontline daily pulse)와 cadence 비교</li>\n<li><strong>2026 Q3-Q4 KR 컨설팅 deck</strong>:</li>\n</ul>",
-    "system": {
-      "Core HRIS": "Workday HCM (Peakon은 Workday 통합 모듈)",
-      "배포 환경": "Workday cloud",
-      "연동·통합": "Workday HCM 마스터 + 매니저 dashboard"
-    },
-    "data": {},
-    "model": {},
-    "process_before": "5만~10만 직원 KR 대기업 annual 조직문화 진단의 open-end 코멘트 코딩에 HRBP 팀 수주 투입 — insight 도출 지연 / Pain point: 글로벌 organization은 60+ 언어 응답 통합 분석 어려움 + theme·sentiment를 매니저별 actionable insight로 변환 어려움 / Trigger: Workday 2021-02 Peakon 인수 → 2024-12 Illuminate AI 통합 (Workday Illuminate 시리즈 일환)",
-    "process_steps": [
-      "직원이 정기·수시 pulse 서베이 응답 (closed-end + open-end)",
-      "Peakon Illuminate가 60+ 언어로 자연어 처리",
-      "자동 테마·sentiment·driver 추출 (1B+ 응답 학습 모델 기반)",
-      "매니저·HRBP에게 부서별 dashboard 제공 — 강점·기회·이슈 자동 highlight",
-      "매니저가 추천 action 실행, 다음 cycle에서 효과 측정",
-      "이상 신호 (이탈 risk·번아웃·문화 이슈) 선제적 alert"
-    ]
-  },
-  {
-    "slug": "anaplan-workforce-analyst-ai-agents",
-    "title": "Anaplan Workforce Analyst — Role-Based AI Agents (2025-12 GA, healthcare $21M, Fresenius·Canada Goose 30~60% cycle 단축)",
-    "primary_category": "Strategic Workforce & Governance",
-    "subcategory": "Workforce Planning",
-    "company": "_다수 (Anaplan 고객 — Fresenius·Canada Goose·Cinemark·healthcare provider 등)_",
-    "industry": [
-      "all"
-    ],
-    "region": [
-      "global"
-    ],
-    "employee_class": [
-      "all"
-    ],
-    "vendor": [
-      "Anaplan"
-    ],
-    "vendor_type": [
-      "point-solution"
-    ],
-    "ai_tech_type": [
-      "generative",
-      "predictive"
-    ],
-    "ai_tech_subtype": [
-      "summarization-qa",
-      "prediction"
-    ],
-    "confidence": 0.65,
-    "stage": "production",
-    "frequency": "monthly",
-    "first_seen": "2025-12-09",
-    "last_confirmed": "2026-04-01",
-    "tags": [
-      "anaplan",
-      "workforce-analyst",
-      "role-based-ai-agent",
-      "scenario-planning",
-      "hr-finance-integration",
-      "fresenius",
-      "canada-goose",
-      "natural-language-query",
-      "fp-and-a"
-    ],
-    "summary": "Anaplan이 2025-12-09 GA로 발표한 <strong>Role-Based AI Agents</strong> 제품군 중 <strong>Workforce Analyst</strong>. HR-finance 데이터 통합 + 자연어 query + 시나리오 시뮬레이션으로 인력 의사결정 가속. 검증된 고객 사례: healthcare provider $21M 연 절감 + time-to-market 20% 단축, Fresenius Medical Care planning time <strong>30%+ 단축</strong>, Canada Goose planning cycle <strong>60% 단축</strong>. 2026 H1에 autonomous AI 에이전트 (자율 이상 감지·워크플로 실행) 추가 예정.",
-    "headline": "Anaplan이 2025-12-09 GA로 발표한 Role-Based AI Agents 제품군 중 Workforce Analyst.",
-    "problem": "<ul>\n<li><strong>Before</strong>: 90%+ 기업이 여전히 Excel 기반 인력 계획 (Anaplan 조사) — HR과 finance 시스템 단절, 시나리오 분석 수주~수개월 소요, 예측 오차 10%+</li>\n<li><strong>Pain point</strong>: \"채용 동결·조직 개편·M&A·인력 재배치 시나리오의 재무 영향이 즉시 분석 안 됨\" — CFO·CHRO 의사결정 지연</li>\n<li><strong>Trigger</strong>: 2025-12 Anaplan Role-Based AI Agents GA — HR·Finance·Sales·Supply Chain별 specialist agent 동시 launch</li>\n</ul>",
-    "impact_summary": "HR-finance data 단절 해소 + 시나리오 분석 수주 → 즉시 + 인건비 절감 8~9자리 수치 (대형 고객 사례).",
-    "consulting": "<ul>\n<li><strong>KR 대기업 인사기획·재무 통합 reference (Top 3)</strong>:</li>\n<li>Anaplan Workforce Analyst (HR-finance native 통합) + Deloitte Workforce Analyzer deloitte-workforce-analyzer-salesforce (컨설팅 기반 진단) + Workday ASOR workday-agent-system-of-record-asor (AI agent 거버넌스)</li>\n<li>90% 기업이 Excel 기반 — KR 대기업도 동일 갭, 가장 강력한 hook</li>\n<li><strong>시나리오 시뮬레이션 슬라이드</strong>: KR 그룹사 임원에게 \"M&A·구조조정·정년 연장·지역 분산 시 인건비 영향 즉시 분석\" 가치 제안</li>\n</ul>",
-    "system": {},
-    "data": {},
-    "model": {},
-    "process_before": "90%+ 기업이 여전히 Excel 기반 인력 계획 (Anaplan 조사) — HR과 finance 시스템 단절, 시나리오 분석 수주~수개월 소요, 예측 오차 10%+ / Pain point: \"채용 동결·조직 개편·M&A·인력 재배치 시나리오의 재무 영향이 즉시 분석 안 됨\" — CFO·CHRO 의사결정 지연 / Trigger: 2025-12 Anaplan Role-Based AI Agents GA — HR·Finance·Sales·Supply Chain별 specialist agent 동시 launch",
-    "process_steps": [
-      "HCM (Workday/SAP) + ERP + finance 시스템을 Anaplan 플랫폼에 연동",
-      "HR·CFO·CHRO가 자연어로 query (예: \"지역별 이직률 추이는?\", \"보류 중인 채용 건은?\", \"headcount 5% 감축 시 인건비 영향?\")",
-      "AI agent가 실시간 데이터 분석 → 숨겨진 패턴·리스크 감지",
-      "시나리오 시뮬레이션: 채용 동결·조직 개편·재배치의 재무 영향 즉시 산출",
-      "AI 권고안 검토 → 인간 승인 → 워크플로 자동 실행 (2026 H1 autonomous mode 예정)",
-      "Position-level 정밀 인건비 계획 수립"
-    ]
-  },
-  {
-    "slug": "cisco-ai-assistant-hr-agentic",
-    "title": "Cisco — AI Assistant for HR (PTO Q&A → 매니저 outbound 메시지 자동 작성, agentic)",
-    "primary_category": "Employee Experience & HR Ops",
-    "subcategory": "Employee Self-service",
-    "company": "Cisco",
-    "industry": [
-      "tech",
-      "networking"
-    ],
-    "region": [
-      "global"
-    ],
-    "employee_class": [
-      "all"
-    ],
-    "vendor": [
-      "Cisco internal"
+      "Amazon internal"
     ],
     "vendor_type": [
       "internal-build"
     ],
     "ai_tech_type": [
-      "generative"
+      "predictive"
     ],
     "ai_tech_subtype": [
-      "summarization-qa"
+      "prediction",
+      "clustering-classification"
     ],
     "confidence": 0.65,
     "stage": "production",
     "frequency": "daily",
-    "first_seen": "2024-06-01",
-    "last_confirmed": "2025-11-01",
+    "first_seen": "2014-01-01",
+    "last_confirmed": "2024-06-01",
     "tags": [
-      "cisco",
-      "ai-assistant",
-      "hr-agentic",
-      "pto",
-      "time-off",
-      "beyond-q-and-a",
-      "outbound-message",
-      "35k-upskilled"
+      "amazon",
+      "connections",
+      "daily-pulse",
+      "ml-prediction",
+      "frontline",
+      "300m-responses",
+      "people-science",
+      "attrition-prediction"
     ],
-    "summary": "Cisco의 사내 AI HR Assistant — HR 정책 Q&A를 넘어 <strong>agentic</strong> 수준으로 진화. 직원 PTO 잔여 조회 + 매니저에게 보낼 <strong>time-off notification 메시지 자동 작성</strong>까지. HR case 열지 않고 처리. broader Cisco \"AI agents + nudges\" cut-bureaucracy 이니셔티브 일부. 35,000+ Cisco 직원이 2025-06까지 AI-upskilled (+121% YoY).",
-    "headline": "Cisco의 사내 AI HR Assistant — HR 정책 Q&A를 넘어 agentic 수준으로 진화.",
-    "problem": "<ul>\n<li><strong>Before</strong>: HR Q&A 챗봇은 정보 조회까지만 — \"내 매니저에게 휴가 알리는 메시지 어떻게 쓰지\" 같은 outbound 작업은 수동</li>\n<li><strong>Pain point</strong>: HR 챗봇이 Q&A에 머물러 ROI 한계 — agentic 수준 도약 필요</li>\n<li><strong>Trigger</strong>: Cisco의 \"AI agents + nudges\" 전사 bureaucracy 감소 이니셔티브 (Jeetu Patel 주도)</li>\n</ul>",
-    "impact_summary": "HR Q&A 챗봇의 agentic 진화 — Q&A를 넘어 outbound 메시지 drafting까지 수행하는 KR Ask-HR RFP의 mature reference.",
-    "consulting": "<ul>\n<li><strong>KR Ask-HR RFP의 mature reference (1순위)</strong>:</li>\n<li>한국 대기업 사내 챗봇은 대부분 Q&A 단계 (LG CNS·삼성SDS·SK C&C·신한 AI ONE·하나 지식챗봇)</li>\n<li>Cisco의 \"Q&A → drafting + action\" agentic 진화는 KR 차세대 챗봇 RFP의 standard</li>\n<li><strong>2026 Q3-Q4 KR 컨설팅 deck</strong>: Moderna Ask HR (routing) + IBM AskHR (80+ 태스크) + Cisco AI Assistant (agentic outbound) — 3-tier maturity ladder</li>\n</ul>",
-    "system": {},
-    "data": {},
-    "model": {},
-    "process_before": "HR Q&A 챗봇은 정보 조회까지만 — \"내 매니저에게 휴가 알리는 메시지 어떻게 쓰지\" 같은 outbound 작업은 수동 / Pain point: HR 챗봇이 Q&A에 머물러 ROI 한계 — agentic 수준 도약 필요 / Trigger: Cisco의 \"AI agents + nudges\" 전사 bureaucracy 감소 이니셔티브 (Jeetu Patel 주도)",
+    "summary": "Amazon <strong>Connections</strong> — 1.5M 직원에게 매일 로그인 시 1개 질문 pulse. 연 300M+ 응답이 People Science 팀의 ML 모델 입력 — 행동·태도 변화로 attrition·engagement 예측. ⚠️ 자사 보고: 97% voluntary adoption (산업 평균 ~25%). Andie Baker (전 principal scientist)가 구축. 단 Fortune Jun 2024 critical coverage — anonymity skepticism 보고.",
+    "headline": "Amazon Connections — 1.",
+    "problem": "<ul>\n<li><strong>Before</strong>: annual·biannual 서베이로는 1.5M frontline 직원의 daily 변화 포착 불가</li>\n<li><strong>Pain point</strong>: high-turnover frontline (creator·warehouse·delivery)의 sentiment·attrition 신호를 연 1~2회로 잡으면 늦음</li>\n<li><strong>Trigger</strong>: People Science 데이터 사이언스 팀의 high-frequency listening 실험</li>\n</ul>",
+    "impact_summary": "high-frequency listening + ML 예측으로 frontline attrition·engagement 사전 신호 — KR 제조·유통·물류 대기업 적용 reference.",
+    "consulting": "<ul>\n<li><strong>KR 제조·유통·물류 frontline reference (1순위)</strong>:</li>\n<li>삼성전자 사업장·현대차 공장·CJ대한통운 hub·이마트 매장·쿠팡 fulfilment — 모두 1.5M Amazon 같은 large frontline workforce</li>\n<li>daily pulse 모델의 frontline fit 매우 높음</li>\n<li><strong>반면교사 활용 (Fortune critical coverage)</strong>:</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "Amazon 자체 구축 (proprietary, People Science 팀 운영)",
+      "연동·통합": "직원 login 시스템 (Amazon SSO/A-to-Z 포털); 응답 데이터 → Seattle 본사 People Science team 집계",
+      "사용자 접점": "직원 로그인 시 자동 popup (web app — A-to-Z 직원 포털)",
+      "인증·권한": "Amazon employee credential SSO"
+    },
+    "data": {
+      "입력 데이터 소스": "Daily 1-question response (1-5 scale 또는 텍스트), non-response signal, 시간 경과 변화",
+      "데이터 규모": "1.5M+ 직원 cover (55 countries), 연 300M+ 응답 (자사 보고)",
+      "전처리·정제": "Aggregation by area/manager (Seattle 팀); confidential 응답 처리 (자사 주장)",
+      "데이터 거버넌스": "Fortune Jun 2024 critical: anonymity 회의론 보고; 매니저별 area aggregation 가능",
+      "민감정보 처리": "\"Confidential responses\" 자사 주장 — Fortune 비판 보도"
+    },
+    "model": {
+      "Foundation model": "N/A (LLM 이전 세대 — 2014 시작)",
+      "모델 유형": "ML + NLP (behavior·sentiment prediction, attrition·engagement 예측)",
+      "제공 방식": "Self-hosted (Amazon 내부 proprietary)",
+      "평가·가드레일": "Fortune 비판: 응답 이후 manager-level 압력 가능성; 익명성 실효성 의문"
+    },
+    "process_before": "annual·biannual 서베이로는 1.5M frontline 직원의 daily 변화 포착 불가 / Pain point: high-turnover frontline (creator·warehouse·delivery)의 sentiment·attrition 신호를 연 1~2회로 잡으면 늦음 / Trigger: People Science 데이터 사이언스 팀의 high-frequency listening 실험",
     "process_steps": [
-      "직원이 AI Assistant에 \"다음주 휴가 가능한지 + 매니저에게 알려줘\" 한 번에 요청",
-      "Assistant가 PTO 잔여 + 부서 calendar 조회",
-      "매니저용 time-off notification 메시지 자동 작성 (직원 검토·전송)",
-      "HR 정책 위배 시 alert + 사람 escalation"
+      "직원 로그인 시 1개 질문 자동 출현 (5초 답변)",
+      "응답 + non-response 모두 데이터로 수집",
+      "ML 모델이 행동(non-response trend)·태도(응답 sentiment) 변화 추적",
+      "attrition·engagement 이벤트 사전 예측",
+      "매니저·HR에게 risk 신호 전달"
     ]
   },
   {
@@ -514,9 +1108,24 @@
     "problem": "<ul>\n<li><strong>Before</strong>: 컨설팅사가 HR AI 컨설팅을 \"case-by-case\" 진행 — 표준화·재사용 자산 부족</li>\n<li><strong>Pain point</strong>: HR transformation 프로젝트마다 workflow 재설계 압도적 — 300+ workflow library가 필요</li>\n<li><strong>Trigger</strong>: agentic AI 부상 + Big-4 컨설팅 경쟁 압박 (PwC·KPMG·EY 동반 발표)</li>\n</ul>",
     "impact_summary": "Big-4 컨설팅의 agentic HR transformation 표준화 — 300+ workflow library는 KR HR consulting 자산 reference의 새 baseline.",
     "consulting": "<ul>\n<li><strong>KR 컨설팅 산업 직접 영향</strong>:</li>\n<li>Deloitte Anjin (한국 Deloitte) 통해 KR 대기업 HR transformation 시 동일 자산 활용 가능</li>\n<li>본 프로젝트 (HR AI Benchmark wiki) 자체가 Deloitte HC AI Suite의 한국 대안 — competitive positioning 명확화</li>\n<li><strong>300+ workflow library 벤치마크</strong>: 본 wiki의 81 use case → 200건 → 300건 확장 시 Deloitte 표준 도달 가능</li>\n</ul>",
-    "system": {},
-    "data": {},
-    "model": {},
+    "system": {
+      "AI 시스템 배치": "Cloud subscription 모델 (Deloitte SaaS); pre-built integrations로 \"deploy rapidly on existing technologies\"",
+      "배포 환경": "NVIDIA AI Enterprise stack (cloud-agnostic); Oracle 파트너십 (별도 발표) — 구체 hyperscaler 선택은 클라이언트 옵션",
+      "연동·통합": "Pre-built integrations; 구체 connector 목록 _미공개_;  Oracle Fusion Cloud Apps 통합 (Deloitte-Oracle 파트너십)",
+      "인증·권한": "\"Trustworthy AI principles — security, transparency, reliability\" (벤더 주장)"
+    },
+    "data": {
+      "입력 데이터 소스": "Workforce 데이터 (Workforce Analyzer); 클라이언트 HR 시스템에서 수집 — 구체 항목 _미공개_;  Deloitte 13,000+ leader survey (HR AI maturity 모델 baseline)",
+      "데이터 규모": "1,000+ 사용자 by end-2025 (finance pilot); HR 사용자 수 _미공개_",
+      "데이터 거버넌스": "Human feedback loop 포함 (HITL)"
+    },
+    "model": {
+      "Foundation model": "NVIDIA Llama Nemotron (reasoning models)",
+      "모델 유형": "Agentic LLM (reasoning + generative + predictive) — finance·human capital·supply chain·procurement·sales·customer service agents",
+      "제공 방식": "NVIDIA AI Enterprise stack (NeMo, AI Blueprints, accelerated computing)",
+      "커스터마이징 기법": "NVIDIA NeMo (fine-tuning framework) + AI-Q Blueprint (RAG); Deloitte 도메인 fine-tuning 추정",
+      "평가·가드레일": "Trustworthy AI 프레임워크 (Deloitte 자체) + human feedback loop"
+    },
     "process_before": "컨설팅사가 HR AI 컨설팅을 \"case-by-case\" 진행 — 표준화·재사용 자산 부족 / Pain point: HR transformation 프로젝트마다 workflow 재설계 압도적 — 300+ workflow library가 필요 / Trigger: agentic AI 부상 + Big-4 컨설팅 경쟁 압박 (PwC·KPMG·EY 동반 발표)",
     "process_steps": [
       "Zora AI 플랫폼이 ready-to-deploy agents 제공 (HR 포함 6 영역)",
@@ -528,10 +1137,10 @@
     ]
   },
   {
-    "slug": "ibm-charlie-learning-ops-agent",
-    "title": "IBM cHaRlie — Cognitive HR Learning EM Assistant (watsonx Orchestrate, learner NPS +15%)",
-    "primary_category": "Learning & Development",
-    "subcategory": "Content & Delivery",
+    "slug": "ibm-blue-match-internal-mobility",
+    "title": "IBM — Blue Match (사내 talent marketplace, 280K 직원, 40% 내부 채용 충원 증가)",
+    "primary_category": "Onboarding & Transitions",
+    "subcategory": "Internal Mobility",
     "company": "IBM",
     "industry": [
       "tech",
@@ -548,208 +1157,6 @@
     ],
     "vendor_type": [
       "internal-build"
-    ],
-    "ai_tech_type": [
-      "generative",
-      "predictive",
-      "automation"
-    ],
-    "ai_tech_subtype": [
-      "summarization-qa",
-      "clustering-classification",
-      "rpa"
-    ],
-    "confidence": 0.65,
-    "stage": "production",
-    "frequency": "daily",
-    "first_seen": "2023-01-01",
-    "last_confirmed": "2025-12-01",
-    "tags": [
-      "charlie",
-      "learning-ops",
-      "watsonx-orchestrate",
-      "ibm",
-      "attendance",
-      "enrollment",
-      "l-and-d-back-office",
-      "agent"
-    ],
-    "summary": "IBM이 2023년 launch한 <strong>cHaRlie</strong> (Cognitive HR Learning EM Assistant) — Enterprise Learning Operations & Administration 팀을 위한 watsonx Orchestrate 기반 백오피스 에이전트. 학습 enrollment 모니터링·저조 alert·event 홍보·pre-event comms·virtual class 출석 자동 로깅. ⚠️ 자사 보고: learner NPS 15% 상승, 출석 캡처 100% 정확도, 출석부 turnaround 91% 단축, onboarding time 25% 감소.",
-    "headline": "IBM이 2023년 launch한 cHaRlie (Cognitive HR Learning EM Assistant) — Enterprise Learning Operations & Administration 팀을 위한 watsonx Orchestrate 기반 백오피스 에이",
-    "problem": "<ul>\n<li><strong>Before</strong>: L&D operations 팀이 enrollment 추적·홍보·출석 캡처·event 운영을 manual로 처리 — 270K 직원 규모에서 병목</li>\n<li><strong>Pain point</strong>: 직원 facing AI(tutor·content)는 ROI 모호, 학습 ops 백오피스는 ROI 명확하지만 자동화 후순위</li>\n<li><strong>Trigger</strong>: watsonx Orchestrate dogfooding + L&D 운영 효율 압박</li>\n</ul>",
-    "impact_summary": "L&D 백오피스 자동화로 운영 부담 대폭 경감 + 직원 학습 경험 NPS 향상.",
-    "consulting": "<ul>\n<li><strong>KR 적용 1순위 — \"사내대학·연수원\" reference</strong>: 삼성인력개발원·현대인재개발원·LG Aspire·SK mySUNI 모두 manual L&D ops 부담 큼. cHaRlie는 학습자 facing AI(tutor)보다 <strong>ROI 명확한 백오피스 agent template</strong></li>\n<li><strong>2026 Q3-Q4 L&D AI 제안</strong>: \"직원 facing AI\"는 ROI 입증 어려우니 백오피스부터 시작 — cHaRlie 패턴 인용</li>\n<li><strong>KR 그룹 HRD 센터 직무 재설계</strong>: L&D admin → \"학습 전략 strategist + AI orchestrator\"로 전환 명분</li>\n<li><strong>반면교사</strong>: 출석 자동 캡처가 직원에게 \"감시 도구\"로 인식되지 않도록 자율 opt-in or 익명 통계 처리 권장</li>\n</ul>",
-    "system": {},
-    "data": {},
-    "model": {},
-    "process_before": "L&D operations 팀이 enrollment 추적·홍보·출석 캡처·event 운영을 manual로 처리 — 270K 직원 규모에서 병목 / Pain point: 직원 facing AI(tutor·content)는 ROI 모호, 학습 ops 백오피스는 ROI 명확하지만 자동화 후순위 / Trigger: watsonx Orchestrate dogfooding + L&D 운영 효율 압박",
-    "process_steps": [
-      "cHaRlie가 enrollment 모니터링 → 저조 시 admin alert",
-      "event 홍보 메시지 자동 생성·배포",
-      "virtual class 출석 자동 캡처 (100% 정확도)",
-      "pre-event comms 자동 발송",
-      "admin은 escalation·전략 결정만 처리"
-    ]
-  },
-  {
-    "slug": "ibm-hr-workforce-reduction-agentic",
-    "title": "IBM — HR 인력 200명·전사 8,000명 AI 대체 + 순 headcount 증가 (2025)",
-    "primary_category": "Strategic Workforce & Governance",
-    "subcategory": "Workforce Planning",
-    "company": "IBM",
-    "industry": [
-      "tech",
-      "it-services"
-    ],
-    "region": [
-      "global"
-    ],
-    "employee_class": [
-      "all"
-    ],
-    "vendor": [
-      "IBM"
-    ],
-    "vendor_type": [
-      "internal-build"
-    ],
-    "ai_tech_type": [
-      "generative",
-      "predictive",
-      "automation"
-    ],
-    "ai_tech_subtype": [
-      "summarization-qa",
-      "prediction",
-      "clustering-classification",
-      "rpa"
-    ],
-    "confidence": 0.65,
-    "stage": "production",
-    "frequency": "annual",
-    "first_seen": "2025-05-01",
-    "last_confirmed": "2026-02-12",
-    "tags": [
-      "workforce-reduction",
-      "redeployment",
-      "hr-tech-governance",
-      "ibm",
-      "agentic",
-      "layoffs",
-      "role-displacement",
-      "krishna",
-      "lamoreaux",
-      "hr-budget-reduction"
-    ],
-    "summary": "2025-05 IBM CEO Arvind Krishna 발언 — AI agents (AskHR + watsonx Orchestrate stack)가 <strong>\"a couple hundred HR roles\"</strong> 대체. 전사 8,000명 layoff (~3% workforce). HR operating budget 4년간 40% 감소 (LaMoreaux). <strong>단, 순 headcount는 증가</strong> — 절감액을 엔지니어·영업·마케팅 채용에 재투자. \"감원\"이 아닌 \"재배치 + 직무 전환\" 패러다임의 canonical reference.",
-    "headline": "2025-05 IBM CEO Arvind Krishna 발언 — AI agents (AskHR + watsonx Orchestrate stack)가 \"a couple hundred HR roles\" 대체.",
-    "problem": "<ul>\n<li><strong>Before</strong>: 270K 직원 IBM의 HR 운영 비용 baseline (CHRO LaMoreaux pre-AI era)</li>\n<li><strong>Pain point</strong>: HR 백오피스 transactional 업무가 budget 흡수, 전략 HR에 투자 여력 부족</li>\n<li><strong>Trigger</strong>: AskHR·watsonx Orchestrate·cHaRlie·Predictive Attrition 누적 효과 (2018~2025) → 임계 도달</li>\n</ul>",
-    "impact_summary": "HR ops 자동화로 200 HR roles 폐지 + 4년간 HR budget 40% 감소 + 순 headcount 증가 (재투자). KR HR 임원이 가장 자주 묻는 \"AI 도입 후 인력 줄일 수 있나\" 질문의 canonical reference.",
-    "consulting": "<ul>\n<li><strong>KR 컨설팅 핵심 reference — \"AI로 인력 줄일 수 있나\" 질문의 정답</strong>:</li>\n<li>단순 cut 아닌 \"재배치 + 재투자\" frame이 핵심</li>\n<li>한국 노동법·노조·평판 컨텍스트에서 \"감원\"보다 \"직무 전환·reskilling\"으로 포지셔닝</li>\n<li>200/270K = 0.07% HR ops cut으로 40% budget 절감 — 임팩트 비율 시사점</li>\n</ul>",
-    "system": {},
-    "data": {},
-    "model": {},
-    "process_before": "270K 직원 IBM의 HR 운영 비용 baseline (CHRO LaMoreaux pre-AI era) / Pain point: HR 백오피스 transactional 업무가 budget 흡수, 전략 HR에 투자 여력 부족 / Trigger: AskHR·watsonx Orchestrate·cHaRlie·Predictive Attrition 누적 효과 (2018~2025) → 임계 도달",
-    "process_steps": [
-      "AskHR Agent",
-      "HR transactional 200명 폐지",
-      "cHaRlie L&D Agent",
-      "Watson Recruitment + watsonx TA",
-      "Predictive Attrition + AI Comp",
-      "전사 8,000명 layoff",
-      "엔지니어·영업·마케팅 채용",
-      "순 headcount 증가"
-    ]
-  },
-  {
-    "slug": "korea-ai-basic-act-hr-compliance",
-    "title": "한국 AI 기본법 — HR AI 컴플라이언스 의무 (2026-01-22 시행)",
-    "primary_category": "Strategic Workforce & Governance",
-    "subcategory": "Compliance & Risk",
-    "company": "_전체 (한국 사업장 운영 모든 기업 대상)_",
-    "industry": [
-      "all"
-    ],
-    "region": [
-      "kr"
-    ],
-    "employee_class": [
-      "all"
-    ],
-    "vendor": [
-      "_규제 — 벤더 X_"
-    ],
-    "vendor_type": [
-      "_규제_"
-    ],
-    "ai_tech_type": [],
-    "ai_tech_subtype": [],
-    "confidence": 0.65,
-    "stage": "production",
-    "frequency": "adhoc",
-    "first_seen": "2026-01-22",
-    "last_confirmed": "2026-04-30",
-    "tags": [
-      "korea-ai-act",
-      "regulation",
-      "compliance",
-      "high-impact-ai",
-      "hr-tech-governance",
-      "recruitment-ai",
-      "performance-evaluation",
-      "eu-ai-act-comparison",
-      "dual-compliance"
-    ],
-    "summary": "「인공지능 발전·신뢰 기반 조성 등에 관한 기본법」(통칭 'AI 기본법')이 <strong>2026-01-22 본격 시행</strong>. EU AI Act에 이은 세계 2번째 포괄규제. <strong>고영향 AI(high-impact AI)</strong> 카테고리에 채용·인사평가·승진·해고 의사결정 AI가 명시적으로 포함됨. 영향평가·투명성 고지·인적 감독·이용자 권리 보장 의무. 모든 KR HR AI 프로젝트의 legal foundation. 2026-08 EU AI Act high-risk 의무 발효와 결합되면 글로벌 KR 대기업은 dual compliance 운영 부담.",
-    "headline": "「인공지능 발전·신뢰 기반 조성 등에 관한 기본법」(통칭 'AI 기본법')이 2026-01-22 본격 시행.",
-    "problem": "<ul>\n<li><strong>Before (baseline)</strong>: 한국은 AI 거버넌스를 개인정보보호법(PIPA) 자동화된 결정 조항·차별금지법 등으로 산발 규율. HR AI 도입사도 자체 가이드라인에 의존 (ex. SK·삼성).</li>\n<li><strong>Pain point</strong>: 채용 AI(마이다스 inAIR·SK AICT·원티드 AI Agent) 도입 가속화에도 불구하고 \"이 AI가 합법인지\", \"지원자 권리는 어떻게 보장되는지\", \"차별 발생 시 책임은 누구인지\" 가 회색 지대.</li>\n<li><strong>Trigger</strong>: EU AI Act 발효(2024) + OECD AI 원칙 + 국내 마이다스 AI 면접 차별 논란(2020~) → 한국 정부가 2024년 입법 → 2025-01-21 공포 → <strong>2026-01-22 시행</strong>.</li>\n</ul>",
-    "impact_summary": "한국 HR AI 시장 전반의 합법 운영 baseline 형성. EU AI Act와 결합 시 글로벌 KR 대기업은 dual compliance 인프라 의무화.",
-    "consulting": "<ul>\n<li><strong>모든 KR HR AI 프로젝트의 legal foundation 슬라이드 필수</strong>: 채용·평가·승진·해고 AI 도입 제안 시 첫 페이지에 의무 list 명시</li>\n<li><strong>dual compliance 어젠다 (2026-08 EU AI Act 발효 동반)</strong>: 글로벌 KR 대기업(삼성·현대·LG·SK)은 EU·KR 동시 대응 인프라 필요 — Workday ASOR 등 거버넌스 솔루션 도입 명분</li>\n<li><strong>신규 컨설팅 메뉴 — \"HR AI Compliance Diagnostic\"</strong>:</li>\n</ul>\n1. 현행 HR AI 자산 인벤토리 (어떤 AI가 어디에 쓰이나)",
-    "system": {
-      "연동·통합": "ATS·HRIS·LMS 등 모든 HR 시스템에서 AI 사용 부분 추적",
-      "사용자 접점": "HRBP·legal·DPO·AI 위원회 (사람), 지원자/직원에게는 채용·평가 process 내 AI 고지",
-      "인증·권한": "AI 운영자·감사자·HRBP 권한 분리"
-    },
-    "data": {
-      "입력 데이터 소스": "AI 모델 학습·운영 데이터, 의사결정 로그, 영향평가 결과, 이의제기 처리 기록",
-      "데이터 규모": "기업별 상이",
-      "전처리·정제": "PII 마스킹, bias 검사용 demographic parity 측정 데이터",
-      "데이터 거버넌스": "PIPA 보존기간 + AI 기본법 감사 로그 보존 (시행령 가이드)",
-      "민감정보 처리": "채용·평가에 사용되는 개인정보는 PIPA + AI 기본법 dual 적용"
-    },
-    "model": {},
-    "process_before": "HR AI 도입 시 자체 윤리 가이드라인·DPIA(GDPR)만 적용, 한국 법적 의무 명시 부재 /",
-    "process_steps": [
-      ": 고영향 AI 분류 판정 (채용·인사평가·승진·해고 → 자동 분류)",
-      ": 차별·편향·정확도 등 사전 평가 — 시행령 가이드라인 (2026 상반기 추가 고시 예정)",
-      ": 지원자·직원에게 \"AI가 의사결정에 사용됨\" 명시",
-      ": 최종 결정에 사람의 검토·승인 단계 필수",
-      ": 결과 설명 요청권, 이의제기권",
-      ": bias drift·정확도 변화 정기 점검"
-    ]
-  },
-  {
-    "slug": "microsoft-people-skills-inferred-ontology",
-    "title": "Microsoft People Skills + Skills Agent — 직원 활동 기반 16K 스킬 ontology 자동 추론",
-    "primary_category": "Learning & Development",
-    "subcategory": "Skills & Capabilities",
-    "company": "Microsoft",
-    "industry": [
-      "tech",
-      "cloud"
-    ],
-    "region": [
-      "global"
-    ],
-    "employee_class": [
-      "all"
-    ],
-    "vendor": [
-      "Microsoft"
-    ],
-    "vendor_type": [
-      "foundation-model",
-      "hrms"
     ],
     "ai_tech_type": [
       "generative",
@@ -757,163 +1164,119 @@
     ],
     "ai_tech_subtype": [
       "information-extraction",
-      "clustering-classification",
-      "recommendation-ranking"
+      "recommendation-ranking",
+      "clustering-classification"
     ],
     "confidence": 0.65,
     "stage": "production",
     "frequency": "daily",
-    "first_seen": "2025-04-01",
-    "last_confirmed": "2026-04-01",
+    "first_seen": "2015-01-01",
+    "last_confirmed": "2023-12-01",
     "tags": [
-      "microsoft",
-      "people-skills",
-      "skills-agent",
-      "viva",
-      "copilot",
-      "skills-inference",
-      "linkedin-taxonomy",
-      "16k-skills",
-      "m365",
-      "workforce-insights"
+      "talent-marketplace",
+      "internal-mobility",
+      "ibm",
+      "blue-match",
+      "opt-in",
+      "skill-inference",
+      "peer-pattern-learning"
     ],
-    "summary": "Microsoft <strong>People Skills</strong> + <strong>Skills Agent</strong> — M365 Copilot/Viva 데이터 레이어. OpenAI 모델로 직원 이메일·문서·미팅에서 <strong>스킬을 자동 추론</strong>해 dynamic 스킬 프로파일 생성. LinkedIn 공동 개발 16,000-skill taxonomy 기반. Skills Agent는 매니저에게 internal talent 매칭·workforce planning insight 제공. 2025 GA. 2026-03 Skills Agent → Learning + Workforce Insights agents로 분리.",
-    "headline": "Microsoft People Skills + Skills Agent — M365 Copilot/Viva 데이터 레이어.",
-    "problem": "<ul>\n<li><strong>Before</strong>: 한국·글로벌 대기업 모두 직원 self-update profile에 의존 — outdated·incomplete</li>\n<li><strong>Pain point</strong>: 스킬 inventory 부정확하면 internal mobility·workforce planning·learning 추천 모두 약화</li>\n<li><strong>Trigger</strong>: Microsoft가 M365 Copilot 위에 People Skills 출시 (2025-04, Bersin \"HR tech market 변경\"으로 평가)</li>\n</ul>",
-    "impact_summary": "직원 self-update 부담 없이 스킬 ontology 자동 갱신 — Eightfold·Gloat 외부 vendor 대비 M365 native option.",
-    "consulting": "<ul>\n<li><strong>KR HRMS RFP 시장 game-changer</strong>:</li>\n<li>기존 Eightfold·Gloat·Beamery 외부 vendor 대비 <strong>M365 native option</strong> 등장</li>\n<li>이미 Microsoft 365 도입 KR 대기업 (대부분) → people skills 추가 도입 비용·통합 부담 적음</li>\n<li>2026 Q3-Q4 People Skills 도입 vs Eightfold 도입 비교 RFP 필수 슬라이드</li>\n</ul>",
-    "system": {},
-    "data": {},
-    "model": {},
-    "process_before": "한국·글로벌 대기업 모두 직원 self-update profile에 의존 — outdated·incomplete / Pain point: 스킬 inventory 부정확하면 internal mobility·workforce planning·learning 추천 모두 약화 / Trigger: Microsoft가 M365 Copilot 위에 People Skills 출시 (2025-04, Bersin \"HR tech market 변경\"으로 평가)",
+    "summary": "IBM이 2015년 MVP로 시작한 <strong>사내 talent marketplace</strong>. opt-in 직원 280K+에게 AI로 추론한 스킬·경력·성과·근무지·디지털 footprint(블로그·코드·포럼 게시물) 기반 personalized 내부 직무 추천. peer 이동 패턴 continuous learning — A→B 이동이 5건 누적되면 유사 프로파일에게 동일 패턴 추천. ⚠️ 자사 보고: 40% 내부 채용 충원 증가, 1,000+ 측정 가능 placement.",
+    "headline": "IBM이 2015년 MVP로 시작한 사내 talent marketplace.",
+    "problem": "<ul>\n<li><strong>Before</strong>: IBM 내부 이동은 직원 본인 search에 의존 → silo·visibility 격차로 매칭 비효율</li>\n<li><strong>Pain point</strong>: 280K 글로벌 조직에서 internal posting 게시판은 잘 작동 안 함 — 직원이 본인 옆 부서 외 기회를 모름</li>\n<li><strong>Trigger</strong>: 핵심 인재 retention 위기 + 외부 talent marketplace 시장 형성 (Gloat·Eightfold) 전 자체 구축</li>\n</ul>",
+    "impact_summary": "사내 인재 visibility 향상으로 내부 채용 충원 40% 증가 + 핵심 인재 retention 보강.",
+    "consulting": "<ul>\n<li><strong>KR 적용 1순위</strong>: 삼성전자 사내공모/Career Mosaic, 현대차 internal posting, LG 횡적 이동 — 모두 division silo로 고전. Blue Match의 opt-in + peer pattern learning은 \"강제 프로파일 유지 부담 없는\" reference architecture</li>\n<li><strong>2026 Q3-Q4 talent marketplace 제안 deck</strong>: Gloat (Schneider·Unilever) + Eightfold + Blue Match 3-way 비교. Blue Match는 \"자체 구축으로 시작 가능\" 옵션</li>\n<li><strong>반면교사 포인트</strong>: peer pattern learning이 stereotyping 강화 가능성 — 한국 대기업 도입 시 \"성별·학력·출신 학교\" 등 protected attribute filter 명시 권장</li>\n<li><strong>Stage 검증 필요</strong>: 2024-25에 watsonx Orchestrate로 통합 진행 추정 — 현재 운영 status 재확인 필수</li>\n</ul>",
+    "system": {
+      "Core HRIS": "IBM 내부 HCM (Workday 사용 추정 — IBM은 Workday customer)",
+      "AI 시스템 배치": "IBM 자체 구축 (watsonx 이전 세대)",
+      "배포 환경": "IBM Cloud 추정",
+      "연동·통합": "HCM, internal posting 시스템, 직원 디지털 footprint 소스(블로그·code·forum)",
+      "사용자 접점": "사내 web/intranet (Bluepages 통합 추정)",
+      "인증·권한": "IBM SSO"
+    },
+    "data": {
+      "입력 데이터 소스": "HCM 마스터, 성과 데이터, 학습 이력, 사내 블로그·코드·forum 게시물",
+      "데이터 규모": "280K+ 직원 대상, opt-in ~15% = ~42K 활성 사용자",
+      "전처리·정제": "디지털 footprint NLP 처리로 implicit 스킬 추론",
+      "데이터 거버넌스": "직원 opt-in 동의 기반 — privacy-by-design",
+      "민감정보 처리": "디지털 footprint 분석은 회사 자산만 사용 (외부 SNS 불포함 추정)"
+    },
+    "model": {
+      "Foundation model": "자체 ML (LLM 이전 세대), 2024-25 watsonx Orchestrate 통합 진행 추정",
+      "제공 방식": "IBM internal"
+    },
+    "process_before": "IBM 내부 이동은 직원 본인 search에 의존 → silo·visibility 격차로 매칭 비효율 / Pain point: 280K 글로벌 조직에서 internal posting 게시판은 잘 작동 안 함 — 직원이 본인 옆 부서 외 기회를 모름 / Trigger: 핵심 인재 retention 위기 + 외부 talent marketplace 시장 형성 (Gloat·Eightfold) 전 자체 구축",
     "process_steps": [
-      "M365 Copilot이 일상 활동 (이메일·문서·미팅) 텔레메트리 수집",
-      "OpenAI 모델로 LinkedIn 16K taxonomy 매핑 → 추론 스킬 프로파일 자동 생성",
-      "직원 검토·승인 (HITL — 추론 결과 거부·수정 가능)",
-      "매니저 Skills Agent 활용 — \"이 프로젝트에 맞는 사내 talent\" search",
-      "Workforce Insights agent — workforce planning insight"
+      "직원이 opt-in (~15% 참여)",
+      "AI가 스킬·경력·성과·근무지·digital footprint 분석 → 개인 프로파일 생성",
+      "신규 internal posting 발생 시 매칭 직원에게 personalized 추천",
+      "peer 이동 패턴 학습 (A→B 5건 누적 시 유사 프로파일에 동일 추천)",
+      "직원 지원 → 매니저 검토 (기존 절차)"
     ]
   },
   {
-    "slug": "walmart-openai-certification",
-    "title": "Walmart × OpenAI Certification — frontline + 사무 직원 무료 OpenAI 인증 ($1B 교육)",
-    "primary_category": "Learning & Development",
-    "subcategory": "Skills & Capabilities",
-    "company": "Walmart",
+    "slug": "kb-bank-ai-hr-deep-change",
+    "title": "KB국민은행 — 'HR Deep Change' AI 영업점 인사이동 (2020 launch, 2025 PB·RM 확장 57% 두 달 사용)",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "Workforce Planning",
+    "company": "KB국민은행",
     "industry": [
-      "retail"
+      "finance",
+      "banking"
     ],
     "region": [
-      "na"
+      "kr"
     ],
     "employee_class": [
-      "all"
+      "전임직",
+      "기술사무직"
     ],
     "vendor": [
-      "Walmart",
-      "OpenAI"
-    ],
-    "vendor_type": [
-      "internal-build",
-      "foundation-model"
-    ],
-    "ai_tech_type": [
-      "generative"
-    ],
-    "ai_tech_subtype": [
-      "summarization-qa"
-    ],
-    "confidence": 0.65,
-    "stage": "production",
-    "frequency": "annual",
-    "first_seen": "2025-09-01",
-    "last_confirmed": "2026-04-01",
-    "tags": [
-      "walmart",
-      "openai",
-      "certification",
-      "frontline-ai-training",
-      "mass-upskilling",
-      "1b-investment",
-      "retail",
-      "50k-upskilled"
-    ],
-    "summary": "Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무 직원에게 <strong>OpenAI Certification 무료 access</strong> (2026 launch 시). 다층 (basics → prompt engineering). Walmart의 <strong>$1B 교육 commitment</strong> (2026까지)의 일부. ~50,000 직원이 AI/automation roles로 reskilling 진행. 740K frontline에게 <strong>Me@Walmart</strong> 디바이스 (Samsung Galaxy XCover Pro) 배포로 학습 access 인프라 마련.",
-    "headline": "Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무 직원에게 OpenAI Certification 무료 access (2026 launch 시).",
-    "problem": "<ul>\n<li><strong>Before</strong>: 1.6M Walmart frontline 직원의 AI literacy baseline 매우 편차 큰</li>\n<li><strong>Pain point</strong>: AI 도입 가속 vs frontline workforce 변화 압박 — reskilling 없으면 mass 해고 사태</li>\n<li><strong>Trigger</strong>: OpenAI Certification (2026 GA) launch 동시 vendor 파트너십 결단</li>\n</ul>",
-    "impact_summary": "frontline retail 1.6M 직원에게 mass AI upskilling — KR retail (이마트·롯데·CJ대한통운·쿠팡) frontline reskilling 모범.",
-    "consulting": "<ul>\n<li><strong>KR retail/유통 frontline reskilling reference (1순위)</strong>:</li>\n<li>이마트(이마트24·트레이더스 합산 ~10만)·롯데마트(~3만)·CJ대한통운(~2만)·쿠팡 fulfilment(~5만+) — 모두 Walmart 모델 fit</li>\n<li>디바이스 + AI Certification + 배치 시나리오 통합 패키지</li>\n<li><strong>벤더 파트너십 패턴</strong>: KR retail이 OpenAI/Anthropic/Naver Hyperclova X 중 누구와 파트너십 할지 결정 시 Walmart 사례 reference</li>\n</ul>",
-    "system": {},
-    "data": {},
-    "model": {},
-    "process_before": "1.6M Walmart frontline 직원의 AI literacy baseline 매우 편차 큰 / Pain point: AI 도입 가속 vs frontline workforce 변화 압박 — reskilling 없으면 mass 해고 사태 / Trigger: OpenAI Certification (2026 GA) launch 동시 vendor 파트너십 결단",
-    "process_steps": [
-      "Me@Walmart 디바이스 (Samsung Galaxy XCover Pro) 740K frontline 배포 → 학습 access 인프라",
-      "OpenAI Certification 다층 모듈 (basics → prompt engineering) — 무료 access",
-      "~50,000 직원이 AI/automation roles 재배치",
-      "$1B 교육 commitment (2026까지)의 일부로 통합 운영"
-    ]
-  },
-  {
-    "slug": "amazon-connections-daily-pulse",
-    "title": "Amazon Connections — 1.5M 직원 daily 1-question pulse (300M annual responses, 97% adoption)",
-    "primary_category": "Employee Experience & HR Ops",
-    "subcategory": "Listening & Engagement",
-    "company": "Amazon",
-    "industry": [
-      "retail",
-      "logistics",
-      "tech"
-    ],
-    "region": [
-      "global"
-    ],
-    "employee_class": [
-      "all"
-    ],
-    "vendor": [
-      "Amazon internal"
+      "KB국민은행 internal"
     ],
     "vendor_type": [
       "internal-build"
     ],
     "ai_tech_type": [
+      "decision-optimization",
       "predictive"
     ],
     "ai_tech_subtype": [
-      "prediction",
+      "optimization",
       "clustering-classification"
     ],
-    "confidence": 0.6,
+    "confidence": 0.65,
     "stage": "production",
-    "frequency": "daily",
-    "first_seen": "2014-01-01",
-    "last_confirmed": "2024-06-01",
+    "frequency": "monthly",
+    "first_seen": "2020-07-15",
+    "last_confirmed": "2026-04-01",
     "tags": [
-      "amazon",
-      "connections",
-      "daily-pulse",
-      "ml-prediction",
-      "frontline",
-      "300m-responses",
-      "people-science",
-      "attrition-prediction"
+      "kb-bank",
+      "hr-deep-change",
+      "ai-staffing",
+      "internal-mobility",
+      "machine-learning",
+      "korean-bank",
+      "1100-staff",
+      "pb-rm",
+      "korea",
+      "public-best-practice"
     ],
-    "summary": "Amazon <strong>Connections</strong> — 1.5M 직원에게 매일 로그인 시 1개 질문 pulse. 연 300M+ 응답이 People Science 팀의 ML 모델 입력 — 행동·태도 변화로 attrition·engagement 예측. ⚠️ 자사 보고: 97% voluntary adoption (산업 평균 ~25%). Andie Baker (전 principal scientist)가 구축. 단 Fortune Jun 2024 critical coverage — anonymity skepticism 보고.",
-    "headline": "Amazon Connections — 1.",
-    "problem": "<ul>\n<li><strong>Before</strong>: annual·biannual 서베이로는 1.5M frontline 직원의 daily 변화 포착 불가</li>\n<li><strong>Pain point</strong>: high-turnover frontline (creator·warehouse·delivery)의 sentiment·attrition 신호를 연 1~2회로 잡으면 늦음</li>\n<li><strong>Trigger</strong>: People Science 데이터 사이언스 팀의 high-frequency listening 실험</li>\n</ul>",
-    "impact_summary": "high-frequency listening + ML 예측으로 frontline attrition·engagement 사전 신호 — KR 제조·유통·물류 대기업 적용 reference.",
-    "consulting": "<ul>\n<li><strong>KR 제조·유통·물류 frontline reference (1순위)</strong>:</li>\n<li>삼성전자 사업장·현대차 공장·CJ대한통운 hub·이마트 매장·쿠팡 fulfilment — 모두 1.5M Amazon 같은 large frontline workforce</li>\n<li>daily pulse 모델의 frontline fit 매우 높음</li>\n<li><strong>반면교사 활용 (Fortune critical coverage)</strong>:</li>\n</ul>",
+    "summary": "KB국민은행 <strong>HR Deep Change</strong> — 2020년 하반기 1,100여 명 영업점 직원 이동 배치를 AI 알고리즘으로 단행. 출퇴근 거리·자격증·업무 경력·<strong>육아 고충</strong> 등 수십 가지 정량/정성 데이터를 머신러닝으로 분석. 한국 KR 대기업 인사이동 AI 도입의 가장 잘 문서화된 reference. 2025 상반기 PB·RM 등 상담 직원 대상 AI 활용 확대 — <strong>적용 직원의 57%가 두 달 만에 실제 사용</strong>.",
+    "headline": "KB국민은행 HR Deep Change — 2020년 하반기 1,100여 명 영업점 직원 이동 배치를 AI 알고리즘으로 단행.",
+    "problem": "<ul>\n<li><strong>Before</strong>: KB국민은행 영업점 직원 인사이동은 매년 manual 조정 — 수천 직원 개인 사정 (출퇴근·육아·자격) 종합 어려움</li>\n<li><strong>Pain point</strong>: 17,000+ KB 직원 base, 영업점 1,000+ 곳 — manual 인사 운영 한계 + 직원 만족도 격차</li>\n<li><strong>Trigger</strong>: 2020 'HR Deep Change' 프로젝트 launch — 공공·금융권 최초 large-scale AI 인사 배치</li>\n</ul>",
+    "impact_summary": "1,100여 명 영업점 직원 인사이동 자동화 — 한국 KR 대기업 인사 AI 도입의 canonical case + 2025 상담 직원 확장 정착.",
+    "consulting": "<ul>\n<li><strong>KR 대기업 인사이동 AI reference (1순위)</strong>:</li>\n<li>한국에서 가장 잘 문서화된 large-scale 인사이동 AI 사례</li>\n<li>5년+ 운영 (2020~2025) — stability proof</li>\n<li>2025 PB·RM 확장 + 57% 두 달 사용은 <strong>adoption 성공 정량 증거</strong></li>\n</ul>",
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "annual·biannual 서베이로는 1.5M frontline 직원의 daily 변화 포착 불가 / Pain point: high-turnover frontline (creator·warehouse·delivery)의 sentiment·attrition 신호를 연 1~2회로 잡으면 늦음 / Trigger: People Science 데이터 사이언스 팀의 high-frequency listening 실험",
+    "process_before": "KB국민은행 영업점 직원 인사이동은 매년 manual 조정 — 수천 직원 개인 사정 (출퇴근·육아·자격) 종합 어려움 / Pain point: 17,000+ KB 직원 base, 영업점 1,000+ 곳 — manual 인사 운영 한계 + 직원 만족도 격차 / Trigger: 2020 'HR Deep Change' 프로젝트 launch — 공공·금융권 최초 large-scale AI 인사 배치",
     "process_steps": [
-      "직원 로그인 시 1개 질문 자동 출현 (5초 답변)",
-      "응답 + non-response 모두 데이터로 수집",
-      "ML 모델이 행동(non-response trend)·태도(응답 sentiment) 변화 추적",
-      "attrition·engagement 이벤트 사전 예측",
-      "매니저·HR에게 risk 신호 전달"
+      "직원 master data + 영업점 수요 + 정성 데이터 (출퇴근·자격증·육아 고충 등) 입력",
+      "ML 알고리즘이 다변량 최적화 — 수십 변수 simultaneous",
+      "후보 배치안 생성 → HR 검토·조정",
+      "매니저·직원 통보",
+      "(2025 확장) PB·RM 등 상담 직원 AI 활용으로 확장 — 57% 두 달 만에 사용"
     ]
   },
   {
@@ -977,66 +1340,6 @@
       "J&J Learn이 skill gap 기반 과정·growth assignment·멘토링 매칭",
       "임원은 dashboard에서 region·BU별 capability heatmap 조회 → 채용·재배치·후계 의사결정",
       "내부 이동 발생 시 last_confirmed 스킬 갱신 → 모델 재추론"
-    ]
-  },
-  {
-    "slug": "jpmorgan-ai-made-easy-upskilling",
-    "title": "JPMorgan — 'AI Made Easy' 전사 AI 교육 (230K 직원, 신입 분석가 prompt engineering 의무)",
-    "primary_category": "Learning & Development",
-    "subcategory": "Skills & Capabilities",
-    "company": "JPMorgan Chase",
-    "industry": [
-      "finance",
-      "banking"
-    ],
-    "region": [
-      "na",
-      "global"
-    ],
-    "employee_class": [
-      "all"
-    ],
-    "vendor": [
-      "JPMorgan internal"
-    ],
-    "vendor_type": [
-      "internal-build"
-    ],
-    "ai_tech_type": [
-      "generative"
-    ],
-    "ai_tech_subtype": [
-      "summarization-qa"
-    ],
-    "confidence": 0.6,
-    "stage": "production",
-    "frequency": "annual",
-    "first_seen": "2024-08-01",
-    "last_confirmed": "2026-02-12",
-    "tags": [
-      "ai-made-easy",
-      "jpmorgan",
-      "upskilling",
-      "prompt-engineering",
-      "mass-training",
-      "finance",
-      "role-specific-curriculum"
-    ],
-    "summary": "JPMorgan <strong>AI Made Easy</strong> — 230K 직원 대상 전사 AI 교육 프로그램. AI fundamentals + prompt engineering + 컴플라이언스 + 직무별 use case curriculum. Asset & Wealth Management 신입 분석가에게 <strong>prompt engineering 필수</strong>. LLM Suite 200K+ 8개월 onboarding의 교육 backbone.",
-    "headline": "JPMorgan AI Made Easy — 230K 직원 대상 전사 AI 교육 프로그램.",
-    "problem": "<ul>\n<li><strong>Before</strong>: 230K 직원 중 AI literacy 분포 편차 큰 — 데이터 사이언티스트는 풍부, 운영·영업·고객서비스 직원은 baseline</li>\n<li><strong>Pain point</strong>: 회사 LLM Suite를 도입해도 사용 모르면 ROI 없음</li>\n<li><strong>Trigger</strong>: LLM Suite launch 동시 추진 (2024-08)</li>\n</ul>",
-    "impact_summary": "대규모 단일 교육으로 LLM Suite 200K+ 8개월 onboarding 가능 + 신입 prompt engineering baseline 확립.",
-    "consulting": "<ul>\n<li><strong>KR 그룹 HRD 센터 직접 reference</strong>: 삼성인력개발원·LG Aspire·SK mySUNI·현대인재개발원 모두 AI 교육 curriculum 기획 중. JPMorgan 구조 (foundational + role-specific + 신입 의무) 직접 차용 가능</li>\n<li><strong>금융권 fit 우수</strong>: KB·신한·우리·하나·미래에셋 모두 자체 LLM 플랫폼 도입 중 → 동반 교육 프로그램 reference (위 jpmorgan-llm-suite-redeployment와 pair)</li>\n<li><strong>신입 prompt engineering 의무</strong>: KR 대기업 신입 공채 후 OJT/연수원 과정에 모듈 통합 — 2026 신입 입사자부터 적용 가능</li>\n<li><strong>2026 Q3-Q4 KR 컨설팅 deck</strong>: \"AI 도입 = 도구 + 교육의 시간차 0\" — JPMorgan의 동시 launch 전략이 모범</li>\n</ul>",
-    "system": {},
-    "data": {},
-    "model": {},
-    "process_before": "230K 직원 중 AI literacy 분포 편차 큰 — 데이터 사이언티스트는 풍부, 운영·영업·고객서비스 직원은 baseline / Pain point: 회사 LLM Suite를 도입해도 사용 모르면 ROI 없음 / Trigger: LLM Suite launch 동시 추진 (2024-08)",
-    "process_steps": [
-      "전 직원 baseline AI fundamentals 모듈 의무",
-      "Prompt engineering 모듈 (LLM Suite 활용 직군 의무)",
-      "컴플라이언스 모듈 (금융정보·고객정보 처리 가이드)",
-      "직무별 use case curriculum (analyst·trader·banker·HR·legal·ops 별)",
-      "신입 분석가 (Asset & Wealth Management): prompt engineering 의무 수료"
     ]
   },
   {
@@ -1237,84 +1540,6 @@
     ]
   },
   {
-    "slug": "ibm-blue-match-internal-mobility",
-    "title": "IBM — Blue Match (사내 talent marketplace, 280K 직원, 40% 내부 채용 충원 증가)",
-    "primary_category": "Onboarding & Transitions",
-    "subcategory": "Internal Mobility",
-    "company": "IBM",
-    "industry": [
-      "tech",
-      "it-services"
-    ],
-    "region": [
-      "global"
-    ],
-    "employee_class": [
-      "all"
-    ],
-    "vendor": [
-      "IBM"
-    ],
-    "vendor_type": [
-      "internal-build"
-    ],
-    "ai_tech_type": [
-      "generative",
-      "predictive"
-    ],
-    "ai_tech_subtype": [
-      "information-extraction",
-      "recommendation-ranking",
-      "clustering-classification"
-    ],
-    "confidence": 0.55,
-    "stage": "production",
-    "frequency": "daily",
-    "first_seen": "2015-01-01",
-    "last_confirmed": "2023-12-01",
-    "tags": [
-      "talent-marketplace",
-      "internal-mobility",
-      "ibm",
-      "blue-match",
-      "opt-in",
-      "skill-inference",
-      "peer-pattern-learning"
-    ],
-    "summary": "IBM이 2015년 MVP로 시작한 <strong>사내 talent marketplace</strong>. opt-in 직원 280K+에게 AI로 추론한 스킬·경력·성과·근무지·디지털 footprint(블로그·코드·포럼 게시물) 기반 personalized 내부 직무 추천. peer 이동 패턴 continuous learning — A→B 이동이 5건 누적되면 유사 프로파일에게 동일 패턴 추천. ⚠️ 자사 보고: 40% 내부 채용 충원 증가, 1,000+ 측정 가능 placement.",
-    "headline": "IBM이 2015년 MVP로 시작한 사내 talent marketplace.",
-    "problem": "<ul>\n<li><strong>Before</strong>: IBM 내부 이동은 직원 본인 search에 의존 → silo·visibility 격차로 매칭 비효율</li>\n<li><strong>Pain point</strong>: 280K 글로벌 조직에서 internal posting 게시판은 잘 작동 안 함 — 직원이 본인 옆 부서 외 기회를 모름</li>\n<li><strong>Trigger</strong>: 핵심 인재 retention 위기 + 외부 talent marketplace 시장 형성 (Gloat·Eightfold) 전 자체 구축</li>\n</ul>",
-    "impact_summary": "사내 인재 visibility 향상으로 내부 채용 충원 40% 증가 + 핵심 인재 retention 보강.",
-    "consulting": "<ul>\n<li><strong>KR 적용 1순위</strong>: 삼성전자 사내공모/Career Mosaic, 현대차 internal posting, LG 횡적 이동 — 모두 division silo로 고전. Blue Match의 opt-in + peer pattern learning은 \"강제 프로파일 유지 부담 없는\" reference architecture</li>\n<li><strong>2026 Q3-Q4 talent marketplace 제안 deck</strong>: Gloat (Schneider·Unilever) + Eightfold + Blue Match 3-way 비교. Blue Match는 \"자체 구축으로 시작 가능\" 옵션</li>\n<li><strong>반면교사 포인트</strong>: peer pattern learning이 stereotyping 강화 가능성 — 한국 대기업 도입 시 \"성별·학력·출신 학교\" 등 protected attribute filter 명시 권장</li>\n<li><strong>Stage 검증 필요</strong>: 2024-25에 watsonx Orchestrate로 통합 진행 추정 — 현재 운영 status 재확인 필수</li>\n</ul>",
-    "system": {
-      "Core HRIS": "IBM 내부 HCM (Workday 사용 추정 — IBM은 Workday customer)",
-      "AI 시스템 배치": "IBM 자체 구축 (watsonx 이전 세대)",
-      "배포 환경": "IBM Cloud 추정",
-      "연동·통합": "HCM, internal posting 시스템, 직원 디지털 footprint 소스(블로그·code·forum)",
-      "사용자 접점": "사내 web/intranet (Bluepages 통합 추정)",
-      "인증·권한": "IBM SSO"
-    },
-    "data": {
-      "입력 데이터 소스": "HCM 마스터, 성과 데이터, 학습 이력, 사내 블로그·코드·forum 게시물",
-      "데이터 규모": "280K+ 직원 대상, opt-in ~15% = ~42K 활성 사용자",
-      "전처리·정제": "디지털 footprint NLP 처리로 implicit 스킬 추론",
-      "데이터 거버넌스": "직원 opt-in 동의 기반 — privacy-by-design",
-      "민감정보 처리": "디지털 footprint 분석은 회사 자산만 사용 (외부 SNS 불포함 추정)"
-    },
-    "model": {
-      "Foundation model": "자체 ML (LLM 이전 세대), 2024-25 watsonx Orchestrate 통합 진행 추정",
-      "제공 방식": "IBM internal"
-    },
-    "process_before": "IBM 내부 이동은 직원 본인 search에 의존 → silo·visibility 격차로 매칭 비효율 / Pain point: 280K 글로벌 조직에서 internal posting 게시판은 잘 작동 안 함 — 직원이 본인 옆 부서 외 기회를 모름 / Trigger: 핵심 인재 retention 위기 + 외부 talent marketplace 시장 형성 (Gloat·Eightfold) 전 자체 구축",
-    "process_steps": [
-      "직원이 opt-in (~15% 참여)",
-      "AI가 스킬·경력·성과·근무지·digital footprint 분석 → 개인 프로파일 생성",
-      "신규 internal posting 발생 시 매칭 직원에게 personalized 추천",
-      "peer 이동 패턴 학습 (A→B 5건 누적 시 유사 프로파일에 동일 추천)",
-      "직원 지원 → 매니저 검토 (기존 절차)"
-    ]
-  },
-  {
     "slug": "jpmorgan-llm-suite-employee-productivity",
     "title": "JPMorgan Chase — LLM Suite 직원 생산성 플랫폼 (140,000+ 직원)",
     "primary_category": "Employee Experience & HR Ops",
@@ -1381,68 +1606,90 @@
     ]
   },
   {
-    "slug": "kb-bank-ai-hr-deep-change",
-    "title": "KB국민은행 — 'HR Deep Change' AI 영업점 인사이동 (2020 launch, 2025 PB·RM 확장 57% 두 달 사용)",
-    "primary_category": "Strategic Workforce & Governance",
-    "subcategory": "Workforce Planning",
-    "company": "KB국민은행",
+    "slug": "lg-chatexaone-group-rollout",
+    "title": "LG AI연구원 — ChatEXAONE 그룹 정식 서비스 (LG전자·이노텍·디스플레이 5만+ 임직원, 자체 EXAONE)",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "Employee Self-service",
+    "company": "LG (LG전자·LG이노텍·LG디스플레이 등 그룹 5만+)",
     "industry": [
-      "finance",
-      "banking"
+      "tech",
+      "semiconductor",
+      "manufacturing"
     ],
     "region": [
       "kr"
     ],
     "employee_class": [
-      "전임직",
-      "기술사무직"
+      "기술사무직",
+      "전임직"
     ],
     "vendor": [
-      "KB국민은행 internal"
+      "LG AI Research"
     ],
     "vendor_type": [
+      "foundation-model",
       "internal-build"
     ],
     "ai_tech_type": [
-      "decision-optimization",
-      "predictive"
+      "generative"
     ],
     "ai_tech_subtype": [
-      "optimization",
-      "clustering-classification"
+      "summarization-qa",
+      "text-generation",
+      "information-extraction"
     ],
     "confidence": 0.55,
     "stage": "production",
-    "frequency": "monthly",
-    "first_seen": "2020-07-15",
+    "frequency": "daily",
+    "first_seen": "2024-08-01",
     "last_confirmed": "2026-04-01",
     "tags": [
-      "kb-bank",
-      "hr-deep-change",
-      "ai-staffing",
-      "internal-mobility",
-      "machine-learning",
-      "korean-bank",
-      "1100-staff",
-      "pb-rm",
+      "lg",
+      "exaone",
+      "chatexaone",
+      "korean-llm",
+      "group-rollout",
+      "lg-electronics",
+      "lg-innotek",
+      "lg-display",
+      "internal-platform",
       "korea",
-      "public-best-practice"
+      "beta-65-percent-utilization"
     ],
-    "summary": "KB국민은행 <strong>HR Deep Change</strong> — 2020년 하반기 1,100여 명 영업점 직원 이동 배치를 AI 알고리즘으로 단행. 출퇴근 거리·자격증·업무 경력·<strong>육아 고충</strong> 등 수십 가지 정량/정성 데이터를 머신러닝으로 분석. 한국 KR 대기업 인사이동 AI 도입의 가장 잘 문서화된 reference. 2025 상반기 PB·RM 등 상담 직원 대상 AI 활용 확대 — <strong>적용 직원의 57%가 두 달 만에 실제 사용</strong>.",
-    "headline": "KB국민은행 HR Deep Change — 2020년 하반기 1,100여 명 영업점 직원 이동 배치를 AI 알고리즘으로 단행.",
-    "problem": "<ul>\n<li><strong>Before</strong>: KB국민은행 영업점 직원 인사이동은 매년 manual 조정 — 수천 직원 개인 사정 (출퇴근·육아·자격) 종합 어려움</li>\n<li><strong>Pain point</strong>: 17,000+ KB 직원 base, 영업점 1,000+ 곳 — manual 인사 운영 한계 + 직원 만족도 격차</li>\n<li><strong>Trigger</strong>: 2020 'HR Deep Change' 프로젝트 launch — 공공·금융권 최초 large-scale AI 인사 배치</li>\n</ul>",
-    "impact_summary": "1,100여 명 영업점 직원 인사이동 자동화 — 한국 KR 대기업 인사 AI 도입의 canonical case + 2025 상담 직원 확장 정착.",
-    "consulting": "<ul>\n<li><strong>KR 대기업 인사이동 AI reference (1순위)</strong>:</li>\n<li>한국에서 가장 잘 문서화된 large-scale 인사이동 AI 사례</li>\n<li>5년+ 운영 (2020~2025) — stability proof</li>\n<li>2025 PB·RM 확장 + 57% 두 달 사용은 <strong>adoption 성공 정량 증거</strong></li>\n</ul>",
-    "system": {},
-    "data": {},
-    "model": {},
-    "process_before": "KB국민은행 영업점 직원 인사이동은 매년 manual 조정 — 수천 직원 개인 사정 (출퇴근·육아·자격) 종합 어려움 / Pain point: 17,000+ KB 직원 base, 영업점 1,000+ 곳 — manual 인사 운영 한계 + 직원 만족도 격차 / Trigger: 2020 'HR Deep Change' 프로젝트 launch — 공공·금융권 최초 large-scale AI 인사 배치",
+    "summary": "LG AI연구원이 자체 LLM <strong>EXAONE</strong> 기반 'ChatEXAONE' 정식 서비스 출시 (2026 Q1, 1년 베타 후). LG전자·LG이노텍·LG디스플레이 등 LG 그룹 <strong>5만+ 임직원</strong> 대상. 사무직 베타 활용률 <strong>65%</strong> 검증. 사내 규정·프로젝트 자료 검색·요약, <strong>PPTX·PDF·CSV·도표·수식 이해</strong>, SQL 생성, <strong>22개 언어 코드 지원</strong>. 한국 자체 LLM 기반 그룹 전사 AI 챗봇 운영의 가장 큰 사례.",
+    "headline": "LG AI연구원이 자체 LLM EXAONE 기반 'ChatEXAONE' 정식 서비스 출시 (2026 Q1, 1년 베타 후).",
+    "problem": "<ul>\n<li><strong>Before</strong>: LG 그룹 5만+ 임직원이 사내 정책·프로젝트 자료 검색을 sharepoint·이메일·시니어 문의로 처리 — 정보 fragmented</li>\n<li><strong>Pain point</strong>: 글로벌 commercial LLM (ChatGPT·Claude) 사용은 데이터 주권·보안 이슈로 제약. 한국어·LG 도메인 fit 부족</li>\n<li><strong>Trigger</strong>: LG AI연구원이 EXAONE 자체 LLM 개발 → 그룹 dogfooding 명분 → 1년 베타(2024-08~2025) 후 production 정식 launch</li>\n</ul>",
+    "impact_summary": "한국 자체 LLM (EXAONE)으로 그룹 5만+ 임직원에게 AI 챗봇 제공 — 한국 대기업 자체 LLM 활용 ROI의 가장 큰 정량 reference.",
+    "consulting": "<ul>\n<li><strong>★최우선 reference</strong>: 한국 대기업 자체 LLM 활용의 가장 큰 정량 사례. SKT A.X (SK 그룹 표준화) sk-group-aibiz-25-companies·네이버 Hyperclova X (미래에셋 mirae-asset-ai-assistant-platform) 와 함께 KR 자체 LLM 3대 reference</li>\n<li><strong>2026 Q3-Q4 KR consulting deck 표지 사례감</strong>:</li>\n<li>\"한국 대기업 = 자체 LLM ROI 가능한가?\" — LG가 답</li>\n<li>베타 65% 활용률 + 정식 launch는 가장 강력한 adoption 증거</li>\n</ul>",
+    "system": {
+      "Core HRIS": "각 LG 계열사 HRIS (Workday·SAP 혼재) — 별도, ChatEXAONE은 horizontal 플랫폼",
+      "AI 시스템 배치": "LG AI연구원이 운영, 계열사에 share",
+      "배포 환경": "LG cloud / on-prem (보안 민감 영역) — 구체 _미공개_",
+      "연동·통합": "그룹 SSO + 사내 문서 RAG 코퍼스",
+      "사용자 접점": "Web + 모바일 + IDE plugin (코드 지원)",
+      "인증·권한": "LG 그룹 SSO"
+    },
+    "data": {
+      "입력 데이터 소스": "사내 규정·프로젝트 자료·기술 문서·매뉴얼 (RAG 코퍼스)",
+      "데이터 규모": "5만+ 직원 활용, 사무직 65% 재방문률 (베타 검증)",
+      "전처리·정제": "multi-format 처리 (PPTX·PDF·CSV·도표·수식)",
+      "데이터 거버넌스": "LG 계열사별 격리 + 그룹 공통 정책",
+      "민감정보 처리": "한국 개인정보보호법 + 영업비밀 — 사내 LLM이라 데이터 주권 우위"
+    },
+    "model": {
+      "Foundation model": "EXAONE (LG AI연구원 자체 개발 LLM)",
+      "모델 유형": "LLM (생성·요약·multi-modal·코드)",
+      "제공 방식": "Self-hosted (LG cloud)",
+      "커스터마이징 기법": "LG 도메인 fine-tuning + RAG (사내 문서 코퍼스)",
+      "평가·가드레일": "베타 1년간 quality 검증 (65% 사무직 재방문률)"
+    },
+    "process_before": "LG 그룹 5만+ 임직원이 사내 정책·프로젝트 자료 검색을 sharepoint·이메일·시니어 문의로 처리 — 정보 fragmented / Pain point: 글로벌 commercial LLM (ChatGPT·Claude) 사용은 데이터 주권·보안 이슈로 제약. 한국어·LG 도메인 fit 부족 / Trigger: LG AI연구원이 EXAONE 자체 LLM 개발 → 그룹 dogfooding 명분 → 1년 베타(2024-08~2025) 후 production 정식 launch",
     "process_steps": [
-      "직원 master data + 영업점 수요 + 정성 데이터 (출퇴근·자격증·육아 고충 등) 입력",
-      "ML 알고리즘이 다변량 최적화 — 수십 변수 simultaneous",
-      "후보 배치안 생성 → HR 검토·조정",
-      "매니저·직원 통보",
-      "(2025 확장) PB·RM 등 상담 직원 AI 활용으로 확장 — 57% 두 달 만에 사용"
+      "직원이 ChatEXAONE web/모바일 access (그룹 SSO)",
+      "자연어로 query — 사내 규정·프로젝트 자료·기술 문서 등",
+      "EXAONE이 multi-format 이해 (PPTX·PDF·CSV·도표·수식)",
+      "응답 + 출처 표시; SQL 생성·22개 언어 코드 지원",
+      "직원이 결과 검토·활용"
     ]
   },
   {
@@ -2244,6 +2491,87 @@
     ]
   },
   {
+    "slug": "pulmuone-duribun-hr-chatbot",
+    "title": "풀무원 — '두리번' HR 특화 AI 챗봇 (6개 영역 24/365, RAG hallucination 최소화)",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "Employee Self-service",
+    "company": "풀무원",
+    "industry": [
+      "food",
+      "manufacturing"
+    ],
+    "region": [
+      "kr"
+    ],
+    "employee_class": [
+      "전임직",
+      "기술사무직"
+    ],
+    "vendor": [
+      "_미공개_"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
+    "confidence": 0.5,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-12-23",
+    "last_confirmed": "2026-04-01",
+    "tags": [
+      "pulmuone",
+      "duribun",
+      "hr-chatbot",
+      "rag",
+      "6-hr-domains",
+      "24-365",
+      "korea",
+      "food-industry",
+      "mid-large-enterprise",
+      "pure-hr-ai"
+    ],
+    "summary": "풀무원이 2024-12-23 출시한 <strong>임직원 인적자원관리 전용 생성형 AI 챗봇 '두리번'</strong>. <strong>근태·복리후생·학습·평가·승진·보상 6개 HR 영역</strong>에 대해 24/365 응답. 인사 정보 문서 기반 RAG로 <strong>hallucination 최소화</strong>. PC → 모바일 확장 계획. ★ KR 사례 중 <strong>순수 HR 챗봇으로 정의된</strong> 가장 selectoral 사례 — 식품 중견기업이지만 KR HR 컨설팅의 가장 직접적 reference.",
+    "headline": "풀무원이 2024-12-23 출시한 임직원 인적자원관리 전용 생성형 AI 챗봇 '두리번'.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 풀무원 ~7K 직원이 HR 정책 문의를 HR 팀 전화·이메일로 처리 — HR 팀 단순 반복 응대 부담</li>\n<li><strong>Pain point</strong>: 한국 중견기업 HR 팀 ~10명 규모 — 직원당 daily 문의 부담, 정책 변경 시 안내 누락</li>\n<li><strong>Trigger</strong>: 2024 한국 ChatGPT 도입 가속 + 풀무원 디지털 전환 명분</li>\n</ul>",
+    "impact_summary": "중견기업 HR 팀의 단순 반복 문의 부담 경감 + 24/365 직원 self-service. KR pure HR-AI vendor product의 가장 selectoral 사례.",
+    "consulting": "<ul>\n<li><strong>★KR HR 컨설팅 가장 직접적 reference</strong>:</li>\n<li>한국에서 <strong>순수 HR 챗봇</strong>으로 정의된 KR 사례 중 가장 selectoral</li>\n<li>한국 일반 대기업 HR 부서 클라이언트 첫 pitch에 활용 가능</li>\n<li>6개 HR 영역 cover는 표준 HR self-service scope</li>\n</ul>",
+    "system": {
+      "Core HRIS": "풀무원 자체 HR 시스템",
+      "AI 시스템 배치": "두리번 chatbot (vendor _미공개_, 한국 vendor 추정)",
+      "배포 환경": "PC web → 모바일 확장 (2025+)",
+      "연동·통합": "풀무원 인사 정책 문서 sharepoint",
+      "사용자 접점": "PC web, 모바일 (확장)",
+      "인증·권한": "풀무원 SSO"
+    },
+    "data": {
+      "입력 데이터 소스": "인사 정책 문서 (6개 HR 영역) RAG 코퍼스",
+      "데이터 규모": "~7K 직원 cover",
+      "전처리·정제": "정책 문서 RAG indexing",
+      "데이터 거버넌스": "PIPA 준수",
+      "민감정보 처리": "HR 데이터 RBAC"
+    },
+    "model": {
+      "모델 유형": "LLM + RAG",
+      "제공 방식": "SaaS 또는 자체 호스팅",
+      "커스터마이징 기법": "RAG (인사 문서 특화)",
+      "평가·가드레일": "hallucination 최소화 design 강조 (벤더 주장)"
+    },
+    "process_before": "풀무원 ~7K 직원이 HR 정책 문의를 HR 팀 전화·이메일로 처리 — HR 팀 단순 반복 응대 부담 / Pain point: 한국 중견기업 HR 팀 ~10명 규모 — 직원당 daily 문의 부담, 정책 변경 시 안내 누락 / Trigger: 2024 한국 ChatGPT 도입 가속 + 풀무원 디지털 전환 명분",
+    "process_steps": [
+      "직원이 두리번 chatbot에 자연어 query (PC, 모바일 확장 예정)",
+      "두리번이 인사 정보 문서 RAG 검색 (근태·복리후생·학습·평가·승진·보상)",
+      "출처 표시 + 답변 생성 (hallucination 최소화 design)",
+      "복잡 case는 HR 팀 escalation",
+      "24/365 운영 — 야간·주말 문의 즉시 처리"
+    ]
+  },
+  {
     "slug": "sap-successfactors-1h-2026-joule-agents",
     "title": "SAP SuccessFactors 1H 2026 Release — 4개 신규 Joule Agent (Career·HR Service·People Intelligence·Payroll)",
     "primary_category": "Employee Experience & HR Ops",
@@ -2590,6 +2918,95 @@
     ]
   },
   {
+    "slug": "woori-bank-175-ai-agents",
+    "title": "우리은행 — 금융권 최초 전사 AI 에이전트 175개 (5대 영역 29개 업무, 삼성SDS 구축)",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "HR Tech Governance",
+    "company": "우리은행",
+    "industry": [
+      "finance",
+      "banking"
+    ],
+    "region": [
+      "kr"
+    ],
+    "employee_class": [
+      "전임직",
+      "기술사무직"
+    ],
+    "vendor": [
+      "Samsung SDS"
+    ],
+    "vendor_type": [
+      "point-solution",
+      "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "automation",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "rpa",
+      "clustering-classification",
+      "recommendation-ranking"
+    ],
+    "confidence": 0.5,
+    "stage": "announced",
+    "frequency": "daily",
+    "first_seen": "2026-03-05",
+    "last_confirmed": "2026-04-07",
+    "tags": [
+      "woori-bank",
+      "ai-agent-portfolio",
+      "samsung-sds",
+      "finance-first",
+      "175-agents",
+      "5-domains-29-tasks",
+      "korean-bank",
+      "governance-process",
+      "korea"
+    ],
+    "summary": "우리은행이 <strong>금융권 최초 전사 AI 에이전트 도입</strong> 발표 (2026-03-05). <strong>575개 후보</strong> → <strong>5대 영역(고객관계관리·자산관리·내부통제·고객상담·업무자동화) 29개 업무 175개 에이전트</strong> 선정. 2026-04-07 <strong>삼성SDS 우선협상대상자</strong> 선정. 12월 1차 97개, 2026 초 78개 추가 출시. ⚠️ 자사 보고: 업무처리 속도 30% 향상 기대. <strong>AI 에이전트 portfolio management</strong> 컨설팅의 표준 reference architecture.",
+    "headline": "우리은행이 금융권 최초 전사 AI 에이전트 도입 발표 (2026-03-05).",
+    "problem": "<ul>\n<li><strong>Before</strong>: 우리은행 ~13K 직원이 다수 산발 시스템 (코어뱅킹·CRM·콜센터·내부통제) 사용. AI 도입은 부서별 산발 PoC</li>\n<li><strong>Pain point</strong>: KB국민은행 kb-bank-ai-hr-deep-change (인사이동 AI), 신한 AI ONE shinhan-bank-ai-one-platform 등 경쟁 은행 AI 가속 → 우리은행 차별화 시급</li>\n<li><strong>Trigger</strong>: 2026 신년 신경 그룹장 발표 — 금융권 최초 전사 AI 에이전트 도입 결단</li>\n</ul>",
+    "impact_summary": "금융권 최초 전사 AI 에이전트 portfolio + 575→175 정량 평가 framework — 모든 KR 금융·대기업 AI 거버넌스 reference.",
+    "consulting": "<ul>\n<li><strong>★최우선 KR 금융·대기업 reference</strong>:</li>\n<li><strong>AI 에이전트 portfolio management 컨설팅 메서드론</strong> 그 자체 — 575개 후보 → 평가 → 175개 선정 프로세스</li>\n<li>모든 KR 금융 RFP에 의무 인용 (KB·신한·하나·NH·IBK·KB증권·미래에셋 등)</li>\n<li><strong>금융권 비교 deck</strong>:</li>\n</ul>",
+    "system": {
+      "Core HRIS": "우리은행 자체 HR 시스템 (Workday 또는 자체 — _미공개_)",
+      "AI 시스템 배치": "삼성SDS 구축 (Brity Copilot 또는 별도 platform — _미공개_)",
+      "배포 환경": "우리은행 cloud + 삼성SDS partnership",
+      "연동·통합": "코어뱅킹·CRM·콜센터·내부통제 시스템 (5대 영역 cover)",
+      "사용자 접점": "직원 portal + 업무 시스템 임베드",
+      "인증·권한": "우리은행 SSO + 금융정보보호 강화"
+    },
+    "data": {
+      "입력 데이터 소스": "5대 영역 (고객관계관리·자산관리·내부통제·고객상담·업무자동화) 데이터",
+      "데이터 규모": "13K 직원·175개 에이전트 운영 — 정확 transaction 수 _미공개_",
+      "전처리·정제": "금융정보보호 강화 (PIPA + 금융권 규제)",
+      "데이터 거버넌스": "우리은행 + 삼성SDS 공동 governance",
+      "민감정보 처리": "금융정보보호법 + PIPA dual compliance"
+    },
+    "model": {
+      "Foundation model": "삼성SDS Brity 또는 외부 LLM 혼합 추정 — _미공개_",
+      "모델 유형": "agentic LLM + classifier + automation",
+      "제공 방식": "우리은행-삼성SDS 공동 운영",
+      "커스터마이징 기법": "금융 도메인 fine-tuning + RAG (사내 정책)",
+      "평가·가드레일": "5대 영역 portfolio 평가 framework"
+    },
+    "process_before": "우리은행 ~13K 직원이 다수 산발 시스템 (코어뱅킹·CRM·콜센터·내부통제) 사용. AI 도입은 부서별 산발 PoC / Pain point: KB국민은행 kb-bank-ai-hr-deep-change (인사이동 AI), 신한 AI ONE shinhan-bank-ai-one-platform 등 경쟁 은행 AI 가속 → 우리은행 차별화 시급 / Trigger: 2026 신년 신경 그룹장 발표 — 금융권 최초 전사 AI 에이전트 도입 결단",
+    "process_steps": [
+      "575개 후보 사업부 nominate",
+      "5대 영역 29개 업무 175개 에이전트",
+      "삼성SDS Brity 기반",
+      "97개 에이전트 production",
+      "78개 에이전트 추가",
+      "운영 KPI tracking",
+      "Portfolio rebalancing"
+    ]
+  },
+  {
     "slug": "workday-agent-system-of-record-asor",
     "title": "Workday Agent System of Record (ASOR) — AI 에이전트 거버넌스 플랫폼",
     "primary_category": "Strategic Workforce & Governance",
@@ -2832,6 +3249,78 @@
       "직원이 Claude로 문서 합성·코드 생성·클라이언트 자료 분석 수행, 산출물은 Trustworthy AI framework로 검증",
       "규제 산업 (financial services·healthcare·public)용 industry pack을 Anthropic과 공동 개발해 클라이언트에 재판매",
       "사용 로그·prompt가 governance dashboard로 수집되어 risk·품질 모니터링"
+    ]
+  },
+  {
+    "slug": "hyundai-mobis-moai-platform",
+    "title": "현대모비스 — 'MoAI' 사내 전용 GenAI (1,000만 건 RAG, 7개 업무·HR 확장 예정)",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "Employee Self-service",
+    "company": "현대모비스",
+    "industry": [
+      "automotive",
+      "manufacturing"
+    ],
+    "region": [
+      "kr"
+    ],
+    "employee_class": [
+      "기술사무직",
+      "전임직"
+    ],
+    "vendor": [
+      "현대모비스 internal"
+    ],
+    "vendor_type": [
+      "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "information-extraction"
+    ],
+    "confidence": 0.45,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-10-21",
+    "last_confirmed": "2026-04-01",
+    "tags": [
+      "hyundai-mobis",
+      "moai",
+      "on-premise",
+      "rag",
+      "10m-documents",
+      "automotive-supplier",
+      "prompt-template",
+      "korea",
+      "change-management"
+    ],
+    "summary": "현대모비스가 2025-10-21 본격 운영하는 사내 전용 GenAI 플랫폼 <strong>'MoAI(Mobis one AI)'</strong>. 온프레미스 배포로 <strong>1,000만 건 사내문서 RAG</strong> 기반 검색·요약. R&D·IT·품질·영업·생산 등 <strong>7개 업무</strong>에 적용. 2025년 내 <strong>법무·경영지원(HR 포함)으로 확장 계획</strong>. 변화관리로 프롬프트 템플릿 사전 탑재. 한국 제조 대기업의 <strong>\"온프레미스 + 변화관리\"</strong> 정석 사례.",
+    "headline": "현대모비스가 2025-10-21 본격 운영하는 사내 전용 GenAI 플랫폼 'MoAI(Mobis one AI)'.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 자동차 부품사 33K 직원 — 매뉴얼·도면·기술 문서 fragmented. 보안 민감 (R&D 영업비밀)</li>\n<li><strong>Pain point</strong>: 글로벌 commercial LLM 사용은 영업비밀·도면 leakage risk → 사내 LLM 필요</li>\n<li><strong>Trigger</strong>: 2025 현대차 그룹 AI 가속 + 모비스 R&D 효율 압박</li>\n</ul>",
+    "impact_summary": "온프레미스 사내 GenAI로 1,000만 건 문서 검색·요약 — 한국 제조 대기업 보안 민감 환경의 표준 패턴.",
+    "consulting": "<ul>\n<li><strong>KR 제조 대기업 ★ reference</strong>:</li>\n<li>보안 민감 + 매뉴얼·도면 많은 클라이언트 (중공업·반도체 장비) 제안 시 1순위 벤치마크</li>\n<li>포스코·현대제철 hyundai-steel-hip-platform·한화 등 같은 제조 그룹사 reference</li>\n<li><strong>온프레미스 vs cloud trade-off</strong>:</li>\n</ul>",
+    "system": {
+      "Core HRIS": "현대모비스 자체 HR (그룹 표준 추정)",
+      "AI 시스템 배치": "사내 온프레미스 (보안 민감 — 영업비밀 보호)",
+      "배포 환경": "on-prem (구체 hyperscaler 미사용)",
+      "연동·통합": "사내 sharepoint·문서 server·도면 DB",
+      "사용자 접점": "web (PC), 모바일 _미공개_",
+      "인증·권한": "모비스 SSO"
+    },
+    "data": {},
+    "model": {
+      "Foundation model": "자체 운영 (구체 base LLM _미공개_, 한국 vendor 추정)"
+    },
+    "process_before": "자동차 부품사 33K 직원 — 매뉴얼·도면·기술 문서 fragmented. 보안 민감 (R&D 영업비밀) / Pain point: 글로벌 commercial LLM 사용은 영업비밀·도면 leakage risk → 사내 LLM 필요 / Trigger: 2025 현대차 그룹 AI 가속 + 모비스 R&D 효율 압박",
+    "process_steps": [
+      "직원이 MoAI 자연어 query (사전 탑재 프롬프트 템플릿 활용)",
+      "MoAI가 1,000만 건 사내문서 RAG 검색",
+      "답변 + 출처 표시",
+      "7개 업무 영역 (R&D·IT·품질·영업·생산 + 2개)",
+      "2025+ 법무·경영지원(HR) 확장 계획"
     ]
   },
   {
@@ -3747,6 +4236,66 @@
     ]
   },
   {
+    "slug": "hyundai-steel-hip-platform",
+    "title": "현대제철 — 'HIP' 사내 GenAI 경영지원 챗봇 (2024-05 → 2025-10 AI·로봇 역량 확장)",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "HR Service Delivery",
+    "company": "현대제철",
+    "industry": [
+      "steel",
+      "manufacturing"
+    ],
+    "region": [
+      "kr"
+    ],
+    "employee_class": [
+      "기술사무직",
+      "전임직"
+    ],
+    "vendor": [
+      "현대제철 internal"
+    ],
+    "vendor_type": [
+      "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "information-extraction"
+    ],
+    "confidence": 0.4,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-05-13",
+    "last_confirmed": "2025-10-27",
+    "tags": [
+      "hyundai-steel",
+      "hip-platform",
+      "steel-industry",
+      "document-search",
+      "hr-chatbot",
+      "korea",
+      "hyundai-group",
+      "manufacturing"
+    ],
+    "summary": "현대제철의 사내 AI 플랫폼 <strong>'HIP(Hyundai-steel Intelligence Platform)'</strong> — 2024-05 사내문서검색 + 경영지원챗봇 형태로 launch. 2025-10 임직원 AI·로봇 역량 강화 프로그램으로 확장. 철강산업 DX 전환의 일환. 중후장대 산업의 <strong>\"지식정보 플랫폼 + HR 챗봇\"</strong> 결합 사례.",
+    "headline": "현대제철의 사내 AI 플랫폼 'HIP(Hyundai-steel Intelligence Platform)' — 2024-05 사내문서검색 + 경영지원챗봇 형태로 launch.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 현대제철 ~12K 직원이 매뉴얼·기술 문서·경영지원 정책을 분산 search</li>\n<li><strong>Pain point</strong>: 철강 제조 도메인 매뉴얼 양 거대 + 신입 학습 곡선 길음</li>\n<li><strong>Trigger</strong>: 2024 한국 기업 사내 AI 플랫폼 도입 가속</li>\n</ul>",
+    "impact_summary": "중후장대 철강 제조의 사내 AI 플랫폼 reference — 매뉴얼·도면·정책 통합 검색.",
+    "consulting": "<ul>\n<li><strong>KR 중후장대 산업 reference</strong>:</li>\n<li>포스코·현대제철·세아 등 철강 클라이언트 제안서 직접 인용</li>\n<li>현대모비스 MoAI hyundai-mobis-moai-platform (자동차 부품)와 동일 패턴</li>\n<li><strong>2024 launch + 2025 확장</strong>: 한국 대기업 AI platform 진화 pattern reference (런치 → 확장)</li>\n</ul>",
+    "system": {},
+    "data": {},
+    "model": {},
+    "process_before": "현대제철 ~12K 직원이 매뉴얼·기술 문서·경영지원 정책을 분산 search / Pain point: 철강 제조 도메인 매뉴얼 양 거대 + 신입 학습 곡선 길음 / Trigger: 2024 한국 기업 사내 AI 플랫폼 도입 가속",
+    "process_steps": [
+      "사내문서검색 — 매뉴얼·기술·경영 문서 RAG",
+      "경영지원챗봇 — HR·재무·총무 정책 Q&A",
+      "2025-10 확장 — 임직원 AI·로봇 역량 강화 프로그램"
+    ]
+  },
+  {
     "slug": "ibm-watson-recruitment",
     "title": "IBM Watson Recruitment — bias-mitigated candidate matching (84% prediction accuracy 벤더 주장)",
     "primary_category": "Talent Acquisition",
@@ -4053,6 +4602,125 @@
       "요약 Draft",
       "연말 Performance Review"
     ]
+  },
+  {
+    "slug": "nps-ai-innovation-taskforce",
+    "title": "국민연금공단 — AI·혁신 추진단 + AI사원·AI 규정비서·AI 수어 영상 (CAIO 신설)",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "HR Tech Governance",
+    "company": "국민연금공단",
+    "industry": [
+      "public",
+      "pension",
+      "finance"
+    ],
+    "region": [
+      "kr"
+    ],
+    "employee_class": [
+      "전임직",
+      "기술사무직"
+    ],
+    "vendor": [
+      "_미공개_"
+    ],
+    "vendor_type": [
+      "point-solution",
+      "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "multimodal"
+    ],
+    "confidence": 0.4,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-09-18",
+    "last_confirmed": "2026-04-01",
+    "tags": [
+      "nps",
+      "korea-pension",
+      "ai-innovation-taskforce",
+      "caio",
+      "ai-employee",
+      "ai-regulation-secretary",
+      "korea",
+      "public-pension",
+      "accessibility"
+    ],
+    "summary": "국민연금공단이 2025-09 <strong>'AI·혁신 추진단'</strong> 출범 — 기획이사 단장, <strong>CAIO(Chief AI Officer) 신설</strong>. 4개 분과 (연금·복지·기금운용·기관운영·시스템). <strong>AI 사원</strong> 활용 상담·홍보, <strong>AI 규정비서</strong>, <strong>AI 수어 영상안내</strong> 운영 중. 한국 공공기관·연기금 CAIO 도입 + AI 거버넌스 추진단 패턴의 표준 사례.",
+    "headline": "국민연금공단이 2025-09 'AI·혁신 추진단' 출범 — 기획이사 단장, CAIO(Chief AI Officer) 신설.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 국민연금공단 ~7K 직원, 5,000만+ 국민 가입자 — 상담·규정 응대 부담 거대</li>\n<li><strong>Pain point</strong>: 공공기관 디지털 전환 + 정부 AI 정책 (한국 AI 기본법 2026-01) 대응</li>\n<li><strong>Trigger</strong>: 2025-09 AI·혁신 추진단 출범 — 기관 차원 AI 거버넌스 강화</li>\n</ul>",
+    "impact_summary": "공공기관 CAIO 신설 + AI 거버넌스 추진단 운영 — 한국 공공기관 표준 패턴.",
+    "consulting": "<ul>\n<li><strong>KR 공공기관·연기금 reference</strong>:</li>\n<li>한국전력 HR-Bot korea-electric-power-hr-bot (공공기관 첫 AI 인사추천)</li>\n<li>인사혁신처/행정안전부 korea-gov-ai-hr-public-sector (정부 AI HR)</li>\n<li>국민연금공단 (CAIO + 추진단 + 다중 솔루션) — KR 공공섹터 비교표 필수</li>\n</ul>",
+    "system": {},
+    "data": {},
+    "model": {},
+    "process_before": "국민연금공단 ~7K 직원, 5,000만+ 국민 가입자 — 상담·규정 응대 부담 거대 / Pain point: 공공기관 디지털 전환 + 정부 AI 정책 (한국 AI 기본법 2026-01) 대응 / Trigger: 2025-09 AI·혁신 추진단 출범 — 기관 차원 AI 거버넌스 강화",
+    "process_steps": []
+  },
+  {
+    "slug": "posco-dx-110-agents-hr",
+    "title": "포스코DX — 인사·구매·경영분석 110 AI 에이전트 + 그룹 AI 거버넌스 (2026 조직개편)",
+    "primary_category": "Strategic Workforce & Governance",
+    "subcategory": "HR Tech Governance",
+    "company": "포스코DX (포스코 그룹)",
+    "industry": [
+      "it-services",
+      "manufacturing",
+      "steel"
+    ],
+    "region": [
+      "kr"
+    ],
+    "employee_class": [
+      "기술사무직",
+      "전임직"
+    ],
+    "vendor": [
+      "POSCO DX internal"
+    ],
+    "vendor_type": [
+      "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative",
+      "automation",
+      "predictive"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "rpa",
+      "clustering-classification"
+    ],
+    "confidence": 0.4,
+    "stage": "announced",
+    "frequency": "daily",
+    "first_seen": "2026-01-01",
+    "last_confirmed": "2026-04-01",
+    "tags": [
+      "posco-dx",
+      "posco-group",
+      "110-agents",
+      "hr-procurement-analytics",
+      "ai-robot-fusion",
+      "organizational-redesign",
+      "korea",
+      "manufacturing"
+    ],
+    "summary": "포스코DX가 2026 그룹 조직개편과 함께 <strong>인사·구매·경영분석 사무 업무 영역 ~110개 AI 에이전트</strong> 개발 중. 2026 그룹DX전략실장(임치현 UNIST 교수 영입), AI·로봇 융합 연구소장(윤일용) 신설로 그룹 차원 AI 거버넌스 강화. 우리은행 175 에이전트 woori-bank-175-ai-agents와 함께 KR 기업 <strong>AI 에이전트 portfolio 규모</strong> 트렌드의 제조업 reference.",
+    "headline": "포스코DX가 2026 그룹 조직개편과 함께 인사·구매·경영분석 사무 업무 영역 ~110개 AI 에이전트 개발 중.",
+    "problem": "<ul>\n<li><strong>Before</strong>: 포스코 그룹 ~30K 직원 사무 영역 (인사·구매·경영분석)에 단순 반복 업무 다수</li>\n<li><strong>Pain point</strong>: 철강 산업 DX 전환 + 그룹 차원 AI 통합 부재 (계열사별 분산)</li>\n<li><strong>Trigger</strong>: 2026 그룹 조직개편 — 그룹DX전략실 + AI·로봇 융합 연구소 신설로 거버넌스 강화</li>\n</ul>",
+    "impact_summary": "한국 제조 그룹의 AI 에이전트 portfolio 첫 사례 + 그룹 차원 거버넌스 — 우리은행 금융권 사례와 paired reference.",
+    "consulting": "<ul>\n<li><strong>KR 제조 그룹 AI 에이전트 portfolio reference</strong>:</li>\n<li>우리은행 175 woori-bank-175-ai-agents (금융, portfolio framework)</li>\n<li>포스코DX 110 (제조, 그룹 거버넌스 강화)</li>\n<li>SK A.Biz 25개사 sk-group-aibiz-25-companies (단일 표준 platform)</li>\n</ul>",
+    "system": {},
+    "data": {},
+    "model": {},
+    "process_before": "포스코 그룹 ~30K 직원 사무 영역 (인사·구매·경영분석)에 단순 반복 업무 다수 / Pain point: 철강 산업 DX 전환 + 그룹 차원 AI 통합 부재 (계열사별 분산) / Trigger: 2026 그룹 조직개편 — 그룹DX전략실 + AI·로봇 융합 연구소 신설로 거버넌스 강화",
+    "process_steps": []
   },
   {
     "slug": "sk-group-aict-ai-recruitment",
@@ -4566,6 +5234,66 @@
       "ServiceNow·Jira·Okta·Teams·Google Chat 등 200+ 시스템 자동 연동·프로비저닝",
       "HR 문의 → Skye가 1차 처리 (20+ 유스케이스 대응); 복잡 건만 담당자 에스컬레이션",
       "온보딩 완료: 기존 대비 4일 단축"
+    ]
+  },
+  {
+    "slug": "kogas-hybrid-genai-platform",
+    "title": "한국가스공사 — 하이브리드 GenAI 플랫폼 (사내 LLM + 상용 LLM, GenON 구축)",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "HR Service Delivery",
+    "company": "한국가스공사",
+    "industry": [
+      "public",
+      "energy",
+      "utility"
+    ],
+    "region": [
+      "kr"
+    ],
+    "employee_class": [
+      "전임직",
+      "기술사무직"
+    ],
+    "vendor": [
+      "GenON"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
+    "confidence": 0.35,
+    "stage": "announced",
+    "frequency": "daily",
+    "first_seen": "2025-09-10",
+    "last_confirmed": "2026-04-01",
+    "tags": [
+      "kogas",
+      "hybrid-llm",
+      "energy-public",
+      "security-vs-performance",
+      "genon",
+      "korea",
+      "public-energy"
+    ],
+    "summary": "한국가스공사가 에너지 공공기관 최초 <strong>하이브리드 생성형 AI 플랫폼</strong> 도입 (2025-09 발주, 2026 구축). <strong>사내 전용 LLM (보안 민감 영역) + 상용 초거대 LLM (전문지식)</strong> 라우팅. 임직원 문서 초안·규정 검토·단순 행정 자동화. <strong>제논(GenON) 구축 사업 수주</strong>. 한국 공공기관 보안 vs 성능 trade-off 해법 표준 패턴.",
+    "headline": "한국가스공사가 에너지 공공기관 최초 하이브리드 생성형 AI 플랫폼 도입 (2025-09 발주, 2026 구축).",
+    "problem": "<ul>\n<li><strong>Before</strong>: 가스공사 ~3K 직원이 문서 초안·규정 검토를 manual</li>\n<li><strong>Pain point</strong>: 공공기관 보안 민감 영역 (에너지 인프라) + 성능 우수한 상용 LLM 활용 동시 필요</li>\n<li><strong>Trigger</strong>: 2025-09 발주 — 제논 우선협상자, 2026 구축</li>\n</ul>",
+    "impact_summary": "한국 공공기관 보안 + 성능 trade-off 해법 — 사내 + 상용 LLM 라우팅 표준 패턴.",
+    "consulting": "<ul>\n<li><strong>KR 공공·에너지 reference</strong>:</li>\n<li>한국전력 korea-electric-power-hr-bot (솔트룩스 단일 플랫폼)</li>\n<li>가스공사 (GenON 하이브리드)</li>\n<li>도로공사·국민연금공단·한국조폐 등 비교</li>\n</ul>",
+    "system": {},
+    "data": {},
+    "model": {},
+    "process_before": "가스공사 ~3K 직원이 문서 초안·규정 검토를 manual / Pain point: 공공기관 보안 민감 영역 (에너지 인프라) + 성능 우수한 상용 LLM 활용 동시 필요 / Trigger: 2025-09 발주 — 제논 우선협상자, 2026 구축",
+    "process_steps": [
+      "직원 query → 보안 민감도 자동 분류",
+      "보안 민감 영역 → 사내 LLM",
+      "일반 영역 (전문지식) → 상용 LLM (외부 API)",
+      "답변 통합 → 직원 활용"
     ]
   },
   {
@@ -5390,6 +6118,60 @@
     ]
   },
   {
+    "slug": "lg-uplus-jihye-employee-agent",
+    "title": "LG U+ — '지혜(Wisdom)' 임직원 AI 에이전트 (이메일·코드·요약, 2025-05 파일럿)",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "Workflow-embedded copilot",
+    "company": "LG U+",
+    "industry": [
+      "telecom"
+    ],
+    "region": [
+      "kr"
+    ],
+    "employee_class": [
+      "기술사무직"
+    ],
+    "vendor": [
+      "LG U+ internal"
+    ],
+    "vendor_type": [
+      "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "text-generation"
+    ],
+    "confidence": 0.3,
+    "stage": "pilot",
+    "frequency": "daily",
+    "first_seen": "2025-05-16",
+    "last_confirmed": "2026-04-01",
+    "tags": [
+      "lg-uplus",
+      "jihye",
+      "wisdom-agent",
+      "telecom",
+      "employee-copilot",
+      "code-review",
+      "korea",
+      "pilot"
+    ],
+    "summary": "LG U+의 사내 전용 AI 에이전트 <strong>'지혜(Wisdom)'</strong> (2025-05 파일럿). 이메일 번역·파일 요약·코드리뷰·내부 코드 분석/오류 사전 탐지. CIO 정성권: \"2025년이 AI 에이전트 사용 확산 원년\". 한국 통신사 중 사내 AI 에이전트 첫 공개 사례.",
+    "headline": "LG U+의 사내 전용 AI 에이전트 '지혜(Wisdom)' (2025-05 파일럿).",
+    "problem": "<ul>\n<li><strong>Before</strong>: LG U+ 직원이 이메일·문서·코드를 manual 처리</li>\n<li><strong>Pain point</strong>: 통신사 코드 base 거대 + glob·다국적 파트너 이메일 다언어</li>\n<li><strong>Trigger</strong>: 2025 한국 통신사 사내 AI 가속</li>\n</ul>",
+    "impact_summary": "한국 통신 3사 중 사내 AI 에이전트 첫 공개 사례. HR 특화 비중은 _미공개_ — 일반 productivity copilot에 가깝.",
+    "consulting": "<ul>\n<li><strong>KR 통신 3사 비교</strong>: SKT (A.Biz sk-group-aibiz-25-companies — SK 그룹 외부 비공개) / KT (Mi:dm B2B, 사내 미공개) / LG U+ (지혜) — KR 통신 vendor 사내 AI deck reference</li>\n<li><strong>반면교사</strong>: 파일럿 단계 + HR 특화 미공개 — 일반 코드·문서 copilot 위주</li>\n</ul>",
+    "system": {},
+    "data": {},
+    "model": {},
+    "process_before": "LG U+ 직원이 이메일·문서·코드를 manual 처리 / Pain point: 통신사 코드 base 거대 + glob·다국적 파트너 이메일 다언어 / Trigger: 2025 한국 통신사 사내 AI 가속",
+    "process_steps": []
+  },
+  {
     "slug": "phenom-merck-kgaa-talent-marketplace",
     "title": "Merck KGaA — Phenom 기반 내부 인재 플랫폼 (36k 직원, 200k 스킬, 1k 멘토십)",
     "primary_category": "Onboarding & Transitions",
@@ -5513,6 +6295,62 @@
       "Predictive retention 분석으로 at-risk 직원 식별",
       "매니저가 추천 action 실행, 다음 cycle에서 효과 측정"
     ]
+  },
+  {
+    "slug": "samsung-fire-employee-rag-chatbot",
+    "title": "삼성화재 — 임직원 RAG 챗봇 (보험 약관 + 사내 규정 통합, 2026 추진)",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "Employee Self-service",
+    "company": "삼성화재",
+    "industry": [
+      "insurance",
+      "finance"
+    ],
+    "region": [
+      "kr"
+    ],
+    "employee_class": [
+      "전임직",
+      "기술사무직"
+    ],
+    "vendor": [
+      "_미공개_"
+    ],
+    "vendor_type": [
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
+    "confidence": 0.3,
+    "stage": "announced",
+    "frequency": "daily",
+    "first_seen": "2025-11-26",
+    "last_confirmed": "2026-04-01",
+    "tags": [
+      "samsung-fire",
+      "rag",
+      "insurance",
+      "korean-conglomerate",
+      "employee-chatbot",
+      "samsung-ai-center",
+      "korea",
+      "finance",
+      "planned"
+    ],
+    "summary": "삼성화재가 2026년 임직원용 RAG 기반 AI 챗봇 도입 추진 (2025-11 발표). 보험 약관·특약은 물론 <strong>사내 규정 질의응답</strong>까지 커버 → 타 부서 문의 절감 목표. 삼성생명 중심 그룹 AI센터 126명이 인접 인프라 제공. 한국 손보사 중 최초 사례.",
+    "headline": "삼성화재가 2026년 임직원용 RAG 기반 AI 챗봇 도입 추진 (2025-11 발표).",
+    "problem": "<ul>\n<li><strong>Before</strong>: 보험사 직원이 약관·특약·사내 규정 search 시 sharepoint·시니어 문의 의존</li>\n<li><strong>Pain point</strong>: 보험 약관·특약 양 거대 + 빈번한 변경 → 신입·경력 모두 학습 부담</li>\n<li><strong>Trigger</strong>: 2026 삼성생명 중심 그룹 AI센터 (126명) 인접 인프라 활용</li>\n</ul>",
+    "impact_summary": "한국 손보사 중 최초 임직원 RAG 챗봇 — HR Q&A는 부수 workload, 보험 도메인이 main.",
+    "consulting": "<ul>\n<li>KR 보험·금융 클라이언트 reference (삼성생명·삼성화재 등)</li>\n<li>\"도메인 전문가 수준 사내 RAG → HR Q&A 부수 workload\" 패턴</li>\n<li>그룹 AI센터 (126명) inhouse 인프라 → \"그룹 차원 AI 자원 집중\" reference</li>\n</ul>",
+    "system": {},
+    "data": {},
+    "model": {},
+    "process_before": "보험사 직원이 약관·특약·사내 규정 search 시 sharepoint·시니어 문의 의존 / Pain point: 보험 약관·특약 양 거대 + 빈번한 변경 → 신입·경력 모두 학습 부담 / Trigger: 2026 삼성생명 중심 그룹 AI센터 (126명) 인접 인프라 활용",
+    "process_steps": []
   },
   {
     "slug": "spring-health-general-mills-ai-eap",
@@ -6156,6 +6994,59 @@
       "노동법·세법 질의",
       "AI 에이전트 상담"
     ]
+  },
+  {
+    "slug": "gs-caltex-aiu-platform",
+    "title": "GS칼텍스 — 'AIU' 사내 GenAI 통합 플랫폼 (정유·에너지)",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "Performance Support",
+    "company": "GS칼텍스 (GS 그룹)",
+    "industry": [
+      "energy",
+      "oil-refining"
+    ],
+    "region": [
+      "kr"
+    ],
+    "employee_class": [
+      "전임직",
+      "기술사무직"
+    ],
+    "vendor": [
+      "GS칼텍스 internal"
+    ],
+    "vendor_type": [
+      "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
+    "confidence": 0.25,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-01-01",
+    "last_confirmed": "2026-04-01",
+    "tags": [
+      "gs-caltex",
+      "aiu",
+      "refining-energy",
+      "internal-platform",
+      "korea",
+      "gs-group"
+    ],
+    "summary": "GS칼텍스 임직원 전용 생성형 AI 통합 플랫폼 <strong>'AIU'</strong> 오픈 (2025). 안전·편리한 실무 활용 환경 구축이 도입 명분. 정유·에너지 기업 사내 AI 플랫폼 사례.",
+    "headline": "GS칼텍스 임직원 전용 생성형 AI 통합 플랫폼 'AIU' 오픈 (2025).",
+    "problem": "<ul>\n<li><strong>Before</strong>: GS칼텍스 ~3K 직원이 정유·안전 매뉴얼·정책을 manual search</li>\n<li><strong>Pain point</strong>: 정유 산업 안전 critical + 매뉴얼 양 거대</li>\n<li><strong>Trigger</strong>: 2025 한국 기업 사내 AI 플랫폼 가속</li>\n</ul>",
+    "impact_summary": "GS칼텍스 임직원 AI 플랫폼 — HR 비중·standalone metric _미공개_.",
+    "consulting": "<ul>\n<li>정유·에너지 산업 reference (GS칼텍스·SK이노베이션·S-Oil 등)</li>\n<li>현대모비스 MoAI hyundai-mobis-moai-platform (자동차) + 가스공사 kogas-hybrid-genai-platform (가스) + GS칼텍스 (정유) — 한국 에너지·제조 사내 AI plat 비교</li>\n<li><strong>반면교사</strong>: 자사 보고만, 외부 검증·HR 비중 미공개 — POC 4주 자체 측정 권장</li>\n</ul>",
+    "system": {},
+    "data": {},
+    "model": {},
+    "process_before": "GS칼텍스 ~3K 직원이 정유·안전 매뉴얼·정책을 manual search / Pain point: 정유 산업 안전 critical + 매뉴얼 양 거대 / Trigger: 2025 한국 기업 사내 AI 플랫폼 가속",
+    "process_steps": []
   },
   {
     "slug": "lattice-ai-performance-summarization",

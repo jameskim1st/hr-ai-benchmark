@@ -52,20 +52,33 @@ Deloitte의 **Zora AI** — agentic AI 플랫폼 (NVIDIA AI · Llama Nemotron ·
   6. agent 배포·운영
 - **HITL**: Deloitte 컨설턴트 + 클라이언트 HR
 
-### B. System
+### B. System & Infrastructure (Agent research expanded, 2026-05)
 
-- NVIDIA AI · Llama Nemotron · AI-Q Blueprint 기반
-- agentic 플랫폼 (Deloitte 자체)
-- HR AI maturity diagnostic tool
+- **Core HRIS / 기반 시스템**: _미공개_ (Zora는 클라이언트 HCM 위 overlay agentic 플랫폼)
+- **AI 시스템 배치**: ✅ Cloud subscription 모델 (Deloitte SaaS); pre-built integrations로 "deploy rapidly on existing technologies"
+- **배포 환경**: ✅ NVIDIA AI Enterprise stack (cloud-agnostic); Oracle 파트너십 (별도 발표) — 구체 hyperscaler 선택은 클라이언트 옵션
+- **연동·통합**: ✅ Pre-built integrations; 구체 connector 목록 _미공개_; ✅ Oracle Fusion Cloud Apps 통합 (Deloitte-Oracle 파트너십)
+- **사용자 접점**: _미공개_ (web/conversational 추정)
+- **인증·권한**: ✅ "Trustworthy AI principles — security, transparency, reliability" (벤더 주장)
 
-### C/D. Data & Model
+### C. Data (Agent research)
 
-- 13,000+ leader 서베이 (2025 HC Trends)
-- Llama Nemotron base + Deloitte fine-tuning
+- **입력 데이터 소스**: ✅ Workforce 데이터 (Workforce Analyzer); 클라이언트 HR 시스템에서 수집 — 구체 항목 _미공개_; ✅ Deloitte 13,000+ leader survey (HR AI maturity 모델 baseline)
+- **데이터 규모**: ✅ 1,000+ 사용자 by end-2025 (finance pilot); HR 사용자 수 _미공개_
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: ✅ NVIDIA AI-Q Blueprint 기반 (RAG·agent orchestration용 reference architecture)
+- **데이터 거버넌스**: ✅ Human feedback loop 포함 (HITL)
+- **민감정보 처리**: _미공개_
 
-### E. Organization
+### D. Model (Agent research)
 
-- Deloitte Human Capital Practice + NVIDIA 파트너십
+- **Foundation model**: ✅ NVIDIA Llama Nemotron (reasoning models)
+- **모델 유형**: ✅ Agentic LLM (reasoning + generative + predictive) — finance·human capital·supply chain·procurement·sales·customer service agents
+- **제공 방식**: ✅ NVIDIA AI Enterprise stack (NeMo, AI Blueprints, accelerated computing)
+- **커스터마이징 기법**: ✅ NVIDIA NeMo (fine-tuning framework) + AI-Q Blueprint (RAG); Deloitte 도메인 fine-tuning 추정
+- **Orchestration 프레임워크**: ✅ NVIDIA AI-Q Blueprint (agentic orchestration reference)
+- **평가·가드레일**: ✅ Trustworthy AI 프레임워크 (Deloitte 자체) + human feedback loop
+
 
 ## Impact / Metrics
 

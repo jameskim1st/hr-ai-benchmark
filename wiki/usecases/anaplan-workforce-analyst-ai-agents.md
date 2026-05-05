@@ -16,10 +16,11 @@ stage: production
 frequency: monthly
 first_seen: 2025-12-09
 last_confirmed: 2026-04-01
-confidence: 0.65
+confidence: 0.70
 consulting_angle_status: filled
 sources:
   - sources/verified-pwc-doc-2026-05.md
+  - "Anaplan press 2025-12-09 (GlobeNewswire) + Gartner MQ Financial Planning Software 9X Leader https://www.globenewswire.com/news-release/2025/12/09/3202449/0/en/Anaplan-Introduces-Role-Based-AI-Agents-to-Advance-Industry-Leading-Enterprise-Scenario-Planning-and-Analysis-Platform.html"
 related_usecases:
   - deloitte-zora-ai-hc-suite
   - deloitte-workforce-analyzer-salesforce
@@ -52,21 +53,33 @@ Anaplan이 2025-12-09 GA로 발표한 **Role-Based AI Agents** 제품군 중 **W
 - **HITL**: AI agent는 분석·권고만, 최종 결정은 HR·CFO. 2026 H1부터 autonomous 실행 옵션
 - **Frequency**: monthly cycle + ad-hoc 시나리오 query
 
-### B. System & Infrastructure
+### B. System & Infrastructure (Agent research, 2026-05 expanded)
 
-- Anaplan 플랫폼 (cloud-native, multi-tenant)
-- HCM·ERP·finance system connector
-- 사용자 접점: web app + 자연어 query interface
+- **Core HRIS / 기반 시스템**: ✅ HCM (Workday/SAP) + ERP + finance system을 Anaplan platform에 connector로 통합
+- **AI 시스템 배치**: ✅ Anaplan cloud platform 내장 (Role-Based AI Agents, 2025-12-09 GA)
+- **배포 환경**: ✅ Cloud-native (Anaplan SaaS — multi-tenant); 구체 클라우드 provider _미공개_
+- **연동·통합**: ✅ HCM·ERP·finance system connectors; ⚠️ 벤더 주장: pre-built integration
+- **사용자 접점**: ✅ Anaplan web app + 자연어 query interface (conversational UI)
+- **인증·권한**: ✅ Anaplan tenant 격리 (multi-tenant SaaS); 세부 RBAC 모델 _미공개_
 
-### C/D. Data & Model
+### C. Data (Agent research)
 
-- **데이터**: HCM 마스터 + ERP transaction + finance ledger (실시간 통합)
-- **모델**: Anaplan AI agent (구체 base model _미공개_, 자체 + 외부 API 혼합 추정)
-- **거버넌스**: Anaplan tenant 격리
+- **입력 데이터 소스**: ✅ HCM 마스터 데이터 + ERP 트랜잭션 + finance ledger (실시간 통합)
+- **데이터 규모**: _미공개_ (Polaris Calculation Engine은 "massive sparse datasets" 처리 가능 — 벤더 주장)
+- **전처리·정제**: ✅ Polaris Calculation Engine (sparse data 최적화)
+- **학습 vs RAG vs In-context**: ⚠️ 벤더 주장: "LLM의 conversational + reasoning + deterministic planning engine 결합" — RAG·fine-tuning 구체 구분 _미공개_
+- **데이터 거버넌스**: ✅ Agent Studio가 "full governance and control" 제공 (벤더 주장)
+- **민감정보 처리**: _미공개_
 
-### E. Organization
+### D. Model (Agent research)
 
-- Anaplan 본사 + 고객사 HR Plat / FP&A 팀 cross-functional
+- **Foundation model**: _미공개_ (구체 base LLM 비공개; "leverages LLMs" 표현만)
+- **모델 유형**: ✅ LLM (conversational/reasoning) + ML (predictive) + deterministic planning engine 혼합
+- **제공 방식**: _미공개_ (자체·외부 API 혼합 추정, 명시 없음)
+- **커스터마이징 기법**: ✅ Agent Studio toolkit으로 customer가 custom AI assistant 배포 가능
+- **Orchestration 프레임워크**: ✅ Anaplan Agent Studio (자체 toolkit)
+- **평가·가드레일**: ⚠️ 벤더 주장: "accurate, traceable, auditable calculations" — eval set·red-team 구체 _미공개_
+
 
 ## Impact / Metrics (기대효과)
 

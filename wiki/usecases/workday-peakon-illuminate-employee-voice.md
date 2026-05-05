@@ -16,10 +16,11 @@ stage: production
 frequency: monthly
 first_seen: 2021-02-01
 last_confirmed: 2026-04-01
-confidence: 0.70
+confidence: 0.80
 consulting_angle_status: filled
 sources:
   - sources/verified-pwc-doc-2026-05.md
+  - "Constellation Research: Workday Rising 2024 — AI Illuminate analysis https://www.constellationr.com/insights/news/workday-rising-2024-ai-illuminate-ai-agents-evisort-acquisition"
 related_usecases:
   - workday-illuminate-employee-sentiment
   - microsoft-viva-glint-copilot-sentiment

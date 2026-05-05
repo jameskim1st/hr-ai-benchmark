@@ -16,10 +16,11 @@ stage: production
 frequency: annual
 first_seen: 2025-05-01
 last_confirmed: 2026-02-12
-confidence: 0.65
+confidence: 0.75
 consulting_angle_status: filled
 sources:
   - sources/ibm-hr-ai-portfolio-2025-2026.md
+  - "WSJ Krishna interview via HR Asia: 8K layoff + AskHR + rehire nuance https://hr.asia/asia-pacific/ibm-lays-off-8000-to-embrace-ai-only-to-rehire-just-as-many/"
 related_usecases:
   - ibm-askhr-watsonx
   - ibm-charlie-learning-ops-agent
@@ -71,6 +72,34 @@ flowchart TB
     Total -->|budget 절감 40%| Reinvest[엔지니어·영업·마케팅 채용]
     Reinvest --> NetGrowth[순 headcount 증가]
 ```
+
+### B. System & Infrastructure (Agent research expanded)
+
+- **Core HRIS / 기반 시스템**: ✅ IBM 내부 HR (legacy + Workday 통합 가능성)
+- **AI 시스템 배치**: ✅ Stack 누적: AskHR + cHaRlie + Watson Recruitment + Predictive Attrition + watsonx Orchestrate TA Agent 모두 watsonx Orchestrate 기반
+- **배포 환경**: ✅ watsonx Orchestrate on IBM Cloud + AWS 옵션
+- **연동·통합**: ✅ AskHR → Workday/Salesforce/Coupa 등 통합 (2025 IBM 발표)
+- **사용자 접점**: ✅ AskHR은 직원 self-service portal/채팅; cHaRlie는 admin tool
+- **인증·권한**: _미공개_
+
+### C. Data (Agent research)
+
+- **입력 데이터 소스**: ✅ HR 정책 docs, employee master data, payroll·benefits·career·skills domain (AskHR이 4개 도메인 routing)
+- **데이터 규모**: ✅ AskHR 11.5M+ 인터랙션 in 2024
+- **전처리·정제**: _미공개_
+- **학습 vs RAG vs In-context**: ✅ Domain classifier가 employee prompt → 4개 HR domain routing → AI-generated response 또는 task trigger
+- **데이터 거버넌스**: ✅ "highly compliant LLMs" (벤더 주장)
+- **민감정보 처리**: _미공개_
+
+### D. Model (Agent research)
+
+- **Foundation model**: ✅ IBM Granite (watsonx Orchestrate 기본) + fine-tuned foundation models (orchestrator agent 기능, 2025)
+- **모델 유형**: ✅ Agentic LLM (Granite + fine-tuned variants) + classifier (prompt routing) + RPA/automation
+- **제공 방식**: ✅ Self-hosted on watsonx (proprietary)
+- **커스터마이징 기법**: ✅ Fine-tuned Granite + agentic architecture for autonomous reasoning (TechXchange 2025)
+- **Orchestration 프레임워크**: ✅ watsonx Orchestrate orchestrator agent (2025 신규) — multi-agent coordination
+- **평가·가드레일**: ⚠️ 자사 보고: AskHR 94% autonomous resolution, NPS -35 → +74
+
 
 ## Impact / Metrics
 

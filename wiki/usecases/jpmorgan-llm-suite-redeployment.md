@@ -16,10 +16,11 @@ stage: production
 frequency: daily
 first_seen: 2024-08-01
 last_confirmed: 2026-02-25
-confidence: 0.70
+confidence: 0.80
 consulting_angle_status: filled
 sources:
   - sources/us-large-enterprise-hr-ai-2025-2026.md
+  - "McKinsey: JPM Derek Waldron AI-first bank culture interview https://www.mckinsey.com/industries/financial-services/our-insights/jpmorgan-chases-derek-waldron-on-building-an-ai-first-bank-culture"
 related_usecases:
   - ibm-hr-workforce-reduction-agentic
   - jpmorgan-coin-hr-deployment

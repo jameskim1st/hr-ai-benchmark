@@ -16,10 +16,11 @@ stage: production
 frequency: annual
 first_seen: 2024-08-01
 last_confirmed: 2026-02-12
-confidence: 0.60
+confidence: 0.70
 consulting_angle_status: filled
 sources:
   - sources/us-large-enterprise-hr-ai-2025-2026.md
+  - "McKinsey: JPM Derek Waldron interview — 'AI Made Easy' program direct mention https://www.mckinsey.com/industries/financial-services/our-insights/jpmorgan-chases-derek-waldron-on-building-an-ai-first-bank-culture"
 related_usecases:
   - jpmorgan-llm-suite-redeployment
   - accenture-mass-genai-reskilling
@@ -55,6 +56,34 @@ JPMorgan **AI Made Easy** — 230K 직원 대상 전사 AI 교육 프로그램. 
 - 자체 LMS 추정, LLM Suite 자체가 hands-on lab
 - 사업부별 curriculum customization
 - 오너십: HR + IT/AI Plat팀 + 사업부 SME
+
+### B. System & Infrastructure (Agent research expanded)
+
+- **Core HRIS / 기반 시스템**: _미공개_ (JPM HRIS 명시 없음)
+- **AI 시스템 배치**: ✅ AI Made Easy 교육 sessions + LLM Suite hands-on 플랫폼 통합
+- **배포 환경**: ✅ LLM Suite는 JPMorgan 자체 portal (proprietary); 교육 LMS 명시 없음
+- **연동·통합**: ✅ LLM Suite는 8주마다 internal database·software apps 추가 통합
+- **사용자 접점**: ✅ AI Made Easy = 인터랙티브 sessions (live + 직무별 모듈); LLM Suite portal 직접 hands-on
+- **인증·권한**: _미공개_ (JPM internal SSO 추정)
+
+### C. Data (Agent research)
+
+- **입력 데이터 소스**: ✅ 교육 콘텐츠 = AI fundamentals + prompt engineering + compliance + 직무별 use case curriculum
+- **데이터 규모**: ✅ Q1 alone **30,000+ 직원 attended AI Made Easy sessions** (신규 fact); 230K+ in scope; 250K LLM Suite rollout (branch·call center 제외, 약 절반 daily 사용)
+- **전처리·정제**: N/A (training program)
+- **학습 vs RAG vs In-context**: N/A
+- **데이터 거버넌스**: ✅ Compliance 모듈 별도 (금융정보·고객정보 처리 가이드)
+- **민감정보 처리**: ✅ Compliance 모듈에서 다룸
+
+### D. Model (Agent research expanded)
+
+- **Foundation model**: N/A (training program 자체)
+- **모델 유형**: N/A — 단, hands-on 학습 대상 LLM Suite는 ✅ **OpenAI + Anthropic 양사** (multi-vendor, 신규 발견)
+- **제공 방식**: N/A
+- **커스터마이징 기법**: ✅ "Learn by doing" — LLM Suite 직접 사용 통합
+- **Orchestration 프레임워크**: N/A
+- **평가·가드레일**: ⚠️ 자사 보고: 직원당 3-6h/week saved (LLM Suite 결합 효과)
+
 
 ## Impact / Metrics
 

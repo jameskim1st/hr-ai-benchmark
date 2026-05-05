@@ -16,10 +16,11 @@ stage: production
 frequency: daily
 first_seen: 2015-01-01
 last_confirmed: 2023-12-01
-confidence: 0.55
+confidence: 0.65
 consulting_angle_status: filled
 sources:
   - sources/ibm-hr-ai-portfolio-2025-2026.md
+  - "Bersin (Tier 1, 2020-12): The Evolving Role of IBM in HR Marketplace — Blue Matching analysis (stale caveat) https://joshbersin.com/2020/12/the-evolving-role-of-ibm-in-the-hr-marketplace/"
 related_usecases:
   - ibm-askhr-watsonx
   - schneider-electric-gloat-talent-marketplace

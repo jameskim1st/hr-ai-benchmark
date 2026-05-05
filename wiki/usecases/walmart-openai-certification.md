@@ -16,10 +16,12 @@ stage: production
 frequency: annual
 first_seen: 2025-09-01
 last_confirmed: 2026-04-01
-confidence: 0.65
+confidence: 0.75
 consulting_angle_status: filled
 sources:
   - sources/us-large-enterprise-hr-ai-2025-2026.md
+  - "Retail Dive: Walmart taps OpenAI for employee training https://www.retaildive.com/news/walmart-openai-chatgpt-employee-training-certification/759317/"
+  - "HR Dive: Walmart OpenAI training certification https://www.hrdive.com/news/walmart-openai-chatgpt-employee-training-certification/759398/"
 related_usecases:
   - walmart-ask-sam-workforce-ai
   - accenture-mass-genai-reskilling
@@ -55,6 +57,34 @@ Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무 직원에게 **O
 - Me@Walmart 앱 디바이스 (Samsung Galaxy XCover Pro)
 - OpenAI 콘텐츠 + Walmart 자체 운영
 - 오너십: Walmart Academy + OpenAI 파트너 팀
+
+### B. System & Infrastructure (Agent research expanded)
+
+- **Core HRIS / 기반 시스템**: _미공개_ (Walmart는 Workday customer로 알려져 있으나 본 certification 프로그램과의 직접 통합 명시 없음)
+- **AI 시스템 배치**: ✅ Walmart Academy (LMS 자체 운영) + OpenAI Academy 플랫폼 통합
+- **배포 환경**: ✅ ChatGPT Enterprise rollout (Walmart 전사) — Walmart-OpenAI 2025-10 partnership
+- **연동·통합**: ✅ Me@Walmart 앱 (frontline access 인프라, Walmart Global Tech 자체 빌드, 2021 launch); OpenAI Academy + Walmart Academy 통합
+- **사용자 접점**: ✅ Samsung Galaxy XCover Pro (740K frontline 디바이스), Me@Walmart 앱 (geofencing, push-to-talk, ML/AR/camera vision); 사무직은 ChatGPT Enterprise web/desktop
+- **인증·권한**: ✅ Me@Walmart 앱은 work features = on-clock 접근 제한; Walmart는 personal data access 없음 (벤더 주장)
+
+### C. Data (Agent research)
+
+- **입력 데이터 소스**: ✅ OpenAI Academy 콘텐츠 (basics → prompt engineering 다층); Walmart Academy 자체 콘텐츠
+- **데이터 규모**: ✅ 2.1M 직원 in scope (전사 training 목표); 740K frontline 디바이스; ~50,000 직원 AI/automation roles 재배치
+- **전처리·정제**: N/A (training content, 직원 데이터 처리 시스템 아님)
+- **학습 vs RAG vs In-context**: N/A
+- **데이터 거버넌스**: _미공개_
+- **민감정보 처리**: ✅ Me@Walmart는 personal/work 분리 (Walmart corporate)
+
+### D. Model (Agent research expanded)
+
+- **Foundation model**: ✅ OpenAI ChatGPT Enterprise (구체 GPT-4/4o/5 _미공개_); ✅ **Google Gemini도 별도 인증 파트너** (multi-vendor, 신규 발견)
+- **모델 유형**: ✅ Generative LLM (ChatGPT Enterprise) — 직원 hands-on 사용
+- **제공 방식**: ✅ 상용 API (OpenAI ChatGPT Enterprise, Google Gemini) — multi-vendor
+- **커스터마이징 기법**: _미공개_ (Walmart 자체 fine-tuning 명시 없음)
+- **Orchestration 프레임워크**: _미공개_
+- **평가·가드레일**: ✅ OpenAI Certifications (자체 평가 체계)
+
 
 ## Impact / Metrics
 

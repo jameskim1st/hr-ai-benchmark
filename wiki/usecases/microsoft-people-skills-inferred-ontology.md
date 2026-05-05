@@ -16,10 +16,11 @@ stage: production
 frequency: daily
 first_seen: 2025-04-01
 last_confirmed: 2026-04-01
-confidence: 0.65
+confidence: 0.70
 consulting_angle_status: filled
 sources:
   - sources/us-large-enterprise-hr-ai-2025-2026.md
+  - "Forrester: Microsoft Viva Disrupts EX Operating System https://www.forrester.com/blogs/microsoft-viva-disrupts-todays-ex-operating-system/"
 related_usecases:
   - eightfold-talent-intelligence-platform
   - workday-illuminate-job-architecture
@@ -60,6 +61,34 @@ Microsoft **People Skills** + **Skills Agent** — M365 Copilot/Viva 데이터 �
 ### E. Organization
 
 - Microsoft Viva + LinkedIn 협업 + 고객사 HR
+
+### B. System & Infrastructure (Agent research, 2026-05)
+
+- **Core HRIS / 기반 시스템**: _미공개_ (People Skills는 HRMS overlay — Workday/SAP/SuccessFactors와 통합 가능하나 specific connector 명시 없음)
+- **AI 시스템 배치**: ✅ M365 Copilot 데이터 레이어 (Microsoft Graph 기반)
+- **배포 환경**: ✅ Microsoft Azure (M365 cloud)
+- **연동·통합**: ✅ Microsoft Graph (이메일·문서·미팅·chat), LinkedIn (16K skill taxonomy 매핑), Viva Suite, M365 Copilot Chat
+- **사용자 접점**: ✅ Copilot Chat, Microsoft 365 apps, Viva services
+- **인증·권한**: ✅ Microsoft 365 IAM (Entra ID/Azure AD); admin이 People Skills setup
+
+### C. Data (Agent research)
+
+- **입력 데이터 소스**: ✅ M365 profile + activity signals via Microsoft Graph: 문서·이메일·chat·미팅
+- **데이터 규모**: ✅ 16,000+ skills taxonomy (LinkedIn 공동 개발, customizable)
+- **전처리·정제**: ✅ Multi-directional inference runs across Microsoft Graph data (proprietary inferencing)
+- **학습 vs RAG vs In-context**: ✅ Inference 기반 (RAG·fine-tuning 명시 없음 — Graph data를 LLM에 input으로 inferencing)
+- **데이터 거버넌스**: ✅ M365 tenant boundary; admin governance (setup·permissions)
+- **민감정보 처리**: ⚠️ 직원 활동 telemetry 기반 — opt-out 옵션 명시 (admin level)
+
+### D. Model (Agent research expanded)
+
+- **Foundation model**: ✅ "Latest OpenAI LLM models"; 구체 GPT 버전 _미공개_
+- **모델 유형**: ✅ LLM (inference) + skills classifier; multi-agent inferencing
+- **제공 방식**: ✅ Hybrid — Microsoft (Azure OpenAI 추정) + 자체 inferencing layer
+- **커스터마이징 기법**: ✅ **"Proprietary inferencing approach based on game theory and multi-agent frameworks"** — multi-directional inference runs (Microsoft 공식 표현, 신규 발견)
+- **Orchestration 프레임워크**: ✅ Microsoft 자체 multi-agent framework
+- **평가·가드레일**: ⚠️ Everest Group 평가: "step forward but not yet complete" — 독립 검증 일부 존재
+
 
 ## Impact / Metrics
 

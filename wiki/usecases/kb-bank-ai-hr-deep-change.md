@@ -16,10 +16,12 @@ stage: production
 frequency: monthly
 first_seen: 2020-07-15
 last_confirmed: 2026-04-01
-confidence: 0.55
+confidence: 0.65
 consulting_angle_status: filled
 sources:
   - sources/korea-conglomerate-hr-ai-2025-2026.md
+  - "서울경제: AI에 인사 맡겼더니…'3시간 출퇴근 지옥' 탈출한 구 과장 https://www.sedaily.com/NewsVIew/1Z5BAFO2IP"
+  - "전자신문 2022 단독: KB국민은행 AI 인사 시스템 https://www.etnews.com/20221221000210"
 related_usecases:
   - shinhan-bank-ai-one-platform
   - shinhan-bank-ai-staffing-algorithm
