@@ -325,6 +325,11 @@ function card(u,idx){
   h+=renderInfoBlock('Model','\ud83d\udfe3',u.model,MOD_KEYS);
   h+='</div>';
 
+  // 3.5. Output (\uc2dc\uc2a4\ud15c\uc774 \uc0b0\ucd9c\ud558\ub294 \uac83)
+  if(u.output){
+    h+='<div class="tpl-sec"><div class="tpl-hd"><i>\ud83d\udce4</i> Output (\uc0b0\ucd9c\ubb3c)</div><div class="tpl-bd" style="font-size:.72rem;line-height:1.55">'+esc(u.output)+'</div></div>';
+  }
+
   // 4. Impact Before→After
   h+='<div class="tpl-sec"><div class="tpl-hd"><i>\ud83d\udcca</i> Impact (Before \u2192 After)</div><div class="tpl-bd">'+renderBA(u)+'</div></div>';
 

@@ -50,6 +50,10 @@
       "finance",
       "ai-made-easy"
     ],
+    "sources": [
+      "sources/us-large-enterprise-hr-ai-2025-2026.md",
+      "McKinsey: JPM Derek Waldron AI-first bank culture interview https://www.mckinsey.com/industries/financial-services/our-insights/jpmorgan-chases-derek-waldron-on-building-an-ai-first-bank-culture"
+    ],
     "summary": "JPMorgan <strong>LLM Suite</strong> — 2024 여름 launch, model-agnostic gateway (OpenAI + Anthropic), ~230K 직원 대상 8개월 만에 200K+ 온보딩 (~2/3 workforce). ⚠️ 자사 보고: 30-40% efficiency, 직원당 3-6h/week saved, $1.5B/yr 추정 가치. <strong>핵심 distinct feature</strong>: 직원이 LLM Suite로 <strong>annual performance review 초안 drafting</strong> 가능. 동시에 Dimon Feb 2026: 백오피스/operations -4%/-2%, 클라이언트직 +4% — 총 318,512명 거의 flat 유지하며 AI 재배치. AI specialist 1,500 → 2,500 (+67%).",
     "headline": "JPMorgan LLM Suite — 2024 여름 launch, model-agnostic gateway (OpenAI + Anthropic), ~230K 직원 대상 8개월 만에 200K+ 온보딩 (~2/3 workforce).",
     "problem": "<ul>\n<li><strong>Before</strong>: 230K 직원 대규모 finance enterprise, 정보보안·규제 제약으로 외부 LLM(ChatGPT) 직접 사용 불가</li>\n<li><strong>Pain point</strong>: gen AI 효익 vs 금융정보보호·고객정보·내부거래 정보 제약</li>\n<li><strong>Trigger</strong>: 2023-24 ChatGPT 시장 도입 + 경쟁사(Goldman·Morgan Stanley) AI 배포 압박</li>\n</ul>",
@@ -119,6 +123,10 @@
       "theme-extraction",
       "engagement"
     ],
+    "sources": [
+      "sources/verified-pwc-doc-2026-05.md",
+      "Constellation Research: Workday Rising 2024 — AI Illuminate analysis https://www.constellationr.com/insights/news/workday-rising-2024-ai-illuminate-ai-agents-evisort-acquisition"
+    ],
     "summary": "Workday가 2021-02 인수 (~$700M)한 <strong>Peakon Employee Voice</strong> — 지속적 pulse 서베이 + AI 감정·테마 분석. 2024-12-11에 <strong>Illuminate AI</strong> 기능 발표 — open-end comment 자동 요약·테마 추출·driver 식별. ⚠️ 벤더 주장: 1B+ 응답 + 200M+ 텍스트 피드백 학습, 60+ 언어, 160개국 운영. ⚠️ 자사 보고: Workday 사내 활용 결과 직원 성장·커리어 만족도 <strong>+35%</strong>.",
     "headline": "Workday가 2021-02 인수 (~$700M)한 Peakon Employee Voice — 지속적 pulse 서베이 + AI 감정·테마 분석.",
     "problem": "<ul>\n<li><strong>Before</strong>: 5만~10만 직원 KR 대기업 annual 조직문화 진단의 open-end 코멘트 코딩에 HRBP 팀 수주 투입 — insight 도출 지연</li>\n<li><strong>Pain point</strong>: 글로벌 organization은 60+ 언어 응답 통합 분석 어려움 + theme·sentiment를 매니저별 actionable insight로 변환 어려움</li>\n<li><strong>Trigger</strong>: Workday 2021-02 Peakon 인수 → 2024-12 Illuminate AI 통합 (Workday Illuminate 시리즈 일환)</li>\n</ul>",
@@ -184,6 +192,10 @@
       "1b-l-and-d",
       "ai-data-headcount",
       "professional-services"
+    ],
+    "sources": [
+      "sources/us-large-enterprise-hr-ai-2025-2026.md",
+      "Accenture Reinvention Report (Gartner methodology) https://www.accenture.com/content/dam/accenture/final/accenture-com/document-2/Accenture-Reinvention-in-the-age-of-generative-AI-Report.pdf"
     ],
     "summary": "Accenture가 2022-11~2025-FY 사이 <strong>30명 → 550,000+ 직원</strong> GenAI 교육. AI/data 전문 인력은 <strong>40,000(2023) → 77,000(2025)</strong> 증가. 연간 ~$1B L&D 투자. CEO Julie Sweet (2026-03 발언): \"AI를 사용하지 못하면 승진·고용이 위험\" + \"non-adaptable 직원은 compression timeline으로 exit\". 가장 강력한 mass reskilling reference.",
     "headline": "Accenture가 2022-11~2025-FY 사이 30명 → 550,000+ 직원 GenAI 교육.",
@@ -260,6 +272,10 @@
       "accenture",
       "skills-evolution",
       "workforce-planning"
+    ],
+    "sources": [
+      "sources/us-large-enterprise-hr-ai-2025-2026.md",
+      "Cisco AI Workforce Consortium Full Report 2025 https://www.cisco.com/content/dam/cisco-cdc/site/m/ai-workforce-consortium/documents/2025-ai-workforce-consortium-full-report.pdf"
     ],
     "summary": "Cisco가 anchor한 다자 컨소시엄 (Microsoft·Google·IBM·SAP·Accenture·Eightfold 등). 2025 보고서: <strong>78% ICT 직무가 AI 기술 스킬 포함</strong>, top 10 fastest-growing ICT 직무 중 7개가 AI 관련. AI Workforce Playbook + 2025 AI Skills Glossary + 200+ curated learning recommendations 발간. multi-vendor 방법론 — Tier 1-equivalent 신뢰도.",
     "headline": "Cisco가 anchor한 다자 컨소시엄 (Microsoft·Google·IBM·SAP·Accenture·Eightfold 등).",
@@ -348,6 +364,10 @@
       "lamoreaux",
       "hr-budget-reduction"
     ],
+    "sources": [
+      "sources/ibm-hr-ai-portfolio-2025-2026.md",
+      "WSJ Krishna interview via HR Asia: 8K layoff + AskHR + rehire nuance https://hr.asia/asia-pacific/ibm-lays-off-8000-to-embrace-ai-only-to-rehire-just-as-many/"
+    ],
     "summary": "2025-05 IBM CEO Arvind Krishna 발언 — AI agents (AskHR + watsonx Orchestrate stack)가 <strong>\"a couple hundred HR roles\"</strong> 대체. 전사 8,000명 layoff (~3% workforce). HR operating budget 4년간 40% 감소 (LaMoreaux). <strong>단, 순 headcount는 증가</strong> — 절감액을 엔지니어·영업·마케팅 채용에 재투자. \"감원\"이 아닌 \"재배치 + 직무 전환\" 패러다임의 canonical reference.",
     "headline": "2025-05 IBM CEO Arvind Krishna 발언 — AI agents (AskHR + watsonx Orchestrate stack)가 \"a couple hundred HR roles\" 대체.",
     "problem": "<ul>\n<li><strong>Before</strong>: 270K 직원 IBM의 HR 운영 비용 baseline (CHRO LaMoreaux pre-AI era)</li>\n<li><strong>Pain point</strong>: HR 백오피스 transactional 업무가 budget 흡수, 전략 HR에 투자 여력 부족</li>\n<li><strong>Trigger</strong>: AskHR·watsonx Orchestrate·cHaRlie·Predictive Attrition 누적 효과 (2018~2025) → 임계 도달</li>\n</ul>",
@@ -423,6 +443,11 @@
       "eu-ai-act-comparison",
       "dual-compliance"
     ],
+    "sources": [
+      "sources/korea-ai-basic-act-2026-01.md",
+      "Littler Mendelson: Understanding South Korea's New AI Law (multinational employers) https://www.littler.com/news-analysis/asap/understanding-south-koreas-new-ai-law-key-considerations-multinational-employers",
+      "Cooley LLP: South Korea AI Basic Act overview https://www.cooley.com/news/insight/2026/2026-01-27-south-koreas-ai-basic-act-overview-and-key-takeaways"
+    ],
     "summary": "「인공지능 발전·신뢰 기반 조성 등에 관한 기본법」(통칭 'AI 기본법')이 <strong>2026-01-22 본격 시행</strong>. EU AI Act에 이은 세계 2번째 포괄규제. <strong>고영향 AI(high-impact AI)</strong> 카테고리에 채용·인사평가·승진·해고 의사결정 AI가 명시적으로 포함됨. 영향평가·투명성 고지·인적 감독·이용자 권리 보장 의무. 모든 KR HR AI 프로젝트의 legal foundation. 2026-08 EU AI Act high-risk 의무 발효와 결합되면 글로벌 KR 대기업은 dual compliance 운영 부담.",
     "headline": "「인공지능 발전·신뢰 기반 조성 등에 관한 기본법」(통칭 'AI 기본법')이 2026-01-22 본격 시행.",
     "problem": "<ul>\n<li><strong>Before (baseline)</strong>: 한국은 AI 거버넌스를 개인정보보호법(PIPA) 자동화된 결정 조항·차별금지법 등으로 산발 규율. HR AI 도입사도 자체 가이드라인에 의존 (ex. SK·삼성).</li>\n<li><strong>Pain point</strong>: 채용 AI(마이다스 inAIR·SK AICT·원티드 AI Agent) 도입 가속화에도 불구하고 \"이 AI가 합법인지\", \"지원자 권리는 어떻게 보장되는지\", \"차별 발생 시 책임은 누구인지\" 가 회색 지대.</li>\n<li><strong>Trigger</strong>: EU AI Act 발효(2024) + OECD AI 원칙 + 국내 마이다스 AI 면접 차별 논란(2020~) → 한국 정부가 2024년 입법 → 2025-01-21 공포 → <strong>2026-01-22 시행</strong>.</li>\n</ul>",
@@ -495,6 +520,11 @@
       "1b-investment",
       "retail",
       "50k-upskilled"
+    ],
+    "sources": [
+      "sources/us-large-enterprise-hr-ai-2025-2026.md",
+      "Retail Dive: Walmart taps OpenAI for employee training https://www.retaildive.com/news/walmart-openai-chatgpt-employee-training-certification/759317/",
+      "HR Dive: Walmart OpenAI training certification https://www.hrdive.com/news/walmart-openai-chatgpt-employee-training-certification/759398/"
     ],
     "summary": "Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무 직원에게 <strong>OpenAI Certification 무료 access</strong> (2026 launch 시). 다층 (basics → prompt engineering). Walmart의 <strong>$1B 교육 commitment</strong> (2026까지)의 일부. ~50,000 직원이 AI/automation roles로 reskilling 진행. 740K frontline에게 <strong>Me@Walmart</strong> 디바이스 (Samsung Galaxy XCover Pro) 배포로 학습 access 인프라 마련.",
     "headline": "Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무 직원에게 OpenAI Certification 무료 access (2026 launch 시).",
@@ -574,6 +604,10 @@
       "natural-language-query",
       "fp-and-a"
     ],
+    "sources": [
+      "sources/verified-pwc-doc-2026-05.md",
+      "Anaplan press 2025-12-09 (GlobeNewswire) + Gartner MQ Financial Planning Software 9X Leader https://www.globenewswire.com/news-release/2025/12/09/3202449/0/en/Anaplan-Introduces-Role-Based-AI-Agents-to-Advance-Industry-Leading-Enterprise-Scenario-Planning-and-Analysis-Platform.html"
+    ],
     "summary": "Anaplan이 2025-12-09 GA로 발표한 <strong>Role-Based AI Agents</strong> 제품군 중 <strong>Workforce Analyst</strong>. HR-finance 데이터 통합 + 자연어 query + 시나리오 시뮬레이션으로 인력 의사결정 가속. 검증된 고객 사례: healthcare provider $21M 연 절감 + time-to-market 20% 단축, Fresenius Medical Care planning time <strong>30%+ 단축</strong>, Canada Goose planning cycle <strong>60% 단축</strong>. 2026 H1에 autonomous AI 에이전트 (자율 이상 감지·워크플로 실행) 추가 예정.",
     "headline": "Anaplan이 2025-12-09 GA로 발표한 Role-Based AI Agents 제품군 중 Workforce Analyst.",
     "problem": "<ul>\n<li><strong>Before</strong>: 90%+ 기업이 여전히 Excel 기반 인력 계획 (Anaplan 조사) — HR과 finance 시스템 단절, 시나리오 분석 수주~수개월 소요, 예측 오차 10%+</li>\n<li><strong>Pain point</strong>: \"채용 동결·조직 개편·M&A·인력 재배치 시나리오의 재무 영향이 즉시 분석 안 됨\" — CFO·CHRO 의사결정 지연</li>\n<li><strong>Trigger</strong>: 2025-12 Anaplan Role-Based AI Agents GA — HR·Finance·Sales·Supply Chain별 specialist agent 동시 launch</li>\n</ul>",
@@ -650,6 +684,10 @@
       "outbound-message",
       "35k-upskilled"
     ],
+    "sources": [
+      "sources/us-large-enterprise-hr-ai-2025-2026.md",
+      "Cisco engineering blog — Internal AI assistant 45M+ interactions https://blogs.cisco.com/cisco-on-cisco/cisco-secure-internal-ai-assistant"
+    ],
     "summary": "Cisco의 사내 AI HR Assistant — HR 정책 Q&A를 넘어 <strong>agentic</strong> 수준으로 진화. 직원 PTO 잔여 조회 + 매니저에게 보낼 <strong>time-off notification 메시지 자동 작성</strong>까지. HR case 열지 않고 처리. broader Cisco \"AI agents + nudges\" cut-bureaucracy 이니셔티브 일부. 35,000+ Cisco 직원이 2025-06까지 AI-upskilled (+121% YoY).",
     "headline": "Cisco의 사내 AI HR Assistant — HR 정책 Q&A를 넘어 agentic 수준으로 진화.",
     "problem": "<ul>\n<li><strong>Before</strong>: HR Q&A 챗봇은 정보 조회까지만 — \"내 매니저에게 휴가 알리는 메시지 어떻게 쓰지\" 같은 outbound 작업은 수동</li>\n<li><strong>Pain point</strong>: HR 챗봇이 Q&A에 머물러 ROI 한계 — agentic 수준 도약 필요</li>\n<li><strong>Trigger</strong>: Cisco의 \"AI agents + nudges\" 전사 bureaucracy 감소 이니셔티브 (Jeetu Patel 주도)</li>\n</ul>",
@@ -725,6 +763,11 @@
       "l-and-d-back-office",
       "agent"
     ],
+    "sources": [
+      "sources/ibm-hr-ai-portfolio-2025-2026.md",
+      "IBM official case study: HR ELOA cHaRlie https://www.ibm.com/case-studies/ibm-hr-eloa",
+      "IntelligentHQ — IBM cHaRlie watsonx Orchestrate award-winning analysis https://www.intelligenthq.com/hr-transformation-ibm-leverages-watsonx-orchestrate-to-create-award-winning-ai-assistant-charlie/"
+    ],
     "summary": "IBM이 2023년 launch한 <strong>cHaRlie</strong> (Cognitive HR Learning EM Assistant) — Enterprise Learning Operations & Administration 팀을 위한 watsonx Orchestrate 기반 백오피스 에이전트. 학습 enrollment 모니터링·저조 alert·event 홍보·pre-event comms·virtual class 출석 자동 로깅. ⚠️ 자사 보고: learner NPS 15% 상승, 출석 캡처 100% 정확도, 출석부 turnaround 91% 단축, onboarding time 25% 감소.",
     "headline": "IBM이 2023년 launch한 cHaRlie (Cognitive HR Learning EM Assistant) — Enterprise Learning Operations & Administration 팀을 위한 watsonx Orchestrate 기반 백오피스 에이",
     "problem": "<ul>\n<li><strong>Before</strong>: L&D operations 팀이 enrollment 추적·홍보·출석 캡처·event 운영을 manual로 처리 — 270K 직원 규모에서 병목</li>\n<li><strong>Pain point</strong>: 직원 facing AI(tutor·content)는 ROI 모호, 학습 ops 백오피스는 ROI 명확하지만 자동화 후순위</li>\n<li><strong>Trigger</strong>: watsonx Orchestrate dogfooding + L&D 운영 효율 압박</li>\n</ul>",
@@ -796,6 +839,10 @@
       "mass-training",
       "finance",
       "role-specific-curriculum"
+    ],
+    "sources": [
+      "sources/us-large-enterprise-hr-ai-2025-2026.md",
+      "McKinsey: JPM Derek Waldron interview — 'AI Made Easy' program direct mention https://www.mckinsey.com/industries/financial-services/our-insights/jpmorgan-chases-derek-waldron-on-building-an-ai-first-bank-culture"
     ],
     "summary": "JPMorgan <strong>AI Made Easy</strong> — 230K 직원 대상 전사 AI 교육 프로그램. AI fundamentals + prompt engineering + 컴플라이언스 + 직무별 use case curriculum. Asset & Wealth Management 신입 분석가에게 <strong>prompt engineering 필수</strong>. LLM Suite 200K+ 8개월 onboarding의 교육 backbone.",
     "headline": "JPMorgan AI Made Easy — 230K 직원 대상 전사 AI 교육 프로그램.",
@@ -881,6 +928,10 @@
       "m365",
       "workforce-insights"
     ],
+    "sources": [
+      "sources/us-large-enterprise-hr-ai-2025-2026.md",
+      "Forrester: Microsoft Viva Disrupts EX Operating System https://www.forrester.com/blogs/microsoft-viva-disrupts-todays-ex-operating-system/"
+    ],
     "summary": "Microsoft <strong>People Skills</strong> + <strong>Skills Agent</strong> — M365 Copilot/Viva 데이터 레이어. OpenAI 모델로 직원 이메일·문서·미팅에서 <strong>스킬을 자동 추론</strong>해 dynamic 스킬 프로파일 생성. LinkedIn 공동 개발 16,000-skill taxonomy 기반. Skills Agent는 매니저에게 internal talent 매칭·workforce planning insight 제공. 2025 GA. 2026-03 Skills Agent → Learning + Workforce Insights agents로 분리.",
     "headline": "Microsoft People Skills + Skills Agent — M365 Copilot/Viva 데이터 레이어.",
     "problem": "<ul>\n<li><strong>Before</strong>: 한국·글로벌 대기업 모두 직원 self-update profile에 의존 — outdated·incomplete</li>\n<li><strong>Pain point</strong>: 스킬 inventory 부정확하면 internal mobility·workforce planning·learning 추천 모두 약화</li>\n<li><strong>Trigger</strong>: Microsoft가 M365 Copilot 위에 People Skills 출시 (2025-04, Bersin \"HR tech market 변경\"으로 평가)</li>\n</ul>",
@@ -962,6 +1013,12 @@
       "benefits",
       "case-deflection"
     ],
+    "sources": [
+      "sources/unleash-moderna-hr-it-merger-2025-06.md",
+      "sources/hr-brew-ibm-moderna-2025-06.md",
+      "sources/constellation-moderna-chatgpt-enterprise-2024-04.md",
+      "sources/moderna-blog-openai-2024-04.md"
+    ],
     "summary": "Moderna는 OpenAI ChatGPT Enterprise 위에 <strong>\"Ask HR\"이라는 centralized 커스텀 GPT</strong>를 구축해, 직원의 HR 문의를 <strong>performance·career·benefits</strong> 영역의 specialized GPT들로 분기(routing)시킨다. HR 도메인 전체에서 \"front door\" 역할을 수행. 이는 전사 3,000+ 커스텀 GPT 생태계 중 HR 특화 허브에 해당하며, 2025년 Moderna의 HR+IT 부서 병합(단일 리더 Tracey Franklin CPDO)과 <strong>조직 구조 변화와 함께</strong> 전개된 사례라는 점에서 특히 주목된다.",
     "headline": "Moderna는 OpenAI ChatGPT Enterprise 위에 \"Ask HR\"이라는 centralized 커스텀 GPT를 구축해, 직원의 HR 문의를 performance·career·benefits 영역의 specialized GPT들로 분기(routing)시킨",
     "problem": "<ul>\n<li><strong>Before (baseline)</strong>: Moderna는 5,000명 규모의 바이오텍이지만 급성장기 동안 HR 인력만으로 늘어나는 직원 문의를 처리하기 어려워짐. ❓ <strong>구체 before 수치(월간 HR 티켓 수·평균 응답 시간·HR 인력 대비 직원 비율) 미공개</strong> — 이 baseline 부재가 이 use case의 최대 약점</li>\n<li>Franklin의 프레이밍: 기존의 \"workforce planning\"(HR 독립)과 \"technology planning\"(IT 독립)이 <strong>\"work의 흐름 자체를 설계\"</strong>하지 못했다. 개별 HR 프로세스 개선이 아니라 <strong>업무·정보·의사결정 흐름 전체 재설계</strong>가 목적 — unleash-moderna-hr-it-merger-2025-06</li>\n<li>기술적으로는, 전사 ChatGPT Enterprise 위에 각 부서가 GPT를 남발할 경우 HR 도메인 질문이 품질 낮은 일반 GPT로 향할 위험 → HR 도메인 전용 \"front door\"가 필요</li>\n</ul>",
@@ -1034,6 +1091,10 @@
       "300m-responses",
       "people-science",
       "attrition-prediction"
+    ],
+    "sources": [
+      "sources/us-large-enterprise-hr-ai-2025-2026.md",
+      "CNBC 2018: Amazon employee reaction to Connections + Forte (anonymity skepticism) https://www.cnbc.com/2018/03/30/amazon-employee-reaction-to-hr-programs-connections-forte.html"
     ],
     "summary": "Amazon <strong>Connections</strong> — 1.5M 직원에게 매일 로그인 시 1개 질문 pulse. 연 300M+ 응답이 People Science 팀의 ML 모델 입력 — 행동·태도 변화로 attrition·engagement 예측. ⚠️ 자사 보고: 97% voluntary adoption (산업 평균 ~25%). Andie Baker (전 principal scientist)가 구축. 단 Fortune Jun 2024 critical coverage — anonymity skepticism 보고.",
     "headline": "Amazon Connections — 1.",
@@ -1118,6 +1179,10 @@
       "llama",
       "big4"
     ],
+    "sources": [
+      "sources/us-large-enterprise-hr-ai-2025-2026.md",
+      "sources/deloitte-2026-human-capital-trends.md"
+    ],
     "summary": "Deloitte의 <strong>Zora AI</strong> — agentic AI 플랫폼 (NVIDIA AI · Llama Nemotron · AI-Q Blueprint 기반). finance·<strong>human capital</strong>·supply chain·procurement·sales/marketing·customer service ready-to-deploy agents. 동시 launch한 <strong>Human Capital AI Solution Suite</strong> (2025-06): Workforce Analyzer (AI 워크포스 영향평가) + Workforce Planner+ + <strong>300+ HR workflows reimagined library</strong>. Deloitte 13,000+ leader 서베이 기반 HR AI maturity model 동반.",
     "headline": "Deloitte의 Zora AI — agentic AI 플랫폼 (NVIDIA AI · Llama Nemotron · AI-Q Blueprint 기반).",
     "problem": "<ul>\n<li><strong>Before</strong>: 컨설팅사가 HR AI 컨설팅을 \"case-by-case\" 진행 — 표준화·재사용 자산 부족</li>\n<li><strong>Pain point</strong>: HR transformation 프로젝트마다 workflow 재설계 압도적 — 300+ workflow library가 필요</li>\n<li><strong>Trigger</strong>: agentic AI 부상 + Big-4 컨설팅 경쟁 압박 (PwC·KPMG·EY 동반 발표)</li>\n</ul>",
@@ -1196,6 +1261,10 @@
       "opt-in",
       "skill-inference",
       "peer-pattern-learning"
+    ],
+    "sources": [
+      "sources/ibm-hr-ai-portfolio-2025-2026.md",
+      "Bersin (Tier 1, 2020-12): The Evolving Role of IBM in HR Marketplace — Blue Matching analysis (stale caveat) https://joshbersin.com/2020/12/the-evolving-role-of-ibm-in-the-hr-marketplace/"
     ],
     "summary": "IBM이 2015년 MVP로 시작한 <strong>사내 talent marketplace</strong>. opt-in 직원 280K+에게 AI로 추론한 스킬·경력·성과·근무지·디지털 footprint(블로그·코드·포럼 게시물) 기반 personalized 내부 직무 추천. peer 이동 패턴 continuous learning — A→B 이동이 5건 누적되면 유사 프로파일에게 동일 패턴 추천. ⚠️ 자사 보고: 40% 내부 채용 충원 증가, 1,000+ 측정 가능 placement.",
     "headline": "IBM이 2015년 MVP로 시작한 사내 talent marketplace.",
@@ -1279,6 +1348,11 @@
       "korea",
       "public-best-practice"
     ],
+    "sources": [
+      "sources/korea-conglomerate-hr-ai-2025-2026.md",
+      "서울경제: AI에 인사 맡겼더니…'3시간 출퇴근 지옥' 탈출한 구 과장 https://www.sedaily.com/NewsVIew/1Z5BAFO2IP",
+      "전자신문 2022 단독: KB국민은행 AI 인사 시스템 https://www.etnews.com/20221221000210"
+    ],
     "summary": "KB국민은행 <strong>HR Deep Change</strong> — 2020년 하반기 1,100여 명 영업점 직원 이동 배치를 AI 알고리즘으로 단행. 출퇴근 거리·자격증·업무 경력·<strong>육아 고충</strong> 등 수십 가지 정량/정성 데이터를 머신러닝으로 분석. 한국 KR 대기업 인사이동 AI 도입의 가장 잘 문서화된 reference. 2025 상반기 PB·RM 등 상담 직원 대상 AI 활용 확대 — <strong>적용 직원의 57%가 두 달 만에 실제 사용</strong>.",
     "headline": "KB국민은행 HR Deep Change — 2020년 하반기 1,100여 명 영업점 직원 이동 배치를 AI 알고리즘으로 단행.",
     "problem": "<ul>\n<li><strong>Before</strong>: KB국민은행 영업점 직원 인사이동은 매년 manual 조정 — 수천 직원 개인 사정 (출퇴근·육아·자격) 종합 어려움</li>\n<li><strong>Pain point</strong>: 17,000+ KB 직원 base, 영업점 1,000+ 곳 — manual 인사 운영 한계 + 직원 만족도 격차</li>\n<li><strong>Trigger</strong>: 2020 'HR Deep Change' 프로젝트 launch — 공공·금융권 최초 large-scale AI 인사 배치</li>\n</ul>",
@@ -1341,6 +1415,10 @@
       "academic-validation",
       "mit-cisr",
       "pharma"
+    ],
+    "sources": [
+      "MIT CISR Working Paper 2024 https://cisr.mit.edu/publication/MIT_CISRwp461_JohnsonandJohnsonAIDrivenSkills_VanderMeulenTonaSomehWixomLeidner",
+      "Information Systems Journal 2025 https://onlinelibrary.wiley.com/doi/full/10.1111/isj.12594"
     ],
     "summary": "J&J Technology 부서가 자체 구축한 <strong>Digital Talent Platform</strong>은 HRIS·채용DB·LMS·프로젝트 관리 시스템에서 데이터를 추출해 <strong>각 ��원 스킬의 60~70%를 AI가 자동 추론</strong>. 2020년 4,000명 기술직에서 시작해 2021년 전사 확장. MIT CISR 연구진이 다년간 추적 연구를 수행하고 학술지에 발표.",
     "headline": "J&J Technology 부서가 자체 구축한 Digital Talent Platform은 HRIS·채용DB·LMS·프로젝트 관리 시스템에서 데이터를 추출해 각 ��원 스킬의 60~70%를 AI가 자동 추론.",
@@ -1405,6 +1483,12 @@
       "restaurant",
       "shift-work",
       "ava-cado"
+    ],
+    "sources": [
+      "sources/chipotle-newsroom-ava-cado-2024-10.md",
+      "sources/paradox-clients-stories-2026-04.md",
+      "sources/hrdive-chipotle-paradox-2024-10.md",
+      "sources/cnbc-chipotle-ava-cado-2025-07.md"
     ],
     "summary": "Chipotle Mexican Grill(3,500+ 레스토랑, 110,000+ 직원)이 2024년 10월 22일 공식 발표한 AI 채용 플랫폼. Paradox의 <strong>대화형 AI 어시스턴트 Olivia</strong> 기반이며, Chipotle는 이를 <strong>\"Ava Cado\"</strong>라는 자사 브랜딩으로 배포. North America + Europe 전 매장 대상으로 영·스·불·독 4개 언어 지원. <strong>CHRO Ilene Eskenazi</strong>가 press release에서 직접 quote 제공. ⚠️ 벤더+회사 공동 주장: <strong>time-to-hire 75% 감소</strong>.",
     "headline": "Chipotle Mexican Grill(3,500+ 레스토랑, 110,000+ 직원)이 2024년 10월 22일 공식 발표한 AI 채용 플랫폼.",
@@ -1479,6 +1563,12 @@
       "openai",
       "chatgpt-enterprise"
     ],
+    "sources": [
+      "sources/microsoft-cba-copilot-case-study.md",
+      "sources/openai-cba-case-study.md",
+      "sources/cba-future-workforce-90m-2026.md",
+      "sources/bloomberg-cba-job-cuts-reversed-2025.md"
+    ],
     "summary": "Commonwealth Bank of Australia(CBA)는 OpenAI ChatGPT Enterprise를 50,000명 직원에게 배포하고, Microsoft 365 Copilot을 17,500명에게 제공하며 AI 역량 구축을 전사적으로 추진하고 있다. ✅ <strong>Fact</strong> 2026년 2월에는 $90M(호주 달러) 3개년 \"Future Workforce Program\"을 발표하여 직원 스킬 개발과 커리어 전환 지원을 목표로 한다. 다만 AI 챗봇으로 45명 고객 서비스 직원을 대체하려다 노조 압박으로 결정을 번복한 사례도 주목된다. sources/openai-cba-case-study.md sources/cba-future-workforce-90m-2026.md",
     "headline": "Commonwealth Bank of Australia(CBA)는 OpenAI ChatGPT Enterprise를 50,000명 직원에게 배포하고, Microsoft 365 Copilot을 17,500명에게 제공하며 AI 역량 구축을 전사적으로 추진하고 있다.",
     "problem": "CBA는 오세아니아 최대 은행으로서 AI를 통한 운영 효율화와 동시에 대규모 AI 역량 구축이 필요했다. AI가 일부 업무를 자동화함에 따라 직원들의 역할 전환을 지원하고 AI 시대 경쟁력을 유지하는 것이 전략적 과제다.",
@@ -1539,6 +1629,10 @@
       "work-redesign",
       "executive-survey",
       "meta-analysis"
+    ],
+    "sources": [
+      "sources/deloitte-2026-human-capital-trends.md",
+      "sources/workday-asor-ga-2026-02.md"
     ],
     "summary": "Deloitte 2026 Global Human Capital Trends는 89개국·9,000명 임원 서베이 기반 capstone 리포트. 핵심 발견 — <strong>임원 60%가 AI를 의사결정에 사용하지만, 5%만 잘 관리한다</strong>. AI 도입 자체보다 work redesign과 거버넌스 격차가 ROI를 결정. \"intentional work redesign\" 조직은 AI ROI 기대치 초과 확률 2배. HR 기능이 \"agent governance\" 역할로 재정의되는 글로벌 trend 데이터 — 모든 KR HR 임원 발표·제안서 첫 슬라이드 인용 가능.",
     "headline": "Deloitte 2026 Global Human Capital Trends는 89개국·9,000명 임원 서베이 기반 capstone 리포트.",
@@ -1604,6 +1698,12 @@
       "ai-assistant",
       "generative-ai",
       "knowledge-worker"
+    ],
+    "sources": [
+      "sources/cnbc-jpmorgan-llm-suite-2024-08.md",
+      "sources/ciodive-jpmorgan-llm-suite-2024-09.md",
+      "sources/tearsheet-jpmorgan-ai-2025.md",
+      "sources/aimagazine-jpmorgan-performance-2025.md"
     ],
     "summary": "JPMorgan Chase는 2024년 여름 자체 개발 생성형 AI 플랫폼 LLM Suite를 출시하여, 2024년 9월 기준 140,000명 직원에게 배포하고 이후 200,000명 이상으로 확대했다. ✅ <strong>Fact</strong> 이 플랫폼은 문서 요약, 이메일 초안, 아이디어 생성 등 지식 노동자의 일상 업무 전반을 지원하며, HR 영역에서는 성과 리뷰 초안 작성 기능이 특히 주목된다. 월가 최대 규모 LLM 배포 사례 중 하나다. sources/cnbc-jpmorgan-llm-suite-2024-08.md",
     "headline": "JPMorgan Chase는 2024년 여름 자체 개발 생성형 AI 플랫폼 LLM Suite를 출시하여, 2024년 9월 기준 140,000명 직원에게 배포하고 이후 200,000명 이상으로 확대했다.",
@@ -1678,6 +1778,9 @@
       "internal-platform",
       "korea",
       "beta-65-percent-utilization"
+    ],
+    "sources": [
+      "sources/kr-conglomerate-2026-q2-research.md"
     ],
     "summary": "LG AI연구원이 자체 LLM <strong>EXAONE</strong> 기반 'ChatEXAONE' 정식 서비스 출시 (2026 Q1, 1년 베타 후). LG전자·LG이노텍·LG디스플레이 등 LG 그룹 <strong>5만+ 임직원</strong> 대상. 사무직 베타 활용률 <strong>65%</strong> 검증. 사내 규정·프로젝트 자료 검색·요약, <strong>PPTX·PDF·CSV·도표·수식 이해</strong>, SQL 생성, <strong>22개 언어 코드 지원</strong>. 한국 자체 LLM 기반 그룹 전사 AI 챗봇 운영의 가장 큰 사례.",
     "headline": "LG AI연구원이 자체 LLM EXAONE 기반 'ChatEXAONE' 정식 서비스 출시 (2026 Q1, 1년 베타 후).",
@@ -1759,6 +1862,9 @@
       "ai-tutor",
       "conversational-learning"
     ],
+    "sources": [
+      "sources/verified-pwc-doc-2026-05.md"
+    ],
     "summary": "LinkedIn Learning이 <strong>Premium·Enterprise tier</strong>에 통합한 <strong>AI-Powered Coaching</strong> 기능. 2024 글로벌 출시 후 2025에 <strong>role-play scenario coaching</strong>으로 확장 — 학습자가 AI coach와 가상 대화 (피드백 주고받기·어려운 대화 연습·인터뷰 모의 등)로 soft skill 학습. LinkedIn 16K+ skills taxonomy 위에서 작동. ⚠️ 정량 metric은 LinkedIn 공식 KPI로 미공개 — 시장에 자주 인용되는 \"90% 만족·160% 학습시간 증가\" 수치는 별도의 [MS-LinkedIn 2024 Work Trend Index](https://blogs.microsoft.com/blog/2024/05/08/microsoft-and-linkedin-release-the-2024-work-trend-index-on-the-state-of-ai-at-work/) 일반 통계 — AI Coaching 자체 metric 아니므로 인용 시 주의.",
     "headline": "LinkedIn Learning이 Premium·Enterprise tier에 통합한 AI-Powered Coaching 기능.",
     "problem": "<ul>\n<li><strong>Before</strong>: 기업 LMS·LXP의 AI coaching은 generic feedback 위주. 1:1 코칭은 임원 한정 (비용 ~$200~500/h)</li>\n<li><strong>Pain point</strong>: 중간 관리자·일반 직원 soft skill (어려운 대화·feedback·negotiation) 학습 기회 부족 → role-play 환경 부재</li>\n<li><strong>Trigger</strong>: 2024 LinkedIn Learning AI Coaching launch → 2025 Microsoft Copilot 통합 가속</li>\n</ul>",
@@ -1831,6 +1937,12 @@
       "reskilling",
       "skills-based-organization"
     ],
+    "sources": [
+      "sources/enterprisetimes-lloyds-workday-genai-2024-11.md",
+      "sources/unleash-lloyds-skills-ai-2025.md",
+      "sources/ffnews-lloyds-100m-ai-2026.md",
+      "sources/itpro-lloyds-ai-academy-2026.md"
+    ],
     "summary": "Lloyds Banking Group(67,000명)은 2018년 Workday HCM 도입, 2020년 Workday Skills Cloud를 추가 배포한 후, 2024년부터 HR 정책 Q&A에 특화된 생성형 AI 파일럿을 운영 중이다. ✅ <strong>Fact</strong> 2025년 GenAI가 약 £50M 가치를 창출했으며, 2026년 £100M 이상을 목표로 GenAI·Agentic AI 확대를 추진 중이다. 2026년 1월에는 67,000명 전 직원 대상 AI Academy를 론칭했다. sources/ffnews-lloyds-100m-ai-2026.md sources/itpro-lloyds-ai-academy-2026.md",
     "headline": "Lloyds Banking Group(67,000명)은 2018년 Workday HCM 도입, 2020년 Workday Skills Cloud를 추가 배포한 후, 2024년부터 HR 정책 Q&A에 특화된 생성형 AI 파일럿을 운영 중이다.",
     "problem": "영국 금융서비스 업계 디지털 전환 압력과 함께, 67,000명 규모의 HR 정책 관련 문의(휴가·복리후생 등)가 HR 팀 리소스를 과도하게 소모하고 있었다. 또한 AI 시대의 스킬 격차를 조직 전체가 선제적으로 해결하는 것이 전략적 과제였다.",
@@ -1898,6 +2010,11 @@
       "contract-labor",
       "flexible-workforce"
     ],
+    "sources": [
+      "sources/beckershospitalreview-mercy-2024.md",
+      "sources/healthcareitnews-mercy-30m-2023.md",
+      "sources/worksai-mercy-playbook-2024.md"
+    ],
     "summary": "Mercy(미국 5대 가톨릭 의료 시스템, 40개 병원)는 AI 기반 유연 인력 모델을 도입하여 계약직 간호사(Agency) 비중을 25%에서 8%로 줄이고, 2023년 $30M 비용 절감을 달성했다. ✅ <strong>Fact</strong> 핵심 전략은 AI 주도 스케줄링과 내부 유연 인력풀(Float Pool) 확대를 결합한 \"혼합 인력 모델(Blended Workforce)\"이다. sources/healthcareitnews-mercy-30m-2023.md sources/beckershospitalreview-mercy-2024.md",
     "headline": "Mercy(미국 5대 가톨릭 의료 시스템, 40개 병원)는 AI 기반 유연 인력 모델을 도입하여 계약직 간호사(Agency) 비중을 25%에서 8%로 줄이고, 2023년 $30M 비용 절감을 달성했다.",
     "problem": "COVID-19 이후 간호사 부족과 계약직(Travel Nurse·Agency) 비용 급등이 미국 병원 시스템의 최대 비용 위협이었다. Mercy도 인력의 25%를 비싼 계약직에 의존했으며, 번아웃과 이직률 상승으로 악순환이 지속되었다.",
@@ -1963,6 +2080,9 @@
       "open-end-nlp",
       "copilot-highlights",
       "engagement"
+    ],
+    "sources": [
+      "sources/us-large-enterprise-hr-ai-2025-2026.md"
     ],
     "summary": "Microsoft Viva Glint에 Copilot 임베드 — engagement 서베이 open-end 코멘트 대량 합성 + 반복 테마 탐지 + 속성별 sentiment slice + benchmark 비교. <strong>2026-03 transition으로 default ON</strong>, 2026-04부터 Team/Executive 요약 리포트에 \"Copilot Highlights\" 자동 섹션 추가 (강점·기회·점수 변화·benchmark). Microsoft 자체 사용 — 전사 \"Employee Signals\" twice-yearly.",
     "headline": "Microsoft Viva Glint에 Copilot 임베드 — engagement 서베이 open-end 코멘트 대량 합성 + 반복 테마 탐지 + 속성별 sentiment slice + benchmark 비교.",
@@ -2044,6 +2164,10 @@
       "chatbot",
       "knowledge-management"
     ],
+    "sources": [
+      "sources/servicenow-siemens-case-study.md",
+      "sources/aihr-institute-siemens-hr-ai-2025.md"
+    ],
     "summary": "Siemens GBS(Global Business Services)는 360,000명 이상의 직원을 지원하는 HR·재무·구매 서비스를 통합 관리하기 위해 ServiceNow AI 플랫폼 기반의 \"My Services\" 포털을 구축했다. ✅ <strong>Fact</strong> 이 포털은 월 110,000건의 방문을 처리하며, 기존 100개 이상의 이메일 사서함을 단일 진입점으로 통합했다. 사용자 만족도 8.8/10, 직원의 87%가 업무를 즐기고 있다고 응답했다. sources/servicenow-siemens-case-study.md",
     "headline": "Siemens GBS(Global Business Services)는 360,000명 이상의 직원을 지원하는 HR·재무·구매 서비스를 통합 관리하기 위해 ServiceNow AI 플랫폼 기반의 \"My Services\" 포털을 구축했다.",
     "problem": "Siemens GBS는 HR, 재무, 구매 지원 서비스가 지나치게 복잡하고 고객이 탐색하기 어렵다는 문제를 안고 있었다. 수백 개의 별도 이메일 사서함으로 요청이 분산되어 처리 효율이 낮았고, 레거시 시스템 다수가 병존했다.",
@@ -2113,6 +2237,12 @@
       "ai-certification",
       "scheduling",
       "retail-workforce"
+    ],
+    "sources": [
+      "sources/walmart-corporate-ai-tools-2025-06.md",
+      "sources/hrdive-walmart-openai-2025-09.md",
+      "sources/fortune-walmart-ai-training-2026-02.md",
+      "sources/jobspikr-walmart-reskilling-2025.md"
     ],
     "summary": "Walmart은 2025년 6월 1.5M 직원 대상의 AI 도구 모음을 공개하고, 2025년 9월 OpenAI와 AI 인증 교육 프로그램 파트너십을 발표했다. ✅ <strong>Fact</strong> \"People-led, Tech-powered\" 원칙 하에 AI를 인력 대체가 아닌 역할 전환(드론 기술자·로봇 감독관 등)의 도구로 활용하고 있다. Workday HCM을 전사 단일 HR 시스템으로 운영하며, Paradox의 대화형 ATS로 고볼륨 프론트라인 채용을 자동화했다. sources/walmart-corporate-ai-tools-2025-06.md sources/hrdive-walmart-openai-2025-09.md",
     "headline": "Walmart은 2025년 6월 1.",
@@ -2187,6 +2317,14 @@
       "reskilling",
       "interview-coach"
     ],
+    "sources": [
+      "HR Brew 2025-10-02 https://www.hr-brew.com/stories/2025/10/02/accenture-and-walmart-are-developing-workforce-strategies-with-ai-in-mind",
+      "Walmart Corporate 2025-06-05 https://corporate.walmart.com/news/2025/06/05/walmart-pilots-ai-interview-coach-and-accelerates-associate-to-technician-program-to-fuel-careers",
+      "HR Executive https://hrexecutive.com/amazon-and-walmart-compete-for-top-revenue-spot-with-diverging-workforce-ai-strategies/",
+      "JobsPikr https://www.jobspikr.com/blog/walmart-reskilling-workforce-2025/",
+      "sources/shrm-walmart-ai-revolution-2025.md",
+      "sources/hrdive-walmart-my-assistant-genai-2024.md"
+    ],
     "summary": "Walmart(2.3M 직원, 10,500 매장)은 세 가지 HR AI 이니셔티브를 병행 운영:\n1. <strong>Ask Sam</strong> — 매장 직원용 대화형 음성 AI 어시스턴트. <strong>900,000명 직원</strong>이 사용하며 <strong>주 3,000,000+ 질문</strong> 처리. HR 정책·재고·가격·작업 절차 등 답변.\n2. <strong>AI Interview Coach</strong> — 2025-06 파일럿 공개. 직원의 <strong>승진 면접 준비</strong>를 AI가 코칭.\n3. <strong>50,000명 리스킬링</strong> — 캐셔·매장 직원 → 드론 기술자·로봇 수퍼바이저로 역할 전환 계획.",
     "headline": "Walmart(2.",
     "problem": "",
@@ -2252,6 +2390,12 @@
       "gpt",
       "global-rollout",
       "multilingual"
+    ],
+    "sources": [
+      "sources/hrgrapevine-bosch-rob-2025-01.md",
+      "sources/cognigy-bosch-case-study.md",
+      "sources/personneltoday-bosch-hr-ai-2025.md",
+      "sources/unleash-bosch-rob-session.md"
     ],
     "summary": "Bosch는 창업자 Robert Bosch의 이름을 딴 HR AI 디지털 어시스턴트 \"ROB\"를 25개국에 배포했다. ✅ <strong>Fact</strong> Cognigy.AI 플랫폼과 GPT 기반으로 구동되며, Microsoft Teams를 통해 직원에게 제공된다. 은행 계좌 정보 업데이트, 커리어 개발 정보 탐색, 회사 정책 안내, HR 셀프서비스 프로세스 안내 등을 처리하며, 감성 지능(emotional intelligence)을 활용해 추가 인간 지원이 필요한 시점을 식별한다. sources/cognigy-bosch-case-study.md sources/hrgrapevine-bosch-rob-2025-01.md",
     "headline": "Bosch는 창업자 Robert Bosch의 이름을 딴 HR AI 디지털 어시스턴트 \"ROB\"를 25개국에 배포했다.",
@@ -2326,6 +2470,12 @@
       "igrow",
       "jim"
     ],
+    "sources": [
+      "sources/mckinsey-dbs-ai-transformation.md",
+      "sources/emerj-dbs-ai-cases.md",
+      "sources/adriantan-dbs-ai-recruiting.md",
+      "sources/mit-slr-dbs-piyush-gupta.md"
+    ],
     "summary": "싱가포르 최대 은행 DBS Bank는 인사 전 영역에 AI를 내재화한 아시아 금융권 선도 사례다. ✅ <strong>Fact</strong> 핵심 세 가지: (1) AI 채용 플랫폼 JIM(Jobs Intelligence Maestro) — 이력서 스크리닝·면접 일정·초기 평가 자동화로 채용 소요시간을 32일→8일 단축, (2) 이탈 예측 모델 — 학습·보상·휴가 패턴 등 다변수 분석으로 이탈 징후 조기 감지, (3) iGrow 커리어 어드바이저 — 10,000개 이상 내부 과정 기반 개인화 커리어 경로 추천. sources/emerj-dbs-ai-cases.md sources/adriantan-dbs-ai-recruiting.md",
     "headline": "싱가포르 최대 은행 DBS Bank는 인사 전 영역에 AI를 내재화한 아시아 금융권 선도 사례다.",
     "problem": "DBS는 디지털 전환과 함께 대규모 기술 인재 채용과 기존 직원 역량 전환을 동시에 추진해야 했다. 채용 소요시간 단축, 고성과자 이탈 예방, 직원 커리어 개발 기회 확대가 핵심 과제였다. McKinsey 케이스에 따르면 DBS는 \"기술 회사로서 은행 면허를 보유\"하는 정체성 전환을 추진했다. sources/mckinsey-dbs-ai-transformation.md",
@@ -2395,6 +2545,11 @@
       "generative-ai",
       "firmwide-rollout"
     ],
+    "sources": [
+      "sources/cnbc-goldman-gs-ai-assistant-2025-01.md",
+      "sources/fortune-goldman-gs-ai-2025-06.md",
+      "sources/hrkatha-goldman-ai-assistant-2025.md"
+    ],
     "summary": "Goldman Sachs는 2025년 1월 GS AI Assistant를 10,000명 파일럿으로 시작, 2025년 6월 전 지식노동자 대상 전사 배포를 완료했다. ✅ <strong>Fact</strong> 이 도구는 다수의 LLM(OpenAI GPT-4o/o3-mini, Google Gemini 2.0, Anthropic Claude 3.7 포함)을 단일 인터페이스로 접근하는 멀티모델 어시스턴트로, 문서 요약·리서치 노트 초안·규제 문서 분석·코드 생성·다국어 번역 등을 지원한다. sources/fortune-goldman-gs-ai-2025-06.md",
     "headline": "Goldman Sachs는 2025년 1월 GS AI Assistant를 10,000명 파일럿으로 시작, 2025년 6월 전 지식노동자 대상 전사 배포를 완료했다.",
     "problem": "Goldman Sachs의 지식노동자들은 리서치 노트 작성, 규제 문서 요약, 클라이언트 쿼리 응답 등 정형화된 고숙련 작업에 많은 시간을 소비하고 있었다. 외부 AI 도구 사용 시 민감 금융·고객 데이터가 방화벽 외부로 유출될 위험이 있었다.",
@@ -2460,6 +2615,9 @@
       "manager-nudge",
       "explainable-ai",
       "retention-management"
+    ],
+    "sources": [
+      "sources/ibm-hr-ai-portfolio-2025-2026.md"
     ],
     "summary": "IBM이 2019년 공개한 <strong>Predictive Attrition Program</strong> — Watson 기반 patented ML 모델이 34+ 변수(overtime·salary·역할·성과·통근거리)를 분석해 6개월 flight risk를 예측. ⚠️ 자사 보고: 95% 정확도, $300M 누적 retention saving (2023까지). 동일 인프라가 <strong>AI Compensation Recommendation</strong>으로 확장 — 매니저별 per-employee salary 추천 + 이유 설명. 매니저가 권고 무시 시 팀 attrition 2배.",
     "headline": "IBM이 2019년 공개한 Predictive Attrition Program — Watson 기반 patented ML 모델이 34+ 변수(overtime·salary·역할·성과·통근거리)를 분석해 6개월 flight risk를 예측.",
@@ -2532,6 +2690,10 @@
       "korea",
       "scientific-validation",
       "nature"
+    ],
+    "sources": [
+      "ZDNet Korea 2025-09-16 https://zdnet.co.kr/view/?no=20250916163016",
+      "Nature Scientific Reports 2025-07 (KAIST 연구진)"
     ],
     "summary": "마이다스아이티의 AI 역량검사 솔루션 <strong>inAIR</strong>은 성향파악·전략게임·영상면접 3개 과제로 구성된 시뮬레이션 기반 채용 평가 도구. 2025년 하반기 기준 <strong>기아·KB증권·신한은행·CJ그룹·LIG넥스원·GS리테일·비씨카드·티웨이항공·KT클라우드·유니클로</strong> 등 대기업과 <strong>오산시청·구미시청·경북도청·제주도청</strong> 등 공공기관이 도입. 2025-07 <strong>KAIST 연구진</strong>이 Nature 자매지 <em>Scientific Reports</em>에 발표한 논문에서 \"기존 채용 방식 중 유일하게 채용 1년 후 실제 업무 성과를 통계적으로 유의미하게 예측\"함을 확인 — <strong>국내 HR AI 중 최고 수준의 독립 검증</strong>.",
     "headline": "마이다스아이티의 AI 역량검사 솔루션 inAIR은 성향파악·전략게임·영상면접 3개 과제로 구성된 시뮬레이션 기반 채용 평가 도구.",
@@ -2609,6 +2771,9 @@
       "food-industry",
       "mid-large-enterprise",
       "pure-hr-ai"
+    ],
+    "sources": [
+      "sources/kr-conglomerate-2026-q2-research.md"
     ],
     "summary": "풀무원이 2024-12-23 출시한 <strong>임직원 인적자원관리 전용 생성형 AI 챗봇 '두리번'</strong>. <strong>근태·복리후생·학습·평가·승진·보상 6개 HR 영역</strong>에 대해 24/365 응답. 인사 정보 문서 기반 RAG로 <strong>hallucination 최소화</strong>. PC → 모바일 확장 계획. ★ KR 사례 중 <strong>순수 HR 챗봇으로 정의된</strong> 가장 selectoral 사례 — 식품 중견기업이지만 KR HR 컨설팅의 가장 직접적 reference.",
     "headline": "풀무원이 2024-12-23 출시한 임직원 인적자원관리 전용 생성형 AI 챗봇 '두리번'.",
@@ -2692,6 +2857,10 @@
       "payroll",
       "people-intelligence"
     ],
+    "sources": [
+      "sources/sap-1h-2026-release-2026-04.md",
+      "sources/sap-joule-performance-agent-bersin-2025-10.md"
+    ],
     "summary": "SAP가 2026-04에 발표한 SuccessFactors 1H 2026 Release에서 <strong>4개 신규 Joule Agent</strong>가 May 2026 GA 예정. 기존 Performance & Goals Agent에 더해 <strong>Career & Talent Development Agent</strong>(승계·커리어), <strong>HR Service Agent</strong>(self-service), <strong>People Intelligence Agent</strong>(매니저 분석), <strong>Payroll Agent</strong>(급여 Q&A)가 추가됨. SAP 자사 표현으로 \"the most comprehensive AI agent suite for HR\". a2a/MCP 프로토콜 지원으로 3rd-party agent 호출 가능.",
     "headline": "SAP가 2026-04에 발표한 SuccessFactors 1H 2026 Release에서 4개 신규 Joule Agent가 May 2026 GA 예정.",
     "problem": "<ul>\n<li><strong>Before (baseline)</strong>: SAP SuccessFactors는 conventional HCM 위주, AI 기능은 모듈별 산발 (Joule 초기 release). Workday Illuminate에 비해 agentic 카테고리 catch-up 필요.</li>\n<li><strong>Pain point</strong>: 대규모 SAP HCM 고객(IBM·Disney·한국 제조 대기업)이 AI 에이전트 carve-out을 별도 벤더로 가는 것을 막아야 함. SAP suite 안에 native agent 생태계 형성이 시급.</li>\n<li><strong>Trigger</strong>: Workday Illuminate (2024~2025), Workday × Sana 인수, Workday ASOR(2026-02) 등 경쟁 압박. SAP가 Joule 통합 가속화로 대응.</li>\n</ul>",
@@ -2772,6 +2941,12 @@
       "career-agility",
       "retention"
     ],
+    "sources": [
+      "Gloat case study https://resources.gloat.com/schneider-electric-case-study-download/",
+      "Gloat blog 2025-01 https://gloat.com/blog/schneider-electric-career-agility/",
+      "sources/bersin-schneider-unilever-talent-marketplace-2019-07.md",
+      "sources/shrm-schneider-electric-chro-nontraditional-2025.md"
+    ],
     "summary": "Schneider Electric(글로벌 에너지 관리·자동화 기업, 135,000+ 직원)은 Gloat 기반 <strong>\"Open Talent Market\"</strong>을 2020-04에 전사 big bang launch. 직원의 스킬·관심을 AI가 분석해 <strong>gig work·career transitions·mentorship</strong> 기회를 매칭. ⚠️ 벤더 주장: <strong>360,000+ 시간 unlocked, $15M+ 생산성 향상 + 채용 비용 절감</strong>. Unilever FLEX와 함께 Gloat의 양대 레퍼런스. <strong>Josh Bersin</strong>(Tier 1)이 2019년 독립 분석에서 \"가장 영리한 비즈니스 리더\" CHRO Olivier Blum의 전략으로 소개 (bersin-schneider-unilever-talent-marketplace-2019-07). <strong>SHRM</strong>(Tier 2)이 2025년 현 CHRO Charise Le의 비전통적 인재 전략으로 재조명 (shrm-schneider-electric-chro-nontraditional-2025).",
     "headline": "Schneider Electric(글로벌 에너지 관리·자동화 기업, 135,000+ 직원)은 Gloat 기반 \"Open Talent Market\"을 2020-04에 전사 big bang launch.",
     "problem": "<ul>\n<li>⚠️ 자사 보고: <strong>직원의 50%가 \"내부 성장 기회 부족\"을 퇴직 주요 사유로 꼽음</strong> — 이 데이터가 Open Talent Market 구축의 직접적 트리거</li>\n<li>135,000명 규모에서 부서·지역 간 인력 가시성 부족 → 외부 채용에 의존</li>\n<li>직원은 현재 역할 외 기회를 알 수 없고, 매니저는 팀원을 놓치지 않으려 함</li>\n</ul>",
@@ -2850,6 +3025,9 @@
       "mobile",
       "korea"
     ],
+    "sources": [
+      "sources/korea-conglomerate-hr-ai-2025-2026.md"
+    ],
     "summary": "신한은행 <strong>AI ONE</strong> — 기존 'A.I 몰리' 시스템을 통합 개편한 직원용 멀티-AI 허브 (2024-09 production). AI-STUDIO·AI-OCR·R비서 등 <strong>40여 개 업무비서</strong> 기능을 단일 인터페이스에 통합. <strong>Speech-to-AI</strong>로 모바일/태블릿 음성 지시 지원. ⚠️ 자사 보고: 직원 1인당 일 30분 이상 절감 기대, 향후 상담→전산처리 종결 업무의 <strong>80%까지 자동화 목표</strong>.",
     "headline": "신한은행 AI ONE — 기존 'A.",
     "problem": "<ul>\n<li><strong>Before</strong>: 신한은행 직원이 다수의 산발 AI 도구 (A.I 몰리·OCR·R비서) 별도 사용 — UX 분산</li>\n<li><strong>Pain point</strong>: 14,000+ 직원 base에서 AI 도구 fragmentation으로 ROI 약화</li>\n<li><strong>Trigger</strong>: 2024-09 통합 launch — 단일 인터페이스 + 모바일·태블릿 음성 지원</li>\n</ul>",
@@ -2919,6 +3097,9 @@
       "korean-recruitment",
       "korea",
       "hr-screening"
+    ],
+    "sources": [
+      "sources/korea-conglomerate-hr-ai-2025-2026.md"
     ],
     "summary": "SK C&C가 SKT·SK AX 합작 'A.Biz' B2B AI 솔루션의 첫 제품 <strong>'에이닷 비즈 HR'</strong>을 2025년 신입·주니어 채용에 전면 적용. 자기소개서에서 <strong>경력·핵심 역량 키워드 추출</strong> + <strong>직무 적합성·리스크 요인 판정</strong>. AI 면접 + 맞춤 면접 질문 자동 생성. ⚠️ 자사 보고: 수천 건 지원서를 4시간 내 분석 (이전 약 1주 소요 → <strong>약 90% 단축</strong>).",
     "headline": "SK C&C가 SKT·SK AX 합작 'A.",
@@ -3005,6 +3186,9 @@
       "korea",
       "80k-employees"
     ],
+    "sources": [
+      "sources/korea-conglomerate-hr-ai-2025-2026.md"
+    ],
     "summary": "SK 그룹이 SKT-SK AX 합작 'A.Biz'를 <strong>그룹 단일 표준</strong>으로 25개 멤버사·<strong>약 8만 명</strong>에 배포 (2025 하반기 rollout). SK디스커버리 등 7개사 시작 → 2025년 말까지 <strong>SK하이닉스·SK이노베이션</strong> 포함 25개 멤버사 확산. HR 정책·절차 문의 응대용 AI 에이전트를 IT 전문 지식 없이 HR 담당자가 <strong>agent builder로 자체 구축</strong> 가능. <strong>국가핵심기술 보유사</strong> (SK하이닉스·SK온·SK실트론)에는 자체 LLM <strong>'A.X'</strong> + SK AX <strong>산업특화 AI</strong> 적용으로 보안 보장.",
     "headline": "SK 그룹이 SKT-SK AX 합작 'A.",
     "problem": "<ul>\n<li><strong>Before</strong>: SK 그룹 25개 멤버사가 각각 별도 HR 시스템·챗봇 운영 — 그룹 표준 부재</li>\n<li><strong>Pain point</strong>: 그룹 차원 AI 거버넌스·비용·표준 보안 통제 어려움 + 멤버사별 중복 투자</li>\n<li><strong>Trigger</strong>: SKT 'A.Biz' B2B launch 자체 dogfooding + 그룹 차원 AI 가속 명령</li>\n</ul>",
@@ -3075,6 +3259,9 @@
       "korean-bank",
       "governance-process",
       "korea"
+    ],
+    "sources": [
+      "sources/kr-conglomerate-2026-q2-research.md"
     ],
     "summary": "우리은행이 <strong>금융권 최초 전사 AI 에이전트 도입</strong> 발표 (2026-03-05). <strong>575개 후보</strong> → <strong>5대 영역(고객관계관리·자산관리·내부통제·고객상담·업무자동화) 29개 업무 175개 에이전트</strong> 선정. 2026-04-07 <strong>삼성SDS 우선협상대상자</strong> 선정. 12월 1차 97개, 2026 초 78개 추가 출시. ⚠️ 자사 보고: 업무처리 속도 30% 향상 기대. <strong>AI 에이전트 portfolio management</strong> 컨설팅의 표준 reference architecture.",
     "headline": "우리은행이 금융권 최초 전사 AI 에이전트 도입 발표 (2026-03-05).",
@@ -3152,6 +3339,10 @@
       "agentic",
       "workforce-of-agents"
     ],
+    "sources": [
+      "sources/workday-asor-ga-2026-02.md",
+      "sources/deloitte-2026-human-capital-trends.md"
+    ],
     "summary": "Workday가 2026-02-18에 GA 발표한 <strong>Agent System of Record (ASOR)</strong>는 AI 에이전트를 사람 직원과 동일한 방식으로 관리하는 거버넌스 레이어다. 1st-party Workday 에이전트(Illuminate 시리즈)와 3rd-party 에이전트(Salesforce·OpenAI·Microsoft 등)를 한 콘솔에서 권한·조직도·스킬·분석·보안으로 통합 관리. HR이 에이전트의 \"owner of record\"가 되어 회사 인적자본의 일부로 책임을 가져간다는 패러다임.",
     "headline": "Workday가 2026-02-18에 GA 발표한 Agent System of Record (ASOR)는 AI 에이전트를 사람 직원과 동일한 방식으로 관리하는 거버넌스 레이어다.",
     "problem": "<ul>\n<li><strong>Before (baseline)</strong>: 엔터프라이즈가 AI 에이전트를 부서별·도구별로 산발 도입. 누가 만들었는지, 어떤 권한을 갖는지, 누가 책임지는지가 불투명. shadow AI 리스크 누적.</li>\n<li><strong>Pain point</strong>: AI 에이전트가 빠르게 늘어나는데 거버넌스·감사·권한 통제가 부재. Deloitte 2026 HC Trends에 따르면 임원 60%가 AI를 의사결정에 사용하지만 5%만 잘 관리 중.</li>\n<li><strong>Trigger</strong>: 2026-Q1 EU AI Act high-risk 의무 발효 임박 + 한국 AI 기본법(2026-01-22 시행) 등 글로벌 규제 압력. 엔터프라이즈가 \"AI 거버넌스\" 카테고리 솔루션 시급히 요구.</li>\n</ul>",
@@ -3226,6 +3417,11 @@
       "retail",
       "warehouse"
     ],
+    "sources": [
+      "SHRM 2025-10 https://www.shrm.org/topics-tools/news/talent-acquisition/amazon-layoffs-hr-staff-ai",
+      "CNBC 2025-10-15 https://www.cnbc.com/2025/10/15/jpmorgan-chase-goldman-sachs-ai-hiring.html",
+      "HR Grapevine 2025-10-16 https://www.hrgrapevine.com/us/content/article/2025-10-16-amazon-plans-sweeping-hr-job-cuts-as-ai-investment-grows"
+    ],
     "summary": "Amazon의 HR 부서 <strong>PXT (People eXperience and Technology)</strong> 조직이 AI 도입에 따라 <strong>최대 15% 인력 감축</strong>을 계획. PXT는 SVP <strong>Beth Galetti</strong> 휘하 10,000+ 직원으로 구성되며, 채용·HR 운영·기술 기능을 포괄. 동시에 Amazon은 <strong>250,000명 계절직 warehouse 채용</strong>을 진행 — \"white-collar HR 자동화 + blue-collar 대량 채용\"의 극적 대비.",
     "headline": "Amazon의 HR 부서 PXT (People eXperience and Technology) 조직이 AI 도입에 따라 최대 15% 인력 감축을 계획.",
     "problem": "<ul>\n<li><strong>Before</strong>: Amazon PXT(People eXperience and Technology) 조직은 <strong>10,000+ HR 전문 인력</strong>이 채용·HR 운영·기술·분석 업무를 수행. 1.5M+ 매장 직원 + 수십만 기업 직원의 HR 서비스 수요를 사람이 직접 처리</li>\n<li><strong>Pain point</strong>: $100B+ AI 투자를 진행하면서 <strong>HR 기능도 자동화 가능 영역으로 식별</strong>됨. 채용 심사·정책 질의·분석 리포팅 등이 AI copilot으로 대체 가능하다는 판단</li>\n<li><strong>Trigger</strong>: CEO Andy Jassy의 \"<strong>모든 client experience·employee process·backend operation에 AI를 주입</strong>\"하라는 전사 방침 → HR 조직도 예외 없음</li>\n<li><strong>⚠️ 핵심 갈등</strong>: 동시에 <strong>250,000명 계절직 warehouse 채용</strong>은 여전히 사람이 필요 → \"white-collar 자동화 + blue-collar 대량 채용\"의 구조적 이중성</li>\n</ul>",
@@ -3296,6 +3492,13 @@
       "twilio",
       "betterup",
       "roi"
+    ],
+    "sources": [
+      "BetterUp ROI page https://www.betterup.com/roi-of-betterup",
+      "Inc.com 2025 https://www.inc.com/annabel-burba/how-betterup-built-an-ai-only-coaching-product-95-percent-of-its-customers-love/91221747",
+      "BetterUp customers https://www.betterup.com/customers",
+      "sources/bersin-betterup-manage-ai-coaching-2024-04.md",
+      "sources/hrexecutive-bersin-coaching-disruptions-2024.md"
     ],
     "summary": "BetterUp은 <strong>AI 기반 리더십·매니저 코칭</strong> 플랫폼. 2025년 <strong>BetterUp Grow</strong> (AI-only 코칭 제품) 출시로 전통 human coaching 대비 <strong>비용 70% 절감 + 95% 사용자 만족</strong>을 주장. 가장 강력한 레퍼런스는 <strong>Twilio (8,000+ 직원)</strong>:  코칭 받은 직원은 <strong>고성과 평가 32% 더 높고, 이탈 5배 낮음</strong>. 다수 고객에서 ROI 수치가 구체적으로 공개돼 wiki의 Performance 카테고리 <strong>가장 fact-rich 사례</strong>. <strong>Josh Bersin</strong>(Tier 1, 단 BetterUp advisor)이 BetterUp Manage를 \"pioneering AI-powered platform for leaders\"로 독립 분석 (bersin-betterup-manage-ai-coaching-2024-04). <strong>HR Executive</strong>(Tier 2)도 Bersin의 코칭 시장 분석을 보도 (hrexecutive-bersin-coaching-disruptions-2024).",
     "headline": "BetterUp은 AI 기반 리더십·매니저 코칭 플랫폼.",
@@ -3369,6 +3572,10 @@
       "consulting",
       "large-scale",
       "productivity"
+    ],
+    "sources": [
+      "CNBC 2025-10-06 https://www.cnbc.com/2025/10/06/anthropic-deloitte-enterprise-ai.html",
+      "Anthropic press 2025-10 https://www.anthropic.com/news/deloitte-anthropic-partnership"
     ],
     "summary": "",
     "headline": "",
@@ -3448,6 +3655,9 @@
       "korea",
       "change-management"
     ],
+    "sources": [
+      "sources/kr-conglomerate-2026-q2-research.md"
+    ],
     "summary": "현대모비스가 2025-10-21 본격 운영하는 사내 전용 GenAI 플랫폼 <strong>'MoAI(Mobis one AI)'</strong>. 온프레미스 배포로 <strong>1,000만 건 사내문서 RAG</strong> 기반 검색·요약. R&D·IT·품질·영업·생산 등 <strong>7개 업무</strong>에 적용. 2025년 내 <strong>법무·경영지원(HR 포함)으로 확장 계획</strong>. 변화관리로 프롬프트 템플릿 사전 탑재. 한국 제조 대기업의 <strong>\"온프레미스 + 변화관리\"</strong> 정석 사례.",
     "headline": "현대모비스가 2025-10-21 본격 운영하는 사내 전용 GenAI 플랫폼 'MoAI(Mobis one AI)'.",
     "problem": "<ul>\n<li><strong>Before</strong>: 자동차 부품사 33K 직원 — 매뉴얼·도면·기술 문서 fragmented. 보안 민감 (R&D 영업비밀)</li>\n<li><strong>Pain point</strong>: 글로벌 commercial LLM 사용은 영업비밀·도면 leakage risk → 사내 LLM 필요</li>\n<li><strong>Trigger</strong>: 2025 현대차 그룹 AI 가속 + 모비스 R&D 효율 압박</li>\n</ul>",
@@ -3523,6 +3733,11 @@
       "recognition",
       "large-scale"
     ],
+    "sources": [
+      "sources/hr-brew-ibm-moderna-2025-06.md",
+      "HR Brew 2025-10-24 https://www.hr-brew.com/stories/2025/10/24/hr-adapting-ai-driven-future",
+      "IBM AskHR case study https://www.ibm.com/case-studies/ibm-askhr"
+    ],
     "summary": "IBM의 내부 HR 가상 에이전트 <strong>AskHR</strong>은 270,000 IBM 직원에게 HR 정책·보상·복리후생 등 전반적 질문에 답하는 AI 서비스. 초기 rule-based 챗봇에서 시작해, 2025년에 <strong>IBM watsonx Orchestrate</strong>를 통합하며 <strong>agentic automation 수준</strong>으로 진화. ⚠️ 자사 보고: 80+ HR 태스크 자동화, 연간 2.1M 대화 처리. IBM CEO Arvind Krishna가 \"a couple hundred HR workers의 업무가 AI로 대체됐고 프로그래머·영업 채용이 증가\"했다고 공개 발언.",
     "headline": "IBM의 내부 HR 가상 에이전트 AskHR은 270,000 IBM 직원에게 HR 정책·보상·복리후생 등 전반적 질문에 답하는 AI 서비스.",
     "problem": "<ul>\n<li>IBM은 <strong>270,000명</strong> 규모의 글로벌 기업 — HR service center로의 문의 볼륨이 방대</li>\n<li>기존 AskHR는 FAQ 수준의 단순 응답 → \"진짜 업무를 수행하는\" agentic 수준으로 진화 필요</li>\n<li>반복적 행정 업무(expense report, recognition 작성, benefits 안내)에 HR 인력이 과도 투입</li>\n</ul>",
@@ -3591,6 +3806,9 @@
       "thisway-global",
       "agentic",
       "multi-step-workflow"
+    ],
+    "sources": [
+      "sources/ibm-hr-ai-portfolio-2025-2026.md"
     ],
     "summary": "IBM watsonx Orchestrate의 <strong>Talent Acquisition Agent</strong> — 2024-25 generation recruiter copilot. JD 템플릿 생성·hiring manager 공유·후보자 매칭·자격자 alert·intro 메시지·면접 일정·feedback 수집까지 multi-step 워크플로 자동화. ThisWay Global 통합으로 8,500+ diverse community sourcing. Knockri 파트너십(2025-04)으로 면접 설계 워크플로 통합. ⚠️ 자사 보고: AskHR이 약 500K transactions 처리 (JD 생성 포함).",
     "headline": "IBM watsonx Orchestrate의 Talent Acquisition Agent — 2024-25 generation recruiter copilot.",
@@ -3667,6 +3885,9 @@
       "korea",
       "recruiter-agent",
       "market-survey"
+    ],
+    "sources": [
+      "sources/korea-conglomerate-hr-ai-2025-2026.md"
     ],
     "summary": "잡코리아 운영사 <strong>웍스피어</strong>가 출시한 <strong>통합 채용 솔루션 '하이어링 센터'</strong> (2026-03 일부 기업 오픈). 자연어 대화로 채용 담당자 의도를 이해하고 공고 맥락 분석 후 후보자 제안하는 <strong>'탤런트 에이전트'</strong> 탑재. 잡코리아 자체 설문 — 채용 담당자 1,286명 중 <strong>65%가 AI 채용 에이전트 도입 또는 검토 중</strong> (적극 검토 13.6% + 검토 48.8%).",
     "headline": "잡코리아 운영사 웍스피어가 출시한 통합 채용 솔루션 '하이어링 센터' (2026-03 일부 기업 오픈).",
@@ -3746,6 +3967,9 @@
       "2024-evaluation",
       "korea"
     ],
+    "sources": [
+      "sources/korea-conglomerate-hr-ai-2025-2026.md"
+    ],
     "summary": "한국전력의 <strong>HR-Bot</strong> (솔트룩스 기반) — 24/7 채용 상담·단순 반복 채용업무 자동화. 별도 <strong>AI 인사추천 시스템</strong>은 직원 역량·업무 이력 분석으로 적재적소 배치 지원 — <strong>공공기관 최초</strong> 사례. 2024년 한전 경영평가에서 <strong>인사혁신 부문 가점</strong>. 2025년 12월~2026년 3월 사내 규정·법규·문서 작성용 생성형 AI 시스템 전 직원 개방 예정.",
     "headline": "한국전력의 HR-Bot (솔트룩스 기반) — 24/7 채용 상담·단순 반복 채용업무 자동화.",
     "problem": "<ul>\n<li><strong>Before</strong>: 한전 23,000+ 직원, 공공기관 특성상 인사이동·채용 manual + 정량 자료 의존</li>\n<li><strong>Pain point</strong>: 공공기관 인사이동의 표준화 어려움 + 채용 상담 volume 大</li>\n<li><strong>Trigger</strong>: 2024 공공기관 AI 도입 가속 + 한전 경영평가 인사혁신 부문 (정부 평가 KPI)</li>\n</ul>",
@@ -3824,6 +4048,9 @@
       "korea",
       "financial-securities",
       "dash"
+    ],
+    "sources": [
+      "sources/korea-conglomerate-hr-ai-2025-2026.md"
     ],
     "summary": "미래에셋증권이 네이버클라우드 협업 — 전용 LLM <strong>'하이퍼클로바X 대시'</strong> 위에 구축한 <strong>사내 AI 어시스턴트 플랫폼</strong> (2024-09 production). 직원·부서가 본인 업무 매뉴얼·노하우 문서를 업로드해 학습시킨 후 <strong>전용 챗봇을 자체 생성</strong> — AI 비전문가도 활용 가능한 <strong>No-code 빌더</strong>. 한국 자체 LLM (네이버 Hyperclova X) 기반 — 데이터 주권·금융 규제 대응이 driver.",
     "headline": "미래에셋증권이 네이버클라우드 협업 — 전용 LLM '하이퍼클로바X 대시' 위에 구축한 사내 AI 어시스턴트 플랫폼 (2024-09 production).",
@@ -3905,6 +4132,11 @@
       "career-development",
       "skills-intelligence"
     ],
+    "sources": [
+      "sources/gloat-novartis-case-study-2024.md",
+      "sources/hrdconnect-novartis-skills-2024.md",
+      "sources/myhrfuture-novartis-people-data.md"
+    ],
     "summary": "글로벌 제약사 Novartis는 Gloat의 AI 탤런트 마켓플레이스를 도입하여 스킬 기반 조직으로 전환했다. ✅ <strong>Fact</strong> 직원들은 잡(Job)·프로젝트·멘토십·러닝 콘텐츠를 스킬 기반으로 매칭받는다. 탤런트 마켓플레이스를 통해 성공적인 과제 수행 경험이 있는 직원은 조직 내 영구 이동 가능성이 132% 더 높아졌으며, 크로스펑셔널 프로젝트 배정이 67% 증가했다. ⚠️ <strong>자사 보고</strong>: Novartis 및 Gloat 공개 자료 기반 수치. sources/gloat-novartis-case-study-2024.md",
     "headline": "글로벌 제약사 Novartis는 Gloat의 AI 탤런트 마켓플레이스를 도입하여 스킬 기반 조직으로 전환했다.",
     "problem": "Novartis는 연구·개발·상업화 등 다양한 기능 조직을 보유하면서도 내부 이동성이 낮아 인재가 사일로화되는 문제를 안고 있었다. 기존 직무 중심 인사 관리로는 조직이 필요로 하는 미래 스킬을 빠르게 파악하고 개발하기 어려웠다. \"Unbossed\" 문화 (자율적이고 권한 위임된 조직) 추진과 함께 탤런트 민주화가 전략 목표였다.",
@@ -3971,6 +4203,9 @@
       "agentic",
       "manager-support"
     ],
+    "sources": [
+      "sources/sap-joule-performance-agent-bersin-2025-10.md"
+    ],
     "summary": "SAP SuccessFactors의 첫 번째 HR Joule Agent인 <strong>Performance & Goals Agent</strong>가 2025년 하반기 GA. 매니저에게 맞춤 인사이트·목표 진척 업데이트·개인화된 대화 포인트를 제공해 성과 대화의 질을 높인다. Josh Bersin(Tier 1)은 이를 \"one of the most impressive array of enterprise-class AI announcements\"로 평가. 2026년 상반기 Career & Talent Development Agent, HR Service Agent, People Intelligence Agent, Payroll Agent 등 4개 추가 에이전트 GA 예정. sources/sap-joule-performance-agent-bersin-2025-10.md",
     "headline": "SAP SuccessFactors의 첫 번째 HR Joule Agent인 Performance & Goals Agent가 2025년 하반기 GA.",
     "problem": "<ul>\n<li>매니저가 성과 대화를 준비하는 데 <strong>시간이 많이 소요</strong> — 여러 시스템에서 데이터를 수집해야 함</li>\n<li>목표 진척도를 실시간으로 파악하기 어려움 → <strong>형식적 리뷰</strong>로 전락</li>\n<li>대규모 SuccessFactors 고객(SAP ERP 기반 대기업)에서 <strong>HRIS 내장 AI</strong>에 대한 수요 증가</li>\n<li>Bersin: IBM, Disney 등이 Workday → SuccessFactors로 전환하는 사례 증가 — SAP 에코시스템 통합이 동인 sources/sap-joule-performance-agent-bersin-2025-10.md</li>\n</ul>",
@@ -4033,6 +4268,13 @@
       "manufacturing",
       "my-learning-world",
       "europe"
+    ],
+    "sources": [
+      "AIHR Institute https://www.aihr-institute.com/blog/how-ai-is-transforming-hr-at-siemens",
+      "MISQ Executive https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1637&context=misqe",
+      "HRKatha https://www.hrkatha.com/features/how-siemens-india-is-navigating-workforce-transformation-in-the-age-of-ai/",
+      "ServiceNow case study https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/resource-center/case-study/cs-siemens-ag.pdf",
+      "sources/wef-siemens-reskilling-revolution-case.md"
     ],
     "summary": "Siemens는 <strong>Future Skills Initiative</strong>를 통해 300,000 직원 대상으로 데이터 분석·디지털 트윈·자동화 역량 리스킬링을 추진. AI 기반 학습 플랫폼 <strong>My Learning World</strong>는 100,000+ 학습 기회를 제공하며, 개인화된 학습 경로를 적응형으로 제공. ⚠️ 자사 보고: 내부 이동 <strong>20% 증가</strong>, AI 기반 채용·내부 이동 포탈이 후보자 매칭·스킬 추천을 최적화.",
     "headline": "Siemens는 Future Skills Initiative를 통해 300,000 직원 대상으로 데이터 분석·디지털 트윈·자동화 역량 리스킬링을 추진.",
@@ -4110,6 +4352,9 @@
       "korea",
       "early-career"
     ],
+    "sources": [
+      "sources/korea-conglomerate-hr-ai-2025-2026.md"
+    ],
     "summary": "SK하이닉스가 2025 하반기 신입 채용에 <strong>'A!SK' (AI Interview with SK Hynix)</strong> 전형 신설. AI가 직무별 특화 문제를 출제하면 지원자가 영상 녹화 답변 제출. 자기소개서로 파악 어려운 <strong>커뮤니케이션·팀워크·상황 대처</strong> 능력을 종합 검증. 제출 영상은 <strong>미래 동료 구성원이 직접 평가</strong>하는 <strong>hybrid 모델</strong>. AI single decision 회피 — bias mitigation + 한국 채용절차법 fit.",
     "headline": "SK하이닉스가 2025 하반기 신입 채용에 **'A!",
     "problem": "<ul>\n<li><strong>Before</strong>: SK하이닉스 신입 채용은 자기소개서 + 인적성 + 면접 — 직무 적합 soft skill (커뮤니케이션·팀워크) 측정 어려움</li>\n<li><strong>Pain point</strong>: 반도체 기술사무직 신입 채용 volume 크지만 면접관 시간 한정 + soft skill 평가 표준화 어려움</li>\n<li><strong>Trigger</strong>: 2025 하반기 신입 공채 — A!SK 전형 신설 (마이다스 inAIR 차별 논란 후 자체 hybrid 설계)</li>\n</ul>",
@@ -4181,6 +4426,11 @@
       "genai-academy",
       "generative-ai"
     ],
+    "sources": [
+      "sources/theregister-india-it-2026-01.md",
+      "sources/aibase-india-it-ai-reskilling-2025.md",
+      "sources/poniaktimes-india-it-ai-2025.md"
+    ],
     "summary": "인도 3대 IT 서비스 기업 TCS·Infosys·Wipro는 AI 시대 전환에 맞춰 수십만에서 100만 명 이상 규모의 AI 리스킬링을 추진 중이다. ✅ <strong>Fact</strong> TCS는 275,000명이 \"Ideate and Build with AI\" 이니셔티브에 참여했고, Infosys는 AI 전환 프로그램에서 275,000명을 교육했으며, Wipro는 단 1분기 만에 180,000명에게 GenAI 기초 교육을 완료했다. 3사 합산 FY26 Q1 기준 AI 교육 인원은 약 100만 명에 달한다. sources/aibase-india-it-ai-reskilling-2025.md",
     "headline": "인도 3대 IT 서비스 기업 TCS·Infosys·Wipro는 AI 시대 전환에 맞춰 수십만에서 100만 명 이상 규모의 AI 리스킬링을 추진 중이다.",
     "problem": "AI가 기존 IT 서비스(코딩·QA·BPO)의 핵심 업무를 자동화하면서, 인도 IT 서비스 대기업들은 인력 구성 재편이라는 구조적 압박에 직면했다. TCS는 12,000명 감원과 동시에 40,000명 신규 채용을 진행하는 역설적 상황이며, Infosys는 역으로 20,000명 신입을 채용하며 AI 역량 기반 전환을 추진하고 있다.",
@@ -4250,6 +4500,10 @@
       "conversational-ui",
       "learning-agent",
       "acquisition"
+    ],
+    "sources": [
+      "sources/hr-brew-workday-sana-2026-03.md",
+      "sources/workday-asor-ga-2026-02.md"
     ],
     "summary": "Workday가 2025-11에 $1.1B로 인수한 스웨덴 AI-native LMS 회사 Sana를 2026-03-17에 첫 통합 제품 <strong>\"Sana for Workday\"</strong>로 공개. Sana의 conversational interface가 Workday 신규 UI front door로 채택되고, Sana Learn은 AI-native LMS로 Workday Learning을 대체·보강. ⚠️ 벤더 주장: 코스 생성 시간 4개월 → 4일, engagement 275% lift. ASOR 거버넌스 하에서 학습 에이전트가 사람·기존 에이전트와 통합 관리됨.",
     "headline": "Workday가 2025-11에 $1.",
@@ -4331,6 +4585,11 @@
       "lazboy",
       "docebo"
     ],
+    "sources": [
+      "Docebo customers https://www.docebo.com/customers/",
+      "Docebo Learning Platform https://www.docebo.com/learning-platform/",
+      "sources/bersin-ld-revolution-2025-06.md"
+    ],
     "summary": "Docebo는 <strong>AI-native LMS/LXP</strong> (3,900+ 고객, 70개국, 30M+ 사용자). <strong>Josh Bersin</strong>(Tier 1)의 2025-06 독립 분석에서 \"traditional → AI-native 전환 중\"으로 분류된 학습 플랫폼 (bersin-ld-revolution-2025-06). Bersin이 Project Harmony(neural search), dynamic content generation, virtual coaching 등 AI 기능을 독립적으로 확인. 가장 구체적 고객 사례는 <strong>La-Z-Boy</strong>: ⚠️ 벤더 주장 — <strong>활성 LMS 사용자 179% YoY 증가, 과정 완료율 85% 증가</strong>. Disguise는 활성 learner 4x 증가, 학습 수익 45% 증가. Brooks Automation은 교육 시간·비용 20% 절감.",
     "headline": "Docebo는 AI-native LMS/LXP (3,900+ 고객, 70개국, 30M+ 사용자).",
     "problem": "",
@@ -4404,6 +4663,10 @@
       "hr-transformation",
       "japan"
     ],
+    "sources": [
+      "sources/unleash-fujitsu-chro-ai-2025.md",
+      "sources/diginomica-fujitsu-hcm-ai-2025.md"
+    ],
     "summary": "Fujitsu는 73,000명(일본 기준)의 직원에 대한 스킬 기반 HR 전환을 추진하며, 내부 개발 AI 플랫폼 Kozuchi를 전사 배포했다. ✅ <strong>Fact</strong> Kozuchi는 월 69,000명 이상의 활성 사용자와 하루 약 380,000건의 사용량을 기록하고 있다. FY2020~FY2022 기간에 일본 직원의 약 25%(약 20,000명)가 자발적으로 내부 공모직에 지원했다. ⚠️ <strong>자사 보고</strong> sources/diginomica-fujitsu-hcm-ai-2025.md sources/unleash-fujitsu-chro-ai-2025.md",
     "headline": "Fujitsu는 73,000명(일본 기준)의 직원에 대한 스킬 기반 HR 전환을 추진하며, 내부 개발 AI 플랫폼 Kozuchi를 전사 배포했다.",
     "problem": "Fujitsu는 글로벌 IT 서비스 시장 변화 속에서 기존 직무 중심 HR 관리 시스템으로는 스킬 기반의 유연한 인력 배치가 불가능하다는 문제를 인식했다. 또한 일본의 경직된 노동 시장에서 자발적 경력 개발과 내부 이동성을 높이는 것이 과제였다.",
@@ -4466,6 +4729,9 @@
       "change-management",
       "japan",
       "global"
+    ],
+    "sources": [
+      "sources/hrexecutive-hitachi-skye-2025.md"
     ],
     "summary": "Hitachi는 2025년 초 HR AI 어시스턴트 \"Skye\"를 도입했다. ✅ <strong>Fact</strong> Skye는 사업부·국가·역할에 따라 문서를 추론하고 응답을 개인화하며, IT 서비스 티켓 생성·휴가 요청 처리 등 인텔리전트 액션도 수행한다. Hitachi의 접근이 특별한 이유는 <strong>문화 설계</strong>에 있다: Skye에 이름과 개성을 부여하여 직원들이 \"또 다른 챗봇\"이 아닌 \"동료 AI\"로 인식하도록 설계했다. sources/hrexecutive-hitachi-skye-2025.md",
     "headline": "Hitachi는 2025년 초 HR AI 어시스턴트 \"Skye\"를 도입했다.",
@@ -4531,6 +4797,9 @@
       "korea",
       "hyundai-group",
       "manufacturing"
+    ],
+    "sources": [
+      "sources/kr-conglomerate-2026-q2-research.md"
     ],
     "summary": "현대제철의 사내 AI 플랫폼 <strong>'HIP(Hyundai-steel Intelligence Platform)'</strong> — 2024-05 사내문서검색 + 경영지원챗봇 형태로 launch. 2025-10 임직원 AI·로봇 역량 강화 프로그램으로 확장. 철강산업 DX 전환의 일환. 중후장대 산업의 <strong>\"지식정보 플랫폼 + HR 챗봇\"</strong> 결합 사례.",
     "headline": "현대제철의 사내 AI 플랫폼 'HIP(Hyundai-steel Intelligence Platform)' — 2024-05 사내문서검색 + 경영지원챗봇 형태로 launch.",
@@ -4604,6 +4873,9 @@
       "ibm",
       "screening",
       "success-prediction"
+    ],
+    "sources": [
+      "sources/ibm-hr-ai-portfolio-2025-2026.md"
     ],
     "summary": "IBM Watson Recruitment — 2018 productized 후보자 매칭 AI. 정형·비정형 데이터 + soft trait으로 requisition 대비 score 산출. <strong>gender·race·age·ethnicity 억제</strong> bias mitigation 내장. requisition 복잡도와 ideal-match profile flag. ⚠️ 벤더 주장: 84% success prediction 정확도, 35% time-to-fill 감소, 50% turnover 감소, 30% recruitment efficiency 향상, 미국 underrepresented minority 채용 3년간 20% 증가.",
     "headline": "IBM Watson Recruitment — 2018 productized 후보자 매칭 AI.",
@@ -4686,6 +4958,11 @@
       "ai-hiring-freeze",
       "workforce-restructuring"
     ],
+    "sources": [
+      "CNBC 2025-10-15 https://www.cnbc.com/2025/10/15/jpmorgan-chase-goldman-sachs-ai-hiring.html",
+      "HR Executive https://hrexecutive.com/jpmorgan-ceo-we-have-displaced-people-from-ai-and-we-offer-them-other-jobs/",
+      "HR Dive https://www.hrdive.com/news/banks-ramp-up-ai-hiring-roi-efficiency-gains-evident-insights/746724/"
+    ],
     "summary": "",
     "headline": "",
     "problem": "",
@@ -4762,6 +5039,11 @@
       "gamification",
       "culture-change"
     ],
+    "sources": [
+      "HR Grapevine 2025-11-17 https://www.hrgrapevine.com/us/content/article/2025-11-17-meta-to-formally-review-employees-ai-performance-from-2026",
+      "eWeek 2025 https://www.eweek.com/news/meta-ai-performance-reviews/",
+      "Fortune 2024-12-03 https://fortune.com/2024/12/03/meta-openai-gpt-4-llama-coding-tool/"
+    ],
     "summary": "Meta(Facebook)는 2026년부터 모든 직원의 성과 평가에 <strong>AI 도구 채택·활용 수준을 공식 평가 항목</strong>으로 포함. 내부 AI 도구 <strong>Metamate</strong>(GPT-4 + Llama 기반 코딩·업무 어시스턴트)의 활용이 \"core expectation\". ⚠️ 자사 보고: Q4 2025 목표 — <strong>중앙 제품팀 코드 변경의 55%를 agent-assisted</strong>로, <strong>중간~시니어 엔지니어 80%가 AI 도구 활용</strong>. \"Level Up\" 게임화 프로그램으로 AI 채택 촉진.",
     "headline": "Meta(Facebook)는 2026년부터 모든 직원의 성과 평가에 AI 도구 채택·활용 수준을 공식 평가 항목으로 포함.",
     "problem": "<ul>\n<li><strong>Before</strong>: Meta 직원들의 <strong>AI 도구 채택률이 불균형</strong> — 일부 엔지니어만 적극 활용, 나머지는 기존 방식 유지. 자발적 채택만으로는 <strong>전사 AI transformation</strong> 속도가 부족</li>\n<li><strong>Pain point</strong>: Moderna(모든 직원에게 ChatGPT Enterprise 배포)·Deloitte(470k Claude)·PwC(65k upskilling) 등 경쟁사가 전사 AI 배포를 가속화하는 상황에서, Meta가 \"AI-first 기업\"이라는 포지셔닝을 유지하려면 <strong>채택을 기대가 아닌 의무</strong>로 전환 필요</li>\n<li><strong>Trigger</strong>: 내부 데이터에서 AI 도구 활용 직원의 생산성이 높다는 신호 → \"AI 채택을 성과 평가에 공식 반영\"이라는 <strong>가장 과감한 정책 결정</strong></li>\n</ul>",
@@ -4834,6 +5116,10 @@
       "self-service",
       "case-deflection"
     ],
+    "sources": [
+      "sources/hr-brew-moderna-total-rewards-2025-05.md",
+      "sources/hr-brew-ibm-moderna-2025-06.md"
+    ],
     "summary": "Moderna가 OpenAI Custom GPT로 구축한 <strong>Total Rewards 영역 직원 self-service 어시스턴트 2종</strong>:\n1. <strong>US Benefits Assistant GPT</strong> — 직원이 의료 등 혜택을 선택할 때 도움. Moderna 내부 <strong>HR GPT 사용량 2위</strong> (⚠️ 자사 보고)\n2. <strong>Equity Compensation GPT</strong> — 직원들이 가장 적게 이해하던 프로그램이라는 인식에서 출발해 출시. ⚠️ 자사 보고: 출시 후 해당 영역 이메일·티켓 <strong>\"a huge decrease\"</strong>\n두 GPT 모두 전형적인 <strong>HR case deflection</strong> 패턴 — 직원 자가 해결률을 높여 HR 팀 부담을 낮춤.",
     "headline": "Moderna가 OpenAI Custom GPT로 구축한 Total Rewards 영역 직원 self-service 어시스턴트 2종: 1.",
     "problem": "<ul>\n<li>대기업의 Total Rewards(의료·치과·401k·생명보험·stock/equity) 정책은 복잡하고, 직원이 개인 상황에 맞게 선택하려면 HR 담당자에게 묻는 경우가 많음</li>\n<li>Equity compensation은 <strong>용어(vesting·RSU·ESPP·exercise)만으로도 진입장벽이 커서</strong> 직원 이해도가 낮은 영역 — Moderna VP 발언이 이를 명시적으로 지적</li>\n<li>HR 팀은 반복적인 Q&A에 시간 소모 → \"진짜 필요한 업무\" 시간 부족</li>\n<li><strong>주의</strong>: Moderna의 공식 problem statement는 이 수준의 세부 진술이 없음. 위는 일반 해석 + VP의 \"most under-understood program\" 발언 기반.</li>\n</ul>",
@@ -4898,6 +5184,10 @@
       "performance-review",
       "summary",
       "annual"
+    ],
+    "sources": [
+      "sources/hr-brew-moderna-total-rewards-2025-05.md",
+      "sources/hr-brew-ibm-moderna-2025-06.md"
     ],
     "summary": "Moderna가 OpenAI Custom GPT 기반으로 구축한 HR 내부 도구. <strong>직원 본인의 연말 성과 리뷰를 요약</strong>해주는 기능. Moderna 내부 통계(2025년 3~4월)에서 <strong>HR GPT 중 메시지·사용자 수 1위</strong> (⚠️ 자사 보고, VP 발표 기준). HR Brew가 WorldatWork Total Rewards 컨퍼런스에서 취재. 단일 Tier 2 소스 기반이므로 stub 경계.",
     "headline": "Moderna가 OpenAI Custom GPT 기반으로 구축한 HR 내부 도구.",
@@ -4973,6 +5263,9 @@
       "public-pension",
       "accessibility"
     ],
+    "sources": [
+      "sources/kr-conglomerate-2026-q2-research.md"
+    ],
     "summary": "국민연금공단이 2025-09 <strong>'AI·혁신 추진단'</strong> 출범 — 기획이사 단장, <strong>CAIO(Chief AI Officer) 신설</strong>. 4개 분과 (연금·복지·기금운용·기관운영·시스템). <strong>AI 사원</strong> 활용 상담·홍보, <strong>AI 규정비서</strong>, <strong>AI 수어 영상안내</strong> 운영 중. 한국 공공기관·연기금 CAIO 도입 + AI 거버넌스 추진단 패턴의 표준 사례.",
     "headline": "국민연금공단이 2025-09 'AI·혁신 추진단' 출범 — 기획이사 단장, CAIO(Chief AI Officer) 신설.",
     "problem": "<ul>\n<li><strong>Before</strong>: 국민연금공단 ~7K 직원, 5,000만+ 국민 가입자 — 상담·규정 응대 부담 거대</li>\n<li><strong>Pain point</strong>: 공공기관 디지털 전환 + 정부 AI 정책 (한국 AI 기본법 2026-01) 대응</li>\n<li><strong>Trigger</strong>: 2025-09 AI·혁신 추진단 출범 — 기관 차원 AI 거버넌스 강화</li>\n</ul>",
@@ -5046,6 +5339,9 @@
       "organizational-redesign",
       "korea",
       "manufacturing"
+    ],
+    "sources": [
+      "sources/kr-conglomerate-2026-q2-research.md"
     ],
     "summary": "포스코DX가 2026 그룹 조직개편과 함께 <strong>인사·구매·경영분석 사무 업무 영역 ~110개 AI 에이전트</strong> 개발 중. 2026 그룹DX전략실장(임치현 UNIST 교수 영입), AI·로봇 융합 연구소장(윤일용) 신설로 그룹 차원 AI 거버넌스 강화. 우리은행 175 에이전트 woori-bank-175-ai-agents와 함께 KR 기업 <strong>AI 에이전트 portfolio 규모</strong> 트렌드의 제조업 reference.",
     "headline": "포스코DX가 2026 그룹 조직개편과 함께 인사·구매·경영분석 사무 업무 영역 ~110개 AI 에이전트 개발 중.",
@@ -5121,6 +5417,11 @@
       "conglomerate",
       "new-graduate"
     ],
+    "sources": [
+      "sources/sk-ax-ai-recruitment-service-2024.md",
+      "sources/sk-ax-insight-ai-recruitment-2024.md",
+      "sources/sedaily-sk-cc-adot-biz-hr-2025-02.md"
+    ],
     "summary": "SK 그룹이 <strong>2024년 하반기 신입사원 공채</strong>부터 적용한 생성형 AI 기반 채용 전 과정 자동화. 자사 계열사 sk-ax (구 SK C&C)와 skt 합작 솔루션. <strong>국내 최초 AICT(AI Competency Test)</strong>로 기존 코딩 테스트 폐지. 채용 전 단계를 생성형 AI가 처리하며, <strong>1차 면접은 AI가 진행·평가·결과 보고서 작성까지 100% 자동화</strong>. 초기 적용 계열사는 <strong>SK㈜ C&C, SKT, SK 브로드밴드</strong> 3곳. 2025년 그룹 전사 확대 및 SaaS 대외 확산이 공식 목표.",
     "headline": "SK 그룹이 2024년 하반기 신입사원 공채부터 적용한 생성형 AI 기반 채용 전 과정 자동화.",
     "problem": "<ul>\n<li>SK 그룹은 매년 수만 명 규모의 신입 공채를 진행 — 서류 심사·필기 평가에 소요되는 HR 인력·시간이 큼</li>\n<li>AI 시대에는 \"코드를 직접 짜는 능력\"보다 <strong>\"AI와 협업하여 문제를 해결하는 능력\"</strong>이 실제 업무 성과와 더 연관된다는 전제</li>\n<li>기존 코딩 테스트가 <strong>\"AI 사용이 실무 현실\"</strong> 인데 \"사용 금지\" 상황에서 평가되는 역설 → 평가 유효성 약화</li>\n<li>⚠ <strong>주의</strong>: 위 problem 진술은 \"SK AX의 AICT 도입 논리\"로 읽히지만, 구체 SK Group의 공식 문제 진술이 독립 소스로 확인된 바는 없음. 일반 해석.</li>\n</ul>",
@@ -5192,6 +5493,9 @@
       "agency-labor",
       "turnover"
     ],
+    "sources": [
+      "sources/visier-outsmart-2025-customers.md"
+    ],
     "summary": "Tampa General Hospital (12,000 FTE, 대형 미국 의료시스템)이 Visier 인력 분석 플랫폼을 활용해 공석율·이직 원인을 데이터로 분석하고 에이전시 노동(파견 간호사) 의존도를 70% 줄였다. 절감 재원 $50M+를 직원 보상에 재투자해 공석율 10% 미만을 달성했다. Visier Outsmart 2025 컨퍼런스에서 Business Performance Impact Vizzie Award 수상. Visier 고객 컨퍼런스 발표 기반으로 자사 보고 성격이 있으나, 독립 HIMSS Stage 7 인증(2025-06)이 병원의 분석 성숙도를 간접 검증.",
     "headline": "Tampa General Hospital (12,000 FTE, 대형 미국 의료시스템)이 Visier 인력 분석 플랫폼을 활용해 공석율·이직 원인을 데이터로 분석하고 에이전시 노동(파견 간호사) 의존도를 70% 줄였다.",
     "problem": "<ul>\n<li>입원 환자 파견 간호사(travel nurse) 과의존 → 고비용 구조</li>\n<li>인력 공석 원인 파악 데이터 부재 → 임시방편적 충원 반복</li>\n<li>HR과 재무 간 인력 데이터 단절 → 투자 의사결정 지연</li>\n</ul>",
@@ -5258,6 +5562,10 @@
       "manager-support",
       "review-draft"
     ],
+    "sources": [
+      "sources/workday-illuminate-pr-2025-09.md",
+      "sources/bersin-workday-illuminate-2024-09.md"
+    ],
     "summary": "Workday가 2025년 9월 Rising에서 <strong>Illuminate Performance Review Agent</strong>를 발표. 다양한 시스템의 데이터를 종합해 매니저에게 <strong>성과 리뷰 초안(first draft)</strong>을 자동 생성. 2026년 GA 예정. 기존 Illuminate 에이전트에서는 계약 실행 시간 <strong>65% 단축</strong>, 스태핑 변경 <strong>최대 90% 감소</strong>, 감사 증거 수집 <strong>연 900시간 절약</strong>, 급여 컴플라이언스 <strong>4배 빠름</strong> 등의 성과를 공유. sources/workday-illuminate-pr-2025-09.md",
     "headline": "Workday가 2025년 9월 Rising에서 Illuminate Performance Review Agent를 발표.",
     "problem": "<ul>\n<li>매니저가 성과 리뷰를 작성하는 데 <strong>직원당 수시간</strong> 소요 — 다수 시스템에서 데이터 수집 필요</li>\n<li>리뷰 품질의 <strong>불일관성</strong> — 매니저별 역량·시간 투입 편차</li>\n<li>Workday Rising 2025에서 발표된 7개 신규 에이전트 중 하나로, <strong>HRMS 내장 AI agent</strong> 트렌드의 핵심 sources/workday-illuminate-pr-2025-09.md</li>\n</ul>",
@@ -5316,6 +5624,11 @@
       "beamery",
       "forrester-roi",
       "engineering"
+    ],
+    "sources": [
+      "Beamery case study https://beamery.com/resources/case-studies/case-study-atkins-realis",
+      "Beamery Flex case study https://beamery.com/resources/case-studies/job-architecture-case-study-flex-skills-based-hiring-ai",
+      "Forrester TEI (referenced by Beamery)"
     ],
     "summary": "<strong>AtkinsRéalis</strong> ($8.6B 엔지니어링)가 Beamery로 skills-based 채용 전환. ⚠️ 벤더 주장: 신규 채용자가 <strong>25% 빨리 성과 마일스톤</strong> 도달, best-fit 후보 식별 <strong>30% 시간↓</strong>, 후보 engagement <strong>40%↑</strong>. <strong>Flex</strong> (전자 제조)는 skills mapping을 <strong>89% 단축</strong> (4~6개월→17일), <strong>1,200+ JD를 40개 역할 아키텍처로</strong> 통합, 스킬 추론 <strong>90% 적합도</strong>. <strong>Forrester TEI</strong>: Beamery 플랫폼 전체 <strong>467% ROI</strong>.",
     "headline": "AtkinsRéalis ($8.",
@@ -5380,6 +5693,9 @@
       "culture",
       "action-planning",
       "nudge"
+    ],
+    "sources": [
+      "sources/perceptyx-ex-impact-awards-2025.md"
     ],
     "summary": "Arca Continental Coca-Cola Southwest Beverages (AC-CCSWB, 미국 최대 코카콜라 보틀러 중 하나, 9,000+ 직원)이 Perceptyx Activate의 AI Intelligent Nudges를 통해 리더들에게 참여도 조사 결과 기반의 개인화 코칭 프롬프트를 제공했다. 2020~2025년 5년간 리더십 지수가 65% → 89.3%로 상승하고, 2024 연간 설문 주기에서 93%의 리더가 1,191개 액션 플랜을 생성했다. 2025 Perceptyx EX Impact Award 수상 + 2025 Coca-Cola Candler Cup(글로벌 보틀러 최우수상) 수상.",
     "headline": "Arca Continental Coca-Cola Southwest Beverages (AC-CCSWB, 미국 최대 코카콜라 보틀러 중 하나, 9,000+ 직원)이 Perceptyx Activate의 AI Intelligent Nudges를 통해 리더들에게 참여도 조사 ",
@@ -5447,6 +5763,10 @@
       "deloitte",
       "salesforce"
     ],
+    "sources": [
+      "Deloitte PR 2025-06-24 https://www.deloitte.com/us/en/about/press-room/deloitte-launches-ai-solution-suite-for-human-and-machine-workforce.html",
+      "PR Newswire 2025-06-24 https://www.prnewswire.com/news-releases/deloitte-launches-ai-solution-suite-to-help-organizations-enhance-their-human-and-machine-workforce-302488802.html"
+    ],
     "summary": "Deloitte가 2025-06-24에 발표한 <strong>Human Capital AI 솔루션 suite</strong>: <strong>Workforce Analyzer</strong> (AI가 직무·역할에 미치는 영향 평가) + <strong>Workforce Planner+</strong> (AI 기반 인력 수급 분석·전략 정렬) + <strong>HR AI Maturity Model</strong>. <strong>Salesforce</strong>가 named customer로 확인됨 (Ruth Hickin, VP Workforce Innovation). ⚠️ 벤더 주장: <strong>300+ HR 워크플로</strong>를 agentic AI로 재설계.",
     "headline": "Deloitte가 2025-06-24에 발표한 Human Capital AI 솔루션 suite: Workforce Analyzer (AI가 직무·역할에 미치는 영향 평가) + Workforce Planner+ (AI 기반 인력 수급 분석·전략 정렬) + HR AI Ma",
     "problem": "",
@@ -5506,6 +5826,11 @@
       "nyc-ll144",
       "compliance",
       "forrester"
+    ],
+    "sources": [
+      "HireVue official https://www.hirevue.com/",
+      "HireVue bias audit press release https://www.hirevue.com/press-release/hirevue-leads-industry-in-fair-and-ethical-hiring-practice-engaging-external-auditor-dci-consulting-group-for-external-bias-audit-of-algorithms",
+      "Forrester TEI study (referenced in reviews)"
     ],
     "summary": "HireVue는 <strong>AI 비디오 면접 + 게임 기반 역량 평가</strong> 플랫폼. 주요 성과: ⚠️ 벤더 주장 — time-to-hire <strong>60~89% 단축</strong>, 만족도 <strong>17~25% 향상</strong>. <strong>Forrester TEI</strong> 연구에서 major financial institution 대상 <strong>134% ROI</strong> 보고. ★ <strong>2020년 facial analysis 제거</strong> (AI 윤리 논란 후 자발적 결정). <strong>DCI Consulting, ORCAA, Landers Workforce Science</strong> 등 외부 독��� 감사 기관에 알고리즘 bias audit 의뢰.",
     "headline": "HireVue는 AI 비디오 면접 + 게임 기반 역량 평가 플랫폼.",
@@ -5571,6 +5896,9 @@
       "hire-to-retire",
       "hr-query-resolution",
       "case-deflection"
+    ],
+    "sources": [
+      "sources/ema-hitachi-agentic-hr-2025.md"
     ],
     "summary": "Hitachi는 Ema의 에이전틱 AI 플랫폼 위에 <strong>Skye</strong>라는 HR 전담 AI 컴패니언을 구축했다. 5개 사업부 + 공유 HR 서비스 조직(40,000명+ 지원)을 대상으로 2025년 초 파일럿을 시작했으며, 온보딩·교육·복리후생·오프보딩 등 20개+ 유스케이스를 커버한다. 초기 온보딩 기간을 4일 단축하고 HR 담당자 개입 시간을 신규입사자 1인당 20시간 → 12시간으로 줄였다.",
     "headline": "Hitachi는 Ema의 에이전틱 AI 플랫폼 위에 Skye라는 HR 전담 AI 컴패니언을 구축했다.",
@@ -5639,6 +5967,9 @@
       "korea",
       "public-energy"
     ],
+    "sources": [
+      "sources/kr-conglomerate-2026-q2-research.md"
+    ],
     "summary": "한국가스공사가 에너지 공공기관 최초 <strong>하이브리드 생성형 AI 플랫폼</strong> 도입 (2025-09 발주, 2026 구축). <strong>사내 전용 LLM (보안 민감 영역) + 상용 초거대 LLM (전문지식)</strong> 라우팅. 임직원 문서 초안·규정 검토·단순 행정 자동화. <strong>제논(GenON) 구축 사업 수주</strong>. 한국 공공기관 보안 vs 성능 trade-off 해법 표준 패턴.",
     "headline": "한국가스공사가 에너지 공공기관 최초 하이브리드 생성형 AI 플랫폼 도입 (2025-09 발주, 2026 구축).",
     "problem": "<ul>\n<li><strong>Before</strong>: 가스공사 ~3K 직원이 문서 초안·규정 검토를 manual</li>\n<li><strong>Pain point</strong>: 공공기관 보안 민감 영역 (에너지 인프라) + 성능 우수한 상용 LLM 활용 동시 필요</li>\n<li><strong>Trigger</strong>: 2025-09 발주 — 제논 우선협상자, 2026 구축</li>\n</ul>",
@@ -5701,6 +6032,11 @@
       "naver-cloud",
       "internal-ai"
     ],
+    "sources": [
+      "sources/mpm-ai-guide-2025-03.md",
+      "sources/mois-ai-common-infra-2025.md",
+      "sources/korea-kr-ai-admin-2025.md"
+    ],
     "summary": "한국 인사혁신처는 2025년 3월 공무원 대상 \"AI 활용가이드\"를 배포하여 생성형 AI 프롬프트 작성 기법과 HR 업무 적용 사례를 안내했다. ✅ <strong>Fact</strong> 행정안전부·과학기술정보통신부는 삼성SDS·네이버클라우드의 AI 대화형 서비스를 정부 내부망에서 보안 운영하는 \"범정부 AI 공통기반\" 시범 운영을 시작했다. sources/mpm-ai-guide-2025-03.md sources/mois-ai-common-infra-2025.md",
     "headline": "한국 인사혁신처는 2025년 3월 공무원 대상 \"AI 활용가이드\"를 배포하여 생성형 AI 프롬프트 작성 기법과 HR 업무 적용 사례를 안내했다.",
     "problem": "공무원 업무에서 생성형 AI 활용 수요가 높아졌으나, 민간 AI 서비스는 정부 내부망(망분리 환경)에서 사용이 불가능하고 데이터 유출 위험이 있었다. 인사혁신처는 공무원의 AI 리터러시 수준도 높여야 하는 이중 과제를 안고 있었다.",
@@ -5760,6 +6096,11 @@
       "conglomerate",
       "pay-structure"
     ],
+    "sources": [
+      "sources/newdaily-lotte-hr-2025-04.md",
+      "sources/etnews-lotte-job-pay-2025-04.md",
+      "sources/sedaily-lotte-dept-store-2025.md"
+    ],
     "summary": "롯데그룹은 2024년부터 일부 계열사를 시작으로 \"직무 기반 HR\" 인사제도를 순차적으로 도입·확대하고 있다. ✅ <strong>Fact</strong> 직무 전문성과 성과에 따라 보상을 차등 지급하는 직무급제로 전환하며, 연차와 무관하게 직무 전문성에 따른 레벨업 심사를 허용한다. 2025년에는 롯데백화점(직원 95.3% 찬성)·롯데웰푸드 등으로 도입 범위를 확대했다. sources/newdaily-lotte-hr-2025-04.md sources/sedaily-lotte-dept-store-2025.md",
     "headline": "롯데그룹은 2024년부터 일부 계열사를 시작으로 \"직무 기반 HR\" 인사제도를 순차적으로 도입·확대하고 있다.",
     "problem": "롯데그룹은 전통적인 연공서열 기반 보상 체계가 직무 전문성 강화와 혁신적 성과 창출을 저해한다고 판단했다. \"위기 돌파 카드\"로 직무 기반 HR을 채택하여 업무 생산성 강화와 신성장 동력 확보를 추진하고 있다.",
@@ -5817,6 +6158,10 @@
       "viva-glint",
       "engagement",
       "self-dogfooding"
+    ],
+    "sources": [
+      "Microsoft InsideTrack 2025 https://www.microsoft.com/insidetrack/blog/accelerating-employee-services-at-microsoft-with-the-employee-self-service-agent/",
+      "Microsoft InsideTrack https://www.microsoft.com/insidetrack/blog/how-microsoft-hr-is-using-viva-and-copilot-for-microsoft-365-to-empower-our-employees/"
     ],
     "summary": "Microsoft HR이 <strong>자사 제품 Viva + Microsoft 365 Copilot</strong>을 자체 HR 운영에 적용한 내부 배포 사례. 핵심은 <strong>Employee Self-Service Agent</strong>의 글로벌 phased rollout (UK→Canada→India→US→전 세계). Viva Glint 설문으로 Copilot 도입의 \"employee thriving\" 영향을 상관 측정. IBM AskHR과 마찬가지로 <strong>벤더 = 고객</strong>인 self-dogfooding 패턴.",
     "headline": "Microsoft HR이 자사 제품 Viva + Microsoft 365 Copilot을 자체 HR 운영에 적용한 내부 배포 사례.",
@@ -5879,6 +6224,10 @@
       "prompting-parties",
       "change-management",
       "consulting"
+    ],
+    "sources": [
+      "HR Executive https://hrexecutive.com/pwcs-hr-tech-leaders-prepare-to-train-u-s-workforce-on-chatgpt-technology/",
+      "HR Grapevine https://www.hrgrapevine.com/us/content/article/2025-04-02-prompting-parties-inside-pwcs-mission-to-get-employees-working-alongside-ai-agents"
     ],
     "summary": "PwC가 <strong>65,000명 미국 직원</strong>에게 GenAI(ChatGPT급) 업스킬링을 3년 계획으로 추진, 추가로 <strong>75,000명에게 agentic AI 파일럿</strong> 진행 중. 변화관리 전략으로 <strong>\"Prompting Parties\"</strong>(비공식 AI 사용법 공유 세션) + <strong>20인 자원봉사 AI 챔피언 네트워크</strong> + \"train the trainer\" 모델 운영. HR Executive(Tier 2) 확인.",
     "headline": "PwC가 65,000명 미국 직원에게 GenAI(ChatGPT급) 업스킬링을 3년 계획으로 추진, 추가로 75,000명에게 agentic AI 파일럿 진행 중.",
@@ -5943,6 +6292,9 @@
       "textio",
       "workday-integration",
       "gender-neutral"
+    ],
+    "sources": [
+      "sources/textio-tmobile-duolingo-dei-2025.md"
     ],
     "summary": "T-Mobile은 Textio의 AI 기반 포용적 언어 플랫폼을 ~125명 리크루터 + 9,000명+ 채용 관리자에게 배포해, 성 중립적 어조 편집 시 여성 지원자 +17%, Textio Score 90+ 달성 시 채용 소요 기간 5일 단축을 확인했다. Workday ATS에 Textio를 직접 통합해 JD 작성 시 실시간 AI 제안을 받는 구조다. 기업 합병 통합 과정 중에 도입했으며, 2025년 3월 HR Brew가 Textio의 스킬 기반 면접 도구 출시를 별도 보도.",
     "headline": "T-Mobile은 Textio의 AI 기반 포용적 언어 플랫폼을 ~125명 리크루터 + 9,000명+ 채용 관리자에게 배포해, 성 중립적 어조 편집 시 여성 지원자 +17%, Textio Score 90+ 달성 시 채용 소요 기간 5일 단축을 확인했다.",
@@ -6012,6 +6364,10 @@
       "textio",
       "gender"
     ],
+    "sources": [
+      "Harvard Business School Digital Initiative https://d3.harvard.edu/platform-digit/submission/textio-com-reducing-gender-bias-in-hiring-with-ai/",
+      "T-Mobile Textio case study https://alternativebadassery.com/wp-content/uploads/2022/12/T-Mobile-Final-Case-Study-2023.pdf"
+    ],
     "summary": "",
     "headline": "",
     "problem": "",
@@ -6074,6 +6430,9 @@
       "ai-adoption",
       "knowledge-work",
       "microsoft-365"
+    ],
+    "sources": [
+      "sources/toshiba-microsoft-viva-copilot-2025.md"
     ],
     "summary": "Toshiba는 \"도시바 리바이탈리제이션 플랜\" (FY2024–FY2026)의 일환으로 Microsoft 365 Copilot을 10,000명에게 배포했다. 400명 파일럿에서 5.6시간/월의 시간 절감이 확인되었으며, 전사 배포 시 연간 200,000시간 이상 절감이 예상된다. Viva Insights와 결합해 개인별 최적 Copilot 사용 패턴을 자동 추천하는 시스템을 구축했다.",
     "headline": "Toshiba는 \"도시바 리바이탈리제이션 플랜\" (FY2024–FY2026)의 일환으로 Microsoft 365 Copilot을 10,000명에게 배포했다.",
@@ -6144,6 +6503,10 @@
       "consulting",
       "workforce-strategy"
     ],
+    "sources": [
+      "HR Brew 2025-10-02 https://www.hr-brew.com/stories/2025/10/02/accenture-and-walmart-are-developing-workforce-strategies-with-ai-in-mind",
+      "Everest Group AI Services PEAK Matrix 2025 (Accenture assessment)"
+    ],
     "summary": "Accenture(733,000+ 직원, 글로벌 최대 컨설팅·IT 서비스 기업)가 자사 AI 학습 플랫폼을 내부 배포해 ⚠️ 자사 보고: <strong>과정 완료율 32% 향상, 교육 시간 50% 단축</strong>. 동시에 Walmart과 함께 \"<strong>AI 시대의 인력 전략을 어떻게 수립하는가</strong>\"에 대한 HR Brew 2025-10 기사에서 jointly covered.",
     "headline": "Accenture(733,000+ 직원, 글로벌 최대 컨설팅·IT 서비스 기업)가 자사 AI 학습 플랫폼을 내부 배포해 ⚠️ 자사 보고: 과정 완료율 32% 향상, 교육 시간 50% 단축.",
     "problem": "<ul>\n<li><strong>Before</strong>: Accenture 733,000+ 직원이 전통적 e-learning + classroom 방식으로 교육. ⚠️ 자사 보고: 과정 완료율이 낮고 교육 시간이 길어 실무 적용까지의 gap이 큼</li>\n<li><strong>Pain point</strong>: 글로벌 컨설팅 업계에서 <strong>\"직원 역량이 곧 매출\"</strong>인 구조 — 교육 효율이 직접적 비즈니스 성과와 연결. AI 기술 역량이 부족하면 고객 프로젝트에 배정 불가</li>\n<li><strong>Trigger</strong>: 경쟁사(Deloitte Claude 470k, PwC 65k upskilling) 대비 \"자사에 먼저 적용 → 고객에 판매\" 전략 실행</li>\n</ul>",
@@ -6208,6 +6571,9 @@
       "compliance",
       "adp",
       "payroll-automation"
+    ],
+    "sources": [
+      "sources/adp-assist-innovation-day-2025.md"
     ],
     "summary": "ADP는 Innovation Day 2025(2025-09-03)에서 ADP Assist의 새로운 AI 기능을 발표했다: ① 급여 이상 탐지 및 자동 수정 제안, ② 대화형 GenAI 분석(자연어 질문 → 즉시 차트/인사이트), ③ 규정 준수 자동화. 조기 도입 기업들이 급여 사이클당 최대 30분 절감을 보고했다(자사 보고). TechTarget(Tier 2)이 독립 보도. 플랫폼: Workforce Now, Global Payroll, Lyric HCM.",
     "headline": "ADP는 Innovation Day 2025(2025-09-03)에서 ADP Assist의 새로운 AI 기능을 발표했다: ① 급여 이상 탐지 및 자동 수정 제안, ② 대화형 GenAI 분석(자연어 질문 → 즉시 차트/인사이트), ③ 규정 준수 자동화.",
@@ -6277,6 +6643,11 @@
       "saas",
       "mid-enterprise"
     ],
+    "sources": [
+      "sources/clap-blog-hr-ai-trend-2026.md",
+      "sources/sisajournal-clap-2025.md",
+      "sources/thebell-diwhale-2025-10.md"
+    ],
     "summary": "디웨일이 운영하는 CLAP(클랩)는 중견·대기업 특화 AI 기반 성과관리 SaaS로, 주요 AI 기능은 주관식 평가 코멘트 AI 자동 요약, AI 피드백 생성, AI 원온원 미팅 내용 요약, AI 평가(서술형 리뷰 초안 작성), AI 성장 리포트 등이다. ⚠️ <strong>자사 보고</strong>: 인지그룹 등 중견기업에 공급 사례를 확보했으며 2025년 시장 확대 중. sources/clap-blog-hr-ai-trend-2026.md sources/sisajournal-clap-2025.md",
     "headline": "디웨일이 운영하는 CLAP(클랩)는 중견·대기업 특화 AI 기반 성과관리 SaaS로, 주요 AI 기능은 주관식 평가 코멘트 AI 자동 요약, AI 피드백 생성, AI 원온원 미팅 내용 요약, AI 평가(서술형 리뷰 초안 작성), AI 성장 리포트 등이다.",
     "problem": "<ul>\n<li><strong>Before (baseline)</strong>: 국내 중견·대기업의 성과 평가 시즌(월별·분기·연간)마다 관리자가 <strong>수동으로 주관식 평가 코멘트 작성</strong> + HR이 수백~수천 건의 평가 내용을 <strong>수동 취합·정리</strong>. 원온원 미팅 노트도 수기 기록. ❓ <strong>구체 시간/비용 baseline 미공개</strong> (관리자당 평가 작성 시간, HR 취합 소요 시간 등)</li>\n<li><strong>Pain point</strong>: (1) <strong>형식적·부정확한 평가 코멘트</strong> — 관리자가 시간 압박으로 \"복붙\"하거나 피상적으로 작성 → 직원 개발에 도움 안 됨. (2) <strong>HR 행정 부담</strong> — 평가 시즌에 HR 인력이 취합·정리에 과도 투입. (3) 원온원 미팅 내용이 <strong>기록되지 않거나 비체계적</strong> → 지속적 성과 관리 연결 부족</li>\n<li><strong>Trigger</strong>: 국내 중견기업(인지그룹 등)이 SaaS 기반 성과관리 도구를 탐색하면서 \"AI가 코멘트를 자동 요약·초안 작성해준다면\" 수요 발생 → CLAP의 AI 기능 확장</li>\n<li><strong>⚠️ 주의</strong>: 위 pain point는 CLAP이 타겟하는 <strong>국내 중견·대기업 성과관리의 일반적 문제</strong>이며, 특정 도입 기업의 공식 문제 진술은 미공개</li>\n</ul>",
@@ -6343,6 +6714,9 @@
       "culture",
       "people-science"
     ],
+    "sources": [
+      "sources/cultureamp-ai-coach-expansion-2025-10.md"
+    ],
     "summary": "Culture Amp이 2025년 Q3부터 <strong>AI Coach</strong>를 전 플랫폼에 확장 배포. Engage(설문 분석) + Perform(성과 리뷰)에 과학 기반 대화형 AI 코칭을 제공하며, <strong>6,800+ 기업·25M 직원</strong> 기반에 추가 비용 없이 제공. <strong>Asana</strong> Head of People Analytics가 \"AI Coach puts an expert coach in every manager's pocket\"으로 평가. 2026년 3월 Performance Culture Quadrant(PCQ) 발표 — 1,800개 기업 데이터에서 문화-성과 연결 기업이 시장가치 47% 프리미엄을 보인다는 자체 연구 공개. sources/cultureamp-ai-coach-expansion-2025-10.md",
     "headline": "Culture Amp이 2025년 Q3부터 AI Coach를 전 플랫폼에 확장 배포.",
     "problem": "<ul>\n<li>매니저가 성과 리뷰 작성 시 <strong>빈 페이지 앞에서 막힘</strong> — 과거 피드백·동료 리뷰를 직접 종합해야 하는 부담</li>\n<li>engagement 설문 결과를 받아도 <strong>구체적 액션 플랜 수립이 어려움</strong></li>\n<li>전문 코칭을 모든 매니저에게 확장하기엔 <strong>비용·시간 제약</strong></li>\n<li>C-suite 96%가 AI의 생산성 향상을 기대하나, 직원 77%는 AI가 업무량을 늘렸다고 보고 — <strong>AI 도입 기대-현실 갭</strong> sources/cultureamp-ai-coach-expansion-2025-10.md</li>\n</ul>",
@@ -6400,6 +6774,10 @@
       "sme",
       "saas",
       "candidate-matching"
+    ],
+    "sources": [
+      "sources/greetinghr-ats-guide-2025.md",
+      "sources/ezyeconomy-greetinghr-2025.md"
     ],
     "summary": "그리팅(GreetingHR)은 국내 1위 채용 관리 솔루션(ATS/TRM)으로, 2025년 고용노동부 \"채용관리 솔루션 지원사업\" 공급기업으로 선정되어 중소기업 도입률이 전년 대비 158% 급증했다. ⚠️ <strong>자사 보고</strong>: 그리팅 도입 시 채용 소요시간 약 65% 단축, 채용 비용 약 50% 절감을 주장한다. AI를 활용한 정교한 인재풀 구축과 기업 맞춤형 후보자 매칭이 핵심 차별점이다. sources/greetinghr-ats-guide-2025.md sources/ezyeconomy-greetinghr-2025.md",
     "headline": "그리팅(GreetingHR)은 국내 1위 채용 관리 솔루션(ATS/TRM)으로, 2025년 고용노동부 \"채용관리 솔루션 지원사업\" 공급기업으로 선정되어 중소기업 도입률이 전년 대비 158% 급증했다.",
@@ -6471,6 +6849,11 @@
       "gloat",
       "sap"
     ],
+    "sources": [
+      "Eightfold case study https://eightfold.ai/learn/how-hsbc-is-staying-talent-forward-in-times-of-change/",
+      "Gloat case study https://resources.gloat.com/resources/hsbc-customer-success-story/",
+      "Accenture case study https://www.accenture.com/us-en/case-studies/talent-organization/hsbc-powers-talent-acquisition-future-ready-workforce"
+    ],
     "summary": "",
     "headline": "",
     "problem": "<ul>\n<li><strong>Before</strong>: HSBC(275,000 직원)의 TA(채용)와 TM(인재관리)이 <strong>사일로화</strong>되어 운영. 채용은 전통적 CV 기반, 내부 이동은 <strong>가시성 부족</strong>으로 외부 채용에 과도 의존</li>\n<li><strong>Pain point</strong>: 글로벌 은행의 <strong>skills transformation 압박</strong> — 디지털·AI 역량 인력 확보가 시급하지만 기존 채용 방식으로는 속도·품질 부족. ⚠️ Fortune Europe 보도: HSBC가 다른 유럽 은행보다 <strong>30% 더 많은 AI 채용 공고</strong>를 게시 (인력 전환 가속화 필요 반증)</li>\n<li><strong>Trigger</strong>: SAP SuccessFactors(Core HRIS)만으로는 skills-based hiring + internal mobility 모두를 커버하기 어렵다는 판단 → Eightfold(TA) + Gloat(TM) + Accenture(구현) 멀티벤더 결정</li>\n</ul>",
@@ -6533,6 +6916,9 @@
       "korea",
       "pilot"
     ],
+    "sources": [
+      "sources/kr-conglomerate-2026-q2-research.md"
+    ],
     "summary": "LG U+의 사내 전용 AI 에이전트 <strong>'지혜(Wisdom)'</strong> (2025-05 파일럿). 이메일 번역·파일 요약·코드리뷰·내부 코드 분석/오류 사전 탐지. CIO 정성권: \"2025년이 AI 에이전트 사용 확산 원년\". 한국 통신사 중 사내 AI 에이전트 첫 공개 사례.",
     "headline": "LG U+의 사내 전용 AI 에이전트 '지혜(Wisdom)' (2025-05 파일럿).",
     "problem": "<ul>\n<li><strong>Before</strong>: LG U+ 직원이 이메일·문서·코드를 manual 처리</li>\n<li><strong>Pain point</strong>: 통신사 코드 base 거대 + glob·다국적 파트너 이메일 다언어</li>\n<li><strong>Trigger</strong>: 2025 한국 통신사 사내 AI 가속</li>\n</ul>",
@@ -6587,6 +6973,10 @@
       "internal-mobility",
       "pharma",
       "phenom"
+    ],
+    "sources": [
+      "BusinessWire/Phenom 2025-03-12 https://www.businesswire.com/news/home/20250312351615/en/Phenom-Announces-2025-Talent-Experience-Award-Winners-Global-Enterprises-Set-New-HR-Benchmarks",
+      "Phenom customers https://www.phenom.com/customers"
     ],
     "summary": "Merck KGaA(독일 다름슈타트, 60,000+ 직원, 제약·화학·생명과학)가 Phenom Talent Experience 플랫폼을 도입해 <strong>전 직원 과반(36,000+)이 활발 사용</strong>, <strong>200,000+ 스킬 등록, 29,000+ 학습 콘텐츠 중앙화, 1,000+ 멘토십</strong> 운영. Gloat(Unilever·Schneider) 대비 <strong>Phenom이 talent marketplace + learning + mentoring을 통합한 use case</strong>.",
     "headline": "Merck KGaA(독일 다름슈타트, 60,000+ 직원, 제약·화학·생명과학)가 Phenom Talent Experience 플랫폼을 도입해 전 직원 과반(36,000+)이 활발 사용, 200,000+ 스킬 등록, 29,000+ 학습 콘텐츠 중앙화, 1,000+ 멘토",
@@ -6653,6 +7043,10 @@
       "ai-insights",
       "retail"
     ],
+    "sources": [
+      "Qualtrics press 2025-10 https://www.qualtrics.com/articles/news/qualtrics-accelerates-ai-leadership-and-value-with-experience-agents/",
+      "BenefitNews https://www.benefitnews.com/news/how-adidas-and-allstate-use-ai-to-make-employee-feedback-more-impactful"
+    ],
     "summary": "adidas가 Qualtrics XM AI를 도입해 ⚠️ 벤더 주장: <strong>수동 분석 95%↓</strong>, <strong>매니저의 개인화 행동 계획 작성 70%↑</strong>. Dr. Sebastian Projahn (Sr. Director People Intelligence, adidas): <em>\"We leveraged Qualtrics AI to democratize insights, reduce bias, and save time\"</em> — 특히 매장·물류센터 매니저에게 즉시 인사이트 제공.",
     "headline": "adidas가 Qualtrics XM AI를 도입해 ⚠️ 벤더 주장: 수동 분석 95%↓, 매니저의 개인화 행동 계획 작성 70%↑.",
     "problem": "",
@@ -6717,6 +7111,9 @@
       "finance",
       "planned"
     ],
+    "sources": [
+      "sources/kr-conglomerate-2026-q2-research.md"
+    ],
     "summary": "삼성화재가 2026년 임직원용 RAG 기반 AI 챗봇 도입 추진 (2025-11 발표). 보험 약관·특약은 물론 <strong>사내 규정 질의응답</strong>까지 커버 → 타 부서 문의 절감 목표. 삼성생명 중심 그룹 AI센터 126명이 인접 인프라 제공. 한국 손보사 중 최초 사례.",
     "headline": "삼성화재가 2026년 임직원용 RAG 기반 AI 챗봇 도입 추진 (2025-11 발표).",
     "problem": "<ul>\n<li><strong>Before</strong>: 보험사 직원이 약관·특약·사내 규정 search 시 sharepoint·시니어 문의 의존</li>\n<li><strong>Pain point</strong>: 보험 약관·특약 양 거대 + 빈번한 변경 → 신입·경력 모두 학습 부담</li>\n<li><strong>Trigger</strong>: 2026 삼성생명 중심 그룹 AI센터 (126명) 인접 인프라 활용</li>\n</ul>",
@@ -6773,6 +7170,9 @@
       "depression",
       "anxiety",
       "employee-assistance"
+    ],
+    "sources": [
+      "sources/spring-health-general-mills-case.md"
     ],
     "summary": "<strong>General Mills</strong>가 전통 EAP(Employee Assistance Program)의 <strong>1% 이용률</strong> 문제를 해결하기 위해 <strong>Spring Health</strong>의 AI 기반 정밀 정신건강 플랫폼을 도입. 14개월 내 <strong>28% 직원 등록, 이용률 26%</strong> (기존 대비 26배), <strong>우울증 58% 증상 개선</strong>(평균 2.46 세션), <strong>불안 49% 개선</strong>(1.4 세션), 전체 <strong>67% 개선</strong>을 보고. Spring Health는 AI를 활용해 직원-치료사 매칭·초기 평가·치료 경로 최적화를 수행하며, 2026년 기준 50M+ lives 지원. sources/spring-health-general-mills-case.md",
     "headline": "General Mills가 전통 EAP(Employee Assistance Program)의 1% 이용률 문제를 해결하기 위해 Spring Health의 AI 기반 정밀 정신건강 플랫폼을 도입.",
@@ -6847,6 +7247,9 @@
       "time-attendance",
       "payroll-automation"
     ],
+    "sources": [
+      "sources/ukg-healthcare-scheduling-2026-02.md"
+    ],
     "summary": "UKG가 AI 기반 워크포스 스케줄링·인텔리전스 솔루션을 확대하며, 미국 최대 헬스케어 시스템의 <strong>90% 가까이</strong>가 UKG를 사용한다고 발표(2026-02). 대표 고객 사례로 <strong>KC CARE Health Center</strong>가 리텐션 <strong>92% 개선</strong>·효율성 <strong>60% 향상</strong>, <strong>Jetro Restaurant Depot</strong>이 UKG Rapid Hire로 연간 소싱·온보딩 비용 <strong>$1.8M 절감</strong>(2025), 연 <strong>$2.2M 절감</strong> 전망. 2025년 11월 <strong>Workforce Intelligence Hub</strong> 출시 — AI 기반 스케줄·타임·채용·성과·급여 데이터를 실시간 통합 뷰로 제공. sources/ukg-healthcare-scheduling-2026-02.md",
     "headline": "UKG가 AI 기반 워크포스 스케줄링·인텔리전스 솔루션을 확대하며, 미국 최대 헬스케어 시스템의 90% 가까이가 UKG를 사용한다고 발표(2026-02).",
     "problem": "<ul>\n<li>프론트라인(의료·소매·외식) 인력의 <strong>교대 스케줄링 복잡성</strong> — 자격증·컴플라이언스·선호도·공정근무법 등 다중 제약</li>\n<li>높은 이직률 → <strong>채용·온보딩 비용 반복 발생</strong></li>\n<li>스케줄·타임·급여 데이터가 <strong>사일로화</strong> → 실시간 의사결정 불가</li>\n<li>프론트라인 직원의 <strong>번아웃</strong> — 비효율 스케줄링이 주 원인 중 하나</li>\n</ul>",
@@ -6903,6 +7306,9 @@
       "knowledge-management",
       "ai-agent",
       "async-collaboration"
+    ],
+    "sources": [
+      "sources/verified-pwc-doc-2026-05.md"
     ],
     "summary": "Viven AI — Eightfold 공동창업자 Ashutosh Garg·Varun Kacholia가 분사 창업한 신생 회사. 2025-10-15 stealth 탈출과 함께 Khosla Ventures·Foundation Capital 등으로부터 <strong>$35M seed funding</strong> 확보. 핵심 컨셉: <strong>\"Digital Twin of unavailable coworkers\"</strong> — 부재중·휴직·시차 동료의 지식·전문성·맥락을 LLM 기반으로 재현해 다른 직원이 query 가능. 비동기 협업의 \"동료 부재 시 지식 단절\" 문제 해결 시도.\n> 📌 <strong>중요</strong>: PwC 자료에서 \"Eightfold Digital Twin (2025)\"으로 표기된 기능은 실제로는 본 분사 회사 Viven AI 제품. Eightfold 본체와 별개. Mastercard·다른 Eightfold 고객사에 deploy됐다는 증거 없음.",
     "headline": "Viven AI — Eightfold 공동창업자 Ashutosh Garg·Varun Kacholia가 분사 창업한 신생 회사.",
@@ -6964,6 +7370,9 @@
       "hr-ops",
       "manager-engagement",
       "journey-orchestration"
+    ],
+    "sources": [
+      "sources/enboarder-zapier-onboarding-2022.md"
     ],
     "summary": "Zapier (워크플로 자동화 SaaS, 100% 원격, 30개국 ~800명)은 Enboarder 플랫폼으로 온보딩 자동화를 구현해 수작업 온보딩 태스크 206,000분(86 근무 주) 절감, 채용 관리자 참여율 +10%, 신규 입사자의 온보딩 최우수 평가 가능성 2.5배 향상을 달성했다. 2022년 케이스 스터디; Enboarder는 이후 2025년 SmartRecruiters와 통합 파트너십을 맺고 AI 네이티브 온보딩 플랫폼으로 확장. Deloitte, KPMG, ING, T-Mobile, Cisco도 Enboarder 고객으로 확인.",
     "headline": "Zapier (워크플로 자동화 SaaS, 100% 원격, 30개국 ~800명)은 Enboarder 플랫폼으로 온보딩 자동화를 구현해 수작업 온보딩 태스크 206,000분(86 근무 주) 절감, 채용 관리자 참여율 +10%, 신규 입사자의 온보딩 최우수 평가 가능성 2.",
@@ -7032,6 +7441,9 @@
       "real-time-coaching",
       "feedback"
     ],
+    "sources": [
+      "sources/15five-kona-launch-2025-05.md"
+    ],
     "summary": "15Five가 2025년 5월 출시한 <strong>Kona</strong>는 AI 기반 매니저 효과성 코치로, 1:1 미팅에 자동 참여해 대화를 전사(transcribe)하고 요약·액션 아이템을 생성하며, 성과 리뷰·engagement 설문·이전 미팅 맥락을 통합 분석해 실시간 코칭 팁을 제공한다. <strong>ReUp Education</strong>이 초기 도입 고객으로 파일럿 → 전사 매니저 롤아웃을 완료했다. sources/15five-kona-launch-2025-05.md",
     "headline": "15Five가 2025년 5월 출시한 Kona는 AI 기반 매니저 효과성 코치로, 1:1 미팅에 자동 참여해 대화를 전사(transcribe)하고 요약·액션 아이템을 생성하며, 성과 리뷰·engagement 설문·이전 미팅 맥락을 통합 분석해 실시간 코칭 팁을 제공한다",
     "problem": "<ul>\n<li>신임 매니저에게 코칭을 제공하고 싶지만 <strong>전문 코치 비용이 높아 스케일 불가</strong></li>\n<li>매니저의 1:1 미팅이 형식적으로 흐르기 쉬움 — <strong>구조화된 피드백·후속 조치 부재</strong></li>\n<li>HR 팀이 매니저 효과성을 측정할 수 있는 <strong>행동 변화 데이터 부족</strong></li>\n<li>ReUp Education은 빠르게 성장하는 조직에서 <strong>신임 매니저 지원</strong>이 시급했음 sources/15five-kona-launch-2025-05.md</li>\n</ul>",
@@ -7091,6 +7503,9 @@
       "vendor-risk",
       "hr-ai-council",
       "risk-registry"
+    ],
+    "sources": [
+      "sources/holistic-ai-allegis-bias-audit-2025.md"
     ],
     "summary": "Allegis Group (글로벌 인재·스태핑 기업, ~$12B 매출, 9개 운영 자회사)이 Holistic AI의 거버넌스 플랫폼을 도입해 기존 145개로 파악하던 AI 시스템이 실제 500~600개 도메인·툴에 달한다는 사실을 발견하고, 중앙화된 리스크 레지스트리와 연속 모니터링 체계를 구축했다. 고위험 AI 프로젝트 50% 감소, 감사 시간 수주 → 수시간 단축이 주요 성과로 보고되었다(⚠️ 벤더 주장). 2025년 6월 공개.",
     "headline": "Allegis Group (글로벌 인재·스태핑 기업, ~$12B 매출, 9개 운영 자회사)이 Holistic AI의 거버넌스 플랫폼을 도입해 기존 145개로 파악하던 AI 시스템이 실제 500~600개 도메인·툴에 달한다는 사실을 발견하고, 중앙화된 리스크 레지스트리와",
@@ -7157,6 +7572,10 @@
       "ai-tutor",
       "skills-capability-model",
       "product-launch"
+    ],
+    "sources": [
+      "sources/bersin-galileo-learn-2025-05.md",
+      "sources/bersin-ld-revolution-2025-06.md"
     ],
     "summary": "Josh Bersin Co.가 2025년 5월에 발표한 <strong>AI-native 기업 학습 플랫폼</strong>. Sana Labs의 AI foundation을 기반으로, 기존 콘텐츠(PDF·Word·오디오·비디오·SCORM)를 자동으로 코스·assessment·simulation으로 변환. <strong>외부 공개 고객</strong>: ✅ <strong>Workday internal leadership academy</strong> (Bersin 2025-06 follow-up에서 확인). Bersin Co. 자체 HR Academy 재전환 사례(8년 자료 → 5개월 만에 750 learning objects)와 함께 2건의 deployment 레퍼런스.",
     "headline": "Josh Bersin Co.",
@@ -7234,6 +7653,9 @@
       "continuous-feedback",
       "bias-reduction"
     ],
+    "sources": [
+      "sources/betterworks-nextgen-2026-01.md"
+    ],
     "summary": "Betterworks가 2026년 1월 <strong>NextGen</strong> AI-native 성과관리 플랫폼을 출시. <strong>400+</strong> 고객 우선순위 기능을 반영, <strong>Goal Intelligence</strong> (역할·팀·회사 우선순위 기반 SMART 목표 자동 추천), AI 기반 평가 편향 감소·일관성 향상, 부서·지역별 AI 기능 단계적 활성화를 지원. <strong>Colgate-Palmolive, Intuit, ATB Financial, Kuehne+Nagel</strong> 등이 고객. 2026 State of Performance 보고서에서 임원 vs 직원의 AI 성과관리 준비도 인식 <strong>6배 차이</strong>를 발견. sources/betterworks-nextgen-2026-01.md",
     "headline": "Betterworks가 2026년 1월 NextGen AI-native 성과관리 플랫폼을 출시.",
     "problem": "<ul>\n<li>전통 성과 관리가 연 1~2회 이벤트에 그침 → <strong>연속 피드백·목표 관리</strong> 수요 증가</li>\n<li>목표 설정 시 매니저·직원이 SMART 기준에 맞추기 어려움 → <strong>비구체적·비측정 목표 남발</strong></li>\n<li>성과 리뷰에서 <strong>평가자 편향</strong>(recency bias, halo effect) 문제</li>\n<li>글로벌 기업에서 지역별 규제(EU AI Act, GDPR 등)에 맞춰 <strong>AI 기능 차별 적용</strong> 필요</li>\n<li>임원은 AI 성과관리 준비됐다고 보지만 직원은 6배 덜 준비됐다고 인식 sources/betterworks-nextgen-2026-01.md</li>\n</ul>",
@@ -7292,6 +7714,9 @@
       "learning-path",
       "skills-first",
       "enterprise-learning"
+    ],
+    "sources": [
+      "sources/degreed-ericsson-lens-2025.md"
     ],
     "summary": "Ericsson (통신 인프라·장비, 스웨덴/글로벌)은 Degreed의 LXP 플랫폼을 활용한 스킬 퍼스트 전략으로 <strong>30,000명 이상의 직원이 AI 역량을 갖추게 됐다</strong>고 공개했다. Degreed LENS 2025(2025-04-15) 컨퍼런스의 고객 사례로 소개. 구체적 학습 프로그램 구성·완료율·기간은 미공개. Degreed Maestro 조기 접근 고객 중 하나.",
     "headline": "Ericsson (통신 인프라·장비, 스웨덴/글로벌)은 Degreed의 LXP 플랫폼을 활용한 스킬 퍼스트 전략으로 30,000명 이상의 직원이 AI 역량을 갖추게 됐다고 공개했다.",
@@ -7363,6 +7788,9 @@
       "smb",
       "startup"
     ],
+    "sources": [
+      "sources/flex-korea-hr-saas-2025.md"
+    ],
     "summary": "<strong>플렉스(flex)</strong>는 한국 올인원 HR SaaS 플랫폼으로, <strong>6만+ 기업</strong> 가입·<strong>ARR 300억원</strong> 돌파, 기업가치 <strong>5,000억원</strong> 평가. 인사·급여·채용·성과관리·전자계약·비용관리를 단일 플랫폼에 통합. 2025년 <strong>OCR 기반 수기 근무표 자동변환</strong> + <strong>노동법·세법 AI 에이전트 상담</strong> 기능의 순차 도입을 발표하며, \"SaaS → Service as a Software\" 패러다임 전환을 선언. sources/flex-korea-hr-saas-2025.md",
     "headline": "플렉스(flex)는 한국 올인원 HR SaaS 플랫폼으로, 6만+ 기업 가입·ARR 300억원 돌파, 기업가치 5,000억원 평가.",
     "problem": "<ul>\n<li>한국 중소·중견기업의 HR 업무가 <strong>엑셀·수기 관리</strong>에 의존 — 특히 급여·근태</li>\n<li>노동법·세법이 복잡하고 빈번히 변경 → <strong>전문 인력 없는 기업이 컴플라이언스 위험</strong> 노출</li>\n<li>수기 근무표 → 디지털 전환 시 <strong>입력 오류·시간 낭비</strong></li>\n<li>국내 HR SaaS 시장에서 AI 기능은 아직 초기 단계</li>\n</ul>",
@@ -7424,6 +7852,9 @@
       "korea",
       "gs-group"
     ],
+    "sources": [
+      "sources/kr-conglomerate-2026-q2-research.md"
+    ],
     "summary": "GS칼텍스 임직원 전용 생성형 AI 통합 플랫폼 <strong>'AIU'</strong> 오픈 (2025). 안전·편리한 실무 활용 환경 구축이 도입 명분. 정유·에너지 기업 사내 AI 플랫폼 사례.",
     "headline": "GS칼텍스 임직원 전용 생성형 AI 통합 플랫폼 'AIU' 오픈 (2025).",
     "problem": "<ul>\n<li><strong>Before</strong>: GS칼텍스 ~3K 직원이 정유·안전 매뉴얼·정책을 manual search</li>\n<li><strong>Pain point</strong>: 정유 산업 안전 critical + 매뉴얼 양 거대</li>\n<li><strong>Trigger</strong>: 2025 한국 기업 사내 AI 플랫폼 가속</li>\n</ul>",
@@ -7479,6 +7910,9 @@
       "goals-ai",
       "attrition-risk",
       "slack-integration"
+    ],
+    "sources": [
+      "sources/lattice-ai-performance-features-2025.md"
     ],
     "summary": "Lattice는 성과관리·engagement·보상 통합 SaaS로, <strong>AI Performance Summarization</strong> (리뷰 주기 중 받은 피드백·리뷰를 자동 요약해 핵심 트렌드 도출), <strong>Goals AI Assistance</strong> (자연어로 목표 쿼리·요약·분석), <strong>AI Agent</strong> (Slack/Teams 내장, 개인별 이탈 리스크 탐지)를 제공한다. <strong>Ruggable</strong> VP of People이 \"Lattice AI for engagement로 비즈니스의 다른 영역에서도 AI 필요성을 입증했다\"고 평가. 2026년 상반기 AI Agent가 Slack/Teams 내 작동하는 업데이트 발표.",
     "headline": "Lattice는 성과관리·engagement·보상 통합 SaaS로, AI Performance Summarization (리뷰 주기 중 받은 피드백·리뷰를 자동 요약해 핵심 트렌드 도출), Goals AI Assistance (자연어로 목표 쿼리·요약·분석), AI A",
@@ -7545,6 +7979,9 @@
       "korea",
       "lgcns"
     ],
+    "sources": [
+      "LG 미디어 릴리즈 2025 https://www.lg.co.kr/media/release/29289"
+    ],
     "summary": "LG CNS (LG 그룹 IT 서비스 계열사)가 에이전틱 AI 기반 HR 채용·인사 시스템을 개발. <strong>대규모 채용 시</strong> 인사 시스템에 제출된 수만 건의 자기소개서·인적성검사 데이터와 기존 인사 문서를 <strong>AI가 자동 분석</strong>해 적합 인재를 추천하고, <strong>지원자별 면접 질문을 자동 생성</strong>. ⚠️ 자사 보고: 업무 생산성 약 <strong>26% 개선</strong>. 아키텍처는 <strong>Knowledge Lake + Hub + Refiner + Router</strong> 4개 컴포넌트로 구성.",
     "headline": "LG CNS (LG 그룹 IT 서비스 계열사)가 에이전틱 AI 기반 HR 채용·인사 시스템을 개발.",
     "problem": "",
@@ -7607,6 +8044,10 @@
       "europe",
       "interview-scheduling"
     ],
+    "sources": [
+      "Paradox case study https://www.paradox.ai/case-studies/nestle",
+      "Emerj AI Research https://emerj.com/artificial-intelligence-at-nestle/"
+    ],
     "summary": "Nestlé(275,000+ 직원, 글로��� 최대 식품기업)가 Paradox의 conversational AI <strong>Olivia</strong>를 채용에 도입. ⚠️ 벤더 주장: <strong>인터뷰 스케줄링 600% 증가</strong>. Chipotle(restaurant) + Nestlé(FMCG) + 7-Eleven(retail) → Paradox의 <strong>식품·소비재·리테일 수직 시장 지배력</strong>이 wiki 데이터로 더 명확해짐.",
     "headline": "Nestlé(275,000+ 직원, 글로��� 최대 식품기업)가 Paradox의 conversational AI Olivia를 채용에 도입.",
     "problem": "",
@@ -7666,6 +8107,9 @@
       "ai-analytics",
       "role-clustering",
       "swp"
+    ],
+    "sources": [
+      "sources/orgvue-salesforce-henshaw-ai-2025.md"
     ],
     "summary": "Salesforce의 Organizational Strategy & Effectiveness 팀이 Orgvue의 Henshaw AI(직무 클러스터링 AI)를 통해 8,000개 직위를 83개 클러스터로 자동 분류했다. OD·SWP 타임라인을 \"최소 6개월\" 단축했다고 자사 보고. Orgvue Henshaw AI는 2025년 12월 정식 출시. 직무체계 구축 시간 6개월 → 6일 단축은 Orgvue의 일반 고객 사례로도 인용.",
     "headline": "Salesforce의 Organizational Strategy & Effectiveness 팀이 Orgvue의 Henshaw AI(직무 클러스터링 AI)를 통해 8,000개 직위를 83개 클러스터로 자동 분류했다.",
@@ -7730,6 +8174,10 @@
       "ticket-routing",
       "genai"
     ],
+    "sources": [
+      "ServiceNow 공식 https://www.servicenow.com/products/ai-agents.html",
+      "Klover.ai 분석 https://www.klover.ai/servicenow-ai-strategy-analysis-of-ai-dominance-in-enterprise-software/"
+    ],
     "summary": "ServiceNow의 <strong>Now Assist</strong>는 HRSD(HR Service Delivery) 모듈에 통합된 GenAI 기능. HR 케이스 요약·해결 노트 생성·직원 셀프서비스 자동 응답을 제공. ⚠️ 벤더 주장: 54% helpfulness rate. Now Assist <strong>ACV $600M</strong> 달성 (2025년 말), QoQ 150%+ 딜 성장. HR 영역에서는 <strong>티켓 분류·라우팅·지식베이스 자동 유지</strong>에 특화 — moderna-ask-hr-routing의 \"routing\" 기능과 유사하지만 ITSM DNA를 가진 접근법.",
     "headline": "ServiceNow의 Now Assist는 HRSD(HR Service Delivery) 모듈에 통합된 GenAI 기능.",
     "problem": "",
@@ -7788,6 +8236,10 @@
       "skills-matching",
       "redeployment",
       "project-staffing"
+    ],
+    "sources": [
+      "sources/i4cp-unilever-flex-2019-12.md",
+      "sources/gloat-unilever-success-story-2024.md"
     ],
     "summary": "Unilever는 2019년부터 <strong>Gloat</strong>와 파트너십으로 <strong>\"FLEX Experiences\"</strong>라는 사내 AI 기반 talent marketplace를 운영. 직원 프로필(스킬·관심·purpose)을 기반으로 내부 프로젝트·역할 기회를 추천 매칭. <strong>매니저 승인 불필요</strong> 원칙이 특징 (본업 유지 전제). Internal mobility / project staffing / redeployment 영역의 대표 레퍼런스.",
     "headline": "Unilever는 2019년부터 Gloat와 파트너십으로 \"FLEX Experiences\"라는 사내 AI 기반 talent marketplace를 운영.",
@@ -7861,6 +8313,10 @@
       "org-design",
       "providence"
     ],
+    "sources": [
+      "Visier 공식 https://www.visier.com/products/people-analytics-ai-agent/",
+      "TechIntelPro 2025 https://techintelpro.com/news/hr/ai/visier-org-design-ai-powered-workforce-planning-at-hr-tech-2025"
+    ],
     "summary": "Visier는 <strong>People Analytics 전문 AI 플랫폼</strong>. 주력 AI 제품 <strong>Vee</strong>는 자연어로 workforce 데이터에 질문하면 즉시 인사이트를 제공하는 디지털 어시스턴트. 2025년 HR Tech에서 <strong>Visier Org Design</strong> 출시 — AI 기반 조직 설계 + workforce planning 통합. 고객 <strong>Providence (헬스케어)</strong>는 Visier로 <strong>2,000+ 간호사(caregiver) proactive onboarding + vacancy forecasting</strong> 달성.",
     "headline": "Visier는 People Analytics 전문 AI 플랫폼.",
     "problem": "",
@@ -7920,6 +8376,10 @@
       "role-alignment",
       "workforce-planning",
       "internal-mobility"
+    ],
+    "sources": [
+      "sources/bersin-workday-illuminate-2024-09.md",
+      "sources/workday-illuminate-pr-2025-09.md"
     ],
     "summary": "Workday HCM 플랫폼에 내장된 AI 기능으로, <strong>조직의 직무 체계(job architecture)를 분석·생성·관리</strong>한다. Bersin의 2024-09 분석에서는 \"skill gap·직무 통합 기회·역할 부적합 식별\"(분석형)로, 2025-09 Workday press release에서는 \"직무 사다리(job ladder)의 생성·관리 자동화\"(구성형)로 묘사된다. 두 설명은 상호 모순은 아니며, 2024-09 이후 기능이 확장되었거나 측면이 다른 것으로 보이나 <strong>공식 확인은 없다</strong>.",
     "headline": "Workday HCM 플랫폼에 내장된 AI 기능으로, 조직의 직무 체계(job architecture)를 분석·생성·관리한다.",
@@ -7993,6 +8453,9 @@
       "asia-pacific",
       "volume-hiring"
     ],
+    "sources": [
+      "HireVue case study https://www.hirevue.com/case-studies/cathay-pacific-ondemand-case-study"
+    ],
     "summary": "",
     "headline": "",
     "problem": "",
@@ -8057,6 +8520,9 @@
       "compliance",
       "mid-market",
       "douzone"
+    ],
+    "sources": [
+      "sources/taxwatch-douzone-one-ai-2024-12.md"
     ],
     "summary": "더존비즈온(국내 ERP·급여 dominant player)이 자사 ONE AI 제품군에 포함시킨 <strong>연말정산 end-to-end 자동화</strong> 서비스. 대상자 선정부터 결과 안내까지 전 과정을 자동화. 국세청 간소화 자료 자동 다운로드·세액 예측·홈택스 자동신고·총괄현황판 등 제공. 2024-12 기준 1,000개 기업 추가 계약 보고(⚠ 벤더 주장). 중소·중견기업 타겟.",
     "headline": "더존비즈온(국내 ERP·급여 dominant player)이 자사 ONE AI 제품군에 포함시킨 연말정산 end-to-end 자동화 서비스.",
@@ -8131,6 +8597,10 @@
       "digital-twin",
       "deloitte-alliance"
     ],
+    "sources": [
+      "Eightfold AI 공식 https://eightfold.ai/customers/customer-stories/",
+      "PR Newswire 2025 https://www.prnewswire.com/news-releases/talent-intelligence-to-talent-advantage-eightfold-ai-revolutionizes-hr-through-agentic-ai-302449233.html"
+    ],
     "summary": "Eightfold AI는 <strong>skills-based talent intelligence</strong> 플랫폼으로, 채용·내부 이동·스킬 관리를 AI로 통합. 2025년 <strong>AI Interviewer</strong> (자동 1차 면접)과 <strong>Digital Twin</strong> (직원의 지식·스킬·경험을 캡처하는 개인화 LLM) 발표. ⚠️ 벤더 주장: AI Interviewer로 <strong>time to first interview 90% 감소</strong>, 3,000명 이상 후보자를 AI로 면접 처리. <strong>Deloitte 전략적 제휴</strong> 확인.",
     "headline": "Eightfold AI는 skills-based talent intelligence 플랫폼으로, 채용·내부 이동·스킬 관리를 AI로 통합.",
     "problem": "벤더 제품이므로 특정 기업의 도입 배경은 고객별 상이. 일반적 pain point: skills-based hiring 전환 필요성, 기존 keyword 매칭의 한계, time-to-hire 병목.",
@@ -8192,6 +8662,9 @@
       "middle-east",
       "volume-hiring"
     ],
+    "sources": [
+      "HireVue case study https://www.hirevue.com/resources/video/how-emirates-used-ai-to-transform-volume-hiring"
+    ],
     "summary": "",
     "headline": "",
     "problem": "",
@@ -8250,6 +8723,9 @@
       "fuel50",
       "retention",
       "manufacturing"
+    ],
+    "sources": [
+      "Fuel50 official https://fuel50.com/"
     ],
     "summary": "",
     "headline": "",
@@ -8311,6 +8787,9 @@
       "high-volume",
       "restaurant",
       "fast-food"
+    ],
+    "sources": [
+      "Paradox clients + NBC News https://www.nbcnews.com/tech/innovation/ai-job-recruiters-used-top-companies-glitches-rcna215128"
     ],
     "summary": "",
     "headline": "",
@@ -8375,6 +8854,9 @@
       "smb",
       "workforce-management"
     ],
+    "sources": [
+      "sources/paychex-agentic-workforce-2026-02.md"
+    ],
     "summary": "Paychex가 2026년 2월 <strong>Paycor</strong> 및 <strong>Paychex Flex</strong> 플랫폼에 에이전틱 AI 솔루션을 발표. <strong>Paycor Agentic Timesheet Approvals</strong>(타임카드 자동 스코어링·이상만 사람 검토), <strong>Paycor Auto-Shifts</strong>(근무시간 제한·휴식·공정근무법 기반 최적 교대 생성), <strong>Paychex Flex AI-Powered Time-Off</strong>(PTO 패턴 분석·반복 가용성 AI). <strong>800,000 고객</strong> 규모. Nucleus Research: 워크포스 관리 자동화 평균 ROI <strong>$12.24/달러</strong>. sources/paychex-agentic-workforce-2026-02.md",
     "headline": "Paychex가 2026년 2월 Paycor 및 Paychex Flex 플랫폼에 에이전틱 AI 솔루션을 발표.",
     "problem": "<ul>\n<li>매니저가 타임시트를 <strong>수동으로 하나씩 검토·승인</strong> → 시간 낭비 + 오류 발생</li>\n<li>교대 스케줄을 <strong>수동 작성</strong> → 노동법(공정근무법·52시간) 위반 리스크</li>\n<li>PTO 관리가 반응적 → <strong>피크 기간 인력 부족</strong> 사전 예측 불가</li>\n<li>SMB(중소기업)는 HR 전담 인력이 적어 <strong>자동화 수요 특히 높음</strong></li>\n</ul>",
@@ -8431,6 +8913,9 @@
       "corporate-education",
       "upskilling",
       "reskilling"
+    ],
+    "sources": [
+      "sources/clap-blog-hr-ai-trend-2026.md"
     ],
     "summary": "<strong>삼성 멀티캠퍼스</strong>의 <strong>CIC(Corporate Innovation Campus)</strong> 플랫폼은 삼성전자 사내 직원 대상 e-러닝 서비스로, <strong>부서·직급·직무·관심 키워드·수강 이력</strong>을 분석해 <strong>맞춤형 교육 콘텐츠를 추천</strong>하는 AI 기능을 운영한다. 멀티캠퍼스는 별도로 외부 기업 대상 AI 직무 역량 교육 프로그램과 IT 업스킬링·리스킬링 서비스를 제공하며, 2025년 삼성청년SW·AI아카데미(SSAFY) 커리큘럼에서도 AI 역량 강화를 확대했다. sources/clap-blog-hr-ai-trend-2026.md",
     "headline": "삼성 멀티캠퍼스의 CIC(Corporate Innovation Campus) 플랫폼은 삼성전자 사내 직원 대상 e-러닝 서비스로, 부서·직급·직무·관심 키워드·수강 이력을 분석해 맞춤형 교육 콘텐츠를 추천하는 AI 기능을 운영한다.",
@@ -8498,6 +8983,9 @@
       "planned-deployment",
       "semiconductor"
     ],
+    "sources": [
+      "sources/verified-pwc-doc-2026-05.md"
+    ],
     "summary": "PwC Korea가 SK하이닉스에 제안한 <strong>5-Agent agentic retention prediction 시스템</strong>. 5개 specialist 에이전트가 각기 다른 데이터 영역을 분석하고 hybrid 가중치 (AHP + Bayesian) + LLM·XAI 기반 explainability로 통합. 각 에이전트는 라틴어/그리스어 어원 명명 — Structura(정형) · Cognita(관계) · Chronos(시계열) · Sentio(텍스트) · Agora(외부 시장). 결과는 3-tier 위험 등급 (Green/Yellow/Red) + 개인화 개입 권고. <strong>2026-05 추진 계획, 실제 deployment·production metric 미공개</strong>.",
     "headline": "PwC Korea가 SK하이닉스에 제안한 5-Agent agentic retention prediction 시스템.",
     "problem": "<ul>\n<li><strong>Before</strong>: 핵심 인재 이탈은 사후 면담 + 단편적 정형 데이터(근속·평가) 위주 분석. 미묘한 행동 변화·외부 시장 신호·관계 패턴 unintegrated. 매니저 \"감\"에 의존</li>\n<li><strong>Pain point</strong>: SK하이닉스 38K 직원 중 반도체 핵심 인재 (R&D·tech 전문가) 이탈 비용 거대. 사후 대응으론 retention 불가</li>\n<li><strong>Trigger</strong>: 2024-25 SK 그룹 차원 AI 적극 도입 + PwC Korea 컨설팅 제안</li>\n</ul>",
@@ -8551,6 +9039,10 @@
       "gdpr",
       "pay-transparency",
       "syndio"
+    ],
+    "sources": [
+      "PR Newswire 2025-03-04 https://www.prnewswire.com/news-releases/syndio-introduces-expert-ai-for-pay-reporting-compliance-302391175.html",
+      "Syndio 공식 https://synd.io/expertise-on-demand/"
     ],
     "summary": "Syndio는 <strong>보상 공정성(pay equity)</strong> 전문 AI 플랫폼. 2025년 3월 <strong>Syndi</strong>라는 expert AI를 출시해 급여 보고 규제(EU Pay Transparency Directive·미국 주별 법률 등) 준수를 자동화. ⚠️ 벤더 주장: 300+ 고객, Fortune Most Admired 30%. \"10페이지 법률 메모를 단일 actionable 답변으로\" 대체한 사례 보고. <strong>EU AI Act 대응</strong>을 최전선에 내세운 벤더.",
     "headline": "Syndio는 보상 공정성(pay equity) 전문 AI 플랫폼.",
@@ -8614,6 +9106,9 @@
       "sourcing",
       "korea",
       "korean-vendor"
+    ],
+    "sources": [
+      "sources/aitimes-wantedlab-recruiting-agent-2025-10.md"
     ],
     "summary": "원티드랩(국내 최대급 HR tech 벤더, 상장)이 2025년 10월 21일 출시한 <strong>LLM 기반 AI 채용 에이전트</strong>. 기업 채용 담당자가 <strong>자연어로 인재를 검색</strong>할 수 있게 하는 B2B 제품. 복잡한 필터 설정 없이 \"<strong>역량과 경험을 AI가 판단하여 추천 사유까지 제시</strong>\"하는 것이 핵심 차별점.",
     "headline": "원티드랩(국내 최대급 HR tech 벤더, 상장)이 2025년 10월 21일 출시한 LLM 기반 AI 채용 에이전트.",
@@ -8685,6 +9180,9 @@
       "pulse",
       "engagement",
       "stub"
+    ],
+    "sources": [
+      "sources/workday-illuminate-pr-2025-09.md"
     ],
     "summary": "2025-09-16 Workday press release에서 공개된 Illuminate HR 에이전트 6종 중 하나. <strong>⚠️ 벤더 주장</strong>: \"Continuously analyzing employee feedback to provide insights and take action at scale\" — 그 이상의 구체 정보는 공개된 바 없음.",
     "headline": "2025-09-16 Workday press release에서 공개된 Illuminate HR 에이전트 6종 중 하나.",

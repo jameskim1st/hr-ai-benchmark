@@ -174,8 +174,9 @@ def process_uc(fp):
         'last_confirmed': str(fm.get('last_confirmed', '')),
         'output': fm.get('output', ''),
         'tags': fm.get('tags', []),
+        'sources': [str(s) for s in (fm.get('sources') or [])],
     }
-    for f in ['industry','region','employee_class','vendor','vendor_type','ai_tech_type','ai_tech_subtype','tags']:
+    for f in ['industry','region','employee_class','vendor','vendor_type','ai_tech_type','ai_tech_subtype','tags','sources']:
         if isinstance(d[f], str): d[f] = [d[f]]
         elif not isinstance(d[f], list): d[f] = []
     try: d['confidence'] = float(fm.get('confidence', 0))

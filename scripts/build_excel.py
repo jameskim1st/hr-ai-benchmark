@@ -281,8 +281,41 @@ USECASE_AUX_COLS = [
     ("신뢰도", 8),
     ("Consulting Angle", 70),
     ("태그", 28),
+    ("출처1", 50),
+    ("출처2", 50),
+    ("출처3", 50),
     ("slug", 32),
 ]
+
+
+GITHUB_BASE = "https://github.com/jameskim1st/hr-ai-benchmark/blob/main"
+
+
+def parse_source(src_str):
+    """Source 문자열 파싱 → (display_text, url).
+    예: 'McKinsey: JPM... https://www.mckinsey.com/...' → ('McKinsey: JPM...', 'https://...')
+        'sources/foo.md' → ('foo (wiki)', GITHUB_BASE + '/wiki/sources/foo.md')
+    """
+    if not src_str:
+        return ("", "")
+    s = src_str.strip()
+    # URL 추출 (http:// 또는 https://)
+    m = re.search(r"(https?://[^\s\)]+)", s)
+    if m:
+        url = m.group(1)
+        # display = URL 제외 부분 (앞 텍스트)
+        text_part = s.replace(url, "").strip().rstrip("(").strip()
+        if not text_part:
+            text_part = url
+        return (text_part[:80], url)
+    # sources/<slug>.md 패턴
+    m = re.match(r"sources/([\w-]+)(?:\.md)?", s)
+    if m:
+        slug = m.group(1)
+        url = f"{GITHUB_BASE}/wiki/sources/{slug}.md"
+        return (f"{slug} (wiki)", url)
+    # 기타 — plain text
+    return (s[:80], "")
 
 
 def has_subtype(u, sub_id):
@@ -387,6 +420,13 @@ def build_usecases_sheet(wb, ucs):
         tech_sub_values = [
             "✓" if has_subtype(u, sub_id) else "" for sub_id, _ in TECH_SUB_COLS
         ]
+        # 출처 1~3 파싱
+        sources_raw = u.get("sources") or []
+        parsed_sources = [parse_source(s) for s in sources_raw[:3]]
+        # 빈 슬롯 채우기
+        while len(parsed_sources) < 3:
+            parsed_sources.append(("", ""))
+
         # AUX columns
         aux_values = [
             u.get("subcategory", ""),
@@ -399,10 +439,16 @@ def build_usecases_sheet(wb, ucs):
             float(u.get("confidence", 0)),
             strip_html(u.get("consulting"), 500),
             join_kr(u.get("tags")),
+            parsed_sources[0][0],  # 출처1 display text
+            parsed_sources[1][0],  # 출처2 display text
+            parsed_sources[2][0],  # 출처3 display text
             u.get("slug", ""),
         ]
 
         all_values = main_values + tech_parent_values + tech_sub_values + aux_values
+
+        # 출처 column 인덱스: aux의 11~13번째 (0-index 10·11·12) → 시트 column = aux_start + 10·11·12
+        src_col_indices = [aux_start + 10, aux_start + 11, aux_start + 12]
 
         for col_idx, v in enumerate(all_values, start=1):
             cell = ws.cell(row=row_idx, column=col_idx, value=v)
@@ -418,6 +464,14 @@ def build_usecases_sheet(wb, ucs):
             else:
                 cell.alignment = BODY_ALIGN
             cell.border = BORDER_THIN
+
+        # 출처 hyperlink 추가 (parsed_sources의 url 사용)
+        for i, col_idx in enumerate(src_col_indices):
+            url = parsed_sources[i][1]
+            if url:
+                cell = ws.cell(row=row_idx, column=col_idx)
+                cell.hyperlink = url
+                cell.font = Font(name="맑은 고딕", size=10, color="0563C1", underline="single")
 
     # Column widths
     for i, (_, w) in enumerate(all_cols, start=1):
