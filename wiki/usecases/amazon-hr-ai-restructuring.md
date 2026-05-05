@@ -1,0 +1,86 @@
+---
+title: "Amazon — HR 부서 15% 감축 (AI 대체), PXT 조직 10,000명 영향"
+slug: amazon-hr-ai-restructuring
+primary_category: Strategic Workforce & Governance
+subcategory: Workforce Planning
+tags: [workforce-restructuring, hr-reduction, ai-replacement, pxt, retail, warehouse]
+company: Amazon
+industry: [tech, retail, logistics]
+region: [global]
+employee_class: [all]
+vendor: [Amazon (internal build)]
+vendor_type: [internal-build]
+stage: production
+frequency: adhoc
+first_seen: 2025-10
+last_confirmed: 2025-10-16
+confidence: 0.45               # Tier 2 SHRM(+0.20) + Tier 2 HR Grapevine(+0.20) + Tier 2 CNBC(+0.20) = multi-source 독립보도 0.45
+consulting_angle_status: filled
+sources:
+  - "SHRM 2025-10 https://www.shrm.org/topics-tools/news/talent-acquisition/amazon-layoffs-hr-staff-ai"
+  - "CNBC 2025-10-15 https://www.cnbc.com/2025/10/15/jpmorgan-chase-goldman-sachs-ai-hiring.html"
+  - "HR Grapevine 2025-10-16 https://www.hrgrapevine.com/us/content/article/2025-10-16-amazon-plans-sweeping-hr-job-cuts-as-ai-investment-grows"
+related_usecases:
+  - ibm-askhr-watsonx
+  - walmart-ask-sam-workforce-ai
+related_vendors: []
+---
+
+# Amazon — HR 부서 15% 감축 (AI 대체)
+
+> 🚨 **HR AI의 가장 극단적 사례**: Amazon이 HR 부서 **PXT(People eXperience and Technology) 조직에서 최대 15% 감축** 발표. 10,000+ 직원 중 ~1,500명 영향. $100B+ AI 투자의 일환으로, **HR 기능 자체가 AI 자동화 대상**이 된 최초의 대규모 공개 사례.
+
+## Summary
+
+Amazon의 HR 부서 **PXT (People eXperience and Technology)** 조직이 AI 도입에 따라 **최대 15% 인력 감축**을 계획. PXT는 SVP **Beth Galetti** 휘하 10,000+ 직원으로 구성되며, 채용·HR 운영·기술 기능을 포괄. 동시에 Amazon은 **250,000명 계절직 warehouse 채용**을 진행 — "white-collar HR 자동화 + blue-collar 대량 채용"의 극적 대비.
+
+## Problem / Why (도입 배경)
+
+- **Before**: Amazon PXT(People eXperience and Technology) 조직은 **10,000+ HR 전문 인력**이 채용·HR 운영·기술·분석 업무를 수행. 1.5M+ 매장 직원 + 수십만 기업 직원의 HR 서비스 수요를 사람이 직접 처리
+- **Pain point**: $100B+ AI 투자를 진행하면서 **HR 기능도 자동화 가능 영역으로 식별**됨. 채용 심사·정책 질의·분석 리포팅 등이 AI copilot으로 대체 가능하다는 판단
+- **Trigger**: CEO Andy Jassy의 "**모든 client experience·employee process·backend operation에 AI를 주입**"하라는 전사 방침 → HR 조직도 예외 없음
+- **⚠️ 핵심 갈등**: 동시에 **250,000명 계절직 warehouse 채용**은 여전히 사람이 필요 → "white-collar 자동화 + blue-collar 대량 채용"의 구조적 이중성
+
+## Impact / Metrics (기대효과)
+
+### 기대효과 요약
+**HR 운영 비용 절감 + AI 인력으로 재배치**. Amazon은 HR 감축을 "효율화"로 프레이밍하며, 절감 리소스를 프로그래머·영업·AI 엔지니어 채용에 재투자하는 구조. 단, 구체적 비용 절감 수치는 미공개.
+
+## Key Facts
+
+| 지표 | 값 | 출처 | 성격 |
+|---|---|---|---|
+| HR 감축 규모 | **최대 15%** (PXT 조직) | SHRM | ✅ Fact (다수 Tier 2 독립 보도) |
+| PXT 직원 규모 | **10,000+명** | HR Grapevine | ✅ Fact |
+| PXT 리더 | **Beth Galetti, SVP** | 공개 정보 | ✅ Fact |
+| 2025 AI 투자 | **$100B+** | 다수 매체 | ✅ Fact |
+| 계절직 채용 | **250,000명** (warehouse) | Amazon 공식 | ✅ Fact |
+| 감축 영향 영역 | 채용·HR 운영·분석 → **자동화·AI copilot** | SHRM | ✅ Fact (SHRM 독립 보도) |
+
+## Consulting Angle
+
+### ★ 이 사례가 중요한 이유 — "HR이 AI에 당하는 side"
+
+wiki의 다른 use case들은 모두 "HR이 AI를 도입해서 더 잘하는" 이야기. **Amazon은 유일하게 "HR 조직 자체가 AI로 인해 축소되는"** 이야기.
+
+이 대비가 컨설팅에서 매우 중요한 이유:
+1. **CHRO에게 "AI가 HR 조직 자체도 바꾼다"는 경고**: IBM의 "couple hundred replaced"보다 훨씬 구체적 (15%, 10,000명 중)
+2. **"반면교사 vs 교훈" 양면 사용**:
+   - 반면교사: "AI 도입을 HR이 주도하지 않으면, HR이 대상이 된다"
+   - 교훈: "Amazon이 할 수 있는 이유는 자사 AI 인프라($100B)가 있어서"
+3. **warehouse 250k 채용과의 대비**: AI는 white-collar 기능(채용·분석)을 자동화하지만, physical labor는 여전히 사람 필요 → **HR AI의 적용 경계**
+
+### 한국 시사점
+- 국내 대기업 HR 부서가 "AI 도입의 주체"이면서 동시에 "AI 적용의 대상"이 될 수 있다는 이중성
+- Amazon 수준의 감축은 한국 노사관계에서 **극도로 어려움** — 정리해고 규제·노조 협의 필요
+- 그러나 "업무 자동화 → 점진적 인력 재배치"는 현실적 경로
+
+### vs IBM HR AI
+
+| | Amazon | IBM |
+|---|---|---|
+| **접근** | HR 부서 15% 감축 (dramatic) | "couple hundred replaced" + 프로그래머 채용 증가 |
+| **프레이밍** | Restructuring (감축) | Elevation (역할 전환) |
+| **Named leader** | Beth Galetti SVP | Arvind Krishna CEO |
+| **리스킬링** | _미공개_ | 필리핀 직원 → "conversational AI specialist" |
+| **외부 인식** | 부정적 (layoff news) | 상대적 긍정 (career transformation) |

@@ -1,0 +1,60 @@
+---
+title: "Siemens — 300k 직원 리스킬링 + 20% 내부 이동 증가 + My Learning World"
+slug: siemens-reskilling-internal-mobility
+primary_category: Learning & Development
+subcategory: Skills & Capabilities
+tags: [reskilling, internal-mobility, skills, manufacturing, my-learning-world, europe]
+company: Siemens
+industry: [manufacturing, energy, tech]
+region: [eu, global]
+employee_class: [all]
+vendor: [Siemens (internal build), ServiceNow]
+vendor_type: [internal-build]
+stage: production
+frequency: daily
+first_seen: 2025
+last_confirmed: 2025
+confidence: 0.45               # Tier 2 AIHR(+0.20) + Tier 2 MISQ(+0.20) + Tier 1 WEF(+0.35, 할인→+0.20, 자사 commitment 전달 성격) + Tier 3 ServiceNow(+0.10) = base 0.70, 할인 후 → 0.45
+consulting_angle_status: filled
+sources:
+  - "AIHR Institute https://www.aihr-institute.com/blog/how-ai-is-transforming-hr-at-siemens"
+  - "MISQ Executive https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1637&context=misqe"
+  - "HRKatha https://www.hrkatha.com/features/how-siemens-india-is-navigating-workforce-transformation-in-the-age-of-ai/"
+  - "ServiceNow case study https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/resource-center/case-study/cs-siemens-ag.pdf"
+  - sources/wef-siemens-reskilling-revolution-case.md
+related_usecases:
+  - schneider-electric-gloat-talent-marketplace
+  - accenture-ai-learning-workforce
+  - docebo-ai-learning-lazboy
+related_vendors: []
+---
+
+# Siemens — 300k 리스킬링 + 20% 내부 이동 증가
+
+> **제조업 HR AI 대표 사례**: Siemens(300,000+ 직원, 글로벌 산업 자동화·에너지)가 **Future Skills Initiative**로 전 직원 리스킬링 + AI 기반 내부 이동 플랫폼을 운영. ⚠️ 자사 보고: **내부 이동 20% 증가**, 외부 채용 의존도 감소. **WEF Reskilling Revolution**(Tier 1 국제기구)이 Siemens를 공식 사례 기업으로 선정 ([[wef-siemens-reskilling-revolution-case]]) — blended funding model, 정부 co-financing, 디지털화·지속가능성 교육 프로그램 독립 확인.
+
+## Summary
+
+Siemens는 **Future Skills Initiative**를 통해 300,000 직원 대상으로 데이터 분석·디지털 트윈·자동화 역량 리스킬링을 추진. AI 기반 학습 플랫폼 **My Learning World**는 100,000+ 학습 기회를 제공하며, 개인화된 학습 경로를 적응형으로 제공. ⚠️ 자사 보고: 내부 이동 **20% 증가**, AI 기반 채용·내부 이동 포탈이 후보자 매칭·스킬 추천을 최적화.
+
+## Impact / Metrics (기대효과)
+
+### 기대효과 요약
+300,000 직원 대상 리스킬링, 내부 이동 20% 증가, 100,000+ 학습 기회 제공 (자사 보��� 기반).
+
+| 지표 | 값 | 출처 | 성격 |
+|---|---|---|---|
+| 리스킬링 대상 | **300,000 직원** | AIHR Institute | ⚠️ 자사 보고 |
+| 내부 이동 증가 | **20%** | AIHR Institute | ⚠️ 자사 보고 |
+| 학습 기회 | **100,000+** (My Learning World) | HRKatha | ⚠️ 자사 보고 |
+| HR 전략적 위치 | "모든 비즈니스 리뷰·전략 논의·인력 계획에 HR 참여" | Shilpa Kabra Maheshwari (EVP, Siemens India) | ⚠️ 자사 보고 |
+| WEF Reskilling Revolution 파트너 | 공식 사례 기업 선정 | [[wef-siemens-reskilling-revolution-case]] (WEF Tier 1) | ✅ Fact (Tier 1 국제기구 공식 인정) |
+| Blended funding model | 정부 co-financing 최대 **25%** (독일 Qualification Opportunities Act) | [[wef-siemens-reskilling-revolution-case]] | ✅ Fact |
+| 교육 범위 | 디지털화·지속가능성 분야 직업교육, 자사 + 외부 파트너 대상 | [[wef-siemens-reskilling-revolution-case]] | ✅ Fact |
+
+## Consulting Angle
+
+- **제조업 L&D AI 최대 규모**: 300k 직원 대상 리스킬링은 wiki의 학습·역량 카테고리에서 가장 큰 scale
+- **Schneider Electric과 같은 "European manufacturing + internal mobility" 패턴**: ���사 모두 내부 이동 증가를 핵심 KPI로 측정
+- **ServiceNow GBS 통합**: Siemens GBS가 ServiceNow로 employee experience를 통합했다는 별도 case study 존재 — 대기업의 "multi-vendor HR tech stack" 증거
+- **한국 제조업 시사점**: 삼성전자·현대자동차·LG 등 국내 제조 대기업의 리스킬링 전략에 Siemens가 직접 reference

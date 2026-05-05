@@ -1,0 +1,312 @@
+[
+  {
+    "slug": "accenture",
+    "name": "Accenture",
+    "industry": [
+      "consulting",
+      "it-services"
+    ],
+    "region": [
+      "global"
+    ],
+    "size": 770000,
+    "description": "글로벌 최대 컨설팅·IT 서비스 기업. <strong>HR AI mass reskilling의 canonical reference</strong> — 30명(2022-11) → 550,000+(2025-FY) GenAI trained = 18,300x 확장. AI/data 인력 40,000 → 77,000 (+93%). 연간 ~$1B L&D 투자. CEO Julie Sweet 2026-03: \"AI 미사용 직원 승진·고용 risk + non-adaptable exit compression timeline\".",
+    "strategy": "<ul>\n<li><strong>Mass mandatory reskilling</strong>: 컨설팅 업종 특성상 직원 AI literacy = 직접 매출 영향</li>\n<li><strong>CEO 직접 driving</strong>: Sweet CEO 발언 강도 — KR 컨설팅 deck 강력 hook</li>\n<li><strong>AI/data 인력 +93%</strong>: 신규 채용 + 내부 reskilling 결합 패턴</li>\n<li><strong>클라이언트 IP 자산</strong>: myConcerto·myWizard·Synops 등 자체 AI HR 플랫폼 (외부 판매)</li>\n</ul>",
+    "consulting": "<ul>\n<li><strong>KR 그룹 HRD 센터 직접 reference (Top 5)</strong>:</li>\n<li>삼성인력개발원·LG Aspire·SK mySUNI·현대인재개발원 RFP에 reference</li>\n<li>550K·$1B·3년 timeline은 가장 강력한 hook</li>\n<li><strong>Sweet \"exit non-adaptable\" 발언 KR adaptation</strong>: 노조·노동법 sensitivity로 \"성장 기회·재배치\"로 reframe 권장</li>\n<li><strong>컨설팅 vs 일반 기업 fit 차별</strong>: 컨설팅 = AI 직접 판매하는 특수 업종 → KR 제조·금융·유통 적용 강도 차별 필요</li>\n<li><strong>본 wiki vs Deloitte/Accenture 글로벌 자산</strong>: 한국 시장 fit·local data 차별화로 positioning</li>\n</ul>"
+  },
+  {
+    "slug": "amazon",
+    "name": "Amazon",
+    "industry": [
+      "tech",
+      "retail",
+      "logistics"
+    ],
+    "region": [
+      "global"
+    ],
+    "size": 1500000,
+    "description": "세계 최대 e-commerce + 클라우드(AWS) 기업. 1.5M+ 직원. <strong>HR AI의 가장 극단적 사례</strong>: PXT(HR 부서) 10,000명 중 <strong>최대 15% 감축</strong> 발표. 동시에 250,000명 계절직 채용 — \"white-collar 자동화 + blue-collar 대량 채용\"의 극적 대비.",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"Amazon\")",
+    "consulting": "<ul>\n<li><strong>\"HR이 AI의 대상이 된다\"의 반면교사</strong>: wiki의 다른 사례는 모두 \"HR이 AI를 도입\", Amazon만 \"HR 자체가 축소\"</li>\n<li><strong>$100B AI 투자</strong>: 기업 역사상 가장 큰 AI 투자와 HR 감축이 동시 발생</li>\n<li><strong>한국 시사점</strong>: 국내 대기업이 AI 도입 시 HR 부서 자체의 미래를 논의해야 한다는 경고</li>\n</ul>"
+  },
+  {
+    "slug": "chipotle",
+    "name": "Chipotle Mexican Grill",
+    "industry": [
+      "restaurant",
+      "food-service",
+      "retail"
+    ],
+    "region": [
+      "na"
+    ],
+    "size": 110000,
+    "description": "미국 멕시칸 fast-casual 레스토랑 체인. 약 3,500+ 매장, 110,000명 이상 직원. <strong>고볼륨 시급직 채용</strong> 케이스로 Paradox Olivia의 레퍼런스 중 가장 자주 인용되는 사례.",
+    "strategy": "",
+    "consulting": "<ul>\n<li>한국 <strong>시급직 채용 자동화</strong> 컨설팅의 reference로 참고 가능 (편의점·카페·delivery)</li>\n<li>단, Chipotle이 Paradox에만 의존하는지 다른 HR tech stack은 무엇인지 <strong>확인 불가</strong> → 전체 HR 전략의 한 조각으로만 다뤄야 함</li>\n</ul>"
+  },
+  {
+    "slug": "cisco",
+    "name": "Cisco",
+    "industry": [
+      "tech",
+      "networking"
+    ],
+    "region": [
+      "global"
+    ],
+    "size": 90000,
+    "description": "글로벌 networking·security 기업. <strong>HR AI는 agentic 진화 + 마음 차원 강조</strong>: (1) 사내 AI HR Assistant가 Q&A를 넘어 outbound 메시지 drafting, (2) AI Workforce Consortium anchor — Microsoft·Google·IBM·SAP·Accenture·Eightfold 등 다자 협업, (3) AI 시대 entry-level 직무 redesign 명시. 35,000+ 직원이 AI-upskilled (2025-06).",
+    "strategy": "<ul>\n<li><strong>Q&A → drafting + action 진화</strong>: HR 챗봇의 mature reference (한국 대기업 챗봇 대부분 Q&A 단계)</li>\n<li><strong>multi-vendor 컨소시엄</strong>: vendor-neutral methodology로 Tier 1-equivalent 데이터 (78% ICT 직무 AI 스킬)</li>\n<li><strong>Entry-level 보호 전략</strong>: AI hollowing-out에 대한 카운터 — 신입 채용 유지·강화</li>\n</ul>",
+    "consulting": "<ul>\n<li><strong>KR Ask-HR RFP의 mature reference</strong>: Cisco AI Assistant의 agentic outbound drafting은 KR 차세대 챗봇 RFP standard</li>\n<li><strong>Multi-vendor consortium 데이터 활용</strong>: 78% ICT AI 스킬 데이터는 KR workforce planning deck 기본 reference</li>\n<li><strong>Entry-level 보호 frame</strong>: KR \"신입 공채 축소 우려\"에 대한 카운터 메시지 — Cisco가 entry-level 신설 명시</li>\n<li><strong>multi-vendor 협업 모델</strong>: KR 기업이 자체 vendor 종속 회피 + 표준 ICT 직무·스킬 합의 도출 reference</li>\n</ul>"
+  },
+  {
+    "slug": "deloitte",
+    "name": "Deloitte",
+    "industry": [
+      "consulting",
+      "professional-services"
+    ],
+    "region": [
+      "global"
+    ],
+    "size": 470000,
+    "description": "글로벌 Big 4 컨설팅. 470,000 직원, 150개국. <strong>Anthropic Claude를 역대 최대 규모로 전사 배포</strong> + <strong>Workforce Analyzer/Planner+ AI 솔루션을 직접 판매</strong> — \"컨설턴트이자 벤더이자 자사 도입 기업\" 3중 역할.",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"Deloitte\") OR contains(company, \"Salesforce\")",
+    "consulting": "<ul>\n<li><strong>Big 4의 \"자사 적용 → 고객 판매\" 패턴</strong>: Accenture(32% 완료↑)·PwC(65k upskilling)와 함께 \"consulting firms AI 군비 경쟁\"</li>\n<li><strong>470k Claude = foundation model 선택의 전략적 의미</strong>: Moderna→OpenAI, IBM→watsonx, <strong>Deloitte→Anthropic</strong></li>\n<li><strong>Workforce Analyzer: 컨설팅이 제품이 되는 시대</strong>: 300+ HR workflow를 AI로 재설계한 library를 Salesforce에 판매</li>\n</ul>"
+  },
+  {
+    "slug": "hsbc",
+    "name": "HSBC",
+    "industry": [
+      "finance",
+      "banking"
+    ],
+    "region": [
+      "eu",
+      "global"
+    ],
+    "size": 275000,
+    "description": "글로벌 대형 은행. 275,000 직원. <strong>가장 복잡한 멀티벤더 HR AI 스택</strong>: Eightfold AI(채용) + Gloat(내부 이동, 140k 등록) + SAP SuccessFactors(Core HRIS) + Accenture(구현). workday-as-customer-paradox synthesis의 실제 대기업 배포 증거.",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"HSBC\")",
+    "consulting": "<ul>\n<li><strong>Multi-vendor HR AI stack의 교과서</strong>: SAP SF(suite) + Eightfold+Gloat(point solutions) 병행 — \"suite만으로 불충분\" 증거</li>\n<li><strong>한국 금융(KB·신한·하나·우리) 적용</strong>: 대부분 SAP SF 또는 Workday 사용 → HSBC 패턴이 가장 현실적 경로</li>\n<li><strong>Fortune Europe</strong>: HSBC가 다른 유럽 은행보다 <strong>30% 더 많은 AI 채용 공고</strong> 게시</li>\n</ul>"
+  },
+  {
+    "slug": "ibm",
+    "name": "IBM",
+    "industry": [
+      "tech",
+      "it-services"
+    ],
+    "region": [
+      "global"
+    ],
+    "size": 270000,
+    "description": "글로벌 IT 서비스·AI 기업. 270,000 직원. <strong>AskHR은 엔터프라이즈 HR AI에서 가장 오래되고 가장 큰 규모의 배포 사례</strong> (연 2.1M 대화, 80+ 태스크 자동화). 자체 watsonx를 기반으로 HR AI를 내부 배포하며, 동시에 외부에 HR AI 솔루션을 판매하는 <strong>벤더이자 고객</strong>.",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"IBM\")",
+    "consulting": "<ul>\n<li><strong>\"HR AI maturity의 최종 형태\"</strong>: FAQ 챗봇 → routing → <strong>agentic 자동화</strong>로 진화한 유일한 사례</li>\n<li><strong>\"replaced but elevated\"</strong> 프레이밍: Krishna CEO 발언 + 필리핀 직원 역할 전환 = HR 직무 재설계의 reference</li>\n<li><strong>한국 대기업 적용</strong>: 수만~수십만 직원 규모에서 AskHR 수준을 목표로 할 때 전제조건(자체 AI 플랫폼·대규모 HR 데이터·직무 재설계 의지) 정리</li>\n</ul>"
+  },
+  {
+    "slug": "jnj",
+    "name": "Johnson & Johnson",
+    "industry": [
+      "pharma",
+      "healthcare",
+      "consumer"
+    ],
+    "region": [
+      "global"
+    ],
+    "size": 130000,
+    "description": "글로벌 제약·의료·소비재 기업. 130,000 직원. <strong>wiki 최고 수준 학술 검증 사례</strong>: MIT CISR + IS Journal이 Digital Talent Platform의 AI 스킬 추론(60~70%)·내부 배치 8%↑·이탈 3.2%↓를 독립 검증.",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"Johnson\") OR contains(company, \"J&J\")",
+    "consulting": "<ul>\n<li><strong>\"스킬 기반 인사관리\" 전환의 gold standard</strong>: HRIS 데이터에서 60~70% 스킬 자동 추론이 학술적으로 입증</li>\n<li><strong>4,000명→전사 확장</strong>의 단계적 전개 패턴이 한국 대기업 pilot-first 문화와 fit</li>\n<li>Textio 고객으로도 등장 (JD 개선으로 여성 지원 90,000명 추가)</li>\n</ul>"
+  },
+  {
+    "slug": "jpmorgan",
+    "name": "JPMorgan Chase",
+    "industry": [
+      "finance",
+      "banking"
+    ],
+    "region": [
+      "na",
+      "global"
+    ],
+    "size": 310000,
+    "description": "미국·글로벌 최대 은행. 310,000+ 직원. <strong>LLM Suite를 200,000 직원에 8개월 만에 배포</strong>, AI 기반 성과 리뷰 초안 작성, ML 채용 도구 특허 출원. CEO Jamie Dimon의 \"모든 프로세스에 AI 주입\" 방침이 HR에도 직접 적용.",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"JPMorgan\") OR contains(company, \"JPM\")",
+    "consulting": "<ul>\n<li><strong>금융권 HR AI의 flagship</strong>: $2B AI 연간 투자, American Banker 혁신상</li>\n<li><strong>\"채용을 자제하라\"</strong> 지시: AI 주입과 동시에 인력 증가 억제 → 금융 산업 패턴</li>\n<li><strong>한국 금융(KB·신한·하나·우리) 적용</strong>: JPMorgan 수준의 AI 전사 배포를 목표로 할 때 reference</li>\n</ul>"
+  },
+  {
+    "slug": "kb-bank",
+    "name": "KB국민은행",
+    "industry": [
+      "finance",
+      "banking"
+    ],
+    "region": [
+      "kr"
+    ],
+    "size": 17000,
+    "description": "한국 4대 시중은행 (KB·신한·우리·하나) 중 점포·자산 1위. <strong>HR Deep Change</strong> — 2020 launch, 1,100여 명 영업점 직원 인사이동을 AI 알고리즘으로 단행한 한국 KR 대기업 인사이동 AI의 가장 잘 문서화된 reference. 2025 PB·RM 등 상담 직원 확장 — <strong>57%가 두 달 만에 사용</strong>.",
+    "strategy": "<ul>\n<li><strong>AI 인사이동 5년+ stability proof</strong>: 2020 launch, 2025 확장 — KR 인사 AI 가장 mature 사례</li>\n<li><strong>정성 변수 포함 design</strong>: 출퇴근 거리·자격증·<strong>육아 고충</strong> 등 한국 직장 컨텍스트 fit</li>\n<li><strong>공공·금융 인사혁신 reference</strong>: KR 정부 평가 KPI 정합성</li>\n</ul>",
+    "consulting": "<ul>\n<li><strong>KR 인사이동 AI canonical reference</strong>: 5년+ 운영 + 57% adoption 정량 증거</li>\n<li><strong>공공·금융 인사혁신 묶음</strong>: 한전 HR-Bot/AI 인사추천과 함께 KR large-scale 공공·금융 best practice</li>\n<li><strong>글로벌 비교</strong>: IBM Blue Match (opt-in 15%)·Schneider Open Talent Market·Unilever FLEX</li>\n<li><strong>반면교사</strong>: 5년+ 운영 model drift·노조 사전 합의·explainability process 검증 필요. 한국 AI 기본법 인적감독 의무 대응 검증</li>\n</ul>"
+  },
+  {
+    "slug": "meta",
+    "name": "Meta",
+    "industry": [
+      "tech",
+      "social-media"
+    ],
+    "region": [
+      "global"
+    ],
+    "size": 72000,
+    "description": "소셜 미디어·XR 기업. 72,000 직원. <strong>Performance Management의 가장 과감한 사례</strong>: 2026년부터 <strong>AI 도구 사용을 성과 평가의 공식 기준</strong>으로 설정. \"Level Up\" 게임화 + Metamate(GPT-4+Llama hybrid) 전사 배포.",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"Meta\")",
+    "consulting": "<ul>\n<li><strong>\"AI 채택을 의무화한\" 유일 사례</strong>: 성과 평가에 AI 사용을 공식 반영 → HR 정책 혁신의 극단</li>\n<li><strong>SK AICT(\"AI 활용 능력으로 채용 평가\")의 재직 확장판</strong>: 채용(SK)→재직(Meta)으로 전 생애주기 AI 역량 축 형성</li>\n<li><strong>한국 적용 시 폭발력</strong>: 연공·직급 중심 평가 → AI 활용 기반 평가로의 패러다임 전환 가능성</li>\n</ul>"
+  },
+  {
+    "slug": "microsoft",
+    "name": "Microsoft",
+    "industry": [
+      "tech",
+      "cloud"
+    ],
+    "region": [
+      "global"
+    ],
+    "size": 228000,
+    "description": "글로벌 최대 cloud·OS·productivity 기업. <strong>HR AI는 두 축</strong>: (1) 자체 HR 운영을 위한 People Skills + Skills Agent + Glint Copilot 사용, (2) M365 Copilot/Viva 생태계로 글로벌 HR Tech 시장 reshape. Bersin이 People Skills를 \"HR Tech 시장 변경\"으로 평가. LinkedIn 공동 개발 <strong>16,000-skill taxonomy</strong> 보유 — Eightfold·Gloat의 외부 vendor 모델과 직접 경쟁.",
+    "strategy": "<ul>\n<li><strong>M365 native option</strong>: 기존 M365 Copilot/Viva 사용 KR 대기업 다수에 추가 도입 부담 적은 vendor 선택지</li>\n<li><strong>활동 기반 자동 스킬 추론</strong>: 직원 self-update 부담 해소 — 한국 대기업 갈증 큰 영역</li>\n<li><strong>default ON 전략</strong>: Glint Copilot 2026-03 platform-wide default ON — 사용자 선택권 차감하지만 adoption 가속</li>\n<li><strong>자체 사용 dogfooding</strong>: Microsoft \"Employee Signals\" twice-yearly로 자사 HR에 사용</li>\n</ul>",
+    "consulting": "<ul>\n<li><strong>KR HRMS RFP 시장 game-changer</strong>:</li>\n<li>기존 Eightfold·Gloat·Beamery 외부 vendor 대비 <strong>M365 native option</strong> 등장</li>\n<li>이미 M365 도입 KR 대기업 → 추가 도입 비용·통합 부담 적음</li>\n<li>2026 Q3-Q4 People Skills vs Eightfold 비교 RFP 필수 슬라이드</li>\n<li><strong>한국 자체 LLM과의 경쟁</strong>: Hyperclova X·KT Mi:dm·SKT A.X 대비 — Korean 직무·전문 용어 fit POC 필수</li>\n<li><strong>default ON 패턴</strong>: Glint Copilot 2026-03 default ON은 한국 prudent governance 컨텍스트에서 risk — KR 도입 시 explicit opt-in 권장</li>\n</ul>"
+  },
+  {
+    "slug": "moderna",
+    "name": "Moderna",
+    "industry": [
+      "pharma",
+      "biotech"
+    ],
+    "region": [
+      "na"
+    ],
+    "size": "",
+    "description": "바이오텍/제약사. COVID-19 mRNA 백신으로 잘 알려짐. HR AI 도입 사례로 <strong>Fortune 1000급에서 가장 많이 인용되는 references 중 하나</strong>. OpenAI ChatGPT Enterprise 최초 엔터프라이즈 레퍼런스.",
+    "strategy": "아래 표는 <strong>Dataview로 자동 생성</strong>됩니다. Moderna에 새 use case가 ingest되면 자동 반영.\nTABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"대그룹\",\nsubcategory AS \"중그룹\",\nstage AS \"단계\",",
+    "consulting": "<ul>\n<li><strong>최상급 레퍼런스 후보</strong>: 포춘 500 클라이언트에 \"full-stack AI at work\" 예시로 제시 가능. 단, <strong>\"Moderna 규모·문화가 일반적이지 않음\"</strong>을 반드시 고지.</li>\n<li><strong>핵심 교훈 3가지</strong> (클라이언트에게 제시용):</li>\n</ul>\n1. <strong>조직 구조 변화가 먼저, 도구는 나중</strong> — Franklin의 CPDO 직책 자체가 메시지\n2. <strong>solutions가 아니라 \"work planning\"</strong> — 도구 도입이 아니라 업무 재설계\n3. <strong>솔직한 \"work in progress\" 포지셔닝</strong> — 성공 신화로 포장하지 않은 점\n<ul>\n<li><strong>반면교사 경고</strong>:</li>\n</ul>"
+  },
+  {
+    "slug": "schneider-electric",
+    "name": "Schneider Electric",
+    "industry": [
+      "manufacturing",
+      "energy",
+      "tech"
+    ],
+    "region": [
+      "global"
+    ],
+    "size": 135000,
+    "description": "글로벌 에너지 관리·자동화 기업. 135,000 직원. <strong>Internal Mobility AI의 양대 레퍼런스 중 하나</strong> (Unilever와 함께): Open Talent Market(Gloat 기반)으로 <strong>360,000+ 시간 unlocked, $15M+ 절감</strong>, 도입 전 <strong>직원 50%가 \"내부 성장 기회 부족\"을 퇴직 사유로 꼽은</strong> 가장 강력한 Before 데이터.",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"Schneider\")",
+    "consulting": "<ul>\n<li><strong>\"50% 퇴직 사유\" Before 데이터</strong>: wiki 전체에서 가장 강력한 도입 정당화 근거</li>\n<li><strong>$15M+ 절감</strong>: Unilever(700k 시간)와 함께 talent marketplace ROI의 교과서</li>\n<li><strong>\"국가별 순차 → big bang 전환\" 경험</strong>: 대기업 rollout 전략의 직접적 반면교사/교훈</li>\n</ul>"
+  },
+  {
+    "slug": "shinhan-bank",
+    "name": "신한은행",
+    "industry": [
+      "finance",
+      "banking"
+    ],
+    "region": [
+      "kr"
+    ],
+    "size": 14000,
+    "description": "한국 4대 시중은행 (KB·신한·우리·하나) 중 하나. <strong>HR AI 사례 가장 풍부</strong>: (1) 'AI ONE' 직원 업무비서 플랫폼 (40+ AI 통합), (2) 'AI 정기인사 알고리즘' (2,414명 시뮬레이션), (3) 신한카드 'AINa' 플랫폼 (그룹사). 자체 LLM·자체 알고리즘 선호 — 데이터 주권·금융 규제 대응이 driver.",
+    "strategy": "<ul>\n<li><strong>자체 통합 platform 'AI ONE'</strong>: 40+ AI를 단일 인터페이스 + Speech-to-AI 모바일/태블릿</li>\n<li><strong>AI 인사이동 알고리즘</strong>: 2020~ 운영, 신한·KB 한국 large-scale 인사 AI 양대 reference</li>\n<li><strong>그룹사 확산</strong>: 신한카드 'AINa' (AI 5025 프로젝트) — 그룹 차원 LLM 활용</li>\n<li><strong>자체 GenAI</strong>: 외부 모델 의존 축소 — 데이터 주권 강조</li>\n</ul>",
+    "consulting": "<ul>\n<li><strong>KR 금융권 사내 AI 플랫폼 Top 3 reference</strong>: KB AI HR Deep Change·하나 지식챗봇·미래에셋 AI Assistant와 비교덱</li>\n<li><strong>자체 LLM·통합 platform 모델</strong>: KR 대기업 산발 AI 통합 솔루션 — JPMorgan LLM Suite와 양 방향</li>\n<li><strong>2026 Q3-Q4 KR 금융 컨설팅 deck 핵심 reference</strong></li>\n<li><strong>반면교사</strong>: 자사 발표 metric (30분 절감·80% 자동화 목표)는 외부 인용 시 출처 명시 필수</li>\n</ul>"
+  },
+  {
+    "slug": "siemens",
+    "name": "Siemens",
+    "industry": [
+      "manufacturing",
+      "energy",
+      "tech"
+    ],
+    "region": [
+      "eu",
+      "global"
+    ],
+    "size": 320000,
+    "description": "글로벌 산업 자동화·에너지 기업. 320,000 직원, 190+ 국가. <strong>제조업 HR AI 대표 사례</strong>: 300,000 직원 리스킬링(Future Skills Initiative) + 20% 내부 이동 증가 + ServiceNow GBS 통합.",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"Siemens\")",
+    "consulting": "<ul>\n<li><strong>독일 제조업의 \"리스킬링 중심\" 접근</strong>: AI로 사람 자르기보다 역할 전환 (vs Amazon 패턴과 정반대)</li>\n<li><strong>Betriebsrat(종업원 협의회)</strong> 환경에서의 단계적·협의적 AI 도입: EU·한국(노사관계) 참고</li>\n<li><strong>한국 제조업(삼성전자·현대·LG)</strong> 리스킬링 전략의 reference</li>\n</ul>"
+  },
+  {
+    "slug": "sk-group",
+    "name": "SK Group",
+    "industry": [
+      "conglomerate",
+      "telecom",
+      "semiconductor",
+      "energy",
+      "it-services"
+    ],
+    "region": [
+      "kr"
+    ],
+    "size": "100000+",
+    "description": "한국 3대 재벌 그룹 중 하나. SK Hynix(반도체)·SKT(통신)·SK Innovation(에너지)·SK AX(IT 서비스) 등 주요 계열사 보유. <strong>국내 대기업 중 HR AI 도입 가장 가시적 레퍼런스 중 하나</strong> — 자체 계열사 SK AX + SKT 합작 솔루션을 그룹 공채에 적용.",
+    "strategy": "",
+    "consulting": "<ul>\n<li><strong>한국 대기업 HR AI 도입의 flagship reference</strong> — 국내 컨설팅 프로젝트에서 Moderna에 해당하는 위치</li>\n<li>특히 <strong>AICT 도입 → 기존 코딩 테스트 폐지</strong>는 \"AI 시대의 채용 역량 재정의\" 워크숍의 앵커 사례</li>\n<li><strong>주의점</strong>:</li>\n<li>SK AX가 자사 계열사이므로 <strong>self-deployment</strong> — 외부 고객사 확장 가능성은 별도 검증 필요</li>\n<li>외부 Tier 1·2 독립 분석(한경·매경·HR인사이트 등) 아직 미확보 — 벤더 자체 주장만 수집된 상태</li>\n<li>AICT 출제·평가의 구체 설계·bias·재현성은 공개 없음</li>\n</ul>"
+  },
+  {
+    "slug": "sk-hynix",
+    "name": "SK하이닉스",
+    "industry": [
+      "semiconductor"
+    ],
+    "region": [
+      "kr"
+    ],
+    "size": 38000,
+    "description": "세계 2위 메모리 반도체 기업. SK 그룹 핵심 멤버사이자 <strong>국가핵심기술 보유사</strong>. <strong>HR AI는 채용 + 그룹 표준 결합</strong>: (1) <strong>A!SK</strong> AI 영상면접 hybrid (AI + 미래 동료 평가) — 2025 신설, (2) SK 그룹 'A.Biz' 표준 사용 with 자체 LLM 'A.X' 격리 환경.",
+    "strategy": "<ul>\n<li><strong>국가핵심기술 보유사 격리 LLM</strong>: 자체 LLM 'A.X' + SK AX 산업특화 AI — 산업안보 강화</li>\n<li><strong>AI single decision 회피 hybrid</strong>: A!SK AI + 미래 동료 peer review — 한국 AI 기본법 인적감독 의무 자동 충족 best practice</li>\n<li><strong>그룹 표준 활용</strong>: SK 'A.Biz' 표준으로 그룹 차원 거버넌스</li>\n</ul>",
+    "consulting": "<ul>\n<li><strong>KR 채용 AI hybrid model 1순위 reference</strong>:</li>\n<li>마이다스 inAIR (vendor single AI) + SK C&C 자체 (자체 single AI) + SK하이닉스 (자체 hybrid AI + peer)</li>\n<li>hybrid 모델이 한국 AI 기본법 + 채용절차법 fit 가장 우수</li>\n<li><strong>국가핵심기술 격리 LLM 패턴</strong>: 삼성전자·LG에너지솔루션·삼성바이오로직스 등 산업안보 + AI 활용 trade-off solution</li>\n<li><strong>2026 Q3-Q4 KR 반도체·이차전지·바이오 그룹사 컨설팅 reference</strong></li>\n</ul>"
+  },
+  {
+    "slug": "unilever",
+    "name": "Unilever",
+    "industry": [
+      "fmcg",
+      "consumer-goods"
+    ],
+    "region": [
+      "global"
+    ],
+    "size": 128000,
+    "description": "글로벌 FMCG 대기업. <strong>Internal talent marketplace (FLEX Experiences)</strong> 도입의 <strong>가장 자주 인용되는 reference case</strong>. Gloat와의 파트너십은 2019년부터 시작돼 장기 운영 중.",
+    "strategy": "",
+    "consulting": "<ul>\n<li><strong>\"내부 인력 재배치\"의 글로벌 대표 레퍼런스</strong>. 한국 대기업(특히 계열사 간 이동이 필요한 그룹사)에 proof-point로 사용 가능.</li>\n<li><strong>주의점</strong>:</li>\n<li>Unilever FLEX의 \"매니저 승인 불필요\" 원칙이 한국 연공 문화에서 작동할지 미검증</li>\n<li>DEI 효과(여성 직원 참여율) 부분은 한국 적용 시 별도 설계 필요</li>\n<li>현재 wiki의 주요 소스가 <strong>2019년 기준 (76개월 stale)</strong> — 최신 data로 업데이트하지 않으면 제안서 사용 시 리스크</li>\n<li><strong>반면교사 리스크</strong>:</li>\n</ul>"
+  },
+  {
+    "slug": "walmart",
+    "name": "Walmart",
+    "industry": [
+      "retail"
+    ],
+    "region": [
+      "na",
+      "global"
+    ],
+    "size": 2300000,
+    "description": "세계 최대 리테일러. 2.3M 직원, 10,500+ 매장. <strong>HR AI 최대 규모 배포</strong>: Ask Sam(900k 사용자, 주 3M 질문) + 1.5M 직원 AI 도구 + 50k 리스킬링 + AI Interview Coach.",
+    "strategy": "Walmart의 HR AI 접근은 <strong>\"사람이 주도하고 기술이 지원\"</strong>이라는 프레이밍이 핵심. AI를 \"사람 대체\"가 아닌 \"사람 강화\"로 포지셔닝.",
+    "consulting": "<ul>\n<li><strong>리테일 HR AI의 교과서</strong>: 전 세계에서 가장 큰 규모의 HR AI 배포 + 리스킬링 병행</li>\n<li><strong>\"People-led, Tech-powered\"</strong> 프레이밍: 한국 대기업 CHRO에게 AI 도입 narrative 전략의 모범 사례</li>\n<li><strong>한국 리테일(이마트·롯데마트·GS리테일) 적용</strong>: 매장 직원 대상 음성 AI 어시스턴트 개념 참고</li>\n</ul>"
+  }
+]

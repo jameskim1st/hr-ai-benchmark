@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.hr-brew.com)",
+      "WebFetch(domain:www.i4cp.com)",
+      "WebFetch(domain:joshbersin.com)",
+      "WebFetch(domain:dataconomy.com)",
+      "WebFetch(domain:www.paradox.ai)",
+      "WebFetch(domain:www.hrdive.com)",
+      "WebFetch(domain:www.skax.co.kr)",
+      "WebFetch(domain:www.aitimes.com)",
+      "WebFetch(domain:www.taxwatch.co.kr)"
+    ],
+    "additionalDirectories": [
+      "c:\\AI\\AI-HR\\Benchmark\\.claude"
+    ]
+  }
+}

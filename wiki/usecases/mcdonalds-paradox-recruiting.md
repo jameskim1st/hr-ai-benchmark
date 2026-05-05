@@ -1,0 +1,44 @@
+---
+title: "McDonald's — Paradox AI 채용 (21일→3일 미만 time-to-hire)"
+slug: mcdonalds-paradox-recruiting
+primary_category: Talent Acquisition
+subcategory: Screening & Assessment
+tags: [paradox, conversational-ai, high-volume, restaurant, fast-food]
+company: McDonald's
+industry: [restaurant, fast-food]
+region: [global]
+employee_class: [계약직]
+vendor: [Paradox]
+vendor_type: [point-solution]
+stage: production
+frequency: daily
+first_seen: 2021
+last_confirmed: 2025
+confidence: 0.20
+consulting_angle_status: filled
+sources:
+  - "Paradox clients + NBC News https://www.nbcnews.com/tech/innovation/ai-job-recruiters-used-top-companies-glitches-rcna215128"
+related_usecases:
+  - chipotle-paradox-olivia
+  - nestle-paradox-recruiting
+related_vendors:
+  - paradox
+---
+
+# McDonald's — Paradox AI 채용
+
+⚠️ 벤더 주장: time-to-hire **21일→3일 미만** (86%↓). Paradox ecosystem에서 Chipotle·Nestlé·7-Eleven에 이은 4번째 글로벌 식음료 거대 고객. NBC News(Tier 1)가 AI recruiter 사용을 확인.
+
+## Impact / Metrics (기대효과)
+
+### 기대효과 요약
+Time-to-hire 21일에서 3일 미만으로 86% 단축 (벤더 주장). NBC News가 AI recruiter 사용을 독립 확인(Fact).
+
+| 지표 | 값 | 출처 | 성격 |
+|---|---|---|---|
+| Time-to-hire | **21일→3일 미만** | Paradox case study (2021) | ⚠️ 벤더 주장 |
+| NBC News 확인 | AI recruiter 사용 confirmed | NBC News | ✅ Fact (Tier 1) |
+
+## Consulting Angle
+- **Paradox wiki 고객 생태계 6번째**: Chipotle(75%↓) · Nestlé(600%↑) · 7-Eleven(40k hrs/wk) · GM($2M) · Workday(23k hrs) · **McDonald's(21→3일)**
+- 식음료·리테일 고볼륨 채용에서 Paradox의 **market dominance**가 데이터로 확실
