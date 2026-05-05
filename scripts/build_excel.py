@@ -203,7 +203,8 @@ def prettify_for_excel(s, target_line_len=80):
 
 
 def _split_long(line, target_line_len):
-    """단일 긴 line을 부드럽게 분할."""
+    """단일 긴 line을 부드럽게 분할.
+    화살표(→) chains는 process flow 의미 보존을 위해 split 않음 — hard wrap fallback."""
     # 콜론(:) 뒤
     parts = re.split(r'(?<=[:：])\s+', line)
     if len(parts) > 1 and all(len(p) <= target_line_len * 1.5 for p in parts):
@@ -212,11 +213,7 @@ def _split_long(line, target_line_len):
     parts = re.split(r'(?<=[,;·])\s+', line)
     if len(parts) > 1 and all(len(p) <= target_line_len * 1.5 for p in parts):
         return parts
-    # → 화살표 뒤
-    parts = re.split(r'(?<=→)\s+', line)
-    if len(parts) > 1 and all(len(p) <= target_line_len * 1.5 for p in parts):
-        return parts
-    # 마지막 수단: hard wrap (단어 경계 유지)
+    # 마지막 수단: hard wrap (단어 경계 유지) — 화살표 chain은 자연스럽게 한 단어 그룹으로 wrap
     out = []
     cur = ''
     for word in line.split(' '):
@@ -593,7 +590,8 @@ def build_usecases_sheet(wb, ucs):
 
         # MAIN columns (사용자 spec 순서) — 잘림 없이 full text + prettify로 자동 \n 삽입
         # target_line_len = 컬럼 폭 매칭 (한글 1.7 chars/cell)
-        summary_txt = strip_html(u.get("summary"), prettify=True, target_line_len=70)
+        # 개요 = summary_clean (모든 use case 동일 체계로 정리된 2-3 문장)
+        summary_txt = strip_html(u.get("summary_clean") or u.get("summary"), prettify=True, target_line_len=70)
         problem_txt = strip_html(u.get("problem"), prettify=True, target_line_len=55)
         process_txt = build_process_flow(u, target_line_len=75)
         system_txt = join_dict_kr(u.get("system"), target_line_len=38)

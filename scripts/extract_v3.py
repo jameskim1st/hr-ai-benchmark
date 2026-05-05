@@ -254,6 +254,73 @@ def headline(summary):
             break
     return out[:400]
 
+
+def extract_clean_summary(raw_summary, max_sentences=3, max_chars=320):
+    """Excel/HTML 개요용 표준 format — 모든 use case에 동일 체계 적용:
+    - callout(`> ...`) · bullet(`-`, `*`, `•`) · 연도 marker(`2022 시점:`) · 인용(`sources/...`) 제거
+    - 마크다운 bold/italic/wikilink/code 제거
+    - 이모지 marker(✅⚠️🚫📌🚨❌) 제거
+    - 첫 max_sentences 문장만 prose로 추출 (max_chars 한도)
+    - 결과: 2-3 문장, 깨끗한 prose, 모든 use case 동일 체계"""
+    if not raw_summary:
+        return ''
+    lines = raw_summary.split('\n')
+    keep = []
+    callout_lines = []  # `> ...` 줄 — fallback용 (다른 prose 없을 때 사용)
+    for line in lines:
+        s = line.rstrip()
+        if not s.strip():
+            continue
+        if s.lstrip().startswith('>'):
+            # `> ` prefix 제거 + 첫 단어 marker(★ 등)도 가능
+            callout_text = re.sub(r'^\s*>\s*', '', s).strip()
+            if callout_text:
+                callout_lines.append(callout_text)
+            continue
+        # bullet item (`-`, `*`, `•`) 제거
+        if re.match(r'^\s*[-*•]\s+', s):
+            continue
+        keep.append(s)
+    # 일반 prose가 없으면 callout을 fallback으로 사용
+    if not keep and callout_lines:
+        keep = callout_lines
+    text = ' '.join(keep)
+    # wikilink 제거
+    text = re.sub(r'\[\[([^\]|]+)\|?[^\]]*\]\]', r'\1', text)
+    # source/citation 제거
+    text = re.sub(r'sources/[\w-]+(?:\.md)?', '', text)
+    # markdown 강조 제거
+    text = re.sub(r'\*\*(.+?)\*\*', r'\1', text)
+    text = re.sub(r'(?<!\*)\*([^*]+)\*(?!\*)', r'\1', text)
+    text = re.sub(r'`([^`]+)`', r'\1', text)
+    # 이모지 marker 제거 (단어 경계 보존)
+    text = re.sub(r'[✅⚠️🚫📌🚨❌🟢🟡🔴🔵★⭐]\s*', '', text)
+    # `Fact:`·`벤더 주장:`·`자사 보고:`·`Note:`·`정정:` 같은 marker label 제거
+    text = re.sub(r'\b(Fact|벤더 주장|자사 보고|미공개|Note|정정|중요 caveat|caveat)\s*:\s*', '', text, flags=re.IGNORECASE)
+    # 다중 공백 정리
+    text = re.sub(r'\s+', ' ', text).strip()
+    # leading punctuation 제거
+    text = re.sub(r'^[\s,;.:()—–\-]+', '', text).strip()
+    # 문장 분할 (마침표는 뒤에 공백 또는 줄끝일 때만)
+    sentences = re.findall(r'.+?(?:[.!?。](?=\s|$)|[!?。])', text)
+    if not sentences:
+        return text[:max_chars]
+    # 첫 max_sentences 문장 누적, max_chars 한도
+    out = ''
+    for s in sentences[:max_sentences + 2]:  # 약간 여유
+        s = s.strip()
+        # 너무 짧은 것·marker만 있는 것 skip
+        if len(s) < 15:
+            continue
+        candidate = (out + ' ' + s).strip() if out else s
+        if len(candidate) > max_chars and out:
+            break
+        out = candidate
+        # 모든 max_sentences 문장 다 모았으면 종료
+        if len([c for c in out if c in '.!?。']) >= max_sentences:
+            break
+    return out[:max_chars]
+
 # ── Use Case 처리 ──
 def process_uc(fp):
     content = fp.read_text(encoding='utf-8')
@@ -300,8 +367,15 @@ def process_uc(fp):
 
     # Summary는 Excel 개요·HTML 양쪽에서 사용 — bullet/줄바꿈 보존 위해 충분히 크게
     raw_summary = section_text(body, 'Summary', 20)
+    # Summary 섹션 없으면 fallback: # Title 이후 첫 ## 까지의 본문
+    if not raw_summary:
+        m_intro = re.search(r'^#\s+.+?\n(.+?)(?=\n##\s|\Z)', body, re.DOTALL | re.MULTILINE)
+        if m_intro:
+            raw_summary = m_intro.group(1).strip()
     d['summary'] = md2html(raw_summary)
     d['headline'] = headline(raw_summary)
+    # Excel 개요용 표준 format (모든 use case 동일 체계 — 깨끗한 2-3 문장)
+    d['summary_clean'] = extract_clean_summary(raw_summary, max_sentences=3, max_chars=320)
     d['problem'] = md2html(section_text(body, 'Problem', 6))
 
     m = re.search(r'###\s+기대효과 요약\s*\n(.+)', body)
