@@ -95,6 +95,8 @@ def extract_process(body):
     m = re.search(r'\*\*Before(?:\s*\(As-is\))?\*\*[:\s]*(.+?)(?=\*\*After|\n\*\*|\n###|\n##)', body, re.DOTALL | re.IGNORECASE)
     if m:
         before = m.group(1).strip()
+        # wikilinks 먼저 제거 (URL 안의 ".md" 등이 후속 regex에 걸리지 않도록)
+        before = re.sub(r'\[\[.*?\]\]', '', before)
         before = re.sub(r'\n\s*[-*]\s*', ' / ', before)
         before = re.sub(r'\*\*(.+?)\*\*', r'\1', before)
         before = before[:400]
@@ -102,12 +104,14 @@ def extract_process(body):
     m = re.search(r'\*\*After(?:\s*\(To-be\))?\*\*[:\s]*(.+?)(?=\*\*Human|\*\*Trigger|\*\*Scope|\*\*HITL|\*\*Frequency|\n###|\n##)', body, re.DOTALL | re.IGNORECASE)
     if m:
         at = m.group(1).strip()
-        steps = re.findall(r'\d+\.\s*(?:\*\*[^*]+\*\*\s*)?(.+?)(?=\n\s*\d+\.|\n\*\*|\n###|\n##|$)', at, re.DOTALL)
+        # wikilinks 먼저 제거 — `[[sources/...2026-01.md]]` 안의 "01." 이 numbered-step regex에 잘못 매칭되는 버그 방지
+        at = re.sub(r'\[\[.*?\]\]', '', at)
+        # numbered step은 줄 시작에 있어야 함 (^ 앵커 + MULTILINE)
+        steps = re.findall(r'^\s*\d+\.\s*(?:\*\*[^*]+\*\*\s*)?(.+?)(?=\n\s*\d+\.|\n\*\*|\n###|\n##|$)', at, re.DOTALL | re.MULTILINE)
         if steps:
             for s in steps[:8]:
                 step = s.strip().split('\n')[0]
                 step = re.sub(r'\*\*(.+?)\*\*', r'\1', step)
-                step = re.sub(r'\[\[.*?\]\]', '', step)
                 step = re.sub(r'[✅⚠️❓]', '', step).strip()
                 if step and len(step) < 100:
                     after_steps.append(step)
@@ -193,7 +197,8 @@ def process_uc(fp):
     try: d['confidence'] = float(fm.get('confidence', 0))
     except: pass
 
-    raw_summary = section_text(body, 'Summary', 4)
+    # Summary는 Excel 개요·HTML 양쪽에서 사용 — bullet/줄바꿈 보존 위해 충분히 크게
+    raw_summary = section_text(body, 'Summary', 20)
     d['summary'] = md2html(raw_summary)
     d['headline'] = headline(raw_summary)
     d['problem'] = md2html(section_text(body, 'Problem', 6))

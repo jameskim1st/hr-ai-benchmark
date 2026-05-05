@@ -1193,7 +1193,7 @@
     "model": {
       "Orchestration": "자체 agentic framework (Intake/Answer/Insights specialist 분할)"
     },
-    "process_before": "미국 employer의 OE(연 1회 plan 선택)는 직원 stress 최고점 — 정책 복잡(의료·치과·생명·FSA·HSA·HDHP), 문서 검증(QLE: qualifying life event — 결혼·출산·이혼시 plan 변경)·승인 워크플로 수작업 / Pain point: HR/벤처사 콜센터에 OE 시즌 콜 급증, 직원당 평균 통화 시간 길고 같은 질문 반복, document 검증은 사람 reviewer가 1건씩 처리 / Trigger: GenAI 등장으로 chat·문서 처리 자동화 가능. Businessolver 1998년 설립 이후 축적된 25년+ 도메인 데이터 + Sofia AI 엔진을 agentic으로 재구성 / 비교 reference: [[moderna-benefits-equity-gpts]",
+    "process_before": "미국 employer의 OE(연 1회 plan 선택)는 직원 stress 최고점 — 정책 복잡(의료·치과·생명·FSA·HSA·HDHP), 문서 검증(QLE: qualifying life event — 결혼·출산·이혼시 plan 변경)·승인 워크플로 수작업 / Pain point: HR/벤처사 콜센터에 OE 시즌 콜 급증, 직원당 평균 통화 시간 길고 같은 질문 반복, document 검증은 사람 reviewer가 1건씩 처리 / Trigger: GenAI 등장으로 chat·문서 처리 자동화 가능. Businessolver 1998년 설립 이후 축적된 25년+ 도메인 데이터 + Sofia AI 엔진을 agentic으로 재구성 / 비교 reference: 는 single-tenant Custom GPT, Sof",
     "process_steps": [
       "직원",
       "Sofia Agentic Layer",
@@ -1952,7 +1952,11 @@
     },
     "process_before": "직원이 개별적으로 외부 AI 도구 또는 전통적 검색·작성 도구를 사용. 성과 리뷰는 관리자가 수동으로 직접 작성. /",
     "process_steps": [
-      "md]]"
+      "직원 요청\\n문서 요약·이메일·리뷰 초안 등",
+      "LLM Suite\\n내부 보안 포털",
+      "AI 응답 생성",
+      "직원 검토·편집",
+      "최종 산출물 사용"
     ]
   },
   {
@@ -2633,7 +2637,7 @@
       "sources/shrm-walmart-ai-revolution-2025.md",
       "sources/hrdive-walmart-my-assistant-genai-2024.md"
     ],
-    "summary": "Walmart(2.3M 직원, 10,500 매장)은 세 가지 HR AI 이니셔티브를 병행 운영:\n1. <strong>Ask Sam</strong> — 매장 직원용 대화형 음성 AI 어시스턴트. <strong>900,000명 직원</strong>이 사용하며 <strong>주 3,000,000+ 질문</strong> 처리. HR 정책·재고·가격·작업 절차 등 답변.\n2. <strong>AI Interview Coach</strong> — 2025-06 파일럿 공개. 직원의 <strong>승진 면접 준비</strong>를 AI가 코칭.\n3. <strong>50,000명 리스킬링</strong> — 캐셔·매장 직원 → 드론 기술자·로봇 수퍼바이저로 역할 전환 계획.",
+    "summary": "Walmart(2.3M 직원, 10,500 매장)은 세 가지 HR AI 이니셔티브를 병행 운영:\n1. <strong>Ask Sam</strong> — 매장 직원용 대화형 음성 AI 어시스턴트. <strong>900,000명 직원</strong>이 사용하며 <strong>주 3,000,000+ 질문</strong> 처리. HR 정책·재고·가격·작업 절차 등 답변.\n2. <strong>AI Interview Coach</strong> — 2025-06 파일럿 공개. 직원의 <strong>승진 면접 준비</strong>를 AI가 코칭.\n3. <strong>50,000명 리스킬링</strong> — 캐셔·매장 직원 → 드론 기술자·로봇 수퍼바이저로 역할 전환 계획.\n전략적 프레이밍: <strong>\"People-led, tech-powered\"</strong> — AI를 \"사람을 대체\"가 아니라 \"사람을 강화\"로 포지셔닝.",
     "headline": "Walmart(2.3M 직원, 10,500 매장)은 세 가지 HR AI 이니셔티브를 병행 운영: 1. Ask Sam — 매장 직원용 대화형 음성 AI 어시스턴트. 900,000명 직원이 사용하며 주 3,000,000+ 질문 처리. HR 정책·재고·가격·작업 절차 등 답변.",
     "problem": "",
     "impact_summary": "Before: _미공개 (Ask Sam 도입 전 HR 문의 처리 방식·소요 시간)_ → After: ⚠️ 자사 보고 900,000명 사용, 주 3,000,000+ 질문 처리. ⚠️ 벤더 주장 Workday 도입 연간 $35M 절감, 채용 기간 60일→18일(70% 단축). 리스킬링 50,000명 대상(⚠️ 자사 보고). 2,300,000 직원, 10,500 매장 규모(Fact).",
@@ -2876,7 +2880,11 @@
     },
     "process_before": "지식노동자가 직접 문서 작성, 수동 검색, 개별 도구 사용. /",
     "process_steps": [
-      "md]]"
+      "직원 입력\\n텍스트·문서",
+      "GS AI Assistant\\n사내 방화벽 내",
+      "AI 응답 생성",
+      "직원 검토",
+      "사용"
     ]
   },
   {
@@ -3672,7 +3680,7 @@
       "커스터마이징 기법": "금융 도메인 fine-tuning + RAG (사내 정책)",
       "평가·가드레일": "5대 영역 portfolio 평가 framework"
     },
-    "process_before": "우리은행 ~13K 직원이 다수 산발 시스템 (코어뱅킹·CRM·콜센터·내부통제) 사용. AI 도입은 부서별 산발 PoC / Pain point: KB국민은행 kb-bank-ai-hr-deep-change (인사이동 AI), 신한 AI ONE shinhan-bank-ai-one-platform 등 경쟁 은행 AI 가속 → 우리은행 차별화 시급 / Trigger: 2026 신년 신경 그룹장 발표 — 금융권 최초 전사 AI 에이전트 도입 결단",
+    "process_before": "우리은행 ~13K 직원이 다수 산발 시스템 (코어뱅킹·CRM·콜센터·내부통제) 사용. AI 도입은 부서별 산발 PoC / Pain point: KB국민은행  (인사이동 AI), 신한 AI ONE  등 경쟁 은행 AI 가속 → 우리은행 차별화 시급 / Trigger: 2026 신년 신경 그룹장 발표 — 금융권 최초 전사 AI 에이전트 도입 결단",
     "process_steps": [
       "575개 후보 사업부 nominate",
       "5대 영역 29개 업무 175개 에이전트",
@@ -4292,7 +4300,7 @@
       "모델 유형": "LLM (conversational matching) + recommendation",
       "커스터마이징 기법": "자사 보고: 한국어 specialized"
     },
-    "process_before": "잡코리아 채용 담당자는 공고 작성·후보자 search·매칭을 별도 도구·매뉴얼 process / Pain point: 한국 채용 시장 vendor 경쟁 (사람인·잡코리아·원티드) — 차별화 압박 / Trigger: 2025-10 wantedlab-ai-recruiting-agent launch + 잡코리아 시장 점유 방어",
+    "process_before": "잡코리아 채용 담당자는 공고 작성·후보자 search·매칭을 별도 도구·매뉴얼 process / Pain point: 한국 채용 시장 vendor 경쟁 (사람인·잡코리아·원티드) — 차별화 압박 / Trigger: 2025-10  launch + 잡코리아 시장 점유 방어",
     "process_steps": [
       "채용 담당자가 탤런트 에이전트에 자연어로 의도 입력 (\"Python backend 시니어 + 핀테크 경력 + 서울\")",
       "에이전트가 공고 맥락 분석 → 후보자 매칭 + 추천 사유",
@@ -4603,7 +4611,13 @@
     },
     "process_before": "매니저가 SuccessFactors에서 직원별 목표·피드백·리뷰 데이터를 개별 조회 → 수동으로 대화 포인트 준비 /",
     "process_steps": [
-      "md]]"
+      "SuccessFactors 목표 데이터",
+      "Joule Performance Agent",
+      "피드백·리뷰 히스토리",
+      "맞춤 인사이트",
+      "목표 진척 업데이트",
+      "대화 포인트",
+      "성과 대화 실행"
     ]
   },
   {
@@ -5960,7 +5974,11 @@
     "model": {},
     "process_before": "매니저가 직원별로 여러 시스템(HRIS·프로젝트 관리·피드백 도구)에서 데이터 수집 → 수동으로 리뷰 작성 /",
     "process_steps": [
-      "md]]"
+      "Workday HRIS 데이터",
+      "Performance Review Agent",
+      "타 시스템 데이터",
+      "리뷰 초안 생성",
+      "최종 리뷰 제출"
     ]
   },
   {
@@ -6438,7 +6456,12 @@
     },
     "process_before": "공무원이 생성형 AI를 개인적·비공식적으로 사용하거나 외부 서비스 접근. /",
     "process_steps": [
-      "md]]"
+      "공무원",
+      "범정부 AI 공통기반\\n내부망 보안 환경",
+      "삼성SDS·네이버클라우드 LLM",
+      "법령·지침·민원 RAG\\n행정 문서 연계",
+      "AI 응답 생성",
+      "공무원 검토·결재"
     ]
   },
   {
@@ -7111,7 +7134,12 @@
     "model": {},
     "process_before": "매니저가 성과 리뷰를 빈 페이지에서 시작 → engagement 결과를 수동 해석 → 액션 플랜 없이 방치 /",
     "process_steps": [
-      "md]]"
+      "Engagement 설문 결과",
+      "AI Coach 분석",
+      "과거 피드백·동료 리뷰",
+      "개인화 액션 플랜",
+      "구조화 리뷰 가이드",
+      "성과 리뷰 제출"
     ]
   },
   {
@@ -7642,7 +7670,13 @@
     "model": {},
     "process_before": "매니저가 수동으로 교대표 작성 → 자격증·컴플라이언스·선호도 수동 확인 → 채용도 개별 프로세스 /",
     "process_steps": [
-      "md]]"
+      "자격증·규제·선호도 데이터",
+      "AI 스케줄링 엔진",
+      "최적 교대표 추천",
+      "스케줄 배포",
+      "Workforce Intelligence Hub",
+      "실시간 통합 뷰",
+      "타임·급여 데이터"
     ]
   },
   {
@@ -7838,7 +7872,13 @@
     "model": {},
     "process_before": "매니저가 1:1 미팅을 자유 형식으로 진행 → 노트 수동 작성 → 후속 조치 누락 빈번 → HR이 매니저 효과성 파악 어려움 /",
     "process_steps": [
-      "md]]"
+      "1:1 미팅 시작",
+      "Kona 자동 참여·전사",
+      "요약·액션 아이템 생성",
+      "engagement·성과 데이터 분석",
+      "실시간 코칭 팁 전달",
+      "행동 변화 자동 추적",
+      "HR 대시보드 모니터링"
     ]
   },
   {
@@ -8048,7 +8088,12 @@
     "model": {},
     "process_before": "연 1~2회 목표 설정 → 수동 리뷰 작성 → 편향 보정 없음 /",
     "process_steps": [
-      "md]]"
+      "역할·팀·회사 우선순위",
+      "Goal Intelligence",
+      "SMART 목표 추천",
+      "연속 피드백 수집",
+      "AI 리뷰 편향 탐지",
+      "최종 평가 제출"
     ]
   },
   {
@@ -9316,7 +9361,14 @@
     "model": {},
     "process_before": "매니저가 타임카드 수동 검토 → 교대표 수동 작성 → PTO 개별 승인 /",
     "process_steps": [
-      "md]]"
+      "타임카드 제출",
+      "Agentic Timesheet 스코어링",
+      "자동 승인",
+      "승인/수정",
+      "규칙: 근무시간·휴식·법규",
+      "Auto-Shifts",
+      "최적 교대표",
+      "과거 PTO 데이터"
     ]
   },
   {
@@ -9375,9 +9427,7 @@
     "data": {},
     "model": {},
     "process_before": "LMS에서 직원이 과정 목록을 수동 탐색 → 관련성 낮은 과정 수강 → 학습 효율 저하 /",
-    "process_steps": [
-      "md]]"
-    ]
+    "process_steps": []
   },
   {
     "slug": "sk-hynix-pwc-5agent-retention",

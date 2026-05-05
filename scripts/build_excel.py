@@ -274,7 +274,7 @@ USECASE_MAIN_COLS = [
     ("HR 모듈", 22),                  # primary_category KR
     ("사례명", 50),                    # title
     ("기업명", 25),                    # company
-    ("개요", 55),                      # headline
+    ("개요", 70),                      # summary (full, bullet/줄바꿈 보존)
     ("Pain Point", 55),                # problem
     ("Process Flow", 75),              # before → after combined
     ("System", 38),                    # system dict
@@ -449,7 +449,7 @@ def build_usecases_sheet(wb, ucs):
             cat_kr,
             u.get("title", ""),
             company,
-            strip_html(u.get("headline"), 250),
+            strip_html(u.get("summary"), 1500),  # 개요 = 전체 Summary (bullet/줄바꿈 보존)
             strip_html(u.get("problem"), 350),
             build_process_flow(u),
             join_dict_kr(u.get("system")),
@@ -560,9 +560,9 @@ def build_usecases_sheet(wb, ucs):
                     fill=PatternFill("solid", fgColor="FFF8DC")),
     )
 
-    # Row height — 신규 column 多 → 90pt
+    # Row height — 개요 full summary (bullet/줄바꿈) 수용 → 140pt
     for r in range(2, last_row + 1):
-        ws.row_dimensions[r].height = 90
+        ws.row_dimensions[r].height = 140
 
 
 # ── Sheet 3: AI 기술 분포 (long-format) ──
