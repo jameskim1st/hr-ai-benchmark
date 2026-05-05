@@ -91,15 +91,15 @@ def extract_bullets(body, heading, keys):
 def extract_process(body):
     before = ''
     after_steps = []
-    # Before
-    m = re.search(r'\*\*Before\s*\(As-is\)\*\*[:\s]*(.+?)(?=\*\*After|\n\*\*|\n###|\n##)', body, re.DOTALL | re.IGNORECASE)
+    # Before — match both "**Before**" and "**Before (As-is)**"
+    m = re.search(r'\*\*Before(?:\s*\(As-is\))?\*\*[:\s]*(.+?)(?=\*\*After|\n\*\*|\n###|\n##)', body, re.DOTALL | re.IGNORECASE)
     if m:
         before = m.group(1).strip()
         before = re.sub(r'\n\s*[-*]\s*', ' / ', before)
         before = re.sub(r'\*\*(.+?)\*\*', r'\1', before)
         before = before[:400]
-    # After steps
-    m = re.search(r'\*\*After\s*\(To-be\)\*\*[:\s]*(.+?)(?=\*\*Human|\*\*Trigger|\*\*Scope|\n###|\n##)', body, re.DOTALL | re.IGNORECASE)
+    # After steps — match both "**After**" and "**After (To-be)**"
+    m = re.search(r'\*\*After(?:\s*\(To-be\))?\*\*[:\s]*(.+?)(?=\*\*Human|\*\*Trigger|\*\*Scope|\*\*HITL|\*\*Frequency|\n###|\n##)', body, re.DOTALL | re.IGNORECASE)
     if m:
         at = m.group(1).strip()
         steps = re.findall(r'\d+\.\s*(?:\*\*[^*]+\*\*\s*)?(.+?)(?=\n\s*\d+\.|\n\*\*|\n###|\n##|$)', at, re.DOTALL)

@@ -38,16 +38,14 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "770K+ 글로벌 컨설팅 인력 — 직원 AI 역량 분포 편차 큰 / Pain point: 컨설팅 비즈니스 자체가 AI를 사용·판매·구현해야 함 → 직원 AI literacy가 직접 매출 영향 / Trigger: ChatGPT 출시 직후 (2022-11) Sweet CEO가 즉각 mass reskilling 결단",
     "process_steps": [
-      "2022-11: 30명 trained",
-      "전 직원 GenAI 모듈",
-      "2025-FY: 550,000+ trained",
-      "AI/data 인력 40K",
-      "77K +93%",
-      "Sweet 2026-03",
-      "non-adaptable 직원",
-      "$1B/yr L&D"
+      "2022-11 시점 GenAI trained 직원 = 30명",
+      "mandatory GenAI fundamentals 모듈 전 직원 배포",
+      "AI/data 전문 인력 채용·재배치 가속 — 2023년 40K → 2025년 77K",
+      "매년 ~$1B L&D 투자 (대부분 AI 비중)",
+      "2025-FY 종료 시점 trained 직원 = 550,000+",
+      "Sweet 2026-03: \"AI 미사용 직원 승진·고용 risk + exit timeline\""
     ]
   },
   {
@@ -94,8 +92,15 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "ICT 직무·스킬 evolution 정량 데이터는 LinkedIn·Indeed·BLS 산발 — 글로벌 컨소시엄 합의 부재 / Pain point: HR·workforce planning 임원이 \"AI가 우리 직무에 얼마나 영향을 주나\"에 정량 답 부재 / Trigger: 2024 multi-vendor 협업 출범 — Cisco가 anchor",
+    "process_steps": [
+      "6+ tech 대기업 협업 데이터 pooling",
+      "ICT 직무 mapping (BLS·O*NET 기반 + 회사 internal job architecture)",
+      "AI 기술 스킬 포함 비율 측정 → 78% 결과",
+      "fastest-growing ICT 직무 trend 분석 → top 10 중 7개 AI-related",
+      "AI Skills Glossary 표준화 발간",
+      "Playbook + 200+ learning recommendation 부속 발간"
+    ]
   },
   {
     "slug": "jpmorgan-llm-suite-redeployment",
@@ -148,16 +153,13 @@
     "model": {
       "Foundation model": "OpenAI GPT-4 + Anthropic Claude (선택 가능)"
     },
-    "process_before": "",
+    "process_before": "230K 직원 대규모 finance enterprise, 정보보안·규제 제약으로 외부 LLM(ChatGPT) 직접 사용 불가 / Pain point: gen AI 효익 vs 금융정보보호·고객정보·내부거래 정보 제약 / Trigger: 2023-24 ChatGPT 시장 도입 + 경쟁사(Goldman·Morgan Stanley) AI 배포 압박",
     "process_steps": [
-      "230K 직원",
-      "LLM Suite",
-      "OpenAI GPT-4",
-      "Anthropic Claude",
-      "(회사 정책 RAG)",
-      "분석·보고서·perf review·이메일·코드",
-      "Dimon redeployment",
-      "백오피스 축소"
+      "직원이 LLM Suite (private gateway) 접속",
+      "모델 선택 (OpenAI GPT-4 / Anthropic Claude — agnostic)",
+      "내부 데이터 활용 가능 (RAG with 회사 정책·문서)",
+      "사용 사례:",
+      "동시에 Dimon은 AI 효율을 redeployment 명분으로 활용 — 백오피스 폐지·클라이언트직 신설"
     ]
   },
   {
@@ -257,8 +259,13 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "HR Q&A 챗봇은 정보 조회까지만 — \"내 매니저에게 휴가 알리는 메시지 어떻게 쓰지\" 같은 outbound 작업은 수동 / Pain point: HR 챗봇이 Q&A에 머물러 ROI 한계 — agentic 수준 도약 필요 / Trigger: Cisco의 \"AI agents + nudges\" 전사 bureaucracy 감소 이니셔티브 (Jeetu Patel 주도)",
+    "process_steps": [
+      "직원이 AI Assistant에 \"다음주 휴가 가능한지 + 매니저에게 알려줘\" 한 번에 요청",
+      "Assistant가 PTO 잔여 + 부서 calendar 조회",
+      "매니저용 time-off notification 메시지 자동 작성 (직원 검토·전송)",
+      "HR 정책 위배 시 alert + 사람 escalation"
+    ]
   },
   {
     "slug": "deloitte-zora-ai-hc-suite",
@@ -303,8 +310,15 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "컨설팅사가 HR AI 컨설팅을 \"case-by-case\" 진행 — 표준화·재사용 자산 부족 / Pain point: HR transformation 프로젝트마다 workflow 재설계 압도적 — 300+ workflow library가 필요 / Trigger: agentic AI 부상 + Big-4 컨설팅 경쟁 압박 (PwC·KPMG·EY 동반 발표)",
+    "process_steps": [
+      "Zora AI 플랫폼이 ready-to-deploy agents 제공 (HR 포함 6 영역)",
+      "Workforce Analyzer가 클라이언트 workforce 세그먼트별 AI 영향평가",
+      "Workforce Planner+가 시나리오 기반 인력 재배치 계획",
+      "300+ HR workflow library에서 use case 매칭",
+      "HR AI maturity model로 클라이언트 진단",
+      "agent 배포·운영"
+    ]
   },
   {
     "slug": "ibm-charlie-learning-ops-agent",
@@ -345,14 +359,13 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "L&D operations 팀이 enrollment 추적·홍보·출석 캡처·event 운영을 manual로 처리 — 270K 직원 규모에서 병목 / Pain point: 직원 facing AI(tutor·content)는 ROI 모호, 학습 ops 백오피스는 ROI 명확하지만 자동화 후순위 / Trigger: watsonx Orchestrate dogfooding + L&D 운영 효율 압박",
     "process_steps": [
-      "Learning Mgmt System",
-      "cHaRlie Agent",
-      "L&D Admin",
-      "직원",
-      "100% 정확도 캡처",
-      "학습 전략 조정"
+      "cHaRlie가 enrollment 모니터링 → 저조 시 admin alert",
+      "event 홍보 메시지 자동 생성·배포",
+      "virtual class 출석 자동 캡처 (100% 정확도)",
+      "pre-event comms 자동 발송",
+      "admin은 escalation·전략 결정만 처리"
     ]
   },
   {
@@ -396,7 +409,7 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "270K 직원 IBM의 HR 운영 비용 baseline (CHRO LaMoreaux pre-AI era) / Pain point: HR 백오피스 transactional 업무가 budget 흡수, 전략 HR에 투자 여력 부족 / Trigger: AskHR·watsonx Orchestrate·cHaRlie·Predictive Attrition 누적 효과 (2018~2025) → 임계 도달",
     "process_steps": [
       "AskHR Agent",
       "HR transactional 200명 폐지",
@@ -509,8 +522,14 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "한국·글로벌 대기업 모두 직원 self-update profile에 의존 — outdated·incomplete / Pain point: 스킬 inventory 부정확하면 internal mobility·workforce planning·learning 추천 모두 약화 / Trigger: Microsoft가 M365 Copilot 위에 People Skills 출시 (2025-04, Bersin \"HR tech market 변경\"으로 평가)",
+    "process_steps": [
+      "M365 Copilot이 일상 활동 (이메일·문서·미팅) 텔레메트리 수집",
+      "OpenAI 모델로 LinkedIn 16K taxonomy 매핑 → 추론 스킬 프로파일 자동 생성",
+      "직원 검토·승인 (HITL — 추론 결과 거부·수정 가능)",
+      "매니저 Skills Agent 활용 — \"이 프로젝트에 맞는 사내 talent\" search",
+      "Workforce Insights agent — workforce planning insight"
+    ]
   },
   {
     "slug": "walmart-openai-certification",
@@ -552,8 +571,13 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "1.6M Walmart frontline 직원의 AI literacy baseline 매우 편차 큰 / Pain point: AI 도입 가속 vs frontline workforce 변화 압박 — reskilling 없으면 mass 해고 사태 / Trigger: OpenAI Certification (2026 GA) launch 동시 vendor 파트너십 결단",
+    "process_steps": [
+      "Me@Walmart 디바이스 (Samsung Galaxy XCover Pro) 740K frontline 배포 → 학습 access 인프라",
+      "OpenAI Certification 다층 모듈 (basics → prompt engineering) — 무료 access",
+      "~50,000 직원이 AI/automation roles 재배치",
+      "$1B 교육 commitment (2026까지)의 일부로 통합 운영"
+    ]
   },
   {
     "slug": "amazon-connections-daily-pulse",
@@ -595,8 +619,14 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "annual·biannual 서베이로는 1.5M frontline 직원의 daily 변화 포착 불가 / Pain point: high-turnover frontline (creator·warehouse·delivery)의 sentiment·attrition 신호를 연 1~2회로 잡으면 늦음 / Trigger: People Science 데이터 사이언스 팀의 high-frequency listening 실험",
+    "process_steps": [
+      "직원 로그인 시 1개 질문 자동 출현 (5초 답변)",
+      "응답 + non-response 모두 데이터로 수집",
+      "ML 모델이 행동(non-response trend)·태도(응답 sentiment) 변화 추적",
+      "attrition·engagement 이벤트 사전 예측",
+      "매니저·HR에게 risk 신호 전달"
+    ]
   },
   {
     "slug": "jnj-digital-talent-platform-skills-ai",
@@ -678,8 +708,14 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "230K 직원 중 AI literacy 분포 편차 큰 — 데이터 사이언티스트는 풍부, 운영·영업·고객서비스 직원은 baseline / Pain point: 회사 LLM Suite를 도입해도 사용 모르면 ROI 없음 / Trigger: LLM Suite launch 동시 추진 (2024-08)",
+    "process_steps": [
+      "전 직원 baseline AI fundamentals 모듈 의무",
+      "Prompt engineering 모듈 (LLM Suite 활용 직군 의무)",
+      "컴플라이언스 모듈 (금융정보·고객정보 처리 가이드)",
+      "직무별 use case curriculum (analyst·trader·banker·HR·legal·ops 별)",
+      "신입 분석가 (Asset & Wealth Management): prompt engineering 의무 수료"
+    ]
   },
   {
     "slug": "chipotle-paradox-olivia",
@@ -897,7 +933,7 @@
       "Foundation model": "자체 ML (LLM 이전 세대), 2024-25 watsonx Orchestrate 통합 진행 추정",
       "제공 방식": "IBM internal"
     },
-    "process_before": "1) 매니저가 internal posting 게시 / 2) 직원이 게시판 검색 / 3) 직원이 지원 / 4) 매니저 검토 /",
+    "process_before": "IBM 내부 이동은 직원 본인 search에 의존 → silo·visibility 격차로 매칭 비효율 / Pain point: 280K 글로벌 조직에서 internal posting 게시판은 잘 작동 안 함 — 직원이 본인 옆 부서 외 기회를 모름 / Trigger: 핵심 인재 retention 위기 + 외부 talent marketplace 시장 형성 (Gloat·Eightfold) 전 자체 구축",
     "process_steps": [
       "직원이 opt-in (~15% 참여)",
       "AI가 스킬·경력·성과·근무지·digital footprint 분석 → 개인 프로파일 생성",
@@ -1001,8 +1037,14 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "KB국민은행 영업점 직원 인사이동은 매년 manual 조정 — 수천 직원 개인 사정 (출퇴근·육아·자격) 종합 어려움 / Pain point: 17,000+ KB 직원 base, 영업점 1,000+ 곳 — manual 인사 운영 한계 + 직원 만족도 격차 / Trigger: 2020 'HR Deep Change' 프로젝트 launch — 공공·금융권 최초 large-scale AI 인사 배치",
+    "process_steps": [
+      "직원 master data + 영업점 수요 + 정성 데이터 (출퇴근·자격증·육아 고충 등) 입력",
+      "ML 알고리즘이 다변량 최적화 — 수십 변수 simultaneous",
+      "후보 배치안 생성 → HR 검토·조정",
+      "매니저·직원 통보",
+      "(2025 확장) PB·RM 등 상담 직원 AI 활용으로 확장 — 57% 두 달 만에 사용"
+    ]
   },
   {
     "slug": "lloyds-banking-workday-genai-hr",
@@ -1143,8 +1185,14 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "5만~10만 직원 KR 대기업 annual 서베이 open-end 코멘트 코딩에 HRBP 팀이 수주 투입 / Pain point: open-end NLP 분석은 sentiment·테마 추출에 manual 작업 압도적 — insight 도출 지연 / Trigger: Glint Copilot 통합 — Microsoft가 LinkedIn(Glint owner)을 M365 ecosystem 통합",
+    "process_steps": [
+      "서베이 데이터 → Glint Copilot 자동 처리",
+      "반복 테마 탐지 + sentiment slice (속성별 — 부서·재임기간·매니저 등)",
+      "benchmark 비교 (산업·규모)",
+      "Team/Executive 요약 리포트에 \"Copilot Highlights\" 자동 생성 — 강점·기회·점수 변화·benchmark 포함",
+      "HRBP·매니저는 강조점 검토·action plan 작성"
+    ]
   },
   {
     "slug": "siemens-servicenow-hr-gbs",
@@ -1511,15 +1559,12 @@
       "데이터 규모": "270K 직원 monthly snapshot"
     },
     "model": {},
-    "process_before": "",
+    "process_before": "270K 직원 대상 retention 관리는 사후 exit interview 의존 — 떠난 후에야 원인 파악 / Pain point: 핵심인재 이탈 비용 (replacement cost 연봉의 1~3배) + 외부 채용 시장 경쟁 격화 / Trigger: 2010년대 HR analytics 부상 + Watson 자사 활용 dogfooding 명분",
     "process_steps": [
-      "34+ 변수 monthly",
-      "Watson Predictive ML",
-      "매니저 alert",
-      "보상 dashboard",
-      "매니저 결정",
-      "Retention action",
-      "팀 attrition 2x"
+      "ML 모델이 월간 데이터 갱신 → flight risk score 산출",
+      "위험군 매니저에게 alert + 권장 action menu (raise / promotion / training / mentoring)",
+      "AI 보상 추천 — 매니저에게 per-employee salary 인상 권고 + supporting factors (flight risk·성과·시장)",
+      "매니저 결정 (승인/반려/조정)"
     ]
   },
   {
@@ -1729,8 +1774,14 @@
     "model": {
       "Foundation model": "자체 + 외부 partner 혼합 (구체 _미공개_)"
     },
-    "process_before": "",
-    "process_steps": []
+    "process_before": "신한은행 직원이 다수의 산발 AI 도구 (A.I 몰리·OCR·R비서) 별도 사용 — UX 분산 / Pain point: 14,000+ 직원 base에서 AI 도구 fragmentation으로 ROI 약화 / Trigger: 2024-09 통합 launch — 단일 인터페이스 + 모바일·태블릿 음성 지원",
+    "process_steps": [
+      "직원이 AI ONE 단일 인터페이스 접속",
+      "40+ 업무비서 중 task 선택 (또는 음성 지시)",
+      "AI-STUDIO (분석)·AI-OCR (문서 인식)·R비서 (자동화) 통합 호출",
+      "모바일·태블릿 Speech-to-AI 지원",
+      "향후 상담 → 전산처리 종결 80% 자동화 목표"
+    ]
   },
   {
     "slug": "sk-cc-adot-biz-hr-recruitment",
@@ -1774,8 +1825,14 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "SK C&C 신입·주니어 채용 시 수천 건 지원서 review에 HR + 사업부 SME 다수 인력 1주 투입 / Pain point: 한국 대졸 정기공채 (3월·9월) 시즌 압박 + 직무 적합성 판단 표준화 어려움 / Trigger: 2025년 SKT-SK AX 'A.Biz' 합작 launch + 신입 공채 시즌 적용",
+    "process_steps": [
+      "자기소개서 input → A.Biz HR이 키워드 추출 (경력·핵심 역량)",
+      "직무 적합성 + 리스크 요인 score",
+      "4시간 내 결과 (수천 건)",
+      "AI 면접 (영상 응답 분석) + 맞춤 면접 질문 자동 생성",
+      "HR + 사업부 SME 검토·면접"
+    ]
   },
   {
     "slug": "sk-group-aibiz-25-companies",
@@ -1825,16 +1882,13 @@
     "model": {
       "Foundation model": "A.X (SKT 자체) + 외부 partner 혼합"
     },
-    "process_before": "",
+    "process_before": "SK 그룹 25개 멤버사가 각각 별도 HR 시스템·챗봇 운영 — 그룹 표준 부재 / Pain point: 그룹 차원 AI 거버넌스·비용·표준 보안 통제 어려움 + 멤버사별 중복 투자 / Trigger: SKT 'A.Biz' B2B launch 자체 dogfooding + 그룹 차원 AI 가속 명령",
     "process_steps": [
-      "SKT A.Biz Platform",
-      "Agent Builder no-code",
-      "멤버사 HR",
-      "A.Biz 표준 LLM",
-      "자체 'A.X' LLM",
-      "SK하이닉스",
-      "SK온",
-      "SK실트론"
+      "SKT-SK AX가 'A.Biz' 단일 platform 제공",
+      "멤버사 HR 담당자가 agent builder no-code로 자체 챗봇·자동화 구축",
+      "일반 멤버사: A.Biz 표준 LLM 호출",
+      "국가핵심기술 보유사 (SK하이닉스·SK온·SK실트론): 자체 LLM 'A.X' + SK AX 산업특화 AI 사용으로 격리 보안",
+      "HR 정책·절차 Q&A 자동 응답 + 자동화 워크플로"
     ]
   },
   {
@@ -1931,7 +1985,7 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "Amazon PXT(People eXperience and Technology) 조직은 10,000+ HR 전문 인력이 채용·HR 운영·기술·분석 업무를 수행. 1.5M+ 매장 직원 + 수십만 기업 직원의 HR 서비스 수요를 사람이 직접 처리 / Pain point: $100B+ AI 투자를 진행하면서 HR 기능도 자동화 가능 영역으로 식별됨. 채용 심사·정책 질의·분석 리포팅 등이 AI copilot으로 대체 가능하다는 판단 / Trigger: CEO Andy Jassy의 \"모든 client experience·employee process·backend operation에 AI를 주입\"하라는 전사 방침 → HR 조직도 예외 없음 / ⚠️ 핵심 갈등: 동시에 250,000명 계절직 warehouse 채용은",
     "process_steps": []
   },
   {
@@ -2012,7 +2066,7 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "Deloitte 470,000 직원이 150개국에서 회계·감사·컨설팅·세무 업무 수행. 각 직무별 AI 도구가 파편화돼 있거나 부재. 지식 검색·문서 초안·분석에 사람의 반복 작업 시간이 과도 / Pain point: 경쟁 컨설팅사(Accenture·PwC·McKinsey)가 각각 AI를 전사 배포하는 상황에서 \"consulting firms의 AI 군비 경쟁\"이 Deloitte의 채택 가속화 요인 / Trigger: Anthropic Claude가 엔터프라이즈 보안·규정 준수를 충족하면서도 \"회계사·개발자별 특화 버전\"을 제공할 수 있다는 판단 → 역대 최대 엔터프라이즈 배포 결정",
     "process_steps": []
   },
   {
@@ -2115,8 +2169,15 @@
     "model": {
       "Foundation model": "IBM Granite 또는 외부 호출 (구체 _미공개_)"
     },
-    "process_before": "",
-    "process_steps": []
+    "process_before": "recruiter가 JD 작성·후보자 search·일정 조율·feedback 수집을 manual·다중 시스템 hop으로 처리 / Pain point: high-volume 채용에서 recruiter productivity 한계 + diverse sourcing 가시성 부족 / Trigger: agentic AI 부상 + IBM 자체 채용 효율화 압박 (2025 8,000 layoff와 동시에 핵심 직무 채용 가속)",
+    "process_steps": [
+      "매니저가 자연어로 채용 요청 (\"senior Python engineer in Bangalore for watsonx team\")",
+      "Agent가 JD 초안 생성 → hiring manager 공유·승인",
+      "후보자 매칭 (사내 + ThisWay Global 8,500+ community)",
+      "자격자 신규 지원 시 매니저 alert",
+      "intro 메시지 자동 발송, 면접 일정 조율",
+      "Knockri integration으로 면접 design + feedback 수집"
+    ]
   },
   {
     "slug": "jobkorea-hiring-center-talent-agent",
@@ -2161,8 +2222,13 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "잡코리아 채용 담당자는 공고 작성·후보자 search·매칭을 별도 도구·매뉴얼 process / Pain point: 한국 채용 시장 vendor 경쟁 (사람인·잡코리아·원티드) — 차별화 압박 / Trigger: 2025-10 wantedlab-ai-recruiting-agent launch + 잡코리아 시장 점유 방어",
+    "process_steps": [
+      "채용 담당자가 탤런트 에이전트에 자연어로 의도 입력 (\"Python backend 시니어 + 핀테크 경력 + 서울\")",
+      "에이전트가 공고 맥락 분석 → 후보자 매칭 + 추천 사유",
+      "채용 담당자가 후보자 contact·면접 진행",
+      "통합 채용 솔루션으로 ATS 기능 흡수"
+    ]
   },
   {
     "slug": "korea-electric-power-hr-bot",
@@ -2205,8 +2271,13 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "한전 23,000+ 직원, 공공기관 특성상 인사이동·채용 manual + 정량 자료 의존 / Pain point: 공공기관 인사이동의 표준화 어려움 + 채용 상담 volume 大 / Trigger: 2024 공공기관 AI 도입 가속 + 한전 경영평가 인사혁신 부문 (정부 평가 KPI)",
+    "process_steps": [
+      "지원자가 HR-Bot 24/7 챗봇 access",
+      "채용 상담·FAQ·일정 안내 자동 응답",
+      "단순 반복 채용업무 자동화 (서류 접수·일정 조율)",
+      "복잡 케이스 사람 HR escalation"
+    ]
   },
   {
     "slug": "mirae-asset-ai-assistant-platform",
@@ -2250,8 +2321,14 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "미래에셋증권 직원이 사내 매뉴얼·노하우 문서 search 시 sharepoint·이메일 산발 — 정보 접근 비효율 / Pain point: 부서별 specific knowledge가 사내 walking encyclopedia (시니어)에 의존 — 시니어 퇴직·부재 시 손실 / Trigger: 2024 한국 자체 LLM 시장 성숙 + 금융 데이터 주권 압박",
+    "process_steps": [
+      "직원·부서가 본인 업무 매뉴얼·노하우 문서 업로드",
+      "AI Assistant 플랫폼이 RAG indexing",
+      "로 부서·직원 전용 챗봇 자체 생성",
+      "직원·부서원이 자연어로 챗봇 query",
+      "답변 + 출처 제공"
+    ]
   },
   {
     "slug": "novartis-gloat-skills-marketplace",
@@ -2347,15 +2424,9 @@
     "model": {
       "Orchestration": "a2a/MCP 프로토콜 기반 에이전트 간 통신"
     },
-    "process_before": "",
+    "process_before": "매니저가 SuccessFactors에서 직원별 목표·피드백·리뷰 데이터를 개별 조회 → 수동으로 대화 포인트 준비 /",
     "process_steps": [
-      "SuccessFactors 목표 데이터",
-      "Joule Performance Agent",
-      "피드백·리뷰 히스토리",
-      "맞춤 인사이트",
-      "목표 진척 업데이트",
-      "대화 포인트",
-      "성과 대화 실행"
+      "md]]"
     ]
   },
   {
@@ -2440,8 +2511,15 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "SK하이닉스 신입 채용은 자기소개서 + 인적성 + 면접 — 직무 적합 soft skill (커뮤니케이션·팀워크) 측정 어려움 / Pain point: 반도체 기술사무직 신입 채용 volume 크지만 면접관 시간 한정 + soft skill 평가 표준화 어려움 / Trigger: 2025 하반기 신입 공채 — A!SK 전형 신설 (마이다스 inAIR 차별 논란 후 자체 hybrid 설계)",
+    "process_steps": [
+      "AI가 직무별 특화 문제 자동 출제",
+      "지원자가 영상 녹화 답변 제출 (시간·장소 자율)",
+      "영상 → AI 1차 분석 (응답 내용 위주, 표정·외모 신호 사용 여부 _미공개_)",
+      "(peer review)",
+      "AI score + peer evaluation → HR 종합 판단",
+      "다음 단계 (in-person 면접) 진행"
+    ]
   },
   {
     "slug": "tcs-infosys-ai-reskilling-india",
@@ -2729,8 +2807,14 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "recruiter 수동 screening 시 무의식적 bias + volume 한계 / Pain point: high-volume 채용에서 quality·diversity·speed 동시 달성 어려움 / Trigger: 2014-2018 Amazon biased model 사건 등 industry bias 우려 부상",
+    "process_steps": [
+      "requisition 등록 → Watson이 자동 복잡도·ideal-profile 분석",
+      "후보자 지원 시 정형/비정형(이력서·LinkedIn·소셜) + soft trait 분석",
+      "requisition 대비 success score 산출 (gender·race·age·ethnicity 억제)",
+      "recruiter에게 ranked shortlist + supporting factor 제공",
+      "recruiter 검토·매니저 면접 진행"
+    ]
   },
   {
     "slug": "jpmorgan-goldman-sachs-hr-ai",
@@ -2769,7 +2853,7 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "투자은행·자산관리·리테일금융의 인건비가 총비용의 50%+ — 금융 산업에서 AI 자동화의 ROI가 가장 큰 이유 / Pain point: (1) AI 역량 인력 확보 경쟁 치열, (2) 기존 HR 프로세스(채용·온보딩·분석)에 과도한 인력 투입, (3) 데이터 보안·규제 준수 하에서 AI 도입이 다른 산업보다 복잡 / Trigger: 2024~2025 금융 산업 전반에서 \"AI 도입을 안 하면 경쟁에서 뒤처진다\"는 공감대 형성. JPMorgan CEO Dimon의 \"모든 프로세스에 AI 주입\" 방침이 HR에도 적용",
     "process_steps": []
   },
   {
@@ -2810,7 +2894,7 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "Meta 직원들의 AI 도구 채택률이 불균형 — 일부 엔지니어만 적극 활용, 나머지는 기존 방식 유지. 자발적 채택만으로는 전사 AI transformation 속도가 부족 / Pain point: Moderna(모든 직원에게 ChatGPT Enterprise 배포)·Deloitte(470k Claude)·PwC(65k upskilling) 등 경쟁사가 전사 AI 배포를 가속화하는 상황에서, Meta가 \"AI-first 기업\"이라는 포지셔닝을 유지하려면 채택을 기대가 아닌 의무로 전환 필요 / Trigger: 내부 데이터에서 AI 도구 활용 직원의 생산성이 높다는 신호 → \"AI 채택을 성과 평가에 공식 반영\"이라는 가장 과감한 정책 결정",
     "process_steps": []
   },
   {
@@ -3069,13 +3153,9 @@
     },
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "매니저가 직원별로 여러 시스템(HRIS·프로젝트 관리·피드백 도구)에서 데이터 수집 → 수동으로 리뷰 작성 /",
     "process_steps": [
-      "Workday HRIS 데이터",
-      "Performance Review Agent",
-      "타 시스템 데이터",
-      "리뷰 초안 생성",
-      "최종 리뷰 제출"
+      "md]]"
     ]
   },
   {
@@ -3664,7 +3744,7 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "Accenture 733,000+ 직원이 전통적 e-learning + classroom 방식으로 교육. ⚠️ 자사 보고: 과정 완료율이 낮고 교육 시간이 길어 실무 적용까지의 gap이 큼 / Pain point: 글로벌 컨설팅 업계에서 \"직원 역량이 곧 매출\"인 구조 — 교육 효율이 직접적 비즈니스 성과와 연결. AI 기술 역량이 부족하면 고객 프로젝트에 배정 불가 / Trigger: 경쟁사(Deloitte Claude 470k, PwC 65k upskilling) 대비 \"자사에 먼저 적용 → 고객에 판매\" 전략 실행",
     "process_steps": []
   },
   {
@@ -3812,14 +3892,9 @@
       "데이터 규모": "벤더 주장: 1.5B 직원 응답 데이터 기반 People Science"
     },
     "model": {},
-    "process_before": "",
+    "process_before": "매니저가 성과 리뷰를 빈 페이지에서 시작 → engagement 결과를 수동 해석 → 액션 플랜 없이 방치 /",
     "process_steps": [
-      "Engagement 설문 결과",
-      "AI Coach 분석",
-      "과거 피드백·동료 리뷰",
-      "개인화 액션 플랜",
-      "구조화 리뷰 가이드",
-      "성과 리뷰 제출"
+      "md]]"
     ]
   },
   {
@@ -3912,7 +3987,7 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "HSBC(275,000 직원)의 TA(채용)와 TM(인재관리)이 사일로화되어 운영. 채용은 전통적 CV 기반, 내부 이동은 가시성 부족으로 외부 채용에 과도 의존 / Pain point: 글로벌 은행의 skills transformation 압박 — 디지털·AI 역량 인력 확보가 시급하지만 기존 채용 방식으로는 속도·품질 부족. ⚠️ Fortune Europe 보도: HSBC가 다른 유럽 은행보다 30% 더 많은 AI 채용 공고를 게시 (인력 전환 가속화 필요 반증) / Trigger: SAP SuccessFactors(Core HRIS)만으로는 skills-based hiring + internal mobility 모두를 커버하기 어렵다는 판단 → Eightfold(TA) + Gloat(TM) + Acce",
     "process_steps": []
   },
   {
@@ -4039,7 +4114,7 @@
       "데이터 규모": "벤더 주장: 별도 연구에서 53,000 환자·500+ 고용주 데이터 분석"
     },
     "model": {},
-    "process_before": "",
+    "process_before": "전통 EAP → 직원이 전화로 접수 → 치료사 무작위 배정 → 이용률 1% /",
     "process_steps": [
       "직원 앱/웹 접근",
       "AI 정신건강 평가",
@@ -4090,15 +4165,9 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "매니저가 수동으로 교대표 작성 → 자격증·컴플라이언스·선호도 수동 확인 → 채용도 개별 프로세스 /",
     "process_steps": [
-      "자격증·규제·선호도 데이터",
-      "AI 스케줄링 엔진",
-      "최적 교대표 추천",
-      "스케줄 배포",
-      "Workforce Intelligence Hub",
-      "실시간 통합 뷰",
-      "타임·급여 데이터"
+      "md]]"
     ]
   },
   {
@@ -4192,15 +4261,9 @@
     },
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "매니저가 1:1 미팅을 자유 형식으로 진행 → 노트 수동 작성 → 후속 조치 누락 빈번 → HR이 매니저 효과성 파악 어려움 /",
     "process_steps": [
-      "1:1 미팅 시작",
-      "Kona 자동 참여·전사",
-      "요약·액션 아이템 생성",
-      "engagement·성과 데이터 분석",
-      "실시간 코칭 팁 전달",
-      "행동 변화 자동 추적",
-      "HR 대시보드 모니터링"
+      "md]]"
     ]
   },
   {
@@ -4355,14 +4418,9 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "연 1~2회 목표 설정 → 수동 리뷰 작성 → 편향 보정 없음 /",
     "process_steps": [
-      "역할·팀·회사 우선순위",
-      "Goal Intelligence",
-      "SMART 목표 추천",
-      "연속 피드백 수집",
-      "AI 리뷰 편향 탐지",
-      "최종 평가 제출"
+      "md]]"
     ]
   },
   {
@@ -4450,7 +4508,7 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "수기 근무표 → 엑셀 입력 → 급여 수동 계산 → 노동법 변경 시 수동 반영 /",
     "process_steps": [
       "수기 근무표",
       "OCR 변환",
@@ -4498,7 +4556,7 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "매니저가 직원별 피드백·리뷰를 수동으로 읽고 종합 → 목표 대시보드 수동 확인 /",
     "process_steps": [
       "360도 피드백·리뷰",
       "AI Performance Summarization",
@@ -5130,16 +5188,9 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
+    "process_before": "매니저가 타임카드 수동 검토 → 교대표 수동 작성 → PTO 개별 승인 /",
     "process_steps": [
-      "타임카드 제출",
-      "Agentic Timesheet 스코어링",
-      "자동 승인",
-      "승인/수정",
-      "규칙: 근무시간·휴식·법규",
-      "Auto-Shifts",
-      "최적 교대표",
-      "과거 PTO 데이터"
+      "md]]"
     ]
   },
   {
@@ -5180,8 +5231,10 @@
     "system": {},
     "data": {},
     "model": {},
-    "process_before": "",
-    "process_steps": []
+    "process_before": "LMS에서 직원이 과정 목록을 수동 탐색 → 관련성 낮은 과정 수강 → 학습 효율 저하 /",
+    "process_steps": [
+      "md]]"
+    ]
   },
   {
     "slug": "syndio-pay-equity-ai",
