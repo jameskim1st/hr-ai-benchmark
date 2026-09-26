@@ -14,6 +14,9 @@ output: "채용 담당자 자연어 의도 입력에 대한 후보자 매칭 추
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: daily
 first_seen: 2026-03-31
 last_confirmed: 2026-04-01

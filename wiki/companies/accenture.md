@@ -29,7 +29,7 @@ TABLE WITHOUT ID
   file.link AS "Use Case",
   primary_category AS "카테고리",
   confidence AS "신뢰도"
-FROM "wiki/usecases"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
 WHERE contains(company, "Accenture") OR contains(vendor, "Accenture")
 SORT confidence DESC
 ```

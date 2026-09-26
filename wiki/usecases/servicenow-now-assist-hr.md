@@ -14,9 +14,14 @@ output: "HR 케이스 맥락 자동 요약 + 직원 셀프서비스 KB 답변 (c
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: daily
-first_seen: 2024
-last_confirmed: 2025
+first_seen: 2024-06-30
+last_confirmed: 2025-06-30
 confidence: 0.25               # Tier 2·3 혼합 (다수 분석가 언급 + vendor data), 구체 고객 케이스 부재
 consulting_angle_status: filled
 sources:

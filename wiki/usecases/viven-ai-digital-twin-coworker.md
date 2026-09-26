@@ -14,6 +14,9 @@ output: "부재 동료의 Digital Twin이 query에 대해 과거 발언·결정�
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, information-extraction]
 stage: announced
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-10-15
 last_confirmed: 2026-04-01

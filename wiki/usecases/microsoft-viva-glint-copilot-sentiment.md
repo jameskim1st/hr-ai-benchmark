@@ -14,6 +14,9 @@ output: "engagement 서베이 open-end 코멘트 자동 합성 + 반복 테마 �
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: monthly
 first_seen: 2024-09-01
 last_confirmed: 2026-04-01

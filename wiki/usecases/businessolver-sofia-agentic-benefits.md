@@ -14,6 +14,9 @@ output: "직원 혜택 질문 자연어 답변 (Answer Agent) + Document 자동 
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, information-extraction, clustering-classification]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-07-17
 last_confirmed: 2026-01-20

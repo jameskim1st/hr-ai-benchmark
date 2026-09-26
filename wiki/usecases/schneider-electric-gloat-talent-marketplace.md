@@ -14,9 +14,14 @@ output: "135,000+ 직원에게 스킬·관심 기반 Open Talent Market 매칭 �
 ai_tech_type: [predictive]
 ai_tech_subtype: [recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: daily
-first_seen: 2020-04
-last_confirmed: 2025-03
+first_seen: 2020-04-01
+last_confirmed: 2025-03-01
 confidence: 0.50               # Tier 3 Gloat(+0.10) + Tier 1 Bersin 2019(+0.35, stale 할인→+0.15) + Tier 2 SHRM(+0.20) = base 0.45 + 다수 소스 보너스(+0.05) → 0.50
 consulting_angle_status: filled
 sources:

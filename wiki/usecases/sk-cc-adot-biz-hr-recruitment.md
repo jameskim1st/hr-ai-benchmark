@@ -14,6 +14,9 @@ output: "자기소개서별 경력·핵심 역량 키워드 추출 + 직무 적�
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [information-extraction, summarization-qa, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: annual
 first_seen: 2025-02-20
 last_confirmed: 2026-04-01

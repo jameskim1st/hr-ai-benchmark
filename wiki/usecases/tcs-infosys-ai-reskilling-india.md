@@ -14,6 +14,9 @@ output: "직원 AI 역량 인증·proficiency tag (NVIDIA AI Enterprise·Azure O
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: adhoc
 first_seen: 2024-01-01
 last_confirmed: 2025-12-01

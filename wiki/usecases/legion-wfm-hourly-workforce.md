@@ -14,6 +14,9 @@ output: "AI 기반 직원 스케줄 (수요예측 → labor demand → 매장별
 ai_tech_type: [predictive, generative, decision-optimization]
 ai_tech_subtype: [prediction, optimization, summarization-qa]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: daily
 first_seen: 2025-08-12
 last_confirmed: 2026-01-15

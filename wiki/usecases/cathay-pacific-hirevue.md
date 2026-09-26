@@ -14,9 +14,14 @@ output: "후보자 on-demand video 응답 점수 (언어/콜로키얼 평가 포
 ai_tech_type: [generative, predictive, recognition]
 ai_tech_subtype: [summarization-qa, clustering-classification, speech-recognition]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: daily
-first_seen: 2025
-last_confirmed: 2025
+first_seen: 2025-06-30
+last_confirmed: 2025-06-30
 confidence: 0.20
 consulting_angle_status: filled
 sources:

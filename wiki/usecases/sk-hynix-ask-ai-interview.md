@@ -14,6 +14,9 @@ output: "직무별 AI 영상면접 질문 출제 + 지원자 영상 답변 평�
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [text-generation, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: annual
 first_seen: 2025-09-16
 last_confirmed: 2026-04-01

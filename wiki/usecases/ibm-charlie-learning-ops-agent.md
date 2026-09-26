@@ -14,6 +14,9 @@ output: "학습 enrollment 모니터링 alert (저조 코스) + event 홍보 메
 ai_tech_type: [generative, predictive, automation]
 ai_tech_subtype: [summarization-qa, clustering-classification, rpa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2023-01-01
 last_confirmed: 2025-12-01

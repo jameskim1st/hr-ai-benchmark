@@ -14,9 +14,14 @@ output: "직원 HR/IT 문의에 대한 authoritative 답변 또는 action form (
 ai_tech_type: [generative, automation]
 ai_tech_subtype: [summarization-qa, rpa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: daily
-first_seen: 2025
-last_confirmed: 2025
+first_seen: 2025-06-30
+last_confirmed: 2025-06-30
 confidence: 0.35               # Tier 3 (Microsoft insidetrack = 자사 보고), recency <12m, no independent coverage
 consulting_angle_status: filled
 sources:

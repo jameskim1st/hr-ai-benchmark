@@ -3,7 +3,7 @@ title: "T-Mobile — Textio AI 포용적 채용 언어"
 slug: t-mobile-textio-dei-hiring
 primary_category: Strategic Workforce & Governance
 subcategory: DEI
-tags: [dei, inclusive-hiring, jd-generation, bias-audit, sourcing-attraction, textio, workday-integration, gender-neutral]
+tags: [dei, inclusive-hiring, jd-generation, bias-audit, sourcing-attraction, textio, workday-integration, gender-neutral, inclusive-language, jd-writing, bias-reduction, gender]
 company: T-Mobile
 industry: [tech, telecom]
 region: [na]
@@ -14,21 +14,28 @@ output: "JD 작성 시 실시간 Textio Score (0~100) + 성 중립적 언어 개
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: daily
 first_seen: 2022-12-01
 last_confirmed: 2025-03-21
 confidence: 0.35
 sources:
   - sources/textio-tmobile-duolingo-dei-2025.md
+  - "Harvard Business School Digital Initiative https://d3.harvard.edu/platform-digit/submission/textio-com-reducing-gender-bias-in-hiring-with-ai/"
+  - "T-Mobile Textio case study https://alternativebadassery.com/wp-content/uploads/2022/12/T-Mobile-Final-Case-Study-2023.pdf"
 related_usecases:
   - eightfold-ai-talent-intelligence
   - chipotle-paradox-olivia
+  - hirevue-ai-assessment-bias-audit
+  - syndio-pay-equity-ai
 related_vendors: []
 ---
 
 ## Summary
 
-T-Mobile은 Textio의 AI 기반 포용적 언어 플랫폼을 ~125명 리크루터 + 9,000명+ 채용 관리자에게 배포해, 성 중립적 어조 편집 시 여성 지원자 +17%, Textio Score 90+ 달성 시 채용 소요 기간 5일 단축을 확인했다. Workday ATS에 Textio를 직접 통합해 JD 작성 시 실시간 AI 제안을 받는 구조다. 기업 합병 통합 과정 중에 도입했으며, 2025년 3월 HR Brew가 Textio의 스킬 기반 면접 도구 출시를 별도 보도.
+T-Mobile은 Textio의 AI 기반 포용적 언어 플랫폼을 ~125명 리크루터 + 9,000명+ 채용 관리자에게 배포해, 성 중립적 어조 편집 시 여성 지원자 +17%, Textio Score 90+ 달성 시 채용 소요 기간 5일 단축을 확인했다. Workday ATS에 Textio를 직접 통합해 JD 작성 시 실시간 AI 제안을 받는 구조다. 기업 합병 통합 과정 중에 도입했으며, 2025년 3월 HR Brew가 Textio의 스킬 기반 면접 도구 출시를 별도 보도. Textio 플랫폼 차원에서는 J&J(여성 지원자 +90,000명)·Nvidia(충원 속도 2배) 사례가 Harvard Business School Digital Initiative를 통해 전달됐다 (⚠️ 벤더 주장 (Harvard DI 전달)). 2026-09-27 `textio-tmobile-inclusive-jd` 페이지를 이 페이지로 병합.
 
 ## Problem / Why (도입 배경)
 
@@ -44,8 +51,9 @@ T-Mobile은 Textio의 AI 기반 포용적 언어 플랫폼을 ~125명 리크루�
 - **After (To-be)**:
   1. JD를 Workday ATS에서 직접 작성 (Textio 인라인 통합)
   2. Textio AI가 실시간 언어 점수(Textio Score) + 개선 제안 표시
-  3. Textio Score 기준 이상(T-Mobile 기준 미공개)이어야 게시 허용
+  3. Textio Score 기준 이상이어야 게시 허용 — ⚠️ 벤더 주장 (T-Mobile case study PDF): 작성자가 제안 수용/거절하며 **점수 ≥90** 목표, 90+ 도달 시 ATS 게시
   4. 리크루팅 이메일·고용 브랜드 콘텐츠에도 동일 도구 적용
+  5. 응답률·다양성 지표로 ROI 추적 (⚠️ 벤더 주장 — T-Mobile case study PDF)
 - **Human-in-the-loop**: 채용 관리자·리크루터가 AI 제안 수용 여부 결정; 최종 게시 전 Score 기준 충족 필수
 - **Trigger & Frequency**: JD 작성·편집 시 실시간(daily)
 - **Scope of autonomy**: recommend (AI가 언어 개선 제안); 인간이 accept/reject
@@ -73,7 +81,7 @@ flowchart LR
 
 - **입력**: JD 텍스트, 리크루팅 이메일, 고용 브랜드 콘텐츠
 - **출력**: Textio Score (0~100), 언어 개선 제안, 성별 tone 지표
-- **학습**: Textio 자체 언어 모델 (기업별 데이터 사용 방식 미공개)
+- **학습**: Textio 자체 언어 모델 — ⚠️ 벤더 주장: 수백만 건의 hiring docs 학습 (T-Mobile case study PDF); 기업별 데이터 사용 방식 미공개
 - **데이터 규모**: 9,000+ 채용 관리자 사용 데이터 누적
 
 ### D. Model (모델)
@@ -99,6 +107,12 @@ flowchart LR
 | 여성 지원자 증가 (성 중립 어조 편집 시) | **+17%** | ⚠️ 자사 보고 (Textio 케이스 스터디) |
 | 채용 소요 기간 (Score 90+ 달성 시) | **5일 단축** | ⚠️ 자사 보고 |
 | Textio 사용 인원 | 125 리크루터 + 9,000+ 채용 관리자 | ✅ Fact (케이스 스터디 직접 기재) |
+| J&J — 추가 여성 지원자 (Textio 플랫폼 타 고객) | **+90,000명** (pipeline 9%↑) | ⚠️ 벤더 주장 (Harvard DI 전달) |
+| Nvidia — 충원 속도 (Textio 플랫폼 타 고객) | **2배 빠름** | ⚠️ 벤더 주장 (Harvard DI 전달) |
+| Textio 플랫폼 — Fortune 500 채택 | **25%+** | ⚠️ 벤더 주장 (Textio 공식) |
+| 학술 관심 — Harvard Business School Digital Initiative 연구 커버 | 해당 | ✅ Fact (Tier 1) |
+
+> J&J·Nvidia·Fortune 500 수치는 2026-09-27 병합된 `textio-tmobile-inclusive-jd` 페이지에서 이관 (출처: Harvard Business School Digital Initiative 게시물 및 Textio 자료 — sources 참조). T-Mobile 외 고객 수치이므로 이 페이지의 confidence 산정에는 반영하지 않음.
 
 ## Governance & Risk
 
@@ -108,7 +122,10 @@ flowchart LR
 
 ## Contradictions
 
-없음.
+> [!note] 2026-09-27 중복 페이지 병합
+> - `textio-tmobile-inclusive-jd` (Talent Acquisition / Sourcing & Attraction, first_seen 2023, confidence 0.35) 페이지를 이 페이지로 병합. 카테고리는 Strategic Workforce & Governance / DEI, first_seen 2022-12-01 유지.
+> - **표기 차이**: T-Mobile 여성 지원자 +17%·5일 단축·125+9,000 배포 수치를 병합 전 페이지는 ⚠️ 벤더 주장(Textio case study)으로, 이 페이지는 ⚠️ 자사 보고로 표기. 원 출처는 Textio가 발행한 T-Mobile 케이스 스터디(벤더 발행·고객 인용)이므로 두 표기 모두 독립 검증 없음 — 외부 인용 시 "벤더 케이스 스터디 수치"로 명시할 것.
+> - **게시 기준 점수**: 이 페이지는 "T-Mobile 기준 미공개"로 기술했으나, 병합 전 페이지가 인용한 T-Mobile case study PDF는 Score ≥90 목표·90+ 시 게시로 기술 → Process 3단계에 반영 (⚠️ 벤더 주장).
 
 ## Consulting Angle
 
@@ -116,3 +133,5 @@ flowchart LR
 - **ATS 통합 패턴**: Workday 통합 사례는 ATS 중심 HR tech 스택을 가진 클라이언트에게 즉시 참조 가능한 아키텍처
 - **한국 대기업 적용**: 공채 JD의 성별 편향 언어(예: 남성 지원자 선호 표현) 문제에 직접 적용 가능 — 공채 시즌 JD 품질 개선 POC로 활용
 - **주의**: 언어 개선만으로는 체계적 DEI 목표 달성 어려움 — 면접 평가·합격 결정 단계의 bias audit과 병행 필요를 클라이언트에 경고
+- **"AI가 편향을 만든다"의 반대 사례** (병합 이관): Amazon 2017 ML 채용 도구 폐기 사례와 대비 — 같은 AI를 편향 **제거**에 쓴 사례로 제시 가능 (T-Mobile +17%, J&J +90k는 ⚠️ 벤더 주장임을 병기)
+- **편향 감소의 두 접근법 병치** (병합 이관): (1) 사후 감사 — HireVue bias audit [[hirevue-ai-assessment-bias-audit]] vs (2) 사전 예방 — Textio inclusive JD. 클라이언트 제안 시 두 축을 나란히 제시

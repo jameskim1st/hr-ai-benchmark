@@ -14,6 +14,9 @@ output: "270K 직원 monthly flight risk 점수 (34+ 변수 6개월 예측, ⚠�
 ai_tech_type: [predictive]
 ai_tech_subtype: [prediction, recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: monthly
 first_seen: 2019-01-01
 last_confirmed: 2026-02-12

@@ -14,8 +14,12 @@ output: "지원자별 3개 과제(성향파악·전략게임·영상면접) 종�
 ai_tech_type: [predictive, recognition, generative]
 ai_tech_subtype: [prediction, speech-recognition, multimodal]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
+first_seen_estimated: true
 frequency: annual
-first_seen: 2025-07
+first_seen: 2025-07-01
 last_confirmed: 2025-09-16
 confidence: 0.50               # Tier 2 ZDNet(+0.20) + Tier 4 Nature논문(+0.15) + recency <6m(+0.10) + 다수기업 도입(+0.05) = 0.50
 consulting_angle_status: filled

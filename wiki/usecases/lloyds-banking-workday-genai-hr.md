@@ -14,6 +14,9 @@ output: "67,000명 직원 HR 정책 Q&A 응답 (휴가·복리후생 등 고볼�
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2024-11-07
 last_confirmed: 2026-01-01

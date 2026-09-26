@@ -14,6 +14,9 @@ output: "매니저용 직원별 성과 리뷰 first draft (Workday HCM + 타 시
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, text-generation]
 stage: announced
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: annual
 first_seen: 2025-09-16
 last_confirmed: 2025-09-16

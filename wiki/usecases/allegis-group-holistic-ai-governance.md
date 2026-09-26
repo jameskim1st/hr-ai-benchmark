@@ -14,6 +14,9 @@ output: "전사 AI 시스템 인벤토리 (500~600개 등록) + 시스템별 리
 ai_tech_type: [predictive]
 ai_tech_subtype: [clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: adhoc
 first_seen: 2025-06-26
 last_confirmed: 2025-06-26

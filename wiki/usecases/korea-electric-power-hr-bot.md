@@ -14,6 +14,9 @@ output: "지원자 채용 상담 24/7 챗봇 응답·일정 안내 + 직원 역�
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: monthly
 first_seen: 2024-01-01
 last_confirmed: 2026-04-01

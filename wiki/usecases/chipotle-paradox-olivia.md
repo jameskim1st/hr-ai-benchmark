@@ -14,6 +14,9 @@ output: "지원자별 4개국어 (영·스·불·독) 대화형 screening 결과
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: daily
 first_seen: 2024-10-22         # Chipotle 공식 PR 기준
 last_confirmed: 2025-07-28

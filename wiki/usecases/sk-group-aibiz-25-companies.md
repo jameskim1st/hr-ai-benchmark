@@ -14,6 +14,9 @@ output: "SK 그룹 25개 멤버사·약 8만 명에게 A.Biz platform 표준 LLM
 ai_tech_type: [generative, automation]
 ai_tech_subtype: [summarization-qa, rpa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-09-01
 last_confirmed: 2026-04-01

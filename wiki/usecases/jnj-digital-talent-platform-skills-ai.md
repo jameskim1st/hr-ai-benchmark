@@ -14,9 +14,14 @@ output: "130K+ 직원별 inferred 스킬 그래프 (HRIS·채용DB·LMS·프로�
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [information-extraction, clustering-classification, recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: daily
-first_seen: 2020
-last_confirmed: 2025
+first_seen: 2020-06-30
+last_confirmed: 2025-06-30
 confidence: 0.60               # ★ Tier 1 MIT CISR(+0.35) + Tier 1 학술지 IS Journal(+0.35) - 중복 학술 소스 보정 = 0.60
 consulting_angle_status: filled
 sources:

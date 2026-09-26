@@ -14,6 +14,9 @@ output: "ER case 단일 source of truth (documentation 통합) + advanced analyt
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, information-extraction]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2024-01-01
 last_confirmed: 2026-05-06

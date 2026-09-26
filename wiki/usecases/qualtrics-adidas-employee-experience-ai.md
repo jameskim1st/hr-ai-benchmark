@@ -14,9 +14,14 @@ output: "engagement 설문의 sentiment·테마 분석 + 매니저별 personaliz
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification, prediction, recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: monthly
-first_seen: 2025-10
-last_confirmed: 2025-10
+first_seen: 2025-10-01
+last_confirmed: 2025-10-01
 confidence: 0.30
 consulting_angle_status: filled
 sources:

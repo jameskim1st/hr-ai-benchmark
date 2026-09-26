@@ -14,9 +14,14 @@ output: "AI 자동 생성 신규 과정 outline·퀴즈·요약 + 직무·이력
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [text-generation, summarization-qa, recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: daily
-first_seen: 2025
-last_confirmed: 2025
+first_seen: 2025-06-30
+last_confirmed: 2025-06-30
 confidence: 0.40               # Tier 3 vendor(+0.10) + Tier 2 G2(+0.20) + Tier 1 Bersin L&D Revolution(+0.35, Docebo 부분은 독립 분석) = base 0.65, 할인 (La-Z-Boy 구체 metric은 벤더 자체 주장, Bersin은 Docebo 플랫폼 분석이지 La-Z-Boy 사례 독립 검증 아님) → 0.40
 consulting_angle_status: filled
 sources:

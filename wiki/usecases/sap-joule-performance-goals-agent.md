@@ -14,6 +14,9 @@ output: "매니저용 직원별 성과 대화 자료 — 맞춤 인사이트 + �
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: monthly
 first_seen: 2025-10-01
 last_confirmed: 2026-01-01

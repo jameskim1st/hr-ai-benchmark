@@ -14,6 +14,9 @@ output: "직원 부서·직급·직무·관심 키워드·수강 이력 기반 �
 ai_tech_type: [predictive]
 ai_tech_subtype: [recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-01-01
 last_confirmed: 2025-04-01

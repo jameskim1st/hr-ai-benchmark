@@ -14,6 +14,9 @@ output: "360,000 직원의 HR 셀프서비스 응답 (계좌 정보 업데이트
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-01-08
 last_confirmed: 2025-06-01

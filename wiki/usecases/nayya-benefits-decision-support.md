@@ -14,6 +14,9 @@ output: "직원 개인 상황·청구이력·소득·가족 구성 기반 의료
 ai_tech_type: [predictive, generative]
 ai_tech_subtype: [recommendation-ranking, prediction, summarization-qa]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: annual
 first_seen: 2025-09-15
 last_confirmed: 2026-01-10

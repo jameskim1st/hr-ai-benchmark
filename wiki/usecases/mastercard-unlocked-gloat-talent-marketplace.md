@@ -14,6 +14,9 @@ output: "직원 ↔ internal job/gig/project/멘토십 매칭 추천 (skill·경
 ai_tech_type: [predictive, generative]
 ai_tech_subtype: [recommendation-ranking, prediction, summarization-qa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-09-10
 last_confirmed: 2026-01-15

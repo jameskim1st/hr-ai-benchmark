@@ -9,10 +9,42 @@
       "WebFetch(domain:www.hrdive.com)",
       "WebFetch(domain:www.skax.co.kr)",
       "WebFetch(domain:www.aitimes.com)",
-      "WebFetch(domain:www.taxwatch.co.kr)"
+      "WebFetch(domain:www.taxwatch.co.kr)",
+      "Bash(python scripts/lint.py *)",
+      "Bash(python scripts/grade.py *)",
+      "Bash(python scripts/check_quotes.py *)",
+      "Bash(python scripts/fetch_raw.py *)",
+      "Bash(python scripts/build_all.py *)",
+      "Bash(python scripts/build_index.py *)"
     ],
     "additionalDirectories": [
       "c:\\AI\\AI-HR\\Benchmark\\.claude"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/scripts/hooks/guard_raw.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/scripts/hooks/post_write_lint.py\"",
+            "timeout": 60
+          }
+        ]
+      }
     ]
   }
 }

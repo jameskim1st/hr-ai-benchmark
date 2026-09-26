@@ -14,8 +14,12 @@ output: "HR 부서 자동화 산출물 — 채용 screening·티켓 라우팅·�
 ai_tech_type: [generative, predictive, automation]
 ai_tech_subtype: [summarization-qa, clustering-classification, rpa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
+first_seen_estimated: true
 frequency: adhoc
-first_seen: 2025-10
+first_seen: 2025-10-01
 last_confirmed: 2025-10-16
 confidence: 0.45               # Tier 2 SHRM(+0.20) + Tier 2 HR Grapevine(+0.20) + Tier 2 CNBC(+0.20) = multi-source 독립보도 0.45
 consulting_angle_status: filled

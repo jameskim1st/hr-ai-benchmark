@@ -14,6 +14,9 @@ output: "퇴사 위험 등급 (Green/Yellow/Red) + 위험 요인 Summary (LLM+XA
 ai_tech_type: [predictive, generative]
 ai_tech_subtype: [prediction, clustering-classification, summarization-qa, recommendation-ranking]
 stage: announced
+visibility: internal
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: monthly
 first_seen: 2026-05-01
 last_confirmed: 2026-05-05

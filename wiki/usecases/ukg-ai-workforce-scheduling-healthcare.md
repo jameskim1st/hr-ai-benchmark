@@ -14,6 +14,9 @@ output: "AI 최적 교대 스케줄 추천 (자격증·노동법·선호도 반�
 ai_tech_type: [decision-optimization, predictive, generative]
 ai_tech_subtype: [optimization, recommendation-ranking, summarization-qa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-06-01
 last_confirmed: 2026-02-17

@@ -14,6 +14,9 @@ output: "공석율·이직 패턴·에이전시 비용 통합 분석 dashboard +
 ai_tech_type: [predictive, generative]
 ai_tech_subtype: [prediction, summarization-qa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: daily
 first_seen: 2025-03-01
 last_confirmed: 2025-03-01

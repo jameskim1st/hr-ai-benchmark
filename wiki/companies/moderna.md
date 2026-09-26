@@ -74,7 +74,7 @@ TABLE WITHOUT ID
   stage AS "단계",
   confidence AS "신뢰도",
   last_confirmed AS "마지막 확인"
-FROM "wiki/usecases"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
 WHERE company = "Moderna" OR contains(tags, "moderna")
 SORT confidence DESC, last_confirmed DESC
 ```
@@ -86,7 +86,7 @@ TABLE WITHOUT ID
   primary_category AS "HR 대그룹",
   length(rows) AS "Moderna Use Case 수",
   rows.file.link AS "페이지들"
-FROM "wiki/usecases"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
 WHERE company = "Moderna"
 GROUP BY primary_category
 ```

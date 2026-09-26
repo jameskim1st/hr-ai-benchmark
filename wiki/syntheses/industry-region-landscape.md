@@ -114,3 +114,39 @@ quadrantChart
 - [[workday-as-customer-paradox]] — Suite vs point solution 전략
 - [[dashboard]] — 전체 실시간 대시보드
 - [[guide]] — wiki 구조 가이드
+
+---
+
+## 금융 산업 HR AI — JPMorgan·Goldman 관찰 (2026-09-27 병합)
+
+> 舊 `jpmorgan-goldman-sachs-hr-ai` 합본 페이지(삭제)의 산업 공통 인사이트를 이관. 기업별 사실은 [[jpmorgan-llm-suite-redeployment]] · [[goldman-sachs-gs-ai-assistant]] 참조.
+> 출처: CNBC 2025-10-15 https://www.cnbc.com/2025/10/15/jpmorgan-chase-goldman-sachs-ai-hiring.html · HR Executive https://hrexecutive.com/jpmorgan-ceo-we-have-displaced-people-from-ai-and-we-offer-them-other-jobs/ · HR Dive https://www.hrdive.com/news/banks-ramp-up-ai-hiring-roi-efficiency-gains-evident-insights/746724/
+
+### 금융 산업 공통 Pain Point·Trigger
+
+- **Before**: 투자은행·자산관리·리테일금융의 **인건비가 총비용의 50%+** — 금융 산업에서 AI 자동화의 ROI가 가장 큰 이유 (❓ 병합 전 페이지 기술, 개별 출처 귀속 없음)
+- **Pain point**: (1) AI 역량 인력 확보 경쟁 치열, (2) 기존 HR 프로세스(채용·온보딩·분석)에 과도한 인력 투입, (3) 데이터 보안·규제 준수 하에서 AI 도입이 다른 산업보다 복잡
+- **Trigger**: 2024~2025 금융 산업 전반에서 "**AI 도입을 안 하면 경쟁에서 뒤처진다**"는 공감대 형성. JPMorgan CEO Dimon의 "모든 프로세스에 AI 주입" 방침이 HR에도 적용 (⚠️ 자사 보고 — CEO 발언, CNBC·HR Executive 전달)
+- 양사 모두 **AI로 채용을 줄이면서 AI 인력을 늘리는** 구조적 전환 — "HR 인력 축소 + AI 기술 인력 확대"라는 workforce composition 변화가 핵심 기대효과
+
+### 금융 산업 전체 Insight
+
+| 지표 | 값 | 출처 | 표기 |
+|---|---|---|---|
+| 은행권 AI 기술자 증가 (model dev·platform eng·PM) | **13%** (JPMorgan·Wells Fargo·Citi 주도) | HR Dive | ✅ Fact (Tier 2 보도) |
+| Goldman GitHub Copilot 개발자 효율 | **~20%** (12,000 개발자) | CNBC 2025-10-15 | ⚠️ 자사 보고 |
+| Goldman GS AI 사용자 | **10,000명** (파일럿) | CNBC 2025-10-15 | ✅ Fact |
+
+### 왜 금융이 HR AI의 "canary in the coal mine"인가
+
+1. **높은 인건비** → AI 대체 ROI가 가장 큰 산업
+2. **규제 환경** → compliance·risk management에 AI governance 성숙
+3. **데이터 풍부** → 성과·보상·이직 데이터가 가장 구조화됨
+4. **경쟁 압력** → "옆 은행이 AI 쓰면 우리도"
+
+### 한국 금융 시사점
+
+- KB증권·신한은행이 이미 마이다스아이티 inAIR 도입 ([[midas-inair-ai-assessment-korea]])
+- 국내 금융 HR AI는 **채용 평가**에서 시작 → **JPMorgan 패턴(ML 기반 sourcing, 채용 억제)으로 진화** 가능성
+- 금감원·금융위 규제(AI 활용 가이드라인)와의 정합성 확인 필요
+- Dimon "displaced but offered other jobs"는 IBM Krishna "replaced but elevated"와 같은 패턴 — 한국 노동법·노조 컨텍스트에서는 "감원"보다 "재배치·reskilling" frame 권장 ([[jpmorgan-llm-suite-redeployment]] Consulting Angle 참조)

@@ -14,6 +14,9 @@ output: "다중 산출물 — AI 사원의 가입자 상담·홍보 자동 응�
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, multimodal]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-09-18
 last_confirmed: 2026-04-01

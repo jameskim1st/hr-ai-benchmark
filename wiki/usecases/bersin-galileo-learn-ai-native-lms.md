@@ -14,6 +14,9 @@ output: "기존 콘텐츠 (PDF·영상·SCORM)에서 자동 변환된 코스·as
 ai_tech_type: [generative]
 ai_tech_subtype: [text-generation, summarization-qa, multimodal]
 stage: pilot                       # 런칭 + 자사 deployment만 있는 상태
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-05-21
 last_confirmed: 2025-06-01

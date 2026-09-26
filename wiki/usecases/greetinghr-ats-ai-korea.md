@@ -14,6 +14,9 @@ output: "AI 후보자 매칭 추천 리스트 + 인재풀 분류·관리 + 면�
 ai_tech_type: [predictive, automation]
 ai_tech_subtype: [recommendation-ranking, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: daily
 first_seen: 2025-01-01
 last_confirmed: 2025-09-01

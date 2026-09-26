@@ -14,6 +14,9 @@ output: "직원별 개인화 추천 — 잡 기회·프로젝트/기그·멘토�
 ai_tech_type: [predictive, generative]
 ai_tech_subtype: [recommendation-ranking, information-extraction]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2022-01-01
 last_confirmed: 2024-06-27

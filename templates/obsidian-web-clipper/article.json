@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "0.1.0",
+  "name": "HR AI — article (independent media)",
+  "behavior": "create",
+  "noteContentFormat": "{{content}}",
+  "properties": [
+    { "name": "url", "value": "{{url}}", "type": "text" },
+    { "name": "title", "value": "{{title}}", "type": "text" },
+    { "name": "publisher", "value": "{{domain}}", "type": "text" },
+    { "name": "published", "value": "{{published|date:\"YYYY-MM-DD\"}}", "type": "date" },
+    { "name": "author", "value": "{{author}}", "type": "text" },
+    { "name": "source_kind", "value": "article", "type": "text" },
+    { "name": "clipped_at", "value": "{{date|date:\"YYYY-MM-DD\"}}", "type": "date" },
+    { "name": "hr_hint", "value": "", "type": "text" },
+    { "name": "content_hash", "value": "", "type": "text" }
+  ],
+  "triggers": [],
+  "noteNameFormat": "{{date|date:\"YYYY-MM-DD\"}}-{{domain|replace:\"www.\":\"\"|replace:\".com\":\"\"|replace:\".co.kr\":\"\"}}-{{title|slugify|truncate:60}}",
+  "path": "raw/inbox"
+}

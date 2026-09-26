@@ -14,6 +14,9 @@ output: "직원별 스킬 갭 분석 + 내부 공모 매칭 추천 + Fujitsu Lea
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2024-01-01
 last_confirmed: 2025-12-01

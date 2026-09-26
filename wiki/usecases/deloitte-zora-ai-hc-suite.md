@@ -14,6 +14,9 @@ output: "클라이언트 workforce 세그먼트별 AI 영향평가 리포트 (Wo
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: daily
 first_seen: 2025-06-01
 last_confirmed: 2026-04-01

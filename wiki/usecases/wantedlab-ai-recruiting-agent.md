@@ -14,6 +14,9 @@ output: "자연어 쿼리 기반 후보자 검색 결과 (기본 탐색 풀 + �
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, information-extraction, recommendation-ranking]
 stage: pilot                     # 2025-10 런칭, customer 확인 0건
+visibility: public
+case_type: vendor-product
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: daily
 first_seen: 2025-10-21
 last_confirmed: 2025-10-21

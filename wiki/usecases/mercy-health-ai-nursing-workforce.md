@@ -14,6 +14,9 @@ output: "일별 간호사 교대 스케줄 최적화안 (코어 69%·내부 유�
 ai_tech_type: [generative, predictive, recognition, decision-optimization]
 ai_tech_subtype: [summarization-qa, prediction, speech-recognition, optimization]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: daily
 first_seen: 2023-01-01
 last_confirmed: 2025-02-01

@@ -14,8 +14,12 @@ output: "지원자 서류 AI 스크리닝 결과 + AICT 점수 (프롬프트·�
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification, text-generation]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
+first_seen_estimated: true
 frequency: annual               # 신입 공채 연 1~2회
-first_seen: 2024-10
+first_seen: 2024-10-01
 last_confirmed: 2025-02-20
 confidence: 0.40               # Tier 3 × 2 (SK AX 공식)(+0.10) + Tier 2 서울경제 등 한국 경제지 다수 보도(+0.20) + recency 14m(0.00) = base 0.30 + 다수 매체 동시 보도 보너스(+0.10) → 0.40
 consulting_angle_status: filled

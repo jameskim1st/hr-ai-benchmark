@@ -14,6 +14,9 @@ output: "360K 직원의 HR·재무·구매 요청에 대한 단일 \"My Services
 ai_tech_type: [generative, predictive, automation]
 ai_tech_subtype: [summarization-qa, clustering-classification, rpa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-01-01
 last_confirmed: 2025-09-01

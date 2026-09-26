@@ -14,6 +14,9 @@ output: "공무원용 보고서·민원 답변·보도자료 초안 (망분리 �
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, text-generation]
 stage: pilot
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: adhoc
 first_seen: 2025-03-18
 last_confirmed: 2025-11-01

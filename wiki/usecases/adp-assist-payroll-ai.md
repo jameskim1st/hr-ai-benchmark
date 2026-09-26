@@ -14,6 +14,9 @@ output: "급여 데이터 이상 플래그 + 자동 수정 제안 + 자연어 �
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification, prediction]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: monthly
 first_seen: 2025-09-03
 last_confirmed: 2025-09-03

@@ -24,7 +24,7 @@ TABLE WITHOUT ID
   stage AS "단계",
   last_confirmed AS "마지막 확인"
 FROM "wiki/usecases"
-WHERE confidence < 0.4
+WHERE evidence_grade = "C" OR evidence_grade = "D"
 SORT confidence ASC
 ```
 
@@ -36,7 +36,7 @@ TABLE WITHOUT ID
   length(sources) AS "소스 수",
   last_confirmed AS "마지막 확인"
 FROM "wiki/usecases"
-WHERE stage = "stub"
+WHERE depth = "stub"
 SORT last_confirmed DESC
 ```
 
@@ -142,7 +142,7 @@ TABLE WITHOUT ID
   primary_category AS "대그룹",
   confidence AS "신뢰도"
 FROM "wiki/usecases"
-WHERE confidence >= 0.7
+WHERE (evidence_grade = "A" OR evidence_grade = "B") AND depth = "full"
   AND date(last_confirmed) >= date(today) - dur(6 months)
 SORT confidence DESC
 ```

@@ -14,6 +14,9 @@ output: "직원 자연어 요청에 대한 80+ HR 태스크 처리 — 정책 Q&
 ai_tech_type: [generative, predictive, automation]
 ai_tech_subtype: [summarization-qa, text-generation, clustering-classification, rpa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-06-12
 last_confirmed: 2025-10-24

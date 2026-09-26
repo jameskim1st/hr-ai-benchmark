@@ -14,6 +14,9 @@ output: "역할·팀·회사 우선순위 기반 SMART 목표 추천안 + 평가
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: monthly
 first_seen: 2026-01-01
 last_confirmed: 2026-03-03

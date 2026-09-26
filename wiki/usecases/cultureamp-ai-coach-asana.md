@@ -14,6 +14,9 @@ output: "매니저용 구조화 성과 리뷰 가이드 (과거 피드백·동�
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: monthly
 first_seen: 2025-07-01
 last_confirmed: 2026-03-24

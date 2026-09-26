@@ -14,6 +14,9 @@ output: "직원 피드백 데이터의 continuous 분석 결과 (팀·코호트�
 ai_tech_type: [predictive]
 ai_tech_subtype: [clustering-classification]
 stage: stub                    # 공개 정보 부족으로 stub 처리
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: adhoc               # 미공개
 first_seen: 2025-09-16
 last_confirmed: 2025-09-16

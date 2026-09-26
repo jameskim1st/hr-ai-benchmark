@@ -14,6 +14,9 @@ output: "HR 운영 KPI 자율 처리 결과 (AskHR 80+ 태스크, learning ops �
 ai_tech_type: [generative, predictive, automation]
 ai_tech_subtype: [summarization-qa, prediction, clustering-classification, rpa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: annual
 first_seen: 2025-05-01
 last_confirmed: 2026-02-12

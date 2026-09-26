@@ -14,6 +14,9 @@ output: "JD 초안 자동 생성 + 후보자 매칭 리스트 (사내 + ThisWay 
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: daily
 first_seen: 2024-09-01
 last_confirmed: 2026-02-12

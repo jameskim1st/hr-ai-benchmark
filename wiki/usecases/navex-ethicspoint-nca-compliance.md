@@ -14,6 +14,9 @@ output: "익명 신고 intake (다국어 자동 번역) + AI 분류·우선순�
 ai_tech_type: [generative, predictive, automation]
 ai_tech_subtype: [summarization-qa, clustering-classification, recommendation-ranking, information-extraction]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-12-01
 last_confirmed: 2026-05-06

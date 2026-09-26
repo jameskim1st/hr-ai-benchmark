@@ -14,6 +14,9 @@ output: "1:1 미팅 자동 전사·요약·액션 아이템 + 매니저 대상 �
 ai_tech_type: [generative, recognition]
 ai_tech_subtype: [summarization-qa, speech-recognition]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-05-20
 last_confirmed: 2025-05-20

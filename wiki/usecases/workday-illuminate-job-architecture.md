@@ -14,6 +14,9 @@ output: "HR 매니저 대시보드용 skill gap·직무 통합 기회·역할 �
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production              # Bersin 2024-09은 "released" 맥락, PR 2025-09은 "expanded" 맥락
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: adhoc               # 실행 주기 미공개
 first_seen: 2024-09-17
 last_confirmed: 2025-09-16

@@ -18,7 +18,7 @@ sources:
 
 # ER (Employee Relations · 노무) AI 벤더 landscape + 한국 적용 reference
 
-본 synthesis는 PwC Korea ER AI 컨설팅 자료 (raw/etc/) + 2개 background research agent 검증 결과 + 추가 발굴 reference를 종합한 ER AI 벤더 비교 자료. 한국 대기업 ER/노무 AI 도입 컨설팅에 즉시 활용 가능.
+본 synthesis는 PwC Korea ER AI 컨설팅 자료 (raw/internal/pwc-er-deck-2026-05/) + 2개 background research agent 검증 결과 + 추가 발굴 reference를 종합한 ER AI 벤더 비교 자료. 한국 대기업 ER/노무 AI 도입 컨설팅에 즉시 활용 가능.
 
 ## 1. ER (Employee Relations · 노무) 정의
 

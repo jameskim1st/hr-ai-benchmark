@@ -14,9 +14,14 @@ output: "Olivia의 후보자 conversational 스크리닝 (work history·shift) �
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: daily
-first_seen: 2021
-last_confirmed: 2025
+first_seen: 2021-06-30
+last_confirmed: 2025-06-30
 confidence: 0.20
 consulting_angle_status: filled
 sources:

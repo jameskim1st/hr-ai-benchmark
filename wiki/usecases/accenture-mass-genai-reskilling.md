@@ -14,6 +14,9 @@ output: "직원별 GenAI 학습 이수 기록 + AI literacy 인증 등급 + 사�
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: annual
 first_seen: 2022-11-01
 last_confirmed: 2026-03-01

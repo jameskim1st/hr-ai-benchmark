@@ -14,9 +14,14 @@ output: "직원/후보 Capabilities Matrix 기반 채용·내부이동·후계 �
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: daily
-first_seen: 2025
-last_confirmed: 2025
+first_seen: 2025-06-30
+last_confirmed: 2025-06-30
 confidence: 0.20               # Tier 3 벤더 주장 위주, limited independent verification
 consulting_angle_status: filled
 sources:

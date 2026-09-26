@@ -14,6 +14,9 @@ output: "직원 PTO·정책 Q&A 응답 + 매니저용 time-off notification 메�
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2024-06-01
 last_confirmed: 2025-11-01

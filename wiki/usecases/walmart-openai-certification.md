@@ -14,6 +14,9 @@ output: "740K frontline 직원에게 OpenAI Certification 다층 모듈 (basics 
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: annual
 first_seen: 2025-09-01
 last_confirmed: 2026-04-01

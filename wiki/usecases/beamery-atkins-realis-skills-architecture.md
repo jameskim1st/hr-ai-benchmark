@@ -14,9 +14,14 @@ output: "Skills Inference 엔진의 role별 핵심 skill 추출 (90% 적합도) 
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [information-extraction, clustering-classification, recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: monthly
-first_seen: 2025
-last_confirmed: 2025
+first_seen: 2025-06-30
+last_confirmed: 2025-06-30
 confidence: 0.35               # Tier 1 Forrester TEI(+0.35) + Tier 3 vendor(+0.10) - platform-wide TEI not AtkinsRéalis specific = 0.35
 consulting_angle_status: filled
 sources:

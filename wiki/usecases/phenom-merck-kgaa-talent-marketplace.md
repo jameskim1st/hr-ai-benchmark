@@ -14,8 +14,12 @@ output: "직원별 inferred skills 매칭 추천 — 내부 jobs·gigs·learning
 ai_tech_type: [predictive, generative]
 ai_tech_subtype: [recommendation-ranking, information-extraction]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
+first_seen_estimated: true
 frequency: daily
-first_seen: 2025-03
+first_seen: 2025-03-01
 last_confirmed: 2025-03-12
 confidence: 0.30               # Tier 3 vendor award(+0.10) + Tier 4 BusinessWire PR(+0.15) + 구체 수치 다수 = 0.30
 consulting_angle_status: filled

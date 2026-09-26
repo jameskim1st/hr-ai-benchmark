@@ -14,6 +14,9 @@ output: "1.5M 직원에 대한 attrition·engagement 예측 점수 + 행동 (non
 ai_tech_type: [predictive]
 ai_tech_subtype: [prediction, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2014-01-01
 last_confirmed: 2024-06-01

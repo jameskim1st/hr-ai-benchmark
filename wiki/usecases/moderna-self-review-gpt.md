@@ -14,6 +14,9 @@ output: "직원 본인의 성과 data·프로젝트·목표 입력에 대한 연
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: annual              # 연말 리뷰 주기
 first_seen: 2025-05-22
 last_confirmed: 2025-06-12

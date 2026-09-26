@@ -14,6 +14,9 @@ output: "직원 자연어 HR 질문에 대한 도메인 분류 라우팅 (perfor
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2024-04-24
 last_confirmed: 2025-06-27

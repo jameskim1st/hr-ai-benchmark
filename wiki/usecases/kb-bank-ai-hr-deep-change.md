@@ -14,6 +14,9 @@ output: "1,100+ 영업점 직원 인사 배치안 (출퇴근·자격증·업무 
 ai_tech_type: [decision-optimization, predictive]
 ai_tech_subtype: [optimization, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: monthly
 first_seen: 2020-07-15
 last_confirmed: 2026-04-01

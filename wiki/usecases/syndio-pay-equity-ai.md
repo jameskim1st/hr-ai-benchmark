@@ -14,9 +14,14 @@ output: "protected class별 pay gap 분석 결과 + offer/raise/promotion 시점
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: monthly
-first_seen: 2025-03
-last_confirmed: 2025-03
+first_seen: 2025-03-01
+last_confirmed: 2025-03-01
 confidence: 0.20               # Tier 3 벤더 PR 위주, 독립 검증 없음
 consulting_angle_status: filled
 sources:

@@ -14,8 +14,12 @@ output: "직원별 개인화 learning journey + Stanford·Udacity·Accenture 콘
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
+first_seen_estimated: true
 frequency: daily
-first_seen: 2025
+first_seen: 2025-06-30
 last_confirmed: 2025-10-02
 confidence: 0.30               # Tier 2 Everest Group(+0.20) + Tier 2 HR Brew(+0.20) - 구체 고객명 자사만 = 0.30 (self-dogfooding 감점)
 consulting_angle_status: filled

@@ -14,6 +14,9 @@ output: "직원 wellness assessment 결과 + 최적 치료 경로 추천 (therap
 ai_tech_type: [predictive]
 ai_tech_subtype: [recommendation-ranking, prediction, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2024-01-01
 last_confirmed: 2026-01-01

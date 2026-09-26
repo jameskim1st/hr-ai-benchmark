@@ -14,6 +14,9 @@ output: "360도 피드백·리뷰 자동 요약 + 핵심 트렌드 도출 + 자�
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, prediction]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: monthly
 first_seen: 2024-05-01
 last_confirmed: 2026-06-01

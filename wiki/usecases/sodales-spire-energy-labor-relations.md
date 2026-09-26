@@ -14,6 +14,9 @@ output: "직원·매니저용 grievance/incident/discipline/appeals 자동 신�
 ai_tech_type: [generative, automation, predictive]
 ai_tech_subtype: [summarization-qa, rpa, information-extraction]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2018-10-01
 last_confirmed: 2026-05-06

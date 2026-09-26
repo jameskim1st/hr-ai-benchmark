@@ -14,8 +14,12 @@ output: "매장 associate 음성 query에 대한 음성·텍스트 답변 (가�
 ai_tech_type: [generative, predictive, recognition]
 ai_tech_subtype: [summarization-qa, clustering-classification, speech-recognition]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
+first_seen_estimated: true
 frequency: daily
-first_seen: 2025
+first_seen: 2025-06-24
 last_confirmed: 2025-10-02
 confidence: 0.55               # Tier 2 HR Brew(+0.20) + Tier 2 HR Executive(+0.20) + Tier 2 SHRM(+0.20) + Tier 2 HR Dive(+0.20) + Tier 4 Walmart corporate(+0.15) = base 0.95, 할인 (자사 보고 전달 성격, metric 독립 검증 제한) → 0.55
 consulting_angle_status: filled

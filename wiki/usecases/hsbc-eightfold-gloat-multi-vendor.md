@@ -14,9 +14,14 @@ output: "Eightfold의 1.6B+ profile 기반 skills inference + Gloat marketplace�
 ai_tech_type: [predictive, generative]
 ai_tech_subtype: [recommendation-ranking, information-extraction, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: daily
-first_seen: 2025
-last_confirmed: 2025
+first_seen: 2025-06-30
+last_confirmed: 2025-06-30
 confidence: 0.30               # Tier 3 vendor cases(+0.10×3) + Tier 2 Fortune Europe(+0.20), multi-vendor 교차 = 0.30
 consulting_angle_status: filled
 sources:
@@ -24,7 +29,7 @@ sources:
   - "Gloat case study https://resources.gloat.com/resources/hsbc-customer-success-story/"
   - "Accenture case study https://www.accenture.com/us-en/case-studies/talent-organization/hsbc-powers-talent-acquisition-future-ready-workforce"
 related_usecases:
-  - jpmorgan-goldman-sachs-hr-ai
+  - jpmorgan-llm-suite-redeployment
   - workday-as-customer-paradox
 related_vendors:
   - gloat

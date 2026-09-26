@@ -14,6 +14,9 @@ output: "60+ 언어 pulse 서베이의 자동 테마·sentiment·driver 추출 +
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: monthly
 first_seen: 2021-02-01
 last_confirmed: 2026-04-01

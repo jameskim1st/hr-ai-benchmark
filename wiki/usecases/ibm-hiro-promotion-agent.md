@@ -14,6 +14,9 @@ output: "분기 승진 cycle 자동화 — 매니저별 promotion criteria + eli
 ai_tech_type: [generative, automation, predictive]
 ai_tech_subtype: [summarization-qa, rpa, prediction]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: annual
 first_seen: 2025-10-12
 last_confirmed: 2026-01-20

@@ -14,6 +14,9 @@ output: "직원 스킬 프로필 기반 personalized learning path 추천 + Care
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-04-15
 last_confirmed: 2025-04-15

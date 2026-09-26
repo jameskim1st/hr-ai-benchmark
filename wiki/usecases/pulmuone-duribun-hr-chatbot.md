@@ -14,6 +14,9 @@ output: "7K 직원 HR 6개 영역 (근태·복리후생·학습·평가·승진�
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2024-12-23
 last_confirmed: 2026-04-01

@@ -14,6 +14,9 @@ output: "타임카드 자동 스코어링·승인 결과 (이상 케이스만 �
 ai_tech_type: [predictive]
 ai_tech_subtype: [prediction, clustering-classification]
 stage: announced
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: daily
 first_seen: 2026-02-26
 last_confirmed: 2026-02-26

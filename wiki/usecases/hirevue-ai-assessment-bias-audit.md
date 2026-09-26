@@ -14,9 +14,14 @@ output: "후보자 비디오 면접·게임 평가의 competency 점수 (시각 
 ai_tech_type: [predictive]
 ai_tech_subtype: [clustering-classification, prediction]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: daily
-first_seen: 2025
-last_confirmed: 2025
+first_seen: 2025-06-30
+last_confirmed: 2025-06-30
 confidence: 0.35               # Tier 1 Forrester TEI(+0.35) + Tier 3 vendor(+0.10) - 구체 고객명 1곳만 = 0.35
 consulting_angle_status: filled
 sources:

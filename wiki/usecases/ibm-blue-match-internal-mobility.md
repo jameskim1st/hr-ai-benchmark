@@ -14,6 +14,9 @@ output: "opt-in 직원에게 personalized 내부 직무 추천 리스트 (스킬
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [information-extraction, recommendation-ranking, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2015-01-01
 last_confirmed: 2026-04-07

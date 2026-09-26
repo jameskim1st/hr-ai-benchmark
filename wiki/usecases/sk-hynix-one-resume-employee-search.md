@@ -14,6 +14,9 @@ output: "직원 1인당 단일 통합 프로필 (One Resume — 인사·평가·
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, information-extraction, recommendation-ranking]
 stage: production
+visibility: internal
+case_type: adoption
+regulatory_exposure: []
 frequency: monthly
 first_seen: 2026-05-01
 last_confirmed: 2026-05-06

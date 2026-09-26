@@ -14,6 +14,9 @@ output: "AI 에이전트의 거버넌스 메타데이터 (owner·purpose·scope�
 ai_tech_type: []
 ai_tech_subtype: []
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-09-01
 last_confirmed: 2026-04-15

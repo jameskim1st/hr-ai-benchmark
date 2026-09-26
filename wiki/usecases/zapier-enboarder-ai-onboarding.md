@@ -14,6 +14,9 @@ output: "입사 확정 이벤트 기반 자동화 온보딩 여정 — 신규 �
 ai_tech_type: [generative, automation]
 ai_tech_subtype: [summarization-qa, rpa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2022-11-20
 last_confirmed: 2025-09-16
@@ -21,7 +24,7 @@ confidence: 0.30
 sources:
   - sources/enboarder-zapier-onboarding-2022.md
 related_usecases:
-  - hitachi-ema-agentic-hr-onboarding
+  - hitachi-skye-hr-ai-assistant
   - unilever-flex-gloat-talent-marketplace
 related_vendors: []
 ---

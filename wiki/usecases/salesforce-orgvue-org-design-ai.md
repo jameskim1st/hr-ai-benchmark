@@ -14,6 +14,9 @@ output: "8,000개 직위를 83개 역할 클러스터로 자동 분류한 결과
 ai_tech_type: [predictive]
 ai_tech_subtype: [clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: adhoc
 first_seen: 2025-12-01
 last_confirmed: 2025-12-01

@@ -14,9 +14,14 @@ output: "직원 Talent DNA 기반 gig·project·mentorship·lateral move 추천 
 ai_tech_type: [predictive]
 ai_tech_subtype: [recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: monthly
-first_seen: 2025
-last_confirmed: 2025
+first_seen: 2025-06-30
+last_confirmed: 2025-06-30
 confidence: 0.20
 consulting_angle_status: filled
 sources:

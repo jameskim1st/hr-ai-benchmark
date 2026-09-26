@@ -29,7 +29,7 @@ TABLE WITHOUT ID
   primary_category AS "HR 대그룹",
   length(rows) AS "Use Case 수",
   rows.file.link AS "페이지들"
-FROM "wiki/usecases"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
 WHERE company = "Chipotle Mexican Grill"
 GROUP BY primary_category
 ```
@@ -42,7 +42,7 @@ TABLE WITHOUT ID
   primary_category AS "대그룹",
   subcategory AS "중그룹",
   confidence AS "신뢰도"
-FROM "wiki/usecases"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
 WHERE company = "Chipotle Mexican Grill"
 SORT confidence DESC
 ```

@@ -14,6 +14,9 @@ output: "5개 Joule Agent별 산출물 — Performance & Goals: 매니저용 1:1
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking, clustering-classification]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-10-01
 last_confirmed: 2026-04-15

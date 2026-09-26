@@ -14,9 +14,14 @@ output: "매니저별 Whole Person Assessment 점수 + 개인화 6개월 learnin
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: monthly
-first_seen: 2025
-last_confirmed: 2025
+first_seen: 2025-06-30
+last_confirmed: 2025-06-30
 confidence: 0.45               # Tier 3 vendor(+0.10) + Tier 2 Inc.com(+0.20) + Tier 1 Bersin(+0.20, 할인: advisor 이해관계) + Tier 2 HR Executive(+0.20) = base 0.70, 할인 후 0.45 (Bersin COI + Twilio 구체 metric은 벤더 자체 주장)
 consulting_angle_status: filled
 sources:

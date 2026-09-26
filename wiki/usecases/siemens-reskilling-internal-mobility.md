@@ -14,9 +14,14 @@ output: "My Learning World 학습자별 적응형 학습 경로 추천 (100,000+
 ai_tech_type: [predictive]
 ai_tech_subtype: [recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: daily
-first_seen: 2025
-last_confirmed: 2025
+first_seen: 2025-06-30
+last_confirmed: 2025-06-30
 confidence: 0.45               # Tier 2 AIHR(+0.20) + Tier 2 MISQ(+0.20) + Tier 1 WEF(+0.35, 할인→+0.20, 자사 commitment 전달 성격) + Tier 3 ServiceNow(+0.10) = base 0.70, 할인 후 → 0.45
 consulting_angle_status: filled
 sources:

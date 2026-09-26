@@ -14,6 +14,9 @@ output: "리더별 개인화 Intelligent Nudge (팀별 설문 결과 + 리더십
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: annual
 first_seen: 2025-01-01
 last_confirmed: 2025-12-31

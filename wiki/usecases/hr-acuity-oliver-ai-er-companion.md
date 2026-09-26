@@ -14,6 +14,9 @@ output: "ER 케이스 intake notes → 구조화된 investigation plan + AI 인�
 ai_tech_type: [generative, predictive, automation]
 ai_tech_subtype: [summarization-qa, information-extraction, clustering-classification, prediction]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: daily
 first_seen: 2024-09-01
 last_confirmed: 2026-05-06

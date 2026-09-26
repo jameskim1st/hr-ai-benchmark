@@ -14,6 +14,9 @@ output: "HRD 입력 4일 내 멀티모달 코스 초안 (텍스트·비디오·�
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [text-generation, multimodal, summarization-qa, recommendation-ranking]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-11-01
 last_confirmed: 2026-04-15

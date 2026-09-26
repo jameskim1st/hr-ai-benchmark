@@ -14,6 +14,9 @@ output: "직원별 dynamic 스킬 프로파일 (이메일·문서·미팅 텔레
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [information-extraction, clustering-classification, recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-04-01
 last_confirmed: 2026-04-01

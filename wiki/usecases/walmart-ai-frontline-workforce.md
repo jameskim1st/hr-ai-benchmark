@@ -14,6 +14,9 @@ output: "2.3M 직원 HR 단일 통합 (Workday) + Paradox Olivia 프론트라인
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-06-24
 last_confirmed: 2026-02-19

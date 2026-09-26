@@ -14,6 +14,9 @@ output: "학습자별 AI Coach와의 대화형 Q&A·요약·심화 답변 + role
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: daily
 first_seen: 2024-04-01
 last_confirmed: 2026-04-01

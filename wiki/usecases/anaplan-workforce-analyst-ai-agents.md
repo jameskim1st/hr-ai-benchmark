@@ -14,6 +14,9 @@ output: "자연어 query에 대한 narrative 답변 (지역별 이직률·보류
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, prediction]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: monthly
 first_seen: 2025-12-09
 last_confirmed: 2026-04-01

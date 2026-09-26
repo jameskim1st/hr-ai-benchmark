@@ -14,6 +14,9 @@ output: "인사·구매·경영분석 사무 영역 110개 에이전트의 도�
 ai_tech_type: [generative, automation, predictive]
 ai_tech_subtype: [summarization-qa, rpa, clustering-classification]
 stage: announced
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2026-01-01
 last_confirmed: 2026-04-01

@@ -14,9 +14,13 @@ output: "직원 스킬·purpose 프로필 기반 사내 프로젝트·역할·gi
 ai_tech_type: [predictive]
 ai_tech_subtype: [recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
+last_confirmed_estimated: true
 frequency: daily
 first_seen: 2019-12-17
-last_confirmed: 2024               # Gloat 2024 customer story 기반 update (search summary)
+last_confirmed: 2024-06-30
 confidence: 0.25                   # Tier 2(+0.20) + Gloat customer story(+0.10) + recency 12-24m(-0.15) + no contradiction = 0.15 + 0.10 metric upgrade bonus = 0.25
 consulting_angle_status: filled
 sources:

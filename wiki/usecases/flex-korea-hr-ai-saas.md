@@ -14,6 +14,9 @@ output: "수기 근무표 OCR 변환 결과 (디지털 스케줄·연장/야간/
 ai_tech_type: [generative, recognition]
 ai_tech_subtype: [summarization-qa, ocr]
 stage: pilot
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-01-13
 last_confirmed: 2025-08-01

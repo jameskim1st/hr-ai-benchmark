@@ -23,7 +23,7 @@ TABLE WITHOUT ID
   file.link AS "Use Case",
   primary_category AS "카테고리",
   confidence AS "신뢰도"
-FROM "wiki/usecases"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
 WHERE contains(company, "JPMorgan") OR contains(company, "JPM")
 SORT confidence DESC
 ```
@@ -35,4 +35,4 @@ SORT confidence DESC
 - **한국 금융(KB·신한·하나·우리) 적용**: JPMorgan 수준의 AI 전사 배포를 목표로 할 때 reference
 
 ## Related
-- Use cases: [[jpmorgan-llm-suite-employee-productivity]], [[jpmorgan-goldman-sachs-hr-ai]]
+- Use cases: [[jpmorgan-llm-suite-employee-productivity]], [[jpmorgan-llm-suite-redeployment]]

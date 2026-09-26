@@ -14,6 +14,9 @@ output: "연말정산 대상자 자동 식별 리스트 + 국세청 간소화 PD
 ai_tech_type: [generative, predictive, automation]
 ai_tech_subtype: [summarization-qa, information-extraction, clustering-classification, rpa]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: annual              # 연 1회 연말정산
 first_seen: 2024-12-10
 last_confirmed: 2024-12-10

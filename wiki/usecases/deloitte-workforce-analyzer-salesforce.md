@@ -14,6 +14,9 @@ output: "역할별 AI disruption 영향도 점수 + task automation/증강 가�
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification, prediction]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: adhoc
 first_seen: 2025-06-24
 last_confirmed: 2025-06-24

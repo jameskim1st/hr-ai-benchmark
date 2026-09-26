@@ -14,9 +14,14 @@ output: "Olivia 챗봇의 후보자 conversational 스크리닝 결과 + FAQ 응
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: daily
-first_seen: 2025
-last_confirmed: 2025
+first_seen: 2025-06-30
+last_confirmed: 2025-06-30
 confidence: 0.25               # Tier 3 Paradox case study(+0.10) + Tier 2 Emerj(+0.20) - 구체 metric 출처 불확실 = 0.25
 consulting_angle_status: filled
 sources:

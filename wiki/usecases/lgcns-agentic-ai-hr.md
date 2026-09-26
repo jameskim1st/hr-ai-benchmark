@@ -14,9 +14,14 @@ output: "수만 건 자기소개서·인적성 분석 결과 적합 인재 추�
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, information-extraction, recommendation-ranking]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: adhoc
-first_seen: 2025
-last_confirmed: 2025
+first_seen: 2025-06-30
+last_confirmed: 2025-06-30
 confidence: 0.25               # Tier 2 LG공식보도(+0.20) + vendor self-report, recency good
 consulting_angle_status: filled
 sources:

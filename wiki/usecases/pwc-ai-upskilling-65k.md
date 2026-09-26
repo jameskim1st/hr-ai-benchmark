@@ -14,9 +14,14 @@ output: "65,000명 GenAI 업스킬링 인증·시간 추적 (자발적 360,000+ 
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, text-generation]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: daily
-first_seen: 2025
-last_confirmed: 2025
+first_seen: 2025-06-30
+last_confirmed: 2025-06-30
 confidence: 0.35
 consulting_angle_status: filled
 sources:

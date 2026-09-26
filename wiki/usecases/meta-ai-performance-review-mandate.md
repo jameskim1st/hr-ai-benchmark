@@ -14,8 +14,12 @@ output: "매니저용 직원별 PSC 평가 rubric 점수 (AI-driven impact 항�
 ai_tech_type: [generative]
 ai_tech_subtype: [text-generation, summarization-qa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
+first_seen_estimated: true
 frequency: annual
-first_seen: 2025-11
+first_seen: 2025-11-01
 last_confirmed: 2025-11-17
 confidence: 0.40               # Tier 2 HR Grapevine(+0.20) + Tier 2 eWeek(+0.20) + 독립 확인 = 0.40
 consulting_angle_status: filled
@@ -25,7 +29,7 @@ sources:
   - "Fortune 2024-12-03 https://fortune.com/2024/12/03/meta-openai-gpt-4-llama-coding-tool/"
 related_usecases:
   - moderna-self-review-gpt
-  - jpmorgan-goldman-sachs-hr-ai
+  - jpmorgan-llm-suite-redeployment
 related_vendors: []
 ---
 

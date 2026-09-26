@@ -14,6 +14,9 @@ output: "익명 신고 intake (200+ 언어) + AI 인터뷰 요약·메시지 초
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, information-extraction, recommendation-ranking, clustering-classification]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: daily
 first_seen: 2024-09-01
 last_confirmed: 2026-05-06

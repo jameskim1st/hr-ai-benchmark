@@ -14,6 +14,9 @@ output: "노동법 자연어 질문에 대한 24/7 AI 상담 답변 + 32개 언�
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, information-extraction]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
 frequency: daily
 first_seen: 2024-11-01
 last_confirmed: 2026-05-06

@@ -14,9 +14,14 @@ output: "자연어 workforce 질의에 대한 narrative 답변 + 자동 생성 c
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: []
+first_seen_estimated: true
+last_confirmed_estimated: true
 frequency: daily
-first_seen: 2025
-last_confirmed: 2025
+first_seen: 2025-06-30
+last_confirmed: 2025-06-30
 confidence: 0.25               # Tier 2(+0.20) 벤더 + Tier 3 고객 사례, 독립 검증 제한
 consulting_angle_status: filled
 sources:

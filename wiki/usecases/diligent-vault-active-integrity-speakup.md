@@ -14,6 +14,9 @@ output: "익명 신고 intake (VaultTalk·GoTogether 집단 신고) + EthicsChat
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, prediction, clustering-classification]
 stage: production
+visibility: public
+case_type: vendor-product
+regulatory_exposure: []
 frequency: daily
 first_seen: 2025-05-22
 last_confirmed: 2026-05-06

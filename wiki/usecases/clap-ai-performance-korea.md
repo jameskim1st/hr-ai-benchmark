@@ -14,6 +14,9 @@ output: "주관식 평가 코멘트 자동 요약·정제 + AI 피드백 텍스�
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa, text-generation]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: monthly
 first_seen: 2024-01-01
 last_confirmed: 2025-10-01

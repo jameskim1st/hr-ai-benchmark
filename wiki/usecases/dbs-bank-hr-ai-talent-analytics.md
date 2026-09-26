@@ -14,6 +14,9 @@ output: "JIM: 이력서 스크리닝 + 면접 일정 자동 조율 + 초기 후�
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [information-extraction, prediction, recommendation-ranking, clustering-classification]
 stage: production
+visibility: public
+case_type: adoption
+regulatory_exposure: [kr-high-impact, eu-annex-iii]
 frequency: daily
 first_seen: 2022-01-01
 last_confirmed: 2025-06-01
