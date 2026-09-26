@@ -5,8 +5,8 @@ build_all.py — export 파이프라인 일괄 실행
   python scripts/build_all.py
 
 순서:
-  0. python scripts/lint.py --json  → finding code `internal-in-export` 가 있으면 중단 (방어)
-  1. python scripts/extract_v3.py   → wiki/exports/usecases.json · enterprise_ai.json · companies.json
+  1. python scripts/extract_v3.py (internal 제외)
+  1.5 python scripts/lint.py --json → `internal-in-export` 가 있으면 중단 (방어)   → wiki/exports/usecases.json · enterprise_ai.json · companies.json
   2. python scripts/build_html_v6.py → wiki/exports/hr-ai-usecase-collection.html
   3. python scripts/build_excel.py   → wiki/exports/hr-ai-usecase-collection.xlsx
 
