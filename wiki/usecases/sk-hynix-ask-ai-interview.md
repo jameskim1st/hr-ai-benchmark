@@ -14,7 +14,7 @@ output: "직무별 AI 영상면접 질문 출제 + 지원자 영상 답변 평�
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [text-generation, clustering-classification]
 stage: production
-visibility: public
+visibility: internal
 case_type: adoption
 regulatory_exposure: [kr-high-impact, eu-annex-iii]
 kr_law: 채용절차법·AI 기본법 인적감독을 peer hybrid로 충족, 영상 표정·외모 신호 사용 미공개
@@ -37,6 +37,7 @@ related_usecases:
   - sk-group-aibiz-25-companies
   - midas-inair-ai-assessment-korea
 related_vendors: []
+visibility_note: "2026-09-27 사용자 결정: PwC 제안 프로세스 서술 포함 → 내부 전용"
 ---
 
 ## Summary
