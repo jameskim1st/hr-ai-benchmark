@@ -22,9 +22,7 @@ first_seen: 2024-01-01
 last_confirmed: 2025-12-01
 confidence: 0.75
 consulting_angle_status: filled
-sources:
-  - sources/us-large-enterprise-hr-ai-2025-2026.md
-  - "Cisco AI Workforce Consortium Full Report 2025 https://www.cisco.com/content/dam/cisco-cdc/site/m/ai-workforce-consortium/documents/2025-ai-workforce-consortium-full-report.pdf"
+sources: [sources/cisco-ai-workforce-consortium-report-2025.md, sources/cisco-newsroom-ai-workforce-consortium-2025-09.md, sources/hr-brew-cisco-entry-level-ai-2025-11.md]
 related_usecases:
   - cisco-ai-assistant-hr-agentic
   - accenture-mass-genai-reskilling

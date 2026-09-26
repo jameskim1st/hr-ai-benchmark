@@ -7,6 +7,7 @@ author: Larry Dignan
 publication_date: 2024-04-24
 ingested_at: 2026-04-12
 raw: raw/articles/2024-04-24-constellation-moderna-chatgpt-enterprise.md
+supports: [moderna-ask-hr-routing]
 ---
 
 # Source Summary — Constellation Research on Moderna 750 GPTs (2024-04-24)

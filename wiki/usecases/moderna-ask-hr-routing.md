@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 개인정보보호법 국외이전 (OpenAI 클라우드 HR 데이터) — 공공·금융 부적합 명시
+kr_union: 근로자대표 동의·노사 합의 사전 검토 필요 (페이지 명시)
+kr_language: 해당 없음 (ChatGPT Enterprise 위 Moderna 자체 Custom GPT)
+kr_vendor: 미확인 (구현 파트너 미공개, OpenAI 직접 — 국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2024-04-24
 last_confirmed: 2025-06-27
-confidence: 0.70               # Tier 1(+0.35) + Tier 2 × 2 (Unleash + HR Brew 2025-06) + Tier 3(+0.10), recency 6-12m(0), no contradiction = 0.70
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 3
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/unleash-moderna-hr-it-merger-2025-06.md

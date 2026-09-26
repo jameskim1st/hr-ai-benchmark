@@ -1,6 +1,7 @@
 ---
 name: Deloitte
 type: company
+page_type: company
 industry: [consulting, professional-services]
 region: [global]
 headquarters: London, UK (Deloitte Touche Tohmatsu Limited)
@@ -17,14 +18,12 @@ last_confirmed: 2025-10-06
 ## 📊 Deloitte HR AI Use Cases (Live)
 
 ```dataview
-TABLE WITHOUT ID
-  file.link AS "Use Case",
-  primary_category AS "카테고리",
-  confidence AS "신뢰도"
+TABLE WITHOUT ID file.link AS "Use Case", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth", stage AS "단계", last_confirmed AS "확인"
 FROM "wiki/usecases" OR "wiki/enterprise-ai"
-WHERE contains(company, "Deloitte") OR contains(company, "Salesforce")
-SORT confidence DESC
+WHERE company = "Deloitte" OR contains(company, "Deloitte") OR contains(vendor, "Deloitte") OR contains(tags, "deloitte")
+SORT evidence_grade ASC, last_confirmed DESC
 ```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ## Consulting Angle
 
@@ -33,4 +32,4 @@ SORT confidence DESC
 - **Workforce Analyzer: 컨설팅이 제품이 되는 시대**: 300+ HR workflow를 AI로 재설계한 library를 Salesforce에 판매
 
 ## Related
-- Use cases: [[deloitte-claude-470k-employees]], [[deloitte-workforce-analyzer-salesforce]]
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음). 전사 Claude 배포 건은 `wiki/enterprise-ai/`에 위치

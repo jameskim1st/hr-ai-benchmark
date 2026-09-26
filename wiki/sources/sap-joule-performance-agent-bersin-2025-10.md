@@ -4,6 +4,7 @@ url: https://joshbersin.com/2025/10/sap-jumps-ahead-in-ai-agents-with-joule-hcm-
 tier: 1
 source_type: article
 ingested_at: 2026-04-12
+supports: [sap-joule-performance-goals-agent, sap-successfactors-1h-2026-joule-agents]
 ---
 
 ## Summary

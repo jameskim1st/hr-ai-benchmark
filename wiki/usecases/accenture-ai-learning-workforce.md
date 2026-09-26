@@ -17,15 +17,22 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준
+kr_union: 협의 의무 낮음 (정보 제공 성격)
+kr_language: 해당 없음 (자체 구축)
+kr_vendor: 해당 없음 (Accenture 자체 구축)
 first_seen_estimated: true
 frequency: daily
 first_seen: 2025-06-30
 last_confirmed: 2025-10-02
-confidence: 0.30               # Tier 2 Everest Group(+0.20) + Tier 2 HR Brew(+0.20) - 구체 고객명 자사만 = 0.30 (self-dogfooding 감점)
+confidence: 0.45
+evidence_grade: B
+corroborated_by: 1
+freshness: fresh
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "HR Brew 2025-10-02 https://www.hr-brew.com/stories/2025/10/02/accenture-and-walmart-are-developing-workforce-strategies-with-ai-in-mind"
-  - "Everest Group AI Services PEAK Matrix 2025 (Accenture assessment)"
+sources: [sources/hr-brew-accenture-walmart-workforce-ai-2025-10.md, sources/everest-group-ai-services-peak-matrix-2025.md]
 related_usecases:
   - docebo-ai-learning-lazboy
   - bersin-galileo-learn-ai-native-lms

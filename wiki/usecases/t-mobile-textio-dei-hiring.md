@@ -16,21 +16,28 @@ ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: regulatory_exposure상 고영향(채용) 분류, 실제 개입은 JD 언어 추천 수준
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향 — 채용 공고 게시 차단 기준)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2022-12-01
 last_confirmed: 2025-03-21
-confidence: 0.35
-sources:
-  - sources/textio-tmobile-duolingo-dei-2025.md
-  - "Harvard Business School Digital Initiative https://d3.harvard.edu/platform-digit/submission/textio-com-reducing-gender-bias-in-hiring-with-ai/"
-  - "T-Mobile Textio case study https://alternativebadassery.com/wp-content/uploads/2022/12/T-Mobile-Final-Case-Study-2023.pdf"
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: full
+graded_at: 2026-09-27
+sources: [sources/textio-tmobile-duolingo-dei-2025.md]
 related_usecases:
   - eightfold-ai-talent-intelligence
   - chipotle-paradox-olivia
   - hirevue-ai-assessment-bias-audit
   - syndio-pay-equity-ai
 related_vendors: []
+sources_unresolved: [Harvard Business School Digital Initiative https://d3.harvard.edu/platform-digit/submission/textio-com-reducing-gender-bias-in-hiring-with-ai/, T-Mobile Textio case study https://alternativebadassery.com/wp-content/uploads/2022/12/T-Mobile-Final-Case-Study-2023.pdf]
 ---
 
 ## Summary

@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: 개인정보보호법(ER 민감정보) + 근로기준법·괴롭힘금지 customization
+kr_union: 노조 사전 합의 필수 (ER 데이터 = 노조 영역, 페이지 명시)
+kr_language: 미확인 (olivER 한국어 정확도 미공개; Speakfully 다국어만)
+kr_vendor: 미확인 (국내 파트너 확인 필요; 노무법인 협업 권장)
 frequency: daily
 first_seen: 2024-09-01
 last_confirmed: 2026-05-06
-confidence: 0.80
+confidence: 0.35
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/hr-acuity-oliver-product-page.md

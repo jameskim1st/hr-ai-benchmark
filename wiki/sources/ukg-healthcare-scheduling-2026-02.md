@@ -4,6 +4,7 @@ url: https://www.businesswire.com/news/home/20260217718361/en/Nearly-90-of-the-L
 tier: 3
 source_type: vendor
 ingested_at: 2026-04-12
+supports: [ukg-ai-workforce-scheduling-healthcare]
 ---
 
 ## Summary

@@ -17,15 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (교육 콘텐츠; Me@Walmart personal/work 분리)
+kr_union: 협의 의무 낮음 (교육 제공 성격; 50K 재배치 병행 시 별도 협의)
+kr_language: 미확인 (OpenAI Certification 한국어 콘텐츠 여부 벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요; 디바이스만 삼성 Galaxy XCover Pro)
 frequency: annual
 first_seen: 2025-09-01
 last_confirmed: 2026-04-01
-confidence: 0.75
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/us-large-enterprise-hr-ai-2025-2026.md
-  - "Retail Dive: Walmart taps OpenAI for employee training https://www.retaildive.com/news/walmart-openai-chatgpt-employee-training-certification/759317/"
-  - "HR Dive: Walmart OpenAI training certification https://www.hrdive.com/news/walmart-openai-chatgpt-employee-training-certification/759398/"
+sources: [sources/hr-brew-accenture-walmart-workforce-ai-2025-10.md, sources/hrdive-walmart-openai-certification-2025-09.md, sources/hrdive-walmart-openai-certification-2025-09.md, sources/retaildive-walmart-openai-certification-2025-09.md]
 related_usecases:
   - walmart-ask-sam-workforce-ai
   - accenture-mass-genai-reskilling

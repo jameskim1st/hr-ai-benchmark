@@ -4,6 +4,7 @@ url: https://lattice.com/blog/lattice-spring-summer-2026-product-release
 tier: 3
 source_type: vendor
 ingested_at: 2026-04-12
+supports: [lattice-ai-performance-summarization]
 ---
 
 ## Summary

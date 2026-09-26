@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (US 복리후생 구조로 직접 적용 불가)
+kr_union: 협의 의무 낮음 (정보 제공 성격)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-07-17
 last_confirmed: 2026-01-20
-confidence: 0.65
+confidence: 0.25
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/businessolver-sofia-agentic-2025-07.md

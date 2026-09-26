@@ -17,21 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 개인정보보호법 — 디지털 footprint 분석 동의·고지 (opt-in 기반)
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
+kr_language: 해당 없음 (자체 구축)
+kr_vendor: 해당 없음 (자체 구축)
 frequency: daily
 first_seen: 2015-01-01
 last_confirmed: 2026-04-07
-confidence: 0.55
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 7
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/ibm-hr-ai-portfolio-2025-2026.md
-  - "Bersin (Tier 1, 2020-12): The Evolving Role of IBM in HR Marketplace — Blue Matching analysis (stale caveat) https://joshbersin.com/2020/12/the-evolving-role-of-ibm-in-the-hr-marketplace/"
-  - "HR Brew (Tier 2, 2026-02-12): IBM CHRO Nickle LaMoreaux on AI talent strategy https://www.hr-brew.com/stories/2026/02/12/ibm-chro-nickle-lamoreaux-skills-strategy"
-  - "Fortune (Tier 1-2, 2026-04-07): AI is transforming work, talent strategy must keep up https://fortune.com/2026/04/07/ai-transformation-talent-strategy-chro-ibm-future-of-work/"
-  - "HR Executive (Tier 2, 2025): IBM CHRO: AI is giving HR its 'time in the sun' https://hrexecutive.com/ibm-chro-ai-is-giving-hr-its-time-in-the-sun/"
-  - "IBM Think (Tier 3, 2025): Embracing the future of HR by becoming an AI-first enterprise https://www.ibm.com/think/insights/embracing-future-of-hr-ai-first-enterprise"
-  - "SHRM (Tier 2, 2025): IBM Transforms Its Approach to HR with AI https://www.shrm.org/topics-tools/news/technology/ibm-transforms-approach-to-human-resources-ai"
-  - "Fuel50 (Tier 3, 2024-10): Internal Mobility — IBM Blue 50% 인용 https://fuel50.com/2024/10/what-is-internal-mobility/"
-  - "IBM watsonx Orchestrate HR Agents (Tier 3) https://www.ibm.com/products/watsonx-orchestrate/ai-agent-for-hr"
+sources: [sources/bersin-ibm-hr-marketplace-2020-12.md, sources/bersin-ibm-hr-marketplace-2020-12.md, sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04.md, sources/fortune-ibm-chro-talent-strategy-2026-04.md, sources/fuel50-what-is-internal-mobility-2024-10.md, sources/hr-brew-ibm-chro-lamoreaux-skills-2026-02.md, sources/hr-brew-ibm-chro-lamoreaux-skills-2026-02.md, sources/hrexecutive-ibm-chro-time-in-the-sun-2025-09.md, sources/ibm-think-ai-first-hr-2025-04.md, sources/ibm-watsonx-orchestrate-hr-agents.md, sources/linkedin-talent-blog-ibm-skills-first-strategy.md, sources/shrm-ibm-transforms-hr-ai-2019-05.md]
 related_usecases:
   - ibm-askhr-watsonx
   - ibm-hiro-promotion-agent

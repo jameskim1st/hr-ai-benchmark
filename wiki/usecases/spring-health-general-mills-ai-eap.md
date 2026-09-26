@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 개인정보보호법 민감정보(정신건강) 수집·AI 분석의 적법성·동의가 핵심 장벽
+kr_union: 협의 의무 낮음 (정보 제공 성격 — 복리후생 EAP)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요; 국내 유사 서비스 마인드풀리·트로스트)
 frequency: daily
 first_seen: 2024-01-01
 last_confirmed: 2026-01-01
-confidence: 0.30
+confidence: 0.25
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/spring-health-general-mills-case.md

@@ -1,6 +1,7 @@
 ---
 name: 더존비즈온 (Douzone Bizon)
 type: vendor
+page_type: vendor
 vendor_type: hrms
 category: [erp, hrms, payroll, korean-vendor, accounting]
 headquarters: Seoul, South Korea
@@ -77,7 +78,17 @@ last_confirmed: 2024-12-10
 - LLM foundation·아키텍처 불명
 - 독립 Tier 1 분석 부재 (국내 HR tech 분석가 생태계 자체가 미성숙)
 
+## 관련 use cases
+
+```dataview
+TABLE WITHOUT ID file.link AS "Use Case", company AS "고객", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
+WHERE contains(vendor, "Douzone Bizon")
+SORT evidence_grade ASC
+```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
+
 ## Related
-- Use case: [[douzone-one-ai-year-end-tax]]
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음)
 - Source: [[taxwatch-douzone-one-ai-2024-12]]
 - 경쟁 영역: [[sap-successfactors]] Global Payroll (전 세계), [[workday]] Payroll (한국 특화 불완전)

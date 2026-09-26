@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 징계·조사 기록 관리 — 개인정보보호법 + 근로기준법 징계 절차 요건 (subcategory 기준)
+kr_union: 단체교섭/근로자대표 협의 필요 (징계·고충 처리 절차)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2024-01-01
 last_confirmed: 2026-05-06
-confidence: 0.40
+confidence: 0.35
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/hr-acuity-yelp-case-study.md

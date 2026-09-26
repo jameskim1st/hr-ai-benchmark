@@ -8,6 +8,7 @@ from datetime import date
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 UC_PATH = os.path.join(SCRIPT_DIR, '..', 'wiki', 'exports', 'usecases.json')
+EA_PATH = os.path.join(SCRIPT_DIR, '..', 'wiki', 'exports', 'enterprise_ai.json')
 CO_PATH = os.path.join(SCRIPT_DIR, '..', 'wiki', 'exports', 'companies.json')
 OUT_PATH = os.path.join(SCRIPT_DIR, '..', 'wiki', 'exports', 'hr-ai-usecase-collection.html')
 
@@ -42,15 +43,28 @@ with open(UC_PATH, 'r', encoding='utf-8') as f:
     uc_data = json.load(f)
 with open(CO_PATH, 'r', encoding='utf-8') as f:
     co_data = json.load(f)
+# 전사 AI 플랫폼 사례 (참고) — 별도 섹션, headline count·Matrix 제외
+ea_data = []
+if os.path.exists(EA_PATH):
+    with open(EA_PATH, 'r', encoding='utf-8') as f:
+        ea_data = json.load(f)
+
+# 방어: visibility=internal 은 extract 단계에서 제외되지만, 여기서도 한 번 더 거른다
+_n_internal = sum(1 for u in uc_data + ea_data if (u.get('visibility') or 'public') == 'internal')
+uc_data = [u for u in uc_data if (u.get('visibility') or 'public') != 'internal']
+ea_data = [u for u in ea_data if (u.get('visibility') or 'public') != 'internal']
 
 # em-dash 제거 (전 항목 일괄)
 uc_data = _clean_dict(uc_data)
 co_data = _clean_dict(co_data)
+ea_data = _clean_dict(ea_data)
 
 uc_js = json.dumps(uc_data, ensure_ascii=False, separators=(',', ':'))
 co_js = json.dumps(co_data, ensure_ascii=False, separators=(',', ':'))
+ea_js = json.dumps(ea_data, ensure_ascii=False, separators=(',', ':'))
 today = date.today().isoformat()
 uc_count = len(uc_data)
+ea_count = len(ea_data)
 co_count = len(set(u.get('company','') for u in uc_data if u.get('company')))
 
 CSS = r"""
@@ -116,6 +130,41 @@ h1{font-size:1.25rem;font-weight:700;letter-spacing:-.025em}
 .tg.tech-dec{background:color-mix(in srgb,var(--tech-dec) 15%,transparent);color:var(--tech-dec)}
 .tg.tech-auto{background:color-mix(in srgb,var(--tech-auto) 15%,transparent);color:var(--tech-auto)}
 .uc-imp{font-size:.75rem;color:var(--text2);margin-top:8px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;padding-left:9px;border-left:2px solid var(--border)}
+
+/* Evidence grade badge — A 녹 / B 파랑 / C 노랑 / D 회색 / 미산정 점선 */
+.gb{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;padding:0 7px;border-radius:6px;font-size:.72rem;font-weight:800;letter-spacing:.02em;flex-shrink:0;cursor:help;border:1px solid transparent}
+.gb-A{background:#dcfce7;color:#15803d;border-color:#bbf7d0}.dark .gb-A{background:#052e16;color:#4ade80;border-color:#166534}
+.gb-B{background:#dbeafe;color:#1d4ed8;border-color:#bfdbfe}.dark .gb-B{background:#172554;color:#60a5fa;border-color:#1e40af}
+.gb-C{background:#fef9c3;color:#a16207;border-color:#fde68a}.dark .gb-C{background:#422006;color:#fbbf24;border-color:#854d0e}
+.gb-D{background:#f4f4f5;color:#71717a;border-color:#e4e4e7}.dark .gb-D{background:#27272a;color:#a1a1aa;border-color:#3f3f46}
+.gb-N{background:transparent;color:var(--text3);border:1px dashed var(--border)}
+/* Chips: case_type · regulatory · stale · stub */
+.tg.ct{background:var(--accent-bg);color:var(--accent);font-weight:600}
+.tg.vp{background:color-mix(in srgb,var(--tech-gen) 14%,transparent);color:var(--tech-gen);font-weight:600}
+.tg.reg{background:#fee2e2;color:#b91c1c;font-weight:600}.dark .tg.reg{background:#450a0a;color:#fca5a5}
+.tg.stale{background:#ffedd5;color:#c2410c;font-weight:600}.dark .tg.stale{background:#431407;color:#fdba74}
+.tg.stub{background:transparent;color:var(--text3);border:1px dashed var(--text3);font-weight:600}
+.uc.stub{border:1px dashed var(--text3);border-left:3px dashed var(--text3);opacity:.85}
+.uc-meta{display:flex;gap:5px;align-items:center;flex-wrap:wrap;flex-shrink:0}
+.conf-line{display:flex;gap:10px;align-items:center;font-size:.72rem;color:var(--text2);margin-top:12px;flex-wrap:wrap}
+.conf-line .cn{font-weight:700;font-variant-numeric:tabular-nums;padding:2px 8px;border-radius:10px;background:var(--bg3)}
+/* Sources list */
+.src-list{list-style:none;padding:0;margin:0}
+.src-list li{display:flex;gap:8px;align-items:baseline;font-size:.76rem;padding:4px 0;border-bottom:1px solid var(--border);line-height:1.5}
+.src-list li:last-child{border-bottom:none}
+.src-list a{color:var(--accent);text-decoration:none;word-break:break-word}.src-list a:hover{text-decoration:underline}
+.src-tier{font-size:.6rem;font-weight:700;padding:1px 6px;border-radius:4px;background:var(--bg3);color:var(--text3);flex-shrink:0;white-space:nowrap}
+.src-tier.t1,.src-tier.t2{background:#dcfce7;color:#15803d}.dark .src-tier.t1,.dark .src-tier.t2{background:#052e16;color:#4ade80}
+.src-pub{color:var(--text3);font-size:.68rem;flex-shrink:0}
+.src-unres{color:var(--text3);font-family:ui-monospace,monospace;font-size:.7rem}
+/* Filter toggle (stub 숨기기) */
+.ftg{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;color:var(--text2);cursor:pointer;padding:5px 8px;border:1px solid var(--border);border-radius:6px;background:var(--bg);user-select:none}
+.ftg input{accent-color:var(--accent);margin:0}
+/* Enterprise AI 참고 section */
+.ea-sec{margin-top:40px;padding-top:20px;border-top:2px dashed var(--border)}
+.ea-sec .sn{color:var(--text2)}
+.ea-note{font-size:.72rem;color:var(--text3);margin:-6px 0 10px 19px;line-height:1.5}
+.uc.ea{border-left:3px solid var(--text3)}
 
 /* Detail */
 .det{display:none;margin-top:14px;padding-top:14px;border-top:1px solid var(--border)}
@@ -237,30 +286,90 @@ const TECH_LABEL={generative:'생성형',predictive:'판별·예측',recognition
 const TECH_CLASS={generative:'tech-gen',predictive:'tech-pred',recognition:'tech-rec','decision-optimization':'tech-dec',automation:'tech-auto'};
 const SUB_LABEL={'text-generation':'텍스트 생성','summarization-qa':'요약·재작성·QA','multimodal':'멀티모달','information-extraction':'정보 추출','prediction':'예측','clustering-classification':'군집·분류','recommendation-ranking':'추천·랭킹','ocr':'OCR','speech-recognition':'음성 인식','optimization':'최적화','rpa':'RPA'};
 const SUB_PARENT={'text-generation':'generative','summarization-qa':'generative','multimodal':'generative','information-extraction':'generative','prediction':'predictive','clustering-classification':'predictive','recommendation-ranking':'predictive','ocr':'recognition','speech-recognition':'recognition','optimization':'decision-optimization','rpa':'automation'};
-let dk=0,kr=0,ct='cat',F=[...D];
+// Evidence grade · case_type · regulatory · freshness 라벨
+const GRADE_TIP='A=독립 소스 2+ / B=독립 1 / C=벤더\xb7자사 보고만 / D=미검증';
+const CASE_LABEL={adoption:'도입 사례','vendor-product':'벤더 제품'};
+const REG_LABEL={'kr-high-impact':'⚖️ KR 고영향','eu-annex-iii':'⚖️ EU Annex III'};
+const STALE_LABEL='⏳ 12개월+';
+const STUB_LABEL='정보 부족(stub)';
+const KR_APP_LABEL={kr_law:'법규',kr_union:'노조',kr_language:'언어',kr_vendor:'국내 벤더'};
+let dk=0,kr=0,hs=1,ct='cat',F=[...D],FE=[...EA];
 
 function tDk(){dk=!dk;document.documentElement.classList.toggle('dark',dk)}
 function tKR(){kr=!kr;document.getElementById('kb').classList.toggle('on',kr);af()}
+function tHS(el){hs=el.checked?1:0;af()}
 function sT(t){ct=t;document.querySelectorAll('.tab').forEach(e=>e.classList.toggle('on',e.dataset.t===t));['cat','co','mx'].forEach(v=>document.getElementById('v'+v).style.display=v===t?'':'none');ren()}
-function cF(){document.getElementById('fI').value='';document.getElementById('fR').value='';document.getElementById('fT').value='';document.getElementById('fC').value='0';document.getElementById('q').value='';kr=0;document.getElementById('kb').classList.remove('on');af()}
+function cF(){document.getElementById('fI').value='';document.getElementById('fR').value='';document.getElementById('fT').value='';document.getElementById('fG').value='';document.getElementById('q').value='';kr=0;document.getElementById('kb').classList.remove('on');hs=1;document.getElementById('hs').checked=true;af()}
+
+function passes(u,q,i,r,t,g){
+  if(kr&&!(u.region||[]).includes('kr'))return 0;
+  if(hs&&u.depth==='stub')return 0;
+  if(q&&!JSON.stringify(u).toLowerCase().includes(q))return 0;
+  if(i&&!(u.industry||[]).includes(i))return 0;
+  if(r&&!(u.region||[]).includes(r))return 0;
+  if(t&&!(u.ai_tech_type||[]).includes(t))return 0;
+  if(g==='A'&&u.evidence_grade!=='A')return 0;
+  if(g==='AB'&&u.evidence_grade!=='A'&&u.evidence_grade!=='B')return 0;
+  return 1;
+}
 
 function af(){
   const q=document.getElementById('q').value.toLowerCase(),
     i=document.getElementById('fI').value,
     r=document.getElementById('fR').value,
     t=document.getElementById('fT').value,
-    c=parseFloat(document.getElementById('fC').value)||0;
-  F=D.filter(u=>{
-    if(kr&&!(u.region||[]).includes('kr'))return 0;
-    if(q&&!JSON.stringify(u).toLowerCase().includes(q))return 0;
-    if(i&&!(u.industry||[]).includes(i))return 0;
-    if(r&&!(u.region||[]).includes(r))return 0;
-    if(t&&!(u.ai_tech_type||[]).includes(t))return 0;
-    return u.confidence>=c;
-  });
-  document.getElementById('cA').style.display=(q||i||r||c>0||kr)?'':'none';
+    g=document.getElementById('fG').value;
+  F=D.filter(u=>passes(u,q,i,r,t,g));
+  FE=EA.filter(u=>passes(u,q,i,r,t,g));
+  document.getElementById('cA').style.display=(q||i||r||t||g||kr||!hs)?'':'none';
   document.getElementById('fn').textContent=F.length+' / '+D.length;
   ren();
+}
+
+/* ---- Badge / chip helpers ---- */
+
+function gradeBadge(u){
+  const g=(u.evidence_grade||'').toUpperCase();
+  if(!['A','B','C','D'].includes(g))return '<span class="gb gb-N" title="미산정 (grade.py 미실행)\n'+GRADE_TIP+'">–</span>';
+  const cb=u.corroborated_by?' \xb7 독립 소스 '+u.corroborated_by+'개':'';
+  return '<span class="gb gb-'+g+'" title="Evidence '+g+cb+'\n'+GRADE_TIP+'">'+g+'</span>';
+}
+
+function metaChips(u){
+  let h='';
+  if(u.case_type&&CASE_LABEL[u.case_type])h+='<span class="tg '+(u.case_type==='vendor-product'?'vp':'ct')+'">'+CASE_LABEL[u.case_type]+'</span>';
+  (u.regulatory_exposure||[]).forEach(x=>{h+='<span class="tg reg">'+esc(REG_LABEL[x]||('⚖️ '+x))+'</span>'});
+  if(u.freshness==='stale')h+='<span class="tg stale" title="last_confirmed 12개월 초과">'+STALE_LABEL+'</span>';
+  if(u.depth==='stub')h+='<span class="tg stub">'+STUB_LABEL+'</span>';
+  return h;
+}
+
+function renderKrApp(u){
+  const keys=Object.keys(KR_APP_LABEL).filter(k=>u[k]);
+  if(!keys.length)return '';
+  let h='<div class="tpl-sec"><div class="tpl-hd"><i>🇰🇷</i> 한국 적용성</div><div class="info-block" style="padding:0;background:transparent">';
+  keys.forEach(k=>{h+='<div class="info-row"><span class="info-key">'+KR_APP_LABEL[k]+'</span><span class="info-val">'+esc(u[k])+'</span></div>'});
+  return h+'</div></div>';
+}
+
+function renderSources(u){
+  const s=u.sources_resolved||[];
+  if(!s.length)return '';
+  let h='<div class="tpl-sec"><div class="tpl-hd"><i>📚</i> Sources</div><ul class="src-list">';
+  s.forEach(x=>{
+    const tier=x.tier?'<span class="src-tier t'+esc(x.tier)+'">Tier '+esc(x.tier)+'</span>':'';
+    let body;
+    if(x.resolved){
+      body=(x.url?'<a href="'+esc(x.url)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">'+esc(x.title)+'</a>':'<span>'+esc(x.title)+'</span>')
+        +(x.publisher?' <span class="src-pub">'+esc(x.publisher)+'</span>':'');
+    }else if(x.legacy){
+      body=(x.url?'<a href="'+esc(x.url)+'" target="_blank" rel="noopener" onclick="event.stopPropagation()">'+esc(x.title)+'</a>':'<span>'+esc(x.title)+'</span>');
+    }else{
+      body='<span class="src-unres" title="source 페이지 없음">'+esc(x.slug)+'</span>';
+    }
+    h+='<li>'+tier+body+'</li>';
+  });
+  return h+'</ul></div>';
 }
 
 /* ---- Rendering helpers ---- */
@@ -314,19 +423,19 @@ function renderBA(u){
 
 /* ---- Category View card ---- */
 
-function card(u,idx){
+function card(u,key,extraCls){
   const c=ci(u.primary_category),cn=u.confidence||0;
   const tags=[];
   if(u.vendor&&u.vendor.length)u.vendor.forEach(v=>tags.push(v));
   if(u.industry&&u.industry.length)tags.push(u.industry[0]);
   if((u.region||[]).includes('kr'))tags.push('KR');
 
-  let h='<div class="uc" onclick="tog('+idx+')" id="u'+idx+'">';
-  // Row 1: dot + company + confidence
+  let h='<div class="uc'+(u.depth==='stub'?' stub':'')+(extraCls?' '+extraCls:'')+'" onclick="tog(\''+key+'\')" id="u'+key+'">';
+  // Row 1: dot + company + meta chips + evidence grade badge (confidence는 펼침 시에만)
   h+='<div class="uc-row1">';
   h+='<div class="uc-dot" style="background:'+c.c+'"></div>';
   h+='<div class="uc-co">'+esc(typeof u.company==='string'?u.company:'')+'</div>';
-  h+='<div class="uc-conf" style="color:'+cc(cn)+'">'+cn.toFixed(2)+'</div>';
+  h+='<div class="uc-meta">'+metaChips(u)+gradeBadge(u)+'</div>';
   h+='</div>';
   // Row 2: Headline
   if(u.headline){
@@ -342,7 +451,13 @@ function card(u,idx){
   }
 
   // Detail panel
-  h+='<div class="det" id="d'+idx+'">';
+  h+='<div class="det" id="d'+key+'">';
+
+  // 0. Title + confidence (펼침 시에만 숫자 노출)
+  h+='<div class="conf-line"><strong style="color:var(--text)">'+esc(u.title||'')+'</strong>'
+    +'<span class="cn" style="color:'+cc(cn)+'">Confidence '+cn.toFixed(2)+'</span>'
+    +(u.evidence_grade?'<span>Evidence '+esc(u.evidence_grade)+(u.corroborated_by?' \xb7 독립 소스 '+u.corroborated_by:'')+'</span>':'')
+    +(u.freshness?'<span>'+esc(u.freshness)+'</span>':'')+(u.depth?'<span>depth: '+esc(u.depth)+'</span>':'')+'</div>';
 
   // 1. Pain Point
   if(u.problem){
@@ -377,8 +492,14 @@ function card(u,idx){
     h+='<div class="tpl-sec"><div class="tpl-hd"><i>\ud83e\udde0</i> AI \uae30\uc220 \ubd84\ub958</div><div class="tpl-bd"><div style="display:flex;gap:4px;flex-wrap:wrap">'+typeChips+'</div>'+subText+'</div></div>';
   }
 
+  // 4.7. \ud55c\uad6d \uc801\uc6a9\uc131 (kr_law / kr_union / kr_language / kr_vendor \uc788\uc744 \ub54c\ub9cc)
+  h+=renderKrApp(u);
+
   // 5. Consulting
   if(u.consulting){h+='<div class="cbox">\ud83d\udca1 '+htm(u.consulting)+'</div>'}
+
+  // 6. Sources (source \ud398\uc774\uc9c0 title \ub9c1\ud06c)
+  h+=renderSources(u);
 
   // All tags
   if(u.tags&&u.tags.length){h+='<div style="display:flex;gap:3px;flex-wrap:wrap;margin-top:10px">'+u.tags.map(t=>'<span class="tg">'+esc(t)+'</span>').join('')+'</div>'}
@@ -387,18 +508,30 @@ function card(u,idx){
   return h;
 }
 
-function tog(i){const d=document.getElementById('d'+i);if(d)d.classList.toggle('open')}
+function tog(k){const d=document.getElementById('d'+k);if(d)d.classList.toggle('open')}
 
 /* ---- Category View ---- */
+
+const SV='<svg class="sv" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>';
+const SH_TOGGLE='const g=this.nextElementSibling;g.style.display=g.style.display===\'none\'?\'\':\'none\';this.querySelector(\'.sv\').classList.toggle(\'open\')';
 
 function renCat(){
   let h='';C.forEach(cat=>{
     const cs=F.filter(u=>u.primary_category===cat.k).sort((a,b)=>b.confidence-a.confidence);
     if(!cs.length)return;
-    h+='<div class="sec"><div class="sh" onclick="const g=this.nextElementSibling;g.style.display=g.style.display===\'none\'?\'\':\'none\';this.querySelector(\'.sv\').classList.toggle(\'open\')"><div class="sd" style="background:'+cat.c+'"></div><span class="sn">'+cat.k+'</span><span class="sc">'+cs.length+'</span><svg class="sv" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></div><div class="gr">';
-    cs.forEach(u=>h+=card(u,D.indexOf(u)));
+    h+='<div class="sec"><div class="sh" onclick="'+SH_TOGGLE+'"><div class="sd" style="background:'+cat.c+'"></div><span class="sn">'+cat.k+'</span><span class="sc">'+cs.length+'</span>'+SV+'</div><div class="gr">';
+    cs.forEach(u=>h+=card(u,''+D.indexOf(u)));
     h+='</div></div>';
   });
+  // \uc804\uc0ac AI \ud50c\ub7ab\ud3fc \uc0ac\ub840 \u2014 \ucc38\uace0 \uc139\uc158 (\uae30\ubcf8 \uc811\ud798, use case \uc9d1\uacc4\u00b7Matrix \uc81c\uc678)
+  if(EA.length){
+    const es=[...FE].sort((a,b)=>b.confidence-a.confidence);
+    h+='<div class="sec ea-sec"><div class="sh" onclick="'+SH_TOGGLE+'"><div class="sd" style="background:var(--text3)"></div><span class="sn">\uc804\uc0ac AI \ud50c\ub7ab\ud3fc \uc0ac\ub840 (\ucc38\uace0 \u2014 HR \uc804\uc6a9 use case \uc544\ub2d8)</span><span class="sc">'+es.length+(es.length!==EA.length?' / '+EA.length:'')+'</span>'+SV+'</div>';
+    h+='<div style="display:none"><div class="ea-note">\uc804\uc0ac GenAI \ud50c\ub7ab\ud3fc\xb7\uc784\uc9c1\uc6d0 \uc5b4\uc2dc\uc2a4\ud134\ud2b8 \ub3c4\uc785 \uc0ac\ub840. HR \uae30\ub2a5 \uc804\uc6a9\uc774 \uc544\ub2c8\ubbc0\ub85c use case \uc218\uc5d0 \ud3ec\ud568\ud558\uc9c0 \uc54a\uc73c\uba70 Matrix\uc5d0\ub3c4 \ud45c\uc2dc\ub418\uc9c0 \uc54a\uc2b5\ub2c8\ub2e4.</div>';
+    if(es.length){h+='<div class="gr">';es.forEach(u=>h+=card(u,'e'+EA.indexOf(u),'ea'));h+='</div>';}
+    else h+='<div style="font-size:.74rem;color:var(--text3);padding:8px 0 16px 19px">\ud544\ud130 \uc870\uac74\uc5d0 \ub9de\ub294 \uc0ac\ub840 \uc5c6\uc74c</div>';
+    h+='</div></div>';
+  }
   document.getElementById('vcat').innerHTML=h;
 }
 
@@ -452,9 +585,9 @@ function renderCompanyRich(co,coInfo,cs){
   h+='<div class="cv-uc-sec">';
   cs.sort((a,b)=>b.confidence-a.confidence).forEach(u=>{
     const c2=ci(u.primary_category),cn=u.confidence||0;
-    h+='<div class="cv-uc">';
-    // Title + headline
-    h+='<div class="cv-uc-head"><div class="uc-dot" style="background:'+c2.c+'"></div><div class="cv-uc-title">'+esc(u.title)+'</div><span class="uc-conf" style="color:'+cc(cn)+'">'+cn.toFixed(2)+'</span></div>';
+    h+='<div class="cv-uc'+(u.depth==='stub'?' stub':'')+'">';
+    // Title + chips + grade badge (Company view는 항상 펼친 형태 → confidence 숫자도 표시)
+    h+='<div class="cv-uc-head"><div class="uc-dot" style="background:'+c2.c+'"></div><div class="cv-uc-title">'+esc(u.title)+'</div><span class="uc-meta">'+metaChips(u)+gradeBadge(u)+'<span class="uc-conf" style="color:'+cc(cn)+'">'+cn.toFixed(2)+'</span></span></div>';
     if(u.headline){h+='<div class="cv-uc-hl">'+htm(u.headline)+'</div>';}
 
     // Process flow
@@ -473,6 +606,9 @@ function renderCompanyRich(co,coInfo,cs){
     if(u.process_before||u.process_after||u.impact_summary){
       h+='<div class="tpl-sec" style="margin-top:8px"><div class="tpl-hd"><i>\ud83d\udcca</i> Impact</div><div class="tpl-bd">'+renderBA(u)+'</div></div>';
     }
+    // 한국 적용성 + Sources
+    h+=renderKrApp(u);
+    h+=renderSources(u);
 
     h+='</div>';
   });
@@ -503,7 +639,7 @@ function renderCompanySimple(co,cs){
   h+='<div style="margin-top:8px">';
   cs.sort((a,b)=>b.confidence-a.confidence).forEach(u=>{
     const c2=ci(u.primary_category);
-    h+='<div class="cv-r"><div class="sd" style="background:'+c2.c+';width:5px;height:5px"></div><span style="flex:1">'+esc(u.title)+'</span><span style="font-size:.68rem;font-weight:600;color:'+cc(u.confidence)+'">'+u.confidence.toFixed(2)+'</span></div>';
+    h+='<div class="cv-r"><div class="sd" style="background:'+c2.c+';width:5px;height:5px"></div><span style="flex:1">'+esc(u.title)+'</span><span class="uc-meta">'+metaChips(u)+gradeBadge(u)+'</span></div>';
   });
   h+='</div></div>';
   return h;
@@ -577,12 +713,13 @@ function init(){
   const kc=D.filter(u=>(u.region||[]).includes('kr')).length;
   const cc2=new Set(D.map(u=>u.company).filter(Boolean)).size;
   document.getElementById('stats').textContent=D.length+' cases \u00b7 7 categories \u00b7 '+cc2+' companies \u00b7 '+kc+' Korean';
-  document.getElementById('fn').textContent=D.length+' / '+D.length;
   document.getElementById('q').addEventListener('input',af);
-  ren();
+  af();  // 초기 렌더도 필터 경유 (stub 숨기기 기본 on 반영)
 }
 init();
 """
+
+GRADE_TIP_HTML = "A=독립 소스 2+ / B=독립 1 / C=벤더·자사 보고만 / D=미검증"
 
 BODY = f"""
 <header>
@@ -607,7 +744,8 @@ BODY = f"""
     <select class="fs" id="fI" onchange="af()"><option value="">Industry</option></select>
     <select class="fs" id="fR" onchange="af()"><option value="">Region</option><option value="kr">Korea</option><option value="na">N. America</option><option value="eu">Europe</option><option value="apac">APAC</option><option value="global">Global</option></select>
     <select class="fs" id="fT" onchange="af()"><option value="">AI 기술</option><option value="generative">생성형</option><option value="predictive">판별·예측</option><option value="recognition">인식</option><option value="decision-optimization">의사결정·최적화</option><option value="automation">자동화</option></select>
-    <select class="fs" id="fC" onchange="af()"><option value="0">Confidence</option><option value="0.5">&ge;0.50</option><option value="0.4">&ge;0.40</option><option value="0.3">&ge;0.30</option></select>
+    <select class="fs" id="fG" onchange="af()" title="{GRADE_TIP_HTML}"><option value="">Evidence</option><option value="A">A만</option><option value="AB">A+B</option><option value="">전체</option></select>
+    <label class="ftg" title="depth: stub (정보 부족) 카드 숨기기"><input type="checkbox" id="hs" checked onchange="tHS(this)"> stub 숨기기</label>
     <span class="fx" id="cA" style="display:none" onclick="cF()">Clear</span>
     <span class="fc" id="fn"></span>
   </div>
@@ -615,7 +753,7 @@ BODY = f"""
   <div id="vco" style="display:none"></div>
   <div id="vmx" style="display:none"></div>
 </main>
-<footer><div class="w">HR AI Benchmark &middot; {uc_count} Use Cases &middot; {co_count} Companies &middot; {today}</div></footer>
+<footer><div class="w">HR AI Benchmark &middot; {uc_count} Use Cases &middot; {co_count} Companies &middot; 전사 AI 참고 {ea_count} &middot; {today}</div></footer>
 """
 
 html = f"""<!DOCTYPE html>
@@ -632,6 +770,7 @@ html = f"""<!DOCTYPE html>
 <script>
 const D={uc_js};
 const CO={co_js};
+const EA={ea_js};
 {JS}
 </script>
 </body>
@@ -639,4 +778,4 @@ const CO={co_js};
 
 with open(OUT_PATH, 'w', encoding='utf-8') as f:
     f.write(html)
-print(f"v6 Done: {os.path.getsize(OUT_PATH)/1024:.0f}KB - {uc_count} use cases, {co_count} companies")
+print(f"v6 Done: {os.path.getsize(OUT_PATH)/1024:.0f}KB - {uc_count} use cases, {co_count} companies, {ea_count} enterprise-ai (ref), internal dropped here: {_n_internal}")

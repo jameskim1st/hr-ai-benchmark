@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 리스킬링은 일반 개인정보보호법 수준; 병행 감원은 근로기준법 정리해고 요건
+kr_union: 단체교섭/근로자대표 협의 필요 (감원 병행 구조조정 영향 — 리스킬 or 퇴직)
+kr_language: 해당 없음 (자체 구축, 인도 IT 서비스 기업)
+kr_vendor: 자체 구축 (TCS iEvolve·Infosys Springboard, 국내 SI 해당 없음)
 frequency: adhoc
 first_seen: 2024-01-01
 last_confirmed: 2025-12-01
-confidence: 0.45
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 3
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 sources:
   - sources/theregister-india-it-2026-01.md
   - sources/aibase-india-it-ai-reskilling-2025.md

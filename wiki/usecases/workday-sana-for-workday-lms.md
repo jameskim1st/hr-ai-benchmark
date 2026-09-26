@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (학습 이력 PII, Workday RBAC·tenant 격리)
+kr_union: 협의 의무 낮음 (정보 제공 성격 — 학습 콘텐츠)
+kr_language: 30+ 언어 (벤더 주장); 한국어 콘텐츠 품질 미검증, POC 4주 권고 (페이지)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-11-01
 last_confirmed: 2026-04-15
-confidence: 0.45
+confidence: 0.55
+evidence_grade: B
+corroborated_by: 1
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/hr-brew-workday-sana-2026-03.md

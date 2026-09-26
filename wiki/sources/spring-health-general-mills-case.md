@@ -4,6 +4,7 @@ url: https://www.springhealth.com/customers/general-mills
 tier: 3
 source_type: vendor
 ingested_at: 2026-04-12
+supports: [spring-health-general-mills-ai-eap]
 ---
 
 ## Summary

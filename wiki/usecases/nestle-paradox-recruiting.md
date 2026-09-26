@@ -17,16 +17,23 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: [kr-high-impact, eu-annex-iii]
+kr_law: 채용절차법 AI 스크리닝 고지 + AI 기본법 고영향 AI (채용)
+kr_union: 단체교섭/근로자대표 협의 필요 (채용 의사결정 영향)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: daily
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
-confidence: 0.25               # Tier 3 Paradox case study(+0.10) + Tier 2 Emerj(+0.20) - 구체 metric 출처 불확실 = 0.25
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "Paradox case study https://www.paradox.ai/case-studies/nestle"
-  - "Emerj AI Research https://emerj.com/artificial-intelligence-at-nestle/"
+sources: [sources/paradox-nestle-case-study-2026-09.md, sources/emerj-ai-at-nestle-2024-08.md]
 related_usecases:
   - chipotle-paradox-olivia
   - unilever-flex-gloat-talent-marketplace

@@ -7,6 +7,7 @@ author: Josh Bersin
 publication_date: 2024-09-17
 ingested_at: 2026-04-12
 raw: raw/articles/2024-09-17-bersin-what-is-workday-illuminate.md
+supports: [workday-illuminate-job-architecture, workday-illuminate-performance-review-agent]
 ---
 
 # Source Summary — Bersin on Workday Illuminate (2024-09-17)

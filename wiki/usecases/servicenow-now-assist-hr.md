@@ -17,16 +17,23 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (HR 케이스 데이터 SaaS 처리)
+kr_union: 협의 의무 낮음 (정보 제공·케이스 라우팅 성격)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 국내 SI 삼성SDS·LG CNS가 ServiceNow 파트너 (페이지 명시)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: daily
 first_seen: 2024-06-30
 last_confirmed: 2025-06-30
-confidence: 0.25               # Tier 2·3 혼합 (다수 분석가 언급 + vendor data), 구체 고객 케이스 부재
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "ServiceNow 공식 https://www.servicenow.com/products/ai-agents.html"
-  - "Klover.ai 분석 https://www.klover.ai/servicenow-ai-strategy-analysis-of-ai-dominance-in-enterprise-software/"
+sources: [sources/servicenow-ai-agents-product-2026-09.md, sources/klover-servicenow-ai-strategy-2025-07.md]
 related_usecases:
   - ibm-askhr-watsonx
   - moderna-ask-hr-routing

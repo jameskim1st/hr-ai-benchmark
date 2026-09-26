@@ -1,6 +1,7 @@
 ---
 name: Johnson & Johnson
 type: company
+page_type: company
 industry: [pharma, healthcare, consumer]
 region: [global]
 headquarters: New Brunswick, New Jersey, USA
@@ -18,14 +19,12 @@ last_confirmed: 2025
 ## 📊 J&J HR AI Use Cases (Live)
 
 ```dataview
-TABLE WITHOUT ID
-  file.link AS "Use Case",
-  primary_category AS "카테고리",
-  confidence AS "신뢰도"
+TABLE WITHOUT ID file.link AS "Use Case", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth", stage AS "단계", last_confirmed AS "확인"
 FROM "wiki/usecases" OR "wiki/enterprise-ai"
-WHERE contains(company, "Johnson") OR contains(company, "J&J")
-SORT confidence DESC
+WHERE company = "Johnson & Johnson" OR contains(company, "Johnson & Johnson") OR contains(tags, "jnj")
+SORT evidence_grade ASC, last_confirmed DESC
 ```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ## 핵심 — 학술 검증 ★
 
@@ -42,7 +41,7 @@ SORT confidence DESC
 
 - **"스킬 기반 인사관리" 전환의 gold standard**: HRIS 데이터에서 60~70% 스킬 자동 추론이 학술적으로 입증
 - **4,000명→전사 확장**의 단계적 전개 패턴이 한국 대기업 pilot-first 문화와 fit
-- Textio 고객으로도 등장 (JD 개선으로 여성 지원 90,000명 추가)
+- Textio 고객으로도 등장 (JD 개선으로 여성 지원 90,000명 추가 — ⚠️ 벤더 주장, Harvard DI 전달; [[t-mobile-textio-dei-hiring]]에 타 고객 수치로 기록)
 
 ## Related
-- Use cases: [[jnj-digital-talent-platform-skills-ai]]
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음)

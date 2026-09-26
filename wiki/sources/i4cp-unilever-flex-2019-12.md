@@ -6,6 +6,7 @@ tier: 2
 publication_date: 2019-12-17
 ingested_at: 2026-04-12
 raw: raw/articles/2019-12-17-i4cp-unilever-flex-talent-marketplace.md
+supports: [unilever-flex-gloat-talent-marketplace]
 ---
 
 # Source Summary — i4cp on Unilever FLEX (2019-12-17)

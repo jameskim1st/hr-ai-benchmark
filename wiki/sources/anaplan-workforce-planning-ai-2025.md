@@ -5,6 +5,7 @@ url_secondary: "https://www.anaplan.com/blog/case-for-workforce-planning-transfo
 tier: 3
 source_type: vendor_announcement
 ingested_at: 2026-04-12
+supports: [anaplan-workforce-analyst-ai-agents]
 ---
 
 ## Summary

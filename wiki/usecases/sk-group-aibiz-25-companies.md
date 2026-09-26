@@ -17,13 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: AI 기본법 고영향 AI 분류 시 멤버사별 인적감독 의무 일관성 필요 (페이지 명시)
+kr_union: 협의 의무 낮음 (정보 제공 성격 — HR 정책 Q&A·자동화)
+kr_language: 한국어 네이티브 (SKT 자체 LLM A.X)
+kr_vendor: SKT A.Biz + SK AX (그룹 계열사 자체 구축)
 frequency: daily
 first_seen: 2025-09-01
 last_confirmed: 2026-04-01
-confidence: 0.50
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/korea-conglomerate-hr-ai-2025-2026.md
+sources: [sources/heraldcorp-skt-adot-biz-25-companies-2025-09.md, sources/skt-newsroom-adot-biz-group-rollout-2025-09.md, sources/zdnet-korea-sk-group-adot-biz-25-companies-2025-09.md]
 related_usecases:
   - sk-cc-adot-biz-hr-recruitment
   - sk-hynix-ask-ai-interview

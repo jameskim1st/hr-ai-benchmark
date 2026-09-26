@@ -27,7 +27,7 @@
     ],
     "size": 1500000,
     "description": "세계 최대 e-commerce + 클라우드(AWS) 기업. 1.5M+ 직원. <strong>HR AI의 가장 극단적 사례</strong>: PXT(HR 부서) 10,000명 중 <strong>최대 15% 감축</strong> 발표. 동시에 250,000명 계절직 채용 — \"white-collar 자동화 + blue-collar 대량 채용\"의 극적 대비.",
-    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"Amazon\")",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\" OR \"wiki/enterprise-ai\"\nWHERE contains(company, \"Amazon\")",
     "consulting": "<ul>\n<li><strong>\"HR이 AI의 대상이 된다\"의 반면교사</strong>: wiki의 다른 사례는 모두 \"HR이 AI를 도입\", Amazon만 \"HR 자체가 축소\"</li>\n<li><strong>$100B AI 투자</strong>: 기업 역사상 가장 큰 AI 투자와 HR 감축이 동시 발생</li>\n<li><strong>한국 시사점</strong>: 국내 대기업이 AI 도입 시 HR 부서 자체의 미래를 논의해야 한다는 경고</li>\n</ul>"
   },
   {
@@ -73,7 +73,7 @@
     ],
     "size": 470000,
     "description": "글로벌 Big 4 컨설팅. 470,000 직원, 150개국. <strong>Anthropic Claude를 역대 최대 규모로 전사 배포</strong> + <strong>Workforce Analyzer/Planner+ AI 솔루션을 직접 판매</strong> — \"컨설턴트이자 벤더이자 자사 도입 기업\" 3중 역할.",
-    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"Deloitte\") OR contains(company, \"Salesforce\")",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\" OR \"wiki/enterprise-ai\"\nWHERE contains(company, \"Deloitte\") OR contains(company, \"Salesforce\")",
     "consulting": "<ul>\n<li><strong>Big 4의 \"자사 적용 → 고객 판매\" 패턴</strong>: Accenture(32% 완료↑)·PwC(65k upskilling)와 함께 \"consulting firms AI 군비 경쟁\"</li>\n<li><strong>470k Claude = foundation model 선택의 전략적 의미</strong>: Moderna→OpenAI, IBM→watsonx, <strong>Deloitte→Anthropic</strong></li>\n<li><strong>Workforce Analyzer: 컨설팅이 제품이 되는 시대</strong>: 300+ HR workflow를 AI로 재설계한 library를 Salesforce에 판매</li>\n</ul>"
   },
   {
@@ -89,7 +89,7 @@
     ],
     "size": 275000,
     "description": "글로벌 대형 은행. 275,000 직원. <strong>가장 복잡한 멀티벤더 HR AI 스택</strong>: Eightfold AI(채용) + Gloat(내부 이동, 140k 등록) + SAP SuccessFactors(Core HRIS) + Accenture(구현). workday-as-customer-paradox synthesis의 실제 대기업 배포 증거.",
-    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"HSBC\")",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\" OR \"wiki/enterprise-ai\"\nWHERE contains(company, \"HSBC\")",
     "consulting": "<ul>\n<li><strong>Multi-vendor HR AI stack의 교과서</strong>: SAP SF(suite) + Eightfold+Gloat(point solutions) 병행 — \"suite만으로 불충분\" 증거</li>\n<li><strong>한국 금융(KB·신한·하나·우리) 적용</strong>: 대부분 SAP SF 또는 Workday 사용 → HSBC 패턴이 가장 현실적 경로</li>\n<li><strong>Fortune Europe</strong>: HSBC가 다른 유럽 은행보다 <strong>30% 더 많은 AI 채용 공고</strong> 게시</li>\n</ul>"
   },
   {
@@ -104,7 +104,7 @@
     ],
     "size": 270000,
     "description": "글로벌 IT 서비스·AI 기업. 270,000 직원. <strong>AskHR은 엔터프라이즈 HR AI에서 가장 오래되고 가장 큰 규모의 배포 사례</strong> (연 2.1M 대화, 80+ 태스크 자동화). 자체 watsonx를 기반으로 HR AI를 내부 배포하며, 동시에 외부에 HR AI 솔루션을 판매하는 <strong>벤더이자 고객</strong>.",
-    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"IBM\")",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\" OR \"wiki/enterprise-ai\"\nWHERE contains(company, \"IBM\")",
     "consulting": "<ul>\n<li><strong>\"HR AI maturity의 최종 형태\"</strong>: FAQ 챗봇 → routing → <strong>agentic 자동화</strong>로 진화한 유일한 사례</li>\n<li><strong>\"replaced but elevated\"</strong> 프레이밍: Krishna CEO 발언 + 필리핀 직원 역할 전환 = HR 직무 재설계의 reference</li>\n<li><strong>한국 대기업 적용</strong>: 수만~수십만 직원 규모에서 AskHR 수준을 목표로 할 때 전제조건(자체 AI 플랫폼·대규모 HR 데이터·직무 재설계 의지) 정리</li>\n</ul>"
   },
   {
@@ -120,7 +120,7 @@
     ],
     "size": 130000,
     "description": "글로벌 제약·의료·소비재 기업. 130,000 직원. <strong>wiki 최고 수준 학술 검증 사례</strong>: MIT CISR + IS Journal이 Digital Talent Platform의 AI 스킬 추론(60~70%)·내부 배치 8%↑·이탈 3.2%↓를 독립 검증.",
-    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"Johnson\") OR contains(company, \"J&J\")",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\" OR \"wiki/enterprise-ai\"\nWHERE contains(company, \"Johnson\") OR contains(company, \"J&J\")",
     "consulting": "<ul>\n<li><strong>\"스킬 기반 인사관리\" 전환의 gold standard</strong>: HRIS 데이터에서 60~70% 스킬 자동 추론이 학술적으로 입증</li>\n<li><strong>4,000명→전사 확장</strong>의 단계적 전개 패턴이 한국 대기업 pilot-first 문화와 fit</li>\n<li>Textio 고객으로도 등장 (JD 개선으로 여성 지원 90,000명 추가)</li>\n</ul>"
   },
   {
@@ -136,7 +136,7 @@
     ],
     "size": 310000,
     "description": "미국·글로벌 최대 은행. 310,000+ 직원. <strong>LLM Suite를 200,000 직원에 8개월 만에 배포</strong>, AI 기반 성과 리뷰 초안 작성, ML 채용 도구 특허 출원. CEO Jamie Dimon의 \"모든 프로세스에 AI 주입\" 방침이 HR에도 직접 적용.",
-    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"JPMorgan\") OR contains(company, \"JPM\")",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\" OR \"wiki/enterprise-ai\"\nWHERE contains(company, \"JPMorgan\") OR contains(company, \"JPM\")",
     "consulting": "<ul>\n<li><strong>금융권 HR AI의 flagship</strong>: $2B AI 연간 투자, American Banker 혁신상</li>\n<li><strong>\"채용을 자제하라\"</strong> 지시: AI 주입과 동시에 인력 증가 억제 → 금융 산업 패턴</li>\n<li><strong>한국 금융(KB·신한·하나·우리) 적용</strong>: JPMorgan 수준의 AI 전사 배포를 목표로 할 때 reference</li>\n</ul>"
   },
   {
@@ -166,7 +166,7 @@
     ],
     "size": 72000,
     "description": "소셜 미디어·XR 기업. 72,000 직원. <strong>Performance Management의 가장 과감한 사례</strong>: 2026년부터 <strong>AI 도구 사용을 성과 평가의 공식 기준</strong>으로 설정. \"Level Up\" 게임화 + Metamate(GPT-4+Llama hybrid) 전사 배포.",
-    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"Meta\")",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\" OR \"wiki/enterprise-ai\"\nWHERE contains(company, \"Meta\")",
     "consulting": "<ul>\n<li><strong>\"AI 채택을 의무화한\" 유일 사례</strong>: 성과 평가에 AI 사용을 공식 반영 → HR 정책 혁신의 극단</li>\n<li><strong>SK AICT(\"AI 활용 능력으로 채용 평가\")의 재직 확장판</strong>: 채용(SK)→재직(Meta)으로 전 생애주기 AI 역량 축 형성</li>\n<li><strong>한국 적용 시 폭발력</strong>: 연공·직급 중심 평가 → AI 활용 기반 평가로의 패러다임 전환 가능성</li>\n</ul>"
   },
   {
@@ -212,7 +212,7 @@
     ],
     "size": 135000,
     "description": "글로벌 에너지 관리·자동화 기업. 135,000 직원. <strong>Internal Mobility AI의 양대 레퍼런스 중 하나</strong> (Unilever와 함께): Open Talent Market(Gloat 기반)으로 <strong>360,000+ 시간 unlocked, $15M+ 절감</strong>, 도입 전 <strong>직원 50%가 \"내부 성장 기회 부족\"을 퇴직 사유로 꼽은</strong> 가장 강력한 Before 데이터.",
-    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"Schneider\")",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\" OR \"wiki/enterprise-ai\"\nWHERE contains(company, \"Schneider\")",
     "consulting": "<ul>\n<li><strong>\"50% 퇴직 사유\" Before 데이터</strong>: wiki 전체에서 가장 강력한 도입 정당화 근거</li>\n<li><strong>$15M+ 절감</strong>: Unilever(700k 시간)와 함께 talent marketplace ROI의 교과서</li>\n<li><strong>\"국가별 순차 → big bang 전환\" 경험</strong>: 대기업 rollout 전략의 직접적 반면교사/교훈</li>\n</ul>"
   },
   {
@@ -244,7 +244,7 @@
     ],
     "size": 320000,
     "description": "글로벌 산업 자동화·에너지 기업. 320,000 직원, 190+ 국가. <strong>제조업 HR AI 대표 사례</strong>: 300,000 직원 리스킬링(Future Skills Initiative) + 20% 내부 이동 증가 + ServiceNow GBS 통합.",
-    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\"\nWHERE contains(company, \"Siemens\")",
+    "strategy": "TABLE WITHOUT ID\nfile.link AS \"Use Case\",\nprimary_category AS \"카테고리\",\nconfidence AS \"신뢰도\"\nFROM \"wiki/usecases\" OR \"wiki/enterprise-ai\"\nWHERE contains(company, \"Siemens\")",
     "consulting": "<ul>\n<li><strong>독일 제조업의 \"리스킬링 중심\" 접근</strong>: AI로 사람 자르기보다 역할 전환 (vs Amazon 패턴과 정반대)</li>\n<li><strong>Betriebsrat(종업원 협의회)</strong> 환경에서의 단계적·협의적 AI 도입: EU·한국(노사관계) 참고</li>\n<li><strong>한국 제조업(삼성전자·현대·LG)</strong> 리스킬링 전략의 reference</li>\n</ul>"
   },
   {

@@ -7,6 +7,7 @@ publisher: HR Dive
 author: Julie Littman
 published: 2024-10-25
 ingested_at: 2026-04-12
+supports: [chipotle-paradox-olivia]
 ---
 
 # HR Dive — Chipotle Paradox 대화형 AI 채용 (2024-10-25)

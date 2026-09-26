@@ -22,10 +22,14 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2025-10-21
 last_confirmed: 2026-04-01
-confidence: 0.45
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/kr-conglomerate-2026-q2-research.md
+sources: [sources/hankyung-hyundai-mobis-moai-launch-2025-10.md, sources/irobotnews-hyundai-mobis-maibot-2019-05.md]
 related_usecases:
   - lg-chatexaone-group-rollout
   - sk-group-aibiz-25-companies

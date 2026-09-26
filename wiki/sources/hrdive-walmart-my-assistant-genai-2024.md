@@ -6,6 +6,7 @@ source_type: article
 publisher: HR Dive
 published: 2024
 ingested_at: 2026-04-12
+supports: [walmart-ask-sam-workforce-ai]
 ---
 
 # HR Dive — Walmart My Assistant GenAI 도입 (2024)

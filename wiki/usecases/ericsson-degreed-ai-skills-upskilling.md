@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준
+kr_union: 협의 의무 낮음 (정보 제공 성격)
+kr_language: 미확인 — Open Library PT·ES·FR·DE만 확인, 한국어 미기재
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-04-15
 last_confirmed: 2025-04-15
-confidence: 0.25
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 sources:
   - sources/degreed-ericsson-lens-2025.md
 related_usecases:

@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (Q&A); 채용 AI 스크리닝 병행 시 고영향 검토
+kr_union: 협의 의무 낮음 (정보 제공 성격)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2024-11-07
 last_confirmed: 2026-01-01
-confidence: 0.55
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 3
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 sources:
   - sources/enterprisetimes-lloyds-workday-genai-2024-11.md
   - sources/unleash-lloyds-skills-ai-2025.md

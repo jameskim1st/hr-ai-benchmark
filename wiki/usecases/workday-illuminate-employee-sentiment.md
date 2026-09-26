@@ -17,10 +17,19 @@ stage: stub                    # 공개 정보 부족으로 stub 처리
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: 개인정보 영향평가·근로자대표 합의 이슈 (페이지 명시), Workday 공개 대응 0건
+kr_union: 근로자대표 합의 필요 (sentiment 상시 모니터링, 페이지 명시; 벤더 대응 0건)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: adhoc               # 미공개
 first_seen: 2025-09-16
 last_confirmed: 2025-09-16
-confidence: 0.10               # Tier 3 단일 소스(+0.10), 기타 모두 미공개
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/workday-illuminate-pr-2025-09.md

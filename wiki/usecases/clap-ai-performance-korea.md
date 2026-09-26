@@ -8,7 +8,7 @@ company: 디웨일 (CLAP)
 industry: [tech]
 region: [kr]
 employee_class: [기술사무직, 전임직]
-vendor: []
+vendor: [디웨일 (CLAP)]
 vendor_type: [point-solution]
 output: "주관식 평가 코멘트 자동 요약·정제 + AI 피드백 텍스트 + 원온원 미팅 요약 + 서술형 리뷰 초안 + 직원별 AI 성장 리포트 (한국 중견기업용 SaaS)"
 ai_tech_type: [generative]
@@ -16,11 +16,20 @@ ai_tech_subtype: [summarization-qa, text-generation]
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI(평가) + 개인정보보호법(평가 데이터 민감정보)
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
+kr_language: 한국어 네이티브
+kr_vendor: 디웨일 (CLAP) — 국내 SaaS
 frequency: monthly
 first_seen: 2024-01-01
 last_confirmed: 2025-10-01
-confidence: 0.30
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 sources:
   - sources/clap-blog-hr-ai-trend-2026.md
   - sources/sisajournal-clap-2025.md
@@ -79,7 +88,7 @@ related_vendors: []
 ### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: 디웨일 (대표이사 구자욱). "글로벌 HR SaaS 리더" 목표 공개. [[sources/thebell-diwhale-2025-10.md]]
-- **고객 현황**: ✅ **Fact** 인지그룹에 공급. [[sources/startupn-clap-2025.md]] 중견기업 위주 확대 중.
+- **고객 현황**: ✅ **Fact** 인지그룹에 공급. 스타트업N CLAP 기사 (원문 미확보) 중견기업 위주 확대 중.
 - **팀 규모**: _미공개 (not disclosed)_
 
 ## Impact / Metrics (기대효과)

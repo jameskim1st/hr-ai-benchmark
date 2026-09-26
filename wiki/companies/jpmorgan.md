@@ -1,6 +1,7 @@
 ---
 name: JPMorgan Chase
 type: company
+page_type: company
 industry: [finance, banking]
 region: [na, global]
 headquarters: New York, USA
@@ -19,14 +20,12 @@ last_confirmed: 2025-10-15
 ## 📊 JPMorgan HR AI Use Cases (Live)
 
 ```dataview
-TABLE WITHOUT ID
-  file.link AS "Use Case",
-  primary_category AS "카테고리",
-  confidence AS "신뢰도"
+TABLE WITHOUT ID file.link AS "Use Case", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth", stage AS "단계", last_confirmed AS "확인"
 FROM "wiki/usecases" OR "wiki/enterprise-ai"
-WHERE contains(company, "JPMorgan") OR contains(company, "JPM")
-SORT confidence DESC
+WHERE company = "JPMorgan Chase" OR contains(company, "JPMorgan") OR contains(tags, "jpmorgan")
+SORT evidence_grade ASC, last_confirmed DESC
 ```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ## Consulting Angle
 
@@ -35,4 +34,4 @@ SORT confidence DESC
 - **한국 금융(KB·신한·하나·우리) 적용**: JPMorgan 수준의 AI 전사 배포를 목표로 할 때 reference
 
 ## Related
-- Use cases: [[jpmorgan-llm-suite-employee-productivity]], [[jpmorgan-llm-suite-redeployment]]
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음). LLM Suite 전사 생산성 건은 `wiki/enterprise-ai/`에 위치

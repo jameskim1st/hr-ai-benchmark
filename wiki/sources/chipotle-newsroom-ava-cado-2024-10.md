@@ -6,6 +6,7 @@ tier: 4
 publication_date: 2024-10-22
 ingested_at: 2026-04-12
 raw: raw/articles/2024-10-22-chipotle-newsroom-ava-cado-pr.md
+supports: [chipotle-paradox-olivia]
 ---
 
 # Source Summary — Chipotle Ava Cado Press Release (2024-10-22)

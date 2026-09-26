@@ -17,13 +17,21 @@ stage: announced
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: AI 기본법 고영향 AI 분류 가능 (인사 영역 에이전트, 페이지 명시)
+kr_union: 인사 에이전트 산출물 미공개 — 인사 결정 관여 시 근로자대표 협의 필요
+kr_language: 한국어 네이티브
+kr_vendor: 자체 구축 (포스코DX)
 frequency: daily
 first_seen: 2026-01-01
 last_confirmed: 2026-04-01
-confidence: 0.40
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/kr-conglomerate-2026-q2-research.md
+sources: [sources/eroun-posco-group-2026-reorg-2025-12.md, sources/posco-newsroom-aw2026-poscodx-ai-workforce-2026-04.md, sources/snmnews-posco-group-2026-appointments-2025-12.md]
 related_usecases:
   - woori-bank-175-ai-agents
   - hyundai-mobis-moai-platform

@@ -5,6 +5,7 @@ url_secondary: "https://go.perceptyx.com/customer-stories/ex-impact-2025/arca-co
 tier: 2
 source_type: vendor_case_study
 ingested_at: 2026-04-12
+supports: [coca-cola-southwest-perceptyx-activate]
 ---
 
 ## Summary

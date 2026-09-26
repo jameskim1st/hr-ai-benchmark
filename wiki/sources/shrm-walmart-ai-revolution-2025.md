@@ -6,6 +6,7 @@ source_type: article
 publisher: SHRM
 published: 2025
 ingested_at: 2026-04-12
+supports: [walmart-ask-sam-workforce-ai]
 ---
 
 # SHRM — Walmart AI 혁명: People-Led, Tech-Powered (2025)

@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: 개인정보보호법 + 직장 내 괴롭힘 금지법 신고 처리 fit customization (페이지 명시)
+kr_union: 노조 fit customization 필요 명시 — 신고·조사 절차 협의
+kr_language: 한국어 LLM 정확도 미검증 (POC 검증 필요, 페이지 명시)
+kr_vendor: 미확인 (한국 customer reference 부분 미공개·한국 진출 미가시화)
 frequency: daily
 first_seen: 2025-12-01
 last_confirmed: 2026-05-06
-confidence: 0.65
+confidence: 0.35
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/navex-one-compliance-assistant-2025-12.md
@@ -144,7 +153,7 @@ flowchart TB
 
 - **글로벌 whistleblowing 표준** — 한국 대기업 SOX 대응·EU 진출 시 default option. "13K+ 조직이 사용한다" — 보수적 CHRO에게 가장 안정적 선택
 - **vs 4-vendor 비교**:
-  - **HR Acuity** [[hr-acuity-oliver-er-companion]]: ER case management 전문 (G2 #1, Brandon Hall Gold)
+  - **HR Acuity** [[hr-acuity-oliver-ai-er-companion]]: ER case management 전문 (G2 #1, Brandon Hall Gold)
   - **AllVoices** [[allvoices-vera-ai-er-copilot]]: AI-native, 200+ 언어, Vera AI copilot
   - **Vault Platform (Diligent)** [[diligent-vault-active-integrity-speakup]]: GRC 통합 + 집단 신고 + EthicsChat
   - **NAVEX**: 글로벌 whistleblowing 표준 + SOX·EU Directive (보수적 선택)

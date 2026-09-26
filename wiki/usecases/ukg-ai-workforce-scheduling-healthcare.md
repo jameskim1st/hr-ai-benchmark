@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 근로기준법 주 52시간제·교대제 스케줄 컴플라이언스 자동 반영 필요 (페이지 명시)
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향 — 근태·교대 스케줄)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (UKG 한국 직접 진출 여부 미공개; 국내 유사 포지션 시프티)
 frequency: daily
 first_seen: 2025-06-01
 last_confirmed: 2026-02-17
-confidence: 0.30
+confidence: 0.25
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/ukg-healthcare-scheduling-2026-02.md

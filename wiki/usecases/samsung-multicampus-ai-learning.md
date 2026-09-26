@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (부서·직급·수강이력 기반 추천)
+kr_union: 협의 의무 낮음 (정보 제공·학습 추천 성격)
+kr_language: 한국어 네이티브
+kr_vendor: 멀티캠퍼스 (삼성 계열, 삼성U 플랫폼)
 frequency: daily
 first_seen: 2025-01-01
 last_confirmed: 2025-04-01
-confidence: 0.20
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/clap-blog-hr-ai-trend-2026.md

@@ -16,15 +16,22 @@ ai_tech_subtype: [summarization-qa, clustering-classification]
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: Analyzer 기반 재배치 → 한국 노동법 리스크 + AI 기본법 고영향 (페이지)
+kr_union: 노조 컨텍스트 위험 명시 (페이지) — 재배치 시 협의 필요
+kr_language: 미확인 — 한국어 adaptation 필요, 한국 시장 fit 미검증 (페이지)
+kr_vendor: Deloitte Anjin(한국 딜로이트) 경유 활용 가능 (페이지 언급)
 frequency: daily
 first_seen: 2025-06-01
 last_confirmed: 2026-04-01
-confidence: 0.65
+confidence: 0.55
+evidence_grade: B
+corroborated_by: 1
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/us-large-enterprise-hr-ai-2025-2026.md
-  - sources/deloitte-2026-human-capital-trends.md
+sources: [sources/deloitte-press-zora-ai-agentic-2025-03.md, sources/deloitte-2026-human-capital-trends.md]
 related_usecases:
   - deloitte-2026-human-capital-trends-meta
   - workday-agent-system-of-record-asor

@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: AI 기본법 고영향 검토 (성과평가 개입) + 성과데이터 OpenAI 국외이전
+kr_union: 근로자대표 합의 이슈 명시 (성과 리뷰 AI 개입) — 협의 필요
+kr_language: 해당 없음 (ChatGPT Enterprise 위 Moderna 자체 Custom GPT)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: annual              # 연말 리뷰 주기
 first_seen: 2025-05-22
 last_confirmed: 2025-06-12
-confidence: 0.40               # Tier 2 × 2 (HR Brew 2025-05 + 2025-06), recency 6-12m(0), 중복 소스 두 건 이상이지만 모두 HR Brew라 벤더 독립성 약 → 0.40
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 2
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/hr-brew-moderna-total-rewards-2025-05.md

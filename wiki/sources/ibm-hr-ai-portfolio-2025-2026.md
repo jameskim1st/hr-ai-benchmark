@@ -5,6 +5,9 @@ tier: 2
 source_type: multi-source-compilation
 ingested_at: 2026-05-05
 publication_date: 2026-02-12
+deprecated: true
+deprecated_note: 2026-09-27 개별 source 페이지로 분해됨 — 링크 해석용으로만 유지, 인용 금지
+independent: false
 ---
 
 ## Summary

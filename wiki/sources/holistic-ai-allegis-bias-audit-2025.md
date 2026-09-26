@@ -5,6 +5,7 @@ url_secondary: "https://www.holisticai.com/case-study/hired"
 tier: 3
 source_type: vendor_case_study
 ingested_at: 2026-04-12
+supports: [allegis-group-holistic-ai-governance]
 ---
 
 ## Summary

@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 클러스터링이 감원·재배치 근거 활용 시 AI 기본법 고영향(해고) 검토
+kr_union: 단체교섭/근로자대표 협의 필요 (조직개편·구조조정 영향)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: adhoc
 first_seen: 2025-12-01
 last_confirmed: 2025-12-01
 confidence: 0.25
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 sources:
   - sources/orgvue-salesforce-henshaw-ai-2025.md
 related_usecases:

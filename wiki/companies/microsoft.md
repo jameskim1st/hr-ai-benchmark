@@ -1,6 +1,7 @@
 ---
 name: Microsoft
 type: company
+page_type: company
 industry: [tech, cloud]
 region: [global]
 headquarters: Redmond, Washington, USA
@@ -25,14 +26,12 @@ last_confirmed: 2026-04-01
 ## 📊 Microsoft HR AI Use Cases
 
 ```dataview
-TABLE WITHOUT ID
-  file.link AS "Use Case",
-  primary_category AS "카테고리",
-  confidence AS "신뢰도"
+TABLE WITHOUT ID file.link AS "Use Case", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth", stage AS "단계", last_confirmed AS "확인"
 FROM "wiki/usecases" OR "wiki/enterprise-ai"
-WHERE contains(company, "Microsoft") OR contains(vendor, "Microsoft")
-SORT confidence DESC
+WHERE company = "Microsoft" OR contains(company, "Microsoft") OR contains(vendor, "Microsoft") OR contains(tags, "microsoft")
+SORT evidence_grade ASC, last_confirmed DESC
 ```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ## Consulting Angle
 

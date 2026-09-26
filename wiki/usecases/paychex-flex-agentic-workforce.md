@@ -17,10 +17,19 @@ stage: announced
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: 근로기준법 (52시간·연장근로 승인) — 자동 근태 승인 모델 검토 필요 (페이지 명시)
+kr_union: 단체교섭/근로자대표 협의 필요 (근태·교대 편성 영향)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: "미확인 (국내 파트너 확인 필요) — 국내 유사 시장: 플렉스·시프티"
 frequency: daily
 first_seen: 2026-02-26
 last_confirmed: 2026-02-26
-confidence: 0.20
+confidence: 0.25
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/paychex-agentic-workforce-2026-02.md

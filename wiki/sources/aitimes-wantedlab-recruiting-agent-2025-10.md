@@ -6,6 +6,7 @@ tier: 2
 publication_date: 2025-10-21
 ingested_at: 2026-04-12
 raw: raw/articles/2025-10-21-aitimes-wantedlab-recruiting-agent.md
+supports: [wantedlab-ai-recruiting-agent]
 ---
 
 # Source Summary — AI타임스 원티드랩 채용 에이전트 출시 (2025-10-21)

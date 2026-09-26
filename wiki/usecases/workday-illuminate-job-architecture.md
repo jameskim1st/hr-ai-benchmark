@@ -17,10 +17,19 @@ stage: production              # Bersin 2024-09은 "released" 맥락, PR 2025-09
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: 직무체계 변경이 임금·승진·재배치 결정에 연결 → AI 기본법 고영향 분류 가능
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향 — 승진·재배치·보상)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: adhoc               # 실행 주기 미공개
 first_seen: 2024-09-17
 last_confirmed: 2025-09-16
-confidence: 0.25               # Tier 1(+0.35) + Tier 3(+0.10) - contradiction(-0.20) = 0.25
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/bersin-workday-illuminate-2024-09.md

@@ -6,6 +6,7 @@ source_type: article
 publisher: HR Executive
 published: 2024
 ingested_at: 2026-04-12
+supports: [betterup-ai-coaching-twilio]
 ---
 
 # HR Executive — Bersin의 코칭 2대 disruption 분석 (2024)
@@ -29,4 +30,4 @@ HR Executive(Tier 2 HR 전문 미디어)가 Josh Bersin의 코칭 시장 분석�
 ## Tags
 
 - [[betterup-ai-coaching-twilio]]
-- [[betterup]]
+- BetterUp

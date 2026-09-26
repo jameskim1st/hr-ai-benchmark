@@ -7,9 +7,77 @@ from pathlib import Path
 
 BASE = Path(__file__).parent.parent
 UC_DIR = BASE / "wiki" / "usecases"
+EA_DIR = BASE / "wiki" / "enterprise-ai"      # 전사 GenAI 플랫폼 사례 (page_type: enterprise-ai)
+SRC_DIR = BASE / "wiki" / "sources"
 CO_DIR = BASE / "wiki" / "companies"
+# wiki/reference/ 는 export 대상 아님
 OUT = BASE / "wiki" / "exports" / "usecases.json"
+EA_OUT = BASE / "wiki" / "exports" / "enterprise_ai.json"
 CO_OUT = BASE / "wiki" / "exports" / "companies.json"
+
+# 추출 실패 로그 — (파일명, 사유)
+FAILURES = []
+
+# ── Source 페이지 (wiki/sources/<slug>.md) frontmatter 로드 ──
+def load_sources():
+    """slug → {title, publisher, tier, url, source_type}. frontmatter 파싱 실패 시 skip."""
+    info = {}
+    if not SRC_DIR.exists():
+        return info
+    for fp in sorted(SRC_DIR.glob('*.md')):
+        try:
+            content = fp.read_text(encoding='utf-8')
+            if not content.startswith('---'):
+                continue
+            parts = content.split('---', 2)
+            if len(parts) < 3:
+                continue
+            fm = yaml.safe_load(parts[1]) or {}
+        except Exception as e:
+            FAILURES.append((f'sources/{fp.name}', f'frontmatter parse: {e}'))
+            continue
+        tier = fm.get('tier')
+        info[fp.stem] = {
+            'slug': fp.stem,
+            'title': str(fm.get('title') or fp.stem),
+            'publisher': str(fm.get('publisher') or ''),
+            'tier': str(tier) if tier not in (None, '') else '',
+            'url': str(fm.get('url') or ''),
+            'source_type': str(fm.get('source_type') or ''),
+        }
+    return info
+
+SOURCES = {}
+
+def resolve_sources(refs):
+    """frontmatter sources 항목 → 해석된 레코드 리스트.
+    - 'sources/<slug>.md' → source 페이지 frontmatter (title/publisher/tier/url), resolved=True
+    - source 페이지 없음 → slug만, resolved=False
+    - legacy 자유 텍스트 ('Publisher 2025 https://...') → 텍스트 + URL 추출, legacy=True"""
+    out = []
+    for ref in refs or []:
+        s = str(ref).strip()
+        if not s:
+            continue
+        m = re.match(r'^\[\[?\s*sources/([\w.-]+?)(?:\.md)?\s*(?:\|[^\]]*)?\]?\]?$', s) or \
+            re.match(r'^sources/([\w.-]+?)(?:\.md)?$', s)
+        if m:
+            slug = m.group(1)
+            si = SOURCES.get(slug)
+            if si:
+                out.append({'ref': s, 'slug': slug, 'title': si['title'], 'publisher': si['publisher'],
+                            'tier': si['tier'], 'url': si['url'], 'resolved': True, 'legacy': False})
+            else:
+                out.append({'ref': s, 'slug': slug, 'title': slug, 'publisher': '', 'tier': '', 'url': '',
+                            'resolved': False, 'legacy': False})
+            continue
+        # legacy free text
+        um = re.search(r'(https?://[^\s\)\]]+)', s)
+        url = um.group(1) if um else ''
+        text = s.replace(url, '').strip().rstrip('(').strip() if url else s
+        out.append({'ref': s, 'slug': '', 'title': text[:120] or url, 'publisher': '', 'tier': '', 'url': url,
+                    'resolved': False, 'legacy': True})
+    return out
 
 # ── Markdown → HTML 변환 ──
 def md2html(text):
@@ -322,24 +390,81 @@ def extract_clean_summary(raw_summary, max_sentences=3, max_chars=320):
     return out[:max_chars]
 
 # ── Use Case 처리 ──
-def process_uc(fp):
-    content = fp.read_text(encoding='utf-8')
+def _as_list(v):
+    if v is None or v == '':
+        return []
+    if isinstance(v, str):
+        return [v]
+    if isinstance(v, list):
+        return [str(x) for x in v if x not in (None, '')]
+    return [str(v)]
+
+
+def process_uc(fp, default_page_type='usecase'):
+    rel = f'{fp.parent.name}/{fp.name}'
+    try:
+        content = fp.read_text(encoding='utf-8')
+    except Exception as e:
+        FAILURES.append((rel, f'read: {e}'))
+        return None
     if not content.startswith('---'):
+        FAILURES.append((rel, 'no frontmatter'))
         return None
     parts = content.split('---', 2)
     if len(parts) < 3:
+        FAILURES.append((rel, 'frontmatter not closed'))
         return None
     try:
         fm = yaml.safe_load(parts[1]) or {}
-    except:
+    except Exception as e:
+        FAILURES.append((rel, f'frontmatter parse: {str(e)[:80]}'))
         return None
-    if not fm.get('title'):
+    if not isinstance(fm, dict) or not fm.get('title'):
+        FAILURES.append((rel, 'missing title'))
         return None
     body = parts[2].strip()
+
+    # ── 신규 schema 필드 (없으면 default) ──
+    visibility = str(fm.get('visibility') or 'public').strip().lower()
+    if visibility not in ('public', 'internal'):
+        visibility = 'public'
+    grade = str(fm.get('evidence_grade') or '').strip().upper()
+    if grade not in ('A', 'B', 'C', 'D'):
+        grade = ''
+    try:
+        corroborated = int(fm.get('corroborated_by') or 0)
+    except (TypeError, ValueError):
+        corroborated = 0
+    freshness = str(fm.get('freshness') or '').strip().lower()
+    if freshness not in ('fresh', 'stale', 'unverified'):
+        freshness = ''
+    depth = str(fm.get('depth') or '').strip().lower()
+    if depth not in ('full', 'partial', 'stub'):
+        depth = ''
+    case_type = str(fm.get('case_type') or '').strip().lower()
+    # kr_applicability: 4 scalar 필드 또는 nested dict 모두 지원
+    kr_app = fm.get('kr_applicability') if isinstance(fm.get('kr_applicability'), dict) else {}
+    def _kr(key):
+        v = fm.get(f'kr_{key}')
+        if v in (None, ''):
+            v = kr_app.get(key)
+        return str(v).strip() if v not in (None, '') else ''
 
     d = {
         'slug': fm.get('slug', fp.stem),
         'title': fm.get('title', ''),
+        'page_type': str(fm.get('page_type') or default_page_type),
+        'visibility': visibility,
+        'case_type': case_type,
+        'evidence_grade': grade,
+        'corroborated_by': corroborated,
+        'freshness': freshness,
+        'depth': depth,
+        'regulatory_exposure': _as_list(fm.get('regulatory_exposure')),
+        'kr_law': _kr('law'),
+        'kr_union': _kr('union'),
+        'kr_language': _kr('language'),
+        'kr_vendor': _kr('vendor'),
         'primary_category': fm.get('primary_category', ''),
         'subcategory': fm.get('subcategory', ''),
         'company': fm.get('company', ''),
@@ -364,6 +489,8 @@ def process_uc(fp):
         elif not isinstance(d[f], list): d[f] = []
     try: d['confidence'] = float(fm.get('confidence', 0))
     except: pass
+    # sources → source 페이지 해석 (title/publisher/tier/url)
+    d['sources_resolved'] = resolve_sources(d['sources'])
 
     # Summary는 Excel 개요·HTML 양쪽에서 사용 — bullet/줄바꿈 보존 위해 충분히 크게
     raw_summary = section_text(body, 'Summary', 20)
@@ -454,19 +581,75 @@ def process_co(fp):
     return d
 
 # ── Main ──
+def _collect(dir_path, default_page_type):
+    """디렉토리의 페이지를 추출. visibility=internal 은 제외. (records, excluded_slugs) 반환."""
+    records, excluded = [], []
+    if not dir_path.exists():
+        return records, excluded
+    for fp in sorted(dir_path.glob('*.md')):
+        r = process_uc(fp, default_page_type=default_page_type)
+        if not r:
+            continue
+        if r['visibility'] == 'internal':
+            excluded.append(r['slug'])
+            continue
+        records.append(r)
+    records.sort(key=lambda x: -x['confidence'])
+    return records, excluded
+
+
+def coverage_report(ucs):
+    n = len(ucs)
+    def cnt(pred):
+        return sum(1 for u in ucs if pred(u))
+    rows = [
+        ('process_steps',    cnt(lambda u: bool(u.get('process_steps')))),
+        ('system',           cnt(lambda u: bool(u.get('system')))),
+        ('data',             cnt(lambda u: bool(u.get('data')))),
+        ('model',            cnt(lambda u: bool(u.get('model')))),
+        ('impact_summary',   cnt(lambda u: bool(u.get('impact_summary')))),
+        ('consulting',       cnt(lambda u: bool(u.get('consulting')))),
+        ('sources resolved', cnt(lambda u: any(s.get('resolved') for s in u.get('sources_resolved') or []))),
+        ('evidence_grade',   cnt(lambda u: bool(u.get('evidence_grade')))),
+        ('case_type',        cnt(lambda u: bool(u.get('case_type')))),
+    ]
+    print("\n[coverage] use cases")
+    print(f"  {'field':<18}{'count':>7}   {'%':>5}")
+    for k, v in rows:
+        pct = (100.0 * v / n) if n else 0
+        print(f"  {k:<18}{v:>4}/{n:<3} {pct:5.0f}%")
+    empty_sum = [u['slug'] for u in ucs if not (u.get('summary_clean') or '').strip()]
+    empty_steps = [u['slug'] for u in ucs if not u.get('process_steps')]
+    print(f"\n[coverage] empty summary_clean: {len(empty_sum)}")
+    for s in empty_sum:
+        print(f"  - {s}")
+    print(f"[coverage] empty process_steps: {len(empty_steps)}")
+    for s in empty_steps:
+        print(f"  - {s}")
+
+
 def main():
-    # Use cases
-    ucs = []
-    for fp in sorted(UC_DIR.glob('*.md')):
-        r = process_uc(fp)
-        if r:
-            ucs.append(r)
-    ucs.sort(key=lambda x: -x['confidence'])
+    global SOURCES
+    SOURCES = load_sources()
+    print(f"Sources: {len(SOURCES)} pages loaded from wiki/sources/")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
+
+    # Use cases (wiki/usecases/) — internal 제외
+    ucs, excluded_uc = _collect(UC_DIR, 'usecase')
     with open(OUT, 'w', encoding='utf-8') as f:
         json.dump(ucs, f, ensure_ascii=False, indent=2)
-    print(f"Use cases: {len(ucs)} -> {OUT.stat().st_size/1024:.0f}KB")
+    print(f"Use cases: {len(ucs)} -> {OUT.stat().st_size/1024:.0f}KB  (excluded internal: {len(excluded_uc)})")
+    for s in excluded_uc:
+        print(f"  [internal] usecases/{s}")
+
+    # Enterprise AI (wiki/enterprise-ai/) — 별도 JSON, internal 제외
+    eas, excluded_ea = _collect(EA_DIR, 'enterprise-ai')
+    with open(EA_OUT, 'w', encoding='utf-8') as f:
+        json.dump(eas, f, ensure_ascii=False, indent=2)
+    print(f"Enterprise AI: {len(eas)} -> {EA_OUT.stat().st_size/1024:.0f}KB  (excluded internal: {len(excluded_ea)})")
+    for s in excluded_ea:
+        print(f"  [internal] enterprise-ai/{s}")
 
     # Companies
     cos = []
@@ -491,5 +674,16 @@ def main():
     print(f"AI tech type: {has_tech}/{len(ucs)}, subtype: {has_subtype}/{len(ucs)}")
     print(f"Companies with strategy: {has_co_str}/{len(cos)}")
 
+    coverage_report(ucs)
+
+    if FAILURES:
+        print(f"\n[failed] {len(FAILURES)} page(s) could not be extracted:")
+        for rel, why in FAILURES:
+            print(f"  - {rel}: {why}")
+    else:
+        print("\n[failed] none")
+    return 0
+
 if __name__ == '__main__':
-    main()
+    import sys
+    sys.exit(main())

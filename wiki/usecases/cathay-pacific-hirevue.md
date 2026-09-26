@@ -17,15 +17,23 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: [kr-high-impact, eu-annex-iii]
+kr_law: 채용절차법 AI 면접 고지 + AI 기본법 고영향 AI(채용)
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: daily
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
-confidence: 0.20
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "HireVue case study https://www.hirevue.com/case-studies/cathay-pacific-ondemand-case-study"
+sources: [sources/hirevue-cathay-pacific-case-study-2026-09.md]
 related_usecases:
   - hirevue-ai-assessment-bias-audit
   - chipotle-paradox-olivia

@@ -17,13 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: [kr-high-impact, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI (채용) 인적감독 + JD 차별표현 필터 미검증
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2024-09-01
 last_confirmed: 2026-02-12
-confidence: 0.45
+confidence: 0.25
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/ibm-hr-ai-portfolio-2025-2026.md
+sources: [sources/ibm-announcement-watson-orchestrate-thisway-global-2022-11.md, sources/ibm-watsonx-orchestrate-hr-agents.md, sources/knockri-ibm-watsonx-orchestrate-press-2025-09.md]
 related_usecases:
   - ibm-askhr-watsonx
   - ibm-blue-match-internal-mobility

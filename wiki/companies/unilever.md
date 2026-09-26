@@ -1,6 +1,7 @@
 ---
 name: Unilever
 type: company
+page_type: company
 industry: [fmcg, consumer-goods]
 region: [global]
 headquarters: London, UK / Rotterdam, Netherlands
@@ -73,16 +74,12 @@ GROUP BY primary_category
 ## 📊 Unilever HR AI Use Cases (Live)
 
 ```dataview
-TABLE WITHOUT ID
-  file.link AS "Use Case",
-  primary_category AS "대그룹",
-  subcategory AS "중그룹",
-  stage AS "단계",
-  confidence AS "신뢰도"
+TABLE WITHOUT ID file.link AS "Use Case", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth", stage AS "단계", last_confirmed AS "확인"
 FROM "wiki/usecases" OR "wiki/enterprise-ai"
-WHERE company = "Unilever"
-SORT confidence DESC
+WHERE company = "Unilever" OR contains(company, "Unilever") OR contains(tags, "unilever")
+SORT evidence_grade ASC, last_confirmed DESC
 ```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ## Consulting Angle
 
@@ -99,6 +96,6 @@ SORT confidence DESC
 
 ## Related
 - Vendor: [[gloat]]
-- Use cases: [[unilever-flex-gloat-talent-marketplace]]
-- Companies (mass GenAI reference): [[accenture-mass-genai-reskilling]]
-- Sources: [[i4cp-unilever-flex-2019-12]] · [[accenture-unilever-genai-2024-09]] (신규) · [[gloat-unilever-customer-success-2024]] (신규)
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음)
+- Companies (mass GenAI reference): [[accenture]] · [[accenture-mass-genai-reskilling]]
+- Sources: [[i4cp-unilever-flex-2019-12]] · [[gloat-unilever-success-story-2024]] · [[bersin-schneider-unilever-talent-marketplace-2019-07]] · Accenture Newsroom 2024-09 "Unilever GenWizard 파트너십" (source 페이지 미생성 — 텍스트 인용만)

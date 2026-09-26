@@ -1,6 +1,7 @@
 ---
 name: 마이다스아이티 (MIDAS IT)
 type: vendor
+page_type: vendor
 vendor_type: point-solution
 category: [ai-assessment, recruiting, korean-vendor]
 headquarters: Seongnam, South Korea
@@ -68,6 +69,16 @@ last_confirmed: 2025-09-16
 - **vs SK Group AICT**: SK는 "AI 활용 능력 평가", 마이다스아이티는 "AI가 평가" — 접근법이 다름
 - **vs Paradox/HireVue**: 글로벌 벤더 대비 한국어·한국 문화 이해도 우위
 
+## 관련 use cases
+
+```dataview
+TABLE WITHOUT ID file.link AS "Use Case", company AS "고객", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
+WHERE contains(vendor, "마이다스아이티")
+SORT evidence_grade ASC
+```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
+
 ## Related
-- Use case: [[midas-inair-ai-assessment-korea]]
-- Sources: ZDNet Korea 2025-09-16, Nature Scientific Reports 2025-07
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음)
+- Sources: ZDNet Korea 2025-09-16, Nature Scientific Reports 2025-07 (source 페이지는 use case 내 인용 참조)

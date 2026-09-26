@@ -4,6 +4,7 @@ url: https://flex.team/blog/2025/08/01/100billion/
 tier: 4
 source_type: article
 ingested_at: 2026-04-12
+supports: [flex-korea-hr-ai-saas]
 ---
 
 ## Summary

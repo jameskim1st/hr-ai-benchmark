@@ -4,6 +4,7 @@ url: https://www.cultureamp.com/company/announcements/ai-coach-new-leadership-er
 tier: 3
 source_type: vendor
 ingested_at: 2026-04-12
+supports: [cultureamp-ai-coach-asana]
 ---
 
 ## Summary

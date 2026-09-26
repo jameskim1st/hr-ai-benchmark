@@ -5,6 +5,7 @@ url_secondary: "https://www.techtarget.com/searchhrsoftware/news/366570019/ADP-d
 tier: 2
 source_type: vendor_announcement
 ingested_at: 2026-04-12
+supports: [adp-assist-payroll-ai]
 ---
 
 ## Summary

@@ -17,16 +17,23 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (학습 시간·use case 제출 추적)
+kr_union: 협의 의무 낮음 (정보 제공·학습 성격)
+kr_language: 해당 없음 (ChatPwC 사내 도구, PwC US 프로그램)
+kr_vendor: 해당 없음 (PwC US 사내 프로그램, 외부 판매 제품 아님)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: daily
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
 confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "HR Executive https://hrexecutive.com/pwcs-hr-tech-leaders-prepare-to-train-u-s-workforce-on-chatgpt-technology/"
-  - "HR Grapevine https://www.hrgrapevine.com/us/content/article/2025-04-02-prompting-parties-inside-pwcs-mission-to-get-employees-working-alongside-ai-agents"
+sources: [sources/hrexecutive-pwc-chatgpt-training-2023-05.md, sources/hrgrapevine-pwc-prompting-parties-2025-04.md]
 related_usecases:
   - deloitte-claude-470k-employees
   - accenture-ai-learning-workforce

@@ -5,6 +5,7 @@ url_secondary: "https://hrexecutive.com/why-many-ai-in-hr-projects-fail-and-how-
 tier: 2
 source_type: vendor_case_study
 ingested_at: 2026-04-12
+supports: [hitachi-skye-hr-ai-assistant]
 ---
 
 ## Summary

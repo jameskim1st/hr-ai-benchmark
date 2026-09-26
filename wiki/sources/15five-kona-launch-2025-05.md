@@ -4,6 +4,7 @@ url: https://www.businesswire.com/news/home/20250520586200/en/15Five-Launches-Ko
 tier: 3
 source_type: vendor
 ingested_at: 2026-04-12
+supports: [15five-kona-reup-ai-manager-coaching]
 ---
 
 ## Summary

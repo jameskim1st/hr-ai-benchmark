@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 성과 리뷰(Perform) AI 개입 → AI 기본법 고영향 AI(평가) 검토
+kr_union: 단체교섭/근로자대표 협의 필요 (성과 리뷰 개입)
+kr_language: 미확인 — 한국어 지원 여부 미확인 (페이지 명시)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: monthly
 first_seen: 2025-07-01
 last_confirmed: 2026-03-24
-confidence: 0.30
+confidence: 0.25
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/cultureamp-ai-coach-expansion-2025-10.md

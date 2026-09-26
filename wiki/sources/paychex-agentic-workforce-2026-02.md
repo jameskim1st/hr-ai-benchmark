@@ -4,6 +4,7 @@ url: https://www.businesswire.com/news/home/20260226477526/en/Paychex-Unveils-Cu
 tier: 3
 source_type: vendor
 ingested_at: 2026-04-12
+supports: [paychex-flex-agentic-workforce]
 ---
 
 ## Summary

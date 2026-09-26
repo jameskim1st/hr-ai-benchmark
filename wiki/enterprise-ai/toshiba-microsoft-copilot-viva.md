@@ -22,7 +22,12 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2024-05-01
 last_confirmed: 2025-10-01
-confidence: 0.35
+confidence: 0.25
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 sources:
   - sources/toshiba-microsoft-viva-copilot-2025.md
 related_usecases:

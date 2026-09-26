@@ -5,6 +5,7 @@ tier: 1
 source_type: government-regulation
 ingested_at: 2026-05-05
 publication_date: 2026-01-22
+supports: [korea-ai-basic-act-hr-compliance]
 ---
 
 ## Summary

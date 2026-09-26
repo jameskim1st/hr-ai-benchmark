@@ -236,3 +236,8 @@ first_seen_estimated / last_confirmed_estimated: true   # 소스 발행일이 �
 - `kr_union`: 노조·근로자대표 협의 필요성 한 줄
 - `kr_language`: 한국어 지원·현지화 상태 한 줄 (소스 없으면 "미확인")
 - `kr_vendor`: 국내 벤더·SI 지원 여부 한 줄 (소스 없으면 "미확인")
+
+## regulatory_exposure 값 (2026-09-27 crosswalk 검증 후 확정)
+- `kr-high-impact`: AI 기본법 고영향 AI가 **가이드라인으로 확인된** 영역 = 채용(탐색~선발). Talent Acquisition 중그룹(Sourcing·Screening·Interview·Executive Search·Early-career)에서 후보 선별·랭킹·평가에 관여할 때.
+- `kr-high-impact-review`: 조문 제2조 4호 사목의 "등"에 근거해 보수적으로 검토 대상으로 두는 영역(평가·승진·배치·이탈예측·근태·구조조정). 가이드라인(2026-04-29)은 이 영역을 명시하지 않았다 — [[taxonomy-crosswalk]] 표 4 참조.
+- `eu-annex-iii`: EU AI Act Annex III 4(a)(b) — 채용·선발·승진·해고·업무 배분·모니터링·평가. 의무 적용은 2027-12-02로 연기.

@@ -8,7 +8,7 @@ company: DBS Bank
 industry: [finance, banking]
 region: [apac]
 employee_class: [all]
-vendor: []
+vendor: [DBS internal]
 vendor_type: [internal-build]
 output: "JIM: 이력서 스크리닝 + 면접 일정 자동 조율 + 초기 후보자 평가 (32→8일). 이탈 예측 모델: 직원별 이탈 가능성 점수 + HRBP alert. iGrow: 직원 스킬·포부 분석 기반 10K+ 내부 과정 매칭 커리어 경로"
 ai_tech_type: [generative, predictive]
@@ -16,11 +16,20 @@ ai_tech_subtype: [information-extraction, prediction, recommendation-ranking, cl
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI(채용 스크리닝·이탈 예측) — kr-high-impact
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
+kr_language: 해당 없음 (자체 구축)
+kr_vendor: 해당 없음 (DBS 자체 구축)
 frequency: daily
 first_seen: 2022-01-01
 last_confirmed: 2025-06-01
-confidence: 0.50
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 2
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 sources:
   - sources/mckinsey-dbs-ai-transformation.md
   - sources/emerj-dbs-ai-cases.md

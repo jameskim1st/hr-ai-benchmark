@@ -17,15 +17,23 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: [kr-high-impact, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI (채용 서류 심사·면접 질문 생성)
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
+kr_language: 한국어 네이티브
+kr_vendor: LG CNS 자체 구축 (국내 SI)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: adhoc
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
-confidence: 0.25               # Tier 2 LG공식보도(+0.20) + vendor self-report, recency good
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "LG 미디어 릴리즈 2025 https://www.lg.co.kr/media/release/29289"
+sources: [sources/lg-cns-agentic-ai-media-release-2025-08.md]
 related_usecases:
   - sk-group-aict-ai-recruitment
   - midas-inair-ai-assessment-korea

@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (대화 미저장 설계 참고, 페이지)
+kr_union: 협의 의무 낮음 (정보 제공 성격)
+kr_language: 미확인 (25개국 다국어 배포이나 한국어 포함 여부 미기재)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-01-08
 last_confirmed: 2025-06-01
-confidence: 0.50
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 2
+freshness: stale
+depth: full
+graded_at: 2026-09-27
 sources:
   - sources/hrgrapevine-bosch-rob-2025-01.md
   - sources/cognigy-bosch-case-study.md

@@ -17,13 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: PIPA 준수 + Q&A only로 AI 기본법 고영향 회피 (평가·승진 영향 시 재분류)
+kr_union: 협의 의무 낮음 (정보 제공 성격 — HR Q&A only)
+kr_language: 한국어 네이티브
+kr_vendor: 미확인 (벤더 미공개 — RFP 시 vendor 명시 필요)
 frequency: daily
 first_seen: 2024-12-23
 last_confirmed: 2026-04-01
-confidence: 0.50
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/kr-conglomerate-2026-q2-research.md
+sources: [sources/businesspost-pulmuone-duribun-2024-12.md, sources/edaily-pulmuone-duribun-2024-12.md, sources/pulmuone-newsroom-duribun-hr-chatbot-2024-12.md]
 related_usecases:
   - shinhan-bank-ai-one-platform
   - mirae-asset-ai-assistant-platform

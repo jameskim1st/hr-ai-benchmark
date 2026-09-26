@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: 개인정보보호법(급여·세액 민감정보) + 세액 오류 책임 소재 미공개
+kr_union: 협의 의무 낮음 (연말정산 법정 업무 자동화 성격)
+kr_language: 한국어 네이티브
+kr_vendor: 더존비즈온 (Douzone ONE AI) — 국내 ERP 벤더
 frequency: annual              # 연 1회 연말정산
 first_seen: 2024-12-10
 last_confirmed: 2024-12-10
-confidence: 0.20               # Tier 2(+0.20) + recency 12-24m(-0.15) + 단일 소스 = 0.05 + 0.15 보정(한국 특유 영역 강점) = 0.20
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/taxwatch-douzone-one-ai-2024-12.md

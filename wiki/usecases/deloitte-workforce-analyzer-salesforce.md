@@ -16,15 +16,22 @@ ai_tech_subtype: [summarization-qa, clustering-classification, prediction]
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI(직무 영향평가·인력 계획) — kr-high-impact
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: Deloitte Korea 지사 경유 언급 (페이지) — 실적 미공개
 frequency: adhoc
 first_seen: 2025-06-24
 last_confirmed: 2025-06-24
-confidence: 0.35               # Tier 1 Deloitte(+0.35) + named customer Salesforce + recency excellent - 구체 metric 부족 = 0.35
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "Deloitte PR 2025-06-24 https://www.deloitte.com/us/en/about/press-room/deloitte-launches-ai-solution-suite-for-human-and-machine-workforce.html"
-  - "PR Newswire 2025-06-24 https://www.prnewswire.com/news-releases/deloitte-launches-ai-solution-suite-to-help-organizations-enhance-their-human-and-machine-workforce-302488802.html"
+sources: [sources/deloitte-pr-human-capital-ai-suite-2025-06.md, sources/prnewswire-deloitte-human-capital-ai-suite-2025-06.md]
 related_usecases:
   - visier-vee-people-analytics
   - amazon-hr-ai-restructuring

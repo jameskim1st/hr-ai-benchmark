@@ -16,12 +16,21 @@ ai_tech_subtype: [recommendation-ranking]
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: 배치·이동 추천 고영향 AI + 52시간제 하 프로젝트 참여 근로시간 기록 이슈 (페이지)
+kr_union: 단체교섭/근로자대표 협의 필요 (배치·이동; 매니저 승인 불필요 원칙 pushback 명시)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 last_confirmed_estimated: true
 frequency: daily
 first_seen: 2019-12-17
 last_confirmed: 2024-06-30
-confidence: 0.25                   # Tier 2(+0.20) + Gloat customer story(+0.10) + recency 12-24m(-0.15) + no contradiction = 0.15 + 0.10 metric upgrade bonus = 0.25
+confidence: 0.25
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/i4cp-unilever-flex-2019-12.md

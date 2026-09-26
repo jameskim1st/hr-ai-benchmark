@@ -17,16 +17,20 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 개인정보보호법 국외이전 — 해외 클라우드 저장 제약 (페이지 명시)
+kr_union: 협의 의무 낮음 (정보 제공 성격)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요; 국내 메신저 통합 별도 검토)
 frequency: daily
 first_seen: 2025-01-01
 last_confirmed: 2026-05-06
-confidence: 0.55
-sources:
-  - sources/hrexecutive-hitachi-skye-2025.md
-  - sources/ema-hitachi-customer-story-2025.md
-  - sources/constellation-hitachi-harc-agents-2025.md
-  - sources/unleash-hitachi-digital-2025.md
-  - sources/ema-hitachi-agentic-hr-2025.md
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 3
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
+sources: [sources/hrexecutive-hitachi-skye-2025.md, sources/ema-hitachi-agentic-hr-2025.md, sources/constellation-hitachi-harc-agents-2025.md, sources/unleash-hitachi-digital-2025.md]
 related_usecases:
   - bosch-rob-hr-ai-assistant
   - ibm-askhr-watsonx

@@ -16,19 +16,24 @@ ai_tech_subtype: [recommendation-ranking]
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI (frontmatter 명시; 내부이동·배치 매칭)
+kr_union: 단체교섭/근로자대표 협의 필요 (배치·내부이동 영향)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: daily
 first_seen: 2020-04-01
 last_confirmed: 2025-03-01
-confidence: 0.50               # Tier 3 Gloat(+0.10) + Tier 1 Bersin 2019(+0.35, stale 할인→+0.15) + Tier 2 SHRM(+0.20) = base 0.45 + 다수 소스 보너스(+0.05) → 0.50
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 2
+freshness: stale
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "Gloat case study https://resources.gloat.com/schneider-electric-case-study-download/"
-  - "Gloat blog 2025-01 https://gloat.com/blog/schneider-electric-career-agility/"
-  - sources/bersin-schneider-unilever-talent-marketplace-2019-07.md
-  - sources/shrm-schneider-electric-chro-nontraditional-2025.md
+sources: [sources/gloat-schneider-electric-case-study-2026-09.md, sources/gloat-schneider-electric-career-agility-2022-02.md, sources/bersin-schneider-unilever-talent-marketplace-2019-07.md, sources/shrm-schneider-electric-chro-nontraditional-2025.md]
 related_usecases:
   - unilever-flex-gloat-talent-marketplace
 related_vendors:

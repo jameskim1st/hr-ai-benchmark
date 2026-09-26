@@ -17,19 +17,22 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (정책 Q&A·스케줄 조회 중심, 결정은 매니저)
+kr_union: 협의 의무 낮음 (정보 제공 성격 — 음성 Q&A·스케줄 조회)
+kr_language: 해당 없음 (자체 구축)
+kr_vendor: 자체 구축 (Walmart internal, 국내 SI 해당 없음)
 first_seen_estimated: true
 frequency: daily
 first_seen: 2025-06-24
 last_confirmed: 2025-10-02
-confidence: 0.55               # Tier 2 HR Brew(+0.20) + Tier 2 HR Executive(+0.20) + Tier 2 SHRM(+0.20) + Tier 2 HR Dive(+0.20) + Tier 4 Walmart corporate(+0.15) = base 0.95, 할인 (자사 보고 전달 성격, metric 독립 검증 제한) → 0.55
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 3
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "HR Brew 2025-10-02 https://www.hr-brew.com/stories/2025/10/02/accenture-and-walmart-are-developing-workforce-strategies-with-ai-in-mind"
-  - "Walmart Corporate 2025-06-05 https://corporate.walmart.com/news/2025/06/05/walmart-pilots-ai-interview-coach-and-accelerates-associate-to-technician-program-to-fuel-careers"
-  - "HR Executive https://hrexecutive.com/amazon-and-walmart-compete-for-top-revenue-spot-with-diverging-workforce-ai-strategies/"
-  - "JobsPikr https://www.jobspikr.com/blog/walmart-reskilling-workforce-2025/"
-  - sources/shrm-walmart-ai-revolution-2025.md
-  - sources/hrdive-walmart-my-assistant-genai-2024.md
+sources: [sources/hr-brew-accenture-walmart-workforce-ai-2025-10.md, sources/walmart-corporate-ai-interview-coach-2025-06.md, sources/hrexecutive-amazon-walmart-workforce-ai-2026-02.md, sources/jobspikr-walmart-reskilling-2025.md, sources/shrm-walmart-ai-revolution-2025.md, sources/hrdive-walmart-my-assistant-genai-2024.md]
 related_usecases:
   - ibm-askhr-watsonx
   - moderna-ask-hr-routing

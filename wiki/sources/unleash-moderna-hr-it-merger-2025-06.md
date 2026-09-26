@@ -6,6 +6,7 @@ tier: 2
 publication_date: 2025-06-27
 ingested_at: 2026-04-12
 raw: raw/articles/2025-06-27-unleash-moderna-hr-it-merger.md
+supports: [moderna-ask-hr-routing]
 ---
 
 # Source Summary — Unleash on Moderna HR+IT Merger (2025-06-27)

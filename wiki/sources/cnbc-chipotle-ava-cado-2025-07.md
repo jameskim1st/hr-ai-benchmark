@@ -6,6 +6,7 @@ source_type: article
 publisher: CNBC
 published: 2025-07-28
 ingested_at: 2026-04-12
+supports: [chipotle-paradox-olivia]
 ---
 
 # CNBC — Chipotle AI 채용 도구 75% 빠른 채용 (2025-07-28)

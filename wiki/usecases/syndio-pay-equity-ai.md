@@ -16,17 +16,24 @@ ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
 visibility: public
 case_type: vendor-product
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: 근로기준법·남녀고용평등법 동일노동 동일임금 + 보상·승진 추천 고영향 AI 분류
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향 — 보상·승진 추천)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: monthly
 first_seen: 2025-03-01
 last_confirmed: 2025-03-01
-confidence: 0.20               # Tier 3 벤더 PR 위주, 독립 검증 없음
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "PR Newswire 2025-03-04 https://www.prnewswire.com/news-releases/syndio-introduces-expert-ai-for-pay-reporting-compliance-302391175.html"
-  - "Syndio 공식 https://synd.io/expertise-on-demand/"
+sources: [sources/prnewswire-syndio-expert-ai-2025-03.md, sources/syndio-expertise-on-demand-product-2026-09.md]
 related_usecases:
   - moderna-benefits-equity-gpts
   - douzone-one-ai-year-end-tax

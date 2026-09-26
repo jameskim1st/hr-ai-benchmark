@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: 개인정보보호법 + 직장 내 괴롭힘 금지법 customization 필요 (페이지)
+kr_union: 노조 사전 합의 필수 (페이지 명시, 한국 노조법)
+kr_language: 한국어 포함 (200+ 언어) — 정확도 검증 필요 (페이지)
+kr_vendor: 미확인 (국내 파트너 확인 필요, 한국 레퍼런스 미공개)
 frequency: daily
 first_seen: 2024-09-01
 last_confirmed: 2026-05-06
-confidence: 0.65
+confidence: 0.35
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/allvoices-vera-ai-product.md

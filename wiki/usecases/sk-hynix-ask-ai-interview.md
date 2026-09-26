@@ -17,13 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: [kr-high-impact, eu-annex-iii]
+kr_law: 채용절차법·AI 기본법 인적감독을 peer hybrid로 충족, 영상 표정·외모 신호 사용 미공개
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향 — 신입 채용 전형)
+kr_language: 한국어 네이티브
+kr_vendor: 자체 구축 (SK하이닉스 internal, 영상면접 플랫폼 벤더 미공개)
 frequency: annual
 first_seen: 2025-09-16
 last_confirmed: 2026-04-01
-confidence: 0.45
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/korea-conglomerate-hr-ai-2025-2026.md
+sources: [sources/ebn-sk-hynix-ask-ai-interview-2025-09.md, sources/nate-ebn-sk-hynix-ask-ai-interview-2025-09.md]
 related_usecases:
   - sk-cc-adot-biz-hr-recruitment
   - sk-group-aibiz-25-companies

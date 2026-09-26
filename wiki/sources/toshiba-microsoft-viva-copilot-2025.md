@@ -4,6 +4,7 @@ url: "https://www.microsoft.com/en/customers/story/23123-toshiba-corporation-mic
 tier: 3
 source_type: vendor_case_study
 ingested_at: 2026-04-12
+supports: [toshiba-microsoft-copilot-viva]
 ---
 
 ## Summary

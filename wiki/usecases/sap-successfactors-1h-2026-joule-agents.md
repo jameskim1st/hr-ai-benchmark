@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: AI 기본법 고영향 (Career Agent 후계자 추천=승진) 인적감독·고지 의무 명시
+kr_union: 단체교섭/근로자대표 협의 필요 (후계자 추천·승진 영향)
+kr_language: 한국어 quality 미검증 (HR Service Agent) + KR 페이롤 룰 지원 미공개
+kr_vendor: 미확인 (본 페이지 언급 없음; 국내 SAP 파트너는 자매 페이지 참조)
 frequency: daily
 first_seen: 2025-10-01
 last_confirmed: 2026-04-15
-confidence: 0.50
+confidence: 0.55
+evidence_grade: B
+corroborated_by: 1
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/sap-1h-2026-release-2026-04.md

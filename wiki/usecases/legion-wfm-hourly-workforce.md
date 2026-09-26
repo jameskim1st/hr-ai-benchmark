@@ -16,11 +16,20 @@ ai_tech_subtype: [prediction, optimization, summarization-qa]
 stage: production
 visibility: public
 case_type: vendor-product
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: 근로기준법 52시간·휴게·주휴수당 customization 필수 (페이지 명시)
+kr_union: 단체교섭/근로자대표 협의 필요 (근태·스케줄 영향)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-08-12
 last_confirmed: 2026-01-15
-confidence: 0.55
+confidence: 0.45
+evidence_grade: B
+corroborated_by: 1
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/legion-forrester-tei-2021-09.md

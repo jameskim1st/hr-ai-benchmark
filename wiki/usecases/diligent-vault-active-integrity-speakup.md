@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: 직장 내 괴롭힘 금지법+PIPA; misconduct 예측은 AI 기본법 고영향 가능
+kr_union: 노조 사전 합의 필수 + 집단 신고 단협 위반 risk 검토 (페이지 명시)
+kr_language: 미확인 — 한국어 LLM 정확도 검증 필요 (페이지 명시)
+kr_vendor: Diligent 한국 진출 부분적 (페이지) — 국내 레퍼런스 미공개
 frequency: daily
 first_seen: 2025-05-22
 last_confirmed: 2026-05-06
-confidence: 0.65
+confidence: 0.35
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/diligent-acquires-vault-2025-05.md
@@ -144,7 +153,7 @@ flowchart TB
 ## Consulting Angle
 
 - **GRC 통합 ethics·compliance 대표 reference**: 한국 대기업의 ESG·SOX·내부감사·ER 통합 거버넌스 검토 시 Diligent platform 전체 reference
-- **vs HR Acuity** [[hr-acuity-oliver-er-companion]]:
+- **vs HR Acuity** [[hr-acuity-oliver-ai-er-companion]]:
   - HR Acuity: ER 전용·case management 성숙 (G2 #1, Brandon Hall Gold)
   - Diligent Vault: GRC 통합 + ethics focus + 익명 집단 신고
   - 양자 보완: HR Acuity = ER 운영 / Vault = ethics·whistleblowing

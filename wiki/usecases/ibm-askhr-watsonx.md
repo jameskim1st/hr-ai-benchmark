@@ -17,15 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (보상 guidance 기능은 고영향 검토)
+kr_union: 협의 의무 낮음 (정보 제공 성격; 보상 배분 제안은 협의 검토)
+kr_language: 해당 없음 (자체 구축; 한국어 NLU 선결 — 페이지 명시)
+kr_vendor: 해당 없음 (자체 구축)
 frequency: daily
 first_seen: 2025-06-12
 last_confirmed: 2025-10-24
-confidence: 0.45               # Tier 2 × 2 (HR Brew 2025-06 + 2025-10), 회사 자체 보고 (IBM = 벤더이자 고객), recency <6m(+0.10)
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/hr-brew-ibm-moderna-2025-06.md
-  - "HR Brew 2025-10-24 https://www.hr-brew.com/stories/2025/10/24/hr-adapting-ai-driven-future"
-  - "IBM AskHR case study https://www.ibm.com/case-studies/ibm-askhr"
+sources: [sources/hr-brew-ibm-moderna-2025-06.md, sources/hr-brew-hr-adapting-ai-future-2025-10.md, sources/ibm-askhr-case-study-2025.md]
 related_usecases:
   - moderna-ask-hr-routing
   - workday-illuminate-employee-sentiment

@@ -3,11 +3,14 @@
 build_excel.py — wiki/exports/usecases.json + companies.json → 단일 Excel 워크북
 
 산출물: wiki/exports/hr-ai-usecase-collection.xlsx
-시트 4개:
+시트 5개:
   1. 개요          — README + schema reference + 사용법
-  2. Use Cases     — 115행 × 25컬럼 (메인 데이터, AutoFilter, conditional formatting)
+  2. Use Cases     — 메인 데이터 (AutoFilter, evidence_grade conditional formatting)
   3. AI 기술 분포   — long-format (use_case × subtype), Pivot Table용
-  4. Companies     — 20행 × 9컬럼 (기업별 holistic view)
+  4. Companies     — 기업별 holistic view
+  5. 전사 AI 참고   — wiki/enterprise-ai/ (전사 GenAI 플랫폼 사례, Use Cases와 동일 컬럼)
+
+visibility=internal 페이지는 extract 단계에서 제외되며, 여기서도 한 번 더 거른다.
 """
 import json
 import re
@@ -24,6 +27,7 @@ from openpyxl.worksheet.table import Table, TableStyleInfo
 
 BASE = Path(__file__).parent.parent
 UC_JSON = BASE / "wiki" / "exports" / "usecases.json"
+EA_JSON = BASE / "wiki" / "exports" / "enterprise_ai.json"
 CO_JSON = BASE / "wiki" / "exports" / "companies.json"
 OUT = BASE / "wiki" / "exports" / "hr-ai-usecase-collection.xlsx"
 
@@ -73,6 +77,23 @@ KR_REGION = {
     "apac": "APAC",
     "global": "Global",
 }
+KR_CASE_TYPE = {"adoption": "도입 사례", "vendor-product": "벤더 제품"}
+KR_FRESHNESS = {"fresh": "fresh", "stale": "⏳ stale (12개월+)", "unverified": "unverified"}
+KR_DEPTH = {"full": "full", "partial": "partial", "stub": "stub (정보 부족)"}
+KR_REG = {"kr-high-impact": "⚖️ KR 고영향", "eu-annex-iii": "⚖️ EU Annex III"}
+GRADE_MEANING = {
+    "A": "독립 소스 2+ (교차 검증) — 제안서 reference case로 인용",
+    "B": "독립 소스 1 — 참고 사례로 활용",
+    "C": "벤더·자사 보고만 — 시장 동향 수준",
+    "D": "미검증 (source 0 또는 전부 unresolved) — 인용 금지",
+}
+# evidence_grade 셀 색 (HTML과 동일 톤): A 녹 / B 파랑 / C 노랑 / D 회색
+GRADE_FILL = {
+    "A": PatternFill("solid", fgColor="C6EFCE"),
+    "B": PatternFill("solid", fgColor="CFE2FF"),
+    "C": PatternFill("solid", fgColor="FFEB9C"),
+    "D": PatternFill("solid", fgColor="E4E4E7"),
+}
 
 
 # ── Styles ──
@@ -115,6 +136,7 @@ TAB_COLOR = {
     "Use Cases": "1B6E3E",
     "AI 기술 분포": "5B3A8C",
     "Companies": "C2562D",
+    "전사 AI 참고": "71717A",
 }
 
 
@@ -267,7 +289,7 @@ def join_steps(steps):
 
 
 # ── Sheet 1: 개요 ──
-def build_cover_sheet(wb, ucs, cos):
+def build_cover_sheet(wb, ucs, cos, eas=None):
     ws = wb.create_sheet("개요", 0)
     ws.column_dimensions["A"].width = 22
     ws.column_dimensions["B"].width = 90
@@ -275,16 +297,24 @@ def build_cover_sheet(wb, ucs, cos):
     today = date.today().isoformat()
     n_uc = len(ucs)
     n_co = len(cos)
+    n_ea = len(eas or [])
     n_kr = sum(1 for u in ucs if "kr" in (u.get("region") or []))
     avg_conf = sum(u["confidence"] for u in ucs) / n_uc if n_uc else 0
     n_high = sum(1 for u in ucs if u["confidence"] >= 0.5)
     n_mid = sum(1 for u in ucs if 0.3 <= u["confidence"] < 0.5)
+    grade_cnt = Counter((u.get("evidence_grade") or "미산정") for u in ucs)
+    grade_dist = " · ".join(f"{g}: {grade_cnt[g]}" for g in ["A", "B", "C", "D", "미산정"] if grade_cnt.get(g))
+    n_stub = sum(1 for u in ucs if u.get("depth") == "stub")
+    n_stale = sum(1 for u in ucs if u.get("freshness") == "stale")
+    n_cols = len(usecase_all_cols())
 
     rows = [
         ("HR AI Use Case Collection (Excel)", ""),
         ("산출일자", today),
-        ("데이터 규모", f"{n_uc} use cases · {n_co} companies · 7 HR 카테고리 · 5×13 AI 기술 axis"),
+        ("데이터 규모", f"{n_uc} use cases · {n_co} companies · 7 HR 카테고리 · 5×13 AI 기술 axis · 전사 AI 참고 {n_ea}건"),
         ("한국 사례", f"{n_kr}건"),
+        ("근거 등급 분포", grade_dist or "미산정 (scripts/grade.py 실행 필요)"),
+        ("stale / stub", f"stale(12개월+) {n_stale}건 · stub(정보 부족) {n_stub}건"),
         ("평균 신뢰도", f"{avg_conf:.2f}"),
         ("고신뢰도 (≥0.50)", f"{n_high}건 — 제안서 즉시 인용 가능"),
         ("중신뢰도 (0.30~0.49)", f"{n_mid}건 — 참고 사례"),
@@ -292,9 +322,22 @@ def build_cover_sheet(wb, ucs, cos):
         ("", ""),
         ("【 시트 구성 】", ""),
         ("개요", "본 시트 — 산출물 개요·스키마·사용법"),
-        ("Use Cases", f"메인 데이터 ({n_uc}행 × 25컬럼). AutoFilter·정렬·copy/paste용."),
+        ("Use Cases", f"메인 데이터 ({n_uc}행 × {n_cols}컬럼). AutoFilter·정렬·copy/paste용. visibility=internal 페이지 제외."),
         ("AI 기술 분포", "long-format (use_case × subtype). Insert→Pivot Table로 즉시 heatmap 생성."),
         ("Companies", f"기업별 holistic view ({n_co}행)."),
+        ("전사 AI 참고", f"전사 GenAI 플랫폼·임직원 어시스턴트 사례 ({n_ea}행). HR 전용 use case가 아니므로 use case 수에 미포함. Use Cases와 동일 컬럼."),
+        ("", ""),
+        ("【 근거 등급 (evidence_grade) 】", ""),
+        ("A (녹)", GRADE_MEANING["A"]),
+        ("B (파랑)", GRADE_MEANING["B"]),
+        ("C (노랑)", GRADE_MEANING["C"]),
+        ("D (회색)", GRADE_MEANING["D"]),
+        ("독립소스수", "corroborated_by — 서로 다른 publisher의 독립(Tier 1·2) 소스 수"),
+        ("신선도", "freshness — fresh(≤12개월) / stale(>12개월) / unverified(D등급)"),
+        ("깊이", "depth — full / partial / stub(정보 부족: 인용 전 보강 필요)"),
+        ("사례유형", "case_type — 도입 사례(adoption) / 벤더 제품(vendor-product)"),
+        ("규제노출", "regulatory_exposure — ⚖️ KR 고영향(AI기본법 고영향 AI) / ⚖️ EU Annex III(고위험)"),
+        ("KR 법규·노조·언어·국내벤더", "kr_law / kr_union / kr_language / kr_vendor — 한국 적용성 (있는 경우만 채움)"),
         ("", ""),
         ("【 신뢰도 의미 】", ""),
         ("0.70+", "여러 독립 소스로 교차 검증 — 제안서에 'reference case'로 인용"),
@@ -324,8 +367,8 @@ def build_cover_sheet(wb, ucs, cos):
         ("필터", "Use Cases 시트 → 헤더 행 dropdown 클릭 → 산업·지역·AI 기술 등 필터링"),
         ("정렬", "헤더 행 우클릭 → 정렬 (신뢰도 내림차순 권장)"),
         ("피벗 테이블", "AI 기술 분포 시트 → Insert → PivotTable → 행 'AI 기술 (소)' · 열 'HR 대분류' · 값 COUNT → heatmap"),
-        ("색상 의미", "신뢰도: 녹(≥0.50) / 노(0.30~0.49) / 빨(<0.30). 지역 KR: 옅은 노란 배경"),
-        ("출처 추적", "각 use case의 상세 source는 wiki/usecases/<slug>.md (GitHub)"),
+        ("색상 의미", "근거등급: A 녹 / B 파랑 / C 노랑 / D 회색. 지역 KR: 옅은 노란 배경"),
+        ("출처 추적", "출처1~3 = wiki/sources/<slug>.md 의 title·url (하이퍼링크). 상세는 wiki/usecases/<slug>.md (GitHub)"),
         ("", ""),
         ("【 표기 규칙 】", ""),
         ("✅ Fact", "독립 Tier 1·2 소스에서 확인된 사실"),
@@ -421,6 +464,16 @@ USECASE_AUX_COLS = [
     ("단계", 10),
     ("빈도", 8),
     ("신뢰도", 8),
+    ("근거등급", 9),           # evidence_grade (A/B/C/D) — conditional formatting
+    ("독립소스수", 9),          # corroborated_by
+    ("신선도", 14),            # freshness
+    ("깊이", 12),              # depth
+    ("사례유형", 11),           # case_type
+    ("규제노출", 18),           # regulatory_exposure
+    ("KR 법규", 30),           # kr_law
+    ("KR 노조", 30),           # kr_union
+    ("KR 언어", 30),           # kr_language
+    ("KR 국내벤더", 30),         # kr_vendor
     ("Consulting Angle", 70),
     ("태그", 28),
     ("출처1", 50),
@@ -428,6 +481,17 @@ USECASE_AUX_COLS = [
     ("출처3", 50),
     ("slug", 32),
 ]
+
+
+def usecase_all_cols():
+    """Use Cases 시트 전체 column 구성: MAIN + AI 기술 (5+11) + AUX."""
+    cols = list(USECASE_MAIN_COLS)
+    for _, kr in TECH_PARENT_COLS:
+        cols.append((kr, 11))
+    for _, kr in TECH_SUB_COLS:
+        cols.append((f"  · {kr}", 12))
+    cols.extend(USECASE_AUX_COLS)
+    return cols
 
 
 GITHUB_BASE = "https://github.com/jameskim1st/hr-ai-benchmark/blob/main"
@@ -476,7 +540,7 @@ def parse_source(src_str):
 
 
 def select_external_sources(sources_list, max_n=3):
-    """sources list에서 외부 URL을 가진 것만 골라 max_n개 반환.
+    """(legacy) sources list에서 외부 URL을 가진 것만 골라 max_n개 반환.
     URL 없는 것도 backfill (display text만)."""
     parsed = []
     for s in (sources_list or []):
@@ -486,6 +550,35 @@ def select_external_sources(sources_list, max_n=3):
         parsed.append((text, url))
         if len(parsed) >= max_n:
             break
+    while len(parsed) < max_n:
+        parsed.append(("", ""))
+    return parsed
+
+
+def select_sources(u, max_n=3):
+    """출처1~3 — extract가 해석한 sources_resolved 우선.
+    순서: (1) source 페이지로 해석된 것 (title·url), (2) legacy 자유 텍스트 (URL 추출),
+          (3) 미해석 'sources/<slug>' (slug 텍스트만, 링크 없음).
+    sources_resolved가 없는 구버전 JSON이면 legacy parse_source로 fallback."""
+    resolved = u.get("sources_resolved")
+    if resolved is None:
+        return select_external_sources(u.get("sources"), max_n=max_n)
+    tier1, tier2, tier3 = [], [], []
+    for s in resolved:
+        title = remove_emdash(str(s.get("title") or ""))
+        url = str(s.get("url") or "")
+        if s.get("resolved"):
+            label = title
+            if s.get("tier"):
+                label = f"[T{s['tier']}] {label}"
+            if s.get("publisher"):
+                label = f"{label} ({s['publisher']})"
+            tier1.append((label[:120], url))
+        elif s.get("legacy"):
+            tier2.append(((title or url)[:120], url))
+        else:
+            tier3.append((f"(미해석) {s.get('slug') or title}"[:120], ""))
+    parsed = (tier1 + tier2 + tier3)[:max_n]
     while len(parsed) < max_n:
         parsed.append(("", ""))
     return parsed
@@ -524,19 +617,12 @@ def build_impact(u, target_line_len=60):
     return strip_html(u.get("impact_summary"), prettify=True, target_line_len=target_line_len)
 
 
-def build_usecases_sheet(wb, ucs):
-    ws = wb.create_sheet("Use Cases")
+def build_usecases_sheet(wb, ucs, sheet_name="Use Cases", tab_color=None):
+    """Use Cases 시트 (sheet_name='전사 AI 참고' 로 호출하면 동일 컬럼의 5번째 시트)."""
+    ws = wb.create_sheet(sheet_name)
 
-    # 전체 column 구성: MAIN + AI 기술 18개 + AUX
-    all_cols = list(USECASE_MAIN_COLS)
-    # AI 기술 5 대분류 (체크박스, 폭 11)
-    for type_id, kr in TECH_PARENT_COLS:
-        all_cols.append((kr, 11))
-    # AI 기술 13 소분류 (체크박스, 폭 12)
-    for sub_id, kr in TECH_SUB_COLS:
-        all_cols.append((f"  · {kr}", 12))
-    # 보조 column
-    all_cols.extend(USECASE_AUX_COLS)
+    # 전체 column 구성: MAIN + AI 기술 (5+11) + AUX
+    all_cols = usecase_all_cols()
 
     # AI tech 부분 시작·끝 컬럼 인덱스 (조건부 서식·헤더 색상용)
     n_main = len(USECASE_MAIN_COLS)
@@ -550,6 +636,8 @@ def build_usecases_sheet(wb, ucs):
 
     # Header
     headers = [c[0] for c in all_cols]
+    # 헤더 이름 → 1-based column index (hard-coded offset 대신 이름으로 찾음)
+    col_of = {h: i for i, h in enumerate(headers, start=1)}
     tech_parent_fill = PatternFill("solid", fgColor="6B5B95")  # 보라
     tech_sub_fill = PatternFill("solid", fgColor="9B8AB8")     # 옅은 보라
     for i, h in enumerate(headers, start=1):
@@ -572,8 +660,11 @@ def build_usecases_sheet(wb, ucs):
     # Body
     # HR 모듈 column index (1-based) — main의 2번째
     hr_module_col_idx = 2
-    # 신뢰도 column index (aux의 8번째)
-    confidence_col_idx_local = aux_start + 7
+    confidence_col_idx_local = col_of["신뢰도"]
+    grade_col_idx = col_of["근거등급"]
+    corr_col_idx = col_of["독립소스수"]
+    center_cols = {grade_col_idx, corr_col_idx, col_of["신선도"], col_of["깊이"], col_of["사례유형"]}
+    src_col_indices = [col_of["출처1"], col_of["출처2"], col_of["출처3"]]
 
     # 동적 row 높이 계산용
     row_heights = []
@@ -623,8 +714,14 @@ def build_usecases_sheet(wb, ucs):
         tech_sub_values = [
             CHECK_MARK if has_subtype(u, sub_id) else "" for sub_id, _ in TECH_SUB_COLS
         ]
-        # 출처 1~3
-        parsed_sources = select_external_sources(u.get("sources"), max_n=3)
+        # 출처 1~3 (source 페이지 해석 결과 우선)
+        parsed_sources = select_sources(u, max_n=3)
+
+        grade = (u.get("evidence_grade") or "").upper()
+        try:
+            corroborated = int(u.get("corroborated_by") or 0)
+        except (TypeError, ValueError):
+            corroborated = 0
 
         # AUX columns
         aux_values = [
@@ -636,6 +733,16 @@ def build_usecases_sheet(wb, ucs):
             KR_STAGE.get(u.get("stage", ""), u.get("stage", "")),
             KR_FREQUENCY.get(u.get("frequency", ""), u.get("frequency", "")),
             float(u.get("confidence", 0)),
+            grade,
+            corroborated if grade else "",
+            KR_FRESHNESS.get(u.get("freshness") or "", u.get("freshness") or ""),
+            KR_DEPTH.get(u.get("depth") or "", u.get("depth") or ""),
+            KR_CASE_TYPE.get(u.get("case_type") or "", u.get("case_type") or ""),
+            join_kr(u.get("regulatory_exposure"), KR_REG),
+            u.get("kr_law") or "",
+            u.get("kr_union") or "",
+            u.get("kr_language") or "",
+            u.get("kr_vendor") or "",
             consulting_txt,
             join_kr(u.get("tags")),
             parsed_sources[0][0],
@@ -645,8 +752,7 @@ def build_usecases_sheet(wb, ucs):
         ]
 
         all_values = main_values + tech_parent_values + tech_sub_values + aux_values
-
-        src_col_indices = [aux_start + 10, aux_start + 11, aux_start + 12]
+        assert len(all_values) == len(all_cols), f"column mismatch {len(all_values)} != {len(all_cols)}"
 
         for col_idx, v in enumerate(all_values, start=1):
             # em-dash 제거
@@ -681,12 +787,22 @@ def build_usecases_sheet(wb, ucs):
                 cell.font = Font(name="맑은 고딕", size=10, color="999999")
                 if zebra_fill:
                     cell.fill = zebra_fill
-            # 신뢰도 column — 우측 정렬 + 굵게 + 숫자 포맷
+            # 신뢰도 column — 가운데 정렬 + 굵게 + 숫자 포맷 (색상은 근거등급 컬럼이 담당)
             elif col_idx == confidence_col_idx_local:
                 cell.alignment = Alignment(horizontal="center", vertical="center")
                 cell.font = Font(name="맑은 고딕", size=11, bold=True)
                 cell.number_format = "0.00"
-                # 신뢰도 conditional formatting이 fill 덮어씀 — zebra 적용 X
+                if zebra_fill:
+                    cell.fill = zebra_fill
+            # 근거등급 — 가운데 + 굵게 (fill은 conditional formatting)
+            elif col_idx == grade_col_idx:
+                cell.alignment = Alignment(horizontal="center", vertical="center")
+                cell.font = Font(name="맑은 고딕", size=12, bold=True)
+            # 독립소스수·신선도·깊이·사례유형 — 가운데
+            elif col_idx in center_cols:
+                cell.alignment = Alignment(horizontal="center", vertical="center", wrap_text=True)
+                if zebra_fill:
+                    cell.fill = zebra_fill
             # 일반 텍스트 column
             else:
                 cell.alignment = BODY_ALIGN
@@ -736,28 +852,31 @@ def build_usecases_sheet(wb, ucs):
     last_row = len(ucs_sorted) + 1
     ws.auto_filter.ref = f"A1:{last_col}{last_row}"
 
-    # Conditional formatting: 신뢰도 (AUX의 8번째 = aux_start + 7)
-    conf_col_idx = aux_start + 7
-    conf_col = get_column_letter(conf_col_idx)
-    conf_range = f"{conf_col}2:{conf_col}{last_row}"
+    # Conditional formatting: 근거등급 (evidence_grade) — A 녹 / B 파랑 / C 노랑 / D 회색
+    grade_col = get_column_letter(grade_col_idx)
+    grade_range = f"{grade_col}2:{grade_col}{last_row}"
+    for g, fill in GRADE_FILL.items():
+        ws.conditional_formatting.add(
+            grade_range,
+            CellIsRule(operator="equal", formula=[f'"{g}"'], fill=fill),
+        )
+    # stub(정보 부족) 행 — 깊이 컬럼 옅은 회색 + 기울임
+    depth_col = get_column_letter(col_of["깊이"])
     ws.conditional_formatting.add(
-        conf_range,
-        CellIsRule(operator="greaterThanOrEqual", formula=["0.5"],
-                   fill=PatternFill("solid", fgColor="C6EFCE")),
+        f"{depth_col}2:{depth_col}{last_row}",
+        FormulaRule(formula=[f'ISNUMBER(SEARCH("stub",{depth_col}2))'],
+                    fill=PatternFill("solid", fgColor="F4F4F5"), font=Font(italic=True, color="71717A")),
     )
+    # stale — 신선도 컬럼 옅은 주황
+    fresh_col = get_column_letter(col_of["신선도"])
     ws.conditional_formatting.add(
-        conf_range,
-        CellIsRule(operator="between", formula=["0.3", "0.499"],
-                   fill=PatternFill("solid", fgColor="FFEB9C")),
-    )
-    ws.conditional_formatting.add(
-        conf_range,
-        CellIsRule(operator="lessThan", formula=["0.3"],
-                   fill=PatternFill("solid", fgColor="FFC7CE")),
+        f"{fresh_col}2:{fresh_col}{last_row}",
+        FormulaRule(formula=[f'ISNUMBER(SEARCH("stale",{fresh_col}2))'],
+                    fill=PatternFill("solid", fgColor="FFEDD5")),
     )
 
-    # 지역 column에 KR 포함 시 옅은 노란 배경 (AUX의 5번째 = aux_start + 4)
-    region_col_idx = aux_start + 4
+    # 지역 column에 KR 포함 시 옅은 노란 배경
+    region_col_idx = col_of["지역"]
     region_col = get_column_letter(region_col_idx)
     region_range = f"{region_col}2:{region_col}{last_row}"
     ws.conditional_formatting.add(
@@ -771,7 +890,7 @@ def build_usecases_sheet(wb, ucs):
         ws.row_dimensions[i + 2].height = h
 
     # 시트 탭 색
-    ws.sheet_properties.tabColor = TAB_COLOR.get("Use Cases", "1B6E3E")
+    ws.sheet_properties.tabColor = tab_color or TAB_COLOR.get(sheet_name, "1B6E3E")
 
 
 # ── Sheet 3: AI 기술 분포 (long-format) ──
@@ -994,25 +1113,42 @@ def build_companies_sheet(wb, ucs, cos):
 
 
 # ── Main ──
+def _drop_internal(records, label):
+    """방어: visibility=internal 은 extract에서 제외되지만 여기서도 거른다."""
+    kept = [u for u in records if (u.get("visibility") or "public") != "internal"]
+    dropped = len(records) - len(kept)
+    if dropped:
+        print(f"  [warn] {label}: {dropped} internal record(s) dropped at Excel stage")
+    return kept
+
+
 def main():
     with open(UC_JSON, encoding="utf-8") as f:
         ucs = json.load(f)
     with open(CO_JSON, encoding="utf-8") as f:
         cos = json.load(f)
+    eas = []
+    if EA_JSON.exists():
+        with open(EA_JSON, encoding="utf-8") as f:
+            eas = json.load(f)
+
+    ucs = _drop_internal(ucs, "usecases")
+    eas = _drop_internal(eas, "enterprise-ai")
 
     wb = Workbook()
     # Workbook은 기본 'Sheet' 1개로 생성됨 — 제거
     wb.remove(wb.active)
 
-    build_cover_sheet(wb, ucs, cos)
-    build_usecases_sheet(wb, ucs)
+    build_cover_sheet(wb, ucs, cos, eas)
+    build_usecases_sheet(wb, ucs, sheet_name="Use Cases")
     build_tech_long_sheet(wb, ucs)
     build_companies_sheet(wb, ucs, cos)
+    build_usecases_sheet(wb, eas, sheet_name="전사 AI 참고")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     wb.save(OUT)
     size_kb = OUT.stat().st_size / 1024
-    print(f"Excel: 4 sheets, {len(ucs)} use cases, {len(cos)} companies -> {size_kb:.0f}KB")
+    print(f"Excel: {len(wb.sheetnames)} sheets, {len(ucs)} use cases, {len(cos)} companies, {len(eas)} enterprise-ai (ref) -> {size_kb:.0f}KB")
 
 
 if __name__ == "__main__":

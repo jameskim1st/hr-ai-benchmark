@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: PIPA 민감정보(건강·청구이력); US 의료 plan 특화로 국내 적용성 0 (페이지 명시)
+kr_union: 협의 의무 낮음 (정보 제공 성격 — 복리후생 추천)
+kr_language: 미확인 (한국 미진출, 벤더 확인 필요)
+kr_vendor: 미확인 (한국 미진출 — 국내 파트너 없음)
 frequency: annual
 first_seen: 2025-09-15
 last_confirmed: 2026-01-10
-confidence: 0.50
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/nayya-techcrunch-series-c-2022-03.md

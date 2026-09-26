@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: "1:1 미팅 녹음·전사 시 개인정보보호법 동의 요건 (페이지 명시)"
+kr_union: 단체교섭/근로자대표 협의 필요 (성과 데이터 연계·미팅 녹음)
+kr_language: 미확인 (벤더 확인 필요) — 페이지도 한국어 지원 미확인 명시
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-05-20
 last_confirmed: 2025-05-20
-confidence: 0.25
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/15five-kona-launch-2025-05.md

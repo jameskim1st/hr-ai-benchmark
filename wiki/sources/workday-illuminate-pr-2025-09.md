@@ -7,6 +7,7 @@ publisher: PR Newswire (Workday official)
 publication_date: 2025-09-16
 ingested_at: 2026-04-12
 raw: raw/vendors/2025-09-16-workday-illuminate-expands-pr.md
+supports: [workday-illuminate-employee-sentiment, workday-illuminate-job-architecture, workday-illuminate-performance-review-agent]
 ---
 
 # Source Summary — Workday Illuminate Press Release (2025-09-16)

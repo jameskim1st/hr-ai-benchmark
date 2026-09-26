@@ -5,6 +5,7 @@ tier: 2
 source_type: article
 ingested_at: 2026-05-05
 publication_date: 2026-03-17
+supports: [workday-sana-for-workday-lms]
 ---
 
 ## Summary

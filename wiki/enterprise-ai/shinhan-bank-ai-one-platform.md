@@ -22,10 +22,14 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2024-09-24
 last_confirmed: 2026-04-01
-confidence: 0.50
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 3
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/korea-conglomerate-hr-ai-2025-2026.md
+sources: [sources/etnews-shinhan-bank-ai-one-2024-09.md, sources/incheontoday-shinhan-bank-ai-one-2024-09.md, sources/moneys-shinhan-bank-ai-personnel-2021-01.md]
 related_usecases:
   - kb-bank-ai-hr-deep-change
   - hana-bank-knowledge-chatbot
@@ -94,7 +98,7 @@ related_vendors: []
 ## Consulting Angle
 
 - **KR 금융권 사내 AI 플랫폼 reference (Top 3)**:
-  - 신한 AI ONE + KB AI [[kb-bank-ai-hr-deep-change]] + 하나 [[hana-bank-knowledge-chatbot]] — 한국 4대 은행 자체 플랫폼 비교
+  - 신한 AI ONE + KB AI [[kb-bank-ai-hr-deep-change]] + 하나 하나은행 지식챗봇 (페이지 없음) — 한국 4대 은행 자체 플랫폼 비교
   - JPMorgan LLM Suite [[jpmorgan-llm-suite-redeployment]] 글로벌 reference와 pair
 - **40+ AI 통합 모델**: 한국 대기업 (KB·신한·우리·하나·미래에셋 + 제조 그룹사)이 산발 AI 통합 갈증 큼 — AI ONE 패턴 직접 차용 가능
 - **Speech-to-AI 모바일 차별점**: 한국 대기업 외근·영업·매장 직원에게 매력적 차별화 — 데스크 외 작업 환경 fit

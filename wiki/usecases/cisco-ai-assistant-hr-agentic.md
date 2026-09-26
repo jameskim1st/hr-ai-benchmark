@@ -17,14 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준
+kr_union: 협의 의무 낮음 (정보 제공 성격)
+kr_language: 해당 없음 (자체 구축)
+kr_vendor: 해당 없음 (Cisco 자체 구축)
 frequency: daily
 first_seen: 2024-06-01
 last_confirmed: 2025-11-01
-confidence: 0.70
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/us-large-enterprise-hr-ai-2025-2026.md
-  - "Cisco engineering blog — Internal AI assistant 45M+ interactions https://blogs.cisco.com/cisco-on-cisco/cisco-secure-internal-ai-assistant"
+sources: [sources/cisco-blog-internal-ai-assistant-2025-11.md, sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md, sources/hr-brew-cisco-entry-level-ai-2025-11.md]
 related_usecases:
   - moderna-ask-hr-routing
   - ibm-askhr-watsonx

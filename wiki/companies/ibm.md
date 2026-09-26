@@ -1,6 +1,7 @@
 ---
 name: IBM
 type: company
+page_type: company
 industry: [tech, it-services]
 region: [global]
 headquarters: Armonk, New York, USA
@@ -18,14 +19,12 @@ last_confirmed: 2025-10-24
 ## 📊 IBM HR AI Use Cases (Live)
 
 ```dataview
-TABLE WITHOUT ID
-  file.link AS "Use Case",
-  primary_category AS "카테고리",
-  confidence AS "신뢰도"
+TABLE WITHOUT ID file.link AS "Use Case", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth", stage AS "단계", last_confirmed AS "확인"
 FROM "wiki/usecases" OR "wiki/enterprise-ai"
-WHERE contains(company, "IBM")
-SORT confidence DESC
+WHERE company = "IBM" OR contains(company, "IBM") OR contains(tags, "ibm")
+SORT evidence_grade ASC, last_confirmed DESC
 ```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ## 핵심 수치
 
@@ -44,5 +43,5 @@ SORT confidence DESC
 - **한국 대기업 적용**: 수만~수십만 직원 규모에서 AskHR 수준을 목표로 할 때 전제조건(자체 AI 플랫폼·대규모 HR 데이터·직무 재설계 의지) 정리
 
 ## Related
-- Use cases: [[ibm-askhr-watsonx]]
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음)
 - Vendor relationship: IBM watsonx (자체 제품을 자체에 적용)

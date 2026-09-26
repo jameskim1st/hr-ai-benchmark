@@ -16,14 +16,22 @@ ai_tech_subtype: [prediction, recommendation-ranking]
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI (이탈예측·보상) + 보상 차등 nudge 단협 저촉
+kr_union: 단체교섭 필수 — 보상 차등 nudge 단협 위반 가능 (페이지 명시)
+kr_language: 해당 없음 (자체 구축)
+kr_vendor: 해당 없음 (자체 구축)
 frequency: monthly
 first_seen: 2019-01-01
 last_confirmed: 2026-02-12
-confidence: 0.50
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/ibm-hr-ai-portfolio-2025-2026.md
+sources: [sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04.md, sources/fortune-ibm-algorithm-pay-raise-2019-07.md]
 related_usecases:
   - ibm-askhr-watsonx
   - ibm-blue-match-internal-mobility

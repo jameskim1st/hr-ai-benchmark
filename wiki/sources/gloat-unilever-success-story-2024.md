@@ -6,6 +6,7 @@ tier: 3
 publication_date: 2024            # approximate, undated download page
 ingested_at: 2026-04-12
 provenance_caveat: "본 소스는 직접 fetch하지 않았으며 WebSearch 결과 요약을 기반으로 작성. 다음 ingest 라운드에서 직접 fetch 필요."
+supports: [unilever-flex-gloat-talent-marketplace]
 ---
 
 # Source Summary — Gloat Unilever Customer Story (2024 update)

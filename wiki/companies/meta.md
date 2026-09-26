@@ -1,6 +1,7 @@
 ---
 name: Meta
 type: company
+page_type: company
 industry: [tech, social-media]
 region: [global]
 headquarters: Menlo Park, California, USA
@@ -18,14 +19,12 @@ last_confirmed: 2025-11-17
 ## 📊 Meta HR AI Use Cases (Live)
 
 ```dataview
-TABLE WITHOUT ID
-  file.link AS "Use Case",
-  primary_category AS "카테고리",
-  confidence AS "신뢰도"
+TABLE WITHOUT ID file.link AS "Use Case", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth", stage AS "단계", last_confirmed AS "확인"
 FROM "wiki/usecases" OR "wiki/enterprise-ai"
-WHERE contains(company, "Meta")
-SORT confidence DESC
+WHERE company = "Meta" OR contains(tags, "meta")
+SORT evidence_grade ASC, last_confirmed DESC
 ```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ## Consulting Angle
 
@@ -34,4 +33,4 @@ SORT confidence DESC
 - **한국 적용 시 폭발력**: 연공·직급 중심 평가 → AI 활용 기반 평가로의 패러다임 전환 가능성
 
 ## Related
-- Use cases: [[meta-ai-performance-review-mandate]]
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음)

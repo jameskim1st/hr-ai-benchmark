@@ -22,10 +22,14 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2025-09-10
 last_confirmed: 2026-04-01
-confidence: 0.35
+confidence: 0.55
+evidence_grade: B
+corroborated_by: 1
+freshness: fresh
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/kr-conglomerate-2026-q2-research.md
+sources: [sources/energykorea-kogas-hybrid-ai-platform-2025-09.md, sources/genon-kogas-ai-platform-press-2025-09.md]
 related_usecases:
   - korea-electric-power-hr-bot
   - mirae-asset-ai-assistant-platform

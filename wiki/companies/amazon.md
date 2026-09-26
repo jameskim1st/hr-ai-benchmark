@@ -1,6 +1,7 @@
 ---
 name: Amazon
 type: company
+page_type: company
 industry: [tech, retail, logistics]
 region: [global]
 headquarters: Seattle, Washington, USA
@@ -18,14 +19,12 @@ last_confirmed: 2025-10-16
 ## 📊 Amazon HR AI Use Cases (Live)
 
 ```dataview
-TABLE WITHOUT ID
-  file.link AS "Use Case",
-  primary_category AS "카테고리",
-  confidence AS "신뢰도"
+TABLE WITHOUT ID file.link AS "Use Case", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth", stage AS "단계", last_confirmed AS "확인"
 FROM "wiki/usecases" OR "wiki/enterprise-ai"
-WHERE contains(company, "Amazon")
-SORT confidence DESC
+WHERE company = "Amazon" OR contains(company, "Amazon") OR contains(tags, "amazon")
+SORT evidence_grade ASC, last_confirmed DESC
 ```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ## Consulting Angle
 
@@ -34,4 +33,4 @@ SORT confidence DESC
 - **한국 시사점**: 국내 대기업이 AI 도입 시 HR 부서 자체의 미래를 논의해야 한다는 경고
 
 ## Related
-- Use cases: [[amazon-hr-ai-restructuring]]
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음)

@@ -1,6 +1,7 @@
 ---
 name: 플렉스 (flex)
 type: vendor
+page_type: vendor
 vendor_type: hrms
 category: [hrms, payroll, time-attendance, korean-vendor]
 headquarters: Seoul, South Korea
@@ -32,8 +33,19 @@ stub: true
 
 ## AI 전략 (2025)
 - "내부에서 검증되고 발전해온 AI 기술을 제품에 본격적으로 통합" (flex blog 2025-05-28)
-- 구체 AI 기능 명칭·아키텍처 _미공개_
-- AI 채용·성과·분석 기능은 아직 미출시 상태 (2026-04 기준)
+- 2025 발표 기능: **OCR 기반 수기 근무표 자동변환** + **노동법·세법 AI 에이전트 상담** 순차 도입 — "SaaS → Service as a Software" 선언 ([[flex-korea-hr-ai-saas]], 출처 [[flex-korea-hr-saas-2025]]; 6만+ 기업 가입·ARR 300억원은 ⚠️ 자사 보고)
+- foundation model·아키텍처 _미공개_
+- AI 채용·성과·분석 기능 출시는 소스에 없음
+
+## 관련 use cases
+
+```dataview
+TABLE WITHOUT ID file.link AS "Use Case", company AS "고객", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
+WHERE company = "플렉스팀" OR contains(vendor, "flex") OR contains(tags, "flex")
+SORT evidence_grade ASC
+```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ## 국내 HR SaaS 시장에서의 위치
 - **시프티(Shiftee)** — 근태 특화 경쟁사
@@ -45,4 +57,6 @@ stub: true
 flex는 "올인원"을 지향하며 각 특화 경쟁사의 기능을 통합하는 전략.
 
 ## Related
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음)
+- Source: [[flex-korea-hr-saas-2025]]
 - 경쟁 벤더: [[douzone-bizon]], [[wantedlab]], [[sk-ax]]

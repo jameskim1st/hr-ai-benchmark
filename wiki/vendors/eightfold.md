@@ -1,6 +1,7 @@
 ---
 name: Eightfold
 type: vendor
+page_type: vendor
 slug: eightfold
 website: https://eightfold.ai
 hq: Santa Clara, California, USA
@@ -32,7 +33,7 @@ last_confirmed: 2026-05-05
 ## 핵심 고객사
 
 ### 글로벌
-- **Mastercard**: ⚠️ 자사 보고 93% 등록률·42% 월 engagement·24h 인터뷰 스케줄링·1M project hours ([[eightfold-ai-talent-intelligence]])
+- ~~Mastercard~~ — **2026-05-06 정정**: Mastercard 'Unlocked' talent marketplace는 **Gloat** 도입 사례 ([[mastercard-unlocked-gloat-talent-marketplace]]). 이전에 Eightfold 지표로 오귀속됐던 93% 등록률·42% engagement·1M project hours는 Eightfold 근거 아님 ([[eightfold-ai-talent-intelligence]] contradiction 블록 참조)
 - **HSBC**: 140K 직원 multi-vendor 스택 (Eightfold + Gloat) ([[hsbc-eightfold-gloat-multi-vendor]])
 - **Bayer, Allegis, Tata Consultancy Services** (Eightfold 공식 customer page)
 
@@ -61,7 +62,7 @@ last_confirmed: 2026-05-05
 
 ### 강점
 1. Capabilities Matrix가 가장 큰 skills graph 보유 (⚠️ 벤더 주장 1.6B profile)
-2. **Mastercard 정량 adoption 데이터** (93% 등록·42% 월 engagement) — KR 대기업 internal mobility ROI reference
+2. **HSBC 140K multi-vendor 스택에서 TA 담당** — 대형 은행 reference (단, Mastercard adoption 수치는 Gloat 사례로 정정됨 — Eightfold 정량 reference로 사용 금지)
 3. Deloitte alliance — implementation partner 확보
 
 ### 약점·risk
@@ -78,11 +79,12 @@ last_confirmed: 2026-05-05
 ## 관련 use cases
 
 ```dataview
-TABLE WITHOUT ID file.link AS "Use Case", company AS "기업", confidence AS "신뢰도"
-FROM "wiki/usecases"
+TABLE WITHOUT ID file.link AS "Use Case", company AS "고객", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
 WHERE contains(vendor, "Eightfold")
-SORT confidence DESC
+SORT evidence_grade ASC
 ```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ## Sources
 

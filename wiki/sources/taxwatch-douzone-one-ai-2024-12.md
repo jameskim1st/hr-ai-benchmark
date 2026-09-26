@@ -7,6 +7,7 @@ publication_date: 2024-12-10
 author: 강지선 (zsun11@taxwatch.co.kr)
 publisher: 택스워치
 ingested_at: 2026-04-12
+supports: [douzone-one-ai-year-end-tax]
 ---
 
 # Source Summary — 택스워치 더존비즈온 ONE AI 연말정산 (2024-12-10)

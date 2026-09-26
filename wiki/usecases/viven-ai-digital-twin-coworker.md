@@ -2,7 +2,7 @@
 title: "Viven AI — Digital Twin of Coworkers"
 slug: viven-ai-digital-twin-coworker
 primary_category: Employee Experience & HR Ops
-subcategory: Knowledge Capture & Sharing
+subcategory: HR Service Delivery
 tags: [viven-ai, digital-twin, eightfold-spinoff, coworker-knowledge, seed-funding, knowledge-management, ai-agent, async-collaboration]
 company: _N/A (vendor product, stealth exit 직후 customer 0건)_
 industry: [tech]
@@ -17,10 +17,19 @@ stage: announced
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: 개인정보보호법·영업비밀상 직원 메일·문서·미팅 학습은 strict opt-in + 삭제권 필요
+kr_union: 노조 사전 합의 필수 (직원 활동 데이터 학습·AI 대리 책임 소재, 페이지 명시)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-10-15
 last_confirmed: 2026-04-01
-confidence: 0.30
+confidence: 0.35
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/verified-pwc-doc-2026-05.md

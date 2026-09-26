@@ -11,16 +11,25 @@ employee_class: [all]
 vendor: [Workday]
 vendor_type: [hrms]
 output: "AI 에이전트의 거버넌스 메타데이터 (owner·purpose·scope·권한) + Workday admin console dashboard (1st-party + 3rd-party 에이전트 통합 관리) + 활동 로그·outcome 분석·감사 추적. AI 추론 산출물 아닌 거버넌스 자체가 output"
-ai_tech_type: []
-ai_tech_subtype: []
+ai_tech_type: [generative, automation]
+ai_tech_subtype: [summarization-qa, rpa]
 stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: AI 기본법 고영향 AI 의무(영향평가·고지·인적감독) 자동 충족 여부 미검증 (페이지)
+kr_union: 협의 의무 낮음 (거버넌스 레이어 성격, 직접 인사 결정 없음)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요; Workday 도입 KR 대기업 LG·SK·CJ 일부)
 frequency: daily
 first_seen: 2025-09-01
 last_confirmed: 2026-04-15
-confidence: 0.50
+confidence: 0.55
+evidence_grade: B
+corroborated_by: 1
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/workday-asor-ga-2026-02.md

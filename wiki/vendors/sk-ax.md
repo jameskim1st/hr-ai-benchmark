@@ -1,6 +1,7 @@
 ---
 name: SK AX
 type: vendor
+page_type: vendor
 vendor_type: point-solution
 category: [si, generative-ai, hr-ai, korea]
 headquarters: Seoul, South Korea
@@ -36,12 +37,12 @@ SK 그룹의 IT 서비스 계열사(구 SK C&C). **2024년 SK AX**로 리브랜�
 **카테고리 1 Talent Acquisition**의 end-to-end 커버가 특징.
 
 ## 확인된 고객
-- **SK 그룹** (자사) — [[sk-group-aict-ai-recruitment]]
-- 외부 고객사 공개 없음
+- **SK 그룹** (자사·멤버사): 그룹 공채 AICT ([[sk-group-aict-ai-recruitment]]) · SK C&C '에이닷 비즈 HR' 채용 전면 적용 ([[sk-cc-adot-biz-hr-recruitment]]) · 'A.Biz' 25개 멤버사·약 8만 명 확산 ([[sk-group-aibiz-25-companies]])
+- SK 그룹 외 고객사 공개 없음
 
 ## 독립 검증 상태
-- **Tier 1·2 독립 소스 0건** (이 wiki 기준)
-- 국내 HR 전문 매체(HR인사이트·한경 등)의 독립 커버리지 확보 필요
+- Tier 2 국내 경제지 보도 확보: 서울경제 2025-02 ([[sedaily-sk-cc-adot-biz-hr-2025-02]]), [[korea-conglomerate-hr-ai-2025-2026]]
+- 처리 속도·AICT 효과 등 **성능 수치는 SK AX 자체 주장** — 독립 효과 분석 없음
 
 ## Consulting Angle
 
@@ -59,7 +60,18 @@ SK 그룹의 IT 서비스 계열사(구 SK C&C). **2024년 SK AX**로 리브랜�
 3. 국내 채용 규제 대응 (지원자 고지·이의제기·데이터 보관) 수준은?
 4. 삼성·현대·LG 등 **경쟁 그룹사의 HR AI 경로**는 어떻게 다른가?
 
+## 관련 use cases
+
+```dataview
+TABLE WITHOUT ID file.link AS "Use Case", company AS "고객", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
+WHERE contains(vendor, "SK AX")
+SORT evidence_grade ASC
+```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
+
 ## Related
-- Company: [[sk-group]]
-- Use case: [[sk-group-aict-ai-recruitment]]
-- Sources: [[sk-ax-ai-recruitment-service-2024]]
+- Company: [[sk-group]] · [[sk-hynix]]
+- Partner vendor: [[skt]]
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음)
+- Sources: [[sk-ax-ai-recruitment-service-2024]] · [[sk-ax-insight-ai-recruitment-2024]] · [[sedaily-sk-cc-adot-biz-hr-2025-02]]

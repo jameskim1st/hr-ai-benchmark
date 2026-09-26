@@ -17,14 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 'non-adaptable exit' 연계 시 근로기준법 해고 제한 리스크 (페이지)
+kr_union: 노조 충돌 위험 명시 (페이지) — exit 대신 재배치 프레이밍·사전 협의
+kr_language: 해당 없음 (자체 구축)
+kr_vendor: 해당 없음 (Accenture 자체 구축)
 frequency: annual
 first_seen: 2022-11-01
 last_confirmed: 2026-03-01
-confidence: 0.75
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 3
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/us-large-enterprise-hr-ai-2025-2026.md
-  - "Accenture Reinvention Report (Gartner methodology) https://www.accenture.com/content/dam/accenture/final/accenture-com/document-2/Accenture-Reinvention-in-the-age-of-generative-AI-Report.pdf"
+sources: [sources/accenture-reinvention-genai-report-2024-01.md, sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md, sources/fortune-accenture-sweet-ai-required-promotion-2026-03.md, sources/hr-brew-accenture-walmart-workforce-ai-2025-10.md]
 related_usecases:
   - accenture-ai-learning-workforce
   - jpmorgan-ai-made-easy-upskilling

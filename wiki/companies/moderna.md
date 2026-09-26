@@ -1,6 +1,7 @@
 ---
 name: Moderna
 type: company
+page_type: company
 industry: [pharma, biotech]
 region: [na]
 headquarters: Cambridge, Massachusetts, USA
@@ -64,20 +65,13 @@ _범례: 녹색 = 소스 확인. 점선/노랑 = 존재는 확인되나 상세 �
 
 ## 📊 Moderna의 HR AI Use Cases — 홀리스틱 뷰 (Live)
 
-아래 표는 **Dataview로 자동 생성**됩니다. Moderna에 새 use case가 ingest되면 자동 반영.
-
 ```dataview
-TABLE WITHOUT ID
-  file.link AS "Use Case",
-  primary_category AS "대그룹",
-  subcategory AS "중그룹",
-  stage AS "단계",
-  confidence AS "신뢰도",
-  last_confirmed AS "마지막 확인"
+TABLE WITHOUT ID file.link AS "Use Case", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth", stage AS "단계", last_confirmed AS "확인"
 FROM "wiki/usecases" OR "wiki/enterprise-ai"
-WHERE company = "Moderna" OR contains(tags, "moderna")
-SORT confidence DESC, last_confirmed DESC
+WHERE company = "Moderna" OR contains(company, "Moderna") OR contains(tags, "moderna")
+SORT evidence_grade ASC, last_confirmed DESC
 ```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ### HR 대그룹 커버리지 (Moderna 기준)
 
@@ -91,17 +85,12 @@ WHERE company = "Moderna"
 GROUP BY primary_category
 ```
 
-> **"홀리스틱 뷰"의 의미**: 위 쿼리는 Moderna가 **7개 HR 대그룹 중 몇 개에 걸쳐 AI를 적용했는지**를 보여줍니다. 현재는 1개 use case만 수집돼 있지만, Moderna가 실제로는 self-review·benefits assistant·job leveling 등 여러 도메인에 적용했으므로, 추가 ingest가 들어오면 이 표가 자동으로 Moderna의 "전사 HR AI 지도"로 성장합니다.
+> **"홀리스틱 뷰"의 의미**: 위 쿼리는 Moderna가 **7개 HR 대그룹 중 몇 개에 걸쳐 AI를 적용했는지**를 보여준다. 목록·카운트는 Dataview 자동 생성 — 손으로 갱신하지 않음.
 
-### 🔜 아직 수집 안 된 Moderna GPT (다음 ingest 후보)
+### Moderna HR GPT 수집 상태
 
-| 추정 영역 | GPT 이름 (보고됨) | 예상 카테고리 | 출처 상태 |
-|---|---|---|---|
-| Performance Management | self-review GPT | 4. Performance & Talent Mgmt | HR Brew 2025-05 (미fetch) |
-| Total Rewards | US benefits assistant GPT | 5. Total Rewards → Benefits | HR Brew 2025-05 (미fetch) |
-| Workforce Planning | job leveling GPT | 7. Strategic Workforce → Workforce Planning | HR Brew 2025-05 (미fetch) |
-
-> 이 표의 "보고됨" 정보는 지난 WebSearch 결과의 3차 전달이므로 직접 ingest된 것이 아님. 다음 ingest 라운드에서 HR Brew 2025-05 기사를 1차 소스로 확보 후 각 use case 페이지를 생성해야 함.
+- Ask HR 중앙 routing GPT · self-review GPT · US benefits assistant GPT · equity compensation GPT는 HR Brew 2025-05·2025-06 + Unleash 2025-06 소스로 ingest 완료 (위 표에 자동 표시).
+- **Job Leveling GPT** (새 직무 → job architecture 매핑, ⚠️ 자사 보고 + VP 인용)는 [[hr-brew-moderna-total-rewards-2025-05]]에 언급되나 별도 use case 페이지는 아직 없음.
 
 ## Consulting Angle
 
@@ -116,4 +105,5 @@ GROUP BY primary_category
 
 ## Related
 - Vendor: [[openai]]
-- Sources: [[unleash-moderna-hr-it-merger-2025-06]], [[constellation-moderna-chatgpt-enterprise-2024-04]], [[moderna-blog-openai-2024-04]]
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음)
+- Sources: [[unleash-moderna-hr-it-merger-2025-06]], [[constellation-moderna-chatgpt-enterprise-2024-04]], [[moderna-blog-openai-2024-04]], [[hr-brew-moderna-total-rewards-2025-05]], [[hr-brew-ibm-moderna-2025-06]]

@@ -16,11 +16,20 @@ ai_tech_subtype: [prediction, summarization-qa]
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: 이직 예측·보상 재투자 결정 활용 → AI 기본법 고영향 AI (regulatory_exposure 기준)
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향 — 이직 예측·보상)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-03-01
 last_confirmed: 2025-03-01
-confidence: 0.40
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: full
+graded_at: 2026-09-27
 sources:
   - sources/visier-outsmart-2025-customers.md
 related_usecases:

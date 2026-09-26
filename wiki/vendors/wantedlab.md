@@ -1,6 +1,7 @@
 ---
 name: 원티드랩 (Wanted Lab)
 type: vendor
+page_type: vendor
 vendor_type: ats
 category: [ats, recruiting, ai-agent, korea]
 headquarters: Seoul, South Korea
@@ -74,6 +75,16 @@ last_confirmed: 2025-10-21
 3. 2026년 AX 매출 50% 목표는 **realistic**한가? 어떤 고객 확보 전략인가?
 4. 경쟁 벤더(사람인·잡코리아)의 AI 전략과의 차이는?
 
+## 관련 use cases
+
+```dataview
+TABLE WITHOUT ID file.link AS "Use Case", company AS "고객", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
+WHERE contains(vendor, "Wanted Lab")
+SORT evidence_grade ASC
+```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
+
 ## Related
-- Use case: [[wantedlab-ai-recruiting-agent]]
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음)
 - Sources: [[aitimes-wantedlab-recruiting-agent-2025-10]]

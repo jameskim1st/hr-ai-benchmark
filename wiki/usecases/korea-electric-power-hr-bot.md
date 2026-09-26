@@ -16,14 +16,22 @@ ai_tech_subtype: [summarization-qa, recommendation-ranking]
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI (인사 배치 추천) + 공공기관 개인정보 가이드라인
+kr_union: 노조·직원 투명성 process 필요 (페이지 명시; process 미공개)
+kr_language: 한국어 네이티브 (솔트룩스 한국 NLP)
+kr_vendor: 솔트룩스 (한국 NLP 벤더) — 단일 벤더 lock-in 지적
 frequency: monthly
 first_seen: 2024-01-01
 last_confirmed: 2026-04-01
-confidence: 0.45
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/korea-conglomerate-hr-ai-2025-2026.md
+sources: [sources/nate-asiatoday-kepco-ai-transformation-2025-09.md, sources/saltlux-kepco-hr-bot-case-undated.md, sources/startuptoday-kepco-ai-talent-recommendation-2024-03.md]
 related_usecases:
   - kb-bank-ai-hr-deep-change
   - shinhan-bank-ai-staffing-algorithm

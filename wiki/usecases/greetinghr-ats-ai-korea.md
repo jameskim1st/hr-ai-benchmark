@@ -8,7 +8,7 @@ company: 그리팅 (Greeting HR)
 industry: [tech]
 region: [kr]
 employee_class: [all]
-vendor: []
+vendor: [그리팅 (GreetingHR)]
 vendor_type: [ats, point-solution]
 output: "AI 후보자 매칭 추천 리스트 + 인재풀 분류·관리 + 면접 일정 자동 조율 + 채용 데이터 분석 dashboard (한국 중소기업 ATS, 채용 소요 65% 단축)"
 ai_tech_type: [predictive, automation]
@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: [kr-high-impact, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI (채용 스크리닝) + 공정채용·개인정보보호법 (페이지)
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
+kr_language: 한국어 네이티브
+kr_vendor: 그리팅 (Greeting HR) 자체 SaaS — 고용노동부 지원사업 공급기업
 frequency: daily
 first_seen: 2025-01-01
 last_confirmed: 2025-09-01
-confidence: 0.30
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: stub
+graded_at: 2026-09-27
 sources:
   - sources/greetinghr-ats-guide-2025.md
   - sources/ezyeconomy-greetinghr-2025.md

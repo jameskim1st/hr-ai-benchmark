@@ -1,6 +1,7 @@
 ---
 name: Cisco
 type: company
+page_type: company
 industry: [tech, networking]
 region: [global]
 headquarters: San Jose, California, USA
@@ -24,14 +25,12 @@ last_confirmed: 2025-11-01
 ## 📊 Cisco HR AI Use Cases
 
 ```dataview
-TABLE WITHOUT ID
-  file.link AS "Use Case",
-  primary_category AS "카테고리",
-  confidence AS "신뢰도"
+TABLE WITHOUT ID file.link AS "Use Case", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth", stage AS "단계", last_confirmed AS "확인"
 FROM "wiki/usecases" OR "wiki/enterprise-ai"
-WHERE contains(company, "Cisco") OR contains(vendor, "Cisco")
-SORT confidence DESC
+WHERE company = "Cisco" OR contains(company, "Cisco") OR contains(vendor, "Cisco") OR contains(tags, "cisco")
+SORT evidence_grade ASC, last_confirmed DESC
 ```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ## Consulting Angle
 
@@ -39,3 +38,6 @@ SORT confidence DESC
 - **Multi-vendor consortium 데이터 활용**: 78% ICT AI 스킬 데이터는 KR workforce planning deck 기본 reference
 - **Entry-level 보호 frame**: KR "신입 공채 축소 우려"에 대한 카운터 메시지 — Cisco가 entry-level 신설 명시
 - **multi-vendor 협업 모델**: KR 기업이 자체 vendor 종속 회피 + 표준 ICT 직무·스킬 합의 도출 reference
+
+## Related
+- Reference: [[cisco-ai-workforce-consortium-skills-evolution]] — AI Workforce Consortium 리포트 (2026-09-27 `wiki/reference/`로 이동, use case 카운트 제외)

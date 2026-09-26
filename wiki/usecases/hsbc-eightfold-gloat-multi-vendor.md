@@ -17,17 +17,23 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: AI 기본법 고영향 AI 검토 (채용 스크리닝·내부 이동 매칭)
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: daily
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
-confidence: 0.30               # Tier 3 vendor cases(+0.10×3) + Tier 2 Fortune Europe(+0.20), multi-vendor 교차 = 0.30
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "Eightfold case study https://eightfold.ai/learn/how-hsbc-is-staying-talent-forward-in-times-of-change/"
-  - "Gloat case study https://resources.gloat.com/resources/hsbc-customer-success-story/"
-  - "Accenture case study https://www.accenture.com/us-en/case-studies/talent-organization/hsbc-powers-talent-acquisition-future-ready-workforce"
+sources: [sources/eightfold-hsbc-talent-forward-2025-09.md, sources/gloat-hsbc-customer-story-2022-07.md, sources/accenture-hsbc-talent-acquisition-2026-05.md]
 related_usecases:
   - jpmorgan-llm-suite-redeployment
   - workday-as-customer-paradox

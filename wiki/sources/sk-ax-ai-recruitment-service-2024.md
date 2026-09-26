@@ -6,6 +6,7 @@ tier: 3
 publication_date: undated          # 상시 운영 페이지, 2024년 도입 사실 기재
 ingested_at: 2026-04-12
 raw: raw/vendors/2024-sk-ax-hr-ai-recruitment-service.md
+supports: [sk-group-aict-ai-recruitment]
 ---
 
 # Source Summary — SK AX HR AI Recruitment Service (2024~)

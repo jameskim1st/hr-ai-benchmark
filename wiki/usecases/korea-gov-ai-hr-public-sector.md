@@ -17,10 +17,19 @@ stage: pilot
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 개인정보보호법·공공데이터법 + 망분리 보안 요건 (페이지 명시)
+kr_union: 협의 의무 낮음 (정보 제공 성격)
+kr_language: 한국어 네이티브
+kr_vendor: 삼성SDS·네이버클라우드 (범정부 AI 공통기반)
 frequency: adhoc
 first_seen: 2025-03-18
 last_confirmed: 2025-11-01
-confidence: 0.35
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 3
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 sources:
   - sources/mpm-ai-guide-2025-03.md
   - sources/mois-ai-common-infra-2025.md

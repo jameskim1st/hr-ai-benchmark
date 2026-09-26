@@ -7,6 +7,7 @@ publication_date: 2025-05-21
 ingested_at: 2026-04-12
 raw: raw/articles/2025-05-21-bersin-galileo-learn.md
 conflict_of_interest: "Josh Bersin은 Galileo Learn 제조사(Josh Bersin Co.) CEO. 이 글은 자사 제품 런칭 포스트 — Tier 1 독립 분석 아니라 Tier 3 벤더 1차 소스로 취급"
+supports: [bersin-galileo-learn-ai-native-lms]
 ---
 
 # Source Summary — Bersin's Galileo Learn Launch (2025-05-21)

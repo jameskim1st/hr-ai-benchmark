@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (소규모 팀 개인 식별 위험, 페이지)
+kr_union: 협의 의무 낮음 (설문·코칭 nudge 성격)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: annual
 first_seen: 2025-01-01
 last_confirmed: 2025-12-31
-confidence: 0.35
+confidence: 0.45
+evidence_grade: B
+corroborated_by: 1
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 sources:
   - sources/perceptyx-ex-impact-awards-2025.md
 related_usecases:

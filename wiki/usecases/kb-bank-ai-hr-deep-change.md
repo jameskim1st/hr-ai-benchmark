@@ -16,16 +16,22 @@ ai_tech_subtype: [optimization, clustering-classification]
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI (인사이동) — 인적감독·설명가능성 (페이지 명시)
+kr_union: 노조 사전 합의 필수 (페이지 명시; 합의 process 세부 미공개)
+kr_language: 한국어 네이티브
+kr_vendor: KB국민은행 자체 구축 (SI 수행사 미공개)
 frequency: monthly
 first_seen: 2020-07-15
 last_confirmed: 2026-04-01
-confidence: 0.65
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 4
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/korea-conglomerate-hr-ai-2025-2026.md
-  - "서울경제: AI에 인사 맡겼더니…'3시간 출퇴근 지옥' 탈출한 구 과장 https://www.sedaily.com/NewsVIew/1Z5BAFO2IP"
-  - "전자신문 2022 단독: KB국민은행 AI 인사 시스템 https://www.etnews.com/20221221000210"
+sources: [sources/asiatoday-kb-bank-ai-personnel-deep-change-2020-07.md, sources/etnews-kb-ai-hr-system-2022-12.md, sources/etnews-kb-ai-hr-system-2022-12.md, sources/hankyung-kb-bank-pb-rm-ai-57pct-2025-10.md, sources/sedaily-kb-ai-hr-commute-2020-07.md]
 related_usecases:
   - shinhan-bank-ai-one-platform
   - shinhan-bank-ai-staffing-algorithm
@@ -98,7 +104,7 @@ KB국민은행 **HR Deep Change** — 2020년 하반기 1,100여 명 영업점 �
   - 5년+ 운영 (2020~2025) — stability proof
   - 2025 PB·RM 확장 + 57% 두 달 사용은 **adoption 성공 정량 증거**
 - **2026 Q3-Q4 KR 금융·서비스 인사이동 컨설팅**:
-  - 신한 [[shinhan-bank-ai-staffing-algorithm]] (2,414명 시뮬레이션) + KB (1,100명 + PB·RM) — 양 은행 비교
+  - 신한 신한은행 AI 인사 알고리즘 (페이지 없음) (2,414명 시뮬레이션) + KB (1,100명 + PB·RM) — 양 은행 비교
   - 직원 사정 (육아·출퇴근·자격증) 변수 포함은 한국 직장 컨텍스트 fit
 - **공공·서비스업 reference**: 한전 HR-Bot/AI 인사추천 [[korea-electric-power-hr-bot]] + KB HR Deep Change — 한국 large-scale 공공·금융 AI 인사 best practice 묶음
 - **반면교사**:

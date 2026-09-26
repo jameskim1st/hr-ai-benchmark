@@ -17,16 +17,23 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: AI 기본법 고영향 AI (at-risk 직원 이탈예측) + PIPA 설문 재식별
+kr_union: 단체교섭/근로자대표 협의 필요 (이탈예측·매니저 action 영향)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: monthly
 first_seen: 2025-10-01
 last_confirmed: 2025-10-01
-confidence: 0.30
+confidence: 0.25
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "Qualtrics press 2025-10 https://www.qualtrics.com/articles/news/qualtrics-accelerates-ai-leadership-and-value-with-experience-agents/"
-  - "BenefitNews https://www.benefitnews.com/news/how-adidas-and-allstate-use-ai-to-make-employee-feedback-more-impactful"
+sources: [sources/qualtrics-experience-agents-press-2025-10.md, sources/benefitnews-adidas-allstate-ai-feedback-2024-11.md]
 related_usecases:
   - workday-illuminate-employee-sentiment
   - moderna-ask-hr-routing

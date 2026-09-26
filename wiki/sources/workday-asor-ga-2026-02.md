@@ -5,6 +5,7 @@ tier: 3
 source_type: vendor-blog
 ingested_at: 2026-05-05
 publication_date: 2026-02-18
+supports: [deloitte-2026-human-capital-trends-meta, workday-agent-system-of-record-asor, workday-sana-for-workday-lms]
 ---
 
 ## Summary

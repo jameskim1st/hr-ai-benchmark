@@ -22,10 +22,7 @@ first_seen: 2026-01-22
 last_confirmed: 2026-04-30
 confidence: 0.75
 consulting_angle_status: filled
-sources:
-  - sources/korea-ai-basic-act-2026-01.md
-  - "Littler Mendelson: Understanding South Korea's New AI Law (multinational employers) https://www.littler.com/news-analysis/asap/understanding-south-koreas-new-ai-law-key-considerations-multinational-employers"
-  - "Cooley LLP: South Korea AI Basic Act overview https://www.cooley.com/news/insight/2026/2026-01-27-south-koreas-ai-basic-act-overview-and-key-takeaways"
+sources: [sources/korea-ai-basic-act-2026-01.md, sources/littler-korea-ai-basic-act-employers-2026-02.md, sources/cooley-korea-ai-basic-act-2026-01.md]
 related_usecases:
   - allegis-group-holistic-ai-governance
   - workday-agent-system-of-record-asor

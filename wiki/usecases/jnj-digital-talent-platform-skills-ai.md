@@ -17,16 +17,23 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (재배치·후계 결정 활용 시 고영향 검토)
+kr_union: 단체교섭/근로자대표 협의 필요 (스킬 추론 → 재배치·후계 활용)
+kr_language: 해당 없음 (자체 구축)
+kr_vendor: 해당 없음 (J&J 자체 구축)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: daily
 first_seen: 2020-06-30
 last_confirmed: 2025-06-30
-confidence: 0.60               # ★ Tier 1 MIT CISR(+0.35) + Tier 1 학술지 IS Journal(+0.35) - 중복 학술 소스 보정 = 0.60
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 2
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "MIT CISR Working Paper 2024 https://cisr.mit.edu/publication/MIT_CISRwp461_JohnsonandJohnsonAIDrivenSkills_VanderMeulenTonaSomehWixomLeidner"
-  - "Information Systems Journal 2025 https://onlinelibrary.wiley.com/doi/full/10.1111/isj.12594"
+sources: [sources/mit-cisr-wp461-jnj-ai-skills-2023-11.md, sources/isj-jnj-ai-skills-inference-2025-04.md]
 related_usecases:
   - midas-inair-ai-assessment-korea
   - eightfold-ai-talent-intelligence

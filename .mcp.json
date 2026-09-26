@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "hr-wiki": {
+      "command": "python",
+      "args": ["scripts/wiki_mcp.py"],
+      "env": { "PYTHONIOENCODING": "utf-8" }
+    }
+  }
+}

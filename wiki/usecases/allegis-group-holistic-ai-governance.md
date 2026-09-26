@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 개보위 AI 영향평가·고용부 AI 채용 가이드라인 연계 검토 (페이지)
+kr_union: 협의 의무 낮음 (AI 거버넌스 인프라 성격)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: adhoc
 first_seen: 2025-06-26
 last_confirmed: 2025-06-26
-confidence: 0.25
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: full
+graded_at: 2026-09-27
 sources:
   - sources/holistic-ai-allegis-bias-audit-2025.md
 related_usecases:

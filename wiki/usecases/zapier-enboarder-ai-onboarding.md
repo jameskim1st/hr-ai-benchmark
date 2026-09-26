@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 개인정보보호법 국외이전 (글로벌 SaaS, 30개국 크로스보더 이전 미공개)
+kr_union: 협의 의무 낮음 (정보 제공 성격 — 온보딩 안내·넛지)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2022-11-20
 last_confirmed: 2025-09-16
-confidence: 0.30
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: full
+graded_at: 2026-09-27
 sources:
   - sources/enboarder-zapier-onboarding-2022.md
 related_usecases:

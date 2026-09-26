@@ -6,6 +6,7 @@ source_type: report
 publisher: World Economic Forum
 published: 2024
 ingested_at: 2026-04-12
+supports: [siemens-reskilling-internal-mobility]
 ---
 
 # WEF — Siemens Reskilling Revolution 사례 연구

@@ -22,20 +22,20 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2025-01-21
 last_confirmed: 2025-06-24
-confidence: 0.50
-sources:
-  - sources/cnbc-goldman-gs-ai-assistant-2025-01.md
-  - sources/fortune-goldman-gs-ai-2025-06.md
-  - sources/hrkatha-goldman-ai-assistant-2025.md
-  - "CNBC 2025-10-15 https://www.cnbc.com/2025/10/15/jpmorgan-chase-goldman-sachs-ai-hiring.html"
-  - "HR Executive https://hrexecutive.com/jpmorgan-ceo-we-have-displaced-people-from-ai-and-we-offer-them-other-jobs/"
-  - "HR Dive https://www.hrdive.com/news/banks-ramp-up-ai-hiring-roi-efficiency-gains-evident-insights/746724/"
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 3
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
+sources: [sources/cnbc-goldman-gs-ai-assistant-2025-01.md, sources/fortune-goldman-gs-ai-2025-06.md, sources/hrkatha-goldman-ai-assistant-2025.md, sources/cnbc-jpmorgan-goldman-ai-hiring-2025-10.md]
 related_usecases:
   - jpmorgan-llm-suite-employee-productivity
   - jpmorgan-llm-suite-redeployment
   - lloyds-banking-workday-genai-hr
 related_vendors:
   - openai
+sources_unresolved: [HR Executive https://hrexecutive.com/jpmorgan-ceo-we-have-displaced-people-from-ai-and-we-offer-them-other-jobs/, HR Dive https://www.hrdive.com/news/banks-ramp-up-ai-hiring-roi-efficiency-gains-evident-insights/746724/]
 ---
 
 ## Summary

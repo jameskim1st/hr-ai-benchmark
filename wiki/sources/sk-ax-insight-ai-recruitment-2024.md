@@ -5,6 +5,7 @@ source_type: vendor-insight-blog
 tier: 3
 publication_date: 2024             # approximate, 2024년 하반기 도입 이후로 추정
 ingested_at: 2026-04-12
+supports: [sk-group-aict-ai-recruitment]
 ---
 
 # Source Summary — SK AX Insight: AI 채용 서비스 담당자 인터뷰 (2024)

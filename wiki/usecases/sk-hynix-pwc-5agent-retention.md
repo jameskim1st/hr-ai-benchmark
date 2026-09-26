@@ -16,11 +16,20 @@ ai_tech_subtype: [prediction, clustering-classification, summarization-qa, recom
 stage: announced
 visibility: internal
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI(이탈예측) 영향평가·고지·인적감독 + 메일·메신저 분석 동의 범위
+kr_union: 노조 사전 합의 필수 (SK하이닉스 노조 강성, 5차원 직원 데이터 통합 우려)
+kr_language: 한국어 네이티브 (PwC Korea 제안 + 자체 구축)
+kr_vendor: PwC Korea 제안 + SK하이닉스 자체 구축 (2026-05 계획 단계)
 frequency: monthly
 first_seen: 2026-05-01
 last_confirmed: 2026-05-05
-confidence: 0.20
+confidence: 0.35
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/verified-pwc-doc-2026-05.md

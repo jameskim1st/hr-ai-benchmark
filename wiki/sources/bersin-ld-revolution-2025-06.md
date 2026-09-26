@@ -7,6 +7,7 @@ publication_date: 2025-06-01
 ingested_at: 2026-04-12
 raw: raw/articles/2025-06-01-bersin-ld-revolution-docebo-sana.md
 conflict_of_interest_disclosed: true
+supports: [bersin-galileo-learn-ai-native-lms, docebo-ai-learning-lazboy]
 ---
 
 # Source Summary — Bersin L&D Revolution (2025-06-01)

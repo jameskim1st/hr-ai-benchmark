@@ -6,6 +6,7 @@ tier: 2
 publication_date: 2025-06-12
 ingested_at: 2026-04-12
 provenance_caveat: "원문 fetch 403 차단. WebSearch summary 기반 작성. 다음 라운드에서 재시도 필요."
+supports: [ibm-askhr-watsonx, moderna-ask-hr-routing, moderna-benefits-equity-gpts, moderna-self-review-gpt]
 ---
 
 # Source Summary — HR Brew IBM + Moderna AI HR (2025-06-12)

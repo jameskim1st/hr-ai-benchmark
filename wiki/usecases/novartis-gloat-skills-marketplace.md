@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: PIPA 일반 수준(스킬 프로파일); 내부이동 결정 활용 시 AI 기본법 검토
+kr_union: 단체교섭/근로자대표 협의 필요 (배치·내부이동 영향)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2022-01-01
 last_confirmed: 2024-06-27
-confidence: 0.45
+confidence: 0.5
+evidence_grade: A
+corroborated_by: 2
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 sources:
   - sources/gloat-novartis-case-study-2024.md
   - sources/hrdconnect-novartis-skills-2024.md

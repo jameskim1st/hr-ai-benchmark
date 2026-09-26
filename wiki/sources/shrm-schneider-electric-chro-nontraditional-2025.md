@@ -6,6 +6,7 @@ source_type: article
 publisher: SHRM
 published: 2025-03
 ingested_at: 2026-04-12
+supports: [schneider-electric-gloat-talent-marketplace]
 ---
 
 # SHRM — Schneider Electric CHRO의 비전통적 인재 육성 (2025-03)

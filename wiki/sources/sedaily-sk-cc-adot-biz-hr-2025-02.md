@@ -6,6 +6,7 @@ source_type: article
 publisher: 서울경제
 published: 2025-02-20
 ingested_at: 2026-04-12
+supports: [sk-group-aict-ai-recruitment]
 ---
 
 # 서울경제 — SK C&C 에이닷 비즈 HR AI 채용 혁신 (2025-02-20)

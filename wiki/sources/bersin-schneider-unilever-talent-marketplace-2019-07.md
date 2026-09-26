@@ -7,6 +7,7 @@ publisher: Josh Bersin
 author: Josh Bersin
 published: 2019-07-17
 ingested_at: 2026-04-12
+supports: [mastercard-unlocked-gloat-talent-marketplace, schneider-electric-gloat-talent-marketplace]
 ---
 
 # Josh Bersin — Unilever & Schneider Electric Talent Marketplace (2019-07)

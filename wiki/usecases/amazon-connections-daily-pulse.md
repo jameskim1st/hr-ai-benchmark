@@ -17,14 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 이탈예측 ML → AI 기본법 고영향 AI; '감시' 인식 리스크 (페이지)
+kr_union: 노조 사전 합의 권장 (페이지 명시, 감시 인식 sensitivity)
+kr_language: 해당 없음 (자체 구축)
+kr_vendor: 해당 없음 (Amazon 자체 구축)
 frequency: daily
 first_seen: 2014-01-01
 last_confirmed: 2024-06-01
-confidence: 0.65
+confidence: 0.5
+evidence_grade: A
+corroborated_by: 2
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/us-large-enterprise-hr-ai-2025-2026.md
-  - "CNBC 2018: Amazon employee reaction to Connections + Forte (anonymity skepticism) https://www.cnbc.com/2018/03/30/amazon-employee-reaction-to-hr-programs-connections-forte.html"
+sources: [sources/cnbc-amazon-connections-forte-2018-03.md, sources/fortune-amazon-connections-survey-criticism-2024-06.md]
 related_usecases:
   - microsoft-viva-glint-copilot-sentiment
   - amazon-hr-ai-restructuring

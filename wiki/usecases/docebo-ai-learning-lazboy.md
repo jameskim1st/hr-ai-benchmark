@@ -17,17 +17,23 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준
+kr_union: 협의 의무 낮음 (정보 제공 성격)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: daily
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
-confidence: 0.40               # Tier 3 vendor(+0.10) + Tier 2 G2(+0.20) + Tier 1 Bersin L&D Revolution(+0.35, Docebo 부분은 독립 분석) = base 0.65, 할인 (La-Z-Boy 구체 metric은 벤더 자체 주장, Bersin은 Docebo 플랫폼 분석이지 La-Z-Boy 사례 독립 검증 아님) → 0.40
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "Docebo customers https://www.docebo.com/customers/"
-  - "Docebo Learning Platform https://www.docebo.com/learning-platform/"
-  - sources/bersin-ld-revolution-2025-06.md
+sources: [sources/docebo-customers-page-2026-09.md, sources/docebo-learning-platform-page-2026-09.md, sources/bersin-ld-revolution-2025-06.md]
 related_usecases:
   - bersin-galileo-learn-ai-native-lms
 related_vendors: []

@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 개인정보보호법 준수·익명 사용 (정부 운영, 법률자문 아닌 정보 제공 명시)
+kr_union: 협의 의무 낮음 (정보 제공 성격, 대국민 서비스)
+kr_language: 한국어 네이티브 (+32개 언어 지원)
+kr_vendor: 자체 구축 (고용노동부·한국고용정보원, 공인노무사회 MOU)
 frequency: daily
 first_seen: 2024-11-01
 last_confirmed: 2026-05-06
-confidence: 0.85
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/moel-ai-portal-2024-11.md
@@ -141,7 +150,7 @@ flowchart TB
 - **한국 대기업 사내 ER/노무 AI 챗봇 도입 시 #1 reference**:
   - "정부도 한다" 카드 — CHRO·법무·노무팀 보수성 극복에 효과적
   - 정부 사례 정량 metric (117K 사용, 87.5% 단축, 37.7% 야간) — 한국 대기업 사내 챗봇 ROI 시뮬레이션 base
-- **vs HR Acuity** [[hr-acuity-oliver-er-companion]] / Sodales [[sodales-spire-energy-labor-relations]]:
+- **vs HR Acuity** [[hr-acuity-oliver-ai-er-companion]] / Sodales [[sodales-spire-energy-labor-relations]]:
   - 정부 사례: **개별 노무자 상담** (B2C 성격, 정보 제공)
   - HR Acuity: 사내 ER **case management** (B2B, investigation·documentation)
   - Sodales: 사내 **단체노사 grievance** (B2B, CBA·다중 노조)

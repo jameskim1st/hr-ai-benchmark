@@ -1,0 +1,33 @@
+---
+url: "https://www.hirevue.com/press-release/hirevue-leads-industry-in-fair-and-ethical-hiring-practice-engaging-external-auditor-dci-consulting-group-for-external-bias-audit-of-algorithms"
+title: "Hirevue leads industry in fair and ethical hiring practice, engaging external auditor DCI Consulting Group for external bias audit of algorithms | Hirevue"
+publisher: "HireVue"
+publication_date: 2025-06-19
+fetched_at: 2026-09-27
+http_status: 200
+content_hash: "fb7046260b94a0bb"
+snapshot_quality: full
+chars: 5882
+note: "raw 스냅샷 — 수정 금지. 본문은 trafilatura 자동 추출 결과이며 광고·내비게이션이 섞일 수 있음."
+---
+# Hirevue leads industry in fair and ethical hiring practice, engaging external auditor DCI Consulting Group for external bias audit of algorithms | Hirevue
+
+Hirevue leads industry in fair and ethical hiring practice, engaging external auditor DCI Consulting Group for external bias audit of algorithms
+- Leading compliance consultancy DCI Consulting Group to conduct an audit to evaluate HireVue algorithms for race, gender and intersectional bias in accordance with New York City Local Law 144
+- Move supports customers by providing foundational research that may be useful for supporting their use of HireVue algorithms
+January 28, 2023, Salt Lake City, UTAH: HireVue, the global leader in video interviewing, AI-based assessments, and text-enabled recruiting tools, has engaged DCI Consulting Group (DCI), a leading Washington DC based human resources compliance and data analytics consulting firm, to audit its algorithms in accordance with proposed rules specified by New York City Local Law 144. Competency-based and game-based algorithms will be audited for bias with respect to race, gender and the intersectional combination of race and gender across multiple job levels and use cases. The audits began in January 2023 and results will be available on the HireVue website once the audit is completed.
+The ethical development of AI, candidate transparency and privacy are core values of HireVue’s business and the undertaking to enable external audits of its algorithms is the latest proactive step to ensure the company and its technology is at the forefront of best practices in the use and analysis of HR hiring technologies. HireVue has previously commissioned a number of independent audits of its technology, along with an AI explainability statement – all of which provide customers, candidates and regulators with transparent and meaningful, easy-to-understand information regarding HireVue technology and the processing of personal data.
+A growing body of regulations around the use of AI, including New York City Local Law 144, place audit responsibility on the employer. HireVue believes vendors should also bear the responsibility to audit their algorithms and that audit requirements should be standardized to provide clearly defined criteria for multiple HR use cases.
+Lindsey Zuloaga, Chief Data Scientist at HireVue, comments: “HireVue has always been at the forefront of defining the transparent and ethical use of AI and software. We support the intent of the proposed regulations around the use of AI, however, we suggest best practices and clarity are tantamount to good regulations that benefit all parties involved. Working with DCI we will be able to provide customers, candidates and regulators with a transparent auditing process in response to the requirements of New York City Law 144.”
+“Our mission is to create a level playing field for anyone seeking employment, reducing bias and providing organizations with the most diverse pool of talent. Deploying AI correctly and ethically, powers a significantly more consistent, less biased, more engaging screening process for recruiters and candidates alike. We believe there needs to be increased transparency around its use in HR, and with these audits we continue on a journey of leading the way in this regard.”
+Industry Leading Commitment to Fairness
+HireVue has a long, established track record delivering science-led ethical AI solutions for hiring:
+- The company follows established best practices in the field of IO Psychology and data privacy, so that our assessments meet the strict standards of fairness from agencies such as the Equal Employment Opportunity Commission and the American Psychological Association (to name a few).
+- In 2019 HireVue became the first HR technology company to create an expert advisory board and publicly release a set of AI ethical principles. HireVue undertook these steps knowing that transparency, concrete guideposts, and the input of experts is the best way to uphold their principles.
+- HireVue supports the Illinois Artificial Intelligence Video Interview Act (AIVIA),and the company is open to ongoing involvement in conversations around the regulation and use of AI in hiring.
+- HireVue has voluntarily conducted audits of its algorithms, and its scientific and consulting practices along with publishing the HR industry’s first AI Explainability Statement.
+More details on our commitment to AI Ethics and standards can be found at www.hirevue.com/why-hirevue/ai-ethics
+About HireVue
+HireVue is where hiring happens – transforming the way organizations discover, engage, and hire the best talent. Connecting companies and candidates anytime, anywhere, HireVue’s industry leading end-to-end hiring platform features video interviewing, assessments and conversational AI. HireVue has hosted more than 33 million video interviews and 200 million chat-based candidate engagements for over 800 pioneering customers around the globe.
+About DCI Consulting Group
+DCI Consulting Group (DCI) is a human resources consulting firm headquartered in Washington, D.C. Since 2001, DCI has provided expert solutions to hundreds of organizations on complex issues, with particular emphasis on equal employment opportunity analytics, employee selection and assessment, independent expert reviews, litigation support, and settlement expert work. DCI’s team of Industrial/Organizational Psychologists and Labor Economists are recognized experts in complex quantitative analytics, adverse impact measurement, pay equity, job analysis, validation research and job-relatedness evaluations, and routinely perform work in the context of affirmative action plans under the jurisdiction of Department of Labor’s (DOL) Office of Federal Contract Compliance Programs (OFCCP) compliance evaluations, Equal Employment Opportunity Commission (EEOC) systemic investigations, and expert witness work related to Title VII, Executive Order 11246, Age Discrimination in Employment Act (ADEA), and Americans with Disabilities Act (ADA) matters.

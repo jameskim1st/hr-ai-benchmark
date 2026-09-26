@@ -5,6 +5,7 @@ tier: 3
 source_type: consulting-document
 ingested_at: 2026-05-05
 publication_date: 2026-05-01
+supports: [anaplan-workforce-analyst-ai-agents, linkedin-learning-ai-coaching, sk-hynix-one-resume-employee-search, sk-hynix-pwc-5agent-retention, viven-ai-digital-twin-coworker, workday-peakon-illuminate-employee-voice]
 ---
 
 ## Summary

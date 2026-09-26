@@ -17,15 +17,22 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: [kr-high-impact, eu-annex-iii]
+kr_law: 채용절차법 AI평가 고지 + PIPA 영상 생체정보 + AI 기본법 고영향(채용)
+kr_union: 단체교섭/근로자대표 협의 필요 (채용 의사결정 영향)
+kr_language: 한국어 네이티브
+kr_vendor: 마이다스아이티 (inAIR·JOBFLEX)
 first_seen_estimated: true
 frequency: annual
 first_seen: 2025-07-01
 last_confirmed: 2025-09-16
-confidence: 0.50               # Tier 2 ZDNet(+0.20) + Tier 4 Nature논문(+0.15) + recency <6m(+0.10) + 다수기업 도입(+0.05) = 0.50
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 2
+freshness: stale
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "ZDNet Korea 2025-09-16 https://zdnet.co.kr/view/?no=20250916163016"
-  - "Nature Scientific Reports 2025-07 (KAIST 연구진)"
+sources: [sources/zdnet-korea-midas-ai-competency-test-2025-09.md, sources/nature-scientific-reports-ai-assessment-interpersonal-skills-2025-07.md]
 related_usecases:
   - sk-group-aict-ai-recruitment
   - chipotle-paradox-olivia

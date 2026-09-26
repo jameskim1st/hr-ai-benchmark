@@ -1,0 +1,71 @@
+filters:
+  and:
+    - file.inFolder("wiki/usecases")
+    - visibility != "internal"
+views:
+  - type: table
+    name: 근거 등급별
+    order:
+      - file.name
+      - company
+      - primary_category
+      - evidence_grade
+      - depth
+      - freshness
+      - vendor
+      - region
+    sort:
+      - property: evidence_grade
+        direction: ASC
+      - property: last_confirmed
+        direction: DESC
+  - type: table
+    name: 제안서 인용 가능 (A·B + full)
+    filters:
+      and:
+        - evidence_grade == "A" || evidence_grade == "B"
+        - depth == "full"
+    order:
+      - file.name
+      - company
+      - primary_category
+      - evidence_grade
+      - corroborated_by
+      - last_confirmed
+  - type: table
+    name: 한국 사례
+    filters:
+      and:
+        - region.contains("kr")
+    order:
+      - file.name
+      - company
+      - primary_category
+      - evidence_grade
+      - kr_vendor
+      - kr_law
+  - type: table
+    name: 규제 고영향 (KR·EU)
+    filters:
+      and:
+        - regulatory_exposure.contains("kr-high-impact")
+    order:
+      - file.name
+      - company
+      - subcategory
+      - evidence_grade
+      - kr_law
+      - kr_union
+  - type: table
+    name: 보강 필요 (stub · stale · D)
+    filters:
+      or:
+        - depth == "stub"
+        - freshness == "stale"
+        - evidence_grade == "D"
+    order:
+      - file.name
+      - evidence_grade
+      - depth
+      - freshness
+      - last_confirmed

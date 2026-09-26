@@ -1,6 +1,7 @@
 ---
 name: Walmart
 type: company
+page_type: company
 industry: [retail]
 region: [na, global]
 headquarters: Bentonville, Arkansas, USA
@@ -23,15 +24,12 @@ Walmart의 HR AI 접근은 **"사람이 주도하고 기술이 지원"**이라�
 ## 📊 Walmart HR AI Use Cases (Live)
 
 ```dataview
-TABLE WITHOUT ID
-  file.link AS "Use Case",
-  primary_category AS "카테고리",
-  subcategory AS "중그룹",
-  confidence AS "신뢰도"
+TABLE WITHOUT ID file.link AS "Use Case", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth", stage AS "단계", last_confirmed AS "확인"
 FROM "wiki/usecases" OR "wiki/enterprise-ai"
-WHERE contains(company, "Walmart")
-SORT confidence DESC
+WHERE company = "Walmart" OR contains(company, "Walmart") OR contains(tags, "walmart")
+SORT evidence_grade ASC, last_confirmed DESC
 ```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ## HR 대그룹 커버리지
 
@@ -62,4 +60,4 @@ GROUP BY primary_category
 - **한국 리테일(이마트·롯데마트·GS리테일) 적용**: 매장 직원 대상 음성 AI 어시스턴트 개념 참고
 
 ## Related
-- Use cases: [[walmart-ask-sam-workforce-ai]], [[walmart-ai-frontline-workforce]]
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음)

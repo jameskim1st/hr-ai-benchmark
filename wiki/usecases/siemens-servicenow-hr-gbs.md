@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (HR·재무·구매 요청 단일 포털 처리)
+kr_union: 노사협의회 협의 검토 권장 (독일 Betriebsrat 협의 과정 미공개, 페이지 명시)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (본 페이지 언급 없음; ServiceNow 국내 SI는 자매 페이지 참조)
 frequency: daily
 first_seen: 2025-01-01
 last_confirmed: 2025-09-01
-confidence: 0.55
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: full
+graded_at: 2026-09-27
 sources:
   - sources/servicenow-siemens-case-study.md
   - sources/aihr-institute-siemens-hr-ai-2025.md

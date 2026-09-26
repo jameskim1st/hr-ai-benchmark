@@ -17,14 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 개인정보보호법(활동 텔레메트리 추론) + 평가·승진 활용 시 AI 기본법 고영향
+kr_union: 단체교섭/근로자대표 협의 필요 (활동 감시 인식·배치 영향)
+kr_language: 16K taxonomy 한국어·한국 직무 fit 미검증 (POC 검증 필요, 페이지 명시)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-04-01
 last_confirmed: 2026-04-01
-confidence: 0.70
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/us-large-enterprise-hr-ai-2025-2026.md
-  - "Forrester: Microsoft Viva Disrupts EX Operating System https://www.forrester.com/blogs/microsoft-viva-disrupts-todays-ex-operating-system/"
+sources: [sources/bersin-microsoft-people-skills-copilot-2025-04.md, sources/forrester-microsoft-viva-ex-operating-system-2021-03.md]
 related_usecases:
   - eightfold-talent-intelligence-platform
   - workday-illuminate-job-architecture

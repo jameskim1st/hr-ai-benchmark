@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: [kr-high-impact, eu-annex-iii]
+kr_law: 채용절차법·개인정보보호법 대응 필요 — Paradox 준비 미공개 (페이지)
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
+kr_language: 미확인 — 영·스·불·독 4개 언어만 확인, 한국어 미기재 (페이지)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2024-10-22         # Chipotle 공식 PR 기준
 last_confirmed: 2025-07-28
-confidence: 0.55               # Tier 3 Paradox(+0.10) + Tier 4 Chipotle PR(+0.15) + Tier 2 HR Dive(+0.20) + Tier 2 CNBC(+0.20) = base 0.65, recency 9m(+0.00), no contradiction → 0.55 (conservative: CNBC/HR Dive 전달 성격 감안 할인)
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 2
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/chipotle-newsroom-ava-cado-2024-10.md

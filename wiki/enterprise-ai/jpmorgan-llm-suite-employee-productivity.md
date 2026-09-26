@@ -22,7 +22,12 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2024-07-31
 last_confirmed: 2025-09-01
-confidence: 0.55
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 4
+freshness: stale
+depth: full
+graded_at: 2026-09-27
 sources:
   - sources/cnbc-jpmorgan-llm-suite-2024-08.md
   - sources/ciodive-jpmorgan-llm-suite-2024-09.md

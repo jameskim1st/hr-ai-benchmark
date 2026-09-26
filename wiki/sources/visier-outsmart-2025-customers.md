@@ -5,6 +5,7 @@ url_secondary: "https://www.visier.com/blog/vizzie-award-winners/"
 tier: 2
 source_type: vendor_case_study
 ingested_at: 2026-04-12
+supports: [tampa-general-visier-people-analytics]
 ---
 
 ## Summary

@@ -5,6 +5,7 @@ url_secondary: "https://www.prnewswire.com/news-releases/new-research-exposes-th
 tier: 3
 source_type: vendor_announcement
 ingested_at: 2026-04-12
+supports: [salesforce-orgvue-org-design-ai]
 ---
 
 ## Summary

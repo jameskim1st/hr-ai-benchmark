@@ -5,6 +5,7 @@ source_type: vendor-customer-list
 tier: 3
 ingested_at: 2026-04-12
 raw: raw/vendors/2026-04-12-paradox-clients-stories.md
+supports: [chipotle-paradox-olivia]
 ---
 
 # Source Summary — Paradox Clients Page (fetched 2026-04-12)

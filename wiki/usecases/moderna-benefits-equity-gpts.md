@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 개인정보보호법 (보상·equity 민감정보의 OpenAI 클라우드 국외이전)
+kr_union: 협의 의무 낮음 (정보 제공 성격 — 복리후생 Q&A)
+kr_language: 해당 없음 (ChatGPT Enterprise 위 Moderna 자체 Custom GPT)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily               # 상시 사용
 first_seen: 2025-05-22
 last_confirmed: 2025-06-12
-confidence: 0.40               # Tier 2 × 2 (HR Brew 2025-05 + 2025-06), 교차 확인
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 2
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/hr-brew-moderna-total-rewards-2025-05.md

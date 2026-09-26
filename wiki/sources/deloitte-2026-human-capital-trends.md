@@ -5,6 +5,7 @@ tier: 1
 source_type: analyst-report
 ingested_at: 2026-05-05
 publication_date: 2026-03-01
+supports: [deloitte-2026-human-capital-trends-meta, deloitte-zora-ai-hc-suite, workday-agent-system-of-record-asor]
 ---
 
 ## Summary

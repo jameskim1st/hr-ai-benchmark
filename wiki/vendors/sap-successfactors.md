@@ -1,6 +1,7 @@
 ---
 name: SAP SuccessFactors
 type: vendor
+page_type: vendor
 vendor_type: hrms
 category: [hrms, suite, ai-platform]
 headquarters: Palo Alto, California, USA (SAP SE 본사: Walldorf, Germany)
@@ -33,13 +34,17 @@ SAP의 클라우드 HCM 플랫폼. **Workday와 양대 글로벌 HCM 벤더**. 1
 ### WalkMe 번들
 - SAP의 $1.5B WalkMe 인수 → digital adoption coaching 번들 제공
 
+### Joule HR Agent 출시 (2025 2H ~ 2026 1H)
+- **Performance & Goals Agent** 2025 하반기 GA ([[sap-joule-performance-goals-agent]]) → 1H 2026 Release에서 Career & Talent Development·HR Service·People Intelligence·Payroll Agent 4종 추가 ([[sap-successfactors-1h-2026-joule-agents]])
+- Endorsed app 사례: Sodales Labour Relations Management (Spire Inc., 다중 노조 case 관리) — [[sodales-spire-energy-labor-relations]]
+
 ## ★ Workday와의 전략 대조
 
 이 vendor의 **가장 중요한 wiki insight**는 [[workday]] 와의 전략 차이:
 
 | | Workday | SAP SuccessFactors |
 |---|---|---|
-| 내부 HR 팀 사용 패턴 | Paradox(채용) + Sana(L&D) multi-vendor | (Delta/Pepsi) 3rd party 버리고 Talent Intelligence hub로 consolidation |
+| 내부 HR 팀 사용 패턴 | Paradox(채용) + Sana(L&D) multi-vendor — Sana는 2025-11 Workday가 인수 ([[workday-sana-for-workday-lms]]) | (Delta/Pepsi) 3rd party 버리고 Talent Intelligence hub로 consolidation |
 | Skills 통합 | _미공개_ | Open Architecture: Lightcast·Korn Ferry·Degreed·Techwolf 파트너십 |
 | AI 배포 strategy | Illuminate 자체 플랫폼 + 고객이 point solution 병행 허용 | Joule + 3rd party 교체 유도 |
 
@@ -84,8 +89,19 @@ SuccessFactors는 HR 대그룹 **거의 전 영역 커버** (suite 특성):
 - SAP SuccessFactors는 **S/4HANA 의존성**이 있어서 기존 SAP ERP가 없는 조직에는 도입 비용 높음
 - WalkMe 번들 같은 "부가 기능"이 실제로 value를 주는지 독립 검증 필요
 
+## 관련 use cases
+
+```dataview
+TABLE WITHOUT ID file.link AS "Use Case", company AS "고객", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
+WHERE contains(vendor, "SAP")
+SORT evidence_grade ASC
+```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
+
 ## Related
 - Vendor strategic peer: [[workday]]
-- Sources: [[bersin-successfactors-leapfrog-2024-10]]
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음)
+- Sources: [[bersin-successfactors-leapfrog-2024-10]] · [[sap-joule-performance-agent-bersin-2025-10]] · [[sap-1h-2026-release-2026-04]]
 - Synthesis: [[workday-as-customer-paradox]] (counter-evidence)
-- Related vendors being displaced (SF 관점): [[gloat]], Eightfold, Phenom, Beamery
+- Related vendors being displaced (SF 관점): [[gloat]], [[eightfold]], Phenom, Beamery

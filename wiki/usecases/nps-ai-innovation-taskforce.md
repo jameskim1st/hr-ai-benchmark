@@ -17,13 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: PIPA strict (5,000만 가입자) + AI 기본법 고영향 (연금 의사결정 영향 시)
+kr_union: 협의 의무 낮음 (정보 제공 성격 — 규정 Q&A·상담)
+kr_language: 한국어 네이티브
+kr_vendor: 미확인 (벤더 미공개 — 다중 vendor)
 frequency: daily
 first_seen: 2025-09-18
 last_confirmed: 2026-04-01
-confidence: 0.40
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/kr-conglomerate-2026-q2-research.md
+sources: [sources/biztribune-nps-ai-innovation-taskforce-2025-09.md, sources/newspim-nps-ai-innovation-taskforce-2025-09.md]
 related_usecases:
   - korea-electric-power-hr-bot
   - korea-gov-ai-hr-public-sector

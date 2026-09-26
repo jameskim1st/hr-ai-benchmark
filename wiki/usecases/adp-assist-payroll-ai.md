@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 급여 데이터 AI 학습 시 개인정보보호법 추가 검토 필요 (페이지 명시)
+kr_union: 협의 의무 낮음 (급여 운영 자동화 성격)
+kr_language: 미확인 (한국 급여 항목 로컬 커버리지 확인 필요, 페이지)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: monthly
 first_seen: 2025-09-03
 last_confirmed: 2025-09-03
-confidence: 0.30
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: full
+graded_at: 2026-09-27
 sources:
   - sources/adp-assist-innovation-day-2025.md
 related_usecases:

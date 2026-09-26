@@ -22,10 +22,14 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2024-09-01
 last_confirmed: 2026-04-01
-confidence: 0.45
+confidence: 0.55
+evidence_grade: B
+corroborated_by: 1
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/korea-conglomerate-hr-ai-2025-2026.md
+sources: [sources/4th-mirae-asset-ai-assistant-platform-2024-09.md, sources/genon-mirae-asset-genai-platform-case-2025-05.md]
 related_usecases:
   - shinhan-bank-ai-one-platform
   - kb-bank-ai-hr-deep-change
@@ -107,7 +111,7 @@ related_vendors: []
 
 - **KR 금융권 자체 LLM 활용 reference (1순위)**:
   - JPMorgan LLM Suite [[jpmorgan-llm-suite-redeployment]] (외부 LLM private gateway) vs 미래에셋 (한국 자체 LLM) — 양 방향 비교
-  - KB·신한·하나·미래에셋 모두 자체 LLM 플랫폼 구축 — 미래에셋은 Hyperclova X 선택, 신한 [[shinhan-bank-ai-one-platform]]은 자체 통합, 하나 [[hana-bank-knowledge-chatbot]]은 자체 GenAI
+  - KB·신한·하나·미래에셋 모두 자체 LLM 플랫폼 구축 — 미래에셋은 Hyperclova X 선택, 신한 [[shinhan-bank-ai-one-platform]]은 자체 통합, 하나 하나은행 지식챗봇 (페이지 없음)은 자체 GenAI
 - **No-code 빌더 패턴**: SK 그룹 25개사 'A.Biz' [[sk-group-aibiz-25-companies]]의 agent builder + 미래에셋 — 한국 KR 대기업 No-code 챗봇 빌더 best practice
 - **2026 Q3-Q4 KR 컨설팅 deck**:
   - 한국 자체 LLM 시장 (네이버 Hyperclova X·KT Mi:dm·SKT A.X·LG EXAONE) 활용 reference

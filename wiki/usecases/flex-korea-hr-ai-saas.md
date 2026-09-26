@@ -8,7 +8,7 @@ company: 플렉스팀
 industry: [tech, all]
 region: [kr]
 employee_class: [기술사무직, 전임직, 계약직]
-vendor: []
+vendor: [플렉스팀]
 vendor_type: [internal-build]
 output: "수기 근무표 OCR 변환 결과 (디지털 스케줄·연장/야간/휴일 가산임금 자동 산출액) + 노동법·세법 질의 AI 에이전트 상담 답변"
 ai_tech_type: [generative, recognition]
@@ -17,10 +17,19 @@ stage: pilot
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 개인정보보호법상 근태·급여 데이터 AI 활용 범위 (페이지 명시)
+kr_union: 단체교섭/근로자대표 협의 필요 (근태·가산임금 산출 영향)
+kr_language: 한국어 네이티브
+kr_vendor: 플렉스팀 (flex) 자체 구축 SaaS
 frequency: daily
 first_seen: 2025-01-13
 last_confirmed: 2025-08-01
-confidence: 0.25
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/flex-korea-hr-saas-2025.md

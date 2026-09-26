@@ -16,17 +16,23 @@ ai_tech_subtype: [text-generation, summarization-qa]
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI (평가·승진·보상 반영) + 연령차별 논란 가능
+kr_union: 단체교섭/근로자대표 협의 필요 (평가 기준 변경, 노사관계 리스크 명시)
+kr_language: 해당 없음 (자체 구축 Metamate)
+kr_vendor: 해당 없음 (Meta 자체 구축)
 first_seen_estimated: true
 frequency: annual
 first_seen: 2025-11-01
 last_confirmed: 2025-11-17
-confidence: 0.40               # Tier 2 HR Grapevine(+0.20) + Tier 2 eWeek(+0.20) + 독립 확인 = 0.40
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 3
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "HR Grapevine 2025-11-17 https://www.hrgrapevine.com/us/content/article/2025-11-17-meta-to-formally-review-employees-ai-performance-from-2026"
-  - "eWeek 2025 https://www.eweek.com/news/meta-ai-performance-reviews/"
-  - "Fortune 2024-12-03 https://fortune.com/2024/12/03/meta-openai-gpt-4-llama-coding-tool/"
+sources: [sources/hrgrapevine-meta-ai-performance-review-2025-11.md, sources/eweek-meta-ai-performance-reviews-2026-02.md, sources/fortune-meta-metamate-gpt4-llama-2024-12.md]
 related_usecases:
   - moderna-self-review-gpt
   - jpmorgan-llm-suite-redeployment

@@ -22,10 +22,14 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2026-03-05
 last_confirmed: 2026-04-07
-confidence: 0.50
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 3
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/kr-conglomerate-2026-q2-research.md
+sources: [sources/asiatoday-samsungsds-woori-175-agents-2026-04.md, sources/dt-woori-bank-enterprise-ai-agents-2026-03.md, sources/heraldcorp-woori-bank-175-ai-agents-2026-03.md, sources/samsungsds-woori-bank-ai-agent-banking-2026-04.md]
 related_usecases:
   - kb-bank-ai-hr-deep-change
   - shinhan-bank-ai-one-platform

@@ -5,6 +5,7 @@ url_secondary: "https://explore.textio.com/case-study-t-mobile"
 tier: 3
 source_type: vendor_case_study
 ingested_at: 2026-04-12
+supports: [t-mobile-textio-dei-hiring]
 ---
 
 ## Summary

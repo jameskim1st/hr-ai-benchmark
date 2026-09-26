@@ -17,16 +17,23 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 이직 예측·조직설계 결과가 인사 결정에 쓰이면 AI 기본법 고영향 AI 분류 가능
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향 — 이직 예측·조직설계)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: daily
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
-confidence: 0.25               # Tier 2(+0.20) 벤더 + Tier 3 고객 사례, 독립 검증 제한
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "Visier 공식 https://www.visier.com/products/people-analytics-ai-agent/"
-  - "TechIntelPro 2025 https://techintelpro.com/news/hr/ai/visier-org-design-ai-powered-workforce-planning-at-hr-tech-2025"
+sources: [sources/visier-vee-people-analytics-ai-agent-2026-09.md, sources/techintelpro-visier-org-design-2025-09.md]
 related_usecases:
   - workday-illuminate-job-architecture
 related_vendors: []

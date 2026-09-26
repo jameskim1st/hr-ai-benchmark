@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: AI 기본법 고영향 AI (성과 대화 포인트 생성이 평가에 영향)
+kr_union: 단체교섭/근로자대표 협의 필요 (성과평가 의사결정 영향)
+kr_language: 미확인 (한국어 Joule 지원 여부 미공개 — 페이지 명시)
+kr_vendor: 국내 SAP 파트너 삼성SDS·LG CNS·메타넷 (Joule 구현 역량은 변수)
 frequency: monthly
 first_seen: 2025-10-01
 last_confirmed: 2026-01-01
 confidence: 0.45
+evidence_grade: B
+corroborated_by: 1
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/sap-joule-performance-agent-bersin-2025-10.md

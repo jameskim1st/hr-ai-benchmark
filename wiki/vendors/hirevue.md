@@ -1,6 +1,7 @@
 ---
 name: HireVue
 type: vendor
+page_type: vendor
 slug: hirevue
 website: https://www.hirevue.com
 hq: South Jordan, Utah, USA
@@ -79,11 +80,12 @@ last_confirmed: 2026-05-05
 ## 관련 use cases
 
 ```dataview
-TABLE WITHOUT ID file.link AS "Use Case", company AS "기업", confidence AS "신뢰도"
-FROM "wiki/usecases"
+TABLE WITHOUT ID file.link AS "Use Case", company AS "고객", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
 WHERE contains(vendor, "HireVue")
-SORT confidence DESC
+SORT evidence_grade ASC
 ```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ## Sources
 

@@ -22,10 +22,14 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2024-08-01
 last_confirmed: 2026-04-01
-confidence: 0.55
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/kr-conglomerate-2026-q2-research.md
+sources: [sources/bloter-lg-exaone-external-open-2025-07.md, sources/cio-korea-lg-exaone3-chatexaone-beta-2024-08.md, sources/lg-newsroom-exaone-3-5-chatexaone-launch-2024-12.md]
 related_usecases:
   - shinhan-bank-ai-one-platform
   - sk-group-aibiz-25-companies

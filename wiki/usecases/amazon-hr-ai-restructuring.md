@@ -16,17 +16,23 @@ ai_tech_subtype: [summarization-qa, clustering-classification, rpa]
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: 근로기준법 정리해고 규제 + AI 기본법 고영향(구조조정) (페이지)
+kr_union: 노조 협의 필요 (페이지 명시 — 한국 노사관계에서 극도로 어려움)
+kr_language: 해당 없음 (자체 구축)
+kr_vendor: 해당 없음 (Amazon 자체 구축)
 first_seen_estimated: true
 frequency: adhoc
 first_seen: 2025-10-01
 last_confirmed: 2025-10-16
-confidence: 0.45               # Tier 2 SHRM(+0.20) + Tier 2 HR Grapevine(+0.20) + Tier 2 CNBC(+0.20) = multi-source 독립보도 0.45
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 3
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "SHRM 2025-10 https://www.shrm.org/topics-tools/news/talent-acquisition/amazon-layoffs-hr-staff-ai"
-  - "CNBC 2025-10-15 https://www.cnbc.com/2025/10/15/jpmorgan-chase-goldman-sachs-ai-hiring.html"
-  - "HR Grapevine 2025-10-16 https://www.hrgrapevine.com/us/content/article/2025-10-16-amazon-plans-sweeping-hr-job-cuts-as-ai-investment-grows"
+sources: [sources/shrm-amazon-hr-layoffs-ai-2025-10.md, sources/cnbc-jpmorgan-goldman-ai-hiring-2025-10.md, sources/hrgrapevine-amazon-hr-job-cuts-ai-2025-10.md]
 related_usecases:
   - ibm-askhr-watsonx
   - walmart-ask-sam-workforce-ai

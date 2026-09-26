@@ -1,6 +1,7 @@
 ---
 name: Gloat
 type: vendor
+page_type: vendor
 vendor_type: [talent-marketplace, agentic-ai-platform, workforce-os]
 category: [talent-marketplace, internal-mobility, skills, agentic-hr]
 headquarters: New York, USA
@@ -72,6 +73,7 @@ MS Copilot/Teams/Slack 통합. **Loomra** (Workforce Context Engine) — "10년 
 | **Unilever** | 2019~ | 90,000+ 직원 / 90+ 국가 / 누적 700K+ hours unlock (2024 갱신) — [[unilever-flex-gloat-talent-marketplace]] |
 | **Schneider Electric** | 2020~ | 360,000+ unlocked hours, $15M+ 절감 — [[schneider-electric-gloat-talent-marketplace]] |
 | **Mastercard** | 2022~ | "Unlocked" 프로그램, $21M 절감(첫 1년) → 2025 1M project hours 누적 — [[mastercard-unlocked-gloat-talent-marketplace]] |
+| **Novartis** | 2022~ | 스킬 기반 조직 전환, ⚠️ 자사 보고: 영구 이동 가능성 +132%·cross-functional 배정 +67% — [[novartis-gloat-skills-marketplace]] |
 | **Nestlé** | 2024~ | 신규 공개 |
 | **HSBC** | 2024~ | 신규 공개 (단 Eightfold·SAP SF와 multi-vendor 운영 — [[hsbc-eightfold-gloat-multi-vendor]]) |
 | **Standard Chartered Bank** | 2024~ | 신규 공개 |
@@ -104,9 +106,19 @@ MS Copilot/Teams/Slack 통합. **Loomra** (Workforce Context Engine) — "10년 
 - **반면교사**:
   - Unilever는 $60B 다국적 FMCG, 규모·문화·DEI 선진성 매우 특수. 직접 복제 대신 **핵심 원칙만 참고** 권장
   - Bersin이 시장을 "brutally competitive"로 평가 — Workday/Oracle/SAP/ServiceNow 임베디드 agentic 옵션과 비교 필수
-- **2026 Q3-Q4 talent marketplace 컨설팅 deck**: Gloat (Mastercard·Schneider·Unilever·Nestlé·HSBC·StanChart 6사 reference) + Eightfold + Workday Sana + IBM Blue Match 4-way 비교 권장
+- **2026 Q3-Q4 talent marketplace 컨설팅 deck**: Gloat (Mastercard·Schneider·Unilever·Novartis·HSBC 등 — 아래 Dataview 표 기준) + Eightfold + Workday Sana + IBM Blue Match 4-way 비교 권장
+
+## 관련 use cases
+
+```dataview
+TABLE WITHOUT ID file.link AS "Use Case", company AS "고객", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
+WHERE contains(vendor, "Gloat")
+SORT evidence_grade ASC
+```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ## Related
-- Use cases: [[unilever-flex-gloat-talent-marketplace]] · [[schneider-electric-gloat-talent-marketplace]] · [[mastercard-unlocked-gloat-talent-marketplace]] · [[hsbc-eightfold-gloat-multi-vendor]]
-- Companies: [[unilever]] · [[mastercard]]
-- Sources: [[i4cp-unilever-flex-2019-12]] · [[bersin-gloat-agentic-hr-2026-03]] (신규) · [[gloat-mastercard-case-study-2024]] (신규)
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음)
+- Companies: [[unilever]] · [[schneider-electric]] · [[hsbc]] · Mastercard (company 페이지 없음 — use case [[mastercard-unlocked-gloat-talent-marketplace]] 참조)
+- Sources: [[i4cp-unilever-flex-2019-12]] · [[gloat-unilever-success-story-2024]] · [[bersin-schneider-unilever-talent-marketplace-2019-07]] · Bersin 2026-03 "Gloat enters the crowded war for AI agents in HR" (joshbersin.com, source 페이지 미생성 — 상단 URL 인용) · Gloat Mastercard case study 2022·2023 (source 페이지 미생성 — use case 내 인용 참조)

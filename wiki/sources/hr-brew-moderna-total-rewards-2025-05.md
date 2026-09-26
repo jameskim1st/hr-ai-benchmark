@@ -7,6 +7,7 @@ publication_date: 2025-05-22
 ingested_at: 2026-04-12
 raw: raw/articles/2025-05-22-hr-brew-moderna-total-rewards-gpts.md
 provenance_caveat: "원문 직접 fetch 실패(403). WebSearch summary만 이용. 인용 수준은 3차 전달."
+supports: [moderna-benefits-equity-gpts, moderna-self-review-gpt]
 ---
 
 # Source Summary — HR Brew on Moderna HR GPTs (2025-05-22)

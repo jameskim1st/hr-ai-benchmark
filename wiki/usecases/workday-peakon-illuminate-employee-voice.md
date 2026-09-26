@@ -17,14 +17,21 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: sentiment 결과를 매니저 평가에 쓰면 AI 기본법 고영향 가능 + 소집단 재식별 위험
+kr_union: 단체교섭/근로자대표 협의 필요 (이탈·번아웃 risk alert, 평가 연계 시)
+kr_language: 60+ 언어 지원 (벤더 주장); 한국어 정확도 POC 4주 검증 권고 (페이지)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: monthly
 first_seen: 2021-02-01
 last_confirmed: 2026-04-01
-confidence: 0.80
+confidence: 0.55
+evidence_grade: B
+corroborated_by: 1
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/verified-pwc-doc-2026-05.md
-  - "Constellation Research: Workday Rising 2024 — AI Illuminate analysis https://www.constellationr.com/insights/news/workday-rising-2024-ai-illuminate-ai-agents-evisort-acquisition"
+sources: [sources/verified-pwc-doc-2026-05.md, sources/constellation-workday-rising-2024-illuminate-2024-09.md]
 related_usecases:
   - workday-illuminate-employee-sentiment
   - microsoft-viva-glint-copilot-sentiment

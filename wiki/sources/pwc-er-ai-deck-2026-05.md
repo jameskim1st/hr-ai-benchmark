@@ -5,13 +5,14 @@ tier: 3
 source_type: vendor
 ingested_at: 2026-05-06
 date_published: 2026
+supports: [hr-acuity-oliver-ai-er-companion, sodales-spire-energy-labor-relations]
 ---
 
 # PwC Korea ER AI 적용 컨설팅 자료
 
 ## 개요
 
-PwC Strategy& Korea가 작성한 6 슬라이드 deck — ER (Employee Relations / 노무) 영역 AI 적용 현황 + To-Be 프로세스 재설계 권장. raw/etc/ 내부 자료 (외부 공개 X).
+PwC Strategy& Korea가 작성한 6 슬라이드 deck — ER (Employee Relations / 노무) 영역 AI 적용 현황 + To-Be 프로세스 재설계 권장. raw/internal/pwc-er-deck-2026-05/ 내부 자료 (외부 공개 X).
 
 ## ER 영역 정의 (PwC)
 
@@ -101,5 +102,5 @@ ER 4단계별로:
 
 ## Note
 
-⚠️ 본 source는 PwC Korea 내부 자료 (raw/etc/1000023757-762.jpg, 2026-05-06 ingest). 외부 공개 X.
+⚠️ 본 source는 PwC Korea 내부 자료 (raw/internal/pwc-er-deck-2026-05/1000023757-762.jpg, 2026-05-06 ingest). 외부 공개 X.
 PwC 인용 vendor 명칭 일부 OCR 신뢰도 낮음 (예: "Saakaroon", "Adept Solid Solutions") — 외부 검증 결과는 [[2026-05-06] ingest log]] 참조.

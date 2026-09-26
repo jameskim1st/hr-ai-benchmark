@@ -17,16 +17,23 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: [kr-high-impact, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI(채용 스크리닝·AI Interviewer) + 채용절차법 고지
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
+kr_language: 미확인 — 한국어 skills ontology·직무 체계 fit 과제 (페이지)
+kr_vendor: 미확인 — 한국 reference 미공개 (페이지); Deloitte 글로벌 제휴만
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: daily
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
-confidence: 0.20               # Tier 3 벤더 주장 위주, limited independent verification
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "Eightfold AI 공식 https://eightfold.ai/customers/customer-stories/"
-  - "PR Newswire 2025 https://www.prnewswire.com/news-releases/talent-intelligence-to-talent-advantage-eightfold-ai-revolutionizes-hr-through-agentic-ai-302449233.html"
+sources: [sources/eightfold-customer-stories-page-2026-09.md, sources/prnewswire-eightfold-agentic-ai-2025-05.md]
 related_usecases:
   - unilever-flex-gloat-talent-marketplace
   - midas-inair-ai-assessment-korea

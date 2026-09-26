@@ -17,10 +17,19 @@ stage: pilot                     # 2025-10 런칭, customer 확인 0건
 visibility: public
 case_type: vendor-product
 regulatory_exposure: [kr-high-impact, eu-annex-iii]
+kr_law: 후보자 데이터 AI 활용 동의(개인정보보호법) + 채용절차법 고지·이의제기는 도입기업 책임
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향 — 채용 소싱·추천)
+kr_language: 한국어 네이티브 (한국어 자기소개서 정성 분석)
+kr_vendor: 원티드랩 (국내 HR tech 벤더, 자체 플랫폼)
 frequency: daily
 first_seen: 2025-10-21
 last_confirmed: 2025-10-21
-confidence: 0.20               # Tier 2(+0.20), recency <6m(+0.10), no Tier 1 → 0.30 - 0.10 vendor blog overlap = 0.20
+confidence: 0.45
+evidence_grade: B
+corroborated_by: 1
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/aitimes-wantedlab-recruiting-agent-2025-10.md

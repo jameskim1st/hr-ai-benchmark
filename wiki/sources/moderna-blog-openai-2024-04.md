@@ -6,6 +6,7 @@ tier: 3
 publication_date: 2024-04-24
 ingested_at: 2026-04-12
 raw: raw/vendors/2024-04-24-moderna-blog-openai-collaboration.md
+supports: [moderna-ask-hr-routing]
 ---
 
 # Source Summary — Moderna Corporate Blog on OpenAI Collaboration (2024-04-24)

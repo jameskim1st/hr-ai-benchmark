@@ -19,6 +19,10 @@ snapshot_quality:
 import sys, json, hashlib, argparse, datetime, re, os
 
 def main():
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
     ap = argparse.ArgumentParser()
     ap.add_argument('url'); ap.add_argument('out')
     ap.add_argument('--title', default=''); ap.add_argument('--publisher', default=''); ap.add_argument('--date', default='')
@@ -28,6 +32,8 @@ def main():
         import requests
         r = requests.get(a.url, timeout=20, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36', 'Accept-Language': 'ko,en;q=0.8'})
         status = r.status_code
+        if not r.encoding or r.encoding.lower() in ('iso-8859-1', 'ascii'):
+            r.encoding = r.apparent_encoding or 'utf-8'
         html = r.text
         try:
             import trafilatura

@@ -17,15 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (학습 출석 자동 캡처 고지)
+kr_union: 협의 의무 낮음 (학습 운영 성격; 출석 캡처 감시 인식 유의)
+kr_language: 해당 없음 (자체 구축)
+kr_vendor: 해당 없음 (자체 구축)
 frequency: daily
 first_seen: 2023-01-01
 last_confirmed: 2025-12-01
-confidence: 0.70
+confidence: 0.45
+evidence_grade: B
+corroborated_by: 1
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/ibm-hr-ai-portfolio-2025-2026.md
-  - "IBM official case study: HR ELOA cHaRlie https://www.ibm.com/case-studies/ibm-hr-eloa"
-  - "IntelligentHQ — IBM cHaRlie watsonx Orchestrate award-winning analysis https://www.intelligenthq.com/hr-transformation-ibm-leverages-watsonx-orchestrate-to-create-award-winning-ai-assistant-charlie/"
+sources: [sources/ibm-case-study-hr-eloa-charlie-2023-12.md, sources/ibm-case-study-hr-eloa-charlie-2023-12.md, sources/intelligenthq-ibm-charlie-watsonx.md, sources/intelligenthq-ibm-charlie-watsonx.md]
 related_usecases:
   - ibm-askhr-watsonx
   - bersin-galileo-learn-ai-native-lms

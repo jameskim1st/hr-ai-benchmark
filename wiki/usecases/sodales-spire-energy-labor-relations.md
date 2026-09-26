@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 노조법 복수노조·단체교섭·부당노동행위 규제가 미국 NLRA 워크플로와 상이, 맞춤화 필요
+kr_union: 노조 representative가 직접 사용 주체 — 복수노조 단체교섭 절차 합의 필요
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요; Sodales 한국 진출은 watch list)
 frequency: daily
 first_seen: 2018-10-01
 last_confirmed: 2026-05-06
-confidence: 0.55
+confidence: 0.35
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/sodales-sap-app-center.md
@@ -139,7 +148,7 @@ flowchart TB
 
 - **다중 노조 환경 reference**: 한국 SK·LG·현대차·금융지주 등 복수노조 보유 그룹사의 노사 case 처리 디지털화 검토 시 **유일한 글로벌 다중 노조 utility reference** (10+ 노조)
 - **SAP HCM 베이스 한국 대기업 fit**: 삼성·LG·SK는 SAP HCM 비중이 큰 그룹 — Sodales는 SAP-native이므로 추가 ETL 부담 적음
-- **vs HR Acuity** [[hr-acuity-oliver-er-companion]]:
+- **vs HR Acuity** [[hr-acuity-oliver-ai-er-companion]]:
   - HR Acuity: 미국 ER market leader, AI Companion (olivER), 5,000+ 고객
   - Sodales: SAP-native, 다중 노조 utility 전문
   - 한국 도입 시 vendor selection 핵심: 기존 HRIS (SAP vs other) + 노조 형태 (단일 vs 복수)

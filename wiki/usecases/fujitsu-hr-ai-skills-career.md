@@ -8,7 +8,7 @@ company: Fujitsu
 industry: [tech, consulting]
 region: [apac, global]
 employee_class: [all]
-vendor: []
+vendor: [Fujitsu internal]
 vendor_type: [internal-build]
 output: "직원별 스킬 갭 분석 + 내부 공모 매칭 추천 + Fujitsu Learning Experience 자율 학습 경로 + Kozuchi AI 일상 업무 보조 응답 (월 69K 활성·일 380K 사용)"
 ai_tech_type: [generative, predictive]
@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (내부공모 매칭 배치 활용 시 고영향 검토)
+kr_union: 단체교섭/근로자대표 협의 필요 (내부공모·직무전환 영향)
+kr_language: 해당 없음 (자체 구축)
+kr_vendor: 해당 없음 (Fujitsu 자체 구축 Kozuchi)
 frequency: daily
 first_seen: 2024-01-01
 last_confirmed: 2025-12-01
-confidence: 0.40
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 sources:
   - sources/unleash-fujitsu-chro-ai-2025.md
   - sources/diginomica-fujitsu-hcm-ai-2025.md

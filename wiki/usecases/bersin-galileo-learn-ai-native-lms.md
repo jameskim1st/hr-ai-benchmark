@@ -17,10 +17,19 @@ stage: pilot                       # 런칭 + 자사 deployment만 있는 상태
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준
+kr_union: 협의 의무 낮음 (정보 제공 성격)
+kr_language: 미확인 (벤더 확인 필요) — 한국어 콘텐츠 품질 파생 질문만 존재
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-05-21
 last_confirmed: 2025-06-01
-confidence: 0.25                   # Tier 1(+0.35 Bersin 2025-06 시장분석 COI 공개) + Tier 3(+0.10 자사 블로그) + recency <6m(+0.10) - 외부 customer 1건뿐(-0.30 stub adjustment) = 0.25
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/bersin-galileo-learn-2025-05.md

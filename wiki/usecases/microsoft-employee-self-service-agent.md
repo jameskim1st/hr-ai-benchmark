@@ -17,16 +17,23 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (휴가·급여 form 연동 시 인사데이터 처리 범위 확인)
+kr_union: 협의 의무 낮음 (정보 제공 성격)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: daily
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
-confidence: 0.35               # Tier 3 (Microsoft insidetrack = 자사 보고), recency <12m, no independent coverage
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "Microsoft InsideTrack 2025 https://www.microsoft.com/insidetrack/blog/accelerating-employee-services-at-microsoft-with-the-employee-self-service-agent/"
-  - "Microsoft InsideTrack https://www.microsoft.com/insidetrack/blog/how-microsoft-hr-is-using-viva-and-copilot-for-microsoft-365-to-empower-our-employees/"
+sources: [sources/microsoft-insidetrack-employee-self-service-agent-2025-11.md, sources/microsoft-insidetrack-hr-viva-copilot-2024-08.md]
 related_usecases:
   - ibm-askhr-watsonx
   - moderna-ask-hr-routing

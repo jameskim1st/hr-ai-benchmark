@@ -1,6 +1,7 @@
 ---
 name: OpenAI
 type: vendor
+page_type: vendor
 vendor_type: foundation-model
 category: [foundation-model, ai-platform]
 headquarters: San Francisco, California, USA
@@ -28,7 +29,8 @@ AI foundation model 벤더. HR 도메인 특화 제품은 없으나 **ChatGPT En
 
 ## 확인된 HR 레퍼런스
 
-- **[[moderna]]** — ChatGPT Enterprise 대표 엔터프라이즈 레퍼런스. 750→3,000+ 커스텀 GPT. HR 특화 Ask HR 포함.
+- **[[moderna]]** — ChatGPT Enterprise 대표 엔터프라이즈 레퍼런스. 750→3,000+ 커스텀 GPT. HR 특화 Ask HR·self-review·benefits GPT 포함.
+- 그 외 [[walmart]] (OpenAI Certification)·[[jpmorgan]] (LLM Suite)·[[meta]]·PwC·Bosch·Goldman Sachs 등 — 전체 목록은 아래 Dataview 표 (자동 생성)
 
 ## 알려진 한계
 
@@ -37,7 +39,14 @@ AI foundation model 벤더. HR 도메인 특화 제품은 없으나 **ChatGPT En
 - 즉, "OpenAI를 쓴다"는 것 자체로는 HR 컴플라이언스 보장 없음 — 컨설팅 관점에서 **중요 포인트**
 
 ## 관련 use cases
-- [[moderna-ask-hr-routing]]
+
+```dataview
+TABLE WITHOUT ID file.link AS "Use Case", company AS "고객", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
+WHERE contains(vendor, "OpenAI")
+SORT evidence_grade ASC
+```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
 
 ## Related
 - Sources: [[moderna-blog-openai-2024-04]], [[constellation-moderna-chatgpt-enterprise-2024-04]]

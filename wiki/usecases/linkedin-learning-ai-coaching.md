@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: 개인정보보호법 국외이전 (LinkedIn/MS 본사 처리) 검증 필요 (페이지)
+kr_union: 협의 의무 낮음 (정보 제공 성격; 평가·승진 연계 시 검토)
+kr_language: 미확인 (한국어 존댓말 fit 검증 필요 — 페이지 명시)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2024-04-01
 last_confirmed: 2026-04-01
-confidence: 0.55
+confidence: 0.35
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/verified-pwc-doc-2026-05.md

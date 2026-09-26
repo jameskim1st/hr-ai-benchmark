@@ -1,6 +1,7 @@
 ---
 name: Paradox
 type: vendor
+page_type: vendor
 vendor_type: point-solution       # 채용 특화 point solution
 category: [conversational-ai, recruiting, ats]
 headquarters: Scottsdale, Arizona, USA
@@ -54,18 +55,28 @@ last_confirmed: 2026-04-12
 
 ## 독립 검증 상태
 
-- **Tier 1·2 독립 소스**: 현재까지 wiki에 확보된 Tier 1·2 독립 분석 **0건**
-- Bersin·Gartner·Forrester 등의 독립 레퍼런스 필요
-- 현재 모든 metric은 Paradox 자체 주장
+- **Chipotle 건**: Tier 2 HR Dive (2024-10-25) + CNBC (2025-07-28) 보도 확보 — 12일→3.5일, 지원 완료율 50%→85% ([[chipotle-paradox-olivia]])
+- 그 외 고객 metric은 Paradox 자체 주장 (위 목록)
+- Bersin·Gartner·Forrester 등의 독립 분석 레퍼런스는 미확보
 
 ## Consulting Angle
 
 - **강점**: 고볼륨 시급 채용에 **명확한 가치** (업종 matching)
 - **약점**: 정규직·지식노동자 채용엔 fit이 낮을 가능성 (주장과 반례 모두 없음)
-- **리스크**: 모든 metric이 벤더 자체 주장이라 **제안서 단독 인용 위험**. 독립 검증 소스 확보 후 사용 권장.
+- **리스크**: Chipotle 외 metric은 벤더 자체 주장이라 **제안서 단독 인용 위험**. 독립 검증 소스 확보 후 사용 권장.
 - **파생 질문**: 한국 시급 채용 시장(편의점·카페·delivery)에 적용 가능한가? 국내 벤더(마이다스아이티·원티드)와 비교는?
 
+## 관련 use cases
+
+```dataview
+TABLE WITHOUT ID file.link AS "Use Case", company AS "고객", primary_category AS "대그룹", evidence_grade AS "등급", depth AS "depth"
+FROM "wiki/usecases" OR "wiki/enterprise-ai"
+WHERE contains(vendor, "Paradox")
+SORT evidence_grade ASC
+```
+> 목록은 Dataview 자동 생성 — 손으로 갱신하지 않음
+
 ## Related
-- Use cases: [[chipotle-paradox-olivia]]
-- Sources: [[paradox-clients-stories-2026-04]]
-- Referenced companies: [[chipotle]], [[workday]]
+- Use cases: 상단 Dataview 표 (자동 생성 — 손으로 갱신하지 않음)
+- Sources: [[paradox-clients-stories-2026-04]] · [[hrdive-chipotle-paradox-2024-10]] · [[cnbc-chipotle-ava-cado-2025-07]]
+- Referenced companies: [[chipotle]], [[walmart]], [[workday]]

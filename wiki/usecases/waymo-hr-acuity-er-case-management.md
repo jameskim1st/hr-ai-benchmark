@@ -17,10 +17,19 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: ER 징계·조사 기록 처리에 개인정보보호법(PIPA)·노조법 맞춤화 필요 (페이지 명시)
+kr_union: 단체교섭/근로자대표 협의 필요 (징계·조사 절차; 노조법 맞춤화 명시)
+kr_language: "미확인 (페이지: 한국어 customization 필요 명시, 벤더 확인 필요)"
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2024-01-01
 last_confirmed: 2026-05-06
-confidence: 0.55
+confidence: 0.35
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/hr-acuity-waymo-case-study.md

@@ -4,6 +4,7 @@ url: https://www.betterworks.com/betterworks-redefines-performance-enablement-fo
 tier: 3
 source_type: vendor
 ingested_at: 2026-04-12
+supports: [betterworks-nextgen-ai-performance]
 ---
 
 ## Summary

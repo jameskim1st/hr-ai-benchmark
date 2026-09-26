@@ -17,10 +17,19 @@ stage: production
 visibility: internal
 case_type: adoption
 regulatory_exposure: []
+kr_law: 인사·평가·외부교육 데이터 결합에 개인정보보호법 별도 동의 + 고영향 AI 분류 가능
+kr_union: 노조 사전 합의 필수 (SK하이닉스 노조 강성, 통합 프로필·매니저 검색 우려)
+kr_language: 한국어 네이티브
+kr_vendor: 자체 구축 (SK하이닉스 internal)
 frequency: monthly
 first_seen: 2026-05-01
 last_confirmed: 2026-05-06
-confidence: 0.22
+confidence: 0.35
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/verified-pwc-doc-2026-05.md

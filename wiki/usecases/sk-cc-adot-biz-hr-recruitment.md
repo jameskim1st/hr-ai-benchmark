@@ -17,13 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: [kr-high-impact, eu-annex-iii]
+kr_law: AI 기본법 고영향(채용) 인적감독 + 채용절차법 고지 + 영상면접 PIPA 검증
+kr_union: 단체교섭/근로자대표 협의 필요 (채용 의사결정 영향)
+kr_language: 한국어 네이티브
+kr_vendor: SKT·SK AX 'A.Biz HR' (그룹 자체 구축)
 frequency: annual
 first_seen: 2025-02-20
 last_confirmed: 2026-04-01
-confidence: 0.50
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 3
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/korea-conglomerate-hr-ai-2025-2026.md
+sources: [sources/aitimes-sk-cc-adot-biz-hr-2025-02.md, sources/newsis-sk-cc-adot-biz-hr-2025-02.md, sources/zdnet-korea-sk-cc-adot-biz-hr-2025-02.md]
 related_usecases:
   - sk-group-aibiz-25-companies
   - sk-hynix-ask-ai-interview

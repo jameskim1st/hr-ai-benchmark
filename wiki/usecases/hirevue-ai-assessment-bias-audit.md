@@ -17,22 +17,29 @@ stage: production
 visibility: public
 case_type: vendor-product
 regulatory_exposure: [kr-high-impact, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI (채용 평가) + 채용절차법 AI 면접 고지
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
+kr_language: "미확인 (페이지 명시: 한국어 대응 미확인)"
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: daily
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
-confidence: 0.35               # Tier 1 Forrester TEI(+0.35) + Tier 3 vendor(+0.10) - 구체 고객명 1곳만 = 0.35
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "HireVue official https://www.hirevue.com/"
-  - "HireVue bias audit press release https://www.hirevue.com/press-release/hirevue-leads-industry-in-fair-and-ethical-hiring-practice-engaging-external-auditor-dci-consulting-group-for-external-bias-audit-of-algorithms"
-  - "Forrester TEI study (referenced in reviews)"
+sources: [sources/hirevue-homepage-2026-09.md, sources/hirevue-dci-bias-audit-pr-2023-01.md]
 related_usecases:
   - midas-inair-ai-assessment-korea
   - chipotle-paradox-olivia
   - eightfold-ai-talent-intelligence
 related_vendors: []
+sources_unresolved: [Forrester TEI study (referenced in reviews)]
 ---
 
 # HireVue — AI 비디오 면접 + 게임 기반 평가

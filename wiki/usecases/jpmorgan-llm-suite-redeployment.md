@@ -16,18 +16,22 @@ ai_tech_subtype: [summarization-qa]
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: AI 기본법 고영향 가능성 (성과 리뷰 초안) — 인적감독 명시 (페이지)
+kr_union: 단체교섭/근로자대표 협의 필요 (재배치·평가; 노조 컨텍스트 명시)
+kr_language: 해당 없음 (자체 구축)
+kr_vendor: 해당 없음 (자체 구축; 모델은 OpenAI·Anthropic)
 frequency: daily
 first_seen: 2024-08-01
 last_confirmed: 2026-02-25
-confidence: 0.80
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 3
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/us-large-enterprise-hr-ai-2025-2026.md
-  - "McKinsey: JPM Derek Waldron AI-first bank culture interview https://www.mckinsey.com/industries/financial-services/our-insights/jpmorgan-chases-derek-waldron-on-building-an-ai-first-bank-culture"
-  - "CNBC 2025-10-15 https://www.cnbc.com/2025/10/15/jpmorgan-chase-goldman-sachs-ai-hiring.html"
-  - "HR Executive https://hrexecutive.com/jpmorgan-ceo-we-have-displaced-people-from-ai-and-we-offer-them-other-jobs/"
-  - "HR Dive https://www.hrdive.com/news/banks-ramp-up-ai-hiring-roi-efficiency-gains-evident-insights/746724/"
+sources: [sources/cnbc-jpmorgan-llm-suite-2024-08.md, sources/hrexecutive-jpmorgan-dimon-ai-redeployment-2026-03.md, sources/mckinsey-jpmorgan-derek-waldron-ai-first-2024-10.md, sources/cnbc-jpmorgan-goldman-ai-hiring-2025-10.md]
 related_usecases:
   - ibm-hr-workforce-reduction-agentic
   - jpmorgan-coin-hr-deployment
@@ -35,6 +39,7 @@ related_usecases:
   - goldman-sachs-gs-ai-assistant
   - amazon-hr-ai-restructuring
 related_vendors: []
+sources_unresolved: [McKinsey: JPM Derek Waldron AI-first bank culture interview https://www.mckinsey.com/industries/financial-services/our-insights/jpmorgan-chases-derek-waldron-on-building-an-ai-first-bank-culture, HR Executive https://hrexecutive.com/jpmorgan-ceo-we-have-displaced-people-from-ai-and-we-offer-them-other-jobs/, HR Dive https://www.hrdive.com/news/banks-ramp-up-ai-hiring-roi-efficiency-gains-evident-insights/746724/]
 ---
 
 ## Summary

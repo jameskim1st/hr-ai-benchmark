@@ -5,6 +5,7 @@ url_secondary: "https://enboarder.com/blog/ai-onboarding-tool-guide-2026/"
 tier: 4
 source_type: article
 ingested_at: 2026-04-12
+supports: [zapier-enboarder-ai-onboarding]
 ---
 
 ## Summary

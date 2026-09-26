@@ -17,10 +17,19 @@ stage: announced
 visibility: public
 case_type: vendor-product
 regulatory_exposure: []
+kr_law: 성과 리뷰 초안 생성 → AI 기본법 고영향 AI(평가) 인적감독·고지 의무
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향 — 성과 평가)
+kr_language: 미확인 (한국어 리뷰 초안 생성 품질 미공개, 페이지 명시)
+kr_vendor: 미확인 (국내 파트너 확인 필요; Workday 한국 고객 금융·테크 존재)
 frequency: annual
 first_seen: 2025-09-16
 last_confirmed: 2025-09-16
-confidence: 0.40
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/workday-illuminate-pr-2025-09.md

@@ -17,14 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준
+kr_union: 협의 의무 낮음 (정보 제공 성격)
+kr_language: 해당 없음 (자체 구축)
+kr_vendor: 해당 없음 (자체 구축)
 frequency: annual
 first_seen: 2024-08-01
 last_confirmed: 2026-02-12
-confidence: 0.70
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/us-large-enterprise-hr-ai-2025-2026.md
-  - "McKinsey: JPM Derek Waldron interview — 'AI Made Easy' program direct mention https://www.mckinsey.com/industries/financial-services/our-insights/jpmorgan-chases-derek-waldron-on-building-an-ai-first-bank-culture"
+sources: [sources/cnbc-jpmorgan-llm-suite-2024-08.md, sources/mckinsey-jpmorgan-derek-waldron-ai-first-2024-10.md]
 related_usecases:
   - jpmorgan-llm-suite-redeployment
   - accenture-mass-genai-reskilling

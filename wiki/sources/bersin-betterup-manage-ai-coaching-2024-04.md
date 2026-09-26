@@ -7,6 +7,7 @@ publisher: Josh Bersin
 author: Josh Bersin
 published: 2024-04
 ingested_at: 2026-04-12
+supports: [betterup-ai-coaching-twilio]
 ---
 
 # Josh Bersin — BetterUp Manage: AI 코칭 플랫��� 분석 (2024-04)
@@ -36,4 +37,4 @@ Josh Bersin(Tier 1 HR 분석가)이 BetterUp Uplift 컨퍼런스 참석 후 Bett
 ## Tags
 
 - [[betterup-ai-coaching-twilio]]
-- [[betterup]]
+- BetterUp

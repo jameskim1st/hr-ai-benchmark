@@ -17,13 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: [kr-high-impact, eu-annex-iii]
+kr_law: AI 기본법 고영향 + 채용절차법 정합성; 후보자 개인정보 동의 (페이지)
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
+kr_language: "한국어 네이티브 (자사 보고: 한국어 specialized)"
+kr_vendor: 잡코리아·웍스피어 자체 구축
 frequency: daily
 first_seen: 2026-03-31
 last_confirmed: 2026-04-01
-confidence: 0.45
+confidence: 0.8
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/korea-conglomerate-hr-ai-2025-2026.md
+sources: [sources/inews24-jobkorea-ai-agent-survey-2026-04.md, sources/zdnet-korea-jobkorea-hiring-center-2026-03.md]
 related_usecases:
   - wantedlab-ai-recruiting-agent
   - sk-cc-adot-biz-hr-recruitment

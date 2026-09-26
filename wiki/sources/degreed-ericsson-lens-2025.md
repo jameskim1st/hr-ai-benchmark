@@ -5,6 +5,7 @@ url_secondary: "https://get.degreed.com/skills-first-ai-strategy"
 tier: 3
 source_type: vendor_announcement
 ingested_at: 2026-04-12
+supports: [ericsson-degreed-ai-skills-upskilling]
 ---
 
 ## Summary

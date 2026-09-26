@@ -17,19 +17,23 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 일반 개인정보보호법 수준 (코칭 대화 데이터)
+kr_union: 협의 의무 낮음 (개인 코칭·개발 성격)
+kr_language: 미확인 — 한국어 대응 검증 안 됨 (페이지 명시)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: monthly
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
-confidence: 0.45               # Tier 3 vendor(+0.10) + Tier 2 Inc.com(+0.20) + Tier 1 Bersin(+0.20, 할인: advisor 이해관계) + Tier 2 HR Executive(+0.20) = base 0.70, 할인 후 0.45 (Bersin COI + Twilio 구체 metric은 벤더 자체 주장)
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 2
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "BetterUp ROI page https://www.betterup.com/roi-of-betterup"
-  - "Inc.com 2025 https://www.inc.com/annabel-burba/how-betterup-built-an-ai-only-coaching-product-95-percent-of-its-customers-love/91221747"
-  - "BetterUp customers https://www.betterup.com/customers"
-  - sources/bersin-betterup-manage-ai-coaching-2024-04.md
-  - sources/hrexecutive-bersin-coaching-disruptions-2024.md
+sources: [sources/betterup-roi-page-2026-09.md, sources/inc-betterup-ai-only-coaching-2025-08.md, sources/betterup-customers-page-2026-09.md, sources/bersin-betterup-manage-ai-coaching-2024-04.md, sources/hrexecutive-bersin-coaching-disruptions-2024.md]
 related_usecases:
   - moderna-self-review-gpt
 related_vendors: []

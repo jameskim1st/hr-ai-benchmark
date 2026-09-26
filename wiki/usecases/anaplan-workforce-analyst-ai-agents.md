@@ -16,15 +16,22 @@ ai_tech_subtype: [summarization-qa, prediction]
 stage: production
 visibility: public
 case_type: vendor-product
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI — autonomous 모드 인적감독 의무 충돌 (페이지)
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: monthly
 first_seen: 2025-12-09
 last_confirmed: 2026-04-01
-confidence: 0.70
+confidence: 0.35
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/verified-pwc-doc-2026-05.md
-  - "Anaplan press 2025-12-09 (GlobeNewswire) + Gartner MQ Financial Planning Software 9X Leader https://www.globenewswire.com/news-release/2025/12/09/3202449/0/en/Anaplan-Introduces-Role-Based-AI-Agents-to-Advance-Industry-Leading-Enterprise-Scenario-Planning-and-Analysis-Platform.html"
+sources: [sources/verified-pwc-doc-2026-05.md, sources/anaplan-workforce-planning-ai-2025.md]
 related_usecases:
   - deloitte-zora-ai-hc-suite
   - deloitte-workforce-analyzer-salesforce

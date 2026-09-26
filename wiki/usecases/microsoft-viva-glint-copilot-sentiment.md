@@ -17,13 +17,21 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: 개인정보보호법(소그룹 slice 재식별) + 매니저 평가 활용 시 AI 기본법 고영향
+kr_union: 노조 민감 영역 명시 (소그룹 재식별·익명성) — 근로자대표 협의 필요
+kr_language: 한국어 NLP(존댓말·방언·업계용어) 품질 미검증 — POC 4주 필요 (페이지 명시)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: monthly
 first_seen: 2024-09-01
 last_confirmed: 2026-04-01
-confidence: 0.55
+confidence: 0.35
+evidence_grade: C
+corroborated_by: 0
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/us-large-enterprise-hr-ai-2025-2026.md
+sources: [sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04.md]
 related_usecases:
   - amazon-connections-daily-pulse
   - microsoft-people-skills-inferred-ontology

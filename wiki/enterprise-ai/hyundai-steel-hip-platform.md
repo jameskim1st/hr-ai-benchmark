@@ -22,10 +22,14 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2024-05-13
 last_confirmed: 2025-10-27
-confidence: 0.40
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 2
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/kr-conglomerate-2026-q2-research.md
+sources: [sources/ajunews-hyundai-steel-ai-bigdata-festival-2025-10.md, sources/moneys-hyundai-steel-hip-launch-2024-05.md]
 related_usecases:
   - hyundai-mobis-moai-platform
   - lg-chatexaone-group-rollout

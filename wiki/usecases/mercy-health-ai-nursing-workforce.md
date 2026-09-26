@@ -8,7 +8,7 @@ company: Mercy Health
 industry: [healthcare]
 region: [na]
 employee_class: [all]
-vendor: []
+vendor: [Works (Trusted Health)]
 vendor_type: [internal-build, point-solution]
 output: "일별 간호사 교대 스케줄 최적화안 (코어 69%·내부 유연 23%·계약직 8% 인력 소스별 배정) + 관리자 승인용 권고안 + Dragon Copilot AI 임상 문서화 (정확도 30→90%)"
 ai_tech_type: [generative, predictive, recognition, decision-optimization]
@@ -16,11 +16,20 @@ ai_tech_subtype: [summarization-qa, prediction, speech-recognition, optimization
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: 근로기준법 교대 제한·의료법 (페이지 파생 질문) + 고영향 AI (배치)
+kr_union: 단체교섭/근로자대표 협의 필요 (교대 배치; 간호사 노조 이슈 미공개)
+kr_language: 미확인 (AI 스케줄링 벤더 미공개)
+kr_vendor: 미확인 (AI 스케줄링 벤더 미공개)
 frequency: daily
 first_seen: 2023-01-01
 last_confirmed: 2025-02-01
-confidence: 0.55
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 sources:
   - sources/beckershospitalreview-mercy-2024.md
   - sources/healthcareitnews-mercy-30m-2023.md

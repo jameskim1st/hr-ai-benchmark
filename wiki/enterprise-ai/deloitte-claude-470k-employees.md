@@ -22,11 +22,14 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2025-10-06
 last_confirmed: 2025-10-06
-confidence: 0.45               # Tier 1 CNBC(+0.20) + Tier 3 Anthropic official(+0.10) + 구체 규모 = 0.45
+confidence: 0.45
+evidence_grade: B
+corroborated_by: 1
+freshness: fresh
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "CNBC 2025-10-06 https://www.cnbc.com/2025/10/06/anthropic-deloitte-enterprise-ai.html"
-  - "Anthropic press 2025-10 https://www.anthropic.com/news/deloitte-anthropic-partnership"
+sources: [sources/cnbc-anthropic-deloitte-claude-2025-10.md, sources/anthropic-deloitte-partnership-2025-10.md]
 related_usecases:
   - ibm-askhr-watsonx
   - moderna-ask-hr-routing

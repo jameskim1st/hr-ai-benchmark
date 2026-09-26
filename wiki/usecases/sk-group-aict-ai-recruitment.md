@@ -17,11 +17,20 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: [kr-high-impact, eu-annex-iii]
+kr_law: 채용절차법 심사기준 고지·이의제기 + 개인정보보호법 AI 활용 고지, SK 대응 미공개
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향 — 1차 면접 AI 100% 자동)
+kr_language: 한국어 네이티브
+kr_vendor: SK AX + SKT (에이닷 비즈 HR, SaaS 대외 판매 추진)
 first_seen_estimated: true
 frequency: annual               # 신입 공채 연 1~2회
 first_seen: 2024-10-01
 last_confirmed: 2025-02-20
-confidence: 0.40               # Tier 3 × 2 (SK AX 공식)(+0.10) + Tier 2 서울경제 등 한국 경제지 다수 보도(+0.20) + recency 14m(0.00) = base 0.30 + 다수 매체 동시 보도 보너스(+0.10) → 0.40
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/sk-ax-ai-recruitment-service-2024.md

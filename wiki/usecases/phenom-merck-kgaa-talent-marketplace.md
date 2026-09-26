@@ -17,15 +17,22 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: PIPA 일반 수준(스킬 데이터 200K); 내부이동 결정 활용 시 AI 기본법 검토
+kr_union: 단체교섭/근로자대표 협의 필요 (배치·내부이동 영향)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 first_seen_estimated: true
 frequency: daily
 first_seen: 2025-03-01
 last_confirmed: 2025-03-12
-confidence: 0.30               # Tier 3 vendor award(+0.10) + Tier 4 BusinessWire PR(+0.15) + 구체 수치 다수 = 0.30
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "BusinessWire/Phenom 2025-03-12 https://www.businesswire.com/news/home/20250312351615/en/Phenom-Announces-2025-Talent-Experience-Award-Winners-Global-Enterprises-Set-New-HR-Benchmarks"
-  - "Phenom customers https://www.phenom.com/customers"
+sources: [sources/phenom-talent-experience-awards-2025-03.md, sources/phenom-customers-page-2026-09.md]
 related_usecases:
   - unilever-flex-gloat-talent-marketplace
   - schneider-electric-gloat-talent-marketplace

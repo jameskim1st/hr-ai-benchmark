@@ -16,11 +16,20 @@ ai_tech_subtype: [summarization-qa, rpa, prediction]
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: AI 기본법 고영향 AI (승진) — 영향평가·인적감독·고지 (페이지 명시)
+kr_union: 노조·노사협의회 사전 통보 필요 (승진 의사결정, 페이지 명시)
+kr_language: 미확인 (벤더 확인 필요; 외부 고객 도입 사례 미공개)
+kr_vendor: 미확인 (국내 파트너 확인 필요; 외부 도입 reference 0건)
 frequency: annual
 first_seen: 2025-10-12
 last_confirmed: 2026-01-20
-confidence: 0.55
+confidence: 0.45
+evidence_grade: B
+corroborated_by: 1
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
   - sources/ibm-askhr-case-study-2025.md

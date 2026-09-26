@@ -17,19 +17,23 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: PIPA 일반 수준(스킬 프로파일); 재배치 매칭 결정 활용 시 AI 기본법 검토
+kr_union: 단체교섭/근로자대표 협의 필요 (리스킬링 후 재배치 영향)
+kr_language: 해당 없음 (자체 구축 My Learning World)
+kr_vendor: 해당 없음 (Siemens 자체 구축; GBS 부분 ServiceNow)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: daily
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
-confidence: 0.45               # Tier 2 AIHR(+0.20) + Tier 2 MISQ(+0.20) + Tier 1 WEF(+0.35, 할인→+0.20, 자사 commitment 전달 성격) + Tier 3 ServiceNow(+0.10) = base 0.70, 할인 후 → 0.45
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 4
+freshness: stale
+depth: partial
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "AIHR Institute https://www.aihr-institute.com/blog/how-ai-is-transforming-hr-at-siemens"
-  - "MISQ Executive https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1637&context=misqe"
-  - "HRKatha https://www.hrkatha.com/features/how-siemens-india-is-navigating-workforce-transformation-in-the-age-of-ai/"
-  - "ServiceNow case study https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/resource-center/case-study/cs-siemens-ag.pdf"
-  - sources/wef-siemens-reskilling-revolution-case.md
+sources: [sources/aihr-institute-siemens-hr-ai-2025.md, sources/misqe-siemens-reskilling-digital-learning-2025.md, sources/hrkatha-siemens-india-workforce-ai-2025-10.md, sources/servicenow-siemens-case-study.md, sources/wef-siemens-reskilling-revolution-case.md]
 related_usecases:
   - schneider-electric-gloat-talent-marketplace
   - accenture-ai-learning-workforce

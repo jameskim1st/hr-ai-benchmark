@@ -16,15 +16,22 @@ ai_tech_subtype: [summarization-qa, prediction, clustering-classification, rpa]
 stage: production
 visibility: public
 case_type: adoption
-regulatory_exposure: [kr-high-impact, eu-annex-iii]
+regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
+kr_law: 근로기준법 정리해고 제한 — 재배치·reskilling 프레임 (페이지 명시)
+kr_union: 단체교섭/근로자대표 협의 필요 (구조조정; 노조 충돌 우려 명시)
+kr_language: 해당 없음 (자체 구축)
+kr_vendor: 해당 없음 (자체 구축)
 frequency: annual
 first_seen: 2025-05-01
 last_confirmed: 2026-02-12
-confidence: 0.75
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 3
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/ibm-hr-ai-portfolio-2025-2026.md
-  - "WSJ Krishna interview via HR Asia: 8K layoff + AskHR + rehire nuance https://hr.asia/asia-pacific/ibm-lays-off-8000-to-embrace-ai-only-to-rehire-just-as-many/"
+sources: [sources/entrepreneur-ibm-ceo-ai-replaced-hr-staff-2025-05.md, sources/forbes-ibm-replaces-hundreds-hr-ai-2025-05.md, sources/hr-asia-ibm-8000-layoff-rehire-2025-05.md, sources/hrexecutive-ibm-chro-time-in-the-sun-2025-09.md]
 related_usecases:
   - ibm-askhr-watsonx
   - ibm-charlie-learning-ops-agent

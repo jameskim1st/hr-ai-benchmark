@@ -17,13 +17,22 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: Paradox 자동 스크리닝은 채용절차법 고지·AI 기본법 고영향 대상; 교육은 일반 수준
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향 — 채용 스크리닝·역할 전환)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-06-24
 last_confirmed: 2026-02-19
-confidence: 0.55
+confidence: 0.7
+evidence_grade: A
+corroborated_by: 3
+freshness: fresh
+depth: full
+graded_at: 2026-09-27
 sources:
   - sources/walmart-corporate-ai-tools-2025-06.md
-  - sources/hrdive-walmart-openai-2025-09.md
+  - sources/hrdive-walmart-openai-certification-2025-09.md
   - sources/fortune-walmart-ai-training-2026-02.md
   - sources/jobspikr-walmart-reskilling-2025.md
 related_usecases:
@@ -35,7 +44,7 @@ related_vendors:
 
 ## Summary
 
-Walmart은 2025년 6월 1.5M 직원 대상의 AI 도구 모음을 공개하고, 2025년 9월 OpenAI와 AI 인증 교육 프로그램 파트너십을 발표했다. ✅ **Fact** "People-led, Tech-powered" 원칙 하에 AI를 인력 대체가 아닌 역할 전환(드론 기술자·로봇 감독관 등)의 도구로 활용하고 있다. Workday HCM을 전사 단일 HR 시스템으로 운영하며, Paradox의 대화형 ATS로 고볼륨 프론트라인 채용을 자동화했다. [[sources/walmart-corporate-ai-tools-2025-06.md]] [[sources/hrdive-walmart-openai-2025-09.md]]
+Walmart은 2025년 6월 1.5M 직원 대상의 AI 도구 모음을 공개하고, 2025년 9월 OpenAI와 AI 인증 교육 프로그램 파트너십을 발표했다. ✅ **Fact** "People-led, Tech-powered" 원칙 하에 AI를 인력 대체가 아닌 역할 전환(드론 기술자·로봇 감독관 등)의 도구로 활용하고 있다. Workday HCM을 전사 단일 HR 시스템으로 운영하며, Paradox의 대화형 ATS로 고볼륨 프론트라인 채용을 자동화했다. [[sources/walmart-corporate-ai-tools-2025-06.md]] [[sources/hrdive-walmart-openai-certification-2025-09.md]]
 
 ## Problem / Why (도입 배경)
 
@@ -52,7 +61,7 @@ Walmart는 2.3M명 이상의 글로벌 인력을 보유하고 있으며, 10,500�
   1. ✅ **Fact** Workday HCM으로 2.3M 직원 HR 단일 통합 관리. [[sources/jobspikr-walmart-reskilling-2025.md]]
   2. ✅ **Fact** Paradox Olivia 대화형 ATS로 프론트라인 채용 자동화 — 채용 소요시간 60일→18일 단축. [[sources/jobspikr-walmart-reskilling-2025.md]]
   3. ✅ **Fact** 2025년 6월, 1.5M 직원 대상 AI 도구 모음 공개. [[sources/walmart-corporate-ai-tools-2025-06.md]]
-  4. ✅ **Fact** 2025년 9월, OpenAI와 AI 인증 교육 프로그램 파트너십 발표 (2026년 시작 예정). [[sources/hrdive-walmart-openai-2025-09.md]]
+  4. ✅ **Fact** 2025년 9월, OpenAI와 AI 인증 교육 프로그램 파트너십 발표 (2026년 시작 예정). [[sources/hrdive-walmart-openai-certification-2025-09.md]]
   5. ✅ **Fact** 50,000명 캐셔 등을 드론 기술자·로봇 감독관으로 전환하는 리스킬링 추진. [[sources/jobspikr-walmart-reskilling-2025.md]]
   6. ✅ **Fact** 모든 미국 매장·클럽·공급망 관리자가 Manager Academy 이수 의무화(2025년 말 기준). [[sources/fortune-walmart-ai-training-2026-02.md]]
 - **Human-in-the-loop (HITL)**: 최종 채용 결정은 매니저가 수행. AI는 자동 스크리닝·일정 조율.
@@ -74,7 +83,7 @@ flowchart LR
 
 - **Core HRIS**: ✅ **Fact** Workday HCM — 2017년부터 2.3M 직원 전원 적용. [[sources/jobspikr-walmart-reskilling-2025.md]]
 - **ATS**: ✅ **Fact** Paradox(Olivia) 대화형 ATS. [[sources/jobspikr-walmart-reskilling-2025.md]]
-- **AI 교육 파트너**: ✅ **Fact** OpenAI (2026년 AI 인증 프로그램). [[sources/hrdive-walmart-openai-2025-09.md]]
+- **AI 교육 파트너**: ✅ **Fact** OpenAI (2026년 AI 인증 프로그램). [[sources/hrdive-walmart-openai-certification-2025-09.md]]
 - **배포 환경**: _미공개 (not disclosed)_
 - **연동·통합**: ✅ **Fact** Workday ↔ Walmart Data Café 분석 플랫폼 API 통합. [[sources/jobspikr-walmart-reskilling-2025.md]]
 - **사용자 접점**: 매장 내 디지털 도구, 모바일 앱. 세부 _미공개 (not disclosed)_.
@@ -87,7 +96,7 @@ flowchart LR
 
 ### D. Model (모델)
 
-- **Foundation model**: ✅ **Fact** OpenAI (AI 교육 프로그램 파트너). [[sources/hrdive-walmart-openai-2025-09.md]]
+- **Foundation model**: ✅ **Fact** OpenAI (AI 교육 프로그램 파트너). [[sources/hrdive-walmart-openai-certification-2025-09.md]]
 - **ATS 모델**: Paradox Olivia (대화형 AI). [[sources/jobspikr-walmart-reskilling-2025.md]]
 - **커스터마이징**: _미공개 (not disclosed)_
 

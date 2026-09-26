@@ -17,17 +17,23 @@ stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
+kr_law: skills 기반 채용·후보 식별 → AI 기본법 고영향 AI(채용) 검토
+kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
+kr_language: 미확인 (벤더 확인 필요)
+kr_vendor: 미확인 (국내 파트너 확인 필요)
 first_seen_estimated: true
 last_confirmed_estimated: true
 frequency: monthly
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
-confidence: 0.35               # Tier 1 Forrester TEI(+0.35) + Tier 3 vendor(+0.10) - platform-wide TEI not AtkinsRéalis specific = 0.35
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
+freshness: stale
+depth: stub
+graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - "Beamery case study https://beamery.com/resources/case-studies/case-study-atkins-realis"
-  - "Beamery Flex case study https://beamery.com/resources/case-studies/job-architecture-case-study-flex-skills-based-hiring-ai"
-  - "Forrester TEI (referenced by Beamery)"
+sources: [sources/beamery-atkins-realis-case-study-2025.md, sources/beamery-flex-job-architecture-case-study-2025.md, sources/beamery-forrester-tei-467-roi-2023-10.md]
 related_usecases:
   - jnj-digital-talent-platform-skills-ai
   - visier-vee-people-analytics
