@@ -12,7 +12,7 @@ region: [kr]
 employee_class: [all]
 vendor: [신한은행 internal]
 vendor_type: [internal-build]
-output: "14,000+ 직원의 단일 AI ONE 인터페이스 출력 — 40+ 업무비서 task 결과 (AI-STUDIO·AI-OCR·R비서) + Speech-to-AI 음성 응답. ⚠️ 자사 보고: 1인당 일 30분+ 절감, 향후 상담→전산처리 80% 자동화 목표"
+output: "AI ONE 단일 인터페이스의 40여 가지 업무비서 결과 (업무지식 검색·시장지표·마케팅 타겟리스트·대출 서류 발송·일정 대시보드; AI-STUDIO·AI-OCR·R비서 RPA) + Speech to AI 음성 지시 처리. ⚠️ 자사 보고: 1인당 일 30분 이상 절감 기대, 상담→전산처리 80% 자동화 목표"
 ai_tech_type: [generative, recognition]
 ai_tech_subtype: [summarization-qa, ocr, speech-recognition]
 stage: production
@@ -26,7 +26,7 @@ confidence: 0.8
 evidence_grade: A
 corroborated_by: 3
 freshness: fresh
-depth: partial
+depth: stub
 graded_at: 2026-09-27
 consulting_angle_status: filled
 sources: [sources/etnews-shinhan-bank-ai-one-2024-09.md, sources/incheontoday-shinhan-bank-ai-one-2024-09.md, sources/moneys-shinhan-bank-ai-personnel-2021-01.md]
@@ -44,49 +44,50 @@ related_vendors: []
 
 ## Problem / Why (도입 배경)
 
-- **Before**: 신한은행 직원이 다수의 산발 AI 도구 (A.I 몰리·OCR·R비서) 별도 사용 — UX 분산
-- **Pain point**: 14,000+ 직원 base에서 AI 도구 fragmentation으로 ROI 약화
-- **Trigger**: 2024-09 통합 launch — 단일 인터페이스 + 모바일·태블릿 음성 지원
+- **Before**: ✅ 기존 업무지원시스템 'A.I 몰리' 운영. [[sources/etnews-shinhan-bank-ai-one-2024-09.md]] (직원 규모 수치 _미공개_ — 근거 미확보, 2026-09-27 grounding 점검)
+- **Pain point**: ✅ AI-STUDIO·AI-OCR·R비서 등 다양한 AI 서비스를 한 곳에서 이용하도록 '사용 편의성' 개선. [[sources/etnews-shinhan-bank-ai-one-2024-09.md]]
+- **Trigger**: ✅ 2024-09 A.I 몰리 개편 → AI ONE 도입 — 단일 인터페이스 + 휴대용 기기 음성 지시. [[sources/incheontoday-shinhan-bank-ai-one-2024-09.md]]
 
 ## Solution Architecture
 
 ### A. Process (프로세스)
 
-- **Before**: A.I 몰리 + AI-OCR + R비서 등 산발 사용
+- **Before**: ✅ 기존 업무지원시스템 'A.I 몰리'. [[sources/etnews-shinhan-bank-ai-one-2024-09.md]]
 - **After**:
-  1. 직원이 AI ONE 단일 인터페이스 접속
-  2. 40+ 업무비서 중 task 선택 (또는 음성 지시)
-  3. AI-STUDIO (분석)·AI-OCR (문서 인식)·R비서 (자동화) 통합 호출
-  4. 모바일·태블릿 Speech-to-AI 지원
-  5. 향후 상담 → 전산처리 종결 80% 자동화 목표
-- **HITL**: 직원이 결과 검토·승인. 고객 응대 자동 종결은 단계적 확장
-- **Frequency**: daily
+  1. ✅ 직원이 AI ONE에서 AI-STUDIO·AI-OCR·R비서 등 다양한 AI 서비스를 한 곳에서 이용. [[sources/etnews-shinhan-bank-ai-one-2024-09.md]]
+  2. ✅ 업무지식 검색·주요 시장지표 확인·마케팅 타겟리스트 작성·대출 사전/사후 서류 발송·일정 및 업무 관리 대시보드 등 40여 가지 업무비서 기능. [[sources/etnews-shinhan-bank-ai-one-2024-09.md]]
+  3. ✅ R비서 = RPA 로봇 — 중앙집중형 '알파봇' + 개별 PC '마이봇'. [[sources/incheontoday-shinhan-bank-ai-one-2024-09.md]]
+  4. ✅ 스마트폰·태블릿에서 음성인식으로 업무 지시하는 'Speech to AI'. [[sources/incheontoday-shinhan-bank-ai-one-2024-09.md]]
+  5. ⚠️ 자사 보고: 향후 '고객 상담부터 전산처리 종결' 업무 전 과정의 80% 수준까지 자동화 지원 확대 계획. [[sources/etnews-shinhan-bank-ai-one-2024-09.md]]
+- **HITL**: _미공개 (not disclosed)_
+- **Frequency**: _미공개 (not disclosed)_
 
 ### B. System
 
-- 신한은행 자체 구축 (한국 자체 LLM·AI 스택 추정)
-- 모바일·태블릿 통합 — Speech-to-AI front-end
-- 14,000+ 직원 SSO
+- **AI 시스템 배치**: ✅ 기존 'A.I 몰리' 개편 — AI-STUDIO·AI-OCR·R비서(RPA) 통합. [[sources/etnews-shinhan-bank-ai-one-2024-09.md]] 자체 구축 여부·LLM 스택 _미공개_
+- **사용자 접점**: ✅ 스마트폰·태블릿 등 휴대용 기기 음성 지시(Speech to AI). [[sources/incheontoday-shinhan-bank-ai-one-2024-09.md]]
+- **인증·권한·이용자 규모**: _미공개 (not disclosed)_ (직원 수 근거 미확보 — 2026-09-27 grounding 점검)
 
 ### C/D. Data & Model
 
-- **Foundation model**: 자체 + 외부 partner 혼합 (구체 _미공개_)
-- **데이터**: 사내 정책·매뉴얼·업무 처리 로그
-- **거버넌스**: 금융정보보호 강화
+- **Foundation model**: _미공개 (not disclosed)_
+- **데이터**: ✅ 업무지식·시장지표·마케팅 타겟리스트·대출 서류 등 업무 데이터. [[sources/etnews-shinhan-bank-ai-one-2024-09.md]] 세부 _미공개_
+- **거버넌스**: _미공개 (not disclosed)_
 
 ### E. Organization
 
-- 신한은행 디지털혁신단 + IT/AI Plat팀 + 사업부 SME
+- **오너십**: _미공개 (not disclosed)_
+- ✅ 별건: 2021 상반기 인사에 'AI 최적해 알고리즘' 적용 (직원 업무 숙련도·영업점 직무 데이터), 과장급 승진자 여성 비중 42% — AI ONE과는 별개 사례. [[sources/moneys-shinhan-bank-ai-personnel-2021-01.md]]
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 40+ AI 통합 단일 허브로 직원 daily 30분 절감 + 상담→전산처리 80% 자동화 목표.
 
-- ⚠️ 자사 보고:
-  - 직원 1인당 일 30분 이상 절감 기대
-  - 상담→전산처리 종결 업무 80% 자동화 목표 (향후)
-  - 40+ AI 비서 통합
+- ⚠️ 자사 보고: [[sources/etnews-shinhan-bank-ai-one-2024-09.md]] [[sources/incheontoday-shinhan-bank-ai-one-2024-09.md]]
+  - 직원 1인당 일 30분 이상 절감 기대 (기대치)
+  - 상담→전산처리 종결 업무 80% 자동화 목표 (향후 계획)
+  - 40여 가지 업무비서 기능 통합
 
 ## Governance & Risk
 
@@ -104,8 +105,8 @@ related_vendors: []
 - **Speech-to-AI 모바일 차별점**: 한국 대기업 외근·영업·매장 직원에게 매력적 차별화 — 데스크 외 작업 환경 fit
 - **2026 Q3-Q4 KR 금융 컨설팅 deck**:
   - "단일 통합 vs 산발 AI" 슬라이드에 신한 AI ONE = best practice
-  - 30분 절감 × 14,000 직원 × 250일 = 연 ~17,500 인-일 → 표면적 ROI 계산
+  - 30분 절감 × 직원 수 × 근무일로 표면적 ROI 계산 가능 — 단, 신한은행 직원 수는 인용 소스에 없으므로 클라이언트 제안 시 공시 자료로 별도 확인 (2026-09-27 grounding 점검: 종전 계산식의 직원 수·인-일 수치 제거)
 - **반면교사**:
-  - "30분 절감"은 자사 추정 — 외부 reference로 사용 시 "신한 자체 추정" 명시 필수
+  - "30분 절감"은 자사 기대치 — 외부 reference로 사용 시 "신한 자체 기대치" 명시 필수
   - 80% 자동화 목표는 단계적 — 일시적 layoff risk는 한국 노동법 컨텍스트에서 회피 권장
 - **국가핵심기술 보유 KR 그룹사**: 자체 LLM 활용 패턴 — SK 그룹 'A.X' [[sk-group-aibiz-25-companies]]와 비교

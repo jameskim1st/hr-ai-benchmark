@@ -48,7 +48,7 @@ Viven AI — Eightfold 공동창업자 Ashutosh Garg·Varun Kacholia가 분사 �
 ## Problem / Why (도입 배경)
 
 - **Before**: 글로벌 enterprise에서 시차·휴가·휴직·퇴사 동료의 contextual knowledge 단절 — Slack search·Confluence·이메일 검색에 의존
-- **Pain point**: knowledge worker 1명 평균 19% 시간을 "정보 search"에 투입 (McKinsey Digital). 부재 동료의 "왜 이렇게 결정했나"·"이 고객은 어떻게 대응?" 같은 contextual Q&A 답 부재
+- **Pain point**: 지식 근로자의 정보 검색 시간 부담 (기존 인용 통계는 인용 소스에 없어 삭제 — 수치 근거 미확보, 2026-09-27 grounding 점검). 부재 동료의 "왜 이렇게 결정했나"·"이 고객은 어떻게 대응?" 같은 contextual Q&A 답 부재
 - **Trigger**: Eightfold 공동창업자가 Talent Intelligence 영역에서 Knowledge Twin으로 영역 확장 (2025-10 stealth exit + $35M Khosla seed)
 
 ## Solution Architecture
@@ -66,16 +66,40 @@ Viven AI — Eightfold 공동창업자 Ashutosh Garg·Varun Kacholia가 분사 �
 - **Frequency**: daily
 - **Scope**: assistive — Twin은 답변 제안, 업무 결정은 사람
 
-### B/C/D. System
+### B. System & Infrastructure (시스템·인프라)
 
-- Viven AI cloud (구체 architecture _미공개_, stealth exit 직후)
-- 추정: LLM (외부 API 또는 자체 호스팅) + RAG + 직원별 personal knowledge graph
-- 모델: _미공개_
+> stealth exit 직후 신생 제품 — 인용 소스([[sources/verified-pwc-doc-2026-05]])는 회사 존재·펀딩·제품 컨셉만 확인. 아키텍처는 전부 `_미공개_`.
 
-### E. Organization
+- **Core HRIS / 기반 시스템**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: _미공개 (not disclosed)_
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점 (UX layer)**: _미공개 (not disclosed)_
+- **인증·권한**: _미공개 (not disclosed)_
 
-- Viven AI 본사 (US) — 창업 직후
-- Investors: Khosla Ventures·Foundation Capital 등 ($35M seed)
+### C. Data (데이터)
+
+- **입력 데이터 소스**: ✅ 부재중 동료의 지식·전문성을 LLM으로 query 가능한 형태로 재현한다는 제품 컨셉 ([[sources/verified-pwc-doc-2026-05]]); 구체 입력 데이터 _미공개_
+- **데이터 규모**: _미공개 (not disclosed)_
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context 구분**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: _미공개 (not disclosed)_
+- **민감정보 처리**: _미공개 (not disclosed)_
+
+### D. Model (모델)
+
+- **Foundation model**: _미공개 (not disclosed)_
+- **Model 유형**: ✅ LLM 기반 digital twin (제품 컨셉) ([[sources/verified-pwc-doc-2026-05]]); 세부 _미공개_
+- **제공 방식**: _미공개 (not disclosed)_
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: _미공개 (not disclosed)_
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: ✅ Viven AI — Eightfold 공동창업자 Ashutosh Garg·Varun Kacholia 분사 창업 ([[sources/verified-pwc-doc-2026-05]])
+- **투자자**: ✅ Khosla Ventures·Foundation Capital 등, $35M seed (2025-10-15 stealth exit) ([[sources/verified-pwc-doc-2026-05]])
+- **팀 규모·거버넌스·변화관리·파트너**: _미공개 (not disclosed)_
 
 ## Impact / Metrics (기대효과)
 
@@ -93,6 +117,12 @@ Viven AI — Eightfold 공동창업자 Ashutosh Garg·Varun Kacholia가 분사 �
 - ⚠️ 부재 동료의 "AI 대리"가 평가·책임 회피 도구로 악용 가능
 - ⚠️ 한국 개인정보보호법 + 영업비밀 보호: 직원 활동 학습은 strict opt-in 필요
 
+## Contradictions
+
+_없음._
+
+> [!note] 2026-09-27 grounding — 인용 소스는 PwC 자료 fact-check 결과(TechCrunch 2025-10-15 인용)로 회사 존재·펀딩·제품 컨셉만 확인. 정보 검색 시간 비율(McKinsey)·Eightfold profile DB 규모·"추정" 아키텍처 서술은 소스에 없어 삭제/`_미공개_`. A. Process 1~5단계는 제품 개념 서술로 인용 소스 미확인 — 외부 인용 금지.
+
 ## Consulting Angle
 
 - **KR 컨설팅에서의 위치 — "watch list" reference**:
@@ -107,4 +137,4 @@ Viven AI — Eightfold 공동창업자 Ashutosh Garg·Varun Kacholia가 분사 �
 - **반면교사**:
   - 직원 활동 학습은 한국 노조·개인정보보호 관점에서 가장 민감 — KR 도입 시 strict opt-in + 학습 데이터 범위 명시 + 직원 본인이 Twin 출력 review·삭제권 보장 필수
   - "부재 동료 대리 AI"가 책임 소재 모호화 risk — HR·legal·노조 사전 합의 필수
-- **Viven 창업자 신뢰도 베팅**: Khosla·Foundation Capital + Eightfold 1.6B+ profile DB 운영 경험은 강한 신호. 단 1차 customer reference 출시 (예상 2026 H2) 까지 watch list 유지
+- **Viven 창업자 신뢰도 베팅**: Khosla·Foundation Capital + Eightfold 운영 경험은 강한 신호 (Eightfold profile DB 규모는 인용 소스에 없어 삭제). 단 1차 customer reference 출시 (예상 2026 H2) 까지 watch list 유지

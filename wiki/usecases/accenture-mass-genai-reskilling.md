@@ -1,5 +1,5 @@
 ---
-title: "Accenture — 전사 GenAI 재스킬링"
+title: Accenture — 전사 GenAI 재스킬링
 slug: accenture-mass-genai-reskilling
 primary_category: Learning & Development
 subcategory: Skills & Capabilities
@@ -10,14 +10,14 @@ region: [global]
 employee_class: [all]
 vendor: [Accenture internal]
 vendor_type: [internal-build]
-output: "직원별 GenAI 학습 이수 기록 + AI literacy 인증 등급 + 사업부 AI 역량 dashboard. CEO Sweet 거버넌스로 미이수자 exit timeline 산정의 input"
+output: 직원별 GenAI 학습 이수 기록 + AI literacy 인증 등급 + 사업부 AI 역량 dashboard. CEO Sweet 거버넌스로 미이수자 exit timeline 산정의 input
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production
 visibility: public
 case_type: adoption
 regulatory_exposure: []
-kr_law: 'non-adaptable exit' 연계 시 근로기준법 해고 제한 리스크 (페이지)
+kr_law: "'non-adaptable exit' 연계 시 근로기준법 해고 제한 리스크 (페이지)"
 kr_union: 노조 충돌 위험 명시 (페이지) — exit 대신 재배치 프레이밍·사전 협의
 kr_language: 해당 없음 (자체 구축)
 kr_vendor: 해당 없음 (Accenture 자체 구축)
@@ -41,101 +41,105 @@ related_vendors: []
 
 ## Summary
 
-Accenture가 2022-11~2025-FY 사이 **30명 → 550,000+ 직원** GenAI 교육. AI/data 전문 인력은 **40,000(2023) → 77,000(2025)** 증가. 연간 ~$1B L&D 투자. CEO Julie Sweet (2026-03 발언): "AI를 사용하지 못하면 승진·고용이 위험" + "non-adaptable 직원은 compression timeline으로 exit". 가장 강력한 mass reskilling reference.
+⚠️ 자사 보고: Accenture가 **550,000명** 직원에게 생성형 AI 기초 재스킬링 완료 (FY25 Q4 실적 콜, CEO Julie Sweet). AI/data 전문 인력은 **40,000(2023) → 77,000(2025)** 증가. 6개월 $865M business optimization 프로그램(퇴직·감원 비용). [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]] Sweet (2026-03 발언): "승진하려면 AI를 써야 한다" + reskilling이 불가능한 인력은 "compression timeline"으로 exit; 3년 $3B AI 투자, AI 인력 80,000명 목표, 직원 770,000명+. [[sources/fortune-accenture-sweet-ai-required-promotion-2026-03.md]] 가장 강력한 mass reskilling reference. (2026-09-27 grounding 점검: 종전 "2022-11 30명 시작", "연간 $1B L&D 투자" 수치는 인용 소스에 없어 제거 — Contradictions 참조.)
 
 ## Problem / Why (도입 배경)
 
-- **Before**: 770K+ 글로벌 컨설팅 인력 — 직원 AI 역량 분포 편차 큰
-- **Pain point**: 컨설팅 비즈니스 자체가 AI를 사용·판매·구현해야 함 → 직원 AI literacy가 직접 매출 영향
-- **Trigger**: ChatGPT 출시 직후 (2022-11) Sweet CEO가 즉각 mass reskilling 결단
+- **Before**: ✅ 직원 770,000명+ 글로벌 컨설팅 인력. [[sources/fortune-accenture-sweet-ai-required-promotion-2026-03.md]] AI 역량 분포 baseline ❓ 미공개
+- **Pain point**: ✅ Sweet: "AI proficiency is a mandatory part of working at the consultancy and moving up its ranks" — 컨설팅 비즈니스 운영 자체가 AI 사용을 전제. [[sources/fortune-accenture-sweet-ai-required-promotion-2026-03.md]]
+- **Trigger**: ✅ 2023년 발표한 3년 $3B AI 투자 — AI 인력 2배(80,000명) 목표의 일환. [[sources/fortune-accenture-sweet-ai-required-promotion-2026-03.md]] (프로그램 시작 시점 세부 _미공개_)
 
 ## Solution Architecture
 
 ### A. Process (프로세스)
 
-- **Before**: AI 교육은 데이터 사이언티스트 등 specific 직군에 한정
-- **After**:
-  1. 2022-11 시점 GenAI trained 직원 = 30명
-  2. mandatory GenAI fundamentals 모듈 전 직원 배포
-  3. AI/data 전문 인력 채용·재배치 가속 — 2023년 40K → 2025년 77K
-  4. 매년 ~$1B L&D 투자 (대부분 AI 비중)
-  5. 2025-FY 종료 시점 trained 직원 = 550,000+
-  6. Sweet 2026-03: "AI 미사용 직원 승진·고용 risk + exit timeline"
-- **HITL**: HR + 사업부 SME + Sweet CEO 직접 거버넌스
-
-### B/C/D/E. System
-
-- Accenture 자체 LMS + 외부 vendor 콘텐츠 혼합
-- 데이터: 직원 학습 이력·AI 사용 metric
-- 오너십: Accenture HR (CHRO) + 사업부 P&L 책임자
+- **Before**: _미공개 (not disclosed)_ — 소스는 프로그램 이전 교육 범위를 기술하지 않음
+- **After** (⚠️ 자사 보고 — CEO 발언 전달):
+  1. ✅ 생성형 AI 기초(fundamentals) 재스킬링 — 550,000명 완료. [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]]
+  2. ✅ AI/data 전문 인력 확충 — 2023년 40,000 → 2025년 77,000 (채용 지속). [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]]
+  3. ✅ 6개월 $865M business optimization 프로그램 — 수천 명 재스킬링 + 적응 거부자 exit. [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]] [[sources/fortune-accenture-sweet-ai-required-promotion-2026-03.md]]
+  4. ✅ "3년에 걸친 점진적 전환" — 기술 적응 → 사용자 친화 workbench → "이것이 Accenture 운영 방식" 선언. [[sources/fortune-accenture-sweet-ai-required-promotion-2026-03.md]]
+  5. ✅ Sweet 2026-03: AI 사용이 승진 요건 ("If you want to get promoted, you've got to do the things that we do"). [[sources/fortune-accenture-sweet-ai-required-promotion-2026-03.md]]
+- **HITL**: ✅ CEO Sweet 직접 발언·거버넌스. [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]] HR·사업부 역할 _미공개_
 
 ### F. Diagrams (도식)
 
 ```mermaid
 flowchart LR
-    Start[2022-11: 30명 trained] -->|mandatory module| Mass[전 직원 GenAI 모듈]
-    Mass -->|3년 누적| End[2025-FY: 550,000+ trained]
-    AIData2023[AI/data 인력 40K] -->|채용·재배치| AIData2025[77K +93%]
-    Sweet[Sweet 2026-03] -->|exit timeline| NonAdapt[non-adaptable 직원]
-    Spend[$1B/yr L&D] --> Mass
+    Mass[GenAI 기초 재스킬링] -->|FY25 누적| End[550,000명 trained]
+    AIData2023[AI/data 인력 40,000 — 2023] -->|채용·확충| AIData2025[77,000 — 2025]
+    Opt[$865M 6개월 optimization] -->|compression timeline| NonAdapt[reskilling 불가 인력 exit]
+    Sweet[Sweet 2026-03] -->|승진 요건| AIUse[AI 사용 필수]
 ```
+범례: 실선 = [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]] [[sources/fortune-accenture-sweet-ai-required-promotion-2026-03.md]] 확인.
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS / 기반 시스템**: _미공개_ (Accenture는 SAP SuccessFactors 사용 알려졌으나 LearnVantage와 직접 통합 명시 없음)
-- **AI 시스템 배치**: ✅ **Accenture LearnVantage** 자체 학습 플랫폼 (2024-03 launch, Udacity 인수 통합)
-- **배포 환경**: _미공개_ (LearnVantage 호스팅 인프라 비공개. AWS·Google Cloud·Microsoft 파트너십은 콘텐츠 차원)
-- **연동·통합**: ✅ Stanford Online (Generative AI Scholars Program), Pluralsight·Coursera·Workera·Skillsoft (콘텐츠), AWS·Google Cloud·Microsoft (인증)
-- **사용자 접점**: ✅ LearnVantage web platform (self-paced, 40h+ Stanford courses)
-- **인증·권한**: _미공개_
-
-> Source: [Accenture LearnVantage newsroom 2024-03](https://newsroom.accenture.com/news/2024/accenture-launches-accenture-learnvantage-to-help-clients-and-their-people-gain-essential-skills-and-achieve-greater-business-value-in-the-ai-economy)
+- **Core HRIS / 기반 시스템**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: _미공개 (not disclosed)_ (종전 LearnVantage·Udacity 서술은 인용 소스에 없는 외부 URL 기반이라 2026-09-27 grounding 점검에서 제거)
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점**: ✅ Sweet: "사용자 친화적이고 올바른 workbench" 마련 언급 — 구체 플랫폼 _미공개_. [[sources/fortune-accenture-sweet-ai-required-promotion-2026-03.md]]
+- **인증·권한**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: ⚠️ 벤더 주장: AI recommendation engine이 직원 role + 회사 business strategy 기반 스킬 surface; 구체 데이터 항목 _미공개_
-- **데이터 규모**: ✅ 550,000+ trained 직원 (CEO Sweet 발언, ⚠️ 자사 보고)
-- **전처리·정제**: _미공개_
-- **학습 vs RAG vs In-context**: _미공개_
-- **데이터 거버넌스**: _미공개_
-- **민감정보 처리**: _미공개_
+- **입력 데이터 소스**: _미공개 (not disclosed)_
+- **데이터 규모**: ⚠️ 자사 보고: 550,000명 trained (CEO Sweet 발언). [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]]
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: _미공개 (not disclosed)_
+- **민감정보 처리**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
-- **Foundation model**: _미공개_ (LearnVantage "always-on skills assistant" base model 비공개)
-- **모델 유형**: ✅ recommendation engine + skills assistant
-- **제공 방식**: _미공개_
-- **커스터마이징 기법**: _미공개_
-- **Orchestration 프레임워크**: _미공개_
-- **평가·가드레일**: _미공개_
+- **Foundation model**: _미공개 (not disclosed)_
+- **모델 유형**: _미공개 (not disclosed)_
+- **제공 방식**: _미공개 (not disclosed)_
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: _미공개 (not disclosed)_
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: ✅ CEO Julie Sweet가 직접 전략·발언 주도 ("investing in upskilling our reinventors, which is our primary strategy"). [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]] HR 조직 역할 _미공개_
+- **참여 역할**: ✅ CFO Angie Park — $1B+ 절감 재투자 발언. [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]]
+- **팀 규모·기간**: ✅ 3년 $3B AI 투자(2023 발표), 6개월 optimization 프로그램. [[sources/fortune-accenture-sweet-ai-required-promotion-2026-03.md]] [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]]
+- **거버넌스 체계**: _미공개 (not disclosed)_
+- **변화관리**: ✅ 3년 점진적 전환 → 승진 요건화. [[sources/fortune-accenture-sweet-ai-required-promotion-2026-03.md]]
+- **파트너**: _미공개 (not disclosed)_
 
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-3년 만에 30명 → 550,000+ trained = **>18,300x 확장**. AI/data 인력 +93%. 컨설팅 시장에서 AI 매출 비중 가속.
+Before: _Before 수치 미공개_ → After: ⚠️ 자사 보고 550,000명 GenAI 기초 재스킬링 완료; AI/data 인력 40,000(2023) → 77,000(2025). 학습 성과(활용률·생산성) 수치는 _미공개_.
 
-- ✅ Tier 2 multi-source: CNBC + CIO Dive + Fortune + HR Brew (4개 매체 cross-reference)
-- 550,000+ trained
-- AI/data 인력 40,000 → 77,000 (+93%)
-- $1B/yr L&D investment
-- Sweet 2026-03: non-adaptable 직원 exit compression timeline
+- ✅ Tier 2 cross-reference: CNBC 2025-09 + Fortune 2026-03 (HR Brew 2025-10은 원문 미확보로 인용 불가)
+- ⚠️ 자사 보고: 550,000명 trained. [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]]
+- ⚠️ 자사 보고: AI/data 인력 40,000 → 77,000. [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]]
+- ⚠️ 자사 보고: $865M 6개월 optimization 프로그램, $1B+ 절감 재투자 계획 (L&D 투자액 아님). [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]]
+- ✅ Sweet 2026-03: reskilling 불가 인력 exit compression timeline, AI 사용 승진 요건. [[sources/fortune-accenture-sweet-ai-required-promotion-2026-03.md]]
 
 ## Governance & Risk
 
 - ⚠️ "non-adaptable 직원 exit" 발언이 KR 노동법·노조 컨텍스트에서 risk — 인용 시 sensitivity 필수
 - ⚠️ 550K trained의 quality (단순 모듈 수료 vs 실제 활용) _세부 미공개_
-- ⚠️ AI/data 인력 +93% 중 신규 채용 vs 기존 reskilling 비율 _미공개_
+- ⚠️ AI/data 인력 증가분 중 신규 채용 vs 기존 reskilling 비율 _미공개_
+
+## Contradictions
+
+> [!note] 2026-09-27 grounding — 종전 본문의 "2022-11 시점 30명 trained", "연간 ~$1B L&D 투자", "+93퍼센트 환산", "CIO Dive 교차 확인", LearnVantage·Udacity·Stanford Online 연동 서술은 인용 소스 4건의 raw 어디에도 없어 제거·_미공개_ 처리. CNBC의 $1B는 optimization 절감액이지 L&D 투자액이 아님. HR Brew 소스는 원문 미확보(403)로 수치 인용 불가. accenture-reinvention-genai-report-2024-01은 Accenture 자체 리서치(1,500명 C-suite 설문)이며 "Gartner methodology" 표기는 근거 없음.
 
 ## Consulting Angle
 
 - **KR 컨설팅 핵심 reference (Top 5)**:
-  - 한국 대기업 AI 전사 교육 ROI 논쟁의 **canonical benchmark** — 550K·$1B·3년 timeline
+  - 한국 대기업 AI 전사 교육 ROI 논쟁의 **canonical benchmark** — 550K trained·$3B 3년 AI 투자·3년 점진 전환 timeline
   - SK·LG·CJ·신세계 등 그룹 HRD 센터 RFP 대응 시 Accenture를 "글로벌 모범"으로 reference
 - **2026 Q3-Q4 임원 발표 핵심 슬라이드**:
-  - "30 → 550,000 in 3 years" 헤드라인이 가장 강력한 hook
+  - "550,000명 GenAI 기초 재스킬링 + AI 사용 = 승진 요건" 헤드라인이 가장 강력한 hook
   - Sweet "exit non-adaptable" 발언은 KR 임원 동기 부여 가능, 단 노조 sensitivity 필수
-- **AI/data 인력 +93%**: KR 대기업 자체 AI 인력 확보 명분 — 외부 채용 + 내부 reskilling 결합 패턴
+- **AI/data 인력 40,000 → 77,000**: KR 대기업 자체 AI 인력 확보 명분 — 외부 채용 + 내부 reskilling 결합 패턴
 - **반면교사**:
   - "exit timeline" 발언 그대로 KR 임원 입에 옮기면 노조 충돌 위험 — "성장 기회·재배치"로 reframe 권장
   - 컨설팅 회사 = AI를 직접 판매하는 특수 업종 → KR 제조·금융·유통 그룹과 적용 강도 차별 필요

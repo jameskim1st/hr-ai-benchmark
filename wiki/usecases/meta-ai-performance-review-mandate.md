@@ -45,72 +45,95 @@ related_vendors: []
 
 ## Problem / Why (도입 배경)
 
-- **Before**: Meta 직원들의 **AI 도구 채택률이 불균형** — 일부 엔지니어만 적극 활용, 나머지는 기존 방식 유지. 자발적 채택만으로는 **전사 AI transformation** 속도가 부족
-- **Pain point**: Moderna(모든 직원에게 ChatGPT Enterprise 배포)·Deloitte(470k Claude)·PwC(65k upskilling) 등 경쟁사가 전사 AI 배포를 가속화하는 상황에서, Meta가 "AI-first 기업"이라는 포지셔닝을 유지하려면 **채택을 기대가 아닌 의무**로 전환 필요
-- **Trigger**: 내부 데이터에서 AI 도구 활용 직원의 생산성이 높다는 신호 → "AI 채택을 성과 평가에 공식 반영"이라는 **가장 과감한 정책 결정**
+- **Before**: 내부 설문에서 엔지니어링 인력의 상당 부분이 제공된 AI 도구를 일관되게 사용하지 않는 것으로 나타남 — 채택 불균형 (WebProNews 경유) [[sources/eweek-meta-ai-performance-reviews-2026-02]]; 2025년 평가에서는 개인 사용량 지표를 포함하지 않고 self-review의 AI 성과만 인정 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]]
+- **Pain point**: "AI-native future"로의 전환 속도 — 자발적 채택만으로 부족 (Gale 메모: "더 빨리 도달하도록 돕는 사람을 인정") [[sources/hrgrapevine-meta-ai-performance-review-2025-11]]; 타사 전사 AI 배포 비교 수치는 인용 소스에 없어 제거 (수치 근거 미확보 — 2026-09-27 grounding 점검)
+- **Trigger**: Head of People Janelle Gale의 내부 메모(2025-11) — 2026년부터 성과평가를 "AI-driven impact"와 연계 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]]
 
 ## Solution Architecture
 
 ### A. Process (프로세스)
 
-- **Before**: Meta 연 1회 PSC 성과리뷰는 individual impact·peer review 기반. AI 도구 사용은 권장사항이며 평가 항목 아님. 2025년 review에서는 AI 사용을 self-review에 자율 기재만 가능
-- **After**:
-  1. CHRO Janelle Gale 메모(2025-11)로 2026 review 사이클부터 "AI-driven impact"를 모든 직급·직군의 core expectation으로 공식화
-  2. 직원이 자기 평가에 AI를 활용한 productivity·dev cycle·team performance 기여 사례 명시
-  3. 매니저가 AI usage·outcome을 PSC rubric에 반영해 평가, exceptional individual/team에 reward
-  4. Engineering 조직은 별도 KPI(예: creation org는 H1 2026까지 65% 엔지니어가 commit code의 75%+를 AI assistance로 작성) 부여
-  5. People Analytics가 부서별 AI adoption·impact 분포를 leadership에 리포트
-- **HITL**: 매니저가 평가, calibration 위원회가 부서간 형평성 검토, HR이 rubric governance
-- **Frequency**: annual (PSC 사이클), monthly (engineering KPI tracking)
-- ⚠️ rubric 세부 측정 방식은 _미공개_ — Zuckerberg/Gale 메모만 공개됨
+- **Before**: 2025년 성과평가 — 개인 AI 사용량·채택 지표는 미포함, self-review에 기재한 AI 관련 성과는 인정·보상 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]]. 평가 제도 명칭(PSC 등)·기존 rubric 구성 _미공개_
+- **After** [[sources/hrgrapevine-meta-ai-performance-review-2025-11]] [[sources/eweek-meta-ai-performance-reviews-2026-02]]:
+  1. Head of People Janelle Gale 메모(2025-11): 2026년부터 성과평가를 "AI-driven impact"와 연계, AI 활용은 "core expectation" [[sources/hrgrapevine-meta-ai-performance-review-2025-11]]
+  2. 직원이 AI로 성과를 낸 방식(자기 업무 또는 팀 성과 개선)과 생산성 개선 도구 구축 여부를 평가에 반영 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]]
+  3. 2026년 정식 시행 — 승진·보너스·경력 궤적에 영향; 매니저가 가이드라인에 따라 Metamate 등 사내 AI 도구 활용도를 평가 [[sources/eweek-meta-ai-performance-reviews-2026-02]]
+  4. 엔지니어링 관리자는 직원의 AI 시스템 활용 능력을 평가 일부로 반영 (The Information 경유) [[sources/eweek-meta-ai-performance-reviews-2026-02]]; 조직별 정량 KPI(agent-assisted 코드 비율 등)는 인용 소스에 없음 → _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검)
+  5. 팀별 AI 도구 채택 대시보드로 모니터링 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]] [[sources/eweek-meta-ai-performance-reviews-2026-02]]
+  6. 'AI Performance Assistant'(Metamate + Google Gemini)로 직원이 리뷰 초안 작성 지원 (WinBuzzer 경유) [[sources/eweek-meta-ai-performance-reviews-2026-02]]; 일부 직원은 Metamate로 리뷰 내용 초안 작성 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]]
+- **HITL**: 매니저가 가이드라인 기반으로 평가 [[sources/eweek-meta-ai-performance-reviews-2026-02]]; calibration 위원회·HR rubric 거버넌스 세부 _미공개 (not disclosed)_
+- **Frequency**: annual (성과평가 사이클) [[sources/hrgrapevine-meta-ai-performance-review-2025-11]]; 대시보드 추적 주기 _미공개_
+- ⚠️ rubric 세부 측정 방식은 _미공개_ — Gale 메모 발췌(Business Insider 경유)만 공개됨 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]]
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: Meta 사내 PSC (Performance Summary Cycle) — 자체 (구체 _미공개_)
-- **AI 시스템 배치**: ✅ **Metamate** (사내 코딩·업무 어시스턴트) — Llama + GPT-4 hybrid (Fortune 2024-12)
-- **배포 환경**: _미공개_ — Meta 자체 인프라 (PyTorch·자체 GPU cluster) 추정
-- **연동·통합**: ✅ 코드 commit 시스템 (engineering KPI tracking — agent-assisted % 측정), PSC rubric, People Analytics dashboard
-- **사용자 접점**: Metamate IDE plugin·web·내부 도구
-- **인증·권한**: Meta 사내 SSO
+- **Core HRIS**: _미공개 (not disclosed)_ — 성과평가 시스템 명칭·구성 미공개
+- **AI 시스템 배치**: ✅ **Metamate** (사내 코딩 도구, 원래 명칭 Code Compose) — Llama + GPT-4 병용 (익명 소식통 2인, Meta 논평 거부) [[sources/fortune-meta-metamate-gpt4-llama-2024-12]]; 'AI Performance Assistant' = Metamate + Google Gemini [[sources/eweek-meta-ai-performance-reviews-2026-02]]
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: 팀별 AI 도구 채택 모니터링 대시보드 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]] [[sources/eweek-meta-ai-performance-reviews-2026-02]]; 코드 commit 시스템 연동·agent-assisted 비율 측정 여부 _미공개_
+- **사용자 접점**: _미공개 (not disclosed)_
+- **인증·권한**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: ✅ 코드 commit history (agent-assisted 비율), 자기 평가·peer review 텍스트, AI 사용 로그
-- **데이터 규모**: ✅ Meta 전사 ~70K+ 엔지니어·기술사무직 (정확 인원 미공개)
-- **전처리·정제**: _미공개_ — agent-assisted commit 라벨링 방식 미공개
-- **학습 vs RAG vs In-context**: _미공개_ — Metamate 내부 architecture 비공개
-- **데이터 거버넌스**: ⚠️ rubric 세부 측정 _미공개_ — Zuckerberg/Gale 메모만 공개
-- **민감정보 처리**: _미공개_
+- **입력 데이터 소스**: AI 도구 사용 대시보드 데이터 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]] [[sources/eweek-meta-ai-performance-reviews-2026-02]], self-review 텍스트(AI 관련 성과 기재) [[sources/hrgrapevine-meta-ai-performance-review-2025-11]]; 코드 commit history 활용 여부 _미공개_
+- **데이터 규모**: _미공개 (not disclosed)_ — 대상 인원 수치는 인용 소스에 없음 (수치 근거 미확보 — 2026-09-27 grounding 점검)
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context**: _미공개 (not disclosed)_ — Metamate 내부 architecture 비공개
+- **데이터 거버넌스**: ⚠️ rubric 세부 측정 _미공개_ — Gale 메모 발췌만 공개 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]]
+- **민감정보 처리**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
-- **Foundation model**: ✅ **Metamate** — Llama (Meta 자체) + GPT-4 (OpenAI) hybrid
-- **모델 유형**: LLM (코딩 어시스턴트·업무 자동화)
-- **제공 방식**: ✅ 자체 호스팅 (Llama) + 외부 API (GPT-4)
-- **커스터마이징 기법**: _미공개_ — Metamate Meta codebase 학습/RAG 사용 여부 미공개
-- **Orchestration 프레임워크**: _미공개_
-- **평가·가드레일**: ⚠️ Metamate "at least as good as an intern" (Fortune, 자사 보고)
+- **Foundation model**: **Metamate** — Llama(자체) + OpenAI GPT-4를 질의 유형에 따라 병용 (익명 소식통, Meta 미확인) [[sources/fortune-meta-metamate-gpt4-llama-2024-12]]; AI Performance Assistant는 Google Gemini 결합 (WinBuzzer 경유) [[sources/eweek-meta-ai-performance-reviews-2026-02]]
+- **모델 유형**: LLM (코딩 어시스턴트·업무 보조) [[sources/fortune-meta-metamate-gpt4-llama-2024-12]]
+- **제공 방식**: 외부 모델(GPT-4) 사용 사실만 보도 [[sources/fortune-meta-metamate-gpt4-llama-2024-12]]; 호스팅 방식 _미공개 (not disclosed)_
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_ — 질의 유형별 Llama/GPT-4 라우팅이 있다는 증언만 [[sources/fortune-meta-metamate-gpt4-llama-2024-12]]
+- **평가·가드레일**: Metamate는 "at least as good as an intern" — 기본 코딩에는 유용, 복잡한 엔지니어링에는 한계 (사용자 증언) [[sources/fortune-meta-metamate-gpt4-llama-2024-12]]
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: People 조직 (Head of People Janelle Gale 메모로 정책 공지) [[sources/hrgrapevine-meta-ai-performance-review-2025-11]]
+- **참여 역할**: 엔지니어링 관리자가 AI 활용도 평가 [[sources/eweek-meta-ai-performance-reviews-2026-02]]; 그 외 _미공개_
+- **팀 규모·기간**: _미공개 (not disclosed)_
+- **거버넌스 체계**: _미공개 (not disclosed)_
+- **변화관리**: 교육 + 'Level Up' 게임화(마일스톤 달성 시 뱃지) [[sources/hrgrapevine-meta-ai-performance-review-2025-11]] [[sources/eweek-meta-ai-performance-reviews-2026-02]]; AI Performance Assistant 제공 [[sources/eweek-meta-ai-performance-reviews-2026-02]]
+- **파트너**: _미공개 (not disclosed)_
 
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-아래 수치는 모두 **목표(goal)**이며 달성 결과(result)가 아님. Before: AI 도구 채택 불균형 (일부 엔지니어만 사용) → After 목표: ⚠️ 자사 보고 (1) 코드 55%+ agent-assisted, (2) 중간~시니어 엔지니어 80% AI 활용, (3) "Level Up" 게임화. 실제 달성 여부 _미공개_.
+정량 성과 _미공개_. Before: AI 도구 채택 불균형 (내부 설문, WebProNews 경유) [[sources/eweek-meta-ai-performance-reviews-2026-02]] → After: 2026년 AI 활용이 승진·보너스·경력에 영향 [[sources/eweek-meta-ai-performance-reviews-2026-02]], 'Level Up' 게임화 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]]. agent-assisted 코드 비율·엔지니어 AI 활용률 목표 수치는 인용 소스에 없음 → _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검). 달성 결과 _미공개_.
 
 ## Summary
 
-Meta(Facebook)는 2026년부터 모든 직원의 성과 평가에 **AI 도구 채택·활용 수준을 공식 평가 항목**으로 포함. 내부 AI 도구 **Metamate**(GPT-4 + Llama 기반 코딩·업무 어시스턴트)의 활용이 "core expectation". ⚠️ 자사 보고: Q4 2025 목표 — **중앙 제품팀 코드 변경의 55%를 agent-assisted**로, **중간~시니어 엔지니어 80%가 AI 도구 활용**. "Level Up" 게임화 프로그램으로 AI 채택 촉진.
+Meta는 2026년부터 직원 성과 평가를 **"AI-driven impact"와 연계** — AI 활용이 "core expectation"이 되고 승진·보너스·경력에 영향 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]] [[sources/eweek-meta-ai-performance-reviews-2026-02]]. 매니저는 사내 AI 도구 **Metamate**(Llama + GPT-4 병용, Fortune 익명 소식통 [[sources/fortune-meta-metamate-gpt4-llama-2024-12]]) 등의 활용도를 가이드라인으로 평가 [[sources/eweek-meta-ai-performance-reviews-2026-02]]. 'Level Up' 게임화·대시보드 추적·AI Performance Assistant(Metamate + Gemini)로 전환 지원 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]] [[sources/eweek-meta-ai-performance-reviews-2026-02]]. 일부 직원은 마이크로매니지먼트·전문 직군 불이익 우려 표명 [[sources/eweek-meta-ai-performance-reviews-2026-02]]. agent-assisted 코드 비율 등 목표 수치는 인용 소스에 없어 _미공개_.
 
 ## Key Facts
 
 | 지표 | 값 | 출처 | 성격 |
 |---|---|---|---|
-| AI = 성과 평가 기준 | **2026년부터 "core expectation"** | HR Grapevine + eWeek | ✅ Fact (Tier 2 독립 확인) |
-| Agent-assisted 코드 목표 | **55%** (Q4 2025 중앙 제품팀) | 자사 내부 문서 (보도됨) | ⚠️ 자사 보고 |
-| AI 도구 채택 목표 | **80%** (mid-senior 엔지니어) | 자사 내부 문서 | ⚠️ 자사 보고 |
-| 내부 AI 도구 | **Metamate** (Llama + GPT-4 hybrid) | Fortune 2024-12 | ✅ Fact (Tier 2) |
-| Metamate 평가 | "at least as good as an intern" (코딩) | Fortune | ⚠️ 자사 보고 |
-| 채택 촉진 | **"Level Up" 게임화** (뱃지 보상) | 자사 보고 (보도됨) | ⚠️ 자사 보고 |
+| AI = 성과 평가 기준 | **2026년부터 "core expectation"**, 승진·보너스 연계 | [[sources/hrgrapevine-meta-ai-performance-review-2025-11]] [[sources/eweek-meta-ai-performance-reviews-2026-02]] | ✅ Fact (Tier 2, 2차 보도 — BI·The Information 재인용) |
+| 2025 평가 처리 | 개인 사용량 지표 미포함, 탁월한 AI 성과는 보상 | [[sources/hrgrapevine-meta-ai-performance-review-2025-11]] | ⚠️ 자사 보고 (내부 메모 발췌) |
+| Agent-assisted 코드 목표 | _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검) | — | — |
+| AI 도구 채택 목표 | _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검) | — | — |
+| 내부 AI 도구 | **Metamate** (Llama + GPT-4 병용) | [[sources/fortune-meta-metamate-gpt4-llama-2024-12]] | ⚠️ 익명 소식통 (Meta 논평 거부) |
+| AI Performance Assistant | Metamate + Google Gemini (리뷰 초안) | [[sources/eweek-meta-ai-performance-reviews-2026-02]] (WinBuzzer 경유) | ⚠️ 2차 보도 |
+| Metamate 평가 | "at least as good as an intern" (코딩) | [[sources/fortune-meta-metamate-gpt4-llama-2024-12]] | ⚠️ 사용자 증언 |
+| 채택 촉진 | **"Level Up" 게임화** (뱃지 보상) + 대시보드 추적 | [[sources/hrgrapevine-meta-ai-performance-review-2025-11]] [[sources/eweek-meta-ai-performance-reviews-2026-02]] | ⚠️ 자사 보고 (보도됨) |
+
+## Governance & Risk
+
+- ⚠️ **직원 반발**: 마이크로매니지먼트 우려, AI 도구 적용이 어려운 전문 직군 불이익 우려 [[sources/eweek-meta-ai-performance-reviews-2026-02]]
+- ⚠️ **추적·감시**: 팀별 AI 채택 대시보드가 관리 판단의 데이터 레이어로 작동 [[sources/eweek-meta-ai-performance-reviews-2026-02]] — 근태·성과 감시 성격, 한국 적용 시 근로자대표 협의·AI 기본법 고영향 검토 대상
+- ⚠️ **평가 공정성**: rubric·측정 방식 미공개 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]]; 2025년에는 사용량 지표 미포함으로 단계적 도입 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]]
+- ⚠️ **소스 성격**: 세 기사 모두 Business Insider·The Information·익명 소식통 재인용 — Meta 공식 확인 없음 [[sources/hrgrapevine-meta-ai-performance-review-2025-11]] [[sources/eweek-meta-ai-performance-reviews-2026-02]] [[sources/fortune-meta-metamate-gpt4-llama-2024-12]]
+
+## Contradictions
+
+> [!note] 2026-09-27 grounding — 인용 소스에 없는 목표 수치(agent-assisted 코드 55%·엔지니어 80%·65%/75% KPI), 대상 인원 수치, PSC 명칭, calibration 위원회, People Analytics, IDE plugin·SSO, PyTorch·GPU cluster 추정, 타사 비교 수치(Deloitte·PwC)를 제거하고 _미공개_ 처리. Metamate 모델 구성은 Fortune 익명 소식통 기반으로 ✅ Fact → ⚠️ 표기 조정.
 
 ## Consulting Angle
 

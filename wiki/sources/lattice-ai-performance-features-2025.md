@@ -2,6 +2,10 @@
 title: "Lattice AI Performance Features — Spring/Summer 2026 + Fall/Winter 2025 Releases"
 url: https://lattice.com/blog/lattice-spring-summer-2026-product-release
 tier: 3
+raw: raw/vendors/2026-09-27-lattice-spring-summer-2026-release.md
+snapshot_quality: full
+publisher: Lattice
+independent: false
 source_type: vendor
 ingested_at: 2026-04-12
 supports: [lattice-ai-performance-summarization]
@@ -22,3 +26,14 @@ Lattice의 2025~2026 제품 릴리스에서 AI Performance Summarization(리뷰 
 ## Source Assessment
 
 ⚠️ 벤더 1차 소스 (Lattice 공식 블로그·Help Center). HR Brew Ruggable 인용은 Tier 2이나 구체 수치 없음.
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "With Evidence-based AI Reviews, the Lattice AI Agent will help every employee and manager generate a thoughtful first draft grounded in real performance data, including 1:1s, past reviews, growth areas, feedback, and more."
+> — 뒷받침: AI 리뷰 초안 생성
+
+> "And this isn't an AI autopilot. Managers remain accountable for tone, accuracy, and outcomes; Lattice AI will not submit reviews on their behalf."
+> — 뒷받침: human accountability 원칙
+
+> "Soon, the Lattice AI Agent will be able to join your 1:1s to capture notes, surface coaching insights, and identify action items, all while syncing everything seamlessly back into Lattice."
+> — 뒷받침: 1:1 AI agent

@@ -43,7 +43,7 @@ related_vendors:
 
 ## Summary
 
-SAP SuccessFactors의 첫 번째 HR Joule Agent인 **Performance & Goals Agent**가 2025년 하반기 GA. 매니저에게 맞춤 인사이트·목표 진척 업데이트·개인화된 대화 포인트를 제공해 성과 대화의 질을 높인다. Josh Bersin(Tier 1)은 이를 "one of the most impressive array of enterprise-class AI announcements"로 평가. 2026년 상반기 Career & Talent Development Agent, HR Service Agent, People Intelligence Agent, Payroll Agent 등 4개 추가 에이전트 GA 예정. [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
+SAP가 SAP Connect(2025-10)에서 Joule 에이전트 수십 개를 출시했으며 HR 영역에는 **Performance and Goals Agent**, Career and Talent Development Agent, HR Service Agent, Payroll Agent, People Intelligence Agent 5개가 포함 — Josh Bersin(Tier 1) 현장 분석 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]. 이 에이전트들은 목표 개발·검토, 커리어 플랜, 학습 프로그램, HR 질문 응답, 급여 관리·대사 등을 돕는 "mini-app"으로 설명됨 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]. Bersin은 "one of the most impressive array of enterprise-class AI announcements I've seen to date"로 평가 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]. 'Performance & Goals Agent 단독 선행 GA·나머지 4개 2026 상반기 GA' 일정과 '맞춤 인사이트·대화 포인트' 기능 세부는 인용 소스 raw에 없음 → _미공개_ (2026-09-27 grounding 점검).
 
 ## Problem / Why (도입 배경)
 
@@ -56,11 +56,11 @@ SAP SuccessFactors의 첫 번째 HR Joule Agent인 **Performance & Goals Agent**
 
 ### A. Process (프로세스)
 
-- **Before**: 매니저가 SuccessFactors에서 직원별 목표·피드백·리뷰 데이터를 개별 조회 → 수동으로 대화 포인트 준비
-- **After**: Joule Performance & Goals Agent가 목표 진척·피드백 데이터를 자동 통합 → 맞춤 인사이트·대화 포인트 생성 → 매니저가 리뷰 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
-- **HITL 지점**: Agent가 대화 포인트를 추천 — 매니저가 최종 사용 여부 결정
-- **Trigger & Frequency**: 성과 리뷰 주기 + 매니저 수시 요청
-- **Scope of autonomy**: Recommend
+- **Before**: _미공개 (not disclosed)_ — 도입 전 프로세스는 인용 소스에 없음
+- **After**: Joule 채팅을 통해 직원·매니저가 목표를 개발·검토 (Performance and Goals Agent) [[sources/sap-joule-performance-agent-bersin-2025-10.md]]; 세부 흐름(인사이트·대화 포인트 생성)은 _미공개_
+- **HITL 지점**: _미공개 (not disclosed)_ — 매니저 최종 결정 여부 미기재
+- **Trigger & Frequency**: _미공개 (not disclosed)_
+- **Scope of autonomy**: _미공개 (not disclosed)_ — "mini-app"으로 사용자를 돕는다는 서술만 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
 
 ```mermaid
 flowchart LR
@@ -77,23 +77,29 @@ flowchart LR
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: SAP SuccessFactors
-- **AI 시스템**: Joule (SAP의 AI copilot/agent 플랫폼) — SuccessFactors 내장 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
-- **연동**: ✅ Fact: 40개 AI 엔진 통합, Microsoft Copilot 연동, a2a/MCP 프로토콜 지원 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
-- **사용자 접점**: SuccessFactors UI 내 Joule 대화형 인터페이스 + Microsoft Teams/Outlook 연동 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
-- 배포 환경: SAP BTP (Business Technology Platform) 기반 — _상세 미공개_
+- **Core HRIS**: SAP SuccessFactors [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
+- **AI 시스템**: Joule — SAP 앱·데이터 위에 놓인 AI 에이전트 플랫폼, Joule Studio로 프로그래밍 가능 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
+- **연동**: ✅ Fact(분석가 기술): 40개 AI 엔진 지원, Microsoft Copilot 및 타 에이전트와 a2a·MCP 프로토콜로 상호운용 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]; SAP 주장 "핵심 기능의 80%를 Joule로 접근" ⚠️ 벤더 주장(Bersin 전달) [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
+- **사용자 접점**: Joule 채팅 인터페이스 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]; Teams·Outlook 연동 여부 _미공개_
+- **배포 환경**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력**: SuccessFactors 내 목표·성과·피드백·학습 데이터 + SAP Business Data Cloud + Datasphere [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
+- **입력**: SAP Business Data Cloud(앱 데이터 통합) + Datasphere(데이터 사전) [[sources/sap-joule-performance-agent-bersin-2025-10.md]]; 성과·목표 데이터 항목 세부 _미공개_
 - **데이터 규모**: _미공개 (not disclosed)_
+- **전처리·정제**: _미공개 (not disclosed)_
 - **학습 vs RAG**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: _미공개 (not disclosed)_
+- **민감정보 처리**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
-- **Foundation model**: _미공개_ — Joule이 40개 AI 엔진을 통합하므로 다중 모델 오케스트레이션 추정 가능하나 구체 모델명 미공개 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
-- **Orchestration**: a2a/MCP 프로토콜 기반 에이전트 간 통신 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
-- 나머지: _미공개 (not disclosed)_
+- **Foundation model**: _미공개 (not disclosed)_ — Joule이 40개 AI 엔진을 지원한다는 서술만 있고 구체 모델명 없음 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
+- **Model 유형**: agent (Joule 에이전트, 채팅 인터페이스) [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
+- **제공 방식**: _미공개 (not disclosed)_
+- **커스터마이징 기법**: Joule Studio로 자체 에이전트 구축 가능 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
+- **Orchestration**: a2a·MCP 프로토콜로 에이전트 간 상호운용 [[sources/sap-joule-performance-agent-bersin-2025-10.md]]
+- **평가·가드레일**: _미공개 (not disclosed)_
 
 ### E. Organization & Team (조직·팀 구조)
 
@@ -108,15 +114,21 @@ flowchart LR
 
 | 지표 | 값 | 출처 | 성격 |
 |---|---|---|---|
-| Bersin 평가 | "most impressive enterprise-class AI announcements" | Josh Bersin (Tier 1) | ✅ Fact (독립 분석가 의견) |
-| 추가 에이전트 | 4개 (Career, HR Service, People Intelligence, Payroll) — 2026 H1 GA | SAP 공식 + Bersin | ✅ Fact |
-| 고객 전환 사례 | IBM, Disney (Workday→SF 전환) | Bersin (구체 수치 없음) | ✅ Fact (언급), 세부 _미공개_ |
+| Bersin 평가 | "one of the most impressive array of enterprise-class AI announcements I've seen to date" | [[sources/sap-joule-performance-agent-bersin-2025-10.md]] | ✅ Fact (독립 분석가 의견, Galileo-Joule 연동 이해관계 있음) |
+| HR Joule Agent | 5개 (Performance and Goals, Career and Talent Development, HR Service, Payroll, People Intelligence) — SAP Connect 2025-10 출시 | [[sources/sap-joule-performance-agent-bersin-2025-10.md]] | ✅ Fact (분석가 기술) |
+| 단계별 GA 일정 | _미공개_ (인용 소스 raw에 없음 — 2026-09-27 grounding 점검) | — | — |
+| Joule 접근 범위 | 핵심 기능의 80% | SAP 주장, [[sources/sap-joule-performance-agent-bersin-2025-10.md]] 전달 | ⚠️ 벤더 주장 |
+| 고객 전환 사례 | IBM, Disney (Workday→SF 전환) | [[sources/sap-joule-performance-agent-bersin-2025-10.md]] (구체 수치 없음) | ✅ Fact (언급), 세부 _미공개_ |
 
 ## Governance & Risk
 
 - SAP의 a2a/MCP 프로토콜 기반 에이전트 아키텍처는 멀티벤더 AI 통합의 선례 → 거버넌스 복잡성 증가
 - 성과 리뷰에 AI가 생성한 대화 포인트의 **편향·환각** 리스크
 - EU AI Act 맥락: SAP는 유럽 기반이므로 규제 준수에 강점 주장 가능 — 실제 인증 여부 _미공개_
+
+## Contradictions
+
+> [!note] 2026-09-27 grounding — Bersin raw는 5개 HR 에이전트가 SAP Connect(2025-10)에서 함께 출시됐다고 기술하며 'Performance & Goals 선행 GA·4개 2026 H1 GA' 일정, '맞춤 인사이트·대화 포인트' 기능 세부, Teams/Outlook 연동, SAP BTP 배포는 raw에 없어 _미공개_ 처리. Bersin은 자사 Galileo의 Joule 연동을 홍보 — 이해관계 병기.
 
 ## Consulting Angle
 

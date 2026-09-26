@@ -24,10 +24,10 @@ kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-05-20
 last_confirmed: 2025-05-20
-confidence: 0.15
-evidence_grade: C
+confidence: 0.05
+evidence_grade: D
 corroborated_by: 0
-freshness: stale
+freshness: unverified
 depth: partial
 graded_at: 2026-09-27
 consulting_angle_status: filled
@@ -60,7 +60,7 @@ related_companies:
 - **Before**: 매니저가 1:1 미팅을 자유 형식으로 진행 → 노트 수동 작성 → 후속 조치 누락 빈번 → HR이 매니저 효과성 파악 어려움
 - **After**: Kona가 1:1 미팅에 자동 참여 → 대화 전사·요약·액션 아이템 생성 → engagement·성과 데이터 기반 실시간 코칭 팁 전달 → 매니저 행동 변화 자동 추적 [[sources/15five-kona-launch-2025-05.md]]
 - **HITL 지점**: 매니저가 코칭 팁을 수용·적용하는 것은 자율 판단. HR 리더가 대시보드에서 행동 변화 추이를 모니터링
-- **Trigger & Frequency**: 1:1 미팅 이벤트 기반 (주 1~2회 통상)
+- **Trigger & Frequency**: 1:1 미팅 이벤트 기반 [[sources/15five-kona-launch-2025-05.md]] — 미팅 주기 _미공개_
 - **Scope of autonomy**: Recommend (코칭 팁 제안) — 실행은 매니저 자율
 
 ```mermaid
@@ -76,10 +76,10 @@ flowchart LR
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core 플랫폼**: 15Five (performance management SaaS)
-- **AI 시스템**: Kona — 15Five 플랫폼 내장 AI 에이전트
-- **연동**: Slack 통합, 화상회의 도구 연동 (미팅 자동 참여) [[sources/15five-kona-launch-2025-05.md]]
-- **사용자 접점**: 미팅 내 실시간 + Slack + 15Five 웹
+- **Core 플랫폼**: ⚠️ 벤더 주장: 15Five 플랫폼의 AI 매니저 효과성 코치 'Kona'. [[sources/15five-kona-launch-2025-05.md]]
+- **AI 시스템**: ⚠️ 벤더 주장: Kona — 1:1 미팅에 자동 참여하는 AI 에이전트. [[sources/15five-kona-launch-2025-05.md]]
+- **연동**: ⚠️ 벤더 주장: 미팅 자동 참여·engagement survey·성과 리뷰·비즈니스 시스템 데이터 통합. [[sources/15five-kona-launch-2025-05.md]] 구체 연동 도구(Slack·화상회의 등) _미공개 (not disclosed)_
+- **사용자 접점**: ⚠️ 벤더 주장: 미팅 내 실시간 코칭 팁. [[sources/15five-kona-launch-2025-05.md]] 그 외 채널 _미공개_
 - 나머지 상세 (배포 환경, 인증 등): _미공개 (not disclosed)_
 
 ### C. Data (데이터)
@@ -91,7 +91,7 @@ flowchart LR
 ### D. Model (모델)
 
 - **Foundation model**: _미공개 (not disclosed)_
-- **Model 유형**: LLM (대화 분석·요약·코칭 생성) + 행동 패턴 분석
+- **Model 유형**: ⚠️ 벤더 주장: 대화 전사·요약·코칭 팁 생성·행동 변화 추적 (모델 종류 자체는 _미공개_). [[sources/15five-kona-launch-2025-05.md]]
 - 나머지: _미공개 (not disclosed)_
 
 ### E. Organization & Team (조직·팀 구조)
@@ -118,6 +118,10 @@ flowchart LR
 - 1:1 미팅 전사(recording)에 대한 **직원 동의·프라이버시** 이슈 중요
 - 코칭 팁의 편향 가능성 (특정 리더십 스타일 편향) — 감사 메커니즘 _미공개_
 - 데이터 보존·접근 권한: _미공개 (not disclosed)_
+
+## Contradictions
+
+_없음._ (단일 벤더 소스 — 교차 검증 소스 없음)
 
 ## Consulting Angle
 

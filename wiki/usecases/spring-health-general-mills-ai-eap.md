@@ -28,7 +28,7 @@ confidence: 0.25
 evidence_grade: C
 corroborated_by: 0
 freshness: fresh
-depth: full
+depth: partial
 graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
@@ -43,7 +43,7 @@ related_companies:
 
 ## Summary
 
-**General Mills**가 전통 EAP(Employee Assistance Program)의 **1% 이용률** 문제를 해결하기 위해 **Spring Health**의 AI 기반 정밀 정신건강 플랫폼을 도입. 14개월 내 **28% 직원 등록, 이용률 26%** (기존 대비 26배), **우울증 58% 증상 개선**(평균 2.46 세션), **불안 49% 개선**(1.4 세션), 전체 **67% 개선**을 보고. Spring Health는 AI를 활용해 직원-치료사 매칭·초기 평가·치료 경로 최적화를 수행하며, 2026년 기준 50M+ lives 지원. [[sources/spring-health-general-mills-case.md]]
+**General Mills**가 전통 EAP(Employee Assistance Program)의 **1% 이용률** 문제를 해결하기 위해 **Spring Health**의 AI 기반 정밀 정신건강 플랫폼을 도입. 14개월 내 **28% 직원 등록, 이용률 26%** (기존 대비 26배), **우울증 58% 증상 개선**(평균 2.46 세션), **불안 49% 개선**(1.4 세션), 전체 **67% 개선**을 보고 (⚠️ 벤더 주장 + 자사 보고 — [[sources/spring-health-general-mills-case.md]]). Spring Health는 AI를 활용해 직원-치료사 매칭·초기 평가·치료 경로 최적화를 수행. 플랫폼 규모(지원 인원)는 _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검).
 
 ## Problem / Why (도입 배경)
 
@@ -83,14 +83,14 @@ flowchart LR
 ### C. Data (데이터)
 
 - **입력**: 직원 자기보고 평가(wellness assessment), 치료사 프로필, 임상 결과 데이터 [[sources/spring-health-general-mills-case.md]]
-- **데이터 규모**: ⚠️ 벤더 주장: 별도 연구에서 53,000 환자·500+ 고용주 데이터 분석 [[sources/spring-health-general-mills-case.md]]
+- **데이터 규모**: ⚠️ 벤더 주장: 별도 peer-reviewed 연구에서 53,000 환자 데이터 분석 [[sources/spring-health-general-mills-case.md]]; 고용주 수 _미공개_
 - **민감정보**: 정신건강 데이터는 HIPAA 대상 — Spring Health의 구체 준수 방식은 _미공개_
 
 ### D. Model (모델)
 
 - **AI 유형**: 정밀 매칭 알고리즘 (치료사-직원), 임상 결과 예측 모델
 - **Foundation model**: _미공개 (not disclosed)_
-- **평가**: ⚠️ 벤더 주장: 2025년 연구에서 95% 만족, 70% "기분 나아짐", zero major safety concerns [[sources/spring-health-general-mills-case.md]]
+- **평가**: _미공개 (not disclosed)_ — 기존 만족도·"기분 나아짐" 비율·safety 서술은 인용 소스에 없어 삭제 (2026-09-27 grounding 점검)
 - **Peer-reviewed**: 53,000 환자 연구 — 92.3% reliable improvement/recovery, 61.7% remission (DOI _미공개_) [[sources/spring-health-general-mills-case.md]]
 
 ### E. Organization & Team (조직·팀 구조)
@@ -101,7 +101,7 @@ flowchart LR
 
 ### 기대효과 요약
 
-전통 EAP 1% → 26% 이용률(26x), 우울증 58%·불안 49% 증상 개선. 비용 효과 $1,070/참여자 절감.
+전통 EAP 1% → 26% 이용률(26x), 우울증 58%·불안 49% 증상 개선 (⚠️ 벤더 주장 + 자사 보고 — [[sources/spring-health-general-mills-case.md]]). 참여자당 비용 절감액은 _미공개_ (인용 소스에 없음).
 
 | 지표 | Before | After | 출처 | 성격 |
 |---|---|---|---|---|
@@ -111,8 +111,8 @@ flowchart LR
 | 우울증 증상 개선 | — | **58%** (평균 2.46 세션) | Spring Health/General Mills | ⚠️ 벤더 주장 |
 | 불안 증상 개선 | — | **49%** (평균 1.4 세션) | Spring Health/General Mills | ⚠️ 벤더 주장 |
 | 전체 개선 | — | **67%** | Spring Health/General Mills | ⚠️ 벤더 주장 |
-| 참여자당 절감 | — | **$1,070/1년차** | Spring Health 공식 | ⚠️ 벤더 주장 |
-| 플랫폼 규모 | — | **50M+ lives** (2026) | Spring Health 공식 | ⚠️ 벤더 주장 |
+| 참여자당 절감 | — | _미공개_ | 인용 소스에 없음 (2026-09-27 grounding 점검) | ❓ |
+| 플랫폼 규모 | — | _미공개_ | 인용 소스에 없음 (2026-09-27 grounding 점검) | ❓ |
 
 **⚠️ 모든 수치가 벤더·자사 보고. Peer-reviewed 연구(53K 환자)가 별도 존재하나 General Mills 특정은 아님.**
 
@@ -120,14 +120,20 @@ flowchart LR
 
 - 정신건강 데이터의 **극도의 민감성** — HIPAA 필수, GDPR/PIPA 확장 대응 필요
 - AI 매칭의 **문화적 편향** — 한국 적용 시 한국 치료사·문화적 맥락 반영 필요
-- **Responsible AI**: 2025년 4월 Spring Health이 mental health AI 업계 최초로 "principled approach" 프레임워크 발표 — 구체 내용 _미공개_ [[sources/spring-health-general-mills-case.md]]
+- **Responsible AI**: _미공개 (not disclosed)_ — 기존 'principled approach' 프레임워크 서술은 인용 소스에 없어 삭제 (2026-09-27 grounding 점검)
+
+## Contradictions
+
+_없음._
+
+> [!note] 2026-09-27 grounding — 플랫폼 규모(지원 인원)·참여자당 절감액·만족도/"기분 나아짐" 비율·고용주 수·'principled approach' 프레임워크는 유일한 인용 소스 [[sources/spring-health-general-mills-case.md]]에 없어 `_미공개_`/삭제. General Mills 이용률·증상 개선 수치는 벤더 고객 사례 페이지 기준(⚠️ 벤더 주장 + 자사 보고).
 
 ## Consulting Angle
 
 ### 활용 포인트
 - **EAP 혁신의 가장 강력한 정량 사례**: 1%→26% 이용률은 CHRO에게 가장 직관적인 "so what" 데이터
 - **"Precision mental healthcare" 개념**: 기존 EAP의 "one-size-fits-all" 대비 AI 기반 정밀 매칭의 가치를 설명하는 프레임워크
-- **비용 효과 $1,070/참여자**: Total Rewards 예산 논의에서 ROI 근거로 활용
+- **비용 효과**: 참여자당 절감액은 인용 소스에 없음(_미공개_) — ROI 논거로 쓰려면 별도 소스 확보 필요
 
 ### 한국 적용
 - 한국 EAP 시장(한국EAP협회 등)은 이용률 1~3%로 유사한 문제 → General Mills 사례가 직접 참고 가능

@@ -24,16 +24,14 @@ kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: annual              # 연말 리뷰 주기
 first_seen: 2025-05-22
 last_confirmed: 2025-06-12
-confidence: 0.6
-evidence_grade: A
-corroborated_by: 2
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
 freshness: stale
 depth: partial
 graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/hr-brew-moderna-total-rewards-2025-05.md
-  - sources/hr-brew-ibm-moderna-2025-06.md          # ★ 2026-04-12 추가: IBM 비교 맥락, Patel의 agentic vision
+sources: [sources/hr-brew-moderna-total-rewards-2025-05.md, sources/hr-brew-ibm-moderna-2025-06.md, sources/moderna-blog-openai-2024-04.md]
 related_usecases:
   - moderna-ask-hr-routing
   - moderna-benefits-equity-gpts
@@ -60,7 +58,7 @@ Moderna가 OpenAI Custom GPT 기반으로 구축한 HR 내부 도구. **직원 �
 ### A. Process (프로세스)
 
 - **Before (As-is)**: _미공개_
-- **After (To-be)**: 직원이 본인의 성과 data·프로젝트·목표 달성을 GPT에 입력/연결 → GPT가 연말 리뷰 초안 요약 → 직원이 검토·편집 후 제출 (**추정 흐름 아님, 소스에 구체 단계 미공개 — 위 흐름은 "self-review 요약"이라는 기능 정의에서 직접 읽히는 부분만**)
+- **After (To-be)**: 직원이 본인의 성과 data·프로젝트·목표 달성을 GPT에 입력/연결 → GPT가 연말 리뷰 초안 요약 → 직원이 검토·편집 후 제출 (**소스에 구체 단계 미공개 — 위 흐름은 "self-review 요약"이라는 기능 정의에서 직접 읽히는 부분만**)
 - **Human-in-the-loop**: 직원 본인이 당연히 최종 검토 (self-review 특성상). 매니저 review 단계에 AI가 관여하는지 ❓ 미공개
 - **Trigger & Frequency**: 연말 리뷰 사이클 — annual (+ 연중 ad-hoc 사용 가능성)
 - **Scope of autonomy**: Summary-assist (recommend-only, 직원 최종 소유)
@@ -81,29 +79,29 @@ _범례: 녹색 = HR Brew 소스 확인. 점선 = 세부 단계 미확인 (구�
 ### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: _미공개_ (Moderna가 어떤 HCM을 쓰는지 공개된 바 없음)
-- **AI 시스템 배치**: OpenAI **Custom GPT** 기능 활용 — ChatGPT Enterprise 기반으로 추정 (Moderna 전사 인프라가 그쪽 기반이므로) ([[constellation-moderna-chatgpt-enterprise-2024-04]], [[moderna-blog-openai-2024-04]])
-- **배포 환경**: OpenAI 클라우드
-- **연동·통합**: _미공개._ 성과 data·목표 data를 HCM에서 GPT로 끌어오는 방식, 또는 직원이 수동 입력하는지 등 세부 미공개
-- **사용자 접점**: ChatGPT Enterprise UI (Custom GPT 형식) — Moderna 전사 기본값
+- **AI 시스템 배치**: OpenAI 파트너십 기반 **Custom GPT** (전사 3,000+ 커스텀 GPT 중 HR 관련) [[hr-brew-moderna-total-rewards-2025-05]]; ChatGPT Enterprise 위인지 mChat 위인지 _미공개_ ([[constellation-moderna-chatgpt-enterprise-2024-04]], [[moderna-blog-openai-2024-04]] 참조)
+- **배포 환경**: OpenAI 클라우드 (Custom GPT) [[hr-brew-moderna-total-rewards-2025-05]]; 세부 _미공개_
+- **연동·통합**: _미공개 (not disclosed)_ — 성과·목표 data를 HCM에서 끌어오는지 직원이 수동 입력하는지 미공개
+- **사용자 접점**: _미공개 (not disclosed)_
 - **인증·권한**: _미공개._ 성과 data가 포함되므로 권한 모델이 중요하나 공개 없음
 - **SLA**: _미공개_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: _미공개._ 직원의 과거 성과 data·프로젝트 기록·1:1 노트·목표 달성 등 통상 필요한 input들이 어느 범위까지 연결되는지 공개 없음
+- **입력 데이터 소스**: _미공개 (not disclosed)_ — 어떤 input이 어느 범위까지 연결되는지 공개 없음
 - **데이터 규모**: _미공개_
 - **전처리·정제**: _미공개_
-- **학습 vs RAG vs In-context 구분**: _미공개._ Custom GPT 특성상 instruction + 지식파일 형태 가능하나 Moderna 특정 구현 확인 안 됨
-- **데이터 거버넌스**: _미공개._ 개인 성과 data는 민감 카테고리인데 Workday 같은 HCM에서 ChatGPT Enterprise로 흘러가는 경로·보존 정책 **공개 없음**
+- **학습 vs RAG vs In-context 구분**: _미공개 (not disclosed)_ — Moderna 특정 구현 확인 안 됨
+- **데이터 거버넌스**: _미공개 (not disclosed)_ — 개인 성과 data(민감 카테고리)의 이동 경로·보존 정책 공개 없음
 - **민감정보 처리**: _미공개_
 
 ### D. Model (모델)
 
-- **Foundation model**: OpenAI GPT 계열 (ChatGPT Enterprise 기본 모델)
-- **정확한 버전**: _미공개_
-- **모델 유형**: LLM 요약 중심
-- **제공 방식**: OpenAI 상용 SaaS
-- **커스터마이징 기법**: Custom GPT 기능 (prompt + 지식파일)
+- **Foundation model**: OpenAI 모델 (OpenAI 파트너십 기반 Custom GPT) [[hr-brew-moderna-total-rewards-2025-05]]
+- **정확한 버전**: _미공개 (not disclosed)_
+- **모델 유형**: LLM 요약 중심 [[hr-brew-moderna-total-rewards-2025-05]]
+- **제공 방식**: OpenAI 상용 서비스 (Custom GPT) [[hr-brew-moderna-total-rewards-2025-05]]
+- **커스터마이징 기법**: Custom GPT 기능 [[hr-brew-moderna-total-rewards-2025-05]]; 구성 세부(prompt·지식파일) _미공개_
 - **Orchestration 프레임워크**: _미공개_
 - **평가·가드레일**: _미공개._ 성과 리뷰 요약에서의 **편향**(표현·성별·문화별 자기평가 차이 등)이 중요하지만 Moderna가 공개한 가드레일 0건
 - **비용·성능 지표**: _미공개_
@@ -147,7 +145,10 @@ _범례: 녹색 = HR Brew 소스 확인. 점선 = 세부 단계 미확인 (구�
 - **노사관계 리스크**: 성과 리뷰의 AI 개입은 지역별(EU·한국) **근로자대표 합의 이슈** 가능성 — Moderna의 대응 **공개 없음**
 
 ## Contradictions
-_없음 — 단일 소스_
+
+_없음 — 단일 소스._
+
+> [!note] 2026-09-27 grounding — 'ChatGPT Enterprise 기반 추정'·'통상 필요한 input'·Workday 언급·ChatGPT Enterprise UI 접점 등 소스에 없는 서술을 _미공개_로 정리. HR Brew 소스 2건 모두 원문 fetch 실패(403)로 WebSearch 요약 기반 — 인용 정확도 한계.
 
 ## Consulting Angle
 

@@ -214,3 +214,33 @@ tags: [review, lint, roadmap, llm-wiki]
 - 감쇠 곡선·4단 메모리·벡터 DB 같은 "v2" 기능: 수백 페이지 이하에서 효과 미입증.
 - LLM lint 자동 수정: 모든 운영 회고가 반대. 보고 → 사람 승인 → 적용.
 - 신뢰가 회복되기 전 대량 리서치 라운드 재개: 지금 방식으론 use case 1건당 근거 없는 주장이 같이 늘어난다.
+
+## 7. 실행 결과 (2026-09-27 당일, Phase 0~3 일괄 실행)
+
+사용자 승인 후 로드맵 전체를 실행했다. 커밋: `4e6a8d3`(Phase 0~1 스키마·스크립트), `4ed9bba`(소스 재구축), 이후 grounding 정리 커밋.
+
+| 지표 | 점검 시 (§1) | 실행 후 |
+|---|---|---|
+| use case (HR 사례) | 140 | **118** (enterprise-ai 15 · reference 4 분리, 중복 3 병합) |
+| source 페이지 / raw 스냅샷 연결 | 62 / 13 | **300 / 300** (unavailable ~30건은 헤더만) |
+| `sources` 항목 중 source 페이지로 안 이어지는 것 | 187 | **0** (8건은 `sources_unresolved`에 보존) |
+| Solution Architecture 인용 0개 페이지 | 110 | 0 (B·C·D 미인용 bullet은 `_미공개_`로) |
+| 본문 수치 중 raw에서 미확인 | 측정 불가 | **0 / 463** (check_quotes) |
+| confidence 공식 불일치 | 101 | 0 (grade.py가 계산) |
+| 깨진 wikilink / orphan | 299 / 29 | **0 / 0** |
+| 금지어 페이지 | 62 | 0 |
+| 필수 섹션 누락 | Contradictions 95 등 | 0 |
+| lint critical / warning / info | 960 / 522 / 171 | **0 / 101 / 77** (warning = stale 50 + 추정 날짜 50 + contradiction 1) |
+| evidence_grade | 없음 | A 49 · B 34 · C 45 · D 5 |
+| depth | 없음 | full 18 · partial 86 · stub 29 |
+| 골든 Q&A (오프라인) | 없음 | 30/30 |
+| 기밀 페이지 export 노출 | 3 | 0 (`visibility: internal` 2건 제외, 이중 가드) |
+
+**정직하게 짚을 것 — 겉보기 정보량은 줄었다.** Grounding 규칙을 적용하자 120여 페이지에서 소스에 없던 수치·시스템명이 `_미공개_`로 내려갔고, 근거 없는 노드를 뺀 Mermaid 도식이 줄어 `depth: full`이 42→18로 감소했다. 특히 원문이 초록·마케팅 페이지뿐인 사례(J&J MIT CISR, flex, Fuel50 Lennox, Diligent, HireVue, Emirates, Docebo, 삼성 멀티캠퍼스, IBM Watson Recruitment)는 사실상 stub이 됐다. 이것이 5월 상태의 실제 근거 수준이며, 복구 경로는 `/hr-research`로 1차 소스(케이스 스터디 원문·논문 본문)를 확보하는 것이다.
+
+**미완·사용자 판단 필요**
+- 주간 자동 작업(`scripts/register_weekly_task.ps1`) 등록 — 무인 `claude -p` 호출 비용이 발생하므로 사용자 확인 후.
+- `sk-hynix-ask-ai-interview` 등에 PwC 제안 프로세스 서술이 `미인용` 표기로 남아 있음 — `visibility: internal`로 돌릴지 결정.
+- snapshot_quality `unavailable` 소스 ~30건(Cloudflare 403·paywall·gated) — 대체 URL·Wayback 확보 시 재점검.
+- `sources_unresolved` 8건, `date-estimated` 50건 — 소스 발행일 확인 후 정정.
+- 미해결 contradiction 1건(삼성 멀티캠퍼스 — 단일 소스가 사례와 무관).

@@ -26,9 +26,9 @@ last_confirmed_estimated: true
 frequency: monthly
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
-confidence: 0.6
-evidence_grade: A
-corroborated_by: 2
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
 freshness: stale
 depth: partial
 graded_at: 2026-09-27
@@ -43,7 +43,7 @@ related_vendors: []
 
 ## Summary
 
-BetterUp은 **AI 기반 리더십·매니저 코칭** 플랫폼. 2025년 **BetterUp Grow** (AI-only 코칭 제품) 출시로 전통 human coaching 대비 **비용 70% 절감 + 95% 사용자 만족**을 주장. 가장 강력한 레퍼런스는 **Twilio (8,000+ 직원)**:  코칭 받은 직원은 **고성과 평가 32% 더 높고, 이탈 5배 낮음**. 다수 고객에서 ROI 수치가 구체적으로 공개돼 wiki의 Performance 카테고리 **가장 fact-rich 사례**. **Josh Bersin**(Tier 1, 단 BetterUp advisor)이 BetterUp Manage를 "pioneering AI-powered platform for leaders"로 독립 분석 ([[bersin-betterup-manage-ai-coaching-2024-04]]). **HR Executive**(Tier 2)도 Bersin의 코칭 시장 분석을 보도 ([[hrexecutive-bersin-coaching-disruptions-2024]]).
+BetterUp은 **AI 기반 리더십·매니저 코칭** 플랫폼. 2025-04 **BetterUp Grow** (AI-only 코칭 제품) 출시 — ⚠️ 벤더 주장(Inc. 전달, 원문 미확보): 초기 테스트 고객 만족 95%·성과 16% 향상. [[sources/inc-betterup-ai-only-coaching-2025-08.md]] 가장 강력한 레퍼런스는 **Twilio (8,000+ 직원 전원 롤아웃)**: ⚠️ 벤더 주장: 2년 후 분석에서 코칭 받은 직원은 **고성과 평가 가능성 32% 높고, 이탈 가능성 5배 낮음** — human coaching 결과. [[sources/betterup-roi-page-2026-09.md]] 다수 고객에서 수치가 공개돼 있으나 모두 벤더 페이지 전달. (2026-09-27 grounding 점검: 종전 "비용 70퍼센트 절감", "Leadership ROI 600퍼센트"는 인용 소스에 없어 제거.) **Josh Bersin**(Tier 1, 단 BetterUp advisor)이 BetterUp Manage를 "pioneering AI-powered platform for leaders"로 독립 분석 ([[bersin-betterup-manage-ai-coaching-2024-04]]). **HR Executive**(Tier 2)도 Bersin의 코칭 시장 분석을 보도 ([[hrexecutive-bersin-coaching-disruptions-2024]]).
 
 ## Problem / Why (도입 배경)
 
@@ -55,42 +55,61 @@ BetterUp은 **AI 기반 리더십·매니저 코칭** 플랫폼. 2025년 **Bette
 
 ### A. Process (프로세스)
 
-- **Before**: Twilio는 double-digit 성장 속에 매니저 effectiveness 70% 수준. Manager 역량개발은 이벤트성 워크숍·LMS 과정 위주로 1:1 코칭은 임원에 한정
+- **Before**: ⚠️ 벤더 주장 (Twilio): "어떤 도전에도 대응할 수 있는 비즈니스"를 목표로 리더 코칭 도입. [[sources/betterup-roi-page-2026-09.md]] 도입 전 매니저 역량 baseline ❓ 미공개
 - **After**:
-  1. 매니저가 BetterUp Manage 플랫폼에서 Whole Person Assessment 수행 (resilience·growth mindset·risk tolerance 등)
-  2. 시스템이 strengths·focus area 식별 → AI가 scenario 질문(예: "low-performer 대화") 통해 맥락 수집
-  3. 6개월 단위 personalized learning path + 전담 human coach + AI coach 조합 제공
-  4. 주별 micro-intervention (영상·assessment·1:1) 자동 발송, AI coach가 in-the-flow nudge
-  5. 분석 dashboard가 behavior change → 비즈니스 지표(retention·engagement·promotion) 매핑
-- **HITL**: Human coach가 1:1 세션, HR/CHRO가 cohort·ROI 검토
-- **Frequency**: weekly micro-intervention, monthly 1:1 coaching, quarterly 리포팅
+  1. ⚠️ 벤더 주장 (Twilio): 리더 대상 코칭 → 8,000+ 전 직원으로 롤아웃. [[sources/betterup-roi-page-2026-09.md]]
+  2. ✅ Bersin (BetterUp advisor — COI): BetterUp Manage = AI 기반 Whole Person assessment + 맞춤 학습 경로(주별) + 전문 코치 + AI-driven narrative support 결합. [[sources/bersin-betterup-manage-ai-coaching-2024-04.md]]
+  3. ⚠️ 벤더 주장 (Inc. 전달): BetterUp Grow — AI-only 코칭 (2021 개발 시작, 2025-04 출시), 개발 시간 대부분을 안전 가드레일에 투입. [[sources/inc-betterup-ai-only-coaching-2025-08.md]]
+  4. ⚠️ 벤더 주장 (Twilio): 2년 후 코칭 효과 분석 (고성과 평가·이탈). [[sources/betterup-roi-page-2026-09.md]]
+  (종전 "6개월 learning path·주별 micro-intervention·scenario 질문·dashboard 매핑" 단계는 인용 소스에 없어 제거)
+- **HITL**: ✅ Bersin: 전문 코치(human) + AI 결합. [[sources/bersin-betterup-manage-ai-coaching-2024-04.md]] Grow는 AI-only. [[sources/inc-betterup-ai-only-coaching-2025-08.md]]
+- **Frequency**: ✅ Bersin: 주별 맞춤 학습 경로. [[sources/bersin-betterup-manage-ai-coaching-2024-04.md]] 그 외 _미공개_
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: Twilio 측 _미공개_ — BetterUp은 stand-alone SaaS, SSO·SCIM 연동
-- **AI 시스템 배치**: ✅ BetterUp Manage (hybrid) + BetterUp Grow (AI-only) SaaS
-- **배포 환경**: _미공개_ (BetterUp cloud)
-- **연동·통합**: HRIS SSO, calendar (1:1), 학습 dashboard
-- **사용자 접점**: BetterUp web·모바일 — assessment·1:1 영상 코칭·micro-intervention·VR (Grow)
-- **인증·권한**: 기업 SSO + RBAC (manager·HR dashboard 분리)
+- **Core HRIS**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: ✅ BetterUp Manage (AI assessment + human coach) [[sources/bersin-betterup-manage-ai-coaching-2024-04.md]] + ⚠️ 벤더 주장: BetterUp Grow (AI-only). [[sources/inc-betterup-ai-only-coaching-2025-08.md]]
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점**: _미공개 (not disclosed)_
+- **인증·권한**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: ✅ Whole Person Assessment (resilience·growth mindset 등), 코칭 세션, behavior change tracker, 비즈니스 KPI
-- **데이터 규모**: Twilio 8K+ 직원 cohort
-- **전처리·정제**: _미공개_
-- **학습 vs RAG vs In-context**: _미공개_ — Grow AI 코치 LLM 기반 추정
-- **데이터 거버넌스**: ⚠️ BetterUp 표준: 코칭 세션은 employer에 disaggregated form만 (자사 정책)
+- **입력 데이터 소스**: ✅ Bersin: Whole Person assessment (soft-skills 시나리오 매칭). [[sources/bersin-betterup-manage-ai-coaching-2024-04.md]] 그 외 _미공개_
+- **데이터 규모**: ⚠️ 벤더 주장: Twilio 8,000+ 직원 전원. [[sources/betterup-roi-page-2026-09.md]]
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: _미공개 (not disclosed)_
 - **민감정보 처리**: _미공개_ — 멘탈헬스 인접 — HIPAA·GDPR 별도 명시 없음
 
 ### D. Model (모델)
 
-- **Foundation model**: _미공개_ — Grow LLM 기반이나 모델·버전 비공개
-- **모델 유형**: LLM (conversational coaching) + assessment scoring + recommendation
-- **제공 방식**: _미공개_
-- **커스터마이징 기법**: ⚠️ 벤더 주장: BetterUp 코칭 IP·과학 자문 (Martin Seligman 등) prompt·rubric
-- **Orchestration 프레임워크**: _미공개_
-- **평가·가드레일**: ⚠️ 벤더 주장: 95% user satisfaction (Inc.com, BetterUp 자체 측정) — 독립 검증 부재
+- **Foundation model**: _미공개 (not disclosed)_
+- **모델 유형**: _미공개 (not disclosed)_ — ✅ Bersin: "AI-enabled assessment… AI-driven narrative support". [[sources/bersin-betterup-manage-ai-coaching-2024-04.md]]
+- **제공 방식**: _미공개 (not disclosed)_
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: ⚠️ 벤더 주장 (Inc. 전달, 원문 미확보): 안전 가드레일에 개발 시간 대부분 투입; 초기 테스트 고객 만족 95% — 독립 검증 부재. [[sources/inc-betterup-ai-only-coaching-2025-08.md]]
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: BetterUp 벤더 (CEO Alexi Robichaux). [[sources/inc-betterup-ai-only-coaching-2025-08.md]] Twilio 측 담당 조직 _미공개_
+- **참여 역할**: _미공개 (not disclosed)_
+- **팀 규모·기간**: ⚠️ 벤더 주장: Twilio 2년 운영 후 분석. [[sources/betterup-roi-page-2026-09.md]]
+- **거버넌스 체계**: _미공개 (not disclosed)_
+- **파트너**: ✅ Josh Bersin — BetterUp 공식 advisor (분석 시 COI). [[sources/bersin-betterup-manage-ai-coaching-2024-04.md]]
+
+## Governance & Risk
+
+- ⚠️ Twilio 수치(32%·5x)는 벤더 페이지가 고객 내부 분석을 전달 — 코칭 참여자 self-selection 편향 가능, 비교군 통제 _미공개_. [[sources/betterup-roi-page-2026-09.md]]
+- ⚠️ Bersin 분석은 Tier 1이나 BetterUp advisor로서 이해관계 있음. [[sources/bersin-betterup-manage-ai-coaching-2024-04.md]]
+- 코칭 대화 데이터의 보존·접근·employer 공유 정책: _미공개 (not disclosed)_
+- 멘탈헬스 인접 영역의 AI-only 코칭 안전성: 벤더 가드레일 주장 외 독립 평가 _미공개_
+
+## Contradictions
+
+> [!note] 2026-09-27 grounding — 종전 본문의 "비용 70퍼센트 절감", "Leadership ROI 600퍼센트 average", "채택 기업 11곳·50+ pipeline", "매니저 effectiveness 70퍼센트", "6개월 learning path·weekly micro-intervention", "SSO·SCIM·VR·RBAC", "Martin Seligman prompt·rubric", "disaggregated form 정책"은 인용 소스 5건의 raw 어디에도 없어 제거·_미공개_ 처리. Inc.·HR Executive 소스는 원문 미확보(403)라 95퍼센트·16퍼센트도 검색 스니펫 기반 벤더 주장으로만 기재.
 
 
 ## Impact / Metrics (기대효과)
@@ -102,33 +121,34 @@ AI 코칭 수혜 직원의 고성과 평가 확률 32% 향상, 이탈률 5배 �
 
 | 지표 | 값 | 출처 | 성격 |
 |---|---|---|---|
-| 고성과 평가 확률 | 코칭 받은 직원이 **32% 더 높음** | BetterUp ROI page | ⚠️ 벤더 주장 |
-| 이탈률 | 코칭 받은 직원이 **5x 덜 이탈** | BetterUp ROI page | ⚠️ 벤더 주장 |
+| 고성과 평가 확률 | 코칭 받은 직원이 **32% 더 높음** (2년 후 분석) | [[sources/betterup-roi-page-2026-09.md]] | ⚠️ 벤더 주장 (human coaching) |
+| 이탈률 | 코칭 받은 직원이 **5x 덜 이탈** | [[sources/betterup-roi-page-2026-09.md]] | ⚠️ 벤더 주장 (human coaching) |
 
-### 익명 고객 사례
+### 기타 고객 사례 (BetterUp ROI 페이지)
 
 | 사례 | 지표 | 값 | 출처 |
 |---|---|---|---|
-| Sales 조직 | Quota hitting | 코칭 팀 **1.6x** 달성 / **$4.5M** 추가 기회 | BetterUp ROI |
-| Software 회사 | Attrition rate | 코칭 받은 직원 **4.3x 낮음** / 연 **$14M** 절약 | BetterUp ROI |
-| Tech consulting | NPS | **+15.6pt** YoY / margin **+6%** vs 평균 | BetterUp ROI |
+| Chipotle | 승진율 | 본사 **1.2x** / 현장 리더 **1.8x** | [[sources/betterup-roi-page-2026-09.md]] ⚠️ 벤더 주장 |
+| Sales 조직 (익명) | Quota hitting | 코칭 매니저 팀 **1.6x** (전년 대비) | [[sources/betterup-roi-page-2026-09.md]] ⚠️ 벤더 주장 |
+| 익명 고객 | Attrition | **4.3x** 낮음 / **$14M** 절감 | [[sources/betterup-roi-page-2026-09.md]] ⚠️ 벤더 주장 |
+| Moderna | 팀 결속 | **16%** 향상 (사례 카드 제목) | [[sources/betterup-customers-page-2026-09.md]] ⚠️ 벤더 주장 |
 
 ### BetterUp Grow AI 제품
 
 | 지표 | 값 | 출처 |
 |---|---|---|
-| User satisfaction | **95%** | Inc.com |
-| 비용 vs human coaching | **70% 절감** | BetterUp 공식 |
-| Confidence increase | **16%** | BetterUp 공식 |
-| 채택 기업 | **11곳** (2025), 50+ pipeline | Inc.com |
-| Leadership ROI | **600% average** | BetterUp 공식 |
+| User satisfaction (초기 테스트) | **95%** | [[sources/inc-betterup-ai-only-coaching-2025-08.md]] ⚠️ 벤더 주장 (Inc. 전달, 원문 미확보) |
+| 성과 향상 (초기 테스트) | **16%** | [[sources/inc-betterup-ai-only-coaching-2025-08.md]] ⚠️ 벤더 주장 (Inc. 전달, 원문 미확보) |
+| 비용 vs human coaching | _미공개_ | (수치 근거 미확보 — 2026-09-27 grounding 점검) |
+| 채택 기업 수 | _미공개_ | (수치 근거 미확보) |
+| Leadership ROI | _미공개_ | (수치 근거 미확보 — 2026-09-27 grounding 점검) |
 
-**⚠️ 모든 수치가 벤더 자체 주장**. 단, **다수 고객·다양한 metric**이 공개돼 있어 wiki의 다른 벤더보다 투명도 높음.
+**⚠️ 모든 수치가 벤더 자체 주장**. AI-only 제품(Grow)의 outcome 수치는 초기 테스트 만족도·성과 향상만 존재하며, Twilio 등 ROI 수치는 human coaching 결과.
 
 ## Consulting Angle
 
 ### 핵심 가치
-- **코칭 카테고리의 가장 구체적 ROI 사례**: Twilio 이름 + 32%·5x 수치는 CHRO에 직접 제시 가능
+- **코칭 카테고리의 가장 구체적 ROI 사례**: Twilio 이름 + 32%·5x 수치는 CHRO에 직접 제시 가능 — 단 human coaching 결과이며 벤더 페이지 전달임을 명시
 - **"AI coaching democratization" 논의의 앵커**: "임원만 받던 코칭을 전 직원에게" = 한국 대기업 HR에서도 관심 높은 주제
 - **Human vs AI coaching trade-off 논의**: BetterUp는 두 모델 모두 운영 → "어디까지 AI가, 어디서부터 사람이"를 데이터로 판단 가능
 

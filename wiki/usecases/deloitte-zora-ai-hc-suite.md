@@ -13,7 +13,7 @@ vendor_type: [internal-build, foundation-model]
 output: "클라이언트 workforce 세그먼트별 AI 영향평가 리포트 (Workforce Analyzer) + 시나리오 기반 인력 재배치 계획 (Workforce Planner+) + 300+ HR workflow library + HR AI maturity 진단 점수 + ready-to-deploy agents"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, clustering-classification]
-stage: production
+stage: announced
 visibility: public
 case_type: adoption
 regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
@@ -41,71 +41,89 @@ related_vendors: []
 
 ## Summary
 
-Deloitte의 **Zora AI** — agentic AI 플랫폼 (NVIDIA AI · Llama Nemotron · AI-Q Blueprint 기반). finance·**human capital**·supply chain·procurement·sales/marketing·customer service ready-to-deploy agents. 동시 launch한 **Human Capital AI Solution Suite** (2025-06): Workforce Analyzer (AI 워크포스 영향평가) + Workforce Planner+ + **300+ HR workflows reimagined library**. Deloitte 13,000+ leader 서베이 기반 HR AI maturity model 동반.
+Deloitte의 **Zora AI** — agentic AI 플랫폼 (NVIDIA AI · Llama Nemotron reasoning models · AI-Q Blueprint 기반), 2025-03-18 NVIDIA GTC에서 발표 [[sources/deloitte-press-zora-ai-agentic-2025-03]]. 2025-03 시점 finance 에이전트가 먼저 제공되고 **human capital**·supply chain·procurement·sales/marketing·customer service로 **확장 예정**(to be expanded) [[sources/deloitte-press-zora-ai-agentic-2025-03]]. Human Capital AI Solution Suite(Workforce Analyzer·Workforce Planner+·HR workflow library, 2025-06)는 별도 페이지 [[deloitte-workforce-analyzer-salesforce]]에서 다루며, 본 페이지의 인용 소스에는 해당 내용이 없다. HR 기능의 agent governance 맥락은 Deloitte 2026 Human Capital Trends [[sources/deloitte-2026-human-capital-trends]] 참조.
 
 ## Problem / Why (도입 배경)
 
-- **Before**: 컨설팅사가 HR AI 컨설팅을 "case-by-case" 진행 — 표준화·재사용 자산 부족
-- **Pain point**: HR transformation 프로젝트마다 workflow 재설계 압도적 — 300+ workflow library가 필요
-- **Trigger**: agentic AI 부상 + Big-4 컨설팅 경쟁 압박 (PwC·KPMG·EY 동반 발표)
+- **Before (baseline)**: ❓ baseline 미공개 — 보도자료는 Deloitte 내부 expense management가 "많은 조직의 공통 과제"라고만 기술 [[sources/deloitte-press-zora-ai-agentic-2025-03]]. HR 영역의 도입 전 상태는 소스에 없음.
+- **Pain point**: ⚠️ 벤더 주장: 프로세스 간소화·비효율 제거·직원의 전략 업무 집중 [[sources/deloitte-press-zora-ai-agentic-2025-03]].
+- **Trigger**: _미공개 (not disclosed)_ — 소스는 "autonomous enterprise era" 비전(Girzadas CEO)만 언급 [[sources/deloitte-press-zora-ai-agentic-2025-03]]; 경쟁사 동반 발표 등은 소스에 없음.
+- 🚫 일반론 표기: 벤더 플랫폼이므로 특정 클라이언트의 도입 배경은 고객별 상이.
 
 ## Solution Architecture
 
 ### A. Process (프로세스)
 
-- **Before**: 컨설팅 프로젝트마다 workflow 신규 설계
-- **After**:
-  1. Zora AI 플랫폼이 ready-to-deploy agents 제공 (HR 포함 6 영역)
-  2. Workforce Analyzer가 클라이언트 workforce 세그먼트별 AI 영향평가
-  3. Workforce Planner+가 시나리오 기반 인력 재배치 계획
-  4. 300+ HR workflow library에서 use case 매칭
-  5. HR AI maturity model로 클라이언트 진단
-  6. agent 배포·운영
-- **HITL**: Deloitte 컨설턴트 + 클라이언트 HR
+- **Before**: _미공개 (not disclosed)_
+- **After** (⚠️ 벤더 주장 [[sources/deloitte-press-zora-ai-agentic-2025-03]]):
+  1. Zora AI 플랫폼이 ready-to-deploy functional agents 제공 — finance 우선, human capital 등 5개 영역으로 확장 예정
+  2. 에이전트가 perceive → reason → act
+  3. Deloitte 내부 적용(finance): expense management 에이전트가 payroll·facilities·sales/marketing·employee time and expenses 비용을 모니터링, outlier 식별·업계 비교·예산 drill-down
+  4. HR(human capital) 에이전트의 구체 프로세스: _미공개 (not disclosed)_
+- **HITL**: ✅ human feedback loop 포함 [[sources/deloitte-press-zora-ai-agentic-2025-03]] — 개입 지점은 _미공개_
+- **Trigger & Frequency**: _미공개 (not disclosed)_
+- **Scope of autonomy**: _미공개 (not disclosed)_ — "perceive, reason, and act"로만 기술
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS / 기반 시스템**: _미공개_ (Zora는 클라이언트 HCM 위 overlay agentic 플랫폼)
-- **AI 시스템 배치**: ✅ Cloud subscription 모델 (Deloitte SaaS); pre-built integrations로 "deploy rapidly on existing technologies"
-- **배포 환경**: ✅ NVIDIA AI Enterprise stack (cloud-agnostic); Oracle 파트너십 (별도 발표) — 구체 hyperscaler 선택은 클라이언트 옵션
-- **연동·통합**: ✅ Pre-built integrations; 구체 connector 목록 _미공개_; ✅ Oracle Fusion Cloud Apps 통합 (Deloitte-Oracle 파트너십)
-- **사용자 접점**: _미공개_ (web/conversational 추정)
-- **인증·권한**: ✅ "Trustworthy AI principles — security, transparency, reliability" (벤더 주장)
+- **Core HRIS / 기반 시스템**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: ⚠️ 벤더 주장: cloud subscription 모델, pre-built integrations로 "deployed rapidly on existing technologies" [[sources/deloitte-press-zora-ai-agentic-2025-03]]
+- **배포 환경**: ⚠️ 벤더 주장: NVIDIA AI Enterprise·accelerated computing 기반 [[sources/deloitte-press-zora-ai-agentic-2025-03]]; hyperscaler·클라이언트 측 배치 옵션 _미공개 (not disclosed)_
+- **연동·통합**: ⚠️ 벤더 주장: pre-built integrations [[sources/deloitte-press-zora-ai-agentic-2025-03]]; 구체 connector 목록 _미공개 (not disclosed)_
+- **사용자 접점**: _미공개 (not disclosed)_
+- **인증·권한**: ⚠️ 벤더 주장: Trustworthy AI 원칙(security·transparency·reliability) [[sources/deloitte-press-zora-ai-agentic-2025-03]] — 권한 모델 자체는 _미공개_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: ✅ Workforce 데이터 (Workforce Analyzer); 클라이언트 HR 시스템에서 수집 — 구체 항목 _미공개_; ✅ Deloitte 13,000+ leader survey (HR AI maturity 모델 baseline)
-- **데이터 규모**: ✅ 1,000+ 사용자 by end-2025 (finance pilot); HR 사용자 수 _미공개_
-- **전처리·정제**: _미공개_
-- **학습 vs RAG vs In-context**: ✅ NVIDIA AI-Q Blueprint 기반 (RAG·agent orchestration용 reference architecture)
-- **데이터 거버넌스**: ✅ Human feedback loop 포함 (HITL)
-- **민감정보 처리**: _미공개_
+- **입력 데이터 소스**: ⚠️ 벤더 주장: (finance 내부 적용) payroll·facilities·sales/marketing·employee time and expenses 비용 데이터 [[sources/deloitte-press-zora-ai-agentic-2025-03]]; HR 에이전트 입력 데이터 _미공개 (not disclosed)_
+- **데이터 규모**: ⚠️ 벤더 주장: Deloitte 내부 "thousands of users"(수천 명) 대상 2025년 말까지 배포 계획 [[sources/deloitte-press-zora-ai-agentic-2025-03]]; HR 사용자 수 _미공개_
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context**: ⚠️ 벤더 주장: NVIDIA AI-Q Blueprint·NeMo 기반 [[sources/deloitte-press-zora-ai-agentic-2025-03]] — RAG/fine-tuning 여부는 _미공개_
+- **데이터 거버넌스**: ⚠️ 벤더 주장: human feedback loop [[sources/deloitte-press-zora-ai-agentic-2025-03]]
+- **민감정보 처리**: _미공개 (not disclosed)_
+- **데이터 출처의 오너십**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
-- **Foundation model**: ✅ NVIDIA Llama Nemotron (reasoning models)
-- **모델 유형**: ✅ Agentic LLM (reasoning + generative + predictive) — finance·human capital·supply chain·procurement·sales·customer service agents
-- **제공 방식**: ✅ NVIDIA AI Enterprise stack (NeMo, AI Blueprints, accelerated computing)
-- **커스터마이징 기법**: ✅ NVIDIA NeMo (fine-tuning framework) + AI-Q Blueprint (RAG); Deloitte 도메인 fine-tuning 추정
-- **Orchestration 프레임워크**: ✅ NVIDIA AI-Q Blueprint (agentic orchestration reference)
-- **평가·가드레일**: ✅ Trustworthy AI 프레임워크 (Deloitte 자체) + human feedback loop
+- **Foundation model**: ⚠️ 벤더 주장: NVIDIA Llama Nemotron reasoning models [[sources/deloitte-press-zora-ai-agentic-2025-03]] — 버전 _미공개_
+- **모델 유형**: ⚠️ 벤더 주장: agent (perceive·reason·act) — finance·human capital·supply chain·procurement·sales/marketing·customer service [[sources/deloitte-press-zora-ai-agentic-2025-03]]
+- **제공 방식**: ⚠️ 벤더 주장: NVIDIA AI Enterprise·NeMo·AI Blueprints·accelerated computing [[sources/deloitte-press-zora-ai-agentic-2025-03]]
+- **커스터마이징 기법**: _미공개 (not disclosed)_ — "customized to meet client needs"라는 문구만 존재 [[sources/deloitte-press-zora-ai-agentic-2025-03]]
+- **Orchestration 프레임워크**: ⚠️ 벤더 주장: NVIDIA AI-Q Blueprint [[sources/deloitte-press-zora-ai-agentic-2025-03]]
+- **평가·가드레일**: ⚠️ 벤더 주장: Trustworthy AI 원칙 + human feedback loop [[sources/deloitte-press-zora-ai-agentic-2025-03]]
+- **비용·성능 지표**: _미공개 (not disclosed)_
+- **Fallback·degradation 전략**: _미공개 (not disclosed)_
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: _미공개 (not disclosed)_ — Deloitte 내부 적용은 finance 팀 대상 [[sources/deloitte-press-zora-ai-agentic-2025-03]]
+- **참여 역할**: _미공개 (not disclosed)_
+- **팀 규모·기간**: _미공개 (not disclosed)_
+- **거버넌스 체계**: ⚠️ 벤더 주장: Deloitte Trustworthy AI 프레임워크 [[sources/deloitte-press-zora-ai-agentic-2025-03]]
+- **변화관리**: _미공개 (not disclosed)_
+- **파트너**: NVIDIA (기술 파트너) [[sources/deloitte-press-zora-ai-agentic-2025-03]]
 
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-Big-4 컨설팅의 agentic HR transformation 표준화 — 300+ workflow library는 KR HR consulting 자산 reference의 새 baseline.
+⚠️ 벤더 주장(목표치): Deloitte 내부 finance 적용 시 비용 25% 절감·생산성 40% 향상 target — 실적이 아니며 HR 영역 성과는 _미공개_.
 
-- ⚠️ 벤더 주장: 25% cost reduction, 40% productivity gain (finance ops 내부 target)
-- 1,000+ 사용자 by end-2025 (finance pilot first)
-- 300+ HR workflows in library
-- 13,000+ leader 서베이 (Tier 1)
+- ⚠️ 벤더 주장: 비용 25% 절감·생산성 40% 향상 (Deloitte finance 내부 **target**) [[sources/deloitte-press-zora-ai-agentic-2025-03]]
+- ⚠️ 벤더 주장: 2025년 말까지 "thousands of users"(수천 명) 배포 계획 [[sources/deloitte-press-zora-ai-agentic-2025-03]]
+- HR(human capital) 에이전트 성과: _미공개 (not disclosed)_
+- HR workflow library 규모·리더 서베이 규모: 본 페이지 인용 소스에 없음 (수치 근거 미확보 — 2026-09-27 grounding 점검; 라이브러리는 [[deloitte-workforce-analyzer-salesforce]] 참조)
 
 ## Governance & Risk
 
-- ⚠️ 25%·40% 수치 ⚠️ 벤더 주장 (Deloitte 자체 운영 target — actual 미공개)
-- ⚠️ Workforce Analyzer 결과 기반 직원 재배치가 한국 노동법·노조 컨텍스트에서 위험
-- ✅ Llama Nemotron 사용은 open-source 친화적
+- ⚠️ 25%·40% 수치는 ⚠️ 벤더 주장 (Deloitte 자체 운영 target — actual 미공개) [[sources/deloitte-press-zora-ai-agentic-2025-03]]
+- ⚠️ 인력 영향평가 결과 기반 직원 재배치는 한국 노동법·노조 컨텍스트에서 위험 (컨설턴트 판단)
+- ⚠️ 벤더 주장: Trustworthy AI 원칙·human feedback loop [[sources/deloitte-press-zora-ai-agentic-2025-03]] — 편향 감사·DPIA 등 구체 장치 _미공개_
+- 거버넌스 격차 맥락: 임원 60%가 AI를 의사결정에 사용하나 5%만 잘 관리 [[sources/deloitte-2026-human-capital-trends]]
+
+## Contradictions
+
+> [!note] 2026-09-27 grounding — (1) 기존 "천 명 단위 사용자 수" 서술은 원문 "thousands of users"(수천 명)로 수정. (2) 기존 "만 명 단위 leader 서베이" 수치는 인용 소스 어디에도 없어 삭제(2026 HC Trends는 9,000명 임원 서베이). (3) Oracle 파트너십·Oracle Fusion 통합은 인용 소스에 없어 삭제. (4) Human Capital AI Suite(300+ workflows)는 2025-06 별도 보도자료 내용으로 본 페이지 소스에 없음 — [[deloitte-workforce-analyzer-salesforce]]로 이관. (5) 2025-03 보도자료는 HC 에이전트를 "to be expanded"(확장 예정)로 기술 → stage를 announced로 조정.
 
 ## Consulting Angle
 

@@ -1,8 +1,12 @@
 ---
 title: "SK AX 생성형 AI 기반 채용 프로세스 담당자 인터뷰 — SK AX Insight"
 url: https://www.skax.co.kr/insight/trend/3052
-source_type: vendor-insight-blog
+source_type: vendor
 tier: 3
+raw: raw/vendors/2024-sk-ax-insight-ai-recruitment.md
+snapshot_quality: full
+publisher: SK AX
+independent: false
 publication_date: 2024             # approximate, 2024년 하반기 도입 이후로 추정
 ingested_at: 2026-04-12
 supports: [sk-group-aict-ai-recruitment]
@@ -83,3 +87,17 @@ SK AX의 공식 insight/trend 블로그에 실린 AI 채용 서비스 담당자 
 - 모든 수치 여전히 **벤더 자체 주장**
 - "1차 면접 완전 자동화"는 한국 **근로자대표 합의·채용절차공정화법·인권위 이슈** 가능성 — 제시 시 리스크 고지 필수
 - "OI 절감 방안의 일환"이라는 기원은 **비용 절감 중심의 AI 도입**이 **채용 품질**과 trade-off 있는지 질문 여지
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "1차 면접은 AI가 전적으로 진행했습니다. 단순히 진행뿐 아니라 평가와 결과 보고서 작성까지도 AI가 모두 맡았습니다. 2차는 대면 면접, 3차는 CEO 면접으로 이어지지만, 1차 면접 단계에서 AI의 역할이 매우 컸습니다."
+> — 뒷받침: 1차 면접 AI 전담
+
+> "실제로 Gen..AI 기반 스크리닝은 시간당 1,000명 이상의 지원자를 처리할 수 있으며, 이는 Aibril 대비 10배, 사람 대비 100배 이상의 속도라고 덧붙였습니다."
+> — 뒷받침: 시간당 1,000명 · Aibril(기존 AI) 대비 10배 · 사람 대비 100배 (⚠️ 벤더 주장)
+
+> "기존의 전통적인 코딩 테스트를 전면 폐지하고, 국내 최초로 AICT(AI Competency Test, 생성형 AI 활용 능력 평가)를 도입하여 업계에 큰 반향을 일으키고 있습니다."
+> — 뒷받침: AICT 도입 · 코딩테스트 폐지
+
+> "그룹 내 확산 계획도 구체화되고 있으며, 2025년까지 그룹사의 대부분 주요 계열사에 AI 채용 서비스를 적용할 예정입니다."
+> — 뒷받침: 그룹 확산 계획

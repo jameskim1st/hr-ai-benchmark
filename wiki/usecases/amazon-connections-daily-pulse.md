@@ -3,14 +3,14 @@ title: "Amazon Connections — daily 1-question 직원 pulse"
 slug: amazon-connections-daily-pulse
 primary_category: Employee Experience & HR Ops
 subcategory: Listening & Engagement
-tags: [amazon, connections, daily-pulse, ml-prediction, frontline, 300m-responses, people-science, attrition-prediction]
+tags: [amazon, connections, daily-pulse, frontline, people-science]
 company: Amazon
 industry: [retail, logistics, tech]
 region: [global]
 employee_class: [all]
 vendor: [Amazon internal]
 vendor_type: [internal-build]
-output: "1.5M 직원에 대한 attrition·engagement 예측 점수 + 행동 (non-response trend)·태도 (응답 sentiment) 변화 신호 + 매니저·HR risk alert. 사람 action은 별도"
+output: "1.5M 직원 대상 daily 1-question 서베이 응답 데이터 + HR People Science 팀의 분석 (목표: 최고 인재 식별·attrition 감소) + ⚠️ 자사 보고: 매니저용 4명 이상 팀 단위 집계 결과·기간별 추세 조회. ML 예측·risk alert는 미공개"
 ai_tech_type: [predictive]
 ai_tech_subtype: [prediction, clustering-classification]
 stage: production
@@ -40,90 +40,86 @@ related_vendors: []
 
 ## Summary
 
-Amazon **Connections** — 1.5M 직원에게 매일 로그인 시 1개 질문 pulse. 연 300M+ 응답이 People Science 팀의 ML 모델 입력 — 행동·태도 변화로 attrition·engagement 예측. ⚠️ 자사 보고: 97% voluntary adoption (산업 평균 ~25%). Andie Baker (전 principal scientist)가 구축. 단 Fortune Jun 2024 critical coverage — anonymity skepticism 보고.
+Amazon **Connections** — ✅ 1.5M 직원 규모 인력 대상 daily 서베이 도구 (매일 1개 질문). [[sources/fortune-amazon-connections-survey-criticism-2024-06.md]] ✅ 2014년 소규모 파일럿 → 2017-04 전사 확대; HR 조직 내 People Science 팀이 데이터 분석, 팀 목표 중 하나는 "최고 인재 식별과 attrition 감소". [[sources/cnbc-amazon-connections-forte-2018-03.md]] ⚠️ 자사 보고 (Amazon 대변인): 응답은 confidential, 4명 이상 팀에서만 집계 결과 노출, 일일 빈도로 기간별 추세 조회 가능. [[sources/fortune-amazon-connections-survey-criticism-2024-06.md]] 단 CNBC 2018·Fortune 2024 모두 익명성 회의론 보고. 응답 수·참여율·ML 예측 모델 세부는 _미공개_ (2026-09-27 grounding 점검 — Contradictions 참조).
 
 ## Problem / Why (도입 배경)
 
-- **Before**: annual·biannual 서베이로는 1.5M frontline 직원의 daily 변화 포착 불가
-- **Pain point**: high-turnover frontline (creator·warehouse·delivery)의 sentiment·attrition 신호를 연 1~2회로 잡으면 늦음
-- **Trigger**: People Science 데이터 사이언스 팀의 high-frequency listening 실험
+- **Before**: ❓ baseline 미공개 — 소스는 도입 전 서베이 방식을 기술하지 않음
+- **Pain point**: ✅ 1.5M 직원(창고·사무실)의 업무 경험에 대한 정기 피드백 수집. [[sources/fortune-amazon-connections-survey-criticism-2024-06.md]] ✅ People Science 목표: 최고 인재 식별·attrition 감소. [[sources/cnbc-amazon-connections-forte-2018-03.md]]
+- **Trigger**: ✅ 2014년 소규모 파일럿 → 2017-04 전사 확대. [[sources/cnbc-amazon-connections-forte-2018-03.md]] 결정 배경 세부 _미공개_
 
 ## Solution Architecture
 
 ### A. Process (프로세스)
 
-- **Before**: annual 서베이 + exit interview 사후 분석
+- **Before**: _미공개 (not disclosed)_
 - **After**:
-  1. 직원 로그인 시 1개 질문 자동 출현 (5초 답변)
-  2. 응답 + non-response 모두 데이터로 수집
-  3. ML 모델이 행동(non-response trend)·태도(응답 sentiment) 변화 추적
-  4. attrition·engagement 이벤트 사전 예측
-  5. 매니저·HR에게 risk 신호 전달
-- **HITL**: 매니저·HR이 risk 신호 review·action
-- **Frequency**: daily (매일 1 질문)
-- **Scope**: predict-only — action은 사람
-
-### B/C/D. System
-
-- Amazon 자체 구축 (proprietary)
-- 데이터: 연 300M+ 응답
-- 모델: 자체 ML (LLM 이전 세대)
-- 사용자 접점: 직원 로그인 시 자동 popup
+  1. ✅ 직원이 매일 1개 질문에 답하는 daily Q&A 프로그램. [[sources/cnbc-amazon-connections-forte-2018-03.md]]
+  2. ✅ HR 조직 내 People Science 팀이 Connections 데이터를 분석. [[sources/cnbc-amazon-connections-forte-2018-03.md]]
+  3. ⚠️ 자사 보고: 매니저는 4명 이상 팀에서만 집계 결과를 보며, 일일 빈도 덕분에 기간별 필터링·추세 조회 가능. [[sources/fortune-amazon-connections-survey-criticism-2024-06.md]]
+  4. ✅ Amazon은 Connections 데이터를 직원 만족 주장·노조 대응 근거로 활용. [[sources/fortune-amazon-connections-survey-criticism-2024-06.md]]
+  5. ML 예측·risk alert 흐름: _미공개_ (소스에 없음)
+- **HITL**: ✅ 매니저가 집계 결과 열람 — 단 2018년 기사에서 매니저들은 데이터 활용법이 불확실하다고 답함. [[sources/cnbc-amazon-connections-forte-2018-03.md]]
+- **Frequency**: ✅ daily (매일 1 질문). [[sources/cnbc-amazon-connections-forte-2018-03.md]]
+- **Scope**: 집계·추세 제공 — 자동 action 없음 (소스 기준)
 
 ### E. Organization
 
-- Amazon People Science 팀 (Andie Baker former principal)
+- ✅ People Science 팀 (구 WW Operations Connections) — HR 조직 소속, "employee feedback, science, and technology"로 리더의 비즈니스 문제 해결 지원. [[sources/cnbc-amazon-connections-forte-2018-03.md]] 팀 규모·리더 _미공개_
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS / 기반 시스템**: _미공개_ (Amazon 내부 HR 시스템 — 자체 구축 추정)
-- **AI 시스템 배치**: ✅ Amazon 자체 구축 (proprietary, People Science 팀 운영)
-- **배포 환경**: _미공개_ (Amazon 내부 AWS 추정)
-- **연동·통합**: ✅ 직원 login 시스템 (Amazon SSO/A-to-Z 포털); 응답 데이터 → Seattle 본사 People Science team 집계
-- **사용자 접점**: ✅ 직원 로그인 시 자동 popup (web app — A-to-Z 직원 포털)
-- **인증·권한**: ✅ Amazon employee credential SSO
+- **Core HRIS / 기반 시스템**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: ✅ Amazon 내부 프로그램 (People Science 팀 분석). [[sources/cnbc-amazon-connections-forte-2018-03.md]]
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점**: ✅ 직원이 하루를 시작하며 답하는 daily 질문 (채널 세부 _미공개_). [[sources/cnbc-amazon-connections-forte-2018-03.md]]
+- **인증·권한**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: ✅ Daily 1-question response (1-5 scale 또는 텍스트), non-response signal, 시간 경과 변화
-- **데이터 규모**: ✅ 1.5M+ 직원 cover (55 countries), 연 300M+ 응답 (자사 보고)
-- **전처리·정제**: ✅ Aggregation by area/manager (Seattle 팀); confidential 응답 처리 (자사 주장)
-- **학습 vs RAG vs In-context**: N/A (predictive ML, LLM 이전 세대)
-- **데이터 거버넌스**: ⚠️ Fortune Jun 2024 critical: anonymity 회의론 보고; 매니저별 area aggregation 가능
-- **민감정보 처리**: ⚠️ "Confidential responses" 자사 주장 — Fortune 비판 보도
+- **입력 데이터 소스**: ✅ daily 1-question 응답. [[sources/cnbc-amazon-connections-forte-2018-03.md]] 응답 형식·non-response 활용 _미공개_
+- **데이터 규모**: ✅ 1.5M 직원 규모 인력 대상. [[sources/fortune-amazon-connections-survey-criticism-2024-06.md]] 연간 응답 수·참여율 _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검)
+- **전처리·정제**: ⚠️ 자사 보고: 4명 이상 팀 단위 집계. [[sources/fortune-amazon-connections-survey-criticism-2024-06.md]]
+- **학습 vs RAG vs In-context**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: ⚠️ Fortune 2024: 소규모 팀에서 매니저가 응답자를 유추할 수 있다는 직원 우려; Amazon은 confidential·매니저 응답 영향 시도는 정책 위반이라 반박. [[sources/fortune-amazon-connections-survey-criticism-2024-06.md]]
+- **민감정보 처리**: ⚠️ 자사 보고: "responses are confidential". [[sources/fortune-amazon-connections-survey-criticism-2024-06.md]]
 
 ### D. Model (모델)
 
-- **Foundation model**: N/A (LLM 이전 세대 — 2014 시작)
-- **모델 유형**: ✅ ML + NLP (behavior·sentiment prediction, attrition·engagement 예측)
-- **제공 방식**: ✅ Self-hosted (Amazon 내부 proprietary)
-- **커스터마이징 기법**: _미공개_ (자체 모델 학습 추정)
-- **Orchestration 프레임워크**: N/A
-- **평가·가드레일**: ⚠️ Fortune 비판: 응답 이후 manager-level 압력 가능성; 익명성 실효성 의문
+- **Foundation model**: _미공개 (not disclosed)_
+- **모델 유형**: _미공개 (not disclosed)_ — ✅ CNBC 2018: People Science 팀에 Microsoft AI 팀 출신 인력 채용; ML 모델 자체는 소스에 없음. [[sources/cnbc-amazon-connections-forte-2018-03.md]]
+- **제공 방식**: _미공개 (not disclosed)_
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: ⚠️ Fortune 2024·CNBC 2018: 익명성 실효성 의문, 매니저 압력 가능성. [[sources/fortune-amazon-connections-survey-criticism-2024-06.md]] [[sources/cnbc-amazon-connections-forte-2018-03.md]]
 
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-high-frequency listening + ML 예측으로 frontline attrition·engagement 사전 신호 — KR 제조·유통·물류 대기업 적용 reference.
+high-frequency listening으로 frontline 직원 피드백 상시 수집 — KR 제조·유통·물류 대기업 적용 reference. ⚠️ 기대효과 수치 미공개 (참여율·응답 수·예측 정확도 모두 소스에 없음).
 
-- ⚠️ 자사 보고:
-  - 1.5M 직원 cover
-  - 연 300M+ 응답
-  - 97% voluntary adoption (vs 산업 ~25%)
-- ⚠️ Fortune Jun 2024 critical: anonymity 회의론 보고
+- ✅ 1.5M 직원 규모 인력 대상. [[sources/fortune-amazon-connections-survey-criticism-2024-06.md]]
+- ⚠️ 자사 보고: Amazon은 긍정적 피드백을 받았다는 공식 입장. [[sources/cnbc-amazon-connections-forte-2018-03.md]]
+- 연간 응답 수·참여율: _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검)
+- ⚠️ Fortune 2024·CNBC 2018 critical: 익명성 회의론, 솔직한 응답 어려움 증언
 
 ## Governance & Risk
 
-- ⚠️ "voluntary" claim에 대한 직원 인지 격차 — Fortune이 의문 제기
+- ⚠️ 응답 정직성·익명성에 대한 직원 불신 — Fortune 2024·CNBC 2018 모두 보고
 - ⚠️ daily pulse가 "감시" 인식 시 KR 노조 sensitivity 높음
-- ⚠️ 응답 anonymity 실제 보장 수준 _세부 미공개_
+- ⚠️ 응답 anonymity 실제 보장 수준 — Amazon 주장(4명 이상 팀 집계) 외 _세부 미공개_
+
+## Contradictions
+
+> [!note] 2026-09-27 grounding — 종전 본문의 "97퍼센트 voluntary adoption (산업 평균 25퍼센트)", "연 300M+ 응답", "Andie Baker 구축", "55개국", "A-to-Z 포털·SSO", "ML attrition·engagement 예측 모델", "non-response signal"은 인용 소스 2건(CNBC 2018·Fortune 2024) raw 어디에도 없어 제거·_미공개_ 처리. frontmatter `tags`의 `300m-responses`·`ml-prediction`과 `output:` 기술은 본 점검에서 손대지 않음 (수정 필요).
 
 ## Consulting Angle
 
 - **KR 제조·유통·물류 frontline reference (1순위)**:
-  - 삼성전자 사업장·현대차 공장·CJ대한통운 hub·이마트 매장·쿠팡 fulfilment — 모두 1.5M Amazon 같은 large frontline workforce
-  - daily pulse 모델의 frontline fit 매우 높음
+  - 삼성전자 사업장·현대차 공장·CJ대한통운 hub·이마트 매장·쿠팡 fulfilment — Amazon(1.5M)처럼 large frontline workforce
+  - daily pulse 모델의 frontline fit 매우 높음 — 단, ML 예측 활용 여부는 소스 미확인이므로 "상시 listening"으로만 제안
 - **반면교사 활용 (Fortune critical coverage)**:
   - "voluntary"·"anonymity" 의심 사례를 KR 컨설팅 deck 노조 sensitivity 슬라이드에 인용
   - KR 도입 시 익명성 보장 framework + 노조 사전 합의 권장

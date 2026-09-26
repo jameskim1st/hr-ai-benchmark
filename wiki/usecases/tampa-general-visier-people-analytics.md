@@ -24,11 +24,11 @@ kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-03-01
 last_confirmed: 2025-03-01
-confidence: 0.35
-evidence_grade: B
-corroborated_by: 1
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
 freshness: stale
-depth: full
+depth: partial
 graded_at: 2026-09-27
 sources:
   - sources/visier-outsmart-2025-customers.md
@@ -40,7 +40,7 @@ related_vendors: []
 
 ## Summary
 
-Tampa General Hospital (12,000 FTE, 대형 미국 의료시스템)이 Visier 인력 분석 플랫폼을 활용해 공석율·이직 원인을 데이터로 분석하고 에이전시 노동(파견 간호사) 의존도를 70% 줄였다. 절감 재원 $50M+를 직원 보상에 재투자해 공석율 10% 미만을 달성했다. Visier Outsmart 2025 컨퍼런스에서 Business Performance Impact Vizzie Award 수상. Visier 고객 컨퍼런스 발표 기반으로 자사 보고 성격이 있으나, 독립 HIMSS Stage 7 인증(2025-06)이 병원의 분석 성숙도를 간접 검증.
+Tampa General Hospital (12,000 full-time employees, 대형 미국 의료시스템)이 Visier 인력 분석 플랫폼을 활용해 공석 원인을 분석하고 에이전시 노동(입원 파견 간호사) 지출을 70% 줄였다 (⚠️ 자사 보고 — Visier 컨퍼런스 발표 [[sources/visier-outsmart-2025-customers]]). $50M+를 직원 보상에 재투자해 공석율 10% 미만을 달성했다 (동일 소스). Visier Outsmart 2025 컨퍼런스에서 Business Performance Impact Vizzie Award 수상 ([[sources/visier-outsmart-2025-customers]]). Visier 고객 컨퍼런스 발표 기반으로 자사 보고 성격이 있으나, 독립 HIMSS Stage 7 인증(2025-06)이 병원의 분석 성숙도를 간접 검증.
 
 ## Problem / Why (도입 배경)
 
@@ -72,32 +72,32 @@ flowchart LR
 ### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: _미공개 (not disclosed)_
-- **AI 시스템 배치**: Visier SaaS 플랫폼 (클라우드)
+- **AI 시스템 배치**: ✅ Visier people analytics ([[sources/visier-outsmart-2025-customers]]); 배치 형태 _미공개_
 - **배포 환경**: _미공개 (not disclosed)_
-- **연동·통합**: HR 데이터 + 재무 데이터 연동 (구체 시스템 미공개)
-- **사용자 접점**: 경영진 대시보드, HR 분석가 인터페이스
-- **Visier MCP**: 2026-04 Visier MCP 출시 — 외부 AI 에이전트가 Visier 인력 데이터에 거버넌스 기반 접근 가능 (향후 확장 가능성)
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점**: _미공개 (not disclosed)_
+- **Visier MCP**: ⚠️ 벤더 주장: 2026-04 Visier MCP 출시 — AI 에이전트가 거버넌스 통제 하에 Visier 인력 데이터 조회 ([[sources/visier-outsmart-2025-customers]]); Tampa General 적용 여부 _미공개_
 
 ### C. Data (데이터)
 
-- **입력**: 직원 마스터(12,000 FTE), 이직·공석 데이터, 에이전시 비용, 보상 데이터, 재무 지표
-- **규모**: 12,000 FTE 기반 분석
-- **연동**: HR ↔ Finance 헤드카운트 조정 (별도 J&J 사례에서도 동일 패턴 확인)
+- **입력**: ✅ 공석 원인·에이전시 노동 지출 분석 ([[sources/visier-outsmart-2025-customers]]); 세부 입력 항목 _미공개_
+- **규모**: ✅ 12,000 full-time employees ([[sources/visier-outsmart-2025-customers]])
+- **연동**: _미공개 (not disclosed)_ (HR↔Finance 헤드카운트 조정은 동일 소스의 J&J 사례이며 Tampa General에 해당하지 않음 — 2026-09-27 grounding 점검)
 - **학습 vs RAG**: _미공개 (not disclosed)_
 - **거버넌스**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
 - **Foundation model**: _미공개 (not disclosed)_ — Visier Vee (NL Q&A); 분석 엔진 모델 아키텍처 미공개
-- **Model 유형**: 기술통계·예측 분석 (attrition, 공석 패턴); Vee = LLM 기반 NL Q&A
+- **Model 유형**: ✅ Visier people analytics — 공석 원인 식별·투자 재배분 인사이트 ([[sources/visier-outsmart-2025-customers]]); Vee AI(자연어 Q&A)의 Tampa General 사용 여부 _미공개_
 - **커스터마이징**: _미공개 (not disclosed)_
 
 ### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: HR + Finance 공동 (헤드카운트 조정 프로젝트)
 - **참여 역할**: HR analytics 팀, 재무팀, 경영진
-- **거버넌스**: HIMSS Stage 7 Analytics 인증 (2025-06) — 플로리다 최초 (분석 성숙도 독립 검증)
-- **AI 도입 규모**: 61개 AI 애플리케이션 병원 전체에 배포
+- **거버넌스**: HIMSS Stage 7 Analytics 인증 (2025-06) — 플로리다 최초 (Visier 자료 내 언급 [[sources/visier-outsmart-2025-customers]]; HIMSS 원문 미인용)
+- **AI 도입 규모**: 61개 AI 애플리케이션 병원 전체 배포 (Visier 자료 내 언급 [[sources/visier-outsmart-2025-customers]])
 
 ## Impact / Metrics (기대효과)
 
@@ -106,10 +106,10 @@ flowchart LR
 
 | 지표 | 결과 | 신뢰도 |
 |---|---|---|
-| 에이전시 노동 비용 절감 | -70% (입원 파견 간호사 제거) | ⚠️ 자사 보고 (Visier 컨퍼런스 발표) |
-| 재투자 규모 | $50M+ → 직원 보상 | ⚠️ 자사 보고 |
-| 공석율 | < 10% | ⚠️ 자사 보고 |
-| 분석 성숙도 인증 | HIMSS Stage 7 (2025-06) | ✅ Fact (HIMSS 독립 인증기관) |
+| 에이전시 노동 비용 절감 | -70% (입원 파견 간호사 제거) | ⚠️ 자사 보고 (Visier 컨퍼런스 발표 [[sources/visier-outsmart-2025-customers]]) |
+| 재투자 규모 | $50M+ → 직원 보상 | ⚠️ 자사 보고 ([[sources/visier-outsmart-2025-customers]]) |
+| 공석율 | < 10% | ⚠️ 자사 보고 ([[sources/visier-outsmart-2025-customers]]) |
+| 분석 성숙도 인증 | HIMSS Stage 7 (2025-06) | ⚠️ Visier 자료 내 언급 ([[sources/visier-outsmart-2025-customers]]) — HIMSS 원문 미인용 |
 
 ## Governance & Risk
 
@@ -119,7 +119,9 @@ flowchart LR
 
 ## Contradictions
 
-없음.
+_없음._
+
+> [!note] 2026-09-27 grounding — B/C/D의 연동·접점·모델 유형 서술과 HR↔Finance 헤드카운트 조정(J&J 사례)을 인용 소스 범위로 축소. HIMSS Stage 7 인증은 Visier 자료 내 언급만 확인 — 독립 Fact 표기 해제.
 
 ## Consulting Angle
 

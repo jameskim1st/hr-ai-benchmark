@@ -2,6 +2,8 @@
 title: "PwC Korea — ER (Employee Relations · 노무) AI 적용 컨설팅 자료"
 url: internal
 tier: 3
+raw: raw/internal/pwc-er-deck-2026-05/
+snapshot_quality: unavailable
 source_type: vendor
 ingested_at: 2026-05-06
 date_published: 2026

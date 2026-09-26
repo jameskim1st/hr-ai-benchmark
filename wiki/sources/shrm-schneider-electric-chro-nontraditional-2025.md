@@ -2,7 +2,10 @@
 title: "How Schneider Electric's CHRO Cultivates Nontraditional Talent"
 url: https://www.shrm.org/executive-network/insights/schneider-electric-chro-cultivates-nontraditional-talent
 tier: 2
-source_type: article
+raw: raw/articles/2025-03-shrm-schneider-electric-chro-nontraditional.md
+snapshot_quality: full
+independent: true
+source_type: media
 publisher: SHRM
 published: 2025-03
 ingested_at: 2026-04-12
@@ -34,3 +37,16 @@ SHRM(Tier 2 HR 전문 기관) Executive Network에서 Schneider Electric CHRO Ch
 
 - [[schneider-electric-gloat-talent-marketplace]]
 - [[gloat]]
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "At Schneider Electric, we've been successfully tapping into this talent pool since 2021 with a returnship program. We create opportunities for training, mentoring, and coaching to help returners in our program transition back to work."
+> — 뒷받침: Returnship 프로그램 (2021~)
+
+> "In partnership with federal programs, we identify talent and place them in internships for about three to six months. In over 80% of cases, these veterans are offered and accept an opportunity to join our company full time."
+> — 뒷받침: Veteran internship 전환율 80%+
+
+> "Mai Lan Nguyen is the human resources leader for Schneider Electric North America."
+> — 뒷받침: 저자 — Schneider Electric NA HR 리더 (자사 기고)
+
+⚠️ raw 스냅샷(SHRM 기사 본문)에는 Open Talent Market·Charise Le 언급이 없음 — 본문은 Mai Lan Nguyen(Schneider NA HR 리더) 기고로 veteran internship·returnship이 주제. 위 Key Facts는 이 raw로 뒷받침되지 않음 (2026-09-27).

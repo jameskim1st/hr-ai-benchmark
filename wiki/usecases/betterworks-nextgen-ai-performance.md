@@ -96,7 +96,7 @@ flowchart LR
 
 ### E. Organization & Team (조직·팀 구조)
 
-- 고객: Colgate-Palmolive, Intuit, ATB Financial, Ferrer, University of Phoenix, Kuehne+Nagel (19개 플랫폼 평가 후 선택) [[sources/betterworks-nextgen-2026-01.md]]
+- 고객: Colgate-Palmolive, Intuit, ATB Financial, Kuehne+Nagel [[sources/betterworks-nextgen-2026-01.md]] (Ferrer·University of Phoenix, "19개 플랫폼 평가 후 선택"은 인용 소스 raw에 없어 제거 — 2026-09-27 grounding 점검)
 - 구체 조직·팀 구조: _미공개 (not disclosed)_
 
 ## Impact / Metrics (기대효과)
@@ -109,12 +109,16 @@ AI 기반 목표 추천 + 평가 편향 감소. 구체 outcome metric 미공개.
 |---|---|---|---|
 | 고객 우선순위 기능 반영 | 400+ | Betterworks 공식 | ⚠️ 벤더 주장 |
 | 임원 vs 직원 AI 준비도 인식 격차 | 6배 | Betterworks 2026 보고서 (n=2,387) | ⚠️ 벤더 주장 (자체 조사) |
-| Kuehne+Nagel 선정 | 19개 플랫폼 비교 후 선택 | Betterworks 공식 | ⚠️ 자사 보고 |
+| Kuehne+Nagel 선정 근거 | _미공개_ | — | (종전 "19개 플랫폼 비교" 수치 근거 미확보 — 2026-09-27 grounding 점검) |
 
 ## Governance & Risk
 
 - 부서·지역별 AI 기능 단계적 활성화 기능은 **EU AI Act/GDPR 대응의 실용적 접근** [[sources/betterworks-nextgen-2026-01.md]]
 - Goal Intelligence의 추천이 조직 전략에 과도하게 편향될 위험 — 개인 성장 목표 vs 조직 목표 균형
+
+## Contradictions
+
+_없음._ (단일 벤더 소스 — 교차 검증 소스 없음)
 
 ## Consulting Angle
 

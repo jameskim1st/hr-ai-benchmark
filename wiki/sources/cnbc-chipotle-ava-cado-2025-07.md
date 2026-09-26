@@ -2,7 +2,10 @@
 title: "Chipotle's AI hiring tool is helping it find new workers 75% faster"
 url: https://www.cnbc.com/2025/07/28/chipotle-hiring-job-application-ai-workers.html
 tier: 2
-source_type: article
+raw: raw/articles/2025-07-28-cnbc-chipotle-ava-cado.md
+snapshot_quality: full
+independent: true
+source_type: media
 publisher: CNBC
 published: 2025-07-28
 ingested_at: 2026-04-12
@@ -33,8 +36,10 @@ CNBC(Tier 2 수준의 주요 비즈니스 미디어)가 Chipotle의 AI 채용 �
 ## 인용
 
 > Candidates have been going from application to ready to hire within three and a half days thanks to Ava Cado, which previously could have been up to 12 days.
+> ⚠️ 원문 스냅샷에서 확인되지 않음 (2026-09-27) — 근사 일치: 원문은 "Eskenazi said that Chipotle has been seeing candidates go from application to ready to hire within three and a half days thanks to Ava Cado, which previously could have been up to 12 days."
 
 > Since introducing the AI chatbot, Chipotle's number of applicants "has increased dramatically" and the company is also seeing about an 85% application completion rate.
+> ⚠️ 원문 스냅샷에서 확인되지 않음 (2026-09-27) — 근사 일치: 원문에는 "Eskenazi said" 삽입 ("Since introducing the AI chatbot, Eskenazi said Chipotle's number of applicants ...")
 
 ## Tags
 

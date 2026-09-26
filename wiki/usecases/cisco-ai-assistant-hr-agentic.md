@@ -3,14 +3,14 @@ title: "Cisco — AI Assistant for HR"
 slug: cisco-ai-assistant-hr-agentic
 primary_category: Employee Experience & HR Ops
 subcategory: Employee Self-service
-tags: [cisco, ai-assistant, hr-agentic, pto, time-off, beyond-q-and-a, outbound-message, 35k-upskilled]
+tags: [cisco, ai-assistant, hr-agentic, pto, time-off, beyond-q-and-a, outbound-message]
 company: Cisco
 industry: [tech, networking]
 region: [global]
 employee_class: [all]
 vendor: [Cisco internal]
 vendor_type: [internal-build]
-output: "직원 PTO·정책 Q&A 응답 + 매니저용 time-off notification 메시지 자동 작성 (drafting + outbound action). HR case 열지 않고 처리"
+output: "⚠️ 자사 보고: 직원 HR 질문에 회사 정보·직원 데이터 기반 즉답 (잔여 PTO 등, HR case 없이) + 휴가 요청 기록 + 리더에게 보낼 통지 letter 작성 제안 (drafting + action) + PTO 입력·401k 납입액 조회 등 HR tool 상호작용"
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
 stage: production
@@ -41,78 +41,84 @@ related_vendors: []
 
 ## Summary
 
-Cisco의 사내 AI HR Assistant — HR 정책 Q&A를 넘어 **agentic** 수준으로 진화. 직원 PTO 잔여 조회 + 매니저에게 보낼 **time-off notification 메시지 자동 작성**까지. HR case 열지 않고 처리. broader Cisco "AI agents + nudges" cut-bureaucracy 이니셔티브 일부. 35,000+ Cisco 직원이 2025-06까지 AI-upskilled (+121% YoY).
+Cisco HR 팀이 회사 정보·직원 데이터로 HR 질문에 직접 답하는 AI 에이전트 구축 — ⚠️ 자사 보고 (Fortune/GPTW 기고, CPO Kelly Jones): 잔여 PTO 조회를 HR case 없이 즉답하고, 휴가 요청을 기록한 뒤 **리더에게 보낼 통지 letter 작성**까지 제안하는 **agentic** 수준. [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]] Cisco 전사 internal AI assistant(IT 주도, 100,000+ 사용자)의 일부 맥락. [[sources/cisco-blog-internal-ai-assistant-2025-11.md]] (2026-09-27 grounding 점검: 종전 "35,000명+ AI-upskilled(+121퍼센트)"는 인용 소스 3건에 없어 제거 — Contradictions 참조.)
 
 ## Problem / Why (도입 배경)
 
-- **Before**: HR Q&A 챗봇은 정보 조회까지만 — "내 매니저에게 휴가 알리는 메시지 어떻게 쓰지" 같은 outbound 작업은 수동
-- **Pain point**: HR 챗봇이 Q&A에 머물러 ROI 한계 — agentic 수준 도약 필요
-- **Trigger**: Cisco의 "AI agents + nudges" 전사 bureaucracy 감소 이니셔티브 (Jeetu Patel 주도)
+- **Before**: ✅ 잔여 PTO 같은 질문도 HR case를 열어야 답을 받는 구조. [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]]
+- **Pain point**: ✅ Jones: "86,000명+ 기업에서 5%의 시간을 돌려주면" 고객 성과로 이어진다는 시간 회수 논리 (bureaucracy 감소). [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]]
+- **Trigger**: ✅ Cisco의 "AI agents + nudges"로 bureaucracy를 줄이는 People 조직 이니셔티브 (CPO Kelly Jones). [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]]
 
 ## Solution Architecture
 
 ### A. Process (프로세스)
 
-- **Before**: 1) 직원이 HR 포털에서 PTO 잔여 조회 / 2) 직원이 직접 매니저에게 메시지 작성 / 3) HR 케이스 필요 시 별도 ticketing
-- **After**:
-  1. 직원이 AI Assistant에 "다음주 휴가 가능한지 + 매니저에게 알려줘" 한 번에 요청
-  2. Assistant가 PTO 잔여 + 부서 calendar 조회
-  3. 매니저용 time-off notification 메시지 **자동 작성** (직원 검토·전송)
-  4. HR 정책 위배 시 alert + 사람 escalation
-- **HITL**: 직원이 outbound 메시지 검토·전송. 정책 위배 케이스만 사람 HR
-- **Frequency**: daily
-- **Scope**: agentic — Q&A 넘어 "drafting + action"
-
-### B/C/D/E. System
-
-- Cisco 자체 구축 (사내 AI Assistant 일부)
-- HRMS 통합 (Workday 추정 — Cisco는 Workday customer)
-- 모델: 자체 + 외부 API 혼합 추정
-- 오너십: Cisco HR + IT/AI Plat
+- **Before**: ✅ 잔여 PTO 같은 HR 질문에 HR case 개설 필요. [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]]
+- **After** (⚠️ 자사 보고 — CPO Kelly Jones, Fortune/GPTW 기고):
+  1. 직원이 AI 에이전트에 HR 질문 → 회사 정보·직원 데이터로 직접 답변 (예: 잔여 PTO — HR case 없이 즉답). [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]]
+  2. 직원이 "9월에 2주 휴가" 요청 → 에이전트가 요청을 기록. [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]]
+  3. 에이전트가 다음 단계 제안: "리더에게 보낼 letter를 써 드릴까요?" (drafting + action). [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]]
+  4. HR tool 상호작용 — PTO 입력, 401k 납입액 조회 등. [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]]
+  (종전 "부서 calendar 조회", "정책 위배 alert + escalation" 단계는 소스에 없어 제거)
+- **HITL**: ✅ 에이전트가 letter 작성 여부를 직원에게 묻는 구조 (옵트인). [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]] 검토·전송 세부 _미공개_
+- **Frequency**: _미공개 (not disclosed)_
+- **Scope**: agentic — Q&A 넘어 "요청 기록 + letter drafting 제안". [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]]
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS / 기반 시스템**: _미공개_ (Cisco는 Workday customer로 알려져 있으나 HR Assistant의 직접 integration target 명시 없음)
-- **AI 시스템 배치**: ✅ Cisco IT 자체 구축 "internal AI assistant — purpose-built with security"
-- **배포 환경**: _미공개_
-- **연동·통합**: ✅ HR tools (PTO 입력, 401k 조회 등) 통합; 구체 시스템명 _미공개_
-- **사용자 접점**: _미공개_ (Webex 통합 추정 가능하나 공식 확인 없음)
-- **인증·권한**: ✅ "purpose-built with security" (벤더 주장) — 구체 모델 _미공개_
-
-> Source: [Cisco "Transforming work with our internal AI assistant"](https://blogs.cisco.com/cisco-on-cisco/cisco-secure-internal-ai-assistant)
+- **Core HRIS / 기반 시스템**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: ⚠️ 자사 보고: Cisco IT의 internal AI assistant ("purpose-built with security") — HR 에이전트와의 관계 세부 _미공개_. [[sources/cisco-blog-internal-ai-assistant-2025-11.md]]
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: ✅ HR tools 연동 (PTO 입력·401k 조회). [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]] ⚠️ 자사 보고: enterprise AI agent registry·MCP registry로 사내 원격 에이전트·MCP 서버 연결. [[sources/cisco-blog-internal-ai-assistant-2025-11.md]]
+- **사용자 접점**: _미공개 (not disclosed)_
+- **인증·권한**: ⚠️ 자사 보고: 표준화된 agent·MCP 보안·entitlements. [[sources/cisco-blog-internal-ai-assistant-2025-11.md]] 세부 _미공개_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: ✅ HR data (PTO·401k 등 직원 self-service domain); 정책 문서 RAG 추정
-- **데이터 규모**: ⚠️ 자사 보고: 100,000+ 직원 사용 (broader internal AI assistant); HR domain standalone 수치 _미공개_
-- **전처리·정제**: _미공개_
-- **학습 vs RAG vs In-context**: _미공개_
-- **데이터 거버넌스**: ✅ "purpose-built with security" 강조; 세부 _미공개_
-- **민감정보 처리**: _미공개_
+- **입력 데이터 소스**: ✅ 회사 정보 + 직원 데이터 (PTO·401k 등). [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]]
+- **데이터 규모**: ⚠️ 자사 보고: internal AI assistant 전체 — 45M+ 상호작용, 100,000+ 사용자, 일 평균 156,000건. [[sources/cisco-blog-internal-ai-assistant-2025-11.md]] HR domain standalone 수치 _미공개_
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: ✅ Jones: 옵트인·데이터 이동 투명성으로 신뢰 확보 강조. [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]] 세부 _미공개_
+- **민감정보 처리**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
-- **Foundation model**: _미공개_ (외부 API + 자체 혼합 가능성)
-- **모델 유형**: ✅ Generative AI (LLM-based agentic assistant)
-- **제공 방식**: _미공개_
-- **커스터마이징 기법**: _미공개_
-- **Orchestration 프레임워크**: _미공개_
-- **평가·가드레일**: ⚠️ 자사 보고: 73% 사용자 productivity 증가, 주당 5h 절감
+- **Foundation model**: ⚠️ 자사 보고: internal AI assistant는 멀티모델 라우팅 (Azure OpenAI·Claude·Gemini·자체 LLM). [[sources/cisco-blog-internal-ai-assistant-2025-11.md]] HR 에이전트 적용 모델 _미공개_
+- **모델 유형**: ✅ 생성형 AI 에이전트 (Q&A + 요청 기록 + letter 작성). [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]]
+- **제공 방식**: _미공개 (not disclosed)_
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: ⚠️ 자사 보고: AI agent·MCP 플랫폼, agent registry. [[sources/cisco-blog-internal-ai-assistant-2025-11.md]]
+- **평가·가드레일**: ⚠️ 자사 보고 (internal AI assistant 전체, 사용자 설문): 73% 생산성 향상, 주당 평균 5시간 절감. [[sources/cisco-blog-internal-ai-assistant-2025-11.md]] HR 에이전트 평가 _미공개_
 
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: ✅ HR 팀이 HR 에이전트 구축 (CPO Kelly Jones). [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]] ⚠️ 자사 보고: internal AI assistant는 Cisco IT. [[sources/cisco-blog-internal-ai-assistant-2025-11.md]]
+- **참여 역할**: ✅ Fran Katsoudas (Chief People, Policy & Purpose Officer) — AI로 전 직원 스킬·태스크 코드화 추진. [[sources/hr-brew-cisco-entry-level-ai-2025-11.md]]
+- **팀 규모·기간**: _미공개 (not disclosed)_
+- **거버넌스 체계**: _미공개 (not disclosed)_
+- **변화관리**: ✅ Katsoudas: entry-level 기회 창출을 위한 멘토링·신입 커뮤니티·공식 온보딩 강조 (AI 도입으로 level-one 고객지원 직무 소멸 맥락). [[sources/hr-brew-cisco-entry-level-ai-2025-11.md]]
+- **파트너**: _미공개 (not disclosed)_
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-HR Q&A 챗봇의 agentic 진화 — Q&A를 넘어 outbound 메시지 drafting까지 수행하는 KR Ask-HR RFP의 mature reference.
+HR Q&A 챗봇의 agentic 진화 — Q&A를 넘어 요청 기록·letter drafting 제안까지 수행하는 KR Ask-HR RFP의 mature reference. ⚠️ HR 에이전트 standalone 정량 효과(case 감소·시간 절감) _미공개_.
 
-- ⚠️ 자사 보고: 35,000+ Cisco 직원 AI-upskilled by Jun 2025 (+121% YoY) — broader 측정
-- HR Assistant standalone case-volume metric _미공개_
+- ⚠️ 자사 보고 (internal AI assistant 전체): 45M+ 상호작용, 100,000+ 사용자, 73% 생산성 향상, 주 5시간 절감. [[sources/cisco-blog-internal-ai-assistant-2025-11.md]]
+- ✅ 계획: EU 근태 추적 개선, engagement 기반 nudge, 연 10,000 채용 포지션 개인화 추천, 보상 조정 nudge. [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]] (미래형 — 미구현)
+- HR Assistant standalone case-volume metric _미공개_ (종전 "35,000명+ AI-upskilled" 수치 근거 미확보 — 2026-09-27 grounding 점검)
 
 ## Governance & Risk
 
-- ✅ outbound 메시지는 직원 검토·전송 — 사람 통제 유지
-- ⚠️ 매니저 정책 위배 시 alert 정확도 _미공개_
-- ⚠️ "정책 위배" 판정의 explainability 부족 가능성
+- ✅ 에이전트가 letter 작성을 제안하고 직원이 선택 — 사람 통제 유지. [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]]
+- ✅ 옵트인·데이터 이동 투명성 강조 (Jones). [[sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md]]
+- ⚠️ 향후 nudge(보상 조정·내부 이동 추천)는 평가·승진 영향 시 고영향 AI 검토 대상 — 현재는 계획 단계
+- ⚠️ Fortune 기사는 GPTW 소속 필자의 기고 — 독립 검증 아님
+
+## Contradictions
+
+> [!note] 2026-09-27 grounding — 종전 본문의 "35,000명+ Cisco 직원 AI-upskilled (+121퍼센트 YoY)", "Jeetu Patel 주도", "부서 calendar 조회", "정책 위배 alert·escalation", "Workday·Webex 추정"은 인용 소스 3건 raw 어디에도 없어 제거·_미공개_ 처리. cisco-blog 소스는 IT 주도 internal AI assistant 전반(PTO 에이전트 언급 없음)이므로 HR 에이전트 수치로 전용하지 않음. frontmatter `tags`의 `35k-upskilled`는 본 점검에서 손대지 않음 (수정 필요).
 
 ## Consulting Angle
 

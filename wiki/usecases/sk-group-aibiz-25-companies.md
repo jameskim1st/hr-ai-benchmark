@@ -13,7 +13,7 @@ vendor_type: [internal-build]
 output: "SK 그룹 25개 멤버사·약 8만 명에게 A.Biz platform 표준 LLM 응답 (HR 정책 Q&A + 자동화 워크플로) + HR 담당자가 no-code agent builder로 자체 구축한 챗봇. 국가핵심기술 보유사는 자체 LLM 'A.X' 격리"
 ai_tech_type: [generative, automation]
 ai_tech_subtype: [summarization-qa, rpa]
-stage: production
+stage: pilot
 visibility: public
 case_type: adoption
 regulatory_exposure: []
@@ -42,7 +42,7 @@ related_vendors: []
 
 ## Summary
 
-SK 그룹이 SKT-SK AX 합작 'A.Biz'를 **그룹 단일 표준**으로 25개 멤버사·**약 8만 명**에 배포 (2025 하반기 rollout). SK디스커버리 등 7개사 시작 → 2025년 말까지 **SK하이닉스·SK이노베이션** 포함 25개 멤버사 확산. HR 정책·절차 문의 응대용 AI 에이전트를 IT 전문 지식 없이 HR 담당자가 **agent builder로 자체 구축** 가능. **국가핵심기술 보유사** (SK하이닉스·SK온·SK실트론)에는 자체 LLM **'A.X'** + SK AX **산업특화 AI** 적용으로 보안 보장.
+SK 그룹이 SKT·SK AX 공동 개발 'A.Biz(에이닷 비즈)'를 그룹 전반에 확대 도입 — 2025-09 SK디스커버리 등 7개사부터 시작, **연말까지 SK하이닉스·SK이노베이션 포함 25개 멤버사·약 8만 명이 사용 예정** (2025-09-29 발표 기준 목표치) ([[sources/heraldcorp-skt-adot-biz-25-companies-2025-09]], [[sources/zdnet-korea-sk-group-adot-biz-25-companies-2025-09]]). 인사 제도 문의 응대 에이전트를 IT 지식 없이 HR 담당자가 **에이전트 빌더로 제작·에이전트 스토어로 배포** ([[sources/skt-newsroom-adot-biz-group-rollout-2025-09]]). ⚠️ 자사 보고: **국가핵심기술 보유사**(SK하이닉스·SK온·SK실트론)에는 SKT 자체 LLM **'에이닷 엑스(A.X)'** + SK AX 산업 특화 AI를 **적용 예정** ([[sources/heraldcorp-skt-adot-biz-25-companies-2025-09]]).
 
 ## Problem / Why (도입 배경)
 
@@ -56,30 +56,46 @@ SK 그룹이 SKT-SK AX 합작 'A.Biz'를 **그룹 단일 표준**으로 25개 �
 
 - **Before**: 각 멤버사가 별도 HR 시스템·챗봇·AI 도구 도입
 - **After**:
-  1. SKT-SK AX가 'A.Biz' 단일 platform 제공
-  2. 멤버사 HR 담당자가 **agent builder no-code**로 자체 챗봇·자동화 구축
-  3. 일반 멤버사: A.Biz 표준 LLM 호출
-  4. 국가핵심기술 보유사 (SK하이닉스·SK온·SK실트론): 자체 LLM 'A.X' + SK AX 산업특화 AI 사용으로 격리 보안
-  5. HR 정책·절차 Q&A 자동 응답 + 자동화 워크플로
-- **HITL**: 각 멤버사 HR 담당자가 agent 설계·운영
+  1. SKT·SK AX가 공동 개발한 'A.Biz'를 그룹 멤버사에 확대 도입 ([[sources/skt-newsroom-adot-biz-group-rollout-2025-09]])
+  2. 멤버사 HR 담당자가 IT 지식 없이 **에이전트 빌더**로 인사 제도 문의 응대 에이전트 제작 → **에이전트 스토어**로 전 구성원에 배포 ([[sources/skt-newsroom-adot-biz-group-rollout-2025-09]])
+  3. 일반 멤버사가 호출하는 LLM: _미공개 (not disclosed)_
+  4. ⚠️ 자사 보고: 국가핵심기술 보유사(SK하이닉스·SK온·SK실트론)에는 SKT 자체 LLM '에이닷 엑스' + SK AX 산업 특화 AI 적용 **예정** ([[sources/heraldcorp-skt-adot-biz-25-companies-2025-09]])
+  5. 정보 검색·일정·회의록·회의실 예약 등 공통 업무 + 채용 등 전문 업무 지원 ([[sources/zdnet-korea-sk-group-adot-biz-25-companies-2025-09]])
+- **HITL**: 각 멤버사 HR 담당자가 에이전트 제작·배포 주체 ([[sources/skt-newsroom-adot-biz-group-rollout-2025-09]]); 응답 검토 절차 _미공개_
 - **Frequency**: continuous (직원 daily 사용)
 
-### B. System
+### B. System & Infrastructure (시스템·인프라)
 
-- A.Biz platform (SKT 운영) + agent builder (no-code)
-- 자체 LLM 'A.X' (SKT 자체 개발)
-- SK AX 산업특화 AI (반도체·에너지·화학)
-- 국가핵심기술 보유사 격리 환경
+- **Core HRIS / 기반 시스템**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: ✅ SKT·SK AX 공동 개발 업무용 AI 에이전트 'A.Biz' + 에이전트 빌더·에이전트 스토어 ([[sources/skt-newsroom-adot-biz-group-rollout-2025-09]])
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: ⚠️ 자사 보고: 자연어 요청으로 회의실 예약·참석자 공지 실행 ([[sources/zdnet-korea-sk-group-adot-biz-25-companies-2025-09]]); HR 시스템 연동 _미공개_
+- **사용자 접점 (UX layer)**: _미공개 (not disclosed)_
+- **인증·권한**: _미공개 (not disclosed)_
 
-### C/D. Data & Model
+### C. Data (데이터)
 
-- **Foundation model**: A.X (SKT 자체) + 외부 partner 혼합
-- **데이터**: 멤버사별 격리, 그룹 통합 데이터 거버넌스
-- **거버넌스**: 국가핵심기술 보유사는 별도 격리 LLM
+- **입력 데이터 소스**: ⚠️ 자사 보고: 인사 제도 등 구성원 문의 (HR 에이전트 예시) ([[sources/heraldcorp-skt-adot-biz-25-companies-2025-09]]); 세부 데이터 항목 _미공개_
+- **데이터 규모**: ⚠️ 자사 보고: 연말까지 25개 멤버사 약 8만 명 사용 예정 (목표치) ([[sources/heraldcorp-skt-adot-biz-25-companies-2025-09]])
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context 구분**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: _미공개 (not disclosed)_
+- **민감정보 처리**: _미공개 (not disclosed)_
 
-### E. Organization
+### D. Model (모델)
 
-- SKT A.Biz 본부 + SK AX + 25개 멤버사 HR 담당
+- **Foundation model**: ⚠️ 자사 보고: 국가핵심기술 보유사(SK하이닉스·SK온·SK실트론)에는 SKT 자체 LLM '에이닷 엑스' 적용 예정 ([[sources/heraldcorp-skt-adot-biz-25-companies-2025-09]], [[sources/skt-newsroom-adot-biz-group-rollout-2025-09]]); 일반 멤버사용 모델 _미공개_
+- **Model 유형**: ✅ LLM 기반 업무 에이전트 (정보 검색·일정·회의록·문의 응대) ([[sources/zdnet-korea-sk-group-adot-biz-25-companies-2025-09]])
+- **제공 방식**: _미공개 (not disclosed)_
+- **커스터마이징 기법**: ✅ 에이전트 빌더(no-code)로 담당자가 에이전트 제작 ([[sources/skt-newsroom-adot-biz-group-rollout-2025-09]]); ⚠️ 자사 보고: SK AX 산업 특화 AI 적용 예정 ([[sources/heraldcorp-skt-adot-biz-25-companies-2025-09]])
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: _미공개 (not disclosed)_
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: ✅ SKT + SK AX (공동 개발·확산 주체) ([[sources/skt-newsroom-adot-biz-group-rollout-2025-09]]); 멤버사 HR 담당자가 에이전트 제작
+- **참여 역할·팀 규모·거버넌스·변화관리**: _미공개 (not disclosed)_
+- **파트너**: SK AX (그룹 계열 SI) ([[sources/skt-newsroom-adot-biz-group-rollout-2025-09]])
 
 ### F. Diagrams (도식)
 
@@ -98,19 +114,25 @@ flowchart TB
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-SK 그룹 25개사 8만 명에 단일 AI 표준 배포 — **한국에서 유일하게 그룹 표준화 사례 확인된 conglomerate** (삼성·LG·현대 어느 그룹도 이 정도 그룹 표준화 비공개 확인).
+SK 그룹 25개사 약 8만 명에 공통 AI 에이전트 확산 예정(2025-09 발표 기준) — 본 wiki 내에서 그룹 차원 확산이 공개 확인된 유일한 한국 conglomerate 사례. HR 특정 효과 수치는 _미공개_.
 
-- 25개 멤버사 cover
-- 약 8만 명 in scope
-- agent builder no-code: HR 담당자 IT 전문 지식 없이 chatbot 자체 구축
-- 국가핵심기술 보유사: 자체 LLM 'A.X' 격리 환경
+- ⚠️ 자사 보고: 연말까지 25개 멤버사·약 8만 명 사용 예정 (목표치) ([[sources/heraldcorp-skt-adot-biz-25-companies-2025-09]], [[sources/zdnet-korea-sk-group-adot-biz-25-companies-2025-09]])
+- ✅ 에이전트 빌더·스토어: HR 담당자가 IT 지식 없이 에이전트 제작·배포 ([[sources/skt-newsroom-adot-biz-group-rollout-2025-09]])
+- ⚠️ 벤더 주장: CBT에서 회의록 작성 시간 60%·보고서 작성 시간 40% 가까이 단축 (SKT 자체 측정, HR 특정 아님) ([[sources/skt-newsroom-adot-biz-group-rollout-2025-09]])
+- ⚠️ 자사 보고: 국가핵심기술 보유사에 자체 LLM '에이닷 엑스' 적용 예정 ([[sources/heraldcorp-skt-adot-biz-25-companies-2025-09]])
 
 ## Governance & Risk
 
-- ✅ 국가핵심기술 보유사 격리 LLM 모델 — KR 산업안보 best practice
+- ⚠️ 자사 보고: 국가핵심기술 보유사에 자체 LLM '에이닷 엑스' 적용 예정 ([[sources/heraldcorp-skt-adot-biz-25-companies-2025-09]]) — 격리 아키텍처 세부 _미공개_
 - ⚠️ "agent builder no-code"의 quality·보안 통제 governance _세부 미공개_
 - ⚠️ 그룹 단일 표준이 멤버사 자율성·실험 제약 가능성
 - ⚠️ 한국 AI 기본법 (2026-01-22) 고영향 AI 분류 적용 시 멤버사별 인적감독 의무 일관성
+
+## Contradictions
+
+_없음._
+
+> [!note] 2026-09-27 grounding — 소스 3건은 모두 2025-09-29 SKT 발표(연말까지 25개사·약 8만 명 확산 '예정', 국가핵심기술 보유사 A.X '적용 예정')를 전달. 본문의 확정형 서술("배포", "격리 보안 보장", "단일 표준")을 발표 기준 예정형으로 정정. 실제 확산 완료 여부는 후속 소스 필요.
 
 ## Consulting Angle
 

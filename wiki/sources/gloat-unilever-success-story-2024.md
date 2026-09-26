@@ -1,8 +1,12 @@
 ---
 title: "How Unilever uses AI to retain and develop talent — Gloat Customer Story (2024 update)"
 url: https://resources.gloat.com/unilever-gloat-case-study-download/
-source_type: vendor-customer-story
+source_type: vendor
 tier: 3
+raw: raw/vendors/2026-09-27-gloat-unilever-case-study.md
+snapshot_quality: unavailable
+publisher: Gloat
+independent: false
 publication_date: 2024            # approximate, undated download page
 ingested_at: 2026-04-12
 provenance_caveat: "본 소스는 직접 fetch하지 않았으며 WebSearch 결과 요약을 기반으로 작성. 다음 ingest 라운드에서 직접 fetch 필요."

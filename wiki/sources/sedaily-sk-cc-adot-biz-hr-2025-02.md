@@ -2,7 +2,10 @@
 title: "SK C&C, '에이닷 비즈 HR'로 AI 채용 혁신 가속화"
 url: https://www.sedaily.com/NewsView/2GP1J3VTDL
 tier: 2
-source_type: article
+raw: raw/articles/2025-02-20-sedaily-sk-cc-adot-biz-hr.md
+snapshot_quality: partial
+independent: true
+source_type: media
 publisher: 서울경제
 published: 2025-02-20
 ingested_at: 2026-04-12

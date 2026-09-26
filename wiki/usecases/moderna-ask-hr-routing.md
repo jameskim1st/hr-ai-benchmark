@@ -26,7 +26,7 @@ first_seen: 2024-04-24
 last_confirmed: 2025-06-27
 confidence: 0.6
 evidence_grade: A
-corroborated_by: 3
+corroborated_by: 2
 freshness: stale
 depth: partial
 graded_at: 2026-09-27
@@ -119,7 +119,7 @@ flowchart TB
 - **Specialized GPT가 참조하는 knowledge**: ❓ 미공개. 사내 정책 문서·benefit plan·performance 기준 등이 RAG로 주입되는지, in-context 참조인지, OpenAI가 학습한 base knowledge만 쓰는지 — 모두 공개 자료에 없음
 - **데이터 규모**: ❓ 미공개 (Ask HR 특정). 전사 기준 사용자당 주 120 대화는 ChatGPT Enterprise 전체.
 - **전처리·정제**: ❓ 미공개 (PII 마스킹 여부 등)
-- **학습 vs RAG vs In-context 구분**: ❓ 미공개. Custom GPT 특성상 RAG 또는 instruction-following이 일반적이나 Moderna 특정 구현은 공개 없음 → 추측 금지.
+- **학습 vs RAG vs In-context 구분**: ❓ 미공개. Moderna 특정 구현은 공개 자료에 없음 → _미공개 (not disclosed)_.
 - **데이터 거버넌스**: ❓ 미공개. ChatGPT Enterprise 기본 약관(데이터 미학습 등)이 적용될 것으로 보이나, HR 데이터 특정 처리 방침 공개 없음.
 - **민감정보 처리**: ❓ 미공개. HR 데이터는 HIPAA·GDPR(EU 직원)·주 법률 등에 해당할 수 있으나 Moderna 대응 세부 공개 없음.
 
@@ -143,7 +143,7 @@ flowchart TB
 - ✅ **전제 철학**: "workforce planning" + "technology planning" → **"work planning"** 통합. 즉, 이 use case는 조직 구조 변화와 함께 등장했으며, 독립된 IT 프로젝트가 아니었음.
 - ⚠️ **Franklin의 솔직한 caveat**: *"still very much a work in progress"*, *"not a one-size-fits-all solution"*, "strong foundation을 이미 갖춘 조직에 적합". ← 컨설팅 포지셔닝에 **필수 인용**.
 - ❓ 구체 팀 사이즈, 하위 reporting 라인, 참여 역할(PM·ML eng·legal·HRBP 등)은 **모두 미공개**.
-- ❓ 거버넌스 체계: AI 윤리위원회, 리뷰보드 존재 여부 공개 없음 (대형 제약사 특성상 내부에는 있을 확률 높으나 공개 자료에서 확인 불가 → 추측 금지).
+- ❓ 거버넌스 체계: AI 윤리위원회, 리뷰보드 존재 여부 공개 없음 (공개 자료에서 확인 불가 → _미공개 (not disclosed)_).
 - ❓ 변화관리 방식 미공개
 - ❓ 컨설팅·구현 파트너 공개 없음 (OpenAI 자체가 파트너)
 

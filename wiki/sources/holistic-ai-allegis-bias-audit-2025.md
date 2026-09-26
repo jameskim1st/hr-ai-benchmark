@@ -3,7 +3,11 @@ title: "Allegis Group Achieves Enterprise-Wide AI Governance with Holistic AI (2
 url: "https://www.newswire.com/news/allegis-group-achieves-enterprise-wide-ai-governance-and-unlocks-22596543"
 url_secondary: "https://www.holisticai.com/case-study/hired"
 tier: 3
-source_type: vendor_case_study
+raw: raw/vendors/2026-09-27-holistic-ai-allegis-governance.md
+snapshot_quality: unavailable
+publisher: Holistic AI
+independent: false
+source_type: vendor
 ingested_at: 2026-04-12
 supports: [allegis-group-holistic-ai-governance]
 ---

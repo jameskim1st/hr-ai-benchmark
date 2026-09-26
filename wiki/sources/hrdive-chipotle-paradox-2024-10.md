@@ -2,7 +2,10 @@
 title: "Chipotle's latest automation tool to help with hiring and recruitment"
 url: https://www.hrdive.com/news/chipotle-paradox-conversational-ai-hiring-employees/731013/
 tier: 2
-source_type: article
+raw: raw/articles/2024-10-25-hrdive-chipotle-paradox.md
+snapshot_quality: full
+independent: true
+source_type: media
 publisher: HR Dive
 author: Julie Littman
 published: 2024-10-25
@@ -34,6 +37,7 @@ HR Dive(Tier 2 HR 전문 미디어)의 Julie Littman 기자가 Chipotle의 Parad
 ## 인용
 
 > Chipotle가 Paradox의 대화형 AI를 도입하여 레스토랑 팀의 채용 효율화를 추진
+> ⚠️ 원문 스냅샷에서 확인되지 않음 (2026-09-27) — 한국어 요약문이며 원문 verbatim 아님 (원문: "Chipotle will introduce a new platform by Paradox that will make the hiring process easier and more automated across its 3,500 restaurants")
 
 ## Tags
 

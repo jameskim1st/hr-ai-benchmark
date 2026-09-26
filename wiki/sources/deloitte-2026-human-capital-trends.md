@@ -2,7 +2,11 @@
 title: "Deloitte 2026 Global Human Capital Trends — From tensions to tipping points (2026-03)"
 url: https://www.deloitte.com/us/en/insights/topics/talent/human-capital-trends.html
 tier: 1
-source_type: analyst-report
+raw: raw/reports/2026-03-01-deloitte-2026-human-capital-trends.md
+snapshot_quality: full
+publisher: Deloitte
+independent: true
+source_type: analyst
 ingested_at: 2026-05-05
 publication_date: 2026-03-01
 supports: [deloitte-2026-human-capital-trends-meta, deloitte-zora-ai-hc-suite, workday-agent-system-of-record-asor]
@@ -30,3 +34,17 @@ Deloitte 2026 Global Human Capital Trends 연례 리포트. 89개국·9,000명 �
 - Korea 응답자 비율 별도 공개 안 됨 (전체 9,000명 중 비중 불명)
 - "5% well-managed" 정의 기준 다소 주관적 (self-report)
 - sector별·기업 규모별 break-down은 paid 리포트에서만 제공
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "Deloitte's 2026 Global Human Capital Trends worked in collaboration with Oxford Economics to survey more than 9,000 business and human resources leaders across many industries and sectors in 89 countries."
+> — 뒷받침: 표본 9,000명 · 89개국
+
+> "In our 2026 Global Human Capital Trends survey, 7 in 10 business leaders say their primary competitive strategy over the next three years is to be fast and nimble"
+> — 뒷받침: 7/10 리더 — fast and nimble
+
+> "But those taking a tech-focused approach are 1.6x more likely to not realize returns on AI investments that exceed expectations compared to those that take a human-centric approach."
+> — 뒷받침: tech-focused vs human-centric ROI 격차
+
+> "Our research shows that those who intentionally redesign roles, workflows, and decision-making to support human–AI collaboration are more likely to exceed expectations on investment returns and deliver meaningful work."
+> — 뒷받침: intentional work redesign → ROI

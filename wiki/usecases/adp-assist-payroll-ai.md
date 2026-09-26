@@ -24,11 +24,11 @@ kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: monthly
 first_seen: 2025-09-03
 last_confirmed: 2025-09-03
-confidence: 0.35
-evidence_grade: B
-corroborated_by: 1
+confidence: 0.15
+evidence_grade: C
+corroborated_by: 0
 freshness: stale
-depth: full
+depth: partial
 graded_at: 2026-09-27
 sources:
   - sources/adp-assist-innovation-day-2025.md
@@ -44,9 +44,9 @@ ADP는 Innovation Day 2025(2025-09-03)에서 ADP Assist의 새로운 AI 기능�
 
 ## Problem / Why (도입 배경)
 
-- 급여 담당자가 수작업으로 급여 데이터 이상 감지 → 오류 감지 누락 시 수정 비용 발생
-- 급여 분석 리포트 생성 시 복잡한 쿼리·수작업 → 경영진 보고 지연
-- 글로벌 100+ 관할권 규정 준수 모니터링을 수작업으로 처리
+- **Before**: ❓ baseline 미공개 — 벤더 제품이므로 특정 기업의 도입 배경은 고객별 상이. 🚫 일반론: 급여 담당자의 수작업 데이터 검토, 수동 리포트 집계
+- **Pain point**: ⚠️ 벤더 주장: 급여 데이터 불일치·이탈로 인한 급여 오류의 사전 예방, 자연어 분석, 규정 모니터링. [[sources/adp-assist-innovation-day-2025.md]]
+- **Trigger**: ❓ 미공개 (관할권 수 등 종전 서술은 소스에 없어 제거 — 2026-09-27 grounding 점검)
 
 ## Solution Architecture
 
@@ -82,24 +82,24 @@ flowchart LR
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: ADP Workforce Now® / ADP Global Payroll® / ADP Lyric HCM® (자체 플랫폼)
-- **AI 시스템 배치**: ADP Assist (HCM 내장 AI 레이어)
-- **배포 환경**: ADP 클라우드 (전용 인프라)
-- **연동·통합**: 자체 HCM 생태계 내 통합 (외부 시스템 연동 상세 미공개)
-- **사용자 접점**: ADP 웹/모바일 앱 내 인라인 Assist 인터페이스
+- **Core HRIS**: ✅ ADP Workforce Now® / ADP Global Payroll® / ADP Lyric HCM® (자체 플랫폼). [[sources/adp-assist-innovation-day-2025.md]]
+- **AI 시스템 배치**: ⚠️ 벤더 주장: ADP Assist — 위 3개 제품에 내장된 생성형 AI 레이어. [[sources/adp-assist-innovation-day-2025.md]]
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점**: _미공개 (not disclosed)_ — 소스는 "대화형으로 질문" 방식만 언급. [[sources/adp-assist-innovation-day-2025.md]]
 
 ### C. Data (데이터)
 
-- **입력**: 급여 마스터 데이터, 이력 급여 패턴, 직원 변동 이력
-- **학습**: 지속 학습 (계절성·조직 변화 반영하여 패턴 갱신) — ⚠️ 벤더 주장
-- **데이터 규모**: ADP 고객 80,000+ 기업 집계 데이터 학습 — ⚠️ 벤더 주장 (확인 방식 미공개)
-- **거버넌스**: ADP 자체 데이터 보안 정책; 고객별 데이터 격리 (구체 아키텍처 미공개)
+- **입력**: ⚠️ 벤더 주장: 급여 데이터 (불일치·이탈 탐지 대상). [[sources/adp-assist-innovation-day-2025.md]] 세부 항목 _미공개_
+- **학습**: ⚠️ 벤더 주장: 계절 변동·조직 변화·요건 변화에 지속 적응하는 학습 시스템. [[sources/adp-assist-innovation-day-2025.md]]
+- **데이터 규모**: _미공개 (not disclosed)_ (학습 데이터 범위 — 소스에 없음)
+- **거버넌스**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
 - **Foundation model**: _미공개 (not disclosed)_
-- **Model 유형**: 이상 탐지 (시계열 + 패턴 분류), LLM (자연어 분석 쿼리)
-- **제공 방식**: ADP 자체 구축 (외부 LLM 활용 여부 미공개)
+- **Model 유형**: ⚠️ 벤더 주장: 이상 탐지 + 생성형 AI(대화형 분석). [[sources/adp-assist-innovation-day-2025.md]] 알고리즘 세부 _미공개_
+- **제공 방식**: _미공개 (not disclosed)_ (외부 LLM 활용 여부 미공개)
 
 ### E. Organization & Team (조직·팀 구조)
 

@@ -3,17 +3,17 @@ title: "Walmart × OpenAI Certification — frontline + 사무 직원 무료 Ope
 slug: walmart-openai-certification
 primary_category: Learning & Development
 subcategory: Skills & Capabilities
-tags: [walmart, openai, certification, frontline-ai-training, mass-upskilling, 1b-investment, retail, 50k-upskilled]
+tags: [walmart, openai, certification, frontline-ai-training, mass-upskilling, 1b-investment, retail]
 company: Walmart
 industry: [retail]
 region: [na]
 employee_class: [all]
 vendor: [Walmart, OpenAI]
 vendor_type: [internal-build, foundation-model]
-output: "740K frontline 직원에게 OpenAI Certification 다층 모듈 (basics → prompt engineering) 무료 access + Me@Walmart 디바이스 학습 콘텐츠 + 50,000명 reskilling 대상자에게 드론 기술자·로봇 수퍼바이저 전환용 인증서"
+output: OpenAI와 공동 개발한 맞춤 AI certification 과정 이수 (미국 frontline·사무직 직원 대상, 2026년 제공 예정; 2026년까지 약 $1B 스킬 교육 commitment의 일부). 커리큘럼·대상 인원·무료 여부 미공개
 ai_tech_type: [generative]
 ai_tech_subtype: [summarization-qa]
-stage: production
+stage: announced
 visibility: public
 case_type: adoption
 regulatory_exposure: []
@@ -41,76 +41,79 @@ related_vendors: []
 
 ## Summary
 
-Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무 직원에게 **OpenAI Certification 무료 access** (2026 launch 시). 다층 (basics → prompt engineering). Walmart의 **$1B 교육 commitment** (2026까지)의 일부. ~50,000 직원이 AI/automation roles로 reskilling 진행. 740K frontline에게 **Me@Walmart** 디바이스 (Samsung Galaxy XCover Pro) 배포로 학습 access 인프라 마련.
+Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무직 직원용 **맞춤 AI certification 프로그램** 개발, **2026년 제공 예정** (CPO Donna Morris 메모, 2025-09) ([[sources/retaildive-walmart-openai-certification-2025-09]], [[sources/hrdive-walmart-openai-certification-2025-09]] — 동일 Industry Dive 기사, 근거 1건으로 계산). 2026년까지 약 **$1B 스킬 교육 commitment**의 일부 (OpenAI 인증 전용 아님). 현재는 Live Better U 교육 혜택으로 일부 AI 교육 제공. '무료 access'·다층 커리큘럼(basics → prompt engineering)·50,000명 reskilling·740K Me@Walmart 디바이스 서술은 인용 소스에 없어 _미공개_ (2026-09-27 grounding 점검).
 
 ## Problem / Why (도입 배경)
 
-- **Before**: 1.6M Walmart frontline 직원의 AI literacy baseline 매우 편차 큰
-- **Pain point**: AI 도입 가속 vs frontline workforce 변화 압박 — reskilling 없으면 mass 해고 사태
-- **Trigger**: OpenAI Certification (2026 GA) launch 동시 vendor 파트너십 결단
+- **Before**: ❓ baseline 미공개 — frontline 직원 규모·AI literacy 기준선은 인용 소스에 없음; 현재 Live Better U로 일부 AI 교육 접근 가능 ([[sources/hrdive-walmart-openai-certification-2025-09]])
+- **Pain point**: ⚠️ 자사 보고: "리테일의 미래는 기술을 쓸 줄 아는 사람이 정의한다" — 직원의 AI 활용 역량 ([[sources/retaildive-walmart-openai-certification-2025-09]], John Furner)
+- **Trigger**: 2025-09 CPO 메모로 OpenAI 파트너십 발표; 2025-07 'super agents' 프레임워크·Daniel Danker EVP 영입 맥락 ([[sources/retaildive-walmart-openai-certification-2025-09]])
 
 ## Solution Architecture
 
 ### A. Process (프로세스)
 
-- **Before**: AI 교육은 사무직 자율·온라인 — frontline은 access 부재
-- **After**:
-  1. Me@Walmart 디바이스 (Samsung Galaxy XCover Pro) 740K frontline 배포 → 학습 access 인프라
-  2. OpenAI Certification 다층 모듈 (basics → prompt engineering) — 무료 access
-  3. ~50,000 직원이 AI/automation roles 재배치
-  4. $1B 교육 commitment (2026까지)의 일부로 통합 운영
-- **HITL**: HR + 매장 매니저 + Walmart Academy
-- **Frequency**: annual cycle + 신입 onboarding
-
-### B/C/D/E. System
-
-- Me@Walmart 앱 디바이스 (Samsung Galaxy XCover Pro)
-- OpenAI 콘텐츠 + Walmart 자체 운영
-- 오너십: Walmart Academy + OpenAI 파트너 팀
+- **Before**: 현재 Live Better U 교육 혜택으로 일부 AI 관련 교육 접근 가능 ([[sources/hrdive-walmart-openai-certification-2025-09]])
+- **After** (예정 — 2026년 제공):
+  1. OpenAI와 공동 개발한 맞춤 AI certification 과정을 미국 frontline·사무직 직원에게 제공 (2026) ([[sources/retaildive-walmart-openai-certification-2025-09]])
+  2. 2026년까지 약 $1B 스킬 교육 commitment의 일부로 운영 ([[sources/hrdive-walmart-openai-certification-2025-09]])
+  3. 커리큘럼 구성·디바이스·재배치 연계: _미공개_ (인용 소스에 없음)
+- **HITL**: _미공개 (not disclosed)_
+- **Frequency**: _미공개 (not disclosed)_
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS / 기반 시스템**: _미공개_ (Walmart는 Workday customer로 알려져 있으나 본 certification 프로그램과의 직접 통합 명시 없음)
-- **AI 시스템 배치**: ✅ Walmart Academy (LMS 자체 운영) + OpenAI Academy 플랫폼 통합
-- **배포 환경**: ✅ ChatGPT Enterprise rollout (Walmart 전사) — Walmart-OpenAI 2025-10 partnership
-- **연동·통합**: ✅ Me@Walmart 앱 (frontline access 인프라, Walmart Global Tech 자체 빌드, 2021 launch); OpenAI Academy + Walmart Academy 통합
-- **사용자 접점**: ✅ Samsung Galaxy XCover Pro (740K frontline 디바이스), Me@Walmart 앱 (geofencing, push-to-talk, ML/AR/camera vision); 사무직은 ChatGPT Enterprise web/desktop
-- **인증·권한**: ✅ Me@Walmart 앱은 work features = on-clock 접근 제한; Walmart는 personal data access 없음 (벤더 주장)
+- **Core HRIS / 기반 시스템**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: ✅ 현재 AI 교육은 Live Better U 교육 혜택 경유 ([[sources/hrdive-walmart-openai-certification-2025-09]]); certification 제공 플랫폼 _미공개_
+- **배포 환경**: _미공개 (not disclosed)_ (기존 'ChatGPT Enterprise rollout' 서술은 인용 소스에 없어 삭제)
+- **연동·통합**: _미공개 (not disclosed)_ (기존 Me@Walmart 앱 서술은 인용 소스에 없어 삭제)
+- **사용자 접점**: _미공개 (not disclosed)_ (기존 디바이스·앱 기능 서술은 인용 소스에 없어 삭제)
+- **인증·권한**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: ✅ OpenAI Academy 콘텐츠 (basics → prompt engineering 다층); Walmart Academy 자체 콘텐츠
-- **데이터 규모**: ✅ 2.1M 직원 in scope (전사 training 목표); 740K frontline 디바이스; ~50,000 직원 AI/automation roles 재배치
+- **입력 데이터 소스**: ✅ OpenAI와 공동 개발한 맞춤 certification 콘텐츠 ([[sources/retaildive-walmart-openai-certification-2025-09]]); 커리큘럼 세부 _미공개_
+- **데이터 규모**: _미공개 (not disclosed)_ (기존 직원 수·디바이스 수·재배치 인원은 인용 소스에 없어 삭제 — 2026-09-27 grounding 점검)
 - **전처리·정제**: N/A (training content, 직원 데이터 처리 시스템 아님)
 - **학습 vs RAG vs In-context**: N/A
-- **데이터 거버넌스**: _미공개_
-- **민감정보 처리**: ✅ Me@Walmart는 personal/work 분리 (Walmart corporate)
+- **데이터 거버넌스**: _미공개 (not disclosed)_
+- **민감정보 처리**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
-- **Foundation model**: ✅ OpenAI ChatGPT Enterprise (구체 GPT-4/4o/5 _미공개_); ✅ **Google Gemini도 별도 인증 파트너** (multi-vendor, 신규 발견)
-- **모델 유형**: ✅ Generative LLM (ChatGPT Enterprise) — 직원 hands-on 사용
-- **제공 방식**: ✅ 상용 API (OpenAI ChatGPT Enterprise, Google Gemini) — multi-vendor
-- **커스터마이징 기법**: _미공개_ (Walmart 자체 fine-tuning 명시 없음)
-- **Orchestration 프레임워크**: _미공개_
-- **평가·가드레일**: ✅ OpenAI Certifications (자체 평가 체계)
+- **Foundation model**: _미공개 (not disclosed)_ — OpenAI는 인증 교육 파트너이며 모델·ChatGPT Enterprise·Google Gemini 서술은 인용 소스에 없어 삭제 (2026-09-27 grounding 점검)
+- **모델 유형**: _미공개 (not disclosed)_
+- **제공 방식**: _미공개 (not disclosed)_
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: ✅ OpenAI 맞춤 certification 체계 ([[sources/retaildive-walmart-openai-certification-2025-09]]); 평가 세부 _미공개_
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: ✅ CPO Donna Morris (파트너십 발표 메모) ([[sources/retaildive-walmart-openai-certification-2025-09]]); Walmart U.S. CEO John Furner 메시지 (동일 소스)
+- **참여 역할·팀 규모·거버넌스**: _미공개 (not disclosed)_
+- **변화관리**: ✅ Live Better U 교육 혜택과 연계 ([[sources/hrdive-walmart-openai-certification-2025-09]]); Daniel Danker EVP 영입 맥락 ([[sources/retaildive-walmart-openai-certification-2025-09]])
+- **파트너**: ✅ OpenAI (인증 프로그램 공동 개발) ([[sources/hrdive-walmart-openai-certification-2025-09]])
 
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-frontline retail 1.6M 직원에게 mass AI upskilling — KR retail (이마트·롯데·CJ대한통운·쿠팡) frontline reskilling 모범.
+⚠️ 기대효과 수치 미공개 — 2026년 제공 예정 프로그램으로 정량 성과 없음 ([[sources/hrdive-walmart-openai-certification-2025-09]] Limitations). KR retail frontline reskilling 참고용.
 
-- $1B 교육 commitment (2026까지)
-- ~50,000 직원이 AI/automation roles 재배치
-- 740K Me@Walmart 디바이스 배포
-- OpenAI Certification 무료 access (2026 launch 시)
+- ✅ 약 $1B 스킬 교육 commitment (2026까지, 전체 교육 투자) ([[sources/hrdive-walmart-openai-certification-2025-09]])
+- ✅ OpenAI 맞춤 certification 2026년 제공 예정 ([[sources/retaildive-walmart-openai-certification-2025-09]])
+- 대상 인원·디바이스 수·재배치 인원·무료 여부: _미공개_ (인용 소스에 없음 — 2026-09-27 grounding 점검)
 
 ## Governance & Risk
 
-- ⚠️ 무료 access 제공 후 실제 수료율·효과 측정 _미공개_
-- ⚠️ Samsung Galaxy XCover Pro 디바이스 사용 vs personal device — privacy 관리 _미공개_
+- ⚠️ 제공 후 실제 수료율·효과 측정 _미공개_
+- ⚠️ 학습 접근 디바이스·privacy 관리 _미공개_
 - ⚠️ 파트너십 lock-in (OpenAI 단일 vendor) — 향후 비용·risk
+
+## Contradictions
+
+> [!note] 2026-09-27 grounding — [[sources/hrdive-walmart-openai-certification-2025-09]]와 [[sources/retaildive-walmart-openai-certification-2025-09]]는 동일 Industry Dive 기사(근거 1건으로 계산; frontmatter `sources`에 hrdive 항목이 중복 등재됨 — 정리 필요). [[sources/hr-brew-accenture-walmart-workforce-ai-2025-10]]는 스냅샷 unavailable. '무료 access', 다층 커리큘럼, reskilling 인원, Me@Walmart 디바이스 수, 직원 수(frontline·전사), ChatGPT Enterprise·Google Gemini 서술은 인용 소스에 없어 `_미공개_`/삭제. 소스는 2026년 제공 '예정'만 확인 → stage를 announced로 정정.
 
 ## Consulting Angle
 
@@ -120,7 +123,6 @@ frontline retail 1.6M 직원에게 mass AI upskilling — KR retail (이마트·
 - **벤더 파트너십 패턴**: KR retail이 OpenAI/Anthropic/Naver Hyperclova X 중 누구와 파트너십 할지 결정 시 Walmart 사례 reference
 - **2026 Q3-Q4 KR consulting deck — "frontline AI" 카테고리 종합**:
   - Walmart × OpenAI (mass training) + Amazon Connections [[amazon-connections-daily-pulse]] (frontline listening) + Cisco AI Assistant [[cisco-ai-assistant-hr-agentic]] (HR self-service) — 3-pillar
-- **Samsung 디바이스 사용 흥미점**: 한국 Samsung Galaxy XCover Pro 사용은 Walmart-Samsung 파트너십 — KR 그룹사 디바이스 standardization 시사점
 - **반면교사**:
-  - "무료 access" 제공만으로 실제 활용 보장 안 됨 — KPI·인센티브·매장 매니저 push 동반 권장
+  - 교육 제공만으로 실제 활용 보장 안 됨 — KPI·인센티브·매장 매니저 push 동반 권장
   - vendor lock-in 리스크 — multi-vendor 전략 (OpenAI + Anthropic + 자체 LLM) 동반 검토

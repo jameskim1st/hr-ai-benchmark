@@ -2,10 +2,15 @@
 title: "Hitachi Boosts HR Efficiency by 70% with Ema's Agentic AI"
 url: "https://www.ema.co/blog/customer-stories/hitachi-uses-ema-and-increases-hr-operational-efficiency"
 url_secondary: "https://hrexecutive.com/why-many-ai-in-hr-projects-fail-and-how-hitachi-got-it-right/"
-tier: 2
-source_type: vendor_case_study
+tier: 3
+raw: raw/vendors/2026-09-27-ema-hitachi-agentic-hr.md
+snapshot_quality: full
+publisher: Ema
+independent: false
+source_type: vendor
 ingested_at: 2026-04-12
 supports: [hitachi-skye-hr-ai-assistant]
+tier_note: "2026-09-27 정정: 벤더 자체 발표 자료 → tier 3"
 ---
 
 ## Summary
@@ -15,7 +20,9 @@ Hitachi built an agentic AI HR companion called **Skye** on Ema's platform, cove
 ## Key Quotations
 
 - "Current projections show Skye will save 50%–70% of the time currently spent on HR activities." — Ema blog (vendor)
+  ⚠️ 원문 스냅샷에서 확인되지 않음 (2026-09-27) — Ema raw에는 "70% increase in efficiency"만 있음
 - "The average resolution time for an HR query was over five days before the implementation." — HR Executive
+  ⚠️ 원문 스냅샷에서 확인되지 않음 (2026-09-27) — url_secondary(HR Executive) 인용이며 raw(Ema)에는 "the average query resolution time dropped from days to minutes"만 있음
 - "Onboarding new employees could take up to 15 days, involving manual paperwork and fragmented communications across departments." — HR Executive
 
 ## Metrics

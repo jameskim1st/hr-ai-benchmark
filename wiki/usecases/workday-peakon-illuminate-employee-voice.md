@@ -43,7 +43,7 @@ related_vendors:
 
 ## Summary
 
-Workday가 2021-02 인수 (~$700M)한 **Peakon Employee Voice** — 지속적 pulse 서베이 + AI 감정·테마 분석. 2024-12-11에 **Illuminate AI** 기능 발표 — open-end comment 자동 요약·테마 추출·driver 식별. ⚠️ 벤더 주장: 1B+ 응답 + 200M+ 텍스트 피드백 학습, 60+ 언어, 160개국 운영. ⚠️ 자사 보고: Workday 사내 활용 결과 직원 성장·커리어 만족도 **+35%**.
+Workday가 2021-02 인수한 **Peakon Employee Voice** (인수 금액 _미공개_ — 인용 소스에 없음, 2026-09-27 grounding 점검) — 지속적 pulse 서베이 + AI 감정·테마 분석. 2024-12-11에 **Illuminate AI** 기능 발표 ([[sources/verified-pwc-doc-2026-05]] — Workday Newsroom 2024-12-11 확인). ⚠️ 벤더 주장: 1B+ 응답 + 200M+ 텍스트 피드백, 60+ 언어, 160개국 (공식 보도자료) ([[sources/verified-pwc-doc-2026-05]]). ⚠️ 자사 보고: Workday 사내 활용 결과 직원 성장·커리어 만족도 **+35%** ([[sources/verified-pwc-doc-2026-05]]). Illuminate 플랫폼 배경: Workday 플랫폼의 800 billion 트랜잭션 기반 모델 ([[sources/constellation-workday-rising-2024-illuminate-2024-09]] — Peakon 자체 내용은 없음).
 
 ## Problem / Why (도입 배경)
 
@@ -68,30 +68,44 @@ Workday가 2021-02 인수 (~$700M)한 **Peakon Employee Voice** — 지속적 pu
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: Workday HCM (Peakon은 Workday 통합 모듈)
-- **AI 시스템**: Workday Illuminate 통합 (2024-12 발표 시 기존 Peakon 모델 + Illuminate LLM 결합)
-- **배포 환경**: Workday cloud
-- **연동·통합**: Workday HCM 마스터 + 매니저 dashboard
+- **Core HRIS**: ✅ Workday 제품군 (Peakon은 Workday 인수 후 활성 제품) ([[sources/verified-pwc-doc-2026-05]]); HCM 통합 형태 _미공개_
+- **AI 시스템**: ✅ Illuminate AI 기능 (2024-12-11 발표) ([[sources/verified-pwc-doc-2026-05]]); Illuminate 플랫폼은 Workday Rising 2024 발표 ([[sources/constellation-workday-rising-2024-illuminate-2024-09]])
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점**: _미공개 (not disclosed)_
+- **인증·권한**: _미공개 (not disclosed)_
 
-### C/D. Data & Model
+### C. Data (데이터)
 
-- **데이터**: 1B+ 응답 + 200M+ 텍스트 피드백 (글로벌 누적, ⚠️ 벤더 주장)
-- **언어**: 60+ 지원
-- **모델**: Workday Illuminate (자체 호스팅) + 기존 Peakon NLP 모델
-- **거버넌스**: Workday tenant 격리, GDPR 준수
+- **입력 데이터 소스**: ✅ 직원 서베이 응답·텍스트 피드백 ([[sources/verified-pwc-doc-2026-05]])
+- **데이터 규모**: ⚠️ 벤더 주장: 1B+ 응답 + 200M+ 텍스트 피드백, 60+ 언어, 160개국 ([[sources/verified-pwc-doc-2026-05]])
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context 구분**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: _미공개 (not disclosed)_
+- **민감정보 처리**: _미공개 (not disclosed)_
 
-### E. Organization
+### D. Model (모델)
 
-- Workday HR Tech + 고객사 HRBP·People Science 팀
+- **Foundation model**: _미공개 (not disclosed)_ — ⚠️ 벤더 주장: Illuminate 모델은 Workday 플랫폼 800 billion 트랜잭션 기반 ([[sources/constellation-workday-rising-2024-illuminate-2024-09]]); Peakon 적용 모델 세부 _미공개_
+- **Model 유형**: ✅ 텍스트 피드백 요약·테마 추출 (GenAI) ([[sources/verified-pwc-doc-2026-05]])
+- **제공 방식**: _미공개 (not disclosed)_
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: _미공개 (not disclosed)_
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: 벤더 제품 — 고객별 상이. _미공개 (not disclosed)_
+- **참여 역할·팀 규모·거버넌스·변화관리·파트너**: _미공개 (not disclosed)_
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 글로벌 60+ 언어 통합 sentiment 분석 + Workday HCM native — KR 대기업 annual 조직문화 진단의 cycle time을 수주 → 즉시로 단축 가능.
 
-- ✅ Tier 3 공식 (Workday newsroom): 1B+ 응답·200M+ 텍스트·60+ 언어·160개국
-- ⚠️ 자사 보고 (Workday 사내): 직원 성장·커리어 만족도 +35% (Illuminate 활용 결과)
-- 2025년 상반기 GA 일정 명시
+- ⚠️ 벤더 주장 (Workday newsroom 2024-12-11, [[sources/verified-pwc-doc-2026-05]] 확인): 1B+ 응답·200M+ 텍스트·60+ 언어·160개국
+- ⚠️ 자사 보고 (Workday 사내): 직원 성장·커리어 만족도 +35% (Illuminate 활용 결과) ([[sources/verified-pwc-doc-2026-05]])
+- GA 일정: _미공개_ (인용 소스 미확인)
 
 ## Governance & Risk
 
@@ -99,6 +113,12 @@ Workday가 2021-02 인수 (~$700M)한 **Peakon Employee Voice** — 지속적 pu
 - ⚠️ 35% 수치는 Workday 자사 보고 — 독립 검증 부재
 - ⚠️ open-end 코멘트의 anonymization 보장 — small group re-identification risk
 - ⚠️ sentiment 분석 결과를 매니저 평가에 사용 시 한국 AI 기본법 고영향 AI 분류 가능성
+
+## Contradictions
+
+_없음._
+
+> [!note] 2026-09-27 grounding — Peakon 인수 금액은 인용 소스에 없어 `_미공개_`. [[sources/constellation-workday-rising-2024-illuminate-2024-09]]는 Peakon 내용이 없는 Illuminate 배경 자료. PwC 자료의 Qualtrics 수치(채택률·MAU)는 Peakon과 무관하여 미반영 ([[sources/verified-pwc-doc-2026-05]]). B/C/D의 tenant 격리·GDPR·자체 호스팅 서술은 소스에 없어 `_미공개_`.
 
 ## Consulting Angle
 

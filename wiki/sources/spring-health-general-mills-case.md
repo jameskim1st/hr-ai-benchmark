@@ -2,6 +2,10 @@
 title: "Spring Health — General Mills Customer Case Study"
 url: https://www.springhealth.com/customers/general-mills
 tier: 3
+raw: raw/vendors/2026-09-27-spring-health-general-mills.md
+snapshot_quality: full
+publisher: Spring Health
+independent: false
 source_type: vendor
 ingested_at: 2026-04-12
 supports: [spring-health-general-mills-ai-eap]
@@ -24,3 +28,14 @@ Spring Health 공식 사이트의 General Mills 고객 사례. 전통 EAP 1% 이
 ## Source Assessment
 
 ⚠️ 벤더 주장 (Spring Health 자체 고객 사례 페이지). General Mills 수치는 자사 보고 성격도 병존. Peer-reviewed 연구는 별도 학술 검증이나 구체 DOI 미확인.
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "Within fourteen months of their Spring Health launch, 28% of their employees were enrolled and 88% of those enrolled members completed their mental wellness assessment."
+> — 뒷받침: 14개월 내 28% 등록 · 88% 평가 완료
+
+> "Currently, 26% of their employees are accessing their Spring Health benefit—compared to the 1% utilization they experienced with their former, traditional EAP."
+> — 뒷받침: EAP 1% → 26%
+
+> "At General Mills, 58% of their members have improved their depression symptoms in an average of 2.46 therapy sessions, 49% have improved their anxiety in an average of 1.4 therapy sessions, and 67% are showing improvement overall."
+> — 뒷받침: 임상 개선 58%/49%/67%

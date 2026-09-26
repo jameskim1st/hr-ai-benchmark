@@ -103,7 +103,7 @@ flowchart LR
 | 감사 증거 수집 절감 | **연 900시간** | Workday Rising 2025 | ⚠️ 벤더 주장 | 기존 에이전트 |
 | 급여 컴플라이언스 | **4배 빠름** | Workday Rising 2025 | ⚠️ 벤더 주장 | 기존 에이전트 |
 
-**Performance Review Agent 자체 metric은 _미공개 (not disclosed)_. stage: announced.**
+**Performance Review Agent 자체 metric은 _미공개 (not disclosed)_. stage: announced.** 위 표의 4개 수치는 모두 HR 외 도메인 에이전트(Contract Intelligence·Frontline·Financial Audit·Payroll)의 것으로, HR 에이전트 6종 어느 것의 성과도 아님 ([[sources/workday-illuminate-pr-2025-09.md]] 주의사항).
 
 ## Governance & Risk
 
@@ -111,12 +111,18 @@ flowchart LR
 - 매니저가 초안을 그대로 제출하는 **"rubber stamp" 리스크** — HITL가 형식화될 가능성
 - "타 시스템 데이터" 수집 시 **데이터 접근 권한·프라이버시** 이슈
 
+## Contradictions
+
+_없음._
+
+> [!note] 2026-09-27 grounding — 본문의 65%·90%·900시간·4배 수치는 [[sources/workday-illuminate-pr-2025-09.md]]가 명시하듯 HR 외 도메인 에이전트의 벤더 주장이며 Performance Review Agent와 무관. "HR 프로세스 효과" 논거로 직접 쓰지 말 것. Performance Review Agent 자체 metric·고객 사례는 0건.
+
 ## Consulting Angle
 
 ### 활용 포인트
 - **Workday vs SAP 성과관리 AI 정면 비교**: Workday Illuminate Performance Review Agent vs SAP Joule Performance & Goals Agent — 둘 다 2025 하반기~2026 GA, 기능 유사하나 아키텍처 접근 차이
 - **"AI 리뷰 초안" 개념의 시장 표준화**: Workday 같은 HRMS 거인이 도입하면 시장 전체가 이 기능을 기대치로 삼게 됨 → 클라이언트에게 "조만간 모든 HRMS가 이것을 제공할 것" 전망 제시
-- **기존 Illuminate 에이전트 실적 (65% 계약 단축 등)**: "AI agent가 HR 프로세스에 실제로 효과가 있다"는 논거의 앵커
+- **기존 Illuminate 에이전트 실적 (65% 계약 단축 등)**: ⚠️ HR 외 도메인 에이전트의 벤더 주장 — "AI agent가 HR 프로세스에 효과가 있다"는 논거로 직접 쓰지 말 것 ([[sources/workday-illuminate-pr-2025-09.md]])
 
 ### 한국 적용
 - Workday 한국 고객(금융·테크·글로벌 기업)에서 성과관리 AI 도입 시 직접 해당

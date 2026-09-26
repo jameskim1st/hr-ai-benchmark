@@ -64,9 +64,9 @@ Bersin이 2025-06 follow-up에서 제시한 3-way 비교:
 ## Problem / Why (도입 배경)
 
 Bersin 기사가 제시하는 문제 진술:
-- **$360 billion** 글로벌 training 산업 규모이지만 **68%가 "administrative" 지출** (consultative·creative 가치 생산 못 함)
-- 74% of companies가 급격한 스킬 수요 변화를 따라가지 못함 (Bersin 선행 연구)
-- 기존 LMS/LXP는 콘텐츠 제작·업데이트·현행화에 느림
+- ⚠️ 벤더 주장: **$360 billion** 글로벌 training 산업 규모이지만 **68%가 "administrative" 지출** (consultative·creative 가치 생산 못 함). [[sources/bersin-galileo-learn-2025-05.md]]
+- 스킬 수요 변화 대응 실패 기업 비율: _미공개_ (종전 수치는 인용 소스에 없어 제거 — 2026-09-27 grounding 점검)
+- ⚠️ 벤더 주장: 전통 SCORM 기반 "publishing" 모델은 콘텐츠 제작·업데이트에 느림 → AI 생성 dynamic content로 이동. [[sources/bersin-ld-revolution-2025-06.md]]
 
 > 이 problem은 **Bersin이 자사 제품을 팔기 위한 프레이밍**이므로 독립 학술 검증은 아님 (⚠️ 벤더 주장).
 
@@ -99,31 +99,31 @@ _범례: 노랑 = 벤더 주장 (제품 설명에서 직접 읽힘). 실증 cust
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: N/A (별도 SaaS, HRIS 의존 낮음)
-- **AI 시스템 배치**: Galileo agent의 일부 (plugin/integration)
-- **배포 환경**: SaaS (cloud provider 미공개)
+- **Core HRIS**: _미공개 (not disclosed)_ (별도 SaaS로 보이나 HRIS 연동 여부 소스에 없음)
+- **AI 시스템 배치**: ⚠️ 벤더 주장: Galileo agent 인터페이스로 접근 — 코스가 업무 중 사이드 패널에 표시. [[sources/bersin-galileo-learn-2025-05.md]]
+- **배포 환경**: _미공개 (not disclosed)_
 - **연동·통합**: HRIS·LMS(SuccessFactors·Cornerstone·Workday Learning 등)와의 통합 여부 ❓ 미공개
-- **사용자 접점**: Galileo agent UI (사이드 패널 embedded)
+- **사용자 접점**: ⚠️ 벤더 주장: Galileo agent 사이드 패널 (embedded). [[sources/bersin-galileo-learn-2025-05.md]]
 - **인증·권한**: _미공개_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: 조직의 기존 학습 콘텐츠 (문서·영상·SCORM 등)
-- **데이터 규모**: Bersin 자사 — 8년 누적, 750 learning objects
-- **전처리·정제**: 자동 ("with your guidance")
-- **학습 vs RAG vs In-context 구분**: **Sana Labs foundation 기반** — Sana Labs의 아키텍처에 따름. 세부 ❓ 미공개
+- **입력 데이터 소스**: ⚠️ 벤더 주장: 조직의 기존 학습 콘텐츠 — PDF·Word·오디오·비디오·SCORM 코스 등. [[sources/bersin-galileo-learn-2025-05.md]]
+- **데이터 규모**: ⚠️ 자사 보고: Bersin 자사 8년된 온라인 HR academy → 750 independent learning objects; 700+ 코스가 96-level HR Capability Model에 매핑. [[sources/bersin-galileo-learn-2025-05.md]]
+- **전처리·정제**: ⚠️ 벤더 주장: AI가 "with your guidance" 자동 변환. [[sources/bersin-galileo-learn-2025-05.md]] 세부 _미공개_
+- **학습 vs RAG vs In-context 구분**: ⚠️ 벤더 주장: **Sana Labs AI foundation 기반** (파트너·OEM). [[sources/bersin-galileo-learn-2025-05.md]] 아키텍처 세부 ❓ 미공개
 - **데이터 거버넌스**: _미공개_ — 고객 콘텐츠가 Sana·Bersin·Galileo 어디에 저장되고 어떻게 분리되는지 공개 없음
 - **민감정보 처리**: _미공개_
 
 ### D. Model (모델)
 
-- **Foundation model**: **Sana Labs AI** (기반 파트너). 내부에서 어떤 foundation model을 쓰는지 Sana가 공개한 바에 따름 — Bersin 기사엔 미공개
-- **모델 유형**: 콘텐츠 생성 + 대화형 튜터 = LLM 중심
-- **제공 방식**: Bersin Co. 플랫폼 (Sana Labs OEM)
+- **Foundation model**: ⚠️ 벤더 주장: **Sana Labs AI** foundation (파트너). [[sources/bersin-galileo-learn-2025-05.md]] 내부 foundation model _미공개_
+- **모델 유형**: ⚠️ 벤더 주장: 콘텐츠 생성 + AI 튜터·아바타·음성/텍스트 지도·"AI Josh" persona 시나리오. [[sources/bersin-galileo-learn-2025-05.md]] 모델 구성 세부 _미공개_
+- **제공 방식**: ⚠️ 벤더 주장: Bersin Co. 플랫폼 (Sana Labs 파트너·OEM). [[sources/bersin-galileo-learn-2025-05.md]]
 - **커스터마이징 기법**: _미공개_
 - **평가·가드레일**: _미공개_. 콘텐츠 정확성·편향·HR Capability Model 매핑 품질 감사 결과 공개 없음
 - **비용·성능 지표**:
-  - **가격: $495/year per person** ($49/월), $200 add-on for existing Galileo users — ✅ Fact (공개)
+  - **가격: $495/year per person** ($49/월) — ✅ Fact (공개). [[sources/bersin-galileo-learn-2025-05.md]] [[sources/bersin-ld-revolution-2025-06.md]] (기존 Galileo 사용자 add-on 가격은 _미공개_)
   - 성능 지표 (latency·토큰 비용·응답 품질 등) _미공개_
 
 ### E. Organization & Team (조직·팀 구조)
@@ -187,7 +187,7 @@ _없음 — 단일 소스_
   2. **기존 콘텐츠 활용**이 핵심 value prop — 새 콘텐츠 제작보다 기존 자산의 AI 변환이 entry point
   3. **flow-embedded learning**이 차기 UX 방향 — Galileo처럼 agent 사이드 패널 형태
 - **파생 질문**:
-  1. 한국 대기업의 LMS 교체 주기(통상 5~7년)에서 AI-native LMS로의 이행 타이밍은?
+  1. 한국 대기업의 LMS 교체 주기에서 AI-native LMS로의 이행 타이밍은?
   2. 한국어 콘텐츠 품질·법정 교육(산업안전·윤리 등) 대응력은?
   3. 기존 Cornerstone/SAP 등과의 migration 경로는?
 

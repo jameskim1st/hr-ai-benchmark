@@ -24,9 +24,9 @@ kr_vendor: 해당 없음 (자체 구축)
 frequency: daily
 first_seen: 2025-06-12
 last_confirmed: 2025-10-24
-confidence: 0.7
-evidence_grade: A
-corroborated_by: 2
+confidence: 0.45
+evidence_grade: B
+corroborated_by: 1
 freshness: fresh
 depth: partial
 graded_at: 2026-09-27
@@ -86,17 +86,35 @@ flowchart LR
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: IBM 내부 시스템 (자체 구축 추정, 세부 _미공개_)
-- **AI 시스템 배치**: **IBM watsonx Orchestrate** (2025년 통합)
-- **배포 환경**: IBM Cloud (추정, self-dogfooding)
-- **사용자 접점**: _미공개_ (웹/모바일/Slack 등 채널 세부)
-- **연동**: expense·compensation·recognition 시스템과 통합 (세부 _미공개_)
+- **Core HRIS**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: ⚠️ 자사 보고: **IBM watsonx Orchestrate** (2025년 통합) [[sources/ibm-askhr-case-study-2025]]
+- **배포 환경**: _미공개 (not disclosed)_
+- **사용자 접점**: _미공개 (not disclosed)_ (웹/모바일/Slack 등 채널 세부)
+- **연동**: ⚠️ 자사 보고: employee letters·vacation requests·payroll access·compensation changes·organizational updates 등 매니저 워크플로 자동화 [[sources/ibm-askhr-case-study-2025]]; expense·recognition 처리 [[sources/hr-brew-ibm-moderna-2025-06]]; 시스템 연동 세부 _미공개_
 
-### C~E. 데이터·모델·조직
+### C. Data (데이터)
 
-- **데이터**: IBM HR 정책·보상·복리후생 지식베이스 (규모 _미공개_)
-- **모델**: IBM watsonx foundation model 계열 (세부 버전 _미공개_)
-- **조직**: IBM HR + IBM Digital 공동 운영 추정. **특이 사례**: 기존 필리핀 기반 HR phone agent가 "**conversational AI specialist**"로 역할 전환 — prompt engineering 수행
+- **입력 데이터 소스**: IBM HR 정책·보상·복리후생 관련 직원 질문 [[sources/hr-brew-ibm-moderna-2025-06]]; 규모 _미공개 (not disclosed)_
+- **데이터 규모**: ⚠️ 자사 보고: 연 2.1M+ 직원 대화, 80+ 자동화 태스크 [[sources/ibm-askhr-case-study-2025]]; 270,000명 직원 대상 [[sources/hr-brew-ibm-moderna-2025-06]]
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context**: ⚠️ 자사 보고: LLM이 직원 프롬프트를 분류·라우팅 [[sources/ibm-askhr-case-study-2025]] — RAG/fine-tuning 여부 _미공개_
+- **데이터 거버넌스·민감정보 처리**: _미공개 (not disclosed)_
+
+### D. Model (모델)
+
+- **Foundation model**: ⚠️ 자사 보고: "highly compliant large language models" (watsonx Orchestrate 기반) [[sources/ibm-askhr-case-study-2025]] — 세부 버전 _미공개_
+- **Model 유형**: LLM 분류·라우팅 + 자동화 에이전트 [[sources/ibm-askhr-case-study-2025]]
+- **제공 방식**: IBM 자체 (watsonx) [[sources/ibm-askhr-case-study-2025]]
+- **커스터마이징 기법**: ⚠️ 자사 보고: 필리핀 기반 전 HR phone agent가 conversational AI specialist로 전환해 prompt engineering 수행 [[sources/hr-brew-ibm-moderna-2025-06]]
+- **평가·가드레일**: _미공개 (not disclosed)_
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: _미공개 (not disclosed)_ — IBM HR 주도로 기술되나 IT/Digital 조직과의 분담은 소스에 없음 [[sources/ibm-askhr-case-study-2025]]
+- **참여 역할**: conversational AI specialist (전환 직무) [[sources/hr-brew-ibm-moderna-2025-06]]
+- **팀 규모·기간**: 6년간 지속 개선 (case study 기준) [[sources/ibm-askhr-case-study-2025]]; 인력 규모 _미공개_
+- **변화관리**: ⚠️ 자사 보고: 직원 대상 watsonx challenge(3년간, 업무 개선 아이디어 피칭) [[sources/hr-brew-hr-adapting-ai-future-2025-10]]
+- **파트너**: _미공개 (not disclosed)_ (자체 구축)
 
 ## Impact / Metrics (기대효과)
 
@@ -121,12 +139,13 @@ flowchart LR
 - **Bias 감사**: compensation guidance agent가 성별·인종별 bias를 갖는지 감사 결과 _미공개_
 
 ## Contradictions
-_없음_
+
+> [!note] 2026-09-27 grounding — B~E 섹션의 "IBM Cloud (추정)", "자체 구축 추정", "IBM HR + IBM Digital 공동 운영 추정"을 _미공개_로 정리하고 C·D·E를 분리. Consulting Angle의 Moderna GPT 수는 본 페이지 인용 소스에 없어 삭제([[moderna-ask-hr-routing]] 참조). hr-brew-ibm-moderna-2025-06은 raw 미확보(403)로 270,000명·Krishna 발언·필리핀 직무 전환은 source 페이지 요약(2차 전달)에만 근거.
 
 ## Consulting Angle
 
 ### 가장 큰 가치 — "HR AI scale의 proof point"
-- **Moderna Ask HR (3,000+ GPT)과의 대비**: Moderna = GPT interface (답변), IBM = **agentic (작업 수행)**. HR Brew 2025-06이 이 대비를 명시적으로 기술.
+- **Moderna Ask HR ([[moderna-ask-hr-routing]])과의 대비**: Moderna = GPT interface (답변), IBM = **agentic (작업 수행)**. HR Brew 2025-06이 이 대비를 명시적으로 기술 [[sources/hr-brew-ibm-moderna-2025-06]].
 - **HR AI maturity의 시각화**: `FAQ 챗봇 → routing GPT → agentic 자동화`라는 3단계 maturity를 IBM·Moderna 대비로 설명 가능
 - **"HR 인력 대체 vs 전환" 논의의 앵커**: 필리핀 직원의 "conversational AI specialist" 전환 사례가 **생산적 논의의 출발점**
 - **국내 대기업 적용 가능성**: 수만 명 규모의 국내 대기업이 IBM AskHR 수준을 목표로 할 때 필요한 전제조건(자체 AI 플랫폼, 대규모 HR 데이터, 직무 재설계 의지) 정리 가능

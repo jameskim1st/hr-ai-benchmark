@@ -29,7 +29,7 @@ confidence: 0.25
 evidence_grade: B
 corroborated_by: 1
 freshness: stale
-depth: partial
+depth: stub
 graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
@@ -90,29 +90,27 @@ _범례: 모든 노드 = i4cp 2019-12 기사 확인 사실._
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: _미공개_ — Unilever가 어떤 HCM을 쓰는지 이 기사엔 없음 (다른 소스에선 Workday/SAP 등 언급되나 본 wiki 미검증)
-- **AI 시스템 배치**: **Gloat 플랫폼** (별도 SaaS, HRMS에 통합된 별도 layer)
-- **배포 환경**: Gloat cloud (공개 클라우드 특성상 AWS/Azure 추정되나 기사에 없음)
-- **연동·통합**: HRIS와의 data feed가 있다고 추정되나 구체 API·ETL 공개 없음
-- **사용자 접점**: Gloat web portal (mobile 지원 여부 등 ❓ 미공개)
-- **인증·권한**: _미공개_
+- **Core HRIS**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: ✅ Gloat 플랫폼 (파트너십) ([[sources/i4cp-unilever-flex-2019-12]]); HRMS 통합 형태 _미공개_
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점**: _미공개 (not disclosed)_
+- **인증·권한**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**:
-  - 직원 self-reported 프로필 (스킬·관심·purpose)
-  - 프로젝트·역할 등록 (requesting manager가 등록)
-- **데이터 규모**: 2019-12 기준 30,000+ 직원 · 1,750명 HR 초기 pilot
-- **전처리·정제**: 스킬 ontology로 정규화 (Gloat 핵심 기능) — 구체 구현 미공개
-- **학습 vs RAG vs In-context 구분**: Gloat의 매칭 엔진은 semantic similarity·graph 기반일 가능성이 높으나 기사에 명시 없음 → _미공개_
+- **입력 데이터 소스**: ✅ 직원 professional profile + purpose statement, 등록된 프로젝트·역할 기회 ([[sources/i4cp-unilever-flex-2019-12]]); 기회 등록 주체 _미공개_
+- **데이터 규모**: ✅ 2019-12 기준 30,000+ 직원 · 1,750명 HR 초기 test bed ([[sources/i4cp-unilever-flex-2019-12]])
+- **전처리·정제**: _미공개 (not disclosed)_ — 'AI-powered skills matching'이라는 표현만 확인 ([[sources/i4cp-unilever-flex-2019-12]])
+- **학습 vs RAG vs In-context 구분**: _미공개 (not disclosed)_
 - **데이터 거버넌스**: _미공개_
 - **민감정보 처리**: _미공개_
 
 ### D. Model (모델)
 
-- **Foundation model**: _미공개_ — Gloat의 내부 매칭 엔진 세부는 벤더 black box
-- **모델 유형**: 매칭(similarity)·추천 — LLM 단독 아닐 가능성 큼 (스킬 그래프 기반이 통상). 구체 유형 ❓ 미공개
-- **제공 방식**: Gloat SaaS
+- **Foundation model**: _미공개 (not disclosed)_
+- **모델 유형**: ✅ AI 기반 스킬 매칭·기회 추천 ([[sources/i4cp-unilever-flex-2019-12]]); 모델 유형 세부 _미공개_
+- **제공 방식**: ✅ Gloat 플랫폼 ([[sources/i4cp-unilever-flex-2019-12]]); 제공 형태(SaaS 등) _미공개_
 - **커스터마이징**: _미공개_ — Unilever 전용 스킬 온톨로지가 있는지 여부 포함
 - **평가·가드레일**: _미공개_. 매칭 품질·편향 감사(성별·국적·연령·직급별 기회 분배) 공개 없음. 단, 다른 소스에 "2/3 기회가 여성에게 돌아갔다"는 DEI 수치가 있다는 보고는 있음 (본 wiki 미검증)
 - **비용·성능 지표**: _미공개_
@@ -132,13 +130,13 @@ _범례: 모든 노드 = i4cp 2019-12 기사 확인 사실._
 
 **Fact 품질 요약**:
 - ✅ Fact: 규모, 파트너, 프로세스 핵심, Leader 이름, "매니저 허가 불필요" 원칙, 95% endorsement
-- ⚠️ 다른 소스에서 보고된 수치 (본 wiki 미검증): 90k 직원·300k 시간·41% 생산성·8,300명 COVID 재배치 등
+- ⚠️ Gloat 2024 자료 보고 수치 (원문 미확인 — [[sources/gloat-unilever-success-story-2024]]): 65,000 사용자·700,000+ 시간·41% 생산성·8,000+ COVID 재배치
 - ❓ 미공개: 아키텍처·데이터·모델·현재 조직 구조 세부
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-초기 30,000+ 사용자에서 시작(Fact), 300,000시간 unlocked capacity, 41% 생산성 향상 등 보고되나 wiki 미검증. COVID 시 8,300명 재배치.
+초기 30,000+ 사용자에서 시작 (✅ [[sources/i4cp-unilever-flex-2019-12]]). 이후 65,000 사용자·700,000+ 시간 unlocked·41% 생산성 향상·COVID 시 8,000+ 재배치는 ⚠️ Gloat 2024 customer story 보고 ([[sources/gloat-unilever-success-story-2024]] — 스냅샷 unavailable, 원문 미확인).
 
 ### 2019-12 기준 (초기 구축, i4cp 독립 소스)
 | 지표 | 값 | 출처 | 성격 |
@@ -151,14 +149,14 @@ _범례: 모든 노드 = i4cp 2019-12 기사 확인 사실._
 ### 2024 업데이트 (Gloat customer story)
 | 지표 | 값 | 출처 | 성격 |
 |---|---|---|---|
-| 전 세계 사용자 | **65,000** | Gloat 2024 customer story | ⚠️ 벤더 주장 (Gloat) + ⚠️ 자사 보고 (Unilever) 복합 |
-| 누적 capacity unlocked | **700,000+ hours** | Gloat 2024 customer story | ⚠️ 벤더 주장 |
-| 생산성 개선 | **41%** | Gloat 2024 customer story | ⚠️ 벤더 주장 — 측정 방식 미공개 |
-| Endorsement rate 유지 | 95% (sustained) | Gloat 2024 customer story | ⚠️ 자사 보고 |
-| COVID 재배치 | **8,000+ employees**, 300,000 hours | Gloat 2024 customer story | ⚠️ 자사 보고 (Unilever) |
+| 전 세계 사용자 | **65,000** | [[sources/gloat-unilever-success-story-2024]] (원문 미확인) | ⚠️ 벤더 주장 (Gloat) + ⚠️ 자사 보고 (Unilever) 복합 |
+| 누적 capacity unlocked | **700,000+ hours** | [[sources/gloat-unilever-success-story-2024]] (원문 미확인) | ⚠️ 벤더 주장 |
+| 생산성 개선 | **41%** | [[sources/gloat-unilever-success-story-2024]] (원문 미확인) | ⚠️ 벤더 주장 — 측정 방식 미공개 |
+| Endorsement rate 유지 | 95% (sustained) | [[sources/gloat-unilever-success-story-2024]] (원문 미확인) | ⚠️ 자사 보고 |
+| COVID 재배치 | **8,000+ employees**, 300,000 hours | [[sources/gloat-unilever-success-story-2024]] (원문 미확인) | ⚠️ 자사 보고 (Unilever) |
 
 **2019 → 2024 주요 성장**:
-- 사용자 30k → 65k (2.2배)
+- 사용자 30k ([[sources/i4cp-unilever-flex-2019-12]]) → 65k ([[sources/gloat-unilever-success-story-2024]], 원문 미확인) — 환산 배수 표기는 삭제 (2026-09-27 grounding 점검)
 - 초기 목표 50k 초과 달성
 - COVID 이후 재배치 유즈케이스 확립 (critical 프로젝트 700+ 배분)
 
@@ -171,7 +169,10 @@ _범례: 모든 노드 = i4cp 2019-12 기사 확인 사실._
 - **개인정보**: 스킬 프로필은 EU GDPR 특수 카테고리는 아니지만 직원 경력에 대한 portable data로서 DPIA 대상
 
 ## Contradictions
-_없음 — 단일 소스_
+
+_없음._
+
+> [!note] 2026-09-27 grounding — B/C/D의 배포 환경·HRIS 연동·모델 유형 추정 서술을 `_미공개_`로 교체하고 i4cp 확인 항목에 인용 추가. 2024 수치는 [[sources/gloat-unilever-success-story-2024]]가 스냅샷 unavailable(검색 요약 기반)이라 원문 미확인 — 인용 시 provenance 명시 필수.
 
 ## Consulting Angle
 

@@ -13,7 +13,7 @@ vendor_type: [point-solution]
 output: "8,000개 직위를 83개 역할 클러스터로 자동 분류한 결과 + 조직설계·SWP·리스킬링 의사결정용 클러스터 인사이트 (분 단위 산출)"
 ai_tech_type: [predictive]
 ai_tech_subtype: [clustering-classification]
-stage: production
+stage: pilot
 visibility: public
 case_type: adoption
 regulatory_exposure: []
@@ -40,7 +40,7 @@ related_vendors: []
 
 ## Summary
 
-Salesforce의 Organizational Strategy & Effectiveness 팀이 Orgvue의 Henshaw AI(직무 클러스터링 AI)를 통해 8,000개 직위를 83개 클러스터로 자동 분류했다. OD·SWP 타임라인을 "최소 6개월" 단축했다고 자사 보고. Orgvue Henshaw AI는 2025년 12월 정식 출시. 직무체계 구축 시간 6개월 → 6일 단축은 Orgvue의 일반 고객 사례로도 인용.
+Salesforce의 Organizational Strategy & Effectiveness 팀(Stacy Anderson, Director)이 **early access** 고객으로 Orgvue의 Henshaw Roles(직무 자동 클러스터링)를 사용 — ⚠️ 자사 보고: 8,000개 직위를 83개 클러스터로 정리, OD·SWP 타임라인 "최소 6개월" 단축 [[sources/orgvue-salesforce-henshaw-ai-2025]]. Orgvue는 2025-12 Henshaw AI 스위트를 발표했으며 Henshaw Roles·Assistant는 early access 프로그램으로 제공, 추가 기능은 2026년 중 예정 [[sources/orgvue-salesforce-henshaw-ai-2025]]. 직무체계 구축 6개월 → 6일은 Orgvue 보도자료가 Henshaw AI 결과로 제시 ⚠️ 벤더 주장 [[sources/orgvue-salesforce-henshaw-ai-2025]].
 
 ## Problem / Why (도입 배경)
 
@@ -75,26 +75,37 @@ flowchart LR
 ### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: _미공개 (not disclosed)_
-- **AI 시스템 배치**: Orgvue SaaS 플랫폼 (Henshaw AI 모듈)
+- **AI 시스템 배치**: Orgvue 플랫폼의 Henshaw AI 스위트 (Henshaw Roles·CoModeler·Workforce Analyst AI agent) — Roles·Assistant는 early access [[sources/orgvue-salesforce-henshaw-ai-2025]]
 - **배포 환경**: _미공개 (not disclosed)_
-- **연동·통합**: HR 시스템 → Orgvue 데이터 수집 (구체 시스템 미공개)
+- **연동·통합**: _미공개 (not disclosed)_ — 직위 데이터 수집 경로 미기재
+- **사용자 접점 (UX layer)**: _미공개 (not disclosed)_
+- **인증·권한**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력**: 8,000개 직위 데이터 (JD, 직급, 보고 체계 등)
-- **출력**: 83개 역할 클러스터 + 조직 구조 인사이트
-- **데이터 규모**: Salesforce 전사 직위 8,000개
+- **입력 데이터 소스**: 직위(position) 데이터 [[sources/orgvue-salesforce-henshaw-ai-2025]]; JD·직급·보고 체계 등 구체 항목 _미공개_
+- **출력**: 역할·역할 클러스터·job family 자동 그룹핑 — Salesforce는 83개 클러스터 ⚠️ 자사 보고 [[sources/orgvue-salesforce-henshaw-ai-2025]]
+- **데이터 규모**: 8,000개 직위 ⚠️ 자사 보고 [[sources/orgvue-salesforce-henshaw-ai-2025]]
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context 구분**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: _미공개 (not disclosed)_
+- **민감정보 처리**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
-- **Foundation model**: _미공개 (not disclosed)_ — Orgvue Henshaw AI 내부 모델
-- **Model 유형**: Clustering/embedding (역할 유사성 분석)
+- **Foundation model**: _미공개 (not disclosed)_
+- **Model 유형**: 유사 직위 자동 그룹핑(클러스터링) [[sources/orgvue-salesforce-henshaw-ai-2025]]; CoModeler는 자연어 → 구조화 모델 변환 (LLM 성격) [[sources/orgvue-salesforce-henshaw-ai-2025]]; 기술 세부 _미공개_
+- **제공 방식**: Orgvue SaaS (early access) [[sources/orgvue-salesforce-henshaw-ai-2025]]
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **평가·가드레일**: _미공개 (not disclosed)_ — 클러스터 결과는 OD 팀이 검토
 
 ### E. Organization & Team (조직·팀 구조)
 
-- **오너십**: OD/Organizational Strategy & Effectiveness 팀
-- **담당자**: Stacy Anderson, Director of Organizational Strategy & Effectiveness (공개 발언)
-- **파트너**: Orgvue
+- **오너십**: Organizational Strategy & Effectiveness 팀 [[sources/orgvue-salesforce-henshaw-ai-2025]]
+- **담당자**: Stacy Anderson, Director of Organizational Strategy & Effectiveness (Orgvue 보도자료 인용) [[sources/orgvue-salesforce-henshaw-ai-2025]]
+- **팀 규모·기간**: _미공개 (not disclosed)_
+- **거버넌스 체계**: _미공개 (not disclosed)_
+- **파트너**: Orgvue [[sources/orgvue-salesforce-henshaw-ai-2025]]
 
 ## Impact / Metrics (기대효과)
 
@@ -103,9 +114,9 @@ Before: 8,000개 직위가 미정리 상태, 직무체계 구축 약 6개월 소
 
 | 지표 | 결과 | 신뢰도 |
 |---|---|---|
-| 직위 분류 | 8,000개 → 83개 클러스터 | ⚠️ 자사 보고 (Orgvue PR 인용) |
-| OD·SWP 타임라인 단축 | "최소 6개월" | ⚠️ 자사 보고 |
-| 직무체계 구축 시간 (일반 사례) | 6개월 → 6일 | ⚠️ 벤더 주장 (Orgvue 일반 주장) |
+| 직위 분류 | 8,000개 → 83개 클러스터 | ⚠️ 자사 보고 (Orgvue PR 인용, early access) [[sources/orgvue-salesforce-henshaw-ai-2025]] |
+| OD·SWP 타임라인 단축 | "최소 6개월" | ⚠️ 자사 보고 [[sources/orgvue-salesforce-henshaw-ai-2025]] |
+| 직무체계 구축 시간 | 6개월 → 6일 | ⚠️ 벤더 주장 (Henshaw AI 결과로 제시) [[sources/orgvue-salesforce-henshaw-ai-2025]] |
 
 ## Governance & Risk
 
@@ -114,11 +125,13 @@ Before: 8,000개 직위가 미정리 상태, 직무체계 구축 약 6개월 소
 
 ## Contradictions
 
-없음.
+_없음._
+
+> [!note] 2026-09-27 grounding — Henshaw Roles는 raw 기준 early access 프로그램 제공(2025-12 발표)이며 Salesforce는 early access 고객 인용이므로 stage를 production → pilot으로 정정하고 '정식 출시' 표현을 조정. B·C·D 서술에 인용을 보강하고 소스에 없는 항목(JD·직급 입력, HR 시스템 연동, embedding)은 _미공개_ 처리.
 
 ## Consulting Angle
 
-- **조직개편 컨설팅**: "AI 기반 직무 클러스터링으로 OD 분석 6개월 → 6일"은 조직설계 제안서의 핵심 속도 논거
+- **조직개편 컨설팅**: "AI 기반 직무 클러스터링으로 직무체계 구축 6개월 → 6일"(벤더 주장, early access)은 조직설계 제안서의 속도 논거 — 벤더 보도자료 기반임을 병기
 - **대규모 구조조정/리오그**: 감원·재배치 전 AI 기반 역할 분석으로 결정의 근거 확보 — "23%가 일반 가정으로 감원" 리스크 방지
 - **한국 대기업 적용**: 직급체계 개편(예: 삼성의 직위 통폐합 흐름)과 연계 가능; 수만 개 직위를 AI로 클러스터링하는 접근 제안
 - **파생 질문**: "클러스터링 후 실제 역할 재정의·JD 갱신 프로세스는 어떻게 이어지는가?" — 후속 단계 설계 필요

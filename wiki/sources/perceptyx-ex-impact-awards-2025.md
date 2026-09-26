@@ -2,10 +2,15 @@
 title: "Perceptyx 2025 EX Impact Award Winners"
 url: "https://blog.perceptyx.com/2025-ex-impact-award-winners-the-power-of-ex-transformation"
 url_secondary: "https://go.perceptyx.com/customer-stories/ex-impact-2025/arca-continental-coca-cola-southwest-beverages"
-tier: 2
-source_type: vendor_case_study
+tier: 3
+raw: raw/vendors/2026-09-27-perceptyx-ex-impact-awards-2025.md
+snapshot_quality: full
+publisher: Perceptyx
+independent: false
+source_type: vendor
 ingested_at: 2026-04-12
 supports: [coca-cola-southwest-perceptyx-activate]
+tier_note: "2026-09-27 정정: 벤더 자체 발표 자료 → tier 3"
 ---
 
 ## Summary
@@ -46,3 +51,17 @@ Perceptyx published three named customer case studies as 2025 EX Impact Award wi
 - **Vendor**: Perceptyx (AI employee listening, analytics, behavioral science)
 - **Platform feature**: Perceptyx Activate (Intelligent Nudges — AI-generated manager coaching)
 - **Recognition**: 2025 HR Tech Award, Forrester Leader in EX Management Platforms
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "Facing challenges with retention and workforce respect, Coca-Cola Southwest Beverages introduced a multi-tiered approach to embed leadership and cultural values, including AI-assisted Intelligent Nudges guiding leaders toward actionable behaviors aligned with their Leadership Code and Culture Principles."
+> — 뒷받침: AC-CCSWB Intelligent Nudges 도입
+
+> "Over five years, overall engagement favorability rose by 19.2%, reaching an 85% favorability score in the most recent survey. In 2024 alone, more than 900 engagement action plans were created by leaders at every level, driving localized improvements and strengthening trust."
+> — 뒷받침: AC-CCSWB 결과 (⚠️ 자사 보고)
+
+> "12% improvement in well-being index score (71% to 83%) in just one year, 200 trained well-being champions across global locations, and increased utilization of Employee Assistance Program resources across all levels of the organization."
+> — 뒷받침: Emerson 결과
+
+> "80% reduction in survey questions (from 250 to 49), 86,000 teammates engaged in the unified feedback process, and 6,000 leaders trained in streamlined action planning"
+> — 뒷받침: Advocate Health 결과

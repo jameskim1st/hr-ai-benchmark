@@ -43,11 +43,13 @@ related_vendors:
 
 ## Summary
 
-글로벌 제약사 Novartis는 Gloat의 AI 탤런트 마켓플레이스를 도입하여 스킬 기반 조직으로 전환했다. ✅ **Fact** 직원들은 잡(Job)·프로젝트·멘토십·러닝 콘텐츠를 스킬 기반으로 매칭받는다. 탤런트 마켓플레이스를 통해 성공적인 과제 수행 경험이 있는 직원은 조직 내 영구 이동 가능성이 132% 더 높아졌으며, 크로스펑셔널 프로젝트 배정이 67% 증가했다. ⚠️ **자사 보고**: Novartis 및 Gloat 공개 자료 기반 수치. [[sources/gloat-novartis-case-study-2024.md]]
+글로벌 제약사 Novartis(바젤)는 Gloat의 'agile workforce OS'/탤런트 마켓플레이스(Talent Match)를 test-and-learn 방식으로 확산하며 스킬 기반 조직으로 전환 중이다 ⚠️ **자사 보고** (Gloat 고객 사례 PDF) [[sources/gloat-novartis-case-study-2024.md]]. 30,000명 이상 등록, 33,000개 job code·105,000명 스킬 매핑, 크로스펑셔널 프로젝트 배정 67% 증가, 마켓플레이스 사용자는 퇴사 가능성 73% 낮고 승진 가능성 51% 높음 [[sources/gloat-novartis-case-study-2024.md]]. '영구 이동 가능성 132% 향상'은 인용 소스 PDF에 없음(Gloat 블로그에만 등장) → _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검). HRD Connect(Tier 2)는 탤런트 마켓플레이스+스킬 인텔리전스 통합과 Markus Graf의 데이터 품질 향상 발언을 전하나 벤더명·수치는 없음 [[sources/hrdconnect-novartis-skills-2024.md]].
 
 ## Problem / Why (도입 배경)
 
-Novartis는 연구·개발·상업화 등 다양한 기능 조직을 보유하면서도 내부 이동성이 낮아 인재가 사일로화되는 문제를 안고 있었다. 기존 직무 중심 인사 관리로는 조직이 필요로 하는 미래 스킬을 빠르게 파악하고 개발하기 어려웠다. "Unbossed" 문화 (자율적이고 권한 위임된 조직) 추진과 함께 탤런트 민주화가 전략 목표였다.
+- **Before (baseline)**: ❓ baseline 미공개 — 도입 전 내부 이동률·크로스펑셔널 배정 절대값은 인용 소스에 없음
+- **Pain point**: 직원 스킬·개발 목표 데이터 품질 (Markus Graf, Global Head of Talent) [[sources/hrdconnect-novartis-skills-2024.md]]; 스킬을 워크포스 전환의 중심에 두려는 전략 [[sources/gloat-novartis-case-study-2024.md]]
+- **Trigger**: 2019년 CEO Vasant Narasimhan의 데이터·디지털 기반 P&O 전환 지시 [[sources/myhrfuture-novartis-people-data.md]]; 2022-04 '집중 의약품 기업' 전환 [[sources/myhrfuture-novartis-people-data.md]] — 마켓플레이스 도입의 직접 계기 여부는 ❓ 미공개
 
 ## Solution Architecture
 
@@ -57,10 +59,10 @@ Novartis는 연구·개발·상업화 등 다양한 기능 조직을 보유하�
 
 - **Before (As-is)**: 직무 중심의 경직된 인사 관리. 내부 이동 기회가 제한적이고 관리자 추천에 의존.
 - **After (To-be)**:
-  1. ✅ **Fact** Gloat 탤런트 마켓플레이스로 직원에게 잡·프로젝트·멘토·러닝 기회를 AI 기반으로 개인화 추천. [[sources/gloat-novartis-case-study-2024.md]]
-  2. ✅ **Fact** 스킬 온톨로지 기반으로 직원의 현재 스킬과 희망 스킬을 분석, 성장 기회 연결. [[sources/gloat-novartis-case-study-2024.md]]
-  3. ✅ **Fact** "기존 접근법 대비 2개월 만에 4년치 품질 데이터 수집." [[sources/gloat-novartis-case-study-2024.md]]
-- **Human-in-the-loop (HITL) 지점**: AI가 기회를 추천하고 직원이 자율적으로 신청. 최종 배정 결정은 매니저/HR이 관여.
+  1. ⚠️ **자사 보고** Gloat agile workforce OS/Talent Match로 직원이 프로젝트 등 기회에 참여 — 등록 30,000명+ (입소문 중심 확산). [[sources/gloat-novartis-case-study-2024.md]]
+  2. ⚠️ **자사 보고** 33,000개 job code·105,000명 대상 스킬-역할 매핑. [[sources/gloat-novartis-case-study-2024.md]]
+  3. '2개월 만에 4년치 데이터' 서술은 인용 소스 raw에 없어 제거 (2026-09-27 grounding 점검)
+- **Human-in-the-loop (HITL) 지점**: 직원이 자율 등록·참여 [[sources/gloat-novartis-case-study-2024.md]]; 매니저/HR 승인 단계 _미공개 (not disclosed)_
 - **Trigger & Frequency**: 직원 커리어 탐색·프로젝트 매칭 수시.
 - **Scope of autonomy**: Recommend 수준.
 
@@ -87,8 +89,8 @@ flowchart LR
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: 직원 스킬 프로파일, 직무 데이터, 프로젝트 데이터, 러닝 카탈로그.
-- **데이터 규모**: _미공개 (not disclosed)_
+- **입력 데이터 소스**: 직원 스킬·역할 매핑 데이터 (33,000 job code) [[sources/gloat-novartis-case-study-2024.md]]; 직원 스킬·개발 목표 데이터 [[sources/hrdconnect-novartis-skills-2024.md]]; 프로젝트·러닝 데이터 세부 _미공개_
+- **데이터 규모**: 등록 사용자 30,000명+, 스킬 매핑 105,000명 (개요 표기 직원 76,000명과 불일치) [[sources/gloat-novartis-case-study-2024.md]]
 - **학습 vs RAG vs In-context**: _미공개 (not disclosed)_
 - **데이터 거버넌스**: _미공개 (not disclosed)_ — 스위스 본사 기반, GDPR 적용 환경.
 - **민감정보 처리**: _미공개 (not disclosed)_
@@ -96,38 +98,42 @@ flowchart LR
 ### D. Model (모델)
 
 - **Foundation model**: _미공개 (not disclosed)_ — Gloat 내부 AI 엔진. 구체 기술 미공개.
-- **Model 유형**: 추천 시스템, 스킬 매칭, NLP(스킬 추론).
-- **커스터마이징 기법**: ✅ **Fact** AI가 비즈니스 우선순위와 직원 희망 스킬을 결합하여 개인화 추천 생성. [[sources/gloat-novartis-case-study-2024.md]]
+- **Model 유형**: _미공개 (not disclosed)_ — 스킬 매칭 기반 마켓플레이스라는 서술만 [[sources/gloat-novartis-case-study-2024.md]]
+- **커스터마이징 기법**: _미공개 (not disclosed)_
 
 ### E. Organization & Team (조직·팀 구조)
 
-- **오너십**: HR 주도.
-- **문화 전략**: ✅ **Fact** "Unbossed" 문화 — 전통적 관리자 중심 탤런트 결정을 민주화. [[sources/gloat-novartis-case-study-2024.md]]
+- **오너십**: Talent 조직 (Global Head of Talent Markus Graf) [[sources/gloat-novartis-case-study-2024.md]] [[sources/hrdconnect-novartis-skills-2024.md]]; People Analytics 조직(Ashish Pant)은 데이터 기반 P&O 전환 담당 [[sources/myhrfuture-novartis-people-data.md]]
+- **문화 전략**: ⚠️ **자사 보고** "Unbossed" 문화 — 관리자 중심 탤런트 결정의 민주화. [[sources/gloat-novartis-case-study-2024.md]]
 - **팀 규모**: _미공개 (not disclosed)_
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-Before: _미공개 (마켓플레이스 도입 전 내부 이동률·크로스펑셔널 배정 절대값)_ → After: ⚠️ 자사 보고 참여 직원의 영구 이동 가능성 132% 향상, 크로스펑셔널 프로젝트 배정 67% 증가, 2개월 내 4년치 품질 피플 데이터 수집. Before 절대값 미공개로 132%·67%의 실제 규모 판단 불가. Tier 1·2 독립 검증 미확인.
+Before: _미공개 (마켓플레이스 도입 전 내부 이동률·크로스펑셔널 배정 절대값)_ → After: ⚠️ 자사 보고 크로스펑셔널 프로젝트 배정 67% 증가, 마켓플레이스 사용자 퇴사 가능성 73%↓·승진 가능성 51%↑. '영구 이동 가능성 132%'는 인용 소스에 없음 → _미공개_. Before 절대값 미공개로 실제 규모 판단 불가. Tier 1·2 독립 검증 미확인.
 
-- ⚠️ **자사 보고** (Novartis/Gloat 공동 케이스 스터디):
-  - 탤런트 마켓플레이스 통해 과제 수행한 직원의 조직 내 영구 이동 가능성 **132% 향상**. [[sources/gloat-novartis-case-study-2024.md]]
+- ⚠️ **자사 보고** (Gloat 고객 사례 PDF, 출처 표기 Gloat Live 2024·Josh Bersin Company 2023):
   - 크로스펑셔널 프로젝트 배정 **67% 증가**. [[sources/gloat-novartis-case-study-2024.md]]
-  - 기존 대비 2개월 내 4년치 품질 피플 데이터 수집. [[sources/gloat-novartis-case-study-2024.md]]
-  - Tier 1·2 독립 검증 미확인.
+  - Talent Match로 프로젝트에 참여한 직원은 퇴사 가능성 **73% 낮고** 승진 가능성 **51% 높음**. [[sources/gloat-novartis-case-study-2024.md]]
+  - 등록 사용자 30,000명+; 33,000 job code·105,000명 스킬 매핑. [[sources/gloat-novartis-case-study-2024.md]]
+  - '2개월 내 4년치 데이터'는 raw 미확인 → _미공개_
+  - 영구 이동 가능성 132% 향상: _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검; Gloat 블로그 별도 소스 필요)
+  - Tier 1·2 독립 검증 미확인 — HRD Connect·myHRfuture는 수치 없음 [[sources/hrdconnect-novartis-skills-2024.md]] [[sources/myhrfuture-novartis-people-data.md]]
 
 ## Governance & Risk
 
 - GDPR 적용 환경(스위스 본사 + 유럽 직원 다수). 세부 DPIA 내용 _미공개 (not disclosed)_.
-- 매니저의 탤런트 "독점" 방지 — 열린 기회 시장화로 매니저 승인 없이 직원이 직접 신청 가능한 설계.
+- 매니저 승인 절차·탤런트 독점 방지 설계 여부 _미공개 (not disclosed)_.
 
 ## Contradictions
 
-없음 (현재 기준).
+> [!contradiction] 직원 수: Gloat PDF 개요 76,000명 vs 스킬 매핑 105,000명 [[sources/gloat-novartis-case-study-2024.md]] — 집계 범위 차이로 보이나 미확인. 상태: noted.
+
+> [!note] 2026-09-27 grounding — 인용 소스 PDF에 없는 '영구 이동 가능성 132% 향상'을 _미공개_ 처리하고 raw 확인 수치(73%·51%·30,000+·33,000·105,000)를 추가. ✅ Fact 표기는 벤더 사례 기반이므로 ⚠️ 자사 보고로 재분류. HITL·매니저 승인·모델 유형 등 소스에 없는 서술은 _미공개_.
 
 ## Consulting Angle
 
 - **Unilever FLEX, Schneider Electric OTM과 삼각 비교**: 세 사례 모두 Gloat 기반 탤런트 마켓플레이스. 제약(Novartis)·FMCG(Unilever)·산업재(Schneider)라는 산업별 적용 양상 차이를 비교 분석하면 강력한 컨설팅 자료.
-- **스킬 기반 조직 전환 ROI**: 132% 이동성 향상 수치는 스킬 마켓플레이스 투자 타당성 제시 시 핵심 수치(단, 자사 보고임을 명시).
-- **Unbossed 문화와 AI**: "관리자 권한 분산 + AI 민주화" 패턴은 수직적 위계 문화의 국내 기업에 적용 시 저항이 클 수 있음 — 반면교사로 변화관리 필요성 강조에 활용 가능.
-- **데이터 가속 주장**: "2개월에 4년치 데이터" 수치는 설득력 있지만 자사 보고 수치임을 반드시 병기.
+- **스킬 기반 조직 전환 ROI**: 퇴사 가능성 73%↓·승진 가능성 51%↑·크로스펑셔널 배정 67%↑ 수치는 스킬 마켓플레이스 투자 타당성 제시 시 활용 (단, Gloat 사례 PDF 기반 자사 보고임을 명시; 132%는 소스 확보 전 인용 금지).
+- **직원 자율 등록·입소문 확산**: 30,000명+ 등록을 입소문 중심으로 달성했다는 test-and-learn 확산 방식은 수직적 위계 문화의 국내 기업 적용 시 변화관리 설계 포인트.
+- **데이터 가속 주장**: '2개월에 4년치 데이터' 등 벤더 사례 수치는 자사 보고임을 반드시 병기.

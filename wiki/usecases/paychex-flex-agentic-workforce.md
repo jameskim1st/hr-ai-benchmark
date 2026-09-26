@@ -24,10 +24,10 @@ kr_vendor: "미확인 (국내 파트너 확인 필요) — 국내 유사 시장:
 frequency: daily
 first_seen: 2026-02-26
 last_confirmed: 2026-02-26
-confidence: 0.25
-evidence_grade: C
+confidence: 0.1
+evidence_grade: D
 corroborated_by: 0
-freshness: fresh
+freshness: unverified
 depth: partial
 graded_at: 2026-09-27
 consulting_angle_status: filled
@@ -74,14 +74,39 @@ flowchart LR
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core 플랫폼**: Paychex Flex + Paycor (HCM + Payroll + WFM)
-- **AI**: 에이전틱 AI — Paycor 및 Flex 플랫폼 내장 [[sources/paychex-agentic-workforce-2026-02.md]]
-- **고객 규모**: ⚠️ 벤더 주장: 800,000 고객 (미국·유럽) [[sources/paychex-agentic-workforce-2026-02.md]]
-- 연동·배포 상세: _미공개 (not disclosed)_
+- **Core 플랫폼**: Paychex Flex + Paycor [[sources/paychex-agentic-workforce-2026-02]]
+- **AI 시스템 배치**: 에이전틱 AI — Paycor 및 Flex 플랫폼 내장 [[sources/paychex-agentic-workforce-2026-02]]
+- **고객 규모**: ⚠️ 벤더 주장: 800,000 고객 (미국·유럽) [[sources/paychex-agentic-workforce-2026-02]]
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점**: _미공개 (not disclosed)_
+- **인증·권한**: _미공개 (not disclosed)_
 
-### C~E. Data / Model / Organization
+### C. Data (데이터)
 
-- _미공개 (not disclosed)_
+- **입력 데이터 소스**: 타임카드, 근무시간 제한·휴식·공정근무 규칙, 과거 PTO 데이터 ⚠️ 벤더 주장 [[sources/paychex-agentic-workforce-2026-02]]
+- **데이터 규모**: _미공개 (not disclosed)_
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context 구분**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: _미공개 (not disclosed)_
+- **민감정보 처리**: _미공개 (not disclosed)_
+
+### D. Model (모델)
+
+- **Foundation model**: _미공개 (not disclosed)_
+- **Model 유형**: 타임카드 임계값 스코어링(분류) + 규칙 기반 교대 최적화 + PTO 패턴 분석(예측) ⚠️ 벤더 주장 [[sources/paychex-agentic-workforce-2026-02]]
+- **제공 방식**: 플랫폼 내장 기능 [[sources/paychex-agentic-workforce-2026-02]]
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: 이상 타임카드는 사람 검토 [[sources/paychex-agentic-workforce-2026-02]]; 임계값 설정·감사 세부 _미공개_
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: Paychex 벤더 제품 — 고객사(SMB 중심) HR·매니저가 운영 주체 (고객별 상이)
+- **참여 역할**: _미공개 (not disclosed)_
+- **팀 규모·기간**: _미공개 (not disclosed)_
+- **거버넌스 체계**: _미공개 (not disclosed)_
+- **파트너**: _미공개 (not disclosed)_
 
 ## Impact / Metrics (기대효과)
 
@@ -92,7 +117,7 @@ flowchart LR
 | 지표 | 값 | 출처 | 성격 |
 |---|---|---|---|
 | 고객 수 | **800,000** | Paychex 공식 | ⚠️ 벤더 주장 |
-| WFM 자동화 ROI | **$12.24/달러** | Nucleus Research | ✅ Fact (독립 리서치, 단 산업 일반치) |
+| WFM 자동화 ROI | **$12.24/달러** | Nucleus Research (Paychex 보도자료 전달) [[sources/paychex-agentic-workforce-2026-02]] | ⚠️ 벤더 전달 (산업 일반치, Paychex 특정 아님; 원 리서치 미확보) |
 | 타임시트 자동 승인 | 정상 자동 → 이상만 사람 검토 | Paychex 공식 | ⚠️ 벤더 주장 |
 
 **고객별 outcome (처리 시간 단축률·오류 감소율 등)은 _미공개 (not disclosed)_. stage: announced.**
@@ -102,12 +127,18 @@ flowchart LR
 - Agentic(자율) 타임시트 승인: **자동 승인 임계값 설정**이 핵심 — 과도한 자율은 급여 오류 리스크
 - Auto-Shifts: 공정근무법(fair workweek) 규제가 지역마다 다름 → 규칙 엔진의 지역별 업데이트 필요
 
+## Contradictions
+
+_없음._
+
+> [!note] 2026-09-27 grounding — 인용 소스는 BusinessWire 보도자료 1건이며 raw 스냅샷 미확보(unavailable) — 수치는 source 페이지 요약에만 근거. C·D·E 섹션을 스키마 순서로 추가(소스에 없는 항목은 _미공개_). Nucleus Research ROI는 벤더 보도자료 경유이므로 ✅ Fact → ⚠️ 벤더 전달로 조정.
+
 ## Consulting Angle
 
 ### 활용 포인트
 - **"Agentic HR" 개념의 Total Rewards 적용 사례**: 단순 추천(recommend)을 넘어 자동 승인(autonomous)까지 가는 에이전틱 AI의 실용적 예시
 - **SMB 시장의 AI 급여 자동화 트렌드**: ADP Assist(대기업) vs Paychex(SMB) 비교 프레임
-- **Nucleus Research ROI $12.24**: 급여·WFM 자동화 투자 정당화 근거
+- **Nucleus Research ROI $12.24**: 급여·WFM 자동화 투자 정당화 근거 — 단 Paychex 보도자료 경유 산업 일반치이므로 원 리서치 확인 후 인용
 
 ### 한국 적용
 - 국내 중소기업 급여·근태 자동화: 플렉스(flex)·시프티(Shiftee) 등이 유사 시장

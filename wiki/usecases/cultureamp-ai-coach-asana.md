@@ -121,6 +121,10 @@ flowchart LR
 - 성과 리뷰에 AI가 개입하는 것에 대한 직원 수용성 이슈
 - GDPR·개인정보 처리: _미공개 (not disclosed)_
 
+## Contradictions
+
+_없음._ (단일 벤더 소스 — 교차 검증 소스 없음)
+
 ## Consulting Angle
 
 ### 활용 포인트

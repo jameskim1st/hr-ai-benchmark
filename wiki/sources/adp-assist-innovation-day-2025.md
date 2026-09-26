@@ -2,10 +2,15 @@
 title: "ADP Assist — AI Payroll Anomaly Detection & GenAI Features (Innovation Day 2025)"
 url: "https://mediacenter.adp.com/2025-09-03-ADP-Unveils-AI-Features-Built-for-HRs-Biggest-Challenges-at-Innovation-Day-2025"
 url_secondary: "https://www.techtarget.com/searchhrsoftware/news/366570019/ADP-deploys-GenAI-for-payroll-HR-customer-service"
-tier: 2
-source_type: vendor_announcement
+tier: 3
+raw: raw/vendors/2025-09-03-adp-assist-innovation-day.md
+snapshot_quality: full
+publisher: ADP
+independent: false
+source_type: vendor
 ingested_at: 2026-04-12
 supports: [adp-assist-payroll-ai]
+tier_note: "2026-09-27 정정: 벤더 자체 발표 자료 → tier 3"
 ---
 
 ## Summary
@@ -43,3 +48,14 @@ None found in public sources as of 2026-04-12. The 30-min/cycle figure is attrib
 - **Vendor**: ADP (payroll + HCM, US-headquartered, 80,000+ enterprise clients)
 - **Products**: ADP Assist, Workforce Now, ADP Global Payroll, Lyric HCM
 - **Category**: Total Rewards — Payroll Operations / Payroll Execution
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "Early adopters report saving up to 30 minutes per payroll cycle through proactive error prevention."
+> — 뒷받침: payroll cycle당 최대 30분 절감 (⚠️ 벤더 주장, 고객 미공개)
+
+> "New anomaly detection and resolution capabilities automatically identify inconsistencies or deviations in payroll data to uncover potential payroll mistakes and suggest corrections for HR practitioners to review and approve."
+> — 뒷받침: 급여 anomaly 탐지 + human-in-the-loop 승인
+
+> "Users can now ask questions conversationally and get immediate answers, charts, insights, and presentation-ready reports."
+> — 뒷받침: Conversational analytics

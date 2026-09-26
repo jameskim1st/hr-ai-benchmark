@@ -3,14 +3,14 @@ title: "IBM Watson Recruitment — bias-mitigated candidate matching"
 slug: ibm-watson-recruitment
 primary_category: Talent Acquisition
 subcategory: Screening & Assessment
-tags: [watson-recruitment, candidate-matching, bias-mitigation, ibm, screening, success-prediction]
+tags: [watson-recruitment, bias-mitigation, ibm, screening]
 company: IBM
 industry: [tech, it-services]
 region: [global]
 employee_class: [all]
 vendor: [IBM]
 vendor_type: [internal-build]
-output: "후보자별 requisition 대비 success score (gender·race·age·ethnicity 억제) + recruiter용 ranked shortlist + supporting factor 설명 (84% prediction 정확도 벤더 주장)"
+output: "⚠️ 벤더 주장: Adverse Impact Analysis — 조직의 과거 채용 데이터에서 연령·성별·인종·학력·이전 고용주 관련 편향 사례 식별 (HR이 채용 트렌드 편향 제거에 활용). 후보자 success score·ranked shortlist는 인용 소스 미확인"
 ai_tech_type: [predictive]
 ai_tech_subtype: [clustering-classification, recommendation-ranking, prediction]
 stage: production
@@ -28,7 +28,7 @@ confidence: 0.45
 evidence_grade: B
 corroborated_by: 1
 freshness: fresh
-depth: partial
+depth: stub
 graded_at: 2026-09-27
 consulting_angle_status: filled
 sources: [sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09.md]
@@ -40,90 +40,83 @@ related_vendors: []
 
 ## Summary
 
-IBM Watson Recruitment — 2018 productized 후보자 매칭 AI. 정형·비정형 데이터 + soft trait으로 requisition 대비 score 산출. **gender·race·age·ethnicity 억제** bias mitigation 내장. requisition 복잡도와 ideal-match profile flag. ⚠️ 벤더 주장: 84% success prediction 정확도, 35% time-to-fill 감소, 50% turnover 감소, 30% recruitment efficiency 향상, 미국 underrepresented minority 채용 3년간 20% 증가.
+IBM Watson Recruitment — 2018-09 **Adverse Impact Analysis** 기능 출시: 조직의 과거 채용 데이터를 분석해 연령·성별·인종·학력·이전 고용주 관련 편향 사례를 식별, HR이 채용 트렌드의 편향을 제거하도록 지원 [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]. ⚠️ 벤더 주장(보도자료, TechRepublic 전달): BuzzFeed·H&R Block이 이미 사용; hiring manager는 이력서당 약 6초만 검토 [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]. 기존 페이지의 "성공 예측 정확도·time-to-fill·turnover·효율·hire quality·underrepresented minority 채용 개선율(퍼센트 수치 6종)"와 "gender·race·age 억제 success score·soft trait·LinkedIn/소셜 데이터"는 인용 소스에 없어 _미공개_ 처리 (2026-09-27 grounding 점검). 제품은 이후 IBM HR 포트폴리오에서 사실상 사라져 현재 status 불확실.
 
 ## Problem / Why (도입 배경)
 
-- **Before**: recruiter 수동 screening 시 무의식적 bias + volume 한계
-- **Pain point**: high-volume 채용에서 quality·diversity·speed 동시 달성 어려움
-- **Trigger**: 2014-2018 Amazon biased model 사건 등 industry bias 우려 부상
+- **Before (baseline)**: ⚠️ 벤더 주장: hiring manager가 특정 포지션에 하루 수백 건 지원을 받고 이력서당 약 6초 검토 → 분석·AI 없이 강한 결정이 어렵고 무의식적 편향 발생 [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]
+- **Pain point**: 채용 트렌드에 내재된 편향(연령·성별·인종·학력·이전 고용주) [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]
+- **Trigger**: _미공개 (not disclosed)_ — 기존 "Amazon biased model 사건" 서술은 소스에 없음. 맥락: IBM 자체가 ProPublica 보도(40세 이상 20,000명+ 해고 주장) 관련 소송 중이었음 [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]
 
 ## Solution Architecture
 
 ### A. Process (프로세스)
 
-- **Before**: recruiter가 이력서 manual review → shortlist → 매니저 검토
-- **After**:
-  1. requisition 등록 → Watson이 자동 복잡도·ideal-profile 분석
-  2. 후보자 지원 시 정형/비정형(이력서·LinkedIn·소셜) + soft trait 분석
-  3. requisition 대비 success score 산출 (gender·race·age·ethnicity 억제)
-  4. recruiter에게 ranked shortlist + supporting factor 제공
-  5. recruiter 검토·매니저 면접 진행
-- **HITL**: recruiter shortlist 검토, 매니저 최종 결정
-- **Scope**: recommend-only
-
-### B/C/D. System
-
-- IBM Watson 기반 (Watson Talent suite 일부)
-- 외부 productized — 다수 IBM 고객 도입
-- 데이터: 이력서·JD·과거 채용 outcome
-- 모델: ML classifier + NLP + bias suppression
-
-### E. Organization
-
-- IBM Talent Group + Watson Recruitment 제품 팀
+- **Before**: recruiter·hiring manager가 이력서를 수동 검토 (이력서당 약 6초) [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]
+- **After** (⚠️ 벤더 주장 [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]):
+  1. Adverse Impact Analysis가 조직의 과거 채용 데이터를 분석
+  2. 연령·성별·인종·학력·이전 고용주 관련 편향 사례 식별
+  3. HR이 채용 트렌드의 편향을 제거하고 향후 회피
+  4. 후보자 scoring·ranked shortlist: _미공개 (not disclosed)_ — 인용 소스에 없음
+- **HITL**: HR 전문가가 분석 결과를 활용 [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]; 세부 _미공개_
+- **Scope**: 분석·인사이트 제공 (recommend) [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: ✅ IBM Watson Talent suite의 일부 — IBM 자체 HRIS 또는 외부 ATS와 연동
-- **AI 시스템 배치**: ✅ IBM 외부 productized SaaS (다수 IBM 고객 도입)
-- **배포 환경**: ✅ IBM Cloud (당시 Watson 표준 인프라)
-- **연동·통합**: 외부 ATS·HRIS와 API/feed (구체 고객별 상이)
-- **사용자 접점**: recruiter web UI — ranked shortlist + supporting factor
-- **인증·권한**: 기업 SSO + RBAC
+- **Core HRIS**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: IBM Watson Recruitment (외부 판매 제품 — BuzzFeed·H&R Block 사용) [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점**: _미공개 (not disclosed)_
+- **인증·권한**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: ✅ 정형 (이력서·JD·과거 outcome) + 비정형 (LinkedIn·소셜) + soft trait
-- **데이터 규모**: _미공개_ (IBM + 고객사별)
-- **전처리·정제**: ✅ gender·race·age·ethnicity 억제 (bias mitigation 내장)
-- **학습 vs RAG vs In-context**: ML supervised (과거 채용 outcome 라벨)
-- **데이터 거버넌스**: ✅ protected attribute 억제 design — 미국 EEOC·NYC LL144 우선
-- **민감정보 처리**: ✅ 디자인 단계부터 보호변수 분리
+- **입력 데이터 소스**: 조직의 과거 채용 데이터(historical hiring data) [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]; LinkedIn·소셜·soft trait 데이터는 _미공개 (not disclosed)_
+- **데이터 규모**: _미공개 (not disclosed)_
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context**: ⚠️ 벤더 주장: "AI trained with unbiased data" [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]] — 방식 세부 _미공개_
+- **데이터 거버넌스**: _미공개 (not disclosed)_
+- **민감정보 처리**: 연령·성별·인종 등 보호 속성을 편향 식별에 사용 [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]; 억제(suppression) 설계 여부 _미공개_
 
 ### D. Model (모델)
 
-- **Foundation model**: ✅ IBM Watson NLP + ML classifier (2018 — pre-LLM era)
-- **모델 유형**: ✅ predictive (success prediction·ranking) + classifier (적합도)
-- **제공 방식**: ✅ IBM 자체 호스팅 (Watson Cloud)
-- **커스터마이징 기법**: 과거 채용 데이터 학습, requisition 복잡도 분석
-- **Orchestration 프레임워크**: _미공개_
-- **평가·가드레일**: ✅ protected attribute 억제. ⚠️ 모델 age (2018) — LLM 시대 후 fit 약화. ⚠️ "soft trait" explainability 부족
+- **Foundation model**: _미공개 (not disclosed)_ (2018 Watson — pre-LLM)
+- **모델 유형**: 편향 식별 분석(adverse impact analysis) [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]; 예측 scoring 여부 _미공개_
+- **제공 방식**: IBM Watson 제품 [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]; 호스팅 세부 _미공개_
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: _미공개 (not disclosed)_ — 정확도·검증 수치 소스에 없음
 
+### E. Organization
+
+- **오너십**: IBM (제품) [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]; 고객사 측 조직 _미공개_
+- **참여 역할·팀 규모**: _미공개 (not disclosed)_
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-bias-mitigated screening으로 채용 효율·다양성 동시 향상 (벤더 주장).
+⚠️ 기대효과 수치 미공개 — 인용 소스에는 정량 성과가 없음. 벤더 주장은 "ability alone 기반 선발", "더 다양하고 포용적인 직장" 등 정성 효과 [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]].
 
-- ⚠️ 벤더 주장:
-  - success prediction 정확도: 84%
-  - time-to-fill: -35%
-  - turnover: -50%
-  - recruitment efficiency: +30%
-  - YoY hire quality: +10% (2020)
-  - US underrepresented minority hire: +20% over 3 years
+- ⚠️ 벤더 주장 (정성): 편향 없는 선발, 다양성·포용성 향상 [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]
+- 기존 정량 수치(정확도·time-to-fill·turnover·효율·hire quality·다양성 채용 퍼센트 6종): _미공개_ — 인용 소스에 없음. 유일한 벤더 자료(Workday 호스팅 PDF 'IBM Watson Talent: The Business Case for AI in HR')는 미스냅샷
+- 도입 고객: BuzzFeed, H&R Block (⚠️ 벤더 주장) [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]
 
 ## Governance & Risk
 
-- ✅ 디자인 단계부터 protected attribute 억제 — 미국 EEOC·NYC LL144 대응 우선
-- ⚠️ 모든 metric ⚠️ 벤더 주장 — 독립 검증 부재
-- ⚠️ 모델 age (2018) — current Workday/Eightfold/SAP 대비 LLM 시대 후 fit 약화 가능
-- ⚠️ "soft trait" 분석의 explainability 부족
+- ✅ 편향 식별 대상 속성 명시: 연령·성별·인종·학력·이전 고용주 [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]
+- ⚠️ 모든 효과 주장은 벤더 보도자료 경유 — 독립 검증 부재
+- ⚠️ IBM 자체가 연령차별 소송 대상이었다는 아이러니 [[sources/techrepublic-ibm-watson-recruitment-adverse-impact-2018-09]]
+- ⚠️ 모델 age (2018) — 제품 현재 status 불확실
+- 규제 노출: 채용 데이터 분석·선별 관여 → AI 기본법 고영향 AI(채용)·EU AI Act Annex III 4(a)
+
+## Contradictions
+
+> [!note] 2026-09-27 grounding — 유일한 인용 소스(TechRepublic 2018-09-24) raw에 "성공 예측 정확도", "time-to-fill·turnover·효율·hire quality·다양성 채용 퍼센트 성과", "success score·ranked shortlist", "LinkedIn·소셜·soft trait 입력", "requisition 복잡도 분석", "IBM Cloud", "EEOC·NYC LL144", "SSO+RBAC", "Watson Talent suite", "Amazon 사건 trigger" 서술이 없어 삭제·_미공개_ 처리. 2번째 소스 미확보 — 벤더 PDF 스냅샷은 /hr-research 대상.
 
 ## Consulting Angle
 
 - **KR 적용 1순위 — bias-mitigation reference**: 한국 AI 기본법(2026) 채용 AI 의무 + 채용절차법 강화 + ESG 공시 압력에 정합. 마이다스 inAIR 한국 선두 dominance 대응 시 IBM Watson Recruitment의 "protected attribute 억제 design"을 비교 슬라이드 reference
-- **반면교사**: 84%·35% 등 모든 수치 ⚠️ 벤더 주장으로 표기 — KR 컨설팅 제안서 인용 시 "벤더 자체 발표" 명시 필수
+- **반면교사**: 정량 성과 수치는 현재 _미공개_ (인용 소스에 없음) — KR 컨설팅 제안서에는 편향 식별 기능(정성)만 인용하고 "벤더 자체 발표" 명시 필수
 - **모델 age 검증**: 2025-26 WatsonX 시대 후 reposition 여부 — Watson Recruitment의 watsonx Orchestrate TA Agent 통합 진행 (별도 use case)
-- **글로벌 KR 자회사 채용**: 미국 underrepresented minority 채용 20% 증가는 KR 대기업 글로벌 채용 다양성 reference
+- **글로벌 KR 자회사 채용**: 다양성 성과 수치는 _미공개_ — 확보 시 KR 대기업 글로벌 채용 다양성 reference로 활용

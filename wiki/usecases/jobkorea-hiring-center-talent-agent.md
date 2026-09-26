@@ -46,76 +46,82 @@ related_vendors: []
 
 ## Problem / Why (도입 배경)
 
-- **Before**: 잡코리아 채용 담당자는 공고 작성·후보자 search·매칭을 별도 도구·매뉴얼 process
-- **Pain point**: 한국 채용 시장 vendor 경쟁 (사람인·잡코리아·원티드) — 차별화 압박
-- **Trigger**: 2025-10 [[wantedlab-ai-recruiting-agent]] launch + 잡코리아 시장 점유 방어
+- **Before (baseline)**: 기업의 채용 기능이 분산돼 있어 공고 등록·지원자 관리·커뮤니케이션·운영 관리를 별도로 처리 [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]]; 정량 baseline ❓ 미공개
+- **Pain point**: 채용 운영 효율화·반복 업무 부담 [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]]; 키워드 검색 중심 인재 탐색의 한계 [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]]
+- **Trigger**: _미공개 (not disclosed)_ — 기존 "원티드랩 2025-10 launch 대응" 서술은 소스에 없음; 시장 맥락은 자체 설문(65% 도입·검토) [[sources/inews24-jobkorea-ai-agent-survey-2026-04]]
 
 ## Solution Architecture
 
 ### A. Process (프로세스)
 
-- **Before**: 채용 담당자가 잡코리아에 공고 게시 → 지원자 manual review → 후보자 추천 받음
-- **After**:
-  1. 채용 담당자가 탤런트 에이전트에 자연어로 의도 입력 ("Python backend 시니어 + 핀테크 경력 + 서울")
-  2. 에이전트가 공고 맥락 분석 → 후보자 매칭 + 추천 사유
-  3. 채용 담당자가 후보자 contact·면접 진행
-  4. 통합 채용 솔루션으로 ATS 기능 흡수
-- **HITL**: 채용 담당자 최종 결정
-- **Frequency**: daily
-
-### B/C/D/E. System
-
-- 웍스피어 자체 구축
-- 잡코리아 데이터베이스 + 자체 LLM 또는 외부 API
-- 한국어 specialized
+- **Before**: 채용 담당자가 분산된 도구로 공고·지원자·커뮤니케이션 관리 [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]]
+- **After** (⚠️ 자사 보고 [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]]):
+  1. 하이어링 센터에서 채용 공고 등록 → 지원자 관리 → 커뮤니케이션 → 운영 관리를 단일 인터페이스로 처리; 복수 담당자 협업 워크스페이스
+  2. AI 기반 자동 공고 생성
+  3. 탤런트 에이전트가 채용 담당자 의도를 자연어 대화로 이해 → 공고의 요구사항·맥락 분석 → 적합 후보자 제안 + 추천 이유 제시
+  4. 채용 담당자가 후보자 contact·면접 진행 (세부 _미공개_)
+- **HITL**: 채용 담당자가 추천 이유를 보고 의사결정 [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]] — 최종 결정 주체 명시는 _미공개_
+- **Frequency**: _미공개 (not disclosed)_
+- **Scope of autonomy**: recommend (후보자 제안) [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]]
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: ✅ 잡코리아 ATS '하이어링 센터' (웍스피어 자체)
-- **AI 시스템 배치**: '탤런트 에이전트' — 하이어링 센터 내장 conversational agent
-- **배포 환경**: _미공개_ — 한국 데이터센터 추정
-- **연동·통합**: 잡코리아 후보자 DB, 공고 데이터, 지원·이력 history
-- **사용자 접점**: 채용 담당자 web UI — 자연어 chat
-- **인증·권한**: 잡코리아 기업회원 계정
+- **Core HRIS**: ✅ 잡코리아 통합 채용 솔루션 '하이어링 센터' (웍스피어 운영) [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]]
+- **AI 시스템 배치**: '탤런트 에이전트' — 잡코리아 자체 개발, 하이어링 센터에 일부 반영 [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]]
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: _미공개 (not disclosed)_ — 잡코리아 서비스 간 연계 확장 계획만 언급 [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]]
+- **사용자 접점**: 채용 담당자용 단일 인터페이스·자연어 대화 [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]]
+- **인증·권한**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: ✅ 잡코리아 후보자 DB, 공고 텍스트, 채용 담당자 의도
-- **데이터 규모**: _미공개_ — 잡코리아 누적 회원 비공개
-- **전처리·정제**: _미공개_
-- **학습 vs RAG vs In-context**: _미공개_ — 매칭 retrieval + LLM ranking 추정
-- **데이터 거버넌스**: ⚠️ KR PIPA — 후보자 동의 (잡코리아 약관 의존)
-- **민감정보 처리**: ⚠️ 차별 표현 자동 필터 _미검증_ — explainability 미공개
+- **입력 데이터 소스**: ✅ 채용 공고(요구사항·맥락), 채용 담당자 의도(자연어) [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]]; 후보자 DB 범위 _미공개_
+- **데이터 규모**: _미공개 (not disclosed)_
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: _미공개 (not disclosed)_ — 후보자 동의 절차 소스에 없음
+- **민감정보 처리**: _미공개 (not disclosed)_ — 차별 표현 필터·explainability 미공개
 
 ### D. Model (모델)
 
-- **Foundation model**: _미공개_ — 자체 LLM 또는 외부 API (OpenAI·Hyperclova X) 추정
-- **모델 유형**: LLM (conversational matching) + recommendation
-- **제공 방식**: _미공개_
-- **커스터마이징 기법**: ⚠️ 자사 보고: 한국어 specialized
-- **Orchestration 프레임워크**: _미공개_
-- **평가·가드레일**: _미공개_
+- **Foundation model**: _미공개 (not disclosed)_
+- **모델 유형**: 대화형 의도 이해 + 후보자 추천(추천 이유 생성) [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]]
+- **제공 방식**: _미공개 (not disclosed)_
+- **커스터마이징 기법**: _미공개 (not disclosed)_ — 기존 "한국어 specialized" 서술은 소스에 없음
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: _미공개 (not disclosed)_
 
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: 잡코리아(운영 법인 웍스피어, 대표 윤현준) — CPO 정승호 [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]]
+- **참여 역할**: _미공개 (not disclosed)_
+- **팀 규모·기간**: _미공개 (not disclosed)_
+- **거버넌스 체계**: _미공개 (not disclosed)_
+- **변화관리**: 일부 기업 대상 제한 오픈(2026-03-31) 후 고도화·확장 계획 [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]]
+- **파트너**: _미공개 (not disclosed)_ (자체 개발)
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 한국 ATS·채용 vendor 경쟁의 AI agent 차별화 + 시장 데이터 (65% 도입·검토)로 KR 채용 vendor 시장 기회 입증.
 
-- 2026-03 일부 기업 오픈
-- 잡코리아 자체 설문: 채용 담당자 1,286명 중 65%가 AI 채용 에이전트 도입·검토
-  - 적극 검토 13.6%
-  - 검토 48.8%
+- 2026-03-31 일부 기업 대상 오픈 [[sources/zdnet-korea-jobkorea-hiring-center-2026-03]]
+- ⚠️ 자사 설문(약 3주, 채용 담당자 1286명): 65%가 AI 채용 에이전트 도입·검토 — 검토 중 48.8%, 적극 검토 중 13.6% [[sources/inews24-jobkorea-ai-agent-survey-2026-04]]
+- 도입 기업 수·효과 수치: _미공개 (not disclosed)_
 
 ## Governance & Risk
 
-- ⚠️ 자연어 매칭의 한국어 직무·전문 용어 fit 검증 필요
+- ⚠️ 자연어 매칭의 한국어 직무·전문 용어 fit 검증 필요 (한국어 특화 여부는 소스에 없음)
 - ⚠️ "탤런트 에이전트" 후보자 추천의 차별 표현 자동 필터 _미검증_
 - ⚠️ 한국 AI 기본법 + 채용절차법 정합성 — 채용 vendor의 의무 명확화 필요
 
+## Contradictions
+
+> [!note] 2026-09-27 grounding — B~D의 "한국 데이터센터 추정", "매칭 retrieval + LLM ranking 추정", "자체 LLM 또는 외부 API(OpenAI·Hyperclova X) 추정", "한국어 specialized", "잡코리아 기업회원 계정", "후보자 DB·지원 이력 연동"과 Problem의 "원티드랩 launch 대응 trigger"는 인용 소스 2건에 없어 삭제·_미공개_ 처리. 설문 인원 표기는 원문 "1286명" 그대로 사용.
+
 ## Consulting Angle
 
-- **KR 채용 시장 vendor 경쟁 reference**:
+- **KR 채용 시장 vendor 경쟁 reference** (경쟁 구도는 컨설턴트 관점 — 인용 소스에 없음):
   - 잡코리아 '하이어링 센터' (2026-03) + 원티드 [[wantedlab-ai-recruiting-agent]] (2025-10) + 사람인 '커리어 매칭 에이전트' (2026 출시 예정) — 한국 ATS·채용 vendor 3사 AI agent 경쟁 본격화
   - 글로벌 Eightfold AI Interviewer + IBM watsonx Orchestrate TA Agent [[ibm-watsonx-orchestrate-ta-agent]]와 비교
 - **시장 데이터 인용**: 채용 담당자 65% AI agent 도입·검토 — KR 컨설팅 deck "burning platform" 데이터

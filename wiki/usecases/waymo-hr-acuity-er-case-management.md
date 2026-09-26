@@ -28,7 +28,7 @@ confidence: 0.35
 evidence_grade: C
 corroborated_by: 0
 freshness: fresh
-depth: full
+depth: stub
 graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
@@ -41,7 +41,7 @@ related_vendors: []
 
 ## Summary
 
-Waymo (Alphabet 자율주행 자회사, ~3,000명)는 HR Acuity로 ER case management를 운영. ⚠️ 자사 보고: ServiceNow 같은 범용 도구 → HR Acuity 전용 도구 전환으로 **reporting time 92% 감소**. Bruce Berrol (Head of People Relations) 인용: 일반 ticketing 도구는 ER 도메인 (grievance·discipline·investigation)을 제대로 모름 → 전용 도구 선택. Role-based access·security 강화 동기.
+Waymo (Alphabet 자율주행 자회사; 직원 수 _미공개_ — 인용 소스에 없음)는 HR Acuity로 ER case management를 운영. ⚠️ 자사 보고: 보고서 작성이 수 시간 → 10-15분으로 줄어 **reporting time 약 92% 절감** ([[sources/hr-acuity-waymo-case-study]]). Bruce Berrol (Head of People Relations): 데이터 기반 인사이트·리스크 감소가 도입 동기; 팀원 Desiree: ServiceNow 같은 전사 시스템의 보안·권한 우려 → ER 팀 소유의 전용 도구 선택 (동일 소스; 기존 'Berrol 인용'은 오귀속 — 2026-09-27 정정). Role-based access 강조.
 
 > 📌 **HR Acuity case study 단일 출처** — Tier 1·2 독립 정량 검증 0건. 92% 수치는 ⚠️ 자사 보고로 인용 시 명시 필수.
 
@@ -72,36 +72,35 @@ Waymo (Alphabet 자율주행 자회사, ~3,000명)는 HR Acuity로 ER case manag
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core platform**: HR Acuity SaaS (Waymo 도입)
-- **AI 시스템 배치**: HR Acuity 전체 (olivER AI 사용 여부는 case study에 명시 없음)
-- **연동**: HRIS·SSO (구체 미공개)
-- **Migration**: ServiceNow → HR Acuity (ER case 전용 분리)
+- **Core platform**: ✅ HR Acuity ER 전용 케이스 관리 플랫폼 (Waymo 도입) ([[sources/hr-acuity-waymo-case-study]]); Core HRIS _미공개_
+- **AI 시스템 배치**: _미공개 (not disclosed)_ — olivER AI 사용 여부는 case study에 명시 없음
+- **연동**: _미공개 (not disclosed)_
+- **Migration**: ⚠️ 자사 보고: ServiceNow 같은 전사 시스템 대신 ER 팀 소유의 전용 시스템 선택 ([[sources/hr-acuity-waymo-case-study]]); 기존 ServiceNow 사용·이관 여부 _미공개_
 
 ### C. Data (데이터)
 
-- **입력 데이터**: 직원 신고·인사 정보·과거 case (Migration된 ServiceNow case 일부 가능성)
-- **Data governance**: role-based access·security 강화
+- **입력 데이터**: ✅ ER 케이스·분석 보고 데이터 ([[sources/hr-acuity-waymo-case-study]]); 세부 _미공개_
+- **Data governance**: ✅ 역할 기반 접근 제어(role-based access)·보안·권한 관리 ([[sources/hr-acuity-waymo-case-study]])
 
 ### D. Model (모델)
 
-- **Foundation model**: HR Acuity stack (구체 모델 미공개)
+- **Foundation model**: _미공개 (not disclosed)_
 
 ### E. Organization & Team (조직·팀 구조)
 
-- **오너십**: Waymo People Relations team (Bruce Berrol Head of People Relations)
-- **거버넌스**: ER 전용 도구 도입 → audit trail·legal hold 컴플라이언스 강화
+- **오너십**: ✅ Waymo People Relations team — Bruce Berrol, Head of People Relations ([[sources/hr-acuity-waymo-case-study]])
+- **거버넌스**: ✅ ER 팀 소유 시스템 + 역할 기반 접근 제어 ([[sources/hr-acuity-waymo-case-study]]); audit trail·legal hold 서술은 소스에 없어 _미공개_
 
 ### F. Diagrams (도식)
 
 ```mermaid
 flowchart TB
-    Emp[Waymo 직원<br/>~3,000명] -->|ER 신고| HRA[HR Acuity Portal]
+    Emp[Waymo 직원] -->|ER 신고| HRA[HR Acuity Portal]
     HRA --> Class[ER Case Type 자동 분류]
     Class --> ER[People Relations Team<br/>Bruce Berrol]
     ER --> Plan[Investigation Plan<br/>ER 전용 템플릿]
     Plan --> Resolution[Case Resolution]
-    Resolution --> Audit[자동 Audit Trail<br/>SOX·legal hold]
-    Resolution --> Report[Trend·Risk·Hotspot Dashboard]
+    Resolution --> Report[분석 보고<br/>수 시간 → 10-15분]
 ```
 
 범례: 모든 연결 ⚠️ HR Acuity Waymo case study (자사 보고) 기반.
@@ -113,21 +112,28 @@ ServiceNow 같은 범용 도구 → HR Acuity 전용 도구 전환으로 reporti
 
 | 지표 | 값 | 출처 | 성격 |
 |---|---|---|---|
-| **Reporting time 감소** | **92%** | HR Acuity Waymo case study | ⚠️ 자사 보고 |
-| Migration source | ServiceNow → HR Acuity | HR Acuity case study | ⚠️ 자사 보고 |
-| Waymo 규모 | ~3,000명 (자율주행 사업부) | 외부 추정 | ✅ Fact (10-K 추정) |
+| **Reporting time 감소** | **92%** (산출 근거 미공개) | [[sources/hr-acuity-waymo-case-study]] | ⚠️ 자사 보고 |
+| 보고서 작성 시간 | 수 시간 → **10-15분** | [[sources/hr-acuity-waymo-case-study]] | ⚠️ 자사 보고 |
+| 대안 대비 선택 | ServiceNow 같은 전사 시스템 대신 ER 전용 도구 | [[sources/hr-acuity-waymo-case-study]] (Desiree 인용) | ⚠️ 자사 보고 |
+| Waymo 규모 | _미공개_ | 인용 소스에 없음 (2026-09-27 grounding 점검) | ❓ |
 | Waymo 모회사 | Alphabet | 공시 | ✅ Fact |
-| 핵심 인용 | Bruce Berrol Head of People Relations | HR Acuity case study | ✅ Fact |
+| 핵심 인용 | Bruce Berrol Head of People Relations | [[sources/hr-acuity-waymo-case-study]] | ✅ Fact |
 
 ## Governance & Risk
 
 - ⚠️ **HR Acuity 단일 출처** — Tier 1·2 독립 검증 0건. 92% 수치는 ⚠️ 자사 보고
-- ⚠️ olivER AI 사용 여부 case study에 명시 안 됨 — case management 위주 도입으로 추정
+- ⚠️ olivER AI 사용 여부 case study에 명시 안 됨 — _미공개_
 - ⚠️ Waymo 특수성:
   - 자율주행 회사 — 일반 제조·금융과 노동 환경 상이
   - SF Bay Area — 미국 노동시장 특수
-  - ~3,000명 규모 — 한국 대기업 (10K+ 규모)과 적용 차이
+  - 직원 규모 _미공개_ — 한국 대기업과 적용 차이 검토 필요
 - ⚠️ 한국 적용 시 customization 필요 (한국어·노조법·PIPA)
+
+## Contradictions
+
+_없음._
+
+> [!note] 2026-09-27 grounding — ServiceNow 관련 인용은 Berrol이 아닌 팀원 'Desiree'(직함 미상)의 발언으로 정정 ([[sources/hr-acuity-waymo-case-study]]). Waymo 직원 수, SOX·legal hold·audit trail·hotspot dashboard·HRIS/SSO 연동 서술은 소스에 없어 `_미공개_`/삭제. 92%는 산출 근거 미공개 자사 보고.
 
 ## Consulting Angle
 
@@ -139,7 +145,7 @@ ServiceNow 같은 범용 도구 → HR Acuity 전용 도구 전환으로 reporti
   - 한국 SOX·내부통제·개인정보 audit trail 요건 강함
   - Waymo는 자율주행 안전 컴플라이언스 요건 — 한국 대기업의 ESG·감사 요건과 유사
 - **한계**:
-  - Waymo 규모 (~3K) ≠ 한국 대기업 (10K+) — scale 차이
+  - Waymo 직원 규모 미공개 — scale 비교 불가
   - 자율주행 산업 특수성 — 한국 제조·금융과 적용 차이
   - Tier 1·2 독립 검증 0건 — 자사 보고 한계
 - **vs Yelp** [[yelp-hr-acuity-er-documentation]]:

@@ -29,7 +29,7 @@ confidence: 0.35
 evidence_grade: B
 corroborated_by: 1
 freshness: stale
-depth: full
+depth: partial
 graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
@@ -70,7 +70,7 @@ SK 그룹이 **2024년 하반기 신입사원 공채**부터 적용한 생성형
 
 ### A. Process (프로세스)
 
-- **Before (As-is)**: _미공개_. 일반적으로 알려진 한국 대기업 공채 플로우 (서류→인적성→코딩/필기→면접→합격 통보)는 일반 지식이며 SK 특정 프로세스는 소스에 세부 없음
+- **Before (As-is)**: _미공개 (not disclosed)_ — SK 특정 기존 프로세스는 소스에 세부 없음
 - **After (To-be)** — ⚠ 벤더 주장 ([[sk-ax-ai-recruitment-service-2024]] + [[sk-ax-insight-ai-recruitment-2024]]):
   1. **서류 지원** — 지원자가 온라인 지원
   2. **서류 심사** — 생성형 AI 자동 스크리닝 (LLM 기반, 시간당 1,000명)
@@ -108,17 +108,17 @@ _범례: 노랑 = SK AX 벤더 주장 (독립 검증 없음). 점선 = HITL 개�
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: _미공개_ — SK 그룹의 HCM 시스템 (SAP SuccessFactors·Workday·자체 구축 중 어느 것인지 소스에 없음)
-- **AI 시스템 배치**: SK AX + SKT 합작 솔루션 (별도 플랫폼)
-- **배포 환경**: _미공개_ (SK 클라우드 추정되나 미확인)
-- **연동·통합**: SK 그룹 공채 시스템·지원자 관리 시스템과 연결 (추정, 세부 미공개)
-- **사용자 접점**: SK 공식 채용 사이트 / 별도 chatbot interface (공개 없음)
+- **Core HRIS**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: ⚠️ 벤더 주장: SK AX + SKT 합작 솔루션 ([[sk-ax-ai-recruitment-service-2024]])
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점**: _미공개 (not disclosed)_
 - **인증·권한**: _미공개_
 - **SLA**: _미공개_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: 지원자 자기소개서·이력·AICT 응답
+- **입력 데이터 소스**: ⚠️ 벤더 주장: 서류(지원서)·AICT 응답·면접 답변 ([[sk-ax-ai-recruitment-service-2024]]); 세부 항목 _미공개_
 - **데이터 규모**: _미공개_ (연간 지원자 수)
 - **전처리·정제**: _미공개_
 - **학습 vs RAG vs In-context 구분**: _미공개_
@@ -127,9 +127,9 @@ _범례: 노랑 = SK AX 벤더 주장 (독립 검증 없음). 점선 = HITL 개�
 
 ### D. Model (모델)
 
-- **Foundation model**: _미공개_. SKT의 A.X LLM(한국어 특화 자체 LLM) 사용 가능성 추측 가능하나 **소스에 명시 없음** → 추측 금지
-- **모델 유형**: LLM (생성) + classification/scoring 혼합 추정되나 _미공개_
-- **제공 방식**: SK AX + SKT 플랫폼
+- **Foundation model**: _미공개 (not disclosed)_
+- **모델 유형**: ⚠️ 벤더 주장: 생성형 AI(LLM) 기반 스크리닝 ([[sk-ax-insight-ai-recruitment-2024]]); 세부 구성 _미공개_
+- **제공 방식**: ⚠️ 벤더 주장: SK AX + SKT 합작 솔루션, SaaS 형태 대외 확산 추진 ([[sk-ax-insight-ai-recruitment-2024]])
 - **커스터마이징 기법**: _미공개_
 - **Orchestration 프레임워크**: _미공개_
 - **평가·가드레일**: _미공개_. 채용 AI는 **편향·adverse impact** 리스크가 큼 — SK의 bias 감사 결과 공개 없음

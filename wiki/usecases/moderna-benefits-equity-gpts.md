@@ -24,16 +24,14 @@ kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily               # 상시 사용
 first_seen: 2025-05-22
 last_confirmed: 2025-06-12
-confidence: 0.6
-evidence_grade: A
-corroborated_by: 2
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
 freshness: stale
-depth: partial
+depth: stub
 graded_at: 2026-09-27
 consulting_angle_status: filled
-sources:
-  - sources/hr-brew-moderna-total-rewards-2025-05.md
-  - sources/hr-brew-ibm-moderna-2025-06.md          # ★ 2026-04-12 추가
+sources: [sources/hr-brew-moderna-total-rewards-2025-05.md, sources/hr-brew-ibm-moderna-2025-06.md, sources/moderna-blog-openai-2024-04.md]
 related_usecases:
   - moderna-ask-hr-routing
   - moderna-self-review-gpt
@@ -67,11 +65,11 @@ Moderna가 OpenAI Custom GPT로 구축한 **Total Rewards 영역 직원 self-ser
 
 ### A. Process (프로세스)
 
-- **Before (As-is)**: _미공개_ — 아마 HR 팀 직접 문의, 또는 기존 benefits portal의 FAQ 수준. 이 전제는 소스에 없음, 추측 금지 — 단순히 "미공개"
+- **Before (As-is)**: _미공개 (not disclosed)_ — 도입 전 문의 채널은 소스에 없음
 - **After (To-be)**: 직원이 혜택·equity 관련 질문을 GPT에 입력 → GPT가 정책·FAQ·개인 상황 반영하여 답변 → 해결되지 않으면 HR로 escalate (이 escalation 경로는 ❓ 미공개)
 - **Human-in-the-loop 지점**: _미공개._ "take action" (혜택 실제 선택)의 자동화 수준도 미공개 — 단순 Q&A만 하는지, 선택 제출까지 돕는지 불명
-- **Trigger & Frequency**: **연중 상시** (특히 enrollment 시즌·equity vesting 이벤트 시점에 피크)
-- **Scope of autonomy**: Q&A (recommend-only가 합리적 기본값이지만 공식 확인은 없음)
+- **Trigger & Frequency**: 직원 질문 발생 시 상시 (frequency: daily); 시즌별 피크 여부 _미공개_
+- **Scope of autonomy**: Q&A·선택 지원 (기능 정의 기준) — 자동 실행 여부 _미공개_
 
 ```mermaid
 flowchart LR
@@ -91,25 +89,25 @@ _범례: 녹색 = HR Brew 소스 확인. 점선 = escalation 경로 미확인._
 ### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: _미공개_
-- **AI 시스템 배치**: OpenAI ChatGPT Enterprise의 Custom GPT ([[moderna-blog-openai-2024-04]])
-- **배포 환경**: OpenAI 클라우드
-- **연동·통합**: _미공개._ Benefits enrollment 시스템·equity 플랫폼(Fidelity·Carta·Morgan Stanley 등 중 어느 것을 쓰는지)과의 연결 여부 불명
-- **사용자 접점**: ChatGPT Enterprise UI
-- **인증·권한**: _미공개_
+- **AI 시스템 배치**: OpenAI 파트너십 기반 Custom GPT (전사 3,000+ 커스텀 GPT 중 HR 관련) [[hr-brew-moderna-total-rewards-2025-05]] ([[moderna-blog-openai-2024-04]] 참조)
+- **배포 환경**: OpenAI 클라우드 (Custom GPT) [[hr-brew-moderna-total-rewards-2025-05]]; 세부 _미공개_
+- **연동·통합**: _미공개 (not disclosed)_ — benefits enrollment·equity 플랫폼 연결 여부 불명
+- **사용자 접점**: _미공개 (not disclosed)_
+- **인증·권한**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: Moderna의 benefits plan 문서·FAQ·정책 가이드 (RAG로 제공될 것으로 보이나 공개 없음)
+- **입력 데이터 소스**: _미공개 (not disclosed)_ — benefits plan·equity 프로그램 정보를 어떤 형태로 제공하는지 공개 없음
 - **데이터 규모**: _미공개_
 - **전처리·정제**: _미공개_
-- **학습 vs RAG vs In-context 구분**: _미공개._ Custom GPT의 지식파일 기능을 쓰는 것이 통상 경로이나 Moderna 특정 구현 공개 없음
+- **학습 vs RAG vs In-context 구분**: _미공개 (not disclosed)_ — Moderna 특정 구현 공개 없음
 - **데이터 거버넌스**: _미공개_
 - **민감정보 처리**: _미공개._ 직원의 개인 equity 소유·vesting 일정이 노출되면 안 되는 민감 data — 이를 GPT에 넘기지 않는 방식으로 설계되는지 확인 불가
 
 ### D. Model (모델)
 
-- **Foundation model**: OpenAI GPT 계열 (ChatGPT Enterprise)
-- **커스터마이징**: Custom GPT 기능
+- **Foundation model**: OpenAI 모델 (OpenAI 파트너십 기반 Custom GPT) [[hr-brew-moderna-total-rewards-2025-05]]; 버전 _미공개_
+- **커스터마이징**: Custom GPT 기능 [[hr-brew-moderna-total-rewards-2025-05]]; 구성 세부 _미공개_
 - **평가·가드레일**: _미공개._ **Benefits·equity는 regulated·semi-regulated 영역** (IRS·SEC 규정) — 잘못된 답변의 법적 리스크 존재. Moderna의 guardrail·disclaimer 정책 **공개 없음**
 - **기타**: 전부 미공개 (성능·비용·fallback 등)
 
@@ -151,7 +149,10 @@ Before: _미공개 (기존 benefits/equity 관련 이메일·티켓 건수)_ →
 - **편향**: Benefits 선택은 개인 가정 상황·건강 정보와 얽힘. LLM의 추천이 성별·연령·가족상태에 따라 달라질 위험 — 감사 없음
 
 ## Contradictions
-_없음 — 단일 소스_
+
+_없음 — 단일 소스._
+
+> [!note] 2026-09-27 grounding — 소스에 없는 '아마 HR 팀 직접 문의'·'통상 경로'·RAG 추정·ChatGPT Enterprise UI 접점 서술을 _미공개_로 정리. 두 HR Brew 소스 모두 원문 fetch 실패(403)로 WebSearch 요약 기반 — 인용 정확도 한계.
 
 ## Consulting Angle
 

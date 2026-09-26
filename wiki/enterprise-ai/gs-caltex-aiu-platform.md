@@ -38,25 +38,27 @@ related_vendors: []
 
 ## Summary
 
-GS칼텍스 임직원 전용 생성형 AI 통합 플랫폼 **'AIU'** 오픈 (2025). 안전·편리한 실무 활용 환경 구축이 도입 명분. 정유·에너지 기업 사내 AI 플랫폼 사례.
+GS칼텍스 사내 생성형 AI 통합 플랫폼 **'AIU'** 오픈 (2025-07-08). GS그룹 공통 AX 플랫폼 '미소(MISO)' 기반, 노코드·로우코드로 임직원이 직접 AI 에이전트를 만들고 공유. 디지털 전환 가속화가 도입 명분. [[sources/gscaltex-mediahub-aiu-platform-2025-07.md]] 정유·에너지 기업 사내 AI 플랫폼 사례.
 
 ## Problem / Why (도입 배경)
 
-- **Before**: GS칼텍스 ~3K 직원이 정유·안전 매뉴얼·정책을 manual search
-- **Pain point**: 정유 산업 안전 critical + 매뉴얼 양 거대
-- **Trigger**: 2025 한국 기업 사내 AI 플랫폼 가속
+- **Before**: ❓ baseline 미공개 (직원 규모·기존 업무 방식 — 수치 근거 미확보, 2026-09-27 grounding 점검). ⚠️ 자사 보고: 전문 개발자가 앱 하나를 만드는 데 한 달 소요. [[sources/gscaltex-mediahub-aiu-platform-2025-07.md]]
+- **Pain point**: ⚠️ 자사 보고: 디지털 기술 전문성이 없는 임직원도 AI 에이전트를 직접 개발·공유할 수 있게 하는 것 (DAX 전략의 디지털 전환 가속). [[sources/gscaltex-mediahub-aiu-platform-2025-07.md]]
+- **Trigger**: ❓ 미공개 — 소스는 "디지털 전환 가속화"만 언급. [[sources/gscaltex-mediahub-aiu-platform-2025-07.md]]
 
 ## Solution Architecture
 
 ### A. Process (프로세스)
 
-- **After**: AIU 플랫폼 → 직원 자연어 query → 안전·실무 정보 응답
-- **HITL**: 직원 자율
-- **Frequency**: daily
+- **After**: ⚠️ 자사 보고: 임직원이 AIU에서 노코드·로우코드 도구로 AI 에이전트를 직접 개발 → 플랫폼 내 공유 → 다른 직원이 사용·수정. [[sources/gscaltex-mediahub-aiu-platform-2025-07.md]]
+- **HITL**: _미공개 (not disclosed)_
+- **Frequency**: _미공개 (not disclosed)_
 
 ### B/C/D. System
 
-- vendor·모델 _미공개_ (자사 보고만)
+- **기반 플랫폼**: ✅ GS그룹 공통 AX 플랫폼 '미소(MISO)' 기반 개발. [[sources/gscaltex-mediahub-aiu-platform-2025-07.md]]
+- **데이터**: ⚠️ 자사 보고: 회사 데이터를 외부 AI에 올리지 않고 활용. [[sources/gscaltex-mediahub-aiu-platform-2025-07.md]]
+- **Foundation model·vendor**: _미공개 (not disclosed)_
 
 ## Impact / Metrics (기대효과)
 

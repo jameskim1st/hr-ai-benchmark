@@ -2,7 +2,10 @@
 title: "Walmart's AI Revolution: People-Led, Tech-Powered"
 url: https://www.shrm.org/topics-tools/flagships/ai-hi/walmart-ai-revolution
 tier: 2
-source_type: article
+raw: raw/articles/2025-shrm-walmart-ai-revolution.md
+snapshot_quality: partial
+independent: true
+source_type: media
 publisher: SHRM
 published: 2025
 ingested_at: 2026-04-12

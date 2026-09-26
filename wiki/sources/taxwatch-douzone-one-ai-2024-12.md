@@ -1,8 +1,11 @@
 ---
 title: "더존비즈온이 알려주는 'AI 연말정산' 활용법은 — 택스워치"
 url: https://www.taxwatch.co.kr/article/tax/2024/12/10/0001
-source_type: kr-media
+source_type: media
 tier: 2
+raw: raw/articles/2024-12-10-taxwatch-douzone-one-ai.md
+snapshot_quality: llm-extracted
+independent: true
 publication_date: 2024-12-10
 author: 강지선 (zsun11@taxwatch.co.kr)
 publisher: 택스워치
@@ -73,3 +76,14 @@ supports: [douzone-one-ai-year-end-tax]
 - **한국 Total Rewards AI의 첫 fact-rich reference** — I-1 info item (한국 카테고리 확장) 해결의 시작
 - **"연말정산 AI"**라는 매우 국지적인 use case는 글로벌 벤더는 다루지 않아 **국내 벤더의 진짜 moat**
 - 컨설팅 프로젝트에서 "한국 기업의 HR AI 로드맵"에 반드시 포함되어야 할 영역
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "더존비즈온의 ONE AI는 복잡하고 번거로웠던 연말정산을 원스톱으로 해결할 수 있도록 돕는다. 연말정산 대상자 선정부터 안내, 자료 입력, 검토, 결과 안내까지 모든 과정을 ONE AI가 지원한다. AI를 통한 데이터 검증 및 세법 상담, 세금 공제 기회도 한눈에 살펴볼 수 있다."
+> — 뒷받침: ONE AI 기능 범위 (⚠️ 벤더 주장 전달)
+
+> "연말정산을 진행하는 직원들은 더존비즈온 플랫폼을 통해 간편 인증만으로 홈택스에 접속하지 않고도 국세청 간소화 자료(PDF)를 자동으로 다운로드해 반영할 수 있다."
+> — 뒷받침: 국세청 간소화 자료 자동 반영
+
+> "이번 행사는 오는 16일(수원·화성·대전·창원·부산)을 시작으로 17일(서울·성남·천안·광주·부산), 18일(인천·전주·대구), 19일(서울·안양·안산), 20일(서울·울산) 등 전국 15개 지역에서 총 32회에 걸쳐 무료로 진행된다."
+> — 뒷받침: 세미나 15개 지역 32회

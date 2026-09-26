@@ -28,7 +28,7 @@ confidence: 0.15
 evidence_grade: C
 corroborated_by: 0
 freshness: stale
-depth: full
+depth: partial
 graded_at: 2026-09-27
 sources:
   - sources/enboarder-zapier-onboarding-2022.md
@@ -76,22 +76,22 @@ flowchart LR
 ### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: _미공개 (not disclosed)_
-- **AI 시스템 배치**: Enboarder SaaS (클라우드)
-- **배포 환경**: 클라우드; 30개국 원격 직원 대상
-- **연동·통합**: SmartRecruiters (2025-09 파트너십 — 지원자 수락 시 Enboarder 자동 개시); 기타 시스템 미공개
-- **사용자 접점**: 이메일, 슬랙·메신저 (구체 채널 미공개), 웹 포털
-- **2025 업데이트**: AI-native 온보딩 플랫폼으로 진화 — AI Journey Builder, New Hire AI Assistant 추가
+- **AI 시스템 배치**: ✅ Enboarder 자동화 플랫폼 ([[sources/enboarder-zapier-onboarding-2022]])
+- **배포 환경**: _미공개 (not disclosed)_ — Zapier는 100% 원격·30개국 분산 ([[sources/enboarder-zapier-onboarding-2022]])
+- **연동·통합**: SmartRecruiters 파트너십(2025-09) — 소스 페이지 기재, raw(2022 기사)에는 없음 ([[sources/enboarder-zapier-onboarding-2022]]); 기타 시스템 _미공개_
+- **사용자 접점**: ✅ Slack 등 메신저 넛지 ([[sources/enboarder-zapier-onboarding-2022]]); 이메일·웹 포털 여부 _미공개_
+- **2025 업데이트**: _미공개 (not disclosed)_ — AI Journey Builder·New Hire AI Assistant 서술은 인용 소스에 없어 삭제 (2026-09-27 grounding 점검)
 
 ### C. Data (데이터)
 
-- **입력**: 신규 입사자 프로필, 역할·팀 정보, 온보딩 체크리스트 완료 여부, 관리자 액션 이력
-- **데이터 규모**: Zapier ~800명 규모; 완료 현황 자동 집계
+- **입력**: ✅ 온보딩 태스크·관리자 액션·신규 입사자 서베이 응답 ([[sources/enboarder-zapier-onboarding-2022]]); 세부 _미공개_
+- **데이터 규모**: Zapier ~800명 규모 (소스 페이지 기재) ([[sources/enboarder-zapier-onboarding-2022]])
 - **거버넌스**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
 - **Foundation model**: _미공개 (not disclosed)_ — Enboarder AI 모델 아키텍처 미공개
-- **2025 AI 기능**: AI Journey Builder (여정 자동 생성), New Hire AI Assistant (질의응답)
+- **2025 AI 기능**: _미공개 (not disclosed)_ — 인용 소스에 없음
 
 ### E. Organization & Team (조직·팀 구조)
 
@@ -124,7 +124,9 @@ Enboarder 추가 집계 데이터 (미명 고객):
 
 ## Contradictions
 
-없음. (케이스 스터디 2022년 기준; 2025년 AI 기능 추가 후 업데이트 데이터 미공개)
+_없음._ (케이스 스터디 2022년 기준; 2025년 AI 기능 추가 후 업데이트 데이터 미공개)
+
+> [!note] 2026-09-27 grounding — B/C/D의 이메일·웹 포털 접점, AI Journey Builder·New Hire AI Assistant, 입력 데이터 항목 서술은 인용 소스에 없어 `_미공개_`. SmartRecruiters 파트너십·~800명·Deloitte 등 고객 목록은 소스 페이지 기재 사항(raw 2022 기사 외 보조 정보).
 
 ## Consulting Angle
 

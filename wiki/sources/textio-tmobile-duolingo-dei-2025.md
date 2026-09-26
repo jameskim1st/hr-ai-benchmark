@@ -3,7 +3,11 @@ title: "Textio AI Inclusive Language — T-Mobile & Duolingo Case Studies"
 url: "https://textio.com/resources/case-studies"
 url_secondary: "https://explore.textio.com/case-study-t-mobile"
 tier: 3
-source_type: vendor_case_study
+raw: raw/vendors/2026-09-27-textio-case-studies.md
+snapshot_quality: full
+publisher: Textio
+independent: false
+source_type: vendor
 ingested_at: 2026-04-12
 supports: [t-mobile-textio-dei-hiring]
 ---
@@ -55,3 +59,16 @@ Textio published two named customer case studies with specific metrics: T-Mobile
 - **Vendor**: Textio (AI inclusive language platform)
 - **Customers**: T-Mobile (telecom, 9,000+ hiring managers), Duolingo (edtech), Zendesk, Checkout.com (named, no metrics)
 - **Category**: DEI — Sourcing & Attraction / Screening / JD generation
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "Duolingo enhances its recruiting language with Textio, achieving higher inclusion scores, standardized job postings, and improved talent branding to attract diverse candidates."
+> — 뒷받침: Duolingo 사례 요약 (수치 없음)
+
+> "Zillow Group applies Textio's language guidance and sees 16% more email responses, 1.5x more qualified candidates, and 12% more women applicants."
+> — 뒷받침: 16%/1.5x/12% — Zillow 사례 (플랫폼 aggregate 아님)
+
+> "Managers at Velera use Textio Feedback to write performance reviews twice as fast and boost feedback quality by 67%."
+> — 뒷받침: Velera 사례
+
+⚠️ raw 스냅샷(textio.com/resources/case-studies)은 사례 목록 페이지로 T-Mobile 사례·+17%·5 days 수치가 없음 (url_secondary 필요). 16%/1.5x/12%는 Zillow 사례 수치임 (2026-09-27).

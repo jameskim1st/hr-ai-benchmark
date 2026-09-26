@@ -761,3 +761,35 @@ Format: `## [YYYY-MM-DD] <operation> | <one-line description>`
 - unilever-hirevue-pymetrics-recruitment (2025 GenAI 피드백 추가)
 - unilever-horizon3-labs-ai-rd
 - unilever-google-cloud-agentic-ai
+
+## [2026-09-27] refactor | 시스템 전면 점검 후 스키마 v2 전환 (Phase 0~3 일괄 실행) | touched: 전체
+
+### 컨텍스트
+사용자 요청: 2026-04 구축 이후 첫 전면 점검 + "로드맵 전체 실행". 점검 리포트 [[system-review-2026-09-27]], 외부 동향 [[llm-wiki-landscape-2026-09]].
+
+### 구조 변경
+- 페이지 유형 분리: usecases(HR 사례) / enterprise-ai(전사 GenAI 15건, 카운트 제외) / reference(법령·리포트 4건)
+- 중복 병합 3쌍: textio→t-mobile-textio-dei-hiring, hitachi-ema→hitachi-skye-hr-ai-assistant, jpmorgan-goldman 합본→jpmorgan-llm-suite-redeployment(+goldman, industry-region-landscape)
+- 기밀: PwC 자료 페이지 `visibility: internal`, raw/etc → raw/internal. export 자동 제외
+- CLAUDE.md 78줄 core + .claude/rules 4개(@import). commands → skills 6개 + agents/hr-verifier
+- 죽은 스크립트 13개 scripts/archive, 잡파일 삭제
+
+### 근거 사슬 재구축
+- compilation source 4개 deprecated → 개별 source 페이지로 분해. dangling 참조 183건 해소(8건 sources_unresolved 보존)
+- source 페이지 62 → ~300, 전부 raw 스냅샷 연결(fetch_raw.py; 미확보 시 snapshot_quality: unavailable)
+- grade.py: evidence_grade(A/B/C/D)·confidence·freshness·depth 계산. 기존 tier 가중치 confidence 공식 폐기
+- check_quotes.py grounding 점검 → 126페이지 정리: raw에 없는 수치 → _미공개_, 추측 서술 제거, 금지어 리라이트, 누락 섹션 보강, stage 정정(announced/pilot 10건)
+- 소스 tier 정정: 벤더 자체 자료였던 tier 2 → 3 (adp, ema, perceptyx, qualtrics, visier, enboarder 후원)
+
+### 신규 축·페이지
+- kr_law/kr_union/kr_language/kr_vendor 118건, regulatory_exposure(kr-high-impact 17 / kr-high-impact-review 24 / eu-annex-iii)
+- [[taxonomy-crosswalk]] (SHRM·Bersin·AIHR·AI기본법·EU Annex III)
+- companies/vendors 35페이지: 손글씨 목록 → Dataview, stale 서술 정정
+
+### 자동화·도구
+- hooks(raw 쓰기 차단, wiki 저장 후 lint --quick), scripts/weekly.ps1(+register), evals/golden-qa.json 30문항(eval_qa.py), MCP 서버 scripts/wiki_mcp.py, Obsidian Bases, Web Clipper 템플릿, build_all.py
+
+### 알려진 후속 과제
+- 원문이 요약본뿐이라 수치가 미공개로 내려간 페이지(J&J, flex, Fuel50, Diligent, HireVue, Emirates, Docebo, 삼성멀티캠퍼스 등) → /hr-research로 1차 소스 확보
+- snapshot_quality unavailable 소스(403·paywall) ~30건 → 대체 URL 탐색
+- 주간 작업 스케줄러 등록은 사용자 확인 후 (`scripts/register_weekly_task.ps1`)

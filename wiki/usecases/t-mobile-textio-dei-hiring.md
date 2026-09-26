@@ -78,30 +78,30 @@ flowchart LR
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS / ATS**: ✅ Fact — Workday ATS (Textio 직접 통합)
-- **AI 시스템 배치**: Textio SaaS (Workday 내 플러그인/통합)
-- **배포 환경**: Textio 클라우드 + Workday 클라우드
-- **연동·통합**: Workday ATS 인라인 통합; 이메일 클라이언트 통합 (구체 시스템 미공개)
-- **사용자 접점**: Workday ATS UI 내 인라인, 리크루팅 이메일 도구
+- **Core HRIS / ATS**: ✅ Workday ATS — Textio 직접 embedded ([[sources/textio-tmobile-duolingo-dei-2025]])
+- **AI 시스템 배치**: ✅ Textio (SaaS) — Workday ATS 내 통합 ([[sources/textio-tmobile-duolingo-dei-2025]])
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: ✅ Workday ATS 통합; 적용 범위는 job posts·리크루팅 이메일·고용 브랜드 콘텐츠 ([[sources/textio-tmobile-duolingo-dei-2025]]); 이메일 시스템 연동 방식 _미공개_
+- **사용자 접점**: ✅ Workday ATS 내 (JD 작성) ([[sources/textio-tmobile-duolingo-dei-2025]]); 이메일 도구 접점 세부 _미공개_
 
 ### C. Data (데이터)
 
-- **입력**: JD 텍스트, 리크루팅 이메일, 고용 브랜드 콘텐츠
-- **출력**: Textio Score (0~100), 언어 개선 제안, 성별 tone 지표
-- **학습**: Textio 자체 언어 모델 — ⚠️ 벤더 주장: 수백만 건의 hiring docs 학습 (T-Mobile case study PDF); 기업별 데이터 사용 방식 미공개
-- **데이터 규모**: 9,000+ 채용 관리자 사용 데이터 누적
+- **입력**: ✅ job posts, 리크루팅 이메일, 고용 브랜드 콘텐츠 ([[sources/textio-tmobile-duolingo-dei-2025]])
+- **출력**: ✅ Textio Score, 성 중립 어조(gender-neutral tone) 제안 ([[sources/textio-tmobile-duolingo-dei-2025]]); 점수 범위 _미공개_
+- **학습**: _미공개 (not disclosed)_ — case study PDF(sources 미등록)의 '수백만 건 hiring docs 학습' 주장은 인용 불가
+- **데이터 규모**: ✅ ~125 리크루터 + 9,000+ 채용 관리자 사용 ([[sources/textio-tmobile-duolingo-dei-2025]])
 
 ### D. Model (모델)
 
 - **Foundation model**: _미공개 (not disclosed)_ — Textio 자체 언어 모델 (외부 LLM 사용 여부 미공개)
-- **Model 유형**: NLP (텍스트 품질·포용성 분류), scoring 모델
+- **Model 유형**: ✅ 언어 분석·Textio Score 산출 ([[sources/textio-tmobile-duolingo-dei-2025]]); 모델 유형 세부 _미공개_
 - **커스터마이징**: _미공개 (not disclosed)_
-- **평가·가드레일**: Textio Score 기반 게시 기준 정책 (기업별 설정 가능)
+- **평가·가드레일**: ✅ Textio Score ≥90 게시물 기준으로 채용 기간 단축을 측정 ([[sources/textio-tmobile-duolingo-dei-2025]]); T-Mobile 게시 차단 정책 세부 _미공개_ (Duolingo는 ≥85 정책 — 동일 소스)
 
 ### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: HR / 인재확보 + DEI 부서 공동
-- **배포 범위**: ~125 리크루터 + Employer Brand Marketing + DEI 직원 + 9,000+ 채용 관리자
+- **배포 범위**: ✅ ~125 리크루터 + Employer Brand Marketing + DEI 직원 + 9,000+ 채용 관리자 ([[sources/textio-tmobile-duolingo-dei-2025]])
 - **변화관리**: 전체 채용 관리자 대상 Textio 훈련 + 합병 통합 프로세스와 동시 진행
 
 ## Impact / Metrics (기대효과)
@@ -133,6 +133,8 @@ flowchart LR
 > - `textio-tmobile-inclusive-jd` (Talent Acquisition / Sourcing & Attraction, first_seen 2023, confidence 0.35) 페이지를 이 페이지로 병합. 카테고리는 Strategic Workforce & Governance / DEI, first_seen 2022-12-01 유지.
 > - **표기 차이**: T-Mobile 여성 지원자 +17%·5일 단축·125+9,000 배포 수치를 병합 전 페이지는 ⚠️ 벤더 주장(Textio case study)으로, 이 페이지는 ⚠️ 자사 보고로 표기. 원 출처는 Textio가 발행한 T-Mobile 케이스 스터디(벤더 발행·고객 인용)이므로 두 표기 모두 독립 검증 없음 — 외부 인용 시 "벤더 케이스 스터디 수치"로 명시할 것.
 > - **게시 기준 점수**: 이 페이지는 "T-Mobile 기준 미공개"로 기술했으나, 병합 전 페이지가 인용한 T-Mobile case study PDF는 Score ≥90 목표·90+ 시 게시로 기술 → Process 3단계에 반영 (⚠️ 벤더 주장).
+
+> [!note] 2026-09-27 grounding — 유일한 인용 소스 [[sources/textio-tmobile-duolingo-dei-2025]]의 raw 스냅샷은 Textio 사례 목록 페이지로 T-Mobile 수치(+17%·5 days)가 없음(소스 페이지 요약에만 존재). B/C/D의 배포 환경·학습 데이터·점수 범위 등 미확인 서술은 `_미공개_`로 교체. Harvard DI·case study PDF는 `sources_unresolved` — 인용 불가.
 
 ## Consulting Angle
 

@@ -24,11 +24,11 @@ kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: annual
 first_seen: 2025-01-01
 last_confirmed: 2025-12-31
-confidence: 0.45
-evidence_grade: B
-corroborated_by: 1
+confidence: 0.25
+evidence_grade: C
+corroborated_by: 0
 freshness: fresh
-depth: full
+depth: stub
 graded_at: 2026-09-27
 sources:
   - sources/perceptyx-ex-impact-awards-2025.md
@@ -43,64 +43,61 @@ Arca Continental Coca-Cola Southwest Beverages (AC-CCSWB, 미국 최대 코카�
 
 ## Problem / Why (도입 배경)
 
-- 매장·물류 현장 관리자들이 데이터를 해석하는 데 시간이 부족 → 참여도 데이터가 행동으로 연결되지 않음
-- 참여도 조사의 3대 개선 드라이버 확인: 정기 피드백, 명확한 커뮤니케이션, 경력 성장
-- 리더십 원칙 실천 일관성 부족 → 리더십 지수 정체
+- **Before**: ⚠️ 자사 보고: 리더십 지수 favorability 65% (2020). [[sources/perceptyx-ex-impact-awards-2025.md]]
+- **Pain point**: ⚠️ 자사 보고: retention과 workforce respect 과제에 직면 → 리더십·문화 가치를 내재화하는 multi-tiered 접근 필요. [[sources/perceptyx-ex-impact-awards-2025.md]]
+- **Trigger**: ❓ 미공개 (종전 "3대 개선 드라이버" 서술은 소스에 없어 제거 — 2026-09-27 grounding 점검)
 
 ## Solution Architecture
 
 ### A. Process (프로세스)
 
-- **Before (As-is)**: 연간 설문 → 데이터 취합 → HR 분석 → 리더 브리핑 → 자체 액션 플랜 수립 (완결율 저조)
-- **After (To-be)**:
-  1. 연간 설문 완료
-  2. AI가 각 리더의 팀 결과 + AC-CCSWB 리더십 원칙·코드 기반으로 개인화 Intelligent Nudge 생성
-  3. 리더가 본인 팀 피드백과 가장 관련 높은 Nudge 주제 선택 (개인화)
-  4. 1:1 코칭·개발 집중 → 액션 플랜 자동 추적
-- **Human-in-the-loop (HITL) 지점**: 리더가 Nudge 주제 선택 + 액션 플랜 내용 확정; HR은 집계 현황 모니터링
-- **Trigger & Frequency**: 연간 설문 완료 후 + 지속적 Nudge 전달 (adhoc/ongoing)
-- **Scope of autonomy**: AI = recommend(Nudge 생성·주제 추천); 리더 = approve-then-act
+- **Before (As-is)**: _미공개 (not disclosed)_ — 소스는 도입 전 프로세스를 기술하지 않음
+- **After (To-be)** (⚠️ 자사 보고, [[sources/perceptyx-ex-impact-awards-2025.md]]):
+  1. 연간 참여도 설문 실시 (2024 annual survey cycle)
+  2. AI-assisted Intelligent Nudges가 참여도 결과 기반으로 리더에게 actionable behavior를 안내
+  3. 리더가 액션 플랜 생성 — 2024 사이클 1,191개 플랜·1,871개 활동, 리더 93% 참여
+  (종전 "리더십 원칙·코드 기반 개인화", "Nudge 주제 선택", "1:1 코칭" 단계는 소스에 없어 제거)
+- **Human-in-the-loop (HITL) 지점**: ⚠️ 자사 보고: 리더가 액션 플랜 생성. [[sources/perceptyx-ex-impact-awards-2025.md]] HR 검토 절차 _미공개_
+- **Trigger & Frequency**: ⚠️ 자사 보고: 연간 설문 사이클. [[sources/perceptyx-ex-impact-awards-2025.md]] Nudge 전달 주기 _미공개_
+- **Scope of autonomy**: AI = recommend(Nudge); 리더 = act (액션 플랜)
 
 ```mermaid
 flowchart LR
-    Survey[연간 참여도 설문] --> AI[Perceptyx Activate\nIntelligent Nudge 생성 AI]
-    Principles[리더십 원칙·코드\nAC-CCSWB 맞춤화] --> AI
-    Results[팀별 설문 결과] --> AI
-    AI --> Nudge[개인화 코칭 Nudge\n리더에게 전달]
-    Nudge --> Leader{리더 HITL\n주제 선택·실행}
-    Leader --> Plan[액션 플랜 생성\n1:1 코칭]
-    Plan --> Track[완료 추적\nHR 집계]
+    Survey[연간 참여도 설문] --> AI[Perceptyx Activate\nIntelligent Nudges]
+    AI --> Nudge[AI 생성 코칭 프롬프트\n리더에게 전달]
+    Nudge --> Leader{리더}
+    Leader --> Plan[액션 플랜 생성\n1,191개 · 1,871 활동]
 ```
-범례: 실선 = Perceptyx EX Impact Award 케이스 스터디에서 확인
+범례: 실선 = [[sources/perceptyx-ex-impact-awards-2025.md]] (Perceptyx 벤더 페이지) 확인. 리더십 원칙 입력·주제 선택·HR 집계 노드는 소스에 없어 제거.
 
 ### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: _미공개 (not disclosed)_
-- **AI 시스템 배치**: Perceptyx 플랫폼 SaaS (Activate 모듈)
+- **AI 시스템 배치**: ⚠️ 벤더 주장: Perceptyx Activate (Intelligent Nudges) — 별도 SaaS. [[sources/perceptyx-ex-impact-awards-2025.md]]
 - **배포 환경**: _미공개 (not disclosed)_
 - **연동·통합**: _미공개 (not disclosed)_
-- **사용자 접점**: 리더 웹 포털 (Nudge 수신·액션 플랜 작성)
-- **데이터 기반**: 1.5억+ 직원 응답 데이터 (Perceptyx 전체 고객 누적) 기반 AI 모델
+- **사용자 접점**: _미공개 (not disclosed)_
+- **데이터 기반**: _미공개 (not disclosed)_ (종전 "1.5억명+ 직원 응답 데이터" 수치 근거 미확보 — 2026-09-27 grounding 점검)
 
 ### C. Data (데이터)
 
-- **입력**: 연간 참여도 설문 결과 (팀별), 리더십 원칙·코드 문서, 직전 년도 Nudge 이력
-- **데이터 규모**: 9,000+ 직원; 1,191개 액션 플랜, 1,871개 활동 (2024 사이클)
+- **입력**: ⚠️ 벤더 주장: 참여도 설문 결과 기반 AI 생성 코칭 프롬프트. [[sources/perceptyx-ex-impact-awards-2025.md]] 리더십 원칙 문서·Nudge 이력 등 세부 입력 _미공개_
+- **데이터 규모**: ⚠️ 자사 보고: 9,000+ associates; 1,191개 액션 플랜·1,871개 활동 (2024 연간 설문 사이클). [[sources/perceptyx-ex-impact-awards-2025.md]]
 - **학습 vs RAG**: _미공개 (not disclosed)_
 - **거버넌스**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
-- **Foundation model**: _미공개 (not disclosed)_ — Perceptyx Activate 내부 AI 모델
-- **Model 유형**: NLP (설문 텍스트 분석) + 추천(Nudge 개인화)
-- **데이터 기반**: Perceptyx 누적 1.5B+ 직원 응답 학습 (⚠️ 벤더 주장)
+- **Foundation model**: _미공개 (not disclosed)_
+- **Model 유형**: ⚠️ 벤더 주장: 참여도 결과 기반 AI 생성 코칭 프롬프트(Intelligent Nudges). [[sources/perceptyx-ex-impact-awards-2025.md]] 모델 구성 _미공개_
+- **데이터 기반**: _미공개 (not disclosed)_ (종전 "1.5B명+ 직원 응답 학습" 수치 근거 미확보 — 2026-09-27 grounding 점검)
 
 ### E. Organization & Team (조직·팀 구조)
 
-- **오너십**: HR 주도
-- **참여 역할**: HR, 현장 관리자(리더)
-- **변화관리**: 리더 대상 1:1 코칭·리더십 집중 개발 병행
-- **파트너**: Perceptyx (플랫폼 + 컨설팅)
+- **오너십**: _미공개 (not disclosed)_
+- **참여 역할**: ⚠️ 자사 보고: 리더 93%가 액션 플랜 생성. [[sources/perceptyx-ex-impact-awards-2025.md]] HR 역할 세부 _미공개_
+- **변화관리**: _미공개 (not disclosed)_
+- **파트너**: ⚠️ 벤더 주장: Perceptyx (플랫폼). [[sources/perceptyx-ex-impact-awards-2025.md]] 컨설팅 관여 _미공개_
 
 ## Impact / Metrics (기대효과)
 
@@ -109,10 +106,10 @@ AI Nudge 기반 리더십 개발로 리더십 지수 65%에서 89.3%로 향상(5
 
 | 지표 | 기간 | 결과 | 신뢰도 |
 |---|---|---|---|
-| 리더십 지수 | 2020→2025 (5년) | 65% → 89.3% (+24.3pp) | ⚠️ 자사 보고 |
-| 리더십 지수 전년 대비 상승 | 최근 1년 (Activate Nudge 적용 후) | +1pp | ⚠️ 자사 보고 |
-| 리더 액션 플랜 생성율 | 2024 사이클 | 93% (1,191개 플랜, 1,871개 활동) | ⚠️ 자사 보고 |
-| 수상 | 2025 | Coca-Cola Candler Cup (글로벌 최우수 보틀러) | ✅ Fact |
+| 리더십 지수 favorability | 2020→2025 (5년) | 65% → 89.3% (+24.3pp) | ⚠️ 자사 보고 [[sources/perceptyx-ex-impact-awards-2025.md]] |
+| 리더십 지수 전년 대비 상승 | 최근 1년 | _미공개_ | (종전 "+1pp" 수치 근거 미확보 — 2026-09-27 grounding 점검) |
+| 리더 액션 플랜 생성율 | 2024 사이클 | 93% (1,191개 플랜, 1,871개 활동) | ⚠️ 자사 보고 [[sources/perceptyx-ex-impact-awards-2025.md]] |
+| 수상 | 2025 | Coca-Cola Candler Cup (글로벌 보틀러 excellence award), Perceptyx EX Impact Award | ⚠️ 벤더 페이지 전달 [[sources/perceptyx-ex-impact-awards-2025.md]] |
 
 ## Governance & Risk
 
@@ -121,7 +118,7 @@ AI Nudge 기반 리더십 개발로 리더십 지수 65%에서 89.3%로 향상(5
 
 ## Contradictions
 
-없음.
+> [!note] 2026-09-27 grounding — 종전 본문의 "1.5억명+(1.5B명+) 직원 응답 데이터 기반 AI 모델", "전년 대비 +1pp", "3대 개선 드라이버(정기 피드백·명확한 커뮤니케이션·경력 성장)", "리더십 원칙·코드 기반 개인화·Nudge 주제 선택·1:1 코칭"은 유일한 인용 소스(Perceptyx EX Impact Awards 페이지) raw에 없어 제거·_미공개_ 처리. 모든 수치는 벤더 페이지에 게재된 고객 자사 보고.
 
 ## Consulting Angle
 

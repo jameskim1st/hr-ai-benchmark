@@ -51,7 +51,7 @@ related_companies:
 
 ## Summary
 
-Chipotle Mexican Grill(3,500+ 레스토랑, 110,000+ 직원)이 2024년 10월 22일 공식 발표한 AI 채용 플랫폼. Paradox의 **대화형 AI 어시스턴트 Olivia** 기반이며, Chipotle는 이를 **"Ava Cado"**라는 자사 브랜딩으로 배포. North America + Europe 전 매장 대상으로 영·스·불·독 4개 언어 지원. **CHRO Ilene Eskenazi**가 press release에서 직접 quote 제공. ⚠️ 벤더+회사 공동 주장: **time-to-hire 75% 감소**.
+Chipotle Mexican Grill(3,500+ 레스토랑; 직원 수는 인용 소스에 없어 _미공개_ — 2026-09-27 grounding 점검)이 2024년 10월 22일 공식 발표한 AI 채용 플랫폼. Paradox의 **대화형 AI 어시스턴트 Olivia** 기반이며, Chipotle는 이를 **"Ava Cado"**라는 자사 브랜딩으로 배포. North America + Europe 전 매장 대상으로 영·스·불·독 4개 언어 지원. **CHRO Ilene Eskenazi**가 press release에서 직접 quote 제공. ⚠️ 벤더+회사 공동 주장: **time-to-hire 75% 감소**.
 
 ## Problem / Why (도입 배경)
 
@@ -88,7 +88,7 @@ flowchart LR
     classDef fact fill:#dcfce7,stroke:#16a34a
     class Cand,Ava,Cal,Mgr,Decision,Offer fact
 ```
-_범례: 녹색 = Chipotle 공식 press release ([[chipotle-newsroom-ava-cado-2024-10]])에서 확인된 사실. 이제는 벤더 일반 플로우 추정이 아니라 회사 공식 프로세스._
+_범례: 녹색 = Chipotle 공식 press release ([[chipotle-newsroom-ava-cado-2024-10]])에서 확인된 사실 — 회사 공식 프로세스 기준._
 
 ### B. System & Infrastructure (시스템·인프라)
 
@@ -127,7 +127,7 @@ _범례: 녹색 = Chipotle 공식 press release ([[chipotle-newsroom-ava-cado-20
 - **Rollout 규모 및 일정**: ✅ **3,500+ restaurants (North America + Europe), 2024년 10월 완료 목표** ([[chipotle-newsroom-ava-cado-2024-10]])
 
 ### F. Diagrams (도식)
-- Process flowchart 1개 (A 섹션, 일반 Paradox 플로우에서 유추). 다른 도식은 Chipotle-specific 정보 부재로 생략.
+- Process flowchart 1개 (A 섹션, Chipotle 공식 PR 기반). 다른 도식은 Chipotle-specific 정보 부재로 생략.
 
 ---
 
@@ -164,7 +164,10 @@ Before: 12일 (지원→채용 준비) → After: 3.5일 (75% 감소, CNBC 독�
 - **한국 적용 시**: 개인정보보호법·채용절차공정화법 대응 필요 — Paradox가 한국 규정에 얼마나 준비됐는지 ❓ 미공개
 
 ## Contradictions
-_없음 — 단일 소스_
+
+_없음._ (Chipotle PR·HR Dive·CNBC 간 수치 정합 — CNBC의 12일→3.5일은 PR의 "up to 75%"와 일치)
+
+> [!note] 2026-09-27 grounding — 종전 Summary의 "110,000명+ 직원"은 인용 소스 4건 raw 어디에도 없어 제거.
 
 ## Consulting Angle
 

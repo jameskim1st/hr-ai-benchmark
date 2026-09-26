@@ -75,11 +75,11 @@ _범례: 실선 = 소스 확인, 점선 = 미확인_
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: **Workday HCM** (내장 기능, 소스 확인)
+- **Core HRIS**: **Workday HCM** (내장 기능) ([[bersin-workday-illuminate-2024-09]], [[workday-illuminate-pr-2025-09]])
 - **AI 시스템 배치**: Workday Illuminate 플랫폼에 내장 ([[bersin-workday-illuminate-2024-09]])
 - **배포 환경**: Workday 공개 클라우드 (플랫폼 특성상). **세부 cloud provider·region 미공개**
 - **연동·통합**: _미공개_
-- **사용자 접점 (UX layer)**: Workday UI + Illuminate Assistant (소스 미확인) — Bersin이 "Microsoft Copilot처럼 트랜잭션을 가이드"라고 묘사했으나 이 묘사가 Job Architecture Agent에 특정해 적용되는지는 **기사 내에서 명시되지 않음**
+- **사용자 접점 (UX layer)**: _미공개 (not disclosed)_ — Bersin이 Illuminate Assistant를 "Microsoft Copilot처럼 트랜잭션을 가이드"라고 묘사했으나 ([[bersin-workday-illuminate-2024-09]]) 이 묘사가 Job Architecture Agent에 특정해 적용되는지는 **기사 내에서 명시되지 않음**
 - **인증·권한**: _미공개_
 - **SLA**: _미공개_
 
@@ -95,7 +95,7 @@ _범례: 실선 = 소스 확인, 점선 = 미확인_
 ### D. Model (모델)
 
 - **Foundation model**: **⚠️ 벤더 주장**: "Workday 플랫폼이 70 million users의 HR·finance 데이터에 최적화된 LLM을 운영한다" — Bersin 전달
-- **파라미터 수**: **🔴 모순 상태** — 같은 Bersin 기사 안에 "800 Billion parameter LLM"과 "70 Billion parameter LLM" 두 표기가 공존. 원본 주장이 어느 쪽인지 미해결. [`contradictions` 섹션 참조]
+- **파라미터 수**: ⚠️ 벤더 주장 (Bersin 전달 [[bersin-workday-illuminate-2024-09]]) — **🔴 모순 상태** — 같은 Bersin 기사 안에 "800 Billion parameter LLM"과 "70 Billion parameter LLM" 두 표기가 공존. 원본 주장이 어느 쪽인지 미해결. [`contradictions` 섹션 참조]
 - **모델 유형**: LLM이라는 것 외에는 미공개 (embedding 병행 여부, classifier 보조 여부 등)
 - **제공 방식**: 상용 API 래핑인지 자체 학습 모델인지 **미공개** (Workday 내부 운영 여부도 기사에 명시 없음)
 - **커스터마이징 기법**: _미공개 (RAG/fine-tune/in-context 구분 없음)_

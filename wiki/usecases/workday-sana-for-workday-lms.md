@@ -24,11 +24,11 @@ kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-11-01
 last_confirmed: 2026-04-15
-confidence: 0.55
-evidence_grade: B
-corroborated_by: 1
+confidence: 0.35
+evidence_grade: C
+corroborated_by: 0
 freshness: fresh
-depth: full
+depth: partial
 graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
@@ -45,13 +45,13 @@ related_vendors:
 
 ## Summary
 
-Workday가 2025-11에 $1.1B로 인수한 스웨덴 AI-native LMS 회사 Sana를 2026-03-17에 첫 통합 제품 **"Sana for Workday"**로 공개. Sana의 conversational interface가 Workday 신규 UI front door로 채택되고, Sana Learn은 AI-native LMS로 Workday Learning을 대체·보강. ⚠️ 벤더 주장: 코스 생성 시간 4개월 → 4일, engagement 275% lift. ASOR 거버넌스 하에서 학습 에이전트가 사람·기존 에이전트와 통합 관리됨.
+Workday가 2025-11에 $1.1B로 인수한 스웨덴 AI-native LMS 회사 Sana를 2026-03-17에 첫 통합 제품 **"Sana for Workday"**로 공개. Sana의 conversational interface가 Workday 신규 UI front door로 채택되고, Sana Learn은 AI-native LMS로 Workday Learning을 대체·보강. ⚠️ 벤더 주장: 코스 생성 시간 4개월 → 4일, engagement 275% lift ([[sources/hr-brew-workday-sana-2026-03]] — 스냅샷 unavailable, 소스 페이지 요약 기준·원문 미확인). ASOR 거버넌스 하에서 학습 에이전트가 사람·기존 에이전트와 통합 관리됨 ([[sources/workday-asor-ga-2026-02]]).
 
 ## Problem / Why (도입 배경)
 
-- **Before (baseline)**: Workday Learning은 기존 LMS 카테고리에 속해 conventional course management 위주. AI-native 경쟁자(Sana·Bersin Galileo·Docebo Shape) 대비 콘텐츠 생성·개인화·대화형 UX 격차 누적.
-- **Pain point**: 기업 학습 콘텐츠 제작 비용·시간이 ROI를 짓누르는 구조 (코스 1개당 수개월·수천만원). 직원 engagement도 낮음 (LMS 평균 완료율 30~50%).
-- **Trigger**: Bersin이 발표한 "AI Transforms $400B of Corporate Learning" 보고서 + Sana의 빠른 시장 침투 (Klarna 등). Workday가 자체 개발 대신 acquisition으로 catch-up.
+- **Before (baseline)**: ❓ baseline 미공개 — Workday Learning 기존 기능 대비 격차는 인용 소스에 서술 없음
+- **Pain point**: ⚠️ 벤더 주장: 코스 생성에 4개월 소요 → 4일로 단축 주장 ([[sources/hr-brew-workday-sana-2026-03]] — 원문 미확인); 업계 완료율·시장 규모 통계는 인용 소스에 없어 삭제 (2026-09-27 grounding 점검)
+- **Trigger**: Workday의 Sana 인수 (2025-11, $1.1B) 후 첫 통합 제품 공개 (2026-03-17, Workday DevCon) ([[sources/hr-brew-workday-sana-2026-03]]); Sana 기존 고객(Klarna·MTV·Polestar)에 Workday 마이그레이션 경로 제공 (동일 소스)
 
 ## Solution Architecture
 
@@ -70,38 +70,39 @@ Workday가 2025-11에 $1.1B로 인수한 스웨덴 AI-native LMS 회사 Sana를 
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: Workday HCM + Workday Learning (Sana for Workday가 신규 UI front door)
-- **AI 시스템 배치**: Sana 기술 스택 통합 (Workday cloud로 마이그레이션 진행)
-- **배포 환경**: Workday cloud (multi-tenant)
-- **연동·통합**: Workday HCM 마스터 데이터 + ASOR 거버넌스 + 30+ 언어 지원
-- **사용자 접점**: 대화형 UI (web + mobile) — Sana 기존 UX 차용
-- **인증·권한**: Workday IAM + ASOR 에이전트 정책
+- **Core HRIS**: ✅ Workday — Sana for Workday가 Workday 신규 UI front door, Sana Learn이 Workday Learning에 AI-native LMS 기능 추가 ([[sources/hr-brew-workday-sana-2026-03]])
+- **AI 시스템 배치**: ✅ Sana 기술 통합 제품 ([[sources/hr-brew-workday-sana-2026-03]]); 마이그레이션 세부 _미공개_
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: ✅ Workday ASOR과 결합 — 학습 에이전트도 거버넌스 대상 ([[sources/hr-brew-workday-sana-2026-03]], [[sources/workday-asor-ga-2026-02]]); 30+ 언어 지원 (⚠️ 벤더 주장, [[sources/hr-brew-workday-sana-2026-03]])
+- **사용자 접점**: ✅ 대화형 인터페이스 (Workday 신규 UI front door) ([[sources/hr-brew-workday-sana-2026-03]]); web/mobile 여부 _미공개_
+- **인증·권한**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: 학습 콘텐츠 코퍼스, 직무·스킬 매핑, 학습 이력, 직원 프로필
-- **데이터 규모**: _미공개_
-- **전처리·정제**: 멀티모달 처리 (텍스트·비디오·음성)
-- **학습 vs RAG vs In-context 구분**: 코스 생성은 LLM + 회사 콘텐츠 RAG 추정. 학습 대화는 in-context (개인화 + 회사 정책)
-- **데이터 거버넌스**: Workday tenant 격리
-- **민감정보 처리**: 학습 이력은 PII 범주 — Workday RBAC 적용
-- **데이터 출처의 오너십**: 회사 보유 콘텐츠 + Sana 기본 템플릿
+- **입력 데이터 소스**: _미공개 (not disclosed)_ — 학습 콘텐츠 생성 입력 세부는 소스에 없음
+- **데이터 규모**: _미공개 (not disclosed)_
+- **전처리·정제**: ⚠️ 벤더 주장: 멀티모달(텍스트·비디오·음성) 콘텐츠 ([[sources/hr-brew-workday-sana-2026-03]]); 처리 방식 _미공개_
+- **학습 vs RAG vs In-context 구분**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: ✅ ASOR 거버넌스 적용 (학습 에이전트) ([[sources/workday-asor-ga-2026-02]]); 데이터 보존·격리 세부 _미공개_
+- **민감정보 처리**: _미공개 (not disclosed)_
+- **데이터 출처의 오너십**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
-- **Foundation model**: Sana 자체 model + 외부 API 혼합 추정 (구체 모델 _미공개_)
-- **Model 유형**: LLM (생성) + multi-modal + agentic (학습 대화)
-- **제공 방식**: SaaS (Workday Learning 경유)
-- **커스터마이징 기법**: RAG (회사 콘텐츠) + prompt engineering (코스 템플릿)
-- **Orchestration 프레임워크**: Sana 자체 구축
-- **평가·가드레일**: ASOR 거버넌스 적용 + Workday 기본 content filter
+- **Foundation model**: _미공개 (not disclosed)_
+- **Model 유형**: ⚠️ 벤더 주장: AI-native LMS — 코스 생성(생성형)·대화형 학습 인터페이스·멀티모달 ([[sources/hr-brew-workday-sana-2026-03]])
+- **제공 방식**: _미공개 (not disclosed)_
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: ✅ ASOR 거버넌스 적용 ([[sources/workday-asor-ga-2026-02]]); content filter 등 세부 _미공개_
 
 ### E. Organization & Team (조직·팀 구조)
 
-- **오너십**: HRD/L&D 부서 (콘텐츠 오너십 유지) + Workday/Sana 통합 팀(Workday 인수 후 통합 진행 중)
-- **참여 역할**: HRD·콘텐츠 디자이너·번역 담당·legal·보안
-- **거버넌스 체계**: ASOR + Workday 기본 거버넌스
-- **변화관리**: 외주 콘텐츠 벤더 의존도 축소 → HRD 직무 재설계 ("콘텐츠 발주자"에서 "AI prompt designer + curator"로)
+- **오너십**: 벤더 제품 — 고객별 상이. Workday의 Sana 인수(2025-11) 후 통합 제품 ([[sources/hr-brew-workday-sana-2026-03]])
+- **참여 역할**: _미공개 (not disclosed)_
+- **거버넌스 체계**: ✅ ASOR — 학습 에이전트도 거버넌스 대상 ([[sources/workday-asor-ga-2026-02]])
+- **변화관리**: _미공개 (not disclosed)_ (HRD 직무 재설계 서술은 컨설팅 해석 — Consulting Angle 참조)
+- **파트너**: _미공개 (not disclosed)_
 
 ### F. Diagrams (도식)
 
@@ -137,11 +138,13 @@ LMS 콘텐츠 제작 시간·비용을 대폭 단축하고 conversational UI로 
 
 ## Contradictions
 
-(없음)
+_없음._
+
+> [!note] 2026-09-27 grounding — [[sources/hr-brew-workday-sana-2026-03]]는 스냅샷 unavailable — 4개월→4일·275%·30+ 언어·$1.1B는 소스 페이지 요약 기준 원문 미확인. B/C/D의 multi-tenant·IAM·RAG/prompt·content filter 등 "추정" 아키텍처 서술과 Problem의 업계 통계(완료율·시장 규모)는 인용 소스에 없어 `_미공개_`/삭제.
 
 ## Consulting Angle
 
-- **KR 적용 1순위**: 한국 대기업 LMS 교체 사이클(보통 7~10년)에 정확히 맞물림. 삼성 멀티캠퍼스·LG인화원·SK mySUNI와 직접 비교 벤치마크
+- **KR 적용 1순위**: 한국 대기업 LMS 교체 사이클에 맞물림. 삼성 멀티캠퍼스·LG인화원·SK mySUNI와 직접 비교 벤치마크
 - **2026 Q3-Q4 LMS RFP 시나리오**: Workday HCM 도입 KR 대기업이 Workday Learning 갱신 시 Sana 통합 자동 검토. SAP 도입사는 SuccessFactors Learning vs Sana(별도 도입 가능 시) vs 자체 LXP 결정
 - **반면교사 포인트**: 한국어 콘텐츠 품질 미검증 — POC 4주로 한정해 자국어 코스 생성 품질 검증 후 확정
 - **인수 통합 risk 모니터링**: 2026 Q4까지 Sana 핵심 인력 유지·마이그레이션 진척도 추적

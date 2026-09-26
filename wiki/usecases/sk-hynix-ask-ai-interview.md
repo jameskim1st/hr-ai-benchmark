@@ -28,7 +28,7 @@ confidence: 0.8
 evidence_grade: A
 corroborated_by: 2
 freshness: fresh
-depth: partial
+depth: stub
 graded_at: 2026-09-27
 consulting_angle_status: filled
 sources: [sources/ebn-sk-hynix-ask-ai-interview-2025-09.md, sources/nate-ebn-sk-hynix-ask-ai-interview-2025-09.md]
@@ -41,7 +41,7 @@ related_vendors: []
 
 ## Summary
 
-SK하이닉스가 2025 하반기 신입 채용에 **'A!SK' (AI Interview with SK Hynix)** 전형 신설. AI가 직무별 특화 문제를 출제하면 지원자가 영상 녹화 답변 제출. 자기소개서로 파악 어려운 **커뮤니케이션·팀워크·상황 대처** 능력을 종합 검증. 제출 영상은 **미래 동료 구성원이 직접 평가**하는 **hybrid 모델**. AI single decision 회피 — bias mitigation + 한국 채용절차법 fit.
+SK하이닉스가 2025 하반기 신입 채용에 **'A!SK' (AI Interview with SK Hynix)** 전형 신설. AI가 직무별 특화 문제를 출제하면 지원자가 영상 녹화 답변 제출. 자기소개서로 파악 어려운 **커뮤니케이션·팀워크·상황 대처** 능력을 종합 검증. 제출 영상은 **미래 동료 구성원이 직접 평가**하는 **hybrid 모델** ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]]). AI 단독 결정 회피 설계 — 한국 채용절차법 fit (해석).
 
 ## Problem / Why (도입 배경)
 
@@ -51,7 +51,9 @@ SK하이닉스가 2025 하반기 신입 채용에 **'A!SK' (AI Interview with SK
 
 ## Solution Architecture
 
-### A. Process — 7-Phase 통합 채용 플로우 (PwC 자료 기반)
+### A. Process (프로세스)
+
+> ⚠️ 아래 7-Phase 상세는 PwC 내부 자료 기반으로 `sources`에 미등록 — 인용 불가 (2026-09-27 grounding 점검). 인용 소스로 확인되는 범위: 서류전형 → SKCT(인적성) + A!SK(AI 출제·영상 답변 제출·미래 동료 평가) → 11월 말 면접 → 최종 합격 ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]]).
 
 - **Before**: 자기소개서 → 인적성 → 면접관 in-person 면접 (1시간×2회). 평가 깊이 한계 + 평가자 주관 편차 + 이천 출장 비용
 - **After (7 phases)**:
@@ -70,42 +72,38 @@ SK하이닉스가 2025 하반기 신입 채용에 **'A!SK' (AI Interview with SK
 - **Frequency**: annual (신입 공채 — 2025 하반기 launch)
 - **Scope**: AI screening + peer evaluation + AI Report support → 사람 결정
 
-### B/C/D. System
-
-- 영상 면접 platform (자체 또는 vendor _미공개_)
-- AI 분석 모델 (구체 _미공개_)
-- 미래 동료 peer review interface
-
-### E. Organization
-
-- SK하이닉스 인사 + 미래 동료 (현업) + AI/IT
-
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: SK하이닉스 사내 채용 (구체 _미공개_)
-- **AI 시스템 배치**: ✅ A!SK 영상면접 platform — 자체 또는 vendor 여부 _미공개_
-- **배포 환경**: _미공개_ — SK 그룹 클라우드 추정
-- **연동·통합**: ✅ 7-phase 채용 플로우 — 서류·SKCT·A!SK·peer review·종합 Report·대면 통합
-- **사용자 접점**: 지원자 영상 녹화 web/모바일 + 미래 동료 peer review interface + HR/면접관 종합 Report dashboard
-- **인증·권한**: ✅ 사내 SSO (peer·HR·면접관 RBAC) + 지원자 별도 인증
+- **Core HRIS**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: ✅ 'A! SK' AI 기반 화상 인터뷰 — AI가 직무 특화 문제 출제, 지원자가 온라인 영상 녹화 제출 ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]]); 플랫폼 자체/벤더 여부 _미공개_
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: ✅ 채용 절차: 서류 → SKCT + A! SK → 면접 ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]]); 시스템 연동 _미공개_
+- **사용자 접점**: ✅ 지원자 온라인 영상 녹화 제출 ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]]); 평가자 인터페이스 _미공개_
+- **인증·권한**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: ✅ 자기소개서, SKCT 결과, AI 면접 영상, JD-역량 매칭, (고도화) 석박사 Lab·논문 + LinkedIn 코멘트 자동 크롤링
-- **데이터 규모**: _미공개_ — 2025 하반기 신입 응시자 비공개
-- **전처리·정제**: _미공개_ — 영상 STT 기반 실시간 평가 (향후 고도화)
-- **학습 vs RAG vs In-context**: _미공개_ — AI 종합 역량 Report 생성은 LLM 기반 추정
-- **데이터 거버넌스**: ✅ AI single decision 회피 (peer + HR + 면접관 hybrid) — KR AI 기본법 인적감독 best practice
+- **입력 데이터 소스**: ✅ 직무 특화 문제에 대한 지원자 영상 답변 ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]]); 자기소개서·SKCT 결과 통합 Report·논문·LinkedIn 크롤링은 인용 소스 미확인 — _미공개_
+- **데이터 규모**: _미공개 (not disclosed)_
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: ✅ 제출 영상은 미래 동료가 될 구성원들이 직접 평가 ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]]); 데이터 보존·접근 정책 _미공개_
 - **민감정보 처리**: ⚠️ AI 영상 분석의 표정·억양·외모 신호 사용 여부 _미공개_
 
 ### D. Model (모델)
 
-- **Foundation model**: _미공개_ — 자체 LLM 또는 그룹 표준 (A.X 가능성) 미명시
-- **모델 유형**: ✅ generative (Report 자동 생성·맞춤 질문) + classifier (역량-JD 매칭율) + STT (향후)
-- **제공 방식**: ✅ SK하이닉스 internal build
-- **커스터마이징 기법**: ✅ 직무별 문제은행, JD-역량 매칭 rule, AI 면접 + 대면 면접 결과 교차 검증
-- **Orchestration 프레임워크**: _미공개_
-- **평가·가드레일**: ✅ peer + HR + 면접관 hybrid (AI single decision 회피). 표정·외모 신호 transparency 부족 risk
+- **Foundation model**: _미공개 (not disclosed)_
+- **모델 유형**: ✅ AI가 직무별 특화 문제 출제 ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]]); 자동 채점 여부 _미공개_ (기사상 평가는 구성원)
+- **제공 방식**: _미공개 (not disclosed)_
+- **커스터마이징 기법**: ✅ 직무별 특화 문제 출제 ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]]); 문제은행·교차 검증 세부 _미공개_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: ✅ 미래 동료 구성원 평가로 공정성 보완 ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]]); 표정·외모 신호 사용 여부 _미공개_
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: SK하이닉스 (채용 주체) ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]]); 담당 조직 _미공개_
+- **참여 역할**: ✅ 미래 동료가 될 현업 구성원이 영상 평가 참여 ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]])
+- **팀 규모·기간·거버넌스·변화관리·파트너**: _미공개 (not disclosed)_
 
 
 ## Impact / Metrics (기대효과)
@@ -113,16 +111,16 @@ SK하이닉스가 2025 하반기 신입 채용에 **'A!SK' (AI Interview with SK
 ### 기대효과 요약
 AI single decision 회피 + 미래 동료 평가 hybrid + 7-phase AI Report 통합으로 평가 깊이는 Big Tech 수준 + 비용은 대폭 절감. 한국 채용절차법 + AI 기본법 (2026-01-22) 인적감독 의무 자동 충족 model.
 
-| 구분 | 기대효과 (PwC 자료) |
+| 구분 | 기대효과 |
 |---|---|
-| 비용 절감 | ⚠️ 자사 보고: 지원자 인당 **3시간 + 19만원 절감** (이천 왕복·대면 면접 비용 기준) |
-| 평가 심층화 | 다차수 면접 효과 — 1시간×2회 → Big Tech 수준 2시간+ 평가 깊이 |
-| 평가 공정성 | 정량·정성 통합 AI Report → 평가자 주관 배제 |
-| 지원자 편의 | 시공간 제약 없이 원하는 시간·장소 면접 응시 |
-| 평가 연속성 | 서류→SKCT→AI 면접 전 단계 통합 Report를 대면 면접관에게 제공 |
+| 비용 절감 | _미공개_ (기존 '지원자 인당 시간·비용 절감' 수치는 PwC 내부 자료 기반 — sources 미등록, 수치 근거 미확보 — 2026-09-27 grounding 점검) |
+| 평가 심층화 | ✅ 자기소개서만으로 파악하기 어려운 커뮤니케이션·팀워크·상황 대처 능력을 다각도로 검증 ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]]) |
+| 평가 공정성 | ✅ 미래 동료 구성원이 직접 평가해 공정성 보완 ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]]) |
+| 지원자 편의 | ✅ 온라인 영상 녹화 제출 ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]]) |
+| 평가 연속성 | ⚠️ 출처 미인용 (PwC 자료 — 통합 Report 제공은 인용 소스에 없음) |
 
-- 2025 하반기 신입 채용 launch
-- 출처: SK하이닉스 내부 자료, EBN뉴스 2025-09, 세계일보 2025-09, PwC HR AI Use Case 자료 2026-05
+- 2025 하반기 신입 채용에서 전형 신설 ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]])
+- 인용 소스: EBN 2025-09-16 ([[sources/ebn-sk-hynix-ask-ai-interview-2025-09]]; 네이트 전재본 [[sources/nate-ebn-sk-hynix-ask-ai-interview-2025-09]]는 동일 기사). 세계일보·SK하이닉스 내부 자료·PwC 자료는 sources 미등록 — 인용 불가
 
 ## Governance & Risk
 
@@ -131,6 +129,12 @@ AI single decision 회피 + 미래 동료 평가 hybrid + 7-phase AI Report 통�
 - ⚠️ AI 영상 분석의 표정·억양·외모 신호 사용 여부 _미공개_ — 마이다스 inAIR 차별 논란 trigger와 같은 카테고리
 - ⚠️ 미래 동료 peer review의 본인 편향 (학교·전공·외모) 동반 가능 — 별도 mitigation 필요
 - ⚠️ 영상 녹화 시 시간·장소 자율은 socioeconomic gap 가능 (장비·환경)
+
+## Contradictions
+
+_없음._
+
+> [!note] 2026-09-27 grounding — [[sources/nate-ebn-sk-hynix-ask-ai-interview-2025-09]]는 EBN 기사의 포털 전재본으로 독립 소스가 아님(근거 수 중복 계산 금지). 7-Phase 플로우·인당 절감 수치·통합 Report·LinkedIn 크롤링 등은 PwC 내부 자료 기반으로 인용 소스에 없음 — B/C/D는 EBN 확인 범위로 축소, 수치는 `_미공개_`.
 
 ## Consulting Angle
 

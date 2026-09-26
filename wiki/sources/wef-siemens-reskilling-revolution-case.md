@@ -2,7 +2,10 @@
 title: "Reskilling Revolution Case Study: Siemens"
 url: https://initiatives.weforum.org/reskilling-revolution/siemens
 tier: 1
-source_type: report
+raw: raw/reports/2024-wef-siemens-reskilling-revolution.md
+snapshot_quality: unavailable
+independent: true
+source_type: analyst
 publisher: World Economic Forum
 published: 2024
 ingested_at: 2026-04-12

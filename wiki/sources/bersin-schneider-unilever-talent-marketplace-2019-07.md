@@ -2,7 +2,10 @@
 title: "The Company As A Talent Marketplace: Unilever and Schneider Electric Show The Way"
 url: https://joshbersin.com/2019/07/the-company-as-a-talent-network-unilever-and-schneider-electric-show-the-way/
 tier: 1
-source_type: article
+raw: raw/articles/2019-07-17-bersin-unilever-schneider-talent-marketplace.md
+snapshot_quality: full
+independent: true
+source_type: analyst
 publisher: Josh Bersin
 author: Josh Bersin
 published: 2019-07-17
@@ -40,3 +43,17 @@ Josh Bersin(Tier 1 HR 분석기관)이 Schneider Electric과 Unilever의 내부 
 - [[schneider-electric-gloat-talent-marketplace]]
 - [[unilever-flex-gloat-talent-marketplace]]
 - [[gloat]]
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "Andrew Saidy, the head of talent digitization at Schneider, told me they found that 47% of people who leave exit because they couldn't find an opportunity they wanted. With 140,000 global employees, the company needed a high-powered internal mobility program."
+> — 뒷받침: 47% 퇴직 사유 · 140,000 직원
+
+> "They started with the 2,300 people in HR (where we are also working with Gloat on the Josh Bersin Academy, by the way), and then moved to UK, Ireland and Singapore with more than 5,500 employees."
+> — 뒷받침: 초기 rollout 범위 (+ Bersin–Gloat 협업 disclosure)
+
+> "More than 75% of employees already registered on the system, and like Unilever the company rewards people for project work and encourages people to loan their skills to others."
+> — 뒷받침: 75% 등록률
+
+> "Already Unilever has unlocked 60,000+ hours of work that people want to do, and 95% of employees endorse the system."
+> — 뒷받침: Unilever FLEX 60,000+ 시간 · 95% 지지

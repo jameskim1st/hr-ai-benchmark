@@ -49,7 +49,7 @@ SK하이닉스 **One Resume + AI 구성원 검색** 시스템. 직원 1인당 �
 
 ## Problem / Why (도입 배경)
 
-- **Before**: SK하이닉스 38K 직원의 인사 데이터가 **HRMS·평가·교육·프로젝트·자격증·외부 교육 등 다수 시스템에 분산**. 매니저가 internal mobility·project staffing·후계자 후보 검색 시 여러 시스템 + 인적 네트워크 의존
+- **Before**: SK하이닉스 직원(인원 수 _미공개_ — 수치 근거 미확보, 2026-09-27 grounding 점검)의 인사 데이터가 **HRMS·평가·교육·프로젝트·자격증·외부 교육 등 다수 시스템에 분산**. 매니저가 internal mobility·project staffing·후계자 후보 검색 시 여러 시스템 + 인적 네트워크 의존
 - **Pain point**:
   - 사내 talent visibility 부족 — 매니저가 "양산공정 + 머신러닝 경험 5년+ 영어 가능자"를 사내에서 찾기 어려움
   - 직원 본인도 자기 career path·내부 기회 잘 모름
@@ -77,21 +77,40 @@ SK하이닉스 **One Resume + AI 구성원 검색** 시스템. 직원 1인당 �
 - **Frequency**: monthly profile 갱신 + 수시 검색
 - **Scope of autonomy**: recommend (검색·추천만, contact·이동은 사람 결정)
 
-### B/C/D. System
+### B. System & Infrastructure (시스템·인프라)
 
-- 추정 architecture (실제 구현 detail _미공개_):
-  - 통합 데이터 layer (ETL or data lake)
-  - LLM (자기소개 생성·자연어 검색 query 이해·skill inference)
-  - Vector DB (semantic search)
-  - Skill ontology (한국어·기술 도메인)
-  - 매니저용 검색 UI + 직원용 self-service portal
-- 데이터 source: HRMS·평가·LMS·프로젝트·자격·외부 교육 이력
-- 모델: LLM (GPT 계열 또는 자체 fine-tune _미공개_) + embedding 모델 + classification (skill 추출)
+> 인용 소스([[sources/verified-pwc-doc-2026-05]])는 One Resume·AI 구성원 검색을 직접 다루지 않음 — 아래 항목은 전부 `_미공개_` (2026-09-27 grounding 점검; 기존 "추정 architecture" 서술 삭제).
 
-### E. Organization
+- **Core HRIS / 기반 시스템**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: _미공개 (not disclosed)_
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점 (UX layer)**: _미공개 (not disclosed)_
+- **인증·권한**: _미공개 (not disclosed)_
 
-- SK하이닉스 인사·디지털혁신·R&D HR 주도 (구체 조직 구성 _미공개_)
-- 함께 운영되는 [[sk-hynix-pwc-5agent-retention|retention 시스템]]의 input data layer 역할 가능 (One Resume이 통합 직원 프로필 base)
+### C. Data (데이터)
+
+- **입력 데이터 소스**: _미공개 (not disclosed)_
+- **데이터 규모**: _미공개 (not disclosed)_
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context 구분**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: _미공개 (not disclosed)_
+- **민감정보 처리**: _미공개 (not disclosed)_
+
+### D. Model (모델)
+
+- **Foundation model**: _미공개 (not disclosed)_
+- **Model 유형**: _미공개 (not disclosed)_
+- **제공 방식**: _미공개 (not disclosed)_
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: _미공개 (not disclosed)_
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: _미공개 (not disclosed)_ (SK하이닉스 내부 운영 시스템 — 담당 조직 미공개)
+- **참여 역할·팀 규모·거버넌스·변화관리·파트너**: _미공개 (not disclosed)_
+- 관련: [[sk-hynix-pwc-5agent-retention|retention 시스템]] 제안과의 데이터 연계 여부 _미공개_
 
 ## Impact / Metrics (기대효과)
 
@@ -101,7 +120,7 @@ SK하이닉스 **One Resume + AI 구성원 검색** 시스템. 직원 1인당 �
 - ⚠️ 모든 production metric ⚠️ **외부 공개 미실시**
 - 비교 reference (글로벌 talent profile/search 검증 사례):
   - Mastercard Unlocked [[mastercard-unlocked-gloat-talent-marketplace]] (Gloat): 93% 등록률·1M project hours 누적
-  - Schneider Electric [[schneider-electric-gloat-talent-marketplace]] (Gloat): 360,000+ unlocked hours
+  - Schneider Electric [[schneider-electric-gloat-talent-marketplace]] (Gloat): unlocked hours ⚠️ 벤더 주장 — 해당 페이지 참조
   - Eightfold [[eightfold-ai-talent-intelligence]]: skill ontology 기반 talent intelligence
 
 ## Governance & Risk
@@ -112,6 +131,12 @@ SK하이닉스 **One Resume + AI 구성원 검색** 시스템. 직원 1인당 �
 - ⚠️ **노조 사전 합의 필수** (SK하이닉스 노조 강성) — 직원 통합 프로필·skill inference·매니저 검색은 노조 강한 우려 영역 (개인정보·차별 가능성)
 - ⚠️ skill inference (프로젝트·교육에서 자동 추출)는 **부정확 risk** — 잘못된 skill tag가 매니저 검색에서 직원에게 불리하게 작용 가능
 - ⚠️ One Resume 데이터 동의 범위 (HRMS·평가·외부 교육 결합)는 한국 개인정보보호법상 별도 동의 필요 가능
+
+## Contradictions
+
+_없음._
+
+> [!note] 2026-09-27 grounding — 유일한 인용 소스 [[sources/verified-pwc-doc-2026-05]]는 One Resume·AI 구성원 검색을 다루지 않음(SK하이닉스 5-agent retention 추진 계획만 확인). 직원 수·아키텍처 추정·모델 구성 서술을 `_미공개_`로 교체. 본 페이지의 A. Process 상세는 출처 미인용 상태 — 외부 인용 금지.
 
 ## Consulting Angle
 

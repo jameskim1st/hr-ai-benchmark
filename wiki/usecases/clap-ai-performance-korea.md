@@ -28,7 +28,7 @@ confidence: 0.7
 evidence_grade: A
 corroborated_by: 2
 freshness: fresh
-depth: partial
+depth: stub
 graded_at: 2026-09-27
 sources:
   - sources/clap-blog-hr-ai-trend-2026.md
@@ -42,13 +42,13 @@ related_vendors: []
 
 ## Summary
 
-디웨일이 운영하는 CLAP(클랩)는 중견·대기업 특화 AI 기반 성과관리 SaaS로, 주요 AI 기능은 주관식 평가 코멘트 AI 자동 요약, AI 피드백 생성, AI 원온원 미팅 내용 요약, AI 평가(서술형 리뷰 초안 작성), AI 성장 리포트 등이다. ⚠️ **자사 보고**: 인지그룹 등 중견기업에 공급 사례를 확보했으며 2025년 시장 확대 중. [[sources/clap-blog-hr-ai-trend-2026.md]] [[sources/sisajournal-clap-2025.md]]
+디웨일이 운영하는 CLAP(클랩)는 중견·대기업 특화 AI 기반 성과관리 SaaS로, 주요 AI 기능은 주관식 평가 코멘트 AI 자동 요약, AI 피드백 생성, AI 원온원 미팅 내용 요약, AI 평가(서술형 리뷰 초안 작성), AI 성장 리포트 등이다. ⚠️ **자사 보고** (대표 인터뷰): 2023년 출시한 '클랩 AI'로 평가결과 요약 리포트 자동 생성·동료평가 매칭 자동화·조직 목표 자동 추천 제공, 국내외 1,000여 고객사, 서비스 유지율 99%. [[sources/thebell-diwhale-2025-10.md]] 중견기업 대상 모듈형 성과관리 SaaS, 공공기관으로 고객군 확대. [[sources/sisajournal-clap-2025.md]] (2026-09-27 grounding 점검: 종전 "인지그룹 공급" 고객사명은 인용 소스 3건 어디에도 없어 제거 — Contradictions 참조.)
 
 ## Problem / Why (도입 배경)
 
 - **Before (baseline)**: 국내 중견·대기업의 성과 평가 시즌(월별·분기·연간)마다 관리자가 **수동으로 주관식 평가 코멘트 작성** + HR이 수백~수천 건의 평가 내용을 **수동 취합·정리**. 원온원 미팅 노트도 수기 기록. ❓ **구체 시간/비용 baseline 미공개** (관리자당 평가 작성 시간, HR 취합 소요 시간 등)
 - **Pain point**: (1) **형식적·부정확한 평가 코멘트** — 관리자가 시간 압박으로 "복붙"하거나 피상적으로 작성 → 직원 개발에 도움 안 됨. (2) **HR 행정 부담** — 평가 시즌에 HR 인력이 취합·정리에 과도 투입. (3) 원온원 미팅 내용이 **기록되지 않거나 비체계적** → 지속적 성과 관리 연결 부족
-- **Trigger**: 국내 중견기업(인지그룹 등)이 SaaS 기반 성과관리 도구를 탐색하면서 "AI가 코멘트를 자동 요약·초안 작성해준다면" 수요 발생 → CLAP의 AI 기능 확장
+- **Trigger**: ⚠️ 자사 보고: 기존 솔루션이 놓치는 중견기업의 복잡한 인사제도·조직 구조를 해결하려 CLAP 개발, 2023년 '클랩 AI'로 AI 결합 고도화. [[sources/sisajournal-clap-2025.md]] [[sources/thebell-diwhale-2025-10.md]] 특정 도입 기업의 계기는 _미공개_
 - **⚠️ 주의**: 위 pain point는 CLAP이 타겟하는 **국내 중견·대기업 성과관리의 일반적 문제**이며, 특정 도입 기업의 공식 문제 진술은 미공개
 
 ## Solution Architecture
@@ -59,7 +59,7 @@ related_vendors: []
 
 - **Before (As-is)**: 관리자가 수동으로 주관식 평가 작성. 원온원 노트 수동 기록.
 - **After (To-be)**:
-  1. ✅ **Fact** 주관식 평가 코멘트 AI 자동 요약·정제 + 비속어·불필요 표현 필터링. [[sources/clap-blog-hr-ai-trend-2026.md]]
+  1. ⚠️ **벤더 주장** 주관식 평가 코멘트 AI 자동 요약·정제 — 개인의 표현 방식·감정에 따라 달라지는 내용을 일정 기준으로 구조화. [[sources/clap-blog-hr-ai-trend-2026.md]] (종전 "비속어 필터링"은 raw에 없어 제거)
   2. ✅ **Fact** AI 피드백 생성. [[sources/clap-blog-hr-ai-trend-2026.md]]
   3. ✅ **Fact** AI 원온원 — 미팅 내용 자동 요약. [[sources/clap-blog-hr-ai-trend-2026.md]]
   4. ✅ **Fact** AI 평가 — 서술형 리뷰 초안 작성. [[sources/clap-blog-hr-ai-trend-2026.md]]
@@ -88,29 +88,41 @@ related_vendors: []
 ### E. Organization & Team (조직·팀 구조)
 
 - **오너십**: 디웨일 (대표이사 구자욱). "글로벌 HR SaaS 리더" 목표 공개. [[sources/thebell-diwhale-2025-10.md]]
-- **고객 현황**: ✅ **Fact** 인지그룹에 공급. 스타트업N CLAP 기사 (원문 미확보) 중견기업 위주 확대 중.
+- **고객 현황**: ⚠️ **자사 보고**: 국내외 1,000여 고객사, 서비스 유지율 99% [[sources/thebell-diwhale-2025-10.md]]; 중견기업 고객 중 계약 해지 사례 없음, 공공기관으로 확대. [[sources/sisajournal-clap-2025.md]] 구체 고객사명 _미공개_
 - **팀 규모**: _미공개 (not disclosed)_
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-⚠️ 기대효과 수치 미공개. 아래 표 참조.
+⚠️ 벤더 주장만 존재 — 아래는 대표 인터뷰의 자사 주장이며 독립 검증 없음. 특정 고객사 outcome 수치는 _미공개_.
 
-- _미공개 (not disclosed)_ — 구체 성과 수치 공개된 것 없음. Tier 1·2 독립 검증 미확인.
+| 지표 | 값 | 출처 | 성격 |
+|---|---|---|---|
+| 시스템 구축 기간 | 자체 구축 8~10개월 → 클랩 2주 이내 | [[sources/thebell-diwhale-2025-10.md]] | ⚠️ 자사 보고 |
+| 이용 비용 | 자체 구축 비용의 10~15% 수준 | [[sources/thebell-diwhale-2025-10.md]] | ⚠️ 자사 보고 |
+| 성과관리 리소스 절감 | 70% 이상 (AI 적용으로 최대 90% 목표) | [[sources/thebell-diwhale-2025-10.md]] | ⚠️ 자사 보고 (목표치 포함) |
+| 고객 수·유지율 | 국내외 1,000여 고객사, 유지율 99% | [[sources/thebell-diwhale-2025-10.md]] | ⚠️ 자사 보고 |
+| SI 대비 비용 | 기존 대비 5분의 1 수준 | [[sources/sisajournal-clap-2025.md]] | ⚠️ 자사 보고 |
+| 도입 기업별 outcome | _미공개_ | — | — |
 
 ## Governance & Risk
 
 - 평가 AI 생성 내용의 편향·공정성 감사 체계 _미공개 (not disclosed)_.
 - 개인정보보호법 적용. 평가 데이터는 민감 개인정보.
-- 비속어 필터링은 공개됐으나 전반적 콘텐츠 가드레일 _미공개 (not disclosed)_.
+- 콘텐츠 가드레일(부적절 표현 필터링 등) _미공개 (not disclosed)_.
 
 ## Contradictions
 
-없음 (현재 기준).
+> [!contradiction] AI 기능 상용화 시점
+> - 시사저널e (2025-05-16): AI 평가자 자동 매칭·리포트 자동 생성 기능은 "개발 중". [[sources/sisajournal-clap-2025.md]]
+> - 더벨 (2025-10-02): 2023년 출시한 '클랩 AI'로 평가결과 요약 리포트 자동 생성·동료평가 매칭 자동화 "제공 중". [[sources/thebell-diwhale-2025-10.md]]
+> - 상태: resolved (시점 차이 — 2025-05 개발 중이던 기능이 2025-10 제공 중으로 서술; 다만 2023 출시 표현과는 시점 불일치 — 기능별 출시 시점 _미공개_)
+
+> [!note] 2026-09-27 grounding — 종전 본문의 "인지그룹 공급"은 인용 소스 3건(블로그·시사저널e·더벨) 어디에도 없어 제거(고객사명 _미공개_). "스타트업N 기사" 언급은 sources에 없는 출처라 제거.
 
 ## Consulting Angle
 
 - **국내 성과관리 AI SaaS 대표 사례**: 모더나의 자체 GPT 기반 성과 리뷰 (→ [[moderna-self-review-gpt]]) 와 비교하면, CLAP은 내재화 역량이 없는 국내 중견기업을 위한 "성과관리 AI SaaS" 패턴.
-- **평가 코멘트 AI 요약**: 국내 기업 성과 평가 시즌(보통 연 1~2회) 직전 도입 수요가 높음. HR tech 제안 시 "평가 시즌 생산성" 개선 사례로 활용.
-- **한계**: 소스가 벤더 자사 블로그·언론 보도 수준(Tier 3~4). 독립 검증 없음. confidence 0.30 — 벤처 단계 스타트업으로 시장 검증 아직 진행 중. 추가 고객 케이스 스터디 필요.
+- **평가 코멘트 AI 요약**: 국내 기업 성과 평가 시즌 직전 도입 수요가 높다는 가설. HR tech 제안 시 "평가 시즌 생산성" 개선 사례로 활용 — 단 리소스 절감 수치는 ⚠️ 자사 보고임을 명시.
+- **한계**: 소스가 벤더 자사 블로그·대표 인터뷰 보도 수준(수치는 모두 자사 주장). 독립 검증 없음. 고객사명 미공개 — 추가 고객 케이스 스터디 필요.
 - **파생 질문**: "CLAP 같은 국내 성과관리 SaaS가 Workday Performance·SAP SuccessFactors Performance 대비 가격·현지화 측면에서 어떤 경쟁 우위를 갖는가?"

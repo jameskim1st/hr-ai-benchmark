@@ -4,7 +4,7 @@ type: vendor
 page_type: vendor
 vendor_type: hrms
 category: [hrms, suite, ai-platform]
-headquarters: Palo Alto, California, USA (SAP SE 본사: Walldorf, Germany)
+headquarters: "Palo Alto, California, USA (SAP SE 본사: Walldorf, Germany)"
 parent: SAP SE
 founded: 2001               # SuccessFactors 창립, SAP 인수 2011
 public: true

@@ -3,7 +3,11 @@ title: "Anaplan AI Workforce Planning — Healthcare $21M Savings & Role-Based A
 url: "https://www.anaplan.com/news/anaplan-introduces-new-suite-role-based-ai-agents/"
 url_secondary: "https://www.anaplan.com/blog/case-for-workforce-planning-transformation/"
 tier: 3
-source_type: vendor_announcement
+raw: raw/vendors/2026-09-27-anaplan-role-based-ai-agents.md
+snapshot_quality: full
+publisher: Anaplan
+independent: false
+source_type: vendor
 ingested_at: 2026-04-12
 supports: [anaplan-workforce-analyst-ai-agents]
 ---
@@ -38,3 +42,14 @@ Anaplan introduced role-based AI agents for workforce planning (December 2025) i
 - **Vendor**: Anaplan (connected planning platform, SaaS)
 - **AI features**: Workforce Analyst agent, CoModeler, role-based AI agents
 - **Category**: Strategic Workforce & Governance — Workforce Planning
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "Anaplan Workforce Analyst identifies workforce risks, determines and communicates the impact of headcount decisions and provides real-time answers for smarter workforce planning."
+> — 뒷받침: Workforce Analyst agent 기능
+
+> "CoModeler turns natural language requests into structured models, logic and calculations, allowing business users to generate and refine models in minutes, versus days or weeks."
+> — 뒷받침: CoModeler — 자연어→모델
+
+> "Limited customer availability began in November, with general availability expected in Q1 2026."
+> — 뒷받침: CoModeler GA 시점

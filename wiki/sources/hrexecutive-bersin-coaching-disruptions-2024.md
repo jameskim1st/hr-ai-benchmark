@@ -2,11 +2,16 @@
 title: "Bersin: These are the 2 disruptions reshaping coaching"
 url: https://hrexecutive.com/bersin-these-are-the-2-disruptions-revolutionizing-coaching/
 tier: 2
-source_type: article
+raw: raw/articles/2024-hrexecutive-bersin-coaching-disruptions.md
+snapshot_quality: unavailable
+independent: true
+source_type: media
 publisher: HR Executive
 published: 2024
 ingested_at: 2026-04-12
 supports: [betterup-ai-coaching-twilio]
+publication_date: 2021-09-14
+date_note: "2026-09-27 정정: 원문 2021-09-14"
 ---
 
 # HR Executive — Bersin의 코칭 2대 disruption 분석 (2024)

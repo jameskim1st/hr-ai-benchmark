@@ -2,7 +2,10 @@
 title: "BetterUp Manage: Pioneering AI-Powered Platform For Leaders"
 url: https://joshbersin.com/2024/04/betterup-manage-pioneering-ai-powered-platform-for-leaders/
 tier: 1
-source_type: article
+raw: raw/articles/2024-04-bersin-betterup-manage.md
+snapshot_quality: full
+independent: true
+source_type: analyst
 publisher: Josh Bersin
 author: Josh Bersin
 published: 2024-04
@@ -38,3 +41,14 @@ Josh Bersin(Tier 1 HR 분석가)이 BetterUp Uplift 컨퍼런스 참석 후 Bett
 
 - [[betterup-ai-coaching-twilio]]
 - BetterUp
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "BetterUp Manage is the first highly personalized, scalable management development platform I've seen. It brings together AI-enabled assessment, personalized learning, coaching, and AI-driven narrative support."
+> — 뒷받침: BetterUp Manage 정의 (Bersin 평가)
+
+> "Since it's built on an AI platform there is very little manual work behind the scenes so it's enormously scalable."
+> — 뒷받침: AI 기반 확장성
+
+> "Through a set of shrewd marketing and sales strategies BetterUp established a leadership position in this market, growing to a billion dollar+ valuation."
+> — 뒷받침: $1B+ 기업가치

@@ -24,10 +24,10 @@ kr_vendor: 미확인 (UKG 한국 직접 진출 여부 미공개; 국내 유사 �
 frequency: daily
 first_seen: 2025-06-01
 last_confirmed: 2026-02-17
-confidence: 0.25
-evidence_grade: C
+confidence: 0.1
+evidence_grade: D
 corroborated_by: 0
-freshness: fresh
+freshness: unverified
 depth: partial
 graded_at: 2026-09-27
 consulting_angle_status: filled
@@ -45,7 +45,7 @@ related_companies:
 
 ## Summary
 
-UKG가 AI 기반 워크포스 스케줄링·인텔리전스 솔루션을 확대하며, 미국 최대 헬스케어 시스템의 **90% 가까이**가 UKG를 사용한다고 발표(2026-02). 대표 고객 사례로 **KC CARE Health Center**가 리텐션 **92% 개선**·효율성 **60% 향상**, **Jetro Restaurant Depot**이 UKG Rapid Hire로 연간 소싱·온보딩 비용 **$1.8M 절감**(2025), 연 **$2.2M 절감** 전망. 2025년 11월 **Workforce Intelligence Hub** 출시 — AI 기반 스케줄·타임·채용·성과·급여 데이터를 실시간 통합 뷰로 제공. [[sources/ukg-healthcare-scheduling-2026-02.md]]
+⚠️ 벤더 주장 (UKG 보도자료 — [[sources/ukg-healthcare-scheduling-2026-02.md]], 스냅샷 unavailable·원문 미확인; 본 페이지의 모든 수치는 소스 페이지 요약 기준): UKG가 AI 기반 워크포스 스케줄링·인텔리전스 솔루션을 확대하며, 미국 최대 헬스케어 시스템의 **90% 가까이**가 UKG를 사용한다고 발표(2026-02). 대표 고객 사례로 **KC CARE Health Center**가 리텐션 **92% 개선**·효율성 **60% 향상**, **Jetro Restaurant Depot**이 UKG Rapid Hire로 연간 소싱·온보딩 비용 **$1.8M 절감**(2025), 연 **$2.2M 절감** 전망. 2025년 11월 **Workforce Intelligence Hub** 출시 — AI 기반 스케줄·타임·채용·성과·급여 데이터를 실시간 통합 뷰로 제공. [[sources/ukg-healthcare-scheduling-2026-02.md]]
 
 ## Problem / Why (도입 배경)
 
@@ -78,7 +78,7 @@ flowchart LR
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core 플랫폼**: UKG Pro / UKG Ready (HCM + Workforce Management)
+- **Core 플랫폼**: _미공개 (not disclosed)_ — UKG Pro/Ready 여부는 인용 소스 미확인
 - **AI 시스템**: Bryte AI (UKG 내장 AI 에이전트) — 급여 인사이트·복리후생 모델링·셀프서비스·Great Place To Work Hub 연동 [[sources/ukg-healthcare-scheduling-2026-02.md]]
 - **Workforce Intelligence Hub**: 2025-11 출시 — 스케줄·타임·채용·성과·급여·산업 트렌드 실시간 통합 [[sources/ukg-healthcare-scheduling-2026-02.md]]
 - **데이터 규모**: ⚠️ 벤더 주장: 12B+ 스케줄 생성, 10B 출퇴근 기록, 750M+ 지원자 처리 [[sources/ukg-healthcare-scheduling-2026-02.md]]
@@ -116,8 +116,14 @@ flowchart LR
 ## Governance & Risk
 
 - AI 스케줄링의 **공정성** — 특정 직원에게 불리한 교대 패턴 반복 위험
-- 프론트라인 직원의 **AI에 대한 신뢰 부족** — UKG 자체 조사에서 53%만 고용주가 AI 준비시킨다고 인식 [[sources/ukg-healthcare-scheduling-2026-02.md]]
+- 프론트라인 직원의 **AI에 대한 신뢰** — ⚠️ 벤더 주장: 75%가 AI가 스케줄 관리를 용이하게 한다고 응답 [[sources/ukg-healthcare-scheduling-2026-02.md]]; '고용주가 AI를 준비시킨다'는 인식 비율은 _미공개_ (인용 소스 요약에 없음 — 2026-09-27 grounding 점검)
 - 52시간제(한국) 등 지역 노동법 컴플라이언스 자동 반영 필요
+
+## Contradictions
+
+_없음._
+
+> [!note] 2026-09-27 grounding — 유일한 인용 소스는 UKG 보도자료(BusinessWire)이며 raw 스냅샷 unavailable — 모든 수치는 소스 페이지 요약 기준 ⚠️ 벤더 주장/자사 보고이며 원문 미확인. Core 플랫폼(UKG Pro/Ready) 서술과 '고용주가 AI를 준비시킨다'는 인식 조사 수치는 소스에 없어 `_미공개_`.
 
 ## Consulting Angle
 

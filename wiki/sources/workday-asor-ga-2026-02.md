@@ -2,7 +2,11 @@
 title: "Workday Agent System of Record — GA (2026-02)"
 url: https://blog.workday.com/en-us/managing-ai-powered-future-of-work.html
 tier: 3
-source_type: vendor-blog
+raw: raw/vendors/2026-02-18-workday-asor-ga.md
+snapshot_quality: full
+publisher: Workday
+independent: false
+source_type: vendor
 ingested_at: 2026-05-05
 publication_date: 2026-02-18
 supports: [deloitte-2026-human-capital-trends-meta, workday-agent-system-of-record-asor, workday-sana-for-workday-lms]
@@ -29,3 +33,17 @@ Workday가 Agent System of Record(ASOR)를 GA로 발표. AI 에이전트를 사�
 - 실제 customer adoption 수치·구체 사례 미공개
 - 3rd-party agent 통합의 깊이(read-only 메타데이터 vs deep policy enforcement) 불명확
 - 한국 EU AI Act dual-compliance 컨텍스트에서의 동작 미검증
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "With ASOR, agents become part of an organization's workforce strategy—measured like investments, governed like employees, and improved by training and learning."
+> — 뒷받침: 에이전트를 직원처럼 거버넌스
+
+> "ASOR serves as the single source of truth for all of an enterprise's AI agents—whether they're built by Workday, a customer, or a partner."
+> — 뒷받침: 1st/3rd-party 통합
+
+> "Since launching the Workday Agent Partner Network, more than 65 global partners are connecting their AI agents to Workday's ASOR."
+> — 뒷받침: 65+ 파트너
+
+> "Through the ASOR and the Agent Gateway, Workday supports industry standards and protocols, such as the Model Context Protocol (MCP) and Agent-to-Agent (A2A) interactions, while aligning with OpenTelemetry"
+> — 뒷받침: MCP/A2A 지원

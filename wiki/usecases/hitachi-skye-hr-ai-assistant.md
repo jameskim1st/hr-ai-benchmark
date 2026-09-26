@@ -26,9 +26,9 @@ first_seen: 2025-01-01
 last_confirmed: 2026-05-06
 confidence: 0.8
 evidence_grade: A
-corroborated_by: 3
+corroborated_by: 2
 freshness: fresh
-depth: full
+depth: partial
 graded_at: 2026-09-27
 sources: [sources/hrexecutive-hitachi-skye-2025.md, sources/ema-hitachi-agentic-hr-2025.md, sources/constellation-hitachi-harc-agents-2025.md, sources/unleash-hitachi-digital-2025.md]
 related_usecases:
@@ -45,7 +45,7 @@ related_vendors: []
 
 ## Summary
 
-Hitachi는 2025년 **Ema 플랫폼 기반 HR AI 어시스턴트 "Skye"**를 도입. ✅ Fact: 8주 만에 deploy, **3개 BU·20개 시스템·28 use case·40,000명 직원** 대상. ServiceNow·Jira·Okta 통합 + MS Teams·Google Chat 양방향. 사업부·국가·역할에 따라 문서 추론·개인화 응답 + IT 서비스 티켓 생성·휴가 요청 처리 등 인텔리전트 액션. ⚠️ 벤더 주장 (Ema): **70% HR operational efficiency 향상**. Hitachi 차별화: **문화 설계** — Skye에 이름·개성 부여 → "AI = 도구"가 아닌 "AI = 동료" 마인드셋 전환. [[sources/hrexecutive-hitachi-skye-2025.md]] **온보딩 성과** (⚠️ 자사 보고, HR Executive 매개): 온보딩 최대 15일 → 4일 단축, 신규입사자 1인당 HR 개입 20h → 12h; 초기 배포는 5개 사업부 + 40,000명+ 지원 공유 HR 서비스 조직(미국·일본·유럽), 2025년 초 파일럿 개시. [[sources/ema-hitachi-agentic-hr-2025.md]] (2026-09-27 `hitachi-ema-agentic-hr-onboarding` 페이지 병합)
+Hitachi는 2025년 **Ema 플랫폼 기반 HR AI 어시스턴트 "Skye"**를 도입. ✅ Fact: 8주 미만(<8 weeks)에 go-live, **5개 사업부·40,000명+ 직원** 대상 [[sources/ema-hitachi-agentic-hr-2025.md]]; **20개+ systems of record** 환경 [[sources/hrexecutive-hitachi-skye-2025.md]]. ServiceNow·Jira·Okta 통합 + MS Teams·Google Chat 양방향 [[sources/ema-hitachi-agentic-hr-2025.md]]. (기존 "3개 BU·28 use case" 표기는 인용 소스에 없어 수정 — Contradictions 참조) 사업부·국가·역할에 따라 문서 추론·개인화 응답 + IT 서비스 티켓 생성·휴가 요청 처리 등 인텔리전트 액션. ⚠️ 벤더 주장 (Ema): **70% HR operational efficiency 향상**. Hitachi 차별화: **문화 설계** — Skye에 이름·개성 부여 → "AI = 도구"가 아닌 "AI = 동료" 마인드셋 전환. [[sources/hrexecutive-hitachi-skye-2025.md]] **온보딩 성과** (⚠️ 자사 보고, HR Executive 매개): 온보딩 최대 15일 → 4일 단축, 신규입사자 1인당 HR 개입 20h → 12h; 초기 배포는 5개 사업부 + 40,000명+ 지원 공유 HR 서비스 조직(미국·일본·유럽), 2025년 초 파일럿 개시. [[sources/ema-hitachi-agentic-hr-2025.md]] (2026-09-27 `hitachi-ema-agentic-hr-onboarding` 페이지 병합)
 
 ## Problem / Why (도입 배경)
 
@@ -123,7 +123,7 @@ flowchart TB
 
 - **입력 데이터 소스**: HR 정책 문서, 복리후생 문서. 사업부·국가·역할별 개인화 데이터. 온보딩: 직원 마스터 데이터(입사 확정 이벤트), 절차 문서, 온보딩 태스크 체크리스트 [[sources/ema-hitachi-agentic-hr-2025.md]]
 - **데이터 규모**: 40,000명+ 직원 지원 범위 (초기 배포: 5개 사업부 + 공유 HR 서비스 조직) [[sources/ema-hitachi-agentic-hr-2025.md]]; 연간 신규 입사자 수·문서 수 _미공개 (not disclosed)_
-- **학습 vs RAG vs In-context**: ✅ **Fact** 문서 추론(document reasoning) 능력이 핵심으로 언급 — RAG 방식으로 추정되나 명시적 확인 없음. [[sources/hrexecutive-hitachi-skye-2025.md]]
+- **학습 vs RAG vs In-context**: ✅ **Fact** 문서 추론(document reasoning) 능력이 핵심으로 언급 [[sources/hrexecutive-hitachi-skye-2025.md]]; Ema 자료는 문서 ingestion·OCR·API·DB 통합과 human-in-the-loop training을 기술 [[sources/ema-hitachi-agentic-hr-2025.md]]. RAG/fine-tuning 여부 _미공개 (not disclosed)_.
 - **데이터 거버넌스**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
@@ -169,7 +169,7 @@ HR 문의 부담이 Skye로 이전되어 직원들의 빠른 답변 확보; 온�
 
 > [!note] 2026-09-27 중복 페이지 병합
 > `hitachi-ema-agentic-hr-onboarding` (Onboarding & Transitions / New-hire Onboarding, confidence 0.35) 페이지를 이 페이지로 병합. 온보딩 지표·프로세스·통합 커넥터 사실을 이관하고 [[sources/ema-hitachi-agentic-hr-2025.md]]를 sources에 추가.
-> - **"20+ use cases" vs "28 use cases"**: Ema 케이스 스터디(HR Executive 매개, 2025년 초 초기 배포 기준)는 "20+ 유스케이스", 이 페이지 Summary는 후속 보도 기준 "28 use case"로 기술. "20+"는 28을 포함하는 표현이므로 수치 모순은 아니며, 초기 배포 → 이후 확장의 시점 차이로 해석. 단, 28 수치의 출처 페이지([[sources/hrexecutive-hitachi-skye-2025.md]])가 현재 wiki/sources에 파일로 존재하지 않아 시점 확정은 소스 복원 후 재검증 필요.
+> - **"20+ use cases" vs "28 use cases"**: Ema 케이스 스터디는 "20+ 유스케이스"; 기존 Summary의 "28 use case"·"3개 BU"는 인용 소스 raw 어디에도 없어 2026-09-27 grounding 점검에서 삭제(Ema raw는 5개 사업부). HR Executive 기사(raw 확보)는 "20-plus systems of records"·30개+ HR use case 확장 전망을 언급.
 > - **"70% 효율 향상" vs "50–70% 절감 예측"**: 동일 Ema 자료의 제목은 70%, 본문 인용은 "50–70% 시간 절감 예측(projection)". 70%는 예측 범위의 상한이며 실측치 아님 — 모두 ⚠️ 벤더 주장.
 
 ## Consulting Angle

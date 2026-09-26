@@ -28,7 +28,7 @@ confidence: 0.35
 evidence_grade: C
 corroborated_by: 0
 freshness: fresh
-depth: full
+depth: partial
 graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
@@ -42,11 +42,11 @@ related_usecases:
 related_vendors: []
 ---
 
-> 📌 **PwC 자료 정정**: PwC Korea ER 컨설팅 자료에서 본 사례를 "spire" (벤더)로 표기했으나, 실제로는 **Spire Energy = 고객사**, **Sodales Solutions = 벤더**. SAP SuccessConnect 2018에서 발표된 customer story.
+> 📌 **PwC 자료 정정**: PwC Korea ER 컨설팅 자료에서 본 사례를 "spire" (벤더)로 표기했으나, 실제로는 **Spire Energy = 고객사**, **Sodales Solutions = 벤더**. SAP SuccessConnect 2019 인터뷰 기반 customer story ([[sources/sap-store-spire-energy-success-story]] — PwC 자료의 '2018'은 원문상 2019).
 
 ## Summary
 
-Spire Inc.는 미주리주 St. Louis 기반 미국 5위 천연가스 utility (1.7M 고객, 3개 주, **10+ 노조 운영**) — 미국 최대급 단일 unionized utility. **Sodales Labour Relations Management** (SAP SuccessFactors 통합 endorsed app)을 도입해 incident·grievance·discipline·appeals를 실시간 추적하고 다중 노조별 case 관리·CBA(단체협약) 중앙화·노조 규칙 기반 워크플로우 자동화를 운영. Sodales는 SAP의 **Industry Cloud Solutions Portfolio premium-certified Endorsed App** + SAP Business AI를 활용한 **첫 번째 endorsed app**.
+Spire Energy는 미주리주 St. Louis 기반 미국 5위 상장 천연가스 기업 (약 1.7m 고객, 3개 주, **10+ 노조 운영**) ([[sources/sap-store-spire-energy-success-story]]). SAP SuccessFactors 확장인 **Sodales Labour Relations Software(LRS)**로 징계·job bidding·CBA(단체협약) 관리 등 노조 관련 커뮤니케이션을 표준화 (⚠️ 벤더 사례 — [[sources/sap-store-spire-energy-success-story]]). 플랫폼은 다중 노조 환경의 고충·중재·time claim·CBA 관리와 규칙 기반 워크플로우를 표방 (⚠️ 벤더 주장 — [[sources/sodales-labour-relations-product]]). Sodales는 SAP GenAI Hub·SAP AI Core를 활용하고 Employee Central과 통합되는 **첫 Premium Certified Endorsed App** (⚠️ 벤더 주장, 2024-10-22 보도자료 — [[sources/sodales-sap-app-center]]; 'Industry Cloud Solutions Portfolio' 문구는 인용 소스에 없음).
 
 ## Problem / Why (도입 배경)
 
@@ -55,7 +55,7 @@ Spire Inc.는 미주리주 St. Louis 기반 미국 5위 천연가스 utility (1.
   - **다중 노조 복잡성**: 10+ CBA 문서 manual 검색 → grievance 처리 시 잘못된 절차 적용 risk
   - **근태·LMS·comp 데이터 silo**: 각 시스템에서 case 정보 수집 시간 over-burden
   - **컴플라이언스 audit 추적 어려움**: 사건 처리 이력 분산 → 외부 audit·노조 측 조회 시 bottleneck
-- **Trigger**: SAP SuccessFactors 도입 + Sodales의 SAP-native 노사관계 SaaS 솔루션 등장 (2018)
+- **Trigger**: SAP SuccessFactors 확장 앱으로 Sodales가 갭을 보완 — SAP SuccessConnect 2019 인터뷰 (Talent Program Lead Max Henning) ([[sources/sap-store-spire-energy-success-story]]); 도입 시점 _미공개_
 
 ## Solution Architecture
 
@@ -75,35 +75,38 @@ Spire Inc.는 미주리주 St. Louis 기반 미국 5위 천연가스 utility (1.
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: SAP SuccessFactors (Spire는 SAP HCM 베이스)
-- **AI 시스템 배치**: SAP Industry Cloud Solutions Portfolio 내 endorsed app (SAP App Center 등재)
-- **연동**: SAP Employee Central, LMS, Time Management, Compensation
-- **사용자 접점**: Sodales web/mobile portal + conversational AI 챗봇 + SSO (SAP IdP)
-- **인증**: RBAC (HR·매니저·직원·노조 representative 권한 분리)
-- **AI 안전성**: SAP Business AI guardrails 활용 (벤더 주장)
+- **Core HRIS**: ✅ SAP SuccessFactors — Sodales LRS는 그 확장(extension) ([[sources/sap-store-spire-energy-success-story]])
+- **AI 시스템 배치**: ⚠️ 벤더 주장: SAP Premium Certified Endorsed App — SAP GenAI Hub·SAP AI Core 활용 ([[sources/sodales-sap-app-center]], 2024-10-22 보도자료; Spire 도입 시점의 AI 기능 포함 여부 _미공개_)
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: ⚠️ 벤더 주장: SAP Employee Central 통합 ([[sources/sodales-sap-app-center]]); LMS·Time Management·Compensation 연동은 _미공개_
+- **사용자 접점**: _미공개 (not disclosed)_
+- **인증·권한**: _미공개 (not disclosed)_
+- **AI 안전성**: ⚠️ 벤더 주장: SAP Business AI 기반 안전·노동 규제 준수 지원 ([[sources/sodales-sap-app-center]]); guardrail 세부 _미공개_
 
 ### C. Data (데이터)
 
-- **입력 데이터**:
-  - Employee Central (역할·근속·노조 소속·과거 disciplinary)
-  - LMS (안전 교육·자격 이수 이력)
-  - Time Management (근태·잔업)
-  - Compensation (급여·페널티)
-  - CBA 문서 (다중 노조별)
-  - Incident report 자유 입력
-- **모델 구조**: AI summarization (case 요약) + classification (grievance type·노조 식별) + RPA (시스템 자동 갱신)
-- **Data governance**: SAP enterprise governance, audit trail, _구체 retention 미공개_
+- **입력 데이터 소스**: ⚠️ 벤더 주장: 징계·job bidding·CBA 관리 데이터 ([[sources/sap-store-spire-energy-success-story]]); 고충·중재·time claim·seniority 등 ([[sources/sodales-labour-relations-product]]); Employee Central 연동 데이터 ([[sources/sodales-sap-app-center]]). LMS·근태·보상 항목은 _미공개_
+- **데이터 규모**: _미공개 (not disclosed)_
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context 구분**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: _미공개 (not disclosed)_
+- **민감정보 처리**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
-- **Foundation model**: SAP Business AI (구체 LLM provider _부분 미공개_)
-- **Customization**: domain-specific (US labor relations + 다중 노조 CBA 처리)
-- **Orchestration**: Sodales 자체 workflow engine + SAP Joule (가능성)
+- **Foundation model**: ⚠️ 벤더 주장: SAP GenAI Hub·SAP AI Core 활용 ([[sources/sodales-sap-app-center]]); 구체 LLM _미공개_
+- **Model 유형**: _미공개 (not disclosed)_
+- **제공 방식**: ⚠️ 벤더 주장: SAP Endorsed App (SAP Store 판매) ([[sources/sodales-sap-app-center]])
+- **커스터마이징 기법**: ⚠️ 벤더 주장: 다중 노조 규칙 기반 워크플로우·CBA 관리·정책 해석 일관성 ([[sources/sodales-labour-relations-product]])
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: _미공개 (not disclosed)_
 
 ### E. Organization & Team (조직·팀 구조)
 
-- **오너십**: Spire HR + Sodales customer success + SAP partner ecosystem
-- **참여 역할**: HR business partner (운영) + 노조 representative (CBA 협의) + IT (SAP 통합)
+- **오너십**: ⚠️ 벤더 사례: Spire Talent Program Lead Max Henning이 SAP SuccessConnect 2019에서 소개 ([[sources/sap-store-spire-energy-success-story]]); 운영 조직 _미공개_
+- **참여 역할**: HR·management 팀의 노조 관리 부담이 배경 ([[sources/sap-store-spire-energy-success-story]]); 역할 구성 _미공개_
+- **팀 규모·기간·거버넌스·변화관리**: _미공개 (not disclosed)_
+- **파트너**: Sodales Solutions (벤더), SAP (플랫폼) ([[sources/sodales-sap-app-center]])
 
 ### F. Diagrams (도식)
 
@@ -121,7 +124,7 @@ flowchart TB
     Resolution --> Audit[자동 audit trail + trend dashboard]
 ```
 
-범례: 모든 연결 ⚠️ Sodales 공식 자료 + SAP App Center 기반.
+범례: 모든 연결 ⚠️ Sodales 공식 자료([[sources/sap-store-spire-energy-success-story]], [[sources/sodales-labour-relations-product]], [[sources/sodales-sap-app-center]]) 기반 — 챗봇·LMS/Time 연동·화상 조사·trend dashboard 노드는 인용 소스 미확인(점선 취급).
 
 ## Impact / Metrics (기대효과)
 
@@ -130,11 +133,11 @@ flowchart TB
 
 | 지표 | 값 | 출처 | 성격 |
 |---|---|---|---|
-| Spire 노조 수 | **10+** | Sodales/SAP customer story | ⚠️ 자사 보고 |
-| Spire 직원 규모 | ~3,400명 | Spire 공식 | ✅ Fact (10-K) |
-| Spire 고객 규모 | 1.7M (3개 주) | Spire 공식 | ✅ Fact |
-| Sodales endorsed app 등급 | SAP **premium-certified** | SAP App Center | ✅ Fact (Tier 3) |
-| Sodales SAP Business AI 첫 endorsed app | 1st | Sodales/SAP 공식 | ⚠️ 벤더 주장 |
+| Spire 노조 수 | **10+** | [[sources/sap-store-spire-energy-success-story]] | ⚠️ 벤더 사례 전달 |
+| Spire 직원 규모 | _미공개_ | 인용 소스에 없음 (2026-09-27 grounding 점검) | ❓ |
+| Spire 고객 규모 | 약 1.7m (3개 주) | [[sources/sap-store-spire-energy-success-story]] | ⚠️ 벤더 사례 전달 |
+| Sodales endorsed app 등급 | SAP Premium Certified Endorsed App | [[sources/sodales-sap-app-center]] (보도자료) | ⚠️ 벤더 주장 |
+| Sodales SAP GenAI Hub 활용 첫 Premium Certified Endorsed App | 1st (2024-10-22) | [[sources/sodales-sap-app-center]] | ⚠️ 벤더 주장 |
 | Spire grievance 처리 시간 단축·만족도 | _구체 수치 미공개_ | — | ❓ 미공개 |
 
 ## Governance & Risk
@@ -144,12 +147,16 @@ flowchart TB
 - ⚠️ 한국 적용 시 **노조법 차이**: 한국 복수노조 + 단체교섭 절차 + 부당노동행위 규제는 미국 NLRA와 상이 — Sodales의 미국 NLRA 기반 워크플로우 customization 필요
 - ⚠️ 다중 노조 CBA 자동 매칭 정확도 _미공개_ — 잘못 적용 시 부당노동행위 risk
 
+## Contradictions
+
+> [!note] 2026-09-27 grounding — (1) 'SAP SuccessConnect 2018'은 원문상 **2019** ([[sources/sap-store-spire-energy-success-story]]). (2) 'Industry Cloud Solutions Portfolio' 문구는 인용 소스에 없음 — 2024-10-22 보도자료의 'SAP GenAI Hub 활용 첫 Premium Certified Endorsed App'으로 교체 ([[sources/sodales-sap-app-center]]). (3) Spire 직원 수, LMS/Time/Compensation 연동, RBAC·SSO, SAP Joule, HR Acuity 고객 수는 인용 소스에 없어 `_미공개_`/삭제. (4) [[sources/pwc-er-ai-deck-2026-05]]는 스냅샷 unavailable — 인용 불가.
+
 ## Consulting Angle
 
 - **다중 노조 환경 reference**: 한국 SK·LG·현대차·금융지주 등 복수노조 보유 그룹사의 노사 case 처리 디지털화 검토 시 **유일한 글로벌 다중 노조 utility reference** (10+ 노조)
 - **SAP HCM 베이스 한국 대기업 fit**: 삼성·LG·SK는 SAP HCM 비중이 큰 그룹 — Sodales는 SAP-native이므로 추가 ETL 부담 적음
 - **vs HR Acuity** [[hr-acuity-oliver-ai-er-companion]]:
-  - HR Acuity: 미국 ER market leader, AI Companion (olivER), 5,000+ 고객
+  - HR Acuity: 미국 ER 벤더, AI Companion (olivER) — 고객 규모는 해당 페이지 참조
   - Sodales: SAP-native, 다중 노조 utility 전문
   - 한국 도입 시 vendor selection 핵심: 기존 HRIS (SAP vs other) + 노조 형태 (단일 vs 복수)
 - **vs 고용노동부 AI** [[moel-ai-labor-law-consultation]]:
@@ -159,5 +166,5 @@ flowchart TB
 - **반면교사**:
   - PwC 자료에서 "Spire" (고객) ↔ Sodales (벤더) 혼동 발생 — **컨설팅 자료 작성 시 customer/vendor 분명히 표기**
   - Sodales의 다중 노조 자동 매칭 정확도 미공개 — POC 시 한국 노조법 fit·정확도 검증 필수
-- **2018 SAP SuccessConnect 발표 사례** — 8년 경과 → recency penalty. 2024-2026 신규 customer 사례 발표 시 confidence 재조정
+- **2019 SAP SuccessConnect 인터뷰 사례** ([[sources/sap-store-spire-energy-success-story]]) — 7년 경과 → recency penalty. 2024-2026 신규 customer 사례 발표 시 confidence 재조정
 - **Watch list**: Sodales 한국 진출·Forrester ER software wave 발표·Gartner Market Guide for Employee Relations 등재 시 confidence 재조정

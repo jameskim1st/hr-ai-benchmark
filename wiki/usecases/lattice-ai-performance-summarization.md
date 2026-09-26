@@ -3,19 +3,19 @@ title: "Lattice — AI Performance Summarization & AI Agent"
 slug: lattice-ai-performance-summarization
 primary_category: Performance & Talent Management
 subcategory: Goal & Performance
-tags: [performance-review, ai-summarization, feedback, engagement, goals-ai, attrition-risk, slack-integration]
-company: Ruggable
+tags: [performance-review, ai-summarization, feedback, engagement]
+company: _다수 (Lattice 고객 — 개별 고객 미확인)_
 industry: [tech, consumer-goods]
 region: [na]
 employee_class: [all]
 vendor: [Lattice]
 vendor_type: [point-solution]
-output: "360도 피드백·리뷰 자동 요약 + 핵심 트렌드 도출 + 자연어 목표 진척 분석 + Slack/Teams 내 개인별 이탈 리스크 알림"
+output: "⚠️ 벤더 주장: 1:1 대화 중 AI의 핵심 주제·코칭 기회·다음 단계 요약 + Lattice AI Agent의 성과 데이터(1:1·과거 리뷰·성장 영역·피드백) 기반 리뷰 초안 (Evidence-based AI Reviews, 출시 예정). 매니저가 검토·수정 후 직접 제출"
 ai_tech_type: [generative, predictive]
 ai_tech_subtype: [summarization-qa, prediction]
 stage: production
 visibility: public
-case_type: adoption
+case_type: vendor-product
 regulatory_exposure: [kr-high-impact-review, eu-annex-iii]
 kr_law: AI 기본법 고영향 AI (성과 평가 요약·이탈 예측)
 kr_union: 단체교섭/근로자대표 협의 필요 (인사 의사결정 영향)
@@ -44,81 +44,87 @@ related_companies:
 
 ## Summary
 
-Lattice는 성과관리·engagement·보상 통합 SaaS로, **AI Performance Summarization** (리뷰 주기 중 받은 피드백·리뷰를 자동 요약해 핵심 트렌드 도출), **Goals AI Assistance** (자연어로 목표 쿼리·요약·분석), **AI Agent** (Slack/Teams 내장, 개인별 이탈 리스크 탐지)를 제공한다. **Ruggable** VP of People이 "Lattice AI for engagement로 비즈니스의 다른 영역에서도 AI 필요성을 입증했다"고 평가. 2026년 상반기 AI Agent가 Slack/Teams 내 작동하는 업데이트 발표.
+Lattice의 Spring/Summer '26 릴리스 — "People + AI platform" 방향: ⚠️ 벤더 주장: **Evidence-based AI Reviews**(이번 여름 출시 예정) — Lattice AI Agent가 1:1 기록·과거 리뷰·성장 영역·피드백 등 실제 성과 데이터에 근거해 직원·매니저의 리뷰 초안을 생성; 매니저가 톤·정확성·결과에 책임지며 AI가 리뷰를 대신 제출하지 않음 [[sources/lattice-ai-performance-features-2025]]. **1:1 내 AI 요약·코칭** — 대화 중 AI가 핵심 주제 요약·코칭 기회·다음 단계 캡처 [[sources/lattice-ai-performance-features-2025]]. 보상(compensation) 기능 강화 병행 [[sources/lattice-ai-performance-features-2025]]. 기존 페이지의 **Ruggable(VP of People Abby Wilson) 도입 사례·HR Brew 인용**, "Goals AI Assistance", "AI Agent 이탈 리스크 탐지", "Slack 내장", "Google Workspace 연동", "hours per employee 절감"은 인용 소스에 없어 _미공개_ 처리 (2026-09-27 grounding 점검 — 별도 소스 확보 필요).
 
 ## Problem / Why (도입 배경)
 
-- 매니저가 리뷰 주기마다 다수 직원의 **360도 피드백을 수동 종합**하는 데 시간 소요
-- 목표 진척을 대시보드에서 수동 추적 → **실시간 파악 어려움**
-- 이탈 리스크를 **사후적으로만** 파악 — 사전 개입 불가
+- **Before (baseline)**: 매니저가 수많은 이메일·노트를 뒤져 성과 리뷰를 시작 [[sources/lattice-ai-performance-features-2025]]; 정량 baseline ❓ 미공개
+- **Pain point**: 리뷰 품질·일관성 편차, 매니저의 정리(compiling) 시간 [[sources/lattice-ai-performance-features-2025]]
+- **Trigger**: _미공개 (not disclosed)_ — 벤더 제품이므로 고객별 상이 (🚫 일반론 표기); Ruggable의 도입 배경은 인용 소스에 없음
 
 ## Solution Architecture
 
 ### A. Process (프로세스)
 
-- **Before**: 매니저가 직원별 피드백·리뷰를 수동으로 읽고 종합 → 목표 대시보드 수동 확인
-- **After**: AI Performance Summarization이 현 주기 피드백·리뷰를 자동 요약 → 핵심 트렌드 도출 → Goals AI가 자연어 쿼리로 목표 진척 분석 → AI Agent가 이탈 리스크 신호 탐지
-- **HITL 지점**: 요약·이탈 리스크는 매니저에게 추천 — 최종 행동은 매니저/HR 결정
-- **Scope of autonomy**: Recommend
+- **Before**: 매니저가 이메일·노트를 수동으로 뒤져 리뷰 작성 [[sources/lattice-ai-performance-features-2025]]
+- **After** (⚠️ 벤더 주장 [[sources/lattice-ai-performance-features-2025]]):
+  1. 1:1 대화 중 AI가 핵심 주제·코칭 기회·다음 단계를 요약·캡처
+  2. 리뷰 주기에 Lattice AI Agent가 1:1·과거 리뷰·성장 영역·피드백 데이터로 리뷰 초안 생성 (Evidence-based AI Reviews, 여름 출시 예정)
+  3. 매니저가 톤·정확성·결과를 검토·수정 후 직접 제출 — AI는 제출하지 않음
+- **HITL 지점**: 매니저가 최종 책임·제출 [[sources/lattice-ai-performance-features-2025]]
+- **Scope of autonomy**: Recommend (초안·요약) [[sources/lattice-ai-performance-features-2025]]
 
 ```mermaid
 flowchart LR
-    A[360도 피드백·리뷰] --> B[AI Performance Summarization]
-    B --> C[핵심 트렌드 요약]
-    D[목표 데이터] --> E[Goals AI]
-    E --> F[자연어 목표 분석]
-    G[팀 안정성·sentiment·피드백] --> H[AI Agent]
-    H --> I[이탈 리스크 탐지]
-    C --> J{매니저 검토}
-    F --> J
-    I --> J
+    A[1:1 대화] --> B[AI 요약·코칭 기회·다음 단계]
+    B --> D[(성과 데이터: 1:1·과거 리뷰·성장 영역·피드백)]
+    D --> E[Evidence-based AI Reviews<br/>초안 생성 · 출시 예정]
+    E --> J{매니저 검토·제출}
 ```
+
+범례: 실선 = Lattice 릴리스 노트 [[sources/lattice-ai-performance-features-2025]] 확인. 이탈 리스크·목표 분석 노드는 소스 미확인으로 제외.
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core 플랫폼**: Lattice (Performance Management + Engagement + Compensation SaaS)
-- **AI Agent**: Slack, Microsoft Teams 내장 예정 (2026 상반기)
-- **연동**: Google Workspace, HRIS 시스템 통합
-- 배포 환경 상세: _미공개 (not disclosed)_
+- **Core 플랫폼**: Lattice (Performance + 보상 기능 포함 SaaS) [[sources/lattice-ai-performance-features-2025]]
+- **AI Agent 접점**: 1:1 대화 내 AI [[sources/lattice-ai-performance-features-2025]]; Microsoft Teams 관련 기능이 릴리스에 언급 [[sources/lattice-ai-performance-features-2025]] — Slack 내장은 _미공개 (not disclosed)_
+- **연동**: HRIS 관련 기능 언급 [[sources/lattice-ai-performance-features-2025]] — 구체 연동 대상 _미공개 (not disclosed)_
+- **배포 환경**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력**: 성과 리뷰, 동료 피드백, 목표 데이터, engagement 설문, 매니저 변경·팀 안정성 신호
-- **이탈 리스크 분석**: 팀 안정성, sentiment, 피드백 패턴, 매니저 변경 등 신호 분석
-- 학습/RAG 방식: _미공개 (not disclosed)_
+- **입력**: 1:1 기록, 과거 리뷰, 성장 영역, 피드백 [[sources/lattice-ai-performance-features-2025]]
+- **이탈 리스크 분석**: _미공개 (not disclosed)_ — 인용 소스에 없음
+- **학습/RAG 방식**: _미공개 (not disclosed)_
+- **데이터 거버넌스·민감정보**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
-- _미공개 (not disclosed)_
+- **Foundation model**: _미공개 (not disclosed)_
+- **Model 유형**: 생성(리뷰 초안)·요약 [[sources/lattice-ai-performance-features-2025]]
+- **평가·가드레일**: ⚠️ 벤더 주장: "not an AI autopilot" — 매니저 책임·AI 미제출 [[sources/lattice-ai-performance-features-2025]]
 
 ### E. Organization & Team (조직·팀 구조)
 
-- Ruggable: Abby Wilson (VP of People) — engagement AI 도입
-- 나머지: _미공개 (not disclosed)_
+- **Ruggable 도입 조직**: _미공개 (not disclosed)_ — 기존 "Abby Wilson (VP of People)" 서술은 인용 소스에 없음
+- **나머지**: _미공개 (not disclosed)_
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
 
-매니저의 리뷰 종합 시간 절감 + 이탈 리스크 사전 탐지. 구체 정량 지표 미공개.
+⚠️ 기대효과 수치 미공개 — 인용 소스에 정량 지표가 없음. 벤더는 "리뷰 품질·일관성 향상, 팀에 시간 환원"을 정성 목표로 제시 [[sources/lattice-ai-performance-features-2025]].
 
 | 지표 | 값 | 출처 | 성격 |
 |---|---|---|---|
-| 리뷰 시간 절감 | "hours per employee" 절감 (구체 수치 미공개) | Lattice 공식 | ⚠️ 벤더 주장 |
-| Ruggable AI 활용 확대 | engagement → 타 비즈니스 영역 | HR Brew (2024) | ⚠️ 자사 보고 |
-| **LivePerson 리뷰 시간 50~75% 감소** | 동종 카테고리 reference | Betterworks Case Study (PwC 자료) | ⚠️ Lattice 사례 아님, 비교 reference |
-| 15Five 도입사 직원 유지율 94% | 동종 vendor reference | 15Five Press Release 2025 | ⚠️ 벤더 주장 |
-| 15Five 도입사 이직률 40% → 32% | 동종 vendor reference | 15Five Blog | ⚠️ 벤더 주장 |
-| HBR — 매니저 1인당 연 ~210h 리뷰 작성 | 시장 baseline (PwC 자료 인용) | HBR 일반 통계 | ✅ Tier 1 일반 baseline |
+| 리뷰 작성 시간 절감 | _미공개_ (정성: "spend less time compiling") | Lattice 릴리스 노트 [[sources/lattice-ai-performance-features-2025]] | ⚠️ 벤더 주장 (정성) |
+| Ruggable 도입 효과 | _미공개_ (인용 소스에 없음) | — | ❓ |
+| 동종 벤더 비교 수치 (LivePerson·15Five·HBR baseline) | 삭제 — Lattice 사례 아님·본 페이지 인용 소스 없음 | — | — |
 
 ## Governance & Risk
 
-- AI 이탈 리스크 탐지: **개인별 이탈 확률 예측**은 직원 프라이버시·차별 리스크 높음 — EU AI Act High-risk 범주 해당 가능
-- 리뷰 요약의 환각(hallucination) 위험 — 원문과 불일치 시 평가 공정성 훼손
+- ⚠️ 벤더 주장: 매니저가 톤·정확성·결과에 책임, AI는 제출하지 않음 [[sources/lattice-ai-performance-features-2025]] — 실제 검토 강제 장치 _미공개_
+- 리뷰 초안의 환각(hallucination) 위험 — 원문 성과 데이터와 불일치 시 평가 공정성 훼손
+- 이탈 리스크 예측 기능은 인용 소스에서 미확인 — 확인 시 EU AI Act High-risk·AI 기본법 고영향 검토
+- 규제 노출: 성과 평가 초안 생성 → AI 기본법 고영향 AI 검토 대상(`kr-high-impact-review`)·EU AI Act Annex III 4(b)
+
+## Contradictions
+
+> [!note] 2026-09-27 grounding — 유일한 인용 소스(Lattice Spring/Summer '26 릴리스 노트) raw에 Ruggable·Abby Wilson·HR Brew, "AI Performance Summarization"(360도 피드백 요약) 명칭, "Goals AI Assistance", "AI Agent 이탈 리스크 탐지", Slack·Google Workspace 연동, "hours per employee", LivePerson·15Five·HBR 비교 수치(리뷰 시간 감소율·유지율·이직률·연간 리뷰 시간)가 없어 삭제·_미공개_ 처리. frontmatter `company: Ruggable`·`output`은 기존 값 유지 중 — Ruggable 사례 소스(HR Brew 2024) 확보는 /hr-research 대상.
 
 ## Consulting Angle
 
 ### 활용 포인트
-- **성과관리 SaaS AI 기능 비교의 중간 포지션**: Culture Amp(코칭 중심) vs Lattice(요약·이탈탐지) vs 15Five(미팅 코칭) vs Betterworks(OKR AI)
-- **이탈 리스크 AI의 윤리적 논점**: 클라이언트에게 "AI 이탈 예측을 도입하되 EU AI Act High-risk 범주 대응 필요"라는 논점 제시
-- **Slack/Teams 내장 AI Agent 트렌드**: HR AI가 HRIS UI를 벗어나 직원·매니저의 일상 도구로 침투하는 패턴의 사례
+- **성과관리 SaaS AI 기능 비교의 중간 포지션**: Culture Amp(코칭 중심) vs Lattice(evidence-based 리뷰 초안·1:1 요약) vs 15Five(미팅 코칭) vs Betterworks(OKR AI)
+- **이탈 리스크 AI의 윤리적 논점**: Lattice의 해당 기능은 인용 소스에서 미확인 — 확인 시 "AI 이탈 예측 도입 시 EU AI Act High-risk 범주 대응 필요" 논점 제시
+- **1:1 대화 내장 AI 트렌드**: HR AI가 HRIS UI를 벗어나 매니저의 일상 대화(1:1)로 침투하는 패턴의 사례 [[sources/lattice-ai-performance-features-2025]]

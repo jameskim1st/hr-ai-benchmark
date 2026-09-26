@@ -40,88 +40,91 @@ related_vendors: []
 
 ## Summary
 
-Microsoft Viva Glint에 Copilot 임베드 — engagement 서베이 open-end 코멘트 대량 합성 + 반복 테마 탐지 + 속성별 sentiment slice + benchmark 비교. **2026-03 transition으로 default ON**, 2026-04부터 Team/Executive 요약 리포트에 "Copilot Highlights" 자동 섹션 추가 (강점·기회·점수 변화·benchmark). Microsoft 자체 사용 — 전사 "Employee Signals" twice-yearly.
+Microsoft Viva Glint에 Copilot 임베드 — 서베이 코멘트 요약(Copilot comment summarization) + 2026-04 GA된 **Copilot Highlights**(Team Summary·Executive Summary 리포트 안에 강점·기회·점수 변화·benchmark 비교 AI 요약, 다국어) [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]. **2026-04-30부터 Copilot 제어가 M365 Admin Center로 이관되며 admin toggle 제거, 플랫폼 레벨 default ON** [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]. 속성별 sentiment slice·테마 탐지·Microsoft 자체 사용 현황은 인용 소스에 없음 → _미공개_ (2026-09-27 grounding 점검).
 
 ## Problem / Why (도입 배경)
 
-- **Before**: 5만~10만 직원 KR 대기업 annual 서베이 open-end 코멘트 코딩에 HRBP 팀이 수주 투입
-- **Pain point**: open-end NLP 분석은 sentiment·테마 추출에 manual 작업 압도적 — insight 도출 지연
-- **Trigger**: Glint Copilot 통합 — Microsoft가 LinkedIn(Glint owner)을 M365 ecosystem 통합
+- **Before**: 벤더 제품이므로 특정 기업의 도입 배경은 고객별 상이. 🚫 일반론: 대규모 서베이의 open-end 코멘트 코딩에 HRBP 팀이 수작업 투입 (직원 수·소요 기간 수치 근거 미확보 — 2026-09-27 grounding 점검)
+- **Pain point**: 매니저·리더가 데이터에서 action으로 넘어가는 속도 — Highlights는 코멘트 요약보다 낮은 응답자 수 조건에서 동작해 더 많은 리더가 활용 가능 ⚠️ 벤더 주장 [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]
+- **Trigger**: Copilot Highlights GA·Copilot 제어 M365 Admin Center 이관 (2026-04) [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]; Glint의 LinkedIn → Viva 통합 경위는 인용 소스에 없음
 
 ## Solution Architecture
 
 ### A. Process (프로세스)
 
-- **Before**: 1) 서베이 open-end 코멘트 export / 2) HRBP 팀 manual 코딩·테마 분류 / 3) sentiment 분석 외부 vendor 또는 manual / 4) Team 리포트 작성 (수주~수개월)
-- **After**:
-  1. 서베이 데이터 → Glint Copilot 자동 처리
-  2. 반복 테마 탐지 + sentiment slice (속성별 — 부서·재임기간·매니저 등)
-  3. benchmark 비교 (산업·규모)
-  4. Team/Executive 요약 리포트에 **"Copilot Highlights"** 자동 생성 — 강점·기회·점수 변화·benchmark 포함
-  5. HRBP·매니저는 강조점 검토·action plan 작성
-- **HITL**: HRBP·매니저가 highlight 검토·action 결정
-- **Frequency**: monthly pulse 또는 annual + 이슈 기반 ad-hoc
-
-### B/C/D. System
-
-- Viva Glint 내장 Copilot (M365 ecosystem)
-- 모델: OpenAI GPT-4 추정 (Microsoft 표준)
-- 데이터: 서베이 응답 + 직원 메타데이터 (RBAC)
-
-### E. Organization
-
-- Microsoft HR (자체 사용) + 고객사 HRBP·People Science 팀
+- **Before**: _미공개 (not disclosed)_ — 도입 전 프로세스는 인용 소스에 없음 (🚫 일반론: 수작업 코멘트 코딩·리포트 작성)
+- **After** ⚠️ 벤더 주장 [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]:
+  1. 서베이 응답 수집 — 응답자는 서베이 내 Copilot으로 코멘트 문장을 다듬을 수 있음 (속성 기반 로그인·개인화 링크 응답자 제외)
+  2. Copilot comment summarization — 일정 수 이상의 응답자가 있을 때 코멘트 요약
+  3. Copilot Highlights — Team Summary·Executive Summary 리포트 안에 강점·기회·점수 변화·benchmark 비교를 AI 요약 (사용자 설정 언어로 생성)
+  4. 매니저·리더가 Highlights를 보고 action으로 이동
+  - 속성별 sentiment slice·반복 테마 탐지 서술은 인용 소스에 없어 제거 (2026-09-27)
+- **HITL**: 매니저·리더가 요약을 검토 후 action [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]; 검토 절차 세부 _미공개_
+- **Frequency**: 서베이 주기에 종속 — Engagement 서베이·Viva Pulse·standalone Copilot 서베이 [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]; 고객별 상이
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: Microsoft Viva (M365 ecosystem) — Glint이 LinkedIn → MS Viva 통합
-- **AI 시스템 배치**: ✅ Viva Glint 내장 Copilot
-- **배포 환경**: Microsoft Azure cloud (M365 표준)
-- **연동·통합**: M365 (Outlook·Teams·Power BI), Viva Insights, LinkedIn Glint 데이터
-- **사용자 접점**: Viva Glint 관리자 web portal — "Copilot Highlights" 섹션
-- **인증·권한**: Entra ID (Azure AD) RBAC — HRBP·매니저·executive 역할별
+- **Core HRIS**: _미공개 (not disclosed)_ — Viva Glint은 M365 내 employee listening 제품 [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]
+- **AI 시스템 배치**: ⚠️ 벤더 주장: Viva Glint 내장 Copilot (Copilot Highlights·comment summarization·서베이 내 Copilot) [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: Viva Pulse 서베이·Glint Copilot Impact 템플릿 [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]; Viva Feature Access Management(VFAM)로 접근 제어 [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]; Outlook·Teams·Power BI 연동은 인용 소스에 없음 _미공개_
+- **사용자 접점**: Team Summary·Executive Summary 리포트 내 Copilot Highlights (매니저·리더 대시보드) [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]
+- **인증·권한**: Copilot 접근은 M365 Admin Center(VFAM)에서 관리, 2026-04-30부터 단일 제어점 [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]; 역할별 RBAC 세부 _미공개_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: engagement survey 응답 (open-end + Likert), 직원 메타 (부서·재임·매니저 hierarchy)
-- **데이터 규모**: _미공개_ (Microsoft 자체 twice-yearly Employee Signals — 인원 비공개)
-- **전처리·정제**: _미공개_ — anonymization·small-group 임계값 적용 추정
-- **학습 vs RAG vs In-context**: In-context summarization (서베이 응답 합성)
-- **데이터 거버넌스**: ⚠️ Microsoft 표준 enterprise — Glint 응답은 customer tenant 격리
-- **민감정보 처리**: ⚠️ 자사 보고: anonymity threshold 적용 — 속성별 slice 시 small group re-identification 위험 잔존
+- **입력 데이터 소스**: 서베이 결과(점수·benchmark) 및 코멘트 [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]; 직원 메타데이터 활용 범위 _미공개_
+- **데이터 규모**: _미공개 (not disclosed)_
+- **전처리·정제**: _미공개 (not disclosed)_ — comment summarization은 "더 많은 응답자 수"를 요구한다는 서술만 [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]
+- **학습 vs RAG vs In-context**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: Microsoft가 'Data, privacy, and security for Microsoft 365 Copilot in Viva Glint' 문서 제공 [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]; 내용 세부 _미공개_
+- **민감정보 처리**: _미공개 (not disclosed)_ — anonymity threshold 서술은 인용 소스에 없어 제거
 
 ### D. Model (모델)
 
-- **Foundation model**: _미공개_ (Azure OpenAI GPT-4 계열 추정)
-- **모델 유형**: LLM (open-end 합성·summarization) + classifier (sentiment·테마)
-- **제공 방식**: Azure OpenAI service via Microsoft Copilot
-- **커스터마이징 기법**: _미공개_ — survey domain prompt engineering 추정
-- **Orchestration 프레임워크**: Microsoft Copilot stack (자체)
-- **평가·가드레일**: ⚠️ 자사 보고: Copilot Highlights는 자동 합성·HRBP 검토 — explainable. bias·hallucination 테스트 결과 미공개
+- **Foundation model**: _미공개 (not disclosed)_
+- **모델 유형**: LLM (요약 생성 — Copilot Highlights·comment summarization) [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]; sentiment classifier 여부 _미공개_
+- **제공 방식**: Microsoft 365 Copilot in Viva Glint [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]; 백엔드 _미공개_
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: _미공개 (not disclosed)_ — bias·hallucination 테스트 결과 미공개
+- **로드맵 (preview)**: Employee Feedback Agent — 대화형 질문으로 경험 데이터 수집 ⚠️ 벤더 주장 (preview, 변경 가능) [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: Microsoft 벤더 제품 — 고객사 HR·People Science 팀이 운영 주체 (고객별 상이); Microsoft 자체 사용 현황은 인용 소스에 없음 _미공개_
+- **참여 역할**: _미공개 (not disclosed)_
+- **거버넌스 체계**: M365 관리자가 Copilot 접근 제어 [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]
+- **파트너**: _미공개 (not disclosed)_
 
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-서베이 open-end NLP 분석을 수주 → 즉시. KR 대기업 annual 조직문화 진단의 ROI 격차 해소.
+매니저·리더가 서베이 결과에서 action으로 더 빨리 이동 (⚠️ 벤더 주장). 시간 단축·고객 성과 수치 _미공개_.
 
-- 2026-03 default ON (platform-wide)
-- 2026-04 Copilot Highlights 자동 섹션
-- Microsoft 자체: twice-yearly "Employee Signals" 전사 활용
+- 2026-04 Copilot Highlights GA (다국어) [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]
+- 2026-04-30 M365 Admin Center 이관·default ON [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]
+- Copilot 측정 문항 7개 추가 → Copilot Impact 템플릿 21문항 [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]
 - standalone 시간 단축 metric _공식 미공개_
 
 ## Governance & Risk
 
-- ✅ Copilot Highlights는 자동 합성·HRBP 검토 — explainable
-- ⚠️ 직원 코멘트의 anonymization·속성별 slice 시 small group re-identification 위험
+- ⚠️ default ON 전환(2026-04-30) — 기존 admin toggle 제거로 조직 차원의 opt-out 통제가 M365 Admin Center(VFAM)로 이동 [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]]; 국내 도입 시 사전 설정 필요
+- ⚠️ 직원 코멘트 요약의 익명성 — 응답자 수 조건 외 anonymity 세부 _미공개_; 소그룹 재식별 위험 검토 필요
 - ⚠️ benchmark 비교의 한국 시장 fit 미검증
+- ⚠️ 벤더 뉴스레터 1건만 인용 — 고객 성과·독립 검증 없음
+
+## Contradictions
+
+> [!note] 2026-09-27 grounding — 인용 소스(Viva Glint 2026-04 뉴스레터)에 없는 속성별 sentiment slice·테마 탐지, Microsoft 자체 'Employee Signals' 사용, Azure·GPT-4 추정, Entra ID RBAC, Power BI 연동, anonymity threshold, monthly pulse 주기, KR 대기업 직원 수 예시를 제거하고 _미공개_ 처리. default ON 시점은 2026-03 → 2026-04-30(raw 기준)으로 정정.
 
 ## Consulting Angle
 
 - **KR 대기업 annual 조직문화 진단의 직접 reference**:
-  - 삼성·SK·LG·현대 모두 매년 1~2회 engagement survey (5자리 인원) — open-end 코멘트 코딩에 HRBP 팀 수주 투입
+  - 대기업 annual engagement survey의 open-end 코멘트 코딩 부담 — Copilot Highlights·comment summarization으로 매니저 단위 요약 가능 (고객 사례 수치는 미확보)
   - Glint Copilot은 이 ROI 격차 즉시 해소 — 이미 M365 도입사는 추가 도입 부담 적음
-- **한국 기업 sentiment 한국어 NLP 품질 검증 필수**: Korean Glint Copilot의 존댓말·dialect·industry-specific term 처리 POC 4주
+- **한국 기업 한국어 요약 품질 검증 필수**: Highlights는 사용자 설정 언어로 생성 [[sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04]] — 한국어 존댓말·업계 용어 처리 POC 필요
 - **2026 Q3-Q4 KR consulting deck**: Glint Copilot + Amazon Connections [[amazon-connections-daily-pulse]] + 워크데이 Illuminate Sentiment — 3-vendor sentiment 비교
 - **반면교사**:
   - sentiment slice를 부서·재임기간 등 small group으로 자르면 re-identification — 익명성 약화 가능. 한국 노조 sensitivity 큰 영역

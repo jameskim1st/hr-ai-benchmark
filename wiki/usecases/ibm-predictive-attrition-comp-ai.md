@@ -10,7 +10,7 @@ region: [global]
 employee_class: [all]
 vendor: [IBM]
 vendor_type: [internal-build]
-output: "270K 직원 monthly flight risk 점수 (34+ 변수 6개월 예측, ⚠️ 자사 보고 95% 정확도) + 매니저용 권장 action menu (raise/promotion/training/mentoring) + per-employee salary 인상 추천액 + supporting factors. 매니저 권고 무시 시 attrition 2배"
+output: "⚠️ 자사 보고: 직원 flight risk 예측 (Watson, 95% 정확도 주장) + 매니저용 engagement 액션 처방 + 보상 인상 권고와 권고 이유 설명 (권고 무시 매니저 팀 attrition 2배). 매니저가 수용 여부 결정"
 ai_tech_type: [predictive]
 ai_tech_subtype: [prediction, recommendation-ranking]
 stage: production
@@ -28,7 +28,7 @@ confidence: 0.7
 evidence_grade: A
 corroborated_by: 2
 freshness: fresh
-depth: full
+depth: stub
 graded_at: 2026-09-27
 consulting_angle_status: filled
 sources: [sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04.md, sources/fortune-ibm-algorithm-pay-raise-2019-07.md]
@@ -40,80 +40,88 @@ related_vendors: []
 
 ## Summary
 
-IBM이 2019년 공개한 **Predictive Attrition Program** — Watson 기반 patented ML 모델이 34+ 변수(overtime·salary·역할·성과·통근거리)를 분석해 6개월 flight risk를 예측. ⚠️ 자사 보고: 95% 정확도, $300M 누적 retention saving (2023까지). 동일 인프라가 **AI Compensation Recommendation**으로 확장 — 매니저별 per-employee salary 추천 + 이유 설명. 매니저가 권고 무시 시 팀 attrition 2배.
+IBM이 2019년 공개한 **Predictive Attrition Program** — IBM HR이 특허를 보유한 프로그램으로, Watson과 함께 개발해 직원 flight risk를 예측하고 매니저에게 engagement 액션을 처방 [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]]. ⚠️ 자사 보고(CEO Rometty, CNBC 2019-04): 퇴직 예정 직원 예측 정확도 95% "range", 누적 약 $300M retention 비용 절감; "secret sauce"는 비공개 [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]]. 동일 접근이 **보상 권고**로 확장 — ⚠️ 자사 보고(CHRO Gherson, Fortune 2019-07): 특정 그룹에 10% 인상 시 flight risk 90% 감소, 권고를 따르지 않은 매니저 팀의 attrition은 2배; 시스템이 권고 이유를 설명(black box 개방) [[sources/fortune-ibm-algorithm-pay-raise-2019-07]]. 기존 페이지의 "34+ 변수(overtime·통근거리 등)", "6개월 예측", "전 직원 monthly", "2023까지 누적", "action menu(raise/promotion/training/mentoring)"는 인용 소스 2건에 없어 _미공개_ 처리 (2026-09-27 grounding 점검).
 
 ## Problem / Why (도입 배경)
 
-- **Before**: 270K 직원 대상 retention 관리는 사후 exit interview 의존 — 떠난 후에야 원인 파악
-- **Pain point**: 핵심인재 이탈 비용 (replacement cost 연봉의 1~3배) + 외부 채용 시장 경쟁 격화
-- **Trigger**: 2010년대 HR analytics 부상 + Watson 자사 활용 dogfooding 명분
+- **Before (baseline)**: ❓ baseline 미공개 — 기존 "사후 exit interview 의존" 서술은 소스에 없음
+- **Pain point**: retention 비용 — IBM은 프로그램 효과를 retention cost 절감으로 측정 [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]]
+- **Trigger**: _미공개 (not disclosed)_ — "경영진을 정확성으로 설득하는 데 시간이 걸렸다"(Rometty) [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]]
 
 ## Solution Architecture
 
 ### A. Process (프로세스)
 
-- **Before**: exit interview·서베이 사후 분석
-- **After**:
-  1. ML 모델이 월간 데이터 갱신 → flight risk score 산출
-  2. 위험군 매니저에게 alert + 권장 action menu (raise / promotion / training / mentoring)
-  3. AI 보상 추천 — 매니저에게 per-employee salary 인상 권고 + supporting factors (flight risk·성과·시장)
-  4. 매니저 결정 (승인/반려/조정)
-- **HITL**: 매니저 100% 결정 권한 — AI는 nudge·explanation
-- **Frequency**: monthly score, comp planning은 annual cycle
-- **Scope of autonomy**: recommend-only
+- **Before**: _미공개 (not disclosed)_
+- **After** (⚠️ 자사 보고 [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]] [[sources/fortune-ibm-algorithm-pay-raise-2019-07]]):
+  1. AI가 직원 flight risk 예측 (predictive attrition program, Watson) [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]]
+  2. 매니저에게 직원 engagement 액션 처방(prescribe actions) [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]]
+  3. 보상 권고 — 데이터가 특정 그룹에 대한 인상 효과를 제시하고, 시스템이 권고 이유를 설명 [[sources/fortune-ibm-algorithm-pay-raise-2019-07]]
+  4. 매니저 결정 — 권고를 따르지 않은 매니저 팀은 attrition 2배 [[sources/fortune-ibm-algorithm-pay-raise-2019-07]]
+- **HITL**: 매니저가 권고 수용 여부 결정 [[sources/fortune-ibm-algorithm-pay-raise-2019-07]]
+- **Frequency**: _미공개 (not disclosed)_ (frontmatter `monthly`는 분류값 — 소스 미확인)
+- **Scope of autonomy**: recommend-only [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]] [[sources/fortune-ibm-algorithm-pay-raise-2019-07]]
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: IBM 내부 (Workday)
-- **AI 시스템**: IBM Watson 기반 (자체)
-- **연동·통합**: HCM·payroll·performance·learning data 통합 데이터 레이크
-- **사용자 접점**: 매니저 dashboard (Bluepages 통합 추정)
+- **Core HRIS**: _미공개 (not disclosed)_
+- **AI 시스템**: IBM Watson 기반 자체 개발, IBM HR 특허 [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]]
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점**: _미공개 (not disclosed)_ — 매니저에게 권고·설명 제공 [[sources/fortune-ibm-algorithm-pay-raise-2019-07]]
+- **인증·권한**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력**: 34+ 변수 — overtime·salary·역할·성과·통근거리·승진 이력·학습·매니저 변경 등
-- **데이터 규모**: 270K 직원 monthly snapshot
-- **거버넌스**: IBM 내부, RBAC
+- **입력**: _미공개 (not disclosed)_ — "secret sauce" 비공개 [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]]; 보상 권고는 "all the data" 기반 [[sources/fortune-ibm-algorithm-pay-raise-2019-07]]
+- **데이터 규모**: _미공개 (not disclosed)_
+- **거버넌스**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
-- patented ML (LLM 이전) — feature engineering + supervised classifier
-- ⚠️ 벤더 주장: 95% 정확도 (out-of-sample 검증 방법 _미공개_)
-- explainable AI — supporting factor 표시
+- **모델 유형**: Watson 기반 predictive (특허) [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]] — 알고리즘 세부 _미공개_
+- **정확도**: ⚠️ 자사 보고: 95% "range" — 검증 방법 _미공개_ [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]]
+- **설명가능성**: ⚠️ 자사 보고: 권고 이유를 매니저에게 설명 [[sources/fortune-ibm-algorithm-pay-raise-2019-07]]
 
 ### E. Organization
 
-- IBM HR Analytics + IBM Research
+- **오너십**: IBM HR (특허 보유) [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]]; CHRO Diane Gherson [[sources/fortune-ibm-algorithm-pay-raise-2019-07]]; CEO Ginni Rometty [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]]
+- **참여 역할·팀 규모**: _미공개 (not disclosed)_
 
 ### F. Diagrams (도식)
 
 ```mermaid
 flowchart LR
-    Data[34+ 변수 monthly] --> ML[Watson Predictive ML]
-    ML -->|flight risk score| Alert[매니저 alert]
-    ML -->|comp 추천 + 사유| Comp[보상 dashboard]
-    Alert --> Mgr[매니저 결정]
-    Comp --> Mgr
-    Mgr -->|raise/promo/training| Action[Retention action]
-    Mgr -->|무시| Risk[팀 attrition 2x]
+    Data[직원 데이터<br/>세부 미공개] --> ML[Watson Predictive Attrition<br/>IBM HR 특허]
+    ML -->|flight risk 예측| Alert[매니저 engagement 액션 처방]
+    ML -->|보상 권고 + 이유 설명| Comp[매니저 보상 결정]
+    Comp -->|권고 수용| Action[Retention]
+    Comp -->|권고 무시| Risk[팀 attrition 2x ⚠️ 자사]
 ```
+
+범례: 실선 = CNBC 2019 [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]]·Fortune 2019 [[sources/fortune-ibm-algorithm-pay-raise-2019-07]] 확인.
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-ML 기반 사전 retention nudge로 핵심인재 이탈 90%까지 감소 (특정 그룹 사례), 누적 $300M saving 자사 보고.
+⚠️ 자사 보고: 95% 예측 정확도·약 $300M retention 절감 [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]]; 특정 그룹 10% 인상 → flight risk 90% 감소, 권고 무시 매니저 팀 attrition 2배 [[sources/fortune-ibm-algorithm-pay-raise-2019-07]].
 
 - **Before → After (자사 보고)**:
-  - retention 관리: 사후 exit 분석 → 6개월 사전 예측
-  - flagged group에 10% raise → flight risk 90% 감소 (illustrative)
-  - 매니저 권고 무시 시 팀 attrition 2배 — 채택 의무화 ROI 입증
+  - flight risk 예측 정확도: 95% range (Rometty) [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]]
+  - retention 비용 절감: 약 $300M 누적 (시점 _미공개_) [[sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04]]
+  - 특정 그룹 10% raise → flight risk 90% 감소 (일반화 불가 — 특정 그룹 사례) [[sources/fortune-ibm-algorithm-pay-raise-2019-07]]
+  - 권고 무시 매니저 팀 attrition 2배 [[sources/fortune-ibm-algorithm-pay-raise-2019-07]]
 
 ## Governance & Risk
 
-- ⚠️ 95%·$300M 수치 독립 검증 부재 (CNBC·Fortune·LinkedIn Talent Blog 모두 IBM 발표 전달)
+- ⚠️ 95%·$300M 수치 독립 검증 부재 (CNBC·Fortune 모두 IBM 발언 전달)
 - ⚠️ 모델 age (2019) — drift·feature obsolescence 가능성
-- ⚠️ 매니저에게 score 노출 시 self-fulfilling prophecy 위험 (의도한 retention action 없이 manager가 "어차피 떠날 사람" 취급)
+- ⚠️ 매니저에게 score 노출 시 self-fulfilling prophecy 위험
 - ⚠️ Korean 노조·근로기준법 컨텍스트 — 보상 차등화 nudge가 단협 위반 가능성
+- 규제 노출: 이탈 예측·보상 결정 관여 → AI 기본법 고영향 AI 검토 대상(`kr-high-impact-review`)·EU AI Act Annex III 4(b)
+
+## Contradictions
+
+> [!note] 2026-09-27 grounding — 인용 소스 2건(CNBC 2019-04, Fortune 2019-07) raw에 "34+ 변수", "overtime·salary·통근거리", "6개월 예측", "전 직원 monthly snapshot", "2023까지", "action menu(raise/promotion/training/mentoring)", "Workday", "Bluepages", "RBAC", "데이터 레이크", "IBM Research", "supervised classifier", "annual comp cycle" 서술이 없어 삭제·_미공개_ 처리. Blue Match·MYCA 언급은 [[ibm-blue-match-internal-mobility]] 참조.
 
 ## Consulting Angle
 

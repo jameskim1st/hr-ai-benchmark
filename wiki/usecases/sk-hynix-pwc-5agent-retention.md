@@ -51,7 +51,7 @@ PwC Korea가 SK하이닉스에 제안한 **5-Agent agentic retention prediction 
 ## Problem / Why (도입 배경)
 
 - **Before**: 핵심 인재 이탈은 사후 면담 + 단편적 정형 데이터(근속·평가) 위주 분석. 미묘한 행동 변화·외부 시장 신호·관계 패턴 unintegrated. 매니저 "감"에 의존
-- **Pain point**: SK하이닉스 38K 직원 중 반도체 핵심 인재 (R&D·tech 전문가) 이탈 비용 거대. 사후 대응으론 retention 불가
+- **Pain point**: SK하이닉스 직원(인원 수 _미공개_ — 수치 근거 미확보, 2026-09-27 grounding 점검) 중 반도체 핵심 인재 (R&D·tech 전문가) 이탈 비용 거대. 사후 대응으론 retention 불가
 - **Trigger**: 2024-25 SK 그룹 차원 AI 적극 도입 + PwC Korea 컨설팅 제안
 
 ## Solution Architecture
@@ -81,15 +81,40 @@ PwC Korea가 SK하이닉스에 제안한 **5-Agent agentic retention prediction 
 - **Frequency**: monthly score, 면담은 이벤트별
 - **Scope**: recommend-only (단계별 사람 결정)
 
-### B/C/D. System
+### B. System & Infrastructure (시스템·인프라)
 
-- 추정 architecture (실제 구현 _미공개_): 5개 에이전트 microservice + 가중치 엔진 + LLM/XAI 출력 layer
-- 데이터 source: HRMS·평가·보상 (Structura) + 협업 tool 메타 (Cognita) + 근태 (Chronos) + 사내 설문 (Sentio) + 외부 채용 시장 데이터 (Agora)
-- 모델: 개별 에이전트별 specialist 모델 + LLM (출력 explainability) + AHP·Bayesian 가중치 엔진
+> 제안 단계 architecture — 인용 소스([[sources/verified-pwc-doc-2026-05]])는 5개 에이전트 명칭과 'PwC Korea 내부 자료 + SK하이닉스 추진 계획'이라는 사실만 확인. 구현 세부는 전부 `_미공개_`.
 
-### E. Organization
+- **Core HRIS / 기반 시스템**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: _미공개 (not disclosed)_
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점 (UX layer)**: _미공개 (not disclosed)_
+- **인증·권한**: _미공개 (not disclosed)_
 
-- PwC Korea (제안·구현 컨설팅) + SK하이닉스 인사·디지털혁신·R&D HR
+### C. Data (데이터)
+
+- **입력 데이터 소스**: ⚠️ 제안 architecture (PwC Korea 내부 자료, 구현 미확정): 5개 에이전트(Structura/Cognita/Chronos/Sentio/Agora)가 정형 인사·관계·시계열·텍스트·외부 시장 데이터를 분담 ([[sources/verified-pwc-doc-2026-05]] — 명칭·추진 계획만 확인); 실제 데이터 항목 _미공개_
+- **데이터 규모**: _미공개 (not disclosed)_
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context 구분**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: _미공개 (not disclosed)_
+- **민감정보 처리**: _미공개 (not disclosed)_
+
+### D. Model (모델)
+
+- **Foundation model**: _미공개 (not disclosed)_
+- **Model 유형**: ⚠️ 제안 architecture: 에이전트별 specialist 모델 + LLM/XAI 출력 layer + AHP·Bayesian 가중치 엔진 (공개 1차 출처 0건 — [[sources/verified-pwc-doc-2026-05]]); 구현 _미공개_
+- **제공 방식**: _미공개 (not disclosed)_
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: _미공개 (not disclosed)_
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: ⚠️ PwC Korea 제안 + SK하이닉스 추진 계획 ([[sources/verified-pwc-doc-2026-05]]); SK하이닉스 측 담당 조직 _미공개_
+- **참여 역할·팀 규모·거버넌스·변화관리**: _미공개 (not disclosed)_
+- **파트너**: PwC Korea (제안 컨설팅) ([[sources/verified-pwc-doc-2026-05]])
 - 2026-05 시점: 제안·검토 단계, 실제 PoC·production launch 일정 _미공개_
 
 ## Impact / Metrics (기대효과)
@@ -99,7 +124,7 @@ PwC Korea가 SK하이닉스에 제안한 **5-Agent agentic retention prediction 
 
 - ⚠️ 모든 metric ⚠️ **제안 단계** — production 효과 검증 미실시
 - 비교 reference (글로벌 retention prediction 검증 사례):
-  - IBM Predictive Attrition [[ibm-predictive-attrition-comp-ai]]: 95% 정확도 (자사 보고), $300M 누적 saving
+  - IBM Predictive Attrition [[ibm-predictive-attrition-comp-ai]]: 자사 보고 정확도·누적 절감 — 수치는 해당 페이지 참조
   - DBS Bank [[dbs-bank-hr-ai-talent-analytics]]: 자체 attrition 모델 운영
   - Spring Health [[spring-health-general-mills-ai-eap]]: 정신건강 통합 retention
 
@@ -111,13 +136,19 @@ PwC Korea가 SK하이닉스에 제안한 **5-Agent agentic retention prediction 
 - ⚠️ 노조 사전 합의 필수 (SK하이닉스 노조 강성) — 직원 데이터 5차원 통합 분석은 노조 강한 우려 영역
 - ⚠️ Cognita (조직 네트워크 분석)·Sentio (텍스트 톤 분석) 데이터 동의 범위 명확화 필요
 
+## Contradictions
+
+_없음._
+
+> [!note] 2026-09-27 grounding — 인용 소스는 5개 에이전트 명칭과 'PwC Korea 내부 자료 + SK하이닉스 추진 계획'만 확인. 직원 수, "추정 architecture" 서술, 비교용 IBM 수치(본 페이지 소스에 없음)를 `_미공개_`/페이지 참조로 교체. A. Process의 AHP·Bayesian·3-tier 등급 상세는 PwC 제안 문서 기준으로 공개 1차 출처 없음 — 외부 인용 금지.
+
 ## Consulting Angle
 
 - **KR 컨설팅에서의 위치 — "검증 후보 + 비교 reference"**:
   - 만약 SK하이닉스 deployment 성공 시 KR 반도체·이차전지·바이오 그룹사 retention 컨설팅의 reference architecture
   - PwC Korea가 제안 — 글로벌 PwC vs Deloitte Anjin (Zora AI [[deloitte-zora-ai-hc-suite]]) vs McKinsey/BCG의 KR retention 컨설팅 시장 경쟁 신호
 - **글로벌 비교**:
-  - IBM Predictive Attrition [[ibm-predictive-attrition-comp-ai]]: 1개 ML 모델, 34+ 변수 통합 → 95% 정확도 + $300M saving
+  - IBM Predictive Attrition [[ibm-predictive-attrition-comp-ai]]: 단일 ML 모델 통합 접근 (수치는 해당 페이지 참조)
   - PwC 5-agent: 5개 specialist 분리 + AHP + LLM XAI → architecture 정교, 단 효과 미검증
   - Trade-off: 단순 통합 모델 (IBM) vs 분리 specialist (PwC) — 어느 쪽이 KR 환경에서 우월할지 SK하이닉스 PoC 결과가 답
 - **2026 Q3-Q4 KR retention 컨설팅 deck**:

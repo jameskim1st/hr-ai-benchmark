@@ -42,7 +42,7 @@ related_vendors: []
 
 ## Summary
 
-SK C&C가 SKT·SK AX 합작 'A.Biz' B2B AI 솔루션의 첫 제품 **'에이닷 비즈 HR'**을 2025년 신입·주니어 채용에 전면 적용. 자기소개서에서 **경력·핵심 역량 키워드 추출** + **직무 적합성·리스크 요인 판정**. AI 면접 + 맞춤 면접 질문 자동 생성. ⚠️ 자사 보고: 수천 건 지원서를 4시간 내 분석 (이전 약 1주 소요 → **약 90% 단축**).
+SK C&C가 SKT와 공동 개발 중인 'A.Biz(에이닷 비즈)'의 HR 특화 제품 **'에이닷 비즈 HR'**을 2025년 신입·주니어 탤런트 채용에 전면 도입 ([[sources/newsis-sk-cc-adot-biz-hr-2025-02]]). 지원서의 문맥 흐름·**핵심 역량 키워드** 분석 → **직무 적합성·리스크 포인트 도출**, AICT(AI 활용도 테스트), AI 1:1 면접(음성·영상 분석), 면접관용 맞춤 질문지 자동 생성 ([[sources/aitimes-sk-cc-adot-biz-hr-2025-02]], [[sources/zdnet-korea-sk-cc-adot-biz-hr-2025-02]]). ⚠️ 자사 보고: 수천 개가 넘는 지원서를 4시간 만에 분석·평가 (기존 약 1주 — [[sources/zdnet-korea-sk-cc-adot-biz-hr-2025-02]]; '약 90% 단축'은 기사에 없는 환산값).
 
 ## Problem / Why (도입 배경)
 
@@ -65,53 +65,51 @@ SK C&C가 SKT·SK AX 합작 'A.Biz' B2B AI 솔루션의 첫 제품 **'에이닷 
 - **Frequency**: annual cycle (신입 공채)
 - **Scope**: AI score → 사람 결정
 
-### B/C/D. System
-
-- SK AX 산업특화 AI + SKT 자체 LLM 'A.X' 추정 (구체 _미공개_)
-- 사내 ATS 통합
-- AI 모델: 자체 LLM + RAG (직무·SK culture 코퍼스)
-
-### E. Organization
-
-- SK C&C 인사 + SKT A.Biz 팀 + SK AX
-
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: SK C&C 사내 ATS (구체 _미공개_)
-- **AI 시스템 배치**: ✅ SKT-SK AX 합작 'A.Biz' B2B AI — 'A.Biz HR'
-- **배포 환경**: _미공개_ — SK Cloud 추정
-- **연동·통합**: SK C&C 사내 ATS + 신입 공채 시즌 batch
-- **사용자 접점**: HR·사업부 SME web UI — 자기소개서 분석·맞춤 면접 질문 review
-- **인증·권한**: SK C&C 사내 SSO
+- **Core HRIS**: _미공개 (not disclosed)_
+- **AI 시스템 배치**: ✅ SKT와 공동 개발 중인 '에이닷 비즈 HR' — '에이닷 비즈 프로페셔널'(법무·세무·PR·HR 특화) 라인 ([[sources/newsis-sk-cc-adot-biz-hr-2025-02]])
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점**: _미공개 (not disclosed)_ — 면접관용 질문지 자동 생성 기능만 확인 ([[sources/zdnet-korea-sk-cc-adot-biz-hr-2025-02]])
+- **인증·권한**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: ✅ 자기소개서 텍스트, JD 텍스트, AI 면접 영상 응답
-- **데이터 규모**: ✅ 수천 건 자기소개서 / 신입 공채 cycle
-- **전처리·정제**: _미공개_
-- **학습 vs RAG vs In-context**: ⚠️ 자사 추정: 자체 LLM + RAG (직무·SK culture 코퍼스) — 공식 architecture 발표 없음
-- **데이터 거버넌스**: _미공개_ — 채용절차공정화법 + AI 기본법 (2026-01) fit 검증 필요
-- **민감정보 처리**: ⚠️ 영상면접 표정·억양·외모 신호 사용 여부 _미공개_
+- **입력 데이터 소스**: ✅ 지원서(자기소개서), AICT 답변, 필기 전형 데이터, AI 1:1 면접 음성·영상 답변 ([[sources/zdnet-korea-sk-cc-adot-biz-hr-2025-02]]); JD 텍스트 사용 여부 _미공개_
+- **데이터 규모**: ⚠️ 자사 보고: 수천 개가 넘는 지원서 / 채용 cycle ([[sources/aitimes-sk-cc-adot-biz-hr-2025-02]])
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context**: _미공개 (not disclosed)_
+- **데이터 거버넌스**: _미공개 (not disclosed)_ — 채용절차공정화법·AI 기본법 fit 검증 필요 (컨설팅 관점)
+- **민감정보 처리**: ✅ 지원자 답변을 음성과 영상으로 분석 ([[sources/zdnet-korea-sk-cc-adot-biz-hr-2025-02]]); 표정·억양·외모 신호 사용 여부 _미공개_
 
 ### D. Model (모델)
 
-- **Foundation model**: SKT 자체 LLM **A.X** 추정 (공식 _미공개_)
-- **모델 유형**: ✅ LLM (자기소개서 추출·요약) + classifier (직무 적합성·리스크) + 영상 분석 (멀티모달)
-- **제공 방식**: SK 그룹 자체 (A.Biz)
-- **커스터마이징 기법**: _미공개_ — 직무·SK culture domain prompt/RAG
-- **Orchestration 프레임워크**: _미공개_
-- **평가·가드레일**: ⚠️ "리스크 요인" explainability·차별 표현 자동 필터 _미검증·미공개_
+- **Foundation model**: _미공개 (not disclosed)_
+- **모델 유형**: ⚠️ 자사 보고: 지원서 문맥 흐름·핵심 역량 키워드 분석 → 직무 적합성·리스크 포인트 도출, 음성·영상 분석 기반 AI 1:1 면접 ([[sources/aitimes-sk-cc-adot-biz-hr-2025-02]], [[sources/zdnet-korea-sk-cc-adot-biz-hr-2025-02]]); 모델 구성 _미공개_
+- **제공 방식**: ✅ SKT와 공동 개발한 '에이닷 비즈 HR' ([[sources/aitimes-sk-cc-adot-biz-hr-2025-02]])
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: _미공개 (not disclosed)_ — 편향·검증 관련 정보 없음 ([[sources/zdnet-korea-sk-cc-adot-biz-hr-2025-02]] Limitations)
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: ✅ SK C&C 탤런트(채용) 조직 — 김민환 탤런트 담당 인용 ([[sources/aitimes-sk-cc-adot-biz-hr-2025-02]])
+- **참여 역할·팀 규모·거버넌스·변화관리**: _미공개 (not disclosed)_
+- **파트너**: ✅ SKT (공동 개발) ([[sources/newsis-sk-cc-adot-biz-hr-2025-02]])
 
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-자기소개서 분석 1주 → 4시간 (90% 단축, ⚠️ 자사 보고). 한국 대졸 공채 시즌 HR 부담 대폭 경감 reference.
+⚠️ 자사 보고: 수천 개 지원서 분석·평가 약 1주 → 4시간 ([[sources/aitimes-sk-cc-adot-biz-hr-2025-02]]; '90% 단축'은 기사에 없는 환산값). 1월 채용에서 접수 마감 후 이틀 만에 서류 합격자 발표 ([[sources/aitimes-sk-cc-adot-biz-hr-2025-02]]).
 
 - ⚠️ 자사 보고:
-  - 자기소개서 분석: 1주 → 4시간
-  - 90% 시간 단축
-  - 신입·주니어 채용 전면 적용
+  - 지원서 분석·평가: 약 1주 → 4시간 ([[sources/newsis-sk-cc-adot-biz-hr-2025-02]])
+  - 접수 마감 후 이틀 만에 서류 합격자 발표 ([[sources/aitimes-sk-cc-adot-biz-hr-2025-02]])
+  - 신입·주니어 탤런트 채용 전면 도입 ([[sources/newsis-sk-cc-adot-biz-hr-2025-02]])
+  - 정성 평가: 직무 적합도 높은 인재 신속 선별, 입사자 업무 적응도 향상 (HR 담당자 평가) ([[sources/zdnet-korea-sk-cc-adot-biz-hr-2025-02]])
+  - 연내 AI 인재 탐색·추천 기능 도입 예정 (2025-02 기준 로드맵) ([[sources/newsis-sk-cc-adot-biz-hr-2025-02]])
 
 ## Governance & Risk
 
@@ -120,12 +118,18 @@ SK C&C가 SKT·SK AX 합작 'A.Biz' B2B AI 솔루션의 첫 제품 **'에이닷 
 - ⚠️ 마이다스 inAIR 차별 논란 (2020) trigger와 동일 카테고리 — bias mitigation 설계 reference 필수
 - ⚠️ AI 면접 영상 분석의 표정·억양·외모 신호 사용 여부 _미공개_
 
+## Contradictions
+
+_없음._
+
+> [!note] 2026-09-27 grounding — '약 90% 단축'은 3개 기사 어디에도 없는 환산값(약 1주 → 4시간)이라 원 표기를 병기하고 환산임을 명시. Consulting Angle의 마이다스 inAIR 고객 수는 본 페이지 인용 소스에 없어 삭제. "SK AX 산업특화 AI + A.X 추정"·"자체 LLM + RAG" 등 아키텍처 추정 서술은 `_미공개_`로 교체.
+
 ## Consulting Angle
 
 - **KR 대기업 채용 AI reference (Top 5)**:
-  - 마이다스 inAIR [[midas-inair-ai-assessment-korea]] (1,200+ 기업, vendor 모델) vs SK C&C 자체 (그룹 표준화 모델) 비교
+  - 마이다스 inAIR [[midas-inair-ai-assessment-korea]] (vendor 모델) vs SK C&C 자체 (그룹 표준화 모델) 비교
   - SK 그룹 25개사 'A.Biz' 확산 [[sk-group-aibiz-25-companies]]과 pair
-  - 90% 시간 단축은 강력한 ROI hook
+  - "약 1주 → 4시간" 단축(⚠️ 자사 보고)은 강력한 ROI hook
 - **2026 Q3-Q4 KR 채용 AI 컨설팅**:
   - 한국 대졸 공채 시즌 (3월·9월) HR 부담 솔루션
   - "vendor 도입 vs 자체 구축" 결정 framework — SK는 그룹 자체 LLM (A.X) 강점

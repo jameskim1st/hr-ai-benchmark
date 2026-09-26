@@ -15,7 +15,7 @@ vendor_type: [foundation-model]
 output: "회계·감사·컨설팅 직무별 문서 합성·코드 생성·클라이언트 자료 분석 결과물 + 회계사·개발자 특화 Claude 응답 (Trustworthy AI framework 검증 통과)"
 ai_tech_type: [generative]
 ai_tech_subtype: [text-generation, summarization-qa]
-stage: production
+stage: announced
 visibility: public
 case_type: adoption
 regulatory_exposure: []
@@ -51,23 +51,23 @@ related_vendors: []
 ### A. Process (프로세스)
 
 - **Before**: Deloitte 470k 직원이 audit·tax·consulting 산출물을 수기·MS Office·기존 internal KM으로 작성. 사내 GenAI 사용은 부서별 파일럿 단위
-- **After**:
-  1. Deloitte가 Anthropic Claude Enterprise를 글로벌 SSO로 470k 계정에 프로비저닝
-  2. Claude Center of Excellence가 부서별 use case·implementation framework 제공, 15,000명 certification 프로그램 운영
-  3. 직원이 Claude로 문서 합성·코드 생성·클라이언트 자료 분석 수행, 산출물은 Trustworthy AI framework로 검증
-  4. 규제 산업 (financial services·healthcare·public)용 industry pack을 Anthropic과 공동 개발해 클라이언트에 재판매
-  5. 사용 로그·prompt가 governance dashboard로 수집되어 risk·품질 모니터링
-- **HITL**: 모든 클라이언트 산출물은 파트너·매니저 검토 후 외부 release
-- **Frequency**: daily (개별 사용), quarterly (CoE governance review)
+- **After** (발표 시점 계획 — 소스는 미래형):
+  1. ✅ Deloitte가 Claude를 글로벌 네트워크 470,000명에게 제공 예정 (계정 프로비저닝 방식 _미공개_). [[sources/anthropic-deloitte-partnership-2025-10.md]] [[sources/cnbc-anthropic-deloitte-claude-2025-10.md]]
+  2. ⚠️ 벤더 주장: Claude Center of Excellence가 implementation framework 개발·leading practice 공유·기술 지원 제공, 15,000명 certification 프로그램 공동 개발. [[sources/anthropic-deloitte-partnership-2025-10.md]]
+  3. ✅ 회계사~소프트웨어 개발자 등 직군별 Claude "persona"를 수개월에 걸쳐 구축·배포 예정. [[sources/cnbc-anthropic-deloitte-claude-2025-10.md]]
+  4. ⚠️ 벤더 주장: 규제 산업(financial services·healthcare·public services)용 컴플라이언스 솔루션을 Claude + Deloitte Trustworthy AI™ framework 결합으로 공동 개발 (클라이언트 대상). [[sources/anthropic-deloitte-partnership-2025-10.md]]
+  5. 사용 로그·prompt 모니터링 체계: _미공개 (not disclosed)_
+- **HITL**: _미공개 (not disclosed)_
+- **Frequency**: daily (개별 사용 — 배포 후 기준); CoE 운영 주기 _미공개_
 
 ### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS**: _미공개_ (Deloitte 사내 — Workday 사용 여부 공식 미확인)
-- **AI 시스템 배치**: ✅ Anthropic Claude Enterprise 470K 글로벌 SSO 프로비저닝
-- **배포 환경**: _미공개_ — AWS Bedrock 또는 Anthropic 직접 호스팅 추정
-- **연동·통합**: ⚠️ 자사 보고: Trustworthy AI framework 산출물 검증, governance dashboard prompt·사용 로그
-- **사용자 접점**: ⚠️ 자사 보고: 회계사·개발자용 특화 Claude 버전 + 일반 web/desktop
-- **인증·권한**: 글로벌 SSO (구체 IdP _미공개_)
+- **AI 시스템 배치**: ✅ Anthropic Claude를 470,000명 글로벌 네트워크에 제공 (별도 SaaS; 제품 에디션·프로비저닝 방식 _미공개_). [[sources/anthropic-deloitte-partnership-2025-10.md]]
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: ⚠️ 벤더 주장: "technology integration" 포함이라고만 언급 — 세부 _미공개_. [[sources/anthropic-deloitte-partnership-2025-10.md]]
+- **사용자 접점**: ✅ 회계사·소프트웨어 개발자 등 직군별 Claude "persona". [[sources/cnbc-anthropic-deloitte-claude-2025-10.md]] (일반 접점 UI _미공개_)
+- **인증·권한**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
@@ -75,14 +75,14 @@ related_vendors: []
 - **데이터 규모**: ✅ 470K 직원, 150개국
 - **전처리·정제**: _미공개_
 - **학습 vs RAG vs In-context**: _미공개_ — 회계사·개발자 특화 = fine-tuning vs system prompt 미공개
-- **데이터 거버넌스**: ⚠️ 자사 보고: Trustworthy AI framework, governance dashboard, Claude CoE
+- **데이터 거버넌스**: ⚠️ 벤더 주장: Trustworthy AI™ framework(클라이언트용 솔루션에 결합), Claude CoE. [[sources/anthropic-deloitte-partnership-2025-10.md]] — 사내 데이터 거버넌스 세부 _미공개_
 - **민감정보 처리**: _미공개_ — 클라이언트 confidential 처리 정책 미발표
 
 ### D. Model (모델)
 
 - **Foundation model**: ✅ Anthropic Claude (버전 미명시)
 - **모델 유형**: LLM (생성·요약·코드)
-- **제공 방식**: ✅ Anthropic Claude Enterprise (commercial API)
+- **제공 방식**: ✅ Anthropic 상용 제공 (Claude) — 에디션·API 경로 _미공개_. [[sources/anthropic-deloitte-partnership-2025-10.md]]
 - **커스터마이징 기법**: ⚠️ 자사 보고: 회계사·개발자 특화 버전, 규제 산업 industry pack 공동 개발
 - **Orchestration 프레임워크**: _미공개_
 - **평가·가드레일**: ⚠️ 자사 보고: Trustworthy AI framework + 파트너 검토
@@ -109,7 +109,7 @@ Before: 470,000 직원이 파편화된 AI 도구 사용 또는 미사용 → Aft
 
 | | Deloitte Claude | Walmart Ask Sam | IBM AskHR | Moderna GPTs |
 |---|---|---|---|---|
-| **규모** | **470,000명** | 900,000 (매장) | 270,000 | 5,000 |
+| **규모** | **470,000명** | [[usecases/walmart-ask-sam-workforce-ai]] 참조 | [[usecases/ibm-askhr-watsonx]] 참조 | [[usecases/moderna-ask-hr-routing]] 참조 |
 | **LLM** | **Anthropic Claude** | 자체 | IBM watsonx | OpenAI GPT |
 | **용도** | 범용 생산성 | 매장 운영 | HR 전문 | HR 전문 |
 | **특화** | 회��사·개발자 버전 | 매장 특화 | HR 태스크 | HR GPT 라우팅 |

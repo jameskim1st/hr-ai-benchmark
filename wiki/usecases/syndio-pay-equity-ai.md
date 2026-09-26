@@ -30,7 +30,7 @@ confidence: 0.15
 evidence_grade: C
 corroborated_by: 0
 freshness: stale
-depth: stub
+depth: partial
 graded_at: 2026-09-27
 consulting_angle_status: filled
 sources: [sources/prnewswire-syndio-expert-ai-2025-03.md, sources/syndio-expertise-on-demand-product-2026-09.md]
@@ -44,14 +44,21 @@ related_vendors: []
 
 ## Summary
 
-Syndio는 **보상 공정성(pay equity)** 전문 AI 플랫폼. 2025년 3월 **Syndi**라는 expert AI를 출시해 급여 보고 규제(EU Pay Transparency Directive·미국 주별 법률 등) 준수를 자동화. ⚠️ 벤더 주장: 300+ 고객, Fortune Most Admired 30%. "10페이지 법률 메모를 단일 actionable 답변으로" 대체한 사례 보고. **EU AI Act 대응**을 최전선에 내세운 벤더.
+Syndio는 **보상 공정성(pay equity)** 전문 AI 플랫폼. 2025-03-04 **Syndi**라는 expert AI를 출시해 급여 보고 규제 준수 질문에 실시간 답변 — Global Pay Reports(GPR)에 통합 ([[sources/prnewswire-syndio-expert-ai-2025-03]]). 제품명은 이후 'Expertise On Demand'로 표기되며 PayEQ·GPR 내 실시간 가이드 제공 ([[sources/syndio-expertise-on-demand-product-2026-09]]). 고객 수·Fortune Most Admired 비율은 _미공개_ (인용 소스에 없음 — 2026-09-27 grounding 점검). ⚠️ 벤더 주장: "변호사에게 물으면 10페이지 문서가 오지만 답이 없다"는 고객 인용 ([[sources/syndio-expertise-on-demand-product-2026-09]]). **EU AI Act 정합**을 내세운 벤더 ([[sources/prnewswire-syndio-expert-ai-2025-03]]).
+
+## Problem / Why (도입 배경)
+
+- 🚫 일반론: 벤더 제품이므로 특정 기업의 도입 배경은 고객별 상이. pay equity·급여 보고 영역의 일반적 pain point는 국가별로 상이한 급여 보고 규제와 법률 자문 지연.
+- **Before (baseline)**: ❓ baseline 미공개 (고객별 상이) — 고객 인용: 변호사 자문은 10페이지 문서로 돌아오지만 답이 없음 ([[sources/syndio-expertise-on-demand-product-2026-09]])
+- **Pain point**: ⚠️ 벤더 주장: 진화하는 급여 보고 규제(pay reporting regulations) 준수 ([[sources/prnewswire-syndio-expert-ai-2025-03]])
+- **Trigger**: ❓ 미공개
 
 ## Solution Architecture
 
 ### A. Process (프로세스)
 
 - **Before**: 보상 결정 시 매니저·HR이 spreadsheet·외부 market data로 ad-hoc 판단, equity 위반 사후 발견
-- **After**:
+- **After** (⚠️ 벤더 주장; 1·3·4·5단계는 인용 소스에 없음 — 원문 미확인):
   1. 회사가 compensation·workforce·HRIS data를 Syndio에 연결
   2. PayEQ가 protected class 그룹별 pay gap 분석·통계적 검증
   3. 매니저가 Teams/Slack/ATS에서 offer·raise 결정 시 Syndi 호출
@@ -60,32 +67,80 @@ Syndio는 **보상 공정성(pay equity)** 전문 AI 플랫폼. 2025년 3월 **S
   6. Expertise on Demand AI가 pay gap 보고·규제 컴플라이언스 가이드
 - **HITL**: 매니저·comp 팀이 모든 pay 결정 검토·실행
 - **Frequency**: event-driven (offer·raise·promotion) + 정기 audit
-- **Source**: Syndio Syndi launch press release
+- **Source**: [[sources/prnewswire-syndio-expert-ai-2025-03]], [[sources/syndio-expertise-on-demand-product-2026-09]]
 
-### Syndi Expert AI (2025-03 출시)
+### Syndi Expert AI (2025-03 출시) — ⚠️ 벤더 주장 ([[sources/prnewswire-syndio-expert-ai-2025-03]])
 - **Global Pay Reports (GPR)**에 통합
-- 급여 보고 규정 관련 **실시간 전문가 AI 답변**
-- 법률·규제별 edge case 자문
-- 개별 국가 pay transparency 법률 대응 (EU Directive·미국 주별 등)
+- 급여 보고 규정 관련 **실시간 전문가 AI 답변** — 보고 전략부터 법령 세부·엣지 케이스까지
+- Syndio 도메인·법률 전문가가 큐레이션한 자체 데이터 기반 expert-in-the-loop 방식
+- 개별 국가 pay transparency 법률 대응 세부: _미공개_
 
-### Compliance 정렬
-- ⚠️ 벤더 주장: EU AI Act, GDPR, CCPA 정렬
-- SOC2, ISO 27001 인증
+### Compliance 정렬 — ⚠️ 벤더 주장 ([[sources/prnewswire-syndio-expert-ai-2025-03]], [[sources/syndio-expertise-on-demand-product-2026-09]])
+- EU AI Act, GDPR, CCPA 정합
+- SOC2, ISO 27001, EU-U.S. DPF
+
+### B. System & Infrastructure (시스템·인프라)
+
+- **Core HRIS / 기반 시스템**: 벤더 제품 — 고객별 상이. _미공개 (not disclosed)_
+- **AI 시스템 배치**: ⚠️ 벤더 주장: Syndio 플랫폼 내 PayEQ·Global Pay Reports에 내장 ([[sources/syndio-expertise-on-demand-product-2026-09]])
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: _미공개 (not disclosed)_
+- **사용자 접점 (UX layer)**: ⚠️ 벤더 주장: PayEQ·GPR 화면 내 실시간 가이드 ([[sources/syndio-expertise-on-demand-product-2026-09]])
+- **인증·권한**: _미공개 (not disclosed)_
+- **가용성·SLA**: _미공개 (not disclosed)_
+
+### C. Data (데이터)
+
+- **입력 데이터 소스**: ⚠️ 벤더 주장: 급여 보고 규제 질문; Syndio 도메인·법률 전문가가 큐레이션한 자체 데이터 ([[sources/prnewswire-syndio-expert-ai-2025-03]])
+- **데이터 규모**: _미공개 (not disclosed)_
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context 구분**: _미공개 (not disclosed)_ — 큐레이션 데이터 기반이라는 표현만 있음 ([[sources/prnewswire-syndio-expert-ai-2025-03]])
+- **데이터 거버넌스**: ⚠️ 벤더 주장: 방법론 문서화·감사 추적 ([[sources/syndio-expertise-on-demand-product-2026-09]])
+- **민감정보 처리**: ⚠️ 벤더 주장: GDPR·CCPA 정합, SOC 2·ISO 27001·EU-U.S. DPF ([[sources/syndio-expertise-on-demand-product-2026-09]])
+- **데이터 출처의 오너십**: _미공개 (not disclosed)_
+
+### D. Model (모델)
+
+- **Foundation model**: _미공개 (not disclosed)_
+- **Model 유형**: ⚠️ 벤더 주장: expert AI (규제 Q&A) — 범용 챗봇과 달리 expert-in-the-loop ([[sources/prnewswire-syndio-expert-ai-2025-03]])
+- **제공 방식**: _미공개 (not disclosed)_
+- **커스터마이징 기법**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: _미공개 (not disclosed)_
+- **평가·가드레일**: ⚠️ 벤더 주장: EU AI Act 정합 ([[sources/prnewswire-syndio-expert-ai-2025-03]]); 평가 세부 _미공개_
+- **비용·성능 지표**: _미공개 (not disclosed)_
+- **Fallback·degradation 전략**: _미공개 (not disclosed)_
+
+### E. Organization & Team (조직·팀 구조)
+
+- **오너십**: 벤더 제품 — 고객별 상이. _미공개 (not disclosed)_
+- **참여 역할**: ⚠️ 벤더 주장: Syndio 도메인·법률 전문가가 데이터 큐레이션 ([[sources/prnewswire-syndio-expert-ai-2025-03]])
+- **팀 규모·기간·거버넌스·변화관리**: _미공개 (not disclosed)_
+- **파트너**: FTI Consulting 고객 인용 ([[sources/prnewswire-syndio-expert-ai-2025-03]]); 구현 파트너 _미공개_
 
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-⚠️ 벤더 주장: 300+ 고객사, Fortune Most Admired 기업 30% 사용 — 이는 시장 침투(market adoption) 수치이며 고객의 pay equity outcome(격차 해소율·감사 통과율·비용 절감) 아님. "10페이지 법률 메모→단일 답변" 1건 사례도 벤더 주장. 고객 outcome metric _미공개_.
+⚠️ 기대효과 수치 미공개 — 고객 수·Fortune Most Admired 비율·개별 고객 성과(Salesforce·Model N·Payscale)는 인용 소스 2건에 없음 (2026-09-27 grounding 점검). 확인되는 것은 "10페이지 문서 → 답이 있는 답변" 고객 인용 1건(⚠️ 벤더 주장)뿐. 고객 outcome metric(격차 해소율·감사 통과율·비용 절감) _미공개_.
 
 | 지표 | 값 | 출처 | 성격 |
 |---|---|---|---|
-| 고객 수 | **300+** | Syndio 공식 | ⚠️ 벤더 주장 |
-| Fortune Most Admired 중 | **30%** | Syndio 공식 | ⚠️ 벤더 주장 |
-| "10-page legal memo → single answer" | 1건 사례 | Syndio 공식 | ⚠️ 벤더 주장 |
-| **Salesforce 관리 규모** | **28개국 56,000명** | Syndio Case Study (PwC 자료 인용) | ⚠️ 자사 보고 |
-| **Salesforce 성과** | **Fortune 100 Best Companies 2위** | Syndio Case Study (PwC 자료 인용) | ⚠️ 자사 보고 |
-| **Model N 분석 시간 단축** | **12주 → 온디맨드** | Syndio Case Study (PwC 자료 인용) | ⚠️ 자사 보고 |
-| **Payscale 프로세스 시간** | **80%+ 단축** | GlobeNewswire 2025 (PwC 자료 인용) | ⚠️ 벤더 주장 |
+| 고객 수 | _미공개_ | 인용 소스에 없음 (2026-09-27 grounding 점검) | ❓ |
+| Fortune Most Admired 중 | _미공개_ | 인용 소스에 없음 (2026-09-27 grounding 점검) | ❓ |
+| "10-page document → answer is there" | 고객 인용 1건 (대형 리테일러 리워드 매니저) | [[sources/syndio-expertise-on-demand-product-2026-09]] | ⚠️ 벤더 주장 |
+| **Salesforce 관리 규모** | _미공개_ | PwC 자료 인용 — sources 미등록 | ❓ |
+| **Salesforce 성과** | _미공개_ | PwC 자료 인용 — sources 미등록 | ❓ |
+| **Model N 분석 시간 단축** | _미공개_ | PwC 자료 인용 — sources 미등록 | ❓ |
+| **Payscale 프로세스 시간** | _미공개_ | PwC 자료 인용 — sources 미등록 | ❓ |
+
+## Governance & Risk
+
+- **HITL**: ⚠️ 벤더 주장: expert-in-the-loop (도메인·법률 전문가 큐레이션) ([[sources/prnewswire-syndio-expert-ai-2025-03]]); 고객 측 pay 결정은 매니저·comp 팀
+- **규제 정합**: ⚠️ 벤더 주장: EU AI Act·GDPR·CCPA 정합, SOC2·ISO 27001 ([[sources/prnewswire-syndio-expert-ai-2025-03]]) — 독립 검증 _미공개_
+- **편향·감사**: pay equity 분석 자체의 편향 감사 결과 _미공개 (not disclosed)_
+
+## Contradictions
+
+> [!note] 2026-09-27 grounding — '300+ 고객'·'Fortune Most Admired 30%'는 보도자료·제품 페이지 어디에도 없음 ([[sources/prnewswire-syndio-expert-ai-2025-03]] Limitations). Salesforce·Model N·Payscale 수치는 PwC 자료 인용으로 sources 미등록. 모두 `_미공개_`로 교체. 제품명 'Syndi' → 'Expertise On Demand' 변경으로 보임 ([[sources/syndio-expertise-on-demand-product-2026-09]]).
 
 ## Consulting Angle
 

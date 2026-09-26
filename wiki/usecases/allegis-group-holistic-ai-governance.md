@@ -24,11 +24,11 @@ kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: adhoc
 first_seen: 2025-06-26
 last_confirmed: 2025-06-26
-confidence: 0.15
-evidence_grade: C
+confidence: 0.05
+evidence_grade: D
 corroborated_by: 0
-freshness: stale
-depth: full
+freshness: unverified
+depth: partial
 graded_at: 2026-09-27
 sources:
   - sources/holistic-ai-allegis-bias-audit-2025.md
@@ -60,55 +60,51 @@ Allegis Group (글로벌 인재·스태핑 기업, ~$12B 매출, 9개 운영 자
   1. Holistic AI 플랫폼을 통해 전사 AI 시스템 500~600개 탐지·등록
   2. 중앙화된 리스크 레지스트리 — 시스템별 리스크 카테고리·완화 전략 경영진 가시화
   3. AI 라이프사이클 전반 연속 모니터링
-  4. NYC LL144 대응: 채용 AEDT에 대한 독립 바이어스 감사 수행·공개
+  4. ⚠️ 벤더 주장: 리크루터가 Fortune 500 고객사에 실시간 컴플라이언스 대시보드를 제시. [[sources/holistic-ai-allegis-bias-audit-2025.md]] (NYC LL144 독립 바이어스 감사 사례는 같은 소스의 Hired 사례이며 Allegis 건이 아님 — 2026-09-27 grounding 점검으로 분리)
 
-- **Human-in-the-loop (HITL) 지점**: 고위험 프로젝트 검토·승인은 거버넌스 위원회 담당
-- **Trigger & Frequency**: 신규 AI 시스템 도입 시 + 연간 정기 감사 (NYC LL144 요건)
-- **Scope of autonomy**: 자동 탐지·리스크 분류(autonomous); 고위험 판정·대응 결정(approve-then-act)
+- **Human-in-the-loop (HITL) 지점**: _미공개 (not disclosed)_ — 소스는 "경영진 가시성"만 언급
+- **Trigger & Frequency**: _미공개 (not disclosed)_
+- **Scope of autonomy**: _미공개 (not disclosed)_
 
 ```mermaid
 flowchart TB
     Disc[AI 시스템 탐지\n500~600개 도메인/툴] --> Reg[중앙 리스크 레지스트리\nHolistic AI 플랫폼]
     Reg --> Monitor[연속 모니터링\n라이프사이클 전반]
-    Reg --> Audit[독립 바이어스 감사\nNYC LL144 대응]
-    Monitor --> Alert{고위험 탐지}
-    Alert -->|고위험| Review[거버넌스 위원회 HITL]
-    Alert -->|저위험| OK[자동 승인]
-    Review --> Action[완화 조치]
-    Audit --> Report[감사 리포트 공개\n고객사 대시보드 제공]
+    Reg --> Exec[경영진 가시성\n리스크 카테고리·완화 전략]
+    Reg --> Dash[고객사 실시간\n컴플라이언스 대시보드]
 ```
-범례: 실선 = Newswire PR / Holistic AI 케이스 스터디에서 확인
+범례: 실선 = [[sources/holistic-ai-allegis-bias-audit-2025.md]] (Holistic AI 벤더 PR) 확인. 고위험 판정·위원회 검토 흐름은 소스에 없어 도식에서 제거.
 
 ### B. System & Infrastructure (시스템·인프라)
 
 - **Core HRIS / 기반 시스템**: _미공개 (not disclosed)_
-- **AI 시스템 배치**: Holistic AI 플랫폼 (SaaS) — 전사 AI 거버넌스 레이어
+- **AI 시스템 배치**: ⚠️ 벤더 주장: Holistic AI 거버넌스 플랫폼 — 중앙화된 리스크 레지스트리 + 연속 모니터링. [[sources/holistic-ai-allegis-bias-audit-2025.md]]
 - **배포 환경**: _미공개 (not disclosed)_
 - **연동·통합**: _미공개 (not disclosed)_
-- **사용자 접점**: 경영진 대시보드, 리크루터용 고객사 컴플라이언스 대시보드 (실시간)
+- **사용자 접점**: ⚠️ 벤더 주장: 경영진 가시성(executive visibility), 리크루터가 고객사에 제시하는 실시간 컴플라이언스 대시보드. [[sources/holistic-ai-allegis-bias-audit-2025.md]]
 - **가용성**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력 데이터**: AI 시스템 메타데이터 (기능·리스크 카테고리·사용처·접근권한)
-- **바이어스 감사 입력**: AEDT 처리 결과 데이터 (성별·인종·민족 기반 분산 영향 분석)
-- **데이터 규모**: 500~600개 AI 도메인/툴 등록
-- **거버넌스**: 중앙화된 리스크 레지스트리 — 경영진 접근 통제
-- **민감정보**: 채용 결정 데이터 (NYC LL144 대상) — GDPR·EU AI Act 대응 병행
+- **입력 데이터**: ⚠️ 벤더 주장: AI 시스템 인벤토리 — 시스템·리스크 카테고리·완화 전략. [[sources/holistic-ai-allegis-bias-audit-2025.md]] 세부 메타데이터 항목 _미공개_
+- **바이어스 감사 입력**: _미공개 (not disclosed)_ — Allegis 건에 대한 바이어스 감사 내용은 소스에 없음 (Hired 사례와 혼동 주의)
+- **데이터 규모**: ⚠️ 벤더 주장: 기존 파악 ~145개 → 추가 발견 500~600개 AI 관련 도메인/툴. [[sources/holistic-ai-allegis-bias-audit-2025.md]]
+- **거버넌스**: ⚠️ 벤더 주장: 중앙화된 리스크 레지스트리 + 경영진 가시성. [[sources/holistic-ai-allegis-bias-audit-2025.md]] 접근 통제 세부 _미공개_
+- **민감정보**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
-- **Foundation model**: _미공개 (not disclosed)_ — Holistic AI 플랫폼 내부 분류·탐지 모델
-- **Model 유형**: Classifier (AI 시스템 리스크 분류), 바이어스 측정 알고리즘
-- **커스터마이징**: Allegis 9개 자회사 맞춤 리스크 기준 설정
-- **평가·가드레일**: 바이어스 감사 5개 리스크 축(bias, efficacy, robustness, explainability, privacy)
+- **Foundation model**: _미공개 (not disclosed)_
+- **Model 유형**: _미공개 (not disclosed)_
+- **커스터마이징**: _미공개 (not disclosed)_
+- **평가·가드레일**: _미공개 (not disclosed)_
 
 ### E. Organization & Team (조직·팀 구조)
 
-- **오너십**: 중앙 AI 거버넌스 팀 (자회사 공통)
-- **참여 역할**: Legal, Compliance, HR Tech — 구체 팀 구성 미공개
-- **거버넌스 체계**: 중앙화된 AI 리스크 위원회 (구체 명칭·구성 미공개)
-- **비즈니스 임팩트**: 포춘 500 고객사에 실시간 컴플라이언스 대시보드 제공 → 영업 차별화 요소화
+- **오너십**: _미공개 (not disclosed)_ — ⚠️ 벤더 주장: 9개 운영 자회사에 중앙화된 AI 가시성 부재가 도입 배경. [[sources/holistic-ai-allegis-bias-audit-2025.md]]
+- **참여 역할**: _미공개 (not disclosed)_
+- **거버넌스 체계**: _미공개 (not disclosed)_
+- **비즈니스 임팩트**: ⚠️ 벤더 주장: 포춘 500 고객사에 실시간 컴플라이언스 대시보드 제공 → 영업 차별화 요소화. [[sources/holistic-ai-allegis-bias-audit-2025.md]]
 
 ## Impact / Metrics (기대효과)
 
@@ -127,13 +123,13 @@ AI 거버넌스 도입으로 고위험 AI 프로젝트 50% 감소, AI 감사 소
 ## Governance & Risk
 
 - 이 케이스 자체가 거버넌스 사례이므로 메타적 관점 필요
-- **NYC LL144 준수**: 채용 AEDT에 대한 연간 독립 감사 + 공개 의무 이행
-- **EU AI Act 대응**: 2026-08 고위험 AI 시스템 컴플라이언스 데드라인 준비 중 (구체 내용 미공개)
+- **NYC LL144·EU AI Act**: ⚠️ 벤더 주장: 규제 압력이 도입 배경. [[sources/holistic-ai-allegis-bias-audit-2025.md]] Allegis 자체의 LL144 감사 이행 여부는 _미공개_ (소스의 LL144 감사 사례는 Hired 건)
+- **EU AI Act 대응**: 구체 준비 내용 _미공개_
 - **Shadow AI 리스크**: 145개 파악 → 500~600개 실제 — 이 Gap이 핵심 리스크 신호
 
 ## Contradictions
 
-없음 (단일 소스 구조).
+> [!note] 2026-09-27 grounding — 종전 본문의 NYC LL144 독립 바이어스 감사 수행·공개(연간 감사), AEDT 성별·인종 분산 영향 분석, 5개 리스크 축, 거버넌스 위원회 HITL, 9개 자회사 맞춤 리스크 기준은 인용 소스에서 Allegis가 아닌 Hired 사례이거나 근거가 없어 제거·_미공개_ 처리. 원문 스냅샷 미확보(unavailable) — 소스 페이지 요약만 근거.
 
 ## Consulting Angle
 

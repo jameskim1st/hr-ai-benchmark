@@ -1,8 +1,12 @@
 ---
 title: "SuccessFactors Leapfrogs HCM Capabilities: AI, Skills, Talent Intelligence, And More — Josh Bersin"
 url: https://joshbersin.com/2024/10/successfactors-leapfrogs-hcm-capabilities-ai-skills-talent-intelligence-and-more/
-source_type: analyst-blog
+source_type: analyst
 tier: 1
+raw: raw/articles/2024-10-01-bersin-successfactors-leapfrog.md
+snapshot_quality: full
+publisher: Josh Bersin
+independent: true
 publication_date: 2024-10-01
 ingested_at: 2026-04-12
 conflict_of_interest_disclosed: false   # Bersin은 SAP SuccessFactors와 직접 벤더 파트너십 없음 — 상대적 독립
@@ -93,3 +97,14 @@ Bersin의 핵심 관찰:
 - Delta/Pepsi 사례도 결국 **SAP 입장의 마케팅 narrative** — SAP가 Bersin에 전달했을 가능성
 - 버린 제품들(Gloat·Eightfold 등)의 입장·반박은 이 기사에 없음
 - "no longer felt the need"이 완전 제거인지 축소인지 모호
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "Last month I met with both Delta Air Lines and Pepsi, both of which are using SuccessFactors Talent Intelligence hub as their new end-to-end platform. Each company told me that they no longer felt the need to use some of these other third party products."
+> — 뒷받침: Delta·Pepsi consolidation (counter-evidence)
+
+> "In the prior release SuccessFactors described 63 AI use-cases; this week they introduced 30 more. And all are integrated into Joule, SAP's intelligent Agent."
+> — 뒷받침: 63+30 AI use cases
+
+> "This covers 70% or more of the questions employees ask HR service centers, so this feature has an enormous ROI."
+> — 뒷받침: Explain Pay Slip — HR 문의 70% 커버

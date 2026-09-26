@@ -3,7 +3,11 @@ title: "Orgvue Henshaw AI — Salesforce Case Study + 2025 Workforce Complexity 
 url: "https://www.prnewswire.com/news-releases/orgvue-unveils-henshaw-suite-of-ai-platform-capabilities-302630472.html"
 url_secondary: "https://www.prnewswire.com/news-releases/new-research-exposes-the-complexity-of-deploying-ai-systems-in-the-workforce-302712007.html"
 tier: 3
-source_type: vendor_announcement
+raw: raw/vendors/2026-09-27-orgvue-henshaw-ai-launch.md
+snapshot_quality: full
+publisher: Orgvue
+independent: false
+source_type: vendor
 ingested_at: 2026-04-12
 supports: [salesforce-orgvue-org-design-ai]
 ---
@@ -44,3 +48,14 @@ Orgvue launched Henshaw AI in December 2025 — a suite of platform capabilities
 - **Vendor**: Orgvue (org design + SWP platform, UK-based)
 - **Customer**: Salesforce (named testimonial), BDO, undisclosed companies
 - **Feature**: Henshaw AI suite (Dec 2025)
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "Henshaw Roles takes on the heavy lifting of creating the foundation for job architecture by automatically grouping similar positions into clearly defined roles, role clusters, and job families. This reduces weeks or months of manual data work to minutes, accelerating organizational design, workforce planning, and talent strategy significantly."
+> — 뒷받침: Henshaw Roles — role clustering
+
+> "Orgvue's automated role-clustering capability will save a huge amount of time in surfacing opportunities for organizational redesign, workforce planning, and cost reduction. What we've seen so far is truly game changing for design work."
+> — 뒷받침: Salesforce Stacey Anderson testimonial (⚠️ early access 고객 인용)
+
+> "The new suite includes Henshaw Roles and Henshaw Assistant, which are both available to customers through an early access program. More capabilities will be added during 2026."
+> — 뒷받침: early access 상태

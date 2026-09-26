@@ -2,7 +2,11 @@
 title: "360Learning — Mitsubishi Electric 99% Satisfaction / 65% Cost Reduction"
 url: "https://360learning.com/customers/mitsubishielectric/"
 tier: 3
-source_type: vendor_case_study
+raw: raw/vendors/2026-09-27-360learning-mitsubishi-electric-case.md
+snapshot_quality: full
+publisher: 360Learning
+independent: false
+source_type: vendor
 ingested_at: 2026-04-12
 ---
 
@@ -35,3 +39,17 @@ Mitsubishi Electric deployed 360Learning's collaborative LMS for customer traini
 - **Company**: Mitsubishi Electric (manufacturing/electronics, Japan/global)
 - **Vendor**: 360Learning (collaborative LMS)
 - **Use case type**: Customer education / extended enterprise (not internal employee training)
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "Back in June 2020, we had 1,500 people waiting to be enrolled on a course. Our wait times were simply too long and we really wanted to reduce that."
+> — 뒷받침: 도입 배경 — 교육 대기 적체 (Lance Hitchins, Head of Customer Training)
+
+> "The number of people trained has increased from 200 to 300 people per month"
+> — 뒷받침: 월 교육 인원 200→300 (⚠️ 자사 보고)
+
+> "Training costs have been reduced by 65%"
+> — 뒷받침: 교육비 65% 절감 (⚠️ 자사 보고)
+
+> "99% customer satisfaction rate"
+> — 뒷받침: 고객 만족도 99% (⚠️ 자사 보고)

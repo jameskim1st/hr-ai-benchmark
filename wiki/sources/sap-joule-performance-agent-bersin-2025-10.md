@@ -2,7 +2,11 @@
 title: "SAP Jumps Ahead In AI Agents With Joule — Josh Bersin (2025-10)"
 url: https://joshbersin.com/2025/10/sap-jumps-ahead-in-ai-agents-with-joule-hcm-features-and-more/
 tier: 1
-source_type: article
+raw: raw/articles/2026-09-27-bersin-sap-joule-agents.md
+snapshot_quality: full
+publisher: Josh Bersin
+independent: true
+source_type: analyst
 ingested_at: 2026-04-12
 supports: [sap-joule-performance-goals-agent, sap-successfactors-1h-2026-joule-agents]
 ---
@@ -22,3 +26,17 @@ Josh Bersin(Tier 1 분석가)이 SAP Connect 2025에서 발표된 Joule 에이�
 ## Source Assessment
 
 ✅ Tier 1 (Josh Bersin). 독립 분석가의 직접 평가. 다만 IBM·Disney 전환 사례는 구체 수치 없이 언급만.
+
+## Key Quotes
+<!-- raw 스냅샷에서 verbatim 복사, 2026-09-27 -->
+> "This week SAP launched dozens of these Agents, including five in HR (the Performance and Goals Agent, Career and Talent Development Agent, HR Service Agent, Payroll Agent, and People Intelligence Agent)."
+> — 뒷받침: 5개 HR Joule Agent
+
+> "Joule is as easy to use as ChatGPT, it supports 40 different AI engines, and it is entirely programmable with Joule Studio."
+> — 뒷받침: 40개 AI 엔진
+
+> "Several of the clients I met had switched from Workday to Successfactors because they were SAP enterprise users (IBM, Disney, others)."
+> — 뒷받침: IBM·Disney Workday→SF 전환
+
+> "it's now becoming a standard front-end for business people and it interoperates completely with Microsoft Copilot and other Agents through the a2a and MCP protocols."
+> — 뒷받침: Copilot 연동 · a2a/MCP

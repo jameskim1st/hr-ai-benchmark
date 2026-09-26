@@ -95,7 +95,8 @@ def fmt_value(v):
     if v is None:
         return ''
     s = str(v)
-    if re.search(r'[:#"\[\]{}]|^\s|\s$', s) and not re.match(r'^\d{4}-\d{2}(-\d{2})?$', s):
+    needs = re.search(r'[:#"\[\]{}]|^\s|\s$', s) or re.match(r"^['*&!|>%@`?,-]", s) or s.lower() in ('true', 'false', 'null', 'yes', 'no', '~')
+    if needs and not re.match(r'^\d{4}-\d{2}(-\d{2})?$', s):
         return '"' + s.replace('"', "'") + '"'
     return s
 

@@ -28,7 +28,7 @@ confidence: 0.55
 evidence_grade: B
 corroborated_by: 1
 freshness: fresh
-depth: full
+depth: partial
 graded_at: 2026-09-27
 consulting_angle_status: filled
 sources:
@@ -49,7 +49,7 @@ Workday가 2026-02-18에 GA 발표한 **Agent System of Record (ASOR)**는 AI �
 ## Problem / Why (도입 배경)
 
 - **Before (baseline)**: 엔터프라이즈가 AI 에이전트를 부서별·도구별로 산발 도입. 누가 만들었는지, 어떤 권한을 갖는지, 누가 책임지는지가 불투명. shadow AI 리스크 누적.
-- **Pain point**: AI 에이전트가 빠르게 늘어나는데 거버넌스·감사·권한 통제가 부재. Deloitte 2026 HC Trends에 따르면 임원 60%가 AI를 의사결정에 사용하지만 5%만 잘 관리 중.
+- **Pain point**: AI 에이전트가 빠르게 늘어나는데 거버넌스·감사·권한 통제가 부재. Deloitte 2026 HC Trends에 따르면 임원 60%가 AI를 의사결정에 사용하지만 5%만 잘 관리 중 ([[sources/deloitte-2026-human-capital-trends]]).
 - **Trigger**: 2026-Q1 EU AI Act high-risk 의무 발효 임박 + 한국 AI 기본법(2026-01-22 시행) 등 글로벌 규제 압력. 엔터프라이즈가 "AI 거버넌스" 카테고리 솔루션 시급히 요구.
 
 ## Solution Architecture
@@ -68,32 +68,31 @@ Workday가 2026-02-18에 GA 발표한 **Agent System of Record (ASOR)**는 AI �
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: Workday HCM
-- **AI 시스템 배치**: ASOR은 Workday 코어에 내장된 거버넌스 레이어 (별도 SaaS 아님)
-- **배포 환경**: Workday cloud (multi-tenant)
-- **연동·통합**: 1st-party Workday Illuminate agents + 3rd-party (Salesforce Agentforce, OpenAI, Microsoft, Anthropic 등) — 표준 프로토콜(MCP·a2a) 기반
-- **사용자 접점**: Workday admin console + 권한 변경은 기존 Workday self-service 워크플로
-- **인증·권한**: Workday IAM (사람 직원과 동일 모델)
+- **Core HRIS**: ✅ Workday (ASOR은 Workday 플랫폼의 에이전트 거버넌스 레이어) ([[sources/workday-asor-ga-2026-02]])
+- **AI 시스템 배치**: ✅ ASOR — 전사 AI 에이전트의 single source of truth (Workday·고객·파트너 제작 에이전트 포함) ([[sources/workday-asor-ga-2026-02]]); 별도 SaaS 여부 _미공개_
+- **배포 환경**: _미공개 (not disclosed)_
+- **연동·통합**: ✅ Agent Gateway를 통해 MCP·A2A 표준 지원, OpenTelemetry 정렬; Agent Partner Network 65+ 파트너 연결 ([[sources/workday-asor-ga-2026-02]]); 3rd-party 예시(Salesforce·OpenAI·Microsoft)는 소스 페이지 요약 기준 — raw 미확인, Anthropic은 소스에 없어 삭제
+- **사용자 접점**: _미공개 (not disclosed)_
+- **인증·권한**: ✅ 에이전트를 직원처럼 거버넌스 — 권한·역할·스킬·분석 적용 ([[sources/workday-asor-ga-2026-02]]); IAM 모델 세부 _미공개_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: 에이전트 메타데이터(이름·purpose·owner·scope), 활동 로그, outcome metric
+- **입력 데이터 소스**: ⚠️ 벤더 주장: 에이전트의 권한·역할·스킬·분석 정보 ([[sources/workday-asor-ga-2026-02]]); 필드 세부 _미공개_
 - **데이터 규모**: _미공개 (not disclosed)_
-- **전처리·정제**: _미공개_
-- **학습 vs RAG vs In-context 구분**: ASOR은 거버넌스 레이어이므로 학습 모델은 아님. 활동 분석은 Workday Prism Analytics 활용 추정
-- **데이터 거버넌스**: Workday tenant 격리 + 에이전트 활동 audit trail 보존
-- **민감정보 처리**: 에이전트가 접근하는 HR 데이터는 기존 Workday RBAC 따름
+- **전처리·정제**: _미공개 (not disclosed)_
+- **학습 vs RAG vs In-context 구분**: ASOR은 거버넌스 레이어 — 학습 모델 아님 ([[sources/workday-asor-ga-2026-02]]); 분석 엔진 _미공개_
+- **데이터 거버넌스**: _미공개 (not disclosed)_
+- **민감정보 처리**: _미공개 (not disclosed)_
 
 ### D. Model (모델)
 
-- ASOR 자체는 거버넌스 플랫폼 (모델 X). 관리 대상 에이전트가 다양한 foundation model 활용:
-  - Workday Illuminate: Workday 자체 학습 모델 (vendor-claimed)
-  - 3rd-party: GPT-4/5, Claude, Gemini 등 호출 가능
-- _Workday Illuminate base 모델 상세 미공개_
+- **Foundation model**: 해당 없음 — ASOR 자체는 거버넌스 플랫폼 ([[sources/workday-asor-ga-2026-02]]); 관리 대상 에이전트의 모델은 _미공개 (not disclosed)_ (기존 GPT/Claude/Gemini 나열은 소스에 없어 삭제)
+- **Model 유형·제공 방식·커스터마이징·Orchestration**: _미공개 (not disclosed)_
+- **평가·가드레일**: ⚠️ 벤더 주장: 에이전트를 투자처럼 측정·직원처럼 거버넌스·학습으로 개선 ([[sources/workday-asor-ga-2026-02]]); 세부 _미공개_
 
 ### E. Organization & Team (조직·팀 구조)
 
-- **오너십**: HR이 "agent owner of record" — Deloitte 2026 HC Trends가 신규 부상 역할로 명시
+- **오너십**: HR이 "agent owner of record" ([[sources/workday-asor-ga-2026-02]]) — Deloitte 2026 HC Trends가 agent governance 역할 부상을 명시 ([[sources/deloitte-2026-human-capital-trends]])
 - **참여 역할**: HRBP·HR Tech PM·legal·보안·IT/AI plat팀 협업
 - **거버넌스 체계**: ASOR 자체가 거버넌스 인프라 — 정책 위원회·AI ethics board는 기업별 별도 구성
 - **변화관리**: HR 직무 재설계 — "사람 매니징"에서 "사람+에이전트 매니징"으로
@@ -128,7 +127,9 @@ AI 에이전트의 "shadow proliferation"을 막고, 사람과 에이전트를 �
 
 ## Contradictions
 
-(없음 — GA 직후로 충돌 보도 미발견)
+_없음._
+
+> [!note] 2026-09-27 grounding — B/C/D의 multi-tenant·admin console·Workday IAM·Prism Analytics·tenant 격리·RBAC·3rd-party 모델(GPT/Claude/Gemini)·Anthropic 서술은 인용 소스에 없어 `_미공개_`/삭제. raw 스냅샷에서 확인되는 것은 65+ 파트너, MCP·A2A·OpenTelemetry, single source of truth, "governed like employees" 표현.
 
 ## Consulting Angle
 
