@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HR AI Benchmark 시스템 구조도</title>
+<meta name="description" content="HR AI Benchmark LLM Wiki의 3층 구조, 데이터 흐름, 페이지 유형, 품질 모델, 운영 도구를 한 장에 정리한 구조도 (2026-10-17 기준)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  color-scheme:light;
+  --paper:#f4f6f8; --card:#ffffff; --ink:#16202b; --muted:#5b6675; --line:#d5dbe3; --line-soft:#e7ebf0;
+  --raw:#a35a0e; --raw-bg:#fbf1e3;
+  --wiki:#1f5fbf; --wiki-bg:#e8f0fb;
+  --schema:#6a3fb5; --schema-bg:#efe9f8;
+  --enforce:#0e7c6b; --enforce-bg:#e3f3ef;
+  --out:#3b4a5c; --out-bg:#eef1f4;
+  --ok:#2e7d4f; --warn:#b7791f; --crit:#b93a3a;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  --sans:"IBM Plex Sans KR","Pretendard","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#111820; --card:#182230; --ink:#e6ebf1; --muted:#9aa6b5; --line:#2c3947; --line-soft:#223040;
+    --raw:#e0a460; --raw-bg:#2d2114; --wiki:#7fb0f5; --wiki-bg:#15243a; --schema:#b79ae8; --schema-bg:#241b36;
+    --enforce:#5fcbb5; --enforce-bg:#102a25; --out:#b9c4d1; --out-bg:#1d2733;
+    --ok:#6cc48f; --warn:#e0b25c; --crit:#ee8a8a;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#111820; --card:#182230; --ink:#e6ebf1; --muted:#9aa6b5; --line:#2c3947; --line-soft:#223040;
+  --raw:#e0a460; --raw-bg:#2d2114; --wiki:#7fb0f5; --wiki-bg:#15243a; --schema:#b79ae8; --schema-bg:#241b36;
+  --enforce:#5fcbb5; --enforce-bg:#102a25; --out:#b9c4d1; --out-bg:#1d2733;
+  --ok:#6cc48f; --warn:#e0b25c; --crit:#ee8a8a;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.6;padding-block:0 64px;padding-inline:16px}
+.wrap{max-width:1120px;margin:0 auto}
+header{padding-block:40px 24px;border-bottom:1px solid var(--line)}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-size:clamp(26px,4vw,38px);line-height:1.2;margin:8px 0 10px;text-wrap:balance;font-weight:700}
+.lede{max-width:70ch;color:var(--muted);margin:0}
+.stats{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:10px 14px;min-width:120px}
+.stat b{display:block;font-size:22px;font-variant-numeric:tabular-nums;line-height:1.1}
+.stat span{font-size:12px;color:var(--muted)}
+nav.toc{display:flex;flex-wrap:wrap;gap:6px 14px;padding-block:14px;font-size:13px;border-bottom:1px solid var(--line-soft)}
+nav.toc a{color:var(--muted);text-decoration:none}
+nav.toc a:hover,nav.toc a:focus-visible{color:var(--ink);text-decoration:underline}
+section{padding-block:36px 8px}
+h2{font-size:22px;margin:0 0 6px;text-wrap:balance}
+h2 .n{font-family:var(--mono);font-size:13px;color:var(--muted);margin-right:8px}
+.sub{color:var(--muted);max-width:75ch;margin:0 0 18px}
+figure{margin:0 0 18px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px}
+.scroll{overflow-x:auto}
+figure svg{max-width:100%;height:auto;display:block;font-family:var(--sans);color:var(--ink)}
+figcaption{font-size:13px;color:var(--muted);margin-top:10px;max-width:90ch}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
+table{width:100%;border-collapse:collapse;font-size:14px;background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+th{background:var(--out-bg);font-weight:600;font-size:13px}
+tr:last-child td{border-bottom:0}
+code,.path{font-family:var(--mono);font-size:12.5px;background:var(--out-bg);padding:1px 5px;border-radius:4px}
+pre{font-family:var(--mono);font-size:12.5px;line-height:1.55;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px;overflow-x:auto;margin:0}
+pre .c{color:var(--muted)}
+pre .raw{color:var(--raw)} pre .wiki{color:var(--wiki)} pre .sch{color:var(--schema)} pre .enf{color:var(--enforce)}
+.chip{display:inline-block;font-size:12px;padding:1px 8px;border-radius:999px;border:1px solid var(--line);background:var(--out-bg);margin-right:4px;font-variant-numeric:tabular-nums}
+.chip.ok{color:var(--ok);border-color:var(--ok)} .chip.warn{color:var(--warn);border-color:var(--warn)} .chip.crit{color:var(--crit);border-color:var(--crit)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:12.5px;color:var(--muted);margin-top:8px}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:-2px;margin-right:5px;border:1px solid var(--line)}
+.callout{border-left:3px solid var(--enforce);background:var(--enforce-bg);padding:10px 14px;border-radius:0 6px 6px 0;margin:14px 0;font-size:14px}
+ul.tight{margin:6px 0 0 18px;padding:0} ul.tight li{margin:3px 0}
+footer{color:var(--muted);font-size:12.5px;padding-top:30px;border-top:1px solid var(--line);margin-top:30px}
+@media (prefers-reduced-motion: no-preference){ a{transition:color .15s} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">c:\AI\AI-HR\Benchmark · LLM Wiki v2 · 2026-10-17 기준</div>
+  <h1>HR AI Benchmark 시스템 구조도</h1>
+  <p class="lede">HR 부문 AI 적용 사례를 모아 근거를 추적 가능하게 검증하고, 컨설팅 제안서에 바로 인용할 수 있게 유지하는 시스템. 원본(raw)은 불변, 위키(wiki)는 에이전트가 쓰고, 규칙(schema)은 스크립트와 hooks가 강제한다.</p>
+  <div class="stats">
+    <div class="stat"><b>118</b><span>use case (HR 사례)</span></div>
+    <div class="stat"><b>15 / 4</b><span>enterprise-ai / reference</span></div>
+    <div class="stat"><b>300</b><span>source 페이지</span></div>
+    <div class="stat"><b>306</b><span>raw 스냅샷 파일</span></div>
+    <div class="stat"><b>20 / 15</b><span>companies / vendors</span></div>
+    <div class="stat"><b>A41 B30 C42 D5</b><span>근거 등급 분포</span></div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="목차">
+  <a href="#big">1 큰 그림</a><a href="#flow">2 데이터 흐름</a><a href="#tree">3 폴더 구조</a><a href="#types">4 페이지 유형과 관계</a><a href="#quality">5 품질 모델</a><a href="#ops">6 운영 도구</a><a href="#out">7 산출물·외부 연결</a><a href="#state">8 현재 상태</a>
+</nav>
+
+<!-- 1. 큰 그림 -->
+<section id="big">
+  <h2><span class="n">1</span>큰 그림 — 3층 + 강제 장치</h2>
+  <p class="sub">Karpathy LLM Wiki 패턴(raw → wiki → schema)에 두 가지를 덧붙였다. 모든 수치가 raw에 있는지 스크립트가 검사하고(Grounding Invariant), raw 수정과 규칙 위반은 hooks가 막는다.</p>
+  <figure>
+    <div class="scroll">
+    <svg viewBox="0 0 1040 400" role="img" aria-label="schema가 wiki를 규정하고 wiki가 raw를 가리키며, hooks와 scripts가 세 층 모두에 걸쳐 규칙을 강제하는 구조">
+      <defs>
+        <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker>
+      </defs>
+      <!-- schema layer -->
+      <rect x="40" y="30" width="640" height="88" rx="8" fill="var(--schema-bg)" stroke="var(--schema)"/>
+      <text x="60" y="56" font-size="15" font-weight="600" fill="var(--schema)">SCHEMA — 규칙서</text>
+      <text x="60" y="78" font-size="12.5">CLAUDE.md (78줄 core) + .claude/rules/ taxonomy · usecase-schema · sources · protocols</text>
+      <text x="60" y="98" font-size="12.5" fill="var(--muted)">무엇을 어떻게 쓰고, 무엇을 금지하는가 (불변 원칙 10개, 근거 등급, 페이지 유형 판정)</text>
+      <!-- wiki layer -->
+      <rect x="40" y="150" width="640" height="104" rx="8" fill="var(--wiki-bg)" stroke="var(--wiki)"/>
+      <text x="60" y="176" font-size="15" font-weight="600" fill="var(--wiki)">WIKI — 에이전트가 쓰고 유지하는 자료</text>
+      <text x="60" y="198" font-size="12.5">usecases/ 118 · enterprise-ai/ 15 · reference/ 4 · sources/ 300 · companies/ 20 · vendors/ 15</text>
+      <text x="60" y="218" font-size="12.5">categories/ 8 · syntheses/ 15 · index.md(생성) · log.md(append-only) · dashboard · exports/</text>
+      <text x="60" y="238" font-size="12.5" fill="var(--muted)">모든 수치·시스템명에 [[sources/…]] 인용. 없으면 _미공개_</text>
+      <!-- raw layer -->
+      <rect x="40" y="286" width="640" height="88" rx="8" fill="var(--raw-bg)" stroke="var(--raw)"/>
+      <text x="60" y="312" font-size="15" font-weight="600" fill="var(--raw)">RAW — 원본 스냅샷 (불변)</text>
+      <text x="60" y="334" font-size="12.5">raw/articles · vendors · reports (fetch_raw.py 스냅샷 306개, content_hash·snapshot_quality)</text>
+      <text x="60" y="354" font-size="12.5" fill="var(--muted)">raw/inbox (Web Clipper 캡처, ingest 후 이동) · raw/internal (기밀, export 제외)</text>
+      <!-- arrows between layers -->
+      <line x1="360" y1="118" x2="360" y2="150" stroke="currentColor" stroke-width="1.5" marker-end="url(#ar)"/>
+      <text x="370" y="140" font-size="11.5" fill="var(--muted)">규정한다 (@import로 함께 로드)</text>
+      <line x1="360" y1="254" x2="360" y2="286" stroke="currentColor" stroke-width="1.5" marker-end="url(#ar)"/>
+      <text x="370" y="276" font-size="11.5" fill="var(--muted)">가리킨다 (source.raw → 파일, 수치는 verbatim)</text>
+      <!-- enforcement column -->
+      <rect x="720" y="30" width="290" height="344" rx="8" fill="var(--enforce-bg)" stroke="var(--enforce)"/>
+      <text x="740" y="56" font-size="15" font-weight="600" fill="var(--enforce)">강제 장치</text>
+      <text x="740" y="82" font-size="12.5" font-weight="600">hooks (.claude/settings.json)</text>
+      <text x="740" y="100" font-size="12">PreToolUse → raw/ 쓰기 차단</text>
+      <text x="740" y="117" font-size="12">PostToolUse → wiki 저장 직후 lint --quick</text>
+      <text x="740" y="146" font-size="12.5" font-weight="600">scripts/</text>
+      <text x="740" y="164" font-size="12">lint.py — 결정론 점검, 보고만</text>
+      <text x="740" y="181" font-size="12">grade.py — 등급·confidence·depth 계산</text>
+      <text x="740" y="198" font-size="12">check_quotes.py — 수치 ↔ raw 대조</text>
+      <text x="740" y="215" font-size="12">build_index.py — 목차 생성 (손글씨 금지)</text>
+      <text x="740" y="232" font-size="12">build_all.py — 산출물, internal 게이트</text>
+      <text x="740" y="261" font-size="12.5" font-weight="600">LLM 판단 영역</text>
+      <text x="740" y="279" font-size="12">skills 6개 + hr-verifier 서브에이전트</text>
+      <text x="740" y="296" font-size="12">모순·낡음·품질 판단, 인용문 검증</text>
+      <text x="740" y="325" font-size="12.5" font-weight="600">회귀 평가</text>
+      <text x="740" y="343" font-size="12">evals/golden-qa.json 30문항 (eval_qa.py)</text>
+      <!-- enforcement arrows -->
+      <line x1="720" y1="74" x2="684" y2="74" stroke="var(--enforce)" stroke-width="1.5" marker-end="url(#ar)" stroke-dasharray="4 3"/>
+      <line x1="720" y1="200" x2="684" y2="200" stroke="var(--enforce)" stroke-width="1.5" marker-end="url(#ar)" stroke-dasharray="4 3"/>
+      <line x1="720" y1="330" x2="684" y2="330" stroke="var(--enforce)" stroke-width="1.5" marker-end="url(#ar)" stroke-dasharray="4 3"/>
+    </svg>
+    </div>
+    <figcaption>schema는 wiki를 규정하고 wiki는 raw를 가리킨다. 오른쪽 강제 장치는 세 층 모두에 걸쳐 동작한다. 점선 = 검사·차단, 실선 = 참조.</figcaption>
+  </figure>
+  <div class="callout"><b>설계 원칙 한 줄.</b> 숫자(등급·confidence·카운트)는 사람도 LLM도 손으로 쓰지 않는다. 스크립트가 계산하고, LLM은 판단만 하며, 수정은 사람 승인 후 한 건씩.</div>
+</section>
+
+<!-- 2. 데이터 흐름 -->
+<section id="flow">
+  <h2><span class="n">2</span>데이터 흐름 — 기사 한 건이 제안서 인용이 되기까지</h2>
+  <p class="sub">왼쪽에서 오른쪽으로 흐른다. 각 단계는 산출물 파일이 있고, 다음 단계는 그 파일만 입력으로 받는다. 우회 경로(검색 결과를 바로 use case로 쓰기, 여러 기사를 한 source로 묶기)는 금지다.</p>
+  <figure>
+    <div class="scroll">
+    <svg viewBox="0 0 1180 330" role="img" aria-label="수집, 스냅샷, source 페이지, use case, 계산과 점검, 산출물의 6단계 파이프라인과 각 단계의 담당 도구">
+      <defs><marker id="ar2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+      <!-- stage boxes -->
+      <g font-size="12.5">
+        <rect x="20" y="60" width="170" height="120" rx="8" fill="var(--raw-bg)" stroke="var(--raw)"/>
+        <text x="35" y="84" font-weight="600" fill="var(--raw)">① 수집</text>
+        <text x="35" y="106">Web Clipper → raw/inbox</text>
+        <text x="35" y="124">/hr-research 후보 목록</text>
+        <text x="35" y="142">(URL · 기사 · PDF)</text>
+        <text x="35" y="166" fill="var(--muted)">사람이 넣는다</text>
+
+        <rect x="220" y="60" width="170" height="120" rx="8" fill="var(--raw-bg)" stroke="var(--raw)"/>
+        <text x="235" y="84" font-weight="600" fill="var(--raw)">② 스냅샷</text>
+        <text x="235" y="106">fetch_raw.py</text>
+        <text x="235" y="124">raw/articles|vendors|reports</text>
+        <text x="235" y="142">url · content_hash</text>
+        <text x="235" y="160">snapshot_quality</text>
+        <text x="235" y="176" fill="var(--muted)">이후 수정 불가</text>
+
+        <rect x="420" y="60" width="170" height="120" rx="8" fill="var(--wiki-bg)" stroke="var(--wiki)"/>
+        <text x="435" y="84" font-weight="600" fill="var(--wiki)">③ source 페이지</text>
+        <text x="435" y="106">wiki/sources/&lt;slug&gt;.md</text>
+        <text x="435" y="124">tier · independent · raw:</text>
+        <text x="435" y="142">Key Quotes (verbatim)</text>
+        <text x="435" y="160">supports: [use cases]</text>
+        <text x="435" y="176" fill="var(--muted)">기사 1건 = 1페이지</text>
+
+        <rect x="620" y="60" width="170" height="120" rx="8" fill="var(--wiki-bg)" stroke="var(--wiki)"/>
+        <text x="635" y="84" font-weight="600" fill="var(--wiki)">④ use case</text>
+        <text x="635" y="106">wiki/usecases/&lt;slug&gt;.md</text>
+        <text x="635" y="124">A~F 아키텍처 섹션</text>
+        <text x="635" y="142">[[sources/…]] 인용</text>
+        <text x="635" y="160">⚠️ 벤더 주장 / _미공개_</text>
+        <text x="635" y="176" fill="var(--muted)">/hr-ingest가 작성</text>
+
+        <rect x="820" y="60" width="170" height="120" rx="8" fill="var(--enforce-bg)" stroke="var(--enforce)"/>
+        <text x="835" y="84" font-weight="600" fill="var(--enforce)">⑤ 계산·점검</text>
+        <text x="835" y="106">grade.py → 등급·depth</text>
+        <text x="835" y="124">check_quotes.py → 수치</text>
+        <text x="835" y="142">lint.py → critical 0</text>
+        <text x="835" y="160">hr-verifier → 인용 대조</text>
+        <text x="835" y="176" fill="var(--muted)">보고만, 자동 수정 없음</text>
+
+        <rect x="1010" y="60" width="150" height="120" rx="8" fill="var(--out-bg)" stroke="var(--out)"/>
+        <text x="1025" y="84" font-weight="600" fill="var(--out)">⑥ 산출물</text>
+        <text x="1025" y="106">build_all.py</text>
+        <text x="1025" y="124">HTML · Excel · JSON</text>
+        <text x="1025" y="142">index.md · digest</text>
+        <text x="1025" y="160">MCP hr-wiki</text>
+        <text x="1025" y="176" fill="var(--muted)">internal 제외</text>
+      </g>
+      <!-- arrows -->
+      <g stroke="currentColor" stroke-width="1.5" marker-end="url(#ar2)">
+        <line x1="190" y1="120" x2="218" y2="120"/><line x1="390" y1="120" x2="418" y2="120"/><line x1="590" y1="120" x2="618" y2="120"/><line x1="790" y1="120" x2="818" y2="120"/><line x1="990" y1="120" x2="1008" y2="120"/>
+      </g>
+      <!-- triage line -->
+      <text x="230" y="40" font-size="11.5" fill="var(--muted)">triage: New / Update / Disputed / No material</text>
+      <!-- grounding feedback -->
+      <path d="M905 180 C905 240, 705 240, 705 182" fill="none" stroke="var(--enforce)" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#ar2)"/>
+      <text x="700" y="252" font-size="11.5" fill="var(--enforce)">근거 없는 수치 → _미공개_ (사람 승인 후 수정)</text>
+      <path d="M505 180 C505 300, 305 300, 305 182" fill="none" stroke="var(--raw)" stroke-width="1.5" stroke-dasharray="4 3" marker-end="url(#ar2)"/>
+      <text x="300" y="312" font-size="11.5" fill="var(--raw)">Key Quotes는 raw에서 글자 그대로 복사</text>
+      <!-- bottom labels -->
+      <text x="20" y="215" font-size="11.5" fill="var(--muted)">사람 · 클리퍼</text>
+      <text x="220" y="215" font-size="11.5" fill="var(--muted)">스크립트</text>
+      <text x="420" y="215" font-size="11.5" fill="var(--muted)">/hr-ingest (LLM)</text>
+      <text x="620" y="215" font-size="11.5" fill="var(--muted)">/hr-ingest (LLM)</text>
+      <text x="820" y="215" font-size="11.5" fill="var(--muted)">스크립트 + hr-verifier</text>
+      <text x="1010" y="215" font-size="11.5" fill="var(--muted)">스크립트</text>
+    </svg>
+    </div>
+    <figcaption>①→⑥ 순방향 흐름. 점선은 되돌아가는 검사: use case의 수치는 raw에 있어야 하고(⑤→④), source의 인용문은 raw에서 복사해야 한다(③→②).</figcaption>
+  </figure>
+  <div class="grid2">
+    <table>
+      <tr><th>단계</th><th>입력 → 출력</th><th>실패 시</th></tr>
+      <tr><td>② 스냅샷</td><td>URL → raw/*.md (quality: full / partial / llm-extracted / unavailable)</td><td>403·paywall이면 unavailable로 헤더만 저장, 그 소스의 수치는 "원문 미확인" 표기</td></tr>
+      <tr><td>③ source</td><td>raw → source 페이지 (tier 1~4, independent true/false)</td><td>compilation(여러 URL 묶음) 금지. 4월에 만든 4개는 deprecated</td></tr>
+      <tr><td>④ use case</td><td>source들 → 사례 페이지. HR 프로세스 아니면 enterprise-ai/, 법령·리포트면 reference/</td><td>소스에 없는 항목은 _미공개_. "Workday 또는 자체" 같은 선택지 추정 금지</td></tr>
+      <tr><td>⑤ 점검</td><td>lint critical 0 + check_quotes 미확인 0이어야 다음 단계</td><td>PostToolUse hook이 저장 직후 critical을 돌려보냄</td></tr>
+    </table>
+    <table>
+      <tr><th>원칙</th><th>왜</th></tr>
+      <tr><td>raw 불변</td><td>검증의 기준점. 바뀌면 인용이 의미를 잃는다</td></tr>
+      <tr><td>기사 1건 = source 1건</td><td>어느 수치가 어느 기사에서 왔는지 역추적 가능해야 한다</td></tr>
+      <tr><td>hedging 보존</td><td>"검토 중"을 "도입"으로 승격하면 에이전트는 확신도에 반응해 사실로 굳힌다</td></tr>
+      <tr><td>부재 확인</td><td>"페이지가 없다"고 말하기 전 grep. LLM의 거짓 부정 방지</td></tr>
+      <tr><td>자동 수정 금지</td><td>운영 회고들이 일관되게 반대. 보고 → 승인 → 적용</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- 3. 폴더 구조 -->
+<section id="tree">
+  <h2><span class="n">3</span>폴더 구조</h2>
+  <p class="sub">색은 1절의 층과 같다. 회색은 산출물·도구.</p>
+<pre><span class="c">c:\AI\AI-HR\Benchmark\</span>
+├── <span class="sch">CLAUDE.md</span>                      <span class="c">78줄 core 규칙 (@import로 rules 4개 로드)</span>
+├── <span class="sch">.claude/</span>
+│   ├── <span class="sch">rules/</span>                     <span class="c">taxonomy · usecase-schema · sources · protocols</span>
+│   ├── <span class="enf">skills/</span>                    <span class="c">hr-ingest · hr-lint · hr-verify · hr-research · hr-digest · hr-compare</span>
+│   ├── <span class="enf">agents/hr-verifier.md</span>      <span class="c">fact-checker 서브에이전트 (읽기·검색만)</span>
+│   └── <span class="enf">settings.json</span>              <span class="c">hooks 2개 + 허용 명령</span>
+├── <span class="raw">raw/</span>                           <span class="c">불변 원본 (306 파일)</span>
+│   ├── <span class="raw">articles/ vendors/ reports/</span>  <span class="c">fetch_raw.py 스냅샷 (frontmatter: url · content_hash · snapshot_quality)</span>
+│   ├── <span class="raw">inbox/</span>                     <span class="c">Web Clipper 캡처 → /hr-ingest 후 articles/로 이동</span>
+│   └── <span class="raw">internal/</span>                  <span class="c">클라이언트·제안서 자료 (기밀)</span>
+├── <span class="wiki">wiki/</span>
+│   ├── <span class="wiki">usecases/</span>        118       <span class="c">★ HR 프로세스 AI 사례 1건 = 1페이지</span>
+│   ├── <span class="wiki">enterprise-ai/</span>    15       <span class="c">전사 GenAI 플랫폼 (참고, 카운트 제외)</span>
+│   ├── <span class="wiki">reference/</span>         4       <span class="c">법령(AI 기본법) · 리포트(Deloitte HC Trends) · 제도 맥락</span>
+│   ├── <span class="wiki">sources/</span>         300       <span class="c">기사 1건 = 1페이지, raw: 로 스냅샷 연결</span>
+│   ├── <span class="wiki">companies/ vendors/</span> 20/15   <span class="c">홀리스틱 뷰 (목록은 Dataview 자동)</span>
+│   ├── <span class="wiki">categories/</span>        8       <span class="c">7 대그룹 뷰 + taxonomy-crosswalk (SHRM·Bersin·AIHR 대응)</span>
+│   ├── <span class="wiki">syntheses/</span>        15       <span class="c">lint 리포트 · digest · compare · research 후보 · 리뷰</span>
+│   ├── <span class="wiki">index.md</span>                   <span class="c">build_index.py 생성 — 손으로 편집 금지</span>
+│   ├── <span class="wiki">log.md</span>                     <span class="c">append-only 이력 (## [날짜] op | …)</span>
+│   ├── <span class="wiki">dashboard.md · guide.md · bases/</span>  <span class="c">Dataview 대시보드 · 설명서 · Obsidian Bases 뷰</span>
+│   └── exports/                       <span class="c">HTML · Excel · usecases.json · enterprise_ai.json (internal 제외)</span>
+├── scripts/                           <span class="c">lint · grade · check_quotes · fetch_raw · build_index · build_all · extract_v3 · build_html_v6 · build_excel</span>
+│   ├── hooks/                         <span class="c">guard_raw.py · post_write_lint.py</span>
+│   ├── wiki_mcp.py                    <span class="c">MCP 서버 (.mcp.json → hr-wiki)</span>
+│   ├── eval_qa.py                     <span class="c">골든 Q&A 회귀 평가</span>
+│   └── weekly.ps1                     <span class="c">주간 사이클 (미등록 — 수동 실행)</span>
+├── evals/golden-qa.json               <span class="c">wiki만 보고 답해야 하는 30문항</span>
+└── templates/obsidian-web-clipper/    <span class="c">article · vendor · report 캡처 템플릿</span></pre>
+</section>
+
+<!-- 4. 페이지 유형과 관계 -->
+<section id="types">
+  <h2><span class="n">4</span>페이지 유형과 관계</h2>
+  <p class="sub">use case가 중심이다. 회사·벤더 페이지는 use case를 Dataview로 끌어모으고, source는 use case의 근거이며, raw는 source의 근거다. synthesis는 여러 페이지를 가로지르는 분석이다.</p>
+  <figure>
+    <div class="scroll">
+    <svg viewBox="0 0 1040 420" role="img" aria-label="use case를 중심으로 company, vendor, category, source, raw, synthesis 페이지가 연결되는 관계도">
+      <defs><marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+      <g font-size="12.5">
+        <!-- center usecase -->
+        <rect x="400" y="150" width="240" height="120" rx="10" fill="var(--wiki-bg)" stroke="var(--wiki)" stroke-width="2"/>
+        <text x="520" y="178" text-anchor="middle" font-size="15" font-weight="700" fill="var(--wiki)">use case (118)</text>
+        <text x="520" y="200" text-anchor="middle">frontmatter 40여 필드 + 본문</text>
+        <text x="520" y="218" text-anchor="middle">Summary · Problem · A~F · Impact</text>
+        <text x="520" y="236" text-anchor="middle">Governance · Contradictions · Consulting Angle</text>
+        <text x="520" y="256" text-anchor="middle" fill="var(--muted)">case_type: adoption | vendor-product</text>
+        <!-- company -->
+        <rect x="60" y="60" width="200" height="70" rx="8" fill="var(--wiki-bg)" stroke="var(--wiki)"/>
+        <text x="160" y="86" text-anchor="middle" font-weight="600">company (20)</text>
+        <text x="160" y="106" text-anchor="middle" fill="var(--muted)">조직·타임라인 서사 + Dataview</text>
+        <!-- vendor -->
+        <rect x="60" y="290" width="200" height="70" rx="8" fill="var(--wiki-bg)" stroke="var(--wiki)"/>
+        <text x="160" y="316" text-anchor="middle" font-weight="600">vendor (15)</text>
+        <text x="160" y="336" text-anchor="middle" fill="var(--muted)">제품·에이전트 표 + Dataview</text>
+        <!-- category -->
+        <rect x="420" y="30" width="200" height="60" rx="8" fill="var(--wiki-bg)" stroke="var(--wiki)"/>
+        <text x="520" y="54" text-anchor="middle" font-weight="600">category (7+crosswalk)</text>
+        <text x="520" y="74" text-anchor="middle" fill="var(--muted)">primary_category · subcategory</text>
+        <!-- source -->
+        <rect x="780" y="150" width="200" height="90" rx="8" fill="var(--wiki-bg)" stroke="var(--wiki)"/>
+        <text x="880" y="176" text-anchor="middle" font-weight="600">source (300)</text>
+        <text x="880" y="196" text-anchor="middle" fill="var(--muted)">tier · independent · Key Quotes</text>
+        <text x="880" y="216" text-anchor="middle" fill="var(--muted)">supports: [use cases]</text>
+        <!-- raw -->
+        <rect x="780" y="300" width="200" height="60" rx="8" fill="var(--raw-bg)" stroke="var(--raw)"/>
+        <text x="880" y="324" text-anchor="middle" font-weight="600" fill="var(--raw)">raw 스냅샷 (306)</text>
+        <text x="880" y="344" text-anchor="middle" fill="var(--muted)">url · content_hash · quality</text>
+        <!-- synthesis -->
+        <rect x="420" y="330" width="200" height="60" rx="8" fill="var(--wiki-bg)" stroke="var(--wiki)" stroke-dasharray="5 3"/>
+        <text x="520" y="354" text-anchor="middle" font-weight="600">synthesis (15)</text>
+        <text x="520" y="374" text-anchor="middle" fill="var(--muted)">lint · digest · compare · research</text>
+        <!-- side types -->
+        <rect x="60" y="170" width="200" height="80" rx="8" fill="var(--out-bg)" stroke="var(--out)" stroke-dasharray="5 3"/>
+        <text x="160" y="194" text-anchor="middle" font-weight="600">enterprise-ai (15) · reference (4)</text>
+        <text x="160" y="214" text-anchor="middle" fill="var(--muted)">같은 템플릿, 카운트 제외</text>
+        <text x="160" y="234" text-anchor="middle" fill="var(--muted)">company 뷰에는 포함</text>
+      </g>
+      <g stroke="currentColor" stroke-width="1.4" fill="none" marker-end="url(#ar3)" font-size="11.5">
+        <line x1="260" y1="95" x2="398" y2="165"/>
+        <line x1="260" y1="325" x2="398" y2="255"/>
+        <line x1="520" y1="150" x2="520" y2="92"/>
+        <line x1="640" y1="195" x2="778" y2="195"/>
+        <line x1="880" y1="240" x2="880" y2="298"/>
+        <line x1="520" y1="330" x2="520" y2="272"/>
+        <line x1="260" y1="210" x2="398" y2="210" stroke-dasharray="4 3"/>
+      </g>
+      <g font-size="11.5" fill="var(--muted)">
+        <text x="300" y="118">Dataview: WHERE company = …</text>
+        <text x="300" y="306">Dataview: contains(vendor, …)</text>
+        <text x="528" y="126">frontmatter 태그로 분류 (폴더 아님)</text>
+        <text x="660" y="186">sources: [sources/…]</text>
+        <text x="892" y="274">raw: 경로 (필수)</text>
+        <text x="528" y="300">여러 페이지를 가로질러 인용</text>
+        <text x="275" y="200">같은 스키마</text>
+      </g>
+    </svg>
+    </div>
+    <figcaption>실선 = frontmatter 또는 wikilink로 명시된 참조. 점선 = 같은 스키마를 쓰되 카운트에서 제외되는 유형. 카테고리는 폴더가 아니라 태그이므로 한 사례가 여러 축에 걸칠 수 있다.</figcaption>
+  </figure>
+  <table>
+    <tr><th style="width:22%">use case frontmatter 축</th><th>값</th><th>누가 정하나</th></tr>
+    <tr><td>HR 분류</td><td>primary_category (7) · subcategory (35) · tags</td><td>ingest</td></tr>
+    <tr><td>AI 기술</td><td>ai_tech_type (5) · ai_tech_subtype (13)</td><td>ingest</td></tr>
+    <tr><td>맥락</td><td>company · vendor · vendor_type · industry · region · employee_class · stage · frequency</td><td>ingest</td></tr>
+    <tr><td>근거</td><td>sources (sources/… 만) · sources_unresolved · evidence_grade · corroborated_by · confidence · freshness · depth · graded_at</td><td>grade.py</td></tr>
+    <tr><td>공개 범위</td><td>visibility public | internal · case_type adoption | vendor-product</td><td>사람 / ingest</td></tr>
+    <tr><td>규제·한국</td><td>regulatory_exposure (kr-high-impact · kr-high-impact-review · eu-annex-iii) · kr_law · kr_union · kr_language · kr_vendor</td><td>ingest (규칙)</td></tr>
+  </table>
+</section>
+
+<!-- 5. 품질 모델 -->
+<section id="quality">
+  <h2><span class="n">5</span>품질 모델 — 얼마나 믿을 수 있나</h2>
+  <p class="sub">신뢰도를 소수점 숫자 하나로 적던 방식(4월)을 버리고, 세 개의 이산 축으로 바꿨다. 셋 다 <code>grade.py</code>가 계산해 frontmatter에 쓴다.</p>
+  <div class="grid2">
+    <table>
+      <tr><th>evidence_grade</th><th>정의</th><th>제안서 사용</th><th>현재</th></tr>
+      <tr><td><span class="chip ok">A</span></td><td>서로 다른 독립 소스(Tier 1·2, 학술, 정부) 2개 이상</td><td>reference case로 인용</td><td>41</td></tr>
+      <tr><td><span class="chip">B</span></td><td>독립 소스 1개</td><td>조건 명시하고 인용</td><td>30</td></tr>
+      <tr><td><span class="chip warn">C</span></td><td>벤더·자사 보고(Tier 3·4)만</td><td>"벤더 주장"으로만</td><td>42</td></tr>
+      <tr><td><span class="chip crit">D</span></td><td>소스 없음·미확보</td><td>인용 금지</td><td>5</td></tr>
+    </table>
+    <table>
+      <tr><th>depth</th><th>정의</th><th>현재</th></tr>
+      <tr><td>full</td><td>B·C·D·E 섹션 중 3개 이상 실질 내용 + Mermaid 1개 이상</td><td>15</td></tr>
+      <tr><td>partial</td><td>실질 내용 1~2개</td><td>80</td></tr>
+      <tr><td>stub</td><td>실질 내용 0개 또는 섹션 자체 부족</td><td>23</td></tr>
+      <tr><th>freshness</th><th>정의</th><th></th></tr>
+      <tr><td>fresh / stale / unverified</td><td>last_confirmed 12개월 이내 / 초과 / 등급 D</td><td></td></tr>
+    </table>
+  </div>
+  <figure>
+    <div class="scroll">
+    <svg viewBox="0 0 1040 200" role="img" aria-label="소스 tier와 independent 여부에서 근거 등급이 나오고, 최신성과 모순을 더해 confidence가 파생되는 계산 흐름">
+      <defs><marker id="ar4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+      <g font-size="12.5">
+        <rect x="20" y="40" width="210" height="110" rx="8" fill="var(--wiki-bg)" stroke="var(--wiki)"/>
+        <text x="35" y="64" font-weight="600">source 페이지들</text>
+        <text x="35" y="86">tier 1 분석기관 · 2 독립 매체</text>
+        <text x="35" y="104">tier 3 벤더 · 4 자사 발표·학술·정부</text>
+        <text x="35" y="122">independent: true | false</text>
+        <text x="35" y="140" fill="var(--muted)">unavailable 스냅샷은 집계 제외</text>
+        <rect x="290" y="40" width="200" height="110" rx="8" fill="var(--enforce-bg)" stroke="var(--enforce)"/>
+        <text x="305" y="64" font-weight="600" fill="var(--enforce)">corroborated_by</text>
+        <text x="305" y="86">서로 다른 publisher의</text>
+        <text x="305" y="104">independent 소스 수</text>
+        <text x="305" y="130" font-weight="600">→ evidence_grade A/B/C/D</text>
+        <rect x="550" y="40" width="200" height="110" rx="8" fill="var(--enforce-bg)" stroke="var(--enforce)"/>
+        <text x="565" y="64" font-weight="600" fill="var(--enforce)">보정</text>
+        <text x="565" y="86">최신성 +0.10 … −0.20</text>
+        <text x="565" y="104">미해결 contradiction −0.15</text>
+        <text x="565" y="130" fill="var(--muted)">base A .70 · B .45 · C .25 · D .10</text>
+        <rect x="810" y="40" width="210" height="110" rx="8" fill="var(--out-bg)" stroke="var(--out)"/>
+        <text x="825" y="64" font-weight="600">confidence (0.05~0.95)</text>
+        <text x="825" y="86">필터·정렬용 파생값</text>
+        <text x="825" y="104">HTML 배지 · Excel 조건부 서식</text>
+        <text x="825" y="122">Dashboard "제안서 즉시 투입"</text>
+        <text x="825" y="140" fill="var(--muted)">= A·B and depth full</text>
+      </g>
+      <g stroke="currentColor" stroke-width="1.5" marker-end="url(#ar4)">
+        <line x1="230" y1="95" x2="288" y2="95"/><line x1="490" y1="95" x2="548" y2="95"/><line x1="750" y1="95" x2="808" y2="95"/>
+      </g>
+      <text x="20" y="185" font-size="11.5" fill="var(--muted)">check_quotes.py는 별도 축: 본문 수치 토큰이 인용 source의 raw 텍스트에 존재하는지 (현재 미확인 0/463). 존재 증명이지 참 증명은 아니다.</text>
+    </svg>
+    </div>
+    <figcaption>등급은 소스의 독립성과 개수에서 나오고, confidence는 등급에서 파생된다. 사람이 숫자를 고치면 다음 grade.py 실행 때 덮어쓴다.</figcaption>
+  </figure>
+  <p class="sub">본문 표기 5단계는 그대로다: <b>✅ Fact</b> · <b>⚠️ 벤더 주장</b> · <b>⚠️ 자사 보고</b> · <b>❓ / _미공개_</b> · <b>🚫 일반론 금지</b>. 금지어(아마도·추정·보통·일반적으로·통상 …)는 lint가 잡는다.</p>
+</section>
+
+<!-- 6. 운영 도구 -->
+<section id="ops">
+  <h2><span class="n">6</span>운영 도구 — 누가 무엇을 하나</h2>
+  <p class="sub">LLM이 하는 일과 스크립트가 하는 일을 분리했다. 스크립트 영역을 LLM이 다시 세지 않고, LLM 영역을 스크립트가 자동 수정하지 않는다.</p>
+  <figure>
+    <div class="scroll">
+    <svg viewBox="0 0 1040 300" role="img" aria-label="사용자, 스킬, 서브에이전트, 스크립트, hooks가 wiki를 중심으로 어떻게 호출되는지">
+      <defs><marker id="ar5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+      <g font-size="12.5">
+        <rect x="20" y="110" width="150" height="70" rx="8" fill="var(--out-bg)" stroke="var(--out)"/>
+        <text x="95" y="138" text-anchor="middle" font-weight="600">사용자</text>
+        <text x="95" y="158" text-anchor="middle" fill="var(--muted)">/hr-… 호출 · 승인</text>
+
+        <rect x="230" y="30" width="230" height="230" rx="8" fill="var(--enforce-bg)" stroke="var(--enforce)"/>
+        <text x="245" y="54" font-weight="600" fill="var(--enforce)">skills (LLM, .claude/skills)</text>
+        <text x="245" y="78">/hr-ingest   raw → source → use case</text>
+        <text x="245" y="98">/hr-lint     스크립트 결과 + 판단</text>
+        <text x="245" y="118">/hr-verify   주장 ↔ raw 대조 요청</text>
+        <text x="245" y="138">/hr-research 후보 + 스냅샷까지만</text>
+        <text x="245" y="158">/hr-digest   주간 변경 요약</text>
+        <text x="245" y="178">/hr-compare  벤더·사례 비교표</text>
+        <text x="245" y="208" font-weight="600" fill="var(--enforce)">hr-verifier (서브에이전트)</text>
+        <text x="245" y="228">Read·Grep·WebFetch만. 판정 4종</text>
+        <text x="245" y="246" fill="var(--muted)">✅ 확인 ⚠️ 표기오류 ❌ 근거없음 🔁 supersede</text>
+
+        <rect x="520" y="30" width="230" height="230" rx="8" fill="var(--out-bg)" stroke="var(--out)"/>
+        <text x="535" y="54" font-weight="600">scripts (결정론)</text>
+        <text x="535" y="78">lint.py --quick | --json | --write-report</text>
+        <text x="535" y="98">grade.py  (frontmatter에 기록)</text>
+        <text x="535" y="118">check_quotes.py &lt;slug&gt;</text>
+        <text x="535" y="138">fetch_raw.py &lt;url&gt; &lt;raw path&gt;</text>
+        <text x="535" y="158">build_index.py · build_all.py</text>
+        <text x="535" y="178">eval_qa.py --offline | (llm)</text>
+        <text x="535" y="208" font-weight="600">hooks (settings.json)</text>
+        <text x="535" y="228">PreToolUse  guard_raw.py → raw 차단</text>
+        <text x="535" y="246">PostToolUse post_write_lint.py</text>
+
+        <rect x="810" y="110" width="210" height="70" rx="8" fill="var(--wiki-bg)" stroke="var(--wiki)"/>
+        <text x="915" y="138" text-anchor="middle" font-weight="600" fill="var(--wiki)">wiki/ · raw/</text>
+        <text x="915" y="158" text-anchor="middle" fill="var(--muted)">모든 변경은 log.md에 append</text>
+      </g>
+      <g stroke="currentColor" stroke-width="1.5" marker-end="url(#ar5)" fill="none">
+        <line x1="170" y1="145" x2="228" y2="145"/>
+        <line x1="460" y1="100" x2="518" y2="100"/>
+        <line x1="750" y1="145" x2="808" y2="145"/>
+        <path d="M460 230 C490 230, 490 150, 518 150" stroke-dasharray="4 3"/>
+        <path d="M915 180 C915 290, 640 290, 640 262" stroke-dasharray="4 3" stroke="var(--enforce)"/>
+      </g>
+      <g font-size="11.5" fill="var(--muted)">
+        <text x="462" y="92">!`python scripts/…` 결과를 프롬프트에 주입</text>
+        <text x="755" y="138">Write / Edit</text>
+        <text x="650" y="286" fill="var(--enforce)">저장 직후 hook이 lint --quick 실행, critical이면 즉시 수정</text>
+        <text x="30" y="200">승인 없이는 수정 안 함</text>
+      </g>
+    </svg>
+    </div>
+    <figcaption>스킬은 스크립트 결과를 프롬프트에 주입받아 판단만 보탠다. 파일 저장은 hooks를 거치며, raw/는 어떤 경로로도 수정되지 않는다.</figcaption>
+  </figure>
+  <table>
+    <tr><th style="width:18%">주기</th><th>무엇을</th><th>명령</th></tr>
+    <tr><td>소스가 생길 때</td><td>클리퍼로 raw/inbox 저장 → triage → source → use case → grade → lint</td><td><code>/hr-ingest raw/inbox</code></td></tr>
+    <tr><td>페이지 저장 때</td><td>critical 점검 (hook 자동)</td><td><code>lint.py --quick &lt;file&gt;</code></td></tr>
+    <tr><td>주 1회 (수동)</td><td>grade 재계산 → lint 리포트 → index → 산출물 → digest</td><td><code>scripts/weekly.ps1 -NoClaude</code> 또는 <code>/hr-digest weekly</code></td></tr>
+    <tr><td>규칙·모델 바꿀 때</td><td>골든 Q&amp;A 회귀 (무료 오프라인 / LLM)</td><td><code>eval_qa.py --offline</code></td></tr>
+    <tr><td>클라이언트 자료 받을 때</td><td>주장 검증, 결과는 internal synthesis</td><td><code>/hr-verify "…"</code></td></tr>
+  </table>
+</section>
+
+<!-- 7. 산출물·외부 연결 -->
+<section id="out">
+  <h2><span class="n">7</span>산출물과 외부 연결</h2>
+  <p class="sub">같은 wiki에서 네 가지 출구가 나간다. 모두 <code>visibility: internal</code> 페이지를 제외하며, build_all.py는 export 직후 lint의 <code>internal-in-export</code> 검사로 누출을 한 번 더 막는다.</p>
+  <div class="grid2">
+    <table>
+      <tr><th>출구</th><th>형태</th><th>대상</th></tr>
+      <tr><td>HTML</td><td>단일 파일, 3개 뷰(Category / Company / Matrix), 등급 배지·stub 표시·규제 칩·소스 링크·한국 적용성, enterprise-ai 접힘 섹션</td><td>클라이언트 CHRO·임원 열람</td></tr>
+      <tr><td>Excel</td><td>5 시트(개요 / Use Cases 52열 / AI 기술 분포 / Companies / 전사 AI 참고), 등급 조건부 서식</td><td>컨설턴트 필터·피벗</td></tr>
+      <tr><td>JSON</td><td>usecases.json · enterprise_ai.json · companies.json</td><td>다른 도구·클라이언트별 필터 버전</td></tr>
+      <tr><td>MCP <code>hr-wiki</code></td><td>wiki_search · wiki_read · wiki_sources · wiki_verify_quote · wiki_stats (읽기 전용, internal 차단)</td><td>제안서 작성 등 다른 Claude 세션</td></tr>
+    </table>
+    <table>
+      <tr><th>Obsidian 안에서</th><th>역할</th></tr>
+      <tr><td>Dataview</td><td>index · dashboard · company · vendor 페이지의 모든 표. 손으로 쓰는 목록 없음</td></tr>
+      <tr><td>Bases (wiki/bases/usecases.base)</td><td>근거 등급별 · 제안서 인용 가능 · 한국 사례 · 규제 고영향 · 보강 필요 5개 뷰</td></tr>
+      <tr><td>Graph view · Backlinks</td><td>[[wikilink]] 관계 탐색. orphan 0 유지</td></tr>
+      <tr><td>Web Clipper 템플릿</td><td>article · vendor · report → raw/inbox (frontmatter 포함)</td></tr>
+      <tr><th>GitHub</th><th>private repo <code>jameskim1st/hr-ai-benchmark</code>, phase 단위 커밋</th></tr>
+    </table>
+  </div>
+</section>
+
+<!-- 8. 현재 상태 -->
+<section id="state">
+  <h2><span class="n">8</span>현재 상태 (2026-10-17)</h2>
+  <div class="grid2">
+    <table>
+      <tr><th>점검 지표</th><th>값</th></tr>
+      <tr><td>lint critical / warning / info</td><td><span class="chip ok">0</span> <span class="chip warn">101</span> <span class="chip">77</span></td></tr>
+      <tr><td>본문 수치 중 raw 미확인</td><td><span class="chip ok">0 / 463</span></td></tr>
+      <tr><td>깨진 wikilink / orphan</td><td><span class="chip ok">0 / 0</span></td></tr>
+      <tr><td>골든 Q&amp;A (오프라인)</td><td><span class="chip ok">30 / 30</span></td></tr>
+      <tr><td>warning 구성</td><td>stale 50 · 추정 날짜 50 · 미해결 contradiction 1</td></tr>
+      <tr><td>raw 스냅샷 품질</td><td>full 190 · partial 32 · llm-extracted 25 · unavailable 35</td></tr>
+      <tr><td>visibility internal</td><td>3 (PwC 제안 관련) — export 제외 확인</td></tr>
+    </table>
+    <table>
+      <tr><th>열린 과제</th><th>경로</th></tr>
+      <tr><td>원문이 초록·마케팅 페이지뿐이라 stub이 된 사례 (J&amp;J, flex, Fuel50, HireVue, Emirates, Docebo 등)</td><td><code>/hr-research</code>로 1차 소스 확보 후 재ingest</td></tr>
+      <tr><td>unavailable 소스 35건 (HR Brew·HR Executive 6, Business Wire 6, 게이트 PDF 4 …)</td><td>브라우저 클리퍼로 raw/inbox 저장</td></tr>
+      <tr><td>sources_unresolved 8건 · 추정 날짜 50건</td><td>소스 발행일 확인 후 정정</td></tr>
+      <tr><td>주간 자동화</td><td>등록하지 않음 (사용자 결정). 수동 실행만</td></tr>
+    </table>
+  </div>
+  <p class="sub">숫자는 <code>python scripts/lint.py</code> · <code>python scripts/build_index.py</code> 실행 시점 기준. 이 문서의 숫자는 갱신되지 않으므로 최신 값은 <code>wiki/index.md</code>를 본다.</p>
+</section>
+
+<footer>
+  관련 문서: wiki/guide.md (설명서) · wiki/syntheses/system-review-2026-09-27.md (점검·실행 결과) · wiki/syntheses/llm-wiki-landscape-2026-09.md (외부 동향) · CLAUDE.md + .claude/rules/ (규칙)
+</footer>
+
+</div>
+</body>
+</html>
