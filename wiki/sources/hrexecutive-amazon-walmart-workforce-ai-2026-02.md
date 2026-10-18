@@ -3,12 +3,13 @@ title: "Amazon and Walmart compete for top revenue spot with diverging workforce
 url: "https://hrexecutive.com/amazon-and-walmart-compete-for-top-revenue-spot-with-diverging-workforce-ai-strategies/"
 publisher: "HR Executive"
 tier: 2
+fetched_via: jina
 source_type: media
 independent: true
 publication_date: 2026-02-23
 ingested_at: 2026-09-27
-raw: raw/articles/2025-hrexecutive-amazon-walmart-workforce-ai.md
-snapshot_quality: unavailable
+raw: raw/articles/2026-10-19-hrexecutive-amazon-walmart-workforce-ai-2026-02.md
+snapshot_quality: full
 supports: [walmart-ask-sam-workforce-ai]
 ---
 

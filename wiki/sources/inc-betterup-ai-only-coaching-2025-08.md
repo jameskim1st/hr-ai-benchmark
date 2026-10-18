@@ -3,12 +3,13 @@ title: "How BetterUp Built an AI-Only Coaching Product 95 Percent of Its Custome
 url: "https://www.inc.com/annabel-burba/how-betterup-built-an-ai-only-coaching-product-95-percent-of-its-customers-love/91221747"
 publisher: "Inc."
 tier: 2
+fetched_via: aside-repl
 source_type: media
 independent: true
 publication_date: 2025-08-18
 ingested_at: 2026-09-27
-raw: raw/articles/2025-inc-betterup-ai-only-coaching.md
-snapshot_quality: unavailable
+raw: raw/articles/2025-08-18-inc-betterup-ai-only-coaching-2025-08.md
+snapshot_quality: full
 supports: [betterup-ai-coaching-twilio]
 ---
 

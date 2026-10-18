@@ -3,12 +3,13 @@ title: "ServiceNow Customer Story — Siemens AG (cs-siemens-ag.pdf)"
 url: "https://www.servicenow.com/content/dam/servicenow-assets/public/en-us/doc-type/resource-center/case-study/cs-siemens-ag.pdf"
 publisher: "ServiceNow"
 tier: 3
+fetched_via: jina
 source_type: vendor
 independent: false
 publication_date: unknown
 ingested_at: 2026-09-27
-raw: raw/vendors/servicenow-siemens-ag-case-study.md
-snapshot_quality: unavailable
+raw: raw/articles/2026-10-19-servicenow-siemens-case-study.md
+snapshot_quality: full
 supports: [siemens-reskilling-internal-mobility, siemens-servicenow-hr-gbs]
 ---
 

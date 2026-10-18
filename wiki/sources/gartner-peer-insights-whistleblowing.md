@@ -3,12 +3,13 @@ title: "HR Acuity Reviews & Ratings | Gartner Peer Insights (Whistleblowing Soft
 url: "https://www.gartner.com/reviews/market/whistleblowing-software/vendor/hr-acuity/product/hr-acuity"
 publisher: "Gartner Peer Insights"
 tier: 2
+fetched_via: aside-repl
 source_type: analyst
 independent: true
 publication_date: 2026
 ingested_at: 2026-09-27
-raw: raw/reports/2026-09-27-gartner-peer-insights-hr-acuity.md
-snapshot_quality: unavailable
+raw: raw/reports/2026-10-19-gartner-peer-insights-whistleblowing.md
+snapshot_quality: partial
 supports: [hr-acuity-oliver-ai-er-companion]
 ---
 # HR Acuity Reviews & Ratings | Gartner Peer Insights (Whistleblowing Software)

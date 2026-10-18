@@ -3,12 +3,13 @@ title: "Mercy saves $30 million in 2023 with AI-powered nursing workforce manage
 url: "https://www.healthcareitnews.com/news/mercy-saves-30-million-2023-ai-powered-nursing-workforce-management-tech"
 publisher: "Healthcare IT News"
 tier: 2
+fetched_via: aside-repl
 source_type: media
 independent: true
 publication_date: 2024-04
 ingested_at: 2026-09-27
-raw: raw/articles/2024-04-healthcareitnews-mercy-30m-savings.md
-snapshot_quality: unavailable
+raw: raw/articles/2026-10-19-healthcareitnews-mercy-30m-2023.md
+snapshot_quality: full
 supports: [mercy-health-ai-nursing-workforce]
 ---
 # Mercy saves $30 million in 2023 with AI-powered nursing workforce management tech

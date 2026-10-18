@@ -3,12 +3,13 @@ title: "Australia’s Biggest Bank Reverses Plan to Replace Jobs With AI"
 url: "https://www.bloomberg.com/news/articles/2025-08-21/commonwealth-bank-reverses-job-cuts-decision-over-ai-chatbots"
 publisher: "Bloomberg"
 tier: 2
+fetched_via: aside-repl
 source_type: media
 independent: true
 publication_date: 2025-08-21
 ingested_at: 2026-09-27
-raw: raw/articles/2025-08-21-bloomberg-cba-reverses-ai-job-cuts.md
-snapshot_quality: unavailable
+raw: raw/articles/2025-08-21-bloomberg-cba-job-cuts-reversed-2025.md
+snapshot_quality: full
 supports: [commonwealth-bank-ai-workforce]
 ---
 

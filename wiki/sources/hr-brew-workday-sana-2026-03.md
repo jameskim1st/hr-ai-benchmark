@@ -2,8 +2,9 @@
 title: "Workday announces new AI-powered capabilities powered by Sana acquisition — HR Brew (2026-03-17)"
 url: https://www.hr-brew.com/stories/2026/03/17/workday-announces-new-ai-powered-capabilities-powered-by-sana-acquisition
 tier: 2
-raw: raw/articles/2026-03-17-hr-brew-workday-sana.md
-snapshot_quality: unavailable
+fetched_via: aside-repl
+raw: raw/articles/2026-03-17-hr-brew-workday-sana-2026-03.md
+snapshot_quality: full
 publisher: HR Brew
 independent: true
 source_type: media

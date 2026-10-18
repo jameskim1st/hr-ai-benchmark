@@ -3,8 +3,9 @@ title: "Degreed LENS 2025 — Ericsson 30k AI-Proficient Employees + Maestro Lau
 url: "https://www.businesswire.com/news/home/20250415791174/en/Degreed-LENS-2025-Transforming-Learning-with-AI-Powered-Efficiency-and-Cost-Savings"
 url_secondary: "https://get.degreed.com/skills-first-ai-strategy"
 tier: 3
-raw: raw/vendors/2026-09-27-degreed-lens-2025-ericsson.md
-snapshot_quality: unavailable
+fetched_via: aside-repl
+raw: raw/vendors/2026-10-19-degreed-ericsson-lens-2025.md
+snapshot_quality: full
 publisher: Degreed
 independent: false
 source_type: vendor

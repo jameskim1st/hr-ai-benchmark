@@ -3,8 +3,9 @@ title: "IBM and Moderna tout use cases for AI in total rewards — HR Brew"
 url: https://www.hr-brew.com/stories/2025/06/12/ibm-moderna-use-cases-ai-hr
 source_type: media
 tier: 2
-raw: raw/articles/2025-06-12-hr-brew-ibm-moderna-total-rewards.md
-snapshot_quality: unavailable
+fetched_via: aside-repl
+raw: raw/articles/2025-06-12-hr-brew-ibm-moderna-2025-06.md
+snapshot_quality: full
 publisher: HR Brew
 independent: true
 publication_date: 2025-06-12

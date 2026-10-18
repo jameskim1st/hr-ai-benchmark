@@ -2,8 +2,9 @@
 title: "Bersin: These are the 2 disruptions reshaping coaching"
 url: https://hrexecutive.com/bersin-these-are-the-2-disruptions-revolutionizing-coaching/
 tier: 2
-raw: raw/articles/2024-hrexecutive-bersin-coaching-disruptions.md
-snapshot_quality: unavailable
+fetched_via: jina
+raw: raw/articles/2026-10-19-hrexecutive-bersin-coaching-disruptions-2024.md
+snapshot_quality: full
 independent: true
 source_type: media
 publisher: HR Executive

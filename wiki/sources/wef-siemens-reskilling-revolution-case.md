@@ -2,7 +2,8 @@
 title: "Reskilling Revolution Case Study: Siemens"
 url: https://initiatives.weforum.org/reskilling-revolution/siemens
 tier: 1
-raw: raw/reports/2024-wef-siemens-reskilling-revolution.md
+fetched_via: aside-repl (page not found)
+raw: raw/reports/2026-10-19-wef-siemens-reskilling-revolution-case.md
 snapshot_quality: unavailable
 independent: true
 source_type: analyst

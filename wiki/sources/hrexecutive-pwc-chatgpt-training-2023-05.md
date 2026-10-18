@@ -3,12 +3,13 @@ title: "PwC's HR, tech leaders prepare to train U.S. workforce on ChatGPT techno
 url: "https://hrexecutive.com/pwcs-hr-tech-leaders-prepare-to-train-u-s-workforce-on-chatgpt-technology/"
 publisher: "HR Executive"
 tier: 2
+fetched_via: jina
 source_type: media
 independent: true
 publication_date: 2023-05-16
 ingested_at: 2026-09-27
-raw: raw/articles/2023-hrexecutive-pwc-chatgpt-training.md
-snapshot_quality: unavailable
+raw: raw/articles/2026-10-19-hrexecutive-pwc-chatgpt-training-2023-05.md
+snapshot_quality: full
 supports: [pwc-ai-upskilling-65k]
 ---
 

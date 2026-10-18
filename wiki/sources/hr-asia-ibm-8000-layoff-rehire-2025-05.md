@@ -3,12 +3,13 @@ title: "IBM lays off 8,000 to embrace AI, only to rehire just as many"
 url: "https://hr.asia/asia-pacific/ibm-lays-off-8000-to-embrace-ai-only-to-rehire-just-as-many/"
 publisher: "HR Asia"
 tier: 2
+fetched_via: aside-repl
 source_type: media
 independent: true
 publication_date: 2025-05
 ingested_at: 2026-09-27
-raw: raw/articles/2025-05-hr-asia-ibm-8000-layoff-rehire.md
-snapshot_quality: unavailable
+raw: raw/articles/2026-10-19-hr-asia-ibm-8000-layoff-rehire-2025-05.md
+snapshot_quality: full
 supports: [ibm-hr-workforce-reduction-agentic]
 ---
 # IBM lays off 8,000 to embrace AI, only to rehire just as many

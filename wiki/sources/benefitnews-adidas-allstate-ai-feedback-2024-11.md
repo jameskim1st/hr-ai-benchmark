@@ -3,12 +3,13 @@ title: "How Adidas and Allstate use AI to make employee feedback more impactful"
 url: "https://www.benefitnews.com/news/how-adidas-and-allstate-use-ai-to-make-employee-feedback-more-impactful"
 publisher: "Employee Benefit News"
 tier: 2
+fetched_via: aside-repl
 source_type: media
 independent: true
 publication_date: 2024-11-26
 ingested_at: 2026-09-27
-raw: raw/articles/2025-benefitnews-adidas-allstate-ai-feedback.md
-snapshot_quality: unavailable
+raw: raw/articles/2024-11-26-benefitnews-adidas-allstate-ai-feedback-2024-11.md
+snapshot_quality: partial
 supports: [qualtrics-adidas-employee-experience-ai]
 ---
 

@@ -15,9 +15,13 @@ argument-hint: "<topic | company | category gap> [--max N]"
 ## 절차
 1. **부재 확인** — `grep -ril "<키워드>" wiki/usecases wiki/enterprise-ai wiki/sources`로 이미 있는 페이지를 먼저 확인한다. 있으면 "갱신 후보"로 분류한다.
 2. **검색** — WebSearch로 후보 기사·보도자료·리포트를 찾는다. Tier 1·2(분석기관·독립 매체)를 우선하고, 벤더 자료는 보조로만. `--max N`(기본 10)건까지.
-3. **스냅샷 + source 페이지** — 후보마다 `python scripts/fetch_raw.py`로 raw 스냅샷을 만들고 `wiki/sources/<slug>.md`를 작성한다 (`/hr-ingest` 3단계와 동일 형식, `supports: []`로 비워둠). 스냅샷이 `unavailable`이면 후보 목록에 그 사실을 적는다.
+3. **스냅샷 + source 페이지** — 후보마다 `python scripts/fetch_raw.py`로 raw 스냅샷을 만들고 (direct → Jina → Aside 브라우저 → Wayback 폴백이 자동으로 돈다; 로그인 필요한 사이트는 Aside 앱이 켜져 있어야 함) `wiki/sources/<slug>.md`를 작성한다 (`/hr-ingest` 3단계와 동일 형식, `supports: []`로 비워둠). 스냅샷이 `unavailable`이면 후보 목록에 그 사실을 적는다.
 4. **후보 목록** — `wiki/syntheses/research-<topic>-YYYY-MM-DD.md`에 표로 저장: 회사 | 제품/벤더 | HR 카테고리 | 핵심 주장(수치) | source 슬러그 | tier | 권고(New/Update/Skip)와 이유. frontmatter `type: research-candidates`.
 5. **보고** — 사용자에게 표를 보여주고 "어느 것을 ingest할지" 묻는다. 승인된 항목만 `/hr-ingest`로 이어진다. `wiki/log.md`에 `## [YYYY-MM-DD] research | <topic> | candidates: N | sources: M` append.
+
+## Aside 브라우저 (로그인·차단 사이트 탐색)
+- 벤더 고객 포털·컨퍼런스 온디맨드·게이트 PDF처럼 WebSearch/WebFetch로 못 보는 곳은 `mcp__aside__repl`로 연다 (`.claude/rules/protocols.md` Aside 절). 본문 저장은 `fetch_raw.py`/`fetch_via_aside.py`로만. `exec` 에이전트 모드는 사용자 승인 후에만.
+- 한국 언론은 Google News KR RSS(`https://news.google.com/rss/search?q=<키워드>+when:30d&hl=ko&gl=KR&ceid=KR:ko`)와 Naver 뉴스 검색을 우선한다 (WebSearch는 한국어 리콜이 약함).
 
 ## 금지
 - 이 스킬에서 use case 페이지를 만들지 않는다. 여러 URL을 한 source 페이지에 묶지 않는다.

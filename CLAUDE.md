@@ -1,12 +1,13 @@
 # HR AI Benchmark Wiki — Agent Schema (core)
 
-이 저장소는 **HR 부문 AI 적용 use case**를 축적·검증·갱신하는 LLM Wiki다 (Karpathy 패턴: raw → wiki → schema). 사용자는 컨설턴트 1인이며, 산출물은 "클라이언트 앞에 가져가도 부끄럽지 않은 품질"이 기준이다. 기본 언어 한국어, 인용은 원문 유지, 날짜는 `YYYY-MM-DD`.
+이 저장소는 **HR 부문 AI 적용 use case**를 축적·검증·갱신하는 LLM Wiki다 (Karpathy 패턴: raw → wiki → schema). 사용자는 컨설턴트 1인이며, 산출물은 "클라이언트 앞에 가져가도 부끄럽지 않은 품질"이 기준이다. 기본 언어 한국어, 인용은 원문 유지, 날짜는 `YYYY-MM-DD`. wiki 본문 문체는 **명사형 종결(개조식)** — `.claude/rules/style-guide.md`.
 
 상세 규칙은 아래 파일에 있고 이 문서와 함께 로드된다:
 @.claude/rules/taxonomy.md
 @.claude/rules/usecase-schema.md
 @.claude/rules/sources.md
 @.claude/rules/protocols.md
+@.claude/rules/style-guide.md
 
 ---
 

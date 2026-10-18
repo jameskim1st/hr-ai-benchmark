@@ -2,8 +2,9 @@
 title: "Paychex Unveils AI and Agentic Workforce Management Solutions (2026-02)"
 url: https://www.businesswire.com/news/home/20260226477526/en/Paychex-Unveils-Cutting-Edge-AI-and-Agentic-Workforce-Management-Solutions
 tier: 3
-raw: raw/vendors/2026-09-27-paychex-agentic-workforce.md
-snapshot_quality: unavailable
+fetched_via: aside-repl
+raw: raw/vendors/2026-10-19-paychex-agentic-workforce-2026-02.md
+snapshot_quality: full
 publisher: Paychex
 independent: false
 source_type: vendor

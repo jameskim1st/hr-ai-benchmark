@@ -3,12 +3,13 @@ title: "Diligent Acquires Vault, Ushering in a New Era of AI-powered Ethics and 
 url: "https://www.businesswire.com/news/home/20250522289404/en/Diligent-Acquires-Vault-Ushering-in-a-New-Era-of-AI-powered-Ethics-and-Compliance"
 publisher: "Business Wire (Diligent 배포)"
 tier: 3
+fetched_via: aside-repl
 source_type: vendor
 independent: false
 publication_date: 2025-05-22
 ingested_at: 2026-09-27
-raw: raw/vendors/2025-05-22-businesswire-diligent-acquires-vault.md
-snapshot_quality: unavailable
+raw: raw/vendors/2025-05-22-businesswire-diligent-vault-2025-05.md
+snapshot_quality: full
 supports: [diligent-vault-active-integrity-speakup]
 ---
 

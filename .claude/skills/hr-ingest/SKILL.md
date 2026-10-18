@@ -6,7 +6,7 @@ argument-hint: "<raw path | raw/inbox> [--dry-run]"
 
 # /hr-ingest
 
-대상: `$ARGUMENTS` (기본값 `raw/inbox`). 규칙: `.claude/rules/protocols.md` Ingest Protocol, `.claude/rules/usecase-schema.md`, `.claude/rules/sources.md`.
+대상: `$ARGUMENTS` (기본값 `raw/inbox`). 규칙: `.claude/rules/protocols.md` Ingest Protocol, `.claude/rules/usecase-schema.md`, `.claude/rules/sources.md`, 문체 `.claude/rules/style-guide.md`(명사형 종결, 서술형 어미 금지, 엠대시 금지).
 
 현재 inbox 상태:
 

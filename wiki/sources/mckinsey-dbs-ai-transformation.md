@@ -3,12 +3,13 @@ title: "An inside look at how McKinsey helped DBS become an AI-powered bank"
 url: "https://www.mckinsey.com/about-us/new-at-mckinsey-blog/an-inside-look-at-how-mckinsey-helped-dbs-become-an-ai-powered-bank"
 publisher: "McKinsey & Company"
 tier: 1
+fetched_via: aside-repl
 source_type: analyst
 independent: true
 publication_date: unknown
 ingested_at: 2026-09-27
-raw: raw/reports/2025-mckinsey-dbs-ai-powered-bank.md
-snapshot_quality: unavailable
+raw: raw/reports/2026-10-19-mckinsey-dbs-ai-transformation.md
+snapshot_quality: full
 supports: [dbs-bank-hr-ai-talent-analytics]
 ---
 

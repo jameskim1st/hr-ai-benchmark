@@ -2,8 +2,9 @@
 title: "Nearly 90% of Largest U.S. Healthcare Systems Use UKG (2026-02)"
 url: https://www.businesswire.com/news/home/20260217718361/en/Nearly-90-of-the-Largest-U.S.-Healthcare-Systems-Use-UKG-for-Better-Staffing-Smarter-Scheduling-and-Better-Care-Outcomes
 tier: 3
-raw: raw/vendors/2026-09-27-ukg-healthcare-scheduling.md
-snapshot_quality: unavailable
+fetched_via: aside-repl
+raw: raw/vendors/2026-10-19-ukg-healthcare-scheduling-2026-02.md
+snapshot_quality: full
 publisher: UKG
 independent: false
 source_type: vendor

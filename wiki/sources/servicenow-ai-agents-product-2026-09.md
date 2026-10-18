@@ -3,12 +3,13 @@ title: "ServiceNow AI Agents (product page)"
 url: "https://www.servicenow.com/products/ai-agents.html"
 publisher: "ServiceNow"
 tier: 3
+fetched_via: aside-repl
 source_type: vendor
 independent: false
 publication_date: unknown
 ingested_at: 2026-09-27
-raw: raw/vendors/2026-09-27-servicenow-ai-agents-product.md
-snapshot_quality: unavailable
+raw: raw/vendors/2026-10-19-servicenow-ai-agents-product-2026-09.md
+snapshot_quality: full
 supports: [servicenow-now-assist-hr]
 ---
 

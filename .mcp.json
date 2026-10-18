@@ -4,6 +4,10 @@
       "command": "python",
       "args": ["scripts/wiki_mcp.py"],
       "env": { "PYTHONIOENCODING": "utf-8" }
+    },
+    "aside": {
+      "command": "C:/Users/user/AppData/Local/Aside/CLI/current/aside.exe",
+      "args": ["mcp"]
     }
   }
 }

@@ -3,12 +3,13 @@ title: "Featured Case Study: Why Recruiters at DBS Bank use AI to Hire Candidate
 url: "https://adriantan.com.sg/featured-case-study-why-recruiters-at-dbs-bank-use-ai-to-hire-candidates/"
 publisher: "Adrian Tan (개인 블로그)"
 tier: 4
+fetched_via: aside-repl
 source_type: media
 independent: true
 publication_date: unknown
 ingested_at: 2026-09-27
-raw: raw/articles/2019-adriantan-dbs-ai-recruiting-case-study.md
-snapshot_quality: unavailable
+raw: raw/articles/2026-10-19-adriantan-dbs-ai-recruiting.md
+snapshot_quality: full
 supports: [dbs-bank-hr-ai-talent-analytics]
 ---
 

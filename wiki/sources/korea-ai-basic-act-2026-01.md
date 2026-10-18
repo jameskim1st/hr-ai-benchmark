@@ -2,8 +2,9 @@
 title: "인공지능 발전·신뢰 기반 조성 등에 관한 기본법 — 2026-01-22 시행"
 url: https://www.law.go.kr/lsInfoP.do?lsiSeq=268543
 tier: 1
-raw: raw/reports/2026-01-22-korea-ai-basic-act.md
-snapshot_quality: unavailable
+fetched_via: aside-repl
+raw: raw/articles/2026-01-22-korea-ai-basic-act-2026-01.md
+snapshot_quality: full
 publisher: 국가법령정보센터
 independent: true
 source_type: government

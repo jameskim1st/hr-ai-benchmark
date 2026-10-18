@@ -3,8 +3,9 @@ title: "UKG Workforce Intelligence Hub & AI Scheduling — Frontline Workforce D
 url: "https://www.businesswire.com/news/home/20251104624682/en/UKG-Launches-Workforce-Intelligence-Hub-Redefining-Workforce-Operations-and-Unlocking-Unmatched-Labor-Insights"
 url_secondary: "https://www.ukg.com/blog/operations-leaders/front-line-burned-out-ai-can-cool-workforce-strain"
 tier: 3
-raw: raw/vendors/2026-09-27-ukg-workforce-intelligence-hub.md
-snapshot_quality: unavailable
+fetched_via: aside-repl
+raw: raw/vendors/2026-10-19-ukg-workforce-intelligence-hub-2025.md
+snapshot_quality: full
 publisher: UKG
 independent: false
 source_type: vendor

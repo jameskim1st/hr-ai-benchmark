@@ -3,13 +3,15 @@ title: "Gloat - Schneider Electric Case Study (gated download)"
 url: "https://resources.gloat.com/schneider-electric-case-study-download/"
 publisher: "Gloat"
 tier: 3
+fetched_via: aside-repl
 source_type: vendor
 independent: false
 publication_date: unknown
 ingested_at: 2026-09-27
-raw: raw/vendors/2025-gloat-schneider-electric-case-study.md
-snapshot_quality: unavailable
+raw: raw/vendors/2026-10-19-gloat-schneider-electric-case-study-2026-09.md
+snapshot_quality: partial
 supports: [schneider-electric-gloat-talent-marketplace]
+snapshot_note: 게이트 폼 랜딩 페이지 요약만 확보 — 케이스 스터디 본문은 폼 제출 필요
 ---
 
 # Gloat - Schneider Electric Case Study (gated download)

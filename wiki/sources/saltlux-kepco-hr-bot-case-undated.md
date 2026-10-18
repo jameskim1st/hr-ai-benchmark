@@ -3,12 +3,13 @@ title: "[한국전력] 인공지능 인사채용 챗봇, HR-Bot"
 url: "https://www.saltlux.com/eng/board/view.do?mId=56&brdIdx=131"
 publisher: "솔트룩스"
 tier: 3
+fetched_via: aside-repl
 source_type: vendor
 independent: false
 publication_date: unknown
 ingested_at: 2026-09-27
-raw: raw/vendors/undated-saltlux-kepco-hr-bot-case.md
-snapshot_quality: unavailable
+raw: raw/vendors/2026-10-19-saltlux-kepco-hr-bot-case-undated.md
+snapshot_quality: full
 supports: [korea-electric-power-hr-bot]
 ---
 

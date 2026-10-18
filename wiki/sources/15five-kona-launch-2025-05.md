@@ -2,8 +2,9 @@
 title: "15Five Launches Kona AI Manager Coach (2025-05)"
 url: https://www.businesswire.com/news/home/20250520586200/en/15Five-Launches-Kona-the-AI-powered-Manager-Effectiveness-Coach-at-15Five-Next
 tier: 3
-raw: raw/vendors/2025-05-20-15five-kona-launch.md
-snapshot_quality: unavailable
+fetched_via: aside-repl
+raw: raw/vendors/2026-10-19-15five-kona-launch-2025-05.md
+snapshot_quality: full
 publisher: 15Five
 independent: false
 source_type: vendor

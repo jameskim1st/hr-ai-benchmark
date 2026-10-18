@@ -3,12 +3,13 @@ title: "Accenture and Walmart are developing workforce strategies with AI in min
 url: "https://www.hr-brew.com/stories/2025/10/02/accenture-and-walmart-are-developing-workforce-strategies-with-ai-in-mind"
 publisher: "HR Brew"
 tier: 2
+fetched_via: aside-repl
 source_type: media
 independent: true
 publication_date: 2025-10-02
 ingested_at: 2026-09-27
-raw: raw/articles/2025-10-02-hr-brew-accenture-walmart-workforce-ai.md
-snapshot_quality: unavailable
+raw: raw/articles/2025-10-02-hr-brew-accenture-walmart-workforce-ai-2025-10.md
+snapshot_quality: full
 supports: [accenture-ai-learning-workforce, accenture-mass-genai-reskilling, walmart-ask-sam-workforce-ai, walmart-openai-certification]
 ---
 

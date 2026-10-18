@@ -3,12 +3,13 @@ title: "Lloyds Banking Group Expects Over £100 Million in Value From Next-Gener
 url: "https://ffnews.com/newsarticle/fintech/lloyds-banking-group-expects-over-100-million-in-value-from-next%E2%80%91generation-ai-in-2026/"
 publisher: "FF News"
 tier: 2
+fetched_via: aside-repl
 source_type: media
 independent: true
 publication_date: 2026-01
 ingested_at: 2026-09-27
-raw: raw/articles/2026-01-ffnews-lloyds-100m-ai.md
-snapshot_quality: unavailable
+raw: raw/articles/2026-10-19-ffnews-lloyds-100m-ai-2026.md
+snapshot_quality: full
 supports: [lloyds-banking-workday-genai-hr]
 ---
 # Lloyds Banking Group Expects Over £100 Million in Value From Next-Generation AI in 2026
