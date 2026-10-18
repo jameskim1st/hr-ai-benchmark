@@ -805,3 +805,5 @@ Format: `## [YYYY-MM-DD] <operation> | <one-line description>`
 - use case: raw에 실제 있는 항목만 복원(PwC 65,000·$1B, Siemens GBS 8.8/87%, Mercy 50개 병원, IBM NPS +74 등). 반대로 raw와 불일치한 ✅ 표기(Siemens 360K·월 110K, UKG KC CARE·Jetro·One View, BetterUp "성과 16%"→"자신감 16%", DBS 250→200명)는 _미공개_ 또는 정정
 - 등급: A 55 · B 32 · C 45 · D 1 (복구 전 A 41). lint critical 0, 수치 미확인 0/477
 - 문체: 이후 작성분은 .claude/rules/style-guide.md(명사형 종결) 적용
+
+## [2026-10-19] refactor | 시스템 구조도 재작성 (wiki/exports/system-architecture.html) | 18개 절: 설계 사상·폴더·페이지 관계·Use Case 해부·source/raw·분류·근거 사슬·grade·lint 32코드·검증·ingest 10단계·폴백 체인·스킬/권한·자동화·산출물·현재 상태·이력·결정 대기·용어집
