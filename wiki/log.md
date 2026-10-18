@@ -795,3 +795,5 @@ Format: `## [YYYY-MM-DD] <operation> | <one-line description>`
 - 주간 작업 스케줄러 등록은 사용자 확인 후 (`scripts/register_weekly_task.ps1`)
 
 ## [2026-10-19] review | 리서치 방법 재검토 — 골격 유지, 부품 5개 교체 권고 | [[method-review-2026-10-19]]
+
+## [2026-10-19] review | Aside 에이전트 브라우저 접목 검토 — REPL 추출·MCP·Routine 3단계 제안 | [[aside-review-2026-10-19]]

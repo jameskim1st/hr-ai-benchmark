@@ -11,7 +11,7 @@
 | reference (법령·리포트·맥락) | 4 | |
 | sources | 300 | raw 스냅샷 연결 295 |
 | companies / vendors | 20 / 15 | |
-| syntheses | 16 | lint·digest·compare·research 포함 |
+| syntheses | 17 | lint·digest·compare·research 포함 |
 
 근거 등급: A 41 · B 30 · C 42 · D 5  ｜  depth: full 15 · partial 80 · stub 23  ｜  freshness: fresh 66 · stale 47 · unverified 5
 
@@ -314,8 +314,9 @@ SORT evidence_grade ASC, confidence DESC
 - [[korea-ai-basic-act-hr-compliance]] — regulation
 - [[lotte-job-based-hr-reform]] — context
 
-## 🧪 Syntheses (16)
+## 🧪 Syntheses (17)
 
+- [[aside-review-2026-10-19]] — tool-review · 2026-10-19
 - [[method-review-2026-10-19]] — method-review · 2026-10-19
 - [[llm-wiki-landscape-2026-09]] — research-note · 2026-09-27
 - [[system-review-2026-09-27]] — system-review · 2026-09-27
