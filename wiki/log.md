@@ -793,3 +793,5 @@ Format: `## [YYYY-MM-DD] <operation> | <one-line description>`
 - 원문이 요약본뿐이라 수치가 미공개로 내려간 페이지(J&J, flex, Fuel50, Diligent, HireVue, Emirates, Docebo, 삼성멀티캠퍼스 등) → /hr-research로 1차 소스 확보
 - snapshot_quality unavailable 소스(403·paywall) ~30건 → 대체 URL 탐색
 - 주간 작업 스케줄러 등록은 사용자 확인 후 (`scripts/register_weekly_task.ps1`)
+
+## [2026-10-19] review | 리서치 방법 재검토 — 골격 유지, 부품 5개 교체 권고 | [[method-review-2026-10-19]]

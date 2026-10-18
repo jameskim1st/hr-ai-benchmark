@@ -1,17 +1,17 @@
 # HR AI Benchmark — Index
 
-> 이 페이지는 `scripts/build_index.py`가 생성한다 (마지막 생성 2026-09-27). 손으로 편집하지 말 것. 규칙은 [[CLAUDE|CLAUDE.md]] + `.claude/rules/`.
+> 이 페이지는 `scripts/build_index.py`가 생성한다 (마지막 생성 2026-10-19). 손으로 편집하지 말 것. 규칙은 [[CLAUDE|CLAUDE.md]] + `.claude/rules/`.
 
 ## 규모
 
 | 유형 | 건수 | 비고 |
 |---|---|---|
-| use case (HR 프로세스 AI 도입 사례) | **118** | public 116 · KR 22 |
+| use case (HR 프로세스 AI 도입 사례) | **118** | public 115 · KR 22 |
 | enterprise-ai (전사 GenAI 플랫폼 — 참고) | 15 | use case 카운트에서 제외 |
 | reference (법령·리포트·맥락) | 4 | |
 | sources | 300 | raw 스냅샷 연결 295 |
 | companies / vendors | 20 / 15 | |
-| syntheses | 15 | lint·digest·compare·research 포함 |
+| syntheses | 16 | lint·digest·compare·research 포함 |
 
 근거 등급: A 41 · B 30 · C 42 · D 5  ｜  depth: full 15 · partial 80 · stub 23  ｜  freshness: fresh 66 · stale 47 · unverified 5
 
@@ -45,7 +45,7 @@ SORT evidence_grade ASC, confidence DESC
 
 - [[jobkorea-hiring-center-talent-agent]] — 잡코리아 (웍스피어) · A/partial
 - [[sk-cc-adot-biz-hr-recruitment]] — SK C&C · A/partial
-- [[sk-hynix-ask-ai-interview]] — SK하이닉스 · A/stub
+- [[sk-hynix-ask-ai-interview]] — SK하이닉스 · A/stub · 🔒
 - [[chipotle-paradox-olivia]] — Chipotle Mexican Grill · A/partial
 - [[midas-inair-ai-assessment-korea]] — _다수 (기아, KB증권, 신한은행, CJ, LIG넥스원, GS리테일 등)_ · A/partial
 - [[ibm-watson-recruitment]] — IBM · B/stub
@@ -314,8 +314,9 @@ SORT evidence_grade ASC, confidence DESC
 - [[korea-ai-basic-act-hr-compliance]] — regulation
 - [[lotte-job-based-hr-reform]] — context
 
-## 🧪 Syntheses (15)
+## 🧪 Syntheses (16)
 
+- [[method-review-2026-10-19]] — method-review · 2026-10-19
 - [[llm-wiki-landscape-2026-09]] — research-note · 2026-09-27
 - [[system-review-2026-09-27]] — system-review · 2026-09-27
 - [[hr-ai-usecase-collection-detailed]] — deliverable · 2026-04-13
