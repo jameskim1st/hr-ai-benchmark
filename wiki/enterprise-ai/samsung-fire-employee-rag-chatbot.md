@@ -22,12 +22,12 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2025-11-26
 last_confirmed: 2026-04-01
-confidence: 0.8
+confidence: 0.7
 evidence_grade: A
 corroborated_by: 2
 freshness: fresh
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/mt-samsung-life-fire-2026-executive-promotions-2025-11.md, sources/segyebiz-samsung-life-ai-underwriting-claims-2025-10.md]
 related_usecases:

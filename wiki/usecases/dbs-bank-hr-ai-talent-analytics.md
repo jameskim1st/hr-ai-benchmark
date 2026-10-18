@@ -26,10 +26,10 @@ first_seen: 2022-01-01
 last_confirmed: 2025-06-01
 confidence: 0.6
 evidence_grade: A
-corroborated_by: 2
+corroborated_by: 3
 freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources:
   - sources/mckinsey-dbs-ai-transformation.md
   - sources/emerj-dbs-ai-cases.md
@@ -49,7 +49,7 @@ related_vendors: []
 
 - **Before**: ✅ Gupta 취임(2009) 당시 DBS는 싱가포르 은행 중 고객 서비스 최하위. [[sources/mit-slr-dbs-piyush-gupta.md]] HR baseline(채용 소요시간 등) ❓ 미공개
 - **Pain point**: ✅ 대량 채용 직군(high-volume roles)의 적합 인재를 더 효율적으로 채용 + 이직 가능성 조기 파악. [[sources/mit-slr-dbs-piyush-gupta.md]]
-- **Trigger**: ✅ CEO Gupta의 AI 리더십 — 2013 A*STAR AI 랩 계약 등 초기 실패를 시그널링으로 활용, 사업부에 데이터 사이언티스트 채용 재량 부여. [[sources/mit-slr-dbs-piyush-gupta.md]] McKinsey 소스의 "기술 회사로서 은행 면허 보유" 인용은 원문 미확보로 검증 불가. [[sources/mckinsey-dbs-ai-transformation.md]]
+- **Trigger**: ✅ CEO Gupta의 AI 리더십 — 2013 A*STAR AI 랩 계약 등 초기 실패를 시그널링으로 활용, 사업부에 데이터 사이언티스트 채용 재량 부여. [[sources/mit-slr-dbs-piyush-gupta.md]] McKinsey 블로그 원문(2026-10-19 확보)에 "기술 회사로서 은행 면허 보유" 표현은 없음. ✅ McKinsey 서술: DBS는 "tech start-up처럼"(fast, nimble, customer driven) 운영을 지향, CEO Gupta가 데이터 분석·AI 활용 전환 추진. [[sources/mckinsey-dbs-ai-transformation.md]]
 
 ## Solution Architecture
 
@@ -113,8 +113,8 @@ flowchart TB
 
 - **오너십**: ✅ **Fact** 기술 배경 없는 HR 책임자가 skunkworks 프로그램으로 HR AI 애플리케이션 식별·파일럿. [[sources/mit-slr-dbs-piyush-gupta.md]]
 - **참여 역할**: ✅ **Fact** CEO Piyush Gupta의 AI 리더십; 사업부에 준(準) 데이터 사이언티스트 채용 재량. [[sources/mit-slr-dbs-piyush-gupta.md]]
-- **팀 규모**: _미공개 (not disclosed)_ (종전 "700명 데이터 전문가·250명 데이터 사이언티스트·Data Chapter"는 McKinsey 소스 원문 미확보로 인용 불가 — 2026-09-27 grounding 점검)
-- **파트너**: ⚠️ 벤더 주장: impress.ai (JIM 공동 개발, DBS Startup Xchange). [[sources/emerj-dbs-ai-cases.md]] McKinsey의 AI 전환 지원은 원문 미확보. [[sources/mckinsey-dbs-ai-transformation.md]]
+- **팀 규모**: ⚠️ 자사 보고 (CEO Gupta, McKinsey 블로그 인터뷰 2025-02): 데이터 인력 약 700명, 데이터 사이언티스트 200명 (전사 데이터·AI 조직 기준, HR 전담 인력 아님. 종전 "250명"은 원문과 불일치하여 200명으로 정정). [[sources/mckinsey-dbs-ai-transformation.md]] "Data Chapter 연방형 모델"은 원문에 없어 _미공개_
+- **파트너**: ⚠️ 벤더 주장: impress.ai (JIM 공동 개발, DBS Startup Xchange). [[sources/emerj-dbs-ai-cases.md]] ✅ McKinsey: 데이터 아키텍처·PURE 원칙 단계, 모델 라이브러리·재사용·프로토콜 등 AI 역량 산업화, 사업·IT "two in a box" 공동 리더십의 플랫폼 운영 모델 구축 지원 (McKinsey 자사 블로그의 고객 CEO 인터뷰, 이해관계 있음). [[sources/mckinsey-dbs-ai-transformation.md]]
 
 ## Impact / Metrics (기대효과)
 
@@ -122,6 +122,7 @@ flowchart TB
 Before: _Before 수치 미공개_ → After: ⚠️ 벤더 주장 (impress.ai 사례, Emerj 재인용) JIM 도입(2018) 후 월 40시간 절감, time-to-hire 75% 단축, 후보 이탈 15%→3%, 800건+ 채용, 문의 97% 자동 응답. attrition 모델·커리어 도구의 효과 수치 _미공개_.
 
 - ⚠️ **벤더 주장** (Emerj가 impress.ai 사례 재인용): 월 40시간 절감, time-to-hire 75%↓, 후보 이탈 15%→3%. [[sources/emerj-dbs-ai-cases.md]]
+- ⚠️ 자사 보고 (CEO Gupta, McKinsey 블로그): 채용에 AI 모델을 활용한 결과 해당 입사자의 이탈률이 낮고 성과가 높았다는 관찰. 수치 없음, CEO가 anecdotal로 자인. [[sources/mckinsey-dbs-ai-transformation.md]]
 - 채용 소요시간 일수(종전 "32일→8일"): _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검; adriantan 소스 원문 미확보, 스니펫은 검토 시간 37분→8분)
 - attrition 예측 모델 정확도·효과: _미공개 (not disclosed)_
 
@@ -130,10 +131,12 @@ Before: _Before 수치 미공개_ → After: ⚠️ 벤더 주장 (impress.ai �
 - ✅ CEO Piyush Gupta가 직접 AI 전략 리더십 발휘 — 초기 실패(2013 A*STAR 랩)를 시그널링으로 활용. [[sources/mit-slr-dbs-piyush-gupta.md]]
 - 싱가포르 PDPA 및 금융 규제 적용 환경. 세부 대응 _미공개 (not disclosed)_.
 - attrition 예측·채용 스크리닝은 고영향 AI 검토 대상 — 편향 감사·설명가능성 장치 _미공개_
+- ⚠️ 자사 보고 (CEO Gupta, McKinsey 블로그): AI copilot은 정확성 확보를 위해 human in the loop로 운영, 고객 직접 응대 AI는 동의 기반으로 실험 예정 (전사 원칙, HR 도구별 적용 세부 _미공개_). PURE 데이터 원칙(purposeful·unsurprising·respectful·explainable) 운영. Harvard Business School 케이스 스터디가 DBS의 실험·"실패" 허용 문화를 다룸. [[sources/mckinsey-dbs-ai-transformation.md]]
 
 ## Contradictions
 
 > [!note] 2026-09-27 grounding — 종전 본문의 "채용 소요시간 32일→8일"(adriantan 소스 원문 404, 스니펫에도 없음), "iGrow 커리어 어드바이저·10,000개+ 과정"(어느 소스에도 없음), "700명 데이터 전문가·250명 데이터 사이언티스트·Data Chapter 연방형 모델·'tech company with a banking license'"(McKinsey 소스 원문 미확보), "HBS 케이스 스터디", "4,000명 직원 교체 보도" 는 인용 소스 raw로 뒷받침되지 않아 제거·_미공개_ 처리. emerj 소스는 JIM(impress.ai 재인용)과 AML 거래 감시만 다루므로 attrition 모델 근거를 MIT SMR로 재귀속.
+> 2026-10-19 원문 확보 후 복구: McKinsey 블로그 원문(Aside, 2025-02-10 CEO 인터뷰)으로 데이터 인력 약 700명·데이터 사이언티스트 200명(종전 250명은 원문 불일치로 정정), HBS 케이스 스터디 언급, McKinsey 지원 범위, 채용 AI 모델의 이탈률·성과 관찰(정성), copilot HITL·PURE 원칙 복구. "tech company with a banking license"·"Data Chapter 연방형"·S$ 단위 AI 효과 금액·"4,000명 직원 교체"는 원문에 없어 _미공개_ 유지. 원문의 모델 라이브러리 1,500개·Data Heroes 8,000명·33개 플랫폼은 HR 도구 수치가 아니어서 본문 미반영 (source 페이지 Summary 참조)
 
 ## Consulting Angle
 

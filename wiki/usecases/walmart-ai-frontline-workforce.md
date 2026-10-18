@@ -29,7 +29,7 @@ evidence_grade: A
 corroborated_by: 3
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources:
   - sources/walmart-corporate-ai-tools-2025-06.md
   - sources/hrdive-walmart-openai-certification-2025-09.md

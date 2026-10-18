@@ -797,3 +797,11 @@ Format: `## [YYYY-MM-DD] <operation> | <one-line description>`
 ## [2026-10-19] review | 리서치 방법 재검토 — 골격 유지, 부품 5개 교체 권고 | [[method-review-2026-10-19]]
 
 ## [2026-10-19] review | Aside 에이전트 브라우저 접목 검토 — REPL 추출·MCP·Routine 3단계 제안 | [[aside-review-2026-10-19]]
+
+## [2026-10-19] ingest | Aside 브라우저·Jina 폴백으로 막힌 소스 27/34 원문 확보 → Key Quotes 보강, use case 복구 | touched: sources 27, usecases ~20
+
+- 도구: scripts/fetch_via_aside.py(REPL innerText), fetch_raw.py 폴백 체인 direct→jina→aside→wayback, .mcp.json aside 등록
+- 복구: HR Brew 3·HR Executive 3·Business Wire 6·Bloomberg·Inc.·Healthcare IT News·HR Asia·McKinsey(DBS)·AI 기본법 조문·ServiceNow(제품·Siemens PDF)·UKG 2 등. 삭제·게이트 7건은 unavailable 유지(11건 잔존)
+- use case: raw에 실제 있는 항목만 복원(PwC 65,000·$1B, Siemens GBS 8.8/87%, Mercy 50개 병원, IBM NPS +74 등). 반대로 raw와 불일치한 ✅ 표기(Siemens 360K·월 110K, UKG KC CARE·Jetro·One View, BetterUp "성과 16%"→"자신감 16%", DBS 250→200명)는 _미공개_ 또는 정정
+- 등급: A 55 · B 32 · C 45 · D 1 (복구 전 A 41). lint critical 0, 수치 미확인 0/477
+- 문체: 이후 작성분은 .claude/rules/style-guide.md(명사형 종결) 적용

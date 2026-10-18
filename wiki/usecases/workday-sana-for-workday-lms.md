@@ -24,12 +24,12 @@ kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-11-01
 last_confirmed: 2026-04-15
-confidence: 0.35
-evidence_grade: C
-corroborated_by: 0
+confidence: 0.45
+evidence_grade: B
+corroborated_by: 1
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources:
   - sources/hr-brew-workday-sana-2026-03.md
@@ -45,12 +45,12 @@ related_vendors:
 
 ## Summary
 
-Workday가 2025-11에 $1.1B로 인수한 스웨덴 AI-native LMS 회사 Sana를 2026-03-17에 첫 통합 제품 **"Sana for Workday"**로 공개. Sana의 conversational interface가 Workday 신규 UI front door로 채택되고, Sana Learn은 AI-native LMS로 Workday Learning을 대체·보강. ⚠️ 벤더 주장: 코스 생성 시간 4개월 → 4일, engagement 275% lift ([[sources/hr-brew-workday-sana-2026-03]] — 스냅샷 unavailable, 소스 페이지 요약 기준·원문 미확인). ASOR 거버넌스 하에서 학습 에이전트가 사람·기존 에이전트와 통합 관리됨 ([[sources/workday-asor-ga-2026-02]]).
+Workday가 2025-11에 $1.1B로 인수한 스웨덴 AI-native LMS 회사 Sana를 2026-03-17에 첫 통합 제품 **"Sana for Workday"**로 공개. Sana의 conversational interface가 Workday 신규 UI front door로 채택되고, Sana Learn은 AI-native LMS로 Workday Learning을 대체·보강. ⚠️ 벤더 주장: 코스 생성 시간 4개월 → 4일, engagement 275% lift (소스 페이지 요약 기준. 2026-10-19 확보한 [[sources/hr-brew-workday-sana-2026-03]] 원문에는 없음, 독립 검증 없음). ASOR 거버넌스 하에서 학습 에이전트가 사람·기존 에이전트와 통합 관리됨 ([[sources/workday-asor-ga-2026-02]]).
 
 ## Problem / Why (도입 배경)
 
 - **Before (baseline)**: ❓ baseline 미공개 — Workday Learning 기존 기능 대비 격차는 인용 소스에 서술 없음
-- **Pain point**: ⚠️ 벤더 주장: 코스 생성에 4개월 소요 → 4일로 단축 주장 ([[sources/hr-brew-workday-sana-2026-03]] — 원문 미확인); 업계 완료율·시장 규모 통계는 인용 소스에 없어 삭제 (2026-09-27 grounding 점검)
+- **Pain point**: ⚠️ 벤더 주장: 코스 생성에 4개월 소요 → 4일로 단축 주장 (소스 페이지 요약 기준. [[sources/hr-brew-workday-sana-2026-03]] 원문에는 없음); 업계 완료율·시장 규모 통계는 인용 소스에 없어 삭제 (2026-09-27 grounding 점검)
 - **Trigger**: Workday의 Sana 인수 (2025-11, $1.1B) 후 첫 통합 제품 공개 (2026-03-17, Workday DevCon) ([[sources/hr-brew-workday-sana-2026-03]]); Sana 기존 고객(Klarna·MTV·Polestar)에 Workday 마이그레이션 경로 제공 (동일 소스)
 
 ## Solution Architecture
@@ -141,6 +141,7 @@ LMS 콘텐츠 제작 시간·비용을 대폭 단축하고 conversational UI로 
 _없음._
 
 > [!note] 2026-09-27 grounding — [[sources/hr-brew-workday-sana-2026-03]]는 스냅샷 unavailable — 4개월→4일·275%·30+ 언어·$1.1B는 소스 페이지 요약 기준 원문 미확인. B/C/D의 multi-tenant·IAM·RAG/prompt·content filter 등 "추정" 아키텍처 서술과 Problem의 업계 통계(완료율·시장 규모)는 인용 소스에 없어 `_미공개_`/삭제.
+> 2026-10-19 원문 확보 후 복구: 복구 항목 없음. HR Brew 원문(Aside 확보)에 4개월→4일, 275%, 30+ 언어, $1.1B, 2025-11 인수, DevCon, Klarna·MTV·Polestar, Sana Learn, ASOR 결합 언급 없음. 원문은 Sana 인수 시점을 "September"로 기재하여 본문의 2025-11과 불일치, 별도 소스로 확인 필요. 원문에서 확인되는 것은 Sana for Workday 자연어 인터페이스, Sana Self-Service Agent(300+ skills, 얼리어답터 테스트), Sana Enterprise. 이 use case의 LMS 수치는 여전히 raw 근거 없음
 
 ## Consulting Angle
 

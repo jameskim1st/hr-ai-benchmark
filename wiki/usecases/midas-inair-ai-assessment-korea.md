@@ -30,7 +30,7 @@ evidence_grade: A
 corroborated_by: 2
 freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/zdnet-korea-midas-ai-competency-test-2025-09.md, sources/nature-scientific-reports-ai-assessment-interpersonal-skills-2025-07.md]
 related_usecases:

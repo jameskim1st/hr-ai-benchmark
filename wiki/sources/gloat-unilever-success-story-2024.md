@@ -46,6 +46,17 @@ Gloat의 공식 Unilever customer story 업데이트. 2019년 i4cp 기사 이후
 - 🚫 Tier 1·2 독립 검증 (본 wiki 기준 여전히 없음)
 - 🚫 구체 ROI·cost 분석
 
+## Key Quotes
+
+> Download this detailed case study to learn what challenges Unilever was facing in the talent space and how the company implemented an AI-powered internal talent marketplace to overcome them.
+→ 뒷받침하는 주장: Gloat이 Unilever를 AI 기반 내부 talent marketplace 도입 사례로 제시 (랜딩 페이지 문구, 벤더 주장). 수치 부재
+
+## Limitations
+
+- 2026-10-19 Aside/Jina로 원문 확보, 단 partial: 게이트 폼 랜딩 페이지(제목·안내 1문장·Download Now)만 확보. 케이스 스터디 본문(PDF)은 폼 제출 필요로 여전히 미확보
+- 위 "핵심 수치" 표(65,000·700,000+ hours·41%·95%·8,000+·700+)는 모두 raw에 없음. WebSearch 요약 기반이며 인용 시 원문 미확인 표기 유지 필요
+- 랜딩 페이지 메타의 publication_date는 2019-06-25, 푸터는 "© Copyright 2021 gloat". "2024 update"라는 제목 표기는 raw로 뒷받침되지 않음
+
 ## 관련 페이지
 - Company: [[unilever]]
 - Vendor: [[gloat]]

@@ -35,7 +35,7 @@ related_vendors: []
 
 ## Summary
 
-「인공지능 발전·신뢰 기반 조성 등에 관한 기본법」(통칭 'AI 기본법')이 **2026-01-22 본격 시행**. EU AI Act에 이은 세계 2번째 포괄규제. **고영향 AI(high-impact AI)** 카테고리에 채용·인사평가·승진·해고 의사결정 AI가 명시적으로 포함됨. 영향평가·투명성 고지·인적 감독·이용자 권리 보장 의무. 모든 KR HR AI 프로젝트의 legal foundation. 2026-08 EU AI Act high-risk 의무 발효와 결합되면 글로벌 KR 대기업은 dual compliance 운영 부담.
+「인공지능 발전과 신뢰 기반 조성 등에 관한 기본법」(약칭 인공지능기본법, 법률 제20676호)이 **2026-01-22 시행** [[sources/korea-ai-basic-act-2026-01]]. ✅ 제2조 4호 사목이 **고영향 인공지능** 영역으로 "채용, 대출 심사 등 개인의 권리ㆍ의무 관계에 중대한 영향을 미치는 판단 또는 평가"를 명시 (법 본문에 채용은 명시, 인사평가·승진·해고는 "등"의 해석 대상. 2026-10-19 원문 확인으로 정정, [[taxonomy-crosswalk]] 표 4 참조). 제31조 사전 고지, 제34조 사업자 책무(위험관리·설명 방안·이용자 보호·사람의 관리ㆍ감독·문서 보관), 제35조 영향평가 노력 의무, 제43조 과태료 3천만원 이하 [[sources/korea-ai-basic-act-2026-01]]. 모든 KR HR AI 프로젝트의 legal foundation. 2026-08 EU AI Act high-risk 의무 발효와 결합되면 글로벌 KR 대기업은 dual compliance 운영 부담.
 
 ## Problem / Why (도입 배경)
 
@@ -80,10 +80,10 @@ related_vendors: []
 
 ### D. Model (모델)
 
-- **고영향 AI (high-impact AI) — 채용·HR 관련 명시**:
-  - 채용 의사결정 AI (마이다스 inAIR·SK AICT·원티드 AI Agent·Workday·SAP·Eightfold·Paradox 등 KR 운영분)
-  - 인사평가 AI (성과평가 자동화)
-  - 승진·해고 의사결정 AI (후계자 추천 등 직간접 영향 포함 — 시행령 명확화 진행)
+- **고영향 AI (high-impact AI) — 채용·HR 관련**:
+  - ✅ 채용 의사결정 AI: 제2조 4호 사목 "채용, 대출 심사 등 개인의 권리ㆍ의무 관계에 중대한 영향을 미치는 판단 또는 평가"에 명시 [[sources/korea-ai-basic-act-2026-01]] (마이다스 inAIR·SK AICT·원티드 AI Agent·Workday·SAP·Eightfold·Paradox 등 KR 운영분)
+  - 인사평가 AI (성과평가 자동화): 법 본문에 명시 없음, 사목 "등"에 따른 검토 대상 (kr-high-impact-review)
+  - 승진·해고 의사결정 AI (후계자 추천 등 직간접 영향 포함): 법 본문에 명시 없음, 동일하게 검토 대상. 카목(대통령령 위임 영역) 고시 모니터링 필요
 - **저위험 AI**: HR Service Agent (정책 Q&A 챗봇), 학습 콘텐츠 추천 등 (단, 결과가 평가·승진에 연결되면 재분류)
 - **분류 경계**: SAP Joule Career Agent의 "후계자 추천"·Workday Illuminate Performance Review Agent → 인적감독 강화 필요 (의무 분류 모니터링)
 
@@ -127,12 +127,12 @@ flowchart TB
 
 - ✅ Tier 1 정부 1차 자료 + 김앤장 분석으로 신뢰도 높음
 - ⚠️ 시행령 일부 조항 2026 상반기 추가 고시 예정 — 모니터링 필수
-- ⚠️ 위반 시 과징금 상한·enforcement 강도 미실측 (2027 trend 관찰)
+- ✅ 과태료: 제43조, 제31조 1항 고지 불이행·국내대리인 미지정·중지명령 불이행 시 3천만원 이하 [[sources/korea-ai-basic-act-2026-01]]. 제34조 책무 위반은 제40조 사실조사·시정명령 경로. enforcement 강도 미실측 (2027 trend 관찰)
 - ⚠️ EU AI Act(2026-08 high-risk 의무 발효)와의 dual compliance 운영 가이드 부재 — 컨설팅 white space
 
 ## Contradictions
 
-(없음)
+> [!note] 2026-10-19 원문 확보 후 정정 — [[sources/korea-ai-basic-act-2026-01]] 법령 원문(국가법령정보센터, Aside) 확인 결과 종전 본문의 "채용·인사평가·승진·해고 의사결정 AI가 명시적으로 포함", "세계 2번째 포괄규제", "과징금"은 법 본문에 없음. 제2조 4호 사목은 "채용, 대출 심사 등"만 명시하므로 평가·승진·해고는 해석 대상으로 정정. 제35조 영향평가는 "노력하여야 한다"(노력 의무), 제43조는 과태료(3천만원 이하). A·B·C·E 섹션의 운영 구조 서술은 컨설팅 해석이며 법 조문 인용 아님. EU AI Act 의무 시점은 [[taxonomy-crosswalk]] 기준 2027-12-02 연기와 대조 필요
 
 ## Consulting Angle
 

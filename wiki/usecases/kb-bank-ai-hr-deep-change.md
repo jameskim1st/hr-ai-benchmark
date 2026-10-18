@@ -24,12 +24,12 @@ kr_vendor: KB국민은행 자체 구축 (SI 수행사 미공개)
 frequency: monthly
 first_seen: 2020-07-15
 last_confirmed: 2026-04-01
-confidence: 0.8
+confidence: 0.7
 evidence_grade: A
 corroborated_by: 4
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/asiatoday-kb-bank-ai-personnel-deep-change-2020-07.md, sources/etnews-kb-ai-hr-system-2022-12.md, sources/etnews-kb-ai-hr-system-2022-12.md, sources/hankyung-kb-bank-pb-rm-ai-57pct-2025-10.md, sources/sedaily-kb-ai-hr-commute-2020-07.md]
 related_usecases:

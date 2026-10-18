@@ -24,12 +24,12 @@ kr_vendor: 해당 없음 (자체 구축)
 frequency: daily
 first_seen: 2015-01-01
 last_confirmed: 2026-04-07
-confidence: 0.8
+confidence: 0.7
 evidence_grade: A
 corroborated_by: 7
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/bersin-ibm-hr-marketplace-2020-12.md, sources/bersin-ibm-hr-marketplace-2020-12.md, sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04.md, sources/fortune-ibm-chro-talent-strategy-2026-04.md, sources/fuel50-what-is-internal-mobility-2024-10.md, sources/hr-brew-ibm-chro-lamoreaux-skills-2026-02.md, sources/hr-brew-ibm-chro-lamoreaux-skills-2026-02.md, sources/hrexecutive-ibm-chro-time-in-the-sun-2025-09.md, sources/ibm-think-ai-first-hr-2025-04.md, sources/ibm-watsonx-orchestrate-hr-agents.md, sources/linkedin-talent-blog-ibm-skills-first-strategy.md, sources/shrm-ibm-transforms-hr-ai-2019-05.md]
 related_usecases:

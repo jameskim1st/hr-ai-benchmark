@@ -29,7 +29,7 @@ evidence_grade: C
 corroborated_by: 0
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/ibm-announcement-watson-orchestrate-thisway-global-2022-11.md, sources/ibm-watsonx-orchestrate-hr-agents.md, sources/knockri-ibm-watsonx-orchestrate-press-2025-09.md]
 related_usecases:

@@ -24,12 +24,12 @@ kr_vendor: 미확인 (AI 스케줄링 벤더 미공개)
 frequency: daily
 first_seen: 2023-01-01
 last_confirmed: 2025-02-01
-confidence: 0.35
-evidence_grade: B
-corroborated_by: 1
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 2
 freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources:
   - sources/beckershospitalreview-mercy-2024.md
   - sources/healthcareitnews-mercy-30m-2023.md
@@ -41,13 +41,13 @@ related_vendors: []
 
 ## Summary
 
-Mercy는 Trusted Health의 Works 플랫폼으로 유연 간호 인력 모델을 도입하여 계약직(agency) 비중을 25%에서 8%로 줄이고, FY2023 프리미엄 인건비 $30.7M을 절감했다고 발표했다 (⚠️ 자사 보고 — Becker's CEO+CFO Roundtable의 Trusted Health 후원 세션) [[sources/beckershospitalreview-mercy-2024.md]] [[sources/worksai-mercy-playbook-2024.md]]. 핵심 전략은 코어·유연(float/gig)·에이전시 3층 인력 모델 + 스케줄 선택권 확대 + 자동화·AI 기반 인센티브 배분이다 [[sources/beckershospitalreview-mercy-2024.md]]. 병원 수·운영 주 등 조직 규모는 인용 소스 원문 미확보(Healthcare IT News 403 [[sources/healthcareitnews-mercy-30m-2023.md]])로 _미공개_ (2026-09-27 grounding 점검).
+Mercy는 Trusted Health의 Works 플랫폼으로 유연 간호 인력 모델을 도입하여 계약직(agency) 비중을 25%에서 8%로 줄이고, FY2023 프리미엄 인건비 $30.7M을 절감했다고 발표했다 (⚠️ 자사 보고 — Becker's CEO+CFO Roundtable의 Trusted Health 후원 세션) [[sources/beckershospitalreview-mercy-2024.md]] [[sources/worksai-mercy-playbook-2024.md]]. 핵심 전략은 코어·유연(float/gig)·에이전시 3층 인력 모델 + 스케줄 선택권 확대 + 자동화·AI 기반 인센티브 배분이다 [[sources/beckershospitalreview-mercy-2024.md]]. 조직 규모는 ✅ 50개 병원 health system(St. Louis 본사) [[sources/healthcareitnews-mercy-30m-2023.md]]. 운영 주 수는 _미공개_ (2026-09-27 grounding 점검, 2026-10-19 원문 확보 후 병원 수만 복구).
 
 ## Problem / Why (도입 배경)
 
 - **Before (baseline)**: 인력 구성 코어 67% / 유연 8% / 에이전시 25% [[sources/beckershospitalreview-mercy-2024.md]]; fill rate 83% [[sources/beckershospitalreview-mercy-2024.md]]
 - **Pain point**: 프리미엄(에이전시) 인건비 (비용 축) + 간호사 기대 변화에 맞춘 스케줄 자율성 부족 [[sources/beckershospitalreview-mercy-2024.md]]. 인센티브 배분이 간호 관리자의 주관적 판단에 의존 (Rocchio 발언) [[sources/beckershospitalreview-mercy-2024.md]]
-- **Trigger**: ❓ 미공개 — Trusted Health 파트너십 결정 계기는 인용 소스에 없음
+- **Trigger**: ⚠️ 자사 보고: 다양한 인센티브·staffing 모델을 시도했으나 인력 최적화에 실패, 이를 계기로 Works & Trusted Health 선택 (Rocchio) [[sources/healthcareitnews-mercy-30m-2023.md]]
 
 ## Solution Architecture
 
@@ -85,7 +85,7 @@ flowchart LR
 ### C. Data (데이터)
 
 - **입력 데이터 소스**: unit별 shift 수요·shift별 보상 정보·유연 인력 pool [[sources/beckershospitalreview-mercy-2024.md]]; 환자 데이터 연계 여부 _미공개_
-- **데이터 규모**: _미공개 (not disclosed)_ — 병원 수·주 수는 원문 미확보 소스([[sources/healthcareitnews-mercy-30m-2023.md]])에만 의존하여 제거 (2026-09-27)
+- **데이터 규모**: ✅ 50개 병원 시스템 전체에 Works OnDemand 적용 [[sources/healthcareitnews-mercy-30m-2023.md]]; 주 수·간호사 수 _미공개 (not disclosed)_
 - **학습 vs RAG vs In-context**: _미공개 (not disclosed)_
 - **데이터 거버넌스**: HIPAA 적용 환경. 세부 내용 _미공개 (not disclosed)_.
 
@@ -107,7 +107,7 @@ flowchart LR
 에이전시 비중 25% → 8%, FY2023 프리미엄 인건비 $30.7M 절감, fill rate 83% → 86%, 이직률 −8% (모두 ⚠️ 자사 보고 — 벤더 후원 세션·벤더 플레이북).
 
 - ⚠️ **자사 보고**: 인력 구성 67/8/25% → 69/23/8% (코어/유연/에이전시). [[sources/beckershospitalreview-mercy-2024.md]] [[sources/worksai-mercy-playbook-2024.md]]
-- ⚠️ **자사 보고**: FY2023 프리미엄 인건비 rate 절감 $30.7M. [[sources/beckershospitalreview-mercy-2024.md]] [[sources/worksai-mercy-playbook-2024.md]] (Healthcare IT News 보도 [[sources/healthcareitnews-mercy-30m-2023.md]]는 원문 미확보)
+- ⚠️ **자사 보고**: FY2023 프리미엄 인건비 rate 절감 $30.7M. [[sources/beckershospitalreview-mercy-2024.md]] [[sources/worksai-mercy-playbook-2024.md]] [[sources/healthcareitnews-mercy-30m-2023.md]] (Healthcare IT News도 Rocchio 인터뷰 기준 동일 수치)
 - ⚠️ **자사 보고**: fill rate 83% → 86%. [[sources/beckershospitalreview-mercy-2024.md]] [[sources/worksai-mercy-playbook-2024.md]]
 - ⚠️ **자사 보고**: 이직률 8% 감소, 1년차 이직률 9% 감소. [[sources/beckershospitalreview-mercy-2024.md]] [[sources/worksai-mercy-playbook-2024.md]]
 - 계약직 비용 50% 절감·Dragon Copilot 문서 정확도: _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검)
@@ -116,12 +116,14 @@ flowchart LR
 
 - HIPAA 적용 환경(의료 데이터 보호) — 세부 _미공개_.
 - ⚠️ 자사 보고: 자동화가 shift 보상의 공정성·투명성을 보장하는 거버넌스 역할 — unit별 임의 고액 지급(rogue units) 방지 (Matejka) [[sources/beckershospitalreview-mercy-2024.md]]
-- ⚠️ 소스 성격: Becker's 기사는 Trusted Health 후원 세션, Works 플레이북은 벤더 자료 — 독립 검증 없음. Healthcare IT News 기사 원문 미확보 [[sources/healthcareitnews-mercy-30m-2023.md]].
+- ⚠️ 소스 성격: Becker's 기사는 Trusted Health 후원 세션, Works 플레이북은 벤더 자료 — 독립 검증 없음. Healthcare IT News 기사(Tier 2)는 2026-10-19 원문 확보, 단 수치는 모두 Rocchio 인터뷰 발언이므로 자사 보고 성격 [[sources/healthcareitnews-mercy-30m-2023.md]].
 - 간호사 노동조합 관련 이슈: _미공개 (not disclosed)_.
 
 ## Contradictions
 
 > [!note] 2026-09-27 grounding — 인용 소스에 없는 Dragon Copilot(Microsoft·Epic) 문서화 도구·문서 정확도 수치, "Win From Within" 프로그램(20개 병원·340명), Epic 연동, 40개 병원·5개 주, 계약직 비용 50% 절감 서술을 제거. $30M은 raw 표기 $30.7M으로 정정. Becker's 소스는 벤더 후원 세션이므로 ✅ Fact → ⚠️ 자사 보고로 재분류.
+
+> 2026-10-19 원문 확보 후 복구: Healthcare IT News raw 확보. 50개 병원 시스템 규모, 도입 계기(기존 staffing 모델 최적화 실패 → Works 선택), $30.7M의 보조 인용을 복구. "5개 주"·"40개 병원"·계약직 비용 50% 절감·Dragon Copilot은 raw에 없어 _미공개_ 유지
 
 ## Consulting Angle
 

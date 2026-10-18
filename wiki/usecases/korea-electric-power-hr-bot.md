@@ -24,12 +24,12 @@ kr_vendor: 솔트룩스 (한국 NLP 벤더) — 단일 벤더 lock-in 지적
 frequency: monthly
 first_seen: 2024-01-01
 last_confirmed: 2026-04-01
-confidence: 0.8
+confidence: 0.7
 evidence_grade: A
 corroborated_by: 2
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/nate-asiatoday-kepco-ai-transformation-2025-09.md, sources/saltlux-kepco-hr-bot-case-undated.md, sources/startuptoday-kepco-ai-talent-recommendation-2024-03.md]
 related_usecases:
@@ -41,7 +41,7 @@ related_vendors: []
 
 ## Summary
 
-한국전력의 **AI 인재추천 시스템** — 공공기관으로는 처음으로 AI를 활용해 주요 보직 인재를 추천받음(2024-03 발표, 전년 말부터 활용): 기존 기본 인사정보·사내 평판·인사권자 직관 기반 추천에서 벗어나 HR 데이터·직무 데이터 기반으로 추천 [[sources/startuptoday-kepco-ai-talent-recommendation-2024-03]]. HR 분석 전담부서 신설 + 전력연구원 데이터 사이언스랩이 구현, 관련 특허 4건 출원(자연어 기반 인재 추천·감정 분류·직무 역량별 인재 추천 등); 자체 개발 감정 분류 AI는 다면평가 서술형 평가의 긍·부정·중립 분류에 활용 [[sources/startuptoday-kepco-ai-talent-recommendation-2024-03]]. 2025-09: 사내 규정·법규·문서 작성·조회를 AI로 지원하는 시스템 구축 착수(계약 약 8억원, 스마트폰 앱 포함) — 12월 시험 운영 후 이듬해 3월 전 직원 개방 **목표** [[sources/nate-asiatoday-kepco-ai-transformation-2025-09]]. **HR-Bot(솔트룩스) 채용 챗봇**은 벤더 사례 페이지가 홈페이지로 리다이렉트되어 raw 미확보 — 세부는 _미공개 (not disclosed)_ [[sources/saltlux-kepco-hr-bot-case-undated]]. 기존 "2024 경영평가 인사혁신 부문 가점", "직원 수", "공공기관 AI 도입률" 등은 인용 소스에 없어 삭제 (2026-09-27 grounding 점검).
+한국전력의 **AI 인재추천 시스템** — 공공기관으로는 처음으로 AI를 활용해 주요 보직 인재를 추천받음(2024-03 발표, 전년 말부터 활용): 기존 기본 인사정보·사내 평판·인사권자 직관 기반 추천에서 벗어나 HR 데이터·직무 데이터 기반으로 추천 [[sources/startuptoday-kepco-ai-talent-recommendation-2024-03]]. HR 분석 전담부서 신설 + 전력연구원 데이터 사이언스랩이 구현, 관련 특허 4건 출원(자연어 기반 인재 추천·감정 분류·직무 역량별 인재 추천 등); 자체 개발 감정 분류 AI는 다면평가 서술형 평가의 긍·부정·중립 분류에 활용 [[sources/startuptoday-kepco-ai-talent-recommendation-2024-03]]. 2025-09: 사내 규정·법규·문서 작성·조회를 AI로 지원하는 시스템 구축 착수(계약 약 8억원, 스마트폰 앱 포함) — 12월 시험 운영 후 이듬해 3월 전 직원 개방 **목표** [[sources/nate-asiatoday-kepco-ai-transformation-2025-09]]. **HR-Bot(솔트룩스) 채용 챗봇**은 벤더 사례 페이지가 홈페이지로 리다이렉트되어 raw 미확보(2026-10-19 재확보 시도 포함, raw는 홈페이지 본문) — 세부는 _미공개 (not disclosed)_ [[sources/saltlux-kepco-hr-bot-case-undated]]. 기존 "2024 경영평가 인사혁신 부문 가점", "직원 수", "공공기관 AI 도입률" 등은 인용 소스에 없어 삭제 (2026-09-27 grounding 점검).
 
 ## Problem / Why (도입 배경)
 
@@ -63,7 +63,7 @@ related_vendors: []
 
 ### A. Process — HR-Bot (채용 챗봇)
 
-- _미공개 (not disclosed)_ — 솔트룩스 사례 페이지 raw 미확보(홈페이지 리다이렉트), 검색 스니펫 기반 요약은 인용 불가 [[sources/saltlux-kepco-hr-bot-case-undated]]. 기존 "24/7 채용 상담·단순 반복 채용업무 자동화·escalation" 서술은 근거 미확보로 삭제.
+- _미공개 (not disclosed)_ — 솔트룩스 사례 페이지 raw 미확보(홈페이지 리다이렉트, 2026-10-19 재시도도 동일), 검색 스니펫 기반 요약은 인용 불가 [[sources/saltlux-kepco-hr-bot-case-undated]]. 기존 "24/7 채용 상담·단순 반복 채용업무 자동화·escalation" 서술은 근거 미확보로 삭제.
 
 ### A. Process — 사내 규정·법규·문서 GenAI (계획)
 
@@ -124,6 +124,7 @@ related_vendors: []
 ## Contradictions
 
 > [!note] 2026-09-27 grounding — (1) 솔트룩스 HR-Bot 사례(24/7 채용 챗봇)는 raw가 홈페이지 리다이렉트로 미확보 → 세부 _미공개_. (2) "직원 수 수치", "공공기관 AI 도입률 수치", "2024 경영평가 인사혁신 부문 가점", "HR+부서장 검토", "한전 SSO", "디지털혁신 본부", "정부 클라우드/on-prem 추정", "솔트룩스 RAG·intent classifier 추정"은 인용 소스에 없어 삭제·_미공개_. (3) 규정·문서 GenAI는 2025-09 기준 "목표"(계획)이므로 미래형 유지. (4) 인재추천 활용 개시 시점은 2023년 말(2024-03 발표 기준 "지난해 말") — frontmatter first_seen 2024-01-01과 대체로 정합.
+> 2026-10-19 원문 확보 후 복구: 복구 항목 없음. [[sources/saltlux-kepco-hr-bot-case-undated]]는 2026-10-19 Aside 재확보에서도 홈페이지로 리다이렉트되어 raw가 솔트룩스 홈페이지 본문(한전 HR-Bot 서술 없음). HR-Bot 세부는 _미공개_ 유지, 벤더 lock-in 논의도 보류. 솔트룩스 고객사례의 다른 URL 또는 PDF 확보 필요
 
 ## Consulting Angle
 

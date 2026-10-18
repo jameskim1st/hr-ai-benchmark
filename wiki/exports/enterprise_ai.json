@@ -41,7 +41,7 @@
       "summarization-qa",
       "information-extraction"
     ],
-    "confidence": 0.8,
+    "confidence": 0.7,
     "stage": "production",
     "frequency": "daily",
     "first_seen": "2025-10-21",
@@ -112,6 +112,112 @@
     ]
   },
   {
+    "slug": "hyundai-steel-hip-platform",
+    "title": "현대제철 — 'HIP' 사내 GenAI 경영지원 챗봇",
+    "page_type": "enterprise-ai",
+    "visibility": "public",
+    "case_type": "adoption",
+    "evidence_grade": "A",
+    "corroborated_by": 2,
+    "freshness": "fresh",
+    "depth": "stub",
+    "regulatory_exposure": [],
+    "kr_law": "",
+    "kr_union": "",
+    "kr_language": "",
+    "kr_vendor": "",
+    "primary_category": "Employee Experience & HR Ops",
+    "subcategory": "HR Service Delivery",
+    "company": "현대제철",
+    "industry": [
+      "steel",
+      "manufacturing"
+    ],
+    "region": [
+      "kr"
+    ],
+    "employee_class": [
+      "기술사무직",
+      "전임직"
+    ],
+    "vendor": [
+      "현대제철 internal"
+    ],
+    "vendor_type": [
+      "internal-build"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa",
+      "information-extraction"
+    ],
+    "confidence": 0.7,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2024-05-13",
+    "last_confirmed": "2025-10-27",
+    "output": "생성형 AI 적용 사내문서검색(지식정보 플랫폼) 답변 + 경영지원챗봇 응답 (전 임직원 사용; HR 문의 포함 여부·RAG·출처 표시·직원 규모는 미공개)",
+    "tags": [
+      "hyundai-steel",
+      "hip-platform",
+      "steel-industry",
+      "document-search",
+      "hr-chatbot",
+      "korea",
+      "hyundai-group",
+      "manufacturing"
+    ],
+    "sources": [
+      "sources/ajunews-hyundai-steel-ai-bigdata-festival-2025-10.md",
+      "sources/moneys-hyundai-steel-hip-launch-2024-05.md"
+    ],
+    "sources_resolved": [
+      {
+        "ref": "sources/ajunews-hyundai-steel-ai-bigdata-festival-2025-10.md",
+        "slug": "ajunews-hyundai-steel-ai-bigdata-festival-2025-10",
+        "title": "현대제철, 임직원 AI·로봇 역량 강화...철강 산업 DX 속도 낸다",
+        "publisher": "아주경제",
+        "tier": "2",
+        "url": "https://www.ajunews.com/view/20251027135700693",
+        "resolved": true,
+        "legacy": false
+      },
+      {
+        "ref": "sources/moneys-hyundai-steel-hip-launch-2024-05.md",
+        "slug": "moneys-hyundai-steel-hip-launch-2024-05",
+        "title": "현대제철, AI 기술 적용 '지식정보 플랫폼' 오픈",
+        "publisher": "머니S",
+        "tier": "2",
+        "url": "https://www.moneys.co.kr/article/2024051314162211136",
+        "resolved": true,
+        "legacy": false
+      }
+    ],
+    "summary": "현대제철의 사내 AI 플랫폼 <strong>'HIP(Hyundai-steel Intelligence Platform)'</strong> — 2024-05 사내문서검색 + 경영지원챗봇 형태로 launch. 2025-10 임직원 AI·로봇 역량 강화 프로그램으로 확장. 철강산업 DX 전환의 일환. 중후장대 산업의 <strong>\"지식정보 플랫폼 + HR 챗봇\"</strong> 결합 사례.",
+    "headline": "현대제철의 사내 AI 플랫폼 'HIP(Hyundai-steel Intelligence Platform)' — 2024-05 사내문서검색 + 경영지원챗봇 형태로 launch. 2025-10 임직원 AI·로봇 역량 강화 프로그램으로 확장. 철강산업 DX 전환의 일환. 중후장대 산업의 \"지식정보 플랫폼 + HR 챗봇\" 결합 사례.",
+    "summary_clean": "현대제철의 사내 AI 플랫폼 'HIP(Hyundai-steel Intelligence Platform)' — 2024-05 사내문서검색 + 경영지원챗봇 형태로 launch. 2025-10 임직원 AI·로봇 역량 강화 프로그램으로 확장. 철강산업 DX 전환의 일환.",
+    "problem": "<ul>\n<li><strong>Before</strong>: ✅ 임직원이 여러 영역의 업무 정보를 일일이 찾거나 업무 담당자를 확인해야 했음. sources/moneys-hyundai-steel-hip-launch-2024-05.md (직원 규모 수치 _미공개_ — 근거 미확보, 2026-09-27 grounding 점검)</li>\n<li><strong>Pain point</strong>: ✅ 임직원 업무 효율성 향상 — 사내 축적 지식정보 활용. sources/moneys-hyundai-steel-hip-launch-2024-05.md</li>\n<li><strong>Trigger</strong>: ❓ 미공개 — 소스는 DX(Digital Transformation) 맥락만 언급. sources/moneys-hyundai-steel-hip-launch-2024-05.md</li>\n</ul>",
+    "impact_summary": "중후장대 철강 제조의 사내 AI 플랫폼 reference — 매뉴얼·도면·정책 통합 검색.",
+    "consulting": "<ul>\n<li><strong>KR 중후장대 산업 reference</strong>:</li>\n<li>포스코·현대제철·세아 등 철강 클라이언트 제안서 직접 인용</li>\n<li>현대모비스 MoAI hyundai-mobis-moai-platform (자동차 부품)와 동일 패턴</li>\n<li><strong>2024 launch + 2025 확장</strong>: 한국 대기업 AI platform 진화 pattern reference (런치 → 확장)</li>\n</ul>",
+    "system": {
+      "AI 시스템 배치": "HIP — 현대제철이 개발한 사내 플랫폼, 사내문서검색 + 경영지원챗봇."
+    },
+    "data": {
+      "입력 데이터 소스": "사내 축적 지식정보·여러 영역의 업무 정보.  (문서 유형 세부 _미공개_)"
+    },
+    "model": {
+      "모델 유형": "생성형 AI (문서 검색·챗봇)."
+    },
+    "process_before": "✅ 임직원이 여러 영역의 업무 정보를 일일이 찾거나 업무 담당자를 확인해야 했음.  (직원 규모 수치 _미공개_ — 근거 미확보, 2026-09-27 grounding 점검) / Pain point: ✅ 임직원 업무 효율성 향상 — 사내 축적 지식정보 활용.  / Trigger: ❓ 미공개 — 소스는 DX(Digital Transformation) 맥락만 언급.",
+    "process_steps": [
+      "사내문서검색 — 생성형 AI 적용 지식정보 플랫폼.",
+      "경영지원챗봇 — HR 문의 포함 여부는 _미공개_.",
+      "2025-10 — 임직원 AI·로봇 역량 강화(AI·BIG DATA 페스티벌 4회, 131건 과제·33건 시상) — HIP 자체는 이 기사에 언급되지 않음."
+    ]
+  },
+  {
     "slug": "lg-chatexaone-group-rollout",
     "title": "LG AI연구원 — ChatEXAONE 그룹 정식 서비스",
     "page_type": "enterprise-ai",
@@ -156,7 +262,7 @@
       "text-generation",
       "information-extraction"
     ],
-    "confidence": 0.8,
+    "confidence": 0.7,
     "stage": "production",
     "frequency": "daily",
     "first_seen": "2024-08-01",
@@ -282,7 +388,7 @@
     "ai_tech_subtype": [
       "summarization-qa"
     ],
-    "confidence": 0.8,
+    "confidence": 0.7,
     "stage": "announced",
     "frequency": "daily",
     "first_seen": "2025-11-26",
@@ -384,7 +490,7 @@
       "ocr",
       "speech-recognition"
     ],
-    "confidence": 0.8,
+    "confidence": 0.7,
     "stage": "production",
     "frequency": "daily",
     "first_seen": "2024-09-24",
@@ -507,7 +613,7 @@
       "clustering-classification",
       "recommendation-ranking"
     ],
-    "confidence": 0.8,
+    "confidence": 0.7,
     "stage": "announced",
     "frequency": "daily",
     "first_seen": "2026-03-05",
@@ -608,112 +714,6 @@
       "삼성SDS 우선협상대상자 (2026-04-07) → 구축 계약",
       "2026-12 1차 97개 production, 2026 초 78개 추가",
       "운영 후 KPI tracking → portfolio rebalancing (annual cycle)"
-    ]
-  },
-  {
-    "slug": "hyundai-steel-hip-platform",
-    "title": "현대제철 — 'HIP' 사내 GenAI 경영지원 챗봇",
-    "page_type": "enterprise-ai",
-    "visibility": "public",
-    "case_type": "adoption",
-    "evidence_grade": "A",
-    "corroborated_by": 2,
-    "freshness": "fresh",
-    "depth": "stub",
-    "regulatory_exposure": [],
-    "kr_law": "",
-    "kr_union": "",
-    "kr_language": "",
-    "kr_vendor": "",
-    "primary_category": "Employee Experience & HR Ops",
-    "subcategory": "HR Service Delivery",
-    "company": "현대제철",
-    "industry": [
-      "steel",
-      "manufacturing"
-    ],
-    "region": [
-      "kr"
-    ],
-    "employee_class": [
-      "기술사무직",
-      "전임직"
-    ],
-    "vendor": [
-      "현대제철 internal"
-    ],
-    "vendor_type": [
-      "internal-build"
-    ],
-    "ai_tech_type": [
-      "generative"
-    ],
-    "ai_tech_subtype": [
-      "summarization-qa",
-      "information-extraction"
-    ],
-    "confidence": 0.7,
-    "stage": "production",
-    "frequency": "daily",
-    "first_seen": "2024-05-13",
-    "last_confirmed": "2025-10-27",
-    "output": "생성형 AI 적용 사내문서검색(지식정보 플랫폼) 답변 + 경영지원챗봇 응답 (전 임직원 사용; HR 문의 포함 여부·RAG·출처 표시·직원 규모는 미공개)",
-    "tags": [
-      "hyundai-steel",
-      "hip-platform",
-      "steel-industry",
-      "document-search",
-      "hr-chatbot",
-      "korea",
-      "hyundai-group",
-      "manufacturing"
-    ],
-    "sources": [
-      "sources/ajunews-hyundai-steel-ai-bigdata-festival-2025-10.md",
-      "sources/moneys-hyundai-steel-hip-launch-2024-05.md"
-    ],
-    "sources_resolved": [
-      {
-        "ref": "sources/ajunews-hyundai-steel-ai-bigdata-festival-2025-10.md",
-        "slug": "ajunews-hyundai-steel-ai-bigdata-festival-2025-10",
-        "title": "현대제철, 임직원 AI·로봇 역량 강화...철강 산업 DX 속도 낸다",
-        "publisher": "아주경제",
-        "tier": "2",
-        "url": "https://www.ajunews.com/view/20251027135700693",
-        "resolved": true,
-        "legacy": false
-      },
-      {
-        "ref": "sources/moneys-hyundai-steel-hip-launch-2024-05.md",
-        "slug": "moneys-hyundai-steel-hip-launch-2024-05",
-        "title": "현대제철, AI 기술 적용 '지식정보 플랫폼' 오픈",
-        "publisher": "머니S",
-        "tier": "2",
-        "url": "https://www.moneys.co.kr/article/2024051314162211136",
-        "resolved": true,
-        "legacy": false
-      }
-    ],
-    "summary": "현대제철의 사내 AI 플랫폼 <strong>'HIP(Hyundai-steel Intelligence Platform)'</strong> — 2024-05 사내문서검색 + 경영지원챗봇 형태로 launch. 2025-10 임직원 AI·로봇 역량 강화 프로그램으로 확장. 철강산업 DX 전환의 일환. 중후장대 산업의 <strong>\"지식정보 플랫폼 + HR 챗봇\"</strong> 결합 사례.",
-    "headline": "현대제철의 사내 AI 플랫폼 'HIP(Hyundai-steel Intelligence Platform)' — 2024-05 사내문서검색 + 경영지원챗봇 형태로 launch. 2025-10 임직원 AI·로봇 역량 강화 프로그램으로 확장. 철강산업 DX 전환의 일환. 중후장대 산업의 \"지식정보 플랫폼 + HR 챗봇\" 결합 사례.",
-    "summary_clean": "현대제철의 사내 AI 플랫폼 'HIP(Hyundai-steel Intelligence Platform)' — 2024-05 사내문서검색 + 경영지원챗봇 형태로 launch. 2025-10 임직원 AI·로봇 역량 강화 프로그램으로 확장. 철강산업 DX 전환의 일환.",
-    "problem": "<ul>\n<li><strong>Before</strong>: ✅ 임직원이 여러 영역의 업무 정보를 일일이 찾거나 업무 담당자를 확인해야 했음. sources/moneys-hyundai-steel-hip-launch-2024-05.md (직원 규모 수치 _미공개_ — 근거 미확보, 2026-09-27 grounding 점검)</li>\n<li><strong>Pain point</strong>: ✅ 임직원 업무 효율성 향상 — 사내 축적 지식정보 활용. sources/moneys-hyundai-steel-hip-launch-2024-05.md</li>\n<li><strong>Trigger</strong>: ❓ 미공개 — 소스는 DX(Digital Transformation) 맥락만 언급. sources/moneys-hyundai-steel-hip-launch-2024-05.md</li>\n</ul>",
-    "impact_summary": "중후장대 철강 제조의 사내 AI 플랫폼 reference — 매뉴얼·도면·정책 통합 검색.",
-    "consulting": "<ul>\n<li><strong>KR 중후장대 산업 reference</strong>:</li>\n<li>포스코·현대제철·세아 등 철강 클라이언트 제안서 직접 인용</li>\n<li>현대모비스 MoAI hyundai-mobis-moai-platform (자동차 부품)와 동일 패턴</li>\n<li><strong>2024 launch + 2025 확장</strong>: 한국 대기업 AI platform 진화 pattern reference (런치 → 확장)</li>\n</ul>",
-    "system": {
-      "AI 시스템 배치": "HIP — 현대제철이 개발한 사내 플랫폼, 사내문서검색 + 경영지원챗봇."
-    },
-    "data": {
-      "입력 데이터 소스": "사내 축적 지식정보·여러 영역의 업무 정보.  (문서 유형 세부 _미공개_)"
-    },
-    "model": {
-      "모델 유형": "생성형 AI (문서 검색·챗봇)."
-    },
-    "process_before": "✅ 임직원이 여러 영역의 업무 정보를 일일이 찾거나 업무 담당자를 확인해야 했음.  (직원 규모 수치 _미공개_ — 근거 미확보, 2026-09-27 grounding 점검) / Pain point: ✅ 임직원 업무 효율성 향상 — 사내 축적 지식정보 활용.  / Trigger: ❓ 미공개 — 소스는 DX(Digital Transformation) 맥락만 언급.",
-    "process_steps": [
-      "사내문서검색 — 생성형 AI 적용 지식정보 플랫폼.",
-      "경영지원챗봇 — HR 문의 포함 여부는 _미공개_.",
-      "2025-10 — 임직원 AI·로봇 역량 강화(AI·BIG DATA 페스티벌 4회, 131건 과제·33건 시상) — HIP 자체는 이 기사에 언급되지 않음."
     ]
   },
   {
@@ -981,6 +981,132 @@
     ]
   },
   {
+    "slug": "commonwealth-bank-ai-workforce",
+    "title": "Commonwealth Bank Australia — AI 역량 구축",
+    "page_type": "enterprise-ai",
+    "visibility": "public",
+    "case_type": "adoption",
+    "evidence_grade": "B",
+    "corroborated_by": 1,
+    "freshness": "fresh",
+    "depth": "partial",
+    "regulatory_exposure": [],
+    "kr_law": "",
+    "kr_union": "",
+    "kr_language": "",
+    "kr_vendor": "",
+    "primary_category": "Learning & Development",
+    "subcategory": "Skills & Capabilities",
+    "company": "Commonwealth Bank of Australia",
+    "industry": [
+      "finance",
+      "banking"
+    ],
+    "region": [
+      "apac"
+    ],
+    "employee_class": [
+      "all"
+    ],
+    "vendor": [
+      "Microsoft",
+      "OpenAI"
+    ],
+    "vendor_type": [
+      "foundation-model",
+      "point-solution"
+    ],
+    "ai_tech_type": [
+      "generative"
+    ],
+    "ai_tech_subtype": [
+      "summarization-qa"
+    ],
+    "confidence": 0.45,
+    "stage": "production",
+    "frequency": "daily",
+    "first_seen": "2025-07-01",
+    "last_confirmed": "2026-02-01",
+    "output": "50,000명 ChatGPT Enterprise 응답 + M365 Copilot 응답 (⚠️ 벤더 주장: 활성 사용자 10,000명) + ChatIT(Teams 기반 AI IT 지원) 응답 + ⚠️ 자사 보고: $90M(AUD) 3개년 Future Workforce Program의 스킬 개발·커리어 전환 지원 (AI 교육 30,000명+)",
+    "tags": [
+      "microsoft-copilot",
+      "ai-upskilling",
+      "future-workforce",
+      "australia",
+      "banking",
+      "openai",
+      "chatgpt-enterprise"
+    ],
+    "sources": [
+      "sources/microsoft-cba-copilot-case-study.md",
+      "sources/openai-cba-case-study.md",
+      "sources/cba-future-workforce-90m-2026.md",
+      "sources/bloomberg-cba-job-cuts-reversed-2025.md"
+    ],
+    "sources_resolved": [
+      {
+        "ref": "sources/microsoft-cba-copilot-case-study.md",
+        "slug": "microsoft-cba-copilot-case-study",
+        "title": "Commonwealth Bank of Australia invests in AI skills and Microsoft Copilot to drive innovation",
+        "publisher": "Microsoft",
+        "tier": "3",
+        "url": "https://www.microsoft.com/en/customers/story/24299-commonwealth-bank-of-australia-microsoft-365-copilot",
+        "resolved": true,
+        "legacy": false
+      },
+      {
+        "ref": "sources/openai-cba-case-study.md",
+        "slug": "openai-cba-case-study",
+        "title": "Commonwealth Bank of Australia builds AI fluency at scale",
+        "publisher": "OpenAI",
+        "tier": "3",
+        "url": "https://openai.com/index/commonwealth-bank-of-australia/",
+        "resolved": true,
+        "legacy": false
+      },
+      {
+        "ref": "sources/cba-future-workforce-90m-2026.md",
+        "slug": "cba-future-workforce-90m-2026",
+        "title": "Future workforce: CBA launches new skills and careers program",
+        "publisher": "Commonwealth Bank of Australia",
+        "tier": "4",
+        "url": "https://www.commbank.com.au/articles/newsroom/2026/02/future-workforce-media-release.html",
+        "resolved": true,
+        "legacy": false
+      },
+      {
+        "ref": "sources/bloomberg-cba-job-cuts-reversed-2025.md",
+        "slug": "bloomberg-cba-job-cuts-reversed-2025",
+        "title": "Australia’s Biggest Bank Reverses Plan to Replace Jobs With AI",
+        "publisher": "Bloomberg",
+        "tier": "2",
+        "url": "https://www.bloomberg.com/news/articles/2025-08-21/commonwealth-bank-reverses-job-cuts-decision-over-ai-chatbots",
+        "resolved": true,
+        "legacy": false
+      }
+    ],
+    "summary": "Commonwealth Bank of Australia(CBA)는 OpenAI ChatGPT Enterprise를 50,000명 직원에게 배포하고, Microsoft 365 Copilot 활성 사용자 10,000명을 확보하며 AI 역량 구축을 전사적으로 추진하고 있다. sources/microsoft-cba-copilot-case-study.md ⚠️ <strong>자사 보고</strong> 2026년 2월에는 $90M(호주 달러) 3개년 \"Future Workforce Program\"을 발표하여 직원 스킬 개발과 커리어 전환 지원을 목표로 한다. 다만 AI 챗봇으로 45명 고객 서비스 직원을 대체하려다 노조 압박으로 결정을 번복한 사례도 주목된다. sources/openai-cba-case-study.md sources/cba-future-workforce-90m-2026.md",
+    "headline": "Commonwealth Bank of Australia(CBA)는 OpenAI ChatGPT Enterprise를 50,000명 직원에게 배포하고, Microsoft 365 Copilot 활성 사용자 10,000명을 확보하며 AI 역량 구축을 전사적으로 추진하고 있다. ⚠️ 자사 보고 2026년 2월에는 $90M(호주 달러) 3개년 \"Future Workforce Program\"을 발표하여 직원 스킬 개발과 커리어 전환 지원을 목표로 한다. 다만 AI 챗봇으로 45명 고객 서비스 직원을 대체하려다 노조 압박으로 결정을 번복한 사례도 주목된다.",
+    "summary_clean": "Commonwealth Bank of Australia(CBA)는 OpenAI ChatGPT Enterprise를 50,000명 직원에게 배포하고, Microsoft 365 Copilot 활성 사용자 10,000명을 확보하며 AI 역량 구축을 전사적으로 추진하고 있다. 자사 보고 2026년 2월에는 $90M(호주 달러) 3개년 \"Future Workforce Program\"을 발표하여 직원 스킬 개발과 커리어 전환 지원을 목표로 한다. 다만 AI 챗봇으로 45명 고객 서비스 직원을 대체하려다 노조 압박으로 결정을 번복한 사례도 주목된다.",
+    "problem": "CBA는 오세아니아 최대 은행으로서 AI를 통한 운영 효율화와 동시에 대규모 AI 역량 구축이 필요했다. AI가 일부 업무를 자동화함에 따라 직원들의 역할 전환을 지원하고 AI 시대 경쟁력을 유지하는 것이 전략적 과제다.",
+    "impact_summary": "Before: _미공개 (Copilot 도입 전 반복 업무 소요 시간)_ → After: ⚠️ 벤더 주장 초기 도입자 16% 시간 절감, 10,000명 사용자의 84%가 \"Copilot 없이 일하기 싫다\" 응답. ⚠️ 자사 보고 $90M(AUD) 3개년 투자 발표, AI 교육 30,000명+.",
+    "consulting": "<ul>\n<li><strong>\"AI로 해고했다가 번복한\" 사례</strong>: CBA의 45명 감원 취소는 \"AI 도입 = 자동 감원\"이 아니라는 점과, 노동조합·직원 단체 협의 없이 진행하면 평판 리스크가 크다는 것을 보여주는 교과서적 반면교사. 클라이언트 AI 도입 거버넌스 설계 시 노조·공동 협의 단계를 반드시 포함시키는 근거로 활용.</li>\n<li><strong>$90M Future Workforce Program</strong>: AI 배포 비용 + 직원 역량 개발 투자를 동시에 발표하는 \"책임있는 AI 도입\" 프레임. 국내 기업의 AI 전환 발표 시 직원 영향 프로그램을 함께 패키징하는 커뮤니케이션 전략 참고.</li>\n<li><strong>Copilot 채택률 수치</strong>: \"84% 사용자가 Copilot 없이 돌아가기 싫다\"는 수치는 Microsoft 365 Copilot 도입 효과성의 강력한 레퍼런스 (단, 자사 보고임을 명시).</li>\n<li><strong>파생 질문</strong>: \"호주 금융 서비스 노조(FSU)의 AI 협상 패턴은 한국 금융 노조(전국금융산업노동조합)의 대응과 어떻게 비교될 수 있는가?\"</li>\n</ul>",
+    "system": {
+      "사용자 접점": "Fact Microsoft Teams (ChatIT)."
+    },
+    "data": {},
+    "model": {
+      "Foundation model": "Fact OpenAI GPT 기반(ChatGPT Enterprise), Microsoft AI(Copilot)."
+    },
+    "process_before": "전통적 IT 지원 프로세스, 수동 데이터 분석, 역량 개발 개인 주도. /",
+    "process_steps": [
+      "Fact ChatGPT Enterprise — 50,000명 배포로 AI 역량 구축.",
+      "벤더 주장 Microsoft 365 Copilot — 활성 사용자 10,000명. 10,000명 사용자의 84%가 \"Copilot 없이 돌아가기 싫다\"고 응답.",
+      "Fact ChatIT — Microsoft Teams 기반 AI IT 지원 어시스턴트 (Azure + Copilot Studio 기반).",
+      "Fact $90M(AUD) 3개년 Future Workforce Program 발표 (2026-02)."
+    ]
+  },
+  {
     "slug": "kogas-hybrid-genai-platform",
     "title": "한국가스공사 — 하이브리드 GenAI 플랫폼",
     "page_type": "enterprise-ai",
@@ -1022,7 +1148,7 @@
     "ai_tech_subtype": [
       "summarization-qa"
     ],
-    "confidence": 0.55,
+    "confidence": 0.45,
     "stage": "announced",
     "frequency": "daily",
     "first_seen": "2025-09-10",
@@ -1120,7 +1246,7 @@
       "summarization-qa",
       "text-generation"
     ],
-    "confidence": 0.55,
+    "confidence": 0.45,
     "stage": "pilot",
     "frequency": "daily",
     "first_seen": "2025-05-16",
@@ -1210,7 +1336,7 @@
     "ai_tech_subtype": [
       "summarization-qa"
     ],
-    "confidence": 0.55,
+    "confidence": 0.45,
     "stage": "production",
     "frequency": "daily",
     "first_seen": "2024-09-01",
@@ -1292,7 +1418,7 @@
     "case_type": "adoption",
     "evidence_grade": "B",
     "corroborated_by": 1,
-    "freshness": "fresh",
+    "freshness": "stale",
     "depth": "partial",
     "regulatory_exposure": [],
     "kr_law": "",
@@ -1325,7 +1451,7 @@
       "text-generation",
       "summarization-qa"
     ],
-    "confidence": 0.45,
+    "confidence": 0.35,
     "stage": "announced",
     "frequency": "daily",
     "first_seen": "2025-10-06",
@@ -1436,7 +1562,7 @@
     "ai_tech_subtype": [
       "summarization-qa"
     ],
-    "confidence": 0.35,
+    "confidence": 0.25,
     "stage": "production",
     "frequency": "daily",
     "first_seen": "2025-01-01",
@@ -1482,132 +1608,6 @@
     ]
   },
   {
-    "slug": "commonwealth-bank-ai-workforce",
-    "title": "Commonwealth Bank Australia — AI 역량 구축",
-    "page_type": "enterprise-ai",
-    "visibility": "public",
-    "case_type": "adoption",
-    "evidence_grade": "C",
-    "corroborated_by": 0,
-    "freshness": "fresh",
-    "depth": "partial",
-    "regulatory_exposure": [],
-    "kr_law": "",
-    "kr_union": "",
-    "kr_language": "",
-    "kr_vendor": "",
-    "primary_category": "Learning & Development",
-    "subcategory": "Skills & Capabilities",
-    "company": "Commonwealth Bank of Australia",
-    "industry": [
-      "finance",
-      "banking"
-    ],
-    "region": [
-      "apac"
-    ],
-    "employee_class": [
-      "all"
-    ],
-    "vendor": [
-      "Microsoft",
-      "OpenAI"
-    ],
-    "vendor_type": [
-      "foundation-model",
-      "point-solution"
-    ],
-    "ai_tech_type": [
-      "generative"
-    ],
-    "ai_tech_subtype": [
-      "summarization-qa"
-    ],
-    "confidence": 0.25,
-    "stage": "production",
-    "frequency": "daily",
-    "first_seen": "2025-07-01",
-    "last_confirmed": "2026-02-01",
-    "output": "50,000명 ChatGPT Enterprise 응답 + M365 Copilot 응답 (⚠️ 벤더 주장: 활성 사용자 10,000명) + ChatIT(Teams 기반 AI IT 지원) 응답 + ⚠️ 자사 보고: $90M(AUD) 3개년 Future Workforce Program의 스킬 개발·커리어 전환 지원 (AI 교육 30,000명+)",
-    "tags": [
-      "microsoft-copilot",
-      "ai-upskilling",
-      "future-workforce",
-      "australia",
-      "banking",
-      "openai",
-      "chatgpt-enterprise"
-    ],
-    "sources": [
-      "sources/microsoft-cba-copilot-case-study.md",
-      "sources/openai-cba-case-study.md",
-      "sources/cba-future-workforce-90m-2026.md",
-      "sources/bloomberg-cba-job-cuts-reversed-2025.md"
-    ],
-    "sources_resolved": [
-      {
-        "ref": "sources/microsoft-cba-copilot-case-study.md",
-        "slug": "microsoft-cba-copilot-case-study",
-        "title": "Commonwealth Bank of Australia invests in AI skills and Microsoft Copilot to drive innovation",
-        "publisher": "Microsoft",
-        "tier": "3",
-        "url": "https://www.microsoft.com/en/customers/story/24299-commonwealth-bank-of-australia-microsoft-365-copilot",
-        "resolved": true,
-        "legacy": false
-      },
-      {
-        "ref": "sources/openai-cba-case-study.md",
-        "slug": "openai-cba-case-study",
-        "title": "Commonwealth Bank of Australia builds AI fluency at scale",
-        "publisher": "OpenAI",
-        "tier": "3",
-        "url": "https://openai.com/index/commonwealth-bank-of-australia/",
-        "resolved": true,
-        "legacy": false
-      },
-      {
-        "ref": "sources/cba-future-workforce-90m-2026.md",
-        "slug": "cba-future-workforce-90m-2026",
-        "title": "Future workforce: CBA launches new skills and careers program",
-        "publisher": "Commonwealth Bank of Australia",
-        "tier": "4",
-        "url": "https://www.commbank.com.au/articles/newsroom/2026/02/future-workforce-media-release.html",
-        "resolved": true,
-        "legacy": false
-      },
-      {
-        "ref": "sources/bloomberg-cba-job-cuts-reversed-2025.md",
-        "slug": "bloomberg-cba-job-cuts-reversed-2025",
-        "title": "Australia’s Biggest Bank Reverses Plan to Replace Jobs With AI",
-        "publisher": "Bloomberg",
-        "tier": "2",
-        "url": "https://www.bloomberg.com/news/articles/2025-08-21/commonwealth-bank-reverses-job-cuts-decision-over-ai-chatbots",
-        "resolved": true,
-        "legacy": false
-      }
-    ],
-    "summary": "Commonwealth Bank of Australia(CBA)는 OpenAI ChatGPT Enterprise를 50,000명 직원에게 배포하고, Microsoft 365 Copilot 활성 사용자 10,000명을 확보하며 AI 역량 구축을 전사적으로 추진하고 있다. sources/microsoft-cba-copilot-case-study.md ⚠️ <strong>자사 보고</strong> 2026년 2월에는 $90M(호주 달러) 3개년 \"Future Workforce Program\"을 발표하여 직원 스킬 개발과 커리어 전환 지원을 목표로 한다. 다만 AI 챗봇으로 45명 고객 서비스 직원을 대체하려다 노조 압박으로 결정을 번복한 사례도 주목된다. sources/openai-cba-case-study.md sources/cba-future-workforce-90m-2026.md",
-    "headline": "Commonwealth Bank of Australia(CBA)는 OpenAI ChatGPT Enterprise를 50,000명 직원에게 배포하고, Microsoft 365 Copilot 활성 사용자 10,000명을 확보하며 AI 역량 구축을 전사적으로 추진하고 있다. ⚠️ 자사 보고 2026년 2월에는 $90M(호주 달러) 3개년 \"Future Workforce Program\"을 발표하여 직원 스킬 개발과 커리어 전환 지원을 목표로 한다. 다만 AI 챗봇으로 45명 고객 서비스 직원을 대체하려다 노조 압박으로 결정을 번복한 사례도 주목된다.",
-    "summary_clean": "Commonwealth Bank of Australia(CBA)는 OpenAI ChatGPT Enterprise를 50,000명 직원에게 배포하고, Microsoft 365 Copilot 활성 사용자 10,000명을 확보하며 AI 역량 구축을 전사적으로 추진하고 있다. 자사 보고 2026년 2월에는 $90M(호주 달러) 3개년 \"Future Workforce Program\"을 발표하여 직원 스킬 개발과 커리어 전환 지원을 목표로 한다. 다만 AI 챗봇으로 45명 고객 서비스 직원을 대체하려다 노조 압박으로 결정을 번복한 사례도 주목된다.",
-    "problem": "CBA는 오세아니아 최대 은행으로서 AI를 통한 운영 효율화와 동시에 대규모 AI 역량 구축이 필요했다. AI가 일부 업무를 자동화함에 따라 직원들의 역할 전환을 지원하고 AI 시대 경쟁력을 유지하는 것이 전략적 과제다.",
-    "impact_summary": "Before: _미공개 (Copilot 도입 전 반복 업무 소요 시간)_ → After: ⚠️ 벤더 주장 초기 도입자 16% 시간 절감, 10,000명 사용자의 84%가 \"Copilot 없이 일하기 싫다\" 응답. ⚠️ 자사 보고 $90M(AUD) 3개년 투자 발표, AI 교육 30,000명+.",
-    "consulting": "<ul>\n<li><strong>\"AI로 해고했다가 번복한\" 사례</strong>: CBA의 45명 감원 취소는 \"AI 도입 = 자동 감원\"이 아니라는 점과, 노동조합·직원 단체 협의 없이 진행하면 평판 리스크가 크다는 것을 보여주는 교과서적 반면교사. 클라이언트 AI 도입 거버넌스 설계 시 노조·공동 협의 단계를 반드시 포함시키는 근거로 활용.</li>\n<li><strong>$90M Future Workforce Program</strong>: AI 배포 비용 + 직원 역량 개발 투자를 동시에 발표하는 \"책임있는 AI 도입\" 프레임. 국내 기업의 AI 전환 발표 시 직원 영향 프로그램을 함께 패키징하는 커뮤니케이션 전략 참고.</li>\n<li><strong>Copilot 채택률 수치</strong>: \"84% 사용자가 Copilot 없이 돌아가기 싫다\"는 수치는 Microsoft 365 Copilot 도입 효과성의 강력한 레퍼런스 (단, 자사 보고임을 명시).</li>\n<li><strong>파생 질문</strong>: \"호주 금융 서비스 노조(FSU)의 AI 협상 패턴은 한국 금융 노조(전국금융산업노동조합)의 대응과 어떻게 비교될 수 있는가?\"</li>\n</ul>",
-    "system": {
-      "사용자 접점": "Fact Microsoft Teams (ChatIT)."
-    },
-    "data": {},
-    "model": {
-      "Foundation model": "Fact OpenAI GPT 기반(ChatGPT Enterprise), Microsoft AI(Copilot)."
-    },
-    "process_before": "전통적 IT 지원 프로세스, 수동 데이터 분석, 역량 개발 개인 주도. /",
-    "process_steps": [
-      "Fact ChatGPT Enterprise — 50,000명 배포로 AI 역량 구축.",
-      "벤더 주장 Microsoft 365 Copilot — 활성 사용자 10,000명. 10,000명 사용자의 84%가 \"Copilot 없이 돌아가기 싫다\"고 응답.",
-      "Fact ChatIT — Microsoft Teams 기반 AI IT 지원 어시스턴트 (Azure + Copilot Studio 기반).",
-      "Fact $90M(AUD) 3개년 Future Workforce Program 발표 (2026-02)."
-    ]
-  },
-  {
     "slug": "toshiba-microsoft-copilot-viva",
     "title": "Toshiba — Microsoft 365 Copilot + Viva Insights",
     "page_type": "enterprise-ai",
@@ -1615,7 +1615,7 @@
     "case_type": "adoption",
     "evidence_grade": "C",
     "corroborated_by": 0,
-    "freshness": "fresh",
+    "freshness": "stale",
     "depth": "full",
     "regulatory_exposure": [],
     "kr_law": "",
@@ -1650,7 +1650,7 @@
       "text-generation",
       "recommendation-ranking"
     ],
-    "confidence": 0.25,
+    "confidence": 0.15,
     "stage": "production",
     "frequency": "daily",
     "first_seen": "2024-05-01",

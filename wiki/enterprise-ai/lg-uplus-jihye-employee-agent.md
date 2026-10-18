@@ -22,12 +22,12 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2025-05-16
 last_confirmed: 2026-04-01
-confidence: 0.55
+confidence: 0.45
 evidence_grade: B
 corroborated_by: 1
 freshness: fresh
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/etnews-lg-uplus-cio-ai-agent-interview-2025-05.md]
 related_usecases:

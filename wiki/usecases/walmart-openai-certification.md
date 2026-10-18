@@ -24,12 +24,12 @@ kr_vendor: 미확인 (국내 파트너 확인 필요; 디바이스만 삼성 Gal
 frequency: annual
 first_seen: 2025-09-01
 last_confirmed: 2026-04-01
-confidence: 0.8
+confidence: 0.7
 evidence_grade: A
-corroborated_by: 2
+corroborated_by: 3
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/hr-brew-accenture-walmart-workforce-ai-2025-10.md, sources/hrdive-walmart-openai-certification-2025-09.md, sources/hrdive-walmart-openai-certification-2025-09.md, sources/retaildive-walmart-openai-certification-2025-09.md]
 related_usecases:
@@ -113,7 +113,7 @@ Walmart가 OpenAI와 파트너십 — 미국 frontline + 사무직 직원용 **�
 
 ## Contradictions
 
-> [!note] 2026-09-27 grounding — [[sources/hrdive-walmart-openai-certification-2025-09]]와 [[sources/retaildive-walmart-openai-certification-2025-09]]는 동일 Industry Dive 기사(근거 1건으로 계산; frontmatter `sources`에 hrdive 항목이 중복 등재됨 — 정리 필요). [[sources/hr-brew-accenture-walmart-workforce-ai-2025-10]]는 스냅샷 unavailable. '무료 access', 다층 커리큘럼, reskilling 인원, Me@Walmart 디바이스 수, 직원 수(frontline·전사), ChatGPT Enterprise·Google Gemini 서술은 인용 소스에 없어 `_미공개_`/삭제. 소스는 2026년 제공 '예정'만 확인 → stage를 announced로 정정.
+> [!note] 2026-09-27 grounding — [[sources/hrdive-walmart-openai-certification-2025-09]]와 [[sources/retaildive-walmart-openai-certification-2025-09]]는 동일 Industry Dive 기사(근거 1건으로 계산; frontmatter `sources`에 hrdive 항목이 중복 등재됨 — 정리 필요). [[sources/hr-brew-accenture-walmart-workforce-ai-2025-10]]는 2026-10-19 raw 확보, 단 OpenAI 인증·무료 access·reskilling 인원·디바이스 수 서술은 없음(McMillon의 headcount 유지 발언만) → 복구 항목 없음. '무료 access', 다층 커리큘럼, reskilling 인원, Me@Walmart 디바이스 수, 직원 수(frontline·전사), ChatGPT Enterprise·Google Gemini 서술은 인용 소스에 없어 `_미공개_`/삭제. 소스는 2026년 제공 '예정'만 확인 → stage를 announced로 정정.
 
 ## Consulting Angle
 

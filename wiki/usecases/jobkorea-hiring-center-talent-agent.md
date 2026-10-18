@@ -24,12 +24,12 @@ kr_vendor: 잡코리아·웍스피어 자체 구축
 frequency: daily
 first_seen: 2026-03-31
 last_confirmed: 2026-04-01
-confidence: 0.8
+confidence: 0.7
 evidence_grade: A
 corroborated_by: 2
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/inews24-jobkorea-ai-agent-survey-2026-04.md, sources/zdnet-korea-jobkorea-hiring-center-2026-03.md]
 related_usecases:

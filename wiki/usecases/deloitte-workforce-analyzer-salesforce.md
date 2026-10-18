@@ -29,7 +29,7 @@ evidence_grade: C
 corroborated_by: 0
 freshness: stale
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/deloitte-pr-human-capital-ai-suite-2025-06.md, sources/prnewswire-deloitte-human-capital-ai-suite-2025-06.md]
 related_usecases:

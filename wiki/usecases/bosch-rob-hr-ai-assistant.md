@@ -29,7 +29,7 @@ evidence_grade: A
 corroborated_by: 2
 freshness: stale
 depth: full
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources:
   - sources/hrgrapevine-bosch-rob-2025-01.md
   - sources/cognigy-bosch-case-study.md

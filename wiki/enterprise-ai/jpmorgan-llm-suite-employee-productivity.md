@@ -27,7 +27,7 @@ evidence_grade: A
 corroborated_by: 4
 freshness: stale
 depth: full
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources:
   - sources/cnbc-jpmorgan-llm-suite-2024-08.md
   - sources/ciodive-jpmorgan-llm-suite-2024-09.md

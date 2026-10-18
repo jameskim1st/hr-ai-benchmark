@@ -29,7 +29,7 @@ evidence_grade: A
 corroborated_by: 2
 freshness: fresh
 depth: full
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources:
   - sources/moel-ai-portal-2024-11.md

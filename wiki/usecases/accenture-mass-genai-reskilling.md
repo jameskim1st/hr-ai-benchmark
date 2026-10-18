@@ -26,10 +26,10 @@ first_seen: 2022-11-01
 last_confirmed: 2026-03-01
 confidence: 0.7
 evidence_grade: A
-corroborated_by: 3
+corroborated_by: 4
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/accenture-reinvention-genai-report-2024-01.md, sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md, sources/fortune-accenture-sweet-ai-required-promotion-2026-03.md, sources/hr-brew-accenture-walmart-workforce-ai-2025-10.md]
 related_usecases:
@@ -115,7 +115,7 @@ flowchart LR
 ### 기대효과 요약
 Before: _Before 수치 미공개_ → After: ⚠️ 자사 보고 550,000명 GenAI 기초 재스킬링 완료; AI/data 인력 40,000(2023) → 77,000(2025). 학습 성과(활용률·생산성) 수치는 _미공개_.
 
-- ✅ Tier 2 cross-reference: CNBC 2025-09 + Fortune 2026-03 (HR Brew 2025-10은 원문 미확보로 인용 불가)
+- ✅ Tier 2 cross-reference: CNBC 2025-09 + Fortune 2026-03 + HR Brew 2025-10 (2025년 약 22,000명 감원, AI·데이터 인력 약 77,000명, 직원 779,000명, GenAI 교육 "more than half a million", $1B 절감 재투자) [[sources/hr-brew-accenture-walmart-workforce-ai-2025-10.md]]
 - ⚠️ 자사 보고: 550,000명 trained. [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]]
 - ⚠️ 자사 보고: AI/data 인력 40,000 → 77,000. [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]]
 - ⚠️ 자사 보고: $865M 6개월 optimization 프로그램, $1B+ 절감 재투자 계획 (L&D 투자액 아님). [[sources/cnbc-accenture-exiting-staff-ai-reskilling-2025-09.md]]
@@ -129,7 +129,9 @@ Before: _Before 수치 미공개_ → After: ⚠️ 자사 보고 550,000명 Gen
 
 ## Contradictions
 
-> [!note] 2026-09-27 grounding — 종전 본문의 "2022-11 시점 30명 trained", "연간 ~$1B L&D 투자", "+93퍼센트 환산", "CIO Dive 교차 확인", LearnVantage·Udacity·Stanford Online 연동 서술은 인용 소스 4건의 raw 어디에도 없어 제거·_미공개_ 처리. CNBC의 $1B는 optimization 절감액이지 L&D 투자액이 아님. HR Brew 소스는 원문 미확보(403)로 수치 인용 불가. accenture-reinvention-genai-report-2024-01은 Accenture 자체 리서치(1,500명 C-suite 설문)이며 "Gartner methodology" 표기는 근거 없음.
+> [!note] 2026-09-27 grounding — 종전 본문의 "2022-11 시점 30명 trained", "연간 ~$1B L&D 투자", "+93퍼센트 환산", "CIO Dive 교차 확인", LearnVantage·Udacity·Stanford Online 연동 서술은 인용 소스 4건의 raw 어디에도 없어 제거·_미공개_ 처리. CNBC의 $1B는 optimization 절감액이지 L&D 투자액이 아님. HR Brew 소스는 2026-10-19 원문 확보.
+
+> 2026-10-19 원문 확보 후 복구: HR Brew raw 확보로 Tier 2 교차 확인에 추가(22,000명 감원·77,000명 AI/data 인력·779,000명·50만 명+ 교육·$1B 절감 재투자). "2022-11 30명"·"연간 $1B L&D 투자"는 raw에 없어 _미공개_ 유지 (raw의 $1B는 절감액이며 L&D 투자액 아님) accenture-reinvention-genai-report-2024-01은 Accenture 자체 리서치(1,500명 C-suite 설문)이며 "Gartner methodology" 표기는 근거 부재.
 
 ## Consulting Angle
 

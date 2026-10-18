@@ -31,7 +31,7 @@ evidence_grade: A
 corroborated_by: 2
 freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/gloat-schneider-electric-case-study-2026-09.md, sources/gloat-schneider-electric-career-agility-2022-02.md, sources/bersin-schneider-unilever-talent-marketplace-2019-07.md, sources/shrm-schneider-electric-chro-nontraditional-2025.md]
 related_usecases:
@@ -117,7 +117,7 @@ flowchart LR
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-⚠️ 벤더 주장: 360,000+ 시간의 unlocked capacity, $15M+ 생산성/비용 절감 ([[sources/gloat-schneider-electric-case-study-2026-09]] — 게이팅 자료, 원문 미확인). 기존 퇴직 사유의 50%가 "내부 기회 부족"이었으나 talent marketplace로 개선 ([[sources/gloat-schneider-electric-career-agility-2022-02]]).
+⚠️ 벤더 주장: 360,000+ 시간의 unlocked capacity, $15M+ 생산성/비용 절감 ([[sources/gloat-schneider-electric-case-study-2026-09]] — 게이팅 자료, 원문 미확인). 기존 퇴직 사유의 50%가 "내부 기회 부족"이었으나 talent marketplace로 개선 ([[sources/gloat-schneider-electric-career-agility-2022-02]]; 게이팅 case study 랜딩 페이지도 동일 문구 "50% of employees who left Schneider stated that their reason for leaving was a lack of visibility and access to career opportunities" [[sources/gloat-schneider-electric-case-study-2026-09]]).
 
 | 지표 | 값 | 출처 | 성격 |
 |---|---|---|---|
@@ -146,6 +146,8 @@ flowchart LR
 > [!contradiction] 퇴직 사유 비율·직원 수: Bersin 2019는 **47%** 자발적 퇴직자·**140,000** 직원 ([[sources/bersin-schneider-unilever-talent-marketplace-2019-07]]), Gloat 2022 블로그는 **nearly 50%**·**135,000+** ([[sources/gloat-schneider-electric-career-agility-2022-02]]). 측정 시점 차이로 보이나 확인 불가. 상태: noted
 
 > [!note] 2026-09-27 grounding — 현재 등록률(전사·NA)·gig/mentor 매칭 건수·내부 이동 증가율·"41 capability" 서술은 인용 소스 어디에도 없어 `_미공개_`로 교체. 360,000+ 시간·$15M+는 Gloat 게이팅 case study가 원출처로 추정되나 스냅샷 unavailable — 벤더 주장·원문 미확인으로 유지. Gloat career-agility 블로그 실제 발행일은 2022-02-09.
+
+> 2026-10-19 원문 확보 후 복구: Gloat 게이팅 case study의 랜딩 페이지 raw 확보(partial). 랜딩 문구의 퇴직자 50% 서술을 Impact 요약에 보조 인용으로 추가. 360,000+ 시간·$15M+·2020-04 big bang은 랜딩 페이지에 없어 원문 미확인 표기 유지
 
 ## Consulting Angle
 

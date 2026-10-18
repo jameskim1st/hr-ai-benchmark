@@ -31,7 +31,7 @@ evidence_grade: B
 corroborated_by: 1
 freshness: stale
 depth: full
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/paradox-nestle-case-study-2026-09.md, sources/emerj-ai-at-nestle-2024-08.md]
 related_usecases:

@@ -24,12 +24,12 @@ kr_vendor: 미확인 (본 페이지 언급 없음; 국내 SAP 파트너는 자�
 frequency: daily
 first_seen: 2025-10-01
 last_confirmed: 2026-04-15
-confidence: 0.55
+confidence: 0.45
 evidence_grade: B
 corroborated_by: 1
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources:
   - sources/sap-1h-2026-release-2026-04.md

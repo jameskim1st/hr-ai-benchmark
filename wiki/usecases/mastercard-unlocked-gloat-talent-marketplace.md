@@ -29,7 +29,7 @@ evidence_grade: A
 corroborated_by: 2
 freshness: fresh
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/gloat-mastercard-case-study-2023.md, sources/mastercard-ai-culture-story-2025.md, sources/bersin-schneider-unilever-talent-marketplace-2019-07.md, sources/bersin-gloat-mastercard-unlocked-case-study-2022.md]
 related_usecases:

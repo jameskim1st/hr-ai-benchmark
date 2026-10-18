@@ -29,7 +29,7 @@ evidence_grade: A
 corroborated_by: 2
 freshness: fresh
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/cnbc-ibm-ai-predict-95-percent-quit-2019-04.md, sources/fortune-ibm-algorithm-pay-raise-2019-07.md]
 related_usecases:

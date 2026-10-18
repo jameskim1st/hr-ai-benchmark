@@ -29,7 +29,7 @@ evidence_grade: A
 corroborated_by: 3
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources:
   - sources/enterprisetimes-lloyds-workday-genai-2024-11.md
   - sources/unleash-lloyds-skills-ai-2025.md

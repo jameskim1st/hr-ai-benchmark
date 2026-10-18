@@ -26,10 +26,10 @@ first_seen: 2024-04-24
 last_confirmed: 2025-06-27
 confidence: 0.6
 evidence_grade: A
-corroborated_by: 2
+corroborated_by: 3
 freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources:
   - sources/unleash-moderna-hr-it-merger-2025-06.md
@@ -69,7 +69,7 @@ Moderna는 OpenAI ChatGPT Enterprise 위에 **"Ask HR"이라는 centralized 커�
   5. Franklin 인용 목적: *"minimizes wait times and maximizes response quality"*
 - **Human-in-the-loop 지점**: ❓ 미공개. 자동 라우팅이 몇 % 정확한지, 실패 시 인간 HR에게 fallback되는지 여부 공개 안 됨.
 - **Trigger & Frequency**: ✅ 일상 직원 질문 기반 (frequency: daily). ✅ 전사 평균 사용자당 주 120 ChatGPT Enterprise 대화 ([[constellation-moderna-chatgpt-enterprise-2024-04]]) — 다만 이 수치는 ChatGPT Enterprise 전체 대화량이며 **Ask HR만의 내역은 분리 공개되지 않음**.
-- **Scope of autonomy**: "routing + response" 수준. "take action"(실제 HR 트랜잭션 실행) 권한 부여 여부는 ❓ 미공개.
+- **Scope of autonomy**: "routing + response" 수준. ✅ Moderna HR(Hem Patel, VP HR business partner)은 2025-06 시점 IBM식 agent를 아직 쓰지 않으며 "agents actually doing work as opposed to just answering as an interface"를 near-future vision으로 언급 [[sources/hr-brew-ibm-moderna-2025-06]]. 따라서 "take action" 권한은 현재 없음. ⚠️ 자사 보고: GPT 도입으로 HR 팀의 이메일·서비스 티켓 감소 (수치 없음) [[sources/hr-brew-ibm-moderna-2025-06]]
 
 ```mermaid
 flowchart LR
@@ -209,6 +209,8 @@ _범례: 녹색 = Fact. 노랑/점선 = 존재는 확인되나 구체 운영 구
   2. OpenAI 기반이라는 점은 data residency·sovereign cloud 요구가 강한 공공·금융 고객에는 **부적합할 가능성**
 
 ## Contradictions
+
+> 2026-10-19 원문 확보 후 복구: HR Brew 2025-06 raw 확보. A 섹션 Scope of autonomy의 "take action 권한 여부 미공개"를 Patel 발언(agent 미사용, interface 수준, agentic은 near-future vision)으로 복구. 라우팅 정확도·deflection 수치는 raw에 없어 _미공개_ 유지
 
 _없음._ 소스 간 수치·주장 충돌은 발견되지 않음. GPT 수(750→3,000+)는 14개월에 걸친 시계열 성장이므로 contradiction 아님.
 

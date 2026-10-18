@@ -24,12 +24,12 @@ kr_vendor: 자체 구축 (SK하이닉스 internal, 영상면접 플랫폼 벤더
 frequency: annual
 first_seen: 2025-09-16
 last_confirmed: 2026-04-01
-confidence: 0.8
+confidence: 0.7
 evidence_grade: A
 corroborated_by: 2
 freshness: fresh
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/ebn-sk-hynix-ask-ai-interview-2025-09.md, sources/nate-ebn-sk-hynix-ask-ai-interview-2025-09.md]
 related_usecases:

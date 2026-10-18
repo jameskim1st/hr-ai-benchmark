@@ -29,7 +29,7 @@ evidence_grade: B
 corroborated_by: 1
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/ibm-case-study-hr-eloa-charlie-2023-12.md, sources/ibm-case-study-hr-eloa-charlie-2023-12.md, sources/intelligenthq-ibm-charlie-watsonx.md, sources/intelligenthq-ibm-charlie-watsonx.md]
 related_usecases:

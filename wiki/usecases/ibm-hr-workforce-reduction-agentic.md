@@ -24,12 +24,12 @@ kr_vendor: 해당 없음 (자체 구축)
 frequency: annual
 first_seen: 2025-05-01
 last_confirmed: 2026-02-12
-confidence: 0.7
+confidence: 0.55
 evidence_grade: A
-corroborated_by: 3
+corroborated_by: 4
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/entrepreneur-ibm-ceo-ai-replaced-hr-staff-2025-05.md, sources/forbes-ibm-replaces-hundreds-hr-ai-2025-05.md, sources/hr-asia-ibm-8000-layoff-rehire-2025-05.md, sources/hrexecutive-ibm-chro-time-in-the-sun-2025-09.md]
 related_usecases:
@@ -41,7 +41,7 @@ related_vendors: []
 
 ## Summary
 
-2025-05 IBM CEO Arvind Krishna의 WSJ 인터뷰(2차 전달): AI가 **"several hundred" HR 직원의 업무**를 대체했으나 IBM의 총 고용은 오히려 확대 — 절감 재원을 소프트웨어 엔지니어링·마케팅·영업 등 "critical thinking" 직무에 투자 [[sources/entrepreneur-ibm-ceo-ai-replaced-hr-staff-2025-05]]. Forbes(contributor): 일상 HR 업무의 94%를 AI가 처리 [[sources/forbes-ibm-replaces-hundreds-hr-ai-2025-05]]. CHRO LaMoreaux(HR Executive 2025-09 키노트): HR 운영 예산 40% 감소, AskHR 연 11.5M 트랜잭션·직원 질문 94% 시스템 내 처리, 매니저 100%·임원 99% 채택 [[sources/hrexecutive-ibm-chro-time-in-the-sun-2025-09]]. "감원"이 아닌 "재배치 + 재투자" 패러다임의 reference. 기존 "전사 8,000명 layoff(~3%)"·"4년간"·"a couple hundred" 표현은 인용 소스 raw에서 확인되지 않아 수정·_미공개_ 처리 (2026-09-27 grounding 점검; HR Asia 기사는 raw 미확보).
+2025-05 IBM CEO Arvind Krishna의 WSJ 인터뷰(2차 전달): AI가 **"several hundred" HR 직원의 업무**를 대체했으나 IBM의 총 고용은 오히려 확대 — 절감 재원을 소프트웨어 엔지니어링·마케팅·영업 등 "critical thinking" 직무에 투자 [[sources/entrepreneur-ibm-ceo-ai-replaced-hr-staff-2025-05]]. Forbes(contributor): 일상 HR 업무의 94%를 AI가 처리 [[sources/forbes-ibm-replaces-hundreds-hr-ai-2025-05]]. CHRO LaMoreaux(HR Executive 2025-09 키노트): HR 운영 예산 40% 감소, AskHR 연 11.5M 트랜잭션·직원 질문 94% 시스템 내 처리, 매니저 100%·임원 99% 채택 [[sources/hrexecutive-ibm-chro-time-in-the-sun-2025-09]]. "감원"이 아닌 "재배치 + 재투자" 패러다임의 reference. HR Asia(WSJ 2차 보도): 2023년 nearly 8,000명 감원, "primarily from its Human Resources division" [[sources/hr-asia-ibm-8000-layoff-rehire-2025-05]] (Entrepreneur의 "several hundred" HR 직원과 규모 표현 상충, Contradictions 참조). "~3%"·"4년간"·"a couple hundred" 표현은 인용 소스 raw에 없어 _미공개_ 유지 (2026-09-27 grounding 점검, 2026-10-19 HR Asia raw 확보 후 8,000명만 복구).
 
 ## Problem / Why (도입 배경)
 
@@ -61,8 +61,8 @@ related_vendors: []
   2. 복잡한 요청은 숙련 전문가에게 funneling [[sources/hrexecutive-ibm-chro-time-in-the-sun-2025-09]]
   3. AI가 several hundred HR 직원의 업무를 대체 [[sources/entrepreneur-ibm-ceo-ai-replaced-hr-staff-2025-05]]
   4. 절감 재원을 소프트웨어 엔지니어링·마케팅·영업 채용에 재투자 → 총 고용 확대 [[sources/entrepreneur-ibm-ceo-ai-replaced-hr-staff-2025-05]]
-  5. 전사 layoff 규모: _미공개 (not disclosed)_ — 기존 8,000명 수치는 인용 소스 raw에 없음(HR Asia raw 미확보)
-- **HITL**: _미공개 (not disclosed)_ — "매니저 최종 결정·HR strategy team 변화관리" 서술은 소스에 없음
+  5. 감원 규모: 2023년 nearly 8,000명, HR 부문 중심 (HR Asia, WSJ 2차 보도) [[sources/hr-asia-ibm-8000-layoff-rehire-2025-05]]; 전사 대비 비율 _미공개_
+- **HITL**: AskHR 질의의 약 6%는 사람 개입 필요 (HR Asia) [[sources/hr-asia-ibm-8000-layoff-rehire-2025-05]]; "매니저 최종 결정·HR strategy team 변화관리" 서술은 소스에 없어 _미공개_
 
 ### F. Diagrams (도식)
 
@@ -100,7 +100,7 @@ flowchart TB
 - **제공 방식**: _미공개 (not disclosed)_
 - **커스터마이징 기법**: _미공개 (not disclosed)_
 - **Orchestration 프레임워크**: _미공개 (not disclosed)_
-- **평가·가드레일**: ⚠️ 자사 보고: 직원 질문 94% 시스템 내 처리 [[sources/hrexecutive-ibm-chro-time-in-the-sun-2025-09]]; 전환 초기 eNPS -35를 감내했다는 LaMoreaux 발언 [[sources/hrexecutive-ibm-chro-time-in-the-sun-2025-09]]; 이후 NPS 수치 _미공개_
+- **평가·가드레일**: ⚠️ 자사 보고: 직원 질문 94% 시스템 내 처리 [[sources/hrexecutive-ibm-chro-time-in-the-sun-2025-09]]; 전환 초기 eNPS -35를 감내했다는 LaMoreaux 발언 [[sources/hrexecutive-ibm-chro-time-in-the-sun-2025-09]]; 이후 NPS는 -35에서 +74로 상승 (HR Asia, 기간 "over several years") [[sources/hr-asia-ibm-8000-layoff-rehire-2025-05]]
 
 ### E. Organization & Team (조직·팀 구조)
 
@@ -119,7 +119,7 @@ HR ops 자동화로 several hundred HR 직원 업무 대체 + HR 운영 예산 4
 
 - **Before → After (자사 보고)**:
   - HR 직원 업무 대체: several hundred [[sources/entrepreneur-ibm-ceo-ai-replaced-hr-staff-2025-05]] (구체 인원·재배치 비율 _미공개_)
-  - 전사 layoff: _미공개_ (기존 8,000명·~3% 수치는 인용 소스 raw에 없음)
+  - 감원 규모: 2023년 nearly 8,000명, HR 부문 중심 [[sources/hr-asia-ibm-8000-layoff-rehire-2025-05]] (WSJ 2차 보도; "~3%" 환산은 raw에 없어 _미공개_)
   - HR 운영 예산: -40% [[sources/hrexecutive-ibm-chro-time-in-the-sun-2025-09]] (기간 _미공개_ — 기존 "4년간"은 기사에 없음)
   - 총 고용: 축소 아닌 **확대** [[sources/entrepreneur-ibm-ceo-ai-replaced-hr-staff-2025-05]]
   - 일상 HR 업무 AI 처리: 94% [[sources/forbes-ibm-replaces-hundreds-hr-ai-2025-05]]; 직원 질문 시스템 내 처리 94% [[sources/hrexecutive-ibm-chro-time-in-the-sun-2025-09]]
@@ -136,6 +136,10 @@ HR ops 자동화로 several hundred HR 직원 업무 대체 + HR 운영 예산 4
 ## Contradictions
 
 > [!note] 2026-09-27 grounding — (1) "전사 8,000명 layoff(~3% workforce)"는 인용 소스 raw 어디에도 없음(HR Asia 기사는 403으로 raw 미확보) → _미공개_. (2) "HR budget 4년간 40% 감소"의 "4년간"은 HR Executive 기사에 없음 → 기간 삭제. (3) "a couple hundred"는 Entrepreneur(WSJ 2차) 원문 "several hundred"로 수정. (4) "200명/전체 직원" 비율 환산·"200명"은 소스가 인원을 특정하지 않아 삭제. (5) B~D의 Workday/Salesforce/Coupa·Granite·AWS·TechXchange·NPS +74·4개 도메인 routing 서술은 인용 소스에 없어 _미공개_. Forbes의 "$3.5B 생산성"은 IBM이 아닌 다른 기업 CTO 인용이므로 미사용.
+
+> 2026-10-19 원문 확보 후 복구: HR Asia raw 확보. 2023년 nearly 8,000명 감원(HR 부문 중심), AskHR NPS -35→+74, 질의 약 6% 사람 개입을 복구. "~3%"·"4년간"·"a couple hundred"·"200명"은 raw에 없어 _미공개_ 유지. HR Asia는 "$3.5 billion boost in productivity"를 AskHR 성과로 적었으나 Forbes 원문은 타 기업 CTO 인용이므로 계속 미사용
+
+> [!contradiction] 감원 규모 표현 상충: Entrepreneur(WSJ 2차)는 AI가 "several hundred" HR 직원의 업무를 대체했다고 전하고 [[sources/entrepreneur-ibm-ceo-ai-replaced-hr-staff-2025-05]], HR Asia(WSJ 2차)는 2023년 nearly 8,000명을 "primarily from its Human Resources division"에서 감원했다고 보도 [[sources/hr-asia-ibm-8000-layoff-rehire-2025-05]]. 상태: unresolved. WSJ 원문 확보 전까지 "several hundred HR 직원 업무 대체"를 기본 표현으로 유지
 
 ## Consulting Angle
 

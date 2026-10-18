@@ -31,7 +31,7 @@ evidence_grade: A
 corroborated_by: 3
 freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/aihr-institute-siemens-hr-ai-2025.md, sources/misqe-siemens-reskilling-digital-learning-2025.md, sources/hrkatha-siemens-india-workforce-ai-2025-10.md, sources/servicenow-siemens-case-study.md, sources/wef-siemens-reskilling-revolution-case.md]
 related_usecases:
@@ -72,7 +72,7 @@ Siemens는 인간 중심·상향식 접근으로 디지털 러닝 기반 재·�
 
 ### B. System & Infrastructure (시스템·인프라)
 
-- **Core HRIS**: _미공개 (not disclosed)_ — GBS 서비스 포털은 ⚠️ 벤더 사례: ServiceNow ([[sources/servicenow-siemens-case-study]] — 스냅샷 unavailable, 원문 미확인; [[siemens-servicenow-hr-gbs]] 참조)
+- **Core HRIS**: _미공개 (not disclosed)_ — GBS 서비스는 ⚠️ 벤더 사례: ServiceNow HR Service Delivery·App Engine·Integration Hub ([[sources/servicenow-siemens-case-study]], 2026-10-19 원문 확인; [[siemens-servicenow-hr-gbs]] 참조)
 - **AI 시스템 배치**: ⚠️ 자사 보고: My Learning World (2020 출시, 개인화 학습 경로) + AI 기반 채용·내부 이동 포털 ([[sources/hrkatha-siemens-india-workforce-ai-2025-10]] — Siemens India 인터뷰); 학습 기회 수 _미공개_
 - **배포 환경**: _미공개 (not disclosed)_
 - **연동·통합**: _미공개 (not disclosed)_
@@ -132,6 +132,7 @@ Siemens는 인간 중심·상향식 접근으로 디지털 러닝 기반 재·�
 ## Contradictions
 
 > [!note] 2026-09-27 grounding — 기존 본문의 리스킬링 대상 인원·내부 이동 증가율·학습 기회 수·'41 capability'·'Future Skills Initiative' 명칭은 인용 소스 5건 어디에도 없음(AIHR Institute 글은 일반론, MISQE는 초록만, HRKatha는 India 한정, ServiceNow PDF는 unavailable). 모두 `_미공개_`로 교체. 정부 co-financing 25%는 [[sources/wef-siemens-reskilling-revolution-case]] 확인. frontmatter `output`의 학습 기회 수·'41 capability'도 동일 문제 — 재조사(/hr-research) 필요.
+> 2026-10-19 원문 확보 후 복구: [[sources/servicenow-siemens-case-study]] PDF 원문(Jina) 확인으로 B의 ServiceNow 인용에서 '원문 미확인' 제거. PDF는 GBS 서비스 운영 사례(2023-02)로 리스킬링 대상 인원·내부 이동·학습 기회 수가 없어 본 페이지 _미공개_ 항목 복구 없음
 
 ## Consulting Angle
 

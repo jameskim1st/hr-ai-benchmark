@@ -24,12 +24,12 @@ kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-04-15
 last_confirmed: 2025-04-15
-confidence: 0.05
-evidence_grade: D
+confidence: 0.15
+evidence_grade: C
 corroborated_by: 0
-freshness: unverified
+freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources:
   - sources/degreed-ericsson-lens-2025.md
 related_usecases:
@@ -47,7 +47,7 @@ Ericsson (통신 인프라·장비, 스웨덴/글로벌)은 Degreed의 LXP 플�
 - **Before (baseline)**: ❓ baseline 미공개 — 도입 전 AI 역량 보유 인원·학습 체계는 소스에 없음
 - **Pain point**: _미공개 (not disclosed)_ — Degreed는 Ericsson을 "skills-first AI strategy"의 대표 고객으로 인용할 뿐 pain point를 기술하지 않음 [[sources/degreed-ericsson-lens-2025]]
 - **Trigger**: _미공개 (not disclosed)_
-- 주의: 유일한 인용 소스의 raw 스냅샷이 확보되지 않음(BusinessWire 403) — 본 페이지의 모든 사실은 source 페이지 요약(Degreed 마이크로사이트 기반)에 의존
+- 주의: 유일한 인용 소스의 raw(BusinessWire LENS 2025 보도자료)는 2026-10-19 확보. 단 raw에서 Ericsson은 Maestro early access 고객명으로만 등장하며, 30,000명+ 수치와 플랫폼 metric은 Degreed 마이크로사이트(스냅샷 미확보) 기준
 
 ## Solution Architecture
 
@@ -113,6 +113,8 @@ note: 30,000명 수치는 Degreed가 Ericsson 사례로 인용한 것이며, Eri
 ## Contradictions
 
 > [!note] 2026-09-27 grounding — 기존 A~C 섹션의 "프로필 활성화율", "월 재방문율", "5년 전 300명 과학자 한정 LMS", "Career Hub talent marketplace", "AI nudge", "Open Library PT·ES·FR·DE" 서술은 유일한 인용 소스(source 페이지 요약)에 없어 삭제·_미공개_ 처리. 인용 소스의 raw 스냅샷은 BusinessWire 403으로 미확보 — 30,000+ 수치도 source 페이지 요약(Degreed 마이크로사이트)에만 근거.
+
+> 2026-10-19 원문 확보 후 복구: 복구 항목 없음. BusinessWire raw 확보 결과 Ericsson은 "More than 40 customers have requested early access for Degreed Maestro, including Bayer AG, Ericsson, and International Motors" 1회 언급뿐. 30,000명+, 4주→2주, 6~7개월→수일, Open Library 350+/6개월 갱신은 raw에 없음(마이크로사이트 기준 유지, raw 근거 없음). raw의 Open Library는 "500 deeply curated pathways" 계획으로 기술되어 350+와 상이
 
 ## Consulting Angle
 

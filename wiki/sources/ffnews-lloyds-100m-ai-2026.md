@@ -9,8 +9,9 @@ independent: true
 publication_date: 2026-01
 ingested_at: 2026-09-27
 raw: raw/articles/2026-10-19-ffnews-lloyds-100m-ai-2026.md
-snapshot_quality: full
+snapshot_quality: unavailable
 supports: [lloyds-banking-workday-genai-hr]
+snapshot_note: "2026-10-19 Aside 재시도: 페이지 삭제(Not Found 목록만 수신)"
 ---
 # Lloyds Banking Group Expects Over £100 Million in Value From Next-Generation AI in 2026
 
@@ -21,4 +22,4 @@ FF News(Fintech Finance)가 Lloyds Banking Group의 2025년 GenAI 가치 약 £5
 _원문 미확보 — 인용 불가_
 
 ## Limitations
-원문 미확보(본문 JS 렌더링; 프록시·Wayback 실패). £50M/£100M 수치는 itpro-lloyds-ai-academy-2026 및 Lloyds 실적 발표로 교차 확인 필요. 2차 보도.
+원문 미확보(본문 JS 렌더링; 프록시·Wayback 실패). 2026-10-19 Aside 재수집 스냅샷도 FF News 'Not Found / This press release could not be found' 페이지(헤드라인 목록만)로, 기사 본문 미확보 상태 지속. £50M/£100M 수치는 itpro-lloyds-ai-academy-2026 및 Lloyds 실적 발표로 교차 확인 필요. 2차 보도.

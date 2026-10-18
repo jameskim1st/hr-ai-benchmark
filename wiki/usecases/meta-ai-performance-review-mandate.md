@@ -30,7 +30,7 @@ evidence_grade: A
 corroborated_by: 3
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/hrgrapevine-meta-ai-performance-review-2025-11.md, sources/eweek-meta-ai-performance-reviews-2026-02.md, sources/fortune-meta-metamate-gpt4-llama-2024-12.md]
 related_usecases:

@@ -29,7 +29,7 @@ evidence_grade: A
 corroborated_by: 2
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/cisco-blog-internal-ai-assistant-2025-11.md, sources/fortune-cisco-ai-agents-nudges-hr-2025-10.md, sources/hr-brew-cisco-entry-level-ai-2025-11.md]
 related_usecases:

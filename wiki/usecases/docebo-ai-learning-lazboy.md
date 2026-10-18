@@ -31,7 +31,7 @@ evidence_grade: B
 corroborated_by: 1
 freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/docebo-customers-page-2026-09.md, sources/docebo-learning-platform-page-2026-09.md, sources/bersin-ld-revolution-2025-06.md]
 related_usecases:

@@ -29,7 +29,7 @@ evidence_grade: B
 corroborated_by: 1
 freshness: stale
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources:
   - sources/greetinghr-ats-guide-2025.md
   - sources/ezyeconomy-greetinghr-2025.md

@@ -31,7 +31,7 @@ evidence_grade: C
 corroborated_by: 0
 freshness: stale
 depth: full
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/microsoft-insidetrack-employee-self-service-agent-2025-11.md, sources/microsoft-insidetrack-hr-viva-copilot-2024-08.md]
 related_usecases:

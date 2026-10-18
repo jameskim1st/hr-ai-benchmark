@@ -9,8 +9,9 @@ independent: true
 publication_date: unknown
 ingested_at: 2026-09-27
 raw: raw/articles/2026-10-19-adriantan-dbs-ai-recruiting.md
-snapshot_quality: full
+snapshot_quality: unavailable
 supports: [dbs-bank-hr-ai-talent-analytics]
+snapshot_note: "2026-10-19 Aside 재시도: 페이지 삭제(Not Found 목록만 수신)"
 ---
 
 # Featured Case Study: Why Recruiters at DBS Bank use AI to Hire Candidates
@@ -22,4 +23,4 @@ supports: [dbs-bank-hr-ai-talent-analytics]
 _원문 미확보 — 인용 불가_
 
 ## Limitations
-adriantan.com.sg가 Substack으로 이전되어 원 URL은 404(스냅샷은 'Page not found'). 동일 내용은 impress.ai 사례 PDF(impress.ai/wp-content/uploads/2021/11/Impress.ai_Case_Study-DBS.pdf)에 있으므로 대체 출처로 검토 권장. **use case의 '채용 소요시간 32일→8일'은 검색 스니펫에서도 확인되지 않음(37분→8분은 검토 시간)**.
+adriantan.com.sg가 Substack으로 이전되어 원 URL은 404(스냅샷은 'Page not found'). 2026-10-19 Aside 재수집 스냅샷도 Substack 'Page not found' 목록 페이지로, 기사 본문 미확보 상태 지속. 동일 내용은 impress.ai 사례 PDF(impress.ai/wp-content/uploads/2021/11/Impress.ai_Case_Study-DBS.pdf)에 있으므로 대체 출처로 검토 권장. **use case의 '채용 소요시간 32일→8일'은 검색 스니펫에서도 확인되지 않음(37분→8분은 검토 시간)**.

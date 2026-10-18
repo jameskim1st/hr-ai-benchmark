@@ -29,7 +29,7 @@ evidence_grade: C
 corroborated_by: 0
 freshness: stale
 depth: full
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources: [sources/textio-tmobile-duolingo-dei-2025.md]
 related_usecases:
   - eightfold-ai-talent-intelligence

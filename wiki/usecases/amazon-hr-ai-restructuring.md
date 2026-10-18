@@ -25,12 +25,12 @@ first_seen_estimated: true
 frequency: adhoc
 first_seen: 2025-10-01
 last_confirmed: 2025-10-16
-confidence: 0.7
+confidence: 0.6
 evidence_grade: A
 corroborated_by: 3
-freshness: fresh
+freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/shrm-amazon-hr-layoffs-ai-2025-10.md, sources/cnbc-jpmorgan-goldman-ai-hiring-2025-10.md, sources/hrgrapevine-amazon-hr-job-cuts-ai-2025-10.md]
 related_usecases:

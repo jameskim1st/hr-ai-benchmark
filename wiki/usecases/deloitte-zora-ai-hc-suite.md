@@ -24,12 +24,12 @@ kr_vendor: Deloitte Anjin(한국 딜로이트) 경유 활용 가능 (페이지 �
 frequency: daily
 first_seen: 2025-06-01
 last_confirmed: 2026-04-01
-confidence: 0.55
+confidence: 0.45
 evidence_grade: B
 corroborated_by: 1
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/deloitte-press-zora-ai-agentic-2025-03.md, sources/deloitte-2026-human-capital-trends.md]
 related_usecases:

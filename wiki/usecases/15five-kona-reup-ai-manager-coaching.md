@@ -24,12 +24,12 @@ kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: daily
 first_seen: 2025-05-20
 last_confirmed: 2025-05-20
-confidence: 0.05
-evidence_grade: D
+confidence: 0.15
+evidence_grade: C
 corroborated_by: 0
-freshness: unverified
+freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources:
   - sources/15five-kona-launch-2025-05.md
@@ -78,8 +78,8 @@ flowchart LR
 
 - **Core 플랫폼**: ⚠️ 벤더 주장: 15Five 플랫폼의 AI 매니저 효과성 코치 'Kona'. [[sources/15five-kona-launch-2025-05.md]]
 - **AI 시스템**: ⚠️ 벤더 주장: Kona — 1:1 미팅에 자동 참여하는 AI 에이전트. [[sources/15five-kona-launch-2025-05.md]]
-- **연동**: ⚠️ 벤더 주장: 미팅 자동 참여·engagement survey·성과 리뷰·비즈니스 시스템 데이터 통합. [[sources/15five-kona-launch-2025-05.md]] 구체 연동 도구(Slack·화상회의 등) _미공개 (not disclosed)_
-- **사용자 접점**: ⚠️ 벤더 주장: 미팅 내 실시간 코칭 팁. [[sources/15five-kona-launch-2025-05.md]] 그 외 채널 _미공개_
+- **연동**: ⚠️ 벤더 주장: 미팅 자동 참여·engagement survey·성과 리뷰·비즈니스 시스템 데이터 통합. [[sources/15five-kona-launch-2025-05.md]] 연동 채널: ⚠️ 벤더 주장: Slack, Zoom, Google Meet의 native workflow 안에서 코칭 제공 [[sources/15five-kona-launch-2025-05.md]]
+- **사용자 접점**: ⚠️ 벤더 주장: 화상 미팅 내 코칭과 1:1 사전 준비 노트(personalized, actionable notes), 채널은 Slack, Zoom, Google Meet [[sources/15five-kona-launch-2025-05.md]]
 - 나머지 상세 (배포 환경, 인증 등): _미공개 (not disclosed)_
 
 ### C. Data (데이터)
@@ -122,6 +122,8 @@ flowchart LR
 ## Contradictions
 
 _없음._ (단일 벤더 소스 — 교차 검증 소스 없음)
+
+> 2026-10-19 원문 확보 후 복구: B 섹션 연동·사용자 접점 채널(Slack, Zoom, Google Meet)을 raw 근거로 복구. 원문에 없는 전사(transcribe)·요약·액션 아이템·"설정 수분 내 완료"·파일럿 → 전사 롤아웃 주장은 2026-10-19 스냅샷에서 미확인
 
 ## Consulting Angle
 

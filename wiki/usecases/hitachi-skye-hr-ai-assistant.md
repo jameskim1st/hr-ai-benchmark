@@ -29,7 +29,7 @@ evidence_grade: A
 corroborated_by: 2
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources: [sources/hrexecutive-hitachi-skye-2025.md, sources/ema-hitachi-agentic-hr-2025.md, sources/constellation-hitachi-harc-agents-2025.md, sources/unleash-hitachi-digital-2025.md]
 related_usecases:
   - bosch-rob-hr-ai-assistant

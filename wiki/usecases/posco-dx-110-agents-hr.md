@@ -24,12 +24,12 @@ kr_vendor: 자체 구축 (포스코DX)
 frequency: daily
 first_seen: 2026-01-01
 last_confirmed: 2026-04-01
-confidence: 0.8
+confidence: 0.7
 evidence_grade: A
 corroborated_by: 2
 freshness: fresh
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/eroun-posco-group-2026-reorg-2025-12.md, sources/posco-newsroom-aw2026-poscodx-ai-workforce-2026-04.md, sources/snmnews-posco-group-2026-appointments-2025-12.md]
 related_usecases:

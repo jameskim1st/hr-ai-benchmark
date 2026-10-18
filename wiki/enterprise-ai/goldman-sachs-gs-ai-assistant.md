@@ -27,7 +27,7 @@ evidence_grade: A
 corroborated_by: 3
 freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources: [sources/cnbc-goldman-gs-ai-assistant-2025-01.md, sources/fortune-goldman-gs-ai-2025-06.md, sources/hrkatha-goldman-ai-assistant-2025.md, sources/cnbc-jpmorgan-goldman-ai-hiring-2025-10.md]
 related_usecases:
   - jpmorgan-llm-suite-employee-productivity

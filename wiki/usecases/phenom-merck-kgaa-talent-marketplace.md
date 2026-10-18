@@ -30,7 +30,7 @@ evidence_grade: C
 corroborated_by: 0
 freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/phenom-talent-experience-awards-2025-03.md, sources/phenom-customers-page-2026-09.md]
 related_usecases:

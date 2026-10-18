@@ -29,7 +29,7 @@ evidence_grade: C
 corroborated_by: 0
 freshness: fresh
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources:
   - sources/perceptyx-ex-impact-awards-2025.md
 related_usecases:

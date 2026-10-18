@@ -22,12 +22,12 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2024-09-24
 last_confirmed: 2026-04-01
-confidence: 0.8
+confidence: 0.7
 evidence_grade: A
 corroborated_by: 3
 freshness: fresh
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/etnews-shinhan-bank-ai-one-2024-09.md, sources/incheontoday-shinhan-bank-ai-one-2024-09.md, sources/moneys-shinhan-bank-ai-personnel-2021-01.md]
 related_usecases:

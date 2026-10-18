@@ -25,12 +25,12 @@ first_seen_estimated: true
 frequency: daily
 first_seen: 2025-06-30
 last_confirmed: 2025-10-02
-confidence: 0.45
-evidence_grade: B
-corroborated_by: 1
-freshness: fresh
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 2
+freshness: stale
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/hr-brew-accenture-walmart-workforce-ai-2025-10.md, sources/everest-group-ai-services-peak-matrix-2025.md]
 related_usecases:
@@ -44,13 +44,13 @@ related_vendors: []
 
 ## Summary
 
-Accenture가 AI 시대 인력 전략의 일환으로 자사 인력의 AI upskilling에 투자하고 있다는 사례. ✅ Everest Group 2025 AI/GenAI Services PEAK Matrix에서 Accenture는 Leader로 분류되며, Everest는 Leader 그룹의 특징으로 IP·인재 upskilling·파트너십·변화관리 투자의 균형을 든다. [[sources/everest-group-ai-services-peak-matrix-2025.md]] HR Brew 2025-10 기사는 Accenture·Walmart의 AI 중심 인력 전략을 다루나 원문 미확보로 인용 불가. [[sources/hr-brew-accenture-walmart-workforce-ai-2025-10.md]] 학습 플랫폼의 구체 성과 수치는 _미공개_ (2026-09-27 grounding 점검: 종전 "과정 완료율 32퍼센트 향상·교육 시간 50퍼센트 단축·직원 733,000명+" 수치는 인용 소스 어디에도 없어 제거). 상세 재스킬링 수치는 [[accenture-mass-genai-reskilling]] 참조.
+Accenture가 AI 시대 인력 전략의 일환으로 자사 인력의 AI upskilling에 투자하고 있다는 사례. ✅ Everest Group 2025 AI/GenAI Services PEAK Matrix에서 Accenture는 Leader로 분류되며, Everest는 Leader 그룹의 특징으로 IP·인재 upskilling·파트너십·변화관리 투자의 균형을 든다. [[sources/everest-group-ai-services-peak-matrix-2025.md]] ✅ HR Brew 2025-10(Tier 2, 실적 콜 2차 전달): "Our number one strategy is upskilling"(CEO Sweet), GenAI 교육 이수 직원 50만 명 이상("more than half a million"), AI·데이터 인력 약 77,000명. [[sources/hr-brew-accenture-walmart-workforce-ai-2025-10.md]] 학습 플랫폼의 구체 성과 수치는 _미공개_ (2026-09-27 grounding 점검: 종전 "과정 완료율 32퍼센트 향상·교육 시간 50퍼센트 단축·직원 733,000명+" 수치는 인용 소스 어디에도 없어 제거). 상세 재스킬링 수치는 [[accenture-mass-genai-reskilling]] 참조.
 
 ## Problem / Why (도입 배경)
 
 - **Before**: ❓ baseline 미공개 (직원 규모·기존 교육 방식·완료율 — 인용 소스에 없음)
 - **Pain point**: ✅ Everest 평가 기준 — AI 서비스 Leader는 "end-to-end AI transformation partner"로 자리매김하며 인재 upskilling에 투자. [[sources/everest-group-ai-services-peak-matrix-2025.md]] 컨설팅 업계에서 직원 AI 역량이 서비스 역량과 직결된다는 맥락
-- **Trigger**: ❓ 미공개 — HR Brew 기사(원문 미확보)가 AI 중심 인력 전략 재편을 다룸. [[sources/hr-brew-accenture-walmart-workforce-ai-2025-10.md]]
+- **Trigger**: ✅ AI-driven business로의 구조조정. reskilling이 불가능한 인력은 compressed timeline으로 exit, 절감액 최소 $1B를 인력에 재투자 (CEO Sweet·CFO Park, FY25 Q4 실적 콜의 HR Brew 전달) [[sources/hr-brew-accenture-walmart-workforce-ai-2025-10.md]]
 
 ## Impact / Metrics (기대효과)
 
@@ -115,6 +115,8 @@ Accenture가 AI 시대 인력 전략의 일환으로 자사 인력의 AI upskill
 - HR Brew 기사가 다루는 "reskilling 불가 인력 exit" 방침은 [[accenture-mass-genai-reskilling]]에서 별도 취급 — 본 페이지 소스로는 인용 불가
 
 ## Contradictions
+
+> 2026-10-19 원문 확보 후 복구: HR Brew raw 확보. Summary의 HR Brew 서술(upskilling 우선 전략, GenAI 교육 50만 명+, AI·데이터 인력 약 77,000명)과 도입 Trigger를 복구. 과정 완료율·교육 시간 단축·"733,000명+"는 raw에 없어 _미공개_ 유지 (raw의 직원 수 표기는 779,000)
 
 > [!note] 2026-09-27 grounding — 종전 본문의 "과정 완료율 32퍼센트 향상·교육 시간 50퍼센트 단축"은 Everest Group 문서에 귀속되어 있었으나 해당 문서(Accenture 라이선스 발췌본 16p)에 없음. "733,000명+ 직원", LearnVantage 6단계 프로세스, Stanford·Udacity 콘텐츠 큐레이션도 인용 소스 2건에 없어 _미공개_ 처리. Everest 문서는 서비스 제공사 역량 평가이지 Accenture 내부 L&D 성과 검증이 아님.
 

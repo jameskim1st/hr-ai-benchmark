@@ -24,12 +24,12 @@ kr_vendor: "미확인 (국내 파트너 확인 필요) — 국내 유사 시장:
 frequency: daily
 first_seen: 2026-02-26
 last_confirmed: 2026-02-26
-confidence: 0.1
-evidence_grade: D
+confidence: 0.25
+evidence_grade: C
 corroborated_by: 0
-freshness: unverified
+freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources:
   - sources/paychex-agentic-workforce-2026-02.md
@@ -132,6 +132,7 @@ flowchart LR
 _없음._
 
 > [!note] 2026-09-27 grounding — 인용 소스는 BusinessWire 보도자료 1건이며 raw 스냅샷 미확보(unavailable) — 수치는 source 페이지 요약에만 근거. C·D·E 섹션을 스키마 순서로 추가(소스에 없는 항목은 _미공개_). Nucleus Research ROI는 벤더 보도자료 경유이므로 ✅ Fact → ⚠️ 벤더 전달로 조정.
+> 2026-10-19 원문 확보 후 복구: BusinessWire 원문(Aside)으로 800,000 고객(약 800,000, 미국·유럽), $12.24 ROI, Agentic Timesheet Approvals·Auto-Shifts·AI-Powered Time-Off 기능 설명 확인. 복구할 _미공개_ 항목 없음(종전 수치 유지). Nucleus Research 원 리서치는 여전히 미확보. 원문의 Paycor Smart Scheduler(human-in-the-loop)와 Time-Off Request Agent(coming soon)는 본문 미반영. 고객 outcome 수치는 원문에도 없어 _미공개_ 유지
 
 ## Consulting Angle
 

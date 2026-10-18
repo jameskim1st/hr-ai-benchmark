@@ -24,12 +24,12 @@ kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: monthly
 first_seen: 2024-09-01
 last_confirmed: 2026-04-01
-confidence: 0.35
+confidence: 0.25
 evidence_grade: C
 corroborated_by: 0
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/microsoft-techcommunity-viva-glint-news-to-know-2026-04.md]
 related_usecases:

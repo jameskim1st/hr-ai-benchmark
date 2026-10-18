@@ -26,12 +26,12 @@ last_confirmed_estimated: true
 frequency: daily
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
-confidence: 0.35
-evidence_grade: B
-corroborated_by: 1
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 2
 freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/hrexecutive-pwc-chatgpt-training-2023-05.md, sources/hrgrapevine-pwc-prompting-parties-2025-04.md]
 related_usecases:
@@ -44,13 +44,13 @@ related_vendors: []
 
 ## Summary
 
-PwC US가 미국 직원 **75,000명** 전원을 대상으로 agentic AI를 **단계적(phased)으로 도입** 중이며, 교육 프로그램 **'My AI'**로 이미 75,000명 이상을 책임 있는 AI 사용·프롬프팅·AI 시대 리더십에 교육 (⚠️ 자사 보고 — HR Grapevine 단독 인터뷰, Anthony Abbatiello US Workforce Transformation Leader) [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]. 2024-10 출범한 **AI Champion Network(3,200명 이상)**가 **Prompting Parties**·GenAI 데모·오피스 이벤트를 주도 [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]. 2023-05 HR Executive는 PwC HR·기술 리더의 미국 인력 ChatGPT 교육 준비를 보도했으나 본문 미확보 [[sources/hrexecutive-pwc-chatgpt-training-2023-05]] — '65,000명·3년 계획' 수치는 검증 불가 → _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검).
+PwC US가 미국 직원 **75,000명** 전원을 대상으로 agentic AI를 **단계적(phased)으로 도입** 중이며, 교육 프로그램 **'My AI'**로 이미 75,000명 이상을 책임 있는 AI 사용·프롬프팅·AI 시대 리더십에 교육 (⚠️ 자사 보고 — HR Grapevine 단독 인터뷰, Anthony Abbatiello US Workforce Transformation Leader) [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]. 2024-10 출범한 **AI Champion Network(3,200명 이상)**가 **Prompting Parties**·GenAI 데모·오피스 이벤트를 주도 [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]. ✅ 2023-05 HR Executive(Tier 2) 보도: PwC가 미국 직원 **65,000명** 이상을 대상으로 3년에 걸쳐 ChatGPT·생성형 AI 기초~심화 교육을 계획, $1 billion AI 투자의 일부로 2023년 여름 시작 예정, CPO Yolanda Seals-Coffield와 CPTO Joe Atkinson 공동 주도 [[sources/hrexecutive-pwc-chatgpt-training-2023-05]] (2026-10-19 원문 확보 후 복구. 계획 시점 서술이며 이수 결과는 HR Grapevine의 75,000명+).
 
 ## Problem / Why (도입 배경)
 
 - **Before (baseline)**: ❓ baseline 미공개 — 2023~2024년 대부분의 고용주가 AI 도입을 시험적으로만 시도했다는 업계 맥락 (HR Grapevine 서술) [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]; PwC 내부 AI 역량 수준 수치 없음
 - **Pain point**: 직원이 AI 에이전트와 함께 일하도록 하는 것 — 자동화가 아닌 augmentation 관점, AI 리터러시·리스킬링 투자로 대체 우려 완화 [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]
-- **Trigger**: 2025년 경영진의 agentic AI 도입 요구 확산 속에서 PwC가 phased approach 채택 [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]; 2023-05 ChatGPT 교육 준비 보도 [[sources/hrexecutive-pwc-chatgpt-training-2023-05]] (본문 미확보)
+- **Trigger**: 2025년 경영진의 agentic AI 도입 요구 확산 속에서 PwC가 phased approach 채택 [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]; ✅ 2023-05 $1 billion AI 투자 발표의 일부로 미국 전 직원 생성형 AI 업스킬링 계획 (3년, 2023년 여름 시작 예정) [[sources/hrexecutive-pwc-chatgpt-training-2023-05]]
 
 ## Solution Architecture
 
@@ -62,7 +62,7 @@ PwC US가 미국 직원 **75,000명** 전원을 대상으로 agentic AI를 **단
   2. AI Champion Network(2024-10 출범, 3,200명+)가 peer-led로 Prompting Parties·GenAI 데모·오피스 이벤트 진행
   3. 특정 use case 대상 AI 에이전트 파일럿 → 실제 적용 검증 후 전사 확대 (phased)
   4. 직무별 GenAI Skills Quests 운영 [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]
-  - 기존 서술 중 인용 소스에 없는 항목 제거 (2026-09-27 grounding 점검): ChatPwC playground, Super User Network 350명, hackathon·게임쇼, $1B 투자 보도자료, 자발 학습 시간 누적 추적, 우수 use case 클라이언트 자산 승격, 20인 AI 챔피언, PwC 조사 AI agent 채택률
+  - 기존 서술 중 인용 소스에 없는 항목 제거 (2026-09-27 grounding 점검): ChatPwC playground, Super User Network 350명, hackathon·게임쇼, 자발 학습 시간 누적 추적, 우수 use case 클라이언트 자산 승격, 20인 AI 챔피언, PwC 조사 AI agent 채택률
 - **Human-in-the-loop (HITL) 지점**: "human oversight at the helm" — 책임 있는 AI 도입 원칙 [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]; 검토 절차 세부 _미공개_
 - **Trigger & Frequency**: continuous (ongoing program) [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]
 - **Scope of autonomy**: AI 에이전트는 "true collaborators" — 자동화 도구가 아닌 협업자로 포지셔닝 [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]; 자율 실행 범위 _미공개_
@@ -96,7 +96,7 @@ flowchart LR
 
 ### D. Model (모델)
 
-- **Foundation model**: _미공개 (not disclosed)_ — OpenAI/ChatGPT 사용은 2023 HR Executive 제목에서만 확인 [[sources/hrexecutive-pwc-chatgpt-training-2023-05]]
+- **Foundation model**: _미공개 (not disclosed)_ — ✅ 2023-05 계획 기준 교육 대상 기술은 ChatGPT(OpenAI), 클라이언트 대상 제공물은 Microsoft 파트너십으로 ChatGPT와 Azure OpenAI Service 활용 [[sources/hrexecutive-pwc-chatgpt-training-2023-05]]. 사내 도구·에이전트의 모델은 미공개
 - **Model 유형**: agent (코드 문서화·테스트 생성·가이드 검색) [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]
 - **제공 방식**: _미공개 (not disclosed)_
 - **커스터마이징 기법**: _미공개 (not disclosed)_
@@ -105,7 +105,7 @@ flowchart LR
 
 ### E. Organization & Team (조직·팀 구조)
 
-- **오너십**: US Workforce Transformation (Anthony Abbatiello, US Workforce Transformation Leader) [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]; HR·기술 리더 공동 준비 (2023 보도 제목) [[sources/hrexecutive-pwc-chatgpt-training-2023-05]]
+- **오너십**: US Workforce Transformation (Anthony Abbatiello, US Workforce Transformation Leader) [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]; ✅ 2023 업스킬링은 CPO Yolanda Seals-Coffield와 부회장 겸 CPTO Joe Atkinson 공동 주도 [[sources/hrexecutive-pwc-chatgpt-training-2023-05]]
 - **참여 역할**: AI Champion Network 3,200명+ (peer-led 학습) [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]
 - **팀 규모·기간**: Champion Network 2024-10 출범 [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]; 프로그램 기간 _미공개_
 - **거버넌스 체계**: 책임 있는 AI 거버넌스 언급 [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]; 위원회 구성 _미공개_
@@ -115,7 +115,7 @@ flowchart LR
 ## Impact / Metrics (기대효과)
 
 ### 기대효과 요약
-⚠️ 자사 보고: My AI 교육 75,000명+ 이수, AI Champion Network 3,200명+. 생산성·채택률 outcome은 _미공개_. '65,000명·3년'·'자발 학습 시간 누적'·'20인 챔피언'·'PwC 조사 채택률'은 인용 소스에서 확인 불가 → _미공개_.
+⚠️ 자사 보고: My AI 교육 75,000명+ 이수, AI Champion Network 3,200명+. 생산성·채택률 outcome은 _미공개_. '65,000명·3년'은 2026-10-19 HR Executive 원문으로 확인 (계획 시점). '자발 학습 시간 누적'·'20인 챔피언'·'PwC 조사 채택률'은 인용 소스에서 확인 불가 → _미공개_.
 
 | 지표 | 값 | 출처 | 성격 |
 |---|---|---|---|
@@ -123,14 +123,14 @@ flowchart LR
 | My AI 교육 이수 | **75,000명+** | [[sources/hrgrapevine-pwc-prompting-parties-2025-04]] | ⚠️ 자사 보고 |
 | AI Champion Network | **3,200명+** (2024-10 출범) | [[sources/hrgrapevine-pwc-prompting-parties-2025-04]] | ⚠️ 자사 보고 |
 | "Prompting Parties" | peer-led 비공식 AI 학습 세션 | [[sources/hrgrapevine-pwc-prompting-parties-2025-04]] | ⚠️ 자사 보고 |
-| GenAI 업스킬링 65,000명·3년 | _미공개_ (HR Executive 본문 미확보) | [[sources/hrexecutive-pwc-chatgpt-training-2023-05]] | — |
+| GenAI 업스킬링 계획 (2023-05) | **65,000명** 이상 (미국), 3년, $1 billion AI 투자의 일부 | [[sources/hrexecutive-pwc-chatgpt-training-2023-05]] | ✅ Fact (Tier 2 보도, 계획 시점) |
 | 자발 학습 시간 누적 | _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검) | — | — |
 | PwC 조사 AI agent 채택률 | _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검) | — | — |
 
 ## Governance & Risk
 
 - ⚠️ 자사 보고: 인간 감독 유지·책임 있는 AI 거버넌스·투명성 강조 [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]; 구체 정책 _미공개_
-- ⚠️ 소스 한계: HR Grapevine은 PwC 리더 단독 인터뷰(자기 서술), HR Executive는 본문 미확보 — 독립 검증 없음
+- ⚠️ 소스 한계: HR Grapevine은 PwC 리더 단독 인터뷰(자기 서술), HR Executive(2023-05)는 계획 단계 보도로 PwC 임원 발언 전달, 실행 결과의 독립 검증 없음
 - ⚠️ 직무 대체 우려: PwC는 augmentation·새 career pathway를 강조 [[sources/hrgrapevine-pwc-prompting-parties-2025-04]]; 인력 영향 수치 _미공개_
 
 ## Contradictions
@@ -138,6 +138,7 @@ flowchart LR
 > [!contradiction] 챔피언 규모: 기존 페이지 '20인 자원봉사 AI 챔피언' vs HR Grapevine 'AI Champion Network 3,200명 이상' [[sources/hrgrapevine-pwc-prompting-parties-2025-04]] — raw 기준 3,200명+ 채택. 상태: resolved (2026-09-27).
 
 > [!note] 2026-09-27 grounding — HR Executive 본문 미확보로 '65,000명·3년 계획' 검증 불가 → _미공개_. 인용 소스에 없는 ChatPwC·Super User 350명·hackathon·자발 학습 시간·use case 승격·PwC 조사 채택률·$1B 보도자료 서술 제거. 페이지 제목·slug의 '65k'는 frontmatter/파일명이므로 미수정 — 소스 확보 후 정정 필요.
+> 2026-10-19 원문 확보 후 복구: HR Executive 원문(Jina)으로 '65,000명 이상·3년·$1 billion 투자·2023년 여름 시작 계획'과 CPO Seals-Coffield·CPTO Atkinson 공동 주도, ChatGPT·Azure OpenAI Service(클라이언트 제공물) 복구. slug의 '65k'는 원문과 정합. 자발 학습 시간·20인 챔피언·PwC 조사 채택률·ChatPwC·Super User 350명은 원문에 없어 _미공개_ 유지
 
 ## Consulting Angle
 

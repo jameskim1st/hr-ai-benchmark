@@ -103,5 +103,12 @@ tags: [review, tooling, browser-agent, source-acquisition]
 
 **중단 기준**: Step 1에서 REPL stdout이 텍스트를 못 돌려주거나 13건 중 절반 미만만 받아지면, Aside는 MCP 탐색용으로만 두고 추출은 Playwright 지속 프로필 스크립트로 간다.
 
+## 4-1. 실행 결과 (2026-10-19 당일)
+
+- 설치·로그인 완료 (CLI 1.26.1015.732, 앱 1.26.1019.335). MCP 서버 툴 3개 확인: `repl`(Playwright식 JS, `console.log`로만 반환), `exec`(에이전트), `memory_search`.
+- REPL 추출 테스트: HR Brew Cloudflare 챌린지가 사용자 브라우저에서 10초 후 통과, 기사 본문 6,019자 확보.
+- 막힌 소스 34건 일괄 재시도 (`fetch_via_aside.py --unavailable`): **24건 복구**(full 19·partial 5). 실패 10건 중 HR Executive 3건과 ServiceNow Siemens PDF는 `fetch_raw.py` 폴백 체인(Jina)으로 추가 복구 → **합계 27/34**. 남은 7건: G2(JS 렌더 실패), GenON 2건(404), Holistic AI(뉴스와이어 로그인), UNLEASH 2건(삭제), WEF(404). Gloat 2건은 게이트 폼 랜딩 요약만(partial).
+- 판정 기준 "절반 이상"을 넘었으므로 채택. 폴백 체인 direct → Jina → Aside → Wayback을 `fetch_raw.py`에 내장, `.mcp.json`에 `aside` 등록, `hr-verifier`·`/hr-research`·protocols 규칙 반영. 복구된 27건의 Key Quotes 보강과 use case `미공개` 복구는 별도 에이전트로 진행.
+
 ## 5. 검증하지 못한 것
 - MCP 툴 이름·반환 형식, REPL stdout 형식, REPL이 크레딧을 소모하는지, Windows CLI의 PowerShell 인용 규칙, 한국 사이트(네이버 로그인·한경) 호환성, 라우틴 실행 신뢰도. 전부 설치 후 30분이면 확인된다.

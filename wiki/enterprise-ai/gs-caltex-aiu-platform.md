@@ -22,12 +22,12 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2025-01-01
 last_confirmed: 2026-04-01
-confidence: 0.35
+confidence: 0.25
 evidence_grade: C
 corroborated_by: 0
 freshness: fresh
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/gscaltex-mediahub-aiu-platform-2025-07.md]
 related_usecases:

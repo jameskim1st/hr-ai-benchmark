@@ -22,12 +22,12 @@ regulatory_exposure: []
 frequency: daily
 first_seen: 2025-07-01
 last_confirmed: 2026-02-01
-confidence: 0.25
-evidence_grade: C
-corroborated_by: 0
+confidence: 0.45
+evidence_grade: B
+corroborated_by: 1
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources:
   - sources/microsoft-cba-copilot-case-study.md
   - sources/openai-cba-case-study.md

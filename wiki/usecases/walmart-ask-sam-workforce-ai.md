@@ -25,12 +25,12 @@ first_seen_estimated: true
 frequency: daily
 first_seen: 2025-06-24
 last_confirmed: 2025-10-02
-confidence: 0.7
+confidence: 0.6
 evidence_grade: A
-corroborated_by: 3
-freshness: fresh
+corroborated_by: 5
+freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/hr-brew-accenture-walmart-workforce-ai-2025-10.md, sources/walmart-corporate-ai-interview-coach-2025-06.md, sources/hrexecutive-amazon-walmart-workforce-ai-2026-02.md, sources/jobspikr-walmart-reskilling-2025.md, sources/shrm-walmart-ai-revolution-2025.md, sources/hrdive-walmart-my-assistant-genai-2024.md]
 related_usecases:
@@ -42,13 +42,13 @@ related_vendors: []
 
 # Walmart — Ask Sam + AI Interview Coach + Workforce Reskilling
 
-> ★ **리테일 HR AI 대규모 사례**: Ask Sam 사용자·주간 질문 수, 직원·매장 수는 인용 소스 원문 미확인([[hrexecutive-amazon-walmart-workforce-ai-2026-02]]·[[hr-brew-accenture-walmart-workforce-ai-2025-10]] 스냅샷 unavailable) — _미공개_ (2026-09-27 grounding 점검). **SHRM**(Tier 2)이 "Walmart's AI Revolution: People-Led, Tech-Powered" 독립 기사로 전략을 분석 ([[shrm-walmart-ai-revolution-2025]]). **HR Dive**(Tier 2)가 My Assistant GenAI 도구(직원 50,000명 대상) 보도 ([[hrdive-walmart-my-assistant-genai-2024]]).
+> ★ **리테일 HR AI 대규모 사례**: ✅ 글로벌 직원 2.1 million, 미국 최대 민간 고용주 ([[hrexecutive-amazon-walmart-workforce-ai-2026-02]], 2026-10-19 원문 확인). Ask Sam 사용자·주간 질문 수, 매장 수는 인용 소스에 없어 _미공개_ (2026-09-27 grounding 점검. [[hr-brew-accenture-walmart-workforce-ai-2025-10]]는 스냅샷 unavailable). **SHRM**(Tier 2)이 "Walmart's AI Revolution: People-Led, Tech-Powered" 독립 기사로 전략을 분석 ([[shrm-walmart-ai-revolution-2025]]). **HR Dive**(Tier 2)가 My Assistant GenAI 도구(직원 50,000명 대상) 보도 ([[hrdive-walmart-my-assistant-genai-2024]]).
 
 ## Summary
 
-Walmart(직원·매장 규모는 본 페이지 인용 소스 미확인 — _미공개_)은 복수의 HR AI 이니셔티브를 병행 운영:
+Walmart(✅ 글로벌 직원 2.1 million, 미국 최대 민간 고용주 [[sources/hrexecutive-amazon-walmart-workforce-ai-2026-02]]. 매장 수 _미공개_)은 복수의 HR AI 이니셔티브를 병행 운영:
 
-1. **Ask Sam** — 매장 직원용 대화형 AI 어시스턴트. 사용자 수·주간 질문 수는 _미공개_ (인용 소스 원문 미확보 — 2026-09-27 grounding 점검).
+1. **Ask Sam** — 매장 직원용 대화형 AI 어시스턴트. 사용자 수·주간 질문 수는 _미공개_ (인용 소스에 없음 — 2026-09-27 grounding 점검, 2026-10-19 HR Executive 원문 확인).
 2. **AI Interview Coach** — 2025-06 파일럿 공개. 최대 10개 질문 모의 면접, 1~10점 채점, 구조·명료성·자신감 즉시 피드백 ([[sources/walmart-corporate-ai-interview-coach-2025-06]] — ⚠️ 자사 보고).
 3. **50,000+ 리스킬링** — 계산원 → 드론 기술자·로봇 수퍼바이저 역할 전환 계획 ([[sources/jobspikr-walmart-reskilling-2025]] — 1차 출처 미표기).
 4. **My Assistant** — 사무직 50,000명 대상 GenAI 도구 (초안 작성·문서 요약; CPO Donna Morris 발표) ([[sources/hrdive-walmart-my-assistant-genai-2024]]).
@@ -118,8 +118,8 @@ Before: _미공개_ → After: Ask Sam 사용 규모·Workday 효과·직원/매
 
 | 지표 | 값 | 출처 | 성격 |
 |---|---|---|---|
-| Ask Sam 사용자 | _미공개_ | 인용 소스 원문 미확보 ([[sources/hrexecutive-amazon-walmart-workforce-ai-2026-02]] unavailable) | ❓ |
-| 주간 질문 수 | _미공개_ | 인용 소스 원문 미확보 | ❓ |
+| Ask Sam 사용자 | _미공개_ | 인용 소스에 없음 (2026-10-19 [[sources/hrexecutive-amazon-walmart-workforce-ai-2026-02]] 원문 확인, HR Brew-Accenture 소스는 unavailable) | ❓ |
+| 주간 질문 수 | _미공개_ | 인용 소스에 없음 (동일) | ❓ |
 | Workday 연간 절약 | _미공개_ | 인용 소스에 없음 (2026-09-27 grounding 점검) | ❓ |
 | 채용 기간 단축 | _미공개_ | 인용 소스에 없음 (2026-09-27 grounding 점검) | ❓ |
 | 리스킬링 대상 | **50,000+** (계산원→기술직) | [[sources/jobspikr-walmart-reskilling-2025]] | ⚠️ 자사 보고 (1차 출처 미표기 블로그 전달) |
@@ -127,7 +127,7 @@ Before: _미공개_ → After: Ask Sam 사용 규모·Workday 효과·직원/매
 | My Assistant 사용자 | **50,000명** (사무직) | [[sources/hrdive-walmart-my-assistant-genai-2024]] | ✅ Fact (Tier 2 전달) |
 | A2T 기술자 양성 | **4,000명** (2030년까지) | [[sources/walmart-corporate-ai-interview-coach-2025-06]] | ⚠️ 자사 보고 |
 | 급여직 관리자 중 시간제 출신 | **75%** | [[sources/walmart-corporate-ai-interview-coach-2025-06]] | ⚠️ 자사 보고 |
-| 전체 직원 규모 | _미공개_ | 본 페이지 인용 소스에 없음 | ❓ |
+| 전체 직원 규모 | **2.1 million** (글로벌, 미국 최대 민간 고용주) | [[sources/hrexecutive-amazon-walmart-workforce-ai-2026-02]] | ✅ Fact (Tier 2) |
 | 인력 효율성 | _미공개_ | 인용 소스에 없음 (2026-09-27 grounding 점검) | ❓ |
 
 ## Governance & Risk
@@ -139,6 +139,7 @@ Before: _미공개_ → After: Ask Sam 사용 규모·Workday 효과·직원/매
 ## Contradictions
 
 > [!note] 2026-09-27 grounding — Ask Sam 사용자 수·주간 질문 수, 전체 직원·매장 수, Workday 절감액·채용 기간 단축, 노동 비용 절감률은 인용 소스 6건 중 어디에도 없음([[sources/hrexecutive-amazon-walmart-workforce-ai-2026-02]]·[[sources/hr-brew-accenture-walmart-workforce-ai-2025-10]]는 스냅샷 unavailable, SHRM·Interview Coach 소스는 Ask Sam 수치 미포함). 모두 `_미공개_`로 교체. A. Process 상세는 출처 미인용.
+> 2026-10-19 원문 확보 후 복구: [[sources/hrexecutive-amazon-walmart-workforce-ai-2026-02]] 원문(Jina)으로 전체 직원 규모 2.1 million(글로벌) 복구. Ask Sam 사용자 수·주간 질문 수·매장 수·Workday 절감액·채용 기간·노동 비용 절감률은 이 원문에도 없어 _미공개_ 유지 (원문에 Ask Sam 명칭 자체가 없음). [[sources/hr-brew-accenture-walmart-workforce-ai-2025-10]]는 2026-10-19 raw 확보. 그러나 Walmart 부분은 McMillon 발언(WSJ·AP 재인용: AI가 모든 직무를 바꿀 것, 총 headcount 유지, 사무직이 매장·물류직보다 먼저 영향)뿐이며 Ask Sam·사용자 수·매장 수·Workday 수치는 없어 복구 항목 부재
 
 ## Consulting Angle
 

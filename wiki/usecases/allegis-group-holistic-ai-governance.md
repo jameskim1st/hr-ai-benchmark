@@ -29,7 +29,7 @@ evidence_grade: D
 corroborated_by: 0
 freshness: unverified
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources:
   - sources/holistic-ai-allegis-bias-audit-2025.md
 related_usecases:

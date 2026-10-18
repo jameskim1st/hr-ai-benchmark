@@ -24,12 +24,12 @@ kr_vendor: SKT A.Biz + SK AX (그룹 계열사 자체 구축)
 frequency: daily
 first_seen: 2025-09-01
 last_confirmed: 2026-04-01
-confidence: 0.8
+confidence: 0.7
 evidence_grade: A
 corroborated_by: 2
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/heraldcorp-skt-adot-biz-25-companies-2025-09.md, sources/skt-newsroom-adot-biz-group-rollout-2025-09.md, sources/zdnet-korea-sk-group-adot-biz-25-companies-2025-09.md]
 related_usecases:

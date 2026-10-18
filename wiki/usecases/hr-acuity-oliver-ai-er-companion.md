@@ -24,12 +24,12 @@ kr_vendor: 미확인 (국내 파트너 확인 필요; 노무법인 협업 권장
 frequency: daily
 first_seen: 2024-09-01
 last_confirmed: 2026-05-06
-confidence: 0.35
-evidence_grade: C
-corroborated_by: 0
+confidence: 0.55
+evidence_grade: B
+corroborated_by: 1
 freshness: fresh
 depth: full
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources:
   - sources/hr-acuity-oliver-product-page.md
@@ -162,6 +162,8 @@ ER 케이스 처리의 intake → investigation → documentation 지원. ⚠️
 ## Contradictions
 
 > [!note] 2026-09-27 grounding — 인용 소스 raw 4건(제품 페이지·Brandon Hall 보도자료·Forrester TEI 보도자료·2025 성장 보도자료)에 없는 서술을 정리: 고객사명(LinkedIn·Lyft·Adobe·Verizon·General Mills·Workday·Akamai·Equinox·Waymo·Yelp), Waymo reporting time 단축률, G2 Spring/Fall 2025 개별 1위 표기, ServiceNow·Teams·Slack·SSO 연동, mobile·SMS 채널, RBAC, SOC 2·GDPR·EU Whistleblower Directive, HRIS·CBA 입력, "ER 도메인 fine-tuning", "enterprise-grade LLM", "Workday Innovation Partner" 명칭, olivER 2024 출시 시점, #MeToo·SOX 트리거 → 모두 삭제 또는 _미공개_. Gartner Peer Insights·PwC deck 소스는 raw 미확보(403/internal). Forrester TEI(2019)는 olivER 이전 플랫폼 연구이므로 AI 효과로 인용 불가.
+
+> 2026-10-19 원문 확보 후 복구: 복구 항목 없음. Gartner Peer Insights raw는 제품 설명 1단락만 확보(partial)되어 평점·리뷰 수·고객사명 등 복구 가능한 수치 부재
 
 ## Consulting Angle
 

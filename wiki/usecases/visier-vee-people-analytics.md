@@ -31,7 +31,7 @@ evidence_grade: B
 corroborated_by: 1
 freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/visier-vee-people-analytics-ai-agent-2026-09.md, sources/techintelpro-visier-org-design-2025-09.md]
 related_usecases:

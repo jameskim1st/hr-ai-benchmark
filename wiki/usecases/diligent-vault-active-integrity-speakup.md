@@ -29,7 +29,7 @@ evidence_grade: C
 corroborated_by: 0
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources:
   - sources/diligent-acquires-vault-2025-05.md
@@ -53,7 +53,7 @@ Diligent (GRC SaaS)가 2025-05-22 **Vault를 인수** — AI 기반 ethics·comp
 - **Before (baseline)**: ❓ baseline 미공개 — 벤더 제품이므로 특정 기업의 도입 배경은 고객별 상이. Diligent 발표는 "outdated ethics and compliance systems의 한계"만 언급 [[sources/diligent-acquires-vault-2025-05]].
 - **Pain point**: ⚠️ 벤더 주장: 사후 컴플라이언스 체크("checking the compliance box")로는 부족하며 상시·선제적 접근이 필요 [[sources/vault-platform-product-page]]; 리스크 조기 감지·신속 대응·직원 신뢰 [[sources/diligent-acquires-vault-2025-05]].
 - **Trigger**: Diligent의 ethics·compliance 영역 확장 — 2025년 초 Spark Compliance 인수에 이은 Vault 인수 [[sources/diligent-acquires-vault-2025-05]]. 고객사 측 도입 계기는 _미공개 (not disclosed)_.
-- 🚫 일반론 표기: EU Whistleblower Directive 등 규제 배경은 인용 소스에 없으므로 기술하지 않음.
+- **규제 배경**: ⚠️ 벤더 주장: EU Whistleblowing Directive 등 변화하는 규제를 선제적으로 준수하도록 지원한다고 Diligent(Amanda Carty) 언급 [[sources/businesswire-diligent-vault-2025-05]]. 고객사 측 규제 대응 계기는 _미공개 (not disclosed)_
 
 ## Solution Architecture
 
@@ -147,6 +147,8 @@ flowchart TB
 
 > [!note] 2026-09-27 grounding — 인용 소스 3건(Diligent 인수 발표, Business Wire 동일 발표문[스냅샷 불가], Vault 홈페이지) 어디에도 EthicsChat·VaultTalk·GoTogether·"조사 timeline 최대 80% 단축"·GDPR/ISO 27001/SOC 2 인증·EU Whistleblower Directive 준수·predictive risk score·board/ESG/SOX 연동이 없어 모두 _미공개_로 변경. Business Wire 배포본은 Diligent 뉴스룸 게시본과 동일 문서이므로 독립 소스로 계산하지 않음. 하위 제품 페이지·EthicsChat 보도자료 확보 시 복원 검토(/hr-research).
 
+> 2026-10-19 원문 확보 후 복구: Business Wire 배포본 raw 확보. 그 안의 Amanda Carty 인용에 "EU Whistleblowing Directive" 준수 지원이 있어 도입 배경·Consulting Angle의 Directive 서술을 ⚠️ 벤더 주장으로 복구. EthicsChat·VaultTalk·GoTogether·"조사 timeline 최대 80%"·GDPR/ISO 27001/SOC 2·predictive risk score는 raw에 없어 _미공개_ 유지
+
 ## Consulting Angle
 
 - **GRC 통합 ethics·compliance 대표 reference**: 한국 대기업의 ESG·SOX·내부감사·ER 통합 거버넌스 검토 시 Diligent platform 전체 reference
@@ -163,7 +165,7 @@ flowchart TB
   - Vault: AI-native + GRC 통합 + 신생
   - 보수적 한국 대기업은 NAVEX, agile은 Vault
 - **집단 신고 기능** — 인용 소스에서 미확인(_미공개_); 확인되면 한국 직장 내 괴롭힘 사례에서 1인 신고 retaliation risk 회피 가치로 활용 가능
-- **EU Whistleblower Directive 대응**: 한국 대기업 EU 법인 의무 — Vault의 Directive 준수 여부는 인용 소스에서 미확인
+- **EU Whistleblowing Directive 대응**: 한국 대기업 EU 법인 의무. Vault·Diligent의 Directive 준수 지원은 ⚠️ 벤더 주장 수준으로만 확인 [[sources/businesswire-diligent-vault-2025-05]], 독립 검증 없음
 - **한국 적용 한계**:
   - 한국 customer reference 미공개 (Diligent 한국 진출 부분적)
   - 한국어 + PIPA + 노조 fit 검증 필요

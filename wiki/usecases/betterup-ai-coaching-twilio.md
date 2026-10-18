@@ -26,12 +26,12 @@ last_confirmed_estimated: true
 frequency: monthly
 first_seen: 2025-06-30
 last_confirmed: 2025-06-30
-confidence: 0.35
-evidence_grade: B
-corroborated_by: 1
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 3
 freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/betterup-roi-page-2026-09.md, sources/inc-betterup-ai-only-coaching-2025-08.md, sources/betterup-customers-page-2026-09.md, sources/bersin-betterup-manage-ai-coaching-2024-04.md, sources/hrexecutive-bersin-coaching-disruptions-2024.md]
 related_usecases:
@@ -43,7 +43,7 @@ related_vendors: []
 
 ## Summary
 
-BetterUp은 **AI 기반 리더십·매니저 코칭** 플랫폼. 2025-04 **BetterUp Grow** (AI-only 코칭 제품) 출시 — ⚠️ 벤더 주장(Inc. 전달, 원문 미확보): 초기 테스트 고객 만족 95%·성과 16% 향상. [[sources/inc-betterup-ai-only-coaching-2025-08.md]] 가장 강력한 레퍼런스는 **Twilio (8,000+ 직원 전원 롤아웃)**: ⚠️ 벤더 주장: 2년 후 분석에서 코칭 받은 직원은 **고성과 평가 가능성 32% 높고, 이탈 가능성 5배 낮음** — human coaching 결과. [[sources/betterup-roi-page-2026-09.md]] 다수 고객에서 수치가 공개돼 있으나 모두 벤더 페이지 전달. (2026-09-27 grounding 점검: 종전 "비용 70퍼센트 절감", "Leadership ROI 600퍼센트"는 인용 소스에 없어 제거.) **Josh Bersin**(Tier 1, 단 BetterUp advisor)이 BetterUp Manage를 "pioneering AI-powered platform for leaders"로 독립 분석 ([[bersin-betterup-manage-ai-coaching-2024-04]]). **HR Executive**(Tier 2)도 Bersin의 코칭 시장 분석을 보도 ([[hrexecutive-bersin-coaching-disruptions-2024]]).
+BetterUp은 **AI 기반 리더십·매니저 코칭** 플랫폼. 2025-04 **BetterUp Grow** (AI-only 코칭 제품) 출시 — ⚠️ 벤더 주장(Inc. 전달, 회사 대변인 발언): 초기 테스트 고객 만족 95%·자신감 16% 향상. [[sources/inc-betterup-ai-only-coaching-2025-08.md]] 가장 강력한 레퍼런스는 **Twilio (8,000+ 직원 전원 롤아웃)**: ⚠️ 벤더 주장: 2년 후 분석에서 코칭 받은 직원은 **고성과 평가 가능성 32% 높고, 이탈 가능성 5배 낮음** — human coaching 결과. [[sources/betterup-roi-page-2026-09.md]] 다수 고객에서 수치가 공개돼 있으나 모두 벤더 페이지 전달. (2026-09-27 grounding 점검: 종전 "비용 70퍼센트 절감", "Leadership ROI 600퍼센트"는 인용 소스에 없어 제거.) **Josh Bersin**(Tier 1, 단 BetterUp advisor)이 BetterUp Manage를 "pioneering AI-powered platform for leaders"로 독립 분석 ([[bersin-betterup-manage-ai-coaching-2024-04]]). **HR Executive**(Tier 2)에 실린 Bersin 기고(2021)도 BetterUp whole person model을 코칭 시장 2대 disruption 중 하나로 분류 ([[hrexecutive-bersin-coaching-disruptions-2024]]).
 
 ## Problem / Why (도입 배경)
 
@@ -90,7 +90,7 @@ BetterUp은 **AI 기반 리더십·매니저 코칭** 플랫폼. 2025-04 **Bette
 - **제공 방식**: _미공개 (not disclosed)_
 - **커스터마이징 기법**: _미공개 (not disclosed)_
 - **Orchestration 프레임워크**: _미공개 (not disclosed)_
-- **평가·가드레일**: ⚠️ 벤더 주장 (Inc. 전달, 원문 미확보): 안전 가드레일에 개발 시간 대부분 투입; 초기 테스트 고객 만족 95% — 독립 검증 부재. [[sources/inc-betterup-ai-only-coaching-2025-08.md]]
+- **평가·가드레일**: ⚠️ 벤더 주장 (Inc. 전달): 안전 프로토콜·가드레일에 개발 시간 대부분 투입. 초기 테스트 고객 만족 95%, 자신감 16% 향상(회사 대변인), 독립 검증 부재. [[sources/inc-betterup-ai-only-coaching-2025-08.md]]
 
 ### E. Organization & Team (조직·팀 구조)
 
@@ -110,6 +110,7 @@ BetterUp은 **AI 기반 리더십·매니저 코칭** 플랫폼. 2025-04 **Bette
 ## Contradictions
 
 > [!note] 2026-09-27 grounding — 종전 본문의 "비용 70퍼센트 절감", "Leadership ROI 600퍼센트 average", "채택 기업 11곳·50+ pipeline", "매니저 effectiveness 70퍼센트", "6개월 learning path·weekly micro-intervention", "SSO·SCIM·VR·RBAC", "Martin Seligman prompt·rubric", "disaggregated form 정책"은 인용 소스 5건의 raw 어디에도 없어 제거·_미공개_ 처리. Inc.·HR Executive 소스는 원문 미확보(403)라 95퍼센트·16퍼센트도 검색 스니펫 기반 벤더 주장으로만 기재.
+> 2026-10-19 원문 확보 후 복구: Inc. 원문(Aside)으로 95%·16%의 "원문 미확보" 꼬리표 제거. 원문은 16%를 "increase in confidence"로 기재하여 종전 "성과 16% 향상"을 "자신감 16% 향상"으로 정정. Grow 개발 시작 2021, 발표 2025-01, 출시 2025-04 확인. 비용 70% 절감·채택 기업 수·Leadership ROI는 원문에 없어 _미공개_ 유지. HR Executive 원문(Jina)은 Bersin 2021 기고로 BetterUp 기업가치 $1.7 billion 외 성과 수치 없음
 
 
 ## Impact / Metrics (기대효과)
@@ -137,8 +138,8 @@ AI 코칭 수혜 직원의 고성과 평가 확률 32% 향상, 이탈률 5배 �
 
 | 지표 | 값 | 출처 |
 |---|---|---|
-| User satisfaction (초기 테스트) | **95%** | [[sources/inc-betterup-ai-only-coaching-2025-08.md]] ⚠️ 벤더 주장 (Inc. 전달, 원문 미확보) |
-| 성과 향상 (초기 테스트) | **16%** | [[sources/inc-betterup-ai-only-coaching-2025-08.md]] ⚠️ 벤더 주장 (Inc. 전달, 원문 미확보) |
+| User satisfaction (초기 테스트) | **95%** | [[sources/inc-betterup-ai-only-coaching-2025-08.md]] ⚠️ 벤더 주장 (Inc. 전달, 회사 대변인) |
+| 자신감(confidence) 향상 (초기 테스트) | **16%** | [[sources/inc-betterup-ai-only-coaching-2025-08.md]] ⚠️ 벤더 주장 (Inc. 전달, 회사 대변인. 종전 "성과 향상" 표기는 원문 확인 후 정정) |
 | 비용 vs human coaching | _미공개_ | (수치 근거 미확보 — 2026-09-27 grounding 점검) |
 | 채택 기업 수 | _미공개_ | (수치 근거 미확보) |
 | Leadership ROI | _미공개_ | (수치 근거 미확보 — 2026-09-27 grounding 점검) |

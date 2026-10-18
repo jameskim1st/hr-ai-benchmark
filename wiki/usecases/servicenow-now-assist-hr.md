@@ -31,7 +31,7 @@ evidence_grade: B
 corroborated_by: 1
 freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/servicenow-ai-agents-product-2026-09.md, sources/klover-servicenow-ai-strategy-2025-07.md]
 related_usecases:
@@ -44,7 +44,7 @@ related_vendors: []
 
 ## Summary
 
-ServiceNow의 **Now Assist**는 ITSM·CSM·HRSD(HR Service Delivery)·Creator 워크플로에 내장된 GenAI 기능 ([[sources/klover-servicenow-ai-strategy-2025-07]]). HR 케이스 요약·해결 노트 생성·직원 셀프서비스 자동 응답을 제공 (⚠️ 벤더 주장 — [[sources/servicenow-ai-agents-product-2026-09]], 스냅샷 unavailable·원문 미확인). ⚠️ 벤더 주장: Now Assist 딜 수 QoQ 150%+ 성장(2024 Q4), AI 제품 ACV $10B 목표(2025) ([[sources/klover-servicenow-ai-strategy-2025-07]]). helpfulness rate·ACV 실적 수치는 _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검). HR 영역에서는 **티켓 분류·라우팅·지식베이스 자동 유지**에 특화 — [[moderna-ask-hr-routing]]의 "routing" 기능과 유사하지만 ITSM DNA를 가진 접근법.
+ServiceNow의 **Now Assist**는 ITSM·CSM·HRSD(HR Service Delivery)·Creator 워크플로에 내장된 GenAI 기능 ([[sources/klover-servicenow-ai-strategy-2025-07]]). HR 케이스 요약·해결 노트 생성·직원 셀프서비스 자동 응답을 제공 (⚠️ 벤더 주장, [[sources/servicenow-ai-agents-product-2026-09]] 제품 페이지 원문(2026-10-19 확보)에는 이 기능 서술이 없음. 원문의 HR 언급은 음성 에이전트의 PTO·케이스 관리와 employee onboarding뿐). ⚠️ 벤더 주장: Now Assist 딜 수 QoQ 150%+ 성장(2024 Q4), AI 제품 ACV $10B 목표(2025) ([[sources/klover-servicenow-ai-strategy-2025-07]]). helpfulness rate·ACV 실적 수치는 _미공개_ (수치 근거 미확보 — 2026-09-27 grounding 점검). HR 영역에서는 **티켓 분류·라우팅·지식베이스 자동 유지**에 특화 — [[moderna-ask-hr-routing]]의 "routing" 기능과 유사하지만 ITSM DNA를 가진 접근법.
 
 ## Problem / Why (도입 배경)
 
@@ -58,7 +58,7 @@ ServiceNow의 **Now Assist**는 ITSM·CSM·HRSD(HR Service Delivery)·Creator �
 ### A. Process (프로세스)
 
 - **Before**: HR 케이스가 분류·라우팅·해결까지 다단계 manual ticket 처리 (❓ 고객별 baseline 미공개)
-- **After** (⚠️ 벤더 주장 — [[sources/servicenow-ai-agents-product-2026-09]], 스냅샷 unavailable·원문 미확인; Now Assist의 HRSD 내장 사실은 [[sources/klover-servicenow-ai-strategy-2025-07]] 확인):
+- **After** (⚠️ 벤더 주장, 아래 단계는 [[sources/servicenow-ai-agents-product-2026-09]] 제품 페이지 원문(2026-10-19 확보)에 없음, 별도 소스 확보 전 외부 인용 금지; Now Assist의 HRSD 내장 사실은 [[sources/klover-servicenow-ai-strategy-2025-07]] 확인):
   1. 직원이 ServiceNow employee portal/Teams에서 HR 요청 제출
   2. Now Assist가 case 내용 분석 → criticality 분류 (non-critical/critical)
   3. Non-critical case는 HR knowledge base·catalog 조회하여 자동 해결
@@ -67,9 +67,9 @@ ServiceNow의 **Now Assist**는 ITSM·CSM·HRSD(HR Service Delivery)·Creator �
   6. HR agent가 검토·해결, 결과로 KB 업데이트
 - **HITL**: critical case·judgment-required 단계에서 HR agent 개입
 - **Frequency**: daily (case 발생 시 즉시)
-- **Source**: ServiceNow AI Agents 제품 페이지 ([[sources/servicenow-ai-agents-product-2026-09]] — 원문 미확인)
+- **Source**: ServiceNow AI Agents 제품 페이지 ([[sources/servicenow-ai-agents-product-2026-09]], 원문 확인 결과 위 단계 서술 없음. 원문 확인 항목: 음성 에이전트가 phone·mobile·web 채널에서 HR의 PTO·케이스 관리 처리, 에이전트 팀을 AI Agent Orchestrator가 조정)
 
-### Now Assist for HRSD (⚠️ 벤더 주장 — [[sources/servicenow-ai-agents-product-2026-09]], 원문 미확인)
+### Now Assist for HRSD (⚠️ 벤더 주장, [[sources/servicenow-ai-agents-product-2026-09]] 원문에 없음, 2026-10-19 확인)
 - **케이스 요약**: HR 티켓의 맥락·이력을 GenAI가 자동 요약 (에이전트 시간 절감)
 - **해결 노트 생성**: 케이스 종료 시 resolution note를 AI가 초안 작성
 - **직원 셀프서비스**: 직원이 portal에 질문 → AI가 지식베이스에서 답변 (case deflection)
@@ -86,13 +86,13 @@ ServiceNow의 **Now Assist**는 ITSM·CSM·HRSD(HR Service Delivery)·Creator �
 - **AI 시스템 배치**: ✅ 플랫폼 내장 GenAI (standalone 도구 아님) ([[sources/klover-servicenow-ai-strategy-2025-07]])
 - **배포 환경**: _미공개 (not disclosed)_
 - **연동·통합**: _미공개 (not disclosed)_
-- **사용자 접점 (UX layer)**: ⚠️ 벤더 주장: employee portal·Teams ([[sources/servicenow-ai-agents-product-2026-09]] — 원문 미확인)
+- **사용자 접점 (UX layer)**: ⚠️ 벤더 주장: 음성 에이전트가 phone·mobile·web 채널에서 다국어로 HR 요청(PTO·케이스 관리) 처리 ([[sources/servicenow-ai-agents-product-2026-09]], 2026-10-19 원문 확인). 종전 "employee portal·Teams"는 원문에 없음
 - **인증·권한**: _미공개 (not disclosed)_
 - **가용성·SLA**: _미공개 (not disclosed)_
 
 ### C. Data (데이터)
 
-- **입력 데이터 소스**: ⚠️ 벤더 주장: HR 케이스 내용·이력, HR knowledge base·catalog ([[sources/servicenow-ai-agents-product-2026-09]] — 원문 미확인)
+- **입력 데이터 소스**: ⚠️ 벤더 주장: HR 케이스 내용·이력, HR knowledge base·catalog ([[sources/servicenow-ai-agents-product-2026-09]] 원문에 없음, 2026-10-19 확인. 원문은 에이전트가 knowledge base·API·RAG로 컨텍스트를 구성한다는 일반 서술만)
 - **데이터 규모**: _미공개 (not disclosed)_
 - **전처리·정제**: _미공개 (not disclosed)_
 - **학습 vs RAG vs In-context 구분**: _미공개 (not disclosed)_
@@ -106,8 +106,8 @@ ServiceNow의 **Now Assist**는 ITSM·CSM·HRSD(HR Service Delivery)·Creator �
 - **Model 유형**: ✅ LLM (생성 — 케이스 요약·text-to-code 등) ([[sources/klover-servicenow-ai-strategy-2025-07]])
 - **제공 방식**: _미공개 (not disclosed)_
 - **커스터마이징 기법**: _미공개 (not disclosed)_
-- **Orchestration 프레임워크**: _미공개 (not disclosed)_
-- **평가·가드레일**: _미공개 (not disclosed)_
+- **Orchestration 프레임워크**: ⚠️ 벤더 주장: AI Agent Orchestrator가 에이전트 팀을 조정, Action Fabric의 Agent2Agent(A2A) 프로토콜과 MCP 클라이언트로 외부 도구·시스템 연결 ([[sources/servicenow-ai-agents-product-2026-09]], 2026-10-19 원문 확인). HRSD 적용 세부 _미공개_
+- **평가·가드레일**: ⚠️ 벤더 주장: AI Agent Studio에서 가드레일 설정, Super Intelligence Control Tower가 에이전트 보안·거버넌스 담당 ([[sources/servicenow-ai-agents-product-2026-09]]). 평가 지표·bias 감사 _미공개_
 - **비용·성능 지표**: _미공개 (not disclosed)_ — 'Pro Plus' 프리미엄 SKU로 판매된다는 점만 확인 ([[sources/klover-servicenow-ai-strategy-2025-07]])
 - **Fallback·degradation 전략**: _미공개 (not disclosed)_
 
@@ -135,13 +135,14 @@ ServiceNow의 **Now Assist**는 ITSM·CSM·HRSD(HR Service Delivery)·Creator �
 
 ## Governance & Risk
 
-- **HITL**: ⚠️ 벤더 주장: critical·judgment-required 케이스는 HR agent에 라우팅 ([[sources/servicenow-ai-agents-product-2026-09]] — 원문 미확인)
+- **HITL**: ⚠️ 벤더 주장: critical·judgment-required 케이스는 HR agent에 라우팅 ([[sources/servicenow-ai-agents-product-2026-09]] 원문에 없음, 2026-10-19 확인. 원문은 에이전트가 "without continuous human intervention" 작동한다고 서술하여 HRSD의 HITL 지점은 _미공개_)
 - **편향·개인정보**: HR 케이스 데이터의 SaaS 처리 — 세부 거버넌스 _미공개 (not disclosed)_
 - **가드레일·감사**: _미공개 (not disclosed)_
 
 ## Contradictions
 
 > [!note] 2026-09-27 grounding — 기존 본문의 Now Assist ACV 실적(2025년 말)·helpfulness rate 수치는 인용 소스([[sources/klover-servicenow-ai-strategy-2025-07]])에 없음(글은 AI 제품 ACV 목표·딜 QoQ 성장률을 인용). 두 수치를 `_미공개_`로 교체. 제품 페이지([[sources/servicenow-ai-agents-product-2026-09]])는 스냅샷 unavailable — 기능 설명은 벤더 주장·원문 미확인으로 표기.
+> 2026-10-19 원문 확보 후 복구: 제품 페이지 원문(Aside)에 Now Assist HRSD 기능(케이스 요약·해결 노트·셀프서비스·라우팅·criticality 분류), Schedule Interview·Job Requisition 에이전트, portal·Teams 접점, helpfulness rate·ACV 실적이 없어 수치 복구 없음. 이 서술은 "원문에 없음"으로 재표기하고 별도 소스(Now Assist HRSD 제품 문서) 확보 전 외부 인용 금지. 원문에서 확인되어 반영한 것은 음성 에이전트의 HR PTO·케이스 관리(phone·mobile·web), AI Agent Orchestrator·Action Fabric(A2A·MCP), AI Agent Studio 가드레일·Control Tower 거버넌스. 원문의 익명 고객 타일(87% self-service·80% deflection 등)은 고객명·HR 여부 불명으로 미반영
 
 ## Consulting Angle
 

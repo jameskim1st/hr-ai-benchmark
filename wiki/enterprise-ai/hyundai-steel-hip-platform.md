@@ -27,7 +27,7 @@ evidence_grade: A
 corroborated_by: 2
 freshness: fresh
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/ajunews-hyundai-steel-ai-bigdata-festival-2025-10.md, sources/moneys-hyundai-steel-hip-launch-2024-05.md]
 related_usecases:

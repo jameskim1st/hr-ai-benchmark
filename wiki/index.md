@@ -13,7 +13,7 @@
 | companies / vendors | 20 / 15 | |
 | syntheses | 17 | lint·digest·compare·research 포함 |
 
-근거 등급: A 41 · B 30 · C 42 · D 5  ｜  depth: full 15 · partial 80 · stub 23  ｜  freshness: fresh 66 · stale 47 · unverified 5
+근거 등급: A 47 · B 27 · C 43 · D 1  ｜  depth: full 14 · partial 80 · stub 24  ｜  freshness: fresh 63 · stale 54 · unverified 1
 
 등급 정의: **A** 독립(Tier 1·2) 소스 2개 이상 · **B** 독립 1개 · **C** 벤더·자사 보고만 · **D** 미검증/소스 없음. 제안서 인용은 A·B + depth full 권장.
 
@@ -97,24 +97,24 @@ SORT evidence_grade ASC, confidence DESC
 
 <details><summary>정적 목록 (Dataview 없을 때)</summary>
 
-- [[microsoft-people-skills-inferred-ontology]] — Microsoft · A/full
-- [[walmart-openai-certification]] — Walmart · A/partial
 - [[accenture-mass-genai-reskilling]] — Accenture · A/partial
 - [[fujitsu-hr-ai-skills-career]] — Fujitsu · A/full
 - [[jpmorgan-ai-made-easy-upskilling]] — JPMorgan Chase · A/partial
+- [[microsoft-people-skills-inferred-ontology]] — Microsoft · A/full
 - [[tcs-infosys-ai-reskilling-india]] — TCS · A/stub
 - [[walmart-ai-frontline-workforce]] — Walmart · A/partial
+- [[walmart-openai-certification]] — Walmart · A/partial
+- [[accenture-ai-learning-workforce]] — Accenture · A/stub
 - [[jnj-digital-talent-platform-skills-ai]] — Johnson & Johnson · A/partial
+- [[pwc-ai-upskilling-65k]] — PwC · A/partial
 - [[siemens-reskilling-internal-mobility]] — Siemens · A/partial
-- [[accenture-ai-learning-workforce]] — Accenture · B/stub
 - [[ibm-charlie-learning-ops-agent]] — IBM · B/partial
+- [[workday-sana-for-workday-lms]] — _다수 (Workday Learning 고객, Klarna·MTV·Polestar 등 Sana 기존 고객)_ · B/partial
 - [[bersin-galileo-learn-ai-native-lms]] — _N/A (product, single known deployment = vendor itself)_ · B/full
 - [[docebo-ai-learning-lazboy]] — La-Z-Boy · B/partial
-- [[pwc-ai-upskilling-65k]] — PwC · B/partial
 - [[linkedin-learning-ai-coaching]] — _다수 (LinkedIn Learning Premium·Enterprise 고객)_ · C/stub
-- [[workday-sana-for-workday-lms]] — _다수 (Workday Learning 고객, Klarna·MTV·Polestar 등 Sana 기존 고객)_ · C/partial
+- [[ericsson-degreed-ai-skills-upskilling]] — Ericsson · C/partial
 - [[samsung-multicampus-ai-learning]] — 삼성전자 · C/stub
-- [[ericsson-degreed-ai-skills-upskilling]] — Ericsson · D/partial
 
 </details>
 
@@ -129,17 +129,17 @@ SORT evidence_grade ASC, confidence DESC
 
 <details><summary>정적 목록 (Dataview 없을 때)</summary>
 
-- [[clap-ai-performance-korea]] — 디웨일 (CLAP) · A/stub
 - [[meta-ai-performance-review-mandate]] — Meta · A/partial
+- [[betterup-ai-coaching-twilio]] — Twilio · A/partial
+- [[clap-ai-performance-korea]] — 디웨일 (CLAP) · A/stub
+- [[moderna-self-review-gpt]] — Moderna · A/partial
 - [[ibm-hiro-promotion-agent]] — IBM · B/stub
 - [[sap-joule-performance-goals-agent]] — _다수 (SAP SuccessFactors 고객)_ · B/partial
-- [[betterup-ai-coaching-twilio]] — Twilio · B/partial
-- [[moderna-self-review-gpt]] — Moderna · B/partial
 - [[workday-illuminate-performance-review-agent]] — _다수 (Workday 고객)_ · B/partial
 - [[lattice-ai-performance-summarization]] — _다수 (Lattice 고객 — 개별 고객 미확인)_ · C/partial
 - [[betterworks-nextgen-ai-performance]] — Colgate-Palmolive · C/partial
 - [[cultureamp-ai-coach-asana]] — Asana · C/partial
-- [[15five-kona-reup-ai-manager-coaching]] — ReUp Education · D/partial
+- [[15five-kona-reup-ai-manager-coaching]] — ReUp Education · C/partial
 
 </details>
 
@@ -155,14 +155,14 @@ SORT evidence_grade ASC, confidence DESC
 <details><summary>정적 목록 (Dataview 없을 때)</summary>
 
 - [[nayya-benefits-decision-support]] — _다수 (미국 직원 1,000명 초과 고용주 대상 MetLife 채널 + 직접 고객)_ · A/partial
+- [[moderna-benefits-equity-gpts]] — Moderna · A/stub
 - [[douzone-one-ai-year-end-tax]] — _N/A (product, 다수 중소·중견기업 대상)_ · B/full
-- [[moderna-benefits-equity-gpts]] — Moderna · B/stub
 - [[businessolver-sofia-agentic-benefits]] — _다수 (Businessolver 고객 — Fortune 1000 다수, 구체 명단 일부 비공개)_ · C/partial
+- [[paychex-flex-agentic-workforce]] — _다수 (800K 고객)_ · C/partial
 - [[spring-health-general-mills-ai-eap]] — General Mills · C/partial
+- [[ukg-ai-workforce-scheduling-healthcare]] — _다수 (UKG 헬스케어 고객 — 개별 고객명 원문 미확인)_ · C/stub
 - [[adp-assist-payroll-ai]] — ADP · C/partial
 - [[syndio-pay-equity-ai]] — _다수 (300+ 고객, 30% Fortune Most Admired)_ · C/partial
-- [[paychex-flex-agentic-workforce]] — _다수 (800K 고객)_ · D/partial
-- [[ukg-ai-workforce-scheduling-healthcare]] — KC CARE Health Center · D/partial
 
 </details>
 
@@ -178,25 +178,25 @@ SORT evidence_grade ASC, confidence DESC
 <details><summary>정적 목록 (Dataview 없을 때)</summary>
 
 - [[hitachi-skye-hr-ai-assistant]] — Hitachi · A/partial
-- [[pulmuone-duribun-hr-chatbot]] — 풀무원 · A/partial
 - [[cisco-ai-assistant-hr-agentic]] — Cisco · A/partial
 - [[korea-gov-ai-hr-public-sector]] — 인사혁신처 / 행정안전부 · A/full
 - [[lloyds-banking-workday-genai-hr]] — Lloyds Banking Group · A/partial
-- [[walmart-ask-sam-workforce-ai]] — Walmart · A/partial
+- [[pulmuone-duribun-hr-chatbot]] — 풀무원 · A/partial
 - [[bosch-rob-hr-ai-assistant]] — Bosch · A/full
 - [[moderna-ask-hr-routing]] — Moderna · A/partial
+- [[walmart-ask-sam-workforce-ai]] — Walmart · A/partial
 - [[amazon-connections-daily-pulse]] — Amazon · A/partial
-- [[sap-successfactors-1h-2026-joule-agents]] — _다수 (SAP SuccessFactors 고객)_ · B/partial
-- [[workday-peakon-illuminate-employee-voice]] — _다수 (Workday Peakon 고객, Workday 자사 도입 포함)_ · B/partial
 - [[ibm-askhr-watsonx]] — IBM · B/partial
 - [[legion-wfm-hourly-workforce]] — _다수 (Dollar General, Cinemark, Five Below 등 시급직 다수 산업)_ · B/partial
+- [[sap-successfactors-1h-2026-joule-agents]] — _다수 (SAP SuccessFactors 고객)_ · B/partial
+- [[workday-peakon-illuminate-employee-voice]] — _다수 (Workday Peakon 고객, Workday 자사 도입 포함)_ · B/partial
+- [[qualtrics-adidas-employee-experience-ai]] — adidas · B/stub
 - [[servicenow-now-assist-hr]] — _다수 (구체 고객명 미공개)_ · B/partial
-- [[siemens-servicenow-hr-gbs]] — Siemens · B/full
-- [[microsoft-viva-glint-copilot-sentiment]] — Microsoft · C/partial
+- [[siemens-servicenow-hr-gbs]] — Siemens · B/partial
 - [[sk-hynix-one-resume-employee-search]] — SK하이닉스 · C/stub · 🔒
-- [[viven-ai-digital-twin-coworker]] — _N/A (vendor product, stealth exit 직후 customer 0건)_ · C/partial
 - [[coca-cola-southwest-perceptyx-activate]] — Arca Continental Coca-Cola Southwest Beverages · C/stub
-- [[qualtrics-adidas-employee-experience-ai]] — adidas · C/stub
+- [[microsoft-viva-glint-copilot-sentiment]] — Microsoft · C/partial
+- [[viven-ai-digital-twin-coworker]] — _N/A (vendor product, stealth exit 직후 customer 0건)_ · C/partial
 - [[flex-korea-hr-ai-saas]] — 플렉스팀 · C/partial
 - [[microsoft-employee-self-service-agent]] — Microsoft · C/full
 - [[workday-illuminate-employee-sentiment]] — _N/A_ · C/stub
@@ -214,31 +214,31 @@ SORT evidence_grade ASC, confidence DESC
 
 <details><summary>정적 목록 (Dataview 없을 때)</summary>
 
+- [[moel-ai-labor-law-consultation]] — 고용노동부 (대한민국 정부) · A/full
+- [[ibm-predictive-attrition-comp-ai]] — IBM · A/stub
+- [[jpmorgan-llm-suite-redeployment]] — JPMorgan Chase · A/partial
 - [[kb-bank-ai-hr-deep-change]] — KB국민은행 · A/partial
 - [[korea-electric-power-hr-bot]] — 한국전력 · A/partial
-- [[moel-ai-labor-law-consultation]] — 고용노동부 (대한민국 정부) · A/full
 - [[nps-ai-innovation-taskforce]] — 국민연금공단 · A/partial
 - [[posco-dx-110-agents-hr]] — 포스코DX (포스코 그룹) · A/stub
 - [[sk-group-aibiz-25-companies]] — SK 그룹 (25개 멤버사) · A/partial
 - [[amazon-hr-ai-restructuring]] — Amazon · A/partial
-- [[ibm-hr-workforce-reduction-agentic]] — IBM · A/partial
-- [[ibm-predictive-attrition-comp-ai]] — IBM · A/stub
-- [[jpmorgan-llm-suite-redeployment]] — JPMorgan Chase · A/partial
 - [[dbs-bank-hr-ai-talent-analytics]] — DBS Bank · A/partial
+- [[mercy-health-ai-nursing-workforce]] — Mercy Health · A/partial
+- [[ibm-hr-workforce-reduction-agentic]] — IBM · A/partial
+- [[hr-acuity-oliver-ai-er-companion]] — _다수 (HR Acuity 고객 — 개별 고객명 원문 미확인)_ · B/full
 - [[deloitte-zora-ai-hc-suite]] — Deloitte · B/partial
 - [[workday-agent-system-of-record-asor]] — _다수 (Workday HCM 고객)_ · B/partial
-- [[mercy-health-ai-nursing-workforce]] — Mercy Health · B/partial
 - [[visier-vee-people-analytics]] — Providence (healthcare, 주요 고객) · B/partial
 - [[workday-illuminate-job-architecture]] — _N/A (product capability, no specific customer disclosed)_ · B/partial
 - [[allvoices-vera-ai-er-copilot]] — _다수 (AllVoices 고객 — Fortune·SMB 혼합, 구체 명단 부분 비공개)_ · C/partial
-- [[anaplan-workforce-analyst-ai-agents]] — _다수 (Anaplan 고객 — Fresenius·Canada Goose·Cinemark·healthcare provider 등)_ · C/stub
 - [[diligent-vault-active-integrity-speakup]] — _다수 (Diligent + Vault Platform 고객 — 글로벌 enterprise 비중 높음)_ · C/partial
-- [[hr-acuity-oliver-ai-er-companion]] — _다수 (HR Acuity 고객 — 개별 고객명 원문 미확인)_ · C/full
 - [[navex-ethicspoint-nca-compliance]] — _다수 (NAVEX 13,000+ 조직 — Fortune 100 다수)_ · C/full
 - [[sk-hynix-pwc-5agent-retention]] — SK하이닉스 · C/stub · 🔒
 - [[sodales-spire-energy-labor-relations]] — Spire Inc. · C/partial
 - [[waymo-hr-acuity-er-case-management]] — Waymo · C/stub
 - [[yelp-hr-acuity-er-documentation]] — Yelp · C/stub
+- [[anaplan-workforce-analyst-ai-agents]] — _다수 (Anaplan 고객 — Fresenius·Canada Goose·Cinemark·healthcare provider 등)_ · C/stub
 - [[salesforce-orgvue-org-design-ai]] — Salesforce · C/partial
 - [[beamery-atkins-realis-skills-architecture]] — AtkinsRéalis · C/partial
 - [[deloitte-workforce-analyzer-salesforce]] — Salesforce (named customer) · C/stub
@@ -291,7 +291,7 @@ SORT evidence_grade ASC, confidence DESC
 
 ## 🏗 Enterprise-AI (전사 GenAI 플랫폼 — HR 전용 use case 아님) (15)
 
-- [[commonwealth-bank-ai-workforce]] — Commonwealth Bank of Australia · C
+- [[commonwealth-bank-ai-workforce]] — Commonwealth Bank of Australia · B
 - [[deloitte-claude-470k-employees]] — Deloitte · B
 - [[goldman-sachs-gs-ai-assistant]] — Goldman Sachs · A
 - [[gs-caltex-aiu-platform]] — GS칼텍스 (GS 그룹) · C

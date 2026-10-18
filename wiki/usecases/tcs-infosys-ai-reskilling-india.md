@@ -29,7 +29,7 @@ evidence_grade: A
 corroborated_by: 3
 freshness: fresh
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources:
   - sources/theregister-india-it-2026-01.md
   - sources/aibase-india-it-ai-reskilling-2025.md

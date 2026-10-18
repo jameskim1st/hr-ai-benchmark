@@ -29,7 +29,7 @@ evidence_grade: B
 corroborated_by: 1
 freshness: fresh
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/hr-brew-ibm-moderna-2025-06.md, sources/hr-brew-hr-adapting-ai-future-2025-10.md, sources/ibm-askhr-case-study-2025.md]
 related_usecases:
@@ -141,6 +141,8 @@ flowchart LR
 ## Contradictions
 
 > [!note] 2026-09-27 grounding — B~E 섹션의 "IBM Cloud (추정)", "자체 구축 추정", "IBM HR + IBM Digital 공동 운영 추정"을 _미공개_로 정리하고 C·D·E를 분리. Consulting Angle의 Moderna GPT 수는 본 페이지 인용 소스에 없어 삭제([[moderna-ask-hr-routing]] 참조). hr-brew-ibm-moderna-2025-06은 raw 미확보(403)로 270,000명·Krishna 발언·필리핀 직무 전환은 source 페이지 요약(2차 전달)에만 근거.
+
+> 2026-10-19 원문 확보 후 복구: HR Brew raw 확보. 270,000명 일 단위 사용("fields questions from 270,000 individuals on a daily basis"), Krishna의 "a couple hundred HR workers" 발언(WSJ 재인용), 필리핀 기반 직원의 conversational AI specialist 전환, expense·recognition(BI Worldwide 파트너) 기능이 raw로 확인되어 기존 인용 유지. 새로 복구한 수치 부재
 
 ## Consulting Angle
 

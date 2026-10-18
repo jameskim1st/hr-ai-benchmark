@@ -24,12 +24,12 @@ kr_vendor: 디웨일 (CLAP) — 국내 SaaS
 frequency: monthly
 first_seen: 2024-01-01
 last_confirmed: 2025-10-01
-confidence: 0.7
+confidence: 0.6
 evidence_grade: A
 corroborated_by: 2
-freshness: fresh
+freshness: stale
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 sources:
   - sources/clap-blog-hr-ai-trend-2026.md
   - sources/sisajournal-clap-2025.md

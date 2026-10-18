@@ -29,7 +29,7 @@ evidence_grade: C
 corroborated_by: 0
 freshness: fresh
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources:
   - sources/hr-acuity-waymo-case-study.md

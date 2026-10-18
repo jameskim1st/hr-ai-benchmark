@@ -9,8 +9,9 @@ independent: false
 publication_date: unknown
 ingested_at: 2026-09-27
 raw: raw/vendors/2026-10-19-saltlux-kepco-hr-bot-case-undated.md
-snapshot_quality: full
+snapshot_quality: unavailable
 supports: [korea-electric-power-hr-bot]
+snapshot_note: "2026-10-19 Aside 재시도: 홈페이지로 리다이렉트, 케이스 본문 없음"
 ---
 
 ## Summary
@@ -19,9 +20,12 @@ supports: [korea-electric-power-hr-bot]
 
 ## Key Quotes
 
-_원문 미확보 — 인용 불가_
+_원문 미확보, 인용 불가 (2026-10-19 Aside 재확보 시도에서도 홈페이지로 리다이렉트. raw 스냅샷은 솔트룩스 홈페이지 본문이며 한전 HR-Bot 내용 없음)_
+
 ## Limitations
 
-- 원문 미확보 — 요청 URL(및 kor 로케일 대응 URL)이 홈페이지로 리다이렉트됨. 요약은 검색 스니펫 기반이며 인용 불가.
+- 원문 미확보 — 요청 URL(및 kor 로케일 대응 URL)이 홈페이지로 리다이렉트됨. 요약은 검색 스니펫 기반이며 인용 불가
+- 2026-10-19 Aside 재확보 결과도 홈페이지 리다이렉트. raw(2,231자)는 솔트룩스 홈페이지(강원랜드·한국수력원자력·한전원자력연료·법제처·부산광역시 사례 카드)이며 한국전력 HR-Bot 서술이 없어 snapshot_quality는 사실상 unavailable. 한전원자력연료(KEPCO NF) 생성형 AI 사례는 별개 기업이므로 본 source로 인용 불가
+- 재확보 시 솔트룩스 고객사례 게시판의 변경된 URL 또는 PDF 자료 필요
 - 벤더 고객사례 — 자사 주장.
 - 게시 시점 불명(undated).

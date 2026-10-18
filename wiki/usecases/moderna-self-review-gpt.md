@@ -24,12 +24,12 @@ kr_vendor: 미확인 (국내 파트너 확인 필요)
 frequency: annual              # 연말 리뷰 주기
 first_seen: 2025-05-22
 last_confirmed: 2025-06-12
-confidence: 0.35
-evidence_grade: B
-corroborated_by: 1
+confidence: 0.6
+evidence_grade: A
+corroborated_by: 2
 freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/hr-brew-moderna-total-rewards-2025-05.md, sources/hr-brew-ibm-moderna-2025-06.md, sources/moderna-blog-openai-2024-04.md]
 related_usecases:

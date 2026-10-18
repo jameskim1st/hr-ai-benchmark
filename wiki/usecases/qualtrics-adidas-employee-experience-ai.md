@@ -26,12 +26,12 @@ last_confirmed_estimated: true
 frequency: monthly
 first_seen: 2025-10-01
 last_confirmed: 2025-10-01
-confidence: 0.25
-evidence_grade: C
-corroborated_by: 0
-freshness: fresh
+confidence: 0.35
+evidence_grade: B
+corroborated_by: 1
+freshness: stale
 depth: stub
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/qualtrics-experience-agents-press-2025-10.md, sources/benefitnews-adidas-allstate-ai-feedback-2024-11.md]
 related_usecases:

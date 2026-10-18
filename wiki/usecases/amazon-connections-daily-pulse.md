@@ -29,7 +29,7 @@ evidence_grade: A
 corroborated_by: 2
 freshness: stale
 depth: partial
-graded_at: 2026-09-27
+graded_at: 2026-10-19
 consulting_angle_status: filled
 sources: [sources/cnbc-amazon-connections-forte-2018-03.md, sources/fortune-amazon-connections-survey-criticism-2024-06.md]
 related_usecases:
